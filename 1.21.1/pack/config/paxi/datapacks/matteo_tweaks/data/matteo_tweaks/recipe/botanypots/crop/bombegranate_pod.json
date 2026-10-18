@@ -1,0 +1,73 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "ars_nouveau:bombegranate_pod",
+        "ars_nouveau:red_archwood_log"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "ars_nouveau:bombegranate_pod",
+  "soil": {
+    "type": "bookshelf:block_tag",
+    "tag": "ars_nouveau:blazing_logs"
+  },
+  "display": {
+    "type": "botanypots:transitional",
+    "phases": [
+      {
+        "type": "botanypots:simple",
+        "block_state": {
+          "block": "ars_nouveau:bombegranate_pod",
+          "properties": {
+            "age": "0"
+          }
+        },
+        "options": {
+          "rotation": "X_270",
+          "offset": [
+            0,
+            -0.1,
+            0
+          ]
+        }
+      },
+      {
+        "type": "botanypots:simple",
+        "block_state": {
+          "block": "ars_nouveau:bombegranate_pod",
+          "properties": {
+            "age": "1"
+          }
+        },
+        "options": {
+          "rotation": "X_270",
+          "offset": [
+            0,
+            -0.1,
+            0
+          ]
+        }
+      },
+      {
+        "type": "botanypots:simple",
+        "block_state": {
+          "block": "ars_nouveau:bombegranate_pod",
+          "properties": {
+            "age": "2"
+          }
+        },
+        "options": {
+          "rotation": "X_270",
+          "offset": [
+            0,
+            -0.1,
+            0
+          ]
+        }
+      }
+    ]
+  }
+}

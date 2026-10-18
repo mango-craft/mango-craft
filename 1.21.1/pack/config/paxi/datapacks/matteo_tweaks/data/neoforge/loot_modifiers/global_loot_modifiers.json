@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "entries": [
+    "matteo_tweaks:artifacts/abandoned_mineshaft",
+    "matteo_tweaks:artifacts/ancient_city",
+    "matteo_tweaks:artifacts/bastion_treasure",
+    "matteo_tweaks:artifacts/desert_pyramid",
+    "matteo_tweaks:artifacts/end_city_treasure",
+    "matteo_tweaks:artifacts/igloo_chest",
+    "matteo_tweaks:artifacts/jungle_temple",
+    "matteo_tweaks:artifacts/nether_bridge",
+    "matteo_tweaks:artifacts/pillager_outpost",
+    "matteo_tweaks:artifacts/ruined_portal",
+    "matteo_tweaks:artifacts/shipwreck_treasure",
+    "matteo_tweaks:artifacts/simple_dungeon",
+    "matteo_tweaks:artifacts/stronghold_corridor",
+    "matteo_tweaks:artifacts/underwater_ruin_big",
+    "matteo_tweaks:artifacts/woodland_mansion"
+  ]
+}

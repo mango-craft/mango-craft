@@ -1,0 +1,49 @@
+// ### LA MOD RICHIEDE UN RIAVVIO DEL GIOCO PER APPLICARE LE MODIFICHE ###
+// Le distanze cambiano solo nei chunk generati dopo la modifica: meglio un mondo nuovo.
+{
+  // Moltiplicatore globale di spacing/separation di tutte le strutture.
+  // 1 = come le mod le hanno pensate, 1.4 = un po' piu' rade (scelta del pack), 0 = disattiva tutto.
+  "spreadFactor": 1.4,
+
+  // Ogni gruppo di strutture riceve un "salt" proprio calcolato dal nome: riduce le sovrapposizioni
+  // tra mod che usano lo stesso salt. Lasciare attivo.
+  "idBasedSalt": true,
+
+  // Fattori personalizzati. "structure" accetta il nome di un gruppo (structure_set) oppure di una struttura:
+  // con il nome di una struttura viene modificato tutto il suo gruppo.
+  // I fattori sono rispetto ai valori originali della mod (NON si moltiplicano con spreadFactor).
+  "customSpreadFactors": [
+    // Ville del vanilla (e delle mod che si agganciano al loro gruppo): frequenza originale.
+    {
+      "structure": "minecraft:villages",
+      "factor": 1
+    },
+    // Magione del bosco: il doppio piu' rara (default della mod).
+    {
+      "structure": "minecraft:mansion",
+      "factor": 2
+    }
+
+    // --- DA COMPLETARE dopo il primo avvio ---
+    // 1. In un mondo di prova lanciare /dumpstructuresets: crea un file con tutti i gruppi di strutture.
+    // 2. Cercare i gruppi di Dungeons and Taverns (namespace "nova_structures") per Witch Villa e Swamp Village
+    //    (in alternativa: /locate structure nova_structures: e premere Tab per vedere i nomi).
+    // 3. Togliere i "//" qui sotto, sostituire i nomi e aggiungere una virgola dopo la voce "minecraft:mansion".
+    //
+    // Dungeons and Taverns, strutture di palude: molto piu' rare (scelta dell'utente: tenerle ma rade)
+    // {
+    //   "structure": "nova_structures:NOME_WITCH_VILLA",
+    //   "factor": 3
+    // },
+    // {
+    //   "structure": "nova_structures:NOME_SWAMP_VILLAGE",
+    //   "factor": 3
+    // },
+    //
+    // When Dungeons Arise: dungeon enormi, piu' radi del resto (consigliato 2-2.5), un gruppo per struttura
+    // {
+    //   "structure": "dungeons_arise:NOME_GRUPPO",
+    //   "factor": 2
+    // },
+  ]
+}

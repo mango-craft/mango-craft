@@ -1,0 +1,69 @@
+name: Aggiungi mod CurseForge
+
+on:
+  workflow_dispatch:
+    inputs:
+      pack:
+        description: Cartella del pack
+        required: true
+        default: 1.21.1/pack
+      urls:
+        description: Link ai file esatti su CurseForge (…/files/<id>), separati da spazi
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-refs/heads/main
+  cancel-in-progress: false
+
+env:
+  PACKWIZ_COMMIT: 170b22d785959dda5876b54b7f16e1b807a57fb6
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
+      - name: Installa packwiz
+        run: |
+          go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Aggiungi le mod
+        env:
+          PACK: ${{ inputs.pack }}
+          URLS: ${{ inputs.urls }}
+        run: |
+          test -f "$PACK/pack.toml" || { echo "Pack non trovato: $PACK"; exit 1; }
+          cd "$PACK"
+          for url in $URLS; do
+            echo "::group::$url"
+            # "n": rifiuta le dipendenze proposte (sono già nel pack da Modrinth)
+            printf 'n\nn\nn\n' | packwiz curseforge add "$url"
+            echo "::endgroup::"
+          done
+          packwiz refresh
+
+      - name: Controlli
+        env:
+          PACK: ${{ inputs.pack }}
+        run: python3 scripts/check_pack.py "$PACK"
+
+      - name: Commit
+        env:
+          PACK: ${{ inputs.pack }}
+          URLS: ${{ inputs.urls }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A "$PACK"
+          git commit -m "feat: mod CurseForge aggiunte da GitHub Actions" -m "$URLS"
+          git push

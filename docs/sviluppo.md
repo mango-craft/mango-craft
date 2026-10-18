@@ -1,0 +1,61 @@
+# Sviluppo: formati, script, workflow e rilasci
+
+Guida tecnica per chi modifica il pack (persone o agenti). Le regole generali sono in [`AGENTS.md`](../AGENTS.md).
+
+## Formato dei file del pack
+
+Il pack di ogni versione di Minecraft sta in `<versione>/pack/` e segue il formato di [packwiz](https://packwiz.infra.link/reference/pack-format/).
+
+- `pack.toml`: nome, versione del pack, versioni di Minecraft e NeoForge, hash dell'indice.
+- `index.toml`: elenco di tutti i file del pack con il loro hash sha256. I metafile hanno `metafile = true`; con `preserve = true` un file viene installato solo se manca (utile per file che il giocatore modifica).
+- `mods/<slug>.pw.toml`, `resourcepacks/<slug>.pw.toml`: un file per mod. Esempio da Modrinth:
+  ```toml
+  name = "Farmer's Delight"
+  filename = "FarmersDelight-1.21.1-1.3.4.jar"
+  side = "both"
+
+  [download]
+  url = "https://cdn.modrinth.com/data/R2OftAxM/versions/XTVZDOol/FarmersDelight-1.21.1-1.3.4.jar"
+  hash-format = "sha512"
+  hash = "…"
+
+  [update]
+  [update.modrinth]
+  mod-id = "R2OftAxM"
+  version = "XTVZDOol"
+  ```
+  Le mod di CurseForge hanno invece `mode = "metadata:curseforge"` nella sezione `[download]` e `[update.curseforge]` con `project-id` e `file-id`: le scrive packwiz (vedi sotto).
+- Tutti gli altri file (`config/…`, il datapack) vengono copiati così come sono nella cartella dell'istanza.
+
+## Script (`scripts/`, solo Python standard)
+
+| Script | Cosa fa |
+|---|---|
+| `packwiz_index.py <pack>` | Rigenera `index.toml` e l'hash in `pack.toml`, come `packwiz refresh` (conserva i `preserve = true`) |
+| `check_pack.py <pack>` | Controlla metafile, indice, assenza di .jar, JSON e nomi minuscoli del datapack. Esce con errore se qualcosa non va |
+| `import_mrpack.py <file.mrpack> <pack> [nomi.json]` | Converte un pacchetto .mrpack nei metafile packwiz (usato per importare la 0.1.1) |
+| `release_notes.py <pack> <changelog> <versione>` | Prepara le note di una release, con l'elenco delle mod CurseForge escluse dal .mrpack |
+
+## Workflow di GitHub (`.github/workflows/`)
+
+| Workflow | Quando parte | Cosa fa |
+|---|---|---|
+| **Controllo pack** (`check.yml`) | A ogni push su `main` e a ogni pull request | Lancia `packwiz refresh` e `check_pack.py`. Se l'indice cambia, lo salva con un commit automatico (sulle pull request invece fallisce) |
+| **Aggiungi mod CurseForge** (`curseforge-add.yml`) | A mano (scheda *Actions* → *Run workflow*) | Aggiunge una o più mod dai link ai file esatti (`…/files/<id>`), rifiutando le dipendenze, poi aggiorna l'indice e fa il commit |
+| **Release** (`release.yml`) | Al push di un tag `<versione MC>-vX.Y.Z` | Controlla che il tag corrisponda a `pack.toml`, esporta un `.mrpack` con le sole mod Modrinth, crea lo zip della documentazione e pubblica la release |
+
+packwiz viene installato in ogni workflow con `go install` a un commit fissato. Le dipendenze di una mod CurseForge si rifiutano perché packwiz riconosce come "già presenti" solo le mod prese da CurseForge, e aggiungerebbe doppioni di quelle prese da Modrinth.
+
+## Rilasciare una versione
+
+1. Aggiorna `version` in `<versione>/pack/pack.toml` (e `[versions]` se cambia NeoForge).
+2. Aggiungi la voce in `<versione>/CHANGELOG.md`: titolo `## X.Y.Z — data`, versione di NeoForge, se serve un mondo nuovo, cosa cambia.
+3. Rigenera l'indice e lancia i controlli, poi commit e push su `main`. Aspetta che il **Controllo pack** sia verde (e, se ha fatto un commit automatico, scarica l'aggiornamento).
+4. Crea il tag e mandalo: `git tag 1.21.1-vX.Y.Z && git push origin 1.21.1-vX.Y.Z`.
+5. Il workflow **Release** pubblica i file. Le istanze "mondo vero" si aggiornano cambiando il tag nel loro indirizzo.
+
+I tag di release non si spostano e non si cancellano: per correggere una versione se ne fa una nuova.
+
+## Mod solo CurseForge
+
+Il `.mrpack` pubblico non le contiene, perché `packwiz modrinth export` le includerebbe come file e ridistribuirle non è permesso. Le note della release le elencano con il link al file esatto. Nelle istanze collegate al repository le scarica packwiz-installer.

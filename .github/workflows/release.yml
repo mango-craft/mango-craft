@@ -1,0 +1,81 @@
+name: Release
+
+on:
+  push:
+    tags: ['*-v*']
+
+permissions:
+  contents: write
+
+env:
+  PACKWIZ_COMMIT: 170b22d785959dda5876b54b7f16e1b807a57fb6
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Leggi il tag
+        id: info
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          MC="${TAG%%-v*}"
+          VER="${TAG#*-v}"
+          PACK="$MC/pack"
+          test -f "$PACK/pack.toml" || { echo "Cartella $PACK non trovata"; exit 1; }
+          PACKVER=$(sed -nE 's/^version *= *"(.*)"/\1/p' "$PACK/pack.toml")
+          if [ "$PACKVER" != "$VER" ]; then
+            echo "Il tag ($VER) non corrisponde alla versione in pack.toml ($PACKVER)"
+            exit 1
+          fi
+          {
+            echo "mc=$MC"
+            echo "ver=$VER"
+            echo "pack=$PACK"
+          } >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
+      - name: Installa packwiz
+        run: |
+          go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Controlli
+        run: python3 scripts/check_pack.py "${{ steps.info.outputs.pack }}"
+
+      - name: Esporta il .mrpack (solo mod Modrinth)
+        env:
+          MC: ${{ steps.info.outputs.mc }}
+          VER: ${{ steps.info.outputs.ver }}
+          PACK: ${{ steps.info.outputs.pack }}
+        run: |
+          mkdir -p dist
+          WORK="$(mktemp -d)"
+          cp -r "$PACK"/. "$WORK"/
+          # Le mod CurseForge non si possono ridistribuire: fuori dal .mrpack pubblico
+          grep -rl --include='*.pw.toml' 'mode = "metadata:curseforge"' "$WORK" | xargs -r rm -v
+          (cd "$WORK" && packwiz refresh && packwiz modrinth export -o "$GITHUB_WORKSPACE/dist/mango-craft-$MC-$VER.mrpack")
+
+      - name: Zip della documentazione
+        env:
+          MC: ${{ steps.info.outputs.mc }}
+          VER: ${{ steps.info.outputs.ver }}
+        run: |
+          zip -qr "dist/mango-craft-$MC-$VER-documenti.zip" README.md AGENTS.md LICENSE docs "$MC/docs" "$MC/CHANGELOG.md"
+
+      - name: Pubblica la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+          MC: ${{ steps.info.outputs.mc }}
+          VER: ${{ steps.info.outputs.ver }}
+          PACK: ${{ steps.info.outputs.pack }}
+        run: |
+          python3 scripts/release_notes.py "$PACK" "$MC/CHANGELOG.md" "$VER" > notes.md
+          gh release create "$TAG" dist/* --title "Mango Craft $MC · v$VER" --notes-file notes.md

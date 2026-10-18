@@ -1,0 +1,13 @@
+name = "Occult Delight"
+filename = "occultdelight-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PfuNPzWe/versions/n7kt4vsy/occultdelight-1.0.0.jar"
+hash-format = "sha512"
+hash = "1b421e1a4925a5b26cd454ddfadeb1ac7196300522e53408fe95d7806ae0acfdfdedec50e9c68069ae419a5f5e175b0c9a1a73d46822bc2ad4f4664881d388f1"
+
+[update]
+[update.modrinth]
+mod-id = "PfuNPzWe"
+version = "n7kt4vsy"

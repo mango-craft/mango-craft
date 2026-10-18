@@ -1,0 +1,85 @@
+{
+  "custom_tags": {
+    "c:flour": [
+      "create:wheat_flour"
+    ],
+    "c:flours/wheat": [
+      "farm_and_charm:flour",
+      "bountifulfares:flour"
+    ],
+    "farm_and_charm:flour": [
+      "create:wheat_flour"
+    ],
+    "c:foods/dough": [
+      "farm_and_charm:dough"
+    ],
+    "c:foods/dough/wheat": [
+      "farm_and_charm:dough"
+    ],
+    "c:dough": [
+      "farmersdelight:wheat_dough",
+      "create:dough"
+    ],
+    "farm_and_charm:dough": [
+      "farmersdelight:wheat_dough",
+      "create:dough"
+    ],
+    "c:dusts/salt": [
+      "meadow:alpine_salt",
+      "hexalia:salt"
+    ],
+    "c:salts": [
+      "expandeddelight:salt",
+      "culturaldelights:salt",
+      "hexalia:salt"
+    ],
+    "c:crops/corn": [
+      "bountifulfares:maize",
+      "brewinandchewin:corn"
+    ],
+    "c:foods/corn": [
+      "culturaldelights:corn_cob",
+      "farm_and_charm:corn",
+      "brewinandchewin:corn"
+    ],
+    "farm_and_charm:corn": [
+      "bountifulfares:maize",
+      "brewinandchewin:corn"
+    ],
+    "c:fruits/lemon": [
+      "bountifulfares:lemon"
+    ],
+    "c:foods/lemons": [
+      "culturaldelights:lemon"
+    ],
+    "c:cheese": [
+      "expandeddelight:cheese_slice",
+      "brewinandchewin:flaxen_cheese_wedge",
+      "brewinandchewin:scarlet_cheese_wedge",
+      "culturaldelights:cheese_wedge"
+    ],
+    "c:foods/cheese": [
+      "meadow:cheese_slice",
+      "brewinandchewin:flaxen_cheese_wedge",
+      "brewinandchewin:scarlet_cheese_wedge",
+      "culturaldelights:cheese_wedge"
+    ],
+    "brewinandchewin:foods/cheese_wedge": [
+      "meadow:cheese_slice",
+      "expandeddelight:cheese_slice"
+    ],
+    "culturaldelights:cheese_wedges": [
+      "meadow:cheese_slice",
+      "expandeddelight:cheese_slice"
+    ],
+    "c:foods/goat_cheese": [
+      "meadow:goat_cheese_slice"
+    ]
+  },
+  "tag_substitutions": {},
+  "item_tag_inheritance_mode": "ALLOW",
+  "item_tag_inheritance": {},
+  "block_tag_inheritance_mode": "ALLOW",
+  "block_tag_inheritance": {},
+  "emi_strict_hiding": true
+}

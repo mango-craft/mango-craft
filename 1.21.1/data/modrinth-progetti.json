@@ -1,0 +1,1479 @@
+[
+ {
+  "project_id": "JyJgaOrk",
+  "slug": "JyJgaOrk",
+  "name": "Scriptor Magicae",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "YhmgMVyu",
+  "slug": "aether",
+  "name": "The Aether",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "JBthPdnp",
+  "slug": "akashic-tome",
+  "name": "Akashic Tome",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "sdaSaQEz",
+  "slug": "almostunified",
+  "name": "AlmostUnified",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fM515JnW",
+  "slug": "ambientsounds",
+  "name": "AmbientSounds",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "bRFWnJ87",
+  "slug": "animal_feeding_trough",
+  "name": "Animal Feeding Trough",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "K5CAV4wi",
+  "slug": "animalpens",
+  "name": "Animal Pens",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "rqFWfVlz",
+  "slug": "apotheosis",
+  "name": "Apotheosis",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "DGaH8Rh0",
+  "slug": "apothic-attributes",
+  "name": "Apothic Attributes (modulo)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "pL8MtgqY",
+  "slug": "apothic-enchanting",
+  "name": "Apothic Enchanting (modulo)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "DfxVkOAO",
+  "slug": "apothic-spawners",
+  "name": "Apothic Spawners (modulo)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "EsAfCjCV",
+  "slug": "appleskin",
+  "name": "AppleSkin",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "lhGA9TYQ",
+  "slug": "architectury-api",
+  "name": "Architectury API",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "gL8ijqNQ",
+  "slug": "ars-controle",
+  "name": "Ars Controle",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fZ324GMc",
+  "slug": "ars-creo",
+  "name": "Ars Creo",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "4rwxHF09",
+  "slug": "ars-mekanica",
+  "name": "Ars Mekanica",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "TKB6INcv",
+  "slug": "ars-nouveau",
+  "name": "Ars Nouveau",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Tsw8vbks",
+  "slug": "ars-ocultas",
+  "name": "Ars Ocultas",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "z9DYuJmJ",
+  "slug": "ars-qol",
+  "name": "Ars QOL",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fRdwEsp6",
+  "slug": "ars-unification",
+  "name": "Ars Unification",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "BwbT0OZE",
+  "slug": "arsdelight",
+  "name": "Ars Delight (Flavors & Delight)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "P0Mu4wcQ",
+  "slug": "artifacts",
+  "name": "Artifacts",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "VIEeuGIh",
+  "slug": "aspect-alchemy",
+  "name": "Aspect Alchemy",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "MBAkmtvl",
+  "slug": "balm",
+  "name": "Balm",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "VsM5EDoI",
+  "slug": "blueprint",
+  "name": "Blueprint",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "uy4Cnpcm",
+  "slug": "bookshelf-lib",
+  "name": "Bookshelf",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "8rGW0cNk",
+  "slug": "born-in-configuration",
+  "name": "Born In Configuration",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "1kcHy4de",
+  "slug": "borninchaos",
+  "name": "Born in Chaos",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "U6BUTZ7K",
+  "slug": "botany-pots",
+  "name": "Botany Pots",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fvMhZPuf",
+  "slug": "botany-pots-tiers",
+  "name": "Botany Pots Tiers",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "mvs7RoIW",
+  "slug": "botany-trees",
+  "name": "Botany Trees",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "YgrSDjlb",
+  "slug": "bountiful-fares",
+  "name": "Bountiful Fares",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "hIu9KJTT",
+  "slug": "brewin-and-chewin",
+  "name": "Brewin' And Chewin'",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "40FYwb4z",
+  "slug": "caelus",
+  "name": "Caelus API",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "joEfVgkn",
+  "slug": "carry-on",
+  "name": "Carry On",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "t1VgucWo",
+  "slug": "chunk-loaders",
+  "name": "Chunk Loaders",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fALzjamp",
+  "slug": "chunky",
+  "name": "Chunky",
+  "kind": "mod",
+  "license": "GPL-3.0-only"
+ },
+ {
+  "project_id": "9s6osm5g",
+  "slug": "cloth-config",
+  "name": "Cloth Config API",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Wnxd13zP",
+  "slug": "clumps",
+  "name": "Clumps",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "2gq0ALnz",
+  "slug": "codechicken-lib",
+  "name": "CodeChicken Lib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "SaCpeal4",
+  "slug": "comforts",
+  "name": "Comforts",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "V7BPfphg",
+  "slug": "compass-to-map-xaeros",
+  "name": "Compass to Map: Xaero's",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ooyjDLZt",
+  "slug": "construction-sticks",
+  "name": "Construction Sticks",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "xv94TkTM",
+  "slug": "controlling",
+  "name": "Controlling",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "YT5K34AB",
+  "slug": "corail-tombstone",
+  "name": "Corail Tombstone",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ziOp6EO8",
+  "slug": "corgilib",
+  "name": "CorgiLib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "DMu0oBKf",
+  "slug": "crafting-tweaks",
+  "name": "Crafting Tweaks",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "LNytGWDc",
+  "slug": "create",
+  "name": "Create",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "btq68HMO",
+  "slug": "create-central-kitchen",
+  "name": "Create: Central Kitchen",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Vg5TIO6d",
+  "slug": "create-connected",
+  "name": "Create: Connected",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "dzb1a5WV",
+  "slug": "create-dragons-plus",
+  "name": "Create: Dragons Plus (dipendenza)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "JWGBpFUP",
+  "slug": "create-enchantment-industry",
+  "name": "Create: Enchantment Industry",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "9k1pAsfR",
+  "slug": "create-integrated-farming",
+  "name": "Create: Integrated Farming",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "kU1G12Nn",
+  "slug": "createaddition",
+  "name": "Create Crafts & Additions",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "OsZiaDHq",
+  "slug": "creativecore",
+  "name": "CreativeCore",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "cl223EMc",
+  "slug": "cristel-lib",
+  "name": "Cristel Lib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "YttyNOFA",
+  "slug": "cultural-delights",
+  "name": "Cultural Delights",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "vvuO3ImH",
+  "slug": "curios",
+  "name": "Curios API",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "z2XEADmE",
+  "slug": "data-anchor",
+  "name": "Data Anchor",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "gcHIih5B",
+  "slug": "deep-aether",
+  "name": "Deep Aether",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fnAffV0n",
+  "slug": "deeperdarker",
+  "name": "Deeper and Darker",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Eqa1BuMT",
+  "slug": "delightful-fares",
+  "name": "Delightful Fares",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "tpehi7ww",
+  "slug": "dungeons-and-taverns",
+  "name": "Dungeons and Taverns",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "L1k78Y2G",
+  "slug": "easy-auto-cycler",
+  "name": "Easy Auto Cycler",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Kaov2qgi",
+  "slug": "easy-villagers",
+  "name": "Easy Villagers",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "HQsBdHGd",
+  "slug": "edf-remastered",
+  "name": "Ender Dragon Fight Remastered",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fRiHVvU7",
+  "slug": "emi",
+  "name": "EMI",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "qbbO7Jns",
+  "slug": "emi-loot",
+  "name": "EMI Loot",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "sG4TqDb8",
+  "slug": "emi-ores",
+  "name": "EMI Ores",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "UVtY3ZAC",
+  "slug": "enchantment-descriptions",
+  "name": "Enchantment Descriptions",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "BbrHg80P",
+  "slug": "ender-storage",
+  "name": "Ender Storage",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "2uEhdGKt",
+  "slug": "enders-delight",
+  "name": "Ender's Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "2rL16t1O",
+  "slug": "enhanced-celestials",
+  "name": "Enhanced Celestials",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "4I1XuqiY",
+  "slug": "entity-model-features",
+  "name": "Entity Model Features (EMF)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "NNAgCjsB",
+  "slug": "entityculling",
+  "name": "Entity Culling",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "BVzZfTc1",
+  "slug": "entitytexturefeatures",
+  "name": "Entity Texture Features (ETF)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "e9V6wFcR",
+  "slug": "expanded-delight",
+  "name": "Expanded Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "RV1qfVQ8",
+  "slug": "explorers-compass",
+  "name": "Explorer's Compass",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Fb4jn8m6",
+  "slug": "fallingtree",
+  "name": "FallingTree",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "R2OftAxM",
+  "slug": "farmers-delight",
+  "name": "Farmer's Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "CxjQ2P6f",
+  "slug": "farmers-delight-extended",
+  "name": "Farmer's Delight: Extended",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "uXXizFIs",
+  "slug": "ferrite-core",
+  "name": "FerriteCore",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Aqlf1Shp",
+  "slug": "forgified-fabric-api",
+  "name": "Forgified Fabric API",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "50dA9Sha",
+  "slug": "fresh-animations",
+  "name": "Fresh Animations (resource pack)",
+  "kind": "resourcepack",
+  "license": null
+ },
+ {
+  "project_id": "BOCJKD49",
+  "slug": "friends-and-foes-forge",
+  "name": "Friends & Foes",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "p19vrgc2",
+  "slug": "fusion-connected-textures",
+  "name": "Fusion (Connected Textures)",
+  "kind": "mod",
+  "license": "LicenseRef-All-Rights-Reserved"
+ },
+ {
+  "project_id": "hYykXjDp",
+  "slug": "fzzy-config",
+  "name": "Fzzy Config",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "8OIeAukW",
+  "slug": "gateways-to-eternity",
+  "name": "Gateways to Eternity",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "8BmcQJ2H",
+  "slug": "geckolib",
+  "name": "Geckolib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "s3dmwKy5",
+  "slug": "glitchcore",
+  "name": "GlitchCore",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "pJmCFF0p",
+  "slug": "handcrafted",
+  "name": "Handcrafted",
+  "kind": "mod",
+  "license": "LicenseRef-Terrarium-Licence"
+ },
+ {
+  "project_id": "bkz5C0dQ",
+  "slug": "hexalia",
+  "name": "Hexalia",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "IQSOHVhI",
+  "slug": "hexerei",
+  "name": "Hexerei",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "jSV9w0J5",
+  "slug": "illager-invasion",
+  "name": "Illager Invasion",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "5ZwdcRci",
+  "slug": "immediatelyfast",
+  "name": "ImmediatelyFast",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Boon8xwi",
+  "slug": "inventory-essentials",
+  "name": "Inventory Essentials",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "nvQzSEkH",
+  "slug": "jade",
+  "name": "Jade",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "IYY9Siz8",
+  "slug": "jamlib",
+  "name": "JamLib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "u6dRKJwZ",
+  "slug": "jei",
+  "name": "JEI",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "kB56GtWA",
+  "slug": "just-enough-professions-jep",
+  "name": "Just Enough Professions (JEP)",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "9Pk89J3g",
+  "slug": "justenoughbreeding",
+  "name": "Just Enough Breeding (JEBr)",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "ufdDoWPd",
+  "slug": "kiwi",
+  "name": "Kiwi 🥝",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ordsPcFz",
+  "slug": "kotlin-for-forge",
+  "name": "Kotlin for Forge",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "46KJle7n",
+  "slug": "l_enders-cataclysm",
+  "name": "L_Ender's Cataclysm",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "a48R8AGk",
+  "slug": "l_enders-cataclysm-delight",
+  "name": "Cataclysm Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "yBW8D80W",
+  "slug": "lambdynamiclights",
+  "name": "LambDynamicLights",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "AVq17PqV",
+  "slug": "leaves-be-gone",
+  "name": "Leaves Be Gone",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "FNi5IMiX",
+  "slug": "lets-do-addon-compat",
+  "name": "Let's Do Addon Compat",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "HJetCzWo",
+  "slug": "lets-do-farm-charm",
+  "name": "[Let's Do] Farm & Charm",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Eh11TaTm",
+  "slug": "lets-do-herbalbrews",
+  "name": "[Let's Do] HerbalBrews",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ra7o6Sl7",
+  "slug": "lets-do-meadow",
+  "name": "[Let's Do] Meadow",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "1DWmBJVA",
+  "slug": "lets-do-vinery",
+  "name": "[Let's Do] Vinery",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "FoVacERa",
+  "slug": "lionfish-api",
+  "name": "Lionfish-API",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "gvQqBUqZ",
+  "slug": "lithium",
+  "name": "Lithium",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "XaDC71GB",
+  "slug": "lithostitched",
+  "name": "Lithostitched",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "Ce6I4WUE",
+  "slug": "mekanism",
+  "name": "Mekanism",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "OFVYKsAk",
+  "slug": "mekanism-generators",
+  "name": "Mekanism Generators",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "yriKr10n",
+  "slug": "mekanism-ponders",
+  "name": "Mekanism: Ponders",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "r4PuRGfV",
+  "slug": "mes-moogs-end-structures",
+  "name": "Moog's End Structures (MES)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "nmDcB62a",
+  "slug": "modernfix",
+  "name": "ModernFix",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "692GClaE",
+  "slug": "modonomicon",
+  "name": "Modonomicon",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "c4Uf1TKc",
+  "slug": "modular-item-api",
+  "name": "Truly Modular: Modular Item API (Miapi)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "1oUDhxuy",
+  "slug": "moogs-structure-lib",
+  "name": "Moog's Structure Lib (moogs_structures)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "twkfQtEc",
+  "slug": "moonlight",
+  "name": "Moonlight Lib",
+  "kind": "mod",
+  "license": "LicenseRef-LGPL-with-additional-dependency-clause"
+ },
+ {
+  "project_id": "aC3cM3Vq",
+  "slug": "mouse-tweaks",
+  "name": "Mouse Tweaks",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "BFbX9xcm",
+  "slug": "mowzies-mobs",
+  "name": "Mowzie's Mobs",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "derP0ten",
+  "slug": "mutant-monsters",
+  "name": "Mutant Monsters",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "nPZr02ET",
+  "slug": "netherportalfix",
+  "name": "NetherPortalFix",
+  "kind": "mod",
+  "license": "LicenseRef-All-Rights-Reserved"
+ },
+ {
+  "project_id": "bgDhVmqz",
+  "slug": "nexuslib",
+  "name": "NexusLib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "MPCX6s5C",
+  "slug": "not-enough-animations",
+  "name": "Not Enough Animations",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "WgAFDDv0",
+  "slug": "not-enough-glyphs",
+  "name": "Not Enough Glyphs",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "PfuNPzWe",
+  "slug": "occult-delight",
+  "name": "Occult Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "sbJh4AZw",
+  "slug": "occultism",
+  "name": "Occultism",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "X6LCQe7U",
+  "slug": "omnitools",
+  "name": "OmniTools (Omni Wrench)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ssyvO6WG",
+  "slug": "open-together",
+  "name": "Open Together",
+  "kind": "mod",
+  "license": "MPL-2.0"
+ },
+ {
+  "project_id": "ccKDOlHs",
+  "slug": "owo-lib",
+  "name": "oωo (owo-lib)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "nrikgvxm",
+  "slug": "particle-rain",
+  "name": "Particle Rain",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "nU0bVIaL",
+  "slug": "patchouli",
+  "name": "Patchouli",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "CU0PAyzb",
+  "slug": "paxi",
+  "name": "Paxi",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ZX66K16c",
+  "slug": "pick-up-notifier",
+  "name": "Pick Up Notifier",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "iRmWy6ga",
+  "slug": "pipez",
+  "name": "Pipez",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "tCkE8p2N",
+  "slug": "placebo",
+  "name": "Placebo",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "tagwiZkJ",
+  "slug": "polymorph",
+  "name": "Polymorph",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "aaRl8GiW",
+  "slug": "prickle",
+  "name": "Prickle",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "pOeA0exL",
+  "slug": "psi",
+  "name": "Psi",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "QAGBst4M",
+  "slug": "puzzles-lib",
+  "name": "Puzzles Lib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "soWqucCB",
+  "slug": "reactive",
+  "name": "Reactive Alchemy",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "B0g2vT6l",
+  "slug": "rechiseled",
+  "name": "Rechiseled",
+  "kind": "mod",
+  "license": "LicenseRef-All-Rights-Reserved"
+ },
+ {
+  "project_id": "Tkikq67H",
+  "slug": "regions-unexplored",
+  "name": "Regions Unexplored",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "M1953qlQ",
+  "slug": "resourceful-config",
+  "name": "Resourceful Config",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "G1hIVOrD",
+  "slug": "resourceful-lib",
+  "name": "Resourceful Lib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Cnejf5xM",
+  "slug": "rightclickharvest",
+  "name": "RightClickHarvest",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fuuu3xnx",
+  "slug": "searchables",
+  "name": "Searchables",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "yFIPn94r",
+  "slug": "seasonal-lets-do",
+  "name": "Seasonal Let's Do",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "VNjUn3NA",
+  "slug": "seasonhud",
+  "name": "SeasonHud",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "e0bNACJD",
+  "slug": "serene-seasons",
+  "name": "Serene Seasons",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "kepjj2sy",
+  "slug": "shoulder-surfing-reloaded",
+  "name": "Shoulder Surfing Reloaded",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fzSKSXVK",
+  "slug": "simple-backups",
+  "name": "Simple Backups",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "GmjmRQ0A",
+  "slug": "slice-and-dice",
+  "name": "Create Slice & Dice",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "PuyPazRT",
+  "slug": "smartbrainlib",
+  "name": "SmartBrainLib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Bh6ZOMvp",
+  "slug": "smarter-farmers-farmers-replant",
+  "name": "Smarter Farmers (farmers replant)",
+  "kind": "mod",
+  "license": "LicenseRef-All-Rights-Reserved"
+ },
+ {
+  "project_id": "iJNje1E8",
+  "slug": "snow-real-magic",
+  "name": "Snow! Real Magic!",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "AANobbMI",
+  "slug": "sodium",
+  "name": "Sodium",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "TyCTlI4b",
+  "slug": "sophisticated-backpacks",
+  "name": "Sophisticated Backpacks",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "s85zLEDe",
+  "slug": "sophisticated-backpacks-create-integration",
+  "name": "Sophisticated Backpacks Create Integration",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "nmoqTijg",
+  "slug": "sophisticated-core",
+  "name": "Sophisticated Core (dipendenza)",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "qyVF9oeo",
+  "slug": "sound-physics-remastered",
+  "name": "Sound Physics Remastered",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "qwvI41y9",
+  "slug": "sparsestructures",
+  "name": "Sparse Structures",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "h2jXvxNR",
+  "slug": "starcatcher",
+  "name": "Starcatcher",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "NCXwQVxD",
+  "slug": "starcatchers-delight",
+  "name": "Starcatcher's Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "guitPqEi",
+  "slug": "storagedrawers",
+  "name": "Storage Drawers",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ayPU0OHc",
+  "slug": "structure-layout-optimizer",
+  "name": "Structure Layout Optimizer",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "4q8UOK1d",
+  "slug": "subtle-effects",
+  "name": "Subtle Effects",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "LN9BxssP",
+  "slug": "supermartijn642s-config-lib",
+  "name": "SuperMartijn642's Config Lib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "rOUBggPv",
+  "slug": "supermartijn642s-core-lib",
+  "name": "SuperMartijn642's Core Lib",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "fFEIiSDQ",
+  "slug": "supplementaries",
+  "name": "Supplementaries",
+  "kind": "mod",
+  "license": "LicenseRef-Supplementaries-Team-License"
+ },
+ {
+  "project_id": "kkmrDlKT",
+  "slug": "terrablender",
+  "name": "TerraBlender",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "XUztKPS9",
+  "slug": "the-aethers-delight",
+  "name": "Aether's Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Ejfl5qDL",
+  "slug": "the-undergarden",
+  "name": "The Undergarden",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "XZNI4Cpy",
+  "slug": "toms-storage",
+  "name": "Tom's Simple Storage",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Tl8ESrhX",
+  "slug": "torchmaster",
+  "name": "Torchmaster",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "DjLobEOy",
+  "slug": "towns-and-towers",
+  "name": "Towns and Towers",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "JtifUr64",
+  "slug": "travelers-titles",
+  "name": "Travelers Titles",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "rlloIFEV",
+  "slug": "travelersbackpack",
+  "name": "Traveler's Backpack",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "RXklwn50",
+  "slug": "truly-modular-archery",
+  "name": "Truly Modular: Archery",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "6mUV27DN",
+  "slug": "truly-modular-armory",
+  "name": "Truly Modular: Armory",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "V4LaId7f",
+  "slug": "truly-modular-arsenal",
+  "name": "Truly Modular: Arsenal",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "d6cSefpO",
+  "slug": "twilight-delight",
+  "name": "Twilight's Flavor & Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "H340jsJv",
+  "slug": "undergarden-delight",
+  "name": "Undergarden Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "BvsO32QY",
+  "slug": "unfocused",
+  "name": "Unfocused",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "WKsNOKFh",
+  "slug": "unusual_end",
+  "name": "Unusual End",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "emQ94xri",
+  "slug": "veggies-delight",
+  "name": "Veggies Delight",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "LOpKHB2A",
+  "slug": "waystones",
+  "name": "Waystones",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "8DfbfASn",
+  "slug": "when-dungeons-arise",
+  "name": "When Dungeons Arise",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "1bokaNcj",
+  "slug": "xaeros-minimap",
+  "name": "Xaero's Minimap",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "7mLhyqIY",
+  "slug": "xaeros-minimap-world-map-waystones-compatibility-forge",
+  "name": "Xaero's Minimap & World Map - Waystones Compatibility",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "NcUtCpym",
+  "slug": "xaeros-world-map",
+  "name": "Xaero's World Map",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "AnpW69o3",
+  "slug": "xp-tome",
+  "name": "XP Tome",
+  "kind": "mod",
+  "license": "MIT"
+ },
+ {
+  "project_id": "Ua7DFN59",
+  "slug": "yungs-api",
+  "name": "YUNG's API",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "XNlO7sBv",
+  "slug": "yungs-better-desert-temples",
+  "name": "YUNG's Better Desert Temples",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "o1C1Dkj5",
+  "slug": "yungs-better-dungeons",
+  "name": "YUNG's Better Dungeons",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "2BwBOmBQ",
+  "slug": "yungs-better-end-island",
+  "name": "YUNG's Better End Island",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "z9Ve58Ih",
+  "slug": "yungs-better-jungle-temples",
+  "name": "YUNG's Better Jungle Temples",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "HjmxVlSr",
+  "slug": "yungs-better-mineshafts",
+  "name": "YUNG's Better Mineshafts",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Z2mXHnxP",
+  "slug": "yungs-better-nether-fortresses",
+  "name": "YUNG's Better Nether Fortresses",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "3dT9sgt4",
+  "slug": "yungs-better-ocean-monuments",
+  "name": "YUNG's Better Ocean Monuments",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "kidLKymU",
+  "slug": "yungs-better-strongholds",
+  "name": "YUNG's Better Strongholds",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "t5FRdP87",
+  "slug": "yungs-better-witch-huts",
+  "name": "YUNG's Better Witch Huts",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Ht4BfYp6",
+  "slug": "yungs-bridges",
+  "name": "YUNG's Bridges",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "ZYgyPyfq",
+  "slug": "yungs-extras",
+  "name": "YUNG's Extras",
+  "kind": "mod",
+  "license": null
+ },
+ {
+  "project_id": "Hcy2DFKF",
+  "slug": "yungs-menu-tweaks",
+  "name": "YUNG's Menu Tweaks",
+  "kind": "mod",
+  "license": null
+ }
+]

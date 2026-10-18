@@ -1,0 +1,69 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "artifacts"
+    }
+  ],
+  "type": "artifacts:roll_loot_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deep_aether:chests/dungeon/brass/brass_dungeon_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mes:mega_ship_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mes:mega_ship_crate"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_castle/vault_galleon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_castle/vault_brigattine"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_castle/vault_slope"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_castle/treasure_lighthouse"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_castle/greater_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_lighthouse/vault_lighthouse"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/ancient_end_city"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "unusualend:chests/flying_ship"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "unusualend:chests/warped_ship"
+        }
+      ]
+    }
+  ],
+  "lootTable": "artifacts:inject/chests/end_city_treasure"
+}

@@ -1,0 +1,13 @@
+name = "Ars QOL"
+filename = "ars_qol-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/z9DYuJmJ/versions/Q8LZvWxc/ars_qol-1.2.1.jar"
+hash-format = "sha512"
+hash = "0e3706208a190543d37d9bfb70edad726295e9d7f3c6f9bf5861751fccf66e1fdd93e19a2f325327b899260c4b5228a36751ce5d3aa76828a7bc35d330fe35cb"
+
+[update]
+[update.modrinth]
+mod-id = "z9DYuJmJ"
+version = "Q8LZvWxc"

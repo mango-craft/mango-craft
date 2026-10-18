@@ -1,0 +1,73 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "ars_nouveau:frostaya_pod",
+        "ars_nouveau:blue_archwood_log"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "ars_nouveau:frostaya_pod",
+  "soil": {
+    "type": "bookshelf:block_tag",
+    "tag": "ars_nouveau:cascading_logs"
+  },
+  "display": {
+    "type": "botanypots:transitional",
+    "phases": [
+      {
+        "type": "botanypots:simple",
+        "block_state": {
+          "block": "ars_nouveau:frostaya_pod",
+          "properties": {
+            "age": "0"
+          }
+        },
+        "options": {
+          "rotation": "X_270",
+          "offset": [
+            0,
+            -0.1,
+            0
+          ]
+        }
+      },
+      {
+        "type": "botanypots:simple",
+        "block_state": {
+          "block": "ars_nouveau:frostaya_pod",
+          "properties": {
+            "age": "1"
+          }
+        },
+        "options": {
+          "rotation": "X_270",
+          "offset": [
+            0,
+            -0.1,
+            0
+          ]
+        }
+      },
+      {
+        "type": "botanypots:simple",
+        "block_state": {
+          "block": "ars_nouveau:frostaya_pod",
+          "properties": {
+            "age": "2"
+          }
+        },
+        "options": {
+          "rotation": "X_270",
+          "offset": [
+            0,
+            -0.1,
+            0
+          ]
+        }
+      }
+    ]
+  }
+}

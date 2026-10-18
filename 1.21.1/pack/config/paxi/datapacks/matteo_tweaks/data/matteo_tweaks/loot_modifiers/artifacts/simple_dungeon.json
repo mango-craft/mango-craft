@@ -1,0 +1,193 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "artifacts"
+    }
+  ],
+  "type": "artifacts:roll_loot_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:skeleton_dungeon/chests/common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:skeleton_dungeon/chests/middle"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/special"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/tombstone"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:spider_dungeon/chests/egg_room"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "twilightforest:hill_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "twilightforest:labyrinth_room"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "twilightforest:stronghold_cache"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deep_aether:chests/dungeon/brass/brass_dungeon_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:chests/catacombs"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:chests/abandoned"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_house/mushroom_house_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_village/mushroom_village_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/small_blimp/small_blimp_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/lighthouse/lighthouse_top"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/giant_mushroom/red_giant_mushroom"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/giant_mushroom/twin_giant_mushroom"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mines_treasure_small"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/temple_treasure_small"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_6"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_7"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_grave"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/undead_crypts_grave"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/shrine/combat_treasure_5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_6"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_7"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/end_house_library"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "unusualend:chests/wandering_house"
+        }
+      ]
+    }
+  ],
+  "lootTable": "artifacts:inject/chests/simple_dungeon"
+}

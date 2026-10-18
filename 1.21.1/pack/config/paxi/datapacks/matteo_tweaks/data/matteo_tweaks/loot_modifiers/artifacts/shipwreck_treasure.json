@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "artifacts"
+    }
+  ],
+  "type": "artifacts:roll_loot_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure"
+    }
+  ],
+  "lootTable": "artifacts:inject/chests/shipwreck_treasure"
+}

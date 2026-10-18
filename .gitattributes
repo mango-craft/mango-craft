@@ -1,0 +1,5 @@
+# I file del pack sono verificati con hash: niente conversioni di fine riga
+1.21.1/pack/** -text
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf

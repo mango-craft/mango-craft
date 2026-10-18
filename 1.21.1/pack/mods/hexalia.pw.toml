@@ -1,0 +1,13 @@
+name = "Hexalia"
+filename = "hexalia-neoforge-1.3.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/bkz5C0dQ/versions/wOxPMEyl/hexalia-neoforge-1.3.6.jar"
+hash-format = "sha512"
+hash = "37859df25faf7905477fdc8031985e9761e57106a14d58ebc410a9da1e9d92e806b2d147463e67d727ade5a1fcc563b14eadb6bd3a9243d21ecd49151e683581"
+
+[update]
+[update.modrinth]
+mod-id = "bkz5C0dQ"
+version = "wOxPMEyl"

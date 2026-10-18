@@ -1,0 +1,1123 @@
+hash-format = "sha256"
+
+[[files]]
+file = "config/almostunified/tags.json"
+hash = "8eef0da096300652e97f70110ea78f45c7fa3e7556352ab29b088bb7a4164a2d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/README.md"
+hash = "8acbf2a253cac109ffd49a62a0737a401271d83a2a038268b3c5086c8c977c47"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/blood_moon.json"
+hash = "35bafcb287f69a8d54ae4c0eb0b355c06df1b8eab2fab2a55379d42732ed0307"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/readme.md"
+hash = "2e34735d00e8d3ef41bf2d126ab6fd77d67d6e72791a05dc9dba68fb99824655"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/super_blood_moon.json"
+hash = "4cda6adbe44c982250182ba15c29192bba737c450c9ce18f81ea554ebe06c6ba"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
+hash = "d3b005a7db3f7384aa186431c8e9df1e0c1cc2cb7e57f7d78420d47499c3acf9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ancient_city.json"
+hash = "a7e10028a0590a0c9623d85088df6ec55d265b3d43a4e3dfcca8692eb9349fc6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/bastion_treasure.json"
+hash = "40cccdb81940224cec0a7613ac3832e9939abe5a442792b8ad0418bdd16be0e4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/desert_pyramid.json"
+hash = "5e0518d9d4b4fc3705a033f6f2de610216a6e96df7cfc4b2dd1ab7d509fa3ec1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/end_city_treasure.json"
+hash = "9436b611cc784ebf427d11ebe549a1395ad2e054de20bb3ee762194badae1e89"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/igloo_chest.json"
+hash = "cbdecbf3cdb8becd8a0f092935766ac65de244dd2cb502d6aebb1ba3b3d2c52d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/jungle_temple.json"
+hash = "7efab5065033c65d253d0bd12fbf6f5f49ccda4c5d9e8918879e33e421473a4c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/nether_bridge.json"
+hash = "49f6ba41c98b4f6497f1ee83c2a975963e96843ada5c7740112889f4b287b684"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json"
+hash = "e66c40c3480bda8c7772ee0ce9b9052f741ede0d331473b69f888fc2418747a4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/readme.md"
+hash = "35f78f97d8329bcc0666b1fc39da81fa966b15c98f92874674141e077e6b4dfa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ruined_portal.json"
+hash = "dd6aa77e3f9debceb72718602f50b1f0376cdf3eb38d06895af2abe2c9eb2b49"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/shipwreck_treasure.json"
+hash = "4d47796a2e14538e764d8c1cfee279850fcc20d82a3d4beb36606cda94ee1a59"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json"
+hash = "eda2e51abaf5bc9c012d78ab8abc6c88fcaeacd1fba448e9afc8632a3773cc0c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/stronghold_corridor.json"
+hash = "2861a325780e00d673dc540615f82a9568bf1114b6477bf04c5a75ece3a54e56"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/underwater_ruin_big.json"
+hash = "b08265c770f02587b5e82b75d4797c035943a3bf77bfbd5fb2fc1e0da137f1cd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/woodland_mansion.json"
+hash = "e1f30c9a4a36f58865e9a2ea3ad34ce33c059f43399d5d5cb1ebc1ec9bc6af9c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/ars_magebloom.json"
+hash = "4840eb0432855418dd3a6033de975ff60be199503b9421969b66af3ccb6869f5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/ars_sourceberry.json"
+hash = "3f049d9cf9ec8bfc4a1cb922c88944468b775f40016d8b14a55ab31bd2a41b9c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/bastion_pod.json"
+hash = "0de5a5e1cd3db89c021d61a4475726fc923ebfe01eeae00cd757383ab8e0fa2b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/bombegranate_pod.json"
+hash = "fa1c3f71161abb33db94ae6e99bfcc9d8b374e6e934cc974e6cb0f1311a57e60"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/flashpine_pod.json"
+hash = "dd419b613a2a7e2219017fc9d15915bcf9b8f4f01498ded48678fc523ede7d0d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/frostaya_pod.json"
+hash = "5740c36507403e1ae5b3cf780eb85c38335580348bfe75ac9959a6a28fa657d3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/mendosteen_pod.json"
+hash = "5810be2b136d682bb8fbc83681e5e803b48a20bfe105632005a616b6cbcd3f6b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/readme.md"
+hash = "9d07c02185222f792e776ba3e07451085e72933d3289ff346c58b01011a0896f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/soil/blue_archwood_log.json"
+hash = "ef1cb23f6b86f7c9ee1124674786a92c08ff262f21f467df8149244059c62cfa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/soil/green_archwood_log.json"
+hash = "241430582d38980efdb13c9f991cc61873409cf7706f8b5fa40ec197620a6628"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/soil/purple_archwood_log.json"
+hash = "032b9cf7ad938028c6ed61214fe5fe29a11d472643a7f97ccdd1cc910712ef58"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/soil/red_archwood_log.json"
+hash = "be3b3167cb21bb9e61a7d854fe6fb60d398d4349411129e237ac7201436283be"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/soil/yellow_archwood_log.json"
+hash = "d5d0f7ce81d6651bbc7262645a6c1361fb6d1068298c52e6df0e6ad1274fea50"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/neoforge/loot_modifiers/global_loot_modifiers.json"
+hash = "d9688413aacb19f3ae56257fffe3dec7eaa4ddf435b849e44bb08facd38728fc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/neoforge/loot_modifiers/readme.md"
+hash = "ba89dee89777fe240c0692b29a378f11973d2d1998a8eb88d88c524809f6e7e1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/pack.mcmeta"
+hash = "c304d8bebeffc0ed106ba3077c25d26edfdfe7c2b655d2a359efee119a664618"
+
+[[files]]
+file = "config/sparsestructures.json5"
+hash = "e10e7c99ed29ba650c4c7592981251f3e34a2c0a6b78ad6d8c2ec649ab3be037"
+
+[[files]]
+file = "mods/aether.pw.toml"
+hash = "cc3f6e6e8f1838d16e47cce9241e32176279673efb1438ff4451ccffa9579b14"
+metafile = true
+
+[[files]]
+file = "mods/akashic-tome.pw.toml"
+hash = "18a5b572a9afdb84b24f5c58c4a53022158f8db746dde95531b780d4713f3fc8"
+metafile = true
+
+[[files]]
+file = "mods/almostunified.pw.toml"
+hash = "f4d91099373f81e4f2768ded60f39af6b2108a6a2373c7c0c72838bcf1945ba1"
+metafile = true
+
+[[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "e3f0ab1cd7a6bf2748bad59ffa2dabeb4484db6159fb0c653d43b9769e1715d0"
+metafile = true
+
+[[files]]
+file = "mods/animal_feeding_trough.pw.toml"
+hash = "fe3f752f78cd25803f7013c94bb602567bf242be165462f2287b430d457a144e"
+metafile = true
+
+[[files]]
+file = "mods/animalpens.pw.toml"
+hash = "b581e90d0594e380906362048f1f5d78339fb32bd6bed151e63f05055bade594"
+metafile = true
+
+[[files]]
+file = "mods/apotheosis.pw.toml"
+hash = "e154d7fb16dc7eb6ace7b88b3896955bb66f58c2daafe93c7ae3327ee418a509"
+metafile = true
+
+[[files]]
+file = "mods/apothic-attributes.pw.toml"
+hash = "d483ad52c1861ce7c87cdc8955e744d56e6bcdae6d83403fb11cf1c5790e73d3"
+metafile = true
+
+[[files]]
+file = "mods/apothic-enchanting.pw.toml"
+hash = "05aeed95161e091221f4f66798065b117b79815ea411a73f2fc779528f713a4e"
+metafile = true
+
+[[files]]
+file = "mods/apothic-spawners.pw.toml"
+hash = "6cca07449bef859903a793f01fbef34f6cc557c194fae82eb8c55537e19aa593"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "716d930feff599bf9ce732e05979fbae8025dc8a3c13ccf4f1cb207a70883bc6"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "187eafde5974beee1263538b462b7b8fe2fc8948c5d413980d9796d55928580b"
+metafile = true
+
+[[files]]
+file = "mods/ars-controle.pw.toml"
+hash = "1dc7877ebc378ee58a9286a4da56e10060f34113d3a5f40e56cbed779b31ac49"
+metafile = true
+
+[[files]]
+file = "mods/ars-creo.pw.toml"
+hash = "e735b472ad5c38359636d5abb84ed1baeb461f72aa19c324c349543823a16188"
+metafile = true
+
+[[files]]
+file = "mods/ars-mekanica.pw.toml"
+hash = "abbae6d7c5c5d62e20407ae4686900967528fb58e28c75989deee851c81d8a2b"
+metafile = true
+
+[[files]]
+file = "mods/ars-nouveau.pw.toml"
+hash = "9645a2d42361e38b0747c43f5e82a7f74cd4f06940cad02d6591e7c81835f733"
+metafile = true
+
+[[files]]
+file = "mods/ars-ocultas.pw.toml"
+hash = "79b83cf9e61a927c48df33564bcf46f6e4ca861aa79249d2d6d87a99df09a96d"
+metafile = true
+
+[[files]]
+file = "mods/ars-qol.pw.toml"
+hash = "7c09b9aca106772918c8ee7194fd5e5911712a560f5e34078e9f41864ef9d6ba"
+metafile = true
+
+[[files]]
+file = "mods/ars-unification.pw.toml"
+hash = "5ef7fc2128f00ff8bed97f0d4544688aca6e63d9a26915f41d7e6c953d83560d"
+metafile = true
+
+[[files]]
+file = "mods/arsdelight.pw.toml"
+hash = "41ce11d4c91ed76dc86cb7ca22a35770c5c8612e047153a58361585edb552d07"
+metafile = true
+
+[[files]]
+file = "mods/artifacts.pw.toml"
+hash = "416b7f130791397fb2ceb9e89ce3fd0e870f207c8e40b759c069cb58b7544314"
+metafile = true
+
+[[files]]
+file = "mods/aspect-alchemy.pw.toml"
+hash = "b30d3ad731faacfcb497c978c45003617155e658a62d8ae0914420e6efd474cd"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "603cdc47142b5aa5729cbbf265a473574c9e2b55561de4318e9842d3d4b3b995"
+metafile = true
+
+[[files]]
+file = "mods/blueprint.pw.toml"
+hash = "932b1f0df544525e277b4f75fc47dc9c01d0481d773f026082f1cae5c4afdb69"
+metafile = true
+
+[[files]]
+file = "mods/bookshelf-lib.pw.toml"
+hash = "68d6016fa3707c434b3aca5db041c7518c70feb53d0183faa2502cc6efd4c827"
+metafile = true
+
+[[files]]
+file = "mods/born-in-configuration.pw.toml"
+hash = "841baeb60fca38ba4662b710d6dd0c96cbf7e04c767a797eff85e5b884e68932"
+metafile = true
+
+[[files]]
+file = "mods/borninchaos.pw.toml"
+hash = "a2c8cf1a4fc5faed55ca1f8d04f7abaa1c8282b9bcd70e1b3e607181923f48d9"
+metafile = true
+
+[[files]]
+file = "mods/botany-pots-tiers.pw.toml"
+hash = "8e758ed38737dd631d0b82306d0c29c534ae9cc5e1afb865f30e7bc875ed5b20"
+metafile = true
+
+[[files]]
+file = "mods/botany-pots.pw.toml"
+hash = "da045434a9f317ecfef588e409566b6679c76eed01ddc3a0652edce203113a68"
+metafile = true
+
+[[files]]
+file = "mods/botany-trees.pw.toml"
+hash = "75ee5511e4bb37c0f13486e2a550bea43dcf630f38201b4c61a1ae284cbccf94"
+metafile = true
+
+[[files]]
+file = "mods/bountiful-fares.pw.toml"
+hash = "1729e66b017fa0a828fe370f57c9069277e2abebc17573763cdbdf3cacbbd060"
+metafile = true
+
+[[files]]
+file = "mods/brewin-and-chewin.pw.toml"
+hash = "22d9510588b081cf9905f6549d24bc11012aa8d9c7d38a8619ab9db5ccb7b9a8"
+metafile = true
+
+[[files]]
+file = "mods/caelus.pw.toml"
+hash = "992b0dca9683f225fc774d779762d18a009f2d82b9d051e7c0b55a33a95d9238"
+metafile = true
+
+[[files]]
+file = "mods/carry-on.pw.toml"
+hash = "838dbcb90c93bab58691e82c95045bd97c3e096e3a2680a00cf063e56ce35ce3"
+metafile = true
+
+[[files]]
+file = "mods/chunk-loaders.pw.toml"
+hash = "55bca8c3d631e8c7801081d6d2b00c23cb59a3c17bc7c6b03032aef421ab2c6c"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
+metafile = true
+
+[[files]]
+file = "mods/codechicken-lib.pw.toml"
+hash = "1e1678b169096708fcb92496f251260471221554f70ca0dab1b99f2a6b72ea7b"
+metafile = true
+
+[[files]]
+file = "mods/comforts.pw.toml"
+hash = "36f2f6e74b7dbeccb504572d47006582207544fa234a095093b97adfc7ecd5ac"
+metafile = true
+
+[[files]]
+file = "mods/compass-to-map-xaeros.pw.toml"
+hash = "a922a6d70ea5474260e2f13d675269d9f7d2d7f19f3dc8c05342139650c530c0"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "4c0943468e816c02ad58398d600e6c5c413d3a3e0495d3245cd77c4066a14e77"
+metafile = true
+
+[[files]]
+file = "mods/corail-tombstone.pw.toml"
+hash = "7b4e74ebfc923568149d8a27a90217788713f184af1333d2f93708dfbab83dfd"
+metafile = true
+
+[[files]]
+file = "mods/corgilib.pw.toml"
+hash = "2b8c5286980b8d864085d02a6b2153cefa401a965833139ffac8e7661a322f7c"
+metafile = true
+
+[[files]]
+file = "mods/crafting-tweaks.pw.toml"
+hash = "b63999aa63a273098f42e22d8d5018c8617b8e2babdffc752d9aad3eefaaa76d"
+metafile = true
+
+[[files]]
+file = "mods/create-central-kitchen.pw.toml"
+hash = "3752b1dcdfebbb1e79c97c847095153155d64636576a9c0ac11ffa6506c62922"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
+metafile = true
+
+[[files]]
+file = "mods/create-dragons-plus.pw.toml"
+hash = "7a21d33f33e41816d5a883ec85c40fdcce458c2cd63875ac091b93fba21482f6"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "9632e3a695f69473d879e285e46007fd5037cb5abc8db02a8bec79689864d0fc"
+metafile = true
+
+[[files]]
+file = "mods/create-integrated-farming.pw.toml"
+hash = "205ac4987dcaf6aa6a099c9dbcb97f9aea85b2f9b2f5953fc88c83d92afd90b5"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+hash = "350357b34feae2f0971d114ba856e4915e508efec110eea5ebdeac419d515e08"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "63d1560de24b53cad7052d19c1a44b4eab64ad9f696d01c9f2a72fccd5540557"
+metafile = true
+
+[[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "08a334ae5565e122d26b819cba16ce784776a10fe100ab2b22de72a5a2bac653"
+metafile = true
+
+[[files]]
+file = "mods/cultural-delights.pw.toml"
+hash = "11907a2260c038c488e0a82bd4035dd83131a8c95b9492cdffc440e2ecc5cb88"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+metafile = true
+
+[[files]]
+file = "mods/data-anchor.pw.toml"
+hash = "b1ec14892ade3126c6238f82a2adbd9154e8cb68891e3f41d61746c08aea07ab"
+metafile = true
+
+[[files]]
+file = "mods/deep-aether.pw.toml"
+hash = "e3211d7d54a7203a183ed3b453be5dd52d27f389dbef26dd7e769f20e1dea81f"
+metafile = true
+
+[[files]]
+file = "mods/deeperdarker.pw.toml"
+hash = "a9ecc4476d26e707189e9f988c19f22961c33dfd5e5b4db1dfd6f87c6a81c545"
+metafile = true
+
+[[files]]
+file = "mods/delightful-fares.pw.toml"
+hash = "38de52b14590ec04ebc792aead2d8260215aa971907670ef7b82ae9b58cb9222"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "b9244dca740d333c22f3425991fdd2fd40d3ae12384079a40a6fb7d4bca18a18"
+metafile = true
+
+[[files]]
+file = "mods/easy-auto-cycler.pw.toml"
+hash = "431681aa62131c293aedb95056dd6638cf8115e99c717a2194735e7c9f3cb121"
+metafile = true
+
+[[files]]
+file = "mods/easy-villagers.pw.toml"
+hash = "518331758be3b6bfac68239cfc26cdfbabd230cf068c241b745ee6ec08a67275"
+metafile = true
+
+[[files]]
+file = "mods/edf-remastered.pw.toml"
+hash = "aa893b812f2075ff2bf084ddb869f9355313b9d763fb679aca86ceff835d5d58"
+metafile = true
+
+[[files]]
+file = "mods/emi-loot.pw.toml"
+hash = "519f011d36736129795025f19301ad2d6141f422857d6154a3df2e2019f416f3"
+metafile = true
+
+[[files]]
+file = "mods/emi-ores.pw.toml"
+hash = "f2cbcb3d01017133313e1594cb89f052923592b7fa0c78eb9b6d09fb6e03bfb5"
+metafile = true
+
+[[files]]
+file = "mods/emi.pw.toml"
+hash = "67bb77eae0b644960be3b1074178ceb5d54facbb42f326981b9d94625238a54a"
+metafile = true
+
+[[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "88b9e727611f06350c407aeb4ccb41207b5058fef127abe0ff24c13505618aaf"
+metafile = true
+
+[[files]]
+file = "mods/ender-storage.pw.toml"
+hash = "302bd3b2339329f655f6bd46c3fe198a3bdd2eff755f9b64b2c1ebc10d3399c0"
+metafile = true
+
+[[files]]
+file = "mods/enders-delight.pw.toml"
+hash = "bfacd9df75ed4c19ba58ed123f6a9dab58ab6e4b66d412c019db1d7e3bf73e78"
+metafile = true
+
+[[files]]
+file = "mods/enhanced-celestials.pw.toml"
+hash = "e50f87650e3a5becf3cd1772e8053a8bc04c48859a6fa814e75e6c71eaa87e6c"
+metafile = true
+
+[[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "fa20fb7362040ed5528555ee03cb97e4597c1229bdbb0e67fa1adb4e34ce67c8"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "a5e7cfae33adff82f697cdea99a05e68ee45f90bad0770c9763cbd964664c540"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+hash = "fd5556ce707ddde43cb61330a444e7bca4af64504548e0dca770431d0bd0da8e"
+metafile = true
+
+[[files]]
+file = "mods/expanded-delight.pw.toml"
+hash = "e0ad7cb6cf33d7958b7c9b7af321807190adf45ada89d65892fe2d437fe3024d"
+metafile = true
+
+[[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "0670ca65c7208aa8211883fae30c935f53cad38196aac46723b10e7bbc695113"
+metafile = true
+
+[[files]]
+file = "mods/fallingtree.pw.toml"
+hash = "7d61ad815f97afb27f7e97475e80376aa19fecf25a1b04a500a4c3a6e5055973"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight-extended.pw.toml"
+hash = "e01930025d424c64e87372dc3e0c0caaa1c238d23521f32adea8b3c21c8dcd65"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "97347efd9e808841d72fe3599da8a11add8422e97f89ae1c85cdfc0acfa18f96"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
+metafile = true
+
+[[files]]
+file = "mods/forgified-fabric-api.pw.toml"
+hash = "c490f7b680875f034af39a1556911d6edb1dcdd76a114ee6a4eca0f158cd92b2"
+metafile = true
+
+[[files]]
+file = "mods/friends-and-foes-forge.pw.toml"
+hash = "ef02ac9f94868b5c1093b044f1d33ad944cc252e674b20c77ddbb4155566dd1f"
+metafile = true
+
+[[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "932c65fb598293dba5dc60a76fc64c2579db427018b10dd4757dd421d9abcaf0"
+metafile = true
+
+[[files]]
+file = "mods/gateways-to-eternity.pw.toml"
+hash = "677912b683eeda568c6e81d235c2411461c1d212608b5440a79d5abbd2c5fc1d"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "35779b39ddc06059ec483b33de2ecfdc3adb95c0a49e69b6701fb0024827e2f5"
+metafile = true
+
+[[files]]
+file = "mods/glitchcore.pw.toml"
+hash = "e53646f88aeb6bd54c38db50da972abdac91e83c145a8f974107b0ca103b15bc"
+metafile = true
+
+[[files]]
+file = "mods/hexalia.pw.toml"
+hash = "909aac71847660f6cc2c412cd9e8f9376825a81e62015bdd61aa2917dd9027e1"
+metafile = true
+
+[[files]]
+file = "mods/hexerei.pw.toml"
+hash = "bd496127dfae8939188c1eb6d6e77930a2f89514308169abed5d27a7b3199ac2"
+metafile = true
+
+[[files]]
+file = "mods/illager-invasion.pw.toml"
+hash = "bf9baef8bb1145e580ae8ee57b285e22838e943c56a96ffb424fd02bf99c468e"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "464c88d7178d0eea30173c28c17ebc4d92736b89d200c0914303edf2dae36111"
+metafile = true
+
+[[files]]
+file = "mods/inventory-essentials.pw.toml"
+hash = "904d4d9bdabf6a6cbedab254debd43ccecc2986304fddfc26ff9031752ce1a39"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "ec5edbfa0d746a80dfc864b53a6ce5ba6ce3c233a6f0d0aeedba5cd57099ffd3"
+metafile = true
+
+[[files]]
+file = "mods/jamlib.pw.toml"
+hash = "750f4b552490779af147a9c70a558ab2aa1cbfd8331d5ad69efefa099854dfae"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "9884852226748f70fe3a0b6c95ce8cc0f7cf05c5e0adf344ee3b68aecdcf15a8"
+metafile = true
+
+[[files]]
+file = "mods/kiwi.pw.toml"
+hash = "84f4b09b7ef3ef75478cfa6d126951958444d612375c99b1c4e7e6bdbef28c1c"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
+metafile = true
+
+[[files]]
+file = "mods/l_enders-cataclysm-delight.pw.toml"
+hash = "c11a867bc87079c1930305283ed340aedb6f5efe659cf06793cafdb1d82b5d75"
+metafile = true
+
+[[files]]
+file = "mods/l_enders-cataclysm.pw.toml"
+hash = "f262b49b1038ef9f67704e0629da6aafa84cf4f760273589f5d73530ca5d74b5"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "002e7aa7107f675e1dfd9215d6eb85e74e11595b9bb42b03b1cf388aed3769c8"
+metafile = true
+
+[[files]]
+file = "mods/leaves-be-gone.pw.toml"
+hash = "583a335211bc3a21bb379394344b67d64bffea421e7f7942c254903e1d607814"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-addon-compat.pw.toml"
+hash = "52bd5c1d3911e95d2a8112dae72161f15b91c362957c26365b552c77cca947ab"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-farm-charm.pw.toml"
+hash = "1bca5b3f3aa3961a756bebec6a7813020924fe4cc0edc5126d323189b823b37a"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-herbalbrews.pw.toml"
+hash = "4b9615192f59c2c77291e11c1fba829d94866758816424c8c3ac072d89c875bc"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-meadow.pw.toml"
+hash = "63a69b848a563a03c9f773a0d742b258e35f93a0568a5da44d53292fd3013da4"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-vinery.pw.toml"
+hash = "e3a930cbb3af5418152f2146a64a4ef2137796a7676c0bf100aed96ffd2f1ed8"
+metafile = true
+
+[[files]]
+file = "mods/lionfish-api.pw.toml"
+hash = "64acab1580ca6edd8b1dd185e914aeee7aa551a88a7cd7f0f9370a82aaadfef6"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "51e129832b04acd57da470fc41725bad5e101b6a6b1d4901fd8ea7a92b14e13d"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-generators.pw.toml"
+hash = "0ec2ceb5602df266d2e07bdc0bc409cdd3d325a6b5136554787779cdf8057a27"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-ponders.pw.toml"
+hash = "21ad99c8977e8ce8268c927c58a6a01408c5c0fdacee7d73882419ee9815d8cf"
+metafile = true
+
+[[files]]
+file = "mods/mekanism.pw.toml"
+hash = "42061fd570a0b7a8063c0860056c6391593190caa0f12d3b49105e52a56817fe"
+metafile = true
+
+[[files]]
+file = "mods/mes-moogs-end-structures.pw.toml"
+hash = "f1e76e782be5713a3286b6f1a118d751528420c0a58a11b5035e6dabcb3cf13c"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "d10fbef1555f5277563b9cbf7683811ac0f38c1af41646e6ce5c3aaa2149425d"
+metafile = true
+
+[[files]]
+file = "mods/modonomicon.pw.toml"
+hash = "d743823561a2b3008876af95193e8521e2d6239bd9e8d9bc13db62441cc879ee"
+metafile = true
+
+[[files]]
+file = "mods/modular-item-api.pw.toml"
+hash = "f24951e9382572f712494ad07c9e5f8c2c2172471b55f3bf1e4c228fe627d195"
+metafile = true
+
+[[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "33c7a103640b0dc7b34e8b90d760b9cdde47c280df9762535b3aca2606e85a3c"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "bf8fe95846cd7a26b1e90c703abaa3963a122a938b5ed1710df1929a792054c9"
+metafile = true
+
+[[files]]
+file = "mods/mowzies-mobs.pw.toml"
+hash = "02aa4dcb8fa24cffcd2182c66683c2a476a95abf53002373f953a49737a587e3"
+metafile = true
+
+[[files]]
+file = "mods/mutant-monsters.pw.toml"
+hash = "e672245ac368cb42b521a0be668fed61a5b5129d25eec7b8db7722e8f49e2292"
+metafile = true
+
+[[files]]
+file = "mods/nexuslib.pw.toml"
+hash = "326d6aa0912804399801330217cb1daaf568a274af6ff53e6a17e5de0f6a5393"
+metafile = true
+
+[[files]]
+file = "mods/not-enough-animations.pw.toml"
+hash = "5843da23b924a18f48f5d1d234580d49645833b76e3762e9aafc4355620b0809"
+metafile = true
+
+[[files]]
+file = "mods/not-enough-glyphs.pw.toml"
+hash = "70bfb904ce4f816c1111e42640c877400a8e15e6e4d15fa06d8ba4c1856f4214"
+metafile = true
+
+[[files]]
+file = "mods/occult-delight.pw.toml"
+hash = "fac82da88649df9672e890a17661af61a5ed16a594be52904a5592b0d1168830"
+metafile = true
+
+[[files]]
+file = "mods/occultism.pw.toml"
+hash = "dc991b1a6f7b3d7fc0494392ee9b4f472859497f5cb894b4deda41b8196d862e"
+metafile = true
+
+[[files]]
+file = "mods/omnitools.pw.toml"
+hash = "c1b4288341306dfffba9ee9fa8f22c4f15068c9605c1464b89fe60aaef73fb96"
+metafile = true
+
+[[files]]
+file = "mods/owo-lib.pw.toml"
+hash = "46831c04077a06df823bcd0f254833a90a9a9ccc78f5069f4b4c27fa301ac0cf"
+metafile = true
+
+[[files]]
+file = "mods/particle-rain.pw.toml"
+hash = "e78fdb25d968ea0b97019ed5265a7d667f779de4b70708ff844acb3982709de4"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+hash = "d7f360ebb9f009d6dc0b368cd8fa399bdff70c0f6ef931687b2a35137f72715d"
+metafile = true
+
+[[files]]
+file = "mods/paxi.pw.toml"
+hash = "215d597764d5c5db89e700fc3495b72dc0a7f09c975de19dc8c580bde3469a5e"
+metafile = true
+
+[[files]]
+file = "mods/pick-up-notifier.pw.toml"
+hash = "49c0bacf8e4cb3ade6c384ad379282f92d7fa3075f2affd8e3093feb685288dd"
+metafile = true
+
+[[files]]
+file = "mods/pipez.pw.toml"
+hash = "03c2188c7c5aa4407964fd3bb20074b52eb2adf8897c3a22897cc037446450ce"
+metafile = true
+
+[[files]]
+file = "mods/placebo.pw.toml"
+hash = "d94791108548d174758d587440c656f1a56884083fa3151bf90b515126482435"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+hash = "152769b5dfbb92a836634e315898b23b6a555c60b6f05ddf38c00085f2b784f6"
+metafile = true
+
+[[files]]
+file = "mods/prickle.pw.toml"
+hash = "c99c5bac469e8d6ece5aae80f08635e3bbb8367f0c586b6288573c725faefe69"
+metafile = true
+
+[[files]]
+file = "mods/psi.pw.toml"
+hash = "40c7f3e1346a776603fc6fc510709fc445a6084fc30c6817f64dd1a24651e7d8"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "0a04f1d0b86262c6dfdbd14e0493d7f4786f24054a95a07ff7b41a7870bb258d"
+metafile = true
+
+[[files]]
+file = "mods/reactive.pw.toml"
+hash = "d9e4440767272a50db1e598b7777e4512960396d8a1b4fb8e658ca8578c52214"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-config.pw.toml"
+hash = "27721caca5a03b743bf25888e1d984142948069dace31453f103f94f7f24d2ce"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
+metafile = true
+
+[[files]]
+file = "mods/rightclickharvest.pw.toml"
+hash = "9c0d37bfbfdda77af1946da1d80aa48e7dfea9611c43d5c81c70676b1d854af6"
+metafile = true
+
+[[files]]
+file = "mods/scriptor-magicae.pw.toml"
+hash = "0f94b0bba36fac7cead9adeed766d34ceeafc16a6401d664fb3fb827084bd0e1"
+metafile = true
+
+[[files]]
+file = "mods/searchables.pw.toml"
+hash = "b62e1a32d2d6a18ea848f58d629f9caf5565a90495de33cdfbebd041c735c07b"
+metafile = true
+
+[[files]]
+file = "mods/seasonal-lets-do.pw.toml"
+hash = "00395cb1d58a0532352b8741ec7da6c631cebd509cd8498820e4dee16be4800a"
+metafile = true
+
+[[files]]
+file = "mods/serene-seasons.pw.toml"
+hash = "bcaac076ac981463ee57b7469430e5fb7ff99f8e2387681e7ac737ca5d22596b"
+metafile = true
+
+[[files]]
+file = "mods/shoulder-surfing-reloaded.pw.toml"
+hash = "86b06046bd0a59c56f5d7ad6215c7f4aa31af6e040bd560be81a9a3517883766"
+metafile = true
+
+[[files]]
+file = "mods/simple-backups.pw.toml"
+hash = "95852dac201a784091aaccc2249151b527a418935e78b8cafd276384eea532d5"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "3c24accda8011a6a5e04c49c40e39617bb04ab3a549d8f2e8180d3246fddac39"
+metafile = true
+
+[[files]]
+file = "mods/smartbrainlib.pw.toml"
+hash = "6e7ce9c2aee5bb72d2698eb89035c9b2458d20daa0782e1a03cfba7a6647621e"
+metafile = true
+
+[[files]]
+file = "mods/snow-real-magic.pw.toml"
+hash = "07bed4c2085e9ca94604f869afd8a72c37d7f271ee657d75a5e5a0132e8e9f73"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "fffa5536cc4adc3e9d9d6c5e85c0af62c230eb5b4df22ac693c5e6fb839e289e"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks-create-integration.pw.toml"
+hash = "05073e7d5e3cea5a877954557f3efe77ac8a691ab8dd093a3bdd3458873e3ea8"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "cf899b372caf49c623f31d0ee62be4ca08b44e12f05a643fc7b84608b8dcb40a"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "e0233d3a19cc646be4234314a09a2c7ca4dcf30cee832c0376e86a583245e807"
+metafile = true
+
+[[files]]
+file = "mods/sound-physics-remastered.pw.toml"
+hash = "258a77de0a6db4c9ab045cbb240bcf4eac0dbbca3f6bc981fb461e55c247f23f"
+metafile = true
+
+[[files]]
+file = "mods/sparsestructures.pw.toml"
+hash = "993b4e4970e1a5ef2fe7c6712212f57a84dcf8b31d4b6863540b6395c4f9ce09"
+metafile = true
+
+[[files]]
+file = "mods/starcatcher.pw.toml"
+hash = "120f95b3402384aa261382f2c4f624342a790f37c94238f06d546f819e2123fd"
+metafile = true
+
+[[files]]
+file = "mods/starcatchers-delight.pw.toml"
+hash = "4cbddc8a51fda8d7b93ca0200ab881bd3ffc623e953458d13102865a2b00c194"
+metafile = true
+
+[[files]]
+file = "mods/storagedrawers.pw.toml"
+hash = "1d277d4c4d8f3abc49176d3b029584b70d92dcb9b89cf2cf6094e674fe9885c8"
+metafile = true
+
+[[files]]
+file = "mods/structure-layout-optimizer.pw.toml"
+hash = "20d767f7f803fd43e7b539046878bf97a27458595a1beff0b28002aca1b671de"
+metafile = true
+
+[[files]]
+file = "mods/subtle-effects.pw.toml"
+hash = "f6a729274c9492cd542fe2db926e0a135fc6ad99a057a2eb0ddccf9698133ffa"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+hash = "62bd7012826fdcccf17a089055be67f87fb7335c88e73efc52bc9e51a1bf3188"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-core-lib.pw.toml"
+hash = "51c911d05e42b074fea01a74cb05050fa15164eed8a5d137cf0f64ecc16ed861"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
+hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
+metafile = true
+
+[[files]]
+file = "mods/the-aethers-delight.pw.toml"
+hash = "055283aa7790b335df36917fd72eb9f35f4d5cbe3a1e66d53efba4fe79ec1266"
+metafile = true
+
+[[files]]
+file = "mods/the-undergarden.pw.toml"
+hash = "cf08653612ce37b29ebabf07c5dfce80c493927d4cb7760d68a361738fb54d1d"
+metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "6c9857ad27a8f1675ce62c0e65953d8820083662ab9cc1aa841995f18e46a5de"
+metafile = true
+
+[[files]]
+file = "mods/torchmaster.pw.toml"
+hash = "e0c03fa88540ecc2d36f147744d1d482e482438311df4e32a43bb4a3af5ed411"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "a9afe82b3d1b4975dd9f8b3272898450aeb29365678b3779059977301f88c101"
+metafile = true
+
+[[files]]
+file = "mods/travelers-titles.pw.toml"
+hash = "47759fe2169b9f57d0ea37f50513ab247a3a5f4436482b355524e4a023fe5f32"
+metafile = true
+
+[[files]]
+file = "mods/travelersbackpack.pw.toml"
+hash = "f7ebc4c6a3887e13f28cd61e46c68289c4397f81d62b96377e32f7123d03bfad"
+metafile = true
+
+[[files]]
+file = "mods/truly-modular-archery.pw.toml"
+hash = "f2f58e64bbbc1a9ebbc3af9d0f8640e6ee3122511cb9402892989ab7f9935b5c"
+metafile = true
+
+[[files]]
+file = "mods/truly-modular-armory.pw.toml"
+hash = "715d535dfd9c17a7e81deedd26cd799f2ee0213612434007c5a231b57e99b808"
+metafile = true
+
+[[files]]
+file = "mods/truly-modular-arsenal.pw.toml"
+hash = "ebd332cdde26be895f2342da80909bde97e126c0f77a3a098314d5eecbfbfa56"
+metafile = true
+
+[[files]]
+file = "mods/twilight-delight.pw.toml"
+hash = "3e1300fe9600e1a0e1421662754ebb7d53e596511aae2cfee8b173401cdc2451"
+metafile = true
+
+[[files]]
+file = "mods/undergarden-delight.pw.toml"
+hash = "907528c3eafdb773985977e8dbf6cebad7aaebeba5c4acc9d72afcd0eb01aaa1"
+metafile = true
+
+[[files]]
+file = "mods/unfocused.pw.toml"
+hash = "7d72a7c9a0c0096fd7353986a04bd4e94066ecac902797584e46800d973e023f"
+metafile = true
+
+[[files]]
+file = "mods/unusual_end.pw.toml"
+hash = "dd62bf59b749f3eb912d11ac62a6aecf167af0dfb674b3d7516d24f4cade6e49"
+metafile = true
+
+[[files]]
+file = "mods/veggies-delight.pw.toml"
+hash = "3423d6d23b984de24e15e1916113576b5243aa22d37d7817a333632cdbc6030e"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "2dad5577c5ec5e73bb3d5cec8da606e3b72e384207c9291a25e1ae96fd20bb70"
+metafile = true
+
+[[files]]
+file = "mods/when-dungeons-arise.pw.toml"
+hash = "485906ff55a5d6ad06070abb80663d6adadc3e4b32f8b52240d8596e7aaef9fa"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap-world-map-waystones-compatibility-forge.pw.toml"
+hash = "637bc567eb5260d55ce89e6471c31e4369d454607f3d6f40139f7f7bdef90af9"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "e97cb865d7a8c8310905d9140899fa55ea23c3fff2e23a17255ce2c162322ad7"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "3a8e91aecdb602039ba1f7445bbf6b64cc5a46344339a3ffaf3b2e3eb2f5bcbc"
+metafile = true
+
+[[files]]
+file = "mods/yungs-api.pw.toml"
+hash = "dde31f05114c72cb2f58e522417487730b872e456f77fdd02c032c9235791f6c"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-desert-temples.pw.toml"
+hash = "c2cb28859e7bcc0eb4ce59c5792f90fa5f8ab8865f5867ba26a5a345ec60b498"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-dungeons.pw.toml"
+hash = "1496ffa30020676979e65921b91e583a2fdc77e50001e2ed55f99edf1a0ae880"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-end-island.pw.toml"
+hash = "03d964cba45be30fbcbef52f89f3953185737f55c8934d12e199b67194c2b368"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-jungle-temples.pw.toml"
+hash = "c2dc09f214e7c1cecca6cf434776c2616f6d36bd27c06a6b39f985da0453a4f5"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-mineshafts.pw.toml"
+hash = "e839608ebc974e9e7819adc7bf29132ea86fc41b46af540fe0fa39b2007b2439"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-nether-fortresses.pw.toml"
+hash = "50c1731148d91a4ef05cfc47f759ca8fb3dad254e15ce4ecc5732d6fbfa68637"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-ocean-monuments.pw.toml"
+hash = "a2d7176026abf4a68a663b375811a603c508f36062cc7fb5b45416e1462682a8"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-strongholds.pw.toml"
+hash = "03084966c05070b5c4b17cd89234f3c0d813940a2d76b405a6699deac10a0ab8"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-witch-huts.pw.toml"
+hash = "9854b699d5a067c46ac99b1dedeeb529bff3fc18dd079e29b438c4cbf9725f68"
+metafile = true
+
+[[files]]
+file = "mods/yungs-bridges.pw.toml"
+hash = "c5e5f5aed37edd8073ec736e179b6159530ff497f4fe4c4dfaf954c810910433"
+metafile = true
+
+[[files]]
+file = "mods/yungs-extras.pw.toml"
+hash = "cfb7ce4c2b00cedd2e61f7d345b824d6bcc1471021668d2319ee2e4079108639"
+metafile = true
+
+[[files]]
+file = "mods/yungs-menu-tweaks.pw.toml"
+hash = "2c48422aa6fa3cbba28c3ce9a2f1009500f3e8e31db70bdd786ffa7cabf5c79a"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "1661e7cf8d318e556552fcd2d999038eb728cff74599f65f3ab843f508e28c71"
+metafile = true

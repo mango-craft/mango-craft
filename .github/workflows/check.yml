@@ -1,0 +1,61 @@
+name: Controllo pack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PACKWIZ_COMMIT: 170b22d785959dda5876b54b7f16e1b807a57fb6
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
+      - name: Installa packwiz
+        run: |
+          go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Aggiorna l'indice con packwiz refresh
+        run: |
+          for pack in */pack/pack.toml; do
+            (cd "$(dirname "$pack")" && packwiz refresh)
+          done
+
+      - name: Controlli
+        run: |
+          for pack in */pack/pack.toml; do
+            python3 scripts/check_pack.py "$(dirname "$pack")"
+          done
+
+      - name: Salva l'indice aggiornato
+        if: github.event_name == 'push'
+        run: |
+          if git diff --quiet; then
+            echo "Indice già aggiornato."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -am "chore: indice aggiornato da packwiz refresh [skip ci]"
+            git push
+          fi
+
+      - name: Indice da aggiornare
+        if: github.event_name == 'pull_request'
+        run: git diff --exit-code
