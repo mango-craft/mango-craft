@@ -10,6 +10,16 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.5.0 — 18/10/2026 · tappa 4 (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: **sì**. Jaden's Nether Expansion rende il Nether più alto (soffitto a quota 192) e cambia la disposizione dei biomi; quasi tutte le mod nuove generano strutture o mob. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Nether**: **Jaden's Nether Expansion** (biomi ridecorati e sottobiomi, mob, strutture, piante; librerie nuove **Elysium API** e **Lodestone**), **Moog's Nether Structures** (52 strutture fino a una mega-fortezza; la fortezza vanilla resta a YUNG's, opzione spenta di serie), **Nether Depths Upgrade** (alghe e pesci nei mari di lava, canna da pesca per la lava, accanto alla pesca di Starcatcher).
+- **Esplorazione**: **Aures Farmers Structures** (costruzioni rurali a tema Farmer's Delight), **Better Archeology** (fossili, reperti, siti di scavo), **Nature's Compass** (bussola che trova i biomi), **Paragliders** (parapendio; genera statue).
+- **Mob**: **Aquamirae** (boss e mob degli oceani ghiacciati; libreria nuova **Fragmentum**), **Creeper Overhaul** (creeper diversi per bioma).
+- **Stato**: 🧪 in prova su `dev`.
+- **Problemi noti**: da provare.
+
 ## 0.4.0 — 18/10/2026 · tappa 3 (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).

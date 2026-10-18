@@ -80,6 +80,6 @@ Non sono ancora file del pack: vanno impostate a mano o entreranno come file di 
 - **Every Compat**: spegnere i moduli che non servono; tenere Handcrafted, Macaw's ×4, credenze di FD, Storage Drawers, finestre di Create, Rechiseled, alveari di Friends & Foes, Twilight Forest, Regions Unexplored, Botany Pots. Va decisa prima di costruire molto: togliere un modulo cancella i blocchi già creati. Con la config di serie crea il 40% dei blocchi del pack e il modulo di Rechiseled è il più pesante (bug B22): decidere se tenerlo.
 - **Jaden's Nether Expansion** (`config/netherexp-startup.toml`, sezione `packSettings`, serve riavvio), solo come paracadute se il Nether nuovo desse problemi: `improvedNetherBiomeSource = false` (disposizione dei biomi vanilla), `netherWorldGenOverhaul = false` (altezza vanilla).
 - **Artifacts**: l'impostazione decisa sopra (solo Curios) diventa un file del pack.
-- **Moog's Nether Structures**: lasciare spenta la sostituzione della fortezza vanilla.
+- **Moog's Nether Structures**: niente da fare. La sostituzione della fortezza vanilla con la sua mega-fortezza è spenta di serie e deve restare così (la fortezza la rifà YUNG's).
 - **Sparse Structures**: regolazioni per struttura dopo il mondo di prova.
 - **Cognition**: lasciare `AllowedFluids` com'è.

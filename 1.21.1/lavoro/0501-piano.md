@@ -10,8 +10,8 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | 1 | 0.2.3 | Le aggiunte del vecchio pacchetto 0.2.3: Regions Unexplored, Supplementaries, Handcrafted, Rechiseled, Construction Sticks, Chunky, Clumps, XP Tome, Just Enough Breeding/Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks (CurseForge) + Lithostitched, Fusion, Moonlight; cassaforte del Galeone nel datapack | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.2.3`) |
 | 2 | 0.3.0 | Cucina, agricoltura, esperienza: My Nether's Delight, Chef's Delight, Create Confectionery, Rustic Delight, Ocean's Delight, Autochef's Delight, Farming for Blockheads, Cognition; **pesce cotto di Starcatcher** nelle etichette del pesce cotto (approvato 18/10) | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.3.0`) |
 | 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.4.0`) |
-| 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae, Creeper Overhaul, Paragliders | da fare |
-| 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `0620-progetto-datapack.md`), config di Every Compat, Jaden's, Moog's, Artifacts | da fare |
+| 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae (+ Fragmentum), Creeper Overhaul, Paragliders | 🧪 su `dev`, da provare |
+| 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `0620-progetto-datapack.md`), config di Every Compat, Artifacts e, se serve, Jaden's | da fare |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
 
 **Stato per gruppi** (aggiornato al 18/10/2026) · ✅ fatto · 🧪 da provare · ⏳ previsto
@@ -25,8 +25,8 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | Agricoltura ed esperienza | Farming for Blockheads, Cognition | ✅ 0.3.0 |
 | Decorazione | Macaw's ×4, Diagonal ×3, Chimes, Exposure, Every Compat | ✅ 0.4.0 |
 | Villaggi e tech | Guard Villagers, Goblin Traders (+ Framework, entrambe solo CurseForge), Copycats+ | ✅ 0.4.0 |
-| Nether | Jaden's Nether Expansion, Moog's Nether Structures, Nether Depths Upgrade | ⏳ 0.5.0 |
-| Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae, Creeper Overhaul | ⏳ 0.5.0 |
+| Nether | Jaden's Nether Expansion, Moog's Nether Structures, Nether Depths Upgrade (+ Elysium API, Lodestone) | 🧪 0.5.0 su `dev` |
+| Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae (+ Fragmentum), Creeper Overhaul | 🧪 0.5.0 su `dev` |
 
 | Datapack e config | Cosa | Stato |
 |---|---|---|
@@ -41,6 +41,6 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | Berserker di Cataclysm | Tornano nelle fortezze di YUNG's | ⏳ 0.6.0 |
 | Config AlmostUnified | 19 etichette di cibo intercambiabili | ✅ 0.1.1 |
 | Config Sparse Structures | Densità generale ✅ 0.1.1; regolazione struttura per struttura | ⏳ 0.6.x (mondo di prova) |
-| Altre config | Every Compat, Jaden's, Moog's, Artifacts (dettaglio in `../docs/0302-config.md`) | ⏳ 0.6.0 |
+| Altre config | Every Compat, Artifacts e, se serve, Jaden's (dettaglio in `../docs/0302-config.md`) | ⏳ 0.6.0 |
 
 NeoForge resta fermo (motivo in `../docs/0303-note-tecniche.md`): se una mod nuova ne chiede uno più recente, va segnalato nella sua tappa (il controllo dei nomi lo verifica da solo).

@@ -326,6 +326,18 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Create: Copycats+ | [`copycats`](https://modrinth.com/mod/copycats) MR | 3.0.9+mc.1.21.1-neoforge | 2026-09-06 | release | ✅ | Richiede Create. Pack 0.4.0 |
 | Goblin Traders | [`goblin-traders`](https://www.curseforge.com/minecraft/mc-mods/goblin-traders) CF | 1.11.2 | — | release | ✅ | **solo CurseForge**; richiede Framework. Pack 0.4.0 |
 | Framework (dipendenza) | [`framework`](https://www.curseforge.com/minecraft/mc-mods/framework) CF | 0.13.11 | — | release | ✅ | Libreria di MrCrayfish, **solo CurseForge**; licenza da verificare. Pack 0.4.0 |
+| Jaden's Nether Expansion | [`jadens-nether-expansion`](https://modrinth.com/mod/jadens-nether-expansion) MR | 2.4.1 | 2026-08-22 | release | ✅ | Richiede Elysium API e Lodestone; Nether più alto (mondo nuovo). Pack 0.5.0 |
+| MNS - Moog's Nether Structures | [`mns-moogs-nether-structures`](https://modrinth.com/mod/mns-moogs-nether-structures) MR | 3.1.1 | 2026-09-17 | release | ✅ | Richiede Moog's Structure Lib (già nel pack). Pack 0.5.0 |
+| Nether Depths Upgrade | [`nether-depths-upgrade`](https://modrinth.com/mod/nether-depths-upgrade) MR | 3.3 | 2026-09-21 | release | ✅ | Pack 0.5.0 |
+| Aures - Farmers Structures | [`aures-farmers-structures`](https://modrinth.com/mod/aures-farmers-structures) MR | 1.0.2 | 2026-05-18 | release | ✅ | Nessuna dipendenza dichiarata. Pack 0.5.0 |
+| Better Archeology | [`better-archeology`](https://modrinth.com/mod/better-archeology) MR | 1.21.1-1.3.9 | 2026-10-08 | release | ✅ | Pack 0.5.0 |
+| Nature's Compass | [`natures-compass`](https://modrinth.com/mod/natures-compass) MR | 1.21.1-3.4.0-neoforge | 2026-04-08 | release | ✅ | Nessuna dipendenza. Pack 0.5.0 |
+| Aquamirae | [`aquamirae`](https://modrinth.com/mod/aquamirae) MR | 7.2.13 | 2026-10-17 | release | ✅ | Richiede GeckoLib e Fragmentum. Pack 0.5.0 |
+| Creeper Overhaul | [`creeper-overhaul`](https://modrinth.com/mod/creeper-overhaul) MR | 4.0.6 | 2025-01-04 | release | ⚠️ | Ramo 1.21.1 fermo a gennaio 2025; richiede Resourceful Lib, Resourceful Config e GeckoLib (già nel pack). Pack 0.5.0 |
+| Paragliders | [`paragliders`](https://modrinth.com/mod/paragliders) MR | 21.1.5 | 2026-03-22 | release | ✅ | Pack 0.5.0 |
+| Elysium API (dipendenza) | [`elysium-api`](https://modrinth.com/mod/elysium-api) MR | 1.21.1-2.0.1 | 2026-08-22 | release | ✅ | Richiesta da jadens-nether-expansion. GPL-2.0-only. Pack 0.5.0 |
+| Lodestone (dipendenza) | [`lodestonelib`](https://modrinth.com/mod/lodestonelib) MR | 1.8.2 | 2026-01-12 | release | ✅ | Richiesta da jadens-nether-expansion. LGPL-3.0-only. Pack 0.5.0 |
+| Fragmentum (dipendenza) | [`fragmentum`](https://modrinth.com/mod/fragmentum) MR | 5.4.0 | 2026-10-16 | release | ✅ | Richiesta da aquamirae. Licenza Obscuria (LicenseRef-Obscuria-Ecosystem). Pack 0.5.0 |
 
 ## Librerie principali (arrivano come dipendenze)
 
