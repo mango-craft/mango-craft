@@ -86,8 +86,8 @@ Ancora da decidere: le grandi aggiunte (5.9).
 | Utilità | Chunky, Clumps, XP Tome, Just Enough Breeding e Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks | ✅ 0.2.3 |
 | Cucina, seconda ondata | My Nether's, Chef's, Rustic, Ocean's e Autochef's Delight, Create Confectionery | ✅ 0.3.0 |
 | Agricoltura ed esperienza | Farming for Blockheads, Cognition | ✅ 0.3.0 |
-| Decorazione | Macaw's ×4, Diagonal ×3, Chimes, Exposure, Every Compat | ⏳ 0.4.0 |
-| Villaggi e tech | Guard Villagers, Goblin Traders, Copycats+ | ⏳ 0.4.0 |
+| Decorazione | Macaw's ×4, Diagonal ×3, Chimes, Exposure, Every Compat | 🧪 0.4.0 su `dev` |
+| Villaggi e tech | Guard Villagers, Goblin Traders (+ Framework, entrambe solo CurseForge), Copycats+ | 🧪 0.4.0 su `dev` |
 | Nether | Jaden's Nether Expansion, Moog's Nether Structures, Nether Depths Upgrade | ⏳ 0.5.0 |
 | Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae, Creeper Overhaul | ⏳ 0.5.0 |
 

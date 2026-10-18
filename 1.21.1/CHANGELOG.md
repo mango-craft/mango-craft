@@ -2,6 +2,14 @@
 
 Ogni voce indica la versione di **NeoForge** da impostare a mano in Prism e se serve un **mondo nuovo**.
 
+## 0.4.0 — 18/10/2026 · tappa 3 (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: sì per provarla (Guard Villagers mette le guardie nei villaggi generati, Goblin Traders fa comparire i mercanti nel sottosuolo e nel Nether). Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Decorazione**: **Macaw's Roofs**, **Macaw's Paths and Pavings**, **Macaw's Bridges**, **Macaw's Windows**, **Diagonal Fences**, **Diagonal Walls**, **Diagonal Windows**, **Chimes**, **Exposure** (macchine fotografiche), **Every Compat** (varianti per tutti i legni delle mod: per ora con la config di serie, che crea migliaia di blocchi; la config ridotta arriva con la 0.6.0).
+- **Villaggi**: **Guard Villagers**, **Goblin Traders** (CurseForge, con la libreria **Framework**).
+- **Tech**: **Create: Copycats+**.
+
 ## 0.3.0 — 18/10/2026 · tappa 2 (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
