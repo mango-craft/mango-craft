@@ -36,7 +36,7 @@ USER_AGENT = "mango-craft-inventory (github.com/mango-craft/mango-craft)"
 MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/{mc}-summary/"
 NEOFORGE_JAR = ("https://maven.neoforged.net/releases/net/neoforged/neoforge/"
                 "{v}/neoforge-{v}-universal.jar")
-FORMAT = 1  # cambiare se cambia il formato dei file: forza un nuovo inventario
+FORMAT = 2  # cambiare se cambia il formato dei file: forza un nuovo inventario
 
 # Chiavi dei file di lingua -> campo dell'inventario
 LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
@@ -165,12 +165,22 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
         m = re.search(r"^Implementation-Version:\s*(\S+)", z.read("META-INF/MANIFEST.MF").decode("utf-8", "replace"), re.M)
         manifest_version = m.group(1) if m else None
     item_models, blockstates = set(), set()
+    # Jar incorporati: quelli elencati in META-INF/jarjar/metadata.json (possono stare
+    # ovunque, es. META-INF/jars/ con Architectury) più ogni .jar dentro META-INF/
+    nested = {n for n in names if n.startswith("META-INF/") and n.endswith(".jar")}
+    if "META-INF/jarjar/metadata.json" in names:
+        try:
+            meta = json.loads(z.read("META-INF/jarjar/metadata.json").decode("utf-8-sig"))
+            nested |= {j["path"] for j in meta.get("jars", []) if j.get("path") in names}
+        except Exception:
+            inv.problems.append(f"{where or 'jar'}: META-INF/jarjar/metadata.json non leggibile")
     for n in names:
         if n.endswith("/"):
             continue
-        if n.startswith("META-INF/jarjar/") and n.endswith(".jar") and depth < 3:
-            inv.nested.append(n.rsplit("/", 1)[1])
-            analyze_jar(z.read(n), inv, n.rsplit("/", 1)[1], depth + 1)
+        if n in nested:
+            if depth < 3:
+                inv.nested.append(n.rsplit("/", 1)[1])
+                analyze_jar(z.read(n), inv, n.rsplit("/", 1)[1], depth + 1)
             continue
         if n in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
             mods, probs = parse_mods_toml(z.read(n).decode("utf-8", "replace"), manifest_version, where)
