@@ -1,0 +1,107 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "SeasonHud",
+ "file": "seasonhud-neoforge-1.21.1-2.0.10.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "9375a5c3a796ba09b08a55c8b16ee3b79a4dde05d2cd85d8eb9c1ac691be62a7187d2708ba737532400ee03fbc7235f3efe7d952c9554d2b85dca1eb599df566",
+ "mods": [
+  {
+   "modid": "seasonhud",
+   "name": "SeasonHud",
+   "version": "2.0.10",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "sereneseasons",
+     "type": "optional",
+     "range": "[10.0.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "xaerominimap",
+     "type": "optional",
+     "range": "[25.3.0,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "journeymap",
+     "type": "optional",
+     "range": "[1.21.1-6.0.0,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "ftbchunks",
+     "type": "optional",
+     "range": "[2101.1.10,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "accessories",
+  "curios",
+  "minecraft",
+  "seasonhud",
+  "trinkets"
+ ],
+ "data": {
+  "accessories": [
+   "seasonhud:entity/seasonhud",
+   "seasonhud:slot/calendarslot"
+  ],
+  "curios": [
+   "seasonhud:entities/seasonhud",
+   "seasonhud:slots/calendarslot"
+  ],
+  "entities": [
+   "trinkets:seasonhud"
+  ],
+  "slots": [
+   "trinkets:calendar/calendarslot"
+  ],
+  "tags/item": [
+   "accessories:calendarslot",
+   "curios:calendarslot",
+   "trinkets:calendar/calendarslot"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/item": {
+   "accessories:calendarslot": [
+    "sereneseasons:calendar?",
+    "seasonsextras:season_calendar?",
+    "eclipticseasons:calendar?"
+   ],
+   "curios:calendarslot": [
+    "sereneseasons:calendar?",
+    "seasonsextras:season_calendar?",
+    "eclipticseasons:calendar?"
+   ],
+   "trinkets:calendar/calendarslot": [
+    "sereneseasons:calendar?",
+    "eclipticseasons:calendar?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

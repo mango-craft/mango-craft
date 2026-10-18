@@ -8,7 +8,7 @@ on:
         required: true
         default: 1.21.1/pack
       urls:
-        description: Link ai file esatti su CurseForge (…/files/<id>), separati da spazi
+        description: Link ai file esatti su CurseForge (…/files/<id>), o al progetto per l'ultimo file compatibile; separati da spazi
         required: true
 
 permissions:
@@ -38,18 +38,30 @@ jobs:
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Aggiungi le mod
+        id: add
         env:
           PACK: ${{ inputs.pack }}
           URLS: ${{ inputs.urls }}
         run: |
           test -f "$PACK/pack.toml" || { echo "Pack non trovato: $PACK"; exit 1; }
+          # L'output di packwiz va in un file del repository (i log dei workflow non sono
+          # leggibili da tutti gli strumenti)
+          LOG="$PWD/$(dirname "$PACK")/data/inventario/ultimo-workflow.log"
+          mkdir -p "$(dirname "$LOG")"
+          echo "Aggiungi mod CurseForge — $(date -u +%F)" > "$LOG"
           cd "$PACK"
+          failed=0
           for url in $URLS; do
-            echo "::group::$url"
-            # "n": rifiuta le dipendenze proposte (sono già nel pack da Modrinth)
-            printf 'n\nn\nn\n' | packwiz curseforge add "$url"
-            echo "::endgroup::"
+            echo "== $url" >> "$LOG"
+            # "n": rifiuta le dipendenze proposte (sono già nel pack da Modrinth).
+            # Un link al progetto (senza /files/<id>) prende l'ultimo file per MC e loader del pack
+            if ! printf 'n\nn\nn\n' | packwiz curseforge add "$url" >> "$LOG" 2>&1; then
+              echo "ERRORE: $url non aggiunta" >> "$LOG"
+              failed=1
+            fi
           done
+          cat "$LOG"
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
       - name: Indice, controlli, inventario e controllo dei nomi
         id: checks
@@ -67,7 +79,8 @@ jobs:
           bash scripts/ci_commit.sh "feat: mod CurseForge aggiunte da GitHub Actions" "$URLS"
 
       - name: Esito
-        if: steps.checks.outputs.status != '0'
+        if: steps.checks.outputs.status != '0' || steps.add.outputs.failed != '0'
         run: |
+          echo "Aggiunte non riuscite: vedi <versione>/data/inventario/ultimo-workflow.log"
           echo "Controlli falliti: vedi <versione>/data/inventario/controllo.md nel ramo"
           exit 1

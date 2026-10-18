@@ -1,0 +1,64 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "XP Tome",
+ "file": "xptome-1.21.1-2.4.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "9fd9f627dc8399fca1a1245419819929e5890a61f4db834e30a6f7a9be6381e4c5df19e8f8d6886767fec1ee636073ea03fe0bbf5a5fefff9846512eabee8aa3",
+ "mods": [
+  {
+   "modid": "xpbook",
+   "name": "XP Tome",
+   "version": "2.4",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.76-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "minecraft",
+  "xpbook"
+ ],
+ "items": {
+  "xpbook:xp_book": "OLD - RIGHTCLICK TO CONVERT",
+  "xpbook:xp_tome": "XP Tome"
+ },
+ "data": {
+  "recipe": [
+   "xpbook:xp_tome"
+  ],
+  "tags/item": [
+   "minecraft:bookshelf_books"
+  ]
+ },
+ "data_counts": {
+  "advancement": 1
+ },
+ "tags": {
+  "tags/item": {
+   "minecraft:bookshelf_books": [
+    "xpbook:xp_tome"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

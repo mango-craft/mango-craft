@@ -1,0 +1,91 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "AllTheLeaks (Memory Leak Fix)",
+ "file": "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+ "side": "both",
+ "source": "curseforge",
+ "hash_format": "sha1",
+ "hash": "ea11d23e0f8c48544a269dc7c56f6593cb1cafe2",
+ "mods": [
+  {
+   "modid": "alltheleaks",
+   "name": "All The Leaks",
+   "version": "1.1.13+1.21.1-neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.195,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "irons_spellbooks",
+     "type": "incompatible",
+     "range": "(,1.21-3.4.4]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "railcraft",
+     "type": "incompatible",
+     "range": "(,1.2.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "geckolib",
+     "type": "incompatible",
+     "range": "(,4.5]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "entityculling",
+     "type": "incompatible",
+     "range": "(,1.6.7]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "dummmmmmy",
+     "type": "incompatible",
+     "range": "(,1.21-2.0.5]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "pneumaticcraft",
+     "type": "incompatible",
+     "range": "(,8.0.3]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ambientsounds",
+     "type": "incompatible",
+     "range": "(,6.1.0]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "occultism",
+     "type": "incompatible",
+     "range": "(,1.161.2]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "MixinSquared-0.3.3.jar",
+  "mixinsquared-neoforge-0.3.3.jar"
+ ],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

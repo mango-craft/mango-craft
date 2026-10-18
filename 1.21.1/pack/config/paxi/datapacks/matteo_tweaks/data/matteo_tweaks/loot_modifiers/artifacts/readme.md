@@ -13,7 +13,7 @@ Il **nome del file non dice dove va l'artefatto, ma quanto è probabile trovarlo
 Usare le tabelle di Artifacts ha tre vantaggi:
 - sono già bilanciate dall'autore, quindi non abbiamo inventato nessuna probabilità;
 - rispettano la config di Artifacts: se cambi `artifactRarity` o disattivi un oggetto, vale anche qui;
-- bastano 15 file invece di 152, uno per cassa.
+- bastano 15 file invece di 153, uno per cassa.
 
 ## Com'è fatto un file
 
@@ -69,7 +69,7 @@ Probabilità di base, con `artifactRarity = 1` (il default). La colonna "Casse" 
 | `abandoned_mineshaft.json` | Miniera abbandonata | 30% | 9 | Twilight Forest, Undergarden, Cataclysm, When Dungeons Arise, Dungeons and Taverns |
 | `end_city_treasure.json` | Tesoro della città dell'End | 30% | 13 | Aether, Deep Aether, Moog's End Structures, Dungeons and Taverns, Unusual End |
 | `igloo_chest.json` | Igloo | 30% | 3 | Friends & Foes, Twilight Forest, Dungeons and Taverns |
-| `pillager_outpost.json` | Avamposto dei predoni | 25% | 9 | Illager Invasion, When Dungeons Arise, Dungeons and Taverns |
+| `pillager_outpost.json` | Avamposto dei predoni | 25% | 10 | Illager Invasion, When Dungeons Arise, Dungeons and Taverns, Supplementaries (cassaforte del Galeone) |
 | `desert_pyramid.json` | Piramide del deserto | 20% | 6 | YUNG's Desert Temples, Cataclysm, When Dungeons Arise, Dungeons and Taverns |
 | `simple_dungeon.json` | Dungeon | 15% | 44 | YUNG's Dungeons, Twilight Forest, Aether, Deep Aether, Undergarden, Cataclysm, When Dungeons Arise, Dungeons and Taverns, Unusual End |
 | `shipwreck_treasure.json` | Tesoro del relitto | 15% | 1 | When Dungeons Arise |
