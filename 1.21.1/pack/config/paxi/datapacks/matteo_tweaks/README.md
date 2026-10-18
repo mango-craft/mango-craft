@@ -10,7 +10,7 @@ Ritocchi del modpack. **Paxi** carica questo pacchetto in **tutti i mondi**, anc
 
 | Parte | Cosa fa | Dove | Spiegazione |
 |---|---|---|---|
-| **Artefatti nelle strutture modded** | Aggiunge gli oggetti di Artifacts a 152 casse di strutture modded | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
+| **Artefatti nelle strutture modded** | Aggiunge gli oggetti di Artifacts a 153 casse di strutture modded | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
 | **Ars Nouveau nei vasi** | Magebloom, Sourceberry e i 5 frutti di archwood in Botany Pots | `data/matteo_tweaks/recipe/botanypots/` | [botanypots/readme.md](data/matteo_tweaks/recipe/botanypots/readme.md) |
 | **Lune di sangue** | Più rare (5% delle notti) e meno affollate (mostri ×2 e ×4) | `data/enhancedcelestials/enhancedcelestials/lunar/event/` | [lunar/event/readme.md](data/enhancedcelestials/enhancedcelestials/lunar/event/readme.md) |
 

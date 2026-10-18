@@ -2,6 +2,17 @@
 
 Ogni voce indica la versione di **NeoForge** da impostare a mano in Prism e se serve un **mondo nuovo**.
 
+## 0.2.3 — 18/10/2026 · tappa 1 (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: sì per provarla. Regions Unexplored genera i suoi biomi solo nei chunk nuovi. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Contenuto**: le aggiunte del vecchio pacchetto `modpack-matteo-0.2.3.mrpack`, mai provate in gioco finora:
+  - biomi: **Regions Unexplored** (+ libreria Lithostitched);
+  - decorazione e costruzione: **Supplementaries** (+ Moonlight Lib), **Handcrafted**, **Rechiseled** (+ Fusion), **Construction Sticks**;
+  - utilità e prestazioni: **Chunky**, **Clumps**, **XP Tome**;
+  - piccole e utili: **Just Enough Breeding**, **Just Enough Professions**, **NetherPortalFix**, **SeasonHud**, **Smarter Farmers**, **Open Together**, **AllTheLeaks** (CurseForge).
+- **Datapack**: la cassaforte del Galeone di Supplementaries entra tra le casse con gli artefatti (livello "avamposto dei predoni", 25%): 153 tabelle.
+
 ## 0.1.1 — 18/10/2026 · base del repository
 
 - **NeoForge**: 21.1.259. Non usare la 21.1.261 o successive: owo-lib 0.12.15.5 (incluso nell'Aether) fa cadere la connessione all'ingresso nel mondo. Si aggiornerà quando esce owo-lib 0.12.15.6.

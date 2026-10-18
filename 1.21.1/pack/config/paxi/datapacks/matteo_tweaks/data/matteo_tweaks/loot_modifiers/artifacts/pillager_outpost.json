@@ -45,6 +45,10 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/pillager_outpost_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "supplementaries:loot/galleon/safe"
         }
       ]
     }

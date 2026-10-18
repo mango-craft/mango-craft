@@ -6,7 +6,7 @@ hash = "8eef0da096300652e97f70110ea78f45c7fa3e7556352ab29b088bb7a4164a2d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "8acbf2a253cac109ffd49a62a0737a401271d83a2a038268b3c5086c8c977c47"
+hash = "69ea0b2e3a1f6fe74980a17f44febe8121f0a48cb30b6ca4aa23f2c72e2a21f0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/blood_moon.json"
@@ -54,11 +54,11 @@ hash = "49f6ba41c98b4f6497f1ee83c2a975963e96843ada5c7740112889f4b287b684"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json"
-hash = "e66c40c3480bda8c7772ee0ce9b9052f741ede0d331473b69f888fc2418747a4"
+hash = "1c8b869dcb069301dd63d31b145937f9e6c193b366f5a4576852bb11aabcbe81"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/readme.md"
-hash = "35f78f97d8329bcc0666b1fc39da81fa966b15c98f92874674141e077e6b4dfa"
+hash = "65a771335e59f94e31d6311ed10cddc1250723bca3d39b67261363a4cf9b4314"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ruined_portal.json"
