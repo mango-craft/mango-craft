@@ -48,17 +48,28 @@ jobs:
           cat "$RUNNER_TEMP/scelte.tsv"
 
       - name: Aggiungi le mod (con le dipendenze obbligatorie)
+        id: add
         env:
           PACK: ${{ inputs.pack }}
         run: |
+          # L'output di packwiz va in un file del repository: i log dei workflow
+          # non sono leggibili da tutti gli strumenti (es. dallo spazio di lavoro di Claude)
+          LOG="$PWD/$(dirname "$PACK")/data/inventario/ultimo-workflow.log"
+          mkdir -p "$(dirname "$LOG")"
+          echo "Aggiungi mod Modrinth — $(date -u +%F)" > "$LOG"
           cd "$PACK"
           ls mods > "$RUNNER_TEMP/prima.txt"
+          failed=0
           while IFS=$'\t' read -r id slug ver kind date; do
-            echo "::group::$slug $ver"
-            packwiz -y modrinth add --version-id "$id"
-            echo "::endgroup::"
+            echo "== $slug $ver ($id)" >> "$LOG"
+            if ! packwiz -y modrinth add --version-id "$id" >> "$LOG" 2>&1; then
+              echo "ERRORE: $slug non aggiunta" >> "$LOG"
+              failed=1
+            fi
           done < "$RUNNER_TEMP/scelte.tsv"
           ls mods > "$RUNNER_TEMP/dopo.txt"
+          cat "$LOG"
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
       - name: Indice, controlli, inventario e controllo dei nomi
         id: checks
@@ -83,7 +94,8 @@ jobs:
           bash scripts/ci_commit.sh "feat: mod Modrinth aggiunte da GitHub Actions" "$(cat "$RUNNER_TEMP/body.txt")"
 
       - name: Esito
-        if: steps.checks.outputs.status != '0'
+        if: steps.checks.outputs.status != '0' || steps.add.outputs.failed != '0'
         run: |
+          echo "Aggiunte non riuscite: vedi <versione>/data/inventario/ultimo-workflow.log"
           echo "Controlli falliti: vedi <versione>/data/inventario/controllo.md nel ramo"
           exit 1
