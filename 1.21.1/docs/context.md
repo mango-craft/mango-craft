@@ -70,12 +70,41 @@ Ancora da decidere: le grandi aggiunte (5.9).
 | Tappa | Versione | Contenuto | Stato |
 |---|---|---|---|
 | 0 | — | Strumenti: workflow **Aggiungi mod Modrinth** (versione, hash e dipendenze presi da Modrinth con packwiz) e **Inventario** (elenco di oggetti, blocchi e tabelle letto dai file delle mod, per controllare i nomi usati nel datapack) | ✅ fatta (18/10, su `main`) |
-| 1 | 0.2.3 | Le aggiunte del vecchio pacchetto 0.2.3: Regions Unexplored, Supplementaries, Handcrafted, Rechiseled, Construction Sticks, Chunky, Clumps, XP Tome, Just Enough Breeding/Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks (CurseForge) + Lithostitched, Fusion, Moonlight; cassaforte del Galeone nel datapack | 🧪 su `dev`, da provare |
+| 1 | 0.2.3 | Le aggiunte del vecchio pacchetto 0.2.3: Regions Unexplored, Supplementaries, Handcrafted, Rechiseled, Construction Sticks, Chunky, Clumps, XP Tome, Just Enough Breeding/Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks (CurseForge) + Lithostitched, Fusion, Moonlight; cassaforte del Galeone nel datapack | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.2.3`) |
 | 2 | 0.3.0 | Cucina, agricoltura, esperienza: My Nether's Delight, Chef's Delight, Create Confectionery, Rustic Delight, Ocean's Delight, Autochef's Delight, Farming for Blockheads, Cognition; **pesce cotto di Starcatcher** nelle etichette del pesce cotto (approvato 18/10) | da fare |
 | 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | da fare |
 | 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae, Creeper Overhaul, Paragliders | da fare |
 | 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (~270 piante, 13 terreni, alberi di Bountiful Fares), config di Every Compat, Jaden's, Moog's, Artifacts | da fare |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
+
+**Stato per gruppi** (aggiornato al 18/10/2026) · ✅ fatto · ⏳ previsto
+
+| Gruppo di mod | Cosa | Stato |
+|---|---|---|
+| Base del pack | Cucina e Farmer's Delight, vasi, natura e pozioni, Create e Mekanism, storage e zaini, Truly Modular e Apotheosis, strutture, dimensioni, boss, villager, magia, comodità, interfaccia, atmosfera, performance, fix (199 file) | ✅ 0.1.1 |
+| Biomi e costruzione | Regions Unexplored, Supplementaries, Handcrafted, Rechiseled, Construction Sticks (+ 3 librerie) | ✅ 0.2.3 |
+| Utilità | Chunky, Clumps, XP Tome, Just Enough Breeding e Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks | ✅ 0.2.3 |
+| Cucina, seconda ondata | My Nether's, Chef's, Rustic, Ocean's e Autochef's Delight, Create Confectionery | ⏳ 0.3.0 |
+| Agricoltura ed esperienza | Farming for Blockheads, Cognition | ⏳ 0.3.0 |
+| Decorazione | Macaw's ×4, Diagonal ×3, Chimes, Exposure, Every Compat | ⏳ 0.4.0 |
+| Villaggi e tech | Guard Villagers, Goblin Traders, Copycats+ | ⏳ 0.4.0 |
+| Nether | Jaden's Nether Expansion, Moog's Nether Structures, Nether Depths Upgrade | ⏳ 0.5.0 |
+| Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae, Creeper Overhaul | ⏳ 0.5.0 |
+
+| Datapack e config | Cosa | Stato |
+|---|---|---|
+| Lune di sangue | 5% delle notti, mostri ×2; super luna ×4 | ✅ 0.1.1 |
+| Artefatti nelle casse | 153 casse di strutture modded, Galeone compreso | ✅ 0.2.3 |
+| Artefatti: correzioni | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns sbagliati; casse di Mowzie's Mobs e Born in Chaos | ⏳ 0.6.0 |
+| Vasi: Ars Nouveau | Magebloom, Sourceberry, 5 frutti di archwood | ✅ 0.1.1 |
+| Vasi: tutto il resto | ~250 piante, 13 terreni, alberi di Bountiful Fares, piante di Jaden's e Nether Depths, nomi vecchi di Regions Unexplored | ⏳ 0.6.0 |
+| Pesce cotto di Starcatcher | Nelle etichette del pesce cotto | ⏳ 0.3.0 |
+| Esperienza | Scambio Create ↔ Cognition nel Mescolatore, valore del liquido di Cognition | ⏳ 0.6.0 |
+| Mercato di Farming for Blockheads | Voci per le mod che il mercato non conosce | ⏳ 0.6.0 |
+| Berserker di Cataclysm | Tornano nelle fortezze di YUNG's | ⏳ 0.6.0 |
+| Config AlmostUnified | 19 etichette di cibo intercambiabili | ✅ 0.1.1 |
+| Config Sparse Structures | Densità generale ✅ 0.1.1; regolazione struttura per struttura | ⏳ 0.6.x (mondo di prova) |
+| Altre config | Every Compat, Jaden's, Moog's, Artifacts (solo Curios) | ⏳ 0.6.0 |
 
 Dopo ogni tappa: avvio dell'istanza di prova, mondo nuovo, controllo del log. NeoForge resta alla **21.1.259**: se una mod nuova ne chiede una più recente, va segnalato nella sua tappa.
 
@@ -1135,3 +1164,4 @@ Legenda: 🟢 sta bene nel pack · 🟡 dipende o da provare · 🔴 poco adatta
 - **18/10/2026** — Unione di `dev` in `main` con **merge vero** (`--no-ff`) per conservare il grafico dei rami (scelta dell'utente, al posto del fast-forward). Mod, config e datapack su `main` solo con una versione; documenti e workflow anche prima, se su `dev` non c'è una tappa in corso.
 - **18/10/2026** — Tappa 0 (strumenti): workflow **Aggiungi mod Modrinth** (sceglie l'ultima release per 1.21.1 + NeoForge, aggiunge con packwiz insieme alle dipendenze), **inventario** automatico dei .jar in `data/inventario/` e **controllo dei nomi** (`check_ids.py`: dipendenze mancanti, nomi del datapack inesistenti) a ogni modifica del pack. Accesso concesso alla cartella `logs` dell'istanza dev: log di riferimento della 0.1.1 su dev senza errori nuovi (417 righe ERROR, tutte di mod note).
 - **18/10/2026** — Tappa 1 su `dev` (0.2.3): 17 file da Modrinth con le stesse versioni verificate del vecchio pacchetto 0.2.3 (aggiunti dal workflow, dipendenze già complete) + AllTheLeaks 1.1.13 da CurseForge; cassaforte del Galeone nel datapack (tabella verificata nell'inventario). Controllo dei nomi: 0 errori, 15 avvisi = nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie che non esistono più (gli artefatti lì non compaiono mai): da correggere nella tappa 5 con i nomi veri dell'inventario. Da provare in gioco.
+- **18/10/2026** — **0.2.3 provata** nell'istanza dev (mondo nuovo, 10 minuti di gioco): nessun errore nuovo nel log rispetto alla 0.1.1 (solo l'avviso di Moonlight su Forgified Fabric API, atteso). Merge in `main` e pre-release `1.21.1-v0.2.3`. Aggiunte in 3.0 le tabelle di stato per gruppi (mod, datapack e config).
