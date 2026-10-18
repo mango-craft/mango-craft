@@ -26,7 +26,7 @@ scripts/                    risoluzione mod, controllo datapack, generatori
 .github/workflows/          controllo a ogni modifica + release dai tag
 1.21.1/
 ├── CHANGELOG.md            cosa cambia in ogni versione, se serve un mondo nuovo, versione di NeoForge
-├── docs/                   context.md, log delle decisioni, verifica versioni, valutazioni/, datapack/
+├── docs/                   context.md, bug-report.md, log delle decisioni, verifica versioni, valutazioni/, datapack/
 ├── data/                   dati grezzi delle ricerche (inventari, bozze)
 └── pack/                   SOLO ciò che finisce nel gioco: pack.toml, index.toml, mods/*.pw.toml, config/…
     └── config/paxi/datapacks/matteo_tweaks/   il datapack del pack
@@ -46,6 +46,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 - **NeoForge si imposta a mano in Prism**: packwiz-installer non riesce a cambiarlo. Ogni voce del CHANGELOG indica la versione richiesta.
 - Le mod di queste istanze **non si toccano dalla scheda Mod di Prism**: si modifica il repository.
 - GitHub tiene in cache i file grezzi per circa 5 minuti: dopo un push, aspettare prima di avviare.
+- **Prova di una tappa**: leggere i log dell'istanza dev e confrontarli con quelli della versione precedente. **Ogni problema nuovo, anche minore** (errori nel log, grafica mancante, ricette rotte, avvisi del controllo dei nomi), va nel **bug report** (`1.21.1/docs/bug-report.md`) con un codice nuovo `Bnn` che non si riusa mai. Prima del merge, la voce della versione nel **CHANGELOG** riceve **Stato** (provata, data, tag) e **Problemi noti** (i codici comparsi o risolti). Quando un problema si risolve, la riga passa tra i risolti con la versione che lo chiude.
 
 ## 5. Aggiungere o cambiare una mod
 
@@ -54,7 +55,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 3. **Controllo automatico** (in ogni workflow che tocca il pack): indice, metafile, **inventario** dei .jar (`<versione>/data/inventario/`) e **controllo dei nomi** (`controllo.md`: dipendenze mancanti, nomi del datapack inesistenti). Se fallisce, leggere `controllo.md` nel ramo: i log dei workflow non sono leggibili da qui.
 4. A mano, solo se il workflow non si può usare: versione dall'API di Modrinth (`/v2/project/<slug>/version?game_versions=["1.21.1"]&loaders=["neoforge"]`), hash verificati con la ricerca inversa `/v2/version_file/<sha512>?algorithm=sha512` (stessa versione, stesso sha1; gli hash lunghi vanno letti a pezzi), metafile scritto a mano (formato in `docs/sviluppo.md`), indice con `python3 scripts/packwiz_index.py 1.21.1/pack`, controllo con `python3 scripts/check_pack.py 1.21.1/pack`.
 5. Licenza, data, se genera mondo o strutture (⚠️ = va aggiunta **prima del mondo vero**).
-6. Aggiornare `docs/verifica-versioni.md`, `CHANGELOG.md` e `context.md`.
+6. Aggiornare `docs/verifica-versioni.md`, `CHANGELOG.md` (voce della versione in corso), `context.md` e, se la mod porta problemi noti, `docs/bug-report.md`.
 7. **Mod solo CurseForge**: si aggiungono con il workflow **Aggiungi mod CurseForge** (link al file esatto, `…/files/<id>`), che usa `packwiz curseforge add` rifiutando le dipendenze (sono già nel pack da Modrinth). I .jar non entrano mai nel repository. Quelle con distribuzione bloccata vanno scaricate a mano: l'installer mostra pagina e percorso.
 
 ## 6. Regole del datapack `matteo_tweaks`
@@ -91,11 +92,12 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 | Dove | Cosa |
 |---|---|
 | `1.21.1/docs/context.md` | Stato del progetto: mod per categoria, test da fare, config, log |
+| `1.21.1/docs/bug-report.md` | Tutti i problemi trovati, anche minori, con codice, versione, effetto e piano |
 | `1.21.1/docs/decisioni/` | Log delle decisioni per round (approvate, scartate, da tenere d'occhio) |
 | `1.21.1/docs/verifica-versioni.md` | Versione, data, licenza ed esito di ogni mod |
 | `1.21.1/docs/valutazioni/` | Ricerche (Nether, animali, esperienza, confronti con altri modpack…) |
 | `1.21.1/docs/datapack/` | Piano, formati, copertura dei vasi, fonti e licenze |
-| `1.21.1/CHANGELOG.md` | Versioni del pack |
+| `1.21.1/CHANGELOG.md` | Una voce per versione: stato, NeoForge, mondo nuovo, cosa cambia, problemi noti (codici del bug report). Diventa la nota della release |
 | `docs/prism.md` | Come collegare le istanze di Prism |
 | `docs/sviluppo.md` | Formati, script, workflow, come si rilascia |
 

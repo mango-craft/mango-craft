@@ -57,18 +57,18 @@ packwiz viene installato in ogni workflow con `go install` a un commit fissato. 
 Si lavora sul ramo **`dev`**, seguito dall'istanza di prova. **`main`** riceve solo versioni provate.
 
 1. Su `dev`: aggiorna `version` in `<versione>/pack/pack.toml` (e `[versions]` se cambia NeoForge).
-2. Aggiungi la voce in `<versione>/CHANGELOG.md`: titolo `## X.Y.Z — data`, versione di NeoForge, se serve un mondo nuovo, cosa cambia.
+2. Aggiungi la voce in `<versione>/CHANGELOG.md`: titolo `## X.Y.Z — data`, versione di NeoForge, se serve un mondo nuovo, cosa cambia, **Stato**: 🧪 in prova su `dev`.
 3. Rigenera l'indice e lancia i controlli, poi commit e push su `dev`. Aspetta che il **Controllo pack** sia verde (e, se ha fatto un commit automatico, scarica l'aggiornamento).
-4. **Prova** nell'istanza che segue `dev` (dopo circa 5 minuti, per la cache di GitHub): avvio, mondo nuovo, log.
+4. **Prova** nell'istanza che segue `dev` (dopo circa 5 minuti, per la cache di GitHub): avvio, mondo nuovo, log. Ogni problema nuovo, anche minore, va in `<versione>/docs/bug-report.md` con un codice nuovo; nella voce del CHANGELOG si aggiornano **Stato** (provata, data, tag) e **Problemi noti** (codici).
 5. Se la prova passa, unisci `dev` in `main` con un merge vero, che conserva il grafico dei rami: `git checkout main && git merge --no-ff dev -m "Versione X.Y.Z" && git push`, poi torna su `dev`.
-
-Documenti e workflow possono andare su `main` anche senza una versione, con lo stesso merge, ma solo se su `dev` non c'è una tappa in corso. Mod, config e datapack arrivano su `main` solo con una versione.
 6. Crea il tag su `main`, in uno dei due modi:
    - **dal computer**: `git tag 1.21.1-vX.Y.Z && git push origin 1.21.1-vX.Y.Z`;
    - **da GitHub** (è il modo che usa Claude, che non può mandare tag): scheda *Actions* → **Release** → *Run workflow*, scrivendo il tag. Il workflow crea il tag sull'ultimo commit di `main` e rifiuta un tag già esistente.
 7. Il workflow **Release** pubblica i file. Le versioni **0.x** escono come *pre-release* (tappe di prova); il mondo vero parte dalla **1.0.0** e si aggiorna cambiando il tag nel suo indirizzo.
 
 I tag di release non si spostano e non si cancellano: per correggere una versione se ne fa una nuova.
+
+Documenti e workflow possono andare su `main` anche senza una versione, con lo stesso merge, ma solo se su `dev` non c'è una tappa in corso. Mod, config e datapack arrivano su `main` solo con una versione.
 
 ## Mod solo CurseForge
 

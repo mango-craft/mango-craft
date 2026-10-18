@@ -3,6 +3,8 @@
 | File o cartella | Contenuto |
 |---|---|
 | `context.md` | Stato completo della progettazione: mod per categoria, test e controlli da fare, config, opzionali, scartate, log delle decisioni |
+| `bug-report.md` | Tutti i problemi trovati nelle versioni, anche minori: codice, versione, effetto, piano o stato |
+| `../CHANGELOG.md` | Una voce per versione, con stato e problemi noti |
 | `decisioni/` | Log dei round di decisione (approvate, scartate, da tenere d'occhio) |
 | `verifica-versioni.md` | Versione, data, licenza ed esito della verifica di ogni mod |
 | `config-e-datapack.md` | Cosa fanno i file di configurazione e il datapack `matteo_tweaks` |

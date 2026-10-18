@@ -6,6 +6,8 @@ _Stato della progettazione · ultimo aggiornamento: 18/10/2026_
 
 Legenda: ✅ approvata · 👀 opzionale, da attenzionare · ⛔ scartata · ❓ da verificare · 🧪 da testare subito · ⚠️ attenzione
 
+Documenti collegati: **`bug-report.md`** (tutti i problemi trovati, anche minori) · **`../CHANGELOG.md`** (una voce per versione, con stato e problemi noti) · `verifica-versioni.md` · `decisioni/`
+
 Struttura del documento: **1** Obiettivo e piattaforma · **2** Mod nel pack · **3** Da fare e da controllare · **4** Approvate per tema · **5** Opzionali per tema · **6** Scartate per tema · **7** Log decisioni
 
 ---
@@ -106,7 +108,7 @@ Ancora da decidere: le grandi aggiunte (5.9).
 | Config Sparse Structures | Densità generale ✅ 0.1.1; regolazione struttura per struttura | ⏳ 0.6.x (mondo di prova) |
 | Altre config | Every Compat, Jaden's, Moog's, Artifacts (solo Curios) | ⏳ 0.6.0 |
 
-Dopo ogni tappa: avvio dell'istanza di prova, mondo nuovo, controllo del log. NeoForge resta alla **21.1.259**: se una mod nuova ne chiede una più recente, va segnalato nella sua tappa.
+Dopo ogni tappa: avvio dell'istanza di prova, mondo nuovo, controllo del log. Ogni problema nuovo, anche minore, va nel **bug report** (`docs/bug-report.md`, codici `Bnn`); la voce della versione nel **CHANGELOG** riceve Stato e Problemi noti prima del merge. NeoForge resta alla **21.1.259**: se una mod nuova ne chiede una più recente, va segnalato nella sua tappa.
 
 ### 3.1 Creazione dell'istanza in Prism
 
@@ -1168,3 +1170,4 @@ Legenda: 🟢 sta bene nel pack · 🟡 dipende o da provare · 🔴 poco adatta
 - **18/10/2026** — Tappa 2 su `dev` (0.3.0): 6 mod di cucina (versioni verificate il 17/10), Farming for Blockheads 21.1.14 e Cognition 2.4.13 (ultime release), nessuna libreria nuova; pesce cotto di Starcatcher in `c:foods/cooked_fish`, `c:foods/cooked_fishes` e `bountifulfares:cooked_fishes`. Il controllo dei nomi ora verifica anche la versione di NeoForge richiesta dalle mod: 0 errori. Da provare in gioco.
 - **18/10/2026** — **0.3.0 provata** (mondo nuovo, 7 minuti): 313 mod, 22.123 ricette, nessun errore nuovo che conti. Novità innocue nel log: 42 cornici o quadri di strutture sotterranee in posizione non valida (non vengono piazzati), modello della zuppa di guardiano di Ocean's Delight senza texture e una variante dell'altare di Cognition senza modello (difetti estetici delle mod), conflitto innocuo tra i mixin di Animal Pen e My Nether's Delight. Merge in `main` e pre-release `1.21.1-v0.3.0`.
 - **18/10/2026** — Tappa 3 su `dev` (0.4.0): 12 mod da Modrinth (ultime release: Macaw's ×4, Diagonal ×3, Chimes, Exposure, Guard Villagers, Every Compat 2.11.54, Copycats+ 3.0.9) e da CurseForge Goblin Traders 1.11.2 con la sua libreria Framework 0.13.11 (non sono su Modrinth). Controllo dei nomi: 0 errori. Da provare in gioco.
+- **18/10/2026** — Nuove regole (richiesta dell'utente): **bug report** in `docs/bug-report.md` con tutti i problemi trovati, anche minori (21 voci iniziali dai log di 0.1.0–0.3.0 e dal controllo dei nomi: 3 da correggere da noi, 4 da verificare in gioco, 9 delle mod, 5 risolti o aggirati); **CHANGELOG** con Stato e Problemi noti per ogni versione e lo storico dei pacchetti `.mrpack` prima del repository. Regole scritte in `AGENTS.md` (4 e 5) e `docs/sviluppo.md`.
