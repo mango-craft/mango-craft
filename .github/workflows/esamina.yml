@@ -16,6 +16,10 @@ on:
         description: "Espressione regolare sui percorsi dei .json di cui elencare i valori (- = nessuno)"
         required: true
         default: "-"
+      stringhe:
+        description: "Espressione regolare sui testi del codice compilato (nomi di config, comandi; - = nessuno)"
+        required: false
+        default: "-"
 
 permissions:
   contents: write
@@ -35,10 +39,11 @@ jobs:
           PACK: ${{ inputs.pack }}
           MODS: ${{ inputs.mods }}
           FILTRO: ${{ inputs.filtro }}
+          STRINGHE: ${{ inputs.stringhe }}
         run: |
           out="$(dirname "$PACK")/data/esami"
           # shellcheck disable=SC2086
-          python3 scripts/esamina.py "$PACK" "$out" "$FILTRO" $MODS
+          python3 scripts/esamina.py "$PACK" "$out" "$FILTRO" --stringhe "${STRINGHE:--}" $MODS
 
       - name: Salva
         env:
