@@ -1,0 +1,111 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Every Compat (Wood Good)",
+ "file": "everycomp-1.21-2.11.54-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "832ba719252aeda40bd93bf58a37ff217fb8f9bc5ca0c28031b901fbe70f693a6fa1da1812cf3ef3f19686428576eaefa706c0f464cce20505e928ef03fec4f0",
+ "mods": [
+  {
+   "modid": "everycomp",
+   "name": "Every Compat",
+   "version": "1.21-2.11.54",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "moonlight",
+     "type": "required",
+     "range": "[1.21.1-3.1.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "optional",
+     "range": "[1.21.1-6.0.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "mcwdoors",
+     "type": "optional",
+     "range": "[1.1.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "mcwtrpdoors",
+     "type": "optional",
+     "range": "[1.1.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "blockus",
+     "type": "optional",
+     "range": "[2.9.11,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "regions_unexplored",
+     "type": "optional",
+     "range": "[0.6,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "deeperdarker",
+  "everycomp",
+  "xercamod"
+ ],
+ "items": {
+  "everycomp:all_woods": ""
+ },
+ "data": {
+  "tags/items": [
+   "everycomp:chipped_wooden_stuff"
+  ],
+  "template_recipes": [
+   "everycomp:botanypots/crop/leaves_from_quark_hedge_crop",
+   "everycomp:example.json.disabled",
+   "everycomp:xerca/carving/carved_warped_1_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_1_from_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_2_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_2_from_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_3_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_3_from_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_4_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_4_from_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_5_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_5_from_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_6_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_6_from_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_7_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_7_from_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_8_from_stripped_warped_stem_carving",
+   "everycomp:xerca/carving/carved_warped_8_from_warped_stem_carving"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/items": {
+   "everycomp:chipped_wooden_stuff": []
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

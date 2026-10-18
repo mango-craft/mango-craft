@@ -1,27 +1,35 @@
 Aggiungi mod Modrinth — 2026-10-18
-== my-nethers-delight 1.10.4.1 (SGFJBL5q)
+== macaws-roofs 2.3.2 (jiXRXiSt)
+Project "Macaw's Roofs" successfully added! (mcw-roofs-2.3.2-mc1.21.1neoforge.jar)
+== macaws-paths-and-pavings 1.1.1 (tlymsxUG)
+Project "Macaw's Paths and Pavings" successfully added! (mcw-mcwpaths-1.1.1-mc1.21.1neoforge.jar)
+== macaws-bridges 3.1.2 (aQ7rY7ng)
+Project "Macaw's Bridges" successfully added! (mcw-bridges-3.1.2-mc1.21.1neoforge.jar)
+== macaws-windows 2.4.2 (rQUE4LCz)
+Project "Macaw's Windows" successfully added! (mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar)
+== diagonal-fences v21.1.1-1.21.1-NeoForge (bgR1e0O5)
 Finding dependencies...
 All dependencies are already added!
-Project "My Nether's Delight" successfully added! (MyNethersDelight-1.21.1-1.10.4.1.jar)
-== chefs-delight 1.0.6-neoforge-1.21.1 (N8hZwT7r)
-Project "Chef's Delight - Farmer's Delight Villagers" successfully added! (chefsdelight-1.0.6.jar)
-== create-confectionery 1.1.3.b (ndnETBEN)
+Project "Diagonal Fences" successfully added! (DiagonalFences-v21.1.1-1.21.1-NeoForge.jar)
+== diagonal-walls v21.1.2-1.21.1-NeoForge (2k3GCxEt)
 Finding dependencies...
 All dependencies are already added!
-Project "Create Confectionery" successfully added! (create-confectionery1.21.1_v1.1.3b.jar)
-== rustic-delight 1.7.1 (sAaG4pSA)
+Project "Diagonal Walls" successfully added! (DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar)
+== diagonal-windows v21.1.1-1.21.1-NeoForge (IwUmOLxe)
 Finding dependencies...
 All dependencies are already added!
-Project "Rustic Delight" successfully added! (rusticdelight-neoforge-1.21-1.7.1.jar)
-== oceans-delight 1.0.4 (ja5Qg1xw)
-Project "Ocean's Delight" successfully added! (oceansdelight-neoforge-1.0.4-1.21.1.jar)
-== autochefs-delight 2.0.3+neoforge (ENpbCFK1)
+Project "Diagonal Windows" successfully added! (DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar)
+== chimes 2.1.1 (KIYfGvje)
+Project "Chimes" successfully added! (Chimes-v2.1.1-1.21.1-NeoForge.jar)
+== exposure 1.9.19 (iBvaR6AK)
+Project "Exposure" successfully added! (exposure-neoforge-1.21.1-1.9.19.jar)
+== guard-villagers 2.4.12 (JyXugpy2)
+Project "Guard Villagers" successfully added! (guardvillagers-2.4.12-1.21.1.jar)
+== every-compat 1.21-2.11.54 (Zhg9H64v)
 Finding dependencies...
 All dependencies are already added!
-Project "Autochef's Delight" successfully added! (AutochefsDelight-1.21.1-NeoForge-2.0.3.jar)
-== farming-for-blockheads 21.1.14+neoforge-1.21.1 (ljWZyuzV)
+Project "Every Compat (Wood Good)" successfully added! (everycomp-1.21-2.11.54-neoforge.jar)
+== copycats 3.0.9+mc.1.21.1-neoforge (bPYeUWZx)
 Finding dependencies...
 All dependencies are already added!
-Project "Farming for Blockheads" successfully added! (farmingforblockheads-neoforge-1.21.1-21.1.14.jar)
-== cognition 2.4.13 (cL9RvpFS)
-Project "Cognition" successfully added! (Cognition-v2.4.13-1.21.1.jar)
+Project "Create: Copycats+" successfully added! (copycats-3.0.9+mc.1.21.1-neoforge.jar)

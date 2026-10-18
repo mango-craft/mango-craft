@@ -1,0 +1,215 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Diagonal Windows",
+ "file": "DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "fd335b7789321a1d0de9691d855c2bcc51d669f4614bdd2cd6fe17f7881f9dd39e63cb28c39a1a1798e98a6876ad1658ef2e3805e884f13e4650810611227849",
+ "mods": [
+  {
+   "modid": "diagonalblocks",
+   "name": "Diagonal Blocks",
+   "version": "21.1.1",
+   "jar": "diagonalblocks-neoforge-21.1.1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "puzzleslib",
+     "type": "required",
+     "range": "[21.1.7,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "diagonalwindows",
+   "name": "Diagonal Windows",
+   "version": "21.1.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "puzzleslib",
+     "type": "required",
+     "range": "[21.1.15,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "diagonalblocks",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "diagonalblocks-neoforge-21.1.1.jar"
+ ],
+ "namespaces": [
+  "diagonalblocks",
+  "diagonalfences",
+  "diagonalwalls",
+  "diagonalwindows"
+ ],
+ "data": {
+  "tags/block": [
+   "diagonalblocks:never_blocks_diagonal_connections",
+   "diagonalfences:non_diagonal_fences",
+   "diagonalwalls:non_diagonal_walls",
+   "diagonalwindows:non_diagonal_windows"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "diagonalblocks:never_blocks_diagonal_connections": [
+    "minecraft:snow"
+   ],
+   "diagonalfences:non_diagonal_fences": [
+    "immersiveengineering:treated_fence?",
+    "immersiveengineering:steel_fence?"
+   ],
+   "diagonalwalls:non_diagonal_walls": [],
+   "diagonalwindows:non_diagonal_windows": [
+    "chipped:arched_lime_stained_glass_pane_pillar?",
+    "chipped:small_light_blue_stained_glass_pane?",
+    "chipped:arched_blue_stained_glass_pane_pillar?",
+    "chipped:oak_bordered_glass_pane?",
+    "chipped:raster_purple_stained_glass_pane?",
+    "chipped:tiled_lime_stained_glass_pane?",
+    "chipped:fancy_pink_stained_glass_pane?",
+    "chipped:ornate_red_stained_glass_pane?",
+    "chipped:fancy_light_gray_stained_glass_pane?",
+    "chipped:square_oak_glass_pane?",
+    "chipped:ornate_light_gray_stained_glass_pane?",
+    "chipped:ornate_lime_stained_glass_pane?",
+    "chipped:arched_cyan_stained_glass_pane_pillar?",
+    "chipped:fancy_cyan_stained_glass_pane?",
+    "chipped:ornate_yellow_stained_glass_pane?",
+    "chipped:ornate_white_stained_glass_pane?",
+    "chipped:tiled_cyan_stained_glass_pane?",
+    "chipped:tiled_light_blue_stained_glass_pane?",
+    "chipped:fancy_gray_stained_glass_pane?",
+    "chipped:raster_blue_stained_glass_pane?",
+    "chipped:small_red_stained_glass_pane?",
+    "chipped:raster_magenta_stained_glass_pane?",
+    "chipped:tiled_blue_stained_glass_pane?",
+    "chipped:tiled_brown_stained_glass_pane?",
+    "chipped:small_yellow_stained_glass_pane?",
+    "chipped:small_green_stained_glass_pane?",
+    "chipped:small_purple_stained_glass_pane?",
+    "chipped:oak_diamond_bordered_glass_pane?",
+    "chipped:tiled_green_stained_glass_pane?",
+    "chipped:small_light_gray_stained_glass_pane?",
+    "chipped:arched_red_stained_glass_pane_pillar?",
+    "chipped:tiled_gray_stained_glass_pane?",
+    "chipped:raster_red_stained_glass_pane?",
+    "chipped:clear_leaded_glass_pane?",
+    "chipped:raster_green_stained_glass_pane?",
+    "chipped:tiled_yellow_stained_glass_pane?",
+    "chipped:raster_pink_stained_glass_pane?",
+    "chipped:arched_purple_stained_glass_pane_pillar?",
+    "chipped:ornate_purple_stained_glass_pane?",
+    "chipped:small_diamond_leaded_glass_pane?",
+    "chipped:tiled_magenta_stained_glass_pane?",
+    "chipped:arched_leaded_glass_pane_pillar?",
+    "chipped:fancy_black_stained_glass_pane?",
+    "chipped:fancy_blue_stained_glass_pane?",
+    "chipped:small_brown_stained_glass_pane?",
+    "chipped:oak_horizontal_lined_glass_pane?",
+    "chipped:ornate_pink_stained_glass_pane?",
+    "chipped:ornate_brown_stained_glass_pane?",
+    "chipped:arched_light_blue_stained_glass_pane_pillar?",
+    "chipped:arched_brown_stained_glass_pane_pillar?",
+    "chipped:raster_brown_stained_glass_pane?",
+    "chipped:raster_white_stained_glass_pane?",
+    "chipped:ornate_cyan_stained_glass_pane?",
+    "chipped:raster_lime_stained_glass_pane?",
+    "chipped:fancy_magenta_stained_glass_pane?",
+    "chipped:small_blue_stained_glass_pane?",
+    "chipped:tiled_pink_stained_glass_pane?",
+    "chipped:fancy_red_stained_glass_pane?",
+    "chipped:small_magenta_stained_glass_pane?",
+    "chipped:arched_light_gray_stained_glass_pane_pillar?",
+    "chipped:raster_leaded_glass_pane?",
+    "chipped:fancy_light_blue_stained_glass_pane?",
+    "chipped:oak_woven_glass_pane?",
+    "chipped:fancy_yellow_stained_glass_pane?",
+    "chipped:raster_yellow_stained_glass_pane?",
+    "chipped:oak_line_bared_glass_pane?",
+    "chipped:ornate_light_blue_stained_glass_pane?",
+    "chipped:small_gray_stained_glass_pane?",
+    "chipped:arched_pink_stained_glass_pane_pillar?",
+    "chipped:oak_large_diamond_glass_pane?",
+    "chipped:small_orange_stained_glass_pane?",
+    "chipped:fancy_lime_stained_glass_pane?",
+    "chipped:small_lime_stained_glass_pane?",
+    "chipped:fancy_orange_stained_glass_pane?",
+    "chipped:arched_white_stained_glass_pane_pillar?",
+    "chipped:fancy_brown_stained_glass_pane?",
+    "chipped:arched_magenta_stained_glass_pane_pillar?",
+    "chipped:tiled_purple_stained_glass_pane?",
+    "chipped:ornate_gray_stained_glass_pane?",
+    "chipped:ornate_blue_stained_glass_pane?",
+    "chipped:oak_bared_glass_pane?",
+    "chipped:raster_light_gray_stained_glass_pane?",
+    "chipped:tiled_orange_stained_glass_pane?",
+    "chipped:ornate_magenta_stained_glass_pane?",
+    "chipped:small_pink_stained_glass_pane?",
+    "chipped:arched_orange_stained_glass_pane_pillar?",
+    "chipped:raster_light_blue_stained_glass_pane?",
+    "chipped:arched_black_stained_glass_pane_pillar?",
+    "chipped:arched_gray_stained_glass_pane_pillar?",
+    "chipped:small_cyan_stained_glass_pane?",
+    "chipped:ornate_leaded_glass_pane?",
+    "chipped:fancy_white_stained_glass_pane?",
+    "chipped:raster_gray_stained_glass_pane?",
+    "chipped:tiled_white_stained_glass_pane?",
+    "chipped:tiled_black_stained_glass_pane?",
+    "chipped:fancy_green_stained_glass_pane?",
+    "chipped:ornate_green_stained_glass_pane?",
+    "chipped:small_white_stained_glass_pane?",
+    "chipped:arched_yellow_stained_glass_pane_pillar?",
+    "chipped:raster_cyan_stained_glass_pane?",
+    "chipped:tiled_red_stained_glass_pane?",
+    "chipped:ornate_black_stained_glass_pane?",
+    "chipped:raster_black_stained_glass_pane?",
+    "chipped:ornate_orange_stained_glass_pane?",
+    "chipped:raster_orange_stained_glass_pane?",
+    "chipped:small_black_stained_glass_pane?",
+    "chipped:fancy_purple_stained_glass_pane?",
+    "chipped:oak_ornate_bared_glass_pane?",
+    "chipped:tiled_light_gray_stained_glass_pane?",
+    "chipped:arched_green_stained_glass_pane_pillar?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,324 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Exposure",
+ "file": "exposure-neoforge-1.21.1-1.9.19.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "b6b18638d61196c3b579dcb5cd977b125586c848822ffa3bb247b3d34dc019e3ca53629303cbb57c0875f7e29be30ae036e81d90dd8feb5dd87090b2b81c08b7",
+ "mods": [
+  {
+   "modid": "exposure",
+   "name": "Exposure",
+   "version": "1.9.19",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "optional",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "optional",
+     "range": "[6.0.7,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "mixinextras-neoforge-0.4.1.jar"
+ ],
+ "namespaces": [
+  "create",
+  "exposure",
+  "minecraft",
+  "neoforge"
+ ],
+ "blocks": {
+  "exposure:flash": "",
+  "exposure:glass_photograph_frame_large": "",
+  "exposure:glass_photograph_frame_medium": "",
+  "exposure:glass_photograph_frame_small": "",
+  "exposure:lightroom": "Lightroom",
+  "exposure:photograph_frame_large": "",
+  "exposure:photograph_frame_medium": "",
+  "exposure:photograph_frame_small": ""
+ },
+ "entities": {
+  "exposure:camera_stand": "Camera Stand",
+  "exposure:glass_photograph_frame": "Glass Photograph Frame",
+  "exposure:glow_photograph_frame": "Glow Photograph Frame",
+  "exposure:photograph": "Photograph",
+  "exposure:photograph_frame": "Photograph Frame"
+ },
+ "items": {
+  "exposure:aged_photograph": "Aged Photograph",
+  "exposure:album": "Photo Album",
+  "exposure:album_one": "",
+  "exposure:album_three": "",
+  "exposure:album_two": "",
+  "exposure:black_and_white_film": "Black and White Film",
+  "exposure:broken_interplanar_projector": "Broken Interplanar Projector",
+  "exposure:camera": "Camera",
+  "exposure:camera_active": "",
+  "exposure:camera_gold": "",
+  "exposure:camera_gold_active": "",
+  "exposure:camera_gold_gui": "",
+  "exposure:camera_gold_selfie": "",
+  "exposure:camera_gui": "",
+  "exposure:camera_selfie": "",
+  "exposure:camera_stand": "Camera Stand",
+  "exposure:chromatic_sheet": "Chromatic Sheet",
+  "exposure:chromatic_sheet_one": "",
+  "exposure:chromatic_sheet_three": "",
+  "exposure:chromatic_sheet_two": "",
+  "exposure:color_film": "Color Film",
+  "exposure:developed_black_and_white_film": "Developed Black and White Film",
+  "exposure:developed_color_film": "Developed Color Film",
+  "exposure:glass_photograph_frame": "Glass Photograph Frame",
+  "exposure:high_sensitivity_black_and_white_film": "High-Sensitivity Black and White Film",
+  "exposure:high_sensitivity_color_film": "High-Sensitivity Color Film",
+  "exposure:interplanar_projector": "Interplanar Projector",
+  "exposure:interplanar_projector_active": "",
+  "exposure:lightroom": "",
+  "exposure:photograph": "Photograph",
+  "exposure:photograph_frame": "Photograph Frame",
+  "exposure:selfie_stick": "",
+  "exposure:signed_album": "Signed Photo Album",
+  "exposure:stacked_photographs": "Stacked Photographs",
+  "exposure:stacked_photographs_three": "",
+  "exposure:stacked_photographs_two": ""
+ },
+ "data": {
+  "exposure": [
+   "exposure:color_palette/map_colors",
+   "exposure:color_palette/map_colors_plus",
+   "exposure:filter/black_pane",
+   "exposure:filter/blue_pane",
+   "exposure:filter/broken_interplanar_projector",
+   "exposure:filter/brown_pane",
+   "exposure:filter/cyan_pane",
+   "exposure:filter/glass_pane",
+   "exposure:filter/gray_pane",
+   "exposure:filter/green_pane",
+   "exposure:filter/interplanar_projector",
+   "exposure:filter/light_blue_pane",
+   "exposure:filter/light_gray_pane",
+   "exposure:filter/lime_pane",
+   "exposure:filter/magenta_pane",
+   "exposure:filter/orange_pane",
+   "exposure:filter/pink_pane",
+   "exposure:filter/purple_pane",
+   "exposure:filter/red_pane",
+   "exposure:filter/white_pane",
+   "exposure:filter/yellow_pane",
+   "exposure:lens/spyglass"
+  ],
+  "loot_modifiers": [
+   "exposure:abandoned_mineshaft",
+   "exposure:shipwreck_map",
+   "exposure:simple_dungeon",
+   "exposure:stronghold_crossing",
+   "exposure:village_plains_house",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "exposure:blocks/lightroom",
+   "exposure:chests/abandoned_mineshaft",
+   "exposure:chests/shipwreck_map",
+   "exposure:chests/simple_dungeon",
+   "exposure:chests/stronghold_crossing",
+   "exposure:chests/village_plains_house"
+  ],
+  "recipe": [
+   "create:sequenced_assembly/black_and_white_film_developing",
+   "create:sequenced_assembly/color_film_developing",
+   "create:sequenced_assembly/high_sensitivity_black_and_white_film_developing",
+   "create:sequenced_assembly/high_sensitivity_color_film_developing",
+   "exposure:album",
+   "exposure:black_and_white_film",
+   "exposure:black_and_white_film_developing",
+   "exposure:broken_interplanar_projector_fixing",
+   "exposure:camera",
+   "exposure:camera_stand",
+   "exposure:color_film",
+   "exposure:color_film_developing",
+   "exposure:glass_photograph_frame",
+   "exposure:high_sensitivity_black_and_white_film",
+   "exposure:high_sensitivity_color_film",
+   "exposure:interplanar_projector",
+   "exposure:lightroom",
+   "exposure:photograph_aging",
+   "exposure:photograph_copying_black_and_white",
+   "exposure:photograph_copying_color",
+   "exposure:photograph_frame"
+  ],
+  "tags/block": [
+   "exposure:chromatic_refractors",
+   "minecraft:mineable/axe"
+  ],
+  "tags/entity_type": [
+   "exposure:ignores_camera",
+   "minecraft:can_turn_in_boats"
+  ],
+  "tags/item": [
+   "exposure:black_and_white_film_rolls",
+   "exposure:black_printing_dyes",
+   "exposure:blue_filters",
+   "exposure:color_film_rolls",
+   "exposure:cyan_printing_dyes",
+   "exposure:developed_film_rolls",
+   "exposure:film_rolls",
+   "exposure:filters",
+   "exposure:flashes",
+   "exposure:green_filters",
+   "exposure:lenses",
+   "exposure:magenta_printing_dyes",
+   "exposure:photo_agers",
+   "exposure:photo_papers",
+   "exposure:red_filters",
+   "exposure:yellow_printing_dyes",
+   "minecraft:bookshelf_books",
+   "minecraft:lectern_books"
+  ],
+  "tags/recipe_serializer": [
+   "create:automation_ignore"
+  ]
+ },
+ "data_counts": {
+  "advancement": 29
+ },
+ "tags": {
+  "tags/block": {
+   "exposure:chromatic_refractors": [
+    "minecraft:tinted_glass"
+   ],
+   "minecraft:mineable/axe": [
+    "exposure:lightroom"
+   ]
+  },
+  "tags/entity_type": {
+   "exposure:ignores_camera": [
+    "minecraft:warden",
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "minecraft:elder_guardian",
+    "minecraft:phantom"
+   ],
+   "minecraft:can_turn_in_boats": [
+    "exposure:camera_stand"
+   ]
+  },
+  "tags/item": {
+   "exposure:black_and_white_film_rolls": [
+    "exposure:black_and_white_film",
+    "exposure:high_sensitivity_black_and_white_film"
+   ],
+   "exposure:black_printing_dyes": [
+    "minecraft:black_dye"
+   ],
+   "exposure:blue_filters": [
+    "minecraft:blue_stained_glass_pane"
+   ],
+   "exposure:color_film_rolls": [
+    "exposure:color_film",
+    "exposure:high_sensitivity_color_film"
+   ],
+   "exposure:cyan_printing_dyes": [
+    "minecraft:cyan_dye"
+   ],
+   "exposure:developed_film_rolls": [
+    "exposure:developed_black_and_white_film",
+    "exposure:developed_color_film"
+   ],
+   "exposure:film_rolls": [
+    "exposure:black_and_white_film",
+    "exposure:color_film",
+    "exposure:high_sensitivity_black_and_white_film",
+    "exposure:high_sensitivity_color_film"
+   ],
+   "exposure:filters": [
+    "minecraft:glass_pane",
+    "minecraft:white_stained_glass_pane",
+    "minecraft:orange_stained_glass_pane",
+    "minecraft:magenta_stained_glass_pane",
+    "minecraft:light_blue_stained_glass_pane",
+    "minecraft:yellow_stained_glass_pane",
+    "minecraft:lime_stained_glass_pane",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:cyan_stained_glass_pane",
+    "minecraft:purple_stained_glass_pane",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:brown_stained_glass_pane",
+    "minecraft:green_stained_glass_pane",
+    "minecraft:red_stained_glass_pane",
+    "minecraft:black_stained_glass_pane",
+    "exposure:interplanar_projector"
+   ],
+   "exposure:flashes": [
+    "minecraft:redstone_lamp",
+    "immersiveengineering:light_bulb?"
+   ],
+   "exposure:green_filters": [
+    "minecraft:green_stained_glass_pane"
+   ],
+   "exposure:lenses": [
+    "minecraft:spyglass"
+   ],
+   "exposure:magenta_printing_dyes": [
+    "minecraft:magenta_dye"
+   ],
+   "exposure:photo_agers": [
+    "minecraft:brown_dye",
+    "supplementaries:antique_ink?"
+   ],
+   "exposure:photo_papers": [
+    "minecraft:paper"
+   ],
+   "exposure:red_filters": [
+    "minecraft:red_stained_glass_pane"
+   ],
+   "exposure:yellow_printing_dyes": [
+    "minecraft:yellow_dye"
+   ],
+   "minecraft:bookshelf_books": [
+    "exposure:album",
+    "exposure:signed_album"
+   ],
+   "minecraft:lectern_books": [
+    "exposure:album",
+    "exposure:signed_album"
+   ]
+  },
+  "tags/recipe_serializer": {
+   "create:automation_ignore": [
+    "exposure:film_developing?",
+    "exposure:photograph_copying?",
+    "exposure:photograph_aging?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "create:sequenced_assembly": 4,
+  "exposure:component_transferring": 1,
+  "exposure:film_developing": 2,
+  "exposure:photograph_aging": 1,
+  "exposure:photograph_copying": 2,
+  "minecraft:crafting_shaped": 10,
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}
