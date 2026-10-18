@@ -18,8 +18,8 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 - **Esplorazione**: **Aures Farmers Structures** (costruzioni rurali a tema Farmer's Delight), **Better Archeology** (fossili, reperti, siti di scavo), **Nature's Compass** (bussola che trova i biomi), **Paragliders** (parapendio; genera statue).
 - **Mob**: **Aquamirae** (boss e mob degli oceani ghiacciati; libreria nuova **Fragmentum**), **Creeper Overhaul** (creeper diversi per bioma).
 - **Librerie aggiornate**: **Moog's Structure Lib** dalla 3.0.3 alla 3.4.2 (Moog's Nether Structures chiede almeno la 3.3.0).
-- **Stato**: 🧪 in prova su `dev`.
-- **Problemi noti**: B28 (il gioco non partiva per la libreria vecchia) risolto prima del rilascio; B29 (ricette e suoni mancanti di Jaden's, minori). Prima prova 18/10: avvio in 73 secondi, 28.612 ricette, mondo nuovo creato senza errori, il Nether di Jaden's si inizializza correttamente.
+- **Stato**: ✅ provata il 18/10/2026 (mondo nuovo; nel Nether alghe e pesci di lava presenti, biomi di Jaden's attivi; avvio in 73–81 secondi, 28.612 ricette) e rilasciata come pre-release `1.21.1-v0.5.0`. Generare il Nether nuovo è pesante (un rallentamento di 2,5 secondi entrando): conviene pregenerarlo con Chunky nel mondo di prova.
+- **Problemi noti**: B28 (il gioco non partiva per la libreria vecchia) risolto prima del rilascio; B29–B31 minori (ricette e suoni di Jaden's, ricette delle finestre di Create in un secondo mondo, stalattite di Jaden's tra due chunk).
 
 ## 0.4.0 — 18/10/2026 · tappa 3 (pre-release di prova)
 

@@ -50,7 +50,9 @@ _Ultimo aggiornamento: 18/10/2026 (versioni fino alla 0.5.0, prima prova)._
 | B29 | 0.5.0 | Jaden's Nether Expansion 2.4.1 | 5 ricette della mod citano oggetti che nella versione riscritta non esistono più (`iron_scrap`, `warphopper_fur`, `igneous_reeds`, `indented_soul_slate_tiles`) e vengono saltate; lo stesso per una ricetta di Just Enough Breeding (uovo del False Carcass). Mancano anche 2 suoni, 2 etichette e alcuni parametri di shader (Lodestone) | basso: ricette di oggetti inesistenti, al massimo qualche suono o effetto grafico in meno |
 | B25 | 0.4.0 | Unusual End + Every Compat | La ricetta `unusualend:chorus_cane_cabinet_fix` cita una credenza di Every Compat (`everycomp:fd/unusualend/chorus_cane_cabinet`) che non viene creata: ricetta saltata | nessuno |
 | B26 | 0.4.0 | Chimes | Due suoni della campana d'ametista hanno lettere maiuscole nel nome (`shimmering1A.ogg`, `shimmering2A.ogg`): il gioco li scarta | basso: due varianti di suono in meno |
-| B27 | 0.4.0 | Generazione del mondo (mod non identificata) | 123 avvisi "Ignoring unknown attribute 'forge:entity_gravity'" mentre si genera il mondo: qualche mob delle strutture ha un attributo col nome vecchio di Forge, che viene ignorato | nessuno: il mob usa la gravità normale |
+| B27 | 0.4.0 | Generazione del mondo (mod non identificata) | 123 avvisi "Ignoring unknown attribute 'forge:entity_gravity'" mentre si genera il mondo (e, dalla 0.5.0, 10 per `forge:step_height_addition` nel Nether): qualche mob delle strutture ha un attributo col nome vecchio di Forge, che viene ignorato | nessuno: il mob usa la gravità normale |
+| B30 | 0.5.0 | Every Compat + Create | Aprendo un secondo mondo nella stessa sessione di gioco, Every Compat non riesce a creare le ricette delle finestre di Create per i legni delle altre mod (circa 50 errori, 29 ricette in meno) | basso: basta riavviare il gioco |
+| B31 | 0.5.0 | Jaden's Nether Expansion | Le stalattiti di netherrack (`netherexp:netherrack_speleothem`) piazzano blocchi fuori dal chunk che si sta generando (11 avvisi "setBlock in a far chunk") | basso: qualche stalattite tagliata ai bordi dei chunk |
 
 ## ✅ Risolti o aggirati
 
