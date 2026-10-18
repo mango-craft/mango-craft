@@ -6,6 +6,7 @@ Le valutazioni complete stanno nelle ricerche (`07xx`) e negli allegati del roun
 
 | Mod | Stato | Quando rivalutare |
 |---|---|---|
+| **Enhanced Celestials 2** (Core + Default Lunar Events) | Seguito ufficiale di Enhanced Celestials, che ora mostra un annuncio a ogni ingresso nel mondo. Stesse lune, formato dei dati nuovo, codice chiuso (ARR). Shader Support no (richiede Iris). Analisi in `0708-enhanced-celestials-2.md` | Ora: in valutazione su richiesta dell'utente (18/10) |
 | ⭐ **Malum** | Prima scelta per il futuro | All'uscita della 1.9, in un mondo nuovo |
 | **Tectonic** | "Molto papabile" | Se si accetta il rischio sulle strutture: When Dungeons Arise ha strutture volanti che finirebbero dentro le montagne (serve spegnerle). Compatibile con Regions Unexplored per dichiarazione ufficiale e per uso in altri pack (Adventure T1ne); clima e dimensione dei biomi invariati, cambia il rilievo |
 | **StructBlend** | Nuovissima, solo CurseForge, licenza non dichiarata | Rimodella il terreno attorno alle strutture: utile soprattutto con Tectonic |

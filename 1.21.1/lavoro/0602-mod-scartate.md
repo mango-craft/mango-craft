@@ -104,7 +104,6 @@ Le mod valutate e lasciate fuori, con il motivo. Documento vivo: una mod scartat
 | Client Sort, Inventory Profiles Next | Scelta Inventory Essentials (Client Sort non rimpiazza gli attrezzi; IPN macchinoso e fermo da marzo su 1.21.1) |
 | Backpacked | Sviluppo lento, molte issue aperte, morte gestita solo con YIGD |
 | Sodium Dynamic Lights | Port non ufficiale di LambDynamicLights, fermo a gennaio 2025 → sostituito dall'originale |
-| Enhanced Celestials 2 (Core + Default Lunar Events) | Riscrittura divisa in libreria + addon, molto meno diffusa; scelta la mod originale |
 | FTB Quests | Bisognerebbe scriversi le quest da soli |
 | FTB Chunks | Doppione di Xaero's e Chunk Loaders |
 | Corpse | Doppione di Corail Tombstone |
