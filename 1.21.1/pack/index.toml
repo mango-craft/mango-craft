@@ -627,6 +627,11 @@ hash = "70f586b80beb657a8676b1147b1b96c4abd0aa421c819aa138038e082c41bc4d"
 metafile = true
 
 [[files]]
+file = "mods/enhanced-celestials-2-shader-support.pw.toml"
+hash = "118cc51b91c098a97d8a95de27c43d95556515a3bde0dce7a2a3eb1eff336a64"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "fa20fb7362040ed5528555ee03cb97e4597c1229bdbb0e67fa1adb4e34ce67c8"
 metafile = true
@@ -769,6 +774,11 @@ metafile = true
 [[files]]
 file = "mods/inventory-essentials.pw.toml"
 hash = "904d4d9bdabf6a6cbedab254debd43ccecc2986304fddfc26ff9031752ce1a39"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
 metafile = true
 
 [[files]]

@@ -1,0 +1,141 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Iris Shaders",
+ "file": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+ "side": "client",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "33fddb430e16222902eac75b8b3d57c381b0f3cc729f3b56c4628df12ca108f23a0b11e2feb167923d6d14d1fc7e8ee1a977ec421b19d1951bdca74c4092b9c5",
+ "mods": [
+  {
+   "modid": "iris",
+   "name": "Iris",
+   "version": "1.8.14-beta.1+mc1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "embeddium",
+     "type": "incompatible",
+     "range": "[0.0.1,)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_api_base",
+   "name": "Forgified Fabric API Base",
+   "version": "0.4.42+d1308ded19",
+   "jar": "fabric-api-base-0.4.42+d1308ded19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_block_view_api_v2",
+   "name": "Forgified Fabric BlockView API (v2)",
+   "version": "1.0.10+9afaaf8c19",
+   "jar": "fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.115,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_renderer_api_v1",
+   "name": "Forgified Fabric Renderer API (v1)",
+   "version": "3.4.0+acb05a3919",
+   "jar": "fabric-renderer-api-v1-3.4.0+acb05a3919.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.57,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_rendering_data_attachment_v1",
+   "name": "Forgified Fabric Rendering Data Attachment (v1)",
+   "version": "0.3.48+73761d2e19",
+   "jar": "fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.115,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_block_view_api_v2",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "fabric-api-base-0.4.42+d1308ded19.jar",
+  "fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+  "fabric-renderer-api-v1-3.4.0+acb05a3919.jar",
+  "fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+  "glsl-transformer-3.0.0-pre3.jar",
+  "jcpp-1.4.14.jar"
+ ],
+ "namespaces": [
+  "iris"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}
