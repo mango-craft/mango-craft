@@ -2,16 +2,16 @@
  "format": 2,
  "status": "ok",
  "name": "Data Anchor",
- "file": "Data_Anchor-neoforge-1.21.1-2.0.0.14.jar",
+ "file": "Data_Anchor-neoforge-1.21.1-2.0.0.17.jar",
  "side": "both",
  "source": "modrinth",
  "hash_format": "sha512",
- "hash": "2766df171348d7e0b0776b229e8779d3fd258f2c743b688e9cec7664f54cd39105d27e3afa664b34fd9c3c80a66c7da0984c4a2cb36872ad4a01a566782963b7",
+ "hash": "f760e127bc3a4701548da6d80012027aaad8b65c6895362b3f42c224bdf3d0083e0a8b94ec42d01c3f8d03a0e1d8123632f364f819882aa00913a2eee7907a5e",
  "mods": [
   {
    "modid": "dataanchor",
    "name": "Data Anchor",
-   "version": "2.0.0.14",
+   "version": "2.0.0.17",
    "jar": "",
    "deps": [
     {

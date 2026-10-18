@@ -1,0 +1,183 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Enhanced Celestials 2: Default Lunar Events",
+ "file": "Enhanced-Celestials-2-Default-Lunar-Events-NeoForge-1.21.1-2.0.1.3.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "21d2778c502527ee2f110d00162a4c9f69b5e43fe1b0a5832550eb59ee008f61789dac25903b8f63e2de0580d2106dffea17b87717c6a9fc3384a3ee468c10c1",
+ "mods": [
+  {
+   "modid": "enhancedcelestials2defaultlunarevents",
+   "name": "Enhanced Celestials 2: Default Lunar Events",
+   "version": "2.0.1.3",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "enhancedcelestials2core",
+     "type": "required",
+     "range": "[2.0.3.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "corgilib",
+     "type": "required",
+     "range": "[5.0.0.9,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "enhancedcelestials",
+     "type": "incompatible",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "enhancedcelestials2defaultlunarevents"
+ ],
+ "data": {
+  "enhancedcelestials2core": [
+   "enhancedcelestials2defaultlunarevents:lunar/event/blood_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/blue_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/harvest_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/super_blood_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/super_blue_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/super_harvest_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/super_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_block_sleeping",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_force_surface_spawning",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_mob_spawn_distances",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_moon_texture_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_name_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_sky_light_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_sound_track",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_spawn_category_multiplier",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_text_components",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blood_moon_village_siege_probability",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_anvil_cost",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_beacon_radius",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_enchantment_cost",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_experience",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_mob_effects",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_moon_texture_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_name_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_sky_light_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_sound_track",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/blue_moon_text_components",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/harvest_moon_item_drop",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/harvest_moon_moon_texture_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/harvest_moon_name_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/harvest_moon_sky_light_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/harvest_moon_sound_track",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/harvest_moon_text_components",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_block_sleeping",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_force_surface_spawning",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_mob_spawn_distances",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_moon_size",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_moon_texture_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_name_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_sky_light_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_sound_track",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_spawn_category_multiplier",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_text_components",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blood_moon_village_siege_probability",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_anvil_cost",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_beacon_radius",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_enchantment_cost",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_experience",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_mob_effects",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_moon_size",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_moon_texture_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_name_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_sky_light_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_sound_track",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_blue_moon_text_components",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_harvest_moon_item_drop",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_harvest_moon_moon_size",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_harvest_moon_moon_texture_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_harvest_moon_name_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_harvest_moon_sky_light_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_harvest_moon_sound_track",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_harvest_moon_text_components",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_moon_moon_size",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_moon_moon_texture_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_moon_sky_light_color",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_moon_slimes_spawn_everywhere",
+   "enhancedcelestials2defaultlunarevents:lunar/event_modifier/super_moon_text_components",
+   "enhancedcelestials2defaultlunarevents:lunar/event_probability/blood_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event_probability/blue_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event_probability/harvest_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event_probability/super_blood_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event_probability/super_blue_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event_probability/super_harvest_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event_probability/super_moon"
+  ],
+  "tags/enhancedcelestials2core": [
+   "enhancedcelestials2defaultlunarevents:lunar/event/blood_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/blue_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/harvest_moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/moon",
+   "enhancedcelestials2defaultlunarevents:lunar/event/super_moon"
+  ],
+  "tags/item": [
+   "enhancedcelestials2defaultlunarevents:harvest_moon_crops"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/enhancedcelestials2core": {
+   "enhancedcelestials2defaultlunarevents:lunar/event/blood_moon": [
+    "enhancedcelestials2defaultlunarevents:blood_moon",
+    "enhancedcelestials2defaultlunarevents:super_blood_moon"
+   ],
+   "enhancedcelestials2defaultlunarevents:lunar/event/blue_moon": [
+    "enhancedcelestials2defaultlunarevents:blue_moon",
+    "enhancedcelestials2defaultlunarevents:super_blue_moon"
+   ],
+   "enhancedcelestials2defaultlunarevents:lunar/event/harvest_moon": [
+    "enhancedcelestials2defaultlunarevents:harvest_moon",
+    "enhancedcelestials2defaultlunarevents:super_harvest_moon"
+   ],
+   "enhancedcelestials2defaultlunarevents:lunar/event/moon": [
+    "enhancedcelestials2defaultlunarevents:blood_moon",
+    "enhancedcelestials2defaultlunarevents:blue_moon",
+    "enhancedcelestials2defaultlunarevents:harvest_moon"
+   ],
+   "enhancedcelestials2defaultlunarevents:lunar/event/super_moon": [
+    "enhancedcelestials2defaultlunarevents:super_blood_moon",
+    "enhancedcelestials2defaultlunarevents:super_blue_moon",
+    "enhancedcelestials2defaultlunarevents:super_harvest_moon",
+    "enhancedcelestials2defaultlunarevents:super_moon"
+   ]
+  },
+  "tags/item": {
+   "enhancedcelestials2defaultlunarevents:harvest_moon_crops": [
+    "#c:crop?",
+    "#forge:crop?",
+    "#minecraft:crop?",
+    "#c:crops?",
+    "#forge:crops?",
+    "#minecraft:crops?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}
