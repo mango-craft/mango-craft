@@ -1,0 +1,1188 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "My Nether's Delight",
+ "file": "MyNethersDelight-1.21.1-1.10.4.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "36df146974d70fe5f7c92c4aeef613d1e0192efbb550faa88efaa8170212c07f9fc5938961d1b8da489355579910e95fea2cd5ae714b614ce17f1b8e352f0bbf",
+ "mods": [
+  {
+   "modid": "mynethersdelight",
+   "name": "My Nether's Delight",
+   "version": "1.10.4.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[1.3.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minersdelight",
+     "type": "optional",
+     "range": "[1.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "brewinandchewin",
+     "type": "optional",
+     "range": "[4.4.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersrespite",
+     "type": "optional",
+     "range": null,
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "brewinandchewin",
+  "c",
+  "farmersdelight",
+  "farmersrespite",
+  "minecraft",
+  "minersdelight",
+  "mynethersdelight",
+  "neoforge"
+ ],
+ "blocks": {
+  "mynethersdelight:blackstone_bricks_cabinet": "Blackstone Brick Cabinet",
+  "mynethersdelight:blackstone_cooking_pot": "",
+  "mynethersdelight:blazier_block": "Blazier",
+  "mynethersdelight:bread_loaf_block": "Bread Loaf",
+  "mynethersdelight:bullet_pepper": "Bullet Pepper",
+  "mynethersdelight:bullet_pepper_crate": "Bullet Pepper Crate",
+  "mynethersdelight:cold_striderloaf_block": "Cold Striderloaf",
+  "mynethersdelight:crimson_fungus_colony": "Crimson Fungus Colony",
+  "mynethersdelight:ghasta_with_cream_block": "Ghasta With Cream",
+  "mynethersdelight:golden_trophy": "Golden Trophy",
+  "mynethersdelight:hoglin_trophy": "Hoglin Trophy",
+  "mynethersdelight:letios_compost": "Leteos Compost",
+  "mynethersdelight:magma_cake_block": "Magma Cake",
+  "mynethersdelight:nether_bricks_cabinet": "Nether Brick Cabinet",
+  "mynethersdelight:nether_stove": "Nether Stove",
+  "mynethersdelight:potted_bullet_pepper": "Potted Bullet Pepper",
+  "mynethersdelight:potted_powdery_cannon": "Potted Powdery Cannon",
+  "mynethersdelight:powdery_block": "Block of Powdery Cannon",
+  "mynethersdelight:powdery_button": "Powdery Button",
+  "mynethersdelight:powdery_cabinet": "Powdery Cabinet",
+  "mynethersdelight:powdery_cane": "Powdery Cane",
+  "mynethersdelight:powdery_cannon": "Powdery Cannon",
+  "mynethersdelight:powdery_chubby_sapling": "Powdery Chubby Sapling",
+  "mynethersdelight:powdery_door": "Powdery Door",
+  "mynethersdelight:powdery_fence": "Powdery Fence",
+  "mynethersdelight:powdery_fence_gate": "Powdery Fence Gate",
+  "mynethersdelight:powdery_hanging_sign": "Powdery Hanging Sign",
+  "mynethersdelight:powdery_mosaic": "Powdery Mosaic",
+  "mynethersdelight:powdery_mosaic_slab": "Powdery Mosaic Slab",
+  "mynethersdelight:powdery_mosaic_stairs": "Powdery Mosaic Stairs",
+  "mynethersdelight:powdery_planks": "Powdery Planks",
+  "mynethersdelight:powdery_pressure_plate": "Powdery Pressure Plate",
+  "mynethersdelight:powdery_sign": "Powdery Sign",
+  "mynethersdelight:powdery_slab": "Powdery Slab",
+  "mynethersdelight:powdery_stairs": "Powdery Stairs",
+  "mynethersdelight:powdery_torch": "Powdery Torch",
+  "mynethersdelight:powdery_trapdoor": "Powdery Trapdoor",
+  "mynethersdelight:powdery_wall_hanging_sign": "",
+  "mynethersdelight:powdery_wall_sign": "",
+  "mynethersdelight:red_nether_bricks_cabinet": "Red Nether Brick Cabinet",
+  "mynethersdelight:resurgent_soil": "Resurgent Soil",
+  "mynethersdelight:resurgent_soil_farmland": "Resurgent Soil Farmland",
+  "mynethersdelight:skoglin_trophy": "Skoglin Trophy",
+  "mynethersdelight:striderloaf_block": "Striderloaf",
+  "mynethersdelight:stripped_powdery_block": "Block of Stripped Powdery Cannon",
+  "mynethersdelight:stuffed_hoglin": "Stuffed Hoglin",
+  "mynethersdelight:wall_powdery_torch": "",
+  "mynethersdelight:warped_fungus_colony": "Warped Fungus Colony",
+  "mynethersdelight:waxed_hoglin_trophy": "Waxed Hoglin Trophy",
+  "mynethersdelight:zoglin_trophy": "Zoglin Trophy"
+ },
+ "effects": {
+  "mynethersdelight:b_pungent": "Caustic Pungency",
+  "mynethersdelight:g_pungent": "Invigorating Pungency"
+ },
+ "items": {
+  "minersdelight:egg_soup_cup": "Egg Soup Cup",
+  "minersdelight:rock_soup_cup": "Rock Soup Cup",
+  "minersdelight:spicy_hoglin_stew_cup": "Spicy Hoglin Stew Cup",
+  "minersdelight:spicy_noodle_soup_cup": "Spicy Noodle Soup",
+  "minersdelight:strider_stew_cup": "Strider Stew Cup",
+  "mynethersdelight:bacon-wrapped_sausage_on_a_stick": "Bacon-wrapped Sausage on a Stick",
+  "mynethersdelight:blackstone_bricks_cabinet": "",
+  "mynethersdelight:blackstone_cooking_pot": "",
+  "mynethersdelight:blazier": "",
+  "mynethersdelight:bleeding_tartar": "Bleeding Tartar",
+  "mynethersdelight:blue_tenderloin_steak": "Blue Tenderloin Steak",
+  "mynethersdelight:boiled_egg": "Boiled Egg",
+  "mynethersdelight:bread_loaf": "",
+  "mynethersdelight:breakfast_sampler": "Breakfast Sampler",
+  "mynethersdelight:bullet_pepper": "Bullet Pepper",
+  "mynethersdelight:bullet_pepper_crate": "",
+  "mynethersdelight:burnt_roll": "Burnt Roll",
+  "mynethersdelight:chilidog": "Chilidog",
+  "mynethersdelight:cold_striderloaf": "",
+  "mynethersdelight:cooked_loin": "Cooked Loin",
+  "mynethersdelight:crimson_fungus_colony": "",
+  "mynethersdelight:crimson_stroganoff": "Crimson Stroganoff",
+  "mynethersdelight:deviled_egg": "Deviled Egg",
+  "mynethersdelight:dried_ghast_with_milk": "Dried Ghast with Milk",
+  "mynethersdelight:egg_soup": "Egg Soup",
+  "mynethersdelight:enchanted_golden_egg": "Enchanted Golden Egg",
+  "mynethersdelight:fried_hoglin_chop": "Fried Hoglin Chop",
+  "mynethersdelight:fries_ghasta": "Fries Ghasta",
+  "mynethersdelight:ghasmati": "Ghasmati",
+  "mynethersdelight:ghast_dough": "Ghast Dough",
+  "mynethersdelight:ghast_salad": "Ghast Salad",
+  "mynethersdelight:ghast_sourdough": "Ghast Sourdough",
+  "mynethersdelight:ghasta": "Ghasta",
+  "mynethersdelight:ghasta_with_cream": "",
+  "mynethersdelight:giant_takoyaki": "Giant Takoyaki",
+  "mynethersdelight:golden_egg": "Golden Egg",
+  "mynethersdelight:golden_trophy": "",
+  "mynethersdelight:hoglin_hide": "Hoglin Hide",
+  "mynethersdelight:hoglin_loin": "Hoglin Loin",
+  "mynethersdelight:hoglin_sausage": "Hoglin Sausage",
+  "mynethersdelight:hoglin_trophy": "",
+  "mynethersdelight:hot_cream": "Hot Cream",
+  "mynethersdelight:hot_cream_cone": "Hot Cream Cone",
+  "mynethersdelight:hot_wings": "Hot Wings",
+  "mynethersdelight:hot_wings_bucket": "Hot Wings Bucket",
+  "mynethersdelight:hotdog": "Hotdog",
+  "mynethersdelight:hotdog_with_mixed_salad": "Hotdog with Mixed Salad",
+  "mynethersdelight:hotdog_with_nether_salad": "Hotdog with Nether Salad",
+  "mynethersdelight:letios_compost": "",
+  "mynethersdelight:magma_cake_block": "",
+  "mynethersdelight:magma_cake_slice": "Magma Cake Slice",
+  "mynethersdelight:minced_strider": "Minced Strider",
+  "mynethersdelight:nether_bricks_cabinet": "",
+  "mynethersdelight:nether_bricks_soul_stove": "",
+  "mynethersdelight:nether_bricks_stove": "",
+  "mynethersdelight:nether_burger": "Nether Burger",
+  "mynethersdelight:pepper_powder": "Pepper Powder",
+  "mynethersdelight:plate_of_cold_striderloaf": "Plate of Cold Striderloaf",
+  "mynethersdelight:plate_of_ghasta_with_cream": "Plate of Ghasta with Cream",
+  "mynethersdelight:plate_of_striderloaf": "Plate of Striderloaf",
+  "mynethersdelight:plate_of_stuffed_hoglin": "Plate of Stuffed Hoglin",
+  "mynethersdelight:plate_of_stuffed_hoglin_ham": "Plate of Stuffed Hoglin Ham",
+  "mynethersdelight:plate_of_stuffed_hoglin_snout": "Plate of Stuffed Hoglin Snout",
+  "mynethersdelight:powder_cannon": "",
+  "mynethersdelight:powdery_block": "",
+  "mynethersdelight:powdery_button": "",
+  "mynethersdelight:powdery_cabinet": "",
+  "mynethersdelight:powdery_door": "",
+  "mynethersdelight:powdery_fence": "",
+  "mynethersdelight:powdery_fence_gate": "",
+  "mynethersdelight:powdery_hanging_sign": "",
+  "mynethersdelight:powdery_mosaic": "",
+  "mynethersdelight:powdery_mosaic_slab": "",
+  "mynethersdelight:powdery_mosaic_stairs": "",
+  "mynethersdelight:powdery_planks": "",
+  "mynethersdelight:powdery_pressure_plate": "",
+  "mynethersdelight:powdery_sign": "",
+  "mynethersdelight:powdery_slab": "",
+  "mynethersdelight:powdery_stairs": "",
+  "mynethersdelight:powdery_torch": "",
+  "mynethersdelight:powdery_trapdoor": "",
+  "mynethersdelight:raw_stuffed_hoglin": "Raw Stuffed Hoglin",
+  "mynethersdelight:red_loin_on_a_stick": "Red Loin on a Stick",
+  "mynethersdelight:red_nether_bricks_cabinet": "",
+  "mynethersdelight:resurgent_soil": "",
+  "mynethersdelight:resurgent_soil_farmland": "",
+  "mynethersdelight:roast_ear": "Roast Ear",
+  "mynethersdelight:roast_stuffed_hoglin": "",
+  "mynethersdelight:roasted_sausage": "Roasted Sausage",
+  "mynethersdelight:rock_soup": "Rock Soup",
+  "mynethersdelight:sausage_and_potatoes": "Sausage and Potatoes",
+  "mynethersdelight:scotch_eggs": "Scotch Eggs",
+  "mynethersdelight:sizzling_pudding": "Sizzling Pudding",
+  "mynethersdelight:skoglin_trophy": "",
+  "mynethersdelight:slices_of_bread": "Slices of Bread",
+  "mynethersdelight:spicy_cotton": "Spicy Cotton",
+  "mynethersdelight:spicy_curry": "Spicy Curry",
+  "mynethersdelight:spicy_hoglin_stew": "Spicy Hoglin Stew",
+  "mynethersdelight:spicy_noodle_soup": "Spicy Noodle Soup",
+  "mynethersdelight:spicy_skewer": "Spicy Skewer",
+  "mynethersdelight:strider_egg": "Strider Egg",
+  "mynethersdelight:strider_rock": "Strider Rock",
+  "mynethersdelight:strider_slice": "Strider Slice",
+  "mynethersdelight:strider_stew": "Strider Stew",
+  "mynethersdelight:strider_with_grilled_fungus": "Strider with Grilled Fungus",
+  "mynethersdelight:striderloaf": "",
+  "mynethersdelight:stripped_powdery_block": "",
+  "mynethersdelight:stuffed_pepper": "Stuffed Pepper",
+  "mynethersdelight:tear_popsicle": "Tear Popsicle",
+  "mynethersdelight:toasts": "Toasts",
+  "mynethersdelight:twisted_ghasta": "Twisted Ghasta",
+  "mynethersdelight:warped_fungus_colony": "",
+  "mynethersdelight:waxed_hoglin_trophy": "",
+  "mynethersdelight:zoglin_trophy": ""
+ },
+ "data": {
+  "data_maps/block": [
+   "mynethersdelight:letios_compost_transformations",
+   "mynethersdelight:propagation_transformations"
+  ],
+  "data_maps/item": [
+   "minersdelight:cup_variant",
+   "neoforge:compostables"
+  ],
+  "enchantment": [
+   "mynethersdelight:poaching"
+  ],
+  "loot_modifiers": [
+   "mynethersdelight:add_loot_bastion_hoglin_stable",
+   "mynethersdelight:add_loot_bastion_treasure",
+   "mynethersdelight:add_loot_piglin_bartering",
+   "mynethersdelight:remplace_hoglin_cooked_pork_loin",
+   "mynethersdelight:remplace_hoglin_pork_loin",
+   "mynethersdelight:scavenging_extra_ghasta0",
+   "mynethersdelight:scavenging_extra_ghasta1",
+   "mynethersdelight:scavenging_extra_strider_egg0",
+   "mynethersdelight:scavenging_extra_strider_egg1",
+   "mynethersdelight:scavenging_extra_strider_egg2",
+   "mynethersdelight:scavenging_extra_strider_slice0",
+   "mynethersdelight:scavenging_extra_strider_slice1",
+   "mynethersdelight:scavenging_ghasta",
+   "mynethersdelight:scavenging_hoglin_hide",
+   "mynethersdelight:scavenging_onion_from_ghast",
+   "mynethersdelight:scavenging_strider_egg",
+   "mynethersdelight:scavenging_strider_slice",
+   "mynethersdelight:slicing_bread_loaf",
+   "mynethersdelight:slicing_magma_cake",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "mynethersdelight:blocks/blackstone_bricks_cabinet",
+   "mynethersdelight:blocks/blazier_block",
+   "mynethersdelight:blocks/bullet_pepper",
+   "mynethersdelight:blocks/bullet_pepper_crate",
+   "mynethersdelight:blocks/cold_striderloaf_block",
+   "mynethersdelight:blocks/crimson_fungus_colony",
+   "mynethersdelight:blocks/ghasta_with_cream_block",
+   "mynethersdelight:blocks/golden_trophy",
+   "mynethersdelight:blocks/hoglin_trophy",
+   "mynethersdelight:blocks/letios_compost",
+   "mynethersdelight:blocks/nether_bricks_cabinet",
+   "mynethersdelight:blocks/nether_stove",
+   "mynethersdelight:blocks/potted_bullet_pepper",
+   "mynethersdelight:blocks/potted_powdery_cannon",
+   "mynethersdelight:blocks/powdery_block",
+   "mynethersdelight:blocks/powdery_button",
+   "mynethersdelight:blocks/powdery_cabinet",
+   "mynethersdelight:blocks/powdery_cane",
+   "mynethersdelight:blocks/powdery_cannon",
+   "mynethersdelight:blocks/powdery_chubby_sapling",
+   "mynethersdelight:blocks/powdery_door",
+   "mynethersdelight:blocks/powdery_fence",
+   "mynethersdelight:blocks/powdery_fence_gate",
+   "mynethersdelight:blocks/powdery_hanging_sign",
+   "mynethersdelight:blocks/powdery_mosaic",
+   "mynethersdelight:blocks/powdery_mosaic_slab",
+   "mynethersdelight:blocks/powdery_mosaic_stairs",
+   "mynethersdelight:blocks/powdery_planks",
+   "mynethersdelight:blocks/powdery_pressure_plate",
+   "mynethersdelight:blocks/powdery_sign",
+   "mynethersdelight:blocks/powdery_slab",
+   "mynethersdelight:blocks/powdery_stairs",
+   "mynethersdelight:blocks/powdery_torch",
+   "mynethersdelight:blocks/powdery_trapdoor",
+   "mynethersdelight:blocks/red_nether_bricks_cabinet",
+   "mynethersdelight:blocks/resurgent_soil",
+   "mynethersdelight:blocks/resurgent_soil_farmland",
+   "mynethersdelight:blocks/skoglin_trophy",
+   "mynethersdelight:blocks/striderloaf_block",
+   "mynethersdelight:blocks/stripped_powdery_block",
+   "mynethersdelight:blocks/stuffed_hoglin",
+   "mynethersdelight:blocks/warped_fungus_colony",
+   "mynethersdelight:blocks/waxed_hoglin_trophy",
+   "mynethersdelight:blocks/zoglin_trophy",
+   "mynethersdelight:chests/mnd_bastion_hoglin_stable",
+   "mynethersdelight:chests/mnd_bastion_treasure",
+   "mynethersdelight:gameplay/mnd_piglin_bartering",
+   "mynethersdelight:gameplay/mnd_piglin_bartering_without_food"
+  ],
+  "neoforge/biome_modifier": [
+   "mynethersdelight:patch_powdery_cane"
+  ],
+  "recipe": [
+   "brewinandchewin:fermenting/ghast_sourdough",
+   "farmersdelight:cutting/powdery_block",
+   "farmersdelight:cutting/pumpkin_slice_alt",
+   "farmersrespite:chilidog_alt",
+   "minecraft:food_serving",
+   "mynethersdelight:boiled_egg_cooking",
+   "mynethersdelight:boiled_egg_from_campfire_cooking",
+   "mynethersdelight:boiled_egg_from_smoking",
+   "mynethersdelight:bread_from_smelting",
+   "mynethersdelight:bread_from_smoking",
+   "mynethersdelight:bread_loaf_from_smelting",
+   "mynethersdelight:bread_loaf_from_smoking",
+   "mynethersdelight:cooking/boiled_eggs",
+   "mynethersdelight:cooking/burn_roll",
+   "mynethersdelight:cooking/chilidog",
+   "mynethersdelight:cooking/crimson_stroganoff",
+   "mynethersdelight:cooking/deviled_egg",
+   "mynethersdelight:cooking/egg_soup",
+   "mynethersdelight:cooking/fried_hoglin_chop",
+   "mynethersdelight:cooking/fries_ghasta",
+   "mynethersdelight:cooking/giant_tentacles",
+   "mynethersdelight:cooking/hot_wings",
+   "mynethersdelight:cooking/hotcream",
+   "mynethersdelight:cooking/roast_stuffed_hoglin",
+   "mynethersdelight:cooking/rock_soup",
+   "mynethersdelight:cooking/sausage_and_potatoes",
+   "mynethersdelight:cooking/scotch_eggs",
+   "mynethersdelight:cooking/spicy_curry",
+   "mynethersdelight:cooking/spicy_hoglin_stew",
+   "mynethersdelight:cooking/spicy_noodle_soup",
+   "mynethersdelight:cooking/strider_and_grilled_fungus",
+   "mynethersdelight:cooking/strider_stew",
+   "mynethersdelight:cooking/twisted_ghasta",
+   "mynethersdelight:crafting/bacon_wrapped_sausage_stick",
+   "mynethersdelight:crafting/basket_alt",
+   "mynethersdelight:crafting/blaze_powder_alt",
+   "mynethersdelight:crafting/blazefire",
+   "mynethersdelight:crafting/blazier_cooling",
+   "mynethersdelight:crafting/blazier_heating",
+   "mynethersdelight:crafting/bleeding_tartar",
+   "mynethersdelight:crafting/block_of_powdery_cabinet",
+   "mynethersdelight:crafting/block_of_powdery_cannon",
+   "mynethersdelight:crafting/blue_tenderloin_steak",
+   "mynethersdelight:crafting/breakfast_sampler",
+   "mynethersdelight:crafting/bullet_papper_crate",
+   "mynethersdelight:crafting/bullet_papper_crate_alt",
+   "mynethersdelight:crafting/burnt_roll",
+   "mynethersdelight:crafting/dried_ghast_with_milk",
+   "mynethersdelight:crafting/ghast_dough",
+   "mynethersdelight:crafting/ghast_salad",
+   "mynethersdelight:crafting/ghast_sourdough",
+   "mynethersdelight:crafting/ghasta_with_cream",
+   "mynethersdelight:crafting/golden_egg",
+   "mynethersdelight:crafting/golden_trophy",
+   "mynethersdelight:crafting/hoglin_trophy",
+   "mynethersdelight:crafting/hoglin_trophy_cure",
+   "mynethersdelight:crafting/hot_wings_bucket",
+   "mynethersdelight:crafting/hot_wings_bucket_alt",
+   "mynethersdelight:crafting/hotcream_bucket",
+   "mynethersdelight:crafting/hotcream_cone",
+   "mynethersdelight:crafting/hotdog",
+   "mynethersdelight:crafting/hotdog_with_mixed_salad",
+   "mynethersdelight:crafting/hotdog_with_nether_salad",
+   "mynethersdelight:crafting/letios_compost_from_bone_alt",
+   "mynethersdelight:crafting/letios_compost_from_rotten_flesh",
+   "mynethersdelight:crafting/magma_cake",
+   "mynethersdelight:crafting/magma_cake_alt",
+   "mynethersdelight:crafting/nether_burger",
+   "mynethersdelight:crafting/nethers_stove",
+   "mynethersdelight:crafting/nethers_stove_alt0",
+   "mynethersdelight:crafting/powdery_button",
+   "mynethersdelight:crafting/powdery_door",
+   "mynethersdelight:crafting/powdery_fence",
+   "mynethersdelight:crafting/powdery_fence_gate",
+   "mynethersdelight:crafting/powdery_hanging_sign",
+   "mynethersdelight:crafting/powdery_mosaic",
+   "mynethersdelight:crafting/powdery_mosaic_slab",
+   "mynethersdelight:crafting/powdery_mosaic_stairs",
+   "mynethersdelight:crafting/powdery_plank",
+   "mynethersdelight:crafting/powdery_pressure_plate",
+   "mynethersdelight:crafting/powdery_sign",
+   "mynethersdelight:crafting/powdery_slab",
+   "mynethersdelight:crafting/powdery_stairs",
+   "mynethersdelight:crafting/powdery_torch",
+   "mynethersdelight:crafting/powdery_trapdoor",
+   "mynethersdelight:crafting/raw_stuffed_hoglin",
+   "mynethersdelight:crafting/red_loin_on_a_stick",
+   "mynethersdelight:crafting/rock_soup",
+   "mynethersdelight:crafting/scaffolding_alt",
+   "mynethersdelight:crafting/sizzling_pudding",
+   "mynethersdelight:crafting/skoglin_trophy",
+   "mynethersdelight:crafting/soul_nethers_stove",
+   "mynethersdelight:crafting/soul_nethers_stove_alt0",
+   "mynethersdelight:crafting/spicy_cotton",
+   "mynethersdelight:crafting/spicy_skewer",
+   "mynethersdelight:crafting/stick_alt",
+   "mynethersdelight:crafting/striderloaf",
+   "mynethersdelight:crafting/stuffed_pepper",
+   "mynethersdelight:crafting/sugar_alt",
+   "mynethersdelight:crafting/tear_popsicle",
+   "mynethersdelight:crafting/tnt_alt",
+   "mynethersdelight:crafting/waxed_hoglin_trophy",
+   "mynethersdelight:crafting/zoglin_trophy",
+   "mynethersdelight:cutting/balze_rod",
+   "mynethersdelight:cutting/bullet_pepper",
+   "mynethersdelight:cutting/crimson_fungus",
+   "mynethersdelight:cutting/ghasmati",
+   "mynethersdelight:cutting/ghast_dough",
+   "mynethersdelight:cutting/gunpowder_and_stick_cannon",
+   "mynethersdelight:cutting/hoglin_hide",
+   "mynethersdelight:cutting/hoglin_sausage",
+   "mynethersdelight:cutting/hoglin_trophy",
+   "mynethersdelight:cutting/magma_cake",
+   "mynethersdelight:cutting/minced_strider",
+   "mynethersdelight:cutting/skoglin_trophy",
+   "mynethersdelight:cutting/skoglin_trophy_alt",
+   "mynethersdelight:cutting/slices_of_bread",
+   "mynethersdelight:cutting/stick_bamboo",
+   "mynethersdelight:cutting/strider_egg",
+   "mynethersdelight:cutting/warped_fungus",
+   "mynethersdelight:hoglin_loin_cooking",
+   "mynethersdelight:hoglin_loin_from_campfire_cooking",
+   "mynethersdelight:hoglin_loin_from_smoking",
+   "mynethersdelight:hoglin_sausage_cooking",
+   "mynethersdelight:hoglin_sausage_from_campfire_cooking",
+   "mynethersdelight:hoglin_sausage_from_smoking",
+   "mynethersdelight:salvaging/powdery_furniture",
+   "mynethersdelight:stonecutting/blackstone_bricks_cabinet",
+   "mynethersdelight:stonecutting/nether_bricks_cabinet",
+   "mynethersdelight:stonecutting/red_nether_bricks_cabinet",
+   "mynethersdelight:toast_cooking",
+   "mynethersdelight:toast_from_campfire_cooking",
+   "mynethersdelight:toast_from_smoking"
+  ],
+  "tags/block": [
+   "c:storage_blocks",
+   "c:storage_blocks/bullet_pepper",
+   "c:stripped_logs",
+   "farmersdelight:cabinets",
+   "farmersdelight:cabinets/wooden",
+   "farmersdelight:feasts",
+   "farmersdelight:heat_sources",
+   "farmersdelight:mineable/knife",
+   "farmersdelight:mushroom_colony_growable_on",
+   "farmersdelight:tray_heat_sources",
+   "farmersdelight:unaffected_by_rich_soil",
+   "farmersdelight:wild_crops",
+   "minecraft:bamboo_plantable_on",
+   "minecraft:ceiling_hanging_signs",
+   "minecraft:dirt",
+   "minecraft:fence_gates",
+   "minecraft:fences",
+   "minecraft:flower_pots",
+   "minecraft:guarded_by_piglins",
+   "minecraft:hoglin_repellents",
+   "minecraft:infiniburn_nether",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:mineable/shovel",
+   "minecraft:mushroom_grow_block",
+   "minecraft:nylium",
+   "minecraft:piglin_repellents",
+   "minecraft:planks",
+   "minecraft:signs",
+   "minecraft:slabs",
+   "minecraft:small_flowers",
+   "minecraft:soul_fire_base_blocks",
+   "minecraft:soul_speed_blocks",
+   "minecraft:stairs",
+   "minecraft:standing_signs",
+   "minecraft:wall_hanging_signs",
+   "minecraft:wither_summon_base_blocks",
+   "minecraft:wooden_buttons",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_stairs",
+   "minecraft:wooden_trapdoors",
+   "mynethersdelight:above_propagate_plant",
+   "mynethersdelight:below_propagate_plant",
+   "mynethersdelight:letios_activators",
+   "mynethersdelight:letios_flames",
+   "mynethersdelight:powdery_blocks",
+   "mynethersdelight:powdery_cane",
+   "mynethersdelight:powdery_cannon_plantable_on",
+   "mynethersdelight:resurgent_soil_plant",
+   "mynethersdelight:showcase_activators",
+   "mynethersdelight:showcase_flames"
+  ],
+  "tags/enchantment": [
+   "minecraft:curse",
+   "minecraft:treasure",
+   "mynethersdelight:poaching",
+   "mynethersdelight:poaching_exclusive"
+  ],
+  "tags/fluids": [
+   "mynethersdelight:leteos_booster"
+  ],
+  "tags/item": [
+   "brewinandchewin:foods/horror_meat",
+   "brewinandchewin:foods/jerky_meat",
+   "c:crops/rice",
+   "c:eggs",
+   "c:foods/boiled_egg",
+   "c:foods/bread",
+   "c:foods/cooked_egg",
+   "c:foods/cooked_hoglin",
+   "c:foods/cooked_meat",
+   "c:foods/cooked_pork",
+   "c:foods/cooked_sausage",
+   "c:foods/dough",
+   "c:foods/edible_when_placed",
+   "c:foods/giant_tentacles",
+   "c:foods/golden",
+   "c:foods/magma_cube",
+   "c:foods/pasta",
+   "c:foods/raw_fish",
+   "c:foods/raw_ghast",
+   "c:foods/raw_hoglin",
+   "c:foods/raw_meat",
+   "c:foods/raw_pork",
+   "c:foods/raw_sausage",
+   "c:foods/raw_strider",
+   "c:foods/rice_pasta",
+   "c:foods/soup",
+   "c:storage_blocks",
+   "c:storage_blocks/bullet_pepper",
+   "c:stripped_logs",
+   "farmersdelight:cabinets",
+   "farmersdelight:cabinets/wooden",
+   "farmersdelight:feasts",
+   "farmersdelight:wild_crops",
+   "minecraft:cat_food",
+   "minecraft:hanging_signs",
+   "minecraft:hoglin_food",
+   "minecraft:meat",
+   "minecraft:non_flammable_wood",
+   "minecraft:piglin_food",
+   "minecraft:piglin_loved",
+   "minecraft:planks",
+   "minecraft:signs",
+   "minecraft:slabs",
+   "minecraft:soul_fire_base_blocks",
+   "minecraft:stairs",
+   "minecraft:strider_food",
+   "minecraft:strider_tempt_items",
+   "minecraft:wolf_food",
+   "minecraft:wooden_buttons",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_stairs",
+   "minecraft:wooden_trapdoors",
+   "mynethersdelight:block_of_powdery",
+   "mynethersdelight:boiled_egg_candidate",
+   "mynethersdelight:hoglin_cure",
+   "mynethersdelight:hoglin_waxed",
+   "mynethersdelight:hot_spice",
+   "mynethersdelight:powdery_blocks",
+   "mynethersdelight:stove_fire_fuel",
+   "mynethersdelight:stove_soul_fuel",
+   "mynethersdelight:stuffed_hoglin_items"
+  ],
+  "worldgen/configured_feature": [
+   "mynethersdelight:patch_powdery_cane"
+  ],
+  "worldgen/placed_feature": [
+   "mynethersdelight:patch_powdery_cane"
+  ]
+ },
+ "data_counts": {
+  "advancement": 108
+ },
+ "tags": {
+  "tags/block": {
+   "c:storage_blocks": [
+    "#c:storage_blocks/bullet_pepper"
+   ],
+   "c:storage_blocks/bullet_pepper": [
+    "mynethersdelight:bullet_pepper_crate"
+   ],
+   "c:stripped_logs": [
+    "mynethersdelight:stripped_powdery_block"
+   ],
+   "farmersdelight:cabinets": [
+    "mynethersdelight:nether_bricks_cabinet",
+    "mynethersdelight:red_nether_bricks_cabinet",
+    "mynethersdelight:blackstone_bricks_cabinet"
+   ],
+   "farmersdelight:cabinets/wooden": [
+    "mynethersdelight:powdery_cabinet"
+   ],
+   "farmersdelight:feasts": [
+    "mynethersdelight:stuffed_hoglin",
+    "mynethersdelight:striderloaf_block",
+    "mynethersdelight:ghasta_with_cream_block",
+    "mynethersdelight:magma_cake_block",
+    "mynethersdelight:bread_loaf_block"
+   ],
+   "farmersdelight:heat_sources": [
+    "mynethersdelight:nether_stove",
+    "mynethersdelight:bullet_pepper_crate"
+   ],
+   "farmersdelight:mineable/knife": [
+    "mynethersdelight:stuffed_hoglin",
+    "mynethersdelight:bread_loaf_block",
+    "mynethersdelight:ghasta_with_cream_block",
+    "mynethersdelight:striderloaf_block",
+    "mynethersdelight:magma_cake_block",
+    "mynethersdelight:powdery_cannon",
+    "mynethersdelight:powdery_cane",
+    "mynethersdelight:powdery_chubby_sapling",
+    "mynethersdelight:bullet_pepper"
+   ],
+   "farmersdelight:mushroom_colony_growable_on": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil"
+   ],
+   "farmersdelight:tray_heat_sources": [
+    "mynethersdelight:magma_cake_block",
+    "mynethersdelight:blazier_block"
+   ],
+   "farmersdelight:unaffected_by_rich_soil": [
+    "mynethersdelight:warped_fungus_colony",
+    "mynethersdelight:crimson_fungus_colony"
+   ],
+   "farmersdelight:wild_crops": [
+    "mynethersdelight:bullet_pepper"
+   ],
+   "minecraft:bamboo_plantable_on": [
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:powdery_cannon"
+   ],
+   "minecraft:ceiling_hanging_signs": [
+    "mynethersdelight:powdery_hanging_sign"
+   ],
+   "minecraft:dirt": [
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:fence_gates": [
+    "mynethersdelight:powdery_fence_gate"
+   ],
+   "minecraft:fences": [
+    "mynethersdelight:powdery_fence"
+   ],
+   "minecraft:flower_pots": [
+    "mynethersdelight:potted_bullet_pepper",
+    "mynethersdelight:potted_powdery_cannon"
+   ],
+   "minecraft:guarded_by_piglins": [
+    "mynethersdelight:golden_trophy"
+   ],
+   "minecraft:hoglin_repellents": [
+    "mynethersdelight:hoglin_trophy",
+    "mynethersdelight:waxed_hoglin_trophy",
+    "mynethersdelight:zoglin_trophy",
+    "mynethersdelight:bullet_pepper",
+    "mynethersdelight:warped_fungus_colony"
+   ],
+   "minecraft:infiniburn_nether": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:mineable/axe": [
+    "mynethersdelight:hoglin_trophy",
+    "mynethersdelight:waxed_hoglin_trophy",
+    "mynethersdelight:zoglin_trophy",
+    "mynethersdelight:skoglin_trophy",
+    "mynethersdelight:golden_trophy",
+    "mynethersdelight:powdery_cannon",
+    "mynethersdelight:powdery_cane",
+    "mynethersdelight:powdery_chubby_sapling",
+    "mynethersdelight:bullet_pepper",
+    "mynethersdelight:powdery_cabinet",
+    "mynethersdelight:powdery_block",
+    "mynethersdelight:stripped_powdery_block",
+    "mynethersdelight:powdery_mosaic",
+    "mynethersdelight:powdery_mosaic_stairs",
+    "mynethersdelight:powdery_mosaic_slab",
+    "mynethersdelight:bullet_pepper_crate"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "mynethersdelight:blazier_block",
+    "mynethersdelight:nether_bricks_cabinet",
+    "mynethersdelight:red_nether_bricks_cabinet",
+    "mynethersdelight:blackstone_bricks_cabinet",
+    "mynethersdelight:nether_stove",
+    "mynethersdelight:golden_trophy"
+   ],
+   "minecraft:mineable/shovel": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:mushroom_grow_block": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:nylium": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:piglin_repellents": [
+    "mynethersdelight:zoglin_trophy",
+    "mynethersdelight:bullet_pepper"
+   ],
+   "minecraft:planks": [
+    "mynethersdelight:powdery_planks"
+   ],
+   "minecraft:signs": [
+    "mynethersdelight:powdery_wall_sign"
+   ],
+   "minecraft:slabs": [
+    "mynethersdelight:powdery_mosaic_slab"
+   ],
+   "minecraft:small_flowers": [
+    "mynethersdelight:bullet_pepper"
+   ],
+   "minecraft:soul_fire_base_blocks": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:soul_speed_blocks": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:stairs": [
+    "mynethersdelight:powdery_mosaic_stairs"
+   ],
+   "minecraft:standing_signs": [
+    "mynethersdelight:powdery_sign"
+   ],
+   "minecraft:wall_hanging_signs": [
+    "mynethersdelight:powdery_wall_hanging_sign"
+   ],
+   "minecraft:wither_summon_base_blocks": [
+    "mynethersdelight:resurgent_soil"
+   ],
+   "minecraft:wooden_buttons": [
+    "mynethersdelight:powdery_button"
+   ],
+   "minecraft:wooden_doors": [
+    "mynethersdelight:powdery_door"
+   ],
+   "minecraft:wooden_fences": [
+    "mynethersdelight:powdery_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "mynethersdelight:powdery_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "mynethersdelight:powdery_slab"
+   ],
+   "minecraft:wooden_stairs": [
+    "mynethersdelight:powdery_stairs"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "mynethersdelight:powdery_trapdoor"
+   ],
+   "mynethersdelight:above_propagate_plant": [
+    "minecraft:kelp",
+    "minecraft:lily_pad",
+    "minecraft:dead_bush",
+    "minecraft:glow_lichen",
+    "#minecraft:saplings",
+    "#minecraft:crops"
+   ],
+   "mynethersdelight:below_propagate_plant": [
+    "minecraft:spore_blossom",
+    "minecraft:hanging_roots",
+    "minecraft:glow_lichen"
+   ],
+   "mynethersdelight:letios_activators": [
+    "minecraft:twisting_vines_plant",
+    "minecraft:weeping_vines_plant",
+    "#mynethersdelight:showcase_activators"
+   ],
+   "mynethersdelight:letios_flames": [
+    "minecraft:lava_cauldron",
+    "mynethersdelight:powdery_cane",
+    "mynethersdelight:powdery_cannon",
+    "mynethersdelight:bullet_pepper",
+    "mynethersdelight:ghasta_with_cream_block",
+    "mynethersdelight:potted_bullet_pepper",
+    "mynethersdelight:wall_powdery_torch",
+    "minecraft:wall_torch",
+    "#mynethersdelight:showcase_flames",
+    "#farmersdelight:heat_sources",
+    "#minecraft:candle_cakes",
+    "#minecraft:fire",
+    "minecraft:lava"
+   ],
+   "mynethersdelight:powdery_blocks": [
+    "mynethersdelight:powdery_block",
+    "mynethersdelight:stripped_powdery_block"
+   ],
+   "mynethersdelight:powdery_cane": [
+    "mynethersdelight:powdery_cannon",
+    "mynethersdelight:powdery_cane",
+    "mynethersdelight:bullet_pepper"
+   ],
+   "mynethersdelight:powdery_cannon_plantable_on": [
+    "minecraft:magma_block",
+    "mynethersdelight:powdery_cannon",
+    "mynethersdelight:powdery_chubby_sapling",
+    "#c:gravels",
+    "#c:netherracks",
+    "#minecraft:nylium",
+    "#minecraft:sand",
+    "#minecraft:dirt",
+    "#minecraft:base_stone_nether",
+    "#minecraft:soul_speed_blocks"
+   ],
+   "mynethersdelight:resurgent_soil_plant": [
+    "minecraft:cactus",
+    "#mynethersdelight:above_propagate_plant",
+    "#mynethersdelight:below_propagate_plant",
+    "#minecraft:mineable/hoe",
+    "#minecraft:sword_efficient"
+   ],
+   "mynethersdelight:showcase_activators": [
+    "minecraft:wither_rose",
+    "minecraft:soul_sand",
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "minecraft:nether_wart",
+    "minecraft:crimson_fungus",
+    "mynethersdelight:crimson_fungus_colony",
+    "minecraft:warped_fungus",
+    "mynethersdelight:warped_fungus_colony",
+    "minecraft:red_mushroom",
+    "farmersdelight:red_mushroom_colony",
+    "minecraft:brown_mushroom",
+    "farmersdelight:brown_mushroom_colony",
+    "minecraft:twisting_vines",
+    "minecraft:weeping_vines",
+    "minecraft:bone_block"
+   ],
+   "mynethersdelight:showcase_flames": [
+    "minecraft:magma_block",
+    "mynethersdelight:magma_cake_block",
+    "minecraft:lantern",
+    "minecraft:torch",
+    "mynethersdelight:powdery_torch",
+    "minecraft:soul_torch",
+    "minecraft:soul_lantern",
+    "minecraft:furnace",
+    "minecraft:smoker",
+    "minecraft:blast_furnace",
+    "farmersdelight:stove",
+    "mynethersdelight:nether_stove",
+    "#minecraft:campfires",
+    "#minecraft:candles"
+   ]
+  },
+  "tags/enchantment": {
+   "minecraft:curse": [
+    "mynethersdelight:poaching"
+   ],
+   "minecraft:treasure": [
+    "mynethersdelight:poaching"
+   ],
+   "mynethersdelight:poaching": [
+    "mynethersdelight:poaching"
+   ],
+   "mynethersdelight:poaching_exclusive": [
+    "minecraft:looting"
+   ]
+  },
+  "tags/fluids": {
+   "mynethersdelight:leteos_booster": [
+    "#minecraft:lava"
+   ]
+  },
+  "tags/item": {
+   "brewinandchewin:foods/horror_meat": [
+    "mynethersdelight:minced_strider",
+    "mynethersdelight:hoglin_loin",
+    "mynethersdelight:hoglin_sausage"
+   ],
+   "brewinandchewin:foods/jerky_meat": [
+    "mynethersdelight:minced_strider",
+    "mynethersdelight:hoglin_loin",
+    "mynethersdelight:hoglin_sausage"
+   ],
+   "c:crops/rice": [
+    "mynethersdelight:ghasmati"
+   ],
+   "c:eggs": [
+    "mynethersdelight:strider_egg"
+   ],
+   "c:foods/boiled_egg": [
+    "mynethersdelight:boiled_egg"
+   ],
+   "c:foods/bread": [
+    "mynethersdelight:slices_of_bread",
+    "mynethersdelight:toasts"
+   ],
+   "c:foods/cooked_egg": [
+    "#c:foods/boiled_egg",
+    "mynethersdelight:golden_egg",
+    "mynethersdelight:enchanted_golden_egg"
+   ],
+   "c:foods/cooked_hoglin": [
+    "mynethersdelight:cooked_loin",
+    "mynethersdelight:roasted_sausage"
+   ],
+   "c:foods/cooked_meat": [
+    "#c:foods/cooked_hoglin"
+   ],
+   "c:foods/cooked_pork": [
+    "#c:foods/cooked_hoglin"
+   ],
+   "c:foods/cooked_sausage": [
+    "mynethersdelight:roasted_sausage"
+   ],
+   "c:foods/dough": [
+    "mynethersdelight:ghast_dough"
+   ],
+   "c:foods/edible_when_placed": [
+    "mynethersdelight:bread_loaf",
+    "mynethersdelight:roast_stuffed_hoglin",
+    "mynethersdelight:striderloaf",
+    "mynethersdelight:cold_striderloaf",
+    "mynethersdelight:ghasta_with_cream",
+    "mynethersdelight:magma_cake_block"
+   ],
+   "c:foods/giant_tentacles": [
+    "mynethersdelight:ghasta"
+   ],
+   "c:foods/golden": [
+    "mynethersdelight:golden_egg",
+    "mynethersdelight:enchanted_golden_egg"
+   ],
+   "c:foods/magma_cube": [
+    "mynethersdelight:magma_cake_block",
+    "mynethersdelight:magma_cake_slice",
+    "mynethersdelight:rock_soup",
+    "mynethersdelight:burnt_roll"
+   ],
+   "c:foods/pasta": [
+    "mynethersdelight:ghasta"
+   ],
+   "c:foods/raw_fish": [
+    "mynethersdelight:strider_slice",
+    "mynethersdelight:ghasta"
+   ],
+   "c:foods/raw_ghast": [
+    "mynethersdelight:ghasta",
+    "mynethersdelight:ghasmati"
+   ],
+   "c:foods/raw_hoglin": [
+    "mynethersdelight:hoglin_loin",
+    "mynethersdelight:hoglin_sausage"
+   ],
+   "c:foods/raw_meat": [
+    "#c:foods/raw_hoglin",
+    "mynethersdelight:minced_strider"
+   ],
+   "c:foods/raw_pork": [
+    "#c:foods/raw_hoglin"
+   ],
+   "c:foods/raw_sausage": [
+    "mynethersdelight:hoglin_sausage"
+   ],
+   "c:foods/raw_strider": [
+    "mynethersdelight:strider_slice",
+    "mynethersdelight:minced_strider"
+   ],
+   "c:foods/rice_pasta": [
+    "mynethersdelight:ghasta"
+   ],
+   "c:foods/soup": [
+    "mynethersdelight:egg_soup",
+    "mynethersdelight:spicy_noodle_soup",
+    "mynethersdelight:rock_soup"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/bullet_pepper"
+   ],
+   "c:storage_blocks/bullet_pepper": [
+    "mynethersdelight:bullet_pepper_crate"
+   ],
+   "c:stripped_logs": [
+    "mynethersdelight:stripped_powdery_block"
+   ],
+   "farmersdelight:cabinets": [
+    "mynethersdelight:nether_bricks_cabinet",
+    "mynethersdelight:red_nether_bricks_cabinet",
+    "mynethersdelight:blackstone_bricks_cabinet"
+   ],
+   "farmersdelight:cabinets/wooden": [
+    "mynethersdelight:powdery_cabinet"
+   ],
+   "farmersdelight:feasts": [
+    "mynethersdelight:roast_stuffed_hoglin",
+    "mynethersdelight:striderloaf",
+    "mynethersdelight:cold_striderloaf",
+    "mynethersdelight:ghasta_with_cream",
+    "mynethersdelight:bread_loaf",
+    "mynethersdelight:magma_cake_block"
+   ],
+   "farmersdelight:wild_crops": [
+    "mynethersdelight:bullet_pepper",
+    "mynethersdelight:powder_cannon"
+   ],
+   "minecraft:cat_food": [
+    "#c:foods/raw_strider",
+    "mynethersdelight:ghasmati"
+   ],
+   "minecraft:hanging_signs": [
+    "mynethersdelight:powdery_hanging_sign"
+   ],
+   "minecraft:hoglin_food": [
+    "mynethersdelight:bullet_pepper"
+   ],
+   "minecraft:meat": [
+    "#c:foods/raw_hoglin",
+    "#c:foods/cooked_hoglin",
+    "mynethersdelight:minced_strider",
+    "mynethersdelight:roast_ear"
+   ],
+   "minecraft:non_flammable_wood": [
+    "#mynethersdelight:powdery_blocks",
+    "mynethersdelight:powdery_planks",
+    "mynethersdelight:powdery_mosaic",
+    "mynethersdelight:powdery_slab",
+    "mynethersdelight:powdery_mosaic_slab",
+    "mynethersdelight:powdery_stairs",
+    "mynethersdelight:powdery_mosaic_stairs",
+    "mynethersdelight:powdery_fence",
+    "mynethersdelight:powdery_fence_gate",
+    "mynethersdelight:powdery_door",
+    "mynethersdelight:powdery_trapdoor",
+    "mynethersdelight:powdery_pressure_plate",
+    "mynethersdelight:powdery_button",
+    "mynethersdelight:powdery_sign",
+    "mynethersdelight:powdery_hanging_sign"
+   ],
+   "minecraft:piglin_food": [
+    "#mynethersdelight:stuffed_hoglin_items",
+    "#c:foods/cooked_hoglin",
+    "#c:foods/raw_hoglin"
+   ],
+   "minecraft:piglin_loved": [
+    "mynethersdelight:golden_egg",
+    "mynethersdelight:enchanted_golden_egg",
+    "mynethersdelight:golden_trophy"
+   ],
+   "minecraft:planks": [
+    "mynethersdelight:powdery_planks"
+   ],
+   "minecraft:signs": [
+    "mynethersdelight:powdery_sign"
+   ],
+   "minecraft:slabs": [
+    "mynethersdelight:powdery_mosaic_slab"
+   ],
+   "minecraft:soul_fire_base_blocks": [
+    "mynethersdelight:letios_compost",
+    "mynethersdelight:resurgent_soil",
+    "mynethersdelight:resurgent_soil_farmland"
+   ],
+   "minecraft:stairs": [
+    "mynethersdelight:powdery_mosaic_stairs"
+   ],
+   "minecraft:strider_food": [
+    "mynethersdelight:hot_cream_cone",
+    "mynethersdelight:bullet_pepper"
+   ],
+   "minecraft:strider_tempt_items": [
+    "mynethersdelight:hot_cream_cone"
+   ],
+   "minecraft:wolf_food": [
+    "mynethersdelight:hotdog"
+   ],
+   "minecraft:wooden_buttons": [
+    "mynethersdelight:powdery_button"
+   ],
+   "minecraft:wooden_doors": [
+    "mynethersdelight:powdery_door"
+   ],
+   "minecraft:wooden_fences": [
+    "mynethersdelight:powdery_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "mynethersdelight:powdery_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "mynethersdelight:powdery_slab"
+   ],
+   "minecraft:wooden_stairs": [
+    "mynethersdelight:powdery_stairs"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "mynethersdelight:powdery_trapdoor"
+   ],
+   "mynethersdelight:block_of_powdery": [
+    "#mynethersdelight:powdery_blocks"
+   ],
+   "mynethersdelight:boiled_egg_candidate": [
+    "mynethersdelight:strider_egg"
+   ],
+   "mynethersdelight:hoglin_cure": [
+    "minecraft:ghast_tear"
+   ],
+   "mynethersdelight:hoglin_waxed": [
+    "minecraft:nether_wart",
+    "minecraft:honeycomb"
+   ],
+   "mynethersdelight:hot_spice": [
+    "mynethersdelight:bullet_pepper",
+    "mynethersdelight:pepper_powder",
+    "minecraft:blaze_powder"
+   ],
+   "mynethersdelight:powdery_blocks": [
+    "mynethersdelight:powdery_block",
+    "mynethersdelight:stripped_powdery_block"
+   ],
+   "mynethersdelight:stove_fire_fuel": [
+    "#mynethersdelight:hot_spice",
+    "minecraft:blaze_rod",
+    "minecraft:fire_charge",
+    "minecraft:magma_cream",
+    "minecraft:magma_block"
+   ],
+   "mynethersdelight:stove_soul_fuel": [
+    "#minecraft:soul_fire_base_blocks"
+   ],
+   "mynethersdelight:stuffed_hoglin_items": [
+    "mynethersdelight:roast_ear",
+    "mynethersdelight:plate_of_stuffed_hoglin",
+    "mynethersdelight:plate_of_stuffed_hoglin_ham",
+    "mynethersdelight:plate_of_stuffed_hoglin_snout"
+   ]
+  }
+ },
+ "recipe_types": {
+  "brewinandchewin:fermenting": 1,
+  "farmersdelight:cooking": 21,
+  "farmersdelight:cutting": 20,
+  "farmersdelight:food_serving": 1,
+  "minecraft:campfire_cooking": 4,
+  "minecraft:crafting_shaped": 30,
+  "minecraft:crafting_shapeless": 39,
+  "minecraft:smelting": 6,
+  "minecraft:smoking": 6,
+  "minecraft:stonecutting": 3,
+  "mynethersdelight:blazier_cooling": 1,
+  "mynethersdelight:blazier_heating": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

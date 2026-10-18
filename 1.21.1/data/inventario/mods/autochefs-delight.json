@@ -1,0 +1,40 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Autochef's Delight",
+ "file": "AutochefsDelight-1.21.1-NeoForge-2.0.3.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "458e857dfb7e1720ff15313f72f4548c4226316ad951ede03d6651a7c863a5308ee7e4d7678a43911e710f0551128ad5db0e2bfcdb7f89cb3e8a8b378808cbc5",
+ "mods": [
+  {
+   "modid": "autochefsdelight",
+   "name": "Autochef's Delight",
+   "version": "2.0.3+neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}
