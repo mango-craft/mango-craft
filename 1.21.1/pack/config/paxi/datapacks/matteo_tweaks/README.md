@@ -13,6 +13,7 @@ Ritocchi del modpack. **Paxi** carica questo pacchetto in **tutti i mondi**, anc
 | **Artefatti nelle strutture modded** | Aggiunge gli oggetti di Artifacts a 153 casse di strutture modded | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
 | **Ars Nouveau nei vasi** | Magebloom, Sourceberry e i 5 frutti di archwood in Botany Pots | `data/matteo_tweaks/recipe/botanypots/` | [botanypots/readme.md](data/matteo_tweaks/recipe/botanypots/readme.md) |
 | **Lune di sangue** | Più rare (5% delle notti) e meno affollate (mostri ×2 e ×4) | `data/enhancedcelestials/enhancedcelestials/lunar/event/` | [lunar/event/readme.md](data/enhancedcelestials/enhancedcelestials/lunar/event/readme.md) |
+| **Pesce cotto di Starcatcher** | Vale come "pesce cotto" nelle ricette di cucina | `data/c/tags/item/foods/`, `data/bountifulfares/tags/item/` | [c/readme.md](data/c/readme.md) |
 
 ## Mappa delle cartelle
 
@@ -30,18 +31,23 @@ matteo_tweaks/
     │           └── soil/        5 terreni (i tronchi di archwood)
     ├── neoforge/
     │   └── loot_modifiers/      l'elenco dei modificatori da attivare
-    └── enhancedcelestials/
-        └── enhancedcelestials/
-            └── lunar/
-                └── event/       2 file che sostituiscono quelli di Enhanced Celestials
+    ├── enhancedcelestials/
+    │   └── enhancedcelestials/
+    │       └── lunar/
+    │           └── event/       2 file che sostituiscono quelli di Enhanced Celestials
+    ├── c/
+    │   └── tags/item/foods/     etichette comuni del pesce cotto (+ Starcatcher)
+    └── bountifulfares/
+        └── tags/item/           etichetta del pesce cotto di Bountiful Fares (+ Starcatcher)
 ```
 
-## Le tre cartelle dentro `data/`
+## Le cartelle dentro `data/`
 
 La prima cartella dentro `data/` si chiama **namespace** e dice a chi appartiene il file. Un percorso come `data/matteo_tweaks/recipe/botanypots/crop/frostaya_pod.json` diventa, per il gioco, l'identificativo `matteo_tweaks:botanypots/crop/frostaya_pod`.
 
 - **`matteo_tweaks`** contiene i file nuovi. Il nome è inventato e serve solo a non scontrarsi con i file delle mod.
 - **`neoforge`** contiene un file che NeoForge cerca proprio in quel punto: l'elenco dei modificatori di bottino.
+- **`c`** e **`bountifulfares`** contengono etichette (tag): con `"replace": false` si **aggiungono** a quelle delle mod invece di sostituirle.
 - **`enhancedcelestials`** ha lo stesso percorso dei file originali della mod, quindi **li sostituisce**. Paxi carica il pacchetto "in cima" a tutti gli altri, perciò in caso di file con lo stesso nome vincono le nostre copie.
 
 ## Se una mod viene tolta dal pack

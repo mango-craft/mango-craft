@@ -296,6 +296,14 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | SeasonHud | [`seasonhud`](https://modrinth.com/mod/seasonhud) MR | 1.21.1-2.0.10 | 2026-08-31 | release | ✅ | MIT; dipendenze opzionali (Serene Seasons, Xaero). Aggiunta il 17/10/2026 |
 | Smarter Farmers | [`smarter-farmers-farmers-replant`](https://modrinth.com/mod/smarter-farmers-farmers-replant) MR | 1.21-2.2.4 | 2025-10-18 | release | ✅ | All-Rights-Reserved; richiede Moonlight. Aggiunta il 17/10/2026 |
 | Open Together | [`open-together`](https://modrinth.com/mod/open-together) MR | 21.1.2 | 2026-09-10 | release | ✅ | MPL-2.0; richiede Puzzles Lib. Aggiunta il 17/10/2026 |
+| My Nether's Delight | [`my-nethers-delight`](https://modrinth.com/mod/my-nethers-delight) MR | 1.10.4.1 | 2026-09-11 | release | ✅ | ARR su Modrinth (MIT nel file di build); ⚠️ canna polverosa selvatica nel Nether. Pack 0.3.0 (18/10/2026) |
+| Chef's Delight | [`chefs-delight`](https://modrinth.com/mod/chefs-delight) MR | 1.0.6-neoforge-1.21.1 | 2026-10-03 | release | ✅ | MIT; ⚠️ case nei villaggi; richiede NeoForge ≥ 21.1.219. Pack 0.3.0 |
+| Create Confectionery | [`create-confectionery`](https://modrinth.com/mod/create-confectionery) MR | 1.1.3.b | 2026-08-15 | release | ✅ | MIT; fatta con MCreator. Pack 0.3.0 |
+| Rustic Delight | [`rustic-delight`](https://modrinth.com/mod/rustic-delight) MR | 1.7.1 | 2026-07-31 | release | ✅ | MIT; ⚠️ colture selvatiche; ha già le sue ricette per Botany Pots. Pack 0.3.0 |
+| Ocean's Delight | [`oceans-delight`](https://modrinth.com/mod/oceans-delight) MR | 1.0.4 | 2026-04-17 | release | ✅ | MIT; usa l'effetto Comfort di FD (a rischio con FD 1.4). Pack 0.3.0 |
+| Autochef's Delight | [`autochefs-delight`](https://modrinth.com/mod/autochefs-delight) MR | 2.0.3+neoforge | 2026-04-30 | release | ✅ | ARR; modifica la pentola di FD. Pack 0.3.0 |
+| Farming for Blockheads | [`farming-for-blockheads`](https://modrinth.com/mod/farming-for-blockheads) MR | 21.1.14+neoforge-1.21.1 | 2026-09-25 | release | ✅ | ARR; richiede Balm; niente irrigatori nella 1.21.1. Pack 0.3.0 |
+| Cognition (ex Experience Obelisk) | [`cognition`](https://modrinth.com/mod/cognition) MR | 2.4.13 | 2026-07-10 | release | ✅ | MIT; richiede GeckoLib; liquido `cognition:cognitium_source` (20 mB per punto, `c:experience`). Pack 0.3.0 |
 
 ## Librerie principali (scaricate da Prism)
 

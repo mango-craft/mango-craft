@@ -2,8 +2,8 @@
 
 File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non modificarlo a mano.
 
-- Mod nell'inventario: 358 (mod id), namespace: 311
-- File del datapack controllati: 30 (0 inattivi)
+- Mod nell'inventario: 367 (mod id), namespace: 345
+- File del datapack controllati: 33 (0 inattivi)
 - **Errori: 0** · avvisi: 15
 
 ## Errori

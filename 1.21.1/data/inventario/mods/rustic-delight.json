@@ -1,0 +1,1505 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Rustic Delight",
+ "file": "rusticdelight-neoforge-1.21-1.7.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "1aa22e862f0775699782ee20aa5cf75ce528404711cf8587cb7a732c710aa76f4d14035d2cdd0ed92980eb5f9388765b7f17a5aa31bdeadb85382aad488a6d2a",
+ "mods": [
+  {
+   "modid": "rusticdelight",
+   "name": "Rustic Delight",
+   "version": "1.7.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[1.3.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "thirst",
+     "type": "optional",
+     "range": "[1.21.0-2.0.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "botanypots",
+  "brewinandchewin",
+  "c",
+  "create",
+  "farmersdelight",
+  "forge",
+  "frycooks_delight",
+  "minecraft",
+  "neoforge",
+  "rusticdelight",
+  "sereneseasons"
+ ],
+ "blocks": {
+  "rusticdelight:bell_pepper_black_block": "Giant Black Bell Pepper",
+  "rusticdelight:bell_pepper_black_crate": "Black Bell Pepper Crate",
+  "rusticdelight:bell_pepper_blue_block": "Giant Blue Bell Pepper",
+  "rusticdelight:bell_pepper_blue_crate": "Blue Bell Pepper Crate",
+  "rusticdelight:bell_pepper_green_block": "Giant Green Bell Pepper",
+  "rusticdelight:bell_pepper_green_crate": "Green Bell Pepper Crate",
+  "rusticdelight:bell_pepper_medley": "Bell Pepper Medley",
+  "rusticdelight:bell_pepper_orange_block": "Giant Orange Bell Pepper",
+  "rusticdelight:bell_pepper_orange_crate": "Orange Bell Pepper Crate",
+  "rusticdelight:bell_pepper_pink_block": "Giant Pink Bell Pepper",
+  "rusticdelight:bell_pepper_pink_crate": "Pink Bell Pepper Crate",
+  "rusticdelight:bell_pepper_purple_block": "Giant Purple Bell Pepper",
+  "rusticdelight:bell_pepper_purple_crate": "Purple Bell Pepper Crate",
+  "rusticdelight:bell_pepper_red_block": "Giant Red Bell Pepper",
+  "rusticdelight:bell_pepper_red_crate": "Red Bell Pepper Crate",
+  "rusticdelight:bell_pepper_seeds_bag": "Bag of Bell Pepper Seeds",
+  "rusticdelight:bell_pepper_white_block": "Giant White Bell Pepper",
+  "rusticdelight:bell_pepper_white_crate": "White Bell Pepper Crate",
+  "rusticdelight:bell_pepper_yellow_block": "Giant Yellow Bell Pepper",
+  "rusticdelight:bell_pepper_yellow_crate": "Yellow Bell Pepper Crate",
+  "rusticdelight:bell_peppers": "Bell Peppers",
+  "rusticdelight:calamari_crate": "Calamari Crate",
+  "rusticdelight:cherry_blossom_cheesecake": "Cherry Blossom Cheesecake",
+  "rusticdelight:cherry_blossom_pancakes": "Cherry Blossom Pancakes",
+  "rusticdelight:chocolate_pancakes": "Chocolate Pancakes",
+  "rusticdelight:coffee": "Coffee",
+  "rusticdelight:coffee_beans_bag": "Bag of Coffee Beans",
+  "rusticdelight:coffee_cheesecake": "Coffee Cheesecake",
+  "rusticdelight:coffee_pancakes": "Coffee Pancakes",
+  "rusticdelight:cotton": "Cotton",
+  "rusticdelight:cotton_boll_crate": "Cotton Crate",
+  "rusticdelight:cotton_seeds_bag": "Bag of Cotton Seeds",
+  "rusticdelight:dark_bell_pepper_medley": "Dark Bell Pepper Medley",
+  "rusticdelight:dark_bell_pepper_seeds_bag": "Bag of Dark Bell Pepper Seeds",
+  "rusticdelight:dark_bell_peppers": "Dark Bell Peppers",
+  "rusticdelight:honey_pancakes": "Honey Pancakes",
+  "rusticdelight:pale_bell_pepper_medley": "Pale Bell Pepper Medley",
+  "rusticdelight:pale_bell_pepper_seeds_bag": "Bag of Pale Bell Pepper Seeds",
+  "rusticdelight:pale_bell_peppers": "Pale Bell Peppers",
+  "rusticdelight:pancakes": "Pancakes",
+  "rusticdelight:potted_wild_bell_peppers": "Potted Wild Bell Peppers",
+  "rusticdelight:potted_wild_coffee": "Potted Wild Coffee",
+  "rusticdelight:potted_wild_cotton": "Potted Wild Cotton",
+  "rusticdelight:potted_wild_dark_bell_peppers": "Potted Wild Dark Bell Peppers",
+  "rusticdelight:potted_wild_pale_bell_peppers": "Potted Wild Pale Bell Peppers",
+  "rusticdelight:pumpkin_pancakes": "Pumpkin Pancakes",
+  "rusticdelight:rice_roll_royale": "Rice Roll Royale",
+  "rusticdelight:roasted_coffee_beans_bag": "Bag of Roasted Coffee Beans",
+  "rusticdelight:syrup_cheesecake": "Syrup Cheesecake",
+  "rusticdelight:vegetable_pancakes": "Vegetable Pancakes",
+  "rusticdelight:wild_bell_peppers": "Wild Bell Peppers",
+  "rusticdelight:wild_coffee": "Wild Coffee",
+  "rusticdelight:wild_cotton": "Wild Cotton",
+  "rusticdelight:wild_dark_bell_peppers": "Wild Dark Bell Peppers",
+  "rusticdelight:wild_pale_bell_peppers": "Wild Pale Bell Peppers"
+ },
+ "items": {
+  "rusticdelight:baked_potato_slices": "Baked Potato Slices",
+  "rusticdelight:batter": "Batter",
+  "rusticdelight:bell_pepper_black": "Black Bell Pepper",
+  "rusticdelight:bell_pepper_black_block": "",
+  "rusticdelight:bell_pepper_black_crate": "",
+  "rusticdelight:bell_pepper_blue": "Blue Bell Pepper",
+  "rusticdelight:bell_pepper_blue_block": "",
+  "rusticdelight:bell_pepper_blue_crate": "",
+  "rusticdelight:bell_pepper_green": "Green Bell Pepper",
+  "rusticdelight:bell_pepper_green_block": "",
+  "rusticdelight:bell_pepper_green_crate": "",
+  "rusticdelight:bell_pepper_medley": "",
+  "rusticdelight:bell_pepper_orange": "Orange Bell Pepper",
+  "rusticdelight:bell_pepper_orange_block": "",
+  "rusticdelight:bell_pepper_orange_crate": "",
+  "rusticdelight:bell_pepper_pasta": "Bell Pepper Pasta",
+  "rusticdelight:bell_pepper_pink": "Pink Bell Pepper",
+  "rusticdelight:bell_pepper_pink_block": "",
+  "rusticdelight:bell_pepper_pink_crate": "",
+  "rusticdelight:bell_pepper_purple": "Purple Bell Pepper",
+  "rusticdelight:bell_pepper_purple_block": "",
+  "rusticdelight:bell_pepper_purple_crate": "",
+  "rusticdelight:bell_pepper_red": "Red Bell Pepper",
+  "rusticdelight:bell_pepper_red_block": "",
+  "rusticdelight:bell_pepper_red_crate": "",
+  "rusticdelight:bell_pepper_roll_black": "Black Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_blue": "Blue Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_green": "Green Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_orange": "Orange Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_pink": "Pink Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_purple": "Purple Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_red": "Red Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_white": "White Bell Pepper Roll",
+  "rusticdelight:bell_pepper_roll_yellow": "Yellow Bell Pepper Roll",
+  "rusticdelight:bell_pepper_seeds": "Bell Pepper Seeds",
+  "rusticdelight:bell_pepper_seeds_bag": "",
+  "rusticdelight:bell_pepper_slice_black": "Black Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_blue": "Blue Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_green": "Green Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_orange": "Orange Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_pink": "Pink Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_purple": "Purple Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_red": "Red Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_white": "White Bell Pepper Slice",
+  "rusticdelight:bell_pepper_slice_yellow": "Yellow Bell Pepper Slice",
+  "rusticdelight:bell_pepper_soup": "Bell Pepper Soup",
+  "rusticdelight:bell_pepper_white": "White Bell Pepper",
+  "rusticdelight:bell_pepper_white_block": "",
+  "rusticdelight:bell_pepper_white_crate": "",
+  "rusticdelight:bell_pepper_yellow": "Yellow Bell Pepper",
+  "rusticdelight:bell_pepper_yellow_block": "",
+  "rusticdelight:bell_pepper_yellow_crate": "",
+  "rusticdelight:calamari": "Raw Calamari",
+  "rusticdelight:calamari_crate": "",
+  "rusticdelight:calamari_roll": "Calamari Roll",
+  "rusticdelight:calamari_slice": "Raw Calamari Slice",
+  "rusticdelight:calamari_soup": "Calamari Soup",
+  "rusticdelight:cherry_blossom_cheesecake": "",
+  "rusticdelight:cherry_blossom_cheesecake_slice": "Slice of Cherry Blossom Cheesecake",
+  "rusticdelight:cherry_blossom_coffee": "Cherry Blossom Coffee",
+  "rusticdelight:cherry_blossom_cookie": "Cherry Blossom Cookie",
+  "rusticdelight:cherry_blossom_pancake": "Cherry Blossom Pancake",
+  "rusticdelight:cherry_blossom_pancakes": "",
+  "rusticdelight:cherry_blossom_roll": "Cherry Blossom Roll",
+  "rusticdelight:chocolate_coffee": "Chocolate Coffee",
+  "rusticdelight:chocolate_pancake": "Chocolate Pancake",
+  "rusticdelight:chocolate_pancakes": "",
+  "rusticdelight:coffee": "Coffee",
+  "rusticdelight:coffee_beans": "Coffee Beans",
+  "rusticdelight:coffee_beans_bag": "",
+  "rusticdelight:coffee_braised_beef": "Coffee-Braised Beef",
+  "rusticdelight:coffee_cheesecake": "",
+  "rusticdelight:coffee_cheesecake_slice": "Slice of Coffee Cheesecake",
+  "rusticdelight:coffee_cookie": "Coffee Cookie",
+  "rusticdelight:coffee_pancake": "Coffee Pancake",
+  "rusticdelight:coffee_pancakes": "",
+  "rusticdelight:cooked_calamari": "Cooked Calamari",
+  "rusticdelight:cooked_calamari_slice": "Cooked Calamari Slice",
+  "rusticdelight:cooking_oil": "Cooking Oil",
+  "rusticdelight:cotton_boll": "Cotton",
+  "rusticdelight:cotton_boll_crate": "",
+  "rusticdelight:cotton_seeds": "Cotton Seeds",
+  "rusticdelight:cotton_seeds_bag": "",
+  "rusticdelight:dark_bell_pepper_medley": "",
+  "rusticdelight:dark_bell_pepper_seeds": "Dark Bell Pepper Seeds",
+  "rusticdelight:dark_bell_pepper_seeds_bag": "",
+  "rusticdelight:dark_coffee": "Dark Coffee",
+  "rusticdelight:fried_calamari": "Fried Calamari",
+  "rusticdelight:fried_chicken": "Fried Chicken",
+  "rusticdelight:fried_dough": "Fried Dough",
+  "rusticdelight:fried_dumplings": "Fried Dumplings",
+  "rusticdelight:fried_fish": "Fried Fish",
+  "rusticdelight:fried_mushrooms": "Fried Mushrooms",
+  "rusticdelight:fruit_beignet": "Fruit Beignet",
+  "rusticdelight:golden_coffee_beans": "Golden Coffee Beans",
+  "rusticdelight:honey_coffee": "Honey Coffee",
+  "rusticdelight:honey_pancake": "Honey Pancake",
+  "rusticdelight:honey_pancakes": "",
+  "rusticdelight:milk_coffee": "Milk Coffee",
+  "rusticdelight:pale_bell_pepper_medley": "",
+  "rusticdelight:pale_bell_pepper_seeds": "Pale Bell Pepper Seeds",
+  "rusticdelight:pale_bell_pepper_seeds_bag": "",
+  "rusticdelight:pancake": "Pancake",
+  "rusticdelight:pancakes": "",
+  "rusticdelight:potato_salad": "Potato Salad",
+  "rusticdelight:potato_slices": "Potato Slices",
+  "rusticdelight:potted_wild_bell_peppers": "",
+  "rusticdelight:potted_wild_coffee": "",
+  "rusticdelight:potted_wild_cotton": "",
+  "rusticdelight:potted_wild_dark_bell_peppers": "",
+  "rusticdelight:potted_wild_pale_bell_peppers": "",
+  "rusticdelight:pumpkin_coffee": "Pumpkin Coffee",
+  "rusticdelight:pumpkin_pancake": "Pumpkin Pancake",
+  "rusticdelight:pumpkin_pancakes": "",
+  "rusticdelight:rice_roll_royale": "",
+  "rusticdelight:roasted_bell_pepper_black": "Roasted Black Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_blue": "Roasted Blue Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_green": "Roasted Green Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_orange": "Roasted Orange Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_pink": "Roasted Pink Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_purple": "Roasted Purple Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_red": "Roasted Red Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_slice_black": "Roasted Black Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_blue": "Roasted Blue Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_green": "Roasted Green Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_orange": "Roasted Orange Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_pink": "Roasted Pink Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_purple": "Roasted Purple Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_red": "Roasted Red Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_white": "Roasted White Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_slice_yellow": "Roasted Yellow Bell Pepper Slice",
+  "rusticdelight:roasted_bell_pepper_white": "Roasted White Bell Pepper",
+  "rusticdelight:roasted_bell_pepper_yellow": "Roasted Yellow Bell Pepper",
+  "rusticdelight:roasted_coffee_beans": "Roasted Coffee Beans",
+  "rusticdelight:roasted_coffee_beans_bag": "",
+  "rusticdelight:spring_rolls": "Spring Rolls",
+  "rusticdelight:stuffed_bell_pepper_black": "Stuffed Black Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_blue": "Stuffed Blue Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_green": "Stuffed Green Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_orange": "Stuffed Orange Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_pink": "Stuffed Pink Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_purple": "Stuffed Purple Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_red": "Stuffed Red Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_white": "Stuffed White Bell Pepper",
+  "rusticdelight:stuffed_bell_pepper_yellow": "Stuffed Yellow Bell Pepper",
+  "rusticdelight:sweet_salad": "Sweet Salad",
+  "rusticdelight:syrup": "Syrup",
+  "rusticdelight:syrup_cheesecake": "",
+  "rusticdelight:syrup_cheesecake_slice": "Slice of Syrup Cheesecake",
+  "rusticdelight:syrup_coffee": "Syrup Coffee",
+  "rusticdelight:syrup_cookie": "Syrup Cookie",
+  "rusticdelight:syrup_sandwich": "Syrup Sandwich",
+  "rusticdelight:vegetable_pancake": "Vegetable Pancake",
+  "rusticdelight:vegetable_pancakes": "",
+  "rusticdelight:wild_bell_peppers": "",
+  "rusticdelight:wild_coffee": "",
+  "rusticdelight:wild_cotton": "",
+  "rusticdelight:wild_dark_bell_peppers": "",
+  "rusticdelight:wild_pale_bell_peppers": ""
+ },
+ "data": {
+  "data_maps/item": [
+   "neoforge:compostables"
+  ],
+  "loot_modifiers": [
+   "neoforge:global_loot_modifiers",
+   "rusticdelight:calamari_from_glow_squid",
+   "rusticdelight:calamari_from_squid",
+   "rusticdelight:coffee_beans_from_jungle_temple",
+   "rusticdelight:cotton_seeds_from_abandoned_mineshaft",
+   "rusticdelight:cotton_seeds_from_shipwreck_supply",
+   "rusticdelight:cotton_seeds_from_village_savanna",
+   "rusticdelight:cotton_seeds_from_village_snowy",
+   "rusticdelight:cotton_seeds_from_village_taiga",
+   "rusticdelight:dark_bell_pepper_seeds_from_jungle_temple",
+   "rusticdelight:pale_bell_pepper_seeds_from_jungle_temple"
+  ],
+  "loot_table": [
+   "rusticdelight:blocks/bell_pepper_black_block",
+   "rusticdelight:blocks/bell_pepper_black_crate",
+   "rusticdelight:blocks/bell_pepper_blue_block",
+   "rusticdelight:blocks/bell_pepper_blue_crate",
+   "rusticdelight:blocks/bell_pepper_green_block",
+   "rusticdelight:blocks/bell_pepper_green_crate",
+   "rusticdelight:blocks/bell_pepper_medley",
+   "rusticdelight:blocks/bell_pepper_orange_block",
+   "rusticdelight:blocks/bell_pepper_orange_crate",
+   "rusticdelight:blocks/bell_pepper_pink_block",
+   "rusticdelight:blocks/bell_pepper_pink_crate",
+   "rusticdelight:blocks/bell_pepper_purple_block",
+   "rusticdelight:blocks/bell_pepper_purple_crate",
+   "rusticdelight:blocks/bell_pepper_red_block",
+   "rusticdelight:blocks/bell_pepper_red_crate",
+   "rusticdelight:blocks/bell_pepper_seeds_bag",
+   "rusticdelight:blocks/bell_pepper_white_block",
+   "rusticdelight:blocks/bell_pepper_white_crate",
+   "rusticdelight:blocks/bell_pepper_yellow_block",
+   "rusticdelight:blocks/bell_pepper_yellow_crate",
+   "rusticdelight:blocks/bell_peppers",
+   "rusticdelight:blocks/calamari_crate",
+   "rusticdelight:blocks/cherry_blossom_cheesecake",
+   "rusticdelight:blocks/cherry_blossom_pancakes",
+   "rusticdelight:blocks/chocolate_pancakes",
+   "rusticdelight:blocks/coffee",
+   "rusticdelight:blocks/coffee_beans_bag",
+   "rusticdelight:blocks/coffee_cheesecake",
+   "rusticdelight:blocks/coffee_pancakes",
+   "rusticdelight:blocks/cotton",
+   "rusticdelight:blocks/cotton_boll_crate",
+   "rusticdelight:blocks/cotton_seeds_bag",
+   "rusticdelight:blocks/dark_bell_pepper_medley",
+   "rusticdelight:blocks/dark_bell_pepper_seeds_bag",
+   "rusticdelight:blocks/dark_bell_peppers",
+   "rusticdelight:blocks/honey_pancakes",
+   "rusticdelight:blocks/pale_bell_pepper_medley",
+   "rusticdelight:blocks/pale_bell_pepper_seeds_bag",
+   "rusticdelight:blocks/pale_bell_peppers",
+   "rusticdelight:blocks/pancakes",
+   "rusticdelight:blocks/potted_wild_bell_peppers",
+   "rusticdelight:blocks/potted_wild_coffee",
+   "rusticdelight:blocks/potted_wild_cotton",
+   "rusticdelight:blocks/potted_wild_dark_bell_peppers",
+   "rusticdelight:blocks/potted_wild_pale_bell_peppers",
+   "rusticdelight:blocks/pumpkin_pancakes",
+   "rusticdelight:blocks/rice_roll_royale",
+   "rusticdelight:blocks/roasted_coffee_beans_bag",
+   "rusticdelight:blocks/syrup_cheesecake",
+   "rusticdelight:blocks/vegetable_pancakes",
+   "rusticdelight:blocks/wild_bell_peppers",
+   "rusticdelight:blocks/wild_coffee",
+   "rusticdelight:blocks/wild_cotton",
+   "rusticdelight:blocks/wild_dark_bell_peppers",
+   "rusticdelight:blocks/wild_pale_bell_peppers"
+  ],
+  "neoforge/biome_modifier": [
+   "rusticdelight:add_bell_pepper_block_patch",
+   "rusticdelight:add_wild_bell_peppers",
+   "rusticdelight:add_wild_coffee",
+   "rusticdelight:add_wild_cotton"
+  ],
+  "recipe": [
+   "botanypots:rusticdelight/crop/bell_peppers",
+   "botanypots:rusticdelight/crop/coffee",
+   "botanypots:rusticdelight/crop/cotton",
+   "botanypots:rusticdelight/crop/wild_bell_peppers",
+   "botanypots:rusticdelight/crop/wild_coffee",
+   "botanypots:rusticdelight/crop/wild_cotton",
+   "botanypots:rusticdelight/crop/wild_dark_bell_peppers",
+   "botanypots:rusticdelight/crop/wild_pale_bell_peppers",
+   "farmersdelight:cooking/baked_cod_stew",
+   "farmersdelight:cooking/beef_stew",
+   "farmersdelight:cooking/fried_rice",
+   "farmersdelight:cooking/mushroom_rice",
+   "farmersdelight:cooking/vegetable_soup",
+   "rusticdelight:baked_potato_slices",
+   "rusticdelight:baked_potato_slices_from_campfire_cooking",
+   "rusticdelight:baked_potato_slices_from_smoking",
+   "rusticdelight:bell_pepper_black_block_from_bell_pepper_slice_black",
+   "rusticdelight:bell_pepper_black_crate_from_bell_pepper_black",
+   "rusticdelight:bell_pepper_black_from_bell_pepper_black_crate",
+   "rusticdelight:bell_pepper_blue_block_from_bell_pepper_slice_blue",
+   "rusticdelight:bell_pepper_blue_crate_from_bell_pepper_blue",
+   "rusticdelight:bell_pepper_blue_from_bell_pepper_blue_crate",
+   "rusticdelight:bell_pepper_green_block_from_bell_pepper_slice_green",
+   "rusticdelight:bell_pepper_green_crate_from_bell_pepper_green",
+   "rusticdelight:bell_pepper_green_from_bell_pepper_green_crate",
+   "rusticdelight:bell_pepper_medley",
+   "rusticdelight:bell_pepper_orange_block_from_bell_pepper_slice_orange",
+   "rusticdelight:bell_pepper_orange_crate_from_bell_pepper_orange",
+   "rusticdelight:bell_pepper_orange_from_bell_pepper_orange_crate",
+   "rusticdelight:bell_pepper_pink_block_from_bell_pepper_slice_pink",
+   "rusticdelight:bell_pepper_pink_crate_from_bell_pepper_pink",
+   "rusticdelight:bell_pepper_pink_from_bell_pepper_pink_crate",
+   "rusticdelight:bell_pepper_purple_block_from_bell_pepper_slice_purple",
+   "rusticdelight:bell_pepper_purple_crate_from_bell_pepper_purple",
+   "rusticdelight:bell_pepper_purple_from_bell_pepper_purple_crate",
+   "rusticdelight:bell_pepper_red_block_from_bell_pepper_slice_red",
+   "rusticdelight:bell_pepper_red_crate_from_bell_pepper_red",
+   "rusticdelight:bell_pepper_red_from_bell_pepper_red_crate",
+   "rusticdelight:bell_pepper_roll_black",
+   "rusticdelight:bell_pepper_roll_blue",
+   "rusticdelight:bell_pepper_roll_green",
+   "rusticdelight:bell_pepper_roll_orange",
+   "rusticdelight:bell_pepper_roll_pink",
+   "rusticdelight:bell_pepper_roll_purple",
+   "rusticdelight:bell_pepper_roll_red",
+   "rusticdelight:bell_pepper_roll_white",
+   "rusticdelight:bell_pepper_roll_yellow",
+   "rusticdelight:bell_pepper_seeds_bag_from_bell_pepper_seeds",
+   "rusticdelight:bell_pepper_seeds_from_bell_pepper_seeds_bag",
+   "rusticdelight:bell_pepper_seeds_from_bell_pepper_slice_green",
+   "rusticdelight:bell_pepper_seeds_from_bell_pepper_slice_red",
+   "rusticdelight:bell_pepper_seeds_from_bell_pepper_slice_yellow",
+   "rusticdelight:bell_pepper_soup",
+   "rusticdelight:bell_pepper_white_block_from_bell_pepper_slice_white",
+   "rusticdelight:bell_pepper_white_crate_from_bell_pepper_white",
+   "rusticdelight:bell_pepper_white_from_bell_pepper_white_crate",
+   "rusticdelight:bell_pepper_yellow_block_from_bell_pepper_slice_yellow",
+   "rusticdelight:bell_pepper_yellow_crate_from_bell_pepper_yellow",
+   "rusticdelight:bell_pepper_yellow_from_bell_pepper_yellow_crate",
+   "rusticdelight:black_dye_from_bell_pepper_black",
+   "rusticdelight:blue_dye_from_bell_pepper_blue",
+   "rusticdelight:brown_dye_from_roasted_coffee_beans",
+   "rusticdelight:calamari_crate_from_calamari",
+   "rusticdelight:calamari_from_calamari_crate",
+   "rusticdelight:calamari_roll",
+   "rusticdelight:canvas_from_cotton_boll",
+   "rusticdelight:cherry_blossom_cheesecake",
+   "rusticdelight:cherry_blossom_cheesecake_from_slices",
+   "rusticdelight:cherry_blossom_coffee_from_coffee",
+   "rusticdelight:cherry_blossom_coffee_from_milk_coffee",
+   "rusticdelight:cherry_blossom_cookie",
+   "rusticdelight:cherry_blossom_pancake_from_cherry_blossom_pancakes",
+   "rusticdelight:cherry_blossom_pancakes",
+   "rusticdelight:cherry_blossom_pancakes_from_cherry_blossom_pancake",
+   "rusticdelight:cherry_blossom_roll",
+   "rusticdelight:chocolate_coffee_from_coffee",
+   "rusticdelight:chocolate_coffee_from_milk_coffee",
+   "rusticdelight:chocolate_pancake_from_chocolate_pancakes",
+   "rusticdelight:chocolate_pancakes",
+   "rusticdelight:chocolate_pancakes_from_chocolate_pancake",
+   "rusticdelight:coffee_beans_bag_from_coffee_beans",
+   "rusticdelight:coffee_beans_from_coffee_beans_bag",
+   "rusticdelight:coffee_cheesecake",
+   "rusticdelight:coffee_cheesecake_from_slices",
+   "rusticdelight:coffee_cookie",
+   "rusticdelight:coffee_pancake_from_coffee_pancakes",
+   "rusticdelight:coffee_pancakes",
+   "rusticdelight:coffee_pancakes_from_coffee_pancake",
+   "rusticdelight:cooked_calamari",
+   "rusticdelight:cooked_calamari_from_campfire_cooking",
+   "rusticdelight:cooked_calamari_from_smoking",
+   "rusticdelight:cooked_calamari_slice",
+   "rusticdelight:cooked_calamari_slice_from_campfire_cooking",
+   "rusticdelight:cooked_calamari_slice_from_smoking",
+   "rusticdelight:cooking/batter",
+   "rusticdelight:cooking/bell_pepper_pasta",
+   "rusticdelight:cooking/bell_pepper_soup",
+   "rusticdelight:cooking/calamari_soup",
+   "rusticdelight:cooking/cherry_blossom_coffee",
+   "rusticdelight:cooking/cherry_blossom_pancakes",
+   "rusticdelight:cooking/chocolate_coffee",
+   "rusticdelight:cooking/chocolate_pancakes",
+   "rusticdelight:cooking/coffee",
+   "rusticdelight:cooking/coffee_braised_beef",
+   "rusticdelight:cooking/coffee_pancakes",
+   "rusticdelight:cooking/cooking_oil",
+   "rusticdelight:cooking/dark_coffee",
+   "rusticdelight:cooking/fried_calamari",
+   "rusticdelight:cooking/fried_chicken",
+   "rusticdelight:cooking/fried_dough",
+   "rusticdelight:cooking/fried_dumplings",
+   "rusticdelight:cooking/fried_egg_from_cooking_oil",
+   "rusticdelight:cooking/fried_fish",
+   "rusticdelight:cooking/fried_mushrooms",
+   "rusticdelight:cooking/fruit_beignet",
+   "rusticdelight:cooking/honey_coffee",
+   "rusticdelight:cooking/honey_pancakes",
+   "rusticdelight:cooking/milk_coffee",
+   "rusticdelight:cooking/pancakes",
+   "rusticdelight:cooking/pumpkin_coffee",
+   "rusticdelight:cooking/pumpkin_pancakes",
+   "rusticdelight:cooking/spring_rolls",
+   "rusticdelight:cooking/stuffed_bell_pepper_black",
+   "rusticdelight:cooking/stuffed_bell_pepper_blue",
+   "rusticdelight:cooking/stuffed_bell_pepper_green",
+   "rusticdelight:cooking/stuffed_bell_pepper_orange",
+   "rusticdelight:cooking/stuffed_bell_pepper_pink",
+   "rusticdelight:cooking/stuffed_bell_pepper_purple",
+   "rusticdelight:cooking/stuffed_bell_pepper_red",
+   "rusticdelight:cooking/stuffed_bell_pepper_white",
+   "rusticdelight:cooking/stuffed_bell_pepper_yellow",
+   "rusticdelight:cooking/syrup",
+   "rusticdelight:cooking/syrup_coffee",
+   "rusticdelight:cooking/vegetable_pancakes",
+   "rusticdelight:cotton_boll_crate_from_cotton_boll",
+   "rusticdelight:cotton_boll_from_cotton_boll_crate",
+   "rusticdelight:cotton_seeds_bag_from_cotton_seeds",
+   "rusticdelight:cotton_seeds_from_cotton_seeds_bag",
+   "rusticdelight:cutting/baked_potato_slices",
+   "rusticdelight:cutting/bell_pepper_black",
+   "rusticdelight:cutting/bell_pepper_black_block",
+   "rusticdelight:cutting/bell_pepper_blue",
+   "rusticdelight:cutting/bell_pepper_blue_block",
+   "rusticdelight:cutting/bell_pepper_green",
+   "rusticdelight:cutting/bell_pepper_green_block",
+   "rusticdelight:cutting/bell_pepper_orange",
+   "rusticdelight:cutting/bell_pepper_orange_block",
+   "rusticdelight:cutting/bell_pepper_pink",
+   "rusticdelight:cutting/bell_pepper_pink_block",
+   "rusticdelight:cutting/bell_pepper_purple",
+   "rusticdelight:cutting/bell_pepper_purple_block",
+   "rusticdelight:cutting/bell_pepper_red",
+   "rusticdelight:cutting/bell_pepper_red_block",
+   "rusticdelight:cutting/bell_pepper_white",
+   "rusticdelight:cutting/bell_pepper_white_block",
+   "rusticdelight:cutting/bell_pepper_yellow",
+   "rusticdelight:cutting/bell_pepper_yellow_block",
+   "rusticdelight:cutting/calamari_slice",
+   "rusticdelight:cutting/cherry_blossom_cheesecake_slice",
+   "rusticdelight:cutting/cherry_blossom_pancakes",
+   "rusticdelight:cutting/chocolate_pancakes",
+   "rusticdelight:cutting/coffee_cheesecake_slice",
+   "rusticdelight:cutting/coffee_pancakes",
+   "rusticdelight:cutting/cooked_calamari_slice",
+   "rusticdelight:cutting/honey_pancakes",
+   "rusticdelight:cutting/pancakes",
+   "rusticdelight:cutting/potato_slices",
+   "rusticdelight:cutting/pumpkin_pancakes",
+   "rusticdelight:cutting/roasted_bell_pepper_black",
+   "rusticdelight:cutting/roasted_bell_pepper_blue",
+   "rusticdelight:cutting/roasted_bell_pepper_green",
+   "rusticdelight:cutting/roasted_bell_pepper_orange",
+   "rusticdelight:cutting/roasted_bell_pepper_pink",
+   "rusticdelight:cutting/roasted_bell_pepper_purple",
+   "rusticdelight:cutting/roasted_bell_pepper_red",
+   "rusticdelight:cutting/roasted_bell_pepper_white",
+   "rusticdelight:cutting/roasted_bell_pepper_yellow",
+   "rusticdelight:cutting/syrup_cheesecake_slice",
+   "rusticdelight:cutting/vegetable_pancakes",
+   "rusticdelight:cutting/wild_bell_peppers",
+   "rusticdelight:cutting/wild_coffee",
+   "rusticdelight:cutting/wild_cotton",
+   "rusticdelight:cutting/wild_dark_bell_peppers",
+   "rusticdelight:cutting/wild_pale_bell_peppers",
+   "rusticdelight:dark_bell_pepper_medley",
+   "rusticdelight:dark_bell_pepper_seeds_bag_from_dark_bell_pepper_seeds",
+   "rusticdelight:dark_bell_pepper_seeds_from_bell_pepper_slice_black",
+   "rusticdelight:dark_bell_pepper_seeds_from_bell_pepper_slice_blue",
+   "rusticdelight:dark_bell_pepper_seeds_from_bell_pepper_slice_purple",
+   "rusticdelight:dark_bell_pepper_seeds_from_dark_bell_pepper_seeds_bag",
+   "rusticdelight:golden_coffee_beans",
+   "rusticdelight:green_dye_from_bell_pepper_green",
+   "rusticdelight:honey_coffee_from_coffee",
+   "rusticdelight:honey_coffee_from_milk_coffee",
+   "rusticdelight:honey_pancake_from_honey_pancakes",
+   "rusticdelight:honey_pancakes",
+   "rusticdelight:honey_pancakes_from_honey_pancake",
+   "rusticdelight:milk_coffee",
+   "rusticdelight:orange_dye_from_bell_pepper_orange",
+   "rusticdelight:pale_bell_pepper_medley",
+   "rusticdelight:pale_bell_pepper_seeds_bag_from_pale_bell_pepper_seeds",
+   "rusticdelight:pale_bell_pepper_seeds_from_bell_pepper_slice_orange",
+   "rusticdelight:pale_bell_pepper_seeds_from_bell_pepper_slice_pink",
+   "rusticdelight:pale_bell_pepper_seeds_from_bell_pepper_slice_white",
+   "rusticdelight:pale_bell_pepper_seeds_from_pale_bell_pepper_seeds_bag",
+   "rusticdelight:pancake_from_pancakes",
+   "rusticdelight:pancakes",
+   "rusticdelight:pancakes_from_pancake",
+   "rusticdelight:paper_from_cotton_boll",
+   "rusticdelight:pink_dye_from_bell_pepper_pink",
+   "rusticdelight:potato_salad",
+   "rusticdelight:pumpkin_coffee_from_coffee",
+   "rusticdelight:pumpkin_coffee_from_milk_coffee",
+   "rusticdelight:pumpkin_pancake_from_pumpkin_pancakes",
+   "rusticdelight:pumpkin_pancakes",
+   "rusticdelight:pumpkin_pancakes_from_pumpkin_pancake",
+   "rusticdelight:purple_dye_from_bell_pepper_purple",
+   "rusticdelight:red_dye_from_bell_pepper_red",
+   "rusticdelight:rice_roll_royale",
+   "rusticdelight:roasted_bell_pepper_black",
+   "rusticdelight:roasted_bell_pepper_black_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_black_from_smoking",
+   "rusticdelight:roasted_bell_pepper_blue",
+   "rusticdelight:roasted_bell_pepper_blue_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_blue_from_smoking",
+   "rusticdelight:roasted_bell_pepper_green",
+   "rusticdelight:roasted_bell_pepper_green_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_green_from_smoking",
+   "rusticdelight:roasted_bell_pepper_orange",
+   "rusticdelight:roasted_bell_pepper_orange_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_orange_from_smoking",
+   "rusticdelight:roasted_bell_pepper_pink",
+   "rusticdelight:roasted_bell_pepper_pink_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_pink_from_smoking",
+   "rusticdelight:roasted_bell_pepper_purple",
+   "rusticdelight:roasted_bell_pepper_purple_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_purple_from_smoking",
+   "rusticdelight:roasted_bell_pepper_red",
+   "rusticdelight:roasted_bell_pepper_red_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_red_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_black",
+   "rusticdelight:roasted_bell_pepper_slice_black_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_black_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_blue",
+   "rusticdelight:roasted_bell_pepper_slice_blue_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_blue_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_green",
+   "rusticdelight:roasted_bell_pepper_slice_green_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_green_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_orange",
+   "rusticdelight:roasted_bell_pepper_slice_orange_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_orange_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_pink",
+   "rusticdelight:roasted_bell_pepper_slice_pink_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_pink_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_purple",
+   "rusticdelight:roasted_bell_pepper_slice_purple_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_purple_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_red",
+   "rusticdelight:roasted_bell_pepper_slice_red_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_red_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_white",
+   "rusticdelight:roasted_bell_pepper_slice_white_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_white_from_smoking",
+   "rusticdelight:roasted_bell_pepper_slice_yellow",
+   "rusticdelight:roasted_bell_pepper_slice_yellow_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_slice_yellow_from_smoking",
+   "rusticdelight:roasted_bell_pepper_white",
+   "rusticdelight:roasted_bell_pepper_white_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_white_from_smoking",
+   "rusticdelight:roasted_bell_pepper_yellow",
+   "rusticdelight:roasted_bell_pepper_yellow_from_campfire_cooking",
+   "rusticdelight:roasted_bell_pepper_yellow_from_smoking",
+   "rusticdelight:roasted_coffee_beans",
+   "rusticdelight:roasted_coffee_beans_bag_from_roasted_coffee_beans",
+   "rusticdelight:roasted_coffee_beans_from_campfire_cooking",
+   "rusticdelight:roasted_coffee_beans_from_roasted_coffee_beans_bag",
+   "rusticdelight:roasted_coffee_beans_from_smoking",
+   "rusticdelight:string_from_cotton_boll",
+   "rusticdelight:sugar_from_syrup",
+   "rusticdelight:sweet_salad",
+   "rusticdelight:syrup_cheesecake",
+   "rusticdelight:syrup_cheesecake_from_slices",
+   "rusticdelight:syrup_coffee_from_coffee",
+   "rusticdelight:syrup_coffee_from_milk_coffee",
+   "rusticdelight:syrup_cookie",
+   "rusticdelight:syrup_sandwich",
+   "rusticdelight:vegetable_pancake_from_vegetable_pancakes",
+   "rusticdelight:vegetable_pancakes",
+   "rusticdelight:vegetable_pancakes_from_vegetable_pancake",
+   "rusticdelight:white_dye_from_bell_pepper_white",
+   "rusticdelight:wool",
+   "rusticdelight:wool_carpet",
+   "rusticdelight:yellow_dye_from_bell_pepper_yellow",
+   "rusticdelight:yellow_dye_from_coffee_beans"
+  ],
+  "recipes": [
+   "rusticdelight:brewing/coffee"
+  ],
+  "tags/block": [
+   "c:storage_blocks",
+   "c:storage_blocks/bell_pepper_black",
+   "c:storage_blocks/bell_pepper_blue",
+   "c:storage_blocks/bell_pepper_green",
+   "c:storage_blocks/bell_pepper_orange",
+   "c:storage_blocks/bell_pepper_pink",
+   "c:storage_blocks/bell_pepper_purple",
+   "c:storage_blocks/bell_pepper_red",
+   "c:storage_blocks/bell_pepper_seeds",
+   "c:storage_blocks/bell_pepper_white",
+   "c:storage_blocks/bell_pepper_yellow",
+   "c:storage_blocks/calamari",
+   "c:storage_blocks/coffee",
+   "c:storage_blocks/coffee_beans",
+   "c:storage_blocks/cotton",
+   "c:storage_blocks/cotton_seeds",
+   "c:storage_blocks/dark_bell_pepper_seeds",
+   "c:storage_blocks/pale_bell_pepper_seeds",
+   "c:storage_blocks/roasted_coffee_beans",
+   "farmersdelight:straw_blocks",
+   "farmersdelight:wild_crops",
+   "minecraft:crops",
+   "minecraft:mineable/axe",
+   "minecraft:small_flowers",
+   "rusticdelight:pancakes",
+   "sereneseasons:autumn_crops",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops"
+  ],
+  "tags/item": [
+   "brewinandchewin:foods/pizza_topping",
+   "c:crops",
+   "c:crops/bell_pepper",
+   "c:crops/coffee",
+   "c:crops/coffee_beans",
+   "c:crops/cotton",
+   "c:crops/potato",
+   "c:foods/beetroot",
+   "c:foods/bell_pepper",
+   "c:foods/carrot",
+   "c:foods/cooked_calamari",
+   "c:foods/cooked_fish",
+   "c:foods/cooked_squid",
+   "c:foods/cookie",
+   "c:foods/fruit",
+   "c:foods/potato",
+   "c:foods/raw_calamari",
+   "c:foods/raw_fish",
+   "c:foods/raw_squid",
+   "c:foods/vegetable",
+   "c:seeds",
+   "c:seeds/bell_pepper",
+   "c:seeds/coffee",
+   "c:seeds/coffee_beans",
+   "c:seeds/cotton",
+   "c:storage_blocks",
+   "c:storage_blocks/bell_pepper_black",
+   "c:storage_blocks/bell_pepper_blue",
+   "c:storage_blocks/bell_pepper_green",
+   "c:storage_blocks/bell_pepper_orange",
+   "c:storage_blocks/bell_pepper_pink",
+   "c:storage_blocks/bell_pepper_purple",
+   "c:storage_blocks/bell_pepper_red",
+   "c:storage_blocks/bell_pepper_seeds",
+   "c:storage_blocks/bell_pepper_white",
+   "c:storage_blocks/bell_pepper_yellow",
+   "c:storage_blocks/calamari",
+   "c:storage_blocks/coffee",
+   "c:storage_blocks/coffee_beans",
+   "c:storage_blocks/cotton",
+   "c:storage_blocks/cotton_seeds",
+   "c:storage_blocks/dark_bell_pepper_seeds",
+   "c:storage_blocks/pale_bell_pepper_seeds",
+   "c:storage_blocks/roasted_coffee_beans",
+   "create:upright_on_belt",
+   "farmersdelight:fish_slices",
+   "farmersdelight:wild_crops",
+   "forge:tentacles",
+   "frycooks_delight:has_fish_slice",
+   "minecraft:cat_food",
+   "minecraft:chicken_food",
+   "minecraft:fishes",
+   "minecraft:ocelot_food",
+   "minecraft:parrot_food",
+   "minecraft:pig_food",
+   "minecraft:piglin_loved",
+   "minecraft:small_flowers",
+   "minecraft:villager_plantable_seeds",
+   "rusticdelight:calamari_roll_ingredients",
+   "rusticdelight:cherry_blossom_ingredients",
+   "rusticdelight:coffee_food_ingredients",
+   "rusticdelight:coffee_ingredients",
+   "rusticdelight:cooking_oil",
+   "rusticdelight:cooking_oil_ingredients",
+   "rusticdelight:pancakes",
+   "rusticdelight:raw_cooked_eggs",
+   "rusticdelight:spring_roll_ingredients",
+   "rusticdelight:stuffed_bell_pepper_ingredients",
+   "rusticdelight:sweet_liquids",
+   "rusticdelight:syrup",
+   "rusticdelight:syrup_ingredients",
+   "sereneseasons:autumn_crops",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops"
+  ],
+  "tags/worldgen/biome": [
+   "rusticdelight:has_bell_pepper_block_patch",
+   "rusticdelight:has_wild_bell_peppers",
+   "rusticdelight:has_wild_coffee",
+   "rusticdelight:has_wild_cotton"
+  ],
+  "worldgen/configured_feature": [
+   "rusticdelight:bell_pepper_block_patch",
+   "rusticdelight:wild_bell_peppers",
+   "rusticdelight:wild_coffee",
+   "rusticdelight:wild_cotton"
+  ],
+  "worldgen/placed_feature": [
+   "rusticdelight:bell_pepper_block_patch_placed",
+   "rusticdelight:wild_bell_peppers_placed",
+   "rusticdelight:wild_coffee_placed",
+   "rusticdelight:wild_cotton_placed"
+  ]
+ },
+ "data_counts": {
+  "advancement": 256
+ },
+ "tags": {
+  "tags/block": {
+   "c:storage_blocks": [
+    "#c:storage_blocks/cotton_seeds",
+    "#c:storage_blocks/cotton",
+    "#c:storage_blocks/bell_pepper_seeds",
+    "#c:storage_blocks/pale_bell_pepper_seeds",
+    "#c:storage_blocks/dark_bell_pepper_seeds",
+    "#c:storage_blocks/bell_pepper_green",
+    "#c:storage_blocks/bell_pepper_yellow",
+    "#c:storage_blocks/bell_pepper_red",
+    "#c:storage_blocks/bell_pepper_orange",
+    "#c:storage_blocks/bell_pepper_white",
+    "#c:storage_blocks/bell_pepper_pink",
+    "#c:storage_blocks/bell_pepper_blue",
+    "#c:storage_blocks/bell_pepper_purple",
+    "#c:storage_blocks/bell_pepper_black",
+    "#c:storage_blocks/calamari",
+    "#c:storage_blocks/coffee_beans",
+    "#c:storage_blocks/coffee",
+    "#c:storage_blocks/roasted_coffee_beans"
+   ],
+   "c:storage_blocks/bell_pepper_black": [
+    "rusticdelight:bell_pepper_black_crate"
+   ],
+   "c:storage_blocks/bell_pepper_blue": [
+    "rusticdelight:bell_pepper_blue_crate"
+   ],
+   "c:storage_blocks/bell_pepper_green": [
+    "rusticdelight:bell_pepper_green_crate"
+   ],
+   "c:storage_blocks/bell_pepper_orange": [
+    "rusticdelight:bell_pepper_orange_crate"
+   ],
+   "c:storage_blocks/bell_pepper_pink": [
+    "rusticdelight:bell_pepper_pink_crate"
+   ],
+   "c:storage_blocks/bell_pepper_purple": [
+    "rusticdelight:bell_pepper_purple_crate"
+   ],
+   "c:storage_blocks/bell_pepper_red": [
+    "rusticdelight:bell_pepper_red_crate"
+   ],
+   "c:storage_blocks/bell_pepper_seeds": [
+    "rusticdelight:bell_pepper_seeds_bag"
+   ],
+   "c:storage_blocks/bell_pepper_white": [
+    "rusticdelight:bell_pepper_white_crate"
+   ],
+   "c:storage_blocks/bell_pepper_yellow": [
+    "rusticdelight:bell_pepper_yellow_crate"
+   ],
+   "c:storage_blocks/calamari": [
+    "rusticdelight:calamari_crate"
+   ],
+   "c:storage_blocks/coffee": [
+    "rusticdelight:coffee_beans_bag"
+   ],
+   "c:storage_blocks/coffee_beans": [
+    "rusticdelight:coffee_beans_bag"
+   ],
+   "c:storage_blocks/cotton": [
+    "rusticdelight:cotton_boll_crate"
+   ],
+   "c:storage_blocks/cotton_seeds": [
+    "rusticdelight:cotton_seeds_bag"
+   ],
+   "c:storage_blocks/dark_bell_pepper_seeds": [
+    "rusticdelight:dark_bell_pepper_seeds_bag"
+   ],
+   "c:storage_blocks/pale_bell_pepper_seeds": [
+    "rusticdelight:pale_bell_pepper_seeds_bag"
+   ],
+   "c:storage_blocks/roasted_coffee_beans": [
+    "rusticdelight:roasted_coffee_beans_bag"
+   ],
+   "farmersdelight:straw_blocks": [
+    "rusticdelight:cotton_seeds_bag",
+    "rusticdelight:bell_pepper_seeds_bag",
+    "rusticdelight:pale_bell_pepper_seeds_bag",
+    "rusticdelight:dark_bell_pepper_seeds_bag",
+    "rusticdelight:coffee_beans_bag",
+    "rusticdelight:roasted_coffee_beans_bag"
+   ],
+   "farmersdelight:wild_crops": [
+    "rusticdelight:wild_cotton",
+    "rusticdelight:wild_bell_peppers",
+    "rusticdelight:wild_pale_bell_peppers",
+    "rusticdelight:wild_dark_bell_peppers",
+    "rusticdelight:wild_coffee"
+   ],
+   "minecraft:crops": [
+    "rusticdelight:cotton",
+    "rusticdelight:bell_peppers",
+    "rusticdelight:pale_bell_peppers",
+    "rusticdelight:dark_bell_peppers",
+    "rusticdelight:coffee"
+   ],
+   "minecraft:mineable/axe": [
+    "rusticdelight:cotton_boll_crate",
+    "rusticdelight:bell_pepper_green_crate",
+    "rusticdelight:bell_pepper_yellow_crate",
+    "rusticdelight:bell_pepper_red_crate",
+    "rusticdelight:bell_pepper_orange_crate",
+    "rusticdelight:bell_pepper_white_crate",
+    "rusticdelight:bell_pepper_pink_crate",
+    "rusticdelight:bell_pepper_blue_crate",
+    "rusticdelight:bell_pepper_purple_crate",
+    "rusticdelight:bell_pepper_black_crate",
+    "rusticdelight:calamari_crate",
+    "rusticdelight:bell_pepper_green_block",
+    "rusticdelight:bell_pepper_yellow_block",
+    "rusticdelight:bell_pepper_red_block",
+    "rusticdelight:bell_pepper_orange_block",
+    "rusticdelight:bell_pepper_white_block",
+    "rusticdelight:bell_pepper_pink_block",
+    "rusticdelight:bell_pepper_blue_block",
+    "rusticdelight:bell_pepper_purple_block",
+    "rusticdelight:bell_pepper_black_block"
+   ],
+   "minecraft:small_flowers": [
+    "rusticdelight:wild_cotton",
+    "rusticdelight:wild_bell_peppers",
+    "rusticdelight:wild_pale_bell_peppers",
+    "rusticdelight:wild_dark_bell_peppers",
+    "rusticdelight:wild_coffee"
+   ],
+   "rusticdelight:pancakes": [
+    "rusticdelight:pancakes",
+    "rusticdelight:honey_pancakes",
+    "rusticdelight:chocolate_pancakes",
+    "rusticdelight:cherry_blossom_pancakes",
+    "rusticdelight:vegetable_pancakes",
+    "rusticdelight:pumpkin_pancakes",
+    "rusticdelight:coffee_pancakes"
+   ],
+   "sereneseasons:autumn_crops": [
+    "rusticdelight:bell_peppers",
+    "rusticdelight:pale_bell_peppers",
+    "rusticdelight:dark_bell_peppers",
+    "rusticdelight:coffee"
+   ],
+   "sereneseasons:spring_crops": [
+    "rusticdelight:cotton"
+   ],
+   "sereneseasons:summer_crops": [
+    "rusticdelight:cotton",
+    "rusticdelight:bell_peppers",
+    "rusticdelight:pale_bell_peppers",
+    "rusticdelight:dark_bell_peppers",
+    "rusticdelight:coffee"
+   ]
+  },
+  "tags/item": {
+   "brewinandchewin:foods/pizza_topping": [
+    "#c:foods/bell_pepper"
+   ],
+   "c:crops": [
+    "#c:crops/cotton",
+    "#c:crops/bell_pepper",
+    "#c:crops/coffee_beans",
+    "#c:crops/coffee"
+   ],
+   "c:crops/bell_pepper": [
+    "rusticdelight:bell_pepper_green",
+    "rusticdelight:bell_pepper_yellow",
+    "rusticdelight:bell_pepper_red",
+    "rusticdelight:bell_pepper_orange",
+    "rusticdelight:bell_pepper_white",
+    "rusticdelight:bell_pepper_pink",
+    "rusticdelight:bell_pepper_blue",
+    "rusticdelight:bell_pepper_purple",
+    "rusticdelight:bell_pepper_black"
+   ],
+   "c:crops/coffee": [
+    "rusticdelight:coffee_beans"
+   ],
+   "c:crops/coffee_beans": [
+    "rusticdelight:coffee_beans"
+   ],
+   "c:crops/cotton": [
+    "rusticdelight:cotton_boll"
+   ],
+   "c:crops/potato": [
+    "minecraft:potato",
+    "rusticdelight:potato_slices"
+   ],
+   "c:foods/beetroot": [
+    "minecraft:beetroot"
+   ],
+   "c:foods/bell_pepper": [
+    "#c:crops/bell_pepper",
+    "rusticdelight:bell_pepper_slice_green",
+    "rusticdelight:bell_pepper_slice_yellow",
+    "rusticdelight:bell_pepper_slice_red",
+    "rusticdelight:bell_pepper_slice_orange",
+    "rusticdelight:bell_pepper_slice_white",
+    "rusticdelight:bell_pepper_slice_pink",
+    "rusticdelight:bell_pepper_slice_blue",
+    "rusticdelight:bell_pepper_slice_purple",
+    "rusticdelight:bell_pepper_slice_black"
+   ],
+   "c:foods/carrot": [
+    "minecraft:carrot"
+   ],
+   "c:foods/cooked_calamari": [
+    "rusticdelight:cooked_calamari",
+    "rusticdelight:cooked_calamari_slice"
+   ],
+   "c:foods/cooked_fish": [
+    "#c:foods/cooked_calamari"
+   ],
+   "c:foods/cooked_squid": [
+    "rusticdelight:cooked_calamari",
+    "rusticdelight:cooked_calamari_slice"
+   ],
+   "c:foods/cookie": [
+    "rusticdelight:cherry_blossom_cookie",
+    "rusticdelight:coffee_cookie",
+    "rusticdelight:syrup_cookie"
+   ],
+   "c:foods/fruit": [
+    "minecraft:melon_slice",
+    "#c:foods/berry"
+   ],
+   "c:foods/potato": [
+    "#c:crops/potato"
+   ],
+   "c:foods/raw_calamari": [
+    "rusticdelight:calamari",
+    "rusticdelight:calamari_slice",
+    "culturaldelights:squid?",
+    "culturaldelights:glow_squid?",
+    "culturaldelights:raw_calamari?",
+    "miners_delight:squid?",
+    "miners_delight:glow_squid?",
+    "miners_delight:tentacles?"
+   ],
+   "c:foods/raw_fish": [
+    "#c:foods/raw_calamari"
+   ],
+   "c:foods/raw_squid": [
+    "rusticdelight:calamari",
+    "rusticdelight:calamari_slice"
+   ],
+   "c:foods/vegetable": [
+    "rusticdelight:potato_slices",
+    "#c:foods/bell_pepper"
+   ],
+   "c:seeds": [
+    "#c:seeds/cotton",
+    "#c:seeds/bell_pepper",
+    "#c:seeds/coffee_beans",
+    "#c:seeds/coffee"
+   ],
+   "c:seeds/bell_pepper": [
+    "rusticdelight:bell_pepper_seeds",
+    "rusticdelight:pale_bell_pepper_seeds",
+    "rusticdelight:dark_bell_pepper_seeds"
+   ],
+   "c:seeds/coffee": [
+    "rusticdelight:coffee_beans"
+   ],
+   "c:seeds/coffee_beans": [
+    "rusticdelight:coffee_beans"
+   ],
+   "c:seeds/cotton": [
+    "rusticdelight:cotton_seeds"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/cotton_seeds",
+    "#c:storage_blocks/cotton",
+    "#c:storage_blocks/bell_pepper_seeds",
+    "#c:storage_blocks/pale_bell_pepper_seeds",
+    "#c:storage_blocks/dark_bell_pepper_seeds",
+    "#c:storage_blocks/bell_pepper_green",
+    "#c:storage_blocks/bell_pepper_yellow",
+    "#c:storage_blocks/bell_pepper_red",
+    "#c:storage_blocks/bell_pepper_orange",
+    "#c:storage_blocks/bell_pepper_white",
+    "#c:storage_blocks/bell_pepper_pink",
+    "#c:storage_blocks/bell_pepper_blue",
+    "#c:storage_blocks/bell_pepper_purple",
+    "#c:storage_blocks/bell_pepper_black",
+    "#c:storage_blocks/calamari",
+    "#c:storage_blocks/coffee_beans",
+    "#c:storage_blocks/coffee",
+    "#c:storage_blocks/roasted_coffee_beans"
+   ],
+   "c:storage_blocks/bell_pepper_black": [
+    "rusticdelight:bell_pepper_black_crate"
+   ],
+   "c:storage_blocks/bell_pepper_blue": [
+    "rusticdelight:bell_pepper_blue_crate"
+   ],
+   "c:storage_blocks/bell_pepper_green": [
+    "rusticdelight:bell_pepper_green_crate"
+   ],
+   "c:storage_blocks/bell_pepper_orange": [
+    "rusticdelight:bell_pepper_orange_crate"
+   ],
+   "c:storage_blocks/bell_pepper_pink": [
+    "rusticdelight:bell_pepper_pink_crate"
+   ],
+   "c:storage_blocks/bell_pepper_purple": [
+    "rusticdelight:bell_pepper_purple_crate"
+   ],
+   "c:storage_blocks/bell_pepper_red": [
+    "rusticdelight:bell_pepper_red_crate"
+   ],
+   "c:storage_blocks/bell_pepper_seeds": [
+    "rusticdelight:bell_pepper_seeds_bag"
+   ],
+   "c:storage_blocks/bell_pepper_white": [
+    "rusticdelight:bell_pepper_white_crate"
+   ],
+   "c:storage_blocks/bell_pepper_yellow": [
+    "rusticdelight:bell_pepper_yellow_crate"
+   ],
+   "c:storage_blocks/calamari": [
+    "rusticdelight:calamari_crate"
+   ],
+   "c:storage_blocks/coffee": [
+    "rusticdelight:coffee_beans_bag"
+   ],
+   "c:storage_blocks/coffee_beans": [
+    "rusticdelight:coffee_beans_bag"
+   ],
+   "c:storage_blocks/cotton": [
+    "rusticdelight:cotton_boll_crate"
+   ],
+   "c:storage_blocks/cotton_seeds": [
+    "rusticdelight:cotton_seeds_bag"
+   ],
+   "c:storage_blocks/dark_bell_pepper_seeds": [
+    "rusticdelight:dark_bell_pepper_seeds_bag"
+   ],
+   "c:storage_blocks/pale_bell_pepper_seeds": [
+    "rusticdelight:pale_bell_pepper_seeds_bag"
+   ],
+   "c:storage_blocks/roasted_coffee_beans": [
+    "rusticdelight:roasted_coffee_beans_bag"
+   ],
+   "create:upright_on_belt": [
+    "rusticdelight:cooking_oil",
+    "rusticdelight:syrup",
+    "rusticdelight:coffee",
+    "rusticdelight:milk_coffee",
+    "rusticdelight:chocolate_coffee",
+    "rusticdelight:honey_coffee",
+    "rusticdelight:syrup_coffee",
+    "rusticdelight:dark_coffee",
+    "rusticdelight:pumpkin_coffee",
+    "rusticdelight:cherry_blossom_coffee",
+    "rusticdelight:cherry_blossom_cheesecake",
+    "rusticdelight:syrup_cheesecake",
+    "rusticdelight:coffee_cheesecake"
+   ],
+   "farmersdelight:fish_slices": [
+    "rusticdelight:calamari_slice"
+   ],
+   "farmersdelight:wild_crops": [
+    "rusticdelight:wild_cotton",
+    "rusticdelight:wild_bell_peppers",
+    "rusticdelight:wild_pale_bell_peppers",
+    "rusticdelight:wild_dark_bell_peppers",
+    "rusticdelight:wild_coffee"
+   ],
+   "forge:tentacles": [
+    "rusticdelight:calamari",
+    "rusticdelight:calamari_slice",
+    "rusticdelight:cooked_calamari",
+    "rusticdelight:cooked_calamari_slice"
+   ],
+   "frycooks_delight:has_fish_slice": [
+    "rusticdelight:calamari"
+   ],
+   "minecraft:cat_food": [
+    "rusticdelight:calamari"
+   ],
+   "minecraft:chicken_food": [
+    "rusticdelight:cotton_seeds",
+    "rusticdelight:bell_pepper_seeds",
+    "rusticdelight:pale_bell_pepper_seeds",
+    "rusticdelight:dark_bell_pepper_seeds"
+   ],
+   "minecraft:fishes": [
+    "rusticdelight:calamari",
+    "rusticdelight:cooked_calamari"
+   ],
+   "minecraft:ocelot_food": [
+    "rusticdelight:calamari"
+   ],
+   "minecraft:parrot_food": [
+    "rusticdelight:cotton_seeds",
+    "rusticdelight:bell_pepper_seeds",
+    "rusticdelight:pale_bell_pepper_seeds",
+    "rusticdelight:dark_bell_pepper_seeds"
+   ],
+   "minecraft:pig_food": [
+    "#c:crops/bell_pepper"
+   ],
+   "minecraft:piglin_loved": [
+    "rusticdelight:golden_coffee_beans"
+   ],
+   "minecraft:small_flowers": [
+    "rusticdelight:wild_cotton",
+    "rusticdelight:wild_bell_peppers",
+    "rusticdelight:wild_pale_bell_peppers",
+    "rusticdelight:wild_dark_bell_peppers",
+    "rusticdelight:wild_coffee"
+   ],
+   "minecraft:villager_plantable_seeds": [
+    "rusticdelight:cotton_seeds",
+    "rusticdelight:bell_pepper_seeds",
+    "rusticdelight:pale_bell_pepper_seeds",
+    "rusticdelight:dark_bell_pepper_seeds",
+    "rusticdelight:coffee_beans"
+   ],
+   "rusticdelight:calamari_roll_ingredients": [
+    "#c:foods/raw_calamari"
+   ],
+   "rusticdelight:cherry_blossom_ingredients": [
+    "minecraft:pink_petals",
+    "minecraft:cherry_leaves",
+    "minecraft:cherry_sapling"
+   ],
+   "rusticdelight:coffee_food_ingredients": [
+    "rusticdelight:coffee",
+    "rusticdelight:dark_coffee",
+    "farmersrespite:coffee?"
+   ],
+   "rusticdelight:coffee_ingredients": [
+    "#c:crops/coffee",
+    "#c:crops/coffee_beans",
+    "rusticdelight:roasted_coffee_beans",
+    "farmersrespite:coffee_beans?"
+   ],
+   "rusticdelight:cooking_oil": [
+    "rusticdelight:cooking_oil",
+    "frycooks_delight:canola_oil?"
+   ],
+   "rusticdelight:cooking_oil_ingredients": [
+    "rusticdelight:cotton_seeds",
+    "minecraft:pumpkin_seeds",
+    "#c:seeds/canola?",
+    "#c:seeds/sunflower?",
+    "frycooks_delight:canola_seeds?"
+   ],
+   "rusticdelight:pancakes": [
+    "rusticdelight:pancakes",
+    "rusticdelight:honey_pancakes",
+    "rusticdelight:chocolate_pancakes",
+    "rusticdelight:cherry_blossom_pancakes",
+    "rusticdelight:vegetable_pancakes",
+    "rusticdelight:pumpkin_pancakes",
+    "rusticdelight:coffee_pancakes"
+   ],
+   "rusticdelight:raw_cooked_eggs": [
+    "#c:eggs",
+    "#c:foods/cooked_egg"
+   ],
+   "rusticdelight:spring_roll_ingredients": [
+    "#c:foods/safe_raw_fish",
+    "#c:foods/raw_pork",
+    "#c:foods/raw_chicken",
+    "#c:foods/raw_beef",
+    "#c:foods/raw_mutton",
+    "#c:eggs",
+    "#c:mushrooms",
+    "#c:foods/carrot",
+    "#c:foods/potato",
+    "#c:foods/beetroot",
+    "#c:foods/bell_pepper"
+   ],
+   "rusticdelight:stuffed_bell_pepper_ingredients": [
+    "#c:foods/safe_raw_fish",
+    "#c:foods/raw_pork",
+    "#c:foods/raw_chicken",
+    "#c:foods/raw_beef",
+    "#c:foods/raw_mutton",
+    "#c:eggs",
+    "#c:mushrooms",
+    "#c:foods/carrot",
+    "#c:foods/potato",
+    "#c:foods/beetroot",
+    "#c:foods/tomato",
+    "#c:foods/cabbage",
+    "#c:foods/onion",
+    "#brewinandchewin:foods/cheese_wedge?"
+   ],
+   "rusticdelight:sweet_liquids": [
+    "minecraft:honey_bottle",
+    "#rusticdelight:syrup"
+   ],
+   "rusticdelight:syrup": [
+    "rusticdelight:syrup",
+    "hearthandharvest:syrup_bottle?"
+   ],
+   "rusticdelight:syrup_ingredients": [
+    "minecraft:apple",
+    "#c:crops/beetroot"
+   ],
+   "sereneseasons:autumn_crops": [
+    "rusticdelight:bell_pepper_seeds",
+    "rusticdelight:pale_bell_pepper_seeds",
+    "rusticdelight:dark_bell_pepper_seeds",
+    "rusticdelight:coffee_beans"
+   ],
+   "sereneseasons:spring_crops": [
+    "rusticdelight:cotton_seeds"
+   ],
+   "sereneseasons:summer_crops": [
+    "rusticdelight:cotton_seeds",
+    "rusticdelight:bell_pepper_seeds",
+    "rusticdelight:pale_bell_pepper_seeds",
+    "rusticdelight:dark_bell_pepper_seeds",
+    "rusticdelight:coffee_beans"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "rusticdelight:has_bell_pepper_block_patch": [
+    "#minecraft:is_jungle",
+    "#c:is_jungle"
+   ],
+   "rusticdelight:has_wild_bell_peppers": [
+    "#minecraft:is_jungle",
+    "#c:is_jungle"
+   ],
+   "rusticdelight:has_wild_coffee": [
+    "#minecraft:is_jungle",
+    "#c:is_jungle"
+   ],
+   "rusticdelight:has_wild_cotton": [
+    "#minecraft:is_forest",
+    "#c:is_forest"
+   ]
+  }
+ },
+ "recipe_types": {
+  "botanypots:block_derived_crop": 8,
+  "farmersdelight:cooking": 45,
+  "farmersdelight:cutting": 48,
+  "minecraft:campfire_cooking": 22,
+  "minecraft:crafting_shaped": 42,
+  "minecraft:crafting_shapeless": 86,
+  "minecraft:smelting": 22,
+  "minecraft:smoking": 22
+ },
+ "botanypots": [
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:bell_pepper_seeds",
+      "rusticdelight:bell_pepper_red"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:bell_peppers",
+   "id": "botanypots:rusticdelight/crop/bell_peppers"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:coffee_beans"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:coffee",
+   "id": "botanypots:rusticdelight/crop/coffee"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:cotton_seeds",
+      "rusticdelight:cotton_boll"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:cotton",
+   "id": "botanypots:rusticdelight/crop/cotton"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:wild_bell_peppers"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:wild_bell_peppers",
+   "input": {
+    "item": "rusticdelight:wild_bell_peppers"
+   },
+   "id": "botanypots:rusticdelight/crop/wild_bell_peppers"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:wild_coffee"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:wild_coffee",
+   "input": {
+    "item": "rusticdelight:wild_coffee"
+   },
+   "id": "botanypots:rusticdelight/crop/wild_coffee"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:wild_cotton"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:wild_cotton",
+   "input": {
+    "item": "rusticdelight:wild_cotton"
+   },
+   "id": "botanypots:rusticdelight/crop/wild_cotton"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:wild_dark_bell_peppers"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:wild_dark_bell_peppers",
+   "input": {
+    "item": "rusticdelight:wild_dark_bell_peppers"
+   },
+   "id": "botanypots:rusticdelight/crop/wild_dark_bell_peppers"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:item_exists",
+     "values": [
+      "rusticdelight:wild_pale_bell_peppers"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "rusticdelight:wild_pale_bell_peppers",
+   "input": {
+    "item": "rusticdelight:wild_pale_bell_peppers"
+   },
+   "id": "botanypots:rusticdelight/crop/wild_pale_bell_peppers"
+  }
+ ],
+ "problems": []
+}

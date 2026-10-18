@@ -25,6 +25,29 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from inventory import categorize  # noqa: E402
+import re  # noqa: E402
+import tomllib  # noqa: E402
+
+
+def _ver(v: str) -> tuple:
+    """'21.1.259' -> (21, 1, 259); le parti non numeriche si ignorano."""
+    return tuple(int(x) for x in re.findall(r"\d+", v.split("+")[0].split("-")[0]))
+
+
+def in_range(version: str, rng: str | None) -> bool:
+    """Intervallo in stile Maven ([a,b), (a,], …, o una versione singola = minima)."""
+    if not rng or rng.strip() in ("*", ""):
+        return True
+    v = _ver(version)
+    for part in re.findall(r"[\[(][^\])]*[\])]", rng) or [f"[{rng},)"]:
+        lo, _, hi = part[1:-1].partition(",")
+        if "," not in part:
+            hi = lo  # [x] = esattamente x
+        ok_lo = not lo.strip() or (v >= _ver(lo) if part[0] == "[" else v > _ver(lo))
+        ok_hi = not hi.strip() or (v <= _ver(hi) if part[-1] == "]" else v < _ver(hi))
+        if ok_lo and ok_hi:
+            return True
+    return False
 
 BUILTIN_MODS = {"minecraft", "neoforge", "forge", "java", "fml"}
 # Tipo di riferimento -> campo dell'inventario (o categoria di dati)
@@ -197,13 +220,21 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
     errors, warnings, inactive = [], [], []
     errors += [f"File scaricato diverso dal metafile: {e}" for e in idx.hash_errors]
 
-    # 1. Dipendenze obbligatorie
+    # 1. Dipendenze obbligatorie e versione di NeoForge richiesta
     present = idx.modids | BUILTIN_MODS
+    versions = tomllib.loads((pack / "pack.toml").read_text(encoding="utf-8")).get("versions", {})
     for label, m in idx.mods:
+        who = m["modid"] + (f" (dentro {m['jar']})" if m.get("jar") else "")
         for dep in m.get("deps", []):
-            if dep.get("type") == "required" and dep.get("modid") not in present:
-                who = m["modid"] + (f" (dentro {m['jar']})" if m.get("jar") else "")
+            if dep.get("type") != "required":
+                continue
+            if dep.get("modid") not in present:
                 errors.append(f"Dipendenza mancante: `{who}` [{label}] richiede `{dep['modid']}` {dep.get('range') or ''}".rstrip())
+            # Solo NeoForge: gli intervalli su minecraft in gioco non vengono fatti rispettare
+            # (es. mod con [1.21,1.21.1) girano lo stesso), darebbero falsi errori
+            elif dep.get("modid") == "neoforge" and versions.get("neoforge"):
+                if not in_range(versions[dep["modid"]], dep.get("range")):
+                    errors.append(f"Versione non adatta: `{who}` [{label}] richiede {dep['modid']} {dep['range']}, il pack usa {versions[dep['modid']]}")
 
     # 2. Datapack
     files = datapack_files(pack)

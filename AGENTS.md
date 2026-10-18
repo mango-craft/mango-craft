@@ -73,7 +73,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 - **Esperienza liquida**: quella di Create: Enchantment Industry vale 1 mB per punto e non è `c:experience`; le altre (Cognition, Sophisticated) valgono 20 mB e sono `c:experience`. **Mai** mettere il liquido di Create in `c:experience`, **mai** aggiungerlo agli `AllowedFluids` di Cognition. L'incantatore di Create accetta solo il proprio liquido.
 - **Regions Unexplored 0.6** usa Lithostitched (non TerraBlender), ha 4 biomi nel Nether e ha rinominato alcuni blocchi: Botany Pots usa ancora 8 nomi vecchi.
 - **Frantumatore di Occultism**: lasciato ai valori di default per scelta.
-- **Starcatcher**: i pesci crudi sono `c:foods/raw_fish`; il pesce cotto è generico e fuori dalle etichette.
+- **Starcatcher**: i pesci crudi sono `c:foods/raw_fish`; il pesce cotto è generico (`starcatcher:cooked_starcaught_fish`) e lo mettiamo noi nelle etichette del pesce cotto (datapack, dalla 0.3.0).
 - **Botany Pots 1.21.1**: le ricette in formato 1.20 vengono ignorate; le piante raccolte col click destro richiedono raccolti espliciti.
 
 ## 8. Ambiente di lavoro di Claude

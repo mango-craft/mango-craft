@@ -6,7 +6,27 @@ hash = "8eef0da096300652e97f70110ea78f45c7fa3e7556352ab29b088bb7a4164a2d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "69ea0b2e3a1f6fe74980a17f44febe8121f0a48cb30b6ca4aa23f2c72e2a21f0"
+hash = "994c284eda38c5ecf38a80f1df7b975c3d05a65871164e34260c1b2ab5db5e03"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/bountifulfares/readme.md"
+hash = "5cf8d733987a8a36f1a1f9b0c08ba9063da2d26a23b27bece0a8f240a14adb0d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/bountifulfares/tags/item/cooked_fishes.json"
+hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/c/readme.md"
+hash = "f5f2e377b92669a9e636017eecaf603e21595a47954b937c16121ca002a62f93"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/c/tags/item/foods/cooked_fish.json"
+hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/c/tags/item/foods/cooked_fishes.json"
+hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/blood_moon.json"
@@ -273,6 +293,11 @@ hash = "b30d3ad731faacfcb497c978c45003617155e658a62d8ae0914420e6efd474cd"
 metafile = true
 
 [[files]]
+file = "mods/autochefs-delight.pw.toml"
+hash = "c493259c25b99cafb6ad8c3f76fe0373984924035f1e014f5978bf3dcf853e03"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "603cdc47142b5aa5729cbbf265a473574c9e2b55561de4318e9842d3d4b3b995"
 metafile = true
@@ -338,6 +363,11 @@ hash = "838dbcb90c93bab58691e82c95045bd97c3e096e3a2680a00cf063e56ce35ce3"
 metafile = true
 
 [[files]]
+file = "mods/chefs-delight.pw.toml"
+hash = "114dcc3cdc8283320c4a22a586cb9f826490fc2332e0d7b1b88b78043fda5634"
+metafile = true
+
+[[files]]
 file = "mods/chunk-loaders.pw.toml"
 hash = "55bca8c3d631e8c7801081d6d2b00c23cb59a3c17bc7c6b03032aef421ab2c6c"
 metafile = true
@@ -360,6 +390,11 @@ metafile = true
 [[files]]
 file = "mods/codechicken-lib.pw.toml"
 hash = "1e1678b169096708fcb92496f251260471221554f70ca0dab1b99f2a6b72ea7b"
+metafile = true
+
+[[files]]
+file = "mods/cognition.pw.toml"
+hash = "29be56c3cca7e92fd0f90e8accf27391c99c5f8719816887a1124b2fe6776657"
 metafile = true
 
 [[files]]
@@ -400,6 +435,11 @@ metafile = true
 [[files]]
 file = "mods/create-central-kitchen.pw.toml"
 hash = "3752b1dcdfebbb1e79c97c847095153155d64636576a9c0ac11ffa6506c62922"
+metafile = true
+
+[[files]]
+file = "mods/create-confectionery.pw.toml"
+hash = "33018abac3d5d96ba7774d9666a0f5d769974dd5c32487308f74744da3f1bcca"
 metafile = true
 
 [[files]]
@@ -565,6 +605,11 @@ metafile = true
 [[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "97347efd9e808841d72fe3599da8a11add8422e97f89ae1c85cdfc0acfa18f96"
+metafile = true
+
+[[files]]
+file = "mods/farming-for-blockheads.pw.toml"
+hash = "e0508555d616710585a8d70b9c1f708e1bc10bf7c634c511ca6c282051f3d69a"
 metafile = true
 
 [[files]]
@@ -793,6 +838,11 @@ hash = "e672245ac368cb42b521a0be668fed61a5b5129d25eec7b8db7722e8f49e2292"
 metafile = true
 
 [[files]]
+file = "mods/my-nethers-delight.pw.toml"
+hash = "cf98a93ea429786de97d9d7b70c72468909e0b9d1799def65b7c29c419c8d362"
+metafile = true
+
+[[files]]
 file = "mods/netherportalfix.pw.toml"
 hash = "748bdcbc7788a77881979189827f1baf3f6ef5fdaeb58b00e51e043c2c0abe39"
 metafile = true
@@ -820,6 +870,11 @@ metafile = true
 [[files]]
 file = "mods/occultism.pw.toml"
 hash = "dc991b1a6f7b3d7fc0494392ee9b4f472859497f5cb894b4deda41b8196d862e"
+metafile = true
+
+[[files]]
+file = "mods/oceans-delight.pw.toml"
+hash = "7bf7c8369bd28212a1e294c60310ccb72f1eb773630970e6ab106ae666766cd3"
 metafile = true
 
 [[files]]
@@ -920,6 +975,11 @@ metafile = true
 [[files]]
 file = "mods/roasters-delight.pw.toml"
 hash = "05a734a71c99b0e56d0cbe796a2b4257188aaea7dd8a6e2371ed5e91036293e3"
+metafile = true
+
+[[files]]
+file = "mods/rustic-delight.pw.toml"
+hash = "ac9db8b319aa7a53d06c5209998dcf8a2d9a6bd17fbd14c3f6dd859727d434a7"
 metafile = true
 
 [[files]]

@@ -1,0 +1,518 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Cognition",
+ "file": "Cognition-v2.4.13-1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "789e09b0e7d4daa01ff45fbfee83541cf48a51c0c3ac63dac7549896e9bf15089a1eb4751141184db37b5b737810fa9874d7ff2d70d7ee3489ebaaed99f55cd0",
+ "mods": [
+  {
+   "modid": "cognition",
+   "name": "Cognition",
+   "version": "2.4.13",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "geckolib",
+     "type": "required",
+     "range": "[4.7.5.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "curios",
+     "type": "optional",
+     "range": "[9.4.0+1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "[19.21.0.247,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "cognition",
+  "curios",
+  "minecraft",
+  "neoforge"
+ ],
+ "blocks": {
+  "cognition:accelerator": "Accelerator",
+  "cognition:archivers_bookshelf": "Archiver's Bookshelf",
+  "cognition:bibliomancer": "",
+  "cognition:cognitium": "Cognitium",
+  "cognition:cognitive_alloy_block": "Block of Cognitive Alloy",
+  "cognition:cognitive_crystal_block": "Block of Cognitive Crystal",
+  "cognition:enchanted_bookshelf": "Enchanted Bookshelf",
+  "cognition:experience_fountain": "Experience Fountain",
+  "cognition:experience_obelisk": "Experience Obelisk",
+  "cognition:extravagant_agar": "Extravagant Agar",
+  "cognition:fluorescent_agar": "Fluorescent Agar",
+  "cognition:forgotten_dust_block": "Block of Forgotten Dust",
+  "cognition:infected_archivers_bookshelf": "Infected Archiver's Bookshelf",
+  "cognition:infected_bookshelf": "Infected Bookshelf",
+  "cognition:infected_enchanted_bookshelf": "Infected Enchanted Bookshelf",
+  "cognition:insightful_agar": "Insightful Agar",
+  "cognition:linear_accelerator": "Linear Accelerator",
+  "cognition:molecular_metamorpher": "Molecular Metamorpher",
+  "cognition:nutrient_agar": "Nutrient Agar",
+  "cognition:precision_dispeller": "Precision Dispeller",
+  "cognition:whisperglass": "Whisperglass"
+ },
+ "fluids": {
+  "cognition:cognitium": "Cognitium"
+ },
+ "items": {
+  "cognition:accelerator": "",
+  "cognition:archivers_bookshelf": "",
+  "cognition:astute_assembly": "Astute Assembly",
+  "cognition:attunement_staff": "Staff of Attunement",
+  "cognition:bibliophage": "Bibliophage",
+  "cognition:calcarine_matrix": "Calcarine Matrix",
+  "cognition:cognitium_bucket": "Cognitium Bucket",
+  "cognition:cognitive_alloy": "Cognitive Alloy",
+  "cognition:cognitive_alloy_block": "",
+  "cognition:cognitive_amalgam": "Cognitive Amalgam",
+  "cognition:cognitive_axe": "Cognitive Axe",
+  "cognition:cognitive_boots": "Cognitive Boots",
+  "cognition:cognitive_bow": "Cognitive Bow",
+  "cognition:cognitive_bow_pulling_0": "",
+  "cognition:cognitive_bow_pulling_1": "",
+  "cognition:cognitive_bow_pulling_2": "",
+  "cognition:cognitive_chestplate": "Cognitive Chestplate",
+  "cognition:cognitive_crystal": "Cognitive Crystal",
+  "cognition:cognitive_crystal_block": "",
+  "cognition:cognitive_flux": "Cognitive Flux",
+  "cognition:cognitive_helmet": "Cognitive Helm",
+  "cognition:cognitive_hoe": "Cognitive Hoe",
+  "cognition:cognitive_leggings": "Cognitive Leggings",
+  "cognition:cognitive_pickaxe": "Cognitive Pickaxe",
+  "cognition:cognitive_rod": "Cognitive Rod",
+  "cognition:cognitive_rod_cast": "",
+  "cognition:cognitive_shears": "Cognitive Shears",
+  "cognition:cognitive_shovel": "Cognitive Shovel",
+  "cognition:cognitive_sword": "Cognitive Sword",
+  "cognition:daydream_bottle": "Bottle o' Daydream",
+  "cognition:dummy_sword": "",
+  "cognition:enchanted_bookshelf": "",
+  "cognition:enlightened_alloy": "",
+  "cognition:enlightened_amulet": "Enlightened Amulet",
+  "cognition:enlightened_crystal": "",
+  "cognition:experience_fountain": "",
+  "cognition:experience_obelisk": "",
+  "cognition:extravagant_agar": "",
+  "cognition:flask_of_chaos": "Flask of Chaos",
+  "cognition:flask_of_hades": "Flask of Hades",
+  "cognition:flask_of_poseidon": "Flask of Poseidon",
+  "cognition:flint_and_cognitive_alloy": "Flint and Cognitive Alloy",
+  "cognition:fluorescent_agar": "",
+  "cognition:fluorescent_jelly": "Fluorescent Jelly",
+  "cognition:forgotten_dust": "Forgotten Dust",
+  "cognition:forgotten_dust_block": "",
+  "cognition:fortuitous_amulet": "Fortuitous Amulet",
+  "cognition:infected_archivers_bookshelf": "",
+  "cognition:infected_bookshelf": "",
+  "cognition:infected_enchanted_bookshelf": "",
+  "cognition:insightful_agar": "",
+  "cognition:linear_accelerator": "",
+  "cognition:memory_tablet": "Memory Tablet",
+  "cognition:mending_neurogel": "Mending Neurogel",
+  "cognition:mending_neurogel_blob": "Blob of Mending Neurogel",
+  "cognition:molecular_metamorpher": "",
+  "cognition:nightmare_bottle": "Bottle o' Nightmare",
+  "cognition:nutrient_agar": "",
+  "cognition:precision_dispeller": "",
+  "cognition:primordial_assembly": "Primordial Assembly",
+  "cognition:transforming_focus": "Transforming Focus",
+  "cognition:whisperglass": ""
+ },
+ "data": {
+  "curios": [
+   "cognition:entities/entities",
+   "cognition:slots/necklace"
+  ],
+  "loot_modifiers": [
+   "cognition:astute_assembly_desert_pyramid",
+   "cognition:cognitive_flux_ruined_portal",
+   "cognition:forgotten_dust_mineshaft",
+   "cognition:forgotten_dust_stronghold_library",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "cognition:blocks/accelerator",
+   "cognition:blocks/archivers_bookshelf",
+   "cognition:blocks/cognitive_alloy_block",
+   "cognition:blocks/cognitive_crystal_block",
+   "cognition:blocks/enchanted_bookshelf",
+   "cognition:blocks/experience_fountain",
+   "cognition:blocks/experience_obelisk",
+   "cognition:blocks/extravagant_agar",
+   "cognition:blocks/fluorescent_agar",
+   "cognition:blocks/forgotten_dust_block",
+   "cognition:blocks/infected_archivers_bookshelf",
+   "cognition:blocks/infected_bookshelf",
+   "cognition:blocks/infected_enchanted_bookshelf",
+   "cognition:blocks/insightful_agar",
+   "cognition:blocks/linear_accelerator",
+   "cognition:blocks/nutrient_agar",
+   "cognition:blocks/precision_dispeller",
+   "cognition:blocks/whisperglass"
+  ],
+  "recipe": [
+   "cognition:accelerator",
+   "cognition:accelerator_from_linear",
+   "cognition:archivers_bookshelf",
+   "cognition:astute_assembly",
+   "cognition:attunement_staff",
+   "cognition:bibliophage",
+   "cognition:book_from_any_leather",
+   "cognition:bookshelf_from_any",
+   "cognition:bottle_daydream",
+   "cognition:bottle_nightmare",
+   "cognition:cognitive_alloy",
+   "cognition:cognitive_alloy_block",
+   "cognition:cognitive_alloy_from_block",
+   "cognition:cognitive_amalgam_blasting",
+   "cognition:cognitive_amalgam_smelting",
+   "cognition:cognitive_axe",
+   "cognition:cognitive_boots",
+   "cognition:cognitive_bow",
+   "cognition:cognitive_chestplate",
+   "cognition:cognitive_crystal",
+   "cognition:cognitive_crystal_block",
+   "cognition:cognitive_crystal_from_block",
+   "cognition:cognitive_flux",
+   "cognition:cognitive_helmet",
+   "cognition:cognitive_hoe",
+   "cognition:cognitive_leggings",
+   "cognition:cognitive_pickaxe",
+   "cognition:cognitive_rod",
+   "cognition:cognitive_shears",
+   "cognition:cognitive_shovel",
+   "cognition:cognitive_sword",
+   "cognition:emptying/cognitium_bucket_emptying_dummy",
+   "cognition:emptying/experience_bottle_emptying",
+   "cognition:emptying/experience_droplet_emptying",
+   "cognition:emptying/golden_apple_emptying",
+   "cognition:emptying/solidified_experience_emptying",
+   "cognition:emptying/xpetrified_orb_emptying",
+   "cognition:enchanted_bookshelf",
+   "cognition:enlightened_amulet",
+   "cognition:experience_fountain",
+   "cognition:experience_obelisk",
+   "cognition:filling/cognitium_bucket_filling_dummy",
+   "cognition:filling/experience_bottle_filling",
+   "cognition:filling/golden_apple_filling",
+   "cognition:flask_chaos",
+   "cognition:flask_hades",
+   "cognition:flask_poseidon",
+   "cognition:flint_and_cognitive_alloy",
+   "cognition:fluorescent_agar",
+   "cognition:forgotten_dust_block",
+   "cognition:forgotten_dust_from_block",
+   "cognition:fortuitous_amulet",
+   "cognition:infecting/infected_archivers_bookshelf",
+   "cognition:infecting/infected_bookshelf",
+   "cognition:infecting/infected_enchanted_bookshelf",
+   "cognition:infecting/nutrient_agar_dummy",
+   "cognition:linear_accelerator",
+   "cognition:memory_tablet",
+   "cognition:mending_neurogel__from_blob",
+   "cognition:mending_neurogel_blob",
+   "cognition:metamorpher/calcarine_matrix",
+   "cognition:metamorpher/cognitive_alloy_metamorphosis",
+   "cognition:metamorpher/cognitive_crystal_metamorphosis",
+   "cognition:metamorpher/extravagant_agar",
+   "cognition:metamorpher/fluorescent_jelly",
+   "cognition:metamorpher/insightful_agar",
+   "cognition:metamorpher/mending_neurogel",
+   "cognition:metamorpher/primordial_assembly",
+   "cognition:metamorpher/transformation/bamboo_metamorphosis",
+   "cognition:metamorpher/transformation/budding_amethyst_metamorphosis",
+   "cognition:metamorpher/transformation/chorus_flower_metamorphosis",
+   "cognition:metamorpher/transformation/clay_metamorphosis",
+   "cognition:metamorpher/transformation/dirt_metamorphosis",
+   "cognition:metamorpher/transformation/dried_kelp_metamorphosis",
+   "cognition:metamorpher/transformation/farmland_metamorphosis",
+   "cognition:metamorpher/transformation/feather_metamorphosis",
+   "cognition:metamorpher/transformation/flint_metamorphosis",
+   "cognition:metamorpher/transformation/glow_berry_metamorphosis",
+   "cognition:metamorpher/transformation/glow_ink_sac_metamorphosis",
+   "cognition:metamorpher/transformation/grass_block_metamorphosis",
+   "cognition:metamorpher/transformation/gravel_metamorphosis",
+   "cognition:metamorpher/transformation/leather_metamorphosis",
+   "cognition:metamorpher/transformation/name_tag_metamorphosis",
+   "cognition:metamorpher/transformation/netherite_ingot_metamorphosis",
+   "cognition:metamorpher/transformation/podzol_metamorphosis",
+   "cognition:metamorpher/transformation/rabbit_hide_metamorphosis",
+   "cognition:metamorpher/transformation/red_sand_metamorphosis",
+   "cognition:metamorpher/transformation/sand_metamorphosis",
+   "cognition:metamorpher/transforming_focus",
+   "cognition:molecular_metamorpher",
+   "cognition:precision_dispeller",
+   "cognition:slimeball_from_smelting_experience_jelly",
+   "cognition:whisperglass"
+  ],
+  "tags/block": [
+   "cognition:infective_blocks",
+   "minecraft:beacon_base_blocks",
+   "minecraft:enchantment_power_provider",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:needs_iron_tool"
+  ],
+  "tags/fluid": [
+   "c:experience"
+  ],
+  "tags/item": [
+   "c:armors",
+   "c:dusts",
+   "c:enchantables",
+   "c:foods/fruit",
+   "c:gems",
+   "c:ingots",
+   "c:tools/bow",
+   "c:tools/fishing_rod",
+   "c:tools/igniter",
+   "c:tools/shear",
+   "cognition:cognitive_set",
+   "cognition:neurogel_blacklisted",
+   "curios:necklace",
+   "minecraft:axes",
+   "minecraft:chest_armor",
+   "minecraft:enchantable/armor",
+   "minecraft:enchantable/bow",
+   "minecraft:enchantable/chest_armor",
+   "minecraft:enchantable/durability",
+   "minecraft:enchantable/fishing",
+   "minecraft:enchantable/foot_armor",
+   "minecraft:enchantable/head_armor",
+   "minecraft:enchantable/leg_armor",
+   "minecraft:enchantable/mining",
+   "minecraft:foot_armor",
+   "minecraft:head_armor",
+   "minecraft:hoes",
+   "minecraft:leg_armor",
+   "minecraft:pickaxes",
+   "minecraft:shovels",
+   "minecraft:swords"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "cognition:infective_blocks": [
+    "cognition:infected_bookshelf",
+    "cognition:infected_archivers_bookshelf",
+    "cognition:infected_enchanted_bookshelf",
+    "cognition:nutrient_agar",
+    "cognition:insightful_agar",
+    "cognition:extravagant_agar"
+   ],
+   "minecraft:beacon_base_blocks": [
+    "cognition:cognitive_alloy_block",
+    "cognition:cognitive_crystal_block"
+   ],
+   "minecraft:enchantment_power_provider": [
+    "cognition:enchanted_bookshelf",
+    "cognition:archivers_bookshelf",
+    "cognition:infected_bookshelf",
+    "cognition:infected_enchanted_bookshelf",
+    "cognition:infected_archivers_bookshelf"
+   ],
+   "minecraft:mineable/axe": [
+    "cognition:enchanted_bookshelf",
+    "cognition:archivers_bookshelf",
+    "cognition:infected_bookshelf",
+    "cognition:infected_enchanted_bookshelf",
+    "cognition:infected_archivers_bookshelf"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "cognition:experience_obelisk",
+    "cognition:experience_fountain",
+    "cognition:precision_dispeller",
+    "cognition:accelerator",
+    "cognition:linear_accelerator",
+    "cognition:molecular_metamorpher",
+    "cognition:whisperglass",
+    "cognition:cognitive_alloy_block",
+    "cognition:cognitive_crystal_block"
+   ],
+   "minecraft:needs_iron_tool": [
+    "cognition:experience_obelisk",
+    "cognition:experience_fountain",
+    "cognition:precision_dispeller",
+    "cognition:accelerator",
+    "cognition:linear_accelerator",
+    "cognition:molecular_metamorpher",
+    "cognition:cognitive_alloy_block",
+    "cognition:cognitive_crystal_block"
+   ]
+  },
+  "tags/fluid": {
+   "c:experience": [
+    "cognition:cognitium_source",
+    "mob_grinding_utils:fluid_xp?",
+    "cofh_core:experience?",
+    "industrialforegoing:essence?",
+    "sophisticatedcore:xp_still?",
+    "enderio:fluid_xp_juice_still?",
+    "reliquary:xp_still?"
+   ]
+  },
+  "tags/item": {
+   "c:armors": [
+    "cognition:cognitive_helmet",
+    "cognition:cognitive_chestplate",
+    "cognition:cognitive_leggings",
+    "cognition:cognitive_boots"
+   ],
+   "c:dusts": [
+    "cognition:cognitive_flux",
+    "cognition:forgotten_dust"
+   ],
+   "c:enchantables": [
+    "cognition:cognitive_helmet",
+    "cognition:cognitive_chestplate",
+    "cognition:cognitive_leggings",
+    "cognition:cognitive_boots"
+   ],
+   "c:foods/fruit": [
+    "minecraft:apple",
+    "minecraft:melon_slice",
+    "minecraft:chorus_fruit",
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries"
+   ],
+   "c:gems": [
+    "cognition:cognitive_crystal"
+   ],
+   "c:ingots": [
+    "cognition:cognitive_alloy"
+   ],
+   "c:tools/bow": [
+    "cognition:cognitive_bow"
+   ],
+   "c:tools/fishing_rod": [
+    "cognition:cognitive_rod"
+   ],
+   "c:tools/igniter": [
+    "cognition:flint_and_cognitive_alloy"
+   ],
+   "c:tools/shear": [
+    "cognition:cognitive_shears"
+   ],
+   "cognition:cognitive_set": [
+    "cognition:cognitive_sword",
+    "cognition:cognitive_shovel",
+    "cognition:cognitive_pickaxe",
+    "cognition:cognitive_axe",
+    "cognition:cognitive_hoe",
+    "cognition:cognitive_helmet",
+    "cognition:cognitive_chestplate",
+    "cognition:cognitive_leggings",
+    "cognition:cognitive_boots",
+    "cognition:cognitive_bow",
+    "cognition:cognitive_rod",
+    "cognition:cognitive_shears",
+    "cognition:flint_and_cognitive_alloy"
+   ],
+   "cognition:neurogel_blacklisted": [],
+   "curios:necklace": [
+    "cognition:enlightened_amulet",
+    "cognition:fortuitous_amulet"
+   ],
+   "minecraft:axes": [
+    "cognition:cognitive_axe"
+   ],
+   "minecraft:chest_armor": [
+    "cognition:cognitive_chestplate"
+   ],
+   "minecraft:enchantable/armor": [
+    "cognition:cognitive_helmet",
+    "cognition:cognitive_chestplate",
+    "cognition:cognitive_leggings",
+    "cognition:cognitive_boots"
+   ],
+   "minecraft:enchantable/bow": [
+    "cognition:cognitive_bow"
+   ],
+   "minecraft:enchantable/chest_armor": [
+    "cognition:cognitive_chestplate"
+   ],
+   "minecraft:enchantable/durability": [
+    "cognition:cognitive_shears",
+    "cognition:flint_and_cognitive_alloy",
+    "cognition:cognitive_rod"
+   ],
+   "minecraft:enchantable/fishing": [
+    "cognition:cognitive_rod"
+   ],
+   "minecraft:enchantable/foot_armor": [
+    "cognition:cognitive_boots"
+   ],
+   "minecraft:enchantable/head_armor": [
+    "cognition:cognitive_helmet"
+   ],
+   "minecraft:enchantable/leg_armor": [
+    "cognition:cognitive_leggings"
+   ],
+   "minecraft:enchantable/mining": [
+    "cognition:cognitive_shears"
+   ],
+   "minecraft:foot_armor": [
+    "cognition:cognitive_boots"
+   ],
+   "minecraft:head_armor": [
+    "cognition:cognitive_helmet"
+   ],
+   "minecraft:hoes": [
+    "cognition:cognitive_hoe"
+   ],
+   "minecraft:leg_armor": [
+    "cognition:cognitive_leggings"
+   ],
+   "minecraft:pickaxes": [
+    "cognition:cognitive_pickaxe"
+   ],
+   "minecraft:shovels": [
+    "cognition:cognitive_shovel"
+   ],
+   "minecraft:swords": [
+    "cognition:cognitive_sword"
+   ]
+  }
+ },
+ "recipe_types": {
+  "cognition:emptying": 6,
+  "cognition:filling": 3,
+  "cognition:infecting": 4,
+  "cognition:molecular_metamorphosis": 29,
+  "minecraft:blasting": 1,
+  "minecraft:crafting_shaped": 22,
+  "minecraft:crafting_shapeless": 13,
+  "minecraft:smelting": 2,
+  "minecraft:smithing_transform": 13
+ },
+ "botanypots": [],
+ "problems": []
+}
