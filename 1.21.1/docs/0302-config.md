@@ -51,7 +51,7 @@ La config di default di AlmostUnified unifica già i metalli; i cibi sono gestit
 La documentazione del datapack sta **dentro il datapack**, così viaggia con i file: `../pack/config/paxi/datapacks/matteo_tweaks/README.md` (panoramica, cartelle, condizioni di caricamento, quando hanno effetto le modifiche) e un `readme.md` in ogni cartella di `data/`. Parti attuali: lune di sangue (Enhanced Celestials), artefatti nelle casse delle strutture modded, Ars Nouveau nei vasi di Botany Pots, pesce cotto di Starcatcher. Le parti in progettazione sono in `../lavoro/0620-progetto-datapack.md`.
 
 - **Caricamento automatico in tutti i mondi** ✅: **Paxi** (vedi 0301). I datapack vanno in `config/paxi/datapacks/`; l'ordine si fissa in `config/paxi/datapack_load_order.json` (facoltativo). Verificato nel codice: Paxi li registra come pacchetti obbligatori, quindi valgono anche alla creazione del mondo
-- **Lune di sangue** (deciso 16/10/2026): 5% delle notti, mostri ×2; super luna ×4 (datapack `matteo_tweaks`). Altre leve di difficoltà se servisse: pesi di Mutant Monsters, Born In Configuration, `invader_spawn_rules` di Apotheosis
+- **Lune di sangue** (deciso 16/10/2026; dalla 0.5.1 con Enhanced Celestials 2): più rare (peso 5 invece di 10 nel calendario, obiettivo circa 3 ogni 100 giorni), mostri ×2; super luna ×4 (datapack `matteo_tweaks`). Gli effetti nuovi di EC2 (mostri più vicini, assedio ai villaggi) restano attivi. Altre leve di difficoltà se servisse: pesi di Mutant Monsters, Born In Configuration, `invader_spawn_rules` di Apotheosis
 
 ## Impostazioni decise per le mod
 

@@ -238,6 +238,11 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
     for label, m in idx.mods:
         who = m["modid"] + (f" (dentro {m['jar']})" if m.get("jar") else "")
         for dep in m.get("deps", []):
+            if dep.get("type") == "incompatible" and dep.get("modid") in idx.modids:
+                # L'intervallo dice quali versioni sono incompatibili (es. solo quelle vecchie)
+                vers = provided.get(dep["modid"])
+                if not vers or in_range(max(vers, key=_ver), dep.get("range")):
+                    errors.append(f"Mod incompatibili insieme: `{who}` [{label}] dichiara incompatibile `{dep['modid']}` {dep.get('range') or ''}, che è nel pack".rstrip())
             if dep.get("type") != "required":
                 continue
             if dep.get("modid") not in present:

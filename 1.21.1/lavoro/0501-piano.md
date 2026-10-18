@@ -11,6 +11,8 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | 2 | 0.3.0 | Cucina, agricoltura, esperienza: My Nether's Delight, Chef's Delight, Create Confectionery, Rustic Delight, Ocean's Delight, Autochef's Delight, Farming for Blockheads, Cognition; **pesce cotto di Starcatcher** nelle etichette del pesce cotto (approvato 18/10) | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.3.0`) |
 | 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.4.0`) |
 | 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae (+ Fragmentum), Creeper Overhaul, Paragliders | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.0`) |
+| 4.1 | 0.5.1 | Lune: Enhanced Celestials 2 (Core + Default Lunar Events) al posto di Enhanced Celestials, luna di sangue ribilanciata nel formato nuovo, Data Anchor aggiornata (decisa il 18/10) | 🧪 su `dev`, da provare |
+| 4.2 | 0.5.2 | Supporto agli shader: Iris, Enhanced Celestials 2: Shader Support e le mod di compatibilità che servono (in valutazione); gli shader restano facoltativi (decisa il 18/10) | da fare |
 | 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `0620-progetto-datapack.md`), config di Every Compat, Artifacts e, se serve, Jaden's | da fare |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
 
@@ -27,10 +29,12 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | Villaggi e tech | Guard Villagers, Goblin Traders (+ Framework, entrambe solo CurseForge), Copycats+ | ✅ 0.4.0 |
 | Nether | Jaden's Nether Expansion, Moog's Nether Structures, Nether Depths Upgrade (+ Elysium API, Lodestone) | ✅ 0.5.0 |
 | Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae (+ Fragmentum), Creeper Overhaul | ✅ 0.5.0 |
+| Lune | Enhanced Celestials 2 al posto di Enhanced Celestials | 🧪 0.5.1 su `dev` |
+| Shader | Iris e compatibilità (facoltativi da usare) | ⏳ 0.5.2 |
 
 | Datapack e config | Cosa | Stato |
 |---|---|---|
-| Lune di sangue | 5% delle notti, mostri ×2; super luna ×4 | ✅ 0.1.1 |
+| Lune di sangue | Più rare, mostri ×2; super luna ×4 | ✅ 0.1.1 (EC1) · 🧪 0.5.1 riscritte per Enhanced Celestials 2 |
 | Artefatti nelle casse | 153 casse di strutture modded, Galeone compreso | ✅ 0.2.3 |
 | Artefatti: correzioni | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns sbagliati; casse di Mowzie's Mobs e Born in Chaos | ⏳ 0.6.0 |
 | Vasi: Ars Nouveau | Magebloom, Sourceberry, 5 frutti di archwood | ✅ 0.1.1 |

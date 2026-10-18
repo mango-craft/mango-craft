@@ -12,7 +12,7 @@ Ritocchi del modpack. **Paxi** carica questo pacchetto in **tutti i mondi**, anc
 |---|---|---|---|
 | **Artefatti nelle strutture modded** | Aggiunge gli oggetti di Artifacts a 153 casse di strutture modded | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
 | **Ars Nouveau nei vasi** | Magebloom, Sourceberry e i 5 frutti di archwood in Botany Pots | `data/matteo_tweaks/recipe/botanypots/` | [botanypots/readme.md](data/matteo_tweaks/recipe/botanypots/readme.md) |
-| **Lune di sangue** | Più rare (5% delle notti) e meno affollate (mostri ×2 e ×4) | `data/enhancedcelestials/enhancedcelestials/lunar/event/` | [lunar/event/readme.md](data/enhancedcelestials/enhancedcelestials/lunar/event/readme.md) |
+| **Lune di sangue** | Più rare (peso 5 invece di 10 nel calendario) e meno affollate (mostri ×2 e ×4), per Enhanced Celestials 2 | `data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/` | [lunar/readme.md](data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md) |
 | **Pesce cotto di Starcatcher** | Vale come "pesce cotto" nelle ricette di cucina | `data/c/tags/item/foods/`, `data/bountifulfares/tags/item/` | [c/readme.md](data/c/readme.md) |
 
 ## Mappa delle cartelle
@@ -31,10 +31,11 @@ matteo_tweaks/
     │           └── soil/        5 terreni (i tronchi di archwood)
     ├── neoforge/
     │   └── loot_modifiers/      l'elenco dei modificatori da attivare
-    ├── enhancedcelestials/
-    │   └── enhancedcelestials/
+    ├── enhancedcelestials2defaultlunarevents/
+    │   └── enhancedcelestials2core/
     │       └── lunar/
-    │           └── event/       2 file che sostituiscono quelli di Enhanced Celestials
+    │           ├── event_probability/   frequenza della luna di sangue
+    │           └── event_modifier/      mostri della luna e della super luna di sangue
     ├── c/
     │   └── tags/item/foods/     etichette comuni del pesce cotto (+ Starcatcher)
     └── bountifulfares/
@@ -48,7 +49,7 @@ La prima cartella dentro `data/` si chiama **namespace** e dice a chi appartiene
 - **`matteo_tweaks`** contiene i file nuovi. Il nome è inventato e serve solo a non scontrarsi con i file delle mod.
 - **`neoforge`** contiene un file che NeoForge cerca proprio in quel punto: l'elenco dei modificatori di bottino.
 - **`c`** e **`bountifulfares`** contengono etichette (tag): con `"replace": false` si **aggiungono** a quelle delle mod invece di sostituirle.
-- **`enhancedcelestials`** ha lo stesso percorso dei file originali della mod, quindi **li sostituisce**. Paxi carica il pacchetto "in cima" a tutti gli altri, perciò in caso di file con lo stesso nome vincono le nostre copie.
+- **`enhancedcelestials2defaultlunarevents`** ha lo stesso percorso dei file originali di Enhanced Celestials 2, quindi **li sostituisce**. Paxi carica il pacchetto "in cima" a tutti gli altri, perciò in caso di file con lo stesso nome vincono le nostre copie.
 
 ## Se una mod viene tolta dal pack
 
@@ -56,7 +57,7 @@ Ogni file controlla prima di caricarsi che la sua mod ci sia:
 
 - **Artefatti**: `"neoforge:conditions"` con `mod_loaded` su `artifacts`.
 - **Vasi**: `"bookshelf:load_conditions"` con `block_exists` sui blocchi usati.
-- **Lune**: le legge solo Enhanced Celestials. Se la mod non c'è, nessuno le apre.
+- **Lune**: le legge solo Enhanced Celestials 2. Se la mod non c'è, nessuno le apre.
 
 Se togli una mod, quindi, i suoi file vengono saltati senza errori.
 
@@ -65,7 +66,7 @@ Se togli una mod, quindi, i suoi file vengono saltati senza errori.
 | Parte | Dopo aver cambiato un file |
 |---|---|
 | Artefatti e vasi | Basta `/reload` in gioco |
-| Lune | Bisogna uscire e rientrare nel mondo: Enhanced Celestials le legge solo all'apertura |
+| Lune | Bisogna uscire e rientrare nel mondo: Enhanced Celestials 2 le legge solo all'apertura |
 
 Il bottino delle casse si decide la **prima volta che vengono aperte**. Le casse già aperte non cambiano, mentre quelle ancora chiuse, anche in strutture già esplorate, seguono le regole nuove.
 
@@ -78,5 +79,5 @@ Il bottino delle casse si decide la **prima volta che vengono aperte**. Le casse
 
 - **Un livello di artefatti**: basta togliere la sua riga da `data/neoforge/loot_modifiers/global_loot_modifiers.json`, perché un modificatore che non è in elenco resta spento. Puoi cancellare anche il file, ma **non** cancellare il file lasciando la riga: un nome in elenco senza file dà errore al caricamento.
 - **Una coltura o un terreno nei vasi**: cancella il suo file.
-- **Le lune**: cancella i due file e tornano i valori originali di Enhanced Celestials.
+- **Le lune**: cancella i tre file e tornano i valori originali di Enhanced Celestials 2.
 - **Tutto il pacchetto**: togli la cartella `matteo_tweaks` da `config/paxi/datapacks/`.
