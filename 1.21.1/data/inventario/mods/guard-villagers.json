@@ -1,0 +1,69 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Guard Villagers",
+ "file": "guardvillagers-2.4.12-1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "2b25eaace0b7ec4ca09ad9c428bd3ee64567bc540bf03e21231b098498a4f95f9f02da5161841e8ec48eabce6e64b49b59995d13a4cebf4efd49feb0dca1e13e",
+ "mods": [
+  {
+   "modid": "guardvillagers",
+   "name": "Guard Villagers",
+   "version": "2.4.12",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[20.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "guardvillagers"
+ ],
+ "entities": {
+  "guardvillagers:guard": "Guard"
+ },
+ "items": {
+  "guardvillagers:guard_spawn_egg": "Guard Spawn Egg",
+  "guardvillagers:illusioner_spawn_egg": "Illusioner Spawn Egg",
+  "guardvillagers:iron_golem_spawn_egg": "Iron Golem Spawn Egg",
+  "guardvillagers:snow_golem_spawn_egg": "Snow Golem Spawn Egg"
+ },
+ "data": {
+  "loot_table": [
+   "guardvillagers:entities/armor_sets/armor",
+   "guardvillagers:entities/guard",
+   "guardvillagers:entities/guard_armor"
+  ],
+  "tags/item": [
+   "guardvillagers:convertible_guard_items"
+  ]
+ },
+ "data_counts": {
+  "advancement": 1
+ },
+ "tags": {
+  "tags/item": {
+   "guardvillagers:convertible_guard_items": [
+    "#c:tools/crossbow?",
+    "#minecraft:swords"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

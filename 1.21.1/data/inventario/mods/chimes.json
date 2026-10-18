@@ -1,0 +1,110 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Chimes",
+ "file": "Chimes-v2.1.1-1.21.1-NeoForge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "d4b689f2e3e3f2ff1fb94de5a672c9d06a8198f589ba18b847094fb78cc9236ee3da501b607ea1bbf227cbca80a1e34feb08dc242ccef9313613d9b093b48042",
+ "mods": [
+  {
+   "modid": "chimes",
+   "name": "Chimes",
+   "version": "2.1.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "chimes",
+  "minecraft"
+ ],
+ "blocks": {
+  "chimes:amethyst_chimes": "Amethyst Wind Chime",
+  "chimes:bamboo_chimes": "Bamboo Wind Chime",
+  "chimes:carved_bamboo_chimes": "Carved Bamboo Wind Chime",
+  "chimes:copper_chimes": "Copper Wind Chime",
+  "chimes:glass_bells": "Glass Wind Bell",
+  "chimes:iron_chimes": "Iron Wind Chime"
+ },
+ "items": {
+  "chimes:amethyst_chimes": "",
+  "chimes:bamboo_chimes": "",
+  "chimes:carved_bamboo_chimes": "",
+  "chimes:copper_chimes": "",
+  "chimes:glass_bells": "",
+  "chimes:iron_chimes": "",
+  "glass_wind_bell:customizable": "Customizable"
+ },
+ "data": {
+  "loot_table": [
+   "chimes:blocks/amethyst_chimes",
+   "chimes:blocks/bamboo_chimes",
+   "chimes:blocks/carved_bamboo_chimes",
+   "chimes:blocks/copper_chimes",
+   "chimes:blocks/glass_bells",
+   "chimes:blocks/iron_chimes"
+  ],
+  "recipe": [
+   "chimes:amethyst_chimes",
+   "chimes:bamboo_chimes",
+   "chimes:copper_chimes",
+   "chimes:glass_bells",
+   "chimes:glass_bells_custom",
+   "chimes:iron_chimes"
+  ],
+  "tags/block": [
+   "chimes:wind_bells",
+   "chimes:wind_chimes",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe"
+  ]
+ },
+ "data_counts": {
+  "advancement": 5
+ },
+ "tags": {
+  "tags/block": {
+   "chimes:wind_bells": [
+    "chimes:glass_bells"
+   ],
+   "chimes:wind_chimes": [
+    "chimes:bamboo_chimes",
+    "chimes:carved_bamboo_chimes",
+    "chimes:iron_chimes",
+    "chimes:copper_chimes",
+    "chimes:amethyst_chimes"
+   ],
+   "minecraft:mineable/axe": [
+    "chimes:bamboo_chimes",
+    "chimes:carved_bamboo_chimes"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "chimes:iron_chimes",
+    "chimes:copper_chimes",
+    "chimes:amethyst_chimes"
+   ]
+  }
+ },
+ "recipe_types": {
+  "chimes:crafting_wind_bell_custom": 1,
+  "minecraft:crafting_shaped": 5
+ },
+ "botanypots": [],
+ "problems": []
+}

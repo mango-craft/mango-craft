@@ -83,6 +83,28 @@ Le casse sono state assegnate alla struttura vanilla più simile:
 
 Nelle strutture grandi (When Dungeons Arise, Dungeons and Taverns) è collegata solo la cassa del **tesoro finale**, non tutte le stanze. Sono escluse di proposito le casse di cibo e scorte, le casse "decorative" (capanne delle streghe, villaggi) e le tabelle degli overhaul di Dungeons and Taverns, che non sono installati.
 
+## Le casse livello per livello
+
+Quali strutture finiscono in ogni livello (i nomi esatti delle tabelle sono nei file `.json`).
+
+| Livello Artifacts (probabilità di base) | Casse modded collegate |
+|---|---|
+| Bastione, tesoro (65%) | Aether: ricompensa del dungeon d'oro · Twilight Forest: caveau dei troll |
+| Grande rovina sottomarina (45%) | Cataclysm: tesoro dell'Acropoli · DnT: rovina del condotto, monumento del tridente |
+| Magione (40%) | Twilight: caveau del labirinto (anche jackpot), stanza dell'aurora · Aether: ricompensa del dungeon di bronzo · Illager Invasion: labirinto · Cataclysm: tesori abbandonato e della prigione ghiacciata · Friends & Foes: barili della cittadella · WDA: tesori di Foundry, Heavenly Conqueror, Plague Asylum, Shiraz Palace, Keep Kayra, Illager Fort, Aviary · DnT: caveau del boss della Lone Citadel, laboratorio della Witch Villa |
+| Tempio della giungla (35%) | YUNG's Jungle Temples: tesoro · Twilight: labirinto di siepi · WDA: casa sull'albero · DnT: tempio delle rovine nella giungla |
+| Roccaforte, corridoio (30%) | YUNG's Strongholds: tesoro, armeria, cripta, trappola, prigione, stanza segreta · Twilight: stanze della roccaforte dei cavalieri, torre del Lich, colline cave grandi, torre oscura · Aether: dungeon d'argento · WDA: tesori di Bandit Towers, Heavenly Challenger, Heavenly Rider, Infested Temple, Thornborn Towers, Ceryneian Hind, Typhon, Abandoned Temple, biblioteca e giardino di Keep Kayra, élite di Shiraz Palace · DnT: caveau della Lone Citadel · Unusual End: altare di Gloopy |
+| Miniera (30%) | Twilight: colline cave medie · Undergarden: miniera esaurita · Cataclysm: nido d'ametista · WDA: Mining System, Mushroom Mines, Scorched Mines, tesori di miniera grandi e medi · DnT: avamposto dei minatori |
+| Città dell'End, tesoro (30%) | Aether: ricompensa del dungeon d'argento · Deep Aether: ricompensa del dungeon d'ottone · Moog's End Structures: navi giganti · DnT: caveau del castello e del faro dell'End · Unusual End: antiche torri dell'End, nave volante, nave distorta |
+| Igloo (30%) | Friends & Foes: capanna dell'Iceologer · Twilight: deposito dell'aurora · DnT: forte degli Stray |
+| Avamposto dei predoni (25%) | Illager Invasion: torre del forte, scale della torre dell'Illusioner, capanna dello stregone · WDA: Illager Corsair, Illager Galley, Illager Windmill · DnT: nascondiglio degli illager · Supplementaries: cassaforte del Galeone |
+| Piramide del deserto (20%) | YUNG's Desert Temples: tomba del faraone, nascondiglio, tombe · Cataclysm: tesoro del deserto · DnT: tempio delle rovine del deserto |
+| Dungeon (15%) | YUNG's Dungeons: scheletri, zombie, ragni · Twilight: colline cave piccole, stanza del labirinto, deposito della roccaforte · Aether: dungeon di bronzo · Deep Aether: dungeon d'ottone · Undergarden: catacombe · Cataclysm: rovine abbandonate · WDA: casa e villaggio dei funghi, funghi giganti, piccolo dirigibile, faro · DnT: bunker e case sotterranee, cripte, santuari di combattimento, città in rovina · Unusual End: biblioteche delle case dell'End, casa del viandante |
+| Relitto, tesoro (15%: amo d'oro, boccaglio, pinne…) | WDA: nave pirata dei non morti |
+| Fortezza del Nether (15%) | YUNG's Fortresses: mastio, culto, enigma, ossidiana, alloggi, magazzino · YUNG's Dungeons: piccolo dungeon del Nether · DnT: avamposto dei piglin, torre degli scheletri, porto del Nether |
+| Città antica (15%) | Deeper and Darker: tempio antico (vertice, stanza segreta, seminterrato) |
+| Portale in rovina (15%) | Aether: portali in rovina |
+
 ## La manopola `artifactRarity`
 
 Si regola in `config/artifacts/general.toml` e vale per tutte le casse, vanilla e modded. La probabilità vera è `p / (p + r − r·p)`, dove `p` è quella della tabella e `r` è `artifactRarity`:
@@ -122,6 +144,8 @@ Ogni cassa deve stare in **un solo** livello, altrimenti tirerebbe gli artefatti
 
 - **Verificati nei sorgenti delle versioni 1.21.1**: mod YUNG's, Twilight Forest, Aether, Deep Aether, Deeper and Darker, Undergarden, Cataclysm, Illager Invasion, Friends & Foes, Moog's End Structures, Unusual End.
 - **Presi da versioni precedenti pubblicate su GitHub**: When Dungeons Arise (versione 1.18.2 dell'autore, più una copia del 2025 con le strutture nuove) e Dungeons and Taverns (copia del datapack di marzo 2024). Il loro sorgente 1.21.1 non è pubblico. Le strutture uscite dopo potrebbero mancare. Un nome che non esiste più non dà errori: semplicemente non scatta mai.
-- **Mancano**: Mowzie's Mobs e Born in Chaos, di cui non è stato trovato un sorgente.
+  Il controllo dei nomi sull'inventario dei .jar ha confermato il problema: **15 di questi nomi non esistono** nelle versioni installate. È il bug B01 (`1.21.1/docs/0402-bug-report.md` nel repository), da correggere nella 0.6.0 con i nomi veri.
+- **Supplementaries**: cassaforte del Galeone (`supplementaries:loot/galleon/safe`), verificata nei file della struttura e nell'inventario (dalla 0.2.3).
+- **Mancano**: Mowzie's Mobs e Born in Chaos, di cui non è stato trovato un sorgente (bug B03: i nomi ora si leggono nell'inventario, `1.21.1/data/inventario/`).
 
 **Due nomi che ingannano**: `minecraft:chests/ancient_end_city` e `minecraft:chests/end_house_library` sembrano vanilla, ma nel gioco base non esistono. Li aggiunge Unusual End usando il prefisso `minecraft`.

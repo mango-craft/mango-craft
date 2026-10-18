@@ -7,9 +7,9 @@ Il pack è gestito con [packwiz](https://packwiz.infra.link/): il repository con
 
 | | |
 |---|---|
-| Versione attuale | **0.1.1** (tag `1.21.1-v0.1.1`) |
+| Versioni | [changelog](1.21.1/docs/0401-changelog.md) e [release](https://github.com/mango-craft/mango-craft/releases) |
 | Minecraft | 1.21.1 |
-| NeoForge | **21.1.259**, da impostare a mano in Prism (non usare versioni più nuove, vedi `1.21.1/CHANGELOG.md`) |
+| NeoForge | **21.1.259**, da impostare a mano in Prism (non usare versioni più nuove: il changelog di ogni versione indica quella giusta) |
 | Memoria consigliata | 8 GB |
 
 ## Installazione in Prism (in breve)
@@ -19,26 +19,29 @@ Il pack è gestito con [packwiz](https://packwiz.infra.link/): il repository con
 3. Metti il `.jar` nella cartella `minecraft` dell'istanza (tasto destro sull'istanza → *Cartella*).
 4. Nelle impostazioni dell'istanza, *Comandi personalizzati* → *Comando prima dell'avvio* (Pre-launch command):
    ```
-   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mango-craft/mango-craft/refs/tags/1.21.1-v0.1.1/1.21.1/pack/pack.toml
+   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mango-craft/mango-craft/refs/tags/1.21.1-vX.Y.Z/1.21.1/pack/pack.toml
    ```
-5. Avvia: la prima volta scarica circa 200 file.
-6. Alcune mod di CurseForge (oggi Roaster's Delight) vanno scaricate a mano: nella finestra *Failed file downloads* clicca la mod per vedere dove salvarla, premi *Open missing mods*, scarica il file, mettilo in quel percorso senza rinominarlo e premi *Continue*. Passi dettagliati: [mod da scaricare a mano](docs/prism.md#mod-di-curseforge-da-scaricare-a-mano).
+   sostituendo `X.Y.Z` con la versione scelta (elenco nelle [release](https://github.com/mango-craft/mango-craft/releases)); per seguire il lavoro in corso, `refs/heads/dev` al posto di `refs/tags/…`.
+5. Avvia: la prima volta scarica tutte le mod (oltre 200 file).
+6. Alcune mod di CurseForge vanno scaricate a mano: nella finestra *Failed file downloads* clicca la mod per vedere dove salvarla, premi *Open missing mods*, scarica il file, mettilo in quel percorso senza rinominarlo e premi *Continue*. Passi dettagliati: [mod da scaricare a mano](docs/0101-installazione.md#mod-di-curseforge-da-scaricare-a-mano).
 
-Guida completa, con le istanze di prova, del mondo vero e di archivio: [`docs/prism.md`](docs/prism.md).
+Guida completa, con le istanze di prova, del mondo vero e di archivio: [`docs/0101-installazione.md`](docs/0101-installazione.md).
 
 ## Struttura
 
 ```
-AGENTS.md / CLAUDE.md     istruzioni per gli agenti AI che lavorano sul repository
-docs/                     guide comuni: prism.md, sviluppo.md
-scripts/                  script di supporto (indice, controlli, importazione)
-.github/workflows/        controllo automatico, aggiunta mod CurseForge, release
+AGENTS.md / CLAUDE.md     regole del repository e istruzioni per gli agenti AI
+docs/                     documentazione comune: progetto, installazione, sviluppo
+scripts/                  inventario, controlli, aggiunta mod, note di release
+.github/workflows/        controllo automatico, aggiunta mod, release
 1.21.1/
-├── CHANGELOG.md          versioni del pack
-├── docs/                 stato del progetto, decisioni, verifiche, ricerche, datapack
-├── data/                 dati grezzi delle ricerche
-└── pack/                 il pack vero e proprio (solo questo finisce nel gioco)
+├── pack/                 il pack vero e proprio (solo questo finisce nel gioco)
+├── docs/                 documentazione della versione: mod, config, note tecniche, changelog, bug report
+├── lavoro/               documenti di lavoro: piano, prove, decisioni, progetto del datapack, ricerche
+└── data/                 inventario delle mod e dati grezzi delle ricerche
 ```
+
+Ogni cartella di documenti ha un `README.md` con l'indice. I documenti hanno un codice di quattro cifre (regole in `AGENTS.md`).
 
 ## Versioni
 

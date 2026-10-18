@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Note di una release: la voce del CHANGELOG più l'elenco delle mod CurseForge.
+"""Note di una release: la voce del changelog più l'elenco delle mod CurseForge.
 
-Uso: python3 scripts/release_notes.py <cartella pack> <CHANGELOG.md> <versione>
+Uso: python3 scripts/release_notes.py <cartella pack> <changelog> <versione>
+(il changelog di una versione di Minecraft è <MC>/docs/0401-changelog.md)
 
 Le mod CurseForge non entrano nel .mrpack pubblico: qui vengono elencate con
 il link al file esatto, così si possono scaricare a mano se si usa il .mrpack.
@@ -23,7 +24,7 @@ def changelog_section(changelog: Path, version: str) -> str:
                 continue
         if inside:
             out.append(line)
-    return "\n".join(out).strip() or "_Nessuna voce nel CHANGELOG per questa versione._"
+    return "\n".join(out).strip() or "_Nessuna voce nel changelog per questa versione._"
 
 
 def curseforge_mods(pack: Path) -> list[str]:
@@ -54,7 +55,7 @@ def main(pack_dir: str, changelog: str, version: str) -> None:
         print("|---|---|---|")
         print("\n".join(rows))
     print()
-    print("Installazione e istanze: vedi `docs/prism.md` nel repository.")
+    print("Installazione e istanze: vedi `docs/0101-installazione.md` nel repository.")
 
 
 if __name__ == "__main__":
