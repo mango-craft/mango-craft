@@ -1,0 +1,539 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Aquamirae",
+ "file": "aquamirae-neoforge-1.21.1-7.2.13.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "90fe46c41a0f44b1cdc64cf59e4000b7e20af3edbde8695b5c1350fe044123f02f6ba1f2b50f435bd1e12c5587a21be3cf77f078060a2029a943f8da6d9f9395",
+ "mods": [
+  {
+   "modid": "aquamirae",
+   "name": "Aquamirae",
+   "version": "7.2.13",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.150,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fragmentum",
+     "type": "required",
+     "range": "[5.3.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "geckolib",
+     "type": "required",
+     "range": "[4.8.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "aquamirae",
+  "minecraft"
+ ],
+ "blocks": {
+  "aquamirae:frozen_chest": "Frozen Chest",
+  "aquamirae:golden_moth_jar": "Golden Moth Jar",
+  "aquamirae:luminescent_bubble": "Luminescent Bubble",
+  "aquamirae:luminescent_lamp": "Luminescent Lamp",
+  "aquamirae:oxyhelium": "Oxyhelium",
+  "aquamirae:painting_anglerfish": "Collectible Painting",
+  "aquamirae:painting_aurora": "Collectible Painting",
+  "aquamirae:painting_oxyhelium": "Collectible Painting",
+  "aquamirae:painting_tortured_soul": "Collectible Painting",
+  "aquamirae:pirate_pouch": "Pirate Pouch",
+  "aquamirae:treasure_pouch": "Treasure Pouch",
+  "aquamirae:wisteria_niveis": "Wisteria Niveis"
+ },
+ "effects": {
+  "aquamirae:armor_shatter": "Armor Shatter",
+  "aquamirae:crystallization": "Crystallization",
+  "aquamirae:devouring_curse": "Devouring Curse",
+  "aquamirae:fury_of_the_depths": "Fury of the Depths",
+  "aquamirae:health_shatter": "Health Shatter",
+  "aquamirae:maelstrom_omen": "Maelstrom Omen",
+  "aquamirae:poison_immunity": "Poison Immunity",
+  "aquamirae:resilience_of_the_depths": "Resilience of the Depths"
+ },
+ "entities": {
+  "aquamirae:abyssal_scyphoid": "Abyssal Scyphoid",
+  "aquamirae:anglerfish": "Anglerfish",
+  "aquamirae:captain_cornelia": "Ghost of Captain Cornelia",
+  "aquamirae:eel": "Eel",
+  "aquamirae:golden_moth": "Golden Moth",
+  "aquamirae:maw": "Maw",
+  "aquamirae:maze_mother": "Maze Mother",
+  "aquamirae:maze_rose": "Maze Rose",
+  "aquamirae:scuttler": "Scuttler",
+  "aquamirae:shellback": "Shellback",
+  "aquamirae:shipbreaker": "Shipbreaker",
+  "aquamirae:spinefish": "Spinefish",
+  "aquamirae:terrible_chakram": "Terrible Chakram",
+  "aquamirae:tortured_soul": "Tortured Soul"
+ },
+ "items": {
+  "aquamirae:abyssal_amethyst": "Abyssal Amethyst",
+  "aquamirae:abyssal_boots": "Abyssal Boots",
+  "aquamirae:abyssal_brigandine": "Abyssal Brigandine",
+  "aquamirae:abyssal_heaume": "Abyssal Heaume",
+  "aquamirae:abyssal_leggings": "Abyssal Leggings",
+  "aquamirae:abyssal_scyphoid_spawn_egg": "Abyssal Scyphoid Spawn Egg",
+  "aquamirae:abyssal_tiara": "Abyssal Tiara",
+  "aquamirae:abyssal_upgrade_smithing_template": "Smithing Template",
+  "aquamirae:angler_fang": "Angler Fang",
+  "aquamirae:anglerfish_spawn_egg": "Anglerfish Spawn Egg",
+  "aquamirae:captain_cornelia_spawn_egg": "Captain Cornelia Spawn Egg",
+  "aquamirae:cooked_spinefish": "Cooked Spinefish",
+  "aquamirae:cracked_record": "Cracked Record",
+  "aquamirae:dagger_of_greed": "Dagger of Greed",
+  "aquamirae:dead_sea_scroll": "Dead Sea Scroll",
+  "aquamirae:dreadwake": "Dreadwake",
+  "aquamirae:echo_compass": "Echo Compass",
+  "aquamirae:eel_spawn_egg": "Eel Spawn Egg",
+  "aquamirae:esca": "Esca",
+  "aquamirae:esca_skewer": "Esca Skewer",
+  "aquamirae:fin": "Fin",
+  "aquamirae:frozen_chest": "",
+  "aquamirae:frozen_key": "Frozen Key",
+  "aquamirae:golden_moth_jar": "",
+  "aquamirae:golden_moth_spawn_egg": "Golden Moth Spawn Egg",
+  "aquamirae:handheld_2x": "",
+  "aquamirae:jawbreaker": "Jawbreaker",
+  "aquamirae:jellyfish_jelly": "Jellyfish Jelly",
+  "aquamirae:logbook": "Logbook",
+  "aquamirae:luminescent_bubble": "Luminescent Bubble",
+  "aquamirae:luminescent_lamp": "",
+  "aquamirae:maelstrom_vestige": "Maelstrom Vestige",
+  "aquamirae:maw_spawn_egg": "Maw Spawn Egg",
+  "aquamirae:maze_mother_spawn_egg": "Maze Mother Spawn Egg",
+  "aquamirae:maze_rose": "Maze Rose",
+  "aquamirae:music_disc_forsaken_drownage": "Music Disc",
+  "aquamirae:music_disc_horizon": "Music Disc",
+  "aquamirae:niveis_tear": "Niveis Tear",
+  "aquamirae:oxygen_tank": "Oxygen Tank",
+  "aquamirae:oxyhelium": "Oxyhelium",
+  "aquamirae:painting_anglerfish": "",
+  "aquamirae:painting_aurora": "",
+  "aquamirae:painting_oxyhelium": "",
+  "aquamirae:painting_tortured_soul": "",
+  "aquamirae:pirate_pouch": "",
+  "aquamirae:poseidon_breakfast": "Poseidon Breakfast",
+  "aquamirae:remnant_saber": "Remnant Saber",
+  "aquamirae:rune_of_the_storm": "Rune of the Storm",
+  "aquamirae:salvager_boots": "Salvager Boots",
+  "aquamirae:salvager_helmet": "Salvager Helmet",
+  "aquamirae:salvager_suit": "Salvager Suit",
+  "aquamirae:salvager_waders": "Salvager Waders",
+  "aquamirae:scuttler_spawn_egg": "Scuttler Spawn Egg",
+  "aquamirae:sea_casserole": "Sea Casserole",
+  "aquamirae:sea_stew": "Sea Stew",
+  "aquamirae:sharp_bones": "Sharp Bones",
+  "aquamirae:shatterblade": "Shatterblade",
+  "aquamirae:shatterspike": "Shatterspike",
+  "aquamirae:shell_horn": "Shell Horn",
+  "aquamirae:shellback_spawn_egg": "Shellback Spawn Egg",
+  "aquamirae:ship_graveyard_echo": "Ship Graveyard Echo",
+  "aquamirae:spinefish": "Raw Spinefish",
+  "aquamirae:spinefish_spawn_egg": "Spinefish Spawn Egg",
+  "aquamirae:tempest_trident": "Tempest Trident",
+  "aquamirae:terrible_blade": "Terrible Blade",
+  "aquamirae:terrible_boots": "Terrible Boots",
+  "aquamirae:terrible_chakram": "Terrible Chakram",
+  "aquamirae:terrible_chestplate": "Terrible Chestplate",
+  "aquamirae:terrible_cleaver": "Terrible Cleaver",
+  "aquamirae:terrible_fang": "Terrible Fang",
+  "aquamirae:terrible_helmet": "Terrible Helmet",
+  "aquamirae:terrible_leggings": "Terrible Leggings",
+  "aquamirae:terrible_upgrade_smithing_template": "Smithing Template",
+  "aquamirae:tidepiercer": "Tidepiercer",
+  "aquamirae:tortured_soul_spawn_egg": "Tortured Soul Spawn Egg",
+  "aquamirae:treasure_pouch": "",
+  "aquamirae:void_squid": "Void Squid",
+  "aquamirae:wisteria_niveis": "Wisteria Niveis"
+ },
+ "data": {
+  "aquamirae": [
+   "aquamirae:noise/ice_carver",
+   "aquamirae:noise/ice_walls",
+   "aquamirae:path/default"
+  ],
+  "damage_type": [
+   "aquamirae:crystallization",
+   "aquamirae:shipbreaker"
+  ],
+  "jukebox_song": [
+   "aquamirae:cracked_record",
+   "aquamirae:forsaken_drownage",
+   "aquamirae:horizon"
+  ],
+  "loot_table": [
+   "aquamirae:blocks/luminescent_bubble",
+   "aquamirae:blocks/luminescent_lamp",
+   "aquamirae:blocks/oxyhelium",
+   "aquamirae:blocks/pirate_pouch",
+   "aquamirae:blocks/treasure_pouch",
+   "aquamirae:blocks/wisteria_niveis",
+   "aquamirae:chests/camp_barrel",
+   "aquamirae:chests/frozen_chest",
+   "aquamirae:chests/maze_camp_chest",
+   "aquamirae:chests/ship_1",
+   "aquamirae:chests/ship_2",
+   "aquamirae:entities/abyssal_scyphoid",
+   "aquamirae:entities/anglerfish",
+   "aquamirae:entities/captain_cornelia",
+   "aquamirae:entities/eel",
+   "aquamirae:entities/golden_moth",
+   "aquamirae:entities/maw",
+   "aquamirae:entities/maze_captain",
+   "aquamirae:entities/maze_mother",
+   "aquamirae:entities/maze_pillager",
+   "aquamirae:entities/maze_vindicator",
+   "aquamirae:entities/scuttler",
+   "aquamirae:entities/spinefish",
+   "aquamirae:stashes/pirate_pouch",
+   "aquamirae:stashes/treasure_pouch"
+  ],
+  "neoforge/biome_modifier": [
+   "aquamirae:ice_maze"
+  ],
+  "recipe": [
+   "aquamirae:abyssal_boots_smithing",
+   "aquamirae:abyssal_brigandine_smithing",
+   "aquamirae:abyssal_heaume_smithing",
+   "aquamirae:abyssal_leggings_smithing",
+   "aquamirae:abyssal_tiara",
+   "aquamirae:abyssal_upgrade_smithing_template",
+   "aquamirae:bone_meal_from_angler_fang",
+   "aquamirae:bone_meal_from_remnant_saber",
+   "aquamirae:bone_meal_from_sharp_bones",
+   "aquamirae:cooked_spinefish_from_campfire",
+   "aquamirae:cooked_spinefish_from_smelting",
+   "aquamirae:cooked_spinefish_from_smoking",
+   "aquamirae:dreadwake",
+   "aquamirae:echo_compass",
+   "aquamirae:esca_skewer",
+   "aquamirae:green_dye_from_wisteria",
+   "aquamirae:luminescent_bubble",
+   "aquamirae:luminescent_lamp",
+   "aquamirae:maze_rose",
+   "aquamirae:poseidon_breakfast",
+   "aquamirae:remnant_saber",
+   "aquamirae:rune_smithing",
+   "aquamirae:salvager_boots",
+   "aquamirae:salvager_suit",
+   "aquamirae:salvager_waders",
+   "aquamirae:sea_stew",
+   "aquamirae:shatterblade",
+   "aquamirae:shatterspike",
+   "aquamirae:stick_from_oxyhelium",
+   "aquamirae:terrible_blade",
+   "aquamirae:terrible_boots_smithing",
+   "aquamirae:terrible_chakram",
+   "aquamirae:terrible_chestplate_smithing",
+   "aquamirae:terrible_cleaver",
+   "aquamirae:terrible_fang",
+   "aquamirae:terrible_helmet_smithing",
+   "aquamirae:terrible_leggings_smithing",
+   "aquamirae:terrible_upgrade_smithing_template"
+  ],
+  "structure": [
+   "aquamirae:pirate_outpost",
+   "aquamirae:pirate_shelter/main",
+   "aquamirae:pirate_shelter/tunnel_bottom",
+   "aquamirae:pirate_shelter/tunnel_top",
+   "aquamirae:pirate_ship",
+   "aquamirae:surface/arch",
+   "aquamirae:surface/spiral"
+  ],
+  "tags/block": [
+   "aquamirae:carver_replaceables",
+   "aquamirae:eel_diggable_on",
+   "aquamirae:maze_mother_breakables",
+   "aquamirae:oxyhelium_growable_on",
+   "aquamirae:scuttler_spawnable_on",
+   "aquamirae:shipbreaker_breakables",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:needs_iron_tool"
+  ],
+  "tags/damage_type": [
+   "aquamirae:is_shipbreaker",
+   "minecraft:bypasses_armor"
+  ],
+  "tags/entity_type": [
+   "aquamirae:affected_by_depths_fury",
+   "aquamirae:affected_by_depths_resilience",
+   "aquamirae:ice_maze_creatures",
+   "minecraft:can_breathe_under_water",
+   "minecraft:undead"
+  ],
+  "tags/item": [
+   "minecraft:cat_food",
+   "minecraft:chest_armor",
+   "minecraft:compasses",
+   "minecraft:fishes",
+   "minecraft:foot_armor",
+   "minecraft:head_armor",
+   "minecraft:lectern_books",
+   "minecraft:leg_armor",
+   "minecraft:music_discs",
+   "minecraft:swords"
+  ],
+  "tags/worldgen/biome": [
+   "aquamirae:has_blizzard",
+   "aquamirae:ice_maze",
+   "aquamirae:spawns_shipbreaker",
+   "aquamirae:without_water_freezing"
+  ],
+  "weapon_attributes": [
+   "aquamirae:dagger_of_greed",
+   "aquamirae:jawbreaker",
+   "aquamirae:maze_rose",
+   "aquamirae:remnant_saber",
+   "aquamirae:shatterblade",
+   "aquamirae:shatterspike",
+   "aquamirae:terrible_blade",
+   "aquamirae:terrible_chakram",
+   "aquamirae:terrible_cleaver",
+   "aquamirae:terrible_fang",
+   "aquamirae:tidepiercer"
+  ],
+  "worldgen/configured_carver": [
+   "aquamirae:canyon"
+  ],
+  "worldgen/configured_feature": [
+   "aquamirae:oxyhelium",
+   "aquamirae:surface_camp",
+   "aquamirae:surface_cracked_ice",
+   "aquamirae:surface_ice_walls",
+   "aquamirae:surface_wisteria_niveis"
+  ],
+  "worldgen/placed_feature": [
+   "aquamirae:oxyhelium",
+   "aquamirae:surface_camp",
+   "aquamirae:surface_cracked_ice",
+   "aquamirae:surface_ice_walls",
+   "aquamirae:surface_wisteria_niveis"
+  ],
+  "worldgen/processor_list": [
+   "aquamirae:pirate_outpost",
+   "aquamirae:pirate_shelter",
+   "aquamirae:pirate_ship"
+  ],
+  "worldgen/structure": [
+   "aquamirae:pirate_outpost",
+   "aquamirae:pirate_shelter",
+   "aquamirae:pirate_ship",
+   "aquamirae:shipwreck",
+   "aquamirae:surface/arch",
+   "aquamirae:surface/spiral"
+  ],
+  "worldgen/structure_set": [
+   "aquamirae:pirate_outpost",
+   "aquamirae:pirate_shelter",
+   "aquamirae:pirate_ship",
+   "aquamirae:shipwreck",
+   "aquamirae:surface"
+  ],
+  "worldgen/template_pool": [
+   "aquamirae:pirate_outpost",
+   "aquamirae:pirate_ship",
+   "aquamirae:shelter/main",
+   "aquamirae:shelter/tunnel_bottom",
+   "aquamirae:shelter/tunnel_top",
+   "aquamirae:surface/arch",
+   "aquamirae:surface/spiral"
+  ]
+ },
+ "data_counts": {
+  "advancement": 29
+ },
+ "tags": {
+  "tags/block": {
+   "aquamirae:carver_replaceables": [
+    "#minecraft:overworld_carver_replaceables",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice"
+   ],
+   "aquamirae:eel_diggable_on": [
+    "minecraft:coarse_dirt",
+    "minecraft:mycelium",
+    "minecraft:rooted_dirt",
+    "minecraft:snow_block",
+    "minecraft:packed_ice",
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:podzol",
+    "minecraft:dirt_path",
+    "minecraft:blue_ice"
+   ],
+   "aquamirae:maze_mother_breakables": [
+    "minecraft:snow_block",
+    "minecraft:packed_ice",
+    "minecraft:glass",
+    "minecraft:ice",
+    "minecraft:frosted_ice",
+    "minecraft:blue_ice"
+   ],
+   "aquamirae:oxyhelium_growable_on": [
+    "minecraft:packed_ice",
+    "minecraft:blue_ice"
+   ],
+   "aquamirae:scuttler_spawnable_on": [
+    "minecraft:ice",
+    "minecraft:water"
+   ],
+   "aquamirae:shipbreaker_breakables": [
+    "minecraft:snow",
+    "minecraft:snow_block",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice",
+    "minecraft:gravel"
+   ],
+   "minecraft:mineable/axe": [
+    "aquamirae:painting_anglerfish",
+    "aquamirae:painting_oxyhelium",
+    "aquamirae:painting_tortured_soul",
+    "aquamirae:painting_aurora",
+    "aquamirae:oxyhelium",
+    "aquamirae:wisteria_niveis",
+    "aquamirae:luminescent_lamp"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "aquamirae:golden_moth_jar"
+   ],
+   "minecraft:needs_iron_tool": [
+    "aquamirae:oxyhelium"
+   ]
+  },
+  "tags/damage_type": {
+   "aquamirae:is_shipbreaker": [
+    "aquamirae:shipbreaker"
+   ],
+   "minecraft:bypasses_armor": [
+    "aquamirae:shipbreaker",
+    "aquamirae:crystallization"
+   ]
+  },
+  "tags/entity_type": {
+   "aquamirae:affected_by_depths_fury": [
+    "#aquamirae:ice_maze_creatures"
+   ],
+   "aquamirae:affected_by_depths_resilience": [
+    "#aquamirae:ice_maze_creatures"
+   ],
+   "aquamirae:ice_maze_creatures": [
+    "aquamirae:scuttler",
+    "aquamirae:shellback",
+    "aquamirae:spinefish",
+    "aquamirae:abyssal_scyphoid",
+    "aquamirae:maw",
+    "aquamirae:anglerfish",
+    "aquamirae:captain_cornelia",
+    "aquamirae:eel"
+   ],
+   "minecraft:can_breathe_under_water": [
+    "aquamirae:spinefish",
+    "aquamirae:anglerfish",
+    "aquamirae:maze_mother",
+    "aquamirae:abyssal_scyphoid",
+    "aquamirae:eel"
+   ],
+   "minecraft:undead": [
+    "aquamirae:tortured_soul",
+    "aquamirae:captain_cornelia"
+   ]
+  },
+  "tags/item": {
+   "minecraft:cat_food": [
+    "aquamirae:spinefish"
+   ],
+   "minecraft:chest_armor": [
+    "aquamirae:terrible_chestplate",
+    "aquamirae:salvager_suit",
+    "aquamirae:abyssal_brigandine"
+   ],
+   "minecraft:compasses": [
+    "aquamirae:echo_compass"
+   ],
+   "minecraft:fishes": [
+    "aquamirae:spinefish",
+    "aquamirae:cooked_spinefish"
+   ],
+   "minecraft:foot_armor": [
+    "aquamirae:terrible_boots",
+    "aquamirae:salvager_boots",
+    "aquamirae:abyssal_boots"
+   ],
+   "minecraft:head_armor": [
+    "aquamirae:terrible_helmet",
+    "aquamirae:salvager_helmet",
+    "aquamirae:abyssal_heaume",
+    "aquamirae:abyssal_tiara"
+   ],
+   "minecraft:lectern_books": [
+    "aquamirae:logbook"
+   ],
+   "minecraft:leg_armor": [
+    "aquamirae:terrible_leggings",
+    "aquamirae:salvager_waders",
+    "aquamirae:abyssal_leggings"
+   ],
+   "minecraft:music_discs": [
+    "aquamirae:cracked_record",
+    "aquamirae:music_disc_horizon",
+    "aquamirae:music_disc_forsaken_drownage"
+   ],
+   "minecraft:swords": [
+    "aquamirae:remnant_saber",
+    "aquamirae:terrible_blade",
+    "aquamirae:terrible_fang",
+    "aquamirae:terrible_cleaver",
+    "aquamirae:shatterblade",
+    "aquamirae:shatterspike",
+    "aquamirae:tidepiercer",
+    "aquamirae:jawbreaker",
+    "aquamirae:dagger_of_greed",
+    "aquamirae:dreadwake"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "aquamirae:has_blizzard": [],
+   "aquamirae:ice_maze": [],
+   "aquamirae:spawns_shipbreaker": [
+    "#aquamirae:ice_maze"
+   ],
+   "aquamirae:without_water_freezing": [
+    "#aquamirae:ice_maze"
+   ]
+  }
+ },
+ "recipe_types": {
+  "aquamirae:rune_smithing": 1,
+  "minecraft:campfire_cooking": 1,
+  "minecraft:crafting_shaped": 21,
+  "minecraft:crafting_shapeless": 5,
+  "minecraft:smelting": 1,
+  "minecraft:smithing_transform": 8,
+  "minecraft:smoking": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

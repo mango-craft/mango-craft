@@ -1,0 +1,76 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Fragmentum",
+ "file": "fragmentum-5.4.0+1.21.1-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "426b3a7f2085266ae231d7ef81092baabb0409bbf222b9220472dd3ba482840a0850047aabc4b59d20fd65170ec9920559d29df6527d8119ecf02c69cfa78e53",
+ "mods": [
+  {
+   "modid": "fragmentum",
+   "name": "Fragmentum",
+   "version": "5.4.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "1.21.1",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[1,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "yet_another_config_lib_v3",
+   "name": "YetAnotherConfigLib",
+   "version": "3.6.6+1.21.1-neoforge",
+   "jar": "yet-another-config-lib-3.6.6+1.21.1-neoforge.jar",
+   "deps": []
+  },
+  {
+   "modid": "yet_another_config_lib_v3",
+   "name": "YetAnotherConfigLib",
+   "version": "3.6.6+1.21.1-neoforge",
+   "jar": "yet-another-config-lib-3.6.6+1.21.1-neoforge.jar",
+   "deps": []
+  }
+ ],
+ "nested": [
+  "common-image-3.12.0.jar",
+  "common-io-3.12.0.jar",
+  "common-lang-3.12.0.jar",
+  "gson-0.2.1.jar",
+  "imageio-core-3.12.0.jar",
+  "imageio-metadata-3.12.0.jar",
+  "imageio-webp-3.12.0.jar",
+  "json-0.2.1.jar",
+  "kotlin-reflect-2.0.0.jar",
+  "kotlin-stdlib-2.0.0.jar",
+  "kotlin-stdlib-jdk7-2.0.0.jar",
+  "kotlin-stdlib-jdk8-2.0.0.jar",
+  "kotlinforforge-neoforge-5.3.0-all.jar",
+  "kotlinx-coroutines-core-jvm-1.8.1.jar",
+  "kotlinx-coroutines-jdk8-1.8.1.jar",
+  "kotlinx-serialization-core-jvm-1.7.0.jar",
+  "kotlinx-serialization-json-jvm-1.7.0.jar",
+  "yet-another-config-lib-3.6.6+1.21.1-neoforge.jar"
+ ],
+ "namespaces": [
+  "fragmentum",
+  "yet_another_config_lib_v3"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

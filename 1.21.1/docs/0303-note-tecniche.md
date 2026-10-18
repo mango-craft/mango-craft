@@ -9,6 +9,7 @@ Fatti verificati (nei sorgenti delle mod o in gioco) e cose da non rompere di qu
 - **Regions Unexplored 0.6** usa Lithostitched (non TerraBlender), ha 4 biomi nel Nether e ha rinominato alcuni blocchi: Botany Pots usa ancora 8 nomi vecchi.
 - **Frantumatore di Occultism**: non modificarlo (scelta dell'utente: `0302-config.md`).
 - **Starcatcher**: i pesci crudi sono `c:foods/raw_fish`; il pesce cotto è generico (`starcatcher:cooked_starcaught_fish`) e lo mettiamo noi nelle etichette del pesce cotto (datapack, dalla 0.3.0). Etichette, filetti e ricette: `0301-mod.md`, Animali e pesca.
+- **Librerie già nel pack**: quando una mod nuova chiede una versione più recente di una libreria che c'è già, packwiz non la aggiorna. Ora il controllo dei nomi lo segnala come errore ("Versione non adatta"); la libreria si aggiorna con il workflow Modrinth, indicando `slug@id-versione` (bug B28).
 - **Botany Pots 1.21.1**: le ricette in formato 1.20 vengono ignorate; le piante raccolte col click destro richiedono raccolti espliciti.
 
 ## Esperienza liquida

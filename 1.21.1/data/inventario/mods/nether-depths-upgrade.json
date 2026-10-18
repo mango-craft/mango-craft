@@ -1,0 +1,524 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Nether Depths Upgrade",
+ "file": "netherdepthsupgrade-3.3-1.21.1-NeoForge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "1291fd5a9c57fc18455d5677b46706864ce0bf72d68c7d96953c71016335b56faff00acb21cc749b671615c262dfb80c9cab28b9a8377d53cc1cdbca9322948c",
+ "mods": [
+  {
+   "modid": "netherdepthsupgrade",
+   "name": "Nether Depths Upgrade",
+   "version": "3.3",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.2)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "minecraft",
+  "netherdepthsupgrade",
+  "origins"
+ ],
+ "blocks": {
+  "netherdepthsupgrade:crimson_kelp": "Crimson Kelp",
+  "netherdepthsupgrade:crimson_kelp_block": "Crimson Kelp Block",
+  "netherdepthsupgrade:crimson_kelp_carpet_block": "Crimson Kelp Carpet",
+  "netherdepthsupgrade:crimson_kelp_plant": "Crimson Kelp Plant",
+  "netherdepthsupgrade:crimson_seagrass": "Crimson Seagrass",
+  "netherdepthsupgrade:lava_glass": "Lava Glass",
+  "netherdepthsupgrade:lava_sponge": "Lava Sponge",
+  "netherdepthsupgrade:nether_rice_roll_medley_block": "",
+  "netherdepthsupgrade:tall_crimson_seagrass": "Tall Crimson Seagrass",
+  "netherdepthsupgrade:tall_warped_seagrass": "Tall Warped Seagrass",
+  "netherdepthsupgrade:warped_kelp": "Warped Kelp",
+  "netherdepthsupgrade:warped_kelp_block": "Warped Kelp Block",
+  "netherdepthsupgrade:warped_kelp_carpet_block": "Warped Kelp Carpet",
+  "netherdepthsupgrade:warped_kelp_plant": "Warped Kelp Plant",
+  "netherdepthsupgrade:warped_seagrass": "Warped Seagrass",
+  "netherdepthsupgrade:wet_lava_sponge": "Wet Lava Sponge"
+ },
+ "effects": {
+  "netherdepthsupgrade:lava_vision": "Lava Vision"
+ },
+ "entities": {
+  "netherdepthsupgrade:blazefish": "Blazefish",
+  "netherdepthsupgrade:bonefish": "Bonefish",
+  "netherdepthsupgrade:eyeball_fish": "Eyeball Fish",
+  "netherdepthsupgrade:fortressgrouper": "Fortress Grouper",
+  "netherdepthsupgrade:glowdine": "Glowdine",
+  "netherdepthsupgrade:lava_fishing_bobber": "Lava Bobber",
+  "netherdepthsupgrade:lava_pufferfish": "Lava Pufferfish",
+  "netherdepthsupgrade:magmacubefish": "Magma Cube Fish",
+  "netherdepthsupgrade:obsidianfish": "Obsidianfish",
+  "netherdepthsupgrade:searing_cod": "Searing Cod",
+  "netherdepthsupgrade:soulsucker": "Soul Sucker",
+  "netherdepthsupgrade:wither_bonefish": "Wither Bonefish"
+ },
+ "items": {
+  "netherdepthsupgrade:blazefish": "Blazefish",
+  "netherdepthsupgrade:blazefish_bucket": "Bucket of Blazefish",
+  "netherdepthsupgrade:blazefish_spawn_egg": "Blazefish Spawn Egg",
+  "netherdepthsupgrade:bonefish": "Bonefish",
+  "netherdepthsupgrade:bonefish_bucket": "Bucket of Bonefish",
+  "netherdepthsupgrade:bonefish_spawn_egg": "Bonefish Spawn Egg",
+  "netherdepthsupgrade:crimson_kelp": "",
+  "netherdepthsupgrade:crimson_kelp_block": "",
+  "netherdepthsupgrade:crimson_kelp_carpet_block": "",
+  "netherdepthsupgrade:crimson_seagrass": "",
+  "netherdepthsupgrade:eyeball": "Eyeball Fish Eye",
+  "netherdepthsupgrade:eyeball_fish": "Eyeball Fish",
+  "netherdepthsupgrade:eyeball_fish_bucket": "Bucket of Eyeball Fish",
+  "netherdepthsupgrade:eyeball_fish_spawn_egg": "Eyeball Fish Spawn Egg",
+  "netherdepthsupgrade:fortress_grouper": "Fortress Grouper",
+  "netherdepthsupgrade:fortress_grouper_bucket": "Bucket of Fortress Grouper",
+  "netherdepthsupgrade:fortress_grouper_plate": "Fortress Grouper Plate",
+  "netherdepthsupgrade:fortress_grouper_spawn_egg": "Fortress Grouper Spawn Egg",
+  "netherdepthsupgrade:glowdine": "Glowdine",
+  "netherdepthsupgrade:glowdine_bucket": "Bucket of Glowdine",
+  "netherdepthsupgrade:glowdine_spawn_egg": "Glowdine Spawn Egg",
+  "netherdepthsupgrade:lava_fishing_rod": "Lava Fishing Rod",
+  "netherdepthsupgrade:lava_fishing_rod_cast": "",
+  "netherdepthsupgrade:lava_glass": "",
+  "netherdepthsupgrade:lava_pufferfish": "Lava Pufferfish",
+  "netherdepthsupgrade:lava_pufferfish_bucket": "Bucket of Lava Pufferfish",
+  "netherdepthsupgrade:lava_pufferfish_spawn_egg": "Lava Pufferfish Spawn Egg",
+  "netherdepthsupgrade:lava_sponge": "",
+  "netherdepthsupgrade:magmacubefish": "Magma Cube Fish",
+  "netherdepthsupgrade:magmacubefish_bucket": "Bucket of Magma Cube Fish",
+  "netherdepthsupgrade:magmacubefish_spawn_egg": "Magma Cube Fish Spawn Egg",
+  "netherdepthsupgrade:obsidianfish": "Obsidianfish",
+  "netherdepthsupgrade:obsidianfish_bucket": "Bucket of Obsidianfish",
+  "netherdepthsupgrade:obsidianfish_spawn_egg": "Obsidianfish Spawn Egg",
+  "netherdepthsupgrade:searing_cod": "Searing Cod",
+  "netherdepthsupgrade:searing_cod_bucket": "Bucket of Searing Cod",
+  "netherdepthsupgrade:searing_cod_spawn_egg": "Searing Cod Spawn Egg",
+  "netherdepthsupgrade:soul_sucker_boots": "Soul Sucker Boots",
+  "netherdepthsupgrade:soul_sucker_leather": "Soul Sucker Leather",
+  "netherdepthsupgrade:soulsucker": "Soul Sucker",
+  "netherdepthsupgrade:soulsucker_bucket": "Bucket of Soul Sucker",
+  "netherdepthsupgrade:soulsucker_spawn_egg": "Soul Sucker Spawn Egg",
+  "netherdepthsupgrade:warped_kelp": "",
+  "netherdepthsupgrade:warped_kelp_block": "",
+  "netherdepthsupgrade:warped_kelp_carpet_block": "",
+  "netherdepthsupgrade:warped_seagrass": "",
+  "netherdepthsupgrade:wet_lava_sponge": "",
+  "netherdepthsupgrade:wither_bonefish": "Wither Bonefish",
+  "netherdepthsupgrade:wither_bonefish_bucket": "Bucket of Wither Bonefish",
+  "netherdepthsupgrade:wither_bonefish_spawn_egg": "Wither Bonefish Spawn Egg"
+ },
+ "data": {
+  "advancements": [
+   "minecraft:recipes/netherdepthsupgrade/crimson_kelp",
+   "minecraft:recipes/netherdepthsupgrade/crimson_kelp_block",
+   "minecraft:recipes/netherdepthsupgrade/warped_kelp",
+   "minecraft:recipes/netherdepthsupgrade/warped_kelp_block"
+  ],
+  "enchantment": [
+   "netherdepthsupgrade:hell_strider"
+  ],
+  "loot_table": [
+   "netherdepthsupgrade:blocks/crimson_kelp",
+   "netherdepthsupgrade:blocks/crimson_kelp_block",
+   "netherdepthsupgrade:blocks/crimson_kelp_carpet_block",
+   "netherdepthsupgrade:blocks/crimson_kelp_plant",
+   "netherdepthsupgrade:blocks/crimson_seagrass",
+   "netherdepthsupgrade:blocks/lava_glass",
+   "netherdepthsupgrade:blocks/lava_sponge",
+   "netherdepthsupgrade:blocks/tall_crimson_seagrass",
+   "netherdepthsupgrade:blocks/tall_warped_seagrass",
+   "netherdepthsupgrade:blocks/warped_kelp",
+   "netherdepthsupgrade:blocks/warped_kelp_block",
+   "netherdepthsupgrade:blocks/warped_kelp_carpet_block",
+   "netherdepthsupgrade:blocks/warped_kelp_plant",
+   "netherdepthsupgrade:blocks/warped_seagrass",
+   "netherdepthsupgrade:blocks/wet_lava_sponge",
+   "netherdepthsupgrade:entities/blazefish",
+   "netherdepthsupgrade:entities/bonefish",
+   "netherdepthsupgrade:entities/eyeball_fish",
+   "netherdepthsupgrade:entities/fortressgrouper",
+   "netherdepthsupgrade:entities/glowdine",
+   "netherdepthsupgrade:entities/lava_pufferfish",
+   "netherdepthsupgrade:entities/magmacubefish",
+   "netherdepthsupgrade:entities/obsidianfish",
+   "netherdepthsupgrade:entities/searing_cod",
+   "netherdepthsupgrade:entities/soulsucker",
+   "netherdepthsupgrade:entities/wither_bonefish",
+   "netherdepthsupgrade:gameplay/failed_fishing",
+   "netherdepthsupgrade:gameplay/failed_fishing/junk",
+   "netherdepthsupgrade:gameplay/lava_fishing",
+   "netherdepthsupgrade:gameplay/lava_fishing/fish",
+   "netherdepthsupgrade:gameplay/lava_fishing/junk",
+   "netherdepthsupgrade:gameplay/lava_fishing/treasure",
+   "netherdepthsupgrade:gameplay/nether_fishing",
+   "netherdepthsupgrade:gameplay/nether_fishing/fish",
+   "netherdepthsupgrade:gameplay/nether_fishing/junk",
+   "netherdepthsupgrade:gameplay/nether_fishing/treasure"
+  ],
+  "neoforge/biome_modifier": [
+   "netherdepthsupgrade:add_bonefish",
+   "netherdepthsupgrade:add_crimson_kelp",
+   "netherdepthsupgrade:add_crimson_kelp_common",
+   "netherdepthsupgrade:add_crimson_seagrass_mid",
+   "netherdepthsupgrade:add_crimson_seagrass_short",
+   "netherdepthsupgrade:add_crimson_seagrass_simple",
+   "netherdepthsupgrade:add_crimson_seagrass_slightly_less_short",
+   "netherdepthsupgrade:add_crimson_seagrass_tall",
+   "netherdepthsupgrade:add_crimson_seagrass_tall_common",
+   "netherdepthsupgrade:add_eyeball_fish",
+   "netherdepthsupgrade:add_fortress_grouper",
+   "netherdepthsupgrade:add_glowdine",
+   "netherdepthsupgrade:add_lava_pufferfish",
+   "netherdepthsupgrade:add_lava_sponge",
+   "netherdepthsupgrade:add_magmacubefish",
+   "netherdepthsupgrade:add_obsidianfish",
+   "netherdepthsupgrade:add_searing_cod",
+   "netherdepthsupgrade:add_soul_sucker",
+   "netherdepthsupgrade:add_vent",
+   "netherdepthsupgrade:add_warped_kelp",
+   "netherdepthsupgrade:add_warped_kelp_common",
+   "netherdepthsupgrade:add_warped_seagrass_common_tall",
+   "netherdepthsupgrade:add_warped_seagrass_mid",
+   "netherdepthsupgrade:add_warped_seagrass_short",
+   "netherdepthsupgrade:add_warped_seagrass_simple",
+   "netherdepthsupgrade:add_warped_seagrass_slightly_less_short",
+   "netherdepthsupgrade:add_warped_seagrass_tall",
+   "netherdepthsupgrade:add_wither_bonefish"
+  ],
+  "origins": [
+   "netherdepthsupgrade:power/blazeborn_lava_vision"
+  ],
+  "recipe": [
+   "minecraft:crimson_kelp",
+   "minecraft:crimson_kelp_block",
+   "minecraft:warped_kelp",
+   "minecraft:warped_kelp_block",
+   "netherdepthsupgrade:blaze_powder",
+   "netherdepthsupgrade:bone_meal",
+   "netherdepthsupgrade:coal",
+   "netherdepthsupgrade:crimson_kelp_block",
+   "netherdepthsupgrade:ender_eye",
+   "netherdepthsupgrade:eyeball",
+   "netherdepthsupgrade:fortress_grouper_plate",
+   "netherdepthsupgrade:glowstone_dust",
+   "netherdepthsupgrade:lava_fishing_rod",
+   "netherdepthsupgrade:lava_glass",
+   "netherdepthsupgrade:nether_brick",
+   "netherdepthsupgrade:obsidian",
+   "netherdepthsupgrade:soul_sucker_boots",
+   "netherdepthsupgrade:soul_sucker_leather",
+   "netherdepthsupgrade:warped_kelp_carpet_block",
+   "netherdepthsupgrade:wither_rose"
+  ],
+  "recipes": [
+   "minecraft:crimson_kelp",
+   "minecraft:crimson_kelp_block",
+   "minecraft:warped_kelp",
+   "minecraft:warped_kelp_block"
+  ],
+  "structure": [
+   "netherdepthsupgrade:nether_fortress_piece",
+   "netherdepthsupgrade:nether_fortress_side",
+   "netherdepthsupgrade:nether_fortress_side2",
+   "netherdepthsupgrade:nether_fortress_side3",
+   "netherdepthsupgrade:nether_fortress_side4"
+  ],
+  "tags/block": [
+   "minecraft:impermeable",
+   "minecraft:leaves",
+   "minecraft:mineable/hoe",
+   "netherdepthsupgrade:lava_plants"
+  ],
+  "tags/blocks": [
+   "minecraft:impermeable",
+   "minecraft:mineable/hoe"
+  ],
+  "tags/enchantment": [
+   "c:entity_speed_enhancements",
+   "minecraft:exclusive_set/boots",
+   "minecraft:non_treasure",
+   "minecraft:tooltip_order"
+  ],
+  "tags/entity_type": [
+   "minecraft:can_breathe_under_water",
+   "minecraft:not_scary_for_pufferfish"
+  ],
+  "tags/item": [
+   "minecraft:enchantable/durability",
+   "minecraft:enchantable/fishing",
+   "minecraft:fishes",
+   "minecraft:foot_armor",
+   "netherdepthsupgrade:nether_salad_foods"
+  ],
+  "tags/items": [
+   "minecraft:fishes",
+   "netherdepthsupgrade:nether_salad_foods"
+  ],
+  "tags/origins": [
+   "origins:power/blazeborn"
+  ],
+  "tags/worldgen/biome": [
+   "netherdepthsupgrade:is_eyeball_fish_biome",
+   "netherdepthsupgrade:is_fortress_grouper_biome",
+   "netherdepthsupgrade:is_glowdine_biome",
+   "netherdepthsupgrade:is_lava_pufferfish_biome",
+   "netherdepthsupgrade:is_magmacubefish_biome",
+   "netherdepthsupgrade:is_obsidianfish_biome",
+   "netherdepthsupgrade:is_soulsucker_biome",
+   "netherdepthsupgrade:is_wither_bonefish_biome"
+  ],
+  "worldgen/configured_feature": [
+   "netherdepthsupgrade:crimson_kelp_feature",
+   "netherdepthsupgrade:crimson_seagrass_mid_feature",
+   "netherdepthsupgrade:crimson_seagrass_short_feature",
+   "netherdepthsupgrade:crimson_seagrass_simple_feature",
+   "netherdepthsupgrade:crimson_seagrass_slightly_less_short_feature",
+   "netherdepthsupgrade:crimson_seagrass_tall_feature",
+   "netherdepthsupgrade:lava_sponge_feature",
+   "netherdepthsupgrade:vent_feature",
+   "netherdepthsupgrade:warped_kelp_feature",
+   "netherdepthsupgrade:warped_seagrass_mid_feature",
+   "netherdepthsupgrade:warped_seagrass_short_feature",
+   "netherdepthsupgrade:warped_seagrass_simple_feature",
+   "netherdepthsupgrade:warped_seagrass_slightly_less_short_feature",
+   "netherdepthsupgrade:warped_seagrass_tall_feature"
+  ],
+  "worldgen/placed_feature": [
+   "netherdepthsupgrade:crimson_kelp_feature_common_placed",
+   "netherdepthsupgrade:crimson_kelp_feature_placed",
+   "netherdepthsupgrade:crimson_seagrass_mid_feature_placed",
+   "netherdepthsupgrade:crimson_seagrass_short_feature_placed",
+   "netherdepthsupgrade:crimson_seagrass_simple_feature_placed",
+   "netherdepthsupgrade:crimson_seagrass_slightly_less_short_feature_placed",
+   "netherdepthsupgrade:crimson_seagrass_tall_feature_common_placed",
+   "netherdepthsupgrade:crimson_seagrass_tall_feature_placed",
+   "netherdepthsupgrade:lava_sponge_feature_placed",
+   "netherdepthsupgrade:vent_feature_placed",
+   "netherdepthsupgrade:warped_kelp_feature_common_placed",
+   "netherdepthsupgrade:warped_kelp_feature_placed",
+   "netherdepthsupgrade:warped_seagrass_mid_feature_placed",
+   "netherdepthsupgrade:warped_seagrass_short_feature_placed",
+   "netherdepthsupgrade:warped_seagrass_simple_feature_placed",
+   "netherdepthsupgrade:warped_seagrass_slightly_less_short_feature_placed",
+   "netherdepthsupgrade:warped_seagrass_tall_feature_common_placed",
+   "netherdepthsupgrade:warped_seagrass_tall_feature_placed"
+  ],
+  "worldgen/processor_list": [
+   "netherdepthsupgrade:lava_overwrite",
+   "netherdepthsupgrade:lava_overwrite_air"
+  ],
+  "worldgen/structure": [
+   "netherdepthsupgrade:nether_fortress_piece"
+  ],
+  "worldgen/structure_set": [
+   "netherdepthsupgrade:nether_fotress_piece"
+  ],
+  "worldgen/template_pool": [
+   "netherdepthsupgrade:nether_fortress_side/side_pool",
+   "netherdepthsupgrade:nether_fortress_side/start_pool"
+  ]
+ },
+ "data_counts": {
+  "advancement": 29
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:impermeable": [
+    "netherdepthsupgrade:lava_glass"
+   ],
+   "minecraft:leaves": [
+    "#netherdepthsupgrade:lava_plants"
+   ],
+   "minecraft:mineable/hoe": [
+    "netherdepthsupgrade:warped_kelp_block",
+    "netherdepthsupgrade:crimson_kelp_block",
+    "netherdepthsupgrade:wet_lava_sponge",
+    "netherdepthsupgrade:lava_sponge"
+   ],
+   "netherdepthsupgrade:lava_plants": [
+    "netherdepthsupgrade:warped_seagrass",
+    "netherdepthsupgrade:tall_warped_seagrass",
+    "netherdepthsupgrade:warped_kelp",
+    "netherdepthsupgrade:warped_kelp_plant",
+    "netherdepthsupgrade:crimson_seagrass",
+    "netherdepthsupgrade:tall_crimson_seagrass",
+    "netherdepthsupgrade:crimson_kelp",
+    "netherdepthsupgrade:crimson_kelp_plant"
+   ]
+  },
+  "tags/blocks": {
+   "minecraft:impermeable": [
+    "netherdepthsupgrade:lava_glass"
+   ],
+   "minecraft:mineable/hoe": [
+    "netherdepthsupgrade:warped_kelp_block",
+    "netherdepthsupgrade:crimson_kelp_block",
+    "netherdepthsupgrade:wet_lava_sponge",
+    "netherdepthsupgrade:lava_sponge"
+   ]
+  },
+  "tags/enchantment": {
+   "c:entity_speed_enhancements": [
+    "netherdepthsupgrade:hell_strider"
+   ],
+   "minecraft:exclusive_set/boots": [
+    "netherdepthsupgrade:hell_strider"
+   ],
+   "minecraft:non_treasure": [
+    "netherdepthsupgrade:hell_strider"
+   ],
+   "minecraft:tooltip_order": [
+    "netherdepthsupgrade:hell_strider"
+   ]
+  },
+  "tags/entity_type": {
+   "minecraft:can_breathe_under_water": [
+    "netherdepthsupgrade:blazefish",
+    "netherdepthsupgrade:bonefish",
+    "netherdepthsupgrade:eyeball_fish",
+    "netherdepthsupgrade:glowdine",
+    "netherdepthsupgrade:fortressgrouper",
+    "netherdepthsupgrade:lava_pufferfish",
+    "netherdepthsupgrade:obsidianfish",
+    "netherdepthsupgrade:magmacubefish",
+    "netherdepthsupgrade:soulsucker",
+    "netherdepthsupgrade:wither_bonefish"
+   ],
+   "minecraft:not_scary_for_pufferfish": [
+    "netherdepthsupgrade:blazefish",
+    "netherdepthsupgrade:bonefish",
+    "netherdepthsupgrade:eyeball_fish",
+    "netherdepthsupgrade:glowdine",
+    "netherdepthsupgrade:fortressgrouper",
+    "netherdepthsupgrade:lava_pufferfish",
+    "netherdepthsupgrade:obsidianfish",
+    "netherdepthsupgrade:magmacubefish",
+    "netherdepthsupgrade:soulsucker",
+    "netherdepthsupgrade:wither_bonefish"
+   ]
+  },
+  "tags/item": {
+   "minecraft:enchantable/durability": [
+    "netherdepthsupgrade:lava_fishing_rod"
+   ],
+   "minecraft:enchantable/fishing": [
+    "netherdepthsupgrade:lava_fishing_rod"
+   ],
+   "minecraft:fishes": [
+    "netherdepthsupgrade:lava_pufferfish",
+    "netherdepthsupgrade:glowdine",
+    "netherdepthsupgrade:soulsucker",
+    "netherdepthsupgrade:obsidianfish",
+    "netherdepthsupgrade:bonefish",
+    "netherdepthsupgrade:wither_bonefish",
+    "netherdepthsupgrade:fortress_grouper",
+    "netherdepthsupgrade:eyeball_fish",
+    "netherdepthsupgrade:blazefish",
+    "netherdepthsupgrade:searing_cod",
+    "netherdepthsupgrade:magmacubefish"
+   ],
+   "minecraft:foot_armor": [
+    "netherdepthsupgrade:soul_sucker_boots"
+   ],
+   "netherdepthsupgrade:nether_salad_foods": [
+    "netherdepthsupgrade:warped_kelp",
+    "netherdepthsupgrade:warped_seagrass",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus"
+   ]
+  },
+  "tags/items": {
+   "minecraft:fishes": [
+    "netherdepthsupgrade:lava_pufferfish",
+    "netherdepthsupgrade:glowdine",
+    "netherdepthsupgrade:soulsucker",
+    "netherdepthsupgrade:obsidianfish",
+    "netherdepthsupgrade:bonefish",
+    "netherdepthsupgrade:wither_bonefish",
+    "netherdepthsupgrade:fortress_grouper",
+    "netherdepthsupgrade:eyeball_fish",
+    "netherdepthsupgrade:blazefish",
+    "netherdepthsupgrade:searing_cod",
+    "netherdepthsupgrade:magmacubefish"
+   ],
+   "netherdepthsupgrade:nether_salad_foods": [
+    "netherdepthsupgrade:warped_kelp",
+    "netherdepthsupgrade:warped_seagrass",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus"
+   ]
+  },
+  "tags/origins": {
+   "origins:power/blazeborn": [
+    "netherdepthsupgrade:blazeborn_lava_vision"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "netherdepthsupgrade:is_eyeball_fish_biome": [
+    "minecraft:crimson_forest",
+    "byg:wailing_garth?"
+   ],
+   "netherdepthsupgrade:is_fortress_grouper_biome": [
+    "minecraft:basalt_deltas",
+    "#minecraft:has_structure/nether_fortress",
+    "byg:brimstone_caverns?"
+   ],
+   "netherdepthsupgrade:is_glowdine_biome": [
+    "minecraft:basalt_deltas",
+    "minecraft:soul_sand_valley",
+    "minecraft:nether_wastes",
+    "infernalexp:glowstone_canyon?",
+    "byg:glowstone_gardens?"
+   ],
+   "netherdepthsupgrade:is_lava_pufferfish_biome": [
+    "minecraft:crimson_forest",
+    "minecraft:warped_forest",
+    "byg:crimson_gardens?",
+    "byg:sythian_torrids?"
+   ],
+   "netherdepthsupgrade:is_magmacubefish_biome": [
+    "minecraft:basalt_deltas",
+    "byg:embur_bog?",
+    "byg:magma_wastes?"
+   ],
+   "netherdepthsupgrade:is_obsidianfish_biome": [
+    "minecraft:basalt_deltas",
+    "byg:brimstone_caverns?"
+   ],
+   "netherdepthsupgrade:is_soulsucker_biome": [
+    "minecraft:soul_sand_valley",
+    "byg:warped_desert?",
+    "byg:wailing_garth?",
+    "gardens_of_the_dead:soulblight_forest?"
+   ],
+   "netherdepthsupgrade:is_wither_bonefish_biome": [
+    "minecraft:crimson_forest",
+    "minecraft:soul_sand_valley",
+    "byg:subzero_hypogeal?",
+    "gardens_of_the_dead:whistling_woods?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 8,
+  "minecraft:crafting_shapeless": 12
+ },
+ "botanypots": [],
+ "problems": []
+}

@@ -30,16 +30,23 @@ import tomllib  # noqa: E402
 
 
 def _ver(v: str) -> tuple:
-    """'21.1.259' -> (21, 1, 259); le parti non numeriche si ignorano."""
+    """'21.1.259' -> (21, 1, 259). Toglie un prefisso con la versione di Minecraft ('1.21.1-2.6.1' -> 2.6.1)
+    e i suffissi ('-beta', '+build'); le parti non numeriche si ignorano."""
+    v = re.sub(r"^(?:mc)?1\.\d+(?:\.\d+)?-(?=\d)", "", v.strip())
     return tuple(int(x) for x in re.findall(r"\d+", v.split("+")[0].split("-")[0]))
 
 
 def in_range(version: str, rng: str | None) -> bool:
-    """Intervallo in stile Maven ([a,b), (a,], …, o una versione singola = minima)."""
+    """Intervallo in stile Maven: [a,b), (a,], [a] = esattamente a; senza parentesi = qualunque versione."""
     if not rng or rng.strip() in ("*", ""):
         return True
+    parts = re.findall(r"[\[(][^\])]*[\])]", rng)
+    if not parts:
+        # Senza parentesi è una versione "consigliata" (regola di Maven, usata da NeoForge):
+        # va bene qualunque versione. Lo stesso per gli intervalli scritti male.
+        return True
     v = _ver(version)
-    for part in re.findall(r"[\[(][^\])]*[\])]", rng) or [f"[{rng},)"]:
+    for part in parts:
         lo, _, hi = part[1:-1].partition(",")
         if "," not in part:
             hi = lo  # [x] = esattamente x
@@ -223,6 +230,11 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
     # 1. Dipendenze obbligatorie e versione di NeoForge richiesta
     present = idx.modids | BUILTIN_MODS
     versions = tomllib.loads((pack / "pack.toml").read_text(encoding="utf-8")).get("versions", {})
+    provided: dict[str, list[str]] = defaultdict(list)   # mod id -> versioni presenti (anche annidate)
+    for _, m in idx.mods:
+        v = str(m.get("version") or "")
+        if re.search(r"\d", v) and "${" not in v:
+            provided[m["modid"]].append(v)
     for label, m in idx.mods:
         who = m["modid"] + (f" (dentro {m['jar']})" if m.get("jar") else "")
         for dep in m.get("deps", []):
@@ -235,6 +247,11 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
             elif dep.get("modid") == "neoforge" and versions.get("neoforge"):
                 if not in_range(versions[dep["modid"]], dep.get("range")):
                     errors.append(f"Versione non adatta: `{who}` [{label}] richiede {dep['modid']} {dep['range']}, il pack usa {versions[dep['modid']]}")
+            # Le altre mod: si confronta con la versione più alta presente (NeoForge sceglie quella)
+            elif dep.get("modid") not in BUILTIN_MODS and provided.get(dep["modid"]):
+                best = max(provided[dep["modid"]], key=_ver)
+                if not in_range(best, dep.get("range")):
+                    errors.append(f"Versione non adatta: `{who}` [{label}] richiede {dep['modid']} {dep['range']}, nel pack c'è {best}")
 
     # 2. Datapack
     files = datapack_files(pack)
@@ -276,6 +293,7 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
                 msg = f"`{rel}`: `{i}` ({k}) non esiste"
                 (warnings if soft else errors).append(msg)
     warnings += [f"Mod non inventariata, nomi non verificabili: {u}" for u in idx.unverified]
+    errors, warnings = list(dict.fromkeys(errors)), list(dict.fromkeys(warnings))  # niente doppioni
 
     lines = ["# Controllo dei nomi", "",
              "File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non modificarlo a mano.", "",

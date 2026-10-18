@@ -4,6 +4,7 @@ Le prove e i controlli da fare nell'istanza di prova. Documento vivo: una prova 
 
 ## Prove prioritarie 🧪
 
+- [x] **Nether della 0.5.0** ✅ 18/10: riga di Elysium nel log, alghe e pesci di lava presenti, nessun errore entrando nel Nether. Restano per il mondo di prova (sotto): biomi di Regions Unexplored nel Nether (`/locate biome regions_unexplored:infernal_holt`), fortezze di YUNG's accanto alle strutture di Moog's (`/locate structure betterfortresses:fortress`, `mns:mega_fortress`), la canna di Nether Depths accanto a quella di Starcatcher. Procedura completa in `0701-nether.md`, sezione 6
 - [ ] **Miapi + Accessories** (bug B07; l'Aether è nel pack dalla 0.1.0 per scelta dell'utente, quindi se il test fallisce va tolta lei; log del 17/10/2026: Accessories 1.1.0-beta.48 arriva **dentro l'Aether**, quindi il test serve ancora): mondo di prova con Truly Modular + Hexalia + Forgified Fabric API; prendere e infliggere danno. Issue Miapi #118 e Accessories #387 aperte al 12/10/2026. Se passa → resta tutto così. Se non passa → si tolgono Aether, Deep Aether e Aether's Delight (con loro esce Accessories) e si tiene Truly Modular, finché il bug non viene corretto
 - [ ] **Curios + Accessories**: Cataclysm usa Curios, Miapi e Hexalia usano Accessories; verificare che convivano
 - [ ] **BotanyPotsAdditions** e **Roaster's Delight**: provarle da sole prima di affidarci un mondo lungo (mod recenti, pochi download)
