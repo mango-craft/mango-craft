@@ -1,0 +1,13 @@
+name = "Botany Pots Additions"
+filename = "botanypotsadditions-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "de56ad244592f554aac11eb1cbe9fbbb681d5d3e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9179137
+project-id = 1596510

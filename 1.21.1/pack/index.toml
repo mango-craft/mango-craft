@@ -223,6 +223,11 @@ hash = "e735b472ad5c38359636d5abb84ed1baeb461f72aa19c324c349543823a16188"
 metafile = true
 
 [[files]]
+file = "mods/ars-elemental.pw.toml"
+hash = "8e9f867e9c0ff53e08e779ae54fd1bbead92f1d7323b75369e64ade719d5d7c1"
+metafile = true
+
+[[files]]
 file = "mods/ars-mekanica.pw.toml"
 hash = "abbae6d7c5c5d62e20407ae4686900967528fb58e28c75989deee851c81d8a2b"
 metafile = true
@@ -300,6 +305,11 @@ metafile = true
 [[files]]
 file = "mods/botany-trees.pw.toml"
 hash = "75ee5511e4bb37c0f13486e2a550bea43dcf630f38201b4c61a1ae284cbccf94"
+metafile = true
+
+[[files]]
+file = "mods/botanypotsadditions.pw.toml"
+hash = "c441fecd77ad043b66e2e2fcab3e078bcb3995912c62da836438b2fff53e99a0"
 metafile = true
 
 [[files]]
@@ -838,6 +848,11 @@ hash = "9c0d37bfbfdda77af1946da1d80aa48e7dfea9611c43d5c81c70676b1d854af6"
 metafile = true
 
 [[files]]
+file = "mods/roasters-delight.pw.toml"
+hash = "05a734a71c99b0e56d0cbe796a2b4257188aaea7dd8a6e2371ed5e91036293e3"
+metafile = true
+
+[[files]]
 file = "mods/scriptor-magicae.pw.toml"
 hash = "0f94b0bba36fac7cead9adeed766d34ceeafc16a6401d664fb3fb827084bd0e1"
 metafile = true
@@ -913,6 +928,11 @@ hash = "993b4e4970e1a5ef2fe7c6712212f57a84dcf8b31d4b6863540b6395c4f9ce09"
 metafile = true
 
 [[files]]
+file = "mods/spice-of-life-carrot-edition.pw.toml"
+hash = "e520ad446364dff7dd50896108a96140f3f5598b72003dade5b17308fa9ef2a9"
+metafile = true
+
+[[files]]
 file = "mods/starcatcher.pw.toml"
 hash = "120f95b3402384aa261382f2c4f624342a790f37c94238f06d546f819e2123fd"
 metafile = true
@@ -955,6 +975,11 @@ metafile = true
 [[files]]
 file = "mods/the-aethers-delight.pw.toml"
 hash = "055283aa7790b335df36917fd72eb9f35f4d5cbe3a1e66d53efba4fe79ec1266"
+metafile = true
+
+[[files]]
+file = "mods/the-twilight-forest.pw.toml"
+hash = "9088f93a00bc3242f0239a7115bdcbc4480e19c6120f5396fb3af27d77abda3e"
 metafile = true
 
 [[files]]
