@@ -929,7 +929,7 @@ metafile = true
 
 [[files]]
 file = "mods/moogs-structure-lib.pw.toml"
-hash = "33c7a103640b0dc7b34e8b90d760b9cdde47c280df9762535b3aca2606e85a3c"
+hash = "0856f0ead9a5035c74709a848b475e93de9f46bb65cca153bbed7371c3b9b074"
 metafile = true
 
 [[files]]
