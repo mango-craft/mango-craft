@@ -6,7 +6,27 @@ hash = "8eef0da096300652e97f70110ea78f45c7fa3e7556352ab29b088bb7a4164a2d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "69ea0b2e3a1f6fe74980a17f44febe8121f0a48cb30b6ca4aa23f2c72e2a21f0"
+hash = "994c284eda38c5ecf38a80f1df7b975c3d05a65871164e34260c1b2ab5db5e03"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/bountifulfares/readme.md"
+hash = "5cf8d733987a8a36f1a1f9b0c08ba9063da2d26a23b27bece0a8f240a14adb0d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/bountifulfares/tags/item/cooked_fishes.json"
+hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/c/readme.md"
+hash = "f5f2e377b92669a9e636017eecaf603e21595a47954b937c16121ca002a62f93"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/c/tags/item/foods/cooked_fish.json"
+hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/c/tags/item/foods/cooked_fishes.json"
+hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/blood_moon.json"

@@ -2,6 +2,15 @@
 
 Ogni voce indica la versione di **NeoForge** da impostare a mano in Prism e se serve un **mondo nuovo**.
 
+## 0.3.0 — 18/10/2026 · tappa 2 (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: sì per provarla (My Nether's Delight e Rustic Delight generano piante selvatiche, Chef's Delight case nei villaggi). Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Cucina, seconda ondata**: **My Nether's Delight**, **Chef's Delight**, **Create Confectionery**, **Rustic Delight**, **Ocean's Delight**, **Autochef's Delight**.
+- **Agricoltura**: **Farming for Blockheads** (mercato, fertilizzanti, nido, mangiatoia).
+- **Esperienza**: **Cognition** (ex Experience Obelisk): obelisco per depositare l'esperienza, liquido compatibile con tubi e serbatoi. Lo scambio con il liquido di Create arriva con la 0.6.0.
+- **Datapack**: il pesce cotto di Starcatcher vale come "pesce cotto" nelle ricette (etichette `c:foods/cooked_fish`, `c:foods/cooked_fishes`, `bountifulfares:cooked_fishes`).
+
 ## 0.2.3 — 18/10/2026 · tappa 1 (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
