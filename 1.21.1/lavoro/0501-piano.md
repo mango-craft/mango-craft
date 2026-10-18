@@ -9,7 +9,7 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | 0 | — | Strumenti: workflow **Aggiungi mod Modrinth** (versione, hash e dipendenze presi da Modrinth con packwiz) e **Inventario** (elenco di oggetti, blocchi e tabelle letto dai file delle mod, per controllare i nomi usati nel datapack) | ✅ fatta (18/10, su `main`) |
 | 1 | 0.2.3 | Le aggiunte del vecchio pacchetto 0.2.3: Regions Unexplored, Supplementaries, Handcrafted, Rechiseled, Construction Sticks, Chunky, Clumps, XP Tome, Just Enough Breeding/Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks (CurseForge) + Lithostitched, Fusion, Moonlight; cassaforte del Galeone nel datapack | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.2.3`) |
 | 2 | 0.3.0 | Cucina, agricoltura, esperienza: My Nether's Delight, Chef's Delight, Create Confectionery, Rustic Delight, Ocean's Delight, Autochef's Delight, Farming for Blockheads, Cognition; **pesce cotto di Starcatcher** nelle etichette del pesce cotto (approvato 18/10) | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.3.0`) |
-| 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | 🧪 su `dev`, da provare |
+| 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.4.0`) |
 | 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae, Creeper Overhaul, Paragliders | da fare |
 | 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `0620-progetto-datapack.md`), config di Every Compat, Jaden's, Moog's, Artifacts | da fare |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
@@ -23,8 +23,8 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | Utilità | Chunky, Clumps, XP Tome, Just Enough Breeding e Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks | ✅ 0.2.3 |
 | Cucina, seconda ondata | My Nether's, Chef's, Rustic, Ocean's e Autochef's Delight, Create Confectionery | ✅ 0.3.0 |
 | Agricoltura ed esperienza | Farming for Blockheads, Cognition | ✅ 0.3.0 |
-| Decorazione | Macaw's ×4, Diagonal ×3, Chimes, Exposure, Every Compat | 🧪 0.4.0 su `dev` |
-| Villaggi e tech | Guard Villagers, Goblin Traders (+ Framework, entrambe solo CurseForge), Copycats+ | 🧪 0.4.0 su `dev` |
+| Decorazione | Macaw's ×4, Diagonal ×3, Chimes, Exposure, Every Compat | ✅ 0.4.0 |
+| Villaggi e tech | Guard Villagers, Goblin Traders (+ Framework, entrambe solo CurseForge), Copycats+ | ✅ 0.4.0 |
 | Nether | Jaden's Nether Expansion, Moog's Nether Structures, Nether Depths Upgrade | ⏳ 0.5.0 |
 | Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae, Creeper Overhaul | ⏳ 0.5.0 |
 

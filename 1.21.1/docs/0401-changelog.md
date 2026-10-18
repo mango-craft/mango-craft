@@ -18,7 +18,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 - **Villaggi**: **Guard Villagers**, **Goblin Traders** (CurseForge, con la libreria **Framework**).
 - **Tech**: **Create: Copycats+**.
 - **Documenti** (non cambiano il gioco): riorganizzati con codici a quattro cifre, documentazione (`docs/`) separata dai documenti di lavoro (`lavoro/`); regole in `AGENTS.md`.
-- **Stato**: 🧪 in prova su `dev` (prima prova 18/10: mondo nuovo, avvio pulito).
+- **Stato**: ✅ provata il 18/10/2026 (mondo nuovo, avvio pulito) e rilasciata come pre-release `1.21.1-v0.4.0`.
 - **Problemi noti**: B22 (Every Compat rallenta l'avvio, si corregge nella 0.6.0), B23–B27 (minori).
 
 ## 0.3.0 — 18/10/2026 · tappa 2 (pre-release di prova)
