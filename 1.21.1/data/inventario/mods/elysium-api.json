@@ -1,0 +1,65 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Elysium API",
+ "file": "ElysiumAPI-1.21.1-2.0.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "22daa9fa8018baeeaaec1d5c3e91e13099300208ca2c6d57fbba63d9fddef583a097b9ebe0b590b5095f48a449c6230cdf193d22d4d7501c9725918d984448db",
+ "mods": [
+  {
+   "modid": "elysium_api",
+   "name": "Elysium-API",
+   "version": "2.0.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.230,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "elysium_api"
+ ],
+ "blocks": {
+  "elysium_api:glass_structure_void": "Glass Structure Void",
+  "elysium_api:mob_barrier": "Mob Barrier",
+  "elysium_api:solid_structure_void": "Solid Structure Void",
+  "elysium_api:structure_stamp_anchor": "Structure Stamp Anchor"
+ },
+ "items": {
+  "elysium_api:glass_structure_void": "",
+  "elysium_api:mob_barrier": "",
+  "elysium_api:panorama_camera": "Panorama Camera",
+  "elysium_api:solid_structure_void": "",
+  "elysium_api:structure_stamp_anchor": ""
+ },
+ "data": {
+  "tags/block": [
+   "elysium_api:multilayer_jigsaw_non_solid_valid"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "elysium_api:multilayer_jigsaw_non_solid_valid": [
+    "minecraft:soul_sand"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,276 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Paragliders",
+ "file": "Paraglider-neoforge-21.1.5.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "b2d986b5eb21b12ad59b0b4ac3f4ac00457562031064eada7870c023f22ba06b57712d67a0a11e4914ad4ebba51860ee37060b8b20baee1efa16738f97802434",
+ "mods": [
+  {
+   "modid": "paraglider",
+   "name": "Paraglider",
+   "version": "21.1.5",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "minecraft",
+  "neoforge",
+  "paraglider"
+ ],
+ "blocks": {
+  "paraglider:goddess_statue": "Goddess Statue",
+  "paraglider:goron_goddess_statue": "Goddess Statue",
+  "paraglider:horned_statue": "Horned Statue",
+  "paraglider:kakariko_goddess_statue": "Goddess Statue",
+  "paraglider:rito_goddess_statue": "Goddess Statue"
+ },
+ "effects": {
+  "paraglider:stamina_efficiency": "Stamina Efficiency"
+ },
+ "items": {
+  "paraglider:anti_vessel": "Anti-Vessel",
+  "paraglider:deku_leaf": "Deku Leaf",
+  "paraglider:deku_leaf_on": "",
+  "paraglider:enduring_elixir_1": "Enduring Elixir",
+  "paraglider:enduring_elixir_2": "Enduring Elixir",
+  "paraglider:enduring_elixir_3": "Enduring Elixir",
+  "paraglider:enduring_mixture": "Enduring Mixture",
+  "paraglider:energizing_elixir_1": "Energizing Elixir",
+  "paraglider:energizing_elixir_2": "Energizing Elixir",
+  "paraglider:energizing_elixir_3": "Energizing Elixir",
+  "paraglider:energizing_mixture": "Energizing Mixture",
+  "paraglider:essence": "Essence",
+  "paraglider:goddess_statue": "",
+  "paraglider:goron_goddess_statue": "",
+  "paraglider:heart_container": "Heart Container",
+  "paraglider:horned_statue": "",
+  "paraglider:kakariko_goddess_statue": "",
+  "paraglider:paraglider": "Paraglider",
+  "paraglider:paraglider_on": "",
+  "paraglider:rito_goddess_statue": "",
+  "paraglider:spirit_orb": "Spirit Orb",
+  "paraglider:stamina_vessel": "Stamina Vessel"
+ },
+ "data": {
+  "loot_modifiers": [
+   "neoforge:global_loot_modifiers",
+   "paraglider:elder_guardian",
+   "paraglider:spirit_orbs/ancient_city",
+   "paraglider:spirit_orbs/bastion_bridge",
+   "paraglider:spirit_orbs/bastion_hoglin_stable",
+   "paraglider:spirit_orbs/bastion_other",
+   "paraglider:spirit_orbs/bastion_treasure",
+   "paraglider:spirit_orbs/buried_treasure",
+   "paraglider:spirit_orbs/desert_pyramid",
+   "paraglider:spirit_orbs/jungle_temple",
+   "paraglider:spirit_orbs/nether_bridge",
+   "paraglider:spirit_orbs/ominous_trial_reward",
+   "paraglider:spirit_orbs/spawner",
+   "paraglider:spirit_orbs/stronghold_corridor",
+   "paraglider:spirit_orbs/stronghold_crossing",
+   "paraglider:spirit_orbs/stronghold_library",
+   "paraglider:spirit_orbs/trial_reward",
+   "paraglider:spirit_orbs/underwater_ruin_big",
+   "paraglider:spirit_orbs/underwater_ruin_small",
+   "paraglider:spirit_orbs/woodland_mansion",
+   "paraglider:totw_reworked/chest",
+   "paraglider:totw_reworked/ocean_chest",
+   "paraglider:wither"
+  ],
+  "loot_table": [
+   "paraglider:blocks/goddess_statue",
+   "paraglider:blocks/goron_goddess_statue",
+   "paraglider:blocks/horned_statue",
+   "paraglider:blocks/kakariko_goddess_statue",
+   "paraglider:blocks/rito_goddess_statue"
+  ],
+  "paraglider": [
+   "paraglider:bargain_types/goddess_statue",
+   "paraglider:bargain_types/horned_statue",
+   "paraglider:wind_sources/campfire",
+   "paraglider:wind_sources/fire"
+  ],
+  "recipe": [
+   "paraglider:campfire_cooking/enduring_elixir_1",
+   "paraglider:campfire_cooking/energizing_elixir_1",
+   "paraglider:cosmetic/deku_leaf",
+   "paraglider:cosmetic/goddess_statue",
+   "paraglider:cosmetic/goron_goddess_statue",
+   "paraglider:cosmetic/kakariko_goddess_statue",
+   "paraglider:cosmetic/paraglider",
+   "paraglider:cosmetic/rito_goddess_statue",
+   "paraglider:enduring_mixture",
+   "paraglider:energizing_mixture",
+   "paraglider:goddess_statue/heart_container",
+   "paraglider:goddess_statue/stamina_vessel",
+   "paraglider:horned_statue/buy_heart_container",
+   "paraglider:horned_statue/buy_stamina_vessel",
+   "paraglider:horned_statue/sell_heart_container",
+   "paraglider:horned_statue/sell_stamina_vessel",
+   "paraglider:paraglider",
+   "paraglider:smelting/enduring_elixir_1",
+   "paraglider:smelting/energizing_elixir_1",
+   "paraglider:smoking/enduring_elixir_1",
+   "paraglider:smoking/energizing_elixir_1"
+  ],
+  "structure": [
+   "paraglider:desert_village_horned_statue",
+   "paraglider:gerudo_village_goddess_statue",
+   "paraglider:hateno_village_goddess_statue",
+   "paraglider:horned_statue/eat_shit",
+   "paraglider:horned_statue/no",
+   "paraglider:horned_statue/yes",
+   "paraglider:kakariko_village_goddess_statue",
+   "paraglider:nether_goddess_statue",
+   "paraglider:nether_horned_statue",
+   "paraglider:plains_village_horned_statue",
+   "paraglider:rito_village_goddess_statue",
+   "paraglider:savanna_village_horned_statue",
+   "paraglider:snowy_village_horned_statue",
+   "paraglider:taiga_village_horned_statue",
+   "paraglider:tarrey_town_goddess_statue",
+   "paraglider:underground_horned_statue"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe",
+   "paraglider:statues",
+   "paraglider:statues/goddess",
+   "paraglider:wind_can_pass_through"
+  ],
+  "tags/item": [
+   "minecraft:dyeable",
+   "paraglider:paragliders",
+   "paraglider:statues",
+   "paraglider:statues/goddess"
+  ],
+  "tags/worldgen/biome": [
+   "paraglider:has_structure/nether_horned_statue",
+   "paraglider:has_structure/tarrey_town_goddess_statue",
+   "paraglider:has_structure/underground_horned_statue"
+  ],
+  "worldgen/structure": [
+   "paraglider:nether_horned_statue",
+   "paraglider:tarrey_town_goddess_statue",
+   "paraglider:underground_horned_statue"
+  ],
+  "worldgen/structure_set": [
+   "paraglider:nether_horned_statue",
+   "paraglider:tarrey_town_goddess_statue",
+   "paraglider:underground_horned_statue"
+  ],
+  "worldgen/template_pool": [
+   "paraglider:horned_statue"
+  ]
+ },
+ "data_counts": {
+  "advancement": 20
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "paraglider:goddess_statue",
+    "paraglider:kakariko_goddess_statue",
+    "paraglider:goron_goddess_statue",
+    "paraglider:rito_goddess_statue",
+    "paraglider:horned_statue"
+   ],
+   "paraglider:statues": [
+    "paraglider:horned_statue",
+    "#paraglider:statues/goddess"
+   ],
+   "paraglider:statues/goddess": [
+    "paraglider:goddess_statue",
+    "paraglider:kakariko_goddess_statue",
+    "paraglider:goron_goddess_statue",
+    "paraglider:rito_goddess_statue"
+   ],
+   "paraglider:wind_can_pass_through": [
+    "minecraft:copper_grate",
+    "minecraft:exposed_copper_grate",
+    "minecraft:weathered_copper_grate",
+    "minecraft:oxidized_copper_grate",
+    "minecraft:waxed_copper_grate",
+    "minecraft:waxed_exposed_copper_grate",
+    "minecraft:waxed_weathered_copper_grate",
+    "minecraft:waxed_oxidized_copper_grate"
+   ]
+  },
+  "tags/item": {
+   "minecraft:dyeable": [
+    "paraglider:paraglider",
+    "paraglider:deku_leaf"
+   ],
+   "paraglider:paragliders": [
+    "paraglider:paraglider",
+    "paraglider:deku_leaf"
+   ],
+   "paraglider:statues": [
+    "paraglider:horned_statue",
+    "#paraglider:statues/goddess"
+   ],
+   "paraglider:statues/goddess": [
+    "paraglider:goddess_statue",
+    "paraglider:kakariko_goddess_statue",
+    "paraglider:goron_goddess_statue",
+    "paraglider:rito_goddess_statue"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "paraglider:has_structure/nether_horned_statue": [
+    "minecraft:nether_wastes",
+    "minecraft:soul_sand_valley",
+    "minecraft:warped_forest"
+   ],
+   "paraglider:has_structure/tarrey_town_goddess_statue": [
+    "minecraft:plains",
+    "minecraft:meadow"
+   ],
+   "paraglider:has_structure/underground_horned_statue": [
+    "#minecraft:is_ocean",
+    "#minecraft:is_river",
+    "#minecraft:is_beach",
+    "#minecraft:is_mountain",
+    "#minecraft:is_hill",
+    "#minecraft:is_taiga",
+    "#minecraft:is_jungle",
+    "#minecraft:is_forest",
+    "minecraft:stony_shore",
+    "minecraft:mushroom_fields",
+    "minecraft:ice_spikes",
+    "minecraft:windswept_savanna",
+    "minecraft:desert",
+    "minecraft:savanna",
+    "minecraft:snowy_plains",
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:swamp",
+    "minecraft:savanna_plateau",
+    "minecraft:dripstone_caves",
+    "minecraft:lush_caves"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:campfire_cooking": 2,
+  "minecraft:crafting_shaped": 1,
+  "minecraft:crafting_shapeless": 2,
+  "minecraft:smelting": 2,
+  "minecraft:smoking": 2,
+  "paraglider:cosmetic": 6,
+  "paraglider:statue_bargain": 6
+ },
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,151 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Lodestone",
+ "file": "lodestone-1.21.1-1.8.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "6917080339b982d96cb4a7c98205ade5d89730191bc9113f4f8cd36bb1a760a91ad2421c8869c7063f8dea22a200d7d1896e0bb5e0e64119bb7590e32a998a23",
+ "mods": [
+  {
+   "modid": "lodestone",
+   "name": "Lodestone",
+   "version": "1.8.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "farmersdelight",
+  "lodestone"
+ ],
+ "data": {
+  "painting_variant": [
+   "lodestone:lefunny",
+   "lodestone:microfunny"
+  ],
+  "tags/damage_type": [
+   "c:can_trigger_magic_damage",
+   "c:ignores_magic_attack_cooldown_scalar",
+   "c:is_magic"
+  ],
+  "tags/item": [
+   "c:ingots/aluminum",
+   "c:ingots/cobalt",
+   "c:ingots/copper",
+   "c:ingots/lead",
+   "c:ingots/nickel",
+   "c:ingots/osmium",
+   "c:ingots/silver",
+   "c:ingots/tin",
+   "c:ingots/uranium",
+   "c:ingots/zinc",
+   "c:nuggets/aluminum",
+   "c:nuggets/cobalt",
+   "c:nuggets/copper",
+   "c:nuggets/lead",
+   "c:nuggets/nickel",
+   "c:nuggets/osmium",
+   "c:nuggets/silver",
+   "c:nuggets/tin",
+   "c:nuggets/uranium",
+   "c:nuggets/zinc",
+   "c:tools/knives",
+   "farmersdelight:tools/knives",
+   "lodestone:enchantable/axe",
+   "lodestone:enchantable/knife",
+   "lodestone:enchantable/melee",
+   "lodestone:enchantable/ranged",
+   "lodestone:enchantable/shield",
+   "lodestone:enchantable/weapon",
+   "lodestone:enchantment_holder"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/damage_type": {
+   "c:can_trigger_magic_damage": [
+    "minecraft:player_attack"
+   ],
+   "c:ignores_magic_attack_cooldown_scalar": [],
+   "c:is_magic": [
+    "minecraft:magic",
+    "minecraft:indirect_magic"
+   ]
+  },
+  "tags/item": {
+   "c:ingots/aluminum": [],
+   "c:ingots/cobalt": [],
+   "c:ingots/copper": [
+    "minecraft:copper_ingot"
+   ],
+   "c:ingots/lead": [],
+   "c:ingots/nickel": [],
+   "c:ingots/osmium": [],
+   "c:ingots/silver": [],
+   "c:ingots/tin": [],
+   "c:ingots/uranium": [],
+   "c:ingots/zinc": [],
+   "c:nuggets/aluminum": [],
+   "c:nuggets/cobalt": [],
+   "c:nuggets/copper": [],
+   "c:nuggets/lead": [],
+   "c:nuggets/nickel": [],
+   "c:nuggets/osmium": [],
+   "c:nuggets/silver": [],
+   "c:nuggets/tin": [],
+   "c:nuggets/uranium": [],
+   "c:nuggets/zinc": [],
+   "c:tools/knives": [],
+   "farmersdelight:tools/knives": [],
+   "lodestone:enchantable/axe": [
+    "#minecraft:axes"
+   ],
+   "lodestone:enchantable/knife": [
+    "#farmersdelight:tools/knives",
+    "#c:tools/knives"
+   ],
+   "lodestone:enchantable/melee": [
+    "#minecraft:enchantable/sword",
+    "#lodestone:enchantable/axe",
+    "#minecraft:enchantable/trident",
+    "#minecraft:enchantable/mace",
+    "#lodestone:enchantable/knife"
+   ],
+   "lodestone:enchantable/ranged": [
+    "#minecraft:enchantable/crossbow",
+    "#minecraft:enchantable/bow"
+   ],
+   "lodestone:enchantable/shield": [
+    "minecraft:shield"
+   ],
+   "lodestone:enchantable/weapon": [
+    "#lodestone:enchantable/melee",
+    "#lodestone:enchantable/ranged"
+   ],
+   "lodestone:enchantment_holder": [
+    "minecraft:book",
+    "minecraft:enchanted_book"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

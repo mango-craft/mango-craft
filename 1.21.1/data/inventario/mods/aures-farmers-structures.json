@@ -1,0 +1,456 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Aures - Farmers Structures",
+ "file": "FarmersStructures-1.0.2-1.21.1_neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "cacea687bf16e8a3ec6a1b46fa5323490a3aef9e970bbe882b3f13bd219fe6b044f04ba092c5c7d89e8670ec88120c5b1fab860c52795f1c27dd67e5173de4c4",
+ "mods": [
+  {
+   "modid": "farmers_structures",
+   "name": "FarmersStructures",
+   "version": "1.0.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[0.0.0,]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "farmers_structures"
+ ],
+ "data": {
+  "structure": [
+   "farmers_structures:aether/cook_aether_berry_spawn",
+   "farmers_structures:aether/cook_aether_flower_spawn",
+   "farmers_structures:aether/cook_aether_moa_spawn",
+   "farmers_structures:afterdark_farm",
+   "farmers_structures:aquaculture/aquaculture_cod_spawn",
+   "farmers_structures:aquaculture/aquaculture_piranha_spawn",
+   "farmers_structures:aquaculture/aquaculture_turtle_spawn",
+   "farmers_structures:cacao_spawn_1",
+   "farmers_structures:cacao_spawn_2",
+   "farmers_structures:cook_aether_berry_spawn",
+   "farmers_structures:cook_houses/cook_additions_1_1",
+   "farmers_structures:cook_houses/cook_additions_1_2",
+   "farmers_structures:cook_houses/cook_additions_1_3",
+   "farmers_structures:cook_houses/cook_additions_1_4",
+   "farmers_structures:cook_houses/cook_additions_1_5",
+   "farmers_structures:cook_houses/cook_additions_1_6",
+   "farmers_structures:cook_houses/cook_additions_1_7",
+   "farmers_structures:cook_houses/cook_additions_2_1",
+   "farmers_structures:cook_houses/cook_additions_2_2",
+   "farmers_structures:cook_houses/cook_additions_2_3",
+   "farmers_structures:cook_houses/cook_additions_2_4",
+   "farmers_structures:cook_houses/cook_additions_2_5",
+   "farmers_structures:cook_houses/cook_additions_3_1",
+   "farmers_structures:cook_houses/cook_additions_3_2",
+   "farmers_structures:cook_houses/cook_additions_3_3",
+   "farmers_structures:cook_houses/cook_additions_3_4",
+   "farmers_structures:cook_houses/cook_additions_3_5",
+   "farmers_structures:cook_houses/cook_additions_3_6",
+   "farmers_structures:cook_houses/cook_additions_3_7",
+   "farmers_structures:cook_houses/cook_additions_4_1",
+   "farmers_structures:cook_houses/cook_additions_4_2",
+   "farmers_structures:cook_houses/cook_additions_4_3",
+   "farmers_structures:cook_houses/cook_additions_4_4",
+   "farmers_structures:cook_houses/cook_additions_4_5",
+   "farmers_structures:cook_houses/cook_additions_4_6",
+   "farmers_structures:cook_houses/cook_additions_4_7",
+   "farmers_structures:cook_houses/cook_additions_4_8",
+   "farmers_structures:cook_houses/cook_end_1_1",
+   "farmers_structures:cook_houses/cook_end_1_10",
+   "farmers_structures:cook_houses/cook_end_1_2",
+   "farmers_structures:cook_houses/cook_end_1_3",
+   "farmers_structures:cook_houses/cook_end_1_4",
+   "farmers_structures:cook_houses/cook_end_1_5",
+   "farmers_structures:cook_houses/cook_end_1_6",
+   "farmers_structures:cook_houses/cook_end_1_7",
+   "farmers_structures:cook_houses/cook_end_1_8",
+   "farmers_structures:cook_houses/cook_end_1_9",
+   "farmers_structures:cook_houses/cook_spawn_1",
+   "farmers_structures:cook_houses/cook_spawn_2",
+   "farmers_structures:cook_houses/cook_spawn_3",
+   "farmers_structures:cook_houses/cook_spawn_4",
+   "farmers_structures:cook_houses/cook_spawn_5",
+   "farmers_structures:cook_houses/cook_spawn_6",
+   "farmers_structures:cook_moss/cook_moss_spawn_1",
+   "farmers_structures:cook_moss/cook_moss_spawn_2",
+   "farmers_structures:cook_moss/cook_moss_spawn_3",
+   "farmers_structures:cook_nether/farmer_house_nether_hoglin",
+   "farmers_structures:cook_nether/farmer_house_nether_salad",
+   "farmers_structures:deeper_farm",
+   "farmers_structures:fish_stew_spawn",
+   "farmers_structures:flesh_farm",
+   "farmers_structures:honey_cake_farm",
+   "farmers_structures:ratatouille_spawn",
+   "farmers_structures:shepherd_farm",
+   "farmers_structures:squid_spawn",
+   "farmers_structures:sushi/sushi_spawn_1",
+   "farmers_structures:undergarden/undergarden_glitter_spawn",
+   "farmers_structures:undergarden/undergarden_gwibling_spawn",
+   "farmers_structures:undergarden/undergarden_mog_spawn",
+   "farmers_structures:undergarden/undergarden_mushroom_spawn",
+   "farmers_structures:undergarden/undergarden_shimmer_spawn"
+  ],
+  "tags/block": [
+   "farmers_structures:crates"
+  ],
+  "tags/worldgen/biome": [
+   "farmers_structures:is_aether_spawn",
+   "farmers_structures:is_afterdark_farm_spawn",
+   "farmers_structures:is_aquaculture_beach_spawn",
+   "farmers_structures:is_aquaculture_cod_spawn",
+   "farmers_structures:is_aquaculture_common_spawn",
+   "farmers_structures:is_cacao_spawn",
+   "farmers_structures:is_cook_moss_spawn",
+   "farmers_structures:is_cook_nether_1_spawn",
+   "farmers_structures:is_cook_nether_2_spawn",
+   "farmers_structures:is_cook_spawn",
+   "farmers_structures:is_deeper_farm_spawn",
+   "farmers_structures:is_fish_stew_spawn",
+   "farmers_structures:is_flesh_farm_spawn",
+   "farmers_structures:is_honey_cake_farm_spawn",
+   "farmers_structures:is_ratatouille_spawn",
+   "farmers_structures:is_squid_spawn",
+   "farmers_structures:is_sushi_spawn",
+   "farmers_structures:is_undergarden_sea_spawn",
+   "farmers_structures:is_undergarden_spawn",
+   "farmers_structures:template/is_beach",
+   "farmers_structures:template/is_blacklisted",
+   "farmers_structures:template/is_dark",
+   "farmers_structures:template/is_hill",
+   "farmers_structures:template/is_jungle",
+   "farmers_structures:template/is_sandy",
+   "farmers_structures:template/is_savanna",
+   "farmers_structures:template/is_snowy",
+   "farmers_structures:template/is_swamp"
+  ],
+  "worldgen/processor_list": [
+   "farmers_structures:less_chest",
+   "farmers_structures:moss_random_crates",
+   "farmers_structures:mossy_age",
+   "farmers_structures:random_crates"
+  ],
+  "worldgen/structure": [
+   "farmers_structures:aether",
+   "farmers_structures:afterdark_farms",
+   "farmers_structures:aquacultures_beach",
+   "farmers_structures:aquacultures_cod",
+   "farmers_structures:aquacultures_common",
+   "farmers_structures:cacaos",
+   "farmers_structures:cooks",
+   "farmers_structures:cooks_moss",
+   "farmers_structures:cooks_nether_1",
+   "farmers_structures:cooks_nether_2",
+   "farmers_structures:deeper_farms",
+   "farmers_structures:fishs_stew",
+   "farmers_structures:flesh_farms",
+   "farmers_structures:honey_cake_farms",
+   "farmers_structures:ratatouilles",
+   "farmers_structures:shepherd_farms",
+   "farmers_structures:squids",
+   "farmers_structures:sushis",
+   "farmers_structures:undergardens",
+   "farmers_structures:undergardens_sea"
+  ],
+  "worldgen/structure_set": [
+   "farmers_structures:aethers_with_all",
+   "farmers_structures:afterdark_farms_with_all",
+   "farmers_structures:aquacultures_beach_with_all",
+   "farmers_structures:aquacultures_cod_with_all",
+   "farmers_structures:aquacultures_common_with_all",
+   "farmers_structures:cacaos_with_all",
+   "farmers_structures:cooks_moss_with_all",
+   "farmers_structures:cooks_nether_1_with_all",
+   "farmers_structures:cooks_nether_2_with_all",
+   "farmers_structures:cooks_with_all",
+   "farmers_structures:deeper_farms_with_all",
+   "farmers_structures:fishs_stew_with_all",
+   "farmers_structures:flesh_farms_with_all",
+   "farmers_structures:honey_cake_farms_with_all",
+   "farmers_structures:ratatouilles_with_all",
+   "farmers_structures:shepherd_farms_with_all",
+   "farmers_structures:squids_with_all",
+   "farmers_structures:sushus_with_all",
+   "farmers_structures:undergardens_sea_with_all",
+   "farmers_structures:undergardens_with_all"
+  ],
+  "worldgen/template_pool": [
+   "farmers_structures:aether_spawn_pool",
+   "farmers_structures:afterdark_farm_spawn_pool",
+   "farmers_structures:aquaculture_beach_spawn_pool",
+   "farmers_structures:aquaculture_cod_spawn_pool",
+   "farmers_structures:aquaculture_common_spawn_pool",
+   "farmers_structures:cacao_basement_pool",
+   "farmers_structures:cacao_spawn_pool",
+   "farmers_structures:cook_additions_1_pool",
+   "farmers_structures:cook_additions_2_pool",
+   "farmers_structures:cook_additions_3_pool",
+   "farmers_structures:cook_additions_4_pool",
+   "farmers_structures:cook_end_1_pool",
+   "farmers_structures:cook_moss_spawn_pool",
+   "farmers_structures:cook_nether_1_spawn_pool",
+   "farmers_structures:cook_nether_2_spawn_pool",
+   "farmers_structures:cook_spawn_pool",
+   "farmers_structures:deeper_farm_spawn_pool",
+   "farmers_structures:fish_stew_spawn_pool",
+   "farmers_structures:flesh_farm_spawn_pool",
+   "farmers_structures:honey_cake_farm_spawn_pool",
+   "farmers_structures:ratatouille_spawn_pool",
+   "farmers_structures:shepherd_farm_spawn_pool",
+   "farmers_structures:squid_spawn_pool",
+   "farmers_structures:sushi_spawn_pool",
+   "farmers_structures:undergarden_sea_spawn_pool",
+   "farmers_structures:undergarden_spawn_pool"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "farmers_structures:crates": [
+    "farmersdelight:onion_crate?",
+    "farmersdelight:tomato_crate?",
+    "farmersdelight:cabbage_crate?",
+    "farmersdelight:beetroot_crate?",
+    "farmersdelight:potato_crate?",
+    "farmersdelight:carrot_crate?"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "farmers_structures:is_aether_spawn": [
+    "aether:skyroot_meadow?",
+    "aether:skyroot_grove?",
+    "aether:skyroot_woodland?",
+    "aether:skyroot_forest?"
+   ],
+   "farmers_structures:is_afterdark_farm_spawn": [
+    "the_afterdark:lush_gardens?",
+    "the_afterdark:calcite_fields?",
+    "the_afterdark:prismarine_peaks?",
+    "the_afterdark:prismarine_ponds?"
+   ],
+   "farmers_structures:is_aquaculture_beach_spawn": [
+    "#minecraft:is_beach?"
+   ],
+   "farmers_structures:is_aquaculture_cod_spawn": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:savanna",
+    "#minecraft:is_forest",
+    "#forge:savanna?",
+    "#c:savanna?",
+    "#forge:is_forest?",
+    "#c:is_forest?"
+   ],
+   "farmers_structures:is_aquaculture_common_spawn": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:savanna",
+    "#minecraft:is_hill",
+    "#minecraft:is_forest",
+    "#forge:is_hill?",
+    "#c:is_hill?",
+    "#forge:is_forest?",
+    "#c:is_forest?"
+   ],
+   "farmers_structures:is_cacao_spawn": [
+    "#minecraft:is_jungle?",
+    "minecraft:jungle?",
+    "minecraft:sparse_jungle?",
+    "minecraft:bamboo_jungle?",
+    "#forge:is_jungle?",
+    "#byg:is_jungle?",
+    "#c:is_jungle?"
+   ],
+   "farmers_structures:is_cook_moss_spawn": [
+    "minecraft:cherry_grove?"
+   ],
+   "farmers_structures:is_cook_nether_1_spawn": [
+    "minecraft:warped_forest?",
+    "minecraft:crimson_forest?"
+   ],
+   "farmers_structures:is_cook_nether_2_spawn": [
+    "minecraft:nether_wastes?"
+   ],
+   "farmers_structures:is_cook_spawn": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:savanna",
+    "#minecraft:is_hill",
+    "#c:is_hill?"
+   ],
+   "farmers_structures:is_deeper_farm_spawn": [
+    "deeperdarker:blooming_caverns?"
+   ],
+   "farmers_structures:is_fish_stew_spawn": [
+    "minecraft:snowy_plains?",
+    "minecraft:snowy_slopes?",
+    "minecraft:snowy_taiga?",
+    "minecraft:snowy_beach?",
+    "minecraft:frozen_peaks?",
+    "minecraft:ice_spikes?",
+    "minecraft:jagged_peaks?",
+    "#forge:is_snowy?",
+    "#forge:is_taiga?",
+    "#byg:is_snowy?",
+    "#byg:is_taiga?",
+    "#c:is_snowy?",
+    "#c:is_icy?"
+   ],
+   "farmers_structures:is_flesh_farm_spawn": [
+    "ihfr_fo:nerval_forest?"
+   ],
+   "farmers_structures:is_honey_cake_farm_spawn": [
+    "the_bumblezone:pollinated_fields?",
+    "the_bumblezone:sugar_water_floor?",
+    "the_bumblezone:crystal_canyon?",
+    "the_bumblezone:floral_meadow?"
+   ],
+   "farmers_structures:is_ratatouille_spawn": [
+    "#minecraft:is_swamp?",
+    "minecraft:swamp?",
+    "minecraft:mangrove_swamp?",
+    "#forge:is_swamp?",
+    "#byg:is_swamp?",
+    "#c:is_swamp?"
+   ],
+   "farmers_structures:is_squid_spawn": [
+    "#minecraft:is_taiga?",
+    "minecraft:taiga?",
+    "minecraft:old_growth_pine_taiga?",
+    "minecraft:old_growth_spruce_taiga?",
+    "minecraft:dark_forest?",
+    "#forge:is_spooky?",
+    "#forge:is_taiga?",
+    "#byg:is_spooky?",
+    "#byg:is_taiga?",
+    "#c:is_spooky?",
+    "#c:is_taiga?"
+   ],
+   "farmers_structures:is_sushi_spawn": [
+    "#minecraft:is_river?",
+    "minecraft:river?",
+    "#forge:is_river?",
+    "#byg:is_river?",
+    "#c:is_river?"
+   ],
+   "farmers_structures:is_undergarden_sea_spawn": [
+    "undergarden:ancient_sea?",
+    "undergarden:icy_sea?"
+   ],
+   "farmers_structures:is_undergarden_spawn": [
+    "undergarden:barren_abyss?",
+    "undergarden:blood_mushroom_bog?",
+    "undergarden:dense_forest?",
+    "undergarden:forgotten_field?",
+    "undergarden:frostfields?",
+    "undergarden:frosty_smogstem_forest?",
+    "undergarden:gronglegrowth?",
+    "undergarden:indigo_mushroom_bog?",
+    "undergarden:ink_mushroom_bog?",
+    "undergarden:smogstem_forest?",
+    "undergarden:smog_spires?",
+    "undergarden:veil_mushroom_bog?",
+    "undergarden:wigglewood_forest?"
+   ],
+   "farmers_structures:template/is_beach": [
+    "#minecraft:is_beach?",
+    "minecraft:beach?",
+    "minecraft:stony_shore?",
+    "#forge:is_beach?",
+    "#byg:is_beach?"
+   ],
+   "farmers_structures:template/is_blacklisted": [
+    "minecraft:soul_sand_valley?",
+    "minecraft:deep_dark?"
+   ],
+   "farmers_structures:template/is_dark": [
+    "#minecraft:is_taiga?",
+    "minecraft:taiga?",
+    "minecraft:old_growth_pine_taiga?",
+    "minecraft:old_growth_spruce_taiga?",
+    "minecraft:dark_forest?",
+    "#forge:is_spooky?",
+    "#forge:is_taiga?",
+    "#byg:is_spooky?",
+    "#byg:is_taiga?"
+   ],
+   "farmers_structures:template/is_hill": [
+    "#minecraft:is_hill?",
+    "minecraft:windswept_forest?",
+    "minecraft:windswept_hills?",
+    "#forge:is_hill?",
+    "#byg:is_hill?"
+   ],
+   "farmers_structures:template/is_jungle": [
+    "#minecraft:is_jungle?",
+    "minecraft:jungle?",
+    "minecraft:sparse_jungle?",
+    "minecraft:bamboo_jungle?",
+    "#forge:is_jungle?",
+    "#byg:is_jungle?"
+   ],
+   "farmers_structures:template/is_sandy": [
+    "#minecraft:is_desert?",
+    "#minecraft:is_badlands?",
+    "minecraft:desert?",
+    "minecraft:badlands?",
+    "minecraft:wooded_badlands?",
+    "minecraft:eroded_badlands?",
+    "#forge:is_desert?",
+    "#forge:is_badlands?",
+    "#forge:is_sandy?",
+    "#byg:is_wasteland?",
+    "#byg:is_desert?",
+    "#byg:is_badlands?",
+    "#byg:is_sandy?"
+   ],
+   "farmers_structures:template/is_savanna": [
+    "#minecraft:is_savanna?",
+    "minecraft:savanna?",
+    "minecraft:savanna_plateau?",
+    "minecraft:windswept_savanna?",
+    "#forge:is_savanna?",
+    "#byg:is_savanna?"
+   ],
+   "farmers_structures:template/is_snowy": [
+    "#forge:is_snowy?",
+    "minecraft:snowy_plains?",
+    "minecraft:snowy_slopes?",
+    "minecraft:snowy_taiga?",
+    "minecraft:snowy_beach?",
+    "minecraft:frozen_peaks?",
+    "minecraft:frozen_river?",
+    "minecraft:ice_spikes?",
+    "minecraft:jagged_peaks?",
+    "#forge:is_snowy?",
+    "#byg:is_snowy?"
+   ],
+   "farmers_structures:template/is_swamp": [
+    "#minecraft:is_swamp?",
+    "minecraft:swamp?",
+    "minecraft:mangrove_swamp?",
+    "#forge:is_swamp?",
+    "#byg:is_swamp?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

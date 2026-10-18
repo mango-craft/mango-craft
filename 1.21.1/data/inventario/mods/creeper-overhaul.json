@@ -1,0 +1,208 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Creeper Overhaul",
+ "file": "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "880ca9d8d23b527d3583cbe7fa399b2a26421b6ccba1deacd666cf9b61f4af4378157f404ab3789a7ae9c3c8693e2b7f6c8c532e703e5bb0e1881b9cc2879a6e",
+ "mods": [
+  {
+   "modid": "creeperoverhaul",
+   "name": "Creeper Overhaul",
+   "version": "4.0.6",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "geckolib",
+     "type": "required",
+     "range": "[4.5.5,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "resourcefulconfig",
+     "type": "required",
+     "range": "[3.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "resourceful-cosmetics-4j-1.0.3.jar"
+ ],
+ "namespaces": [
+  "c",
+  "creeperoverhaul",
+  "minecraft"
+ ],
+ "blocks": {
+  "creeperoverhaul:potted_tiny_cactus": "Potted Tiny Cactus",
+  "creeperoverhaul:tiny_cactus": "Tiny Cactus"
+ },
+ "entities": {
+  "creeperoverhaul:badlands_creeper": "Badlands Creeper",
+  "creeperoverhaul:bamboo_creeper": "Bamboo Creeper",
+  "creeperoverhaul:beach_creeper": "Beach Creeper",
+  "creeperoverhaul:birch_creeper": "Birch Creeper",
+  "creeperoverhaul:cave_creeper": "Cave Creeper",
+  "creeperoverhaul:dark_oak_creeper": "Dark Oak Creeper",
+  "creeperoverhaul:desert_creeper": "Desert Creeper",
+  "creeperoverhaul:dripstone_creeper": "Dripstone Creeper",
+  "creeperoverhaul:hills_creeper": "Hills Creeper",
+  "creeperoverhaul:jungle_creeper": "Jungle Creeper",
+  "creeperoverhaul:mushroom_creeper": "Mushroom Creeper",
+  "creeperoverhaul:ocean_creeper": "Ocean Creeper",
+  "creeperoverhaul:savannah_creeper": "Savannah Creeper",
+  "creeperoverhaul:snowy_creeper": "Snowy Creeper",
+  "creeperoverhaul:spruce_creeper": "Spruce Creeper",
+  "creeperoverhaul:swamp_creeper": "Swamp Creeper"
+ },
+ "items": {
+  "creeperoverhaul:badlands_creeper_spawn_egg": "Badlands Creeper Spawn Egg",
+  "creeperoverhaul:bamboo_creeper_spawn_egg": "Bamboo Creeper Spawn Egg",
+  "creeperoverhaul:beach_creeper_spawn_egg": "Beach Creeper Spawn Egg",
+  "creeperoverhaul:birch_creeper_spawn_egg": "Birch Creeper Spawn Egg",
+  "creeperoverhaul:cave_creeper_spawn_egg": "Cave Creeper Spawn Egg",
+  "creeperoverhaul:dark_oak_creeper_spawn_egg": "Dark Oak Creeper Spawn Egg",
+  "creeperoverhaul:desert_creeper_spawn_egg": "Desert Creeper Spawn Egg",
+  "creeperoverhaul:dripstone_creeper_spawn_egg": "Dripstone Creeper Spawn Egg",
+  "creeperoverhaul:hills_creeper_spawn_egg": "Hills Creeper Spawn Egg",
+  "creeperoverhaul:jungle_creeper_spawn_egg": "Jungle Creeper Spawn Egg",
+  "creeperoverhaul:mushroom_creeper_spawn_egg": "Mushroom Creeper Spawn Egg",
+  "creeperoverhaul:ocean_creeper_spawn_egg": "Ocean Creeper Spawn Egg",
+  "creeperoverhaul:plains_creeper_spawn_egg": "",
+  "creeperoverhaul:savannah_creeper_spawn_egg": "Savannah Creeper Spawn Egg",
+  "creeperoverhaul:snowy_creeper_spawn_egg": "Snowy Creeper Spawn Egg",
+  "creeperoverhaul:spruce_creeper_spawn_egg": "Spruce Creeper Spawn Egg",
+  "creeperoverhaul:swamp_creeper_spawn_egg": "Swamp Creeper Spawn Egg",
+  "creeperoverhaul:tiny_cactus": ""
+ },
+ "data": {
+  "loot_table": [
+   "creeperoverhaul:blocks/potted_tiny_cactus",
+   "creeperoverhaul:blocks/tiny_cactus",
+   "creeperoverhaul:entities/badlands_creeper",
+   "creeperoverhaul:entities/bamboo_creeper",
+   "creeperoverhaul:entities/beach_creeper",
+   "creeperoverhaul:entities/birch_creeper",
+   "creeperoverhaul:entities/cave_creeper",
+   "creeperoverhaul:entities/dark_oak_creeper",
+   "creeperoverhaul:entities/desert_creeper",
+   "creeperoverhaul:entities/dripstone_creeper",
+   "creeperoverhaul:entities/hills_creeper",
+   "creeperoverhaul:entities/jungle_creeper",
+   "creeperoverhaul:entities/mushroom_creeper",
+   "creeperoverhaul:entities/ocean_creeper",
+   "creeperoverhaul:entities/savannah_creeper",
+   "creeperoverhaul:entities/snowy_creeper",
+   "creeperoverhaul:entities/spruce_creeper",
+   "creeperoverhaul:entities/swamp_creeper"
+  ],
+  "neoforge/biome_modifier": [
+   "creeperoverhaul:badlands",
+   "creeperoverhaul:bamboo",
+   "creeperoverhaul:beach",
+   "creeperoverhaul:birch",
+   "creeperoverhaul:cave",
+   "creeperoverhaul:dark_oak",
+   "creeperoverhaul:desert",
+   "creeperoverhaul:dripstone",
+   "creeperoverhaul:hill",
+   "creeperoverhaul:jungle",
+   "creeperoverhaul:mushroom",
+   "creeperoverhaul:ocean",
+   "creeperoverhaul:remove_vanilla",
+   "creeperoverhaul:savannah",
+   "creeperoverhaul:snowy",
+   "creeperoverhaul:spruce",
+   "creeperoverhaul:swamp"
+  ],
+  "tags/entity_type": [
+   "c:creepers",
+   "minecraft:can_breathe_under_water",
+   "minecraft:powder_snow_walkable_mobs"
+  ],
+  "tags/worldgen/biome": [
+   "c:is_dark_forest",
+   "c:is_mushroom",
+   "creeperoverhaul:is_cave",
+   "creeperoverhaul:where_creepers_spawn"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/entity_type": {
+   "c:creepers": [
+    "creeperoverhaul:jungle_creeper",
+    "creeperoverhaul:bamboo_creeper",
+    "creeperoverhaul:desert_creeper",
+    "creeperoverhaul:badlands_creeper",
+    "creeperoverhaul:hills_creeper",
+    "creeperoverhaul:savannah_creeper",
+    "creeperoverhaul:mushroom_creeper",
+    "creeperoverhaul:swamp_creeper",
+    "creeperoverhaul:dripstone_creeper",
+    "creeperoverhaul:cave_creeper",
+    "creeperoverhaul:dark_oak_creeper",
+    "creeperoverhaul:spruce_creeper",
+    "creeperoverhaul:beach_creeper",
+    "creeperoverhaul:snowy_creeper",
+    "creeperoverhaul:birch_creeper",
+    "creeperoverhaul:ocean_creeper"
+   ],
+   "minecraft:can_breathe_under_water": [
+    "creeperoverhaul:ocean_creeper"
+   ],
+   "minecraft:powder_snow_walkable_mobs": [
+    "creeperoverhaul:snowy_creeper"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "c:is_dark_forest": [
+    "minecraft:dark_forest"
+   ],
+   "c:is_mushroom": [
+    "minecraft:mushroom_fields"
+   ],
+   "creeperoverhaul:is_cave": [
+    "#c:is_cave"
+   ],
+   "creeperoverhaul:where_creepers_spawn": [
+    "#c:is_beach",
+    "#c:is_snowy",
+    "#c:is_desert",
+    "#c:is_hill",
+    "#c:is_savanna",
+    "#c:is_badlands",
+    "#c:is_mushroom",
+    "#c:is_taiga",
+    "#c:is_mountain",
+    "#creeperoverhaul:is_cave",
+    "#c:is_jungle",
+    "#c:is_swamp",
+    "#c:is_dark_forest",
+    "#c:is_birch_forest",
+    "minecraft:lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:warm_ocean"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

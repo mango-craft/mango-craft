@@ -1,0 +1,1054 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Better Archeology",
+ "file": "betterarcheology-neoforge-1.21.1-1.3.9.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "c539aac7eee3ec51d55e9c053d4ad29ee467c9ef6d1206a33a15b7ad5c7937f684453f856ed304b657e6baa8bcc63c6fd56090c46d2d6ff1dcefd0f854a943c2",
+ "mods": [
+  {
+   "modid": "betterarcheology",
+   "name": "Better Archeology",
+   "version": "1.21.1-1.3.9",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "resourcefulconfig",
+     "type": "required",
+     "range": "[3.0.3,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "betterarcheology",
+  "c",
+  "cristellib",
+  "minecraft"
+ ],
+ "blocks": {
+  "betterarcheology:archeology_table": "Archeology Table",
+  "betterarcheology:chicken_fossil": "Chicken-Fossil",
+  "betterarcheology:chicken_fossil_body": "Chicken-Fossil Body",
+  "betterarcheology:chicken_fossil_body_tooltip": "Its wings also had sharp claws. They also look like they used to have a longer tail",
+  "betterarcheology:chicken_fossil_head": "Chicken-Fossil Skull",
+  "betterarcheology:chicken_fossil_head_tooltip": "Its beak seems larger than the chickens you're used to",
+  "betterarcheology:chicken_fossil_tooltip": "You feel lighter when near it",
+  "betterarcheology:chiseled_bone_block": "Chiseled Bone Block",
+  "betterarcheology:cracked_mud_brick_slab": "Cracked Mud Brick Slab",
+  "betterarcheology:cracked_mud_brick_stairs": "Cracked Mud Brick Stairs",
+  "betterarcheology:cracked_mud_bricks": "Cracked Mud Bricks",
+  "betterarcheology:creeper_fossil": "Creeper-Fossil",
+  "betterarcheology:creeper_fossil_body": "Creeper-Fossil Body",
+  "betterarcheology:creeper_fossil_body_tooltip": "So this is the source of its power!",
+  "betterarcheology:creeper_fossil_head": "Creeper-Fossil Skull",
+  "betterarcheology:creeper_fossil_head_tooltip": "This face gave you the shivers enough times already",
+  "betterarcheology:creeper_fossil_tooltip": "It looks even scarier than the real ones...",
+  "betterarcheology:evoker_trap": "Evoker Trap",
+  "betterarcheology:fossil_body_set": " [2/2]",
+  "betterarcheology:fossil_head_set": " [1/2]",
+  "betterarcheology:fossiliferous_dirt": "Fossiliferous Dirt",
+  "betterarcheology:fossiliferous_dirt_tooltip": "Maybe something can be uncovered?",
+  "betterarcheology:growth_totem": "Totem of Growth",
+  "betterarcheology:growth_totem_tooltip": "Its glow speeds up nearby crop growth when placed",
+  "betterarcheology:guardian_fossil": "Guardian-Fossil",
+  "betterarcheology:guardian_fossil_body": "Guardian-Fossil Body",
+  "betterarcheology:guardian_fossil_body_tooltip": "Even their fins look sharp.",
+  "betterarcheology:guardian_fossil_head": "Guardian-Fossil Skull",
+  "betterarcheology:guardian_fossil_head_tooltip": "Pretty hard to differentiate head and body.",
+  "betterarcheology:guardian_fossil_tooltip": "Looks creepier than the original...",
+  "betterarcheology:infested_mud_bricks": "Infested Mud Bricks",
+  "betterarcheology:loot_vase": "Ancient Vase",
+  "betterarcheology:loot_vase_creeper": "Ancient Vase",
+  "betterarcheology:loot_vase_green": "Ancient Vase",
+  "betterarcheology:ocelot_fossil": "Ocelot-Fossil",
+  "betterarcheology:ocelot_fossil_body": "Ocelot-Fossil Body",
+  "betterarcheology:ocelot_fossil_body_tooltip": "It looks less agile but stronger",
+  "betterarcheology:ocelot_fossil_head": "Ocelot-Fossil Skull",
+  "betterarcheology:ocelot_fossil_head_tooltip": "Unlike their descendants, they had long and sharp teeth",
+  "betterarcheology:ocelot_fossil_tooltip": "Creepers seem to fear them even more than cats",
+  "betterarcheology:radiance_totem": "Totem of Radiance",
+  "betterarcheology:radiance_totem_message_0": "Displaying All",
+  "betterarcheology:radiance_totem_message_1": "Displaying Monsters",
+  "betterarcheology:radiance_totem_message_2": "Displaying Animals",
+  "betterarcheology:radiance_totem_message_3": "Displaying Players",
+  "betterarcheology:radiance_totem_tooltip": "Its glow reveals nearby entities and hurts monsters",
+  "betterarcheology:rotten_door": "Rotten Door",
+  "betterarcheology:rotten_fence": "Rotten Fence",
+  "betterarcheology:rotten_fence_gate": "Rotten Fence Gate",
+  "betterarcheology:rotten_log": "Rotten Log",
+  "betterarcheology:rotten_planks": "Rotten Planks",
+  "betterarcheology:rotten_pressure_plate": "Rotten Pressure Plate",
+  "betterarcheology:rotten_slab": "Rotten Slab",
+  "betterarcheology:rotten_stairs": "Rotten Stairs",
+  "betterarcheology:rotten_trapdoor": "Rotten Trapdoor",
+  "betterarcheology:sheep_fossil": "Sheep-Fossil",
+  "betterarcheology:sheep_fossil_body": "Sheep-Fossil Body",
+  "betterarcheology:sheep_fossil_body_tooltip": "Not that fluffy anymore...",
+  "betterarcheology:sheep_fossil_head": "Sheep-Fossil Skull",
+  "betterarcheology:sheep_fossil_head_tooltip": "That probably made a bigger dent than goats do",
+  "betterarcheology:sheep_fossil_tooltip": "Its horns remind you of Goat Horns. Could it also make a sound?",
+  "betterarcheology:suspicious_dirt": "Suspicious Dirt",
+  "betterarcheology:suspicious_red_sand": "Suspicious Red Sand",
+  "betterarcheology:vase": "Ancient Vase",
+  "betterarcheology:vase_creeper": "Ancient Vase",
+  "betterarcheology:vase_green": "Ancient Vase",
+  "betterarcheology:villager_fossil": "Villager-Fossil",
+  "betterarcheology:villager_fossil_body": "Villager-Fossil Body",
+  "betterarcheology:villager_fossil_body_tooltip": "A haunting reminder of a village lost to time",
+  "betterarcheology:villager_fossil_head": "Villager-Fossil Skull",
+  "betterarcheology:villager_fossil_head_tooltip": "They don't seem to have evolved a lot...",
+  "betterarcheology:villager_fossil_tooltip": "Its fossilized arms could act as a sort of display",
+  "betterarcheology:wolf_fossil": "Wolf-Fossil",
+  "betterarcheology:wolf_fossil_body": "Wolf-Fossil Body",
+  "betterarcheology:wolf_fossil_body_tooltip": "May I rub its belly?",
+  "betterarcheology:wolf_fossil_head": "Wolf-Fossil Skull",
+  "betterarcheology:wolf_fossil_head_tooltip": "Pretty sharp teeth...",
+  "betterarcheology:wolf_fossil_tooltip": "Skeletons seem to fear it"
+ },
+ "entities": {
+  "betterarcheology:bombentity": "Rusty Bomb"
+ },
+ "items": {
+  "betterarcheology:archeology_table": "",
+  "betterarcheology:artifact_shards": "Artifact Shards",
+  "betterarcheology:bomb": "Rusty Bomb",
+  "betterarcheology:chicken_fossil": "",
+  "betterarcheology:chicken_fossil_body": "",
+  "betterarcheology:chicken_fossil_head": "",
+  "betterarcheology:chiseled_bone_block": "",
+  "betterarcheology:cracked_mud_brick_slab": "",
+  "betterarcheology:cracked_mud_brick_stairs": "",
+  "betterarcheology:cracked_mud_bricks": "",
+  "betterarcheology:creeper_fossil": "",
+  "betterarcheology:creeper_fossil_body": "",
+  "betterarcheology:creeper_fossil_head": "",
+  "betterarcheology:diamond_brush": "Diamond Brush",
+  "betterarcheology:diamond_brush_brushing_0": "",
+  "betterarcheology:diamond_brush_brushing_1": "",
+  "betterarcheology:diamond_brush_brushing_2": "",
+  "betterarcheology:evoker_trap": "",
+  "betterarcheology:fossiliferous_dirt": "",
+  "betterarcheology:growth_totem": "",
+  "betterarcheology:guardian_fossil": "",
+  "betterarcheology:guardian_fossil_body": "",
+  "betterarcheology:guardian_fossil_head": "",
+  "betterarcheology:identified_artifact": "Identified Artifact",
+  "betterarcheology:identified_artifact_info": "Random chance 1/ No. of Identified Artifacts",
+  "betterarcheology:infested_mud_bricks": "",
+  "betterarcheology:iron_brush": "Iron Brush",
+  "betterarcheology:iron_brush_brushing_0": "",
+  "betterarcheology:iron_brush_brushing_1": "",
+  "betterarcheology:iron_brush_brushing_2": "",
+  "betterarcheology:loot_vase": "",
+  "betterarcheology:loot_vase_creeper": "",
+  "betterarcheology:loot_vase_green": "",
+  "betterarcheology:music_disc_swings": "Music Disc",
+  "betterarcheology:music_disc_swings_desc": "Axolotl - Swings",
+  "betterarcheology:netherite_brush": "Netherite Brush",
+  "betterarcheology:netherite_brush_brushing_0": "",
+  "betterarcheology:netherite_brush_brushing_1": "",
+  "betterarcheology:netherite_brush_brushing_2": "",
+  "betterarcheology:ocelot_fossil": "",
+  "betterarcheology:ocelot_fossil_body": "",
+  "betterarcheology:ocelot_fossil_head": "",
+  "betterarcheology:penetrating_strike_artifact": "",
+  "betterarcheology:radiance_totem": "",
+  "betterarcheology:rotten_door": "",
+  "betterarcheology:rotten_fence": "",
+  "betterarcheology:rotten_fence_gate": "",
+  "betterarcheology:rotten_log": "",
+  "betterarcheology:rotten_planks": "",
+  "betterarcheology:rotten_pressure_plate": "",
+  "betterarcheology:rotten_slab": "",
+  "betterarcheology:rotten_stairs": "",
+  "betterarcheology:rotten_trapdoor": "",
+  "betterarcheology:sheep_fossil": "",
+  "betterarcheology:sheep_fossil_body": "",
+  "betterarcheology:sheep_fossil_head": "",
+  "betterarcheology:soul_totem": "Totem of Souls",
+  "betterarcheology:soul_totem_description": "Damage target & regain health",
+  "betterarcheology:suspicious_dirt": "",
+  "betterarcheology:suspicious_red_sand": "",
+  "betterarcheology:torrent_totem": "Totem of Torrents",
+  "betterarcheology:torrent_totem_description": "Use on land to torrent dash",
+  "betterarcheology:unidentified_artifact": "Unidentified Artifact",
+  "betterarcheology:vase": "",
+  "betterarcheology:vase_creeper": "",
+  "betterarcheology:vase_green": "",
+  "betterarcheology:villager_fossil": "",
+  "betterarcheology:villager_fossil_body": "",
+  "betterarcheology:villager_fossil_head": "",
+  "betterarcheology:wolf_fossil": "",
+  "betterarcheology:wolf_fossil_body": "",
+  "betterarcheology:wolf_fossil_head": ""
+ },
+ "data": {
+  "enchantment": [
+   "betterarcheology:penetrating_strike",
+   "betterarcheology:soaring_winds",
+   "betterarcheology:tunneling"
+  ],
+  "jukebox_song": [
+   "betterarcheology:swings"
+  ],
+  "loot_table": [
+   "betterarcheology:archeology/chest_buried_ruins_sand",
+   "betterarcheology:archeology/chest_catacombs_combat",
+   "betterarcheology:archeology/chest_catacombs_generic",
+   "betterarcheology:archeology/chest_catacombs_golden",
+   "betterarcheology:archeology/chest_catacombs_library",
+   "betterarcheology:archeology/chest_catacombs_potion",
+   "betterarcheology:archeology/chest_jungle_temple_equip",
+   "betterarcheology:archeology/chest_jungle_temple_food",
+   "betterarcheology:archeology/chest_jungle_temple_generic",
+   "betterarcheology:archeology/chest_jungle_temple_treasure",
+   "betterarcheology:archeology/chest_light_temple_book",
+   "betterarcheology:archeology/chest_light_temple_generic",
+   "betterarcheology:archeology/chest_light_temple_pillager",
+   "betterarcheology:archeology/chest_light_temple_treasure",
+   "betterarcheology:archeology/chest_loot_prototype",
+   "betterarcheology:archeology/chest_mesa_ruins",
+   "betterarcheology:archeology/chest_mott",
+   "betterarcheology:archeology/chest_radiance_totem",
+   "betterarcheology:archeology/chest_sculk_sword",
+   "betterarcheology:archeology/chest_tumulus",
+   "betterarcheology:archeology/chest_underwater",
+   "betterarcheology:archeology/desert_sand",
+   "betterarcheology:archeology/fossiliferous_dirt_chicken",
+   "betterarcheology:archeology/fossiliferous_dirt_creeper",
+   "betterarcheology:archeology/fossiliferous_dirt_guardian",
+   "betterarcheology:archeology/fossiliferous_dirt_jungle",
+   "betterarcheology:archeology/fossiliferous_dirt_sheep",
+   "betterarcheology:archeology/fossiliferous_dirt_villager",
+   "betterarcheology:archeology/fossiliferous_dirt_wolf",
+   "betterarcheology:archeology/loot_catacombs_equipment",
+   "betterarcheology:archeology/loot_catacombs_generic",
+   "betterarcheology:archeology/mesa_red_sand",
+   "betterarcheology:archeology/plains_gravel",
+   "betterarcheology:archeology/sussand_underwater",
+   "betterarcheology:archeology/sword_loot",
+   "betterarcheology:archeology/taiga_dirt",
+   "betterarcheology:blocks/archeology_table",
+   "betterarcheology:blocks/chicken_fossil",
+   "betterarcheology:blocks/chicken_fossil_body",
+   "betterarcheology:blocks/chicken_fossil_head",
+   "betterarcheology:blocks/chiseled_bone_block",
+   "betterarcheology:blocks/cracked_mud_brick_slab",
+   "betterarcheology:blocks/cracked_mud_brick_stairs",
+   "betterarcheology:blocks/cracked_mud_bricks",
+   "betterarcheology:blocks/creeper_fossil",
+   "betterarcheology:blocks/creeper_fossil_body",
+   "betterarcheology:blocks/creeper_fossil_head",
+   "betterarcheology:blocks/evoker_trap",
+   "betterarcheology:blocks/fossiliferous_dirt",
+   "betterarcheology:blocks/growth_totem",
+   "betterarcheology:blocks/guardian_fossil",
+   "betterarcheology:blocks/guardian_fossil_body",
+   "betterarcheology:blocks/guardian_fossil_head",
+   "betterarcheology:blocks/infested_mud_bricks",
+   "betterarcheology:blocks/loot_vase",
+   "betterarcheology:blocks/loot_vase_creeper",
+   "betterarcheology:blocks/loot_vase_green",
+   "betterarcheology:blocks/ocelot_fossil",
+   "betterarcheology:blocks/ocelot_fossil_body",
+   "betterarcheology:blocks/ocelot_fossil_head",
+   "betterarcheology:blocks/radiance_totem",
+   "betterarcheology:blocks/rotten_door",
+   "betterarcheology:blocks/rotten_fence",
+   "betterarcheology:blocks/rotten_fence_gate",
+   "betterarcheology:blocks/rotten_log",
+   "betterarcheology:blocks/rotten_planks",
+   "betterarcheology:blocks/rotten_pressure_plate",
+   "betterarcheology:blocks/rotten_slab",
+   "betterarcheology:blocks/rotten_stairs",
+   "betterarcheology:blocks/rotten_trapdoor",
+   "betterarcheology:blocks/sheep_fossil",
+   "betterarcheology:blocks/sheep_fossil_body",
+   "betterarcheology:blocks/sheep_fossil_head",
+   "betterarcheology:blocks/supply_loot_from_loot_vase",
+   "betterarcheology:blocks/suspicious_dirt",
+   "betterarcheology:blocks/suspicious_red_sand",
+   "betterarcheology:blocks/treasure_loot_from_green_loot_vase",
+   "betterarcheology:blocks/treasure_loot_from_loot_vase",
+   "betterarcheology:blocks/vase",
+   "betterarcheology:blocks/vase_creeper",
+   "betterarcheology:blocks/vase_green",
+   "betterarcheology:blocks/villager_fossil",
+   "betterarcheology:blocks/villager_fossil_body",
+   "betterarcheology:blocks/villager_fossil_head",
+   "betterarcheology:blocks/wolf_fossil",
+   "betterarcheology:blocks/wolf_fossil_body",
+   "betterarcheology:blocks/wolf_fossil_head",
+   "betterarcheology:diggable_block",
+   "betterarcheology:explorer_maps/catacombs_explorer_map",
+   "betterarcheology:explorer_maps/light_explorer_map"
+  ],
+  "recipe": [
+   "betterarcheology:archeology_table",
+   "betterarcheology:bomb",
+   "betterarcheology:chicken_fossil",
+   "betterarcheology:cracked_mud_brick_slab",
+   "betterarcheology:cracked_mud_brick_stairs",
+   "betterarcheology:cracked_mud_bricks",
+   "betterarcheology:creeper_fossil",
+   "betterarcheology:diamond_brush",
+   "betterarcheology:guardian_fossil",
+   "betterarcheology:iron_brush",
+   "betterarcheology:ocelot_fossil",
+   "betterarcheology:penetrating_strike_from_identifying",
+   "betterarcheology:rotten_door",
+   "betterarcheology:rotten_fence",
+   "betterarcheology:rotten_fence_gate",
+   "betterarcheology:rotten_planks",
+   "betterarcheology:rotten_pressure_plate",
+   "betterarcheology:rotten_slab",
+   "betterarcheology:rotten_stairs",
+   "betterarcheology:rotten_trapdoor",
+   "betterarcheology:sheep_fossil",
+   "betterarcheology:soaring_winds_from_identifying",
+   "betterarcheology:tunneling_from_identifying",
+   "betterarcheology:unidentified_artifact",
+   "betterarcheology:villager_fossil",
+   "betterarcheology:wolf_fossil",
+   "minecraft:cracked_mud_brick_slab_from_cracked_mud_bricks_stonecutting",
+   "minecraft:cracked_mud_brick_stairs_from_cracked_mud_bricks_stonecutting",
+   "minecraft:netherite_brush_smithing"
+  ],
+  "structure": [
+   "betterarcheology:archeologist_camp_grassy",
+   "betterarcheology:archeologist_camp_redsand",
+   "betterarcheology:archeologist_camp_sand",
+   "betterarcheology:buried_ruins_sand",
+   "betterarcheology:catacombs/catacombs_endpiece_1",
+   "betterarcheology:catacombs/catacombs_entrance",
+   "betterarcheology:catacombs/catacombs_ladder",
+   "betterarcheology:catacombs/catacombs_room_1",
+   "betterarcheology:catacombs/catacombs_room_2",
+   "betterarcheology:catacombs/catacombs_room_3",
+   "betterarcheology:catacombs/catacombs_room_4",
+   "betterarcheology:catacombs/catacombs_room_5",
+   "betterarcheology:catacombs/catacombs_room_6",
+   "betterarcheology:catacombs/catacombs_top",
+   "betterarcheology:catacombs/catacombs_tunnel_1",
+   "betterarcheology:catacombs/catacombs_tunnel_2",
+   "betterarcheology:catacombs/catacombs_tunnel_3",
+   "betterarcheology:catacombs/catacombs_tunnel_4",
+   "betterarcheology:catacombs/catacombs_tunnel_5",
+   "betterarcheology:catacombs/catacombs_tunnel_6",
+   "betterarcheology:catacombs/catacombs_tunnel_7",
+   "betterarcheology:consuming_sculk",
+   "betterarcheology:desert_obelisk",
+   "betterarcheology:fossil_chicken",
+   "betterarcheology:fossil_chicken_birch",
+   "betterarcheology:fossil_creeper",
+   "betterarcheology:fossil_jungle_0",
+   "betterarcheology:fossil_jungle_1",
+   "betterarcheology:fossil_sheep_0",
+   "betterarcheology:fossil_wolf",
+   "betterarcheology:light_temple/big_room",
+   "betterarcheology:light_temple/entrance_stairs",
+   "betterarcheology:light_temple/flower_room",
+   "betterarcheology:light_temple/light_temple",
+   "betterarcheology:light_temple/side_room_1",
+   "betterarcheology:light_temple/side_room_2",
+   "betterarcheology:light_temple/side_room_3",
+   "betterarcheology:light_temple/side_room_4",
+   "betterarcheology:light_temple/side_room_5",
+   "betterarcheology:light_temple/side_room_6",
+   "betterarcheology:light_temple/side_room_7",
+   "betterarcheology:mesa_ruins",
+   "betterarcheology:mott",
+   "betterarcheology:ruins_sand",
+   "betterarcheology:stonehenge_grassy",
+   "betterarcheology:temple_jungle",
+   "betterarcheology:tumulus_grassy",
+   "betterarcheology:underwater_0",
+   "betterarcheology:underwater_1",
+   "betterarcheology:underwater_2",
+   "betterarcheology:underwater_3",
+   "betterarcheology:villager_grave"
+  ],
+  "structure_configs": [
+   "cristellib:structure_settings",
+   "cristellib:structure_toggle"
+  ],
+  "tags/block": [
+   "betterarcheology:rotten_logs",
+   "minecraft:bamboo_plantable_on",
+   "minecraft:dirt",
+   "minecraft:doors",
+   "minecraft:fence_gates",
+   "minecraft:fences",
+   "minecraft:flowers",
+   "minecraft:logs",
+   "minecraft:logs_that_burn",
+   "minecraft:lush_ground_replaceable",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:mineable/shovel",
+   "minecraft:planks",
+   "minecraft:pressure_plates",
+   "minecraft:slabs",
+   "minecraft:small_flowers",
+   "minecraft:stairs",
+   "minecraft:trapdoors",
+   "minecraft:unstable_bottom_center",
+   "minecraft:wall_post_override",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_trapdoors"
+  ],
+  "tags/enchantment": [
+   "minecraft:treasure"
+  ],
+  "tags/item": [
+   "betterarcheology:rotten_logs",
+   "betterarcheology:soaring_winds_items",
+   "betterarcheology:tunneling_items",
+   "c:elytras",
+   "c:music_discs",
+   "c:tools/brush",
+   "minecraft:dirt",
+   "minecraft:doors",
+   "minecraft:enchantable/durability",
+   "minecraft:fence_gates",
+   "minecraft:fences",
+   "minecraft:flowers",
+   "minecraft:logs",
+   "minecraft:logs_that_burn",
+   "minecraft:planks",
+   "minecraft:slabs",
+   "minecraft:small_flowers",
+   "minecraft:stairs",
+   "minecraft:trapdoors",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_trapdoors"
+  ],
+  "tags/point_of_interest_type": [
+   "betterarcheology:archeology_pois",
+   "minecraft:acquirable_job_site"
+  ],
+  "tags/worldgen/biome": [
+   "betterarcheology:collections/badlands",
+   "betterarcheology:collections/birch_forests",
+   "betterarcheology:collections/deserts",
+   "betterarcheology:collections/forests",
+   "betterarcheology:collections/jungles",
+   "betterarcheology:collections/meadows",
+   "betterarcheology:collections/oceans",
+   "betterarcheology:collections/plains",
+   "betterarcheology:collections/taigas",
+   "betterarcheology:has_structure/archeologist_camp_grassy",
+   "betterarcheology:has_structure/archeologist_camp_redsand",
+   "betterarcheology:has_structure/archeologist_camp_sand",
+   "betterarcheology:has_structure/buried_ruins_sand",
+   "betterarcheology:has_structure/catacombs",
+   "betterarcheology:has_structure/desert_obelisk",
+   "betterarcheology:has_structure/fossil_chicken",
+   "betterarcheology:has_structure/fossil_chicken_birch",
+   "betterarcheology:has_structure/fossil_creeper",
+   "betterarcheology:has_structure/fossil_jungle_0",
+   "betterarcheology:has_structure/fossil_jungle_1",
+   "betterarcheology:has_structure/fossil_sheep_0",
+   "betterarcheology:has_structure/fossil_wolf",
+   "betterarcheology:has_structure/light_temple",
+   "betterarcheology:has_structure/mesa_ruins",
+   "betterarcheology:has_structure/mott",
+   "betterarcheology:has_structure/ruins_sand",
+   "betterarcheology:has_structure/stonehenge_grassy",
+   "betterarcheology:has_structure/temple_jungle",
+   "betterarcheology:has_structure/tumulus_grassy",
+   "betterarcheology:has_structure/underwater",
+   "betterarcheology:has_structure/villager_grave"
+  ],
+  "tags/worldgen/structure": [
+   "betterarcheology:on_catacombs_explorer_map",
+   "betterarcheology:on_light_explorer_map"
+  ],
+  "worldgen/processor_list": [
+   "betterarcheology:catacombs",
+   "betterarcheology:desert_obelisk",
+   "betterarcheology:fossil_chicken",
+   "betterarcheology:fossil_creeper",
+   "betterarcheology:fossil_jungle",
+   "betterarcheology:fossil_sheep",
+   "betterarcheology:fossil_villager",
+   "betterarcheology:fossil_wolf",
+   "betterarcheology:light_temple",
+   "betterarcheology:ruins_sand",
+   "betterarcheology:susdirt_taiga",
+   "betterarcheology:susgravel_plains",
+   "betterarcheology:susredsand_mesa",
+   "betterarcheology:sussand_desert",
+   "betterarcheology:sussand_underwater",
+   "betterarcheology:temple_jungle",
+   "betterarcheology:tumulus"
+  ],
+  "worldgen/structure": [
+   "betterarcheology:archeologist_camp_grassy",
+   "betterarcheology:archeologist_camp_redsand",
+   "betterarcheology:archeologist_camp_sand",
+   "betterarcheology:buried_ruins_sand",
+   "betterarcheology:catacombs",
+   "betterarcheology:desert_obelisk",
+   "betterarcheology:fossil_chicken",
+   "betterarcheology:fossil_chicken_birch",
+   "betterarcheology:fossil_creeper",
+   "betterarcheology:fossil_jungle_0",
+   "betterarcheology:fossil_jungle_1",
+   "betterarcheology:fossil_sheep_0",
+   "betterarcheology:fossil_wolf",
+   "betterarcheology:light_temple",
+   "betterarcheology:mesa_ruins",
+   "betterarcheology:mott",
+   "betterarcheology:ruins_sand",
+   "betterarcheology:stonehenge_grassy",
+   "betterarcheology:temple_jungle",
+   "betterarcheology:tumulus_grassy",
+   "betterarcheology:underwater_0",
+   "betterarcheology:underwater_1",
+   "betterarcheology:underwater_2",
+   "betterarcheology:underwater_3",
+   "betterarcheology:villager_grave"
+  ],
+  "worldgen/structure_set": [
+   "betterarcheology:archeology_sites",
+   "betterarcheology:fossil_sites",
+   "betterarcheology:underwater_ruins"
+  ],
+  "worldgen/template_pool": [
+   "betterarcheology:archeologist_camp_grassy",
+   "betterarcheology:archeologist_camp_redsand",
+   "betterarcheology:archeologist_camp_sand",
+   "betterarcheology:buried_ruins_sand",
+   "betterarcheology:catacombs/endpieces",
+   "betterarcheology:catacombs/entrance_ladder",
+   "betterarcheology:catacombs/entrance_walkway",
+   "betterarcheology:catacombs/start_pool",
+   "betterarcheology:catacombs/walkways",
+   "betterarcheology:desert_obelisk",
+   "betterarcheology:fossil_chicken",
+   "betterarcheology:fossil_chicken_birch",
+   "betterarcheology:fossil_creeper",
+   "betterarcheology:fossil_jungle_0",
+   "betterarcheology:fossil_jungle_1",
+   "betterarcheology:fossil_sheep_0",
+   "betterarcheology:fossil_wolf",
+   "betterarcheology:light_temple/big_room",
+   "betterarcheology:light_temple/entrance_stairs",
+   "betterarcheology:light_temple/flower_room",
+   "betterarcheology:light_temple/light_temple",
+   "betterarcheology:light_temple/side_room_1",
+   "betterarcheology:light_temple/side_room_2",
+   "betterarcheology:light_temple/side_room_3",
+   "betterarcheology:light_temple/side_room_4",
+   "betterarcheology:light_temple/side_room_5",
+   "betterarcheology:light_temple/side_room_6",
+   "betterarcheology:light_temple/side_room_7",
+   "betterarcheology:mesa_ruins",
+   "betterarcheology:mott",
+   "betterarcheology:ruins_sand",
+   "betterarcheology:stonehenge_grassy",
+   "betterarcheology:temple_jungle",
+   "betterarcheology:tumulus_grassy",
+   "betterarcheology:underwater_0",
+   "betterarcheology:underwater_1",
+   "betterarcheology:underwater_2",
+   "betterarcheology:underwater_3",
+   "betterarcheology:villager_grave"
+  ]
+ },
+ "data_counts": {
+  "advancement": 32
+ },
+ "tags": {
+  "tags/block": {
+   "betterarcheology:rotten_logs": [
+    "betterarcheology:rotten_log"
+   ],
+   "minecraft:bamboo_plantable_on": [
+    "betterarcheology:fossiliferous_dirt"
+   ],
+   "minecraft:dirt": [
+    "betterarcheology:fossiliferous_dirt"
+   ],
+   "minecraft:doors": [
+    "betterarcheology:rotten_door"
+   ],
+   "minecraft:fence_gates": [
+    "betterarcheology:rotten_fence_gate"
+   ],
+   "minecraft:fences": [
+    "betterarcheology:rotten_fence"
+   ],
+   "minecraft:flowers": [
+    "betterarcheology:growth_totem"
+   ],
+   "minecraft:logs": [
+    "betterarcheology:rotten_log"
+   ],
+   "minecraft:logs_that_burn": [
+    "betterarcheology:rotten_log"
+   ],
+   "minecraft:lush_ground_replaceable": [
+    "betterarcheology:fossiliferous_dirt"
+   ],
+   "minecraft:mineable/axe": [
+    "betterarcheology:rotten_log",
+    "betterarcheology:rotten_planks",
+    "betterarcheology:rotten_stairs",
+    "betterarcheology:rotten_slab",
+    "betterarcheology:rotten_fence",
+    "betterarcheology:rotten_fence_gate",
+    "betterarcheology:rotten_trapdoor",
+    "betterarcheology:rotten_door",
+    "betterarcheology:rotten_pressure_plate",
+    "betterarcheology:archeology_table"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "betterarcheology:cracked_mud_bricks",
+    "betterarcheology:cracked_mud_brick_slab",
+    "betterarcheology:cracked_mud_brick_stairs",
+    "betterarcheology:villager_fossil",
+    "betterarcheology:villager_fossil_body",
+    "betterarcheology:villager_fossil_head",
+    "betterarcheology:ocelot_fossil",
+    "betterarcheology:ocelot_fossil_body",
+    "betterarcheology:ocelot_fossil_head",
+    "betterarcheology:sheep_fossil",
+    "betterarcheology:sheep_fossil_body",
+    "betterarcheology:sheep_fossil_head",
+    "betterarcheology:chicken_fossil",
+    "betterarcheology:chicken_fossil_body",
+    "betterarcheology:chicken_fossil_head",
+    "betterarcheology:creeper_fossil",
+    "betterarcheology:creeper_fossil_body",
+    "betterarcheology:creeper_fossil_head",
+    "betterarcheology:wolf_fossil",
+    "betterarcheology:wolf_fossil_body",
+    "betterarcheology:wolf_fossil_head",
+    "betterarcheology:guardian_fossil",
+    "betterarcheology:guardian_fossil_body",
+    "betterarcheology:guardian_fossil_head",
+    "betterarcheology:evoker_trap",
+    "betterarcheology:chiseled_bone_block",
+    "betterarcheology:radiance_totem"
+   ],
+   "minecraft:mineable/shovel": [
+    "betterarcheology:fossiliferous_dirt"
+   ],
+   "minecraft:planks": [
+    "betterarcheology:rotten_planks"
+   ],
+   "minecraft:pressure_plates": [
+    "betterarcheology:rotten_pressure_plate"
+   ],
+   "minecraft:slabs": [
+    "betterarcheology:rotten_slab"
+   ],
+   "minecraft:small_flowers": [
+    "betterarcheology:growth_totem"
+   ],
+   "minecraft:stairs": [
+    "betterarcheology:rotten_stairs"
+   ],
+   "minecraft:trapdoors": [
+    "betterarcheology:rotten_trapdoor"
+   ],
+   "minecraft:unstable_bottom_center": [
+    "betterarcheology:rotten_fence_gate"
+   ],
+   "minecraft:wall_post_override": [
+    "betterarcheology:rotten_pressure_plate"
+   ],
+   "minecraft:wooden_doors": [
+    "betterarcheology:rotten_door"
+   ],
+   "minecraft:wooden_fences": [
+    "betterarcheology:rotten_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "betterarcheology:rotten_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "betterarcheology:rotten_slab"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "betterarcheology:rotten_trapdoor"
+   ]
+  },
+  "tags/enchantment": {
+   "minecraft:treasure": [
+    "betterarcheology:soaring_winds",
+    "betterarcheology:penetrating_strike",
+    "betterarcheology:tunneling"
+   ]
+  },
+  "tags/item": {
+   "betterarcheology:rotten_logs": [
+    "betterarcheology:rotten_log"
+   ],
+   "betterarcheology:soaring_winds_items": [
+    "#c:elytras?"
+   ],
+   "betterarcheology:tunneling_items": [
+    "#minecraft:pickaxes?",
+    "#minecraft:shovels?",
+    "#minecraft:hoes?"
+   ],
+   "c:elytras": [
+    "minecraft:elytra"
+   ],
+   "c:music_discs": [
+    "betterarcheology:music_disc_swings"
+   ],
+   "c:tools/brush": [
+    "minecraft:brush",
+    "betterarcheology:iron_brush",
+    "betterarcheology:diamond_brush",
+    "betterarcheology:netherite_brush"
+   ],
+   "minecraft:dirt": [
+    "betterarcheology:fossiliferous_dirt"
+   ],
+   "minecraft:doors": [
+    "betterarcheology:rotten_door"
+   ],
+   "minecraft:enchantable/durability": [
+    "#c:tools/brush?",
+    "betterarcheology:iron_brush",
+    "betterarcheology:diamond_brush",
+    "betterarcheology:netherite_brush"
+   ],
+   "minecraft:fence_gates": [
+    "betterarcheology:rotten_fence_gate"
+   ],
+   "minecraft:fences": [
+    "betterarcheology:rotten_fence"
+   ],
+   "minecraft:flowers": [
+    "betterarcheology:growth_totem"
+   ],
+   "minecraft:logs": [
+    "betterarcheology:rotten_log"
+   ],
+   "minecraft:logs_that_burn": [
+    "betterarcheology:rotten_log"
+   ],
+   "minecraft:planks": [
+    "betterarcheology:rotten_planks"
+   ],
+   "minecraft:slabs": [
+    "betterarcheology:rotten_slab"
+   ],
+   "minecraft:small_flowers": [
+    "betterarcheology:growth_totem"
+   ],
+   "minecraft:stairs": [
+    "betterarcheology:rotten_stairs"
+   ],
+   "minecraft:trapdoors": [
+    "betterarcheology:rotten_trapdoor"
+   ],
+   "minecraft:wooden_doors": [
+    "betterarcheology:rotten_door"
+   ],
+   "minecraft:wooden_fences": [
+    "betterarcheology:rotten_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "betterarcheology:rotten_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "betterarcheology:rotten_slab"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "betterarcheology:rotten_trapdoor"
+   ]
+  },
+  "tags/point_of_interest_type": {
+   "betterarcheology:archeology_pois": [
+    "betterarcheology:archeology_table_poi"
+   ],
+   "minecraft:acquirable_job_site": [
+    "betterarcheology:archeology_table_poi"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "betterarcheology:collections/badlands": [
+    "#minecraft:is_badlands",
+    "terralith:savanna_badlands?",
+    "byg:atacama_desert?",
+    "biomeswevegone:atacama_outback?",
+    "#biomeswevegone:badlands?",
+    "#forge:is_mesa?",
+    "#c:in_mesa?",
+    "#forge:is_badlands?",
+    "#c:badlands?"
+   ],
+   "betterarcheology:collections/birch_forests": [
+    "minecraft:birch_forest",
+    "minecraft:old_growth_birch_forest",
+    "#c:birch_forest?",
+    "terralith:temperate_highlands?",
+    "terralith:birch_taiga?",
+    "terralith:white_cliffs?",
+    "byg:aspen_forest?",
+    "byg:temperate_grove?",
+    "biomeswevegone:aspen_boreal?",
+    "biomeswevegone:temperate_grove?",
+    "projectvibrantjourneys:aspen_grove?",
+    "wythers:autumnal_birch_forest?",
+    "wythers:birch_swamp?",
+    "wythers:birch_taiga?",
+    "wythers:warm_birch_forest?"
+   ],
+   "betterarcheology:collections/deserts": [
+    "minecraft:desert",
+    "#c:desert?",
+    "terralith:lush_desert?",
+    "biomesoplenty:lush_desert?",
+    "projectvibrantjourneys:desert_shrubland?",
+    "projectvibrantjourneys:verdant_sands?",
+    "#forge:is_desert?",
+    "biomeswevegone:atacama_outback?"
+   ],
+   "betterarcheology:collections/forests": [
+    "#minecraft:is_forest",
+    "#forge:is_forest?",
+    "#c:forest?",
+    "biomeswevegone:black_forest?",
+    "biomeswevegone:cika_woods?",
+    "biomeswevegone:coniferous_forest?",
+    "biomeswevegone:dacite_ridges?",
+    "biomeswevegone:ebony_woods?",
+    "biomeswevegone:forgotten_forest?",
+    "biomeswevegone:frosted_coniferous_forest?",
+    "biomeswevegone:howling_peaks?",
+    "biomeswevegone:orchard?",
+    "biomeswevegone:overgrowth_woodlands?",
+    "biomeswevegone:redwood_thicket?",
+    "biomeswevegone:sakura_grove?",
+    "biomeswevegone:weeping_witch_forest?",
+    "biomeswevegone:zelkova_forest?"
+   ],
+   "betterarcheology:collections/jungles": [
+    "#minecraft:is_jungle",
+    "#forge:is_jungle?",
+    "#c:in_jungle?"
+   ],
+   "betterarcheology:collections/meadows": [
+    "minecraft:meadow",
+    "biomesoplenty:field?",
+    "#c:meadow?",
+    "biomesoplenty:highland?",
+    "biomesoplenty:highland_moor?",
+    "biomesoplenty:rocky_shrubland?",
+    "biomesoplenty:clover_patch?",
+    "projectvibrantjourneys:pine_meadows?",
+    "regions_unexplored:meadow?",
+    "regions_unexplored:highland_fields?",
+    "regions_unexplored:shrubland?",
+    "wythers:cold_plains?",
+    "wythers:cool_plains?",
+    "wythers:autumnal_plains?",
+    "wythers:harvest_fields?",
+    "wythers:highland_plains?"
+   ],
+   "betterarcheology:collections/oceans": [
+    "#minecraft:is_ocean",
+    "#minecraft:is_deep_ocean",
+    "#forge:is_ocean?",
+    "#c:ocean?",
+    "#c:shallow_ocean?",
+    "#c:deep_ocean?"
+   ],
+   "betterarcheology:collections/plains": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "terralith:brushland?",
+    "projectvibrantjourneys:prairie?",
+    "#c:plains?",
+    "regions_unexplored:lupine_plains?",
+    "regions_unexplored:clover_plains?",
+    "regions_unexplored:prairie?",
+    "regions_unexplored:grassland?",
+    "regions_unexplored:barley_fields?",
+    "regions_unexplored:poppy_fields?",
+    "regions_unexplored:shrubland?",
+    "regions_unexplored:lush_hills?"
+   ],
+   "betterarcheology:collections/taigas": [
+    "minecraft:taiga",
+    "c:taiga?",
+    "terralith:cloud_forest?",
+    "terralith:forested_highlands?",
+    "terralith:lavender_forest?",
+    "terralith:lavender_valley?",
+    "terralith:moonlight_valley?",
+    "terralith:rocky_shrubland?",
+    "terralith:shrubland?",
+    "terralith:wintry_forest?",
+    "biomesoplenty:mediterranean_taiga?",
+    "biomesoplenty:old_growth_dead_forest?",
+    "byg:autumnal_taiga?",
+    "byg:canadian_shield?",
+    "byg:maple_taiga?",
+    "biomeswevegone:aspen_boreal?",
+    "biomeswevegone:canadian_shield?",
+    "biomeswevegone:maple_taiga?",
+    "biomeswevegone:frosted_taiga?",
+    "projectvibrantjourneys:boreal_forest?",
+    "regions_unexplored:pine_forest?",
+    "regions_unexplored:pine_taiga?",
+    "regions_unexplored:pine_slopes?",
+    "regions_unexplored:willow_forest?",
+    "wythers:birch_taiga?",
+    "wythers:boreal_forest_red?",
+    "wythers:boreal_forest_yellow?",
+    "wythers:forested_highlands?",
+    "wythers:jade_highlands?",
+    "wythers:larch_taiga?",
+    "wythers:pine_barrens?",
+    "wythers:thermal_taiga?"
+   ],
+   "betterarcheology:has_structure/archeologist_camp_grassy": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/plains",
+    "#betterarcheology:collections/meadows",
+    "#betterarcheology:collections/taigas"
+   ],
+   "betterarcheology:has_structure/archeologist_camp_redsand": [
+    "#betterarcheology:collections/badlands"
+   ],
+   "betterarcheology:has_structure/archeologist_camp_sand": [
+    "#betterarcheology:collections/deserts"
+   ],
+   "betterarcheology:has_structure/buried_ruins_sand": [
+    "#betterarcheology:collections/deserts"
+   ],
+   "betterarcheology:has_structure/catacombs": [
+    "#betterarcheology:collections/taigas",
+    "#betterarcheology:collections/jungles"
+   ],
+   "betterarcheology:has_structure/desert_obelisk": [
+    "#betterarcheology:collections/deserts"
+   ],
+   "betterarcheology:has_structure/fossil_chicken": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/plains",
+    "#betterarcheology:collections/meadows",
+    "#betterarcheology:collections/taigas"
+   ],
+   "betterarcheology:has_structure/fossil_chicken_birch": [
+    "#betterarcheology:collections/birch_forests"
+   ],
+   "betterarcheology:has_structure/fossil_creeper": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/plains",
+    "#betterarcheology:collections/meadows",
+    "#betterarcheology:collections/taigas"
+   ],
+   "betterarcheology:has_structure/fossil_jungle_0": [
+    "#betterarcheology:collections/jungles"
+   ],
+   "betterarcheology:has_structure/fossil_jungle_1": [
+    "#betterarcheology:collections/jungles"
+   ],
+   "betterarcheology:has_structure/fossil_sheep_0": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/plains",
+    "#betterarcheology:collections/meadows",
+    "#betterarcheology:collections/taigas"
+   ],
+   "betterarcheology:has_structure/fossil_wolf": [
+    "#betterarcheology:collections/taigas",
+    "#betterarcheology:collections/forests"
+   ],
+   "betterarcheology:has_structure/light_temple": [
+    "#betterarcheology:collections/taigas",
+    "#betterarcheology:collections/plains"
+   ],
+   "betterarcheology:has_structure/mesa_ruins": [
+    "#betterarcheology:collections/badlands"
+   ],
+   "betterarcheology:has_structure/mott": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/taigas"
+   ],
+   "betterarcheology:has_structure/ruins_sand": [
+    "#betterarcheology:collections/deserts"
+   ],
+   "betterarcheology:has_structure/stonehenge_grassy": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/plains",
+    "#betterarcheology:collections/meadows",
+    "#betterarcheology:collections/taigas"
+   ],
+   "betterarcheology:has_structure/temple_jungle": [
+    "#betterarcheology:collections/jungles"
+   ],
+   "betterarcheology:has_structure/tumulus_grassy": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/plains",
+    "#betterarcheology:collections/meadows",
+    "#betterarcheology:collections/taigas"
+   ],
+   "betterarcheology:has_structure/underwater": [
+    "#betterarcheology:collections/oceans"
+   ],
+   "betterarcheology:has_structure/villager_grave": [
+    "#betterarcheology:collections/forests",
+    "#betterarcheology:collections/plains",
+    "#betterarcheology:collections/meadows",
+    "#betterarcheology:collections/taigas"
+   ]
+  },
+  "tags/worldgen/structure": {
+   "betterarcheology:on_catacombs_explorer_map": [
+    "betterarcheology:catacombs"
+   ],
+   "betterarcheology:on_light_explorer_map": [
+    "betterarcheology:light_temple"
+   ]
+  }
+ },
+ "recipe_types": {
+  "betterarcheology:identifying": 3,
+  "minecraft:crafting_shaped": 14,
+  "minecraft:crafting_shapeless": 8,
+  "minecraft:smelting": 1,
+  "minecraft:smithing_transform": 1,
+  "minecraft:stonecutting": 2
+ },
+ "botanypots": [],
+ "problems": []
+}
