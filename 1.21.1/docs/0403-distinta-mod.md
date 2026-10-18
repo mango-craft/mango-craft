@@ -1,4 +1,6 @@
-# Verifica versioni NeoForge 1.21.1
+# Distinta delle mod — Minecraft 1.21.1
+
+_Documento vivo: versione, data ed esito della verifica di ogni file del pack (nata come verifica formale del 16/10/2026). Ogni mod aggiunta riceve qui la sua riga; ruolo e licenza sono in `0301-mod.md` (per le librerie, che lì hanno solo il nome, la licenza sta nelle note qui). La versione installata davvero è quella del metafile in `../pack/mods/`: quando una mod si aggiorna, si aggiorna la sua riga qui._
 
 _Controllo formale del 16/10/2026 · fonte: API di Modrinth (filtro `loaders=neoforge`, `game_versions=1.21.1`), CurseForge per le mod che stanno solo lì_
 
@@ -20,6 +22,12 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 
 - **Solo beta/alpha, ma è l'abitudine dell'autore o la mod è dichiaratamente in beta**: Serene Seasons, Pipez, Sound Physics Remastered, The Undergarden, Expanded Delight, Aether's Delight, Fresh Animations. Si usano lo stesso.
 - **Ramo 1.21.1 concluso** (ultima build tra il 2024 e metà 2025, nessuna più recente da nessuna parte): tutta la serie YUNG's, Dungeons and Taverns, Sparse Structures, Hexerei, Ender Storage, Illager Invasion, Mouse Tweaks, Controlling, Pick Up Notifier, Travelers Titles, Animal Feeding Trough. Sono build stabili e definitive, rischio basso.
+
+## Da sapere quando si cercano le mod
+
+- **Solo su CurseForge** (le scarica packwiz-installer; quelle bloccate vanno scaricate a mano): The Twilight Forest, Roaster's Delight, Spice of Life: Carrot Edition, BotanyPotsAdditions, Ars Elemental, AllTheLeaks (dalla 0.2.3), Goblin Traders e la sua libreria Framework (dalla 0.4.0)
+- **Slug da non sbagliare**: Friends & Foes → `friends-and-foes-forge` · Create Slice & Dice → `slice-and-dice` · Deeper and Darker → `deeperdarker` · Unusual End → `unusual_end` · Moog's End Structures → `mes-moogs-end-structures` · Born in Chaos → `borninchaos`. Evitare i progetti omonimi non ufficiali (ImmediatelyFast "Reforged", Entity Culling di altri autori, Compass to Map per JourneyMap)
+- **NeoForge**: almeno 21.1.229 (richiesto da BotanyPotsAdditions; il controllo dei nomi verifica da solo le richieste di ogni mod). Versione usata: changelog; perché è ferma: `0303-note-tecniche.md`
 
 ## Tabella completa
 
@@ -43,7 +51,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Undergarden Delight | [`undergarden-delight`](https://modrinth.com/mod/undergarden-delight) MR | 2.0.2 | 2026-07-09 | release | ✅ |  |
 | Cataclysm Delight | [`l_enders-cataclysm-delight`](https://modrinth.com/mod/l_enders-cataclysm-delight) MR | 1.21.1-1.0.10b | 2026-06-11 | release | ✅ |  |
 | Starcatcher's Delight | [`starcatchers-delight`](https://modrinth.com/mod/starcatchers-delight) MR | 3.2-NEOFORGE-1.21.1 | 2026-09-16 | release | ✅ |  |
-| Aether's Delight | [`the-aethers-delight`](https://modrinth.com/mod/the-aethers-delight) MR | 0.1.4.2 | 2025-10-27 | beta | ⚠️ | Solo beta, ultima di ottobre 2025; entra solo con l'Aether |
+| Aether's Delight | [`the-aethers-delight`](https://modrinth.com/mod/the-aethers-delight) MR | 0.1.4.2 | 2025-10-27 | beta | ⚠️ | Solo beta, ultima di ottobre 2025; legata all'Aether |
 | Spice of Life: Carrot Edition | [`spice-of-life-carrot-edition`](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition) CF | solcarrot-1.21.1-1.16.6 | 2025-12-24 | release | ✅ | Solo CurseForge |
 
 ### Botany Pots
@@ -261,64 +269,64 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Mod | Progetto | Versione NeoForge 1.21.1 | Data | Tipo | Esito | Note |
 |---|---|---|---|---|---|---|
 | Ars Nouveau | [`ars-nouveau`](https://modrinth.com/mod/ars-nouveau) MR | 5.13.3 | 2026-10-03 | release | ✅ | Richiede Curios e GeckoLib. Aggiunta il 16/10/2026 |
-| Artifacts | [`artifacts`](https://modrinth.com/mod/artifacts) MR | 13.2.5 | 2026-09-02 | release | ✅ | MIT; Curios e Accessories opzionali. Aggiunta il 16/10/2026 |
+| Artifacts | [`artifacts`](https://modrinth.com/mod/artifacts) MR | 13.2.5 | 2026-09-02 | release | ✅ | Curios e Accessories opzionali. Aggiunta il 16/10/2026 |
 | Paxi | [`paxi`](https://modrinth.com/mod/paxi) MR | 1.21.1-NeoForge-5.1.3 | 2025-05-01 | release | ⚠️ | Ramo 1.21.1 concluso (ultima build maggio 2025); richiede YUNG's API. Aggiunta il 16/10/2026 |
-| Ars Delight (Flavors & Delight) | [`arsdelight`](https://modrinth.com/mod/arsdelight) MR | 2.2.5 | 2026-10-06 | release | ✅ | LGPL-2.1; richiede Ars Nouveau e Farmer's Delight. Aggiunta il 16/10/2026 |
+| Ars Delight (Flavors & Delight) | [`arsdelight`](https://modrinth.com/mod/arsdelight) MR | 2.2.5 | 2026-10-06 | release | ✅ | Richiede Ars Nouveau e Farmer's Delight. Aggiunta il 16/10/2026 |
 | Ars Creo | [`ars-creo`](https://modrinth.com/mod/ars-creo) MR | 5.4.0 | 2026-05-24 | release | ✅ | Dello sviluppatore di Ars; richiede Create 6.0.9+. Aggiunta il 16/10/2026 |
-| Ars Mekanica | [`ars-mekanica`](https://modrinth.com/mod/ars-mekanica) MR | 1.3.0 | 2026-07-27 | release | ✅ | LGPL-2.1; richiede Mekanism. Aggiunta il 16/10/2026 |
-| Ars Elemental | [`ars-elemental`](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) CF | 0.7.10.4 | 2026-10-04 | release | ✅ | LGPL-3.0; **solo CurseForge**. Aggiunta il 16/10/2026 |
-| Ars QOL | — | 1.2.1 | 2026-10-05 | release | ✅ | MIT; progetto piccolo e nuovo (cercarlo per nome in Prism). Aggiunta il 16/10/2026 |
-| Ars Unification | [`ars-unification`](https://modrinth.com/mod/ars-unification) MR | 1.2.19 | — | release | ✅ | LGPL-3.0. Aggiunta il 16/10/2026 |
-| Not Enough Glyphs | [`not-enough-glyphs`](https://modrinth.com/mod/not-enough-glyphs) MR | 4.6.x | — | release | ✅ | LGPL-3.0. Aggiunta il 16/10/2026 |
-| Ars Controle | [`ars-controle`](https://modrinth.com/mod/ars-controle) MR | 1.6.16 | 2026-09-10 | release | ✅ | LGPL-3.0. Aggiunta il 16/10/2026 |
-| Occultism | [`occultism`](https://modrinth.com/mod/occultism) MR | 1.224.5 | 2026-10-11 | release | ✅ | MIT; richiede Modonomicon, Curios, GeckoLib, SmartBrainLib. Aggiunta il 16/10/2026 |
-| Ars Ocultas | [`ars-ocultas`](https://modrinth.com/mod/ars-ocultas) MR | 1.21.1-2.6.1 | 2026-08-06 | release | ✅ | LGPL-3.0; Ars 5.3–6.0 e Occultism ≥ 1.220.4. Aggiunta il 16/10/2026 |
-| Occult Delight | [`occult-delight`](https://modrinth.com/mod/occult-delight) MR | 1.0.0 | 2026-07-31 | release | ⚠️ | MIT; una sola release. Aggiunta il 16/10/2026 |
+| Ars Mekanica | [`ars-mekanica`](https://modrinth.com/mod/ars-mekanica) MR | 1.3.0 | 2026-07-27 | release | ✅ | Richiede Mekanism. Aggiunta il 16/10/2026 |
+| Ars Elemental | [`ars-elemental`](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) CF | 0.7.10.4 | 2026-10-04 | release | ✅ | **solo CurseForge**. Aggiunta il 16/10/2026 |
+| Ars QOL | — | 1.2.1 | 2026-10-05 | release | ✅ | Progetto piccolo e nuovo (cercarlo per nome in Prism). Aggiunta il 16/10/2026 |
+| Ars Unification | [`ars-unification`](https://modrinth.com/mod/ars-unification) MR | 1.2.19 | — | release | ✅ | Aggiunta il 16/10/2026 |
+| Not Enough Glyphs | [`not-enough-glyphs`](https://modrinth.com/mod/not-enough-glyphs) MR | 4.6.x | — | release | ✅ | Aggiunta il 16/10/2026 |
+| Ars Controle | [`ars-controle`](https://modrinth.com/mod/ars-controle) MR | 1.6.16 | 2026-09-10 | release | ✅ | Aggiunta il 16/10/2026 |
+| Occultism | [`occultism`](https://modrinth.com/mod/occultism) MR | 1.224.5 | 2026-10-11 | release | ✅ | Richiede Modonomicon, Curios, GeckoLib, SmartBrainLib. Aggiunta il 16/10/2026 |
+| Ars Ocultas | [`ars-ocultas`](https://modrinth.com/mod/ars-ocultas) MR | 1.21.1-2.6.1 | 2026-08-06 | release | ✅ | Ars 5.3–6.0 e Occultism ≥ 1.220.4. Aggiunta il 16/10/2026 |
+| Occult Delight | [`occult-delight`](https://modrinth.com/mod/occult-delight) MR | 1.0.0 | 2026-07-31 | release | ⚠️ | Una sola release. Aggiunta il 16/10/2026 |
 | ~~Create: Occult Engineering~~ | ~~`occult-engineering`~~ | ~~1.21.1-0.13.1~~ | ~~2026-08-03~~ | ~~beta~~ | — | Tolta il 16/10/2026 |
-| Reactive Alchemy | [`reactive`](https://modrinth.com/mod/reactive) MR | 1.21.1-10.2.1 | 2026-09-27 | release | ✅ | CC-BY-NC-4.0; richiede Patchouli. Aggiunta il 16/10/2026 |
-| Psi | [`psi`](https://modrinth.com/mod/psi) MR | 1.21.1-110 | 2026-09-01 | release | ✅ | Licenza Psi; richiede Patchouli. Aggiunta il 16/10/2026 |
-| Scriptor Magicae | [`JyJgaOrk`](https://modrinth.com/mod/JyJgaOrk) MR | 2.0.14-1.21.1-neoforge | 2026-09-17 | release | ✅ | CC0; richiede Unfocused e Kotlin for Forge. Aggiunta il 16/10/2026 |
-| Regions Unexplored | [`regions-unexplored`](https://modrinth.com/mod/regions-unexplored) MR | 0.6.2-neoforge-21.1 | 2026-07-12 | release | ✅ | MIT. Aggiunta il 17/10/2026 |
-| Chunky | [`chunky`](https://modrinth.com/mod/chunky) MR | 1.4.23 | 2025-04-04 | release | ✅ | GPL-3.0-only. Aggiunta il 17/10/2026 |
-| Clumps | [`clumps`](https://modrinth.com/mod/clumps) MR | 19.0.0.1 | 2024-08-13 | release | ✅ | MIT. Aggiunta il 17/10/2026 |
-| Rechiseled | [`rechiseled`](https://modrinth.com/mod/rechiseled) MR | 1.2.6-neoforge-mc1.21 | 2026-09-13 | release | ✅ | All-Rights-Reserved. Aggiunta il 17/10/2026 |
-| Supplementaries | [`supplementaries`](https://modrinth.com/mod/supplementaries) MR | 1.21.1-4.0.2 | 2026-10-16 | release | ✅ | Supplementaries-Team-License. Aggiunta il 17/10/2026 |
-| Handcrafted | [`handcrafted`](https://modrinth.com/mod/handcrafted) MR | 4.0.3 | 2025-03-22 | release | ✅ | Terrarium-Licence. Aggiunta il 17/10/2026 |
-| Construction Sticks | [`construction-sticks`](https://modrinth.com/mod/construction-sticks) MR | 1.5.0 | 2026-08-29 | release | ✅ | MIT. Aggiunta il 17/10/2026 |
+| Reactive Alchemy | [`reactive`](https://modrinth.com/mod/reactive) MR | 1.21.1-10.2.1 | 2026-09-27 | release | ✅ | Richiede Patchouli. Aggiunta il 16/10/2026 |
+| Psi | [`psi`](https://modrinth.com/mod/psi) MR | 1.21.1-110 | 2026-09-01 | release | ✅ | Richiede Patchouli. Aggiunta il 16/10/2026 |
+| Scriptor Magicae | [`JyJgaOrk`](https://modrinth.com/mod/JyJgaOrk) MR | 2.0.14-1.21.1-neoforge | 2026-09-17 | release | ✅ | Richiede Unfocused e Kotlin for Forge. Aggiunta il 16/10/2026 |
+| Regions Unexplored | [`regions-unexplored`](https://modrinth.com/mod/regions-unexplored) MR | 0.6.2-neoforge-21.1 | 2026-07-12 | release | ✅ | Aggiunta il 17/10/2026 |
+| Chunky | [`chunky`](https://modrinth.com/mod/chunky) MR | 1.4.23 | 2025-04-04 | release | ✅ | Aggiunta il 17/10/2026 |
+| Clumps | [`clumps`](https://modrinth.com/mod/clumps) MR | 19.0.0.1 | 2024-08-13 | release | ✅ | Aggiunta il 17/10/2026 |
+| Rechiseled | [`rechiseled`](https://modrinth.com/mod/rechiseled) MR | 1.2.6-neoforge-mc1.21 | 2026-09-13 | release | ✅ | Aggiunta il 17/10/2026 |
+| Supplementaries | [`supplementaries`](https://modrinth.com/mod/supplementaries) MR | 1.21.1-4.0.2 | 2026-10-16 | release | ✅ | Aggiunta il 17/10/2026 |
+| Handcrafted | [`handcrafted`](https://modrinth.com/mod/handcrafted) MR | 4.0.3 | 2025-03-22 | release | ✅ | Aggiunta il 17/10/2026 |
+| Construction Sticks | [`construction-sticks`](https://modrinth.com/mod/construction-sticks) MR | 1.5.0 | 2026-08-29 | release | ✅ | Aggiunta il 17/10/2026 |
 | Lithostitched (dipendenza) | [`lithostitched`](https://modrinth.com/mod/lithostitched) MR | 1.8.1-neoforge-21.1 | 2026-10-14 | release | ✅ | Richiesta da regions-unexplored. MIT. Aggiunta il 17/10/2026 |
 | Fusion (Connected Textures) (dipendenza) | [`fusion-connected-textures`](https://modrinth.com/mod/fusion-connected-textures) MR | 1.3.16-neoforge-mc1.21.1 | 2026-10-05 | release | ✅ | Richiesta da rechiseled. All-Rights-Reserved. Aggiunta il 17/10/2026 |
 | Moonlight Lib (dipendenza) | [`moonlight`](https://modrinth.com/mod/moonlight) MR | 1.21.1-3.7.2 | 2026-10-10 | release | ✅ | Richiesta da supplementaries. LGPL-with-additional-dependency-clause. Aggiunta il 17/10/2026 |
-| XP Tome | [`xp-tome`](https://modrinth.com/mod/xp-tome) MR | v2.4 | 2024-10-24 | release | ✅ | MIT; nessuna dipendenza. Aggiunta il 17/10/2026 |
-| Just Enough Breeding | [`justenoughbreeding`](https://modrinth.com/mod/justenoughbreeding) MR | 3.3.1 | 2026-10-02 | release | ✅ | MIT; dipendenze tutte opzionali (JEI/EMI). Aggiunta il 17/10/2026 |
-| Just Enough Professions | [`just-enough-professions-jep`](https://modrinth.com/mod/just-enough-professions-jep) MR | 4.0.5 | 2026-04-22 | release | ✅ | MIT; richiede JEI. Aggiunta il 17/10/2026 |
-| NetherPortalFix | [`netherportalfix`](https://modrinth.com/mod/netherportalfix) MR | 21.1.1+neoforge-1.21.1 | 2024-08-13 | release | ✅ | All-Rights-Reserved; richiede Balm; unica build 1.21.1. Aggiunta il 17/10/2026 |
-| AllTheLeaks | [`alltheleaks`](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) CF | 1.1.13+1.21.1-neoforge | 2026-09-22 | release | ✅ | MIT; **solo CurseForge**. Nel sorgente richiede solo NeoForge ≥ 21.1.195; si dichiara incompatibile con versioni vecchie di GeckoLib, Entity Culling, AmbientSounds e Occultism (le nostre sono più nuove). Aggiunta il 17/10/2026 |
-| SeasonHud | [`seasonhud`](https://modrinth.com/mod/seasonhud) MR | 1.21.1-2.0.10 | 2026-08-31 | release | ✅ | MIT; dipendenze opzionali (Serene Seasons, Xaero). Aggiunta il 17/10/2026 |
-| Smarter Farmers | [`smarter-farmers-farmers-replant`](https://modrinth.com/mod/smarter-farmers-farmers-replant) MR | 1.21-2.2.4 | 2025-10-18 | release | ✅ | All-Rights-Reserved; richiede Moonlight. Aggiunta il 17/10/2026 |
-| Open Together | [`open-together`](https://modrinth.com/mod/open-together) MR | 21.1.2 | 2026-09-10 | release | ✅ | MPL-2.0; richiede Puzzles Lib. Aggiunta il 17/10/2026 |
+| XP Tome | [`xp-tome`](https://modrinth.com/mod/xp-tome) MR | v2.4 | 2024-10-24 | release | ✅ | Nessuna dipendenza. Aggiunta il 17/10/2026 |
+| Just Enough Breeding | [`justenoughbreeding`](https://modrinth.com/mod/justenoughbreeding) MR | 3.3.1 | 2026-10-02 | release | ✅ | Dipendenze tutte opzionali (JEI/EMI). Aggiunta il 17/10/2026 |
+| Just Enough Professions | [`just-enough-professions-jep`](https://modrinth.com/mod/just-enough-professions-jep) MR | 4.0.5 | 2026-04-22 | release | ✅ | Richiede JEI. Aggiunta il 17/10/2026 |
+| NetherPortalFix | [`netherportalfix`](https://modrinth.com/mod/netherportalfix) MR | 21.1.1+neoforge-1.21.1 | 2024-08-13 | release | ✅ | Richiede Balm; unica build 1.21.1. Aggiunta il 17/10/2026 |
+| AllTheLeaks | [`alltheleaks`](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) CF | 1.1.13+1.21.1-neoforge | 2026-09-22 | release | ✅ | **solo CurseForge**. Nel sorgente richiede solo NeoForge ≥ 21.1.195; si dichiara incompatibile con versioni vecchie di GeckoLib, Entity Culling, AmbientSounds e Occultism (le nostre sono più nuove). Aggiunta il 17/10/2026 |
+| SeasonHud | [`seasonhud`](https://modrinth.com/mod/seasonhud) MR | 1.21.1-2.0.10 | 2026-08-31 | release | ✅ | Dipendenze opzionali (Serene Seasons, Xaero). Aggiunta il 17/10/2026 |
+| Smarter Farmers | [`smarter-farmers-farmers-replant`](https://modrinth.com/mod/smarter-farmers-farmers-replant) MR | 1.21-2.2.4 | 2025-10-18 | release | ✅ | Richiede Moonlight. Aggiunta il 17/10/2026 |
+| Open Together | [`open-together`](https://modrinth.com/mod/open-together) MR | 21.1.2 | 2026-09-10 | release | ✅ | Richiede Puzzles Lib. Aggiunta il 17/10/2026 |
 | My Nether's Delight | [`my-nethers-delight`](https://modrinth.com/mod/my-nethers-delight) MR | 1.10.4.1 | 2026-09-11 | release | ✅ | ARR su Modrinth (MIT nel file di build); ⚠️ canna polverosa selvatica nel Nether. Pack 0.3.0 (18/10/2026) |
-| Chef's Delight | [`chefs-delight`](https://modrinth.com/mod/chefs-delight) MR | 1.0.6-neoforge-1.21.1 | 2026-10-03 | release | ✅ | MIT; ⚠️ case nei villaggi; richiede NeoForge ≥ 21.1.219. Pack 0.3.0 |
-| Create Confectionery | [`create-confectionery`](https://modrinth.com/mod/create-confectionery) MR | 1.1.3.b | 2026-08-15 | release | ✅ | MIT; fatta con MCreator. Pack 0.3.0 |
-| Rustic Delight | [`rustic-delight`](https://modrinth.com/mod/rustic-delight) MR | 1.7.1 | 2026-07-31 | release | ✅ | MIT; ⚠️ colture selvatiche; ha già le sue ricette per Botany Pots. Pack 0.3.0 |
-| Ocean's Delight | [`oceans-delight`](https://modrinth.com/mod/oceans-delight) MR | 1.0.4 | 2026-04-17 | release | ✅ | MIT; usa l'effetto Comfort di FD (a rischio con FD 1.4). Pack 0.3.0 |
-| Autochef's Delight | [`autochefs-delight`](https://modrinth.com/mod/autochefs-delight) MR | 2.0.3+neoforge | 2026-04-30 | release | ✅ | ARR; modifica la pentola di FD. Pack 0.3.0 |
-| Farming for Blockheads | [`farming-for-blockheads`](https://modrinth.com/mod/farming-for-blockheads) MR | 21.1.14+neoforge-1.21.1 | 2026-09-25 | release | ✅ | ARR; richiede Balm; niente irrigatori nella 1.21.1. Pack 0.3.0 |
-| Cognition (ex Experience Obelisk) | [`cognition`](https://modrinth.com/mod/cognition) MR | 2.4.13 | 2026-07-10 | release | ✅ | MIT; richiede GeckoLib; liquido `cognition:cognitium_source` (20 mB per punto, `c:experience`). Pack 0.3.0 |
-| Macaw's Roofs | [`macaws-roofs`](https://modrinth.com/mod/macaws-roofs) MR | 2.3.2 | 2025-05-04 | release | ✅ | ARR. Pack 0.4.0 (18/10/2026) |
-| Macaw's Paths and Pavings | [`macaws-paths-and-pavings`](https://modrinth.com/mod/macaws-paths-and-pavings) MR | 1.1.1 | 2025-09-24 | release | ✅ | MIT. Pack 0.4.0 |
-| Macaw's Bridges | [`macaws-bridges`](https://modrinth.com/mod/macaws-bridges) MR | 3.1.2 | 2026-02-15 | release | ✅ | ARR. Pack 0.4.0 |
-| Macaw's Windows | [`macaws-windows`](https://modrinth.com/mod/macaws-windows) MR | 2.4.2 | 2025-12-10 | release | ✅ | ARR. Pack 0.4.0 |
-| Diagonal Fences | [`diagonal-fences`](https://modrinth.com/mod/diagonal-fences) MR | v21.1.1-1.21.1-NeoForge | 2024-11-18 | release | ⚠️ | MPL-2.0; ramo 1.21.1 fermo al 2024; richiede Puzzles Lib. Pack 0.4.0 |
-| Diagonal Walls | [`diagonal-walls`](https://modrinth.com/mod/diagonal-walls) MR | v21.1.2-1.21.1-NeoForge | 2024-11-19 | release | ⚠️ | MPL-2.0; ramo 1.21.1 fermo al 2024. Pack 0.4.0 |
-| Diagonal Windows | [`diagonal-windows`](https://modrinth.com/mod/diagonal-windows) MR | v21.1.1-1.21.1-NeoForge | 2024-11-18 | release | ⚠️ | MPL-2.0; ramo 1.21.1 fermo al 2024. Pack 0.4.0 |
-| Chimes | [`chimes`](https://modrinth.com/mod/chimes) MR | 2.1.1 | 2026-10-02 | release | ✅ | ARR. Pack 0.4.0 |
-| Exposure | [`exposure`](https://modrinth.com/mod/exposure) MR | 1.9.19 | 2026-09-23 | release | ✅ | MIT. Pack 0.4.0 |
-| Guard Villagers | [`guard-villagers`](https://modrinth.com/mod/guard-villagers) MR | 2.4.12 | 2026-08-30 | release | ✅ | Licenza propria. ⚠️ guardie nei villaggi generati. Pack 0.4.0 |
-| Every Compat (Wood Good) | [`every-compat`](https://modrinth.com/mod/every-compat) MR | 1.21-2.11.54 | 2026-10-17 | release | ✅ | ARR; richiede Moonlight. Config ridotta prevista nella 0.6.0. Pack 0.4.0 |
-| Create: Copycats+ | [`copycats`](https://modrinth.com/mod/copycats) MR | 3.0.9+mc.1.21.1-neoforge | 2026-09-06 | release | ✅ | ARR; richiede Create. Pack 0.4.0 |
-| Goblin Traders | [`goblin-traders`](https://www.curseforge.com/minecraft/mc-mods/goblin-traders) CF | 1.11.2 | — | release | ✅ | MIT; **solo CurseForge**; richiede Framework. Pack 0.4.0 |
+| Chef's Delight | [`chefs-delight`](https://modrinth.com/mod/chefs-delight) MR | 1.0.6-neoforge-1.21.1 | 2026-10-03 | release | ✅ | ⚠️ case nei villaggi; richiede NeoForge ≥ 21.1.219. Pack 0.3.0 |
+| Create Confectionery | [`create-confectionery`](https://modrinth.com/mod/create-confectionery) MR | 1.1.3.b | 2026-08-15 | release | ✅ | Fatta con MCreator. Pack 0.3.0 |
+| Rustic Delight | [`rustic-delight`](https://modrinth.com/mod/rustic-delight) MR | 1.7.1 | 2026-07-31 | release | ✅ | ⚠️ colture selvatiche; ha già le sue ricette per Botany Pots. Pack 0.3.0 |
+| Ocean's Delight | [`oceans-delight`](https://modrinth.com/mod/oceans-delight) MR | 1.0.4 | 2026-04-17 | release | ✅ | Usa l'effetto Comfort di FD (a rischio con FD 1.4). Pack 0.3.0 |
+| Autochef's Delight | [`autochefs-delight`](https://modrinth.com/mod/autochefs-delight) MR | 2.0.3+neoforge | 2026-04-30 | release | ✅ | Modifica la pentola di FD. Pack 0.3.0 |
+| Farming for Blockheads | [`farming-for-blockheads`](https://modrinth.com/mod/farming-for-blockheads) MR | 21.1.14+neoforge-1.21.1 | 2026-09-25 | release | ✅ | Richiede Balm; niente irrigatori nella 1.21.1. Pack 0.3.0 |
+| Cognition (ex Experience Obelisk) | [`cognition`](https://modrinth.com/mod/cognition) MR | 2.4.13 | 2026-07-10 | release | ✅ | Richiede GeckoLib; liquido `cognition:cognitium_source` (20 mB per punto, `c:experience`). Pack 0.3.0 |
+| Macaw's Roofs | [`macaws-roofs`](https://modrinth.com/mod/macaws-roofs) MR | 2.3.2 | 2025-05-04 | release | ✅ | Pack 0.4.0 (18/10/2026) |
+| Macaw's Paths and Pavings | [`macaws-paths-and-pavings`](https://modrinth.com/mod/macaws-paths-and-pavings) MR | 1.1.1 | 2025-09-24 | release | ✅ | Pack 0.4.0 |
+| Macaw's Bridges | [`macaws-bridges`](https://modrinth.com/mod/macaws-bridges) MR | 3.1.2 | 2026-02-15 | release | ✅ | Pack 0.4.0 |
+| Macaw's Windows | [`macaws-windows`](https://modrinth.com/mod/macaws-windows) MR | 2.4.2 | 2025-12-10 | release | ✅ | Pack 0.4.0 |
+| Diagonal Fences | [`diagonal-fences`](https://modrinth.com/mod/diagonal-fences) MR | v21.1.1-1.21.1-NeoForge | 2024-11-18 | release | ⚠️ | Ramo 1.21.1 fermo al 2024; richiede Puzzles Lib. Pack 0.4.0 |
+| Diagonal Walls | [`diagonal-walls`](https://modrinth.com/mod/diagonal-walls) MR | v21.1.2-1.21.1-NeoForge | 2024-11-19 | release | ⚠️ | Ramo 1.21.1 fermo al 2024. Pack 0.4.0 |
+| Diagonal Windows | [`diagonal-windows`](https://modrinth.com/mod/diagonal-windows) MR | v21.1.1-1.21.1-NeoForge | 2024-11-18 | release | ⚠️ | Ramo 1.21.1 fermo al 2024. Pack 0.4.0 |
+| Chimes | [`chimes`](https://modrinth.com/mod/chimes) MR | 2.1.1 | 2026-10-02 | release | ✅ | Pack 0.4.0 |
+| Exposure | [`exposure`](https://modrinth.com/mod/exposure) MR | 1.9.19 | 2026-09-23 | release | ✅ | Pack 0.4.0 |
+| Guard Villagers | [`guard-villagers`](https://modrinth.com/mod/guard-villagers) MR | 2.4.12 | 2026-08-30 | release | ✅ | ⚠️ guardie nei villaggi generati. Pack 0.4.0 |
+| Every Compat (Wood Good) | [`every-compat`](https://modrinth.com/mod/every-compat) MR | 1.21-2.11.54 | 2026-10-17 | release | ✅ | Richiede Moonlight. Pack 0.4.0 |
+| Create: Copycats+ | [`copycats`](https://modrinth.com/mod/copycats) MR | 3.0.9+mc.1.21.1-neoforge | 2026-09-06 | release | ✅ | Richiede Create. Pack 0.4.0 |
+| Goblin Traders | [`goblin-traders`](https://www.curseforge.com/minecraft/mc-mods/goblin-traders) CF | 1.11.2 | — | release | ✅ | **solo CurseForge**; richiede Framework. Pack 0.4.0 |
 | Framework (dipendenza) | [`framework`](https://www.curseforge.com/minecraft/mc-mods/framework) CF | 0.13.11 | — | release | ✅ | Libreria di MrCrayfish, **solo CurseForge**; licenza da verificare. Pack 0.4.0 |
 
-## Librerie principali (scaricate da Prism)
+## Librerie principali (arrivano come dipendenze)
 
 Tutte con build NeoForge 1.21.1: YUNG's API 5.1.9 · Placebo 9.9.2 · Moog's Structure Lib 3.4.2 · Create: Dragons Plus 1.11.9 · Sophisticated Core 1.5.13 · Fzzy Config 0.7.7 · Bookshelf 21.1.81 · Prickle 21.1.11 · CorgiLib 5.0.0.10 · Data Anchor 2.0.0.17 · Puzzles Lib 21.1.64 · Resourceful Config 3.0.11 · CreativeCore 2.13.50. Non verificate una per una ma standard: Architectury, Balm, GeckoLib, Curios, Accessories, Citadel, Lionfish API, Blueprint, TerraBlender, NexusLib, Cristel Lib, Resourceful Lib.

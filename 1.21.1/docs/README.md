@@ -1,13 +1,14 @@
-# Documenti del pack 1.21.1
+# Documentazione della versione 1.21.1
 
-| File o cartella | Contenuto |
-|---|---|
-| `context.md` | Stato completo della progettazione: mod per categoria, test e controlli da fare, config, opzionali, scartate, log delle decisioni |
-| `bug-report.md` | Tutti i problemi trovati nelle versioni, anche minori: codice, versione, effetto, piano o stato |
-| `../CHANGELOG.md` | Una voce per versione, con stato e problemi noti |
-| `decisioni/` | Log dei round di decisione (approvate, scartate, da tenere d'occhio) |
-| `verifica-versioni.md` | Versione, data, licenza ed esito della verifica di ogni mod |
-| `config-e-datapack.md` | Cosa fanno i file di configurazione e il datapack `matteo_tweaks` |
-| `datapack/` | Piano del datapack: formati, fonti e licenze, copertura dei vasi pianta per pianta |
-| `valutazioni/` | Ricerche dedicate (Nether, animali, esperienza, datapack esistenti) e confronti con altri modpack. In inglese |
-| `storico/` | Note sui pacchetti .mrpack usati prima del repository (0.1.0 → 0.2.3) |
+Com'è fatto il pack per Minecraft 1.21.1 e com'è cambiato nelle versioni. Codici e regole dei documenti: [`AGENTS.md`](../../AGENTS.md); il lavoro in corso è in [`../lavoro/`](../lavoro/README.md).
+
+| Codice | Documento | Contenuto | Tipo |
+|---|---|---|---|
+| **0301** | [mod](0301-mod.md) | Piattaforma, librerie e tutte le mod del pack per tema: ruolo, licenza, note, versione del pack in cui sono entrate | vivo |
+| **0302** | [config](0302-config.md) | File di config del pack, datapack, impostazioni decise per le mod | vivo |
+| **0303** | [note-tecniche](0303-note-tecniche.md) | Cose da non rompere, esperienza liquida, fatti verificati nei sorgenti | vivo |
+| **0401** | [changelog](0401-changelog.md) | Una voce per versione: stato, NeoForge, mondo nuovo, cosa cambia, problemi noti | vivo |
+| **0402** | [bug-report](0402-bug-report.md) | Tutti i problemi trovati, anche minori, con codice `Bnn`, effetto e piano | vivo |
+| **0403** | [distinta-mod](0403-distinta-mod.md) | Versione, data ed esito della verifica di ogni file del pack; avvisi per chi cerca le mod | vivo |
+
+Il datapack `matteo_tweaks` è documentato dentro sé stesso: `../pack/config/paxi/datapacks/matteo_tweaks/README.md` e un `readme.md` per cartella.

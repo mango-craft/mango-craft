@@ -1,4 +1,6 @@
-# Dati grezzi
+# Dati
+
+Dati usati dai documenti e dagli script; non sono documenti (niente codici). L'inventario lo rigenerano i workflow.
 
 | File | Contenuto |
 |---|---|

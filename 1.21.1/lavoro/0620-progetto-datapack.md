@@ -1,6 +1,6 @@
-# Datapack `matteo_tweaks` — conoscenze e piano (round del 17/10/2026)
+# Progetto del datapack `matteo_tweaks` — Minecraft 1.21.1
 
-Tutto quello che serve per scrivere il datapack del prossimo pacchetto, ricavato dai sorgenti 1.21.1 delle mod. La tabella pianta per pianta dei vasi è in un documento a parte: `datapack/vasi-copertura.md`. Le decisioni del round sono in `decisioni/2026-10-17-round-opzionali.md`.
+Tutto quello che serve per scrivere le parti nuove del datapack, ricavato dai sorgenti 1.21.1 delle mod (piano del 17/10/2026). Documento vivo finché le parti non sono scritte; quelle già fatte sono documentate dentro il datapack. La tabella pianta per pianta dei vasi: `0621-copertura-vasi.md`. Le decisioni del round: `0611-round-2026-10-17.md`.
 
 ---
 
@@ -31,7 +31,7 @@ matteo_tweaks/
     ├── <mod>/market_presets/...                prezzi del mercato per mod
     ├── create_enchantment_industry/data_maps/fluid/unit/experience.json
     ├── cataclysm/tags/worldgen/structure/berserker_spawn.json
-    ├── c/tags/item/foods/cooked_fish.json      (pesce cotto di Starcatcher, approvato 18/10)
+    ├── c/tags/item/foods/cooked_fish.json      (pesce cotto di Starcatcher, fatto nella 0.3.0)
     ├── neoforge/loot_modifiers/                (già esistente)
     └── enhancedcelestials/...                  (già esistente)
 ```
@@ -148,22 +148,10 @@ Nel mondo di prova con i trucchi attivi:
 
 ## 4. Esperienza (Cognition + Create: Enchantment Industry)
 
-### 4.1 I liquidi
-| Liquido | Mod | mB per punto | Etichetta standard `c:experience` | Chi lo accetta |
-|---|---|---:|---|---|
-| `create_enchantment_industry:experience` | Create: Enchantment Industry 2.4.2 | **1** | **no** | Incantatore (Blaze Enchanter), lanterna, stampante di CEI: **solo questo liquido** (verificato nel codice: l'incantatore accetta solo `CEIFluids.EXPERIENCE`) |
-| `cognition:cognitium_source` | Cognition 2.4.13 | 20 | sì | Obelisco (più una lista di liquidi ammessi in config), pompa degli zaini Sophisticated |
-| `sophisticatedcore:xp_still` | Sophisticated Core | 20 | sì | Pompa e calamita degli zaini; l'Obelisco lo accetta di serie |
+### 4.1 Liquidi e regole
+I tre liquidi d'esperienza (quanti mB per punto, chi li accetta) e le regole per non duplicare o perdere esperienza sono in `../docs/0303-note-tecniche.md`, Esperienza liquida.
 
-Lo standard NeoForge è **20 mB per punto** (documentato in `Tags.java`).
-
-### 4.2 Regole (per non duplicare o perdere esperienza)
-- **Mai** mettere il liquido di Create nell'etichetta `c:experience`: la pompa degli zaini lo tratterebbe a 20 mB per punto → esperienza moltiplicata per 20.
-- **Mai** aggiungere il liquido di Create alla lista `AllowedFluids` di Cognition: l'Obelisco copia i mB 1 a 1 → perdita del 95%.
-- I serbatoi di Mekanism tengono **un solo liquido alla volta**: i due liquidi non si mescolano per sbaglio.
-- **Experience Hatch** di Create con liquidi "stranieri": con la quantità impostata su "tutto", ogni click deposita solo 1/20 dell'esperienza (si perde al massimo l'arrotondamento). Usare quantità fisse (10–1000 punti).
-
-### 4.3 File del datapack
+### 4.2 File del datapack
 1. **Unità del liquido di Cognition per Create** (fa capire il cognitium all'Experience Hatch e alle altre parti di Create che leggono questa tabella; **non** all'incantatore):
    `data/create_enchantment_industry/data_maps/fluid/unit/experience.json`
    ```json
@@ -181,13 +169,13 @@ Lo standard NeoForge è **20 mB per punto** (documentato in `Tags.java`).
    ```
    e la ricetta inversa (1000 mB di cognitium → 50 mB di esperienza di Create). Le quantità vanno controllate rispetto alla capienza della bacinella.
 
-### 4.4 Schema della base
+### 4.3 Schema della base
 - **Deposito**: Obelisco di Cognition (circa 1000 livelli), eventualmente serbatoi di Mekanism col cognitium per l'eccedenza.
 - **Produzione da Create** (lanterna, scarico di oggetti) → Mescolatore → cognitium verso l'Obelisco.
 - **Macchine di Create** (incantatore, stampante): un piccolo circuito separato col liquido di Create, alimentato dal Mescolatore al contrario (cognitium → esperienza di Create).
 - **Zaini**: pompa XP + calamita, il loro liquido va direttamente nell'Obelisco.
 
-### 4.5 Prova nel mondo di prova
+### 4.4 Prova nel mondo di prova
 Convertire una quantità esatta avanti e indietro e controllare che i punti tornino identici. Provare l'Experience Hatch su un serbatoio di Mekanism.
 
 ---
@@ -197,25 +185,17 @@ Convertire una quantità esatta avanti e indietro e controllare che i punti torn
 | File | Contenuto | Stato |
 |---|---|---|
 | `data/cataclysm/tags/worldgen/structure/berserker_spawn.json` | `{"replace":false,"values":["betterfortresses:fortress"]}`: i Berserker infuocati tornano a comparire nelle fortezze di YUNG's. Dopo l'aggiunta riavviare il mondo, `/reload` non basta | Approvato |
-| `data/c/tags/item/foods/cooked_fish.json` (+ `c:foods/cooked_fishes` e `bountifulfares:cooked_fishes`) | Aggiunge `starcatcher:cooked_starcaught_fish`, così il pesce cotto di Starcatcher vale nei taco e fish and chips di Cultural Delights e nella zuppa di Bountiful Fares | **Approvato 18/10** (tappa 2) |
+| `data/c/tags/item/foods/cooked_fish.json` (+ `c:foods/cooked_fishes` e `bountifulfares:cooked_fishes`) | Aggiunge `starcatcher:cooked_starcaught_fish`, così il pesce cotto di Starcatcher vale nei taco e fish and chips di Cultural Delights e nella zuppa di Bountiful Fares | ✅ Fatto nella 0.3.0 |
 | Ricette dei vasi per Jaden's Nether Expansion e Nether Depths Upgrade | Piante del Nether nuove | Da inventariare |
 
-### Config (non datapack, ma da preparare insieme)
-- **Every Compat**: spegnere i moduli che non servono; tenere Handcrafted, Macaw's, credenze di FD, Storage Drawers, Create, Rechiseled, Friends & Foes, Twilight Forest, Regions Unexplored.
-- **Jaden's Nether Expansion** (`config/netherexp-startup.toml`, sezione `packSettings`, serve riavvio): `improvedNetherBiomeSource` e `netherWorldGenOverhaul` come paracadute.
-- **Moog's Nether Structures**: lasciare spenta la sostituzione della fortezza vanilla.
-- **Sparse Structures**: regolazioni per struttura dopo il mondo di prova.
-- **Cognition**: lasciare `AllowedFluids` com'è.
+### Config
+Le config da preparare insieme al datapack sono in `../docs/0302-config.md`, Config previste per la 0.6.0.
 
 ---
 
-## 6. Fatti utili (verificati nei sorgenti)
+## 6. Fatti utili
 
-- **Starcatcher**: 132 pesci in `c:foods/raw_fish`, `minecraft:fishes`, `minecraft:cat_food`. FD include `c:foods/raw_fish` in `c:foods/safe_raw_fish` (escluso il pesce palla), quindi i pesci valgono nelle ricette "pesce crudo qualsiasi" di FD (zuppa di pesce, involtini, pasta al nero), Brewin' And Chewin' (pasta al formaggio, aringhe), Veggies Delight (fish and chips, torta di rape) e Farm & Charm (cibo per gatti). Starcatcher's Delight: filetti per rarità sul tagliere (anche loro "pesce crudo") e 50 piatti nella pentola di FD e di Farm & Charm. Pesce cotto in fornace: generico, fuori dalle etichette.
-- **Ricette per etichetta nelle mod di cucina del pack**: `c:eggs` circa 70, `c:foods/raw_chicken` circa 17, `c:foods/raw_beef` circa 15, `c:foods/raw_meat` circa 9. Un ingrediente nuovo è utile solo se entra in una di queste etichette o ha ricette proprie.
-- **Regions Unexplored 0.6**: usa Lithostitched, non TerraBlender. Biomi Nether: Mycotoxic Undergrowth (da Nether Wastes), Glistering Meadow (da Soul Sand Valley), Blackstone Basin (da Crimson Forest), Infernal Holt (da Basalt Deltas). Le sue piante del Nether sono già nei vasi.
-- **Cataclysm**: Burning Arena solo in Nether Wastes; Soul Black Smith nei 4 biomi vanilla; Berserker legati a `cataclysm:berserker_spawn`.
-- **Farming for Blockheads**: le sue 5 terre fertilizzate sono già terreni di Botany Pots (anche nel tag `botanypots:soil/dirt`).
+I fatti verificati nei sorgenti (Regions Unexplored, Cataclysm, Farming for Blockheads, ricette per etichetta, esperienza liquida) sono in `../docs/0303-note-tecniche.md`; Starcatcher e la cucina in `../docs/0301-mod.md`, Animali e pesca.
 
 ---
 
@@ -224,5 +204,5 @@ Convertire una quantità esatta avanti e indietro e controllare che i punti torn
 Nel repository:
 - `1.21.1/data/vasi/copertura.json`: inventario delle 526 piante con proprietà, loot table e 255 bozze di ricetta;
 - `1.21.1/data/vasi/script/`: gli script che hanno generato l'inventario (riferimento, non vanno rilanciati così come sono);
-- `1.21.1/docs/datapack/vasi-copertura.md`: la tabella pianta per pianta;
-- `1.21.1/docs/valutazioni/`: le ricerche complete (in inglese) su Nether, animali, esperienza e datapack esistenti.
+- `0621-copertura-vasi.md`: la tabella pianta per pianta;
+- le ricerche complete (in inglese): `0701-nether.md`, `0702-animali.md`, `0703-esperienza.md`, `0704-vasi-compat-esistenti.md`; inventario dei file delle mod in `../data/inventario/`.

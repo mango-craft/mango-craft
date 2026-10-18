@@ -1,5 +1,7 @@
 # Pacchetto Modrinth `modpack-matteo-0.2.3.mrpack`
 
+> **Documento storico**: fotografia del momento in cui è stato scritto, non si aggiorna. Lo stato attuale è nei documenti vivi (vedi il README della cartella).
+
 _Generato il 16/10/2026, aggiornato il 17/10/2026 · Minecraft 1.21.1 · **NeoForge 21.1.259** · Prism Launcher (Aggiungi istanza → Importa)_
 
 **0.2.3** (17/10/2026): aggiunte Just Enough Breeding, Just Enough Professions, NetherPortalFix, SeasonHud, Smarter Farmers e Open Together; nessuna libreria nuova (Balm, Moonlight, Puzzles Lib e JEI c'erano già). AllTheLeaks è solo CurseForge: va nella lista qui sotto.
@@ -254,3 +256,33 @@ _Generato il 16/10/2026, aggiornato il 17/10/2026 · Minecraft 1.21.1 · **NeoFo
 | TerraBlender | `4.1.0.8` | beta | deep-aether |
 | Unfocused | `0.3.10-1.21.1-neoforge` | release | JyJgaOrk |
 | YUNG's API | `1.21.1-NeoForge-5.1.9` | release | yungs-better-mineshafts, yungs-extras, travelers-titles, paxi… |
+
+---
+
+## Installazione a mano (fino al 17/10/2026)
+
+Prima del repository il pack si installava importando il `.mrpack` in Prism e aggiungendo a mano le mod solo CurseForge (dal vecchio `context.md`, sezione 3.1).
+
+**Distribuzione**: dal 18/10/2026 il pack si installa dal repository `mango-craft` con packwiz (istruzioni nel `README.md` e in `../../docs/0101-installazione.md`). Storico: l'ultimo pacchetto .mrpack è stato `modpack-matteo-0.2.3.mrpack` (17/10/2026; 211 file, 701 MB, **NeoForge 21.1.259** — vedi sotto perché non la 21.1.262; contenuto e note all'inizio di questo documento). In Prism: Aggiungi istanza → Importa → scegliere il file. Poi aggiungere a mano le 6 mod solo CurseForge (Twilight Forest, Ars Elemental, Roaster's Delight, Spice of Life: Carrot Edition, BotanyPotsAdditions, AllTheLeaks). I passi qui sotto restano validi per aggiunte singole. Prism è installato in versione portable sul PC dell'utente: non toccare la sua cartella senza il suo via.
+
+1. Aggiungi istanza → Minecraft **1.21.1** → loader **NeoForge** (ultima 21.1.x, almeno 21.1.229)
+2. Impostazioni → Java → **8 GB** di memoria. Assegnarne troppa non aiuta e può allungare le pause del garbage collector
+3. Modifica istanza → Mod → Scarica mod (Modrinth / CurseForge), filtrando per NeoForge 1.21.1
+4. Installare **a blocchi**, con un avvio di prova dopo ogni blocco: base tecnica + comodità + atmosfera → cucina + Botany Pots → natura → tech e storage → equipaggiamento → strutture → dimensioni → boss e nemici
+5. Attenzioni in fase di download:
+   - **YUNG's**: usare i progetti marcati **"(NeoForge) [1.20.4 - 1.21.1 ONLY]"**
+   - **Dungeons and Taverns**: solo la mod base, **senza** i pacchetti overhaul
+   - **Forgified Fabric API**: installarla sempre, fin dal primo blocco (con la base tecnica)
+6. Datapack (es. quelli generati da Botany Pots): copiarli nella cartella `datapacks` del mondo, poi `/reload`
+7. Dopo aver aggiunto mod di strutture o dimensioni: **creare un mondo nuovo**
+8. **Backup del mondo** prima di ogni aggiornamento delle mod
+
+## File di config pronti (16/10/2026)
+
+**File pronti (16/10/2026)** — pacchetto `modpack-config.zip` + documento di progetto `file-di-configurazione.md` (contenuto completo dei file). Il datapack ha un `README.md` in ogni cartella con la spiegazione dei file (i `.json` non accettano commenti; il gioco ignora i `.md`). Vanno copiati nella cartella `minecraft/config` dell'istanza:
+
+| File | Contenuto | Stato |
+|---|---|---|
+| `config/almostunified/tags.json` | 19 tag personalizzati: farina, impasto di grano, sale, mais, limone, porzioni di formaggio, formaggio di capra intercambiabili tra le mod (ogni oggetto aggiunto a tutti i tag che le ricette usano, perché AlmostUnified lavora sui tag già risolti) | ✅ pronto |
+| `config/sparsestructures.json5` | Fattore generale 1.4; villaggi 1; magione 2 | ⚠️ da completare con i nomi dei gruppi di Dungeons and Taverns (Witch Villa e Swamp Village → fattore **3**, scelta dell'utente: tenerle ma molto più rare) e When Dungeons Arise (→ 2), letti in gioco con `/dumpstructuresets` |
+| `config/paxi/datapacks/matteo_tweaks/` | Datapack: luna di sangue **5%** delle notti e mostri **×2**; super luna di sangue **×4** (frequenza invariata: 5% delle lune piene, almeno 20 notti di distanza; copie complete dei file di Enhanced Celestials 6.x). **Artefatti** nelle casse delle strutture modded: 15 modificatori `artifacts:roll_loot_table` (153 tabelle, compresa la cassaforte del Galeone di Supplementaries), uno per livello di bottino vanilla, attivi solo se Artifacts è caricata. **Ars in Botany Pots**: Magebloom, Sourceberry, 5 frutti di archwood sui tronchi | ✅ pronto · ⚠️ artefatti da completare per Mowzie's e Born in Chaos (oggi bug B03) |

@@ -1,4 +1,4 @@
-> **Nota del 17/10/2026**: BotanyCompatLayer **non verrà installato** (decisione: niente datapack esterni). Le piante segnate "(e) / Solo BCL" vanno quindi scritte nel nostro datapack, eventualmente copiando i file di BotanyCompatLayer (MIT) se si recupera lo zip. Piano e regole in `datapack/conoscenze.md`.
+> **Nota del 17/10/2026**: BotanyCompatLayer **non verrà installato** (decisione: niente datapack esterni). Le piante segnate "(e) / Solo BCL" vanno quindi scritte nel nostro datapack, eventualmente copiando i file di BotanyCompatLayer (MIT) se si recupera lo zip. Piano e regole in `0620-progetto-datapack.md`.
 
 # Copertura Botany Pots / Botany Trees delle piante del modpack (1.21.1)
 

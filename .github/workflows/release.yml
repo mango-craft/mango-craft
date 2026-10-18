@@ -88,7 +88,7 @@ jobs:
           MC: ${{ steps.info.outputs.mc }}
           VER: ${{ steps.info.outputs.ver }}
         run: |
-          zip -qr "dist/mango-craft-$MC-$VER-documenti.zip" README.md AGENTS.md LICENSE docs "$MC/docs" "$MC/CHANGELOG.md"
+          zip -qr "dist/mango-craft-$MC-$VER-documenti.zip" README.md AGENTS.md LICENSE docs "$MC/docs" "$MC/lavoro"
 
       - name: Pubblica la release
         env:
@@ -98,7 +98,7 @@ jobs:
           VER: ${{ steps.info.outputs.ver }}
           PACK: ${{ steps.info.outputs.pack }}
         run: |
-          python3 scripts/release_notes.py "$PACK" "$MC/CHANGELOG.md" "$VER" > notes.md
+          python3 scripts/release_notes.py "$PACK" "$MC/docs/0401-changelog.md" "$VER" > notes.md
           # Le versioni 0.x sono tappe di prova: escono come pre-release. Il mondo vero parte dalla 1.0.0
           EXTRA=()
           if [[ "$VER" == 0.* ]]; then

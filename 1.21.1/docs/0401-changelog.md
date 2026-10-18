@@ -1,10 +1,12 @@
 # Changelog — Mango Craft 1.21.1
 
+_Documento vivo: una voce nuova per ogni versione, in cima._
+
 Una voce per ogni versione, dalla più recente. Ogni voce dice:
 - **Stato**: 🧪 in prova sul ramo `dev` · ✅ provata e rilasciata (tag `1.21.1-vX.Y.Z`; le 0.x sono pre-release di prova, il mondo vero parte dalla 1.0.0);
 - **NeoForge** da impostare a mano in Prism e se serve un **mondo nuovo**;
 - cosa cambia: mod, datapack, config;
-- **Problemi noti**: i codici del [bug report](docs/bug-report.md) comparsi o risolti in quella versione.
+- **Problemi noti**: i codici del [bug report](0402-bug-report.md) comparsi o risolti in quella versione.
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
@@ -15,8 +17,9 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 - **Decorazione**: **Macaw's Roofs**, **Macaw's Paths and Pavings**, **Macaw's Bridges**, **Macaw's Windows**, **Diagonal Fences**, **Diagonal Walls**, **Diagonal Windows**, **Chimes**, **Exposure** (macchine fotografiche), **Every Compat** (varianti per tutti i legni delle mod: per ora con la config di serie, che crea migliaia di blocchi; la config ridotta arriva con la 0.6.0).
 - **Villaggi**: **Guard Villagers**, **Goblin Traders** (CurseForge, con la libreria **Framework**).
 - **Tech**: **Create: Copycats+**.
-- **Stato**: 🧪 in prova su `dev`.
-- **Problemi noti**: da provare.
+- **Documenti** (non cambiano il gioco): riorganizzati con codici a quattro cifre, documentazione (`docs/`) separata dai documenti di lavoro (`lavoro/`); regole in `AGENTS.md`.
+- **Stato**: 🧪 in prova su `dev` (prima prova 18/10: mondo nuovo, avvio pulito).
+- **Problemi noti**: B22 (Every Compat rallenta l'avvio, si corregge nella 0.6.0), B23–B27 (minori).
 
 ## 0.3.0 — 18/10/2026 · tappa 2 (pre-release di prova)
 
@@ -57,7 +60,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 
 ## Prima del repository (pacchetti `.mrpack`, 16–17/10/2026)
 
-Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`docs/storico/pacchetti-mrpack.md`](docs/storico/pacchetti-mrpack.md).
+Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`../lavoro/0901-pacchetti-mrpack.md`](../lavoro/0901-pacchetti-mrpack.md).
 
 - **0.2.3** (17/10): Just Enough Breeding e Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks. Mai provata in gioco: rifatta come 0.2.3 del repository.
 - **0.2.2** (17/10): XP Tome.

@@ -1,8 +1,40 @@
-# XP banking for the 1.21.1 NeoForge pack (Pipez + Mekanism tanks)
+# Esperienza: deposito e farm — ricerche
+
+> **Documento storico**: fotografia del momento in cui è stato scritto, non si aggiorna. Lo stato attuale è nei documenti vivi (vedi il README della cartella).
+
+Due ricerche del 17/10/2026: la prima analisi in italiano (verificata nei sorgenti) e la ricerca completa in inglese che ha portato a Cognition. Decisioni: XP Tome e Cognition approvate (`0611-round-2026-10-17.md`); regole sui liquidi in `../docs/0303-note-tecniche.md`.
+
+## Prima analisi (in italiano)
+
+**Già possibile senza aggiunte**
+- **Create: Enchantment Industry**: esperienza liquida (1 mB = 1 punto) in qualsiasi serbatoio di Create o Mekanism, mossa con tubi e Pipez. **Experience Hatch** su un serbatoio = banca XP (click per depositare, accovacciato per prelevare, quantità da 10 a 1000 punti o "tutto"). **Experience Lantern** risucchia le sfere entro 10 blocchi (⚠️ succhia anche il giocatore che la tocca). Macina meccanica: pepite e blocchi di esperienza e gemme di Ars → liquido; Item Drain: bottiglie d'incantesimo → 10 mB; Spout: liquido → bottiglie
+- **Uccisioni automatiche**: il Deployer con spada dà XP grazie a CEI (in pepite nel suo inventario); le seghe e le altre uccisioni non da giocatore non danno XP (regola vanilla)
+- **Apothic Spawners**: spawner prendibili con Tocco di velluto e potenziabili (ritardo, numero, ignora giocatori, nessuna IA, controllo redstone, silenziosi, frammento di eco = XP × fino a 4). La Mega Torcia blocca solo gli spawn naturali, non gli spawner
+- **Occultism**: Campo di battaglia dimensionale (rituale dell'Afrit) simula le uccisioni da un mob catturato e dà bottino + 1 bottiglia d'incantesimo ogni 10 XP
+- **Ars Nouveau**: gemme dell'esperienza (3 e 12 punti, impilabili) dalla henge del Drygmy e dal Rituale di disintegrazione
+- **Sophisticated Backpacks**: l'upgrade Pompa XP (con upgrade Serbatoio) accetta solo i fluidi `c:experience` (20 mB per punto) e **non** il liquido di CEI. Non unirli via tag: rapporto 1 contro 20 → guadagni o perdite di XP
+- Altro: ricompense XP dei Gateways; zaino Lapis di Traveler's (15% di XP doppia); Knowledge of the Ages di Apothic Enchanting (bottino → XP, solo uccisioni del giocatore)
+
+**Candidate (build ufficiali NeoForge 1.21.1)**
+| Mod | Versione · licenza | Cosa fa | Sovrapposizione |
+|---|---|---|---|
+| **XP Tome** | 2.4 (ottobre 2024) · MIT | Libro che contiene 1395 punti (configurabile), portatile | Piccola |
+| **Global XP** | 1.12 (agosto 2024) · MIT | Blocco banca XP quasi infinita, raccoglie le sfere vicine | Hatch + serbatoio di CEI |
+| **Mob Grinding Utils** | 1.1.10 (luglio 2025) · ARR · **solo CurseForge** | Kit classico per farm: Mob Masher (conta come giocatore), tramoggia che assorbe XP, serbatoi, rubinetto XP, spawner. Fluido `c:experience` → abilita la pompa XP degli zaini (mantieni livello) | Deployer + CEI, Apothic Spawners |
+| **Cognition** (ex Experience Obelisk) | 2.4.13 (luglio 2026) · MIT | Obelisco da ~1000 livelli + molto altro | CEI; tanti contenuti estranei |
+| **Bottle Your Xp** | 3.6 · ARR | Imbottiglia XP col click | Lo Spout di CEI lo fa già |
+| **Easy Mob Farm** | 11.0.0 · MIT | Blocchi farm da mob catturati, XP solo come bottiglie (1 su 5) | Campo di battaglia di Occultism |
+
+Escluse: Ender IO (solo beta), Cyclic (enorme, contenuti estranei).
+✅ **XP Tome** approvato il 17/10/2026 (→ 0301). Il resto non serve. Mob Grinding Utils solo se si vuole la pompa "mantieni livello" degli zaini.
+
+## Ricerca completa (in inglese)
+
+### XP banking for the 1.21.1 NeoForge pack (Pipez + Mekanism tanks)
 
 Research date: 2026-10-17. I checked fluid IDs, tags and capabilities in source wherever a repo was available. For XP Obelisk, which ships no source here, I read the bundled jar with `javap`. Download counts are from Modrinth (MR) or from CurseForge (CF) mirrors (moddex/gdlauncher). I could not reach the CF API directly.
 
-## TL;DR
+#### TL;DR
 
 1. **Cognition (formerly Experience Obelisk) 2.4.13**: best fit for "simple + fun + pipes/tanks".
    - The obelisk has a GUI to store or retrieve 1, 10 or all levels, with exact points kept. It soaks up nearby orbs, has an animated GeckoLib model and holds about 1072 levels.
@@ -16,7 +48,7 @@ Research date: 2026-10-17. I checked fluid IDs, tags and capabilities in source 
    - A Sophisticated backpack with Tank, XP Pump and Magnet upgrades is a good portable companion.
 - **Global XP 1.12** is the simplest and cheapest bank, and very charming (a spinning emerald and a level nameplate). It is by the same author as XP Tome, which is already in the pack. It has **no fluid or pipe support**, so it fails the Pipez/Mekanism requirement.
 
-## 1. XP-fluid conventions (the key compatibility facts)
+#### 1. XP-fluid conventions (the key compatibility facts)
 
 | Fluid id | Mod | mB per XP point | `c:experience` tag? | Notes |
 |---|---|---|---|---|
@@ -53,7 +85,7 @@ CEI has its own **data map** `create_enchantment_industry:unit/experience`, whic
 - XP Obelisk (xps) accepts **any** fluid whose id contains `liquid_xp` or `xp_fluid` and values it at 10 mB per point. JDT's 20 mB `xp_fluid_source` would therefore be credited 2x. Neither is in the pack, but don't combine them.
 - Clumps is safe. Clumps puts the merged total into `orb.value` (`clumps$resolve`). Global XP and the CEI Lantern read `orb.value`, and Cognition reads Clumps' `clumpedMap` explicitly.
 
-## 2. What the existing pack can already do
+#### 2. What the existing pack can already do
 
 Mekanism capacities:
 - Basic, Advanced, Elite and Ultimate Fluid Tanks hold 32, 64, 128 and 256 B. They accept any fluid and fill the tank below when full.
@@ -69,7 +101,7 @@ Pipez:
 - Fluid pipes use `Capabilities.FluidHandler.BLOCK` (Pipez 1.21.1-1.2.31), so they move any fluid.
 - Filters support tags such as `#c:experience` (you need an Advanced or Ultimate upgrade).
 
-### A. CEI-only bank (0 new mods, densest)
+##### A. CEI-only bank (0 new mods, densest)
 - **Deposit:** the **Experience Lantern** (CEI) drains a player who stands in or against it, 50 points every 10 ticks (`experienceLanternDrainRate`). It pulls orbs within 10 blocks and absorbs them. It glows by fill level and has a 1000 mB buffer. It registers `FluidHandler.BLOCK`, so a Pipez extract pipe takes the fluid into a Mekanism tank.
 - **Withdraw:** an **Experience Hatch** placed against the Mekanism tank. The hatch calls `level.getCapability(FluidHandler.BLOCK, tankPos, null)`, so it works on any fluid-handler block, not just Create tanks. You should still try it once on a Mekanism tank or Dynamic Valve in creative.
   - Right-click deposits.
@@ -79,7 +111,7 @@ Pipez:
 - Bonus: the same fluid feeds the Blaze Enchanter, Printer and other CEI machines.
 - Downside: it is still the Hatch UX, and there is no GUI.
 
-### B. Sophisticated Backpacks (portable bank)
+##### B. Sophisticated Backpacks (portable bank)
 - Install the Tank upgrade (4000 mB per slot row, multiplied by stack upgrades) plus the **XP Pump** upgrade:
   - Modes are input, output, or keep at level N.
   - Buttons store or take N levels, or all.
@@ -88,12 +120,12 @@ Pipez:
 - A placed backpack exposes `FluidHandler.BLOCK` (`BackpackBlockEntity::getExternalFluidHandler`), so Pipez can drain it into a Mekanism tank. To withdraw at the tank, use an Experience Hatch with a `sophisticatedcore:xp_bucket` filter. The unit (20) is already in CEI's data map; use fixed amounts because of the quirk above.
 - It accepts only `c:experience` fluids, so no CEI XP.
 
-### C. XP Tome
+##### C. XP Tome
 - An item that stores 1395 points by default (configurable via `max_xp`). It has no fluid capability.
 
-## 3. Candidates
+#### 3. Candidates
 
-### Cognition (formerly Experience Obelisk), recommended
+##### Cognition (formerly Experience Obelisk), recommended
 - **Version and maintenance:** 2.4.13 for 1.21.1, NeoForge only, released 2026-07-10. The repo's `1.21.1-neoforge` branch was still being committed to on 2026-08-07.
 - **Licence and reach:** MIT. MR 124.7k downloads; CF about 18.8M downloads and about 1260 modpacks.
 - **Jar size:** 659 KB.
@@ -125,7 +157,7 @@ Pipez:
   4. Keep CEI XP in a separate tank for the CEI machines.
   5. If you want CEI's Hatch to understand cognitium, add the data-map datapack line from section 1.
 
-### Global XP (bl4ckscor3)
+##### Global XP (bl4ckscor3)
 - **Version:** v1.12 for NeoForge 1.21 and 1.21.1, released 2024-08-19. It is the latest 1.21.1 NeoForge build; the project is still updated for newer MC (2026-10-12).
 - **Licence and reach:** MIT. MR 120k downloads; CF about 15.4M downloads and about 1395 modpacks.
 - **Dependencies:** none. The jar is 45 KB.
@@ -141,7 +173,7 @@ Pipez:
 - **No fluid:** no capability or fluid code at all (checked the `neoforge/1.21` branch). It is not pipe- or Mekanism-compatible.
 - **Simplest setup:** craft it and click it. It pairs well with XP Tome from the same author.
 
-### Mob Grinding Utils (vadis365 / Flanks255)
+##### Mob Grinding Utils (vadis365 / Flanks255)
 - **Version:** 1.1.10+mc1.21.1, released 2025-07-23.
 - **Licence and availability:** "All rights reserved". CurseForge only, with about 112–116M total downloads.
 - **Dependencies:** only NeoForge.
@@ -161,14 +193,14 @@ Pipez:
   - Its last update was July 2025.
 - **Simplest setup:** an XP Drain tank as the deposit pad, then Pipez into a Mekanism tank, with an XP Tap on the Mekanism tank and a lever to withdraw.
 
-### Just Dire Things (Direwolf20)
+##### Just Dire Things (Direwolf20)
 - **Version:** JustDireThings 1.5.x–1.6.x for 1.21.1 (repo `1.21.1` branch is at mod_version 1.5.7).
 - **Licence and reach:** MIT. CF only, about 20.8M downloads.
 - **Experience Holder:** GUI to deposit and withdraw levels; collects orbs; effectively unlimited capacity.
 - **Fluid:** fluid handler with `justdirethings:xp_fluid_source` (c:experience, 20 mB per point). It accepts c:experience fluids.
 - Very good mechanically, but it is a huge mod (4 resource tiers, tools, armor, machines, portals, a time wand). That is far too much scope for "an XP bank".
 
-### XP Obelisk 0.5.0 + XP Obelisk Additions 0.2.0 (Meridanus)
+##### XP Obelisk 0.5.0 + XP Obelisk Additions 0.2.0 (Meridanus)
 - **Licence and dependencies:** MIT. Requires Architectury, which is in the pack.
 - **Availability:**
   - Additions 0.2.0 for NeoForge is on MR (2026-08-29, 80 downloads) and requires XP Obelisk ≥0.5.0.
@@ -179,7 +211,7 @@ Pipez:
 - **Additions:** an XP Item Inserter (bottles, berries and buckets into the obelisk) and an XP Enchanter (enchanting that pays from the obelisk).
 - **Verdict:** not recommended (odd fluid ratio, water tag, availability).
 
-### Liquid Experience 1.0.0
+##### Liquid Experience 1.0.0
 - **Release:** 2026-06-01, NeoForge 1.21.1 only.
 - **Licence and source:** ARR, no source code, 420 downloads.
 - **Content:**
@@ -190,12 +222,12 @@ Pipez:
 - **Dependencies:** relies on Fluidic Tanks (ARR, about 4.4k downloads), listed as an "optional" dependency but described as installed alongside.
 - I could not verify the tags or capabilities. **Not recommended.**
 
-### Better Exp Storage 0.1.0-beta
+##### Better Exp Storage 0.1.0-beta
 - NeoForge 1.21.1, released 2026-07-28. WTFPL, no source, 335 downloads, alpha/beta.
 - Adds Exp Storage Books (tiers), an Exp Hypercube (about 100M XP, stated as 2.1B mB), an Exp Collector and an Exp Generator (FE).
 - I could not verify whether it has a fluid handler. Too immature.
 
-### Others (not storage or not suitable)
+##### Others (not storage or not suitable)
 - **Bottle Your Xp 3.6:** released 2026-10-02, ARR. Needs **Collective**, which is *not* in the pack. Turns your XP into Bottles o' Enchanting. Lossy and item-only, though the bottles can go through an Item Drain into CEI fluid.
 - **Easy Mob Farm 11.0.0:** not an XP store. Its Experience Enhancement only makes farms drop Bottles o' Enchanting.
 - **Exp Save mod:** ARR, about 340 downloads, closed source. An "Iron Experience Storage Box" that pays out in XP items.
@@ -203,7 +235,7 @@ Pipez:
 - **ExperienceLib:** library only. **Applied Experienced:** needs AE2.
 - **EnderIO, Industrial Foregoing, Cyclic, PneumaticCraft, Reliquary:** have XP fluids (all listed in CEI's map) but are huge mods. Not worth it for an XP bank.
 
-## 4. Recommendation
+#### 4. Recommendation
 
 1. **Add Cognition** and use the Experience Obelisk as the XP bank.
    - Pipe cognitium to and from Mekanism tanks with Pipez if you want overflow, or feed it from a Sophisticated backpack (XP Pump + Magnet).
@@ -220,7 +252,7 @@ Alternatives, one line each:
 - Better Exp Storage: beta, closed source.
 - Bottle Your Xp: needs Collective; lossy bottles.
 
-## Sources
+#### Sources
 - Modrinth API (search and project/version endpoints) for global-xp, cognition, bottle-your-xp, xp-obelisk, xp-obelisk-additions, liquid-experience, fluidic-tanks, better-exp-storage, exp-save-mod and experiencelib.
 - Source checked:
   - CEI (DragonsPlusMinecraft) 2.5.4b and 2.4.2: `CEIFluids`, `ExperienceHatchBlock` and `ExperienceHatchBehaviour`, `ExperienceHelper`, `ExperienceLanternBlockEntity`, `CEIDataMaps`, `data_maps/fluid/unit/experience.json`, tags.

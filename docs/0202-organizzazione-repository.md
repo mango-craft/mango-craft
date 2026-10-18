@@ -1,5 +1,7 @@
 # packwiz + GitHub + Prism: how to organise the repository
 
+> **Documento storico** (ricerca del 17/10/2026, in inglese): da qui vengono la cartella per versione di Minecraft e i tag `<MC>-vX.Y.Z`. Le regole attuali del repository, che nel frattempo sono cambiate (ramo `dev`, merge in `main`, documenti numerati), sono in `AGENTS.md`. I nomi di file citati sono quelli di allora.
+
 Research date: 2026-10-17. Sources: the packwiz, packwiz-installer (v0.5.14 = current `main`) and bootstrap source code, the packwiz docs, the Prism Launcher source and docs, and about 20 public packwiz modpack repositories. I cloned the repositories and read them; I did not run any of their code. I also tested raw.githubusercontent.com URLs live. I found almost no Reddit or Discord discussion, so the claims below rest on code and on real repositories.
 
 ---
