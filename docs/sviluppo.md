@@ -35,16 +35,22 @@ Il pack di ogni versione di Minecraft sta in `<versione>/pack/` e segue il forma
 | `check_pack.py <pack>` | Controlla metafile, indice, assenza di .jar, JSON e nomi minuscoli del datapack. Esce con errore se qualcosa non va |
 | `import_mrpack.py <file.mrpack> <pack> [nomi.json]` | Converte un pacchetto .mrpack nei metafile packwiz (usato per importare la 0.1.1) |
 | `release_notes.py <pack> <changelog> <versione>` | Prepara le note di una release, con l'elenco delle mod CurseForge escluse dal .mrpack |
+| `inventory.py <pack> <inventario>` | Scarica i .jar del pack (serve la rete: gira nelle Actions) e salva per ogni mod cosa contiene: mod id e dipendenze, oggetti e blocchi con il nome, tag, tabelle del bottino, strutture, tipi di ricetta, ricette di Botany Pots. Anche Minecraft e NeoForge. Riscarica solo i file cambiati |
+| `check_ids.py <pack> <inventario> [--report FILE]` | Sull'inventario: dipendenze obbligatorie mancanti e nomi del datapack che non esistono (oggetti, blocchi, tag, tabelle, modificatori, condizioni mai vere). Funziona anche senza rete |
+| `modrinth_resolve.py <pack> <voci…>` | Sceglie le versioni Modrinth: `slug` = ultima release per Minecraft e loader del pack; `slug@versione` o link = versione esatta |
+| `ci_pack.sh <pack>` | Tutti i controlli in fila (refresh, check_pack, inventario, check_ids), usato dai workflow |
+| `ci_commit.sh "<messaggio>"` | Commit e push dei file rigenerati dai workflow |
 
 ## Workflow di GitHub (`.github/workflows/`)
 
 | Workflow | Quando parte | Cosa fa |
 |---|---|---|
-| **Controllo pack** (`check.yml`) | A ogni push su `main` o `dev` e a ogni pull request | Lancia `packwiz refresh` e `check_pack.py`. Se l'indice cambia, lo salva con un commit automatico (sulle pull request invece fallisce) |
-| **Aggiungi mod CurseForge** (`curseforge-add.yml`) | A mano (scheda *Actions* → *Run workflow*) | Aggiunge una o più mod dai link ai file esatti (`…/files/<id>`), rifiutando le dipendenze, poi aggiorna l'indice e fa il commit |
+| **Controllo pack** (`check.yml`) | A ogni push su `main` o `dev` e a ogni pull request | `ci_pack.sh`: indice, controlli, inventario, controllo dei nomi. Salva indice, inventario e `controllo.md` con un commit automatico (non sulle pull request), poi fallisce se un controllo è fallito |
+| **Aggiungi mod Modrinth** (`modrinth-add.yml`) | A mano, sul ramo scelto (`gh workflow run modrinth-add.yml --ref dev -f mods="…"`) | Sceglie le versioni (`modrinth_resolve.py`), le aggiunge con `packwiz modrinth add` insieme alle dipendenze obbligatorie, lancia `ci_pack.sh` e fa il commit elencando versioni scelte e metafile nuovi |
+| **Aggiungi mod CurseForge** (`curseforge-add.yml`) | A mano, sul ramo scelto (scheda *Actions* → *Run workflow*) | Aggiunge una o più mod dai link ai file esatti (`…/files/<id>`), rifiutando le dipendenze, poi lancia `ci_pack.sh` e fa il commit |
 | **Release** (`release.yml`) | Al push di un tag `<versione MC>-vX.Y.Z`, oppure a mano indicando il tag da creare | Controlla che il tag corrisponda a `pack.toml`, esporta un `.mrpack` con le sole mod Modrinth, crea lo zip della documentazione e pubblica la release |
 
-packwiz viene installato in ogni workflow con `go install` a un commit fissato. Le dipendenze di una mod CurseForge si rifiutano perché packwiz riconosce come "già presenti" solo le mod prese da CurseForge, e aggiungerebbe doppioni di quelle prese da Modrinth.
+packwiz viene installato in ogni workflow con `go install` a un commit fissato. I workflow che fanno commit girano uno alla volta per ramo; i loro commit non fanno ripartire altri workflow (regola di GitHub), per questo ognuno lancia da sé tutti i controlli. Le dipendenze di una mod CurseForge si rifiutano perché packwiz riconosce come "già presenti" solo le mod prese da CurseForge, e aggiungerebbe doppioni di quelle prese da Modrinth.
 
 ## Rilasciare una versione
 

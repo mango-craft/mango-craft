@@ -1,0 +1,128 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Easy Villagers",
+ "file": "easy-villagers-neoforge-1.21.1-1.1.47.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "380ca89dd1b09a0e4498a4f1035cbf02986ad78ed7a3e24d2298935e761b0acc6b0c583274684c3bbfbc96646ee66f0efed33bcb58c5eb4a1eb8ff708f4192e5",
+ "mods": [
+  {
+   "modid": "easy_villagers",
+   "name": "Easy Villagers",
+   "version": "1.21.1-1.1.47",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.161,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "theoneprobe",
+     "type": "optional",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jade",
+     "type": "optional",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "easy_villagers",
+  "minecraft"
+ ],
+ "blocks": {
+  "easy_villagers:auto_trader": "Auto Trader",
+  "easy_villagers:breeder": "Breeder",
+  "easy_villagers:converter": "Converter",
+  "easy_villagers:farmer": "Farmer",
+  "easy_villagers:incubator": "Incubator",
+  "easy_villagers:inventory_viewer": "Inventory Viewer",
+  "easy_villagers:iron_farm": "Iron Farm",
+  "easy_villagers:trader": "Trader"
+ },
+ "items": {
+  "easy_villagers:auto_trader": "",
+  "easy_villagers:baby_villager": "Baby Villager",
+  "easy_villagers:breeder": "",
+  "easy_villagers:converter": "",
+  "easy_villagers:farmer": "",
+  "easy_villagers:incubator": "",
+  "easy_villagers:inventory_viewer": "",
+  "easy_villagers:iron_farm": "",
+  "easy_villagers:trader": "",
+  "easy_villagers:villager": "Villager"
+ },
+ "data": {
+  "loot_table": [
+   "easy_villagers:blocks/auto_trader",
+   "easy_villagers:blocks/breeder",
+   "easy_villagers:blocks/converter",
+   "easy_villagers:blocks/farmer",
+   "easy_villagers:blocks/incubator",
+   "easy_villagers:blocks/iron_farm",
+   "easy_villagers:blocks/trader"
+  ],
+  "recipe": [
+   "easy_villagers:auto_trader",
+   "easy_villagers:breeder",
+   "easy_villagers:converter",
+   "easy_villagers:farmer",
+   "easy_villagers:incubator",
+   "easy_villagers:iron_farm",
+   "easy_villagers:trader"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/item": [
+   "easy_villagers:invalid_farmer_crop"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "easy_villagers:auto_trader",
+    "easy_villagers:breeder",
+    "easy_villagers:converter",
+    "easy_villagers:farmer",
+    "easy_villagers:incubator",
+    "easy_villagers:iron_farm",
+    "easy_villagers:trader",
+    "easy_villagers:inventory_viewer"
+   ]
+  },
+  "tags/item": {
+   "easy_villagers:invalid_farmer_crop": [
+    "farmersdelight:tomato_seeds?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 7
+ },
+ "botanypots": [],
+ "problems": []
+}

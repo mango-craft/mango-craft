@@ -1,0 +1,43 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Resourceful Lib",
+ "file": "resourcefullib-neoforge-1.21-3.0.12.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "a9d20e345faa9bcb297bd95ac9524205834804d1bb13518397dd4f7f62b352b08c3339ee7f7870d3669078ceeb33d5c31ea527aecce4b31d62ec1ff7d8b562c8",
+ "mods": [
+  {
+   "modid": "resourcefullib",
+   "name": "Resourceful Lib",
+   "version": "3.0.12",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "bytecodecs-1.1.2.jar",
+  "yabn-1.0.3.jar"
+ ],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

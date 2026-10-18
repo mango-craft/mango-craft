@@ -1,0 +1,64 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Carry On",
+ "file": "carryon-neoforge-1.21.1-2.2.6.13.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "e097b11d6f14e0957bab6c0276b81542e786cb86b9c31d9f25975f8c9fb04a734188b8790683298bbc5c695dc3de7d6e947616a20ad26d4a728a3beb0bb78667",
+ "mods": [
+  {
+   "modid": "carryon",
+   "name": "Carry On",
+   "version": "2.2.6",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.21.2)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "carryon"
+ ],
+ "data": {
+  "tags/blocks": [
+   "carryon:block_blacklist",
+   "carryon:block_whitelist"
+  ],
+  "tags/entity_types": [
+   "carryon:entity_blacklist",
+   "carryon:entity_whitelist",
+   "carryon:stacking_blacklist",
+   "carryon:stacking_whitelist"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/blocks": {
+   "carryon:block_blacklist": [],
+   "carryon:block_whitelist": []
+  },
+  "tags/entity_types": {
+   "carryon:entity_blacklist": [],
+   "carryon:entity_whitelist": [],
+   "carryon:stacking_blacklist": [],
+   "carryon:stacking_whitelist": []
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

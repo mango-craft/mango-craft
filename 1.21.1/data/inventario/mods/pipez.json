@@ -1,0 +1,157 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Pipez",
+ "file": "pipez-neoforge-1.21.1-1.2.31.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "7291230b62104b73b04564d6d39ba18d11134a5713ee79242c7ae8885d07c4efb5f5d0ab75b8ff9aba3119ed8163d0c5488ad603a2db21b92dc35715b723ce5e",
+ "mods": [
+  {
+   "modid": "pipez",
+   "name": "Pipez",
+   "version": "1.21.1-1.2.31",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.8-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "mekanism",
+     "type": "optional",
+     "range": "[1.21.1-10.7.3.59,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "theoneprobe",
+     "type": "optional",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jade",
+     "type": "optional",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "minecraft",
+  "pipez"
+ ],
+ "blocks": {
+  "pipez:energy_pipe": "Energy Pipe",
+  "pipez:fluid_pipe": "Fluid Pipe",
+  "pipez:gas_pipe": "Gas Pipe",
+  "pipez:item_pipe": "Item Pipe",
+  "pipez:universal_pipe": "Universal Pipe"
+ },
+ "items": {
+  "pipez:advanced_upgrade": "Advanced Pipe Upgrade",
+  "pipez:basic_upgrade": "Basic Pipe Upgrade",
+  "pipez:energy_pipe": "",
+  "pipez:filter_destination_tool": "Filter Destination Tool",
+  "pipez:fluid_pipe": "",
+  "pipez:gas_pipe": "",
+  "pipez:improved_upgrade": "Improved Pipe Upgrade",
+  "pipez:infinity_upgrade": "Infinity Pipe Upgrade",
+  "pipez:item_pipe": "",
+  "pipez:ultimate_upgrade": "Ultimate Pipe Upgrade",
+  "pipez:universal_pipe": "",
+  "pipez:wrench": "Pipe Wrench"
+ },
+ "data": {
+  "loot_table": [
+   "pipez:blocks/energy_pipe",
+   "pipez:blocks/fluid_pipe",
+   "pipez:blocks/gas_pipe",
+   "pipez:blocks/item_pipe",
+   "pipez:blocks/universal_pipe"
+  ],
+  "recipe": [
+   "pipez:advanced_upgrade",
+   "pipez:basic_upgrade",
+   "pipez:clear_upgrade",
+   "pipez:copy_upgrade_advanced",
+   "pipez:copy_upgrade_basic",
+   "pipez:copy_upgrade_improved",
+   "pipez:copy_upgrade_infinity",
+   "pipez:copy_upgrade_ultimate",
+   "pipez:energy_pipe",
+   "pipez:filter_destination_tool",
+   "pipez:fluid_pipe",
+   "pipez:gas_pipe",
+   "pipez:improved_upgrade",
+   "pipez:item_pipe",
+   "pipez:ultimate_upgrade",
+   "pipez:universal_pipe",
+   "pipez:wrench"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/item": [
+   "c:tools",
+   "c:tools/wrench",
+   "c:wrenches",
+   "pipez:upgrades"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "pipez:energy_pipe",
+    "pipez:fluid_pipe",
+    "pipez:gas_pipe?",
+    "pipez:item_pipe",
+    "pipez:universal_pipe"
+   ]
+  },
+  "tags/item": {
+   "c:tools": [
+    "#c:tools/wrench"
+   ],
+   "c:tools/wrench": [
+    "pipez:wrench"
+   ],
+   "c:wrenches": [
+    "#c:tools/wrench"
+   ],
+   "pipez:upgrades": [
+    "pipez:basic_upgrade",
+    "pipez:improved_upgrade",
+    "pipez:advanced_upgrade",
+    "pipez:ultimate_upgrade",
+    "pipez:infinity_upgrade"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 11,
+  "pipez:clear_components": 1,
+  "pipez:copy_components": 5
+ },
+ "botanypots": [],
+ "problems": []
+}

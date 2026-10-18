@@ -1,0 +1,143 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Apothic Attributes (modulo)",
+ "file": "ApothicAttributes-1.21.1-2.11.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "568580e68016161151fc0254fb0da949b42cf285fa2bf7c3aec1cd320405c430483e9eb990aaddef537bfac4aa4beb21db82fbff9249131e05b15063b6839611",
+ "mods": [
+  {
+   "modid": "apothic_attributes",
+   "name": "Apothic Attributes",
+   "version": "2.11.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.235,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "placebo",
+     "type": "required",
+     "range": "[9.9.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "apothic_attributes",
+  "minecraft",
+  "neoforge"
+ ],
+ "effects": {
+  "apothic_attributes:bleeding": "Bleeding",
+  "apothic_attributes:detonation": "Flaming Detonation",
+  "apothic_attributes:flying": "Flying",
+  "apothic_attributes:grievous": "Grievous Wounds",
+  "apothic_attributes:knowledge": "Ancient Knowledge",
+  "apothic_attributes:sundering": "Sundering",
+  "apothic_attributes:vitality": "Bursting Vitality"
+ },
+ "data": {
+  "brewing_mixes": [
+   "apothic_attributes:absorption_from_awkward",
+   "apothic_attributes:extra_long_flying_from_long_flying",
+   "apothic_attributes:fatigue_from_haste",
+   "apothic_attributes:flying_from_levitation",
+   "apothic_attributes:grievous_from_vitality",
+   "apothic_attributes:haste_from_awkward",
+   "apothic_attributes:knowledge_from_awkward",
+   "apothic_attributes:levitation_from_slow_falling",
+   "apothic_attributes:long_absorption_from_absorption",
+   "apothic_attributes:long_fatigue_from_fatigue",
+   "apothic_attributes:long_fatigue_from_long_haste",
+   "apothic_attributes:long_flying_from_flying",
+   "apothic_attributes:long_grievous_from_grievous",
+   "apothic_attributes:long_grievous_from_long_vitality",
+   "apothic_attributes:long_haste_from_haste",
+   "apothic_attributes:long_knowledge_from_knowledge",
+   "apothic_attributes:long_resistance_from_resistance",
+   "apothic_attributes:long_sundering_from_long_resistance",
+   "apothic_attributes:long_sundering_from_sundering",
+   "apothic_attributes:long_vitality_from_vitality",
+   "apothic_attributes:long_wither_from_wither",
+   "apothic_attributes:resistance_from_awkward",
+   "apothic_attributes:strong_absorption_from_absorption",
+   "apothic_attributes:strong_fatigue_from_fatigue",
+   "apothic_attributes:strong_fatigue_from_strong_haste",
+   "apothic_attributes:strong_grievous_from_grievous",
+   "apothic_attributes:strong_grievous_from_strong_vitality",
+   "apothic_attributes:strong_haste_from_haste",
+   "apothic_attributes:strong_knowledge_from_knowledge",
+   "apothic_attributes:strong_resistance_from_resistance",
+   "apothic_attributes:strong_sundering_from_strong_resistance",
+   "apothic_attributes:strong_sundering_from_sundering",
+   "apothic_attributes:strong_vitality_from_vitality",
+   "apothic_attributes:strong_wither_from_wither",
+   "apothic_attributes:sundering_from_resistance",
+   "apothic_attributes:vitality_from_awkward",
+   "apothic_attributes:wither_from_awkward"
+  ],
+  "damage_type": [
+   "apothic_attributes:bleeding",
+   "apothic_attributes:cold_damage",
+   "apothic_attributes:current_hp_damage",
+   "apothic_attributes:detonation",
+   "apothic_attributes:fire_damage"
+  ],
+  "tags/damage_type": [
+   "apothic_attributes:cannot_critically_strike",
+   "apothic_attributes:is_non_physical",
+   "minecraft:bypasses_armor",
+   "neoforge:is_magic",
+   "neoforge:is_physical"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/damage_type": {
+   "apothic_attributes:cannot_critically_strike": [
+    "apothic_attributes:current_hp_damage",
+    "#bypasses_invulnerability"
+   ],
+   "apothic_attributes:is_non_physical": [
+    "#neoforge:is_magic",
+    "#neoforge:is_poison",
+    "#neoforge:is_wither",
+    "#is_fire",
+    "#is_explosion",
+    "#is_lightning",
+    "#is_freezing"
+   ],
+   "minecraft:bypasses_armor": [
+    "apothic_attributes:bleeding",
+    "apothic_attributes:detonation",
+    "apothic_attributes:fire_damage",
+    "apothic_attributes:cold_damage"
+   ],
+   "neoforge:is_magic": [
+    "apothic_attributes:detonation",
+    "apothic_attributes:fire_damage",
+    "apothic_attributes:cold_damage"
+   ],
+   "neoforge:is_physical": [
+    "apothic_attributes:current_hp_damage"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

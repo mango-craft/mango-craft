@@ -1,0 +1,54 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Compass to Map: Xaero's",
+ "file": "compasstomapxaeros-0.1.2-neoforge-1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "97e96b39d4c55b7023e952b14007da632032c83fb6e2d42b11b337ea107e66fcf6ce959ecfd5d80aae06fd38574d97810ed776f944dcf7a07f98cdb817645a9e",
+ "mods": [
+  {
+   "modid": "compasstomapxaeros",
+   "name": "Compass to Map: Xaero's Minimap & Explorer's Compass & Nature's Compass Addon",
+   "version": "0.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "explorerscompass",
+     "type": "optional",
+     "range": "[0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "naturescompass",
+     "type": "optional",
+     "range": "[0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "compasstomapxaeros"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,36 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "AppleSkin",
+ "file": "appleskin-neoforge-mc1.21-3.0.9.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "f4ea46273e407334b63e262e2555c9a8204f7b5e60f23f272fbaa83ad9e88800e0ee186aca840710df2dbe0a18b37758695fef2ae1a902c10b3706e3de772937",
+ "mods": [
+  {
+   "modid": "appleskin",
+   "name": "AppleSkin",
+   "version": "3.0.9+mc1.21",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "appleskin"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

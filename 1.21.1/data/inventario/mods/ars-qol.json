@@ -1,0 +1,80 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Ars QOL",
+ "file": "ars_qol-1.2.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "0e3706208a190543d37d9bfb70edad726295e9d7f3c6f9bf5861751fccf66e1fdd93e19a2f325327b899260c4b5228a36751ce5d3aa76828a7bc35d330fe35cb",
+ "mods": [
+  {
+   "modid": "ars_qol",
+   "name": "Ars QOL",
+   "version": "1.2.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_nouveau",
+     "type": "required",
+     "range": "[5.13.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "curios",
+     "type": "required",
+     "range": "[9.0.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "ars_qol",
+  "curios",
+  "minecraft"
+ ],
+ "data": {
+  "curios": [
+   "ars_qol:entities/spellbook",
+   "ars_qol:slots/spellbook"
+  ],
+  "tags/item": [
+   "curios:spellbook",
+   "minecraft:dyeable"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/item": {
+   "curios:spellbook": [
+    "ars_nouveau:novice_spell_book",
+    "ars_nouveau:apprentice_spell_book",
+    "ars_nouveau:archmage_spell_book",
+    "ars_nouveau:creative_spell_book"
+   ],
+   "minecraft:dyeable": [
+    "ars_nouveau:novice_spell_book",
+    "ars_nouveau:apprentice_spell_book",
+    "ars_nouveau:archmage_spell_book",
+    "ars_nouveau:creative_spell_book"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,158 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "YUNG's Bridges",
+ "file": "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "20b07ae4c08974980f976bcae32f18ccb885745d6cd50d4a5d0156eb5c51c29e49f8b2bf7dc2ae160d39b62f2332513bd9850efc5cba13697e36a2ac2848bc3b",
+ "mods": [
+  {
+   "modid": "yungsbridges",
+   "name": "YUNG's Bridges",
+   "version": "1.21.1-NeoForge-5.1.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": null
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0,)",
+     "side": null
+    },
+    {
+     "modid": "yungsapi",
+     "type": "required",
+     "range": "[1.21.1-NeoForge-5.1.2,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "yungsbridges"
+ ],
+ "data": {
+  "forge": [
+   "yungsbridges:biome_modifier/bridge_addition"
+  ],
+  "neoforge/biome_modifier": [
+   "yungsbridges:bridge_addition"
+  ],
+  "structure": [
+   "yungsbridges:bridge/stone/15_1",
+   "yungsbridges:bridge/stone/16_0",
+   "yungsbridges:bridge/stone/16_0_broken",
+   "yungsbridges:bridge/stone/22_0",
+   "yungsbridges:bridge/stone/22_0_broken",
+   "yungsbridges:bridge/stone/24_0",
+   "yungsbridges:bridge/stone/24_0_broken",
+   "yungsbridges:bridge/stone/31_0",
+   "yungsbridges:bridge/wood/13_0",
+   "yungsbridges:bridge/wood/13_0_broken",
+   "yungsbridges:bridge/wood/15_0",
+   "yungsbridges:bridge/wood/17_0",
+   "yungsbridges:bridge/wood/17_0_broken",
+   "yungsbridges:bridge/wood/27_0"
+  ],
+  "tags/worldgen/biome": [
+   "yungsbridges:collections/badlands",
+   "yungsbridges:collections/jungle",
+   "yungsbridges:collections/savanna",
+   "yungsbridges:collections/taiga",
+   "yungsbridges:has_structure/bridge"
+  ],
+  "worldgen/configured_feature": [
+   "yungsbridges:bridge/stone/15_1",
+   "yungsbridges:bridge/stone/15_1_rotated",
+   "yungsbridges:bridge/stone/16_0",
+   "yungsbridges:bridge/stone/16_0_broken",
+   "yungsbridges:bridge/stone/16_0_broken_rotated",
+   "yungsbridges:bridge/stone/16_0_rotated",
+   "yungsbridges:bridge/stone/22_0",
+   "yungsbridges:bridge/stone/22_0_broken",
+   "yungsbridges:bridge/stone/22_0_broken_rotated",
+   "yungsbridges:bridge/stone/22_0_rotated",
+   "yungsbridges:bridge/stone/24_0",
+   "yungsbridges:bridge/stone/24_0_broken",
+   "yungsbridges:bridge/stone/24_0_broken_rotated",
+   "yungsbridges:bridge/stone/24_0_rotated",
+   "yungsbridges:bridge/stone/31_0",
+   "yungsbridges:bridge/stone/31_0_rotated",
+   "yungsbridges:bridge/wood/17_0",
+   "yungsbridges:bridge/wood/17_0_broken",
+   "yungsbridges:bridge/wood/17_0_broken_rotated",
+   "yungsbridges:bridge/wood/17_0_rotated",
+   "yungsbridges:bridge/wood/27_0",
+   "yungsbridges:bridge/wood/27_0_rotated",
+   "yungsbridges:bridge_list"
+  ],
+  "worldgen/placed_feature": [
+   "yungsbridges:bridge_list"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/worldgen/biome": {
+   "yungsbridges:collections/badlands": [
+    "#minecraft:is_badlands",
+    "terralith:savanna_badlands?",
+    "byg:atacama_desert?",
+    "#forge:is_mesa?",
+    "#c:in_mesa?",
+    "#forge:is_badlands?",
+    "#c:badlands?"
+   ],
+   "yungsbridges:collections/jungle": [
+    "#minecraft:is_jungle",
+    "#forge:is_jungle?",
+    "#c:in_jungle?"
+   ],
+   "yungsbridges:collections/savanna": [
+    "#minecraft:is_savanna",
+    "terralith:arid_highlands?",
+    "terralith:hot_shrubland?",
+    "terralith:sakura_grove?",
+    "terralith:sakura_valley?",
+    "projectvibrantjourneys:baobab_fields?",
+    "#forge:is_savanna?",
+    "#c:savanna?"
+   ],
+   "yungsbridges:collections/taiga": [
+    "minecraft:taiga",
+    "terralith:cloud_forest?",
+    "terralith:forested_highlands?",
+    "terralith:lavender_forest?",
+    "terralith:lavender_valley?",
+    "terralith:moonlight_grove?",
+    "terralith:moonlight_valley?",
+    "terralith:rocky_shrubland?",
+    "terralith:shrubland?",
+    "terralith:wintry_forest?",
+    "biomesoplenty:jade_cliffs?",
+    "biomesoplenty:mediterranean_taiga?",
+    "biomesoplenty:dead_forest?",
+    "biomesoplenty:old_growth_dead_forest?",
+    "byg:autumnal_taiga?",
+    "byg:canadian_shield?",
+    "byg:maple_taiga?",
+    "projectvibrantjourneys:boreal_forest?",
+    "projectvibrantjourneys:crystal_lakes?"
+   ],
+   "yungsbridges:has_structure/bridge": [
+    "#minecraft:is_river",
+    "#c:river?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

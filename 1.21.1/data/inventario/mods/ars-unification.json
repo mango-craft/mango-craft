@@ -1,0 +1,126 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Ars Unification",
+ "file": "ars_unification-1.2.19.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "f5c17c79e582da87c98f24b4f1181bef2dfbe5fa6ce97c48f369ccb9b19e20e531f56f91eb90a8a1cca47c4b2ec8c1e35b15a0ed2730791d41d2e5caefd9dea8",
+ "mods": [
+  {
+   "modid": "ars_unification",
+   "name": "Ars Unification",
+   "version": "1.2.19",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.133,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_nouveau",
+     "type": "required",
+     "range": "[5.12.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "not_enough_glyphs",
+     "type": "optional",
+     "range": "[4.3.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "[19.27.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "emi",
+     "type": "optional",
+     "range": "[1.1.22,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "mekanism",
+     "type": "optional",
+     "range": "[10.7.19,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "enderio_machines",
+     "type": "optional",
+     "range": "[8.0.7-alpha,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "immersiveengineering",
+     "type": "optional",
+     "range": "[12.4.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "integrateddynamics",
+     "type": "optional",
+     "range": "[1.32.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "actuallyadditions",
+     "type": "optional",
+     "range": "[1.3.25,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "modern_industrialization",
+     "type": "optional",
+     "range": "[2.4.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "occultism",
+     "type": "optional",
+     "range": "[1.209.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "optional",
+     "range": "[1.2.11,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ae2",
+     "type": "optional",
+     "range": "[19.2.17,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_technica",
+     "type": "optional",
+     "range": "[2.7.6,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "ars_unification"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

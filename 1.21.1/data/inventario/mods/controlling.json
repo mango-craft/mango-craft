@@ -1,0 +1,48 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Controlling",
+ "file": "Controlling-neoforge-1.21.1-19.0.5.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "bd01b2a38a869ea38e5f2a8fcd601e67ea9b132b9883c6ae752bc35dff6e94f6d47b965e31c1ee5c2f6a1221653549680da779fcb5319d199aec261d221d179e",
+ "mods": [
+  {
+   "modid": "controlling",
+   "name": "Controlling",
+   "version": "19.0.5",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.94,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "searchables",
+     "type": "required",
+     "range": "[1.0.1,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "controlling"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

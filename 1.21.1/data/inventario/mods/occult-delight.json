@@ -1,0 +1,73 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Occult Delight",
+ "file": "occultdelight-1.0.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "1b421e1a4925a5b26cd454ddfadeb1ac7196300522e53408fe95d7806ae0acfdfdedec50e9c68069ae419a5f5e175b0c9a1a73d46822bc2ad4f4664881d388f1",
+ "mods": [
+  {
+   "modid": "occultdelight",
+   "name": "Occult Delight",
+   "version": "1.0.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "occultism",
+     "type": "required",
+     "range": "[1.205.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[1.3,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "occultdelight"
+ ],
+ "blocks": {
+  "occultdelight:occult_cooking_pot": "Occult Cooking Pot"
+ },
+ "items": {
+  "occultdelight:guidebook": "",
+  "occultdelight:occult_cooking_pot": ""
+ },
+ "data": {
+  "loot_table": [
+   "occultdelight:blocks/occult_cooking_pot"
+  ],
+  "patchouli_books": [
+   "occultdelight:guide/book"
+  ],
+  "recipe": [
+   "occultdelight:occult_cooking_pot"
+  ]
+ },
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {
+  "minecraft:crafting_shaped": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,677 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Brewin' And Chewin'",
+ "file": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "2d4d264564d12784f5425177fb1b88b5ec0d1672c0957d6a78eb1e12ffa5e0e31a7f85f8beb9c02df0489043f5d2ae5889fc3f589e8e5f8ee7971a458ba0f34d",
+ "mods": [
+  {
+   "modid": "brewinandchewin",
+   "name": "Brewin' And Chewin'",
+   "version": "4.5.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[1.3.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "greenhouseconfig",
+     "type": "required",
+     "range": "[2.2.3,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "greenhouseconfig",
+   "name": "Greenhouse Config",
+   "version": "2.2.3+1.21.1",
+   "jar": "greenhouseconfig-2.2.3+1.21.1-neoforge.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "greenhouseconfig_toml",
+   "name": "Greenhouse Config - TOML",
+   "version": "1.1.0",
+   "jar": "greenhouseconfig_toml-1.1.0.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "greenhouseconfig",
+     "type": "required",
+     "range": "[1.0.0-alpha.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "greenhouseconfig_night_config",
+     "type": "required",
+     "range": "[1.0.0-alpha.2,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "greenhouseconfig_night_config",
+   "name": "Greenhouse Config - Night Config",
+   "version": "1.1.0",
+   "jar": "greenhouseconfig_night_config-1.1.0.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "greenhouseconfig",
+     "type": "required",
+     "range": "[1.0.0-alpha.2,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "greenhouseconfig-2.2.3+1.21.1-neoforge.jar",
+  "greenhouseconfig_night_config-1.1.0.jar",
+  "greenhouseconfig_toml-1.1.0.jar"
+ ],
+ "namespaces": [
+  "brewinandchewin",
+  "c",
+  "emi",
+  "farmersdelight",
+  "greenhouseconfig",
+  "minecraft",
+  "neoforge",
+  "origins"
+ ],
+ "blocks": {
+  "brewinandchewin:apple_jelly": "",
+  "brewinandchewin:beer": "",
+  "brewinandchewin:bloody_mary": "",
+  "brewinandchewin:coaster": "Coaster",
+  "brewinandchewin:dread_nog": "",
+  "brewinandchewin:egg_grog": "",
+  "brewinandchewin:fiery_fondue_pot": "Pot of Fiery Fondue",
+  "brewinandchewin:flaxen_cheese_wheel": "Flaxen Cheese Wheel",
+  "brewinandchewin:glittering_grenadine_model": "",
+  "brewinandchewin:glow_berry_marmalade": "",
+  "brewinandchewin:heating_cask": "Heating Cask",
+  "brewinandchewin:ice_crate": "Ice Crate",
+  "brewinandchewin:keg": "Keg",
+  "brewinandchewin:kombucha": "",
+  "brewinandchewin:mead": "",
+  "brewinandchewin:pale_jane": "",
+  "brewinandchewin:pizza": "Pizza",
+  "brewinandchewin:quiche": "Quiche",
+  "brewinandchewin:red_rum": "",
+  "brewinandchewin:rice_wine": "",
+  "brewinandchewin:saccharine_rum": "",
+  "brewinandchewin:salty_folly": "",
+  "brewinandchewin:scarlet_cheese_wheel": "Scarlet Cheese Wheel",
+  "brewinandchewin:steel_toe_stout": "",
+  "brewinandchewin:strongroot_ale": "",
+  "brewinandchewin:sweet_berry_jam": "",
+  "brewinandchewin:tankard": "",
+  "brewinandchewin:unripe_flaxen_cheese_wheel": "Unripe Flaxen Cheese Wheel",
+  "brewinandchewin:unripe_scarlet_cheese_wheel": "Unripe Scarlet Cheese Wheel",
+  "brewinandchewin:vodka": "",
+  "brewinandchewin:withering_dross": ""
+ },
+ "effects": {
+  "brewinandchewin:intoxication": "Intoxication",
+  "brewinandchewin:raging": "Raging",
+  "brewinandchewin:sweet_heart": "Sweet Heart",
+  "brewinandchewin:tipsy": "Tipsy"
+ },
+ "fluids": {
+  "brewinandchewin:beer": "Beer",
+  "brewinandchewin:bloody_mary": "Bloody Mary",
+  "brewinandchewin:dread_nog": "Dread Nog",
+  "brewinandchewin:egg_grog": "Egg Grog",
+  "brewinandchewin:flaxen_cheese": "Flaxen Cheese",
+  "brewinandchewin:glittering_grenadine": "Glittering Grenadine",
+  "brewinandchewin:honey": "Honey",
+  "brewinandchewin:kombucha": "Kombucha",
+  "brewinandchewin:mead": "Mead",
+  "brewinandchewin:milk": "Milk",
+  "brewinandchewin:pale_jane": "Pale Jane",
+  "brewinandchewin:red_rum": "Red Rum",
+  "brewinandchewin:rice_wine": "Rice Wine",
+  "brewinandchewin:saccharine_rum": "Saccharine Rum",
+  "brewinandchewin:salty_folly": "Salty Folly",
+  "brewinandchewin:scarlet_cheese": "Scarlet Cheese",
+  "brewinandchewin:steel_toe_stout": "Steel-Toe Stout",
+  "brewinandchewin:strongroot_ale": "Strongroot Ale",
+  "brewinandchewin:vodka": "Vodka",
+  "brewinandchewin:withering_dross": "Withering Dross"
+ },
+ "items": {
+  "brewinandchewin:apple_jelly": "Apple Jelly",
+  "brewinandchewin:beer": "Beer",
+  "brewinandchewin:beer_tankard": "",
+  "brewinandchewin:bloody_mary": "Bloody Mary",
+  "brewinandchewin:cheesy_pasta": "Pasta with Cheese",
+  "brewinandchewin:coaster": "",
+  "brewinandchewin:cocoa_fudge": "Cocoa Fudge",
+  "brewinandchewin:creamy_onion_soup": "Creamy Onion Soup",
+  "brewinandchewin:dread_nog": "Dread Nog",
+  "brewinandchewin:egg_grog": "Egg Grog",
+  "brewinandchewin:fiery_fondue": "Fiery Fondue",
+  "brewinandchewin:fiery_fondue_pot": "",
+  "brewinandchewin:flaxen_cheese_wedge": "Flaxen Cheese Wedge",
+  "brewinandchewin:flaxen_cheese_wheel": "",
+  "brewinandchewin:glittering_grenadine": "Glittering Grenadine",
+  "brewinandchewin:glow_berry_marmalade": "Glow Berry Marmalade",
+  "brewinandchewin:ham_and_cheese_sandwich": "Ham and Cheese Sandwich",
+  "brewinandchewin:heating_cask": "",
+  "brewinandchewin:horror_lasagna": "Horror Lasagna",
+  "brewinandchewin:ice_crate": "",
+  "brewinandchewin:jerky": "Jerky",
+  "brewinandchewin:keg": "",
+  "brewinandchewin:kimchi": "Kimchi",
+  "brewinandchewin:kippers": "Kippers",
+  "brewinandchewin:kombucha": "Kombucha",
+  "brewinandchewin:mead": "Mead",
+  "brewinandchewin:pale_jane": "Pale Jane",
+  "brewinandchewin:pickled_pickles": "Pickled Pickles",
+  "brewinandchewin:pizza": "",
+  "brewinandchewin:pizza_slice": "Pizza Slice",
+  "brewinandchewin:quiche": "",
+  "brewinandchewin:quiche_slice": "Quiche Slice",
+  "brewinandchewin:red_rum": "Red Rum",
+  "brewinandchewin:rice_wine": "Rice Wine",
+  "brewinandchewin:saccharine_rum": "Saccharine Rum",
+  "brewinandchewin:salty_folly": "Salty Folly",
+  "brewinandchewin:scarlet_cheese_wedge": "Scarlet Cheese Wedge",
+  "brewinandchewin:scarlet_cheese_wheel": "",
+  "brewinandchewin:scarlet_pierogi": "Scarlet Pierogi",
+  "brewinandchewin:steel_toe_stout": "Steel-Toe Stout",
+  "brewinandchewin:strongroot_ale": "Strongroot Ale",
+  "brewinandchewin:sweet_berry_jam": "Sweet Berry Jam",
+  "brewinandchewin:tankard": "Tankard",
+  "brewinandchewin:unripe_flaxen_cheese_wheel": "",
+  "brewinandchewin:unripe_scarlet_cheese_wheel": "",
+  "brewinandchewin:vegetable_omelet": "Vegetable Omelet",
+  "brewinandchewin:vodka": "Vodka",
+  "brewinandchewin:withering_dross": "Withering Dross"
+ },
+ "data": {
+  "damage_type": [
+   "brewinandchewin:cardiac_arrest"
+  ],
+  "data_maps/item": [
+   "neoforge:compostables"
+  ],
+  "loot_modifiers": [
+   "brewinandchewin:slicing_flaxen_cheese_wheel",
+   "brewinandchewin:slicing_pizza",
+   "brewinandchewin:slicing_quiche",
+   "brewinandchewin:slicing_scarlet_cheese_wheel",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "brewinandchewin:blocks/coaster",
+   "brewinandchewin:blocks/fiery_fondue_pot",
+   "brewinandchewin:blocks/heating_cask",
+   "brewinandchewin:blocks/ice_crate",
+   "brewinandchewin:blocks/keg",
+   "brewinandchewin:blocks/unripe_flaxen_cheese_wheel",
+   "brewinandchewin:blocks/unripe_scarlet_cheese_wheel"
+  ],
+  "recipe": [
+   "brewinandchewin:cooking/apple_jelly",
+   "brewinandchewin:cooking/cheesy_pasta",
+   "brewinandchewin:cooking/creamy_onion_soup",
+   "brewinandchewin:cooking/fiery_fondue_pot",
+   "brewinandchewin:cooking/glow_berry_marmalade",
+   "brewinandchewin:cooking/horror_lasagna",
+   "brewinandchewin:cooking/scarlet_pierogi",
+   "brewinandchewin:cooking/sweet_berry_jam",
+   "brewinandchewin:cooking/vegetable_omelet",
+   "brewinandchewin:cutting/flaxen_cheese_wheel",
+   "brewinandchewin:cutting/pizza",
+   "brewinandchewin:cutting/quiche",
+   "brewinandchewin:cutting/scarlet_cheese_wheel",
+   "brewinandchewin:fermenting/beer_from_water",
+   "brewinandchewin:fermenting/bloody_mary_from_vodka",
+   "brewinandchewin:fermenting/cocoa_fudge_from_milk",
+   "brewinandchewin:fermenting/dread_nog_from_egg_grog",
+   "brewinandchewin:fermenting/egg_grog_from_milk",
+   "brewinandchewin:fermenting/flaxen_cheese_from_milk",
+   "brewinandchewin:fermenting/glittering_grenadine_from_water",
+   "brewinandchewin:fermenting/jerky",
+   "brewinandchewin:fermenting/kimchi",
+   "brewinandchewin:fermenting/kippers",
+   "brewinandchewin:fermenting/kombucha",
+   "brewinandchewin:fermenting/mead_from_honey",
+   "brewinandchewin:fermenting/pale_jane_from_rice_wine",
+   "brewinandchewin:fermenting/pickled_pickles_from_honey",
+   "brewinandchewin:fermenting/red_rum_from_bloody_mary",
+   "brewinandchewin:fermenting/rice_wine_from_water",
+   "brewinandchewin:fermenting/saccharine_rum_from_mead",
+   "brewinandchewin:fermenting/salty_folly_from_vodka",
+   "brewinandchewin:fermenting/scarlet_cheese_from_milk",
+   "brewinandchewin:fermenting/steel_toe_stout_from_strongroot_ale",
+   "brewinandchewin:fermenting/strongroot_ale_from_beer",
+   "brewinandchewin:fermenting/vodka_from_water",
+   "brewinandchewin:fermenting/withering_dross_from_salty_folly",
+   "brewinandchewin:flaxen_cheese_wheel_from_wedges",
+   "brewinandchewin:ham_and_cheese_sandwich",
+   "brewinandchewin:heating_cask",
+   "brewinandchewin:ice_crate",
+   "brewinandchewin:item_coaster",
+   "brewinandchewin:keg",
+   "brewinandchewin:pizza",
+   "brewinandchewin:pizza_from_slices",
+   "brewinandchewin:pouring/beer",
+   "brewinandchewin:pouring/bloody_mary",
+   "brewinandchewin:pouring/create/builders_tea",
+   "brewinandchewin:pouring/create/potion",
+   "brewinandchewin:pouring/dread_nog",
+   "brewinandchewin:pouring/egg_grog",
+   "brewinandchewin:pouring/glittering_grenadine",
+   "brewinandchewin:pouring/honey_bottle",
+   "brewinandchewin:pouring/kombucha",
+   "brewinandchewin:pouring/mead",
+   "brewinandchewin:pouring/milk_bottle",
+   "brewinandchewin:pouring/milk_bucket",
+   "brewinandchewin:pouring/pale_jane",
+   "brewinandchewin:pouring/potion",
+   "brewinandchewin:pouring/red_rum",
+   "brewinandchewin:pouring/rice_wine",
+   "brewinandchewin:pouring/saccharine_rum",
+   "brewinandchewin:pouring/salty_folly",
+   "brewinandchewin:pouring/steel_toe_stout",
+   "brewinandchewin:pouring/strongroot_ale",
+   "brewinandchewin:pouring/unripe_flaxen_cheese_wheel",
+   "brewinandchewin:pouring/unripe_scarlet_cheese_wheel",
+   "brewinandchewin:pouring/vodka",
+   "brewinandchewin:pouring/water_bucket",
+   "brewinandchewin:pouring/withering_dross",
+   "brewinandchewin:quiche_from_bacon",
+   "brewinandchewin:quiche_from_mushroom",
+   "brewinandchewin:quiche_from_slices",
+   "brewinandchewin:scarlet_cheese_wheel_from_wedges",
+   "brewinandchewin:tankard"
+  ],
+  "tags/block": [
+   "brewinandchewin:cheese_wheels/ripe",
+   "brewinandchewin:cheese_wheels/unripe",
+   "brewinandchewin:freeze_sources",
+   "brewinandchewin:player_workstations/kegs",
+   "farmersdelight:heat_sources",
+   "farmersdelight:mineable/knife",
+   "minecraft:combination_step_sound_blocks",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/damage_type": [
+   "brewinandchewin:triggers_raging",
+   "minecraft:bypasses_armor",
+   "minecraft:bypasses_cooldown",
+   "minecraft:bypasses_effects",
+   "minecraft:bypasses_enchantments",
+   "minecraft:bypasses_resistance",
+   "minecraft:bypasses_shield",
+   "minecraft:bypasses_wolf_armor"
+  ],
+  "tags/entity_type": [
+   "brewinandchewin:immune_to_intoxication"
+  ],
+  "tags/fluid": [
+   "brewinandchewin:beer",
+   "brewinandchewin:bloody_mary",
+   "brewinandchewin:dread_nog",
+   "brewinandchewin:egg_grog",
+   "brewinandchewin:flaxen_cheese",
+   "brewinandchewin:glittering_grenadine",
+   "brewinandchewin:mead",
+   "brewinandchewin:pale_jane",
+   "brewinandchewin:red_rum",
+   "brewinandchewin:rice_wine",
+   "brewinandchewin:saccharine_rum",
+   "brewinandchewin:salty_folly",
+   "brewinandchewin:scarlet_cheese",
+   "brewinandchewin:steel_toe_stout",
+   "brewinandchewin:strongroot_ale",
+   "brewinandchewin:vodka",
+   "brewinandchewin:withering_dross",
+   "c:honey"
+  ],
+  "tags/item": [
+   "brewinandchewin:cheese_wheels/ripe",
+   "brewinandchewin:cheese_wheels/unripe",
+   "brewinandchewin:fermented_drinks",
+   "brewinandchewin:foods/cheese_wedge",
+   "brewinandchewin:foods/horror_meat",
+   "brewinandchewin:foods/jerky_meat",
+   "brewinandchewin:foods/pizza_topping",
+   "brewinandchewin:player_workstations/kegs",
+   "c:foods",
+   "c:foods/edible_when_placed",
+   "c:foods/soup",
+   "origins:ignore_diet",
+   "origins:meat"
+  ],
+  "tags/mob_effect": [
+   "brewinandchewin:low_priority/milk_bottle"
+  ]
+ },
+ "data_counts": {
+  "advancement": 52
+ },
+ "tags": {
+  "tags/block": {
+   "brewinandchewin:cheese_wheels/ripe": [
+    "brewinandchewin:flaxen_cheese_wheel",
+    "brewinandchewin:scarlet_cheese_wheel"
+   ],
+   "brewinandchewin:cheese_wheels/unripe": [
+    "brewinandchewin:unripe_flaxen_cheese_wheel",
+    "brewinandchewin:unripe_scarlet_cheese_wheel"
+   ],
+   "brewinandchewin:freeze_sources": [
+    "brewinandchewin:ice_crate",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice"
+   ],
+   "brewinandchewin:player_workstations/kegs": [
+    "brewinandchewin:keg"
+   ],
+   "farmersdelight:heat_sources": [
+    "brewinandchewin:fiery_fondue_pot",
+    "brewinandchewin:heating_cask"
+   ],
+   "farmersdelight:mineable/knife": [
+    "brewinandchewin:coaster",
+    "brewinandchewin:unripe_flaxen_cheese_wheel",
+    "brewinandchewin:flaxen_cheese_wheel",
+    "brewinandchewin:unripe_scarlet_cheese_wheel",
+    "brewinandchewin:scarlet_cheese_wheel",
+    "brewinandchewin:pizza",
+    "brewinandchewin:quiche"
+   ],
+   "minecraft:combination_step_sound_blocks": [
+    "brewinandchewin:coaster"
+   ],
+   "minecraft:mineable/axe": [
+    "brewinandchewin:keg",
+    "brewinandchewin:heating_cask",
+    "brewinandchewin:ice_crate",
+    "brewinandchewin:coaster"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "brewinandchewin:fiery_fondue_pot"
+   ]
+  },
+  "tags/damage_type": {
+   "brewinandchewin:triggers_raging": [
+    "minecraft:mob_attack",
+    "minecraft:player_attack"
+   ],
+   "minecraft:bypasses_armor": [
+    "brewinandchewin:cardiac_arrest"
+   ],
+   "minecraft:bypasses_cooldown": [
+    "brewinandchewin:cardiac_arrest"
+   ],
+   "minecraft:bypasses_effects": [
+    "brewinandchewin:cardiac_arrest"
+   ],
+   "minecraft:bypasses_enchantments": [
+    "brewinandchewin:cardiac_arrest"
+   ],
+   "minecraft:bypasses_resistance": [
+    "brewinandchewin:cardiac_arrest"
+   ],
+   "minecraft:bypasses_shield": [
+    "brewinandchewin:cardiac_arrest"
+   ],
+   "minecraft:bypasses_wolf_armor": [
+    "brewinandchewin:cardiac_arrest"
+   ]
+  },
+  "tags/entity_type": {
+   "brewinandchewin:immune_to_intoxication": [
+    "#minecraft:undead"
+   ]
+  },
+  "tags/fluid": {
+   "brewinandchewin:beer": [
+    "brewinandchewin:beer",
+    "brewinandchewin:flowing_beer"
+   ],
+   "brewinandchewin:bloody_mary": [
+    "brewinandchewin:bloody_mary",
+    "brewinandchewin:flowing_bloody_mary"
+   ],
+   "brewinandchewin:dread_nog": [
+    "brewinandchewin:dread_nog",
+    "brewinandchewin:flowing_dread_nog"
+   ],
+   "brewinandchewin:egg_grog": [
+    "brewinandchewin:egg_grog",
+    "brewinandchewin:flowing_egg_grog"
+   ],
+   "brewinandchewin:flaxen_cheese": [
+    "brewinandchewin:flaxen_cheese",
+    "brewinandchewin:flowing_flaxen_cheese"
+   ],
+   "brewinandchewin:glittering_grenadine": [
+    "brewinandchewin:glittering_grenadine",
+    "brewinandchewin:glittering_grenadine"
+   ],
+   "brewinandchewin:mead": [
+    "brewinandchewin:mead",
+    "brewinandchewin:flowing_mead"
+   ],
+   "brewinandchewin:pale_jane": [
+    "brewinandchewin:pale_jane",
+    "brewinandchewin:flowing_pale_jane"
+   ],
+   "brewinandchewin:red_rum": [
+    "brewinandchewin:red_rum",
+    "brewinandchewin:flowing_red_rum"
+   ],
+   "brewinandchewin:rice_wine": [
+    "brewinandchewin:rice_wine",
+    "brewinandchewin:flowing_rice_wine"
+   ],
+   "brewinandchewin:saccharine_rum": [
+    "brewinandchewin:saccharine_rum",
+    "brewinandchewin:saccharine_rum"
+   ],
+   "brewinandchewin:salty_folly": [
+    "brewinandchewin:salty_folly",
+    "brewinandchewin:flowing_salty_folly"
+   ],
+   "brewinandchewin:scarlet_cheese": [
+    "brewinandchewin:scarlet_cheese",
+    "brewinandchewin:flowing_flaxen_cheese"
+   ],
+   "brewinandchewin:steel_toe_stout": [
+    "brewinandchewin:steel_toe_stout",
+    "brewinandchewin:flowing_steel_toe_stout"
+   ],
+   "brewinandchewin:strongroot_ale": [
+    "brewinandchewin:strongroot_ale",
+    "brewinandchewin:flowing_strongroot_ale"
+   ],
+   "brewinandchewin:vodka": [
+    "brewinandchewin:vodka",
+    "brewinandchewin:flowing_vodka"
+   ],
+   "brewinandchewin:withering_dross": [
+    "brewinandchewin:withering_dross",
+    "brewinandchewin:flowing_withering_dross"
+   ],
+   "c:honey": [
+    "brewinandchewin:honey",
+    "brewinandchewin:flowing_honey"
+   ]
+  },
+  "tags/item": {
+   "brewinandchewin:cheese_wheels/ripe": [
+    "brewinandchewin:flaxen_cheese_wheel",
+    "brewinandchewin:scarlet_cheese_wheel"
+   ],
+   "brewinandchewin:cheese_wheels/unripe": [
+    "brewinandchewin:unripe_flaxen_cheese_wheel",
+    "brewinandchewin:unripe_scarlet_cheese_wheel"
+   ],
+   "brewinandchewin:fermented_drinks": [
+    "brewinandchewin:beer",
+    "brewinandchewin:vodka",
+    "brewinandchewin:mead",
+    "brewinandchewin:rice_wine",
+    "brewinandchewin:egg_grog",
+    "brewinandchewin:strongroot_ale",
+    "brewinandchewin:saccharine_rum",
+    "brewinandchewin:pale_jane",
+    "brewinandchewin:salty_folly",
+    "brewinandchewin:steel_toe_stout",
+    "brewinandchewin:glittering_grenadine",
+    "brewinandchewin:bloody_mary",
+    "brewinandchewin:red_rum",
+    "brewinandchewin:withering_dross",
+    "brewinandchewin:kombucha",
+    "brewinandchewin:dread_nog"
+   ],
+   "brewinandchewin:foods/cheese_wedge": [
+    "brewinandchewin:flaxen_cheese_wedge",
+    "brewinandchewin:scarlet_cheese_wedge"
+   ],
+   "brewinandchewin:foods/horror_meat": [
+    "#c:foods/raw_beef?",
+    "#c:foods/raw_chicken?"
+   ],
+   "brewinandchewin:foods/jerky_meat": [
+    "minecraft:rotten_flesh",
+    "#c:foods/raw_meat"
+   ],
+   "brewinandchewin:foods/pizza_topping": [
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:carrot",
+    "minecraft:beetroot",
+    "farmersdelight:cabbage_leaf",
+    "farmersdelight:onion",
+    "#c:foods/cooked_bacon?",
+    "#c:foods/cooked_beef?",
+    "#c:foods/cooked_cod?",
+    "#c:foods/cooked_mutton?",
+    "#c:foods/cooked_pork?"
+   ],
+   "brewinandchewin:player_workstations/kegs": [
+    "brewinandchewin:keg"
+   ],
+   "c:foods": [
+    "brewinandchewin:kimchi",
+    "brewinandchewin:jerky",
+    "brewinandchewin:pickled_pickles",
+    "brewinandchewin:kippers",
+    "brewinandchewin:cocoa_fudge",
+    "brewinandchewin:vegetable_omelet",
+    "brewinandchewin:cheesy_pasta",
+    "brewinandchewin:creamy_onion_soup",
+    "brewinandchewin:scarlet_pierogi",
+    "brewinandchewin:horror_lasagna",
+    "brewinandchewin:pizza_slice",
+    "brewinandchewin:fiery_fondue",
+    "brewinandchewin:ham_and_cheese_sandwich",
+    "brewinandchewin:sweet_berry_jam",
+    "brewinandchewin:glow_berry_marmalade",
+    "brewinandchewin:apple_jelly",
+    "#brewinandchewin:foods/cheese_wedge"
+   ],
+   "c:foods/edible_when_placed": [
+    "#brewinandchewin:cheese_wheels/ripe",
+    "brewinandchewin:fiery_fondue_pot",
+    "brewinandchewin:pizza",
+    "brewinandchewin:quiche"
+   ],
+   "c:foods/soup": [
+    "brewinandchewin:creamy_onion_soup",
+    "brewinandchewin:fiery_fondue"
+   ],
+   "origins:ignore_diet": [
+    "#brewinandchewin:fermented_drinks"
+   ],
+   "origins:meat": [
+    "brewinandchewin:jerky",
+    "brewinandchewin:kippers",
+    "brewinandchewin:cheesy_pasta",
+    "brewinandchewin:horror_lasagna",
+    "brewinandchewin:fiery_fondue",
+    "brewinandchewin:ham_and_cheese_sandwich"
+   ]
+  },
+  "tags/mob_effect": {
+   "brewinandchewin:low_priority/milk_bottle": [
+    "brewinandchewin:tipsy"
+   ]
+  }
+ },
+ "recipe_types": {
+  "brewinandchewin:create_potion_pouring": 1,
+  "brewinandchewin:fermenting": 23,
+  "brewinandchewin:keg_pouring": 24,
+  "farmersdelight:cooking": 9,
+  "farmersdelight:cutting": 4,
+  "minecraft:crafting_shaped": 12,
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

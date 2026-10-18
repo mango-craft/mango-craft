@@ -1,0 +1,904 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Friends & Foes",
+ "file": "friendsandfoes-neoforge-5.0.2+mc1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "40390722eb34160c445d78302950f84d61fbc5ae1566352911c88eafc4323b4728cf19241249ce05b1cec2e0d812a89c36fc0729499cec8134b9404fbfa295eb",
+ "mods": [
+  {
+   "modid": "friendsandfoes",
+   "name": "Friends&Foes",
+   "version": "5.0.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "yet_another_config_lib_v3",
+     "type": "optional",
+     "range": "*",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "resourcefullib",
+     "type": "required",
+     "range": "[3.0.12,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "curios",
+  "friendsandfoes",
+  "lambdynlights",
+  "minecraft",
+  "neoforge",
+  "xaerominimap"
+ ],
+ "blocks": {
+  "friendsandfoes:acacia_beehive": "Acacia Beehive",
+  "friendsandfoes:bamboo_beehive": "Bamboo Beehive",
+  "friendsandfoes:birch_beehive": "Birch Beehive",
+  "friendsandfoes:buttercup": "Buttercup",
+  "friendsandfoes:cherry_beehive": "Cherry Beehive",
+  "friendsandfoes:copper_button": "Copper Button",
+  "friendsandfoes:crab_egg": "Crab Egg",
+  "friendsandfoes:crimson_beehive": "Crimson Beehive",
+  "friendsandfoes:dark_oak_beehive": "Dark Oak Beehive",
+  "friendsandfoes:exposed_copper_button": "Exposed Copper Button",
+  "friendsandfoes:exposed_lightning_rod": "Exposed Lightning Rod",
+  "friendsandfoes:jungle_beehive": "Jungle Beehive",
+  "friendsandfoes:mangrove_beehive": "Mangrove Beehive",
+  "friendsandfoes:oxidized_copper_button": "Oxidized Copper Button",
+  "friendsandfoes:oxidized_lightning_rod": "Oxidized Lightning Rod",
+  "friendsandfoes:pale_oak_beehive": "Pale Oak Beehive",
+  "friendsandfoes:penguin_egg": "Penguin Egg",
+  "friendsandfoes:poplar_beehive": "Poplar Beehive",
+  "friendsandfoes:potted_buttercup": "Potted Buttercup",
+  "friendsandfoes:spruce_beehive": "Spruce Beehive",
+  "friendsandfoes:warped_beehive": "Warped Beehive",
+  "friendsandfoes:waxed_copper_button": "Waxed Copper Button",
+  "friendsandfoes:waxed_exposed_copper_button": "Waxed Exposed Copper Button",
+  "friendsandfoes:waxed_exposed_lightning_rod": "Waxed Exposed Lightning Rod",
+  "friendsandfoes:waxed_lightning_rod": "Waxed Lightning Rod",
+  "friendsandfoes:waxed_oxidized_copper_button": "Waxed Oxidized Copper Button",
+  "friendsandfoes:waxed_oxidized_lightning_rod": "Waxed Oxidized Lightning Rod",
+  "friendsandfoes:waxed_weathered_copper_button": "Waxed Weathered Copper Button",
+  "friendsandfoes:waxed_weathered_lightning_rod": "Waxed Weathered Lightning Rod",
+  "friendsandfoes:weathered_copper_button": "Weathered Copper Button",
+  "friendsandfoes:weathered_lightning_rod": "Weathered Lightning Rod",
+  "minecraft:beehive": "Oak Beehive"
+ },
+ "effects": {
+  "friendsandfoes:glide": "Glide",
+  "friendsandfoes:penguins_glide": "Penguin's Glide",
+  "friendsandfoes:reach": "Reach"
+ },
+ "entities": {
+  "friendsandfoes:barnacle": "Barnacle",
+  "friendsandfoes:copper_golem": "Copper Golem",
+  "friendsandfoes:crab": "Crab",
+  "friendsandfoes:glare": "Glare",
+  "friendsandfoes:ice_chunk": "Ice Chunk",
+  "friendsandfoes:iceologer": "Iceologer",
+  "friendsandfoes:illusioner": "Illusioner",
+  "friendsandfoes:mauler": "Mauler",
+  "friendsandfoes:moobloom": "Moobloom",
+  "friendsandfoes:penguin": "Penguin",
+  "friendsandfoes:player_illusion": "Player Illusion",
+  "friendsandfoes:rascal": "Rascal",
+  "friendsandfoes:tuff_golem": "Tuff Golem",
+  "friendsandfoes:wildfire": "Wildfire"
+ },
+ "items": {
+  "friendsandfoes:acacia_beehive": "Acacia Beehive",
+  "friendsandfoes:bamboo_beehive": "Bamboo Beehive",
+  "friendsandfoes:barnacle_spawn_egg": "Barnacle Spawn Egg",
+  "friendsandfoes:barnacle_tooth": "Barnacle Tooth",
+  "friendsandfoes:birch_beehive": "Birch Beehive",
+  "friendsandfoes:buttercup": "Buttercup",
+  "friendsandfoes:cherry_beehive": "Cherry Beehive",
+  "friendsandfoes:copper_button": "Copper Button",
+  "friendsandfoes:copper_golem_spawn_egg": "Copper Golem Spawn Egg",
+  "friendsandfoes:crab_claw": "Crab Claw",
+  "friendsandfoes:crab_egg": "Crab Egg",
+  "friendsandfoes:crab_spawn_egg": "Crab Spawn Egg",
+  "friendsandfoes:crimson_beehive": "Crimson Beehive",
+  "friendsandfoes:dark_oak_beehive": "Dark Oak Beehive",
+  "friendsandfoes:exposed_copper_button": "Exposed Copper Button",
+  "friendsandfoes:exposed_lightning_rod": "Exposed Lightning Rod",
+  "friendsandfoes:glare_spawn_egg": "Glare Spawn Egg",
+  "friendsandfoes:iceologer_spawn_egg": "Iceologer Spawn Egg",
+  "friendsandfoes:illusioner_spawn_egg": "Illusioner Spawn Egg",
+  "friendsandfoes:jungle_beehive": "Jungle Beehive",
+  "friendsandfoes:mangrove_beehive": "Mangrove Beehive",
+  "friendsandfoes:mauler_spawn_egg": "Mauler Spawn Egg",
+  "friendsandfoes:moobloom_spawn_egg": "Moobloom Spawn Egg",
+  "friendsandfoes:music_disc_around_the_corner": "Music Disc",
+  "friendsandfoes:oxidized_copper_button": "Oxidized Copper Button",
+  "friendsandfoes:oxidized_lightning_rod": "Oxidized Lightning Rod",
+  "friendsandfoes:pale_oak_beehive": "Pale Oak Beehive",
+  "friendsandfoes:penguin_egg": "Penguin Egg",
+  "friendsandfoes:penguin_feather": "Penguin Feather",
+  "friendsandfoes:penguin_spawn_egg": "Penguin Spawn Egg",
+  "friendsandfoes:poplar_beehive": "Poplar Beehive",
+  "friendsandfoes:rascal_spawn_egg": "Rascal Spawn Egg",
+  "friendsandfoes:spruce_beehive": "Spruce Beehive",
+  "friendsandfoes:totem_of_freezing": "Totem of Freezing",
+  "friendsandfoes:totem_of_illusion": "Totem of Illusion",
+  "friendsandfoes:tuff_golem_spawn_egg": "Tuff Golem Spawn Egg",
+  "friendsandfoes:warped_beehive": "Warped Beehive",
+  "friendsandfoes:waxed_copper_button": "Waxed Copper Button",
+  "friendsandfoes:waxed_exposed_copper_button": "Waxed Exposed Copper Button",
+  "friendsandfoes:waxed_exposed_lightning_rod": "Waxed Exposed Lightning Rod",
+  "friendsandfoes:waxed_lightning_rod": "Waxed Lightning Rod",
+  "friendsandfoes:waxed_oxidized_copper_button": "Waxed Oxidized Copper Button",
+  "friendsandfoes:waxed_oxidized_lightning_rod": "Waxed Oxidized Lightning Rod",
+  "friendsandfoes:waxed_weathered_copper_button": "Waxed Weathered Copper Button",
+  "friendsandfoes:waxed_weathered_lightning_rod": "Waxed Weathered Lightning Rod",
+  "friendsandfoes:weathered_copper_button": "Weathered Copper Button",
+  "friendsandfoes:weathered_lightning_rod": "Weathered Lightning Rod",
+  "friendsandfoes:wildfire_crown": "Wildfire Crown",
+  "friendsandfoes:wildfire_crown_fragment": "Wildfire Crown Fragment",
+  "friendsandfoes:wildfire_spawn_egg": "Wildfire Spawn Egg",
+  "minecraft:beehive": "Oak Beehive"
+ },
+ "data": {
+  "curios": [
+   "friendsandfoes:entities/totems",
+   "friendsandfoes:slots/charm"
+  ],
+  "data_maps/villager_profession": [
+   "neoforge:raid_hero_gifts"
+  ],
+  "dynamiclights": [
+   "lambdynlights:entity/friendsandfoes_wildfire"
+  ],
+  "jukebox_song": [
+   "friendsandfoes:around_the_corner"
+  ],
+  "loot_modifiers": [
+   "friendsandfoes:citadel_explorer_map",
+   "friendsandfoes:inject_music_disc_to_abandoned_mineshafts",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "friendsandfoes:barrels/citadel",
+   "friendsandfoes:barrels/iceologer_cabin",
+   "friendsandfoes:barrels/illusioner_shack_attic",
+   "friendsandfoes:barrels/illusioner_shack_basement",
+   "friendsandfoes:blocks/acacia_beehive",
+   "friendsandfoes:blocks/bamboo_beehive",
+   "friendsandfoes:blocks/birch_beehive",
+   "friendsandfoes:blocks/buttercup",
+   "friendsandfoes:blocks/cherry_beehive",
+   "friendsandfoes:blocks/copper_button",
+   "friendsandfoes:blocks/crab_egg",
+   "friendsandfoes:blocks/crimson_beehive",
+   "friendsandfoes:blocks/dark_oak_beehive",
+   "friendsandfoes:blocks/exposed_copper_button",
+   "friendsandfoes:blocks/exposed_lightning_rod",
+   "friendsandfoes:blocks/jungle_beehive",
+   "friendsandfoes:blocks/mangrove_beehive",
+   "friendsandfoes:blocks/oxidized_copper_button",
+   "friendsandfoes:blocks/oxidized_lightning_rod",
+   "friendsandfoes:blocks/penguin_egg",
+   "friendsandfoes:blocks/potted_buttercup",
+   "friendsandfoes:blocks/spruce_beehive",
+   "friendsandfoes:blocks/warped_beehive",
+   "friendsandfoes:blocks/waxed_copper_button",
+   "friendsandfoes:blocks/waxed_exposed_copper_button",
+   "friendsandfoes:blocks/waxed_exposed_lightning_rod",
+   "friendsandfoes:blocks/waxed_lightning_rod",
+   "friendsandfoes:blocks/waxed_oxidized_copper_button",
+   "friendsandfoes:blocks/waxed_oxidized_lightning_rod",
+   "friendsandfoes:blocks/waxed_weathered_copper_button",
+   "friendsandfoes:blocks/waxed_weathered_lightning_rod",
+   "friendsandfoes:blocks/weathered_copper_button",
+   "friendsandfoes:blocks/weathered_lightning_rod",
+   "friendsandfoes:chests/abandoned_mineshaft_music_disc",
+   "friendsandfoes:chests/citadel_explorer_map",
+   "friendsandfoes:chests/iceologer_cabin",
+   "friendsandfoes:chests/illusioner_shack",
+   "friendsandfoes:entities/barnacle",
+   "friendsandfoes:entities/copper_golem",
+   "friendsandfoes:entities/crab",
+   "friendsandfoes:entities/glare",
+   "friendsandfoes:entities/iceologer",
+   "friendsandfoes:entities/illusioner",
+   "friendsandfoes:entities/moobloom",
+   "friendsandfoes:entities/penguin",
+   "friendsandfoes:entities/rascal",
+   "friendsandfoes:entities/tuff_golem",
+   "friendsandfoes:entities/wildfire",
+   "friendsandfoes:gameplay/hero_of_the_village/beekeeper_gift",
+   "friendsandfoes:rewards/rascal_good_reward"
+  ],
+  "neoforge/biome_modifier": [
+   "friendsandfoes:friendsandfoes"
+  ],
+  "recipe": [
+   "friendsandfoes:acacia_beehive",
+   "friendsandfoes:bamboo_beehive",
+   "friendsandfoes:birch_beehive",
+   "friendsandfoes:cherry_beehive",
+   "friendsandfoes:copper_button",
+   "friendsandfoes:crimson_beehive",
+   "friendsandfoes:dark_oak_beehive",
+   "friendsandfoes:jungle_beehive",
+   "friendsandfoes:mangrove_beehive",
+   "friendsandfoes:spruce_beehive",
+   "friendsandfoes:trident",
+   "friendsandfoes:warped_beehive",
+   "friendsandfoes:waxed_copper_button_from_honeycomb",
+   "friendsandfoes:waxed_exposed_copper_button_from_honeycomb",
+   "friendsandfoes:waxed_exposed_lightning_rod_from_honeycomb",
+   "friendsandfoes:waxed_lightning_rod_from_honeycomb",
+   "friendsandfoes:waxed_oxidized_copper_button_from_honeycomb",
+   "friendsandfoes:waxed_oxidized_lightning_rod_from_honeycomb",
+   "friendsandfoes:waxed_weathered_copper_button_from_honeycomb",
+   "friendsandfoes:waxed_weathered_lightning_rod_from_honeycomb",
+   "friendsandfoes:wildfire_crown",
+   "friendsandfoes:yellow_dye_from_buttercup",
+   "minecraft:beehive"
+  ],
+  "structure": [
+   "friendsandfoes:ancient_city/city_center/city_center_1",
+   "friendsandfoes:ancient_city/city_center/city_center_2",
+   "friendsandfoes:ancient_city/city_center/city_center_3",
+   "friendsandfoes:citadel/bridge/bridge_beginning",
+   "friendsandfoes:citadel/bridge/bridge_beginning_broken",
+   "friendsandfoes:citadel/bridge/bridge_beginning_damaged",
+   "friendsandfoes:citadel/bridge/bridge_beginning_destroyed",
+   "friendsandfoes:citadel/bridge/bridge_end",
+   "friendsandfoes:citadel/bridge/bridge_end_broken",
+   "friendsandfoes:citadel/bridge/bridge_end_damaged",
+   "friendsandfoes:citadel/bridge/bridge_middle",
+   "friendsandfoes:citadel/bridge/bridge_middle_broken",
+   "friendsandfoes:citadel/bridge/bridge_middle_damaged",
+   "friendsandfoes:citadel/chain/chain1",
+   "friendsandfoes:citadel/chain/chain2",
+   "friendsandfoes:citadel/chain/chain3",
+   "friendsandfoes:citadel/chain/chain4",
+   "friendsandfoes:citadel/chain/chain5",
+   "friendsandfoes:citadel/chain/chain6",
+   "friendsandfoes:citadel/chain/chain_empty",
+   "friendsandfoes:citadel/chain/small_chain1",
+   "friendsandfoes:citadel/chain/small_chain2",
+   "friendsandfoes:citadel/chain/small_chain3",
+   "friendsandfoes:citadel/citadel",
+   "friendsandfoes:citadel/entity/wildfire",
+   "friendsandfoes:citadel/entity/wither_skeleton",
+   "friendsandfoes:citadel/platform/platform",
+   "friendsandfoes:citadel/platform/platform_broken",
+   "friendsandfoes:citadel/platform/platform_damaged",
+   "friendsandfoes:citadel/portal/portal1",
+   "friendsandfoes:citadel/portal/portal2",
+   "friendsandfoes:citadel/portal/portal3",
+   "friendsandfoes:citadel/portal/portal4",
+   "friendsandfoes:iceologer_cabin/base_plate",
+   "friendsandfoes:iceologer_cabin/cabin/cabin",
+   "friendsandfoes:iceologer_cabin/entity/goat",
+   "friendsandfoes:iceologer_cabin/entity/iceologer",
+   "friendsandfoes:iceologer_cabin/entity/screaming_goat",
+   "friendsandfoes:iceologer_cabin/feature/campfire",
+   "friendsandfoes:illusioner_shack/base_plate",
+   "friendsandfoes:illusioner_shack/entity/illusioner",
+   "friendsandfoes:illusioner_shack/entity/villager",
+   "friendsandfoes:illusioner_shack/entity/wolf",
+   "friendsandfoes:illusioner_shack/feature/campfire",
+   "friendsandfoes:illusioner_shack/feature/wolf_fence1",
+   "friendsandfoes:illusioner_shack/feature/wolf_fence2",
+   "friendsandfoes:illusioner_shack/shack/basement",
+   "friendsandfoes:illusioner_shack/shack/shack",
+   "friendsandfoes:illusioner_training_grounds/illusioner_training_grounds",
+   "friendsandfoes:illusioner_training_grounds/target_dummy",
+   "friendsandfoes:trial_chambers/corridor/entrance_1_copper_golem",
+   "friendsandfoes:trial_chambers/corridor/entrance_2_copper_golem",
+   "friendsandfoes:trial_chambers/corridor/entrance_3_copper_golem",
+   "friendsandfoes:village/desert/houses/desert_copper_golem_area",
+   "friendsandfoes:village/plains/houses/plains_beekeeper_area",
+   "friendsandfoes:village/plains/houses/plains_copper_golem_area",
+   "friendsandfoes:village/savanna/houses/savanna_beekeeper_area",
+   "friendsandfoes:village/savanna/houses/savanna_copper_golem_area",
+   "friendsandfoes:village/taiga/houses/taiga_beekeeper_area",
+   "friendsandfoes:village/taiga/houses/taiga_copper_golem_area"
+  ],
+  "tags/block": [
+   "c:villager_job_sites",
+   "friendsandfoes:barnacle_hiding_spot_blocks",
+   "friendsandfoes:copper_buttons",
+   "friendsandfoes:crab_burrow_spot_blocks",
+   "friendsandfoes:crabs_spawnable_on",
+   "friendsandfoes:glares_spawnable_on",
+   "friendsandfoes:lightning_rods",
+   "friendsandfoes:maulers_spawnable_on",
+   "friendsandfoes:penguins_spawnable_on",
+   "minecraft:beehives",
+   "minecraft:buttons",
+   "minecraft:flower_pots",
+   "minecraft:flowers",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/hoe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:small_flowers"
+  ],
+  "tags/entity_type": [
+   "friendsandfoes:barnacle_avoid_targets",
+   "friendsandfoes:barnacle_prey",
+   "friendsandfoes:iceologer_attack_targets",
+   "friendsandfoes:illusioner_attack_targets",
+   "friendsandfoes:mauler_prey",
+   "friendsandfoes:penguin_prey",
+   "friendsandfoes:wildfire_allies",
+   "minecraft:arthropod",
+   "minecraft:can_breathe_under_water",
+   "minecraft:fall_damage_immune",
+   "minecraft:freeze_hurts_extra_types",
+   "minecraft:freeze_immune_entity_types",
+   "minecraft:illager",
+   "minecraft:powder_snow_walkable_mobs",
+   "minecraft:raiders"
+  ],
+  "tags/item": [
+   "c:music_discs",
+   "curios:charm",
+   "friendsandfoes:copper_buttons",
+   "friendsandfoes:crab_tempt_items",
+   "friendsandfoes:glare_food_items",
+   "friendsandfoes:glare_tempt_items",
+   "friendsandfoes:penguin_tempt_items",
+   "friendsandfoes:repairs_wildfire_crown",
+   "friendsandfoes:totems",
+   "minecraft:buttons",
+   "minecraft:flowers",
+   "minecraft:head_armor",
+   "minecraft:music_discs",
+   "minecraft:small_flowers"
+  ],
+  "tags/point_of_interest_type": [
+   "friendsandfoes:beekeeper_acquirable_job_site",
+   "friendsandfoes:lightning_rods",
+   "minecraft:acquirable_job_site",
+   "minecraft:bee_home"
+  ],
+  "tags/worldgen/biome": [
+   "friendsandfoes:collections/snowy",
+   "friendsandfoes:collections/snowy_forest",
+   "friendsandfoes:collections/snowy_mountains",
+   "friendsandfoes:collections/snowy_plains",
+   "friendsandfoes:collections/taigas",
+   "friendsandfoes:has_badlands_mauler",
+   "friendsandfoes:has_barnacle",
+   "friendsandfoes:has_buttercup_patch",
+   "friendsandfoes:has_crab",
+   "friendsandfoes:has_desert_mauler",
+   "friendsandfoes:has_glare",
+   "friendsandfoes:has_iceologer",
+   "friendsandfoes:has_illusioner",
+   "friendsandfoes:has_moobloom/any",
+   "friendsandfoes:has_moobloom/buttercup",
+   "friendsandfoes:has_penguin",
+   "friendsandfoes:has_rascal",
+   "friendsandfoes:has_savanna_mauler",
+   "friendsandfoes:has_structure/citadel",
+   "friendsandfoes:has_structure/iceologer_cabin",
+   "friendsandfoes:has_structure/illusioner_shack",
+   "friendsandfoes:has_structure/illusioner_training_grounds"
+  ],
+  "tags/worldgen/structure": [
+   "friendsandfoes:on_citadel_maps"
+  ],
+  "worldgen/configured_feature": [
+   "friendsandfoes:buttercup_patch"
+  ],
+  "worldgen/placed_feature": [
+   "friendsandfoes:buttercup_patch"
+  ],
+  "worldgen/processor_list": [
+   "friendsandfoes:citadel/citadel",
+   "friendsandfoes:citadel/platform",
+   "friendsandfoes:citadel/portal",
+   "friendsandfoes:iceologer_cabin",
+   "friendsandfoes:iceologer_cabin_base_plate",
+   "friendsandfoes:illusioner_shack",
+   "friendsandfoes:illusioner_shack_campfire",
+   "friendsandfoes:illusioner_training_grounds"
+  ],
+  "worldgen/structure": [
+   "friendsandfoes:citadel",
+   "friendsandfoes:iceologer_cabin",
+   "friendsandfoes:illusioner_shack",
+   "friendsandfoes:illusioner_training_grounds"
+  ],
+  "worldgen/structure_set": [
+   "friendsandfoes:citadel",
+   "friendsandfoes:iceologer_cabin",
+   "friendsandfoes:illusioner_shack",
+   "friendsandfoes:illusioner_training_grounds"
+  ],
+  "worldgen/template_pool": [
+   "friendsandfoes:citadel/base_plate",
+   "friendsandfoes:citadel/bridge/bridge_beginning",
+   "friendsandfoes:citadel/bridge/bridge_end",
+   "friendsandfoes:citadel/bridge/bridge_end_broken",
+   "friendsandfoes:citadel/bridge/bridge_end_damaged",
+   "friendsandfoes:citadel/bridge/bridge_middle",
+   "friendsandfoes:citadel/bridge/bridge_middle_broken",
+   "friendsandfoes:citadel/bridge/bridge_middle_damaged",
+   "friendsandfoes:citadel/chain",
+   "friendsandfoes:citadel/entity/wildfire",
+   "friendsandfoes:citadel/entity/wither_skeleton",
+   "friendsandfoes:citadel/platform/platform",
+   "friendsandfoes:citadel/platform/platform_broken",
+   "friendsandfoes:citadel/platform/platform_damaged",
+   "friendsandfoes:citadel/portal",
+   "friendsandfoes:citadel/small_chain",
+   "friendsandfoes:iceologer_cabin/base_plates",
+   "friendsandfoes:iceologer_cabin/cabin/cabin",
+   "friendsandfoes:iceologer_cabin/entity/goats",
+   "friendsandfoes:iceologer_cabin/entity/iceologer",
+   "friendsandfoes:iceologer_cabin/feature/campfire",
+   "friendsandfoes:illusioner_shack/base_plates",
+   "friendsandfoes:illusioner_shack/entity/illusioner",
+   "friendsandfoes:illusioner_shack/entity/villager",
+   "friendsandfoes:illusioner_shack/entity/wolf",
+   "friendsandfoes:illusioner_shack/feature/campfire",
+   "friendsandfoes:illusioner_shack/feature/wolf_fence",
+   "friendsandfoes:illusioner_shack/shack/basement",
+   "friendsandfoes:illusioner_shack/shack/shack",
+   "friendsandfoes:illusioner_training_grounds/illusioner_training_grounds",
+   "friendsandfoes:illusioner_training_grounds/target_dummy"
+  ]
+ },
+ "data_counts": {
+  "advancement": 16
+ },
+ "tags": {
+  "tags/block": {
+   "c:villager_job_sites": [
+    "minecraft:beehive",
+    "friendsandfoes:acacia_beehive",
+    "friendsandfoes:bamboo_beehive",
+    "friendsandfoes:birch_beehive",
+    "friendsandfoes:cherry_beehive",
+    "friendsandfoes:crimson_beehive",
+    "friendsandfoes:dark_oak_beehive",
+    "friendsandfoes:jungle_beehive",
+    "friendsandfoes:mangrove_beehive",
+    "friendsandfoes:spruce_beehive",
+    "friendsandfoes:warped_beehive"
+   ],
+   "friendsandfoes:barnacle_hiding_spot_blocks": [
+    "minecraft:kelp",
+    "minecraft:kelp_plant",
+    "minecraft:seagrass",
+    "minecraft:tall_seagrass"
+   ],
+   "friendsandfoes:copper_buttons": [
+    "friendsandfoes:copper_button",
+    "friendsandfoes:exposed_copper_button",
+    "friendsandfoes:oxidized_copper_button",
+    "friendsandfoes:waxed_copper_button",
+    "friendsandfoes:waxed_exposed_copper_button",
+    "friendsandfoes:waxed_oxidized_copper_button",
+    "friendsandfoes:waxed_weathered_copper_button",
+    "friendsandfoes:weathered_copper_button"
+   ],
+   "friendsandfoes:crab_burrow_spot_blocks": [
+    "minecraft:mud",
+    "#minecraft:sand"
+   ],
+   "friendsandfoes:crabs_spawnable_on": [
+    "minecraft:mud",
+    "minecraft:mangrove_roots",
+    "minecraft:muddy_mangrove_roots",
+    "#minecraft:sand"
+   ],
+   "friendsandfoes:glares_spawnable_on": [
+    "minecraft:moss_block",
+    "minecraft:moss_carpet",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "minecraft:small_dripleaf",
+    "minecraft:big_dripleaf",
+    "minecraft:clay"
+   ],
+   "friendsandfoes:lightning_rods": [
+    "minecraft:lightning_rod",
+    "friendsandfoes:exposed_lightning_rod",
+    "friendsandfoes:weathered_lightning_rod",
+    "friendsandfoes:oxidized_lightning_rod",
+    "friendsandfoes:waxed_lightning_rod",
+    "friendsandfoes:waxed_exposed_lightning_rod",
+    "friendsandfoes:waxed_oxidized_lightning_rod",
+    "friendsandfoes:waxed_weathered_lightning_rod"
+   ],
+   "friendsandfoes:maulers_spawnable_on": [
+    "#minecraft:animals_spawnable_on",
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:coarse_dirt",
+    "minecraft:dirt",
+    "minecraft:grass_block"
+   ],
+   "friendsandfoes:penguins_spawnable_on": [
+    "minecraft:stone",
+    "minecraft:gravel",
+    "minecraft:snow",
+    "minecraft:snow_block",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "#minecraft:sand"
+   ],
+   "minecraft:beehives": [
+    "friendsandfoes:acacia_beehive",
+    "friendsandfoes:bamboo_beehive",
+    "friendsandfoes:birch_beehive",
+    "friendsandfoes:cherry_beehive",
+    "friendsandfoes:crimson_beehive",
+    "friendsandfoes:dark_oak_beehive",
+    "friendsandfoes:jungle_beehive",
+    "friendsandfoes:mangrove_beehive",
+    "friendsandfoes:spruce_beehive",
+    "friendsandfoes:warped_beehive"
+   ],
+   "minecraft:buttons": [
+    "#friendsandfoes:copper_buttons"
+   ],
+   "minecraft:flower_pots": [
+    "friendsandfoes:potted_buttercup"
+   ],
+   "minecraft:flowers": [
+    "friendsandfoes:buttercup"
+   ],
+   "minecraft:mineable/axe": [
+    "friendsandfoes:acacia_beehive",
+    "friendsandfoes:bamboo_beehive",
+    "friendsandfoes:birch_beehive",
+    "friendsandfoes:cherry_beehive",
+    "friendsandfoes:crimson_beehive",
+    "friendsandfoes:dark_oak_beehive",
+    "friendsandfoes:jungle_beehive",
+    "friendsandfoes:mangrove_beehive",
+    "friendsandfoes:spruce_beehive",
+    "friendsandfoes:warped_beehive"
+   ],
+   "minecraft:mineable/hoe": [
+    "friendsandfoes:buttercup"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "#friendsandfoes:copper_buttons",
+    "#friendsandfoes:lightning_rods"
+   ],
+   "minecraft:small_flowers": [
+    "friendsandfoes:buttercup"
+   ]
+  },
+  "tags/entity_type": {
+   "friendsandfoes:barnacle_avoid_targets": [
+    "minecraft:axolotl",
+    "minecraft:pufferfish",
+    "minecraft:nautilus?"
+   ],
+   "friendsandfoes:barnacle_prey": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:squid",
+    "minecraft:glow_squid"
+   ],
+   "friendsandfoes:iceologer_attack_targets": [
+    "minecraft:villager",
+    "minecraft:wandering_trader",
+    "minecraft:iron_golem"
+   ],
+   "friendsandfoes:illusioner_attack_targets": [
+    "minecraft:villager",
+    "minecraft:wandering_trader",
+    "minecraft:iron_golem"
+   ],
+   "friendsandfoes:mauler_prey": [
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:frog",
+    "minecraft:slime",
+    "minecraft:zombie"
+   ],
+   "friendsandfoes:penguin_prey": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish"
+   ],
+   "friendsandfoes:wildfire_allies": [
+    "friendsandfoes:wildfire",
+    "minecraft:blaze",
+    "minecraft:wither_skeleton"
+   ],
+   "minecraft:arthropod": [
+    "friendsandfoes:crab"
+   ],
+   "minecraft:can_breathe_under_water": [
+    "friendsandfoes:barnacle",
+    "friendsandfoes:crab"
+   ],
+   "minecraft:fall_damage_immune": [
+    "friendsandfoes:copper_golem",
+    "friendsandfoes:tuff_golem",
+    "friendsandfoes:wildfire"
+   ],
+   "minecraft:freeze_hurts_extra_types": [
+    "friendsandfoes:wildfire"
+   ],
+   "minecraft:freeze_immune_entity_types": [
+    "friendsandfoes:iceologer"
+   ],
+   "minecraft:illager": [
+    "friendsandfoes:iceologer",
+    "friendsandfoes:illusioner"
+   ],
+   "minecraft:powder_snow_walkable_mobs": [
+    "friendsandfoes:iceologer"
+   ],
+   "minecraft:raiders": [
+    "friendsandfoes:iceologer",
+    "friendsandfoes:illusioner"
+   ]
+  },
+  "tags/item": {
+   "c:music_discs": [
+    "friendsandfoes:music_disc_around_the_corner"
+   ],
+   "curios:charm": [
+    "#friendsandfoes:totems",
+    "minecraft:totem_of_undying",
+    "biomemakeover:enchanted_totem?",
+    "voidtotem:totem_of_void_undying?",
+    "#voidtotem:additional_totems?",
+    "fwaystones:void_totem?",
+    "netheriteextras:totem_of_neverdying?"
+   ],
+   "friendsandfoes:copper_buttons": [
+    "friendsandfoes:copper_button",
+    "friendsandfoes:exposed_copper_button",
+    "friendsandfoes:oxidized_copper_button",
+    "friendsandfoes:waxed_copper_button",
+    "friendsandfoes:waxed_exposed_copper_button",
+    "friendsandfoes:waxed_oxidized_copper_button",
+    "friendsandfoes:waxed_weathered_copper_button",
+    "friendsandfoes:weathered_copper_button"
+   ],
+   "friendsandfoes:crab_tempt_items": [
+    "minecraft:kelp"
+   ],
+   "friendsandfoes:glare_food_items": [
+    "minecraft:glow_berries"
+   ],
+   "friendsandfoes:glare_tempt_items": [
+    "minecraft:glow_berries"
+   ],
+   "friendsandfoes:penguin_tempt_items": [
+    "#minecraft:fishes"
+   ],
+   "friendsandfoes:repairs_wildfire_crown": [
+    "friendsandfoes:wildfire_crown_fragment"
+   ],
+   "friendsandfoes:totems": [
+    "friendsandfoes:totem_of_freezing",
+    "friendsandfoes:totem_of_illusion"
+   ],
+   "minecraft:buttons": [
+    "#friendsandfoes:copper_buttons"
+   ],
+   "minecraft:flowers": [
+    "friendsandfoes:buttercup"
+   ],
+   "minecraft:head_armor": [
+    "friendsandfoes:wildfire_crown"
+   ],
+   "minecraft:music_discs": [
+    "friendsandfoes:music_disc_around_the_corner"
+   ],
+   "minecraft:small_flowers": [
+    "friendsandfoes:buttercup"
+   ]
+  },
+  "tags/point_of_interest_type": {
+   "friendsandfoes:beekeeper_acquirable_job_site": [
+    "minecraft:beehive",
+    "friendsandfoes:acacia_beehive",
+    "friendsandfoes:bamboo_beehive",
+    "friendsandfoes:birch_beehive",
+    "friendsandfoes:cherry_beehive",
+    "friendsandfoes:crimson_beehive",
+    "friendsandfoes:dark_oak_beehive",
+    "friendsandfoes:jungle_beehive",
+    "friendsandfoes:mangrove_beehive",
+    "friendsandfoes:spruce_beehive",
+    "friendsandfoes:warped_beehive"
+   ],
+   "friendsandfoes:lightning_rods": [
+    "friendsandfoes:exposed_lightning_rod",
+    "friendsandfoes:weathered_lightning_rod",
+    "friendsandfoes:oxidized_lightning_rod",
+    "friendsandfoes:waxed_lightning_rod",
+    "friendsandfoes:waxed_exposed_lightning_rod",
+    "friendsandfoes:waxed_oxidized_lightning_rod",
+    "friendsandfoes:waxed_weathered_lightning_rod"
+   ],
+   "minecraft:acquirable_job_site": [
+    "#friendsandfoes:beekeeper_acquirable_job_site"
+   ],
+   "minecraft:bee_home": [
+    "#friendsandfoes:beekeeper_acquirable_job_site"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "friendsandfoes:collections/snowy": [
+    "#friendsandfoes:collections/snowy_forest",
+    "#friendsandfoes:collections/snowy_mountains",
+    "#friendsandfoes:collections/snowy_plains",
+    "#c:snowy?",
+    "#c:snowy_plains?"
+   ],
+   "friendsandfoes:collections/snowy_forest": [
+    "minecraft:snowy_taiga",
+    "minecraft:grove",
+    "biomesoplenty:snowy_maple_woods?",
+    "biomesoplenty:snowy_coniferous_forest?",
+    "biomesoplenty:muskeg?",
+    "biomesoplenty:rainbow_hills?",
+    "byg:frosted_taiga?",
+    "byg:frosted_coniferous_forest?",
+    "projectvibrantjourneys:snowy_boreal_forest?",
+    "projectvibrantjourneys:snowy_redwoods?",
+    "wythers:snowy_fen?",
+    "wythers:snowy_thermal_taiga?",
+    "wythers:deep_snowy_taiga?"
+   ],
+   "friendsandfoes:collections/snowy_mountains": [
+    "minecraft:snowy_slopes",
+    "wythers:snowy_peaks?",
+    "wythers:icy_crags?",
+    "wythers:icy_volcano?"
+   ],
+   "friendsandfoes:collections/snowy_plains": [
+    "minecraft:snowy_plains",
+    "terralith:alpine_grove?",
+    "terralith:cold_shrubland?",
+    "terralith:snowy_badlands?",
+    "terralith:snowy_shield?",
+    "biomesoplenty:snowy_fir_clearing?",
+    "#c:snowy_plains?",
+    "wythers:snowy_bog?",
+    "wythers:snowy_tundra?",
+    "wythers:ice_cap?"
+   ],
+   "friendsandfoes:collections/taigas": [
+    "#minecraft:is_taiga",
+    "#c:taiga?",
+    "terralith:cloud_forest?",
+    "terralith:forested_highlands?",
+    "terralith:lavender_forest?",
+    "terralith:lavender_valley?",
+    "terralith:moonlight_grove?",
+    "terralith:moonlight_valley?",
+    "terralith:rocky_shrubland?",
+    "terralith:shrubland?",
+    "terralith:wintry_forest?",
+    "biomesoplenty:jade_cliffs?",
+    "biomesoplenty:mediterranean_taiga?",
+    "biomesoplenty:dead_forest?",
+    "biomesoplenty:old_growth_dead_forest?",
+    "byg:autumnal_taiga?",
+    "byg:canadian_shield?",
+    "byg:maple_taiga?",
+    "projectvibrantjourneys:boreal_forest?",
+    "projectvibrantjourneys:crystal_lakes?",
+    "wythers:birch_taiga?",
+    "wythers:boreal_forest_red?",
+    "wythers:boreal_forest_yellow?",
+    "wythers:cold_island?",
+    "wythers:forested_highlands?",
+    "wythers:jade_highlands?",
+    "wythers:larch_taiga?",
+    "wythers:pine_barrens?",
+    "wythers:thermal_taiga?"
+   ],
+   "friendsandfoes:has_badlands_mauler": [
+    "#minecraft:is_badlands",
+    "#c:badlands?"
+   ],
+   "friendsandfoes:has_barnacle": [
+    "#minecraft:is_ocean"
+   ],
+   "friendsandfoes:has_buttercup_patch": [
+    "minecraft:flower_forest",
+    "#c:flower_forests?"
+   ],
+   "friendsandfoes:has_crab": [
+    "minecraft:mangrove_swamp",
+    "minecraft:beach"
+   ],
+   "friendsandfoes:has_desert_mauler": [
+    "minecraft:desert",
+    "#c:desert?",
+    "#forge:is_desert?"
+   ],
+   "friendsandfoes:has_glare": [
+    "minecraft:lush_caves"
+   ],
+   "friendsandfoes:has_iceologer": [
+    "#friendsandfoes:collections/snowy"
+   ],
+   "friendsandfoes:has_illusioner": [
+    "#friendsandfoes:collections/taigas"
+   ],
+   "friendsandfoes:has_moobloom/any": [
+    "#friendsandfoes:has_moobloom/buttercup"
+   ],
+   "friendsandfoes:has_moobloom/buttercup": [
+    "minecraft:flower_forest",
+    "minecraft:cherry_grove",
+    "#c:flower_forests?",
+    "minecraft:meadow",
+    "minecraft:sunflower_plains"
+   ],
+   "friendsandfoes:has_penguin": [
+    "minecraft:stony_shore",
+    "minecraft:snowy_beach"
+   ],
+   "friendsandfoes:has_rascal": [
+    "#minecraft:has_structure/mineshaft",
+    "#minecraft:has_structure/mineshaft_mesa"
+   ],
+   "friendsandfoes:has_savanna_mauler": [
+    "#minecraft:is_savanna",
+    "#forge:is_savanna?",
+    "#c:savanna?"
+   ],
+   "friendsandfoes:has_structure/citadel": [
+    "#minecraft:is_nether",
+    "#c:in_nether?"
+   ],
+   "friendsandfoes:has_structure/iceologer_cabin": [
+    "#friendsandfoes:collections/snowy"
+   ],
+   "friendsandfoes:has_structure/illusioner_shack": [
+    "#friendsandfoes:collections/taigas"
+   ],
+   "friendsandfoes:has_structure/illusioner_training_grounds": [
+    "#friendsandfoes:collections/taigas"
+   ]
+  },
+  "tags/worldgen/structure": {
+   "friendsandfoes:on_citadel_maps": [
+    "friendsandfoes:citadel"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 14,
+  "minecraft:crafting_shapeless": 9
+ },
+ "botanypots": [],
+ "problems": []
+}

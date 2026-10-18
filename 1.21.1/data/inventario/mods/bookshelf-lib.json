@@ -1,0 +1,81 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Bookshelf",
+ "file": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "78d4577a8e8fbb241216968475dd73f5b9e5efeb7da802b18a4e6c290e49af6cb4a5676e9855d0d8ff3613f967812e4bd363bbb9196c17c954d19454f84b2214",
+ "mods": [
+  {
+   "modid": "bookshelf",
+   "name": "Bookshelf",
+   "version": "21.1.81",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.209,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "bookshelf"
+ ],
+ "data": {
+  "damage_type": [
+   "bookshelf:fake_player"
+  ],
+  "tags/damage_type": [
+   "bookshelf:fake_player"
+  ],
+  "tags/item": [
+   "bookshelf:creative_tab/minecraft/building_blocks",
+   "bookshelf:creative_tab/minecraft/colored_blocks",
+   "bookshelf:creative_tab/minecraft/combat",
+   "bookshelf:creative_tab/minecraft/food_and_drinks",
+   "bookshelf:creative_tab/minecraft/functional_blocks",
+   "bookshelf:creative_tab/minecraft/ingredients",
+   "bookshelf:creative_tab/minecraft/natural_blocks",
+   "bookshelf:creative_tab/minecraft/op_blocks",
+   "bookshelf:creative_tab/minecraft/redstone_blocks",
+   "bookshelf:creative_tab/minecraft/spawn_eggs",
+   "bookshelf:creative_tab/minecraft/tools_and_utilities"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/damage_type": {
+   "bookshelf:fake_player": [
+    "bookshelf:fake_player"
+   ]
+  },
+  "tags/item": {
+   "bookshelf:creative_tab/minecraft/building_blocks": [],
+   "bookshelf:creative_tab/minecraft/colored_blocks": [],
+   "bookshelf:creative_tab/minecraft/combat": [],
+   "bookshelf:creative_tab/minecraft/food_and_drinks": [],
+   "bookshelf:creative_tab/minecraft/functional_blocks": [],
+   "bookshelf:creative_tab/minecraft/ingredients": [],
+   "bookshelf:creative_tab/minecraft/natural_blocks": [],
+   "bookshelf:creative_tab/minecraft/op_blocks": [],
+   "bookshelf:creative_tab/minecraft/redstone_blocks": [],
+   "bookshelf:creative_tab/minecraft/spawn_eggs": [],
+   "bookshelf:creative_tab/minecraft/tools_and_utilities": []
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

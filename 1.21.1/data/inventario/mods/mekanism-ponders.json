@@ -1,0 +1,123 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Mekanism: Ponders",
+ "file": "mekanism_ponders-1.0.3-1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "6048d614c0cae1f7a31181bf5353436b96f8f70d9a281f717d6d3d438f497dcbbfb9fc2a18c4823ea347a41db9bbd478361ce4b2316f4ca46b9141e37cd1e6ef",
+ "mods": [
+  {
+   "modid": "mekanism_ponders",
+   "name": "Mekanism: Ponders",
+   "version": "1.0.3-1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.194,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "mekanism",
+     "type": "required",
+     "range": "[10.7.9,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "mekanismgenerators",
+     "type": "optional",
+     "range": "[10.7.9,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "flywheel",
+     "type": "required",
+     "range": "[1.0.0,2.0)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "flywheel",
+   "name": "Flywheel",
+   "version": "1.0.6",
+   "jar": "flywheel-neoforge-1.21.1-1.0.6.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.21.2)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.66,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "embeddium",
+     "type": "optional",
+     "range": "[0.3.25,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "sodium",
+     "type": "optional",
+     "range": "[0.6.0-beta.2,)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "ponder",
+   "name": "Ponder",
+   "version": "1.0.82+mc1.21.1",
+   "jar": "ponder-neoforge-1.0.82+mc1.21.1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.206,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "flywheel",
+     "type": "required",
+     "range": "[1.0.0,2.0)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "flywheel-neoforge-1.21.1-1.0.6.jar",
+  "ponder-neoforge-1.0.82+mc1.21.1.jar"
+ ],
+ "namespaces": [
+  "flywheel",
+  "mekanism_ponders",
+  "ponder"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

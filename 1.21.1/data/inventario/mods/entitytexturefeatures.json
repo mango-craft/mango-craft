@@ -1,0 +1,37 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Entity Texture Features (ETF)",
+ "file": "entity_texture_features-7.2.5-1.21-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "7b126a027aede28ca6a31e65a1c4890212ad88504ff0e252ebcaf54b4e124abd667403ca8d084af028554e159a4964eeebb07acab609cbe7cead39ec7c84394e",
+ "mods": [
+  {
+   "modid": "entity_texture_features",
+   "name": "Entity Texture Features",
+   "version": "7.2.5",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "entity_features",
+  "entity_texture_features"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

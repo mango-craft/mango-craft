@@ -1,0 +1,353 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Animal Pens",
+ "file": "animal_pen-neoforge-1.21-2.5.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "f83786f38687b1e36c06592a0902e2249b55794a0c0d42633786925905f516705f21af7838da9d5209335701ae047b0d8ad9cf4a11bbcc9ead9bb4f12a45cbfa",
+ "mods": [
+  {
+   "modid": "animal_pen",
+   "name": "Animal Pen",
+   "version": "2.5.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "animal_pen",
+  "minecraft"
+ ],
+ "blocks": {
+  "animal_pen:animal_pen_acacia": "Animal Pen",
+  "animal_pen:animal_pen_bamboo": "Animal Pen",
+  "animal_pen:animal_pen_birch": "Animal Pen",
+  "animal_pen:animal_pen_cherry": "Animal Pen",
+  "animal_pen:animal_pen_crimson": "Animal Pen",
+  "animal_pen:animal_pen_dark_oak": "Animal Pen",
+  "animal_pen:animal_pen_jungle": "Animal Pen",
+  "animal_pen:animal_pen_mangrove": "Animal Pen",
+  "animal_pen:animal_pen_oak": "Animal Pen",
+  "animal_pen:animal_pen_spruce": "Animal Pen",
+  "animal_pen:animal_pen_warped": "Animal Pen",
+  "animal_pen:aquarium_block": "Aquarium",
+  "animal_pen:aviary": "Iron Aviary",
+  "animal_pen:copper_aviary": "Copper Aviary",
+  "animal_pen:exposed_copper_aviary": "Exposed Copper Aviary",
+  "animal_pen:gold_aviary": "Gold Aviary",
+  "animal_pen:oxidized_copper_aviary": "Oxidized Copper Aviary",
+  "animal_pen:waxed_copper_aviary": "Waxed Copper Aviary",
+  "animal_pen:waxed_exposed_copper_aviary": "Waxed Exposed Copper Aviary",
+  "animal_pen:waxed_oxidized_copper_aviary": "Waxed Oxidized Copper Aviary",
+  "animal_pen:waxed_weathered_copper_aviary": "Waxed Weathered Copper Aviary",
+  "animal_pen:weathered_copper_aviary": "Weathered Copper Aviary"
+ },
+ "items": {
+  "animal_pen:animal_cage": "Animal Cage",
+  "animal_pen:animal_cage_filled": "",
+  "animal_pen:animal_pen_acacia": "",
+  "animal_pen:animal_pen_bamboo": "",
+  "animal_pen:animal_pen_birch": "",
+  "animal_pen:animal_pen_cherry": "",
+  "animal_pen:animal_pen_crimson": "",
+  "animal_pen:animal_pen_dark_oak": "",
+  "animal_pen:animal_pen_jungle": "",
+  "animal_pen:animal_pen_mangrove": "",
+  "animal_pen:animal_pen_oak": "",
+  "animal_pen:animal_pen_spruce": "",
+  "animal_pen:animal_pen_warped": "",
+  "animal_pen:aquarium_block": "",
+  "animal_pen:aviary": "",
+  "animal_pen:bird_catcher": "Avian Net",
+  "animal_pen:bird_catcher_filled": "",
+  "animal_pen:copper_aviary": "",
+  "animal_pen:exposed_copper_aviary": "",
+  "animal_pen:gold_aviary": "",
+  "animal_pen:oxidized_copper_aviary": "",
+  "animal_pen:water_animal_container": "Aquatic Jar",
+  "animal_pen:water_animal_container_filled": "",
+  "animal_pen:waxed_copper_aviary": "",
+  "animal_pen:waxed_exposed_copper_aviary": "",
+  "animal_pen:waxed_oxidized_copper_aviary": "",
+  "animal_pen:waxed_weathered_copper_aviary": "",
+  "animal_pen:weathered_copper_aviary": ""
+ },
+ "data": {
+  "advancements": [
+   "minecraft:husbandry/wax_off",
+   "minecraft:husbandry/wax_on"
+  ],
+  "animal_interactions": [
+   "minecraft:allay",
+   "minecraft:armadillo",
+   "minecraft:axolotl",
+   "minecraft:bat",
+   "minecraft:bee",
+   "minecraft:camel",
+   "minecraft:cat",
+   "minecraft:chicken",
+   "minecraft:cod",
+   "minecraft:cow",
+   "minecraft:dolphin",
+   "minecraft:donkey",
+   "minecraft:fox",
+   "minecraft:frog",
+   "minecraft:glow_squid",
+   "minecraft:goat",
+   "minecraft:hoglin",
+   "minecraft:horse",
+   "minecraft:llama",
+   "minecraft:mooshroom",
+   "minecraft:mule",
+   "minecraft:ocelot",
+   "minecraft:panda",
+   "minecraft:parrot",
+   "minecraft:pig",
+   "minecraft:polar_bear",
+   "minecraft:pufferfish",
+   "minecraft:rabbit",
+   "minecraft:salmon",
+   "minecraft:sheep",
+   "minecraft:skeleton_horse",
+   "minecraft:sniffer",
+   "minecraft:squid",
+   "minecraft:strider",
+   "minecraft:tadpole",
+   "minecraft:trader_llama",
+   "minecraft:tropical_fish",
+   "minecraft:turtle",
+   "minecraft:wolf",
+   "minecraft:zombie_horse"
+  ],
+  "loot_table": [
+   "animal_pen:animal_interactions/bowl/mushroom_stew",
+   "animal_pen:animal_interactions/bowl/suspicious_stew",
+   "animal_pen:animal_interactions/brush/armadillo_scute",
+   "animal_pen:animal_interactions/bucket/egg",
+   "animal_pen:animal_interactions/bucket/milk_bucket",
+   "animal_pen:animal_interactions/bucket/sniffer_egg",
+   "animal_pen:animal_interactions/bucket/turtle_egg",
+   "animal_pen:animal_interactions/glass_bottle/honey_bottle",
+   "animal_pen:animal_interactions/magma_cube/froglight",
+   "animal_pen:animal_interactions/shear/honeycomb",
+   "animal_pen:animal_interactions/shear/wool",
+   "animal_pen:blocks/animal_pen_acacia",
+   "animal_pen:blocks/animal_pen_bamboo",
+   "animal_pen:blocks/animal_pen_birch",
+   "animal_pen:blocks/animal_pen_cherry",
+   "animal_pen:blocks/animal_pen_crimson",
+   "animal_pen:blocks/animal_pen_dark_oak",
+   "animal_pen:blocks/animal_pen_jungle",
+   "animal_pen:blocks/animal_pen_mangrove",
+   "animal_pen:blocks/animal_pen_oak",
+   "animal_pen:blocks/animal_pen_spruce",
+   "animal_pen:blocks/animal_pen_warped",
+   "animal_pen:blocks/aquarium_block",
+   "animal_pen:blocks/aviary",
+   "animal_pen:blocks/copper_aviary",
+   "animal_pen:blocks/exposed_copper_aviary",
+   "animal_pen:blocks/gold_aviary",
+   "animal_pen:blocks/oxidized_copper_aviary",
+   "animal_pen:blocks/waxed_copper_aviary",
+   "animal_pen:blocks/waxed_exposed_copper_aviary",
+   "animal_pen:blocks/waxed_oxidized_copper_aviary",
+   "animal_pen:blocks/waxed_weathered_copper_aviary",
+   "animal_pen:blocks/weathered_copper_aviary",
+   "animal_pen:grant_book_on_first_join"
+  ],
+  "patchouli_books": [
+   "animal_pen:guide_book/book"
+  ],
+  "recipe": [
+   "animal_pen:animal_cage",
+   "animal_pen:animal_pen_acacia",
+   "animal_pen:animal_pen_bamboo",
+   "animal_pen:animal_pen_birch",
+   "animal_pen:animal_pen_cherry",
+   "animal_pen:animal_pen_crimson",
+   "animal_pen:animal_pen_dark_oak",
+   "animal_pen:animal_pen_jungle",
+   "animal_pen:animal_pen_mangrove",
+   "animal_pen:animal_pen_oak",
+   "animal_pen:animal_pen_spruce",
+   "animal_pen:animal_pen_warped",
+   "animal_pen:aquarium_block",
+   "animal_pen:aviary",
+   "animal_pen:bird_catcher",
+   "animal_pen:copper_aviary",
+   "animal_pen:gold_aviary",
+   "animal_pen:guide_book",
+   "animal_pen:water_animal_container"
+  ],
+  "tags/block": [
+   "animal_pen:animal_pens",
+   "animal_pen:aviaries"
+  ],
+  "tags/entity_type": [
+   "animal_pen:animal_cage_pickable",
+   "animal_pen:bird_catcher_pickable",
+   "animal_pen:water_mob_container_pickable"
+  ],
+  "tags/item": [
+   "animal_pen:animal_pens",
+   "animal_pen:aviaries",
+   "animal_pen:can_attack_aquarium",
+   "animal_pen:can_attack_aviary",
+   "animal_pen:can_attack_pen"
+  ]
+ },
+ "data_counts": {
+  "advancement": 89
+ },
+ "tags": {
+  "tags/block": {
+   "animal_pen:animal_pens": [
+    "animal_pen:animal_pen_acacia",
+    "animal_pen:animal_pen_jungle",
+    "animal_pen:animal_pen_spruce",
+    "animal_pen:animal_pen_bamboo",
+    "animal_pen:animal_pen_crimson",
+    "animal_pen:animal_pen_dark_oak",
+    "animal_pen:animal_pen_mangrove",
+    "animal_pen:animal_pen_cherry",
+    "animal_pen:animal_pen_birch",
+    "animal_pen:animal_pen_oak",
+    "animal_pen:animal_pen_warped"
+   ],
+   "animal_pen:aviaries": [
+    "animal_pen:copper_aviary",
+    "animal_pen:exposed_copper_aviary",
+    "animal_pen:weathered_copper_aviary",
+    "animal_pen:oxidized_copper_aviary",
+    "animal_pen:waxed_copper_aviary",
+    "animal_pen:waxed_exposed_copper_aviary",
+    "animal_pen:waxed_weathered_copper_aviary",
+    "animal_pen:waxed_oxidized_copper_aviary",
+    "animal_pen:aviary",
+    "animal_pen:gold_aviary"
+   ]
+  },
+  "tags/entity_type": {
+   "animal_pen:animal_cage_pickable": [
+    "minecraft:armadillo",
+    "minecraft:camel",
+    "minecraft:cat",
+    "minecraft:chicken",
+    "minecraft:cow",
+    "minecraft:donkey",
+    "minecraft:frog",
+    "minecraft:fox",
+    "minecraft:goat",
+    "minecraft:hoglin",
+    "minecraft:horse",
+    "minecraft:llama",
+    "minecraft:mooshroom",
+    "minecraft:mule",
+    "minecraft:ocelot",
+    "minecraft:panda",
+    "minecraft:pig",
+    "minecraft:polar_bear",
+    "minecraft:rabbit",
+    "minecraft:sheep",
+    "minecraft:skeleton_horse",
+    "minecraft:sniffer",
+    "minecraft:strider",
+    "minecraft:trader_llama",
+    "minecraft:wolf",
+    "minecraft:zombie_horse"
+   ],
+   "animal_pen:bird_catcher_pickable": [
+    "minecraft:allay",
+    "minecraft:bee",
+    "minecraft:bat",
+    "minecraft:parrot"
+   ],
+   "animal_pen:water_mob_container_pickable": [
+    "minecraft:axolotl",
+    "minecraft:cod",
+    "minecraft:frog",
+    "minecraft:pufferfish",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:dolphin",
+    "minecraft:squid",
+    "minecraft:glow_squid",
+    "minecraft:tadpole",
+    "minecraft:turtle"
+   ]
+  },
+  "tags/item": {
+   "animal_pen:animal_pens": [
+    "animal_pen:animal_pen_acacia",
+    "animal_pen:animal_pen_jungle",
+    "animal_pen:animal_pen_spruce",
+    "animal_pen:animal_pen_bamboo",
+    "animal_pen:animal_pen_crimson",
+    "animal_pen:animal_pen_dark_oak",
+    "animal_pen:animal_pen_mangrove",
+    "animal_pen:animal_pen_cherry",
+    "animal_pen:animal_pen_birch",
+    "animal_pen:animal_pen_oak",
+    "animal_pen:animal_pen_warped"
+   ],
+   "animal_pen:aviaries": [
+    "animal_pen:copper_aviary",
+    "animal_pen:exposed_copper_aviary",
+    "animal_pen:weathered_copper_aviary",
+    "animal_pen:oxidized_copper_aviary",
+    "animal_pen:waxed_copper_aviary",
+    "animal_pen:waxed_exposed_copper_aviary",
+    "animal_pen:waxed_weathered_copper_aviary",
+    "animal_pen:waxed_oxidized_copper_aviary",
+    "animal_pen:aviary",
+    "animal_pen:gold_aviary"
+   ],
+   "animal_pen:can_attack_aquarium": [
+    "#minecraft:swords?",
+    "#minecraft:axes?",
+    "#c:tools/knife?",
+    "#c:knives?"
+   ],
+   "animal_pen:can_attack_aviary": [
+    "#minecraft:swords?",
+    "#minecraft:axes?",
+    "#c:tools/knife?",
+    "#c:knives?"
+   ],
+   "animal_pen:can_attack_pen": [
+    "#minecraft:swords?",
+    "#minecraft:axes?",
+    "#c:tools/knife?",
+    "#c:knives?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 18,
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

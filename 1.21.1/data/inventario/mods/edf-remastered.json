@@ -1,0 +1,92 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Ender Dragon Fight Remastered",
+ "file": "edf-remastered-5.0.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "4bb2774e373e9a6c744f9226c48a29e10a602a06a48bc739f6e703176833c75b7e35f4c5a59cf16a3c3598fed7800d782c93a19ff1be1cf628336e2fcc0e3bf4",
+ "mods": [
+  {
+   "modid": "mr_edf_remastered",
+   "name": "Ender Dragon Fight Remastered",
+   "version": "5.0.2",
+   "jar": "",
+   "deps": []
+  },
+  {
+   "modid": "mr_edf_remastered",
+   "name": "Ender Dragon Fight Remastered",
+   "version": "5.0.2",
+   "jar": "",
+   "deps": []
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "endfight",
+  "minecraft"
+ ],
+ "data": {
+  "function": [
+   "endfight:attacks/anvil",
+   "endfight:attacks/do",
+   "endfight:attacks/do_mad",
+   "endfight:attacks/enderman_aggro",
+   "endfight:attacks/fangs",
+   "endfight:attacks/lightning_start",
+   "endfight:attacks/miniboss",
+   "endfight:attacks/perch",
+   "endfight:attacks/raining_fireballs",
+   "endfight:attacks/shulker",
+   "endfight:attacks/teleport",
+   "endfight:attacks/warning",
+   "endfight:config/health_add",
+   "endfight:config/health_common",
+   "endfight:config/health_minus",
+   "endfight:config/music_off",
+   "endfight:config/music_resource_pack",
+   "endfight:config/setup_config",
+   "endfight:dev/cleanup_fight",
+   "endfight:dragon",
+   "endfight:dragon_init",
+   "endfight:dragontitle",
+   "endfight:endmusic",
+   "endfight:load",
+   "endfight:music",
+   "endfight:open_config",
+   "endfight:sch/fireball",
+   "endfight:sch/lightning_do",
+   "endfight:sch/new_fireball",
+   "endfight:sch/spawn_fangs",
+   "endfight:tick"
+  ],
+  "loot_tables": [
+   "minecraft:entities/ender_dragon",
+   "minecraft:entities/ender_dragon/ender_dragon"
+  ],
+  "predicate": [
+   "endfight:end_centre",
+   "endfight:is_aggro"
+  ],
+  "tags/function": [
+   "minecraft:load",
+   "minecraft:tick"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/function": {
+   "minecraft:load": [
+    "endfight:load"
+   ],
+   "minecraft:tick": [
+    "endfight:tick"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

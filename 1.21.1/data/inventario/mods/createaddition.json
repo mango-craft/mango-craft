@@ -1,0 +1,726 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Create Crafts & Additions",
+ "file": "createaddition-1.6.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "e3a31eefb15d37bd1a2ba9012d0c00ec92f7c9e57b7a35c993676ea0cc85ba4f35a055a9f98d57636f24a0562d6da18b4e90713f4f46d47959666a097a6a5cea",
+ "mods": [
+  {
+   "modid": "createaddition",
+   "name": "Create Crafts & Additions",
+   "version": "1.6.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "required",
+     "range": "[6.0.7,6.1.0)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "[15.0.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "computercraft",
+     "type": "optional",
+     "range": "[0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "simulated",
+     "type": "optional",
+     "range": null,
+     "side": null
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": null
+    }
+   ]
+  },
+  {
+   "modid": "sablecompanion",
+   "name": "Sable Companion",
+   "version": "1.6.0",
+   "jar": "sable-companion-common-1.21.1-1.6.0.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.80,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "sable-companion-common-1.21.1-1.6.0.jar"
+ ],
+ "namespaces": [
+  "c",
+  "create",
+  "createaddition",
+  "farmersdelight",
+  "minecraft"
+ ],
+ "blocks": {
+  "createaddition:accumulator": "Accumulator",
+  "createaddition:alternator": "Alternator",
+  "createaddition:barbed_wire": "Barbed Wire",
+  "createaddition:bioethanol": "Bioethanol",
+  "createaddition:biomass_pellet_block": "Biomass Pallet",
+  "createaddition:chocolate_cake": "Chocolate Cake",
+  "createaddition:connector": "Small Connector",
+  "createaddition:connector_old": "",
+  "createaddition:copper_wire_casing": "",
+  "createaddition:creative_energy": "Creative Generator",
+  "createaddition:digital_adapter": "Digital Adapter",
+  "createaddition:electric_motor": "Electric Motor",
+  "createaddition:electrum_block": "Electrum Block",
+  "createaddition:honey_cake": "Honey Cake",
+  "createaddition:large_connector": "Large Connector",
+  "createaddition:liquid_blaze_burner": "Blaze Burner with Straw",
+  "createaddition:modular_accumulator": "Accumulator",
+  "createaddition:portable_energy_interface": "Portable Energy Interface",
+  "createaddition:redstone_relay": "Redstone Relay",
+  "createaddition:rolling_mill": "Rolling Mill",
+  "createaddition:seed_oil": "Seed Oil",
+  "createaddition:small_light_connector": "Small Connector With Light",
+  "createaddition:tesla_coil": "Tesla Coil"
+ },
+ "effects": {
+  "createaddition:shocking": "Shocked"
+ },
+ "fluids": {
+  "createaddition:bioethanol": "Biofuel",
+  "createaddition:seed_oil": "Seed Oil"
+ },
+ "items": {
+  "createaddition:alternator": "",
+  "createaddition:barbed_wire": "",
+  "createaddition:bioethanol_bucket": "Bucket of Biofuel",
+  "createaddition:biomass": "Biomass",
+  "createaddition:biomass_pellet": "Biomass Pellet",
+  "createaddition:biomass_pellet_block": "",
+  "createaddition:brass_figurine": "Brass Figurine",
+  "createaddition:brass_rod": "Brass Rod",
+  "createaddition:bronze_rod": "Bronze Rod",
+  "createaddition:cake_base": "Cake Base",
+  "createaddition:cake_base_baked": "Baked Cake Base",
+  "createaddition:capacitor": "Capacitor",
+  "createaddition:chocolate_cake": "",
+  "createaddition:connector": "",
+  "createaddition:copper_goblet": "Copper Goblet",
+  "createaddition:copper_rod": "Copper Rod",
+  "createaddition:copper_spool": "Copper Spool",
+  "createaddition:copper_wire": "Copper Wire",
+  "createaddition:creative_energy": "",
+  "createaddition:diamond_grit": "Diamond Grit",
+  "createaddition:diamond_grit_sandpaper": "Diamond Grit Sandpaper",
+  "createaddition:digital_adapter": "",
+  "createaddition:electric_motor": "",
+  "createaddition:electrum_amulet": "Pale Gold Amulet",
+  "createaddition:electrum_block": "",
+  "createaddition:electrum_ingot": "Electrum Ingot",
+  "createaddition:electrum_nugget": "Electrum Nugget",
+  "createaddition:electrum_rod": "Electrum Rod",
+  "createaddition:electrum_sheet": "Electrum Sheet",
+  "createaddition:electrum_spool": "Electrum Spool",
+  "createaddition:electrum_wire": "Electrum Wire",
+  "createaddition:festive_spool": "Copper Spool with Festive Lights",
+  "createaddition:gold_goblet": "Ornate Goblet",
+  "createaddition:gold_rod": "Gold Rod",
+  "createaddition:gold_spool": "Gold Spool",
+  "createaddition:gold_wire": "Gold Wire",
+  "createaddition:honey_cake": "",
+  "createaddition:iron_rod": "Iron Rod",
+  "createaddition:iron_wire": "Iron Wire",
+  "createaddition:large_connector": "",
+  "createaddition:modular_accumulator": "",
+  "createaddition:portable_energy_interface": "",
+  "createaddition:redstone_relay": "",
+  "createaddition:rolling_mill": "",
+  "createaddition:seed_oil_bucket": "Bucket of Seed Oil",
+  "createaddition:small_light_connector": "",
+  "createaddition:spool": "Empty Spool",
+  "createaddition:straw": "Straw",
+  "createaddition:tesla_coil": "",
+  "createaddition:zinc_sheet": "Zinc Sheet"
+ },
+ "data": {
+  "create": [
+   "createaddition:potato_projectile/type/chocolate_cake",
+   "createaddition:potato_projectile/type/honey_cake"
+  ],
+  "damage_type": [
+   "createaddition:barbed_wire",
+   "createaddition:tesla_coil"
+  ],
+  "loot_table": [
+   "createaddition:blocks/alternator",
+   "createaddition:blocks/barbed_wire",
+   "createaddition:blocks/biomass_pellet_block",
+   "createaddition:blocks/chocolate_cake",
+   "createaddition:blocks/connector",
+   "createaddition:blocks/creative_energy",
+   "createaddition:blocks/digital_adapter",
+   "createaddition:blocks/electric_motor",
+   "createaddition:blocks/electrum_block",
+   "createaddition:blocks/honey_cake",
+   "createaddition:blocks/large_connector",
+   "createaddition:blocks/liquid_blaze_burner",
+   "createaddition:blocks/modular_accumulator",
+   "createaddition:blocks/portable_energy_interface",
+   "createaddition:blocks/redstone_relay",
+   "createaddition:blocks/rolling_mill",
+   "createaddition:blocks/small_light_connector",
+   "createaddition:blocks/tesla_coil"
+  ],
+  "recipe": [
+   "create:crushing/ochrum",
+   "create:crushing/ochrum_recycling",
+   "create:crushing/tuff",
+   "create:crushing/tuff_recycling",
+   "create:rolling/bamboo",
+   "create:rolling/paper",
+   "createaddition:charging/channeling",
+   "createaddition:charging/deoxidize_create_exposed_copper_shingle_slab",
+   "createaddition:charging/deoxidize_create_exposed_copper_shingle_stairs",
+   "createaddition:charging/deoxidize_create_exposed_copper_shingles",
+   "createaddition:charging/deoxidize_create_exposed_copper_tile_slab",
+   "createaddition:charging/deoxidize_create_exposed_copper_tile_stairs",
+   "createaddition:charging/deoxidize_create_exposed_copper_tiles",
+   "createaddition:charging/deoxidize_create_oxidized_copper_shingle_slab",
+   "createaddition:charging/deoxidize_create_oxidized_copper_shingle_stairs",
+   "createaddition:charging/deoxidize_create_oxidized_copper_shingles",
+   "createaddition:charging/deoxidize_create_oxidized_copper_tile_slab",
+   "createaddition:charging/deoxidize_create_oxidized_copper_tile_stairs",
+   "createaddition:charging/deoxidize_create_oxidized_copper_tiles",
+   "createaddition:charging/deoxidize_create_weathered_copper_shingle_slab",
+   "createaddition:charging/deoxidize_create_weathered_copper_shingle_stairs",
+   "createaddition:charging/deoxidize_create_weathered_copper_shingles",
+   "createaddition:charging/deoxidize_create_weathered_copper_tile_slab",
+   "createaddition:charging/deoxidize_create_weathered_copper_tile_stairs",
+   "createaddition:charging/deoxidize_create_weathered_copper_tiles",
+   "createaddition:charging/deoxidize_minecraft_exposed_chiseled_copper",
+   "createaddition:charging/deoxidize_minecraft_exposed_copper",
+   "createaddition:charging/deoxidize_minecraft_exposed_copper_bulb",
+   "createaddition:charging/deoxidize_minecraft_exposed_copper_door",
+   "createaddition:charging/deoxidize_minecraft_exposed_copper_grate",
+   "createaddition:charging/deoxidize_minecraft_exposed_copper_trapdoor",
+   "createaddition:charging/deoxidize_minecraft_exposed_cut_copper",
+   "createaddition:charging/deoxidize_minecraft_exposed_cut_copper_slab",
+   "createaddition:charging/deoxidize_minecraft_exposed_cut_copper_stairs",
+   "createaddition:charging/deoxidize_minecraft_oxidized_chiseled_copper",
+   "createaddition:charging/deoxidize_minecraft_oxidized_copper",
+   "createaddition:charging/deoxidize_minecraft_oxidized_copper_bulb",
+   "createaddition:charging/deoxidize_minecraft_oxidized_copper_door",
+   "createaddition:charging/deoxidize_minecraft_oxidized_copper_grate",
+   "createaddition:charging/deoxidize_minecraft_oxidized_copper_trapdoor",
+   "createaddition:charging/deoxidize_minecraft_oxidized_cut_copper",
+   "createaddition:charging/deoxidize_minecraft_oxidized_cut_copper_slab",
+   "createaddition:charging/deoxidize_minecraft_oxidized_cut_copper_stairs",
+   "createaddition:charging/deoxidize_minecraft_weathered_chiseled_copper",
+   "createaddition:charging/deoxidize_minecraft_weathered_copper",
+   "createaddition:charging/deoxidize_minecraft_weathered_copper_bulb",
+   "createaddition:charging/deoxidize_minecraft_weathered_copper_door",
+   "createaddition:charging/deoxidize_minecraft_weathered_copper_grate",
+   "createaddition:charging/deoxidize_minecraft_weathered_copper_trapdoor",
+   "createaddition:charging/deoxidize_minecraft_weathered_cut_copper",
+   "createaddition:charging/deoxidize_minecraft_weathered_cut_copper_slab",
+   "createaddition:charging/deoxidize_minecraft_weathered_cut_copper_stairs",
+   "createaddition:charging/electrify_gold_block",
+   "createaddition:charging/electrify_gold_ingot",
+   "createaddition:charging/electrify_gold_nugget",
+   "createaddition:charging/electrify_gold_rod",
+   "createaddition:charging/electrify_gold_sheet",
+   "createaddition:charging/electrify_gold_wire",
+   "createaddition:compacting/biomass_pellet",
+   "createaddition:compacting/cake_base",
+   "createaddition:compacting/seed_oil",
+   "createaddition:compat/ae2/charged_certus_quartz",
+   "createaddition:compat/immersiveengineering/constantan",
+   "createaddition:compat/immersiveengineering/crushing/steel_ingot",
+   "createaddition:compat/immersiveengineering/fabric_sail",
+   "createaddition:compat/immersiveengineering/item_application/kiln_brick",
+   "createaddition:compat/immersiveengineering/item_application/leaded_concrete",
+   "createaddition:compat/immersiveengineering/item_application/light_engineering_block.json.disabled",
+   "createaddition:compat/immersiveengineering/item_application/redstone_engineering_block.json.disabled",
+   "createaddition:compat/immersiveengineering/item_application/reinforced_blast_brick",
+   "createaddition:compat/immersiveengineering/rolling/aluminum_ingot",
+   "createaddition:compat/immersiveengineering/rolling/aluminum_plate",
+   "createaddition:compat/immersiveengineering/rolling/lead_plate",
+   "createaddition:compat/immersiveengineering/rolling/steel_ingot",
+   "createaddition:compat/immersiveengineering/rolling/steel_plate",
+   "createaddition:compat/immersiveengineering/sphalerite",
+   "createaddition:compat/jeed/shocking",
+   "createaddition:compat/mekanism/rose_quartz_enriching",
+   "createaddition:compat/mekanism/rose_quartz_metallurgic_infusing",
+   "createaddition:compat/tconstruct/amethyst_bronze",
+   "createaddition:compat/tconstruct/blaze_blood",
+   "createaddition:compat/tconstruct/hepatizon",
+   "createaddition:compat/tconstruct/manyullyn",
+   "createaddition:compat/tconstruct/pig_iron.json.disabled",
+   "createaddition:compat/tconstruct/pig_iron_2.json.disabled",
+   "createaddition:compat/tconstruct/queens_slime",
+   "createaddition:compat/tconstruct/rose_gold",
+   "createaddition:compat/tconstruct/slimesteel",
+   "createaddition:compat/tconstruct/tinkers_bronze",
+   "createaddition:compat/thermal/liquid_burning/heavy_oil",
+   "createaddition:compat/thermal/liquid_burning/light_oil",
+   "createaddition:compat/thermal/liquid_burning/refined_fuel",
+   "createaddition:compat/thermal/liquid_burning/tree_oil",
+   "createaddition:crafting/barbed_wire",
+   "createaddition:crafting/biomass_pallet_block",
+   "createaddition:crafting/biomass_pellet_from_biomass_pallet_block",
+   "createaddition:crafting/capacitor_1",
+   "createaddition:crafting/capacitor_2",
+   "createaddition:crafting/connector",
+   "createaddition:crafting/copper_spool",
+   "createaddition:crafting/diamond_grit_sandpaper",
+   "createaddition:crafting/digital_adapter",
+   "createaddition:crafting/electrum_amulet",
+   "createaddition:crafting/electrum_block",
+   "createaddition:crafting/electrum_ingot_from_electrum_block",
+   "createaddition:crafting/electrum_ingot_from_nugget",
+   "createaddition:crafting/electrum_nugget",
+   "createaddition:crafting/electrum_spool",
+   "createaddition:crafting/festive_spool",
+   "createaddition:crafting/gold_spool",
+   "createaddition:crafting/large_connector",
+   "createaddition:crafting/modular_accumulator",
+   "createaddition:crafting/portable_energy_interface",
+   "createaddition:crafting/redstone_relay",
+   "createaddition:crafting/rolling_mill",
+   "createaddition:crafting/small_light_connector",
+   "createaddition:crafting/spool",
+   "createaddition:crushing/diamond",
+   "createaddition:filling/cake",
+   "createaddition:filling/chocolate_cake",
+   "createaddition:filling/honey_cake",
+   "createaddition:liquid_burning/biodiesel",
+   "createaddition:liquid_burning/biofuel",
+   "createaddition:liquid_burning/creosote",
+   "createaddition:liquid_burning/crude_oil",
+   "createaddition:liquid_burning/diesel",
+   "createaddition:liquid_burning/ethanol",
+   "createaddition:liquid_burning/gasoline",
+   "createaddition:liquid_burning/lava",
+   "createaddition:liquid_burning/plantoil",
+   "createaddition:mechanical_crafting/alternator",
+   "createaddition:mechanical_crafting/electric_motor",
+   "createaddition:mechanical_crafting/tesla_coil",
+   "createaddition:mixing/bioethanol",
+   "createaddition:mixing/biomass_from_crops",
+   "createaddition:mixing/biomass_from_flowers",
+   "createaddition:mixing/biomass_from_honeycomb",
+   "createaddition:mixing/biomass_from_leaves",
+   "createaddition:mixing/biomass_from_plant_foods",
+   "createaddition:mixing/biomass_from_plants",
+   "createaddition:mixing/biomass_from_saplings",
+   "createaddition:mixing/biomass_from_stricks",
+   "createaddition:mixing/electrum",
+   "createaddition:mixing/netherrack",
+   "createaddition:pressing/electrum_ingot",
+   "createaddition:pressing/zinc_ingot",
+   "createaddition:rolling/brass_rod",
+   "createaddition:rolling/copper_ingot",
+   "createaddition:rolling/copper_plate",
+   "createaddition:rolling/electrum_ingot",
+   "createaddition:rolling/electrum_plate",
+   "createaddition:rolling/gold_ingot",
+   "createaddition:rolling/gold_plate",
+   "createaddition:rolling/iron_ingot",
+   "createaddition:rolling/iron_plate",
+   "createaddition:smoking/cake_base_baked"
+  ],
+  "tags/block": [
+   "c:storage_blocks",
+   "c:storage_blocks/bio",
+   "c:storage_blocks/biomass",
+   "c:storage_blocks/electrum",
+   "create:brittle",
+   "create:fan_processing_catalysts/blasting",
+   "create:fan_transparent",
+   "farmersdelight:mineable/knife",
+   "minecraft:beacon_base_blocks",
+   "minecraft:incorrect_for_gold_tool",
+   "minecraft:incorrect_for_stone_tool",
+   "minecraft:incorrect_for_wooden_tool",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/hoe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:needs_iron_tool"
+  ],
+  "tags/fluid": [
+   "c:biofuel",
+   "c:creosote",
+   "c:crude_oil",
+   "c:ignites",
+   "c:plantoil"
+  ],
+  "tags/item": [
+   "c:blocks/electrum",
+   "c:buckets",
+   "c:dusts",
+   "c:dusts/diamond",
+   "c:dusts/obsidian",
+   "c:foods",
+   "c:foods/edible_when_placed",
+   "c:fuels",
+   "c:fuels/bio",
+   "c:ingots",
+   "c:ingots/electrum",
+   "c:nuggets",
+   "c:nuggets/electrum",
+   "c:plates",
+   "c:plates/electrum",
+   "c:plates/zinc",
+   "c:rods",
+   "c:rods/all_metal",
+   "c:rods/brass",
+   "c:rods/copper",
+   "c:rods/electrum",
+   "c:rods/gold",
+   "c:rods/iron",
+   "c:storage_blocks",
+   "c:storage_blocks/bio",
+   "c:storage_blocks/biomass",
+   "c:storage_blocks/electrum",
+   "c:wires",
+   "c:wires/all_metal",
+   "c:wires/copper",
+   "c:wires/electrum",
+   "c:wires/gold",
+   "c:wires/iron",
+   "create:sandpaper",
+   "create:upright_on_belt",
+   "createaddition:large_connector_usable_rods",
+   "createaddition:modular_accumulator_usable_wires",
+   "createaddition:plant_foods",
+   "createaddition:plants",
+   "createaddition:spools",
+   "minecraft:beacon_payment_items"
+  ]
+ },
+ "data_counts": {
+  "advancement": 25
+ },
+ "tags": {
+  "tags/block": {
+   "c:storage_blocks": [
+    "createaddition:electrum_block",
+    "createaddition:biomass_pellet_block"
+   ],
+   "c:storage_blocks/bio": [
+    "createaddition:biomass_pellet_block"
+   ],
+   "c:storage_blocks/biomass": [
+    "createaddition:biomass_pellet_block"
+   ],
+   "c:storage_blocks/electrum": [
+    "createaddition:electrum_block"
+   ],
+   "create:brittle": [
+    "createaddition:chocolate_cake",
+    "createaddition:honey_cake"
+   ],
+   "create:fan_processing_catalysts/blasting": [
+    "createaddition:liquid_blaze_burner"
+   ],
+   "create:fan_transparent": [
+    "createaddition:liquid_blaze_burner"
+   ],
+   "farmersdelight:mineable/knife": [
+    "createaddition:chocolate_cake",
+    "createaddition:honey_cake"
+   ],
+   "minecraft:beacon_base_blocks": [
+    "createaddition:electrum_block"
+   ],
+   "minecraft:incorrect_for_gold_tool": [
+    "createaddition:electrum_block"
+   ],
+   "minecraft:incorrect_for_stone_tool": [
+    "createaddition:electrum_block"
+   ],
+   "minecraft:incorrect_for_wooden_tool": [
+    "createaddition:electrum_block"
+   ],
+   "minecraft:mineable/axe": [
+    "createaddition:rolling_mill"
+   ],
+   "minecraft:mineable/hoe": [
+    "createaddition:biomass_pellet_block"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "createaddition:alternator",
+    "createaddition:electric_motor",
+    "createaddition:rolling_mill",
+    "createaddition:creative_energy",
+    "createaddition:connector",
+    "createaddition:small_light_connector",
+    "createaddition:large_connector",
+    "createaddition:redstone_relay",
+    "createaddition:tesla_coil",
+    "createaddition:liquid_blaze_burner",
+    "createaddition:barbed_wire",
+    "createaddition:modular_accumulator",
+    "createaddition:portable_energy_interface",
+    "createaddition:digital_adapter",
+    "createaddition:electrum_block"
+   ],
+   "minecraft:needs_iron_tool": [
+    "createaddition:electrum_block"
+   ]
+  },
+  "tags/fluid": {
+   "c:biofuel": [
+    "createaddition:flowing_bioethanol",
+    "createaddition:bioethanol"
+   ],
+   "c:creosote": [],
+   "c:crude_oil": [],
+   "c:ignites": [
+    "#c:biofuel?",
+    "#c:creosote?",
+    "#c:crude_oil?",
+    "#c:plantoil?",
+    "#c:ethanol?",
+    "#c:gasoline?",
+    "#c:diesel?",
+    "#c:biodiesel?"
+   ],
+   "c:plantoil": [
+    "createaddition:flowing_seed_oil",
+    "createaddition:seed_oil"
+   ]
+  },
+  "tags/item": {
+   "c:blocks/electrum": [
+    "createaddition:electrum_block"
+   ],
+   "c:buckets": [
+    "createaddition:bioethanol_bucket",
+    "createaddition:seed_oil_bucket"
+   ],
+   "c:dusts": [
+    "#c:dusts/diamond",
+    "#c:dusts/obsidian"
+   ],
+   "c:dusts/diamond": [
+    "createaddition:diamond_grit"
+   ],
+   "c:dusts/obsidian": [
+    "create:powdered_obsidian"
+   ],
+   "c:foods": [
+    "createaddition:chocolate_cake",
+    "createaddition:honey_cake"
+   ],
+   "c:foods/edible_when_placed": [
+    "createaddition:chocolate_cake",
+    "createaddition:honey_cake"
+   ],
+   "c:fuels": [
+    "#c:fuels/bio"
+   ],
+   "c:fuels/bio": [
+    "createaddition:biomass"
+   ],
+   "c:ingots": [
+    "#c:ingots/electrum"
+   ],
+   "c:ingots/electrum": [
+    "createaddition:electrum_ingot"
+   ],
+   "c:nuggets": [
+    "#c:nuggets/electrum"
+   ],
+   "c:nuggets/electrum": [
+    "createaddition:electrum_nugget"
+   ],
+   "c:plates": [
+    "#c:plates/electrum",
+    "#c:plates/zinc"
+   ],
+   "c:plates/electrum": [
+    "createaddition:electrum_sheet"
+   ],
+   "c:plates/zinc": [
+    "createaddition:zinc_sheet"
+   ],
+   "c:rods": [
+    "#c:rods/all_metal"
+   ],
+   "c:rods/all_metal": [
+    "createaddition:gold_rod",
+    "createaddition:iron_rod",
+    "createaddition:electrum_rod",
+    "createaddition:brass_rod",
+    "createaddition:copper_rod"
+   ],
+   "c:rods/brass": [
+    "createaddition:brass_rod"
+   ],
+   "c:rods/copper": [
+    "createaddition:copper_rod"
+   ],
+   "c:rods/electrum": [
+    "createaddition:electrum_rod"
+   ],
+   "c:rods/gold": [
+    "createaddition:gold_rod"
+   ],
+   "c:rods/iron": [
+    "createaddition:iron_rod"
+   ],
+   "c:storage_blocks": [
+    "createaddition:biomass_pellet_block",
+    "createaddition:electrum_block"
+   ],
+   "c:storage_blocks/bio": [
+    "createaddition:biomass_pellet_block"
+   ],
+   "c:storage_blocks/biomass": [
+    "createaddition:biomass_pellet_block"
+   ],
+   "c:storage_blocks/electrum": [
+    "createaddition:electrum_block"
+   ],
+   "c:wires": [
+    "#c:wires/all_metal"
+   ],
+   "c:wires/all_metal": [
+    "createaddition:gold_wire",
+    "createaddition:iron_wire",
+    "createaddition:electrum_wire",
+    "createaddition:copper_wire"
+   ],
+   "c:wires/copper": [
+    "createaddition:copper_wire"
+   ],
+   "c:wires/electrum": [
+    "createaddition:electrum_wire"
+   ],
+   "c:wires/gold": [
+    "createaddition:gold_wire"
+   ],
+   "c:wires/iron": [
+    "createaddition:iron_wire"
+   ],
+   "create:sandpaper": [
+    "createaddition:diamond_grit_sandpaper"
+   ],
+   "create:upright_on_belt": [
+    "createaddition:cake_base",
+    "createaddition:cake_base_baked",
+    "createaddition:chocolate_cake",
+    "createaddition:honey_cake",
+    "minecraft:cake",
+    "createaddition:seed_oil_bucket",
+    "createaddition:bioethanol_bucket"
+   ],
+   "createaddition:large_connector_usable_rods": [
+    "#c:rods/gold",
+    "#c:rods/electrum"
+   ],
+   "createaddition:modular_accumulator_usable_wires": [
+    "#c:wires/gold",
+    "#c:wires/electrum"
+   ],
+   "createaddition:plant_foods": [
+    "minecraft:apple",
+    "minecraft:melon_slice",
+    "minecraft:potato",
+    "minecraft:sweet_berries",
+    "minecraft:beetroot",
+    "minecraft:glow_berries",
+    "minecraft:carrot",
+    "minecraft:chorus_fruit"
+   ],
+   "createaddition:plants": [
+    "minecraft:cactus",
+    "minecraft:bamboo",
+    "minecraft:kelp",
+    "minecraft:vine",
+    "minecraft:lily_pad",
+    "minecraft:weeping_vines",
+    "minecraft:twisting_vines",
+    "minecraft:short_grass",
+    "minecraft:fern",
+    "minecraft:tall_grass",
+    "minecraft:large_fern",
+    "minecraft:seagrass",
+    "minecraft:warped_roots",
+    "minecraft:crimson_roots",
+    "minecraft:hanging_roots",
+    "minecraft:nether_sprouts",
+    "minecraft:chorus_plant",
+    "minecraft:chorus_flower",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    "minecraft:sugar_cane",
+    "minecraft:dead_bush",
+    "minecraft:sea_pickle",
+    "minecraft:moss_block",
+    "minecraft:big_dripleaf",
+    "minecraft:small_dripleaf",
+    "minecraft:moss_carpet",
+    "minecraft:glow_lichen"
+   ],
+   "createaddition:spools": [
+    "createaddition:copper_spool",
+    "createaddition:gold_spool",
+    "createaddition:electrum_spool",
+    "createaddition:festive_spool"
+   ],
+   "minecraft:beacon_payment_items": [
+    "#c:ingots/electrum"
+   ]
+  }
+ },
+ "recipe_types": {
+  "create:compacting": 3,
+  "create:crushing": 6,
+  "create:filling": 3,
+  "create:item_application": 3,
+  "create:mechanical_crafting": 3,
+  "create:mixing": 19,
+  "create:pressing": 2,
+  "createaddition:charging": 53,
+  "createaddition:liquid_burning": 14,
+  "createaddition:rolling": 16,
+  "immersiveengineering:mineral_mix": 1,
+  "jeed:effect_provider": 1,
+  "mekanism:enriching": 1,
+  "mekanism:metallurgic_infusing": 1,
+  "minecraft:crafting_shaped": 15,
+  "minecraft:crafting_shapeless": 10,
+  "minecraft:smoking": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,992 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Truly Modular: Modular Item API (Miapi)",
+ "file": "Truly-Modular-miapi-neoforge-2.3.9-1.21.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "9130923c0b04d79773e20577317c619896bb1c031b32a40ed69bba8d28782a3138e340dcd67cab182a7087ffd8d292f837aed0ede6a5e1e691972cb2bea4a62b",
+ "mods": [
+  {
+   "modid": "nucleus_codec",
+   "name": "Nucleus (Codec)",
+   "version": "1.1.4",
+   "jar": "nucleus-codec-forge-1.21+1.2.3.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_codec",
+   "name": "Nucleus (Codec)",
+   "version": "1.2.3",
+   "jar": "nucleus-codec-forge-1.21+1.2.3.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_config",
+   "name": "Nucleus (Config)",
+   "version": "1.1.5",
+   "jar": "nucleus-config-forge-1.21+1.1.7.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_config",
+   "name": "Nucleus (Config)",
+   "version": "1.1.7",
+   "jar": "nucleus-config-forge-1.21+1.1.7.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus",
+   "name": "Nucleus (Core)",
+   "version": "1.1.2",
+   "jar": "nucleus-core-forge-1.21+1.1.14.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus",
+   "name": "Nucleus (Core)",
+   "version": "1.1.14",
+   "jar": "nucleus-core-forge-1.21+1.1.14.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_facet",
+   "name": "Nucleus (Facet)",
+   "version": "1.0.1",
+   "jar": "nucleus-facet-forge-1.21+1.1.3.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_facet",
+   "name": "Nucleus (Facet)",
+   "version": "1.1.3",
+   "jar": "nucleus-facet-forge-1.21+1.1.3.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_pose",
+   "name": "Nucleus (Pose)",
+   "version": "1.0.0",
+   "jar": "nucleus-pose-forge-1.21+1.0.5.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_pose",
+   "name": "Nucleus (Pose)",
+   "version": "1.0.5",
+   "jar": "nucleus-pose-forge-1.21+1.0.5.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_trinket",
+   "name": "Nucleus (Trinket)",
+   "version": "1.0.5",
+   "jar": "nucleus-trinket-forge-1.21+1.0.5.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "miapi",
+   "name": "Truly Modular",
+   "version": "2.3.9",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "nucleus_config",
+     "type": "required",
+     "range": "[1.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "nucleus_facet",
+     "type": "required",
+     "range": "[1.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "EvalEx-3.2.0.jar",
+  "nucleus-codec-forge-1.21+1.2.3.jar",
+  "nucleus-config-forge-1.21+1.1.7.jar",
+  "nucleus-core-forge-1.21+1.1.14.jar",
+  "nucleus-facet-forge-1.21+1.1.3.jar",
+  "nucleus-pose-forge-1.21+1.0.5.jar",
+  "nucleus-trinket-forge-1.21+1.0.5.jar"
+ ],
+ "namespaces": [
+  "c",
+  "miapi",
+  "minecraft",
+  "neoforge",
+  "nucleus"
+ ],
+ "blocks": {
+  "miapi:example_stat_provider": "",
+  "miapi:modular_work_bench": "Modular Workbench"
+ },
+ "effects": {
+  "miapi:cryo": "Cryo",
+  "miapi:stun": "Stunned!",
+  "miapi:stun_resistance": "Stun Resistance",
+  "miapi:teleport_block": "Spatial Interdiction"
+ },
+ "items": {
+  "miapi:chain": "",
+  "miapi:model": "",
+  "miapi:modular_arrow": "",
+  "miapi:modular_arrow_part": "",
+  "miapi:modular_axe": "",
+  "miapi:modular_boots": "",
+  "miapi:modular_bow": "",
+  "miapi:modular_bow_part": "",
+  "miapi:modular_broken_item": "",
+  "miapi:modular_chestplate": "",
+  "miapi:modular_crossbow": "",
+  "miapi:modular_crossbow_part": "",
+  "miapi:modular_dagger": "",
+  "miapi:modular_elytra": "",
+  "miapi:modular_gauntlets": "",
+  "miapi:modular_greatsword": "",
+  "miapi:modular_hammer": "",
+  "miapi:modular_handheld": "",
+  "miapi:modular_handle": "",
+  "miapi:modular_heater_shield": "",
+  "miapi:modular_helmet": "",
+  "miapi:modular_hoe": "",
+  "miapi:modular_item": "",
+  "miapi:modular_katana": "",
+  "miapi:modular_katars": "",
+  "miapi:modular_knuckles": "",
+  "miapi:modular_large_bow": "",
+  "miapi:modular_large_crossbow": "",
+  "miapi:modular_leggings": "",
+  "miapi:modular_longsword": "",
+  "miapi:modular_mace": "",
+  "miapi:modular_mattock": "",
+  "miapi:modular_naginata": "",
+  "miapi:modular_part": "",
+  "miapi:modular_part_visual": "",
+  "miapi:modular_pickaxe": "",
+  "miapi:modular_rapier": "",
+  "miapi:modular_round_shield": "",
+  "miapi:modular_scythe": "",
+  "miapi:modular_shield": "",
+  "miapi:modular_shovel": "",
+  "miapi:modular_sickle": "",
+  "miapi:modular_small_bow": "",
+  "miapi:modular_small_crossbow": "",
+  "miapi:modular_spear": "",
+  "miapi:modular_stackable_item": "",
+  "miapi:modular_sword": "",
+  "miapi:modular_throwing_knife": "",
+  "miapi:modular_tonfa": "",
+  "miapi:modular_tower_shield": "",
+  "miapi:modular_trident": "",
+  "miapi:modular_work_bench": "",
+  "miapi:twin_blade": ""
+ },
+ "data": {
+  "capabilities": [
+   "miapi:armor/modular_boots",
+   "miapi:armor/modular_chestplate",
+   "miapi:armor/modular_helmet",
+   "miapi:armor/modular_leggings",
+   "miapi:weapons/modular_axe",
+   "miapi:weapons/modular_bow",
+   "miapi:weapons/modular_crossbow",
+   "miapi:weapons/modular_dagger",
+   "miapi:weapons/modular_greatsword",
+   "miapi:weapons/modular_hammer",
+   "miapi:weapons/modular_hoe",
+   "miapi:weapons/modular_katana",
+   "miapi:weapons/modular_large_bow",
+   "miapi:weapons/modular_large_crossbow",
+   "miapi:weapons/modular_longsword",
+   "miapi:weapons/modular_mattock",
+   "miapi:weapons/modular_naginata",
+   "miapi:weapons/modular_pickaxe",
+   "miapi:weapons/modular_rapier",
+   "miapi:weapons/modular_scythe",
+   "miapi:weapons/modular_shovel",
+   "miapi:weapons/modular_sickle",
+   "miapi:weapons/modular_small_bow",
+   "miapi:weapons/modular_small_crossbow",
+   "miapi:weapons/modular_spear",
+   "miapi:weapons/modular_sword",
+   "miapi:weapons/modular_throwing_knife",
+   "miapi:weapons/modular_trident",
+   "nucleus:test"
+  ],
+  "damage_type": [
+   "miapi:armor_pierce_damage",
+   "miapi:true_damage"
+  ],
+  "injectors": [
+   "miapi:test"
+  ],
+  "loot_modifiers": [
+   "miapi:global_loot_modifier",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "miapi:blocks/modular_work_bench",
+   "miapi:diamond_weapon_modular_test",
+   "miapi:iron_weapon_modular_test",
+   "miapi:netherite_bow_modular_test",
+   "miapi:netherite_weapon_modular_test",
+   "miapi:stone_weapon_modular_test",
+   "miapi:wooden_weapon_modular_test"
+  ],
+  "miapi": [
+   "miapi:blueprint_disabled/test",
+   "miapi:blueprint_disabled/test2",
+   "miapi:inventory_type/backpack",
+   "miapi:inventory_type/food_pouch",
+   "miapi:inventory_type/item_quick_storage",
+   "miapi:inventory_type/quiver",
+   "miapi:key_binding/backpackbinding",
+   "miapi:materials/bone/bone",
+   "miapi:materials/crystal/amethyst",
+   "miapi:materials/crystal/diamond",
+   "miapi:materials/crystal/emerald",
+   "miapi:materials/crystal/lapis_lazuli",
+   "miapi:materials/crystal/nether_quartz",
+   "miapi:materials/custom/banner_material",
+   "miapi:materials/custom/book",
+   "miapi:materials/custom/chorus_fruit",
+   "miapi:materials/custom/conduit",
+   "miapi:materials/custom/elytra",
+   "miapi:materials/custom/end_crystal",
+   "miapi:materials/custom/ender_pearl",
+   "miapi:materials/custom/gunpowder",
+   "miapi:materials/custom/heart_of_the_sea",
+   "miapi:materials/custom/heavy_core",
+   "miapi:materials/custom/ice",
+   "miapi:materials/custom/lightning_rod",
+   "miapi:materials/custom/lingering_potion",
+   "miapi:materials/custom/nametag",
+   "miapi:materials/custom/nether_star",
+   "miapi:materials/custom/paper",
+   "miapi:materials/custom/rainbow/1",
+   "miapi:materials/custom/rainbow/2",
+   "miapi:materials/custom/rainbow/3",
+   "miapi:materials/custom/rainbow/4",
+   "miapi:materials/custom/rainbow/5",
+   "miapi:materials/custom/rainbow/flags/ace",
+   "miapi:materials/custom/rainbow/flags/bi",
+   "miapi:materials/custom/rainbow/flags/gay",
+   "miapi:materials/custom/rainbow/flags/lesbian",
+   "miapi:materials/custom/rainbow/flags/nb",
+   "miapi:materials/custom/rainbow/flags/trans",
+   "miapi:materials/custom/slime_ball",
+   "miapi:materials/custom/splash_potion",
+   "miapi:materials/custom/tnt",
+   "miapi:materials/fabric/kelp",
+   "miapi:materials/fabric/leather",
+   "miapi:materials/fabric/phantom_membrane",
+   "miapi:materials/fabric/rabbit_hide",
+   "miapi:materials/fabric/twisting_vine",
+   "miapi:materials/fabric/vine",
+   "miapi:materials/fabric/weeping_vine",
+   "miapi:materials/fabric/wool/black",
+   "miapi:materials/fabric/wool/blue",
+   "miapi:materials/fabric/wool/brown",
+   "miapi:materials/fabric/wool/cyan",
+   "miapi:materials/fabric/wool/gray",
+   "miapi:materials/fabric/wool/green",
+   "miapi:materials/fabric/wool/light_blue",
+   "miapi:materials/fabric/wool/light_gray",
+   "miapi:materials/fabric/wool/lime",
+   "miapi:materials/fabric/wool/magenta",
+   "miapi:materials/fabric/wool/orange",
+   "miapi:materials/fabric/wool/pink",
+   "miapi:materials/fabric/wool/purple",
+   "miapi:materials/fabric/wool/red",
+   "miapi:materials/fabric/wool/white",
+   "miapi:materials/fabric/wool/yellow",
+   "miapi:materials/fletching/feather",
+   "miapi:materials/flint/flint",
+   "miapi:materials/glass/black",
+   "miapi:materials/glass/blue",
+   "miapi:materials/glass/brown",
+   "miapi:materials/glass/cyan",
+   "miapi:materials/glass/glass",
+   "miapi:materials/glass/gray",
+   "miapi:materials/glass/green",
+   "miapi:materials/glass/light_blue",
+   "miapi:materials/glass/light_gray",
+   "miapi:materials/glass/lime",
+   "miapi:materials/glass/magenta",
+   "miapi:materials/glass/orange",
+   "miapi:materials/glass/pink",
+   "miapi:materials/glass/purple",
+   "miapi:materials/glass/red",
+   "miapi:materials/glass/tinted",
+   "miapi:materials/glass/white",
+   "miapi:materials/glass/yellow",
+   "miapi:materials/metal/copper",
+   "miapi:materials/metal/gold",
+   "miapi:materials/metal/iron",
+   "miapi:materials/metal/netherite",
+   "miapi:materials/rod/blaze_rod",
+   "miapi:materials/rod/breeze_rod",
+   "miapi:materials/rod/end_rod",
+   "miapi:materials/rope/string",
+   "miapi:materials/scute/armadillo",
+   "miapi:materials/scute/turtle",
+   "miapi:materials/stone/andesite",
+   "miapi:materials/stone/blackstone",
+   "miapi:materials/stone/calcite",
+   "miapi:materials/stone/crying_obsidian",
+   "miapi:materials/stone/deepslate",
+   "miapi:materials/stone/diorite",
+   "miapi:materials/stone/dripstone",
+   "miapi:materials/stone/end_stone",
+   "miapi:materials/stone/granite",
+   "miapi:materials/stone/magma",
+   "miapi:materials/stone/nether_brick",
+   "miapi:materials/stone/netherrack",
+   "miapi:materials/stone/obsidian",
+   "miapi:materials/stone/prismarine",
+   "miapi:materials/stone/purpur_block",
+   "miapi:materials/stone/red_sandstone",
+   "miapi:materials/stone/redstone",
+   "miapi:materials/stone/sandstone",
+   "miapi:materials/stone/sculk",
+   "miapi:materials/stone/stone",
+   "miapi:materials/wood/wood",
+   "miapi:modules/banner_item",
+   "miapi:modules/banner_item_alt",
+   "miapi:modules/banners/1x2",
+   "miapi:modules/banners/2x4",
+   "miapi:modules/banners/3x6",
+   "miapi:modules/banners/4x8",
+   "miapi:modules/banners/5x10",
+   "miapi:skins/tab/autumn",
+   "miapi:skins/tab/bday",
+   "miapi:skins/tab/game_breaker",
+   "miapi:skins/tab/pride",
+   "miapi:skins/tab/spring",
+   "miapi:skins/tab/summer",
+   "miapi:skins/tab/winter",
+   "miapi:wiki/output"
+  ],
+  "recipe": [
+   "minecraft:modular_work_bench",
+   "minecraft:netherite_convertion"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe",
+   "minecraft:mineable/sword"
+  ],
+  "tags/damage_type": [
+   "minecraft:bypasses_armor",
+   "minecraft:bypasses_effects",
+   "minecraft:bypasses_enchantments",
+   "minecraft:bypasses_resistance"
+  ],
+  "tags/entity_type": [
+   "minecraft:arrows"
+  ],
+  "tags/item": [
+   "c:armor",
+   "c:axes",
+   "c:boots",
+   "c:bows",
+   "c:chestplates",
+   "c:crossbows",
+   "c:helmets",
+   "c:hoes",
+   "c:knife",
+   "c:knifes",
+   "c:leggings",
+   "c:pickaxes",
+   "c:shovels",
+   "c:swords",
+   "c:tools",
+   "c:tools/knife",
+   "c:tools/knifes",
+   "miapi:armor",
+   "miapi:axes",
+   "miapi:boots",
+   "miapi:bows",
+   "miapi:chestplates",
+   "miapi:crossbows",
+   "miapi:forbidden",
+   "miapi:helmets",
+   "miapi:hoes",
+   "miapi:knifes",
+   "miapi:leggings",
+   "miapi:pickaxes",
+   "miapi:shovels",
+   "miapi:swords",
+   "miapi:tools",
+   "minecraft:armor",
+   "minecraft:arrows",
+   "minecraft:axes",
+   "minecraft:boots",
+   "minecraft:bows",
+   "minecraft:chestplates",
+   "minecraft:crossbows",
+   "minecraft:helmets",
+   "minecraft:hoes",
+   "minecraft:knifes",
+   "minecraft:leggings",
+   "minecraft:miapi_forbidden",
+   "minecraft:pickaxes",
+   "minecraft:shovels",
+   "minecraft:swords",
+   "minecraft:tools",
+   "minecraft:trimmable_armor"
+  ],
+  "weapon_attributes": [
+   "miapi:modular_axe",
+   "miapi:modular_bow",
+   "miapi:modular_crossbow",
+   "miapi:modular_dagger",
+   "miapi:modular_greatsword",
+   "miapi:modular_hammer",
+   "miapi:modular_hoe",
+   "miapi:modular_katana",
+   "miapi:modular_large_bow",
+   "miapi:modular_large_crossbow",
+   "miapi:modular_longsword",
+   "miapi:modular_mattock",
+   "miapi:modular_naginata",
+   "miapi:modular_pickaxe",
+   "miapi:modular_rapier",
+   "miapi:modular_scythe",
+   "miapi:modular_shovel",
+   "miapi:modular_sickle",
+   "miapi:modular_small_bow",
+   "miapi:modular_small_crossbow",
+   "miapi:modular_spear",
+   "miapi:modular_sword",
+   "miapi:modular_throwing_knife",
+   "miapi:modular_trident",
+   "miapi:twin_blade"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "miapi:modular_work_bench"
+   ],
+   "minecraft:mineable/sword": []
+  },
+  "tags/damage_type": {
+   "minecraft:bypasses_armor": [
+    "miapi:true_damage",
+    "miapi:armor_pierce_damage"
+   ],
+   "minecraft:bypasses_effects": [
+    "miapi:true_damage"
+   ],
+   "minecraft:bypasses_enchantments": [
+    "miapi:true_damage"
+   ],
+   "minecraft:bypasses_resistance": [
+    "miapi:true_damage"
+   ]
+  },
+  "tags/entity_type": {
+   "minecraft:arrows": [
+    "miapi:thrown_item"
+   ]
+  },
+  "tags/item": {
+   "c:armor": [
+    "miapi:modular_helmet",
+    "miapi:modular_chestplate",
+    "miapi:modular_elytra",
+    "miapi:modular_leggings",
+    "miapi:modular_boots"
+   ],
+   "c:axes": [
+    "miapi:modular_axe",
+    "miapi:modular_mattock"
+   ],
+   "c:boots": [
+    "miapi:modular_boots"
+   ],
+   "c:bows": [
+    "miapi:modular_bow",
+    "miapi:modular_small_bow",
+    "miapi:modular_large_bow"
+   ],
+   "c:chestplates": [
+    "miapi:modular_chestplate",
+    "miapi:modular_elytra"
+   ],
+   "c:crossbows": [
+    "miapi:modular_crossbow",
+    "miapi:modular_small_crossbow",
+    "miapi:modular_large_crossbow"
+   ],
+   "c:helmets": [
+    "miapi:modular_helmet"
+   ],
+   "c:hoes": [
+    "miapi:modular_hoe",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "c:knife": [
+    "miapi:modular_dagger",
+    "miapi:modular_throwing_knife"
+   ],
+   "c:knifes": [
+    "miapi:modular_dagger",
+    "miapi:modular_throwing_knife"
+   ],
+   "c:leggings": [
+    "miapi:modular_leggings"
+   ],
+   "c:pickaxes": [
+    "miapi:modular_pickaxe",
+    "miapi:modular_hammer",
+    "miapi:modular_mattock"
+   ],
+   "c:shovels": [
+    "miapi:modular_shovel"
+   ],
+   "c:swords": [
+    "miapi:modular_handle",
+    "miapi:modular_sword",
+    "miapi:modular_katana",
+    "miapi:modular_naginata",
+    "miapi:modular_greatsword",
+    "miapi:modular_dagger",
+    "miapi:modular_spear",
+    "miapi:modular_throwing_knife",
+    "miapi:modular_rapier",
+    "miapi:modular_longsword",
+    "miapi:modular_trident",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle",
+    "miapi:twin_blade"
+   ],
+   "c:tools": [
+    "miapi:modular_shovel",
+    "miapi:modular_pickaxe",
+    "miapi:modular_hammer",
+    "miapi:modular_axe",
+    "miapi:modular_hoe",
+    "miapi:modular_mattock",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "c:tools/knife": [
+    "miapi:modular_dagger",
+    "miapi:modular_throwing_knife"
+   ],
+   "c:tools/knifes": [
+    "miapi:modular_dagger",
+    "miapi:modular_throwing_knife"
+   ],
+   "miapi:armor": [
+    "miapi:modular_helmet",
+    "miapi:modular_chestplate",
+    "miapi:modular_elytra",
+    "miapi:modular_leggings",
+    "miapi:modular_boots"
+   ],
+   "miapi:axes": [
+    "miapi:modular_axe",
+    "miapi:modular_mattock"
+   ],
+   "miapi:boots": [
+    "miapi:modular_boots"
+   ],
+   "miapi:bows": [
+    "miapi:modular_bow",
+    "miapi:modular_small_bow",
+    "miapi:modular_large_bow"
+   ],
+   "miapi:chestplates": [
+    "miapi:modular_chestplate",
+    "miapi:modular_elytra"
+   ],
+   "miapi:crossbows": [
+    "miapi:modular_crossbow",
+    "miapi:modular_small_crossbow",
+    "miapi:modular_large_crossbow"
+   ],
+   "miapi:forbidden": [
+    "#minecraft:miapi_forbidden"
+   ],
+   "miapi:helmets": [
+    "miapi:modular_helmet"
+   ],
+   "miapi:hoes": [
+    "miapi:modular_hoe",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "miapi:knifes": [
+    "miapi:modular_dagger",
+    "miapi:modular_throwing_knife"
+   ],
+   "miapi:leggings": [
+    "miapi:modular_leggings"
+   ],
+   "miapi:pickaxes": [
+    "miapi:modular_pickaxe",
+    "miapi:modular_hammer",
+    "miapi:modular_mattock"
+   ],
+   "miapi:shovels": [
+    "miapi:modular_shovel"
+   ],
+   "miapi:swords": [
+    "miapi:modular_handle",
+    "miapi:modular_sword",
+    "miapi:modular_katana",
+    "miapi:modular_naginata",
+    "miapi:modular_greatsword",
+    "miapi:modular_dagger",
+    "miapi:modular_spear",
+    "miapi:modular_throwing_knife",
+    "miapi:modular_rapier",
+    "miapi:modular_longsword",
+    "miapi:modular_trident",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "miapi:tools": [
+    "miapi:modular_shovel",
+    "miapi:modular_pickaxe",
+    "miapi:modular_hammer",
+    "miapi:modular_axe",
+    "miapi:modular_hoe",
+    "miapi:modular_mattock",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "minecraft:armor": [
+    "miapi:modular_helmet",
+    "miapi:modular_chestplate",
+    "miapi:modular_elytra",
+    "miapi:modular_leggings",
+    "miapi:modular_boots"
+   ],
+   "minecraft:arrows": [
+    "miapi:modular_arrow"
+   ],
+   "minecraft:axes": [
+    "miapi:modular_axe",
+    "miapi:modular_mattock"
+   ],
+   "minecraft:boots": [
+    "miapi:modular_boots"
+   ],
+   "minecraft:bows": [
+    "miapi:modular_bow",
+    "miapi:modular_small_bow",
+    "miapi:modular_large_bow"
+   ],
+   "minecraft:chestplates": [
+    "miapi:modular_chestplate",
+    "miapi:modular_elytra"
+   ],
+   "minecraft:crossbows": [
+    "miapi:modular_crossbow",
+    "miapi:modular_small_crossbow",
+    "miapi:modular_large_crossbow"
+   ],
+   "minecraft:helmets": [
+    "miapi:modular_helmet"
+   ],
+   "minecraft:hoes": [
+    "miapi:modular_hoe",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "minecraft:knifes": [
+    "miapi:modular_dagger",
+    "miapi:modular_throwing_knife"
+   ],
+   "minecraft:leggings": [
+    "miapi:modular_leggings"
+   ],
+   "minecraft:miapi_forbidden": [],
+   "minecraft:pickaxes": [
+    "miapi:modular_pickaxe",
+    "miapi:modular_hammer",
+    "miapi:modular_mattock"
+   ],
+   "minecraft:shovels": [
+    "miapi:modular_shovel"
+   ],
+   "minecraft:swords": [
+    "miapi:modular_handle",
+    "miapi:modular_sword",
+    "miapi:twin_blade",
+    "miapi:modular_katana",
+    "miapi:modular_naginata",
+    "miapi:modular_greatsword",
+    "miapi:modular_dagger",
+    "miapi:modular_spear",
+    "miapi:modular_throwing_knife",
+    "miapi:modular_rapier",
+    "miapi:modular_longsword",
+    "miapi:modular_trident",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "minecraft:tools": [
+    "miapi:modular_shovel",
+    "miapi:modular_pickaxe",
+    "miapi:modular_hammer",
+    "miapi:modular_axe",
+    "miapi:modular_hoe",
+    "miapi:modular_mattock",
+    "miapi:modular_scythe",
+    "miapi:modular_sickle"
+   ],
+   "minecraft:trimmable_armor": [
+    "miapi:modular_helmet",
+    "miapi:modular_chestplate",
+    "miapi:modular_elytra",
+    "miapi:modular_leggings",
+    "miapi:modular_boots"
+   ]
+  }
+ },
+ "recipe_types": {
+  "miapi:material_smithing": 1,
+  "minecraft:crafting_shaped": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

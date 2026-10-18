@@ -1,0 +1,646 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Artifacts",
+ "file": "artifacts-neoforge-13.2.5.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "9079bc8a22c237881b22b38027bbab2a8a2e685a1f49c1e1e0e5796f3e0a5509a130d73753c7b2980f12e4f00845f8e8c967ee969f1eadcd52139c2780afe09d",
+ "mods": [
+  {
+   "modid": "expandability",
+   "name": "ExpandAbility",
+   "version": "12.0.0",
+   "jar": "expandability-neoforge-12.0.0.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[20,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.20.6,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "artifacts",
+   "name": "Artifacts",
+   "version": "13.2.5",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.133-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "1.21.1",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "expandability-neoforge-12.0.0.jar"
+ ],
+ "namespaces": [
+  "accessories",
+  "artifacts",
+  "c",
+  "curios",
+  "hardcorerevival",
+  "minecraft",
+  "neoforge",
+  "origins",
+  "trinkets"
+ ],
+ "effects": {
+  "artifacts:magnetism": "Magnetism"
+ },
+ "entities": {
+  "artifacts:mimic": "Mimic"
+ },
+ "items": {
+  "artifacts:anglers_hat": "Angler's Hat",
+  "artifacts:antidote_vessel": "Antidote Vessel",
+  "artifacts:aqua_dashers": "Aqua-Dashers",
+  "artifacts:bunny_hoppers": "Bunny Hoppers",
+  "artifacts:charm_of_shrinking": "Charm of Shrinking",
+  "artifacts:charm_of_sinking": "Charm of Sinking",
+  "artifacts:chorus_totem": "Chorus Totem",
+  "artifacts:cloud_in_a_bottle": "Cloud in a Bottle",
+  "artifacts:cowboy_hat": "Cowboy Hat",
+  "artifacts:cross_necklace": "Cross Necklace",
+  "artifacts:crystal_heart": "Crystal Heart",
+  "artifacts:digging_claws": "Digging Claws",
+  "artifacts:eternal_steak": "Eternal Steak",
+  "artifacts:everlasting_beef": "Everlasting Beef",
+  "artifacts:feral_claws": "Feral Claws",
+  "artifacts:fire_gauntlet": "Fire Gauntlet",
+  "artifacts:flame_pendant": "Flame Pendant",
+  "artifacts:flippers": "Flippers",
+  "artifacts:golden_hook": "Golden Hook",
+  "artifacts:helium_flamingo": "Helium Flamingo",
+  "artifacts:kitty_slippers": "Kitty Slippers",
+  "artifacts:lucky_scarf": "Lucky Scarf",
+  "artifacts:mimic_spawn_egg": "Mimic Spawn Egg",
+  "artifacts:night_vision_goggles": "Night Vision Goggles",
+  "artifacts:novelty_drinking_hat": "Novelty Drinking Hat",
+  "artifacts:obsidian_skull": "Obsidian Skull",
+  "artifacts:onion_ring": "Onion Ring",
+  "artifacts:panic_necklace": "Panic Necklace",
+  "artifacts:pickaxe_heater": "Pickaxe Heater",
+  "artifacts:plastic_drinking_hat": "Plastic Drinking Hat",
+  "artifacts:pocket_piston": "Pocket Piston",
+  "artifacts:power_glove": "Power Glove",
+  "artifacts:rooted_boots": "Rooted Boots",
+  "artifacts:running_shoes": "Running Shoes",
+  "artifacts:scarf_of_invisibility": "Scarf of Invisibility",
+  "artifacts:shock_pendant": "Shock Pendant",
+  "artifacts:snorkel": "Snorkel",
+  "artifacts:snowshoes": "Snowshoes",
+  "artifacts:steadfast_spikes": "Steadfast Spikes",
+  "artifacts:strider_shoes": "Strider Shoes",
+  "artifacts:superstitious_hat": "Superstitious Hat",
+  "artifacts:thorn_pendant": "Thorn Pendant",
+  "artifacts:umbrella": "Umbrella",
+  "artifacts:umbrella_blocking": "",
+  "artifacts:umbrella_gui": "",
+  "artifacts:umbrella_held_blocking": "",
+  "artifacts:umbrella_held_idle": "",
+  "artifacts:umbrella_idle": "",
+  "artifacts:universal_attractor": "Universal Attractor",
+  "artifacts:vampiric_glove": "Vampiric Glove",
+  "artifacts:villager_hat": "Villager Hat",
+  "artifacts:warp_drive": "Warp Drive",
+  "artifacts:whoopee_cushion": "Whoopee Cushion",
+  "artifacts:withered_bracelet": "Withered Bracelet"
+ },
+ "data": {
+  "accessories": [
+   "artifacts:entity/slots"
+  ],
+  "curios": [
+   "artifacts:entities/slots",
+   "artifacts:slots/belt",
+   "artifacts:slots/feet",
+   "artifacts:slots/hands",
+   "artifacts:slots/head",
+   "artifacts:slots/necklace"
+  ],
+  "data_maps/game_event": [
+   "neoforge:vibration_frequencies"
+  ],
+  "entities": [
+   "trinkets:default"
+  ],
+  "loot_modifiers": [
+   "artifacts:inject/archaeology/desert_pyramid",
+   "artifacts:inject/archaeology/desert_well",
+   "artifacts:inject/archaeology/ocean_ruin_cold",
+   "artifacts:inject/archaeology/ocean_ruin_warm",
+   "artifacts:inject/archaeology/trail_ruins_rare",
+   "artifacts:inject/chests/abandoned_mineshaft",
+   "artifacts:inject/chests/ancient_city",
+   "artifacts:inject/chests/ancient_city_ice_box",
+   "artifacts:inject/chests/bastion_hoglin_stable",
+   "artifacts:inject/chests/bastion_treasure",
+   "artifacts:inject/chests/buried_treasure",
+   "artifacts:inject/chests/desert_pyramid",
+   "artifacts:inject/chests/end_city_treasure",
+   "artifacts:inject/chests/igloo_chest",
+   "artifacts:inject/chests/jungle_temple",
+   "artifacts:inject/chests/nether_bridge",
+   "artifacts:inject/chests/pillager_outpost",
+   "artifacts:inject/chests/ruined_portal",
+   "artifacts:inject/chests/shipwreck_treasure",
+   "artifacts:inject/chests/simple_dungeon",
+   "artifacts:inject/chests/spawn_bonus_chest",
+   "artifacts:inject/chests/stronghold_corridor",
+   "artifacts:inject/chests/underwater_ruin_big",
+   "artifacts:inject/chests/village/village_armorer",
+   "artifacts:inject/chests/village/village_butcher",
+   "artifacts:inject/chests/village/village_desert_house",
+   "artifacts:inject/chests/village/village_plains_house",
+   "artifacts:inject/chests/village/village_savanna_house",
+   "artifacts:inject/chests/village/village_snowy_house",
+   "artifacts:inject/chests/village/village_taiga_house",
+   "artifacts:inject/chests/village/village_tannery",
+   "artifacts:inject/chests/village/village_temple",
+   "artifacts:inject/chests/village/village_toolsmith",
+   "artifacts:inject/chests/village/village_weaponsmith",
+   "artifacts:inject/chests/woodland_mansion",
+   "artifacts:inject/entities/cow",
+   "artifacts:inject/entities/mooshroom",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "artifacts:artifact",
+   "artifacts:chests/campsite_barrel",
+   "artifacts:chests/campsite_barrel/cobblestone",
+   "artifacts:chests/campsite_barrel/cobwebs",
+   "artifacts:chests/campsite_barrel/crops",
+   "artifacts:chests/campsite_barrel/food",
+   "artifacts:chests/campsite_barrel/gems",
+   "artifacts:chests/campsite_barrel/ingots",
+   "artifacts:chests/campsite_barrel/minecarts",
+   "artifacts:chests/campsite_barrel/ores",
+   "artifacts:chests/campsite_barrel/rails",
+   "artifacts:chests/campsite_barrel/tnt",
+   "artifacts:chests/campsite_chest",
+   "artifacts:entities/mimic",
+   "artifacts:entity_equipment/bogged",
+   "artifacts:entity_equipment/drowned",
+   "artifacts:entity_equipment/ghast",
+   "artifacts:entity_equipment/husk",
+   "artifacts:entity_equipment/piglin",
+   "artifacts:entity_equipment/piglin_brute",
+   "artifacts:entity_equipment/skeleton",
+   "artifacts:entity_equipment/stray",
+   "artifacts:entity_equipment/wither_skeleton",
+   "artifacts:entity_equipment/zombie",
+   "artifacts:entity_equipment/zombified_piglin",
+   "artifacts:inject/archaeology/desert_pyramid",
+   "artifacts:inject/archaeology/desert_well",
+   "artifacts:inject/archaeology/ocean_ruin_cold",
+   "artifacts:inject/archaeology/ocean_ruin_warm",
+   "artifacts:inject/archaeology/trail_ruins_rare",
+   "artifacts:inject/chests/abandoned_mineshaft",
+   "artifacts:inject/chests/ancient_city",
+   "artifacts:inject/chests/ancient_city_ice_box",
+   "artifacts:inject/chests/bastion_hoglin_stable",
+   "artifacts:inject/chests/bastion_treasure",
+   "artifacts:inject/chests/buried_treasure",
+   "artifacts:inject/chests/desert_pyramid",
+   "artifacts:inject/chests/end_city_treasure",
+   "artifacts:inject/chests/igloo_chest",
+   "artifacts:inject/chests/jungle_temple",
+   "artifacts:inject/chests/nether_bridge",
+   "artifacts:inject/chests/pillager_outpost",
+   "artifacts:inject/chests/ruined_portal",
+   "artifacts:inject/chests/shipwreck_treasure",
+   "artifacts:inject/chests/simple_dungeon",
+   "artifacts:inject/chests/spawn_bonus_chest",
+   "artifacts:inject/chests/stronghold_corridor",
+   "artifacts:inject/chests/underwater_ruin_big",
+   "artifacts:inject/chests/village/village_armorer",
+   "artifacts:inject/chests/village/village_butcher",
+   "artifacts:inject/chests/village/village_desert_house",
+   "artifacts:inject/chests/village/village_plains_house",
+   "artifacts:inject/chests/village/village_savanna_house",
+   "artifacts:inject/chests/village/village_snowy_house",
+   "artifacts:inject/chests/village/village_taiga_house",
+   "artifacts:inject/chests/village/village_tannery",
+   "artifacts:inject/chests/village/village_temple",
+   "artifacts:inject/chests/village/village_toolsmith",
+   "artifacts:inject/chests/village/village_weaponsmith",
+   "artifacts:inject/chests/woodland_mansion",
+   "artifacts:inject/entities/cow",
+   "artifacts:inject/entities/mooshroom",
+   "artifacts:items/anglers_hat",
+   "artifacts:items/antidote_vessel",
+   "artifacts:items/aqua_dashers",
+   "artifacts:items/bunny_hoppers",
+   "artifacts:items/charm_of_shrinking",
+   "artifacts:items/charm_of_sinking",
+   "artifacts:items/chorus_totem",
+   "artifacts:items/cloud_in_a_bottle",
+   "artifacts:items/cowboy_hat",
+   "artifacts:items/cross_necklace",
+   "artifacts:items/crystal_heart",
+   "artifacts:items/digging_claws",
+   "artifacts:items/drinking_hat",
+   "artifacts:items/everlasting_beef",
+   "artifacts:items/feral_claws",
+   "artifacts:items/fire_gauntlet",
+   "artifacts:items/flame_pendant",
+   "artifacts:items/flippers",
+   "artifacts:items/golden_hook",
+   "artifacts:items/helium_flamingo",
+   "artifacts:items/kitty_slippers",
+   "artifacts:items/lucky_scarf",
+   "artifacts:items/night_vision_goggles",
+   "artifacts:items/obsidian_skull",
+   "artifacts:items/onion_ring",
+   "artifacts:items/panic_necklace",
+   "artifacts:items/pickaxe_heater",
+   "artifacts:items/pocket_piston",
+   "artifacts:items/power_glove",
+   "artifacts:items/rooted_boots",
+   "artifacts:items/running_shoes",
+   "artifacts:items/scarf_of_invisibility",
+   "artifacts:items/shock_pendant",
+   "artifacts:items/snorkel",
+   "artifacts:items/snowshoes",
+   "artifacts:items/steadfast_spikes",
+   "artifacts:items/strider_shoes",
+   "artifacts:items/superstitious_hat",
+   "artifacts:items/thorn_pendant",
+   "artifacts:items/umbrella",
+   "artifacts:items/universal_attractor",
+   "artifacts:items/vampiric_glove",
+   "artifacts:items/villager_hat",
+   "artifacts:items/warp_drive",
+   "artifacts:items/whoopee_cushion",
+   "artifacts:items/withered_bracelet"
+  ],
+  "neoforge/biome_modifier": [
+   "artifacts:add_campsite"
+  ],
+  "recipe": [
+   "artifacts:eternal_steak_campfire",
+   "artifacts:eternal_steak_furnace",
+   "artifacts:eternal_steak_smoker"
+  ],
+  "tags/block": [
+   "artifacts:campsite_chests",
+   "artifacts:mineable/digging_claws",
+   "artifacts:rooted_boots_grass",
+   "artifacts:snow_layers"
+  ],
+  "tags/damage_type": [
+   "artifacts:is_melee"
+  ],
+  "tags/entity_type": [
+   "artifacts:creepers",
+   "c:capturing_not_supported"
+  ],
+  "tags/game_event": [
+   "minecraft:vibrations",
+   "minecraft:warden_can_listen"
+  ],
+  "tags/item": [
+   "accessories:belt",
+   "accessories:hand",
+   "accessories:hat",
+   "accessories:necklace",
+   "accessories:shoes",
+   "artifacts:artifacts",
+   "artifacts:slot/all",
+   "artifacts:slot/belt",
+   "artifacts:slot/face",
+   "artifacts:slot/feet",
+   "artifacts:slot/hands",
+   "artifacts:slot/head",
+   "artifacts:slot/necklace",
+   "curios:belt",
+   "curios:curio",
+   "curios:feet",
+   "curios:hands",
+   "curios:head",
+   "curios:necklace",
+   "hardcorerevival:passthrough_death_when_held",
+   "minecraft:piglin_loved",
+   "origins:meat",
+   "origins:shields",
+   "trinkets:all",
+   "trinkets:chest/necklace",
+   "trinkets:feet/shoes",
+   "trinkets:hand/glove",
+   "trinkets:head/hat",
+   "trinkets:legs/belt",
+   "trinkets:offhand/glove"
+  ],
+  "tags/mob_effect": [
+   "artifacts:antidote_vessel_cancellable"
+  ],
+  "worldgen/configured_feature": [
+   "artifacts:campsite",
+   "artifacts:minimalist_campsite"
+  ],
+  "worldgen/placed_feature": [
+   "artifacts:underground_campsite",
+   "artifacts:underground_minimalist_campsite"
+  ]
+ },
+ "data_counts": {
+  "advancement": 3
+ },
+ "tags": {
+  "tags/block": {
+   "artifacts:campsite_chests": [
+    "minecraft:chest",
+    "quark:oak_chest?",
+    "quark:spruce_chest?",
+    "quark:birch_chest?",
+    "quark:cherry_chest?",
+    "quark:jungle_chest?",
+    "quark:acacia_chest?",
+    "quark:dark_oak_chest?",
+    "quark:warped_chest?",
+    "quark:crimson_chest?",
+    "quark:azalea_chest?",
+    "quark:blossom_chest?",
+    "quark:mangrove_chest?",
+    "quark:bamboo_chest?"
+   ],
+   "artifacts:mineable/digging_claws": [
+    "#minecraft:mineable/pickaxe",
+    "#minecraft:mineable/shovel",
+    "#minecraft:mineable/axe",
+    "#minecraft:mineable/hoe"
+   ],
+   "artifacts:rooted_boots_grass": [
+    "minecraft:grass_block",
+    "minecraft:moss_block",
+    "minecraft:moss_carpet",
+    "minecraft:dirt_path",
+    "minecraft:podzol"
+   ],
+   "artifacts:snow_layers": [
+    "minecraft:snow"
+   ]
+  },
+  "tags/damage_type": {
+   "artifacts:is_melee": [
+    "minecraft:mob_attack",
+    "minecraft:mob_attack_no_aggro",
+    "#minecraft:is_player_attack"
+   ]
+  },
+  "tags/entity_type": {
+   "artifacts:creepers": [
+    "minecraft:creeper",
+    "creeperoverhaul:jungle_creeper?",
+    "creeperoverhaul:bamboo_creeper?",
+    "creeperoverhaul:desert_creeper?",
+    "creeperoverhaul:badlands_creeper?",
+    "creeperoverhaul:hills_creeper?",
+    "creeperoverhaul:savannah_creeper?",
+    "creeperoverhaul:mushroom_creeper?",
+    "creeperoverhaul:swamp_creeper?",
+    "creeperoverhaul:dripstone_creeper?",
+    "creeperoverhaul:cave_creeper?",
+    "creeperoverhaul:dark_oak_creeper?",
+    "creeperoverhaul:spruce_creeper?",
+    "creeperoverhaul:beach_creeper?",
+    "creeperoverhaul:snowy_creeper?"
+   ],
+   "c:capturing_not_supported": [
+    "artifacts:mimic"
+   ]
+  },
+  "tags/game_event": {
+   "minecraft:vibrations": [
+    "artifacts:fart"
+   ],
+   "minecraft:warden_can_listen": [
+    "artifacts:fart"
+   ]
+  },
+  "tags/item": {
+   "accessories:belt": [
+    "#artifacts:slot/belt"
+   ],
+   "accessories:hand": [
+    "#artifacts:slot/hands"
+   ],
+   "accessories:hat": [
+    "#artifacts:slot/head",
+    "#artifacts:slot/face",
+    "#artifacts:slot/all"
+   ],
+   "accessories:necklace": [
+    "#artifacts:slot/necklace"
+   ],
+   "accessories:shoes": [
+    "#artifacts:slot/feet"
+   ],
+   "artifacts:artifacts": [
+    "artifacts:umbrella",
+    "artifacts:everlasting_beef",
+    "artifacts:eternal_steak",
+    "artifacts:plastic_drinking_hat",
+    "artifacts:novelty_drinking_hat",
+    "artifacts:snorkel",
+    "artifacts:night_vision_goggles",
+    "artifacts:villager_hat",
+    "artifacts:superstitious_hat",
+    "artifacts:cowboy_hat",
+    "artifacts:anglers_hat",
+    "artifacts:lucky_scarf",
+    "artifacts:scarf_of_invisibility",
+    "artifacts:cross_necklace",
+    "artifacts:panic_necklace",
+    "artifacts:shock_pendant",
+    "artifacts:flame_pendant",
+    "artifacts:thorn_pendant",
+    "artifacts:charm_of_sinking",
+    "artifacts:charm_of_shrinking",
+    "artifacts:cloud_in_a_bottle",
+    "artifacts:obsidian_skull",
+    "artifacts:antidote_vessel",
+    "artifacts:universal_attractor",
+    "artifacts:crystal_heart",
+    "artifacts:helium_flamingo",
+    "artifacts:chorus_totem",
+    "artifacts:warp_drive",
+    "artifacts:digging_claws",
+    "artifacts:feral_claws",
+    "artifacts:power_glove",
+    "artifacts:fire_gauntlet",
+    "artifacts:pocket_piston",
+    "artifacts:vampiric_glove",
+    "artifacts:golden_hook",
+    "artifacts:onion_ring",
+    "artifacts:pickaxe_heater",
+    "artifacts:withered_bracelet",
+    "artifacts:aqua_dashers",
+    "artifacts:bunny_hoppers",
+    "artifacts:kitty_slippers",
+    "artifacts:running_shoes",
+    "artifacts:snowshoes",
+    "artifacts:steadfast_spikes",
+    "artifacts:flippers",
+    "artifacts:rooted_boots",
+    "artifacts:strider_shoes",
+    "artifacts:whoopee_cushion"
+   ],
+   "artifacts:slot/all": [
+    "artifacts:whoopee_cushion"
+   ],
+   "artifacts:slot/belt": [
+    "artifacts:cloud_in_a_bottle",
+    "artifacts:obsidian_skull",
+    "artifacts:antidote_vessel",
+    "artifacts:universal_attractor",
+    "artifacts:crystal_heart",
+    "artifacts:helium_flamingo",
+    "artifacts:chorus_totem",
+    "artifacts:warp_drive"
+   ],
+   "artifacts:slot/face": [
+    "artifacts:snorkel",
+    "artifacts:night_vision_goggles"
+   ],
+   "artifacts:slot/feet": [
+    "artifacts:aqua_dashers",
+    "artifacts:bunny_hoppers",
+    "artifacts:kitty_slippers",
+    "artifacts:running_shoes",
+    "artifacts:snowshoes",
+    "artifacts:steadfast_spikes",
+    "artifacts:flippers",
+    "artifacts:rooted_boots",
+    "artifacts:strider_shoes"
+   ],
+   "artifacts:slot/hands": [
+    "artifacts:digging_claws",
+    "artifacts:feral_claws",
+    "artifacts:power_glove",
+    "artifacts:fire_gauntlet",
+    "artifacts:pocket_piston",
+    "artifacts:vampiric_glove",
+    "artifacts:golden_hook",
+    "artifacts:onion_ring",
+    "artifacts:pickaxe_heater",
+    "artifacts:withered_bracelet"
+   ],
+   "artifacts:slot/head": [
+    "artifacts:plastic_drinking_hat",
+    "artifacts:novelty_drinking_hat",
+    "artifacts:villager_hat",
+    "artifacts:superstitious_hat",
+    "artifacts:cowboy_hat",
+    "artifacts:anglers_hat"
+   ],
+   "artifacts:slot/necklace": [
+    "artifacts:lucky_scarf",
+    "artifacts:scarf_of_invisibility",
+    "artifacts:cross_necklace",
+    "artifacts:panic_necklace",
+    "artifacts:shock_pendant",
+    "artifacts:flame_pendant",
+    "artifacts:thorn_pendant",
+    "artifacts:charm_of_sinking",
+    "artifacts:charm_of_shrinking"
+   ],
+   "curios:belt": [
+    "#artifacts:slot/belt"
+   ],
+   "curios:curio": [
+    "#artifacts:slot/all"
+   ],
+   "curios:feet": [
+    "#artifacts:slot/feet"
+   ],
+   "curios:hands": [
+    "#artifacts:slot/hands"
+   ],
+   "curios:head": [
+    "#artifacts:slot/head",
+    "#artifacts:slot/face"
+   ],
+   "curios:necklace": [
+    "#artifacts:slot/necklace"
+   ],
+   "hardcorerevival:passthrough_death_when_held": [
+    "artifacts:chorus_totem"
+   ],
+   "minecraft:piglin_loved": [
+    "artifacts:golden_hook",
+    "artifacts:cross_necklace",
+    "artifacts:antidote_vessel",
+    "artifacts:universal_attractor"
+   ],
+   "origins:meat": [
+    "artifacts:everlasting_beef",
+    "artifacts:eternal_steak"
+   ],
+   "origins:shields": [
+    "artifacts:umbrella"
+   ],
+   "trinkets:all": [
+    "#artifacts:slot/all"
+   ],
+   "trinkets:chest/necklace": [
+    "#artifacts:slot/necklace"
+   ],
+   "trinkets:feet/shoes": [
+    "#artifacts:slot/feet"
+   ],
+   "trinkets:hand/glove": [
+    "#artifacts:slot/hands"
+   ],
+   "trinkets:head/hat": [
+    "#artifacts:slot/head",
+    "#artifacts:slot/face"
+   ],
+   "trinkets:legs/belt": [
+    "#artifacts:slot/belt"
+   ],
+   "trinkets:offhand/glove": [
+    "#artifacts:slot/hands"
+   ]
+  },
+  "tags/mob_effect": {
+   "artifacts:antidote_vessel_cancellable": [
+    "minecraft:blindness",
+    "minecraft:nausea",
+    "minecraft:mining_fatigue",
+    "minecraft:hunger",
+    "minecraft:levitation",
+    "minecraft:slowness",
+    "minecraft:poison",
+    "minecraft:weakness",
+    "minecraft:wither"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:campfire_cooking": 1,
+  "minecraft:smelting": 1,
+  "minecraft:smoking": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

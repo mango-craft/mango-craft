@@ -1,0 +1,4656 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Forgified Fabric API",
+ "file": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "2b44ecd839544e3668a02f8de86433d507417d068dcafeee7f698744fc2b12fd888a1bba509da57c8e2884d01dbaf344f49bbac0f22cdae599507356ed0cbe30",
+ "mods": [
+  {
+   "modid": "fabric_api",
+   "name": "Forgified Fabric API",
+   "version": "0.116.15+2.3.5+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.169,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "forgified_fabric_api",
+   "name": "Forgified Fabric API (dummy)",
+   "version": "0.116.15+2.3.5+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.169,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_api_base",
+   "name": "Forgified Fabric API Base",
+   "version": "0.4.42+d1308ded19",
+   "jar": "fabric-api-base-0.4.42+d1308ded19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_api_lookup_api_v1",
+   "name": "Forgified Fabric API Lookup API (v1)",
+   "version": "1.6.72+6244b11119",
+   "jar": "fabric-api-lookup-api-v1-1.6.72+6244b11119.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_lifecycle_events_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_biome_api_v1",
+   "name": "Forgified Fabric Biome API (v1)",
+   "version": "13.0.31+1e62d33c19",
+   "jar": "fabric-biome-api-v1-13.0.31+1e62d33c19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_block_api_v1",
+   "name": "Forgified Fabric Block API (v1)",
+   "version": "1.1.0+b0c22bb819",
+   "jar": "fabric-block-api-v1-1.1.0+b0c22bb819.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_block_view_api_v2",
+   "name": "Forgified Fabric BlockView API (v2)",
+   "version": "1.0.11+e9036fd419",
+   "jar": "fabric-block-view-api-v2-1.0.11+e9036fd419.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_blockrenderlayer_v1",
+   "name": "Forgified Fabric BlockRenderLayer Registration (v1)",
+   "version": "1.1.52+c290471319",
+   "jar": "fabric-blockrenderlayer-v1-1.1.52+c290471319.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_client_tags_api_v1",
+   "name": "Forgified Fabric Client Tags",
+   "version": "1.2.0+5adff2d719",
+   "jar": "fabric-client-tags-api-v1-1.2.0+5adff2d719.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_command_api_v2",
+   "name": "Forgified Fabric Command API (v2)",
+   "version": "2.2.28+36d727be19",
+   "jar": "fabric-command-api-v2-2.2.28+36d727be19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_content_registries_v0",
+   "name": "Forgified Fabric Content Registries (v0)",
+   "version": "8.0.19+5e0d320019",
+   "jar": "fabric-content-registries-v0-8.0.19+5e0d320019.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_lifecycle_events_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_resource_loader_v0",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_convention_tags_v1",
+   "name": "Forgified Fabric Convention Tags",
+   "version": "2.1.7+7f945d5b19",
+   "jar": "fabric-convention-tags-v1-2.1.7+7f945d5b19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_convention_tags_v2",
+   "name": "Forgified Fabric Convention Tags (v2)",
+   "version": "2.12.0+75d3639619",
+   "jar": "fabric-convention-tags-v2-2.12.0+75d3639619.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_lifecycle_events_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_data_attachment_api_v1",
+   "name": "Forgified Fabric Data Attachment API (v1)",
+   "version": "1.4.7+26d408aa19",
+   "jar": "fabric-data-attachment-api-v1-1.4.7+26d408aa19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_entity_events_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_object_builder_api_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_networking_api_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_data_generation_api_v1",
+   "name": "Forgified Fabric Data Generation API (v1)",
+   "version": "20.3.0+3e2bcb4b19",
+   "jar": "fabric-data-generation-api-v1-20.3.0+3e2bcb4b19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_entity_events_v1",
+   "name": "Forgified Fabric Entity Events (v1)",
+   "version": "1.8.0+e46a02ca19",
+   "jar": "fabric-entity-events-v1-1.8.0+e46a02ca19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_events_interaction_v0",
+   "name": "Forgified Fabric Events Interaction (v0)",
+   "version": "0.7.14+057f5afd19",
+   "jar": "fabric-events-interaction-v0-0.7.14+057f5afd19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_networking_api_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_game_rule_api_v1",
+   "name": "Forgified Fabric Game Rule API (v1)",
+   "version": "1.0.53+36d727be19",
+   "jar": "fabric-game-rule-api-v1-1.0.53+36d727be19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_gametest_api_v1",
+   "name": "Forgified Fabric Game Test API (v1)",
+   "version": "2.0.5+29f188ce19",
+   "jar": "fabric-gametest-api-v1-2.0.5+29f188ce19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_resource_loader_v0",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_item_api_v1",
+   "name": "Forgified Fabric Item API (v1)",
+   "version": "11.3.0+b24c12f719",
+   "jar": "fabric-item-api-v1-11.3.0+b24c12f719.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_item_group_api_v1",
+   "name": "Forgified Fabric Item Group API (v1)",
+   "version": "4.1.7+e324903319",
+   "jar": "fabric-item-group-api-v1-4.1.7+e324903319.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_resource_loader_v0",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_key_binding_api_v1",
+   "name": "Forgified Fabric Key Binding API (v1)",
+   "version": "1.0.47+62cc7ce119",
+   "jar": "fabric-key-binding-api-v1-1.0.47+62cc7ce119.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_lifecycle_events_v1",
+   "name": "Forgified Fabric Lifecycle Events (v1)",
+   "version": "2.6.0+e40d8add19",
+   "jar": "fabric-lifecycle-events-v1-2.6.0+e40d8add19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_loot_api_v2",
+   "name": "Forgified Fabric Loot API (v2)",
+   "version": "3.0.15+a3ee712d19",
+   "jar": "fabric-loot-api-v2-3.0.15+a3ee712d19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_resource_loader_v0",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_loot_api_v3",
+   "name": "Forgified Fabric Loot API (v3)",
+   "version": "1.0.3+333dfad919",
+   "jar": "fabric-loot-api-v3-1.0.3+333dfad919.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_resource_loader_v0",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_message_api_v1",
+   "name": "Forgified Fabric Message API (v1)",
+   "version": "6.0.14+6a754fce19",
+   "jar": "fabric-message-api-v1-6.0.14+6a754fce19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_model_loading_api_v1",
+   "name": "Forgified Fabric Model Loading API (v1)",
+   "version": "2.1.0+6e8f52c719",
+   "jar": "fabric-model-loading-api-v1-2.1.0+6e8f52c719.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_networking_api_v1",
+   "name": "Forgified Fabric Networking API (v1)",
+   "version": "4.3.1+7e3d421f19",
+   "jar": "fabric-networking-api-v1-4.3.1+7e3d421f19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_object_builder_api_v1",
+   "name": "Forgified Fabric Object Builder API (v1)",
+   "version": "15.2.1+cc242efd19",
+   "jar": "fabric-object-builder-api-v1-15.2.1+cc242efd19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_particles_v1",
+   "name": "Forgified Fabric Particles (v1)",
+   "version": "4.0.2+824f924c19",
+   "jar": "fabric-particles-v1-4.0.2+824f924c19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_recipe_api_v1",
+   "name": "Forgified Fabric Recipe API (v1)",
+   "version": "5.0.16+59440bcc19",
+   "jar": "fabric-recipe-api-v1-5.0.16+59440bcc19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_registry_sync_v0",
+   "name": "Forgified Fabric Registry Sync (v0)",
+   "version": "5.3.2+f9aace1619",
+   "jar": "fabric-registry-sync-v0-5.3.2+f9aace1619.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_renderer_api_v1",
+   "name": "Forgified Fabric Renderer API (v1)",
+   "version": "3.4.1+9125b6dc19",
+   "jar": "fabric-renderer-api-v1-3.4.1+9125b6dc19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_renderer_indigo",
+   "name": "Forgified Fabric Renderer - Indigo",
+   "version": "1.7.1+9125b6dc19",
+   "jar": "fabric-renderer-indigo-1.7.1+9125b6dc19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_renderer_api_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_renderer_registries_v1",
+   "name": "Forgified Fabric Renderer Registries (v1)",
+   "version": "3.2.69+df3654b319",
+   "jar": "fabric-renderer-registries-v1-3.2.69+df3654b319.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_rendering_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_rendering_data_attachment_v1",
+   "name": "Forgified Fabric Rendering Data Attachment (v1)",
+   "version": "0.3.49+73761d2e19",
+   "jar": "fabric-rendering-data-attachment-v1-0.3.49+73761d2e19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_block_view_api_v2",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_rendering_fluids_v1",
+   "name": "Forgified Fabric Rendering Fluids (v1)",
+   "version": "3.1.6+ddc51b4719",
+   "jar": "fabric-rendering-fluids-v1-3.1.6+ddc51b4719.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_rendering_v1",
+   "name": "Forgified Fabric Rendering (v1)",
+   "version": "5.1.0+1a09bd5a19",
+   "jar": "fabric-rendering-v1-5.1.0+1a09bd5a19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_resource_conditions_api_v1",
+   "name": "Forgified Fabric Resource Conditions API (v1)",
+   "version": "4.3.0+5bdd099819",
+   "jar": "fabric-resource-conditions-api-v1-4.3.0+5bdd099819.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_resource_loader_v0",
+   "name": "Forgified Fabric Resource Loader (v0)",
+   "version": "1.3.1+4ea8954419",
+   "jar": "fabric-resource-loader-v0-1.3.1+4ea8954419.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_screen_api_v1",
+   "name": "Forgified Fabric Screen API (v1)",
+   "version": "2.0.26+9991ca2f19",
+   "jar": "fabric-screen-api-v1-2.0.26+9991ca2f19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_screen_handler_api_v1",
+   "name": "Forgified Fabric Screen Handler API (v1)",
+   "version": "1.3.91+8dbc56dd19",
+   "jar": "fabric-screen-handler-api-v1-1.3.91+8dbc56dd19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_sound_api_v1",
+   "name": "Forgified Fabric Sound API (v1)",
+   "version": "1.0.23+10b84f8419",
+   "jar": "fabric-sound-api-v1-1.0.23+10b84f8419.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_tag_api_v1",
+   "name": "Forgified Fabric Tag API (v1)",
+   "version": "1.3.0+3e2bcb4b19",
+   "jar": "fabric-tag-api-v1-1.3.0+3e2bcb4b19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_resource_loader_v0",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_transfer_api_v1",
+   "name": "Forgified Fabric Transfer API (v1)",
+   "version": "5.4.4+6244b11119",
+   "jar": "fabric-transfer-api-v1-5.4.4+6244b11119.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_lookup_api_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_rendering_fluids_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_transitive_access_wideners_v1",
+   "name": "Forgified Fabric Transitive Access Wideners (v1)",
+   "version": "6.2.0+6c854b6f19",
+   "jar": "fabric-transitive-access-wideners-v1-6.2.0+6c854b6f19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.248,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "fabric-api-base-0.4.42+d1308ded19.jar",
+  "fabric-api-lookup-api-v1-1.6.72+6244b11119.jar",
+  "fabric-biome-api-v1-13.0.31+1e62d33c19.jar",
+  "fabric-block-api-v1-1.1.0+b0c22bb819.jar",
+  "fabric-block-view-api-v2-1.0.11+e9036fd419.jar",
+  "fabric-blockrenderlayer-v1-1.1.52+c290471319.jar",
+  "fabric-client-tags-api-v1-1.2.0+5adff2d719.jar",
+  "fabric-command-api-v2-2.2.28+36d727be19.jar",
+  "fabric-content-registries-v0-8.0.19+5e0d320019.jar",
+  "fabric-convention-tags-v1-2.1.7+7f945d5b19.jar",
+  "fabric-convention-tags-v2-2.12.0+75d3639619.jar",
+  "fabric-data-attachment-api-v1-1.4.7+26d408aa19.jar",
+  "fabric-data-generation-api-v1-20.3.0+3e2bcb4b19.jar",
+  "fabric-entity-events-v1-1.8.0+e46a02ca19.jar",
+  "fabric-events-interaction-v0-0.7.14+057f5afd19.jar",
+  "fabric-game-rule-api-v1-1.0.53+36d727be19.jar",
+  "fabric-gametest-api-v1-2.0.5+29f188ce19.jar",
+  "fabric-item-api-v1-11.3.0+b24c12f719.jar",
+  "fabric-item-group-api-v1-4.1.7+e324903319.jar",
+  "fabric-key-binding-api-v1-1.0.47+62cc7ce119.jar",
+  "fabric-lifecycle-events-v1-2.6.0+e40d8add19.jar",
+  "fabric-loot-api-v2-3.0.15+a3ee712d19.jar",
+  "fabric-loot-api-v3-1.0.3+333dfad919.jar",
+  "fabric-message-api-v1-6.0.14+6a754fce19.jar",
+  "fabric-model-loading-api-v1-2.1.0+6e8f52c719.jar",
+  "fabric-networking-api-v1-4.3.1+7e3d421f19.jar",
+  "fabric-object-builder-api-v1-15.2.1+cc242efd19.jar",
+  "fabric-particles-v1-4.0.2+824f924c19.jar",
+  "fabric-recipe-api-v1-5.0.16+59440bcc19.jar",
+  "fabric-registry-sync-v0-5.3.2+f9aace1619.jar",
+  "fabric-renderer-api-v1-3.4.1+9125b6dc19.jar",
+  "fabric-renderer-indigo-1.7.1+9125b6dc19.jar",
+  "fabric-renderer-registries-v1-3.2.69+df3654b319.jar",
+  "fabric-rendering-data-attachment-v1-0.3.49+73761d2e19.jar",
+  "fabric-rendering-fluids-v1-3.1.6+ddc51b4719.jar",
+  "fabric-rendering-v1-5.1.0+1a09bd5a19.jar",
+  "fabric-resource-conditions-api-v1-4.3.0+5bdd099819.jar",
+  "fabric-resource-loader-v0-1.3.1+4ea8954419.jar",
+  "fabric-screen-api-v1-2.0.26+9991ca2f19.jar",
+  "fabric-screen-handler-api-v1-1.3.91+8dbc56dd19.jar",
+  "fabric-sound-api-v1-1.0.23+10b84f8419.jar",
+  "fabric-tag-api-v1-1.3.0+3e2bcb4b19.jar",
+  "fabric-transfer-api-v1-5.4.4+6244b11119.jar",
+  "fabric-transitive-access-wideners-v1-6.2.0+6c854b6f19.jar",
+  "forgified-fabric-loader-2.5.68+0.18.4+1.21.1-full.jar"
+ ],
+ "namespaces": [
+  "c",
+  "fabric",
+  "fabric-convention-tags-v2",
+  "fabric-data-attachment-api-v1",
+  "fabric-gametest-api-v1",
+  "fabric-registry-sync-v0",
+  "fabric-resource-loader-v0",
+  "fabric-sound-api-v1",
+  "fabric_biome_api_v1"
+ ],
+ "data": {
+  "gametest": [
+   "fabric-gametest-api-v1:structure/empty.snbt"
+  ],
+  "neoforge/biome_modifier": [
+   "fabric_biome_api_v1:fabric_biome_modifier_instance"
+  ],
+  "tags/block": [
+   "c:barrels",
+   "c:barrels/wooden",
+   "c:bookshelves",
+   "c:budding_blocks",
+   "c:buds",
+   "c:chains",
+   "c:chests",
+   "c:chests/ender",
+   "c:chests/trapped",
+   "c:chests/wooden",
+   "c:clusters",
+   "c:cobblestones",
+   "c:cobblestones/deepslate",
+   "c:cobblestones/infested",
+   "c:cobblestones/mossy",
+   "c:cobblestones/normal",
+   "c:concrete",
+   "c:concretes",
+   "c:dyed",
+   "c:dyed/black",
+   "c:dyed/blue",
+   "c:dyed/brown",
+   "c:dyed/cyan",
+   "c:dyed/gray",
+   "c:dyed/green",
+   "c:dyed/light_blue",
+   "c:dyed/light_gray",
+   "c:dyed/lime",
+   "c:dyed/magenta",
+   "c:dyed/orange",
+   "c:dyed/pink",
+   "c:dyed/purple",
+   "c:dyed/red",
+   "c:dyed/white",
+   "c:dyed/yellow",
+   "c:end_stones",
+   "c:fence_gates",
+   "c:fence_gates/wooden",
+   "c:fences",
+   "c:fences/nether_brick",
+   "c:fences/wooden",
+   "c:glass_blocks",
+   "c:glass_blocks/cheap",
+   "c:glass_blocks/colorless",
+   "c:glass_blocks/tinted",
+   "c:glass_panes",
+   "c:glass_panes/colorless",
+   "c:glazed_terracotta",
+   "c:glazed_terracottas",
+   "c:gravels",
+   "c:hidden_from_recipe_viewers",
+   "c:netherracks",
+   "c:obsidians",
+   "c:obsidians/crying",
+   "c:obsidians/normal",
+   "c:ore_bearing_ground/deepslate",
+   "c:ore_bearing_ground/netherrack",
+   "c:ore_bearing_ground/stone",
+   "c:ore_rates/dense",
+   "c:ore_rates/singular",
+   "c:ore_rates/sparse",
+   "c:ores",
+   "c:ores/coal",
+   "c:ores/copper",
+   "c:ores/diamond",
+   "c:ores/emerald",
+   "c:ores/gold",
+   "c:ores/iron",
+   "c:ores/lapis",
+   "c:ores/netherite_scrap",
+   "c:ores/quartz",
+   "c:ores/redstone",
+   "c:ores_in_ground/deepslate",
+   "c:ores_in_ground/netherrack",
+   "c:ores_in_ground/stone",
+   "c:player_workstations/crafting_tables",
+   "c:player_workstations/furnaces",
+   "c:pumpkins",
+   "c:pumpkins/carved",
+   "c:pumpkins/jack_o_lanterns",
+   "c:pumpkins/normal",
+   "c:relocation_not_supported",
+   "c:ropes",
+   "c:sands",
+   "c:sands/colorless",
+   "c:sands/red",
+   "c:sandstone/blocks",
+   "c:sandstone/red_blocks",
+   "c:sandstone/red_slabs",
+   "c:sandstone/red_stairs",
+   "c:sandstone/slabs",
+   "c:sandstone/stairs",
+   "c:sandstone/uncolored_blocks",
+   "c:sandstone/uncolored_slabs",
+   "c:sandstone/uncolored_stairs",
+   "c:skulls",
+   "c:stones",
+   "c:storage_blocks",
+   "c:storage_blocks/bone_meal",
+   "c:storage_blocks/coal",
+   "c:storage_blocks/copper",
+   "c:storage_blocks/diamond",
+   "c:storage_blocks/dried_kelp",
+   "c:storage_blocks/emerald",
+   "c:storage_blocks/gold",
+   "c:storage_blocks/iron",
+   "c:storage_blocks/lapis",
+   "c:storage_blocks/netherite",
+   "c:storage_blocks/raw_copper",
+   "c:storage_blocks/raw_gold",
+   "c:storage_blocks/raw_iron",
+   "c:storage_blocks/redstone",
+   "c:storage_blocks/slime",
+   "c:storage_blocks/wheat",
+   "c:stripped_logs",
+   "c:stripped_woods",
+   "c:villager_job_sites"
+  ],
+  "tags/enchantment": [
+   "c:entity_auxiliary_movement_enhancements",
+   "c:entity_defense_enhancements",
+   "c:entity_speed_enhancements",
+   "c:increase_block_drops",
+   "c:increase_entity_drops",
+   "c:weapon_damage_enhancements"
+  ],
+  "tags/entity_type": [
+   "c:boats",
+   "c:bosses",
+   "c:capturing_not_supported",
+   "c:minecarts",
+   "c:teleporting_not_supported"
+  ],
+  "tags/fluid": [
+   "c:beetroot_soup",
+   "c:experience",
+   "c:gaseous",
+   "c:hidden_from_recipe_viewers",
+   "c:honey",
+   "c:lava",
+   "c:milk",
+   "c:mushroom_stew",
+   "c:potion",
+   "c:rabbit_stew",
+   "c:suspicious_stew",
+   "c:water"
+  ],
+  "tags/item": [
+   "c:animal_foods",
+   "c:armors",
+   "c:barrels",
+   "c:barrels/wooden",
+   "c:bones",
+   "c:bookshelves",
+   "c:bricks",
+   "c:bricks/nether",
+   "c:bricks/normal",
+   "c:buckets",
+   "c:buckets/empty",
+   "c:buckets/entity_water",
+   "c:buckets/lava",
+   "c:buckets/milk",
+   "c:buckets/powder_snow",
+   "c:buckets/water",
+   "c:budding_blocks",
+   "c:buds",
+   "c:chains",
+   "c:chests",
+   "c:chests/ender",
+   "c:chests/trapped",
+   "c:chests/wooden",
+   "c:clusters",
+   "c:coal",
+   "c:cobblestones",
+   "c:cobblestones/deepslate",
+   "c:cobblestones/infested",
+   "c:cobblestones/mossy",
+   "c:cobblestones/normal",
+   "c:concrete",
+   "c:concrete_powder",
+   "c:concrete_powders",
+   "c:concretes",
+   "c:crops",
+   "c:crops/beetroot",
+   "c:crops/cactus",
+   "c:crops/carrot",
+   "c:crops/cocoa_bean",
+   "c:crops/melon",
+   "c:crops/nether_wart",
+   "c:crops/potato",
+   "c:crops/pumpkin",
+   "c:crops/sugar_cane",
+   "c:crops/wheat",
+   "c:drink_containing/bottle",
+   "c:drink_containing/bucket",
+   "c:drinks",
+   "c:drinks/honey",
+   "c:drinks/juice",
+   "c:drinks/magic",
+   "c:drinks/milk",
+   "c:drinks/ominous",
+   "c:drinks/water",
+   "c:drinks/watery",
+   "c:dusts",
+   "c:dusts/glowstone",
+   "c:dusts/redstone",
+   "c:dyed",
+   "c:dyed/black",
+   "c:dyed/blue",
+   "c:dyed/brown",
+   "c:dyed/cyan",
+   "c:dyed/gray",
+   "c:dyed/green",
+   "c:dyed/light_blue",
+   "c:dyed/light_gray",
+   "c:dyed/lime",
+   "c:dyed/magenta",
+   "c:dyed/orange",
+   "c:dyed/pink",
+   "c:dyed/purple",
+   "c:dyed/red",
+   "c:dyed/white",
+   "c:dyed/yellow",
+   "c:dyes",
+   "c:dyes/black",
+   "c:dyes/blue",
+   "c:dyes/brown",
+   "c:dyes/cyan",
+   "c:dyes/gray",
+   "c:dyes/green",
+   "c:dyes/light_blue",
+   "c:dyes/light_gray",
+   "c:dyes/lime",
+   "c:dyes/magenta",
+   "c:dyes/orange",
+   "c:dyes/pink",
+   "c:dyes/purple",
+   "c:dyes/red",
+   "c:dyes/white",
+   "c:dyes/yellow",
+   "c:eggs",
+   "c:enchantables",
+   "c:end_stones",
+   "c:ender_pearls",
+   "c:feathers",
+   "c:fence_gates",
+   "c:fence_gates/wooden",
+   "c:fences",
+   "c:fences/nether_brick",
+   "c:fences/wooden",
+   "c:fertilizers",
+   "c:foods",
+   "c:foods/berries",
+   "c:foods/berry",
+   "c:foods/bread",
+   "c:foods/breads",
+   "c:foods/candies",
+   "c:foods/candy",
+   "c:foods/cooked_fish",
+   "c:foods/cooked_fishes",
+   "c:foods/cooked_meat",
+   "c:foods/cooked_meats",
+   "c:foods/cookie",
+   "c:foods/cookies",
+   "c:foods/dough",
+   "c:foods/edible_when_placed",
+   "c:foods/food_poisoning",
+   "c:foods/fruit",
+   "c:foods/fruits",
+   "c:foods/golden",
+   "c:foods/pie",
+   "c:foods/raw_fish",
+   "c:foods/raw_fishes",
+   "c:foods/raw_meat",
+   "c:foods/raw_meats",
+   "c:foods/soup",
+   "c:foods/soups",
+   "c:foods/vegetable",
+   "c:foods/vegetables",
+   "c:gems",
+   "c:gems/amethyst",
+   "c:gems/diamond",
+   "c:gems/emerald",
+   "c:gems/lapis",
+   "c:gems/prismarine",
+   "c:gems/quartz",
+   "c:glass_blocks",
+   "c:glass_blocks/cheap",
+   "c:glass_blocks/colorless",
+   "c:glass_blocks/tinted",
+   "c:glass_panes",
+   "c:glass_panes/colorless",
+   "c:glazed_terracotta",
+   "c:glazed_terracottas",
+   "c:gravels",
+   "c:gunpowders",
+   "c:hidden_from_recipe_viewers",
+   "c:ingots",
+   "c:ingots/copper",
+   "c:ingots/gold",
+   "c:ingots/iron",
+   "c:ingots/netherite",
+   "c:leathers",
+   "c:loom_patterns",
+   "c:mushrooms",
+   "c:music_discs",
+   "c:nether_stars",
+   "c:netherracks",
+   "c:nuggets",
+   "c:nuggets/gold",
+   "c:nuggets/iron",
+   "c:obsidians",
+   "c:obsidians/crying",
+   "c:obsidians/normal",
+   "c:ore_bearing_ground/deepslate",
+   "c:ore_bearing_ground/netherrack",
+   "c:ore_bearing_ground/stone",
+   "c:ore_rates/dense",
+   "c:ore_rates/singular",
+   "c:ore_rates/sparse",
+   "c:ores",
+   "c:ores/coal",
+   "c:ores/copper",
+   "c:ores/diamond",
+   "c:ores/emerald",
+   "c:ores/gold",
+   "c:ores/iron",
+   "c:ores/lapis",
+   "c:ores/netherite_scrap",
+   "c:ores/quartz",
+   "c:ores/redstone",
+   "c:ores_in_ground/deepslate",
+   "c:ores_in_ground/netherrack",
+   "c:ores_in_ground/stone",
+   "c:player_workstations/crafting_tables",
+   "c:player_workstations/furnaces",
+   "c:potions",
+   "c:potions/bottle",
+   "c:pumpkins",
+   "c:pumpkins/carved",
+   "c:pumpkins/jack_o_lanterns",
+   "c:pumpkins/normal",
+   "c:raw_blocks",
+   "c:raw_blocks/copper",
+   "c:raw_blocks/gold",
+   "c:raw_blocks/iron",
+   "c:raw_materials",
+   "c:raw_materials/copper",
+   "c:raw_materials/gold",
+   "c:raw_materials/iron",
+   "c:rods",
+   "c:rods/blaze",
+   "c:rods/breeze",
+   "c:rods/wooden",
+   "c:ropes",
+   "c:sands",
+   "c:sands/colorless",
+   "c:sands/red",
+   "c:sandstone/blocks",
+   "c:sandstone/red_blocks",
+   "c:sandstone/red_slabs",
+   "c:sandstone/red_stairs",
+   "c:sandstone/slabs",
+   "c:sandstone/stairs",
+   "c:sandstone/uncolored_blocks",
+   "c:sandstone/uncolored_slabs",
+   "c:sandstone/uncolored_stairs",
+   "c:seeds",
+   "c:seeds/beetroot",
+   "c:seeds/melon",
+   "c:seeds/pumpkin",
+   "c:seeds/torchflower",
+   "c:seeds/wheat",
+   "c:shulker_boxes",
+   "c:slime_balls",
+   "c:stones",
+   "c:storage_blocks",
+   "c:storage_blocks/bone_meal",
+   "c:storage_blocks/coal",
+   "c:storage_blocks/copper",
+   "c:storage_blocks/diamond",
+   "c:storage_blocks/dried_kelp",
+   "c:storage_blocks/emerald",
+   "c:storage_blocks/gold",
+   "c:storage_blocks/iron",
+   "c:storage_blocks/lapis",
+   "c:storage_blocks/netherite",
+   "c:storage_blocks/raw_copper",
+   "c:storage_blocks/raw_gold",
+   "c:storage_blocks/raw_iron",
+   "c:storage_blocks/redstone",
+   "c:storage_blocks/slime",
+   "c:storage_blocks/wheat",
+   "c:strings",
+   "c:stripped_logs",
+   "c:stripped_woods",
+   "c:tools",
+   "c:tools/bow",
+   "c:tools/bows",
+   "c:tools/brush",
+   "c:tools/brushes",
+   "c:tools/crossbow",
+   "c:tools/crossbows",
+   "c:tools/fishing_rod",
+   "c:tools/fishing_rods",
+   "c:tools/igniter",
+   "c:tools/mace",
+   "c:tools/melee_weapon",
+   "c:tools/melee_weapons",
+   "c:tools/mining_tool",
+   "c:tools/mining_tools",
+   "c:tools/ranged_weapon",
+   "c:tools/ranged_weapons",
+   "c:tools/shear",
+   "c:tools/shears",
+   "c:tools/shield",
+   "c:tools/shields",
+   "c:tools/spear",
+   "c:tools/spears",
+   "c:villager_job_sites"
+  ],
+  "tags/worldgen/biome": [
+   "c:hidden_from_locator_selection",
+   "c:is_aquatic",
+   "c:is_aquatic_icy",
+   "c:is_badlands",
+   "c:is_beach",
+   "c:is_birch_forest",
+   "c:is_cave",
+   "c:is_cold",
+   "c:is_cold/end",
+   "c:is_cold/nether",
+   "c:is_cold/overworld",
+   "c:is_dead",
+   "c:is_deep_ocean",
+   "c:is_dense_vegetation",
+   "c:is_dense_vegetation/end",
+   "c:is_dense_vegetation/nether",
+   "c:is_dense_vegetation/overworld",
+   "c:is_desert",
+   "c:is_dry",
+   "c:is_dry/end",
+   "c:is_dry/nether",
+   "c:is_dry/overworld",
+   "c:is_end",
+   "c:is_floral",
+   "c:is_flower_forest",
+   "c:is_forest",
+   "c:is_hill",
+   "c:is_hot",
+   "c:is_hot/end",
+   "c:is_hot/nether",
+   "c:is_hot/overworld",
+   "c:is_icy",
+   "c:is_jungle",
+   "c:is_lush",
+   "c:is_magical",
+   "c:is_mountain",
+   "c:is_mountain/peak",
+   "c:is_mountain/slope",
+   "c:is_mushroom",
+   "c:is_nether",
+   "c:is_nether_forest",
+   "c:is_ocean",
+   "c:is_old_growth",
+   "c:is_outer_end_island",
+   "c:is_overworld",
+   "c:is_plains",
+   "c:is_plateau",
+   "c:is_rare",
+   "c:is_river",
+   "c:is_sandy",
+   "c:is_savanna",
+   "c:is_shallow_ocean",
+   "c:is_snowy",
+   "c:is_snowy_plains",
+   "c:is_sparse_vegetation",
+   "c:is_sparse_vegetation/end",
+   "c:is_sparse_vegetation/nether",
+   "c:is_sparse_vegetation/overworld",
+   "c:is_spooky",
+   "c:is_stony_shores",
+   "c:is_swamp",
+   "c:is_taiga",
+   "c:is_temperate",
+   "c:is_temperate/end",
+   "c:is_temperate/nether",
+   "c:is_temperate/overworld",
+   "c:is_tree/coniferous",
+   "c:is_tree/deciduous",
+   "c:is_tree/jungle",
+   "c:is_tree/savanna",
+   "c:is_underground",
+   "c:is_void",
+   "c:is_wasteland",
+   "c:is_wet",
+   "c:is_wet/end",
+   "c:is_wet/nether",
+   "c:is_wet/overworld",
+   "c:is_windswept",
+   "c:no_default_monsters"
+  ],
+  "tags/worldgen/structure": [
+   "c:hidden_from_displayers",
+   "c:hidden_from_locator_selection"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "c:barrels": [
+    "#c:barrels/wooden"
+   ],
+   "c:barrels/wooden": [
+    "minecraft:barrel",
+    "#c:wooden_barrels?"
+   ],
+   "c:bookshelves": [
+    "minecraft:bookshelf"
+   ],
+   "c:budding_blocks": [
+    "minecraft:budding_amethyst"
+   ],
+   "c:buds": [
+    "minecraft:small_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:large_amethyst_bud"
+   ],
+   "c:chains": [
+    "minecraft:chain"
+   ],
+   "c:chests": [
+    "#c:chests/wooden",
+    "#c:chests/trapped",
+    "#c:chests/ender"
+   ],
+   "c:chests/ender": [
+    "minecraft:ender_chest"
+   ],
+   "c:chests/trapped": [
+    "minecraft:trapped_chest"
+   ],
+   "c:chests/wooden": [
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "#c:wooden_chests?"
+   ],
+   "c:clusters": [
+    "minecraft:amethyst_cluster"
+   ],
+   "c:cobblestones": [
+    "#c:cobblestones/normal?",
+    "#c:cobblestones/mossy?",
+    "#c:cobblestones/infested?",
+    "#c:cobblestones/deepslate?"
+   ],
+   "c:cobblestones/deepslate": [
+    "minecraft:cobbled_deepslate"
+   ],
+   "c:cobblestones/infested": [
+    "minecraft:infested_cobblestone"
+   ],
+   "c:cobblestones/mossy": [
+    "minecraft:mossy_cobblestone"
+   ],
+   "c:cobblestones/normal": [
+    "minecraft:cobblestone"
+   ],
+   "c:concrete": [
+    "minecraft:white_concrete",
+    "minecraft:orange_concrete",
+    "minecraft:magenta_concrete",
+    "minecraft:light_blue_concrete",
+    "minecraft:yellow_concrete",
+    "minecraft:lime_concrete",
+    "minecraft:pink_concrete",
+    "minecraft:gray_concrete",
+    "minecraft:light_gray_concrete",
+    "minecraft:cyan_concrete",
+    "minecraft:purple_concrete",
+    "minecraft:blue_concrete",
+    "minecraft:brown_concrete",
+    "minecraft:green_concrete",
+    "minecraft:black_concrete",
+    "minecraft:red_concrete"
+   ],
+   "c:concretes": [
+    "minecraft:white_concrete",
+    "minecraft:orange_concrete",
+    "minecraft:magenta_concrete",
+    "minecraft:light_blue_concrete",
+    "minecraft:yellow_concrete",
+    "minecraft:lime_concrete",
+    "minecraft:pink_concrete",
+    "minecraft:gray_concrete",
+    "minecraft:light_gray_concrete",
+    "minecraft:cyan_concrete",
+    "minecraft:purple_concrete",
+    "minecraft:blue_concrete",
+    "minecraft:brown_concrete",
+    "minecraft:green_concrete",
+    "minecraft:black_concrete",
+    "minecraft:red_concrete",
+    "#c:concrete?"
+   ],
+   "c:dyed": [
+    "#c:dyed/white",
+    "#c:dyed/orange",
+    "#c:dyed/magenta",
+    "#c:dyed/light_blue",
+    "#c:dyed/yellow",
+    "#c:dyed/lime",
+    "#c:dyed/pink",
+    "#c:dyed/gray",
+    "#c:dyed/light_gray",
+    "#c:dyed/cyan",
+    "#c:dyed/purple",
+    "#c:dyed/blue",
+    "#c:dyed/brown",
+    "#c:dyed/green",
+    "#c:dyed/red",
+    "#c:dyed/black"
+   ],
+   "c:dyed/black": [
+    "minecraft:black_banner",
+    "minecraft:black_bed",
+    "minecraft:black_candle",
+    "minecraft:black_carpet",
+    "minecraft:black_concrete",
+    "minecraft:black_concrete_powder",
+    "minecraft:black_glazed_terracotta",
+    "minecraft:black_shulker_box",
+    "minecraft:black_stained_glass",
+    "minecraft:black_stained_glass_pane",
+    "minecraft:black_terracotta",
+    "minecraft:black_wall_banner",
+    "minecraft:black_wool"
+   ],
+   "c:dyed/blue": [
+    "minecraft:blue_banner",
+    "minecraft:blue_bed",
+    "minecraft:blue_candle",
+    "minecraft:blue_carpet",
+    "minecraft:blue_concrete",
+    "minecraft:blue_concrete_powder",
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:blue_shulker_box",
+    "minecraft:blue_stained_glass",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:blue_terracotta",
+    "minecraft:blue_wall_banner",
+    "minecraft:blue_wool"
+   ],
+   "c:dyed/brown": [
+    "minecraft:brown_banner",
+    "minecraft:brown_bed",
+    "minecraft:brown_candle",
+    "minecraft:brown_carpet",
+    "minecraft:brown_concrete",
+    "minecraft:brown_concrete_powder",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:brown_shulker_box",
+    "minecraft:brown_stained_glass",
+    "minecraft:brown_stained_glass_pane",
+    "minecraft:brown_terracotta",
+    "minecraft:brown_wall_banner",
+    "minecraft:brown_wool"
+   ],
+   "c:dyed/cyan": [
+    "minecraft:cyan_banner",
+    "minecraft:cyan_bed",
+    "minecraft:cyan_candle",
+    "minecraft:cyan_carpet",
+    "minecraft:cyan_concrete",
+    "minecraft:cyan_concrete_powder",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:cyan_shulker_box",
+    "minecraft:cyan_stained_glass",
+    "minecraft:cyan_stained_glass_pane",
+    "minecraft:cyan_terracotta",
+    "minecraft:cyan_wall_banner",
+    "minecraft:cyan_wool"
+   ],
+   "c:dyed/gray": [
+    "minecraft:gray_banner",
+    "minecraft:gray_bed",
+    "minecraft:gray_candle",
+    "minecraft:gray_carpet",
+    "minecraft:gray_concrete",
+    "minecraft:gray_concrete_powder",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:gray_shulker_box",
+    "minecraft:gray_stained_glass",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:gray_terracotta",
+    "minecraft:gray_wall_banner",
+    "minecraft:gray_wool"
+   ],
+   "c:dyed/green": [
+    "minecraft:green_banner",
+    "minecraft:green_bed",
+    "minecraft:green_candle",
+    "minecraft:green_carpet",
+    "minecraft:green_concrete",
+    "minecraft:green_concrete_powder",
+    "minecraft:green_glazed_terracotta",
+    "minecraft:green_shulker_box",
+    "minecraft:green_stained_glass",
+    "minecraft:green_stained_glass_pane",
+    "minecraft:green_terracotta",
+    "minecraft:green_wall_banner",
+    "minecraft:green_wool"
+   ],
+   "c:dyed/light_blue": [
+    "minecraft:light_blue_banner",
+    "minecraft:light_blue_bed",
+    "minecraft:light_blue_candle",
+    "minecraft:light_blue_carpet",
+    "minecraft:light_blue_concrete",
+    "minecraft:light_blue_concrete_powder",
+    "minecraft:light_blue_glazed_terracotta",
+    "minecraft:light_blue_shulker_box",
+    "minecraft:light_blue_stained_glass",
+    "minecraft:light_blue_stained_glass_pane",
+    "minecraft:light_blue_terracotta",
+    "minecraft:light_blue_wall_banner",
+    "minecraft:light_blue_wool"
+   ],
+   "c:dyed/light_gray": [
+    "minecraft:light_gray_banner",
+    "minecraft:light_gray_bed",
+    "minecraft:light_gray_candle",
+    "minecraft:light_gray_carpet",
+    "minecraft:light_gray_concrete",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:light_gray_glazed_terracotta",
+    "minecraft:light_gray_shulker_box",
+    "minecraft:light_gray_stained_glass",
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:light_gray_terracotta",
+    "minecraft:light_gray_wall_banner",
+    "minecraft:light_gray_wool"
+   ],
+   "c:dyed/lime": [
+    "minecraft:lime_banner",
+    "minecraft:lime_bed",
+    "minecraft:lime_candle",
+    "minecraft:lime_carpet",
+    "minecraft:lime_concrete",
+    "minecraft:lime_concrete_powder",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:lime_shulker_box",
+    "minecraft:lime_stained_glass",
+    "minecraft:lime_stained_glass_pane",
+    "minecraft:lime_terracotta",
+    "minecraft:lime_wall_banner",
+    "minecraft:lime_wool"
+   ],
+   "c:dyed/magenta": [
+    "minecraft:magenta_banner",
+    "minecraft:magenta_bed",
+    "minecraft:magenta_candle",
+    "minecraft:magenta_carpet",
+    "minecraft:magenta_concrete",
+    "minecraft:magenta_concrete_powder",
+    "minecraft:magenta_glazed_terracotta",
+    "minecraft:magenta_shulker_box",
+    "minecraft:magenta_stained_glass",
+    "minecraft:magenta_stained_glass_pane",
+    "minecraft:magenta_terracotta",
+    "minecraft:magenta_wall_banner",
+    "minecraft:magenta_wool"
+   ],
+   "c:dyed/orange": [
+    "minecraft:orange_banner",
+    "minecraft:orange_bed",
+    "minecraft:orange_candle",
+    "minecraft:orange_carpet",
+    "minecraft:orange_concrete",
+    "minecraft:orange_concrete_powder",
+    "minecraft:orange_glazed_terracotta",
+    "minecraft:orange_shulker_box",
+    "minecraft:orange_stained_glass",
+    "minecraft:orange_stained_glass_pane",
+    "minecraft:orange_terracotta",
+    "minecraft:orange_wall_banner",
+    "minecraft:orange_wool"
+   ],
+   "c:dyed/pink": [
+    "minecraft:pink_banner",
+    "minecraft:pink_bed",
+    "minecraft:pink_candle",
+    "minecraft:pink_carpet",
+    "minecraft:pink_concrete",
+    "minecraft:pink_concrete_powder",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:pink_shulker_box",
+    "minecraft:pink_stained_glass",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:pink_terracotta",
+    "minecraft:pink_wall_banner",
+    "minecraft:pink_wool"
+   ],
+   "c:dyed/purple": [
+    "minecraft:purple_banner",
+    "minecraft:purple_bed",
+    "minecraft:purple_candle",
+    "minecraft:purple_carpet",
+    "minecraft:purple_concrete",
+    "minecraft:purple_concrete_powder",
+    "minecraft:purple_glazed_terracotta",
+    "minecraft:purple_shulker_box",
+    "minecraft:purple_stained_glass",
+    "minecraft:purple_stained_glass_pane",
+    "minecraft:purple_terracotta",
+    "minecraft:purple_wall_banner",
+    "minecraft:purple_wool"
+   ],
+   "c:dyed/red": [
+    "minecraft:red_banner",
+    "minecraft:red_bed",
+    "minecraft:red_candle",
+    "minecraft:red_carpet",
+    "minecraft:red_concrete",
+    "minecraft:red_concrete_powder",
+    "minecraft:red_glazed_terracotta",
+    "minecraft:red_shulker_box",
+    "minecraft:red_stained_glass",
+    "minecraft:red_stained_glass_pane",
+    "minecraft:red_terracotta",
+    "minecraft:red_wall_banner",
+    "minecraft:red_wool"
+   ],
+   "c:dyed/white": [
+    "minecraft:white_banner",
+    "minecraft:white_bed",
+    "minecraft:white_candle",
+    "minecraft:white_carpet",
+    "minecraft:white_concrete",
+    "minecraft:white_concrete_powder",
+    "minecraft:white_glazed_terracotta",
+    "minecraft:white_shulker_box",
+    "minecraft:white_stained_glass",
+    "minecraft:white_stained_glass_pane",
+    "minecraft:white_terracotta",
+    "minecraft:white_wall_banner",
+    "minecraft:white_wool"
+   ],
+   "c:dyed/yellow": [
+    "minecraft:yellow_banner",
+    "minecraft:yellow_bed",
+    "minecraft:yellow_candle",
+    "minecraft:yellow_carpet",
+    "minecraft:yellow_concrete",
+    "minecraft:yellow_concrete_powder",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:yellow_shulker_box",
+    "minecraft:yellow_stained_glass",
+    "minecraft:yellow_stained_glass_pane",
+    "minecraft:yellow_terracotta",
+    "minecraft:yellow_wall_banner",
+    "minecraft:yellow_wool"
+   ],
+   "c:end_stones": [
+    "minecraft:end_stone"
+   ],
+   "c:fence_gates": [
+    "#c:fence_gates/wooden?"
+   ],
+   "c:fence_gates/wooden": [
+    "minecraft:oak_fence_gate",
+    "minecraft:spruce_fence_gate",
+    "minecraft:birch_fence_gate",
+    "minecraft:jungle_fence_gate",
+    "minecraft:acacia_fence_gate",
+    "minecraft:dark_oak_fence_gate",
+    "minecraft:crimson_fence_gate",
+    "minecraft:warped_fence_gate",
+    "minecraft:mangrove_fence_gate",
+    "minecraft:bamboo_fence_gate",
+    "minecraft:cherry_fence_gate"
+   ],
+   "c:fences": [
+    "#c:fences/wooden?",
+    "#c:fences/nether_brick?"
+   ],
+   "c:fences/nether_brick": [
+    "minecraft:nether_brick_fence"
+   ],
+   "c:fences/wooden": [
+    "minecraft:oak_fence",
+    "minecraft:spruce_fence",
+    "minecraft:birch_fence",
+    "minecraft:jungle_fence",
+    "minecraft:acacia_fence",
+    "minecraft:dark_oak_fence",
+    "minecraft:crimson_fence",
+    "minecraft:warped_fence",
+    "minecraft:mangrove_fence",
+    "minecraft:bamboo_fence",
+    "minecraft:cherry_fence"
+   ],
+   "c:glass_blocks": [
+    "#c:glass_blocks/colorless?",
+    "#c:glass_blocks/cheap?",
+    "#c:glass_blocks/tinted?"
+   ],
+   "c:glass_blocks/cheap": [
+    "minecraft:glass",
+    "minecraft:white_stained_glass",
+    "minecraft:orange_stained_glass",
+    "minecraft:magenta_stained_glass",
+    "minecraft:light_blue_stained_glass",
+    "minecraft:yellow_stained_glass",
+    "minecraft:lime_stained_glass",
+    "minecraft:pink_stained_glass",
+    "minecraft:gray_stained_glass",
+    "minecraft:light_gray_stained_glass",
+    "minecraft:cyan_stained_glass",
+    "minecraft:purple_stained_glass",
+    "minecraft:blue_stained_glass",
+    "minecraft:brown_stained_glass",
+    "minecraft:green_stained_glass",
+    "minecraft:black_stained_glass",
+    "minecraft:red_stained_glass"
+   ],
+   "c:glass_blocks/colorless": [
+    "minecraft:glass"
+   ],
+   "c:glass_blocks/tinted": [
+    "minecraft:tinted_glass"
+   ],
+   "c:glass_panes": [
+    "minecraft:white_stained_glass_pane",
+    "minecraft:orange_stained_glass_pane",
+    "minecraft:magenta_stained_glass_pane",
+    "minecraft:light_blue_stained_glass_pane",
+    "minecraft:yellow_stained_glass_pane",
+    "minecraft:lime_stained_glass_pane",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:cyan_stained_glass_pane",
+    "minecraft:purple_stained_glass_pane",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:brown_stained_glass_pane",
+    "minecraft:green_stained_glass_pane",
+    "minecraft:black_stained_glass_pane",
+    "minecraft:red_stained_glass_pane",
+    "#c:glass_panes/colorless?"
+   ],
+   "c:glass_panes/colorless": [
+    "minecraft:glass_pane"
+   ],
+   "c:glazed_terracotta": [
+    "minecraft:white_glazed_terracotta",
+    "minecraft:orange_glazed_terracotta",
+    "minecraft:magenta_glazed_terracotta",
+    "minecraft:light_blue_glazed_terracotta",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:light_gray_glazed_terracotta",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:purple_glazed_terracotta",
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:green_glazed_terracotta",
+    "minecraft:black_glazed_terracotta",
+    "minecraft:red_glazed_terracotta"
+   ],
+   "c:glazed_terracottas": [
+    "minecraft:white_glazed_terracotta",
+    "minecraft:orange_glazed_terracotta",
+    "minecraft:magenta_glazed_terracotta",
+    "minecraft:light_blue_glazed_terracotta",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:light_gray_glazed_terracotta",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:purple_glazed_terracotta",
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:green_glazed_terracotta",
+    "minecraft:black_glazed_terracotta",
+    "minecraft:red_glazed_terracotta",
+    "#c:glazed_terracotta?"
+   ],
+   "c:gravels": [
+    "minecraft:gravel"
+   ],
+   "c:hidden_from_recipe_viewers": [],
+   "c:netherracks": [
+    "minecraft:netherrack"
+   ],
+   "c:obsidians": [
+    "#c:obsidians/normal?",
+    "#c:obsidians/crying?"
+   ],
+   "c:obsidians/crying": [
+    "minecraft:crying_obsidian"
+   ],
+   "c:obsidians/normal": [
+    "minecraft:obsidian"
+   ],
+   "c:ore_bearing_ground/deepslate": [
+    "minecraft:deepslate"
+   ],
+   "c:ore_bearing_ground/netherrack": [
+    "minecraft:netherrack"
+   ],
+   "c:ore_bearing_ground/stone": [
+    "minecraft:stone"
+   ],
+   "c:ore_rates/dense": [
+    "minecraft:copper_ore",
+    "minecraft:deepslate_copper_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:lapis_ore",
+    "minecraft:redstone_ore"
+   ],
+   "c:ore_rates/singular": [
+    "minecraft:ancient_debris",
+    "minecraft:coal_ore",
+    "minecraft:deepslate_coal_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_emerald_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore",
+    "minecraft:gold_ore",
+    "minecraft:iron_ore",
+    "minecraft:nether_quartz_ore"
+   ],
+   "c:ore_rates/sparse": [
+    "minecraft:nether_gold_ore"
+   ],
+   "c:ores": [
+    "#c:ores/coal?",
+    "#c:ores/copper?",
+    "#c:ores/diamond?",
+    "#c:ores/emerald?",
+    "#c:ores/gold?",
+    "#c:ores/iron?",
+    "#c:ores/lapis?",
+    "#c:ores/netherite_scrap?",
+    "#c:ores/redstone?",
+    "#c:ores/quartz?"
+   ],
+   "c:ores/coal": [
+    "#minecraft:coal_ores?"
+   ],
+   "c:ores/copper": [
+    "#minecraft:copper_ores?"
+   ],
+   "c:ores/diamond": [
+    "#minecraft:diamond_ores?"
+   ],
+   "c:ores/emerald": [
+    "#minecraft:emerald_ores?"
+   ],
+   "c:ores/gold": [
+    "#minecraft:gold_ores?"
+   ],
+   "c:ores/iron": [
+    "#minecraft:iron_ores?"
+   ],
+   "c:ores/lapis": [
+    "#minecraft:lapis_ores?"
+   ],
+   "c:ores/netherite_scrap": [
+    "minecraft:ancient_debris"
+   ],
+   "c:ores/quartz": [
+    "minecraft:nether_quartz_ore",
+    "#c:quartz_ores?"
+   ],
+   "c:ores/redstone": [
+    "#minecraft:redstone_ores?"
+   ],
+   "c:ores_in_ground/deepslate": [
+    "minecraft:deepslate_coal_ore",
+    "minecraft:deepslate_copper_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_emerald_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:deepslate_redstone_ore"
+   ],
+   "c:ores_in_ground/netherrack": [
+    "minecraft:nether_gold_ore",
+    "minecraft:nether_quartz_ore"
+   ],
+   "c:ores_in_ground/stone": [
+    "minecraft:coal_ore",
+    "minecraft:copper_ore",
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore",
+    "minecraft:gold_ore",
+    "minecraft:iron_ore",
+    "minecraft:lapis_ore",
+    "minecraft:redstone_ore"
+   ],
+   "c:player_workstations/crafting_tables": [
+    "minecraft:crafting_table"
+   ],
+   "c:player_workstations/furnaces": [
+    "minecraft:furnace"
+   ],
+   "c:pumpkins": [
+    "#c:pumpkins/normal",
+    "#c:pumpkins/carved",
+    "#c:pumpkins/jack_o_lanterns"
+   ],
+   "c:pumpkins/carved": [
+    "minecraft:carved_pumpkin"
+   ],
+   "c:pumpkins/jack_o_lanterns": [
+    "minecraft:jack_o_lantern"
+   ],
+   "c:pumpkins/normal": [
+    "minecraft:pumpkin"
+   ],
+   "c:relocation_not_supported": [
+    "#c:movement_restricted?"
+   ],
+   "c:ropes": [],
+   "c:sands": [
+    "#c:sands/colorless?",
+    "#c:sands/red?"
+   ],
+   "c:sands/colorless": [
+    "minecraft:sand"
+   ],
+   "c:sands/red": [
+    "minecraft:red_sand"
+   ],
+   "c:sandstone/blocks": [
+    "#c:sandstone/uncolored_blocks?",
+    "#c:sandstone/red_blocks?",
+    "#c:sandstone_blocks?"
+   ],
+   "c:sandstone/red_blocks": [
+    "minecraft:red_sandstone",
+    "minecraft:cut_red_sandstone",
+    "minecraft:smooth_red_sandstone",
+    "minecraft:chiseled_red_sandstone",
+    "#c:red_sandstone_blocks?"
+   ],
+   "c:sandstone/red_slabs": [
+    "minecraft:red_sandstone_slab",
+    "minecraft:cut_red_sandstone_slab",
+    "minecraft:smooth_red_sandstone_slab",
+    "#c:red_sandstone_slabs?"
+   ],
+   "c:sandstone/red_stairs": [
+    "minecraft:red_sandstone_stairs",
+    "minecraft:smooth_red_sandstone_stairs",
+    "#c:red_sandstone_stairs?"
+   ],
+   "c:sandstone/slabs": [
+    "#c:sandstone/uncolored_slabs?",
+    "#c:sandstone/red_slabs?",
+    "#c:sandstone_slabs?"
+   ],
+   "c:sandstone/stairs": [
+    "#c:sandstone/uncolored_stairs?",
+    "#c:sandstone/red_stairs?",
+    "#c:sandstone_stairs?"
+   ],
+   "c:sandstone/uncolored_blocks": [
+    "minecraft:sandstone",
+    "minecraft:cut_sandstone",
+    "minecraft:smooth_sandstone",
+    "minecraft:chiseled_sandstone",
+    "#c:uncolored_sandstone_blocks?"
+   ],
+   "c:sandstone/uncolored_slabs": [
+    "minecraft:sandstone_slab",
+    "minecraft:cut_sandstone_slab",
+    "minecraft:smooth_sandstone_slab",
+    "#c:uncolored_sandstone_slabs?"
+   ],
+   "c:sandstone/uncolored_stairs": [
+    "minecraft:sandstone_stairs",
+    "minecraft:smooth_sandstone_stairs",
+    "#c:uncolored_sandstone_stairs?"
+   ],
+   "c:skulls": [
+    "minecraft:skeleton_skull",
+    "minecraft:skeleton_wall_skull",
+    "minecraft:wither_skeleton_skull",
+    "minecraft:wither_skeleton_wall_skull",
+    "minecraft:player_head",
+    "minecraft:player_wall_head",
+    "minecraft:zombie_head",
+    "minecraft:zombie_wall_head",
+    "minecraft:creeper_head",
+    "minecraft:creeper_wall_head",
+    "minecraft:piglin_head",
+    "minecraft:piglin_wall_head",
+    "minecraft:dragon_head",
+    "minecraft:dragon_wall_head"
+   ],
+   "c:stones": [
+    "minecraft:stone",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:tuff",
+    "minecraft:deepslate"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/bone_meal",
+    "#c:storage_blocks/coal",
+    "#c:storage_blocks/copper",
+    "#c:storage_blocks/diamond",
+    "#c:storage_blocks/dried_kelp",
+    "#c:storage_blocks/emerald",
+    "#c:storage_blocks/gold",
+    "#c:storage_blocks/iron",
+    "#c:storage_blocks/lapis",
+    "#c:storage_blocks/netherite",
+    "#c:storage_blocks/raw_copper",
+    "#c:storage_blocks/raw_gold",
+    "#c:storage_blocks/raw_iron",
+    "#c:storage_blocks/redstone",
+    "#c:storage_blocks/slime",
+    "#c:storage_blocks/wheat"
+   ],
+   "c:storage_blocks/bone_meal": [
+    "minecraft:bone_block"
+   ],
+   "c:storage_blocks/coal": [
+    "minecraft:coal_block"
+   ],
+   "c:storage_blocks/copper": [
+    "minecraft:copper_block"
+   ],
+   "c:storage_blocks/diamond": [
+    "minecraft:diamond_block"
+   ],
+   "c:storage_blocks/dried_kelp": [
+    "minecraft:dried_kelp_block"
+   ],
+   "c:storage_blocks/emerald": [
+    "minecraft:emerald_block"
+   ],
+   "c:storage_blocks/gold": [
+    "minecraft:gold_block"
+   ],
+   "c:storage_blocks/iron": [
+    "minecraft:iron_block"
+   ],
+   "c:storage_blocks/lapis": [
+    "minecraft:lapis_block"
+   ],
+   "c:storage_blocks/netherite": [
+    "minecraft:netherite_block"
+   ],
+   "c:storage_blocks/raw_copper": [
+    "minecraft:raw_copper_block"
+   ],
+   "c:storage_blocks/raw_gold": [
+    "minecraft:raw_gold_block"
+   ],
+   "c:storage_blocks/raw_iron": [
+    "minecraft:raw_iron_block"
+   ],
+   "c:storage_blocks/redstone": [
+    "minecraft:redstone_block"
+   ],
+   "c:storage_blocks/slime": [
+    "minecraft:slime_block"
+   ],
+   "c:storage_blocks/wheat": [
+    "minecraft:hay_block"
+   ],
+   "c:stripped_logs": [
+    "minecraft:stripped_acacia_log",
+    "minecraft:stripped_bamboo_block",
+    "minecraft:stripped_birch_log",
+    "minecraft:stripped_cherry_log",
+    "minecraft:stripped_dark_oak_log",
+    "minecraft:stripped_jungle_log",
+    "minecraft:stripped_mangrove_log",
+    "minecraft:stripped_oak_log",
+    "minecraft:stripped_spruce_log",
+    "minecraft:stripped_crimson_stem",
+    "minecraft:stripped_warped_stem"
+   ],
+   "c:stripped_woods": [
+    "minecraft:stripped_acacia_wood",
+    "minecraft:stripped_birch_wood",
+    "minecraft:stripped_cherry_wood",
+    "minecraft:stripped_dark_oak_wood",
+    "minecraft:stripped_jungle_wood",
+    "minecraft:stripped_mangrove_wood",
+    "minecraft:stripped_oak_wood",
+    "minecraft:stripped_spruce_wood",
+    "minecraft:stripped_crimson_hyphae",
+    "minecraft:stripped_warped_hyphae"
+   ],
+   "c:villager_job_sites": [
+    "minecraft:barrel",
+    "minecraft:blast_furnace",
+    "minecraft:brewing_stand",
+    "minecraft:cartography_table",
+    "minecraft:cauldron",
+    "minecraft:lava_cauldron",
+    "minecraft:water_cauldron",
+    "minecraft:powder_snow_cauldron",
+    "minecraft:composter",
+    "minecraft:fletching_table",
+    "minecraft:grindstone",
+    "minecraft:lectern",
+    "minecraft:loom",
+    "minecraft:smithing_table",
+    "minecraft:smoker",
+    "minecraft:stonecutter"
+   ]
+  },
+  "tags/enchantment": {
+   "c:entity_auxiliary_movement_enhancements": [
+    "minecraft:feather_falling",
+    "minecraft:frost_walker"
+   ],
+   "c:entity_defense_enhancements": [
+    "minecraft:protection",
+    "minecraft:blast_protection",
+    "minecraft:projectile_protection",
+    "minecraft:fire_protection",
+    "minecraft:respiration",
+    "minecraft:feather_falling",
+    "#c:entity_defense_enhancement?"
+   ],
+   "c:entity_speed_enhancements": [
+    "minecraft:soul_speed",
+    "minecraft:swift_sneak",
+    "minecraft:depth_strider",
+    "#c:entity_movement_enhancement?"
+   ],
+   "c:increase_block_drops": [
+    "minecraft:fortune"
+   ],
+   "c:increase_entity_drops": [
+    "minecraft:looting"
+   ],
+   "c:weapon_damage_enhancements": [
+    "minecraft:sharpness",
+    "minecraft:smite",
+    "minecraft:bane_of_arthropods",
+    "minecraft:power",
+    "minecraft:impaling"
+   ]
+  },
+  "tags/entity_type": {
+   "c:boats": [
+    "minecraft:boat",
+    "minecraft:chest_boat"
+   ],
+   "c:bosses": [
+    "minecraft:ender_dragon",
+    "minecraft:wither"
+   ],
+   "c:capturing_not_supported": [],
+   "c:minecarts": [
+    "minecraft:minecart",
+    "minecraft:tnt_minecart",
+    "minecraft:chest_minecart",
+    "minecraft:furnace_minecart",
+    "minecraft:command_block_minecart",
+    "minecraft:hopper_minecart",
+    "minecraft:spawner_minecart"
+   ],
+   "c:teleporting_not_supported": []
+  },
+  "tags/fluid": {
+   "c:beetroot_soup": [],
+   "c:experience": [],
+   "c:gaseous": [],
+   "c:hidden_from_recipe_viewers": [],
+   "c:honey": [],
+   "c:lava": [
+    "#minecraft:lava?"
+   ],
+   "c:milk": [],
+   "c:mushroom_stew": [],
+   "c:potion": [],
+   "c:rabbit_stew": [],
+   "c:suspicious_stew": [],
+   "c:water": [
+    "#minecraft:water?"
+   ]
+  },
+  "tags/item": {
+   "c:animal_foods": [
+    "#minecraft:armadillo_food?",
+    "#minecraft:axolotl_food?",
+    "#minecraft:bee_food?",
+    "#minecraft:camel_food?",
+    "#minecraft:cat_food?",
+    "#minecraft:chicken_food?",
+    "#minecraft:cow_food?",
+    "#minecraft:fox_food?",
+    "#minecraft:frog_food?",
+    "#minecraft:goat_food?",
+    "#minecraft:hoglin_food?",
+    "#minecraft:horse_food?",
+    "#minecraft:llama_food?",
+    "#minecraft:ocelot_food?",
+    "#minecraft:panda_food?",
+    "#minecraft:parrot_food?",
+    "#minecraft:pig_food?",
+    "#minecraft:piglin_food?",
+    "#minecraft:rabbit_food?",
+    "#minecraft:sheep_food?",
+    "#minecraft:sniffer_food?",
+    "#minecraft:strider_food?",
+    "#minecraft:turtle_food?",
+    "#minecraft:wolf_food?"
+   ],
+   "c:armors": [
+    "#minecraft:head_armor?",
+    "#minecraft:chest_armor?",
+    "#minecraft:leg_armor?",
+    "#minecraft:foot_armor?"
+   ],
+   "c:barrels": [
+    "#c:barrels/wooden"
+   ],
+   "c:barrels/wooden": [
+    "minecraft:barrel",
+    "#c:wooden_barrels?",
+    "#c:wooden_barrels?"
+   ],
+   "c:bones": [
+    "minecraft:bone"
+   ],
+   "c:bookshelves": [
+    "minecraft:bookshelf"
+   ],
+   "c:bricks": [
+    "#c:bricks/normal?",
+    "#c:bricks/nether?"
+   ],
+   "c:bricks/nether": [
+    "minecraft:nether_brick"
+   ],
+   "c:bricks/normal": [
+    "minecraft:brick"
+   ],
+   "c:buckets": [
+    "#c:buckets/empty?",
+    "#c:buckets/water?",
+    "#c:buckets/lava?",
+    "#c:buckets/milk?",
+    "#c:buckets/powder_snow?",
+    "#c:buckets/entity_water?"
+   ],
+   "c:buckets/empty": [
+    "minecraft:bucket"
+   ],
+   "c:buckets/entity_water": [
+    "minecraft:axolotl_bucket",
+    "minecraft:cod_bucket",
+    "minecraft:pufferfish_bucket",
+    "minecraft:tadpole_bucket",
+    "minecraft:tropical_fish_bucket",
+    "minecraft:salmon_bucket"
+   ],
+   "c:buckets/lava": [
+    "minecraft:lava_bucket"
+   ],
+   "c:buckets/milk": [
+    "minecraft:milk_bucket"
+   ],
+   "c:buckets/powder_snow": [
+    "minecraft:powder_snow_bucket"
+   ],
+   "c:buckets/water": [
+    "minecraft:water_bucket"
+   ],
+   "c:budding_blocks": [
+    "minecraft:budding_amethyst"
+   ],
+   "c:buds": [
+    "minecraft:small_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:large_amethyst_bud"
+   ],
+   "c:chains": [
+    "minecraft:chain"
+   ],
+   "c:chests": [
+    "#c:chests/wooden",
+    "#c:chests/trapped",
+    "#c:chests/ender"
+   ],
+   "c:chests/ender": [
+    "minecraft:ender_chest"
+   ],
+   "c:chests/trapped": [
+    "minecraft:trapped_chest"
+   ],
+   "c:chests/wooden": [
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "#c:wooden_chests?",
+    "#c:wooden_chests?"
+   ],
+   "c:clusters": [
+    "minecraft:amethyst_cluster"
+   ],
+   "c:coal": [
+    "#minecraft:coals?"
+   ],
+   "c:cobblestones": [
+    "#c:cobblestones/normal?",
+    "#c:cobblestones/mossy?",
+    "#c:cobblestones/infested?",
+    "#c:cobblestones/deepslate?"
+   ],
+   "c:cobblestones/deepslate": [
+    "minecraft:cobbled_deepslate"
+   ],
+   "c:cobblestones/infested": [
+    "minecraft:infested_cobblestone"
+   ],
+   "c:cobblestones/mossy": [
+    "minecraft:mossy_cobblestone"
+   ],
+   "c:cobblestones/normal": [
+    "minecraft:cobblestone"
+   ],
+   "c:concrete": [
+    "minecraft:white_concrete",
+    "minecraft:orange_concrete",
+    "minecraft:magenta_concrete",
+    "minecraft:light_blue_concrete",
+    "minecraft:yellow_concrete",
+    "minecraft:lime_concrete",
+    "minecraft:pink_concrete",
+    "minecraft:gray_concrete",
+    "minecraft:light_gray_concrete",
+    "minecraft:cyan_concrete",
+    "minecraft:purple_concrete",
+    "minecraft:blue_concrete",
+    "minecraft:brown_concrete",
+    "minecraft:green_concrete",
+    "minecraft:black_concrete",
+    "minecraft:red_concrete"
+   ],
+   "c:concrete_powder": [
+    "minecraft:white_concrete_powder",
+    "minecraft:orange_concrete_powder",
+    "minecraft:magenta_concrete_powder",
+    "minecraft:light_blue_concrete_powder",
+    "minecraft:yellow_concrete_powder",
+    "minecraft:lime_concrete_powder",
+    "minecraft:pink_concrete_powder",
+    "minecraft:gray_concrete_powder",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:cyan_concrete_powder",
+    "minecraft:purple_concrete_powder",
+    "minecraft:blue_concrete_powder",
+    "minecraft:brown_concrete_powder",
+    "minecraft:green_concrete_powder",
+    "minecraft:red_concrete_powder",
+    "minecraft:black_concrete_powder"
+   ],
+   "c:concrete_powders": [
+    "minecraft:white_concrete_powder",
+    "minecraft:orange_concrete_powder",
+    "minecraft:magenta_concrete_powder",
+    "minecraft:light_blue_concrete_powder",
+    "minecraft:yellow_concrete_powder",
+    "minecraft:lime_concrete_powder",
+    "minecraft:pink_concrete_powder",
+    "minecraft:gray_concrete_powder",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:cyan_concrete_powder",
+    "minecraft:purple_concrete_powder",
+    "minecraft:blue_concrete_powder",
+    "minecraft:brown_concrete_powder",
+    "minecraft:green_concrete_powder",
+    "minecraft:red_concrete_powder",
+    "minecraft:black_concrete_powder",
+    "#c:concrete_powder?"
+   ],
+   "c:concretes": [
+    "minecraft:white_concrete",
+    "minecraft:orange_concrete",
+    "minecraft:magenta_concrete",
+    "minecraft:light_blue_concrete",
+    "minecraft:yellow_concrete",
+    "minecraft:lime_concrete",
+    "minecraft:pink_concrete",
+    "minecraft:gray_concrete",
+    "minecraft:light_gray_concrete",
+    "minecraft:cyan_concrete",
+    "minecraft:purple_concrete",
+    "minecraft:blue_concrete",
+    "minecraft:brown_concrete",
+    "minecraft:green_concrete",
+    "minecraft:black_concrete",
+    "minecraft:red_concrete",
+    "#c:concrete?"
+   ],
+   "c:crops": [
+    "#c:crops/beetroot?",
+    "#c:crops/cactus?",
+    "#c:crops/carrot?",
+    "#c:crops/cocoa_bean?",
+    "#c:crops/melon?",
+    "#c:crops/nether_wart?",
+    "#c:crops/potato?",
+    "#c:crops/pumpkin?",
+    "#c:crops/sugar_cane?",
+    "#c:crops/wheat?"
+   ],
+   "c:crops/beetroot": [
+    "minecraft:beetroot"
+   ],
+   "c:crops/cactus": [
+    "minecraft:cactus"
+   ],
+   "c:crops/carrot": [
+    "minecraft:carrot"
+   ],
+   "c:crops/cocoa_bean": [
+    "minecraft:cocoa_beans"
+   ],
+   "c:crops/melon": [
+    "minecraft:melon"
+   ],
+   "c:crops/nether_wart": [
+    "minecraft:nether_wart"
+   ],
+   "c:crops/potato": [
+    "minecraft:potato"
+   ],
+   "c:crops/pumpkin": [
+    "minecraft:pumpkin"
+   ],
+   "c:crops/sugar_cane": [
+    "minecraft:sugar_cane"
+   ],
+   "c:crops/wheat": [
+    "minecraft:wheat"
+   ],
+   "c:drink_containing/bottle": [
+    "minecraft:potion",
+    "minecraft:honey_bottle",
+    "minecraft:ominous_bottle"
+   ],
+   "c:drink_containing/bucket": [
+    "minecraft:milk_bucket"
+   ],
+   "c:drinks": [
+    "#c:drinks/water?",
+    "#c:drinks/watery?",
+    "#c:drinks/milk?",
+    "#c:drinks/honey?",
+    "#c:drinks/magic?",
+    "#c:drinks/ominous?",
+    "#c:drinks/juice?"
+   ],
+   "c:drinks/honey": [
+    "minecraft:honey_bottle"
+   ],
+   "c:drinks/juice": [],
+   "c:drinks/magic": [
+    "minecraft:potion",
+    "#c:drinks/ominous?"
+   ],
+   "c:drinks/milk": [
+    "minecraft:milk_bucket"
+   ],
+   "c:drinks/ominous": [
+    "minecraft:ominous_bottle"
+   ],
+   "c:drinks/water": [],
+   "c:drinks/watery": [
+    "minecraft:potion",
+    "#c:drinks/water?"
+   ],
+   "c:dusts": [
+    "#c:dusts/glowstone?",
+    "#c:dusts/redstone?"
+   ],
+   "c:dusts/glowstone": [
+    "minecraft:glowstone_dust",
+    "#c:glowstone_dusts?"
+   ],
+   "c:dusts/redstone": [
+    "minecraft:redstone",
+    "#c:redstone_dusts?"
+   ],
+   "c:dyed": [
+    "#c:dyed/white",
+    "#c:dyed/orange",
+    "#c:dyed/magenta",
+    "#c:dyed/light_blue",
+    "#c:dyed/yellow",
+    "#c:dyed/lime",
+    "#c:dyed/pink",
+    "#c:dyed/gray",
+    "#c:dyed/light_gray",
+    "#c:dyed/cyan",
+    "#c:dyed/purple",
+    "#c:dyed/blue",
+    "#c:dyed/brown",
+    "#c:dyed/green",
+    "#c:dyed/red",
+    "#c:dyed/black"
+   ],
+   "c:dyed/black": [
+    "minecraft:black_banner",
+    "minecraft:black_bed",
+    "minecraft:black_candle",
+    "minecraft:black_carpet",
+    "minecraft:black_concrete",
+    "minecraft:black_concrete_powder",
+    "minecraft:black_glazed_terracotta",
+    "minecraft:black_shulker_box",
+    "minecraft:black_stained_glass",
+    "minecraft:black_stained_glass_pane",
+    "minecraft:black_terracotta",
+    "minecraft:black_wool"
+   ],
+   "c:dyed/blue": [
+    "minecraft:blue_banner",
+    "minecraft:blue_bed",
+    "minecraft:blue_candle",
+    "minecraft:blue_carpet",
+    "minecraft:blue_concrete",
+    "minecraft:blue_concrete_powder",
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:blue_shulker_box",
+    "minecraft:blue_stained_glass",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:blue_terracotta",
+    "minecraft:blue_wool"
+   ],
+   "c:dyed/brown": [
+    "minecraft:brown_banner",
+    "minecraft:brown_bed",
+    "minecraft:brown_candle",
+    "minecraft:brown_carpet",
+    "minecraft:brown_concrete",
+    "minecraft:brown_concrete_powder",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:brown_shulker_box",
+    "minecraft:brown_stained_glass",
+    "minecraft:brown_stained_glass_pane",
+    "minecraft:brown_terracotta",
+    "minecraft:brown_wool"
+   ],
+   "c:dyed/cyan": [
+    "minecraft:cyan_banner",
+    "minecraft:cyan_bed",
+    "minecraft:cyan_candle",
+    "minecraft:cyan_carpet",
+    "minecraft:cyan_concrete",
+    "minecraft:cyan_concrete_powder",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:cyan_shulker_box",
+    "minecraft:cyan_stained_glass",
+    "minecraft:cyan_stained_glass_pane",
+    "minecraft:cyan_terracotta",
+    "minecraft:cyan_wool"
+   ],
+   "c:dyed/gray": [
+    "minecraft:gray_banner",
+    "minecraft:gray_bed",
+    "minecraft:gray_candle",
+    "minecraft:gray_carpet",
+    "minecraft:gray_concrete",
+    "minecraft:gray_concrete_powder",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:gray_shulker_box",
+    "minecraft:gray_stained_glass",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:gray_terracotta",
+    "minecraft:gray_wool"
+   ],
+   "c:dyed/green": [
+    "minecraft:green_banner",
+    "minecraft:green_bed",
+    "minecraft:green_candle",
+    "minecraft:green_carpet",
+    "minecraft:green_concrete",
+    "minecraft:green_concrete_powder",
+    "minecraft:green_glazed_terracotta",
+    "minecraft:green_shulker_box",
+    "minecraft:green_stained_glass",
+    "minecraft:green_stained_glass_pane",
+    "minecraft:green_terracotta",
+    "minecraft:green_wool"
+   ],
+   "c:dyed/light_blue": [
+    "minecraft:light_blue_banner",
+    "minecraft:light_blue_bed",
+    "minecraft:light_blue_candle",
+    "minecraft:light_blue_carpet",
+    "minecraft:light_blue_concrete",
+    "minecraft:light_blue_concrete_powder",
+    "minecraft:light_blue_glazed_terracotta",
+    "minecraft:light_blue_shulker_box",
+    "minecraft:light_blue_stained_glass",
+    "minecraft:light_blue_stained_glass_pane",
+    "minecraft:light_blue_terracotta",
+    "minecraft:light_blue_wool"
+   ],
+   "c:dyed/light_gray": [
+    "minecraft:light_gray_banner",
+    "minecraft:light_gray_bed",
+    "minecraft:light_gray_candle",
+    "minecraft:light_gray_carpet",
+    "minecraft:light_gray_concrete",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:light_gray_glazed_terracotta",
+    "minecraft:light_gray_shulker_box",
+    "minecraft:light_gray_stained_glass",
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:light_gray_terracotta",
+    "minecraft:light_gray_wool"
+   ],
+   "c:dyed/lime": [
+    "minecraft:lime_banner",
+    "minecraft:lime_bed",
+    "minecraft:lime_candle",
+    "minecraft:lime_carpet",
+    "minecraft:lime_concrete",
+    "minecraft:lime_concrete_powder",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:lime_shulker_box",
+    "minecraft:lime_stained_glass",
+    "minecraft:lime_stained_glass_pane",
+    "minecraft:lime_terracotta",
+    "minecraft:lime_wool"
+   ],
+   "c:dyed/magenta": [
+    "minecraft:magenta_banner",
+    "minecraft:magenta_bed",
+    "minecraft:magenta_candle",
+    "minecraft:magenta_carpet",
+    "minecraft:magenta_concrete",
+    "minecraft:magenta_concrete_powder",
+    "minecraft:magenta_glazed_terracotta",
+    "minecraft:magenta_shulker_box",
+    "minecraft:magenta_stained_glass",
+    "minecraft:magenta_stained_glass_pane",
+    "minecraft:magenta_terracotta",
+    "minecraft:magenta_wool"
+   ],
+   "c:dyed/orange": [
+    "minecraft:orange_banner",
+    "minecraft:orange_bed",
+    "minecraft:orange_candle",
+    "minecraft:orange_carpet",
+    "minecraft:orange_concrete",
+    "minecraft:orange_concrete_powder",
+    "minecraft:orange_glazed_terracotta",
+    "minecraft:orange_shulker_box",
+    "minecraft:orange_stained_glass",
+    "minecraft:orange_stained_glass_pane",
+    "minecraft:orange_terracotta",
+    "minecraft:orange_wool"
+   ],
+   "c:dyed/pink": [
+    "minecraft:pink_banner",
+    "minecraft:pink_bed",
+    "minecraft:pink_candle",
+    "minecraft:pink_carpet",
+    "minecraft:pink_concrete",
+    "minecraft:pink_concrete_powder",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:pink_shulker_box",
+    "minecraft:pink_stained_glass",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:pink_terracotta",
+    "minecraft:pink_wool"
+   ],
+   "c:dyed/purple": [
+    "minecraft:purple_banner",
+    "minecraft:purple_bed",
+    "minecraft:purple_candle",
+    "minecraft:purple_carpet",
+    "minecraft:purple_concrete",
+    "minecraft:purple_concrete_powder",
+    "minecraft:purple_glazed_terracotta",
+    "minecraft:purple_shulker_box",
+    "minecraft:purple_stained_glass",
+    "minecraft:purple_stained_glass_pane",
+    "minecraft:purple_terracotta",
+    "minecraft:purple_wool"
+   ],
+   "c:dyed/red": [
+    "minecraft:red_banner",
+    "minecraft:red_bed",
+    "minecraft:red_candle",
+    "minecraft:red_carpet",
+    "minecraft:red_concrete",
+    "minecraft:red_concrete_powder",
+    "minecraft:red_glazed_terracotta",
+    "minecraft:red_shulker_box",
+    "minecraft:red_stained_glass",
+    "minecraft:red_stained_glass_pane",
+    "minecraft:red_terracotta",
+    "minecraft:red_wool"
+   ],
+   "c:dyed/white": [
+    "minecraft:white_banner",
+    "minecraft:white_bed",
+    "minecraft:white_candle",
+    "minecraft:white_carpet",
+    "minecraft:white_concrete",
+    "minecraft:white_concrete_powder",
+    "minecraft:white_glazed_terracotta",
+    "minecraft:white_shulker_box",
+    "minecraft:white_stained_glass",
+    "minecraft:white_stained_glass_pane",
+    "minecraft:white_terracotta",
+    "minecraft:white_wool"
+   ],
+   "c:dyed/yellow": [
+    "minecraft:yellow_banner",
+    "minecraft:yellow_bed",
+    "minecraft:yellow_candle",
+    "minecraft:yellow_carpet",
+    "minecraft:yellow_concrete",
+    "minecraft:yellow_concrete_powder",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:yellow_shulker_box",
+    "minecraft:yellow_stained_glass",
+    "minecraft:yellow_stained_glass_pane",
+    "minecraft:yellow_terracotta",
+    "minecraft:yellow_wool"
+   ],
+   "c:dyes": [
+    "#c:dyes/white?",
+    "#c:dyes/orange?",
+    "#c:dyes/magenta?",
+    "#c:dyes/light_blue?",
+    "#c:dyes/yellow?",
+    "#c:dyes/lime?",
+    "#c:dyes/pink?",
+    "#c:dyes/gray?",
+    "#c:dyes/light_gray?",
+    "#c:dyes/cyan?",
+    "#c:dyes/purple?",
+    "#c:dyes/blue?",
+    "#c:dyes/brown?",
+    "#c:dyes/green?",
+    "#c:dyes/red?",
+    "#c:dyes/black?"
+   ],
+   "c:dyes/black": [
+    "minecraft:black_dye",
+    "#c:black_dyes?"
+   ],
+   "c:dyes/blue": [
+    "minecraft:blue_dye",
+    "#c:blue_dyes?"
+   ],
+   "c:dyes/brown": [
+    "minecraft:brown_dye",
+    "#c:brown_dyes?"
+   ],
+   "c:dyes/cyan": [
+    "minecraft:cyan_dye",
+    "#c:cyan_dyes?"
+   ],
+   "c:dyes/gray": [
+    "minecraft:gray_dye",
+    "#c:gray_dyes?"
+   ],
+   "c:dyes/green": [
+    "minecraft:green_dye",
+    "#c:green_dyes?"
+   ],
+   "c:dyes/light_blue": [
+    "minecraft:light_blue_dye",
+    "#c:light_blue_dyes?"
+   ],
+   "c:dyes/light_gray": [
+    "minecraft:light_gray_dye",
+    "#c:light_gray_dyes?"
+   ],
+   "c:dyes/lime": [
+    "minecraft:lime_dye",
+    "#c:lime_dyes?"
+   ],
+   "c:dyes/magenta": [
+    "minecraft:magenta_dye",
+    "#c:magenta_dyes?"
+   ],
+   "c:dyes/orange": [
+    "minecraft:orange_dye",
+    "#c:orange_dyes?"
+   ],
+   "c:dyes/pink": [
+    "minecraft:pink_dye",
+    "#c:pink_dyes?"
+   ],
+   "c:dyes/purple": [
+    "minecraft:purple_dye",
+    "#c:purple_dyes?"
+   ],
+   "c:dyes/red": [
+    "minecraft:red_dye",
+    "#c:red_dyes?"
+   ],
+   "c:dyes/white": [
+    "minecraft:white_dye",
+    "#c:white_dyes?"
+   ],
+   "c:dyes/yellow": [
+    "minecraft:yellow_dye",
+    "#c:yellow_dyes?"
+   ],
+   "c:eggs": [
+    "minecraft:egg"
+   ],
+   "c:enchantables": [
+    "#minecraft:enchantable/armor?",
+    "#minecraft:enchantable/equippable?",
+    "#minecraft:enchantable/weapon?",
+    "#minecraft:enchantable/sword?",
+    "#minecraft:enchantable/mining?",
+    "#minecraft:enchantable/mining_loot?",
+    "#minecraft:enchantable/fishing?",
+    "#minecraft:enchantable/trident?",
+    "#minecraft:enchantable/bow?",
+    "#minecraft:enchantable/crossbow?",
+    "#minecraft:enchantable/mace?",
+    "#minecraft:enchantable/fire_aspect?",
+    "#minecraft:enchantable/durability?",
+    "#minecraft:enchantable/vanishing?"
+   ],
+   "c:end_stones": [
+    "minecraft:end_stone"
+   ],
+   "c:ender_pearls": [
+    "minecraft:ender_pearl"
+   ],
+   "c:feathers": [
+    "minecraft:feather"
+   ],
+   "c:fence_gates": [
+    "#c:fence_gates/wooden?"
+   ],
+   "c:fence_gates/wooden": [
+    "minecraft:oak_fence_gate",
+    "minecraft:spruce_fence_gate",
+    "minecraft:birch_fence_gate",
+    "minecraft:jungle_fence_gate",
+    "minecraft:acacia_fence_gate",
+    "minecraft:dark_oak_fence_gate",
+    "minecraft:crimson_fence_gate",
+    "minecraft:warped_fence_gate",
+    "minecraft:mangrove_fence_gate",
+    "minecraft:bamboo_fence_gate",
+    "minecraft:cherry_fence_gate"
+   ],
+   "c:fences": [
+    "#c:fences/wooden?",
+    "#c:fences/nether_brick?"
+   ],
+   "c:fences/nether_brick": [
+    "minecraft:nether_brick_fence"
+   ],
+   "c:fences/wooden": [
+    "minecraft:oak_fence",
+    "minecraft:spruce_fence",
+    "minecraft:birch_fence",
+    "minecraft:jungle_fence",
+    "minecraft:acacia_fence",
+    "minecraft:dark_oak_fence",
+    "minecraft:crimson_fence",
+    "minecraft:warped_fence",
+    "minecraft:mangrove_fence",
+    "minecraft:bamboo_fence",
+    "minecraft:cherry_fence"
+   ],
+   "c:fertilizers": [
+    "minecraft:bone_meal"
+   ],
+   "c:foods": [
+    "minecraft:baked_potato",
+    "minecraft:pumpkin_pie",
+    "minecraft:honey_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:dried_kelp",
+    "#c:foods/fruit?",
+    "#c:foods/vegetable?",
+    "#c:foods/berry?",
+    "#c:foods/bread?",
+    "#c:foods/cookie?",
+    "#c:foods/dough?",
+    "#c:foods/raw_meat?",
+    "#c:foods/raw_fish?",
+    "#c:foods/cooked_meat?",
+    "#c:foods/cooked_fish?",
+    "#c:foods/soup?",
+    "#c:foods/candy?",
+    "#c:foods/pie?",
+    "#c:foods/golden?",
+    "#c:foods/edible_when_placed?",
+    "#c:foods/food_poisoning?"
+   ],
+   "c:foods/berries": [
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries"
+   ],
+   "c:foods/berry": [
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    "#c:foods/berries?"
+   ],
+   "c:foods/bread": [
+    "minecraft:bread",
+    "#c:foods/breads?"
+   ],
+   "c:foods/breads": [
+    "minecraft:bread"
+   ],
+   "c:foods/candies": [],
+   "c:foods/candy": [
+    "#c:foods/candies?"
+   ],
+   "c:foods/cooked_fish": [
+    "minecraft:cooked_cod",
+    "minecraft:cooked_salmon",
+    "#c:foods/cooked_fishes?"
+   ],
+   "c:foods/cooked_fishes": [
+    "minecraft:cooked_cod",
+    "minecraft:cooked_salmon"
+   ],
+   "c:foods/cooked_meat": [
+    "minecraft:cooked_beef",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_mutton",
+    "#c:foods/cooked_meats?"
+   ],
+   "c:foods/cooked_meats": [
+    "minecraft:cooked_beef",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_mutton"
+   ],
+   "c:foods/cookie": [
+    "minecraft:cookie",
+    "#c:foods/cookies?"
+   ],
+   "c:foods/cookies": [
+    "minecraft:cookie"
+   ],
+   "c:foods/dough": [],
+   "c:foods/edible_when_placed": [
+    "minecraft:cake"
+   ],
+   "c:foods/food_poisoning": [
+    "minecraft:poisonous_potato",
+    "minecraft:pufferfish",
+    "minecraft:spider_eye",
+    "minecraft:chicken",
+    "minecraft:rotten_flesh"
+   ],
+   "c:foods/fruit": [
+    "minecraft:apple",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:chorus_fruit",
+    "minecraft:melon_slice",
+    "#c:foods/fruits?"
+   ],
+   "c:foods/fruits": [
+    "minecraft:apple",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:melon_slice"
+   ],
+   "c:foods/golden": [
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:golden_carrot"
+   ],
+   "c:foods/pie": [
+    "minecraft:pumpkin_pie"
+   ],
+   "c:foods/raw_fish": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish",
+    "#c:foods/raw_fishes?"
+   ],
+   "c:foods/raw_fishes": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish"
+   ],
+   "c:foods/raw_meat": [
+    "minecraft:beef",
+    "minecraft:porkchop",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:mutton",
+    "#c:foods/raw_meats?"
+   ],
+   "c:foods/raw_meats": [
+    "minecraft:beef",
+    "minecraft:porkchop",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:mutton"
+   ],
+   "c:foods/soup": [
+    "minecraft:beetroot_soup",
+    "minecraft:mushroom_stew",
+    "minecraft:rabbit_stew",
+    "minecraft:suspicious_stew",
+    "#c:foods/soups?"
+   ],
+   "c:foods/soups": [
+    "minecraft:beetroot_soup",
+    "minecraft:mushroom_stew",
+    "minecraft:rabbit_stew",
+    "minecraft:suspicious_stew"
+   ],
+   "c:foods/vegetable": [
+    "minecraft:carrot",
+    "minecraft:golden_carrot",
+    "minecraft:potato",
+    "minecraft:beetroot",
+    "#c:foods/vegetables?"
+   ],
+   "c:foods/vegetables": [
+    "minecraft:carrot",
+    "minecraft:golden_carrot",
+    "minecraft:potato",
+    "minecraft:beetroot"
+   ],
+   "c:gems": [
+    "#c:gems/amethyst?",
+    "#c:gems/diamond?",
+    "#c:gems/emerald?",
+    "#c:gems/lapis?",
+    "#c:gems/prismarine?",
+    "#c:gems/quartz?"
+   ],
+   "c:gems/amethyst": [
+    "minecraft:amethyst_shard"
+   ],
+   "c:gems/diamond": [
+    "minecraft:diamond",
+    "#c:diamonds?"
+   ],
+   "c:gems/emerald": [
+    "minecraft:emerald",
+    "#c:emeralds?"
+   ],
+   "c:gems/lapis": [
+    "minecraft:lapis_lazuli",
+    "#c:lapis?"
+   ],
+   "c:gems/prismarine": [
+    "minecraft:prismarine_crystals"
+   ],
+   "c:gems/quartz": [
+    "minecraft:quartz",
+    "#c:quartz?"
+   ],
+   "c:glass_blocks": [
+    "#c:glass_blocks/colorless?",
+    "#c:glass_blocks/cheap?",
+    "#c:glass_blocks/tinted?"
+   ],
+   "c:glass_blocks/cheap": [
+    "minecraft:glass",
+    "minecraft:white_stained_glass",
+    "minecraft:orange_stained_glass",
+    "minecraft:magenta_stained_glass",
+    "minecraft:light_blue_stained_glass",
+    "minecraft:yellow_stained_glass",
+    "minecraft:lime_stained_glass",
+    "minecraft:pink_stained_glass",
+    "minecraft:gray_stained_glass",
+    "minecraft:light_gray_stained_glass",
+    "minecraft:cyan_stained_glass",
+    "minecraft:purple_stained_glass",
+    "minecraft:blue_stained_glass",
+    "minecraft:brown_stained_glass",
+    "minecraft:green_stained_glass",
+    "minecraft:black_stained_glass",
+    "minecraft:red_stained_glass"
+   ],
+   "c:glass_blocks/colorless": [
+    "minecraft:glass"
+   ],
+   "c:glass_blocks/tinted": [
+    "minecraft:tinted_glass"
+   ],
+   "c:glass_panes": [
+    "minecraft:white_stained_glass_pane",
+    "minecraft:orange_stained_glass_pane",
+    "minecraft:magenta_stained_glass_pane",
+    "minecraft:light_blue_stained_glass_pane",
+    "minecraft:yellow_stained_glass_pane",
+    "minecraft:lime_stained_glass_pane",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:cyan_stained_glass_pane",
+    "minecraft:purple_stained_glass_pane",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:brown_stained_glass_pane",
+    "minecraft:green_stained_glass_pane",
+    "minecraft:black_stained_glass_pane",
+    "minecraft:red_stained_glass_pane",
+    "#c:glass_panes/colorless?"
+   ],
+   "c:glass_panes/colorless": [
+    "minecraft:glass_pane"
+   ],
+   "c:glazed_terracotta": [
+    "minecraft:white_glazed_terracotta",
+    "minecraft:orange_glazed_terracotta",
+    "minecraft:magenta_glazed_terracotta",
+    "minecraft:light_blue_glazed_terracotta",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:light_gray_glazed_terracotta",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:purple_glazed_terracotta",
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:green_glazed_terracotta",
+    "minecraft:black_glazed_terracotta",
+    "minecraft:red_glazed_terracotta"
+   ],
+   "c:glazed_terracottas": [
+    "minecraft:white_glazed_terracotta",
+    "minecraft:orange_glazed_terracotta",
+    "minecraft:magenta_glazed_terracotta",
+    "minecraft:light_blue_glazed_terracotta",
+    "minecraft:yellow_glazed_terracotta",
+    "minecraft:lime_glazed_terracotta",
+    "minecraft:pink_glazed_terracotta",
+    "minecraft:gray_glazed_terracotta",
+    "minecraft:light_gray_glazed_terracotta",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:purple_glazed_terracotta",
+    "minecraft:blue_glazed_terracotta",
+    "minecraft:brown_glazed_terracotta",
+    "minecraft:green_glazed_terracotta",
+    "minecraft:black_glazed_terracotta",
+    "minecraft:red_glazed_terracotta",
+    "#c:glazed_terracotta?"
+   ],
+   "c:gravels": [
+    "minecraft:gravel"
+   ],
+   "c:gunpowders": [
+    "minecraft:gunpowder"
+   ],
+   "c:hidden_from_recipe_viewers": [],
+   "c:ingots": [
+    "#c:ingots/copper?",
+    "#c:ingots/iron?",
+    "#c:ingots/gold?",
+    "#c:ingots/netherite?"
+   ],
+   "c:ingots/copper": [
+    "minecraft:copper_ingot"
+   ],
+   "c:ingots/gold": [
+    "minecraft:gold_ingot"
+   ],
+   "c:ingots/iron": [
+    "minecraft:iron_ingot"
+   ],
+   "c:ingots/netherite": [
+    "minecraft:netherite_ingot"
+   ],
+   "c:leathers": [
+    "minecraft:leather"
+   ],
+   "c:loom_patterns": [
+    "minecraft:flower_banner_pattern",
+    "minecraft:creeper_banner_pattern",
+    "minecraft:skull_banner_pattern",
+    "minecraft:mojang_banner_pattern",
+    "minecraft:globe_banner_pattern",
+    "minecraft:piglin_banner_pattern",
+    "minecraft:flow_banner_pattern",
+    "minecraft:guster_banner_pattern"
+   ],
+   "c:mushrooms": [
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom"
+   ],
+   "c:music_discs": [
+    "minecraft:music_disc_13",
+    "minecraft:music_disc_cat",
+    "minecraft:music_disc_blocks",
+    "minecraft:music_disc_chirp",
+    "minecraft:music_disc_far",
+    "minecraft:music_disc_mall",
+    "minecraft:music_disc_mellohi",
+    "minecraft:music_disc_stal",
+    "minecraft:music_disc_strad",
+    "minecraft:music_disc_ward",
+    "minecraft:music_disc_11",
+    "minecraft:music_disc_wait",
+    "minecraft:music_disc_otherside",
+    "minecraft:music_disc_5",
+    "minecraft:music_disc_pigstep",
+    "minecraft:music_disc_relic",
+    "minecraft:music_disc_creator",
+    "minecraft:music_disc_creator_music_box",
+    "minecraft:music_disc_precipice"
+   ],
+   "c:nether_stars": [
+    "minecraft:nether_star"
+   ],
+   "c:netherracks": [
+    "minecraft:netherrack"
+   ],
+   "c:nuggets": [
+    "#c:nuggets/iron?",
+    "#c:nuggets/gold?"
+   ],
+   "c:nuggets/gold": [
+    "minecraft:gold_nugget"
+   ],
+   "c:nuggets/iron": [
+    "minecraft:iron_nugget"
+   ],
+   "c:obsidians": [
+    "#c:obsidians/normal?",
+    "#c:obsidians/crying?"
+   ],
+   "c:obsidians/crying": [
+    "minecraft:crying_obsidian"
+   ],
+   "c:obsidians/normal": [
+    "minecraft:obsidian"
+   ],
+   "c:ore_bearing_ground/deepslate": [
+    "minecraft:deepslate"
+   ],
+   "c:ore_bearing_ground/netherrack": [
+    "minecraft:netherrack"
+   ],
+   "c:ore_bearing_ground/stone": [
+    "minecraft:stone"
+   ],
+   "c:ore_rates/dense": [
+    "minecraft:copper_ore",
+    "minecraft:deepslate_copper_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:lapis_ore",
+    "minecraft:redstone_ore"
+   ],
+   "c:ore_rates/singular": [
+    "minecraft:ancient_debris",
+    "minecraft:coal_ore",
+    "minecraft:deepslate_coal_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_emerald_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore",
+    "minecraft:gold_ore",
+    "minecraft:iron_ore",
+    "minecraft:nether_quartz_ore"
+   ],
+   "c:ore_rates/sparse": [
+    "minecraft:nether_gold_ore"
+   ],
+   "c:ores": [
+    "#c:ores/coal?",
+    "#c:ores/copper?",
+    "#c:ores/diamond?",
+    "#c:ores/emerald?",
+    "#c:ores/gold?",
+    "#c:ores/iron?",
+    "#c:ores/lapis?",
+    "#c:ores/netherite_scrap?",
+    "#c:ores/redstone?",
+    "#c:ores/quartz?"
+   ],
+   "c:ores/coal": [
+    "#minecraft:coal_ores?"
+   ],
+   "c:ores/copper": [
+    "#minecraft:copper_ores?"
+   ],
+   "c:ores/diamond": [
+    "#minecraft:diamond_ores?"
+   ],
+   "c:ores/emerald": [
+    "#minecraft:emerald_ores?"
+   ],
+   "c:ores/gold": [
+    "#minecraft:gold_ores?"
+   ],
+   "c:ores/iron": [
+    "#minecraft:iron_ores?"
+   ],
+   "c:ores/lapis": [
+    "#minecraft:lapis_ores?"
+   ],
+   "c:ores/netherite_scrap": [
+    "minecraft:ancient_debris"
+   ],
+   "c:ores/quartz": [
+    "minecraft:nether_quartz_ore",
+    "#c:quartz_ores?"
+   ],
+   "c:ores/redstone": [
+    "#minecraft:redstone_ores?"
+   ],
+   "c:ores_in_ground/deepslate": [
+    "minecraft:deepslate_coal_ore",
+    "minecraft:deepslate_copper_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_emerald_ore",
+    "minecraft:deepslate_gold_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:deepslate_redstone_ore"
+   ],
+   "c:ores_in_ground/netherrack": [
+    "minecraft:nether_gold_ore",
+    "minecraft:nether_quartz_ore"
+   ],
+   "c:ores_in_ground/stone": [
+    "minecraft:coal_ore",
+    "minecraft:copper_ore",
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore",
+    "minecraft:gold_ore",
+    "minecraft:iron_ore",
+    "minecraft:lapis_ore",
+    "minecraft:redstone_ore"
+   ],
+   "c:player_workstations/crafting_tables": [
+    "minecraft:crafting_table"
+   ],
+   "c:player_workstations/furnaces": [
+    "minecraft:furnace"
+   ],
+   "c:potions": [
+    "#c:potions/bottle?"
+   ],
+   "c:potions/bottle": [
+    "minecraft:potion",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion"
+   ],
+   "c:pumpkins": [
+    "#c:pumpkins/normal",
+    "#c:pumpkins/carved",
+    "#c:pumpkins/jack_o_lanterns"
+   ],
+   "c:pumpkins/carved": [
+    "minecraft:carved_pumpkin"
+   ],
+   "c:pumpkins/jack_o_lanterns": [
+    "minecraft:jack_o_lantern"
+   ],
+   "c:pumpkins/normal": [
+    "minecraft:pumpkin"
+   ],
+   "c:raw_blocks": [
+    "#c:raw_blocks/copper?",
+    "#c:raw_blocks/gold?",
+    "#c:raw_blocks/iron?"
+   ],
+   "c:raw_blocks/copper": [
+    "minecraft:raw_copper_block"
+   ],
+   "c:raw_blocks/gold": [
+    "minecraft:raw_gold_block"
+   ],
+   "c:raw_blocks/iron": [
+    "minecraft:raw_iron_block"
+   ],
+   "c:raw_materials": [
+    "#c:raw_materials/copper?",
+    "#c:raw_materials/gold?",
+    "#c:raw_materials/iron?",
+    "#c:raw_materials/copper?",
+    "#c:raw_materials/iron?",
+    "#c:raw_materials/gold?"
+   ],
+   "c:raw_materials/copper": [
+    "minecraft:raw_copper",
+    "#c:raw_copper_ores?"
+   ],
+   "c:raw_materials/gold": [
+    "minecraft:raw_gold",
+    "#c:raw_gold_ores?"
+   ],
+   "c:raw_materials/iron": [
+    "minecraft:raw_iron",
+    "#c:raw_iron_ores?"
+   ],
+   "c:rods": [
+    "#c:rods/wooden?",
+    "#c:rods/blaze?",
+    "#c:rods/breeze?"
+   ],
+   "c:rods/blaze": [
+    "minecraft:blaze_rod"
+   ],
+   "c:rods/breeze": [
+    "minecraft:breeze_rod"
+   ],
+   "c:rods/wooden": [
+    "minecraft:stick"
+   ],
+   "c:ropes": [],
+   "c:sands": [
+    "#c:sands/colorless?",
+    "#c:sands/red?"
+   ],
+   "c:sands/colorless": [
+    "minecraft:sand"
+   ],
+   "c:sands/red": [
+    "minecraft:red_sand"
+   ],
+   "c:sandstone/blocks": [
+    "#c:sandstone/uncolored_blocks?",
+    "#c:sandstone/red_blocks?",
+    "#c:sandstone_blocks?"
+   ],
+   "c:sandstone/red_blocks": [
+    "minecraft:red_sandstone",
+    "minecraft:cut_red_sandstone",
+    "minecraft:smooth_red_sandstone",
+    "minecraft:chiseled_red_sandstone",
+    "#c:red_sandstone_blocks?"
+   ],
+   "c:sandstone/red_slabs": [
+    "minecraft:red_sandstone_slab",
+    "minecraft:cut_red_sandstone_slab",
+    "minecraft:smooth_red_sandstone_slab",
+    "#c:red_sandstone_slabs?"
+   ],
+   "c:sandstone/red_stairs": [
+    "minecraft:red_sandstone_stairs",
+    "minecraft:smooth_red_sandstone_stairs",
+    "#c:red_sandstone_stairs?"
+   ],
+   "c:sandstone/slabs": [
+    "#c:sandstone/uncolored_slabs?",
+    "#c:sandstone/red_slabs?",
+    "#c:sandstone_slabs?"
+   ],
+   "c:sandstone/stairs": [
+    "#c:sandstone/uncolored_stairs?",
+    "#c:sandstone/red_stairs?",
+    "#c:sandstone_stairs?"
+   ],
+   "c:sandstone/uncolored_blocks": [
+    "minecraft:sandstone",
+    "minecraft:cut_sandstone",
+    "minecraft:smooth_sandstone",
+    "minecraft:chiseled_sandstone",
+    "#c:uncolored_sandstone_blocks?"
+   ],
+   "c:sandstone/uncolored_slabs": [
+    "minecraft:sandstone_slab",
+    "minecraft:cut_sandstone_slab",
+    "minecraft:smooth_sandstone_slab",
+    "#c:uncolored_sandstone_slabs?"
+   ],
+   "c:sandstone/uncolored_stairs": [
+    "minecraft:sandstone_stairs",
+    "minecraft:smooth_sandstone_stairs",
+    "#c:uncolored_sandstone_stairs?"
+   ],
+   "c:seeds": [
+    "#c:seeds/beetroot?",
+    "#c:seeds/melon?",
+    "#c:seeds/pumpkin?",
+    "#c:seeds/torchflower?",
+    "#c:seeds/wheat?"
+   ],
+   "c:seeds/beetroot": [
+    "minecraft:beetroot_seeds"
+   ],
+   "c:seeds/melon": [
+    "minecraft:melon_seeds"
+   ],
+   "c:seeds/pumpkin": [
+    "minecraft:pumpkin_seeds"
+   ],
+   "c:seeds/torchflower": [
+    "minecraft:torchflower_seeds"
+   ],
+   "c:seeds/wheat": [
+    "minecraft:wheat_seeds"
+   ],
+   "c:shulker_boxes": [
+    "minecraft:shulker_box",
+    "minecraft:white_shulker_box",
+    "minecraft:orange_shulker_box",
+    "minecraft:magenta_shulker_box",
+    "minecraft:light_blue_shulker_box",
+    "minecraft:yellow_shulker_box",
+    "minecraft:lime_shulker_box",
+    "minecraft:pink_shulker_box",
+    "minecraft:gray_shulker_box",
+    "minecraft:light_gray_shulker_box",
+    "minecraft:cyan_shulker_box",
+    "minecraft:purple_shulker_box",
+    "minecraft:blue_shulker_box",
+    "minecraft:brown_shulker_box",
+    "minecraft:green_shulker_box",
+    "minecraft:red_shulker_box",
+    "minecraft:black_shulker_box"
+   ],
+   "c:slime_balls": [
+    "minecraft:slime_ball"
+   ],
+   "c:stones": [
+    "minecraft:stone",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:tuff",
+    "minecraft:deepslate"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/bone_meal",
+    "#c:storage_blocks/coal",
+    "#c:storage_blocks/copper",
+    "#c:storage_blocks/diamond",
+    "#c:storage_blocks/dried_kelp",
+    "#c:storage_blocks/emerald",
+    "#c:storage_blocks/gold",
+    "#c:storage_blocks/iron",
+    "#c:storage_blocks/lapis",
+    "#c:storage_blocks/netherite",
+    "#c:storage_blocks/raw_copper",
+    "#c:storage_blocks/raw_gold",
+    "#c:storage_blocks/raw_iron",
+    "#c:storage_blocks/redstone",
+    "#c:storage_blocks/slime",
+    "#c:storage_blocks/wheat"
+   ],
+   "c:storage_blocks/bone_meal": [
+    "minecraft:bone_block"
+   ],
+   "c:storage_blocks/coal": [
+    "minecraft:coal_block"
+   ],
+   "c:storage_blocks/copper": [
+    "minecraft:copper_block"
+   ],
+   "c:storage_blocks/diamond": [
+    "minecraft:diamond_block"
+   ],
+   "c:storage_blocks/dried_kelp": [
+    "minecraft:dried_kelp_block"
+   ],
+   "c:storage_blocks/emerald": [
+    "minecraft:emerald_block"
+   ],
+   "c:storage_blocks/gold": [
+    "minecraft:gold_block"
+   ],
+   "c:storage_blocks/iron": [
+    "minecraft:iron_block"
+   ],
+   "c:storage_blocks/lapis": [
+    "minecraft:lapis_block"
+   ],
+   "c:storage_blocks/netherite": [
+    "minecraft:netherite_block"
+   ],
+   "c:storage_blocks/raw_copper": [
+    "minecraft:raw_copper_block"
+   ],
+   "c:storage_blocks/raw_gold": [
+    "minecraft:raw_gold_block"
+   ],
+   "c:storage_blocks/raw_iron": [
+    "minecraft:raw_iron_block"
+   ],
+   "c:storage_blocks/redstone": [
+    "minecraft:redstone_block"
+   ],
+   "c:storage_blocks/slime": [
+    "minecraft:slime_block"
+   ],
+   "c:storage_blocks/wheat": [
+    "minecraft:hay_block"
+   ],
+   "c:strings": [
+    "minecraft:string",
+    "#c:string?"
+   ],
+   "c:stripped_logs": [
+    "minecraft:stripped_acacia_log",
+    "minecraft:stripped_bamboo_block",
+    "minecraft:stripped_birch_log",
+    "minecraft:stripped_cherry_log",
+    "minecraft:stripped_dark_oak_log",
+    "minecraft:stripped_jungle_log",
+    "minecraft:stripped_mangrove_log",
+    "minecraft:stripped_oak_log",
+    "minecraft:stripped_spruce_log",
+    "minecraft:stripped_crimson_stem",
+    "minecraft:stripped_warped_stem"
+   ],
+   "c:stripped_woods": [
+    "minecraft:stripped_acacia_wood",
+    "minecraft:stripped_birch_wood",
+    "minecraft:stripped_cherry_wood",
+    "minecraft:stripped_dark_oak_wood",
+    "minecraft:stripped_jungle_wood",
+    "minecraft:stripped_mangrove_wood",
+    "minecraft:stripped_oak_wood",
+    "minecraft:stripped_spruce_wood",
+    "minecraft:stripped_crimson_hyphae",
+    "minecraft:stripped_warped_hyphae"
+   ],
+   "c:tools": [
+    "#minecraft:axes?",
+    "#minecraft:hoes?",
+    "#minecraft:pickaxes?",
+    "#minecraft:shovels?",
+    "#minecraft:swords?",
+    "#c:tools/bow?",
+    "#c:tools/brush?",
+    "#c:tools/crossbow?",
+    "#c:tools/fishing_rod?",
+    "#c:tools/igniter?",
+    "#c:tools/shear?",
+    "#c:tools/shield?",
+    "#c:tools/spear?",
+    "#c:tools/mining_tool?",
+    "#c:tools/melee_weapon?",
+    "#c:tools/ranged_weapon?"
+   ],
+   "c:tools/bow": [
+    "minecraft:bow",
+    "#c:tools/bows?",
+    "#c:bows?"
+   ],
+   "c:tools/bows": [
+    "minecraft:bow"
+   ],
+   "c:tools/brush": [
+    "minecraft:brush",
+    "#c:tools/brushes?"
+   ],
+   "c:tools/brushes": [
+    "minecraft:brush"
+   ],
+   "c:tools/crossbow": [
+    "minecraft:crossbow",
+    "#c:tools/crossbows?"
+   ],
+   "c:tools/crossbows": [
+    "minecraft:crossbow"
+   ],
+   "c:tools/fishing_rod": [
+    "minecraft:fishing_rod",
+    "#c:tools/fishing_rods?"
+   ],
+   "c:tools/fishing_rods": [
+    "minecraft:fishing_rod"
+   ],
+   "c:tools/igniter": [
+    "minecraft:flint_and_steel"
+   ],
+   "c:tools/mace": [
+    "minecraft:mace"
+   ],
+   "c:tools/melee_weapon": [
+    "minecraft:mace",
+    "minecraft:trident",
+    "minecraft:wooden_sword",
+    "minecraft:stone_sword",
+    "minecraft:golden_sword",
+    "minecraft:iron_sword",
+    "minecraft:diamond_sword",
+    "minecraft:netherite_sword",
+    "minecraft:wooden_axe",
+    "minecraft:stone_axe",
+    "minecraft:golden_axe",
+    "minecraft:iron_axe",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_axe",
+    "#c:tools/melee_weapons?"
+   ],
+   "c:tools/melee_weapons": [
+    "minecraft:wooden_sword",
+    "minecraft:stone_sword",
+    "minecraft:golden_sword",
+    "minecraft:iron_sword",
+    "minecraft:diamond_sword",
+    "minecraft:netherite_sword",
+    "minecraft:wooden_axe",
+    "minecraft:stone_axe",
+    "minecraft:golden_axe",
+    "minecraft:iron_axe",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_axe"
+   ],
+   "c:tools/mining_tool": [
+    "minecraft:wooden_pickaxe",
+    "minecraft:stone_pickaxe",
+    "minecraft:golden_pickaxe",
+    "minecraft:iron_pickaxe",
+    "minecraft:diamond_pickaxe",
+    "minecraft:netherite_pickaxe",
+    "#c:tools/mining_tools?"
+   ],
+   "c:tools/mining_tools": [
+    "minecraft:wooden_pickaxe",
+    "minecraft:stone_pickaxe",
+    "minecraft:golden_pickaxe",
+    "minecraft:iron_pickaxe",
+    "minecraft:diamond_pickaxe",
+    "minecraft:netherite_pickaxe"
+   ],
+   "c:tools/ranged_weapon": [
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+    "#c:tools/ranged_weapons?"
+   ],
+   "c:tools/ranged_weapons": [
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident"
+   ],
+   "c:tools/shear": [
+    "minecraft:shears",
+    "#c:tools/shears?",
+    "#c:shears?"
+   ],
+   "c:tools/shears": [
+    "minecraft:shears"
+   ],
+   "c:tools/shield": [
+    "minecraft:shield",
+    "#c:tools/shields?",
+    "#c:shields?"
+   ],
+   "c:tools/shields": [
+    "minecraft:shield"
+   ],
+   "c:tools/spear": [
+    "minecraft:trident",
+    "#c:tools/spears?",
+    "#c:spears?"
+   ],
+   "c:tools/spears": [
+    "minecraft:trident"
+   ],
+   "c:villager_job_sites": [
+    "minecraft:barrel",
+    "minecraft:blast_furnace",
+    "minecraft:brewing_stand",
+    "minecraft:cartography_table",
+    "minecraft:cauldron",
+    "minecraft:composter",
+    "minecraft:fletching_table",
+    "minecraft:grindstone",
+    "minecraft:lectern",
+    "minecraft:loom",
+    "minecraft:smithing_table",
+    "minecraft:smoker",
+    "minecraft:stonecutter"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "c:hidden_from_locator_selection": [],
+   "c:is_aquatic": [
+    "#c:is_ocean?",
+    "#c:is_river?"
+   ],
+   "c:is_aquatic_icy": [
+    "minecraft:frozen_river",
+    "minecraft:deep_frozen_ocean",
+    "minecraft:frozen_ocean"
+   ],
+   "c:is_badlands": [
+    "#minecraft:is_badlands?"
+   ],
+   "c:is_beach": [
+    "#minecraft:is_beach?"
+   ],
+   "c:is_birch_forest": [
+    "minecraft:birch_forest",
+    "minecraft:old_growth_birch_forest"
+   ],
+   "c:is_cave": [
+    "minecraft:deep_dark",
+    "minecraft:dripstone_caves",
+    "minecraft:lush_caves",
+    "#c:caves?"
+   ],
+   "c:is_cold": [
+    "#c:is_cold/overworld",
+    "#c:is_cold/nether",
+    "#c:is_cold/end"
+   ],
+   "c:is_cold/end": [
+    "minecraft:the_end",
+    "minecraft:small_end_islands",
+    "minecraft:end_midlands",
+    "minecraft:end_highlands",
+    "minecraft:end_barrens"
+   ],
+   "c:is_cold/nether": [],
+   "c:is_cold/overworld": [
+    "minecraft:taiga",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_forest",
+    "minecraft:snowy_plains",
+    "minecraft:ice_spikes",
+    "minecraft:grove",
+    "minecraft:snowy_slopes",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks",
+    "minecraft:stony_shore",
+    "minecraft:snowy_beach",
+    "minecraft:snowy_taiga",
+    "minecraft:frozen_river",
+    "minecraft:cold_ocean",
+    "minecraft:frozen_ocean",
+    "minecraft:deep_cold_ocean",
+    "minecraft:deep_frozen_ocean",
+    "#c:climate_cold?"
+   ],
+   "c:is_dead": [],
+   "c:is_deep_ocean": [
+    "#minecraft:is_deep_ocean?"
+   ],
+   "c:is_dense_vegetation": [
+    "#c:is_dense_vegetation/overworld?",
+    "#c:is_dense_vegetation/nether?",
+    "#c:is_dense_vegetation/end?"
+   ],
+   "c:is_dense_vegetation/end": [],
+   "c:is_dense_vegetation/nether": [],
+   "c:is_dense_vegetation/overworld": [
+    "minecraft:dark_forest",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:mangrove_swamp",
+    "#c:vegetation_dense?"
+   ],
+   "c:is_desert": [
+    "minecraft:desert"
+   ],
+   "c:is_dry": [
+    "#c:is_dry/overworld",
+    "#c:is_dry/nether",
+    "#c:is_dry/end"
+   ],
+   "c:is_dry/end": [
+    "minecraft:the_end",
+    "minecraft:small_end_islands",
+    "minecraft:end_midlands",
+    "minecraft:end_highlands",
+    "minecraft:end_barrens"
+   ],
+   "c:is_dry/nether": [
+    "minecraft:nether_wastes",
+    "minecraft:crimson_forest",
+    "minecraft:warped_forest",
+    "minecraft:soul_sand_valley",
+    "minecraft:basalt_deltas"
+   ],
+   "c:is_dry/overworld": [
+    "minecraft:desert",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "#c:climate_dry?"
+   ],
+   "c:is_end": [
+    "#minecraft:is_end?",
+    "#c:in_the_end?"
+   ],
+   "c:is_floral": [
+    "minecraft:sunflower_plains",
+    "minecraft:meadow",
+    "minecraft:cherry_grove",
+    "#c:is_flower_forest?"
+   ],
+   "c:is_flower_forest": [
+    "minecraft:flower_forest",
+    "#c:flower_forests?",
+    "#c:flower_forests?"
+   ],
+   "c:is_forest": [
+    "#minecraft:is_forest?"
+   ],
+   "c:is_hill": [
+    "#minecraft:is_hill?"
+   ],
+   "c:is_hot": [
+    "#c:is_hot/overworld",
+    "#c:is_hot/nether",
+    "#c:is_hot/end"
+   ],
+   "c:is_hot/end": [],
+   "c:is_hot/nether": [
+    "minecraft:nether_wastes",
+    "minecraft:crimson_forest",
+    "minecraft:warped_forest",
+    "minecraft:soul_sand_valley",
+    "minecraft:basalt_deltas"
+   ],
+   "c:is_hot/overworld": [
+    "minecraft:jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:desert",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "minecraft:stony_peaks",
+    "minecraft:mushroom_fields",
+    "minecraft:warm_ocean",
+    "#c:climate_hot?"
+   ],
+   "c:is_icy": [
+    "minecraft:frozen_peaks",
+    "minecraft:ice_spikes"
+   ],
+   "c:is_jungle": [
+    "#minecraft:is_jungle?"
+   ],
+   "c:is_lush": [
+    "minecraft:lush_caves"
+   ],
+   "c:is_magical": [],
+   "c:is_mountain": [
+    "#minecraft:is_mountain?",
+    "#c:is_mountain/peak?",
+    "#c:is_mountain/slope?"
+   ],
+   "c:is_mountain/peak": [
+    "minecraft:frozen_peaks",
+    "minecraft:jagged_peaks",
+    "minecraft:stony_peaks",
+    "#c:mountain_peak?"
+   ],
+   "c:is_mountain/slope": [
+    "minecraft:snowy_slopes",
+    "minecraft:meadow",
+    "minecraft:grove",
+    "minecraft:cherry_grove",
+    "#c:mountain_slope?"
+   ],
+   "c:is_mushroom": [
+    "minecraft:mushroom_fields"
+   ],
+   "c:is_nether": [
+    "#minecraft:is_nether?",
+    "#c:in_nether?"
+   ],
+   "c:is_nether_forest": [
+    "minecraft:warped_forest",
+    "minecraft:crimson_forest",
+    "#c:nether_forests?"
+   ],
+   "c:is_ocean": [
+    "#minecraft:is_ocean?",
+    "#c:is_deep_ocean?",
+    "#c:is_shallow_ocean?"
+   ],
+   "c:is_old_growth": [
+    "minecraft:old_growth_birch_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga"
+   ],
+   "c:is_outer_end_island": [
+    "minecraft:end_highlands",
+    "minecraft:end_midlands",
+    "minecraft:end_barrens",
+    "#c:end_islands?"
+   ],
+   "c:is_overworld": [
+    "#minecraft:is_overworld?",
+    "#c:in_the_overworld?"
+   ],
+   "c:is_plains": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains"
+   ],
+   "c:is_plateau": [
+    "minecraft:wooded_badlands",
+    "minecraft:savanna_plateau",
+    "minecraft:cherry_grove",
+    "minecraft:meadow"
+   ],
+   "c:is_rare": [
+    "minecraft:sunflower_plains",
+    "minecraft:flower_forest",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:bamboo_jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:eroded_badlands",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "minecraft:ice_spikes",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:mushroom_fields",
+    "minecraft:deep_dark"
+   ],
+   "c:is_river": [
+    "#minecraft:is_river?"
+   ],
+   "c:is_sandy": [
+    "minecraft:desert",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:beach"
+   ],
+   "c:is_savanna": [
+    "#minecraft:is_savanna?"
+   ],
+   "c:is_shallow_ocean": [
+    "minecraft:ocean",
+    "minecraft:lukewarm_ocean",
+    "minecraft:warm_ocean",
+    "minecraft:cold_ocean",
+    "minecraft:frozen_ocean"
+   ],
+   "c:is_snowy": [
+    "minecraft:snowy_beach",
+    "minecraft:snowy_plains",
+    "minecraft:ice_spikes",
+    "minecraft:snowy_taiga",
+    "minecraft:grove",
+    "minecraft:snowy_slopes",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks"
+   ],
+   "c:is_snowy_plains": [
+    "minecraft:snowy_plains"
+   ],
+   "c:is_sparse_vegetation": [
+    "#c:is_sparse_vegetation/overworld?",
+    "#c:is_sparse_vegetation/nether?",
+    "#c:is_sparse_vegetation/end?"
+   ],
+   "c:is_sparse_vegetation/end": [],
+   "c:is_sparse_vegetation/nether": [],
+   "c:is_sparse_vegetation/overworld": [
+    "minecraft:wooded_badlands",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:sparse_jungle",
+    "minecraft:windswept_savanna",
+    "minecraft:windswept_forest",
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:snowy_slopes",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks",
+    "#c:vegetation_sparse?"
+   ],
+   "c:is_spooky": [
+    "minecraft:dark_forest",
+    "minecraft:deep_dark"
+   ],
+   "c:is_stony_shores": [
+    "minecraft:stony_shore"
+   ],
+   "c:is_swamp": [
+    "minecraft:mangrove_swamp",
+    "minecraft:swamp"
+   ],
+   "c:is_taiga": [
+    "#minecraft:is_taiga?"
+   ],
+   "c:is_temperate": [
+    "#c:is_temperate/overworld",
+    "#c:is_temperate/nether",
+    "#c:is_temperate/end"
+   ],
+   "c:is_temperate/end": [],
+   "c:is_temperate/nether": [],
+   "c:is_temperate/overworld": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:forest",
+    "minecraft:flower_forest",
+    "minecraft:birch_forest",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:dark_forest",
+    "minecraft:cherry_grove",
+    "minecraft:meadow",
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:beach",
+    "minecraft:ocean",
+    "minecraft:deep_ocean",
+    "#c:climate_temperate?"
+   ],
+   "c:is_tree/coniferous": [
+    "#c:is_taiga?",
+    "minecraft:grove",
+    "#c:tree_coniferous?"
+   ],
+   "c:is_tree/deciduous": [
+    "minecraft:forest",
+    "minecraft:windswept_forest",
+    "minecraft:flower_forest",
+    "minecraft:birch_forest",
+    "minecraft:dark_forest",
+    "minecraft:old_growth_birch_forest",
+    "#c:tree_deciduous?"
+   ],
+   "c:is_tree/jungle": [
+    "#c:is_jungle?",
+    "#c:tree_jungle?"
+   ],
+   "c:is_tree/savanna": [
+    "#c:is_savanna?",
+    "#c:tree_savanna?"
+   ],
+   "c:is_underground": [
+    "#c:is_cave?"
+   ],
+   "c:is_void": [
+    "minecraft:the_void"
+   ],
+   "c:is_wasteland": [],
+   "c:is_wet": [
+    "#c:is_wet/overworld",
+    "#c:is_wet/nether",
+    "#c:is_wet/end"
+   ],
+   "c:is_wet/end": [],
+   "c:is_wet/nether": [],
+   "c:is_wet/overworld": [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:beach",
+    "minecraft:lush_caves",
+    "minecraft:dripstone_caves",
+    "#c:climate_wet?"
+   ],
+   "c:is_windswept": [
+    "minecraft:windswept_hills",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_forest",
+    "minecraft:windswept_savanna"
+   ],
+   "c:no_default_monsters": [
+    "minecraft:mushroom_fields",
+    "minecraft:deep_dark"
+   ]
+  },
+  "tags/worldgen/structure": {
+   "c:hidden_from_displayers": [],
+   "c:hidden_from_locator_selection": []
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,181 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "LambDynamicLights",
+ "file": "lambdynamiclights-4.8.11+1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "0286076e8b2922dfbe90cd4544a0d16e6d07d7249c732a37479ea4281e9cf96c86dd2e1ce5261489bd5553ceba33044bc550a04b9eb582645eb97f15c9c6a64c",
+ "mods": [
+  {
+   "modid": "lambdynlights",
+   "name": "LambDynamicLights",
+   "version": "4.8.11+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "lambdynlights_runtime",
+     "type": "required",
+     "range": "[4.8.11+1.21.1,)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "lambdynlights_runtime",
+   "name": "LambDynamicLights (Runtime)",
+   "version": "4.8.11+1.21.1",
+   "jar": "lambdynamiclights-4.8.11+1.21.1-neoforge.jar",
+   "deps": [
+    {
+     "modid": "lambdynlights_api",
+     "type": "required",
+     "range": "[4.8.11+1.21.1,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "spruceui",
+     "type": "required",
+     "range": "[6.2.5+1.21.1,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "yumi_mc_core",
+     "type": "required",
+     "range": "[1.0.0-beta.1+1.21.1,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "sodiumdynamiclights",
+     "type": "incompatible",
+     "range": null,
+     "side": "CLIENT"
+    },
+    {
+     "modid": "ryoamiclights",
+     "type": "incompatible",
+     "range": null,
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "yumi_mc_core",
+   "name": "Yumi Minecraft Libraries: Foundation",
+   "version": "1.0.0-beta.1+1.21.1",
+   "jar": "yumi-mc-foundation-1.0.0-beta.1+1.21.1-mojmap.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.21.8]",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "spruceui",
+   "name": "SpruceUI",
+   "version": "6.2.5+1.21.1",
+   "jar": "spruceui-6.2.5+1.21.1-mojmap.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "pride",
+   "name": "Pride Lib",
+   "version": "1.2.4+1.21.1",
+   "jar": "pridelib-1.2.4+1.21.1-mojmap.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "yumi_mc_core",
+     "type": "required",
+     "range": "[1.0.0-alpha.13+1.21.1,)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "lambdynlights_api",
+   "name": "LambDynamicLights (API)",
+   "version": "4.8.11+1.21.1",
+   "jar": "lambdynamiclights-api-4.8.11+1.21.1-mojmap.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "lambdynlights_api",
+   "name": "LambDynamicLights (API)",
+   "version": "4.8.11+1.21.1",
+   "jar": "lambdynamiclights-api-4.8.11+1.21.1.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "lambdynamiclights-4.8.11+1.21.1-neoforge.jar",
+  "lambdynamiclights-4.8.11+1.21.1.jar",
+  "lambdynamiclights-api-4.8.11+1.21.1-mojmap.jar",
+  "lambdynamiclights-api-4.8.11+1.21.1.jar",
+  "pridelib-1.2.4+1.21.1-mojmap.jar",
+  "pridelib-1.2.4+1.21.1.jar",
+  "spruceui-6.2.5+1.21.1-mojmap.jar",
+  "spruceui-6.2.5+1.21.1.jar",
+  "yumi-commons-collections-1.0.0.jar",
+  "yumi-commons-collections-1.0.0.jar",
+  "yumi-commons-collections-1.0.0.jar",
+  "yumi-commons-collections-1.0.0.jar",
+  "yumi-commons-core-1.0.0.jar",
+  "yumi-commons-core-1.0.0.jar",
+  "yumi-commons-core-1.0.0.jar",
+  "yumi-commons-core-1.0.0.jar",
+  "yumi-commons-event-1.0.0.jar",
+  "yumi-commons-event-1.0.0.jar",
+  "yumi-commons-event-1.0.0.jar",
+  "yumi-commons-event-1.0.0.jar",
+  "yumi-mc-foundation-1.0.0-beta.1+1.21.1-mojmap.jar",
+  "yumi-mc-foundation-1.0.0-beta.1+1.21.1.jar"
+ ],
+ "namespaces": [
+  "lambdynlights",
+  "pride",
+  "spruceui"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

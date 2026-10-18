@@ -1,0 +1,52 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Kiwi 🥝",
+ "file": "Kiwi-1.21.1-NeoForge-15.8.7.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "d01c347febcb3d77bbfd2f44f38a80afbf4cf0b72a2aaa5d1875a38cbcd78be5a263fae4f63685256ea29c5f5f5d0f1c46892e2c78c4c1204863415dec9f4151",
+ "mods": [
+  {
+   "modid": "kiwi",
+   "name": "Kiwi Library",
+   "version": "15.8.7+neoforge",
+   "jar": "",
+   "deps": []
+  },
+  {
+   "modid": "fabric_api_base",
+   "name": "Forgified Fabric API Base",
+   "version": "0.4.42+d1308ded19",
+   "jar": "fabric-api-base-0.4.42+d1308ded19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "fabric-api-base-0.4.42+d1308ded19.jar"
+ ],
+ "namespaces": [
+  "kiwi",
+  "minecraft"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

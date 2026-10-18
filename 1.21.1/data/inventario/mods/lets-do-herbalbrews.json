@@ -1,0 +1,366 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "[Let's Do] HerbalBrews",
+ "file": "letsdo-herbalbrews-neoforge-1.1.4.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "281bac102511bf7753371ab7ed488d6990dfb0caae0f216b931d3a05c74adfbe28330910e76d7eea0268f0a7d64997a7c0d7d9b3fc9efb43d9711487f36b4989",
+ "mods": [
+  {
+   "modid": "herbalbrews",
+   "name": "[Let's Do] HerbalBrews",
+   "version": "1.1.4",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "farmersdelight",
+  "forge",
+  "herbalbrews",
+  "minecraft"
+ ],
+ "blocks": {
+  "herbalbrews:black_tea_block": "Black Tea",
+  "herbalbrews:black_tea_leaf_block": "Black Tea Leaf Block",
+  "herbalbrews:cauldron": "Brewing Cauldron",
+  "herbalbrews:coffee_block": "Coffee",
+  "herbalbrews:coffee_plant": "Coffee Beans",
+  "herbalbrews:copper_tea_kettle": "Copper Tea Kettle",
+  "herbalbrews:dried_green_tea_leaf_block": "Dried Green Tea Leaf Block",
+  "herbalbrews:dried_out_green_tea_leaf_block": "Dried Green Tea Leaf Block",
+  "herbalbrews:green_tea_block": "Green Tea",
+  "herbalbrews:green_tea_leaf_block": "Green Tea Leaf Block",
+  "herbalbrews:herbalbrews_banner": "Completionist Banner: §aHerbal Brews",
+  "herbalbrews:herbalbrews_wall_banner": "",
+  "herbalbrews:hibiscus": "Hibiscus",
+  "herbalbrews:hibiscus_tea_block": "Hibiscus Tea",
+  "herbalbrews:jug": "Jug",
+  "herbalbrews:lavender": "Lavender",
+  "herbalbrews:lavender_tea_block": "Lavender Tea",
+  "herbalbrews:milk_coffee_block": "Milk Coffee",
+  "herbalbrews:mixed_tea_leaf_block": "Mixed Tea Leaf Block",
+  "herbalbrews:oolong_tea_block": "Oolong Tea",
+  "herbalbrews:oolong_tea_leaf_block": "Oolong Tea Leaf Block",
+  "herbalbrews:potted_hibiscus": "Potted Hibiscus",
+  "herbalbrews:potted_lavender": "Potted Lavender",
+  "herbalbrews:potted_wild_coffee": "Potted Wild Coffee",
+  "herbalbrews:potted_wild_rooibos": "Potted Wild Rooibos",
+  "herbalbrews:potted_wild_yerba_mate": "Potted Wild Yerba Mate",
+  "herbalbrews:rooibos_plant": "Rooibos Leaf",
+  "herbalbrews:rooibos_tea_block": "Rooibos Tea",
+  "herbalbrews:stove": "Stove",
+  "herbalbrews:tea_kettle": "Tea Kettle",
+  "herbalbrews:tea_leaf_crate": "Bag of Tea Leaves",
+  "herbalbrews:tea_plant": "Tea Blossom",
+  "herbalbrews:wild_coffee_plant": "Wild Coffee",
+  "herbalbrews:wild_rooibos_plant": "Wild Rooibos",
+  "herbalbrews:wild_yerba_mate_plant": "Wild Yerba Mate",
+  "herbalbrews:yerba_mate_plant": "Yerba Mate Leaf",
+  "herbalbrews:yerba_mate_tea_block": "Yerba Mate Tea"
+ },
+ "effects": {
+  "herbalbrews:balanced": "Balanced",
+  "herbalbrews:bonding": "Bonding",
+  "herbalbrews:deeprush": "Deeprush",
+  "herbalbrews:feral": "Feral",
+  "herbalbrews:fortune": "Fortune",
+  "herbalbrews:lifeleech": "Lifeleech",
+  "herbalbrews:tough": "Tough"
+ },
+ "items": {
+  "herbalbrews:black_tea": "",
+  "herbalbrews:black_tea_leaf_block": "",
+  "herbalbrews:cauldron": "",
+  "herbalbrews:coffee": "",
+  "herbalbrews:coffee_beans": "",
+  "herbalbrews:copper_tea_kettle": "",
+  "herbalbrews:dried_black_tea": "Dried Black Tea",
+  "herbalbrews:dried_green_tea": "Dried Green Tea",
+  "herbalbrews:dried_green_tea_leaf_block": "",
+  "herbalbrews:dried_oolong_tea": "Dried Oolong Tea",
+  "herbalbrews:dried_out_green_tea_leaf_block": "",
+  "herbalbrews:flask": "Flask",
+  "herbalbrews:flask_1": "",
+  "herbalbrews:flask_2": "",
+  "herbalbrews:flask_3": "",
+  "herbalbrews:flask_4": "",
+  "herbalbrews:flask_5": "",
+  "herbalbrews:flask_6": "",
+  "herbalbrews:green_tea": "",
+  "herbalbrews:green_tea_leaf": "Green Tea Leaf",
+  "herbalbrews:green_tea_leaf_block": "",
+  "herbalbrews:herbal_infusion": "Herbal Infusion",
+  "herbalbrews:herbalbrews_banner": "",
+  "herbalbrews:hibiscus": "",
+  "herbalbrews:hibiscus_tea": "",
+  "herbalbrews:hibiscus_tea_block": "",
+  "herbalbrews:jug": "",
+  "herbalbrews:lavender": "",
+  "herbalbrews:lavender_blossom": "Lavender Blossom",
+  "herbalbrews:lavender_tea": "",
+  "herbalbrews:milk_coffee": "",
+  "herbalbrews:milk_coffee_block": "",
+  "herbalbrews:mixed_tea_leaf_block": "",
+  "herbalbrews:oolong_tea": "",
+  "herbalbrews:oolong_tea_leaf_block": "",
+  "herbalbrews:rooibos_leaf": "",
+  "herbalbrews:rooibos_tea": "",
+  "herbalbrews:stove": "",
+  "herbalbrews:tea_blossom": "",
+  "herbalbrews:tea_kettle": "",
+  "herbalbrews:tea_leaf_crate": "",
+  "herbalbrews:top_hat": "Top Hat",
+  "herbalbrews:wild_coffee_plant": "",
+  "herbalbrews:wild_rooibos_plant": "",
+  "herbalbrews:wild_yerba_mate_plant": "",
+  "herbalbrews:witch_hat": "Witch Hat",
+  "herbalbrews:yerba_mate_leaf": "",
+  "herbalbrews:yerba_mate_tea": ""
+ },
+ "data": {
+  "loot_table": [
+   "herbalbrews:advancements/coffee_beans",
+   "herbalbrews:advancements/completionist",
+   "herbalbrews:advancements/lilitus_coffee",
+   "herbalbrews:blocks/black_tea_leaf_block",
+   "herbalbrews:blocks/cauldron",
+   "herbalbrews:blocks/coffee_plant",
+   "herbalbrews:blocks/copper_tea_kettle",
+   "herbalbrews:blocks/dried_green_tea_leaf_block",
+   "herbalbrews:blocks/dried_out_green_tea_leaf_block",
+   "herbalbrews:blocks/green_tea_leaf_block",
+   "herbalbrews:blocks/herbalbrews_banner",
+   "herbalbrews:blocks/herbalbrews_wall_banner",
+   "herbalbrews:blocks/hibiscus",
+   "herbalbrews:blocks/jug",
+   "herbalbrews:blocks/lavender",
+   "herbalbrews:blocks/mixed_tea_leaf_block",
+   "herbalbrews:blocks/oolong_tea_leaf_block",
+   "herbalbrews:blocks/potted_hibiscus",
+   "herbalbrews:blocks/potted_lavender",
+   "herbalbrews:blocks/potted_wild_coffee",
+   "herbalbrews:blocks/potted_wild_rooibos",
+   "herbalbrews:blocks/potted_wild_yerba_mate",
+   "herbalbrews:blocks/rooibos_plant",
+   "herbalbrews:blocks/stove",
+   "herbalbrews:blocks/tea_kettle",
+   "herbalbrews:blocks/tea_leaf_crate",
+   "herbalbrews:blocks/tea_plant",
+   "herbalbrews:blocks/wild_coffee_plant",
+   "herbalbrews:blocks/wild_rooibos_plant",
+   "herbalbrews:blocks/wild_yerba_mate_plant",
+   "herbalbrews:blocks/yerba_mate_plant",
+   "minecraft:blocks/allium",
+   "minecraft:blocks/blue_orchid",
+   "minecraft:blocks/cornflower",
+   "minecraft:blocks/dandelion",
+   "minecraft:blocks/lily_of_the_valley",
+   "minecraft:blocks/orange_tulip",
+   "minecraft:blocks/oxeye_daisy",
+   "minecraft:blocks/pink_tulip",
+   "minecraft:blocks/poppy",
+   "minecraft:blocks/red_tulip",
+   "minecraft:blocks/white_tulip"
+  ],
+  "neoforge/biome_modifier": [
+   "herbalbrews:add_coffee_patch",
+   "herbalbrews:add_hibiscus_patch",
+   "herbalbrews:add_lavender_patch",
+   "herbalbrews:add_rooibos_patch",
+   "herbalbrews:add_yerba_mate_patch"
+  ],
+  "recipe": [
+   "herbalbrews:banner_from_smithing_table",
+   "herbalbrews:black_dye_from_dried_black_tea",
+   "herbalbrews:brown_dye_from_coffee_beans",
+   "herbalbrews:cauldron",
+   "herbalbrews:cauldron_brewing/dummy_recipe",
+   "herbalbrews:coffee_beans_from_plant",
+   "herbalbrews:copper_tea_kettle",
+   "herbalbrews:dried_green_tea_leaf_block",
+   "herbalbrews:green_dye_from_dried_black_tea",
+   "herbalbrews:green_dye_from_leaf_smoking",
+   "herbalbrews:green_tea_leaf_block",
+   "herbalbrews:herbal_infusion",
+   "herbalbrews:jug",
+   "herbalbrews:kettle_brewing/black_tea",
+   "herbalbrews:kettle_brewing/coffee",
+   "herbalbrews:kettle_brewing/green_tea",
+   "herbalbrews:kettle_brewing/hibiscus_tea",
+   "herbalbrews:kettle_brewing/lavender_tea",
+   "herbalbrews:kettle_brewing/milk_coffee",
+   "herbalbrews:kettle_brewing/oolong_tea",
+   "herbalbrews:kettle_brewing/rooibos_tea",
+   "herbalbrews:kettle_brewing/yerba_mate_tea",
+   "herbalbrews:mixed_tea_leaf_block",
+   "herbalbrews:purple_dye_from_lavender",
+   "herbalbrews:red_dye_from_hibiscus",
+   "herbalbrews:rooibos_leaf_from_plant",
+   "herbalbrews:stove",
+   "herbalbrews:tea_kettle",
+   "herbalbrews:tea_leaf_crate",
+   "herbalbrews:tea_leafs_from_crate",
+   "herbalbrews:top_hat",
+   "herbalbrews:witch_hat",
+   "herbalbrews:yerba_mate_leaf_from_plant"
+  ],
+  "tags/block": [
+   "c:allows_cooking",
+   "farmersdelight:heat_sources",
+   "forge:allows_cooking",
+   "herbalbrews:allows_cooking",
+   "minecraft:crops",
+   "minecraft:mineable/hoe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:small_flowers"
+  ],
+  "tags/item": [
+   "herbalbrews:container_items",
+   "herbalbrews:heat_items",
+   "herbalbrews:is_milk",
+   "herbalbrews:large_water_fill",
+   "herbalbrews:small_water_fill",
+   "minecraft:small_flowers"
+  ],
+  "tags/worldgen/biome": [
+   "herbalbrews:jungle_biomes",
+   "herbalbrews:mountain_biomes",
+   "herbalbrews:savanna_biomes"
+  ],
+  "worldgen/configured_feature": [
+   "herbalbrews:coffee_plant_patch",
+   "herbalbrews:hibiscus_flower_patch",
+   "herbalbrews:lavender_flower_patch",
+   "herbalbrews:rooibos_plant_patch",
+   "herbalbrews:yerba_mate_patch"
+  ],
+  "worldgen/placed_feature": [
+   "herbalbrews:coffee_patch_chance",
+   "herbalbrews:hibiscus_flower_patch_chance",
+   "herbalbrews:lavender_flower_patch_chance",
+   "herbalbrews:rooibos_patch_chance",
+   "herbalbrews:yerba_mate_patch_chance"
+  ]
+ },
+ "data_counts": {
+  "advancement": 26
+ },
+ "tags": {
+  "tags/block": {
+   "c:allows_cooking": [
+    "herbalbrews:stove"
+   ],
+   "farmersdelight:heat_sources": [
+    "herbalbrews:stove"
+   ],
+   "forge:allows_cooking": [
+    "herbalbrews:stove"
+   ],
+   "herbalbrews:allows_cooking": [
+    "herbalbrews:stove",
+    "#forge:allows_cooking",
+    "#c:allows_cooking",
+    "farmersdelight:stove?"
+   ],
+   "minecraft:crops": [
+    "herbalbrews:coffee_plant",
+    "herbalbrews:rooibos_plant",
+    "herbalbrews:yerba_mate_plant",
+    "herbalbrews:tea_plant"
+   ],
+   "minecraft:mineable/hoe": [
+    "herbalbrews:stove",
+    "herbalbrews:tea_kettle",
+    "herbalbrews:green_tea_leaf_block",
+    "herbalbrews:black_tea_leaf_block",
+    "herbalbrews:mixed_tea_leaf_block",
+    "herbalbrews:oolong_tea_leaf_block",
+    "herbalbrews:tea_leaf_crate",
+    "herbalbrews:dried_green_tea_leaf_block",
+    "herbalbrews:dried_out_green_tea_leaf_block"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "herbalbrews:stove",
+    "herbalbrews:tea_kettle",
+    "herbalbrews:copper_tea_kettle",
+    "herbalbrews:cauldron"
+   ],
+   "minecraft:small_flowers": [
+    "herbalbrews:lavender",
+    "herbalbrews:hibiscus"
+   ]
+  },
+  "tags/item": {
+   "herbalbrews:container_items": [
+    "minecraft:glass_bottle"
+   ],
+   "herbalbrews:heat_items": [
+    "minecraft:blaze_powder"
+   ],
+   "herbalbrews:is_milk": [
+    "minecraft:milk_bucket"
+   ],
+   "herbalbrews:large_water_fill": [
+    "minecraft:water_bucket",
+    "meadow:wooden_water_bucket?"
+   ],
+   "herbalbrews:small_water_fill": [
+    "minecraft:potion",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion",
+    "minecraft:tipped_arrow"
+   ],
+   "minecraft:small_flowers": [
+    "herbalbrews:lavender",
+    "herbalbrews:hibiscus"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "herbalbrews:jungle_biomes": [
+    "#minecraft:is_jungle"
+   ],
+   "herbalbrews:mountain_biomes": [
+    "#minecraft:is_hill",
+    "#minecraft:is_mountain"
+   ],
+   "herbalbrews:savanna_biomes": [
+    "#minecraft:is_savanna",
+    "#minecraft:is_beach"
+   ]
+  }
+ },
+ "recipe_types": {
+  "herbalbrews:cauldron_brewing": 1,
+  "herbalbrews:kettle_brewing": 9,
+  "minecraft:crafting_shaped": 12,
+  "minecraft:crafting_shapeless": 9,
+  "minecraft:smithing_transform": 1,
+  "minecraft:smoking": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

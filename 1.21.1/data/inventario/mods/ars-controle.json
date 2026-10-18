@@ -1,0 +1,153 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Ars Controle",
+ "file": "ars_controle-1.21.1-1.6.16.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "458c5a878a1418ffce46d1dd109f4ae23bcbe10bd7153edcaff8d1ab49ab3032f37977488eee7cecdb550cd99672f560e9d851818d6775d5d7e222632285d1a6",
+ "mods": [
+  {
+   "modid": "ars_controle",
+   "name": "Ars Controle",
+   "version": "1.21.1-1.6.16",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.20.6,1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "curios",
+     "type": "required",
+     "range": "[1.21-9.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_nouveau",
+     "type": "required",
+     "range": "[5.13.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "ars_controle",
+  "ars_nouveau",
+  "c",
+  "minecraft"
+ ],
+ "blocks": {
+  "ars_controle:scroll_holder": "Warp Scroll Holder",
+  "ars_controle:scryers_linkage": "Scryer's Linkage",
+  "ars_controle:temporal_stability_sensor": "Temporal Stability Sensor",
+  "ars_controle:warping_spell_prism": "Warping Spell Prism"
+ },
+ "items": {
+  "ars_controle:glyph_filter_above": "",
+  "ars_controle:glyph_filter_below": "",
+  "ars_controle:glyph_filter_level": "",
+  "ars_controle:glyph_filter_not": "",
+  "ars_controle:glyph_filter_or": "",
+  "ars_controle:glyph_filter_random": "",
+  "ars_controle:glyph_filter_xnor": "",
+  "ars_controle:glyph_filter_xor": "",
+  "ars_controle:glyph_precise_delay": "",
+  "ars_controle:portable_brazier_relay": "Portable Brazier Relay",
+  "ars_controle:remote": "Remote",
+  "ars_controle:scroll_holder": "",
+  "ars_controle:scryers_linkage": "",
+  "ars_controle:temporal_stability_sensor": "",
+  "ars_controle:warping_spell_prism": ""
+ },
+ "data": {
+  "loot_table": [
+   "ars_controle:blocks/scroll_holder",
+   "ars_controle:blocks/scryers_linkage",
+   "ars_controle:blocks/temporal_stability_sensor",
+   "ars_controle:blocks/warping_spell_prism"
+  ],
+  "recipe": [
+   "ars_controle:glyph_filter_above",
+   "ars_controle:glyph_filter_below",
+   "ars_controle:glyph_filter_level",
+   "ars_controle:glyph_filter_not",
+   "ars_controle:glyph_filter_or",
+   "ars_controle:glyph_filter_random",
+   "ars_controle:glyph_filter_xnor",
+   "ars_controle:glyph_filter_xor",
+   "ars_controle:glyph_precise_delay",
+   "ars_controle:portable_brazier_relay",
+   "ars_controle:remote",
+   "ars_controle:scroll_holder",
+   "ars_controle:scryers_linkage",
+   "ars_controle:temporal_stability_sensor",
+   "ars_controle:warping_spell_prism"
+  ],
+  "tags/block": [
+   "ars_controle:scryers_linkage_blacklist",
+   "ars_nouveau:an_decorative",
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/item": [
+   "ars_controle:ritual_blacklist",
+   "c:enchantables",
+   "c:tools"
+  ]
+ },
+ "data_counts": {
+  "advancement": 1
+ },
+ "tags": {
+  "tags/block": {
+   "ars_controle:scryers_linkage_blacklist": [
+    "ars_nouveau:storage_lectern",
+    "ars_controle:scryers_linkage"
+   ],
+   "ars_nouveau:an_decorative": [
+    "ars_controle:scroll_holder"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "ars_controle:warping_spell_prism",
+    "ars_controle:scryers_linkage",
+    "ars_controle:temporal_stability_sensor",
+    "ars_controle:scroll_holder"
+   ]
+  },
+  "tags/item": {
+   "ars_controle:ritual_blacklist": [
+    "ars_nouveau:ritual_burrowing",
+    "ars_nouveau:ritual_awakening",
+    "ars_nouveau:ritual_sunrise",
+    "ars_nouveau:ritual_moonfall",
+    "ars_nouveau:ritual_challenge"
+   ],
+   "c:enchantables": [
+    "ars_controle:remote",
+    "ars_controle:portable_brazier_relay"
+   ],
+   "c:tools": [
+    "ars_controle:remote",
+    "ars_controle:portable_brazier_relay"
+   ]
+  }
+ },
+ "recipe_types": {
+  "ars_nouveau:enchanting_apparatus": 5,
+  "ars_nouveau:glyph": 9,
+  "minecraft:crafting_shaped": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

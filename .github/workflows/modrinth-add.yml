@@ -1,0 +1,89 @@
+name: Aggiungi mod Modrinth
+
+on:
+  workflow_dispatch:
+    inputs:
+      pack:
+        description: Cartella del pack
+        required: true
+        default: 1.21.1/pack
+      mods:
+        description: "Mod da aggiungere, separate da spazi: slug (ultima release), slug@versione, link alla versione o id di versione"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pack-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PACKWIZ_COMMIT: 170b22d785959dda5876b54b7f16e1b807a57fb6
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
+      - name: Installa packwiz
+        run: |
+          go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Scegli le versioni
+        env:
+          PACK: ${{ inputs.pack }}
+          MODS: ${{ inputs.mods }}
+        run: |
+          test -f "$PACK/pack.toml" || { echo "Pack non trovato: $PACK"; exit 1; }
+          # shellcheck disable=SC2086
+          python3 scripts/modrinth_resolve.py "$PACK" $MODS > "$RUNNER_TEMP/scelte.tsv"
+          cat "$RUNNER_TEMP/scelte.tsv"
+
+      - name: Aggiungi le mod (con le dipendenze obbligatorie)
+        env:
+          PACK: ${{ inputs.pack }}
+        run: |
+          cd "$PACK"
+          ls mods > "$RUNNER_TEMP/prima.txt"
+          while IFS=$'\t' read -r id slug ver kind date; do
+            echo "::group::$slug $ver"
+            packwiz -y modrinth add --version-id "$id"
+            echo "::endgroup::"
+          done < "$RUNNER_TEMP/scelte.tsv"
+          ls mods > "$RUNNER_TEMP/dopo.txt"
+
+      - name: Indice, controlli, inventario e controllo dei nomi
+        id: checks
+        env:
+          PACK: ${{ inputs.pack }}
+        run: |
+          status=0
+          bash scripts/ci_pack.sh "$PACK" || status=1
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+
+      - name: Commit
+        env:
+          PACK: ${{ inputs.pack }}
+        run: |
+          {
+            echo "Scelte (versione, tipo, data):"
+            awk -F'\t' '{printf "- %s %s (%s, %s)\n", $2, $3, $4, $5}' "$RUNNER_TEMP/scelte.tsv"
+            echo
+            echo "Metafile nuovi (comprese le dipendenze):"
+            comm -13 "$RUNNER_TEMP/prima.txt" "$RUNNER_TEMP/dopo.txt" | sed 's/^/- /'
+          } > "$RUNNER_TEMP/body.txt"
+          bash scripts/ci_commit.sh "feat: mod Modrinth aggiunte da GitHub Actions" "$(cat "$RUNNER_TEMP/body.txt")"
+
+      - name: Esito
+        if: steps.checks.outputs.status != '0'
+        run: |
+          echo "Controlli falliti: vedi <versione>/data/inventario/controllo.md nel ramo"
+          exit 1

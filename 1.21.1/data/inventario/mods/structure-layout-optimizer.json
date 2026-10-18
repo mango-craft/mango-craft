@@ -1,0 +1,48 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Structure Layout Optimizer",
+ "file": "structure_layout_optimizer-neoforge-1.0.12.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "8c38ebd0e221f5bfe887a40ab21caede40cadc90bfc3b8dbbc79888c07faee44d58f12a974f1c5af324c9feceaa2ed04ea62724c6453650c77e1910582914153",
+ "mods": [
+  {
+   "modid": "structure_layout_optimizer",
+   "name": "Structure Layout Optimizer",
+   "version": "1.0.12",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "resourcefulconfig",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "structure_layout_optimizer"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

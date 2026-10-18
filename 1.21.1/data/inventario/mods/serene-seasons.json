@@ -1,0 +1,319 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Serene Seasons",
+ "file": "SereneSeasons-neoforge-1.21.1-10.1.0.9.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "a85209de65af7999b29af850e05ad3a045c208a005ec3a7e4e66a58f1c9d90fda501ba80a6245209a4aad856ee053c21c4f679efe8c02981746e907915e31fe1",
+ "mods": [
+  {
+   "modid": "sereneseasons",
+   "name": "Serene Seasons",
+   "version": "10.1.0.9",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "optional",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "glitchcore",
+     "type": "optional",
+     "range": "[2.1.0.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "forge",
+  "sereneseasons"
+ ],
+ "blocks": {
+  "sereneseasons:season_sensor": "Season Sensor"
+ },
+ "items": {
+  "sereneseasons:calendar": "Calendar",
+  "sereneseasons:calendar_00": "",
+  "sereneseasons:calendar_01": "",
+  "sereneseasons:calendar_02": "",
+  "sereneseasons:calendar_03": "",
+  "sereneseasons:calendar_04": "",
+  "sereneseasons:calendar_05": "",
+  "sereneseasons:calendar_06": "",
+  "sereneseasons:calendar_07": "",
+  "sereneseasons:calendar_08": "",
+  "sereneseasons:calendar_09": "",
+  "sereneseasons:calendar_10": "",
+  "sereneseasons:calendar_11": "",
+  "sereneseasons:calendar_null": "",
+  "sereneseasons:season_sensor": "",
+  "sereneseasons:ss_icon": "SS Icon",
+  "sereneseasons:tropical_calendar_00": "",
+  "sereneseasons:tropical_calendar_01": "",
+  "sereneseasons:tropical_calendar_02": "",
+  "sereneseasons:tropical_calendar_03": "",
+  "sereneseasons:tropical_calendar_04": "",
+  "sereneseasons:tropical_calendar_05": ""
+ },
+ "data": {
+  "loot_table": [
+   "sereneseasons:block/season_sensor"
+  ],
+  "recipe": [
+   "sereneseasons:calendar",
+   "sereneseasons:season_sensor"
+  ],
+  "tags/block": [
+   "c:glass_blocks",
+   "forge:glass",
+   "sereneseasons:autumn_crops",
+   "sereneseasons:greenhouse_glass",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops",
+   "sereneseasons:unbreakable_infertile_crops",
+   "sereneseasons:winter_crops",
+   "sereneseasons:year_round_crops"
+  ],
+  "tags/item": [
+   "sereneseasons:autumn_crops",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops",
+   "sereneseasons:winter_crops",
+   "sereneseasons:year_round_crops"
+  ],
+  "tags/worldgen/biome": [
+   "sereneseasons:blacklisted_biomes",
+   "sereneseasons:infertile_biomes",
+   "sereneseasons:lesser_color_change_biomes",
+   "sereneseasons:tropical_biomes"
+  ]
+ },
+ "data_counts": {
+  "advancement": 2
+ },
+ "tags": {
+  "tags/block": {
+   "c:glass_blocks": [],
+   "forge:glass": [],
+   "sereneseasons:autumn_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:birch_sapling",
+    "minecraft:spruce_sapling",
+    "minecraft:dark_oak_sapling",
+    "minecraft:wheat",
+    "minecraft:pumpkin_stem",
+    "minecraft:beetroots",
+    "minecraft:carrots"
+   ],
+   "sereneseasons:greenhouse_glass": [
+    "#forge:glass",
+    "#c:glass_blocks"
+   ],
+   "sereneseasons:spring_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:birch_sapling",
+    "minecraft:spruce_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:sweet_berry_bush",
+    "minecraft:bamboo",
+    "minecraft:bamboo_sapling",
+    "minecraft:carrots",
+    "minecraft:potatoes"
+   ],
+   "sereneseasons:summer_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:jungle_sapling",
+    "minecraft:acacia_sapling",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_propagule",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:bamboo",
+    "minecraft:bamboo_sapling",
+    "minecraft:cactus",
+    "minecraft:sugar_cane",
+    "minecraft:wheat",
+    "minecraft:melon_stem",
+    "minecraft:cocoa",
+    "minecraft:torchflower_crop",
+    "minecraft:pitcher_crop"
+   ],
+   "sereneseasons:unbreakable_infertile_crops": [
+    "minecraft:oak_sapling",
+    "minecraft:birch_sapling",
+    "minecraft:spruce_sapling",
+    "minecraft:jungle_sapling",
+    "minecraft:acacia_sapling",
+    "minecraft:dark_oak_sapling",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_propagule",
+    "minecraft:cherry_sapling",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:grass_block",
+    "minecraft:moss_block",
+    "minecraft:rooted_dirt",
+    "minecraft:big_dripleaf",
+    "minecraft:big_dripleaf_stem",
+    "minecraft:small_dripleaf",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_propagule",
+    "minecraft:short_grass",
+    "minecraft:fern",
+    "minecraft:pink_petals",
+    "minecraft:sunflower",
+    "minecraft:lilac",
+    "minecraft:rose_bush",
+    "minecraft:peony",
+    "minecraft:sugar_cane",
+    "minecraft:cactus",
+    "minecraft:bamboo",
+    "minecraft:bamboo_sapling",
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:nether_wart",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    "minecraft:crimson_nylium",
+    "minecraft:warped_nylium",
+    "minecraft:twisting_vines",
+    "minecraft:twisting_vines_plant",
+    "minecraft:weeping_vines",
+    "minecraft:weeping_vines_plant",
+    "minecraft:cave_vines",
+    "minecraft:cave_vines_plant",
+    "minecraft:small_dripleaf",
+    "minecraft:big_dripleaf",
+    "minecraft:big_dripleaf_stem",
+    "minecraft:seagrass",
+    "minecraft:sea_pickle",
+    "minecraft:kelp",
+    "minecraft:kelp_plant",
+    "minecraft:glow_lichen"
+   ],
+   "sereneseasons:winter_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:spruce_sapling",
+    "minecraft:sweet_berry_bush"
+   ],
+   "sereneseasons:year_round_crops": [
+    "minecraft:oak_sapling",
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:nether_wart",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    "minecraft:cave_vines",
+    "minecraft:cave_vines_plant"
+   ]
+  },
+  "tags/item": {
+   "sereneseasons:autumn_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:birch_sapling",
+    "minecraft:spruce_sapling",
+    "minecraft:dark_oak_sapling",
+    "minecraft:wheat_seeds",
+    "minecraft:pumpkin_seeds",
+    "minecraft:beetroot_seeds",
+    "minecraft:carrot"
+   ],
+   "sereneseasons:spring_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:birch_sapling",
+    "minecraft:spruce_sapling",
+    "minecraft:cherry_sapling",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:sweet_berries",
+    "minecraft:bamboo",
+    "minecraft:carrot",
+    "minecraft:potato"
+   ],
+   "sereneseasons:summer_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:jungle_sapling",
+    "minecraft:acacia_sapling",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_propagule",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:bamboo",
+    "minecraft:cactus",
+    "minecraft:sugar_cane",
+    "minecraft:wheat_seeds",
+    "minecraft:melon_seeds",
+    "minecraft:cocoa_beans",
+    "minecraft:torchflower_seeds",
+    "minecraft:pitcher_pod"
+   ],
+   "sereneseasons:winter_crops": [
+    "#sereneseasons:year_round_crops",
+    "minecraft:spruce_sapling",
+    "minecraft:sweet_berries"
+   ],
+   "sereneseasons:year_round_crops": [
+    "minecraft:oak_sapling",
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:nether_wart",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    "minecraft:glow_berries"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "sereneseasons:blacklisted_biomes": [
+    "minecraft:lush_caves",
+    "minecraft:dripstone_caves",
+    "minecraft:deep_dark",
+    "minecraft:ocean",
+    "minecraft:deep_ocean",
+    "minecraft:frozen_ocean",
+    "minecraft:deep_frozen_ocean",
+    "minecraft:cold_ocean",
+    "minecraft:deep_cold_ocean",
+    "minecraft:lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:warm_ocean",
+    "minecraft:river",
+    "minecraft:beach",
+    "minecraft:stony_shore",
+    "minecraft:the_void"
+   ],
+   "sereneseasons:infertile_biomes": [],
+   "sereneseasons:lesser_color_change_biomes": [
+    "minecraft:swamp"
+   ],
+   "sereneseasons:tropical_biomes": [
+    "minecraft:desert",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna",
+    "minecraft:mangrove_swamp",
+    "minecraft:jungle",
+    "minecraft:sparse_jungle",
+    "minecraft:bamboo_jungle",
+    "minecraft:mushroom_fields",
+    "minecraft:warm_ocean"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 2
+ },
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,96 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Aspect Alchemy",
+ "file": "aspectalchemy-neoforge-2.0.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "ebd1f8f1dc35c5c41d215e88b2e80ba599f3ce04a3387dd5c6cc1be367f0683d5e7780c2e96c842cadb86ae79dc9ce29e3c3f043cde29311aac96ef2fd1a5feb",
+ "mods": [
+  {
+   "modid": "aspectalchemy",
+   "name": "Aspect Alchemy",
+   "version": "2.0.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "aspectalchemy",
+  "minecraft"
+ ],
+ "blocks": {
+  "aspectalchemy:aspect_cauldron": "Aspect Cauldron",
+  "aspectalchemy:aspect_empty_cauldron": "Aspect Cauldron"
+ },
+ "items": {
+  "aspectalchemy:alchemists_guide": "Alchemists Guide",
+  "aspectalchemy:aspect_cauldron": "",
+  "aspectalchemy:aspect_empty_cauldron": "",
+  "aspectalchemy:glass_bottle_large": "Large glass bottle",
+  "aspectalchemy:glass_bottle_medium": "Medium glass bottle",
+  "aspectalchemy:glass_bottle_small": "Small glass bottle",
+  "aspectalchemy:potion_large": "Large potion",
+  "aspectalchemy:potion_large_one_sip": "",
+  "aspectalchemy:potion_large_three_sips": "",
+  "aspectalchemy:potion_large_two_sips": "",
+  "aspectalchemy:potion_medium": "Medium potion",
+  "aspectalchemy:potion_medium_one_sip": "",
+  "aspectalchemy:potion_medium_two_sips": "",
+  "aspectalchemy:potion_small": "Small potion",
+  "aspectalchemy:potion_small_one_sip": ""
+ },
+ "data": {
+  "patchouli_books": [
+   "aspectalchemy:alchemists_guide/book"
+  ],
+  "recipe": [
+   "aspectalchemy:alchemists_guide",
+   "aspectalchemy:aspect_empty_cauldron",
+   "aspectalchemy:glass_bottle_large",
+   "aspectalchemy:glass_bottle_medium",
+   "aspectalchemy:glass_bottle_small"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe"
+  ]
+ },
+ "data_counts": {
+  "advancement": 168
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "aspectalchemy:aspect_empty_cauldron",
+    "aspectalchemy:aspect_cauldron"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 4,
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

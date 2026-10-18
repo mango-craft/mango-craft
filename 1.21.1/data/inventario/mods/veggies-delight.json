@@ -1,0 +1,1334 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Veggies Delight",
+ "file": "VeggiesDelight-1.21.1-1.9.3.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "bd108223b38236c7cae2a02601e52c98d4f655a45f4f3a8c2f5d298aaa0ed0debbb2639bb08e11c5f33a0ae27242a3d4ff0aab9820915e3dadb1ce06a2763960",
+ "mods": [
+  {
+   "modid": "veggiesdelight",
+   "name": "Veggies Delight",
+   "version": "1.9.3",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[1.3.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "farmersdelight",
+  "minecraft",
+  "neoforge",
+  "sereneseasons",
+  "tconstruct",
+  "veggiesdelight"
+ ],
+ "blocks": {
+  "veggiesdelight:beetroot_brownie_tray": "Beetroot Brownie Tray",
+  "veggiesdelight:bellpepper_crate": "Bell Pepper Crate",
+  "veggiesdelight:bellpepper_crop": "",
+  "veggiesdelight:broccoli_crate": "Broccoli Crate",
+  "veggiesdelight:broccoli_crop": "",
+  "veggiesdelight:carrot_cake": "Carrot Cake",
+  "veggiesdelight:cauliflower_crate": "Cauliflower Crate",
+  "veggiesdelight:cauliflower_crop": "",
+  "veggiesdelight:garlic_crate": "Garlic Crate",
+  "veggiesdelight:garlic_crop": "",
+  "veggiesdelight:lasagna_pan": "Lasagna Pan",
+  "veggiesdelight:mature_dandelion": "Mature Dandelion",
+  "veggiesdelight:stuffed_bellpeppers_block": "Stuffed Bell Peppers",
+  "veggiesdelight:sweet_potato_crate": "Sweet Potato Crate",
+  "veggiesdelight:sweet_potato_crop": "",
+  "veggiesdelight:sweet_potato_pie": "Sweet Potato Pie",
+  "veggiesdelight:turnip_crate": "Turnip Crate",
+  "veggiesdelight:turnip_crop": "",
+  "veggiesdelight:vegan_pizza": "Vegan Pizza",
+  "veggiesdelight:wild_bellpeppers": "Wild Bell Peppers",
+  "veggiesdelight:wild_broccoli": "Wild Broccoli",
+  "veggiesdelight:wild_cauliflowers": "Wild Cauliflowers",
+  "veggiesdelight:wild_garlic": "Wild Garlic",
+  "veggiesdelight:wild_sweet_potatoes": "Wild Sweet Potatoes",
+  "veggiesdelight:wild_turnips": "Wild Turnips",
+  "veggiesdelight:wild_zucchinis": "Wild Zucchinis",
+  "veggiesdelight:zucchini_crate": "Zucchini Crate",
+  "veggiesdelight:zucchini_crop": "",
+  "veggiesdelight:zucchini_quiche": "Zucchini Quiche"
+ },
+ "items": {
+  "veggiesdelight:baked_sweet_potato": "Baked Sweet Potato",
+  "veggiesdelight:beetroot_brownie": "Beetroot Brownie",
+  "veggiesdelight:beetroot_brownie_tray": "",
+  "veggiesdelight:bellpepper": "Bell Pepper",
+  "veggiesdelight:bellpepper_crate": "",
+  "veggiesdelight:bellpepper_seeds": "Bell Pepper Seeds",
+  "veggiesdelight:broccoli": "Broccoli",
+  "veggiesdelight:broccoli_crate": "",
+  "veggiesdelight:broccoli_salad": "Broccoli Salad",
+  "veggiesdelight:broccoli_seeds": "Broccoli Seeds",
+  "veggiesdelight:broccoli_soup": "Broccoli Soup",
+  "veggiesdelight:cacciatore": "Cacciatore",
+  "veggiesdelight:carrot_cake": "",
+  "veggiesdelight:carrot_cake_slice": "Carrot Cake Slice",
+  "veggiesdelight:carrot_juice": "Carrot Juice",
+  "veggiesdelight:cauliflower": "Cauliflower",
+  "veggiesdelight:cauliflower_bread": "Cauliflower Bread",
+  "veggiesdelight:cauliflower_crate": "",
+  "veggiesdelight:cauliflower_floret": "Cauliflower Floret",
+  "veggiesdelight:cauliflower_kuku": "Cauliflower Kuku",
+  "veggiesdelight:cauliflower_seeds": "Cauliflower Seeds",
+  "veggiesdelight:cauliflower_soup": "Cauliflower Soup",
+  "veggiesdelight:cesar_salad": "Cesar Salad",
+  "veggiesdelight:chicken_fajitas_wrap": "Chicken Fajitas Wrap",
+  "veggiesdelight:coleslaw": "Coleslaw",
+  "veggiesdelight:cooked_vegetarian_patty": "Cooked Vegetarian Patty",
+  "veggiesdelight:dandelion_and_eggs": "Dandelion Greens And Eggs",
+  "veggiesdelight:dandelion_juice": "Dandelion Juice",
+  "veggiesdelight:dandelion_leaf": "Dandelion Leaf",
+  "veggiesdelight:fermented_garlic_honey": "Fermented Garlic Honey",
+  "veggiesdelight:fish_and_chips": "Fish And Chips",
+  "veggiesdelight:garlic": "Garlic",
+  "veggiesdelight:garlic_baked_cod": "Garlic Baked Cod",
+  "veggiesdelight:garlic_bread": "Garlic Bread",
+  "veggiesdelight:garlic_chicken_stew": "Garlic Chicken Stew",
+  "veggiesdelight:garlic_clove": "Garlic Clove",
+  "veggiesdelight:garlic_crate": "",
+  "veggiesdelight:garlic_rice_with_cauliflower": "Garlic Rice With Cauliflower",
+  "veggiesdelight:garlic_stuffed_mushrooms": "Garlic Stuffed Mushrooms",
+  "veggiesdelight:lasagna_pan": "",
+  "veggiesdelight:lasagna_slice": "Lasagna Slice",
+  "veggiesdelight:mashed_potatoes": "Mashed Potatoes",
+  "veggiesdelight:mature_dandelion": "",
+  "veggiesdelight:mhadjeb": "Mhadjeb",
+  "veggiesdelight:pasta_with_broccoli": "Pasta With Broccoli",
+  "veggiesdelight:potato_noodle": "Potato Noodle",
+  "veggiesdelight:potato_noodles": "Potato Noodles",
+  "veggiesdelight:raw_vegetarian_patty": "Raw Vegetarian Patty",
+  "veggiesdelight:rice_and_vegetables": "Rice And Vegetables",
+  "veggiesdelight:roasted_cauliflower_floret": "Roasted Cauliflower Floret",
+  "veggiesdelight:roasted_garlic_clove": "Roasted Garlic Clove",
+  "veggiesdelight:roasted_vegetables": "Roasted Vegetables",
+  "veggiesdelight:roasted_zucchini": "Roasted Zucchini",
+  "veggiesdelight:shakshouka": "Shakshouka",
+  "veggiesdelight:smoked_bellpepper": "Smoked Bell Pepper",
+  "veggiesdelight:steak_and_broccoli": "Steak And Broccoli",
+  "veggiesdelight:stuffed_bellpepper": "Stuffed Bell Pepper",
+  "veggiesdelight:stuffed_bellpeppers_block": "",
+  "veggiesdelight:stuffed_zucchini_boat": "Stuffed Zucchini Boat",
+  "veggiesdelight:stuffed_zucchinis": "Stuffed Zucchinis",
+  "veggiesdelight:sweet_potato": "Sweet Potato",
+  "veggiesdelight:sweet_potato_crate": "",
+  "veggiesdelight:sweet_potato_cupcake": "Sweet Potato Cupcake",
+  "veggiesdelight:sweet_potato_dough": "Sweet Potato Dough",
+  "veggiesdelight:sweet_potato_pancakes": "Sweet Potato Pancakes",
+  "veggiesdelight:sweet_potato_pie": "",
+  "veggiesdelight:sweet_potato_pie_slice": "Sweet Potato Pie Slice",
+  "veggiesdelight:turnip": "Turnip",
+  "veggiesdelight:turnip_beef_stew": "Turnip Beef Stew",
+  "veggiesdelight:turnip_cake": "Turnip Cake",
+  "veggiesdelight:turnip_crate": "",
+  "veggiesdelight:turnip_mutton_skewer": "Turnip Mutton Skewer",
+  "veggiesdelight:turnip_salad": "Turnip Salad",
+  "veggiesdelight:turnip_seeds": "Turnip Seeds",
+  "veggiesdelight:turnip_water": "Turnip Water",
+  "veggiesdelight:uncooked_mhadjeb": "Uncooked Mhadjeb",
+  "veggiesdelight:vegan_pizza": "",
+  "veggiesdelight:vegan_pizza_slice": "Vegan Pizza Slice",
+  "veggiesdelight:vegetables_wrap": "Vegetables Wrap",
+  "veggiesdelight:vegetarian_burger": "Vegetarian Burger",
+  "veggiesdelight:wild_bellpeppers": "",
+  "veggiesdelight:wild_broccoli": "",
+  "veggiesdelight:wild_cauliflowers": "",
+  "veggiesdelight:wild_garlic": "",
+  "veggiesdelight:wild_sweet_potatoes": "",
+  "veggiesdelight:wild_turnips": "",
+  "veggiesdelight:wild_zucchinis": "",
+  "veggiesdelight:zucchini": "Zucchini",
+  "veggiesdelight:zucchini_crate": "",
+  "veggiesdelight:zucchini_quiche": "",
+  "veggiesdelight:zucchini_quiche_slice": "Zucchini Quiche Slice",
+  "veggiesdelight:zucchini_sandwich": "Zucchini Sandwich",
+  "veggiesdelight:zucchini_seeds": "Zucchini seeds",
+  "veggiesdelight:zucchini_slice": "Zucchini Slice"
+ },
+ "data": {
+  "data_maps/item": [
+   "neoforge:compostables"
+  ],
+  "loot_modifiers": [
+   "neoforge:global_loot_modifiers",
+   "veggiesdelight:add_loot_abandoned_mineshaft",
+   "veggiesdelight:add_loot_pillager_outpost",
+   "veggiesdelight:add_loot_shipwreck_supply",
+   "veggiesdelight:add_loot_simple_dungeon",
+   "veggiesdelight:add_loot_village_desert_house",
+   "veggiesdelight:add_loot_village_plains_house",
+   "veggiesdelight:add_loot_village_savanna_house",
+   "veggiesdelight:add_loot_village_snowy_house",
+   "veggiesdelight:add_loot_village_taiga_house",
+   "veggiesdelight:slicing_beetroot_brownie_tray",
+   "veggiesdelight:slicing_carrot_cake",
+   "veggiesdelight:slicing_sweet_potato_pie",
+   "veggiesdelight:slicing_vegan_pizza",
+   "veggiesdelight:slicing_zucchini_quiche"
+  ],
+  "loot_table": [
+   "veggiesdelight:blocks/bellpepper_crate",
+   "veggiesdelight:blocks/bellpepper_crop",
+   "veggiesdelight:blocks/broccoli_crate",
+   "veggiesdelight:blocks/broccoli_crop",
+   "veggiesdelight:blocks/cauliflower_crate",
+   "veggiesdelight:blocks/cauliflower_crop",
+   "veggiesdelight:blocks/garlic_crate",
+   "veggiesdelight:blocks/garlic_crop",
+   "veggiesdelight:blocks/lasagna_pan",
+   "veggiesdelight:blocks/mature_dandelion",
+   "veggiesdelight:blocks/stuffed_bellpeppers_block",
+   "veggiesdelight:blocks/sweet_potato_crate",
+   "veggiesdelight:blocks/sweet_potato_crop",
+   "veggiesdelight:blocks/turnip_crate",
+   "veggiesdelight:blocks/turnip_crop",
+   "veggiesdelight:blocks/wild_bellpeppers",
+   "veggiesdelight:blocks/wild_broccoli",
+   "veggiesdelight:blocks/wild_cauliflowers",
+   "veggiesdelight:blocks/wild_garlic",
+   "veggiesdelight:blocks/wild_sweet_potatoes",
+   "veggiesdelight:blocks/wild_turnips",
+   "veggiesdelight:blocks/wild_zucchinis",
+   "veggiesdelight:blocks/zucchini_crate",
+   "veggiesdelight:blocks/zucchini_crop",
+   "veggiesdelight:chests/vd_abandoned_mineshaft",
+   "veggiesdelight:chests/vd_pillager_outpost",
+   "veggiesdelight:chests/vd_shipwreck_supply",
+   "veggiesdelight:chests/vd_simple_dungeon",
+   "veggiesdelight:chests/vd_village_desert_house",
+   "veggiesdelight:chests/vd_village_plains_house",
+   "veggiesdelight:chests/vd_village_savanna_house",
+   "veggiesdelight:chests/vd_village_snowy_house",
+   "veggiesdelight:chests/vd_village_taiga_house",
+   "veggiesdelight:chests/vd_wagon_desert",
+   "veggiesdelight:chests/vd_wagon_plains",
+   "veggiesdelight:chests/vd_wagon_savanna",
+   "veggiesdelight:chests/vd_wagon_snowy",
+   "veggiesdelight:chests/vd_wagon_taiga"
+  ],
+  "neoforge/biome_modifier": [
+   "veggiesdelight:mature_dandelion",
+   "veggiesdelight:wild_bellpeppers",
+   "veggiesdelight:wild_broccoli",
+   "veggiesdelight:wild_cauliflowers",
+   "veggiesdelight:wild_garlic",
+   "veggiesdelight:wild_sweet_potatoes",
+   "veggiesdelight:wild_turnips",
+   "veggiesdelight:wild_zucchinis"
+  ],
+  "recipe": [
+   "veggiesdelight:baked_sweet_potato_from_campfire_cooking",
+   "veggiesdelight:baked_sweet_potato_from_smelting",
+   "veggiesdelight:baked_sweet_potato_from_smoking",
+   "veggiesdelight:beetroot_brownie_from_slices",
+   "veggiesdelight:beetroot_brownie_tray",
+   "veggiesdelight:bellpepper_crate",
+   "veggiesdelight:bellpepper_smoking",
+   "veggiesdelight:bellpeppers_from_crate",
+   "veggiesdelight:bread_from_campfire_cooking",
+   "veggiesdelight:bread_from_smelting",
+   "veggiesdelight:bread_from_smoking",
+   "veggiesdelight:broccoli_crate",
+   "veggiesdelight:broccoli_from_crate",
+   "veggiesdelight:broccoli_salad",
+   "veggiesdelight:carrot_cake",
+   "veggiesdelight:carrot_cake_from_slices",
+   "veggiesdelight:cauliflower_bread",
+   "veggiesdelight:cauliflower_crate",
+   "veggiesdelight:cauliflower_florets",
+   "veggiesdelight:cauliflowers_from_crate",
+   "veggiesdelight:cesar_salad",
+   "veggiesdelight:chicken_fajitas_wrap",
+   "veggiesdelight:cloves_from_garlic",
+   "veggiesdelight:coleslaw",
+   "veggiesdelight:compat/corndelight/chicken_fajitas_wrap",
+   "veggiesdelight:compat/corndelight/cooking/cornbread_stuffing",
+   "veggiesdelight:compat/corndelight/cooking/turnip_cake",
+   "veggiesdelight:compat/corndelight/taco",
+   "veggiesdelight:compat/corndelight/vegetable_wrap",
+   "veggiesdelight:compat/culturaldelight/avocado_toast",
+   "veggiesdelight:compat/culturaldelight/beef_burrito",
+   "veggiesdelight:compat/culturaldelight/broccoli_salad",
+   "veggiesdelight:compat/culturaldelight/cesar_salad",
+   "veggiesdelight:compat/culturaldelight/chicken_fajitas_wrap",
+   "veggiesdelight:compat/culturaldelight/chicken_taco",
+   "veggiesdelight:compat/culturaldelight/cooking/roasted_veggies",
+   "veggiesdelight:compat/culturaldelight/cooking/shakshouka",
+   "veggiesdelight:compat/culturaldelight/cooking/spicy_curry",
+   "veggiesdelight:compat/culturaldelight/cooking/turnip_cake",
+   "veggiesdelight:compat/culturaldelight/eggplant_burger",
+   "veggiesdelight:compat/culturaldelight/empanada",
+   "veggiesdelight:compat/culturaldelight/hearty_salad",
+   "veggiesdelight:compat/culturaldelight/mutton_sandwich",
+   "veggiesdelight:compat/culturaldelight/vegetable_wrap",
+   "veggiesdelight:compat/farmersdelight/mixed_salad",
+   "veggiesdelight:compat/farmersdelight/recipe/cooking/vegetable_soup",
+   "veggiesdelight:compat/moredelight/cooking/creamy_pasta_with_chicken_cuts",
+   "veggiesdelight:compat/moredelight/cooking/creamy_pasta_with_ham",
+   "veggiesdelight:compat/moredelight/cooking/diced_potatoes_with_beef",
+   "veggiesdelight:compat/moredelight/cooking/diced_potatoes_with_chicken_cuts",
+   "veggiesdelight:compat/moredelight/cooking/diced_potatoes_with_egg_and_tomato",
+   "veggiesdelight:compat/moredelight/cooking/diced_potatoes_with_porkchop",
+   "veggiesdelight:compat/moredelight/cooking/fish_and_chips",
+   "veggiesdelight:compat/moredelight/garlic_bread",
+   "veggiesdelight:compat/moredelight/hamburger_with_egg",
+   "veggiesdelight:compat/moredelight/loaded_hamburger",
+   "veggiesdelight:compat/moredelight/simple_hamburger",
+   "veggiesdelight:compat/ubesdelight/garlic_convert",
+   "veggiesdelight:cooked_cauliflower_patty_from_campfire_cooking",
+   "veggiesdelight:cooked_cauliflower_patty_from_smelting",
+   "veggiesdelight:cooked_cauliflower_patty_from_smoking",
+   "veggiesdelight:cooking/broccoli_soup",
+   "veggiesdelight:cooking/cacciatore",
+   "veggiesdelight:cooking/carrot_juice",
+   "veggiesdelight:cooking/cauliflower_kuku",
+   "veggiesdelight:cooking/cauliflower_soup",
+   "veggiesdelight:cooking/dandelion_juice",
+   "veggiesdelight:cooking/fish_and_chips",
+   "veggiesdelight:cooking/garlic_chicken_stew",
+   "veggiesdelight:cooking/garlic_stuffed_mushrooms",
+   "veggiesdelight:cooking/lasagna_pan",
+   "veggiesdelight:cooking/mashed_potatoes",
+   "veggiesdelight:cooking/pasta_with_broccoli",
+   "veggiesdelight:cooking/potato_noodle",
+   "veggiesdelight:cooking/potato_noodles",
+   "veggiesdelight:cooking/rice_and_vegetables",
+   "veggiesdelight:cooking/roasted_veggies",
+   "veggiesdelight:cooking/shakshouka",
+   "veggiesdelight:cooking/stuffed_bellpeppers",
+   "veggiesdelight:cooking/stuffed_zucchinis",
+   "veggiesdelight:cooking/sweet_potato_pancakes",
+   "veggiesdelight:cooking/turnip_beef_stew",
+   "veggiesdelight:cooking/turnip_cake",
+   "veggiesdelight:cooking/turnip_water",
+   "veggiesdelight:cutting/beetroot_brownie",
+   "veggiesdelight:cutting/carrot_cake_slice",
+   "veggiesdelight:cutting/cauliflower_floret_from_cutting",
+   "veggiesdelight:cutting/garlic_clove_from_cutting",
+   "veggiesdelight:cutting/mature_dandelion",
+   "veggiesdelight:cutting/sweet_potato_pie_slice",
+   "veggiesdelight:cutting/vegan_pizza_slice",
+   "veggiesdelight:cutting/wild_bellpeppers",
+   "veggiesdelight:cutting/wild_broccoli",
+   "veggiesdelight:cutting/wild_cauliflower",
+   "veggiesdelight:cutting/wild_garlic",
+   "veggiesdelight:cutting/wild_sweet_potatoes",
+   "veggiesdelight:cutting/wild_turnip",
+   "veggiesdelight:cutting/wild_zucchini",
+   "veggiesdelight:cutting/zucchini_quiche_slice",
+   "veggiesdelight:cutting/zucchini_slice",
+   "veggiesdelight:dandelion_and_eggs",
+   "veggiesdelight:dye_from_mature_dandelion",
+   "veggiesdelight:dye_from_wild_garlic",
+   "veggiesdelight:fermented_garlic_honey",
+   "veggiesdelight:garlic_baked_cod",
+   "veggiesdelight:garlic_bread",
+   "veggiesdelight:garlic_crate",
+   "veggiesdelight:garlic_from_crate",
+   "veggiesdelight:garlic_rice_with_cauliflower",
+   "veggiesdelight:integration/botany/bellpepper",
+   "veggiesdelight:integration/botany/broccoli",
+   "veggiesdelight:integration/botany/cauliflower",
+   "veggiesdelight:integration/botany/garlic",
+   "veggiesdelight:integration/botany/sweet_potato",
+   "veggiesdelight:integration/botany/turnip",
+   "veggiesdelight:integration/botany/wild_bellpepper",
+   "veggiesdelight:integration/botany/wild_broccoli",
+   "veggiesdelight:integration/botany/wild_cauliflowers",
+   "veggiesdelight:integration/botany/wild_garlic",
+   "veggiesdelight:integration/botany/wild_sweet_potatoes",
+   "veggiesdelight:integration/botany/wild_turnips",
+   "veggiesdelight:integration/botany/wild_zucchinis",
+   "veggiesdelight:integration/botany/zucchini",
+   "veggiesdelight:integration/create/milling/broccoli",
+   "veggiesdelight:integration/create/milling/mature_dandelion",
+   "veggiesdelight:integration/create/milling/turnip",
+   "veggiesdelight:integration/create/milling/wild_bellpeppers",
+   "veggiesdelight:integration/create/milling/wild_broccoli",
+   "veggiesdelight:integration/create/milling/wild_cauliflowers",
+   "veggiesdelight:integration/create/milling/wild_garlics",
+   "veggiesdelight:integration/create/milling/wild_sweet_potatoes",
+   "veggiesdelight:integration/create/milling/wild_turnips",
+   "veggiesdelight:integration/create/milling/wild_zucchinis",
+   "veggiesdelight:integration/create/mixing/cauliflower_floret_from_mixing",
+   "veggiesdelight:integration/create/mixing/garlic_clove_from_mixing",
+   "veggiesdelight:integration/immersiveengineering/cloche/bellpepper",
+   "veggiesdelight:integration/immersiveengineering/cloche/broccoli",
+   "veggiesdelight:integration/immersiveengineering/cloche/cauliflower",
+   "veggiesdelight:integration/immersiveengineering/cloche/garlic",
+   "veggiesdelight:integration/immersiveengineering/cloche/sweet_potato",
+   "veggiesdelight:integration/immersiveengineering/cloche/turnip",
+   "veggiesdelight:integration/immersiveengineering/cloche/zucchini",
+   "veggiesdelight:integration/immersiveengineering/crusher/wild_bellpeppers",
+   "veggiesdelight:integration/immersiveengineering/crusher/wild_broccoli",
+   "veggiesdelight:integration/immersiveengineering/crusher/wild_cauliflowers",
+   "veggiesdelight:integration/immersiveengineering/crusher/wild_garlic",
+   "veggiesdelight:integration/immersiveengineering/crusher/wild_sweet_potatoes",
+   "veggiesdelight:integration/immersiveengineering/crusher/wild_turnips",
+   "veggiesdelight:integration/immersiveengineering/crusher/wild_zucchinis",
+   "veggiesdelight:integration/immersiveengineering/squeezer/bellpepper_seeds",
+   "veggiesdelight:integration/immersiveengineering/squeezer/broccoli_seeds",
+   "veggiesdelight:integration/immersiveengineering/squeezer/cauliflower_seeds",
+   "veggiesdelight:integration/immersiveengineering/squeezer/turnip_seeds",
+   "veggiesdelight:integration/immersiveengineering/squeezer/zucchini_seeds",
+   "veggiesdelight:mhadjeb_from_campfire_cooking",
+   "veggiesdelight:mhadjeb_from_smelting",
+   "veggiesdelight:mhadjeb_from_smoking",
+   "veggiesdelight:roasted_cauliflower_floret_from_campfire_cooking",
+   "veggiesdelight:roasted_cauliflower_floret_from_smelting",
+   "veggiesdelight:roasted_cauliflower_floret_from_smoking",
+   "veggiesdelight:roasted_garlic_clove_from_campfire_cooking",
+   "veggiesdelight:roasted_garlic_clove_from_smelting",
+   "veggiesdelight:roasted_garlic_clove_from_smoking",
+   "veggiesdelight:roasted_zucchini_from_campfire_cooking",
+   "veggiesdelight:roasted_zucchini_from_smelting",
+   "veggiesdelight:roasted_zucchini_from_smoking",
+   "veggiesdelight:seeds_from_bellpepper",
+   "veggiesdelight:seeds_from_zucchini",
+   "veggiesdelight:steak_and_broccoli",
+   "veggiesdelight:stuffed_zucchini_boat",
+   "veggiesdelight:sweet_potato_crate",
+   "veggiesdelight:sweet_potato_cupcakes",
+   "veggiesdelight:sweet_potato_dough_from_eggs",
+   "veggiesdelight:sweet_potato_dough_from_water",
+   "veggiesdelight:sweet_potato_pie",
+   "veggiesdelight:sweet_potato_pie_from_slices",
+   "veggiesdelight:sweet_potatoes_from_crate",
+   "veggiesdelight:turnip_crate",
+   "veggiesdelight:turnip_mutton_skewer",
+   "veggiesdelight:turnip_salad",
+   "veggiesdelight:turnips_from_crate",
+   "veggiesdelight:uncooked_mhadjeb",
+   "veggiesdelight:vegan_pizza",
+   "veggiesdelight:vegan_pizza_from_slices",
+   "veggiesdelight:vegetable_wrap",
+   "veggiesdelight:vegetarian_burger",
+   "veggiesdelight:vegetarian_patty",
+   "veggiesdelight:zucchini_crate",
+   "veggiesdelight:zucchini_quiche",
+   "veggiesdelight:zucchini_quiche_from_slices",
+   "veggiesdelight:zucchini_sandwich",
+   "veggiesdelight:zucchinis_from_crate"
+  ],
+  "structure": [
+   "veggiesdelight:compat/atmospheric/village/houses/scrubland_depot_house",
+   "veggiesdelight:compat/explorify/village/houses/settlement_depot_house",
+   "veggiesdelight:compat/natures_spirit/village/houses/adobe_depot_house",
+   "veggiesdelight:compat/natures_spirit/village/houses/coconut_depot_house",
+   "veggiesdelight:compat/natures_spirit/village/houses/cypress_depot_house",
+   "veggiesdelight:compat/natures_spirit/village/houses/wisteria_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/badlands_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/bamboo_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/birch_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/cherry_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/dark_forest_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/giant_taiga_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/jungle_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/mountains_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/mushroom_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/oak_depot_house",
+   "veggiesdelight:compat/repurposed_structures/village/houses/swamp_depot_house",
+   "veggiesdelight:village/houses/desert_depot_house",
+   "veggiesdelight:village/houses/plains_depot_house",
+   "veggiesdelight:village/houses/savanna_depot_house",
+   "veggiesdelight:village/houses/snowy_depot_house",
+   "veggiesdelight:village/houses/taiga_depot_house"
+  ],
+  "tags/block": [
+   "c:storage_blocks",
+   "c:storage_blocks/bellpepper",
+   "c:storage_blocks/broccoli",
+   "c:storage_blocks/cauliflower",
+   "c:storage_blocks/garlic",
+   "c:storage_blocks/sweet_potato",
+   "c:storage_blocks/turnip",
+   "c:storage_blocks/zucchini",
+   "farmersdelight:feasts",
+   "farmersdelight:mineable/knife",
+   "farmersdelight:pies",
+   "farmersdelight:wild_crops",
+   "minecraft:crops",
+   "minecraft:maintains_farmland",
+   "minecraft:mineable/axe",
+   "minecraft:small_flowers",
+   "sereneseasons:autumn_crops",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops",
+   "sereneseasons:winter_crops"
+  ],
+  "tags/item": [
+   "c:crops",
+   "c:crops/bellpepper",
+   "c:crops/broccoli",
+   "c:crops/cauliflower",
+   "c:crops/garlic",
+   "c:crops/potato",
+   "c:crops/sweet_potato",
+   "c:crops/turnip",
+   "c:crops/zucchini",
+   "c:drinks/juice",
+   "c:foods/bellpepper",
+   "c:foods/bread",
+   "c:foods/broccoli",
+   "c:foods/cauliflower",
+   "c:foods/dough",
+   "c:foods/edible_when_placed",
+   "c:foods/garlic",
+   "c:foods/leafy_green",
+   "c:foods/pie",
+   "c:foods/sweet_potato",
+   "c:foods/turnip",
+   "c:foods/vegetable",
+   "c:foods/zucchini",
+   "c:seeds",
+   "c:storage_blocks",
+   "c:storage_blocks/bellpepper",
+   "c:storage_blocks/broccoli",
+   "c:storage_blocks/cauliflower",
+   "c:storage_blocks/garlic",
+   "c:storage_blocks/sweet_potato",
+   "c:storage_blocks/turnip",
+   "c:storage_blocks/zucchini",
+   "farmersdelight:drinks",
+   "farmersdelight:feasts",
+   "farmersdelight:meals",
+   "farmersdelight:pies",
+   "farmersdelight:snacks",
+   "farmersdelight:sweets",
+   "farmersdelight:wild_crops",
+   "minecraft:armadillo_food",
+   "minecraft:camel_food",
+   "minecraft:chicken_food",
+   "minecraft:cow_food",
+   "minecraft:goat_food",
+   "minecraft:horse_food",
+   "minecraft:llama_food",
+   "minecraft:parrot_food",
+   "minecraft:parrot_poisonous_food",
+   "minecraft:pig_food",
+   "minecraft:rabbit_food",
+   "minecraft:sheep_food",
+   "minecraft:small_flowers",
+   "minecraft:villager_plantable_seeds",
+   "sereneseasons:autumn_crops",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops",
+   "sereneseasons:winter_crops",
+   "tconstruct:seeds"
+  ],
+  "worldgen/configured_feature": [
+   "veggiesdelight:patch_mature_dandelion",
+   "veggiesdelight:patch_wild_bellpeppers",
+   "veggiesdelight:patch_wild_broccoli",
+   "veggiesdelight:patch_wild_cauliflowers",
+   "veggiesdelight:patch_wild_garlic",
+   "veggiesdelight:patch_wild_sweet_potato",
+   "veggiesdelight:patch_wild_turnips",
+   "veggiesdelight:patch_wild_zucchinis"
+  ],
+  "worldgen/placed_feature": [
+   "veggiesdelight:patch_mature_dandelion",
+   "veggiesdelight:patch_wild_bellpeppers",
+   "veggiesdelight:patch_wild_broccoli",
+   "veggiesdelight:patch_wild_cauliflowers",
+   "veggiesdelight:patch_wild_garlic",
+   "veggiesdelight:patch_wild_sweet_potatoes",
+   "veggiesdelight:patch_wild_turnips",
+   "veggiesdelight:patch_wild_zucchinis"
+  ]
+ },
+ "data_counts": {
+  "advancement": 107
+ },
+ "tags": {
+  "tags/block": {
+   "c:storage_blocks": [
+    "veggiesdelight:bellpepper_crate",
+    "veggiesdelight:broccoli_crate",
+    "veggiesdelight:cauliflower_crate",
+    "veggiesdelight:garlic_crate",
+    "veggiesdelight:sweet_potato_crate",
+    "veggiesdelight:turnip_crate",
+    "veggiesdelight:zucchini_crate"
+   ],
+   "c:storage_blocks/bellpepper": [
+    "veggiesdelight:bellpepper_crate"
+   ],
+   "c:storage_blocks/broccoli": [
+    "veggiesdelight:broccoli_crate"
+   ],
+   "c:storage_blocks/cauliflower": [
+    "veggiesdelight:cauliflower_crate"
+   ],
+   "c:storage_blocks/garlic": [
+    "veggiesdelight:garlic_crate"
+   ],
+   "c:storage_blocks/sweet_potato": [
+    "veggiesdelight:sweet_potato_crate"
+   ],
+   "c:storage_blocks/turnip": [
+    "veggiesdelight:turnip_crate"
+   ],
+   "c:storage_blocks/zucchini": [
+    "veggiesdelight:zucchini_crate"
+   ],
+   "farmersdelight:feasts": [
+    "veggiesdelight:lasagna_pan",
+    "veggiesdelight:stuffed_bellpeppers_block"
+   ],
+   "farmersdelight:mineable/knife": [
+    "veggiesdelight:beetroot_brownie_tray",
+    "veggiesdelight:carrot_cake",
+    "veggiesdelight:sweet_potato_pie",
+    "veggiesdelight:vegan_pizza"
+   ],
+   "farmersdelight:pies": [
+    "veggiesdelight:sweet_potato_pie",
+    "veggiesdelight:zucchini_quiche"
+   ],
+   "farmersdelight:wild_crops": [
+    "veggiesdelight:wild_bellpeppers",
+    "veggiesdelight:wild_broccoli",
+    "veggiesdelight:wild_cauliflowers",
+    "veggiesdelight:wild_garlic",
+    "veggiesdelight:wild_sweet_potatoes",
+    "veggiesdelight:wild_turnips",
+    "veggiesdelight:wild_zucchinis"
+   ],
+   "minecraft:crops": [
+    "veggiesdelight:bellpepper_crop",
+    "veggiesdelight:broccoli_crop",
+    "veggiesdelight:cauliflower_crop",
+    "veggiesdelight:garlic_crop",
+    "veggiesdelight:sweet_potato_crop",
+    "veggiesdelight:turnip_crop",
+    "veggiesdelight:zucchini_crop"
+   ],
+   "minecraft:maintains_farmland": [
+    "veggiesdelight:bellpepper_crop",
+    "veggiesdelight:broccoli_crop",
+    "veggiesdelight:cauliflower_crop",
+    "veggiesdelight:garlic_crop",
+    "veggiesdelight:sweet_potato_crop",
+    "veggiesdelight:turnip_crop",
+    "veggiesdelight:zucchini_crop"
+   ],
+   "minecraft:mineable/axe": [
+    "veggiesdelight:bellpepper_crate",
+    "veggiesdelight:broccoli_crate",
+    "veggiesdelight:cauliflower_crate",
+    "veggiesdelight:garlic_crate",
+    "veggiesdelight:sweet_potato_crate",
+    "veggiesdelight:turnip_crate",
+    "veggiesdelight:zucchini_crate",
+    "veggiesdelight:beetroot_brownie_tray",
+    "veggiesdelight:sweet_potato_pie",
+    "veggiesdelight:vegan_pizza",
+    "veggiesdelight:zucchini_quiche",
+    "veggiesdelight:lasagna_pan",
+    "veggiesdelight:stuffed_bellpeppers_block"
+   ],
+   "minecraft:small_flowers": [
+    "veggiesdelight:mature_dandelion",
+    "veggiesdelight:wild_bellpeppers",
+    "veggiesdelight:wild_broccoli",
+    "veggiesdelight:wild_cauliflowers",
+    "veggiesdelight:wild_garlic",
+    "veggiesdelight:wild_sweet_potatoes",
+    "veggiesdelight:wild_turnips",
+    "veggiesdelight:wild_zucchinis"
+   ],
+   "sereneseasons:autumn_crops": [
+    "veggiesdelight:bellpepper_crop",
+    "veggiesdelight:broccoli_crop",
+    "veggiesdelight:cauliflower_crop",
+    "veggiesdelight:garlic_crop",
+    "veggiesdelight:sweet_potato_crop",
+    "veggiesdelight:turnip_crop"
+   ],
+   "sereneseasons:spring_crops": [
+    "veggiesdelight:broccoli_crop",
+    "veggiesdelight:garlic_crop",
+    "veggiesdelight:turnip_crop"
+   ],
+   "sereneseasons:summer_crops": [
+    "veggiesdelight:bellpepper_crop",
+    "veggiesdelight:garlic_crop",
+    "veggiesdelight:zucchini_crop"
+   ],
+   "sereneseasons:winter_crops": [
+    "veggiesdelight:cauliflower_crop",
+    "veggiesdelight:sweet_potato_crop",
+    "veggiesdelight:turnip_crop"
+   ]
+  },
+  "tags/item": {
+   "c:crops": [
+    "veggiesdelight:bellpepper",
+    "veggiesdelight:broccoli",
+    "veggiesdelight:cauliflower",
+    "veggiesdelight:cauliflower_floret",
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:turnip",
+    "veggiesdelight:zucchini",
+    "veggiesdelight:zucchini_slice"
+   ],
+   "c:crops/bellpepper": [
+    "veggiesdelight:bellpepper"
+   ],
+   "c:crops/broccoli": [
+    "veggiesdelight:broccoli"
+   ],
+   "c:crops/cauliflower": [
+    "veggiesdelight:cauliflower",
+    "veggiesdelight:cauliflower_floret"
+   ],
+   "c:crops/garlic": [
+    "veggiesdelight:garlic",
+    "veggiesdelight:garlic_clove"
+   ],
+   "c:crops/potato": [
+    "veggiesdelight:sweet_potato"
+   ],
+   "c:crops/sweet_potato": [
+    "veggiesdelight:sweet_potato"
+   ],
+   "c:crops/turnip": [
+    "veggiesdelight:turnip"
+   ],
+   "c:crops/zucchini": [
+    "veggiesdelight:zucchini",
+    "veggiesdelight:zucchini_slice"
+   ],
+   "c:drinks/juice": [
+    "veggiesdelight:carrot_juice",
+    "veggiesdelight:dandelion_juice",
+    "veggiesdelight:turnip_water"
+   ],
+   "c:foods/bellpepper": [
+    "veggiesdelight:bellpepper"
+   ],
+   "c:foods/bread": [
+    "veggiesdelight:cauliflower_bread"
+   ],
+   "c:foods/broccoli": [
+    "veggiesdelight:broccoli"
+   ],
+   "c:foods/cauliflower": [
+    "veggiesdelight:cauliflower",
+    "veggiesdelight:cauliflower_floret"
+   ],
+   "c:foods/dough": [
+    "veggiesdelight:sweet_potato_dough"
+   ],
+   "c:foods/edible_when_placed": [
+    "veggiesdelight:beetroot_brownie_tray",
+    "veggiesdelight:carrot_cake",
+    "veggiesdelight:sweet_potato_pie",
+    "veggiesdelight:vegan_pizza"
+   ],
+   "c:foods/garlic": [
+    "veggiesdelight:garlic",
+    "veggiesdelight:garlic_clove"
+   ],
+   "c:foods/leafy_green": [
+    "veggiesdelight:dandelion_leaf"
+   ],
+   "c:foods/pie": [
+    "veggiesdelight:zucchini_quiche",
+    "veggiesdelight:sweet_potato_pie"
+   ],
+   "c:foods/sweet_potato": [
+    "veggiesdelight:sweet_potato"
+   ],
+   "c:foods/turnip": [
+    "veggiesdelight:turnip"
+   ],
+   "c:foods/vegetable": [
+    "veggiesdelight:bellpepper",
+    "veggiesdelight:broccoli",
+    "veggiesdelight:cauliflower",
+    "veggiesdelight:cauliflower_floret",
+    "veggiesdelight:garlic",
+    "veggiesdelight:garlic_clove",
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:turnip",
+    "veggiesdelight:zucchini",
+    "veggiesdelight:zucchini_slice"
+   ],
+   "c:foods/zucchini": [
+    "veggiesdelight:zucchini",
+    "veggiesdelight:zucchini_slice"
+   ],
+   "c:seeds": [
+    "veggiesdelight:bellpepper_seeds",
+    "veggiesdelight:broccoli_seeds",
+    "veggiesdelight:cauliflower_seeds",
+    "veggiesdelight:turnip_seeds",
+    "veggiesdelight:zucchini_seeds"
+   ],
+   "c:storage_blocks": [
+    "veggiesdelight:bellpepper_crate",
+    "veggiesdelight:broccoli_crate",
+    "veggiesdelight:cauliflower_crate",
+    "veggiesdelight:garlic_crate",
+    "veggiesdelight:sweet_potato_crate",
+    "veggiesdelight:turnip_crate",
+    "veggiesdelight:zucchini_crate"
+   ],
+   "c:storage_blocks/bellpepper": [
+    "veggiesdelight:bellpepper_crate"
+   ],
+   "c:storage_blocks/broccoli": [
+    "veggiesdelight:broccoli_crate"
+   ],
+   "c:storage_blocks/cauliflower": [
+    "veggiesdelight:cauliflower_crate"
+   ],
+   "c:storage_blocks/garlic": [
+    "veggiesdelight:garlic_crate"
+   ],
+   "c:storage_blocks/sweet_potato": [
+    "veggiesdelight:sweet_potato_crate"
+   ],
+   "c:storage_blocks/turnip": [
+    "veggiesdelight:turnip_crate"
+   ],
+   "c:storage_blocks/zucchini": [
+    "veggiesdelight:zucchini_crate"
+   ],
+   "farmersdelight:drinks": [
+    "veggiesdelight:carrot_juice",
+    "veggiesdelight:dandelion_juice",
+    "veggiesdelight:turnip_water"
+   ],
+   "farmersdelight:feasts": [
+    "veggiesdelight:lasagna_pan",
+    "veggiesdelight:stuffed_bellpeppers_block"
+   ],
+   "farmersdelight:meals": [
+    "veggiesdelight:cacciatore",
+    "veggiesdelight:shakshouka",
+    "veggiesdelight:broccoli_soup",
+    "veggiesdelight:pasta_with_broccoli",
+    "veggiesdelight:steak_and_broccoli",
+    "veggiesdelight:cauliflower_kuku",
+    "veggiesdelight:cauliflower_soup",
+    "veggiesdelight:dandelion_and_eggs",
+    "veggiesdelight:garlic_baked_cod",
+    "veggiesdelight:garlic_chicken_stew",
+    "veggiesdelight:garlic_rice_with_cauliflower",
+    "veggiesdelight:mashed_potatoes",
+    "veggiesdelight:potato_noodles",
+    "veggiesdelight:turnip_beef_stew",
+    "veggiesdelight:turnip_cake",
+    "veggiesdelight:stuffed_zucchinis",
+    "veggiesdelight:lasagna_slice",
+    "veggiesdelight:rice_and_vegetables"
+   ],
+   "farmersdelight:pies": [
+    "veggiesdelight:sweet_potato_pie",
+    "veggiesdelight:sweet_potato_pie_slice",
+    "veggiesdelight:zucchini_quiche",
+    "veggiesdelight:zucchini_slice"
+   ],
+   "farmersdelight:snacks": [
+    "veggiesdelight:cauliflower_bread",
+    "veggiesdelight:garlic_bread",
+    "veggiesdelight:garlic_stuffed_mushrooms",
+    "veggiesdelight:turnip_mutton_skewer",
+    "veggiesdelight:chicken_fajitas_wrap",
+    "veggiesdelight:vegetables_wrap",
+    "veggiesdelight:vegetarian_burger",
+    "veggiesdelight:zucchini_sandwich",
+    "veggiesdelight:mhadjeb",
+    "veggiesdelight:vegan_pizza",
+    "veggiesdelight:vegan_pizza_slice",
+    "veggiesdelight:zucchini_quiche_slice",
+    "veggiesdelight:stuffed_zucchini_boat"
+   ],
+   "farmersdelight:sweets": [
+    "veggiesdelight:beetroot_brownie_tray",
+    "veggiesdelight:beetroot_brownie",
+    "veggiesdelight:carrot_cake",
+    "veggiesdelight:carrot_cake_slice",
+    "veggiesdelight:sweet_potato_pie_slice",
+    "veggiesdelight:sweet_potato_cupcake",
+    "veggiesdelight:sweet_potato_pancakes"
+   ],
+   "farmersdelight:wild_crops": [
+    "veggiesdelight:wild_bellpeppers",
+    "veggiesdelight:wild_broccoli",
+    "veggiesdelight:wild_cauliflowers",
+    "veggiesdelight:wild_garlic",
+    "veggiesdelight:wild_sweet_potatoes",
+    "veggiesdelight:wild_turnips",
+    "veggiesdelight:wild_zucchinis"
+   ],
+   "minecraft:armadillo_food": [
+    "veggiesdelight:dandelion_leaf"
+   ],
+   "minecraft:camel_food": [
+    "veggiesdelight:dandelion_leaf"
+   ],
+   "minecraft:chicken_food": [
+    "veggiesdelight:bellpepper_seeds",
+    "veggiesdelight:broccoli_seeds",
+    "veggiesdelight:cauliflower_seeds",
+    "veggiesdelight:turnip_seeds",
+    "veggiesdelight:zucchini_seeds"
+   ],
+   "minecraft:cow_food": [
+    "veggiesdelight:dandelion_leaf",
+    "veggiesdelight:broccoli",
+    "veggiesdelight:cauliflower",
+    "veggiesdelight:cauliflower_floret"
+   ],
+   "minecraft:goat_food": [
+    "veggiesdelight:dandelion_leaf",
+    "veggiesdelight:broccoli",
+    "veggiesdelight:cauliflower"
+   ],
+   "minecraft:horse_food": [
+    "veggiesdelight:dandelion_leaf",
+    "veggiesdelight:broccoli",
+    "veggiesdelight:cauliflower",
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:turnip",
+    "veggiesdelight:zucchini"
+   ],
+   "minecraft:llama_food": [
+    "veggiesdelight:dandelion_leaf"
+   ],
+   "minecraft:parrot_food": [
+    "veggiesdelight:broccoli_seeds",
+    "veggiesdelight:cauliflower_seeds",
+    "veggiesdelight:turnip_seeds",
+    "veggiesdelight:zucchini_seeds"
+   ],
+   "minecraft:parrot_poisonous_food": [
+    "veggiesdelight:bellpepper_seeds"
+   ],
+   "minecraft:pig_food": [
+    "veggiesdelight:bellpepper",
+    "veggiesdelight:cauliflower",
+    "veggiesdelight:cauliflower_floret",
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:turnip",
+    "veggiesdelight:zucchini",
+    "veggiesdelight:zucchini_slice"
+   ],
+   "minecraft:rabbit_food": [
+    "veggiesdelight:dandelion_leaf",
+    "veggiesdelight:broccoli",
+    "veggiesdelight:cauliflower_floret",
+    "veggiesdelight:zucchini_slice"
+   ],
+   "minecraft:sheep_food": [
+    "veggiesdelight:dandelion_leaf",
+    "veggiesdelight:broccoli",
+    "veggiesdelight:cauliflower"
+   ],
+   "minecraft:small_flowers": [
+    "veggiesdelight:mature_dandelion",
+    "veggiesdelight:wild_bellpeppers",
+    "veggiesdelight:wild_broccoli",
+    "veggiesdelight:wild_cauliflowers",
+    "veggiesdelight:wild_garlic",
+    "veggiesdelight:wild_sweet_potatoes",
+    "veggiesdelight:wild_turnips",
+    "veggiesdelight:wild_zucchinis"
+   ],
+   "minecraft:villager_plantable_seeds": [
+    "veggiesdelight:bellpepper_seeds",
+    "veggiesdelight:broccoli_seeds",
+    "veggiesdelight:cauliflower_seeds",
+    "veggiesdelight:garlic_clove",
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:turnip_seeds",
+    "veggiesdelight:zucchini_seeds"
+   ],
+   "sereneseasons:autumn_crops": [
+    "veggiesdelight:bellpepper_seeds",
+    "veggiesdelight:broccoli_seeds",
+    "veggiesdelight:cauliflower_seeds",
+    "veggiesdelight:garlic_clove",
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:turnip_seeds"
+   ],
+   "sereneseasons:spring_crops": [
+    "veggiesdelight:broccoli_seeds",
+    "veggiesdelight:garlic_clove",
+    "veggiesdelight:turnip_seeds"
+   ],
+   "sereneseasons:summer_crops": [
+    "veggiesdelight:bellpepper_seeds",
+    "veggiesdelight:garlic_clove",
+    "veggiesdelight:zucchini_seeds"
+   ],
+   "sereneseasons:winter_crops": [
+    "veggiesdelight:cauliflower_seeds",
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:turnip_seeds"
+   ],
+   "tconstruct:seeds": [
+    "veggiesdelight:sweet_potato",
+    "veggiesdelight:garlic_clove"
+   ]
+  }
+ },
+ "recipe_types": {
+  "botanypots:block_derived_crop": 14,
+  "create:milling": 10,
+  "create:mixing": 2,
+  "farmersdelight:cooking": 37,
+  "farmersdelight:cutting": 16,
+  "immersiveengineering:cloche": 7,
+  "immersiveengineering:crusher": 7,
+  "immersiveengineering:squeezer": 5,
+  "minecraft:campfire_cooking": 7,
+  "minecraft:crafting_shaped": 14,
+  "minecraft:crafting_shapeless": 57,
+  "minecraft:smelting": 7,
+  "minecraft:smoking": 8,
+  "veggiesdelight:crafting_special_sweet_potato_dough": 1
+ },
+ "botanypots": [
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:bellpepper_crop"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:bellpepper_crop",
+   "input": {
+    "item": "veggiesdelight:bellpepper_seeds"
+   },
+   "id": "veggiesdelight:integration/botany/bellpepper"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:broccoli_crop"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:broccoli_crop",
+   "input": {
+    "item": "veggiesdelight:broccoli_seeds"
+   },
+   "id": "veggiesdelight:integration/botany/broccoli"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:cauliflower_crop"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:cauliflower_crop",
+   "input": {
+    "item": "veggiesdelight:cauliflower_seeds"
+   },
+   "id": "veggiesdelight:integration/botany/cauliflower"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:garlic_crop"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:garlic_crop",
+   "input": {
+    "item": "veggiesdelight:garlic_clove"
+   },
+   "id": "veggiesdelight:integration/botany/garlic"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:sweet_potato_crop"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:sweet_potato_crop",
+   "input": {
+    "item": "veggiesdelight:sweet_potato"
+   },
+   "id": "veggiesdelight:integration/botany/sweet_potato"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:turnip_crop"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:turnip_crop",
+   "input": {
+    "item": "veggiesdelight:turnip_seeds"
+   },
+   "id": "veggiesdelight:integration/botany/turnip"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:wild_bellpeppers"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:wild_bellpeppers",
+   "input": {
+    "item": "veggiesdelight:wild_bellpeppers"
+   },
+   "id": "veggiesdelight:integration/botany/wild_bellpepper"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:wild_broccoli"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:wild_broccoli",
+   "input": {
+    "item": "veggiesdelight:wild_broccoli"
+   },
+   "id": "veggiesdelight:integration/botany/wild_broccoli"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:wild_cauliflowers"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:wild_cauliflowers",
+   "input": {
+    "item": "veggiesdelight:wild_cauliflowers"
+   },
+   "id": "veggiesdelight:integration/botany/wild_cauliflowers"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:wild_garlic"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:wild_garlic",
+   "input": {
+    "item": "veggiesdelight:wild_garlic"
+   },
+   "id": "veggiesdelight:integration/botany/wild_garlic"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:wild_sweet_potatoes"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:wild_sweet_potatoes",
+   "input": {
+    "item": "veggiesdelight:wild_sweet_potatoes"
+   },
+   "id": "veggiesdelight:integration/botany/wild_sweet_potatoes"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:wild_turnips"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:wild_turnips",
+   "input": {
+    "item": "veggiesdelight:wild_turnips"
+   },
+   "id": "veggiesdelight:integration/botany/wild_turnips"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:wild_zucchinis"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:wild_zucchinis",
+   "input": {
+    "item": "veggiesdelight:wild_zucchinis"
+   },
+   "id": "veggiesdelight:integration/botany/wild_zucchinis"
+  },
+  {
+   "neoforge:conditions": [
+    {
+     "type": "neoforge:mod_loaded",
+     "modid": "botanypots"
+    }
+   ],
+   "bookshelf:load_conditions": [
+    {
+     "type": "bookshelf:block_exists",
+     "values": [
+      "veggiesdelight:zucchini_crop"
+     ]
+    }
+   ],
+   "type": "botanypots:block_derived_crop",
+   "block": "veggiesdelight:zucchini_crop",
+   "input": {
+    "item": "veggiesdelight:zucchini_seeds"
+   },
+   "id": "veggiesdelight:integration/botany/zucchini"
+  }
+ ],
+ "problems": []
+}

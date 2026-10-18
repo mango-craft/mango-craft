@@ -1,0 +1,282 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Ender's Delight",
+ "file": "endersdelight-1.3.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "d39de482cd41537f647b6d96cc1fb2201295198f783579f6c35e0c9ed91ba0ae386a5ca8cdf6a1c6ed02bae4f1901b9dd6896e189893d15eca1baab87666014a",
+ "mods": [
+  {
+   "modid": "endersdelight",
+   "name": "Ender's Delight",
+   "version": "1.3.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "1.21.1-1.2.10",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "endersdelight",
+  "farmersdelight",
+  "minecraft",
+  "neoforge"
+ ],
+ "blocks": {
+  "endersdelight:amberveil_mushroom": "Amberveils",
+  "endersdelight:chorus_crate": "Chorus Crate",
+  "endersdelight:chorus_pie": "Chorus Pie",
+  "endersdelight:chorusflame_bush": "Chorusflame",
+  "endersdelight:endstone_stove": "Endstone Stove",
+  "endersdelight:ethereal_saffron_bush": "Ethereal Saffron",
+  "endersdelight:stuffed_shulker": "Stuffed Shulker",
+  "endersdelight:stuffed_shulker_block": "Stuffed Shulker",
+  "endersdelight:voidpepper_bush": "Void Pepper"
+ },
+ "effects": {
+  "endersdelight:phasing": "Ender Phasing"
+ },
+ "items": {
+  "endersdelight:amberveil": "",
+  "endersdelight:amberveil_stew": "Amberveil Stew",
+  "endersdelight:amberveiled_curry": "Amberveiled Curry",
+  "endersdelight:chicken_curry": "Chicken Curry",
+  "endersdelight:chorus_crate": "",
+  "endersdelight:chorus_juice": "Chorus Juice",
+  "endersdelight:chorus_pie": "",
+  "endersdelight:chorus_pie_slice": "Chorus Pie Slice",
+  "endersdelight:chorus_stew": "Chorus Stew",
+  "endersdelight:chorus_stew_wood": "Chorus Stew",
+  "endersdelight:chorusflame": "",
+  "endersdelight:crawling_sandwich": "Crawling Sandwich",
+  "endersdelight:crispy_skewer": "Crispy Skewer",
+  "endersdelight:ender_paella": "Ender Paella",
+  "endersdelight:ender_paella_wood": "Ender Paella",
+  "endersdelight:ender_shard": "Ender Shard",
+  "endersdelight:enderman_sight": "Enderman Sight",
+  "endersdelight:endermite_stew": "Endermite Stew",
+  "endersdelight:endermite_stew_wood": "Endermite Stew",
+  "endersdelight:endstone_stove": "",
+  "endersdelight:ethereal_saffron": "",
+  "endersdelight:mite_crust": "Mite Crust",
+  "endersdelight:pearl_pasta": "Pearl Pasta",
+  "endersdelight:pearl_pasta_wood": "Pearl Pasta",
+  "endersdelight:shulker_bowl": "Shulker Bowl",
+  "endersdelight:shulker_filet": "Shulker Filet",
+  "endersdelight:shulker_mollusk": "Shulker Mollusk",
+  "endersdelight:sight_fragments": "Sight Fragments",
+  "endersdelight:steak_fries": "Steak With French Fries",
+  "endersdelight:strange_eclair": "Strange Eclair",
+  "endersdelight:stuffed_shulker": "",
+  "endersdelight:stuffed_shulker_bowl": "Bowl Of Stuffed Shulker",
+  "endersdelight:twisted_cereal": "Twisted Cereal",
+  "endersdelight:twisted_cereal_wood": "Twisted Cereal",
+  "endersdelight:uncanny_cookies": "Uncanny Cookies",
+  "endersdelight:veil_of_flames_risotto": "Veil Of Flames Risotto",
+  "endersdelight:voidpepper": ""
+ },
+ "data": {
+  "damage_type": [
+   "endersdelight:watered"
+  ],
+  "loot_modifiers": [
+   "endersdelight:scavenging_enderman_sight_from_enderman",
+   "endersdelight:scavenging_mite_crust_from_endermite",
+   "endersdelight:scavenging_shulker_mollusk_from_shulker",
+   "endersdelight:slicing_chorus_pie",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "endersdelight:blocks/amberveil_mushroom",
+   "endersdelight:blocks/chorus_crate",
+   "endersdelight:blocks/chorusflame_bush",
+   "endersdelight:blocks/endstone_stove",
+   "endersdelight:blocks/ethereal_saffron_bush",
+   "endersdelight:blocks/voidpepper_bush"
+  ],
+  "neoforge/biome_modifier": [
+   "endersdelight:amberveil_biome_modifier",
+   "endersdelight:chorusflame_biome_modifier",
+   "endersdelight:saffron_biome_modifier",
+   "endersdelight:voidpepper_biome_modifier"
+  ],
+  "recipe": [
+   "endersdelight:chorus_crate",
+   "endersdelight:chorus_fruit_from_crate",
+   "endersdelight:chorus_juice",
+   "endersdelight:chorus_pie",
+   "endersdelight:chorus_pie_slice",
+   "endersdelight:cooking/amberveil_stew",
+   "endersdelight:cooking/amberveiled_curry",
+   "endersdelight:cooking/chicken_curry",
+   "endersdelight:cooking/chorus_stew",
+   "endersdelight:cooking/ender_paella",
+   "endersdelight:cooking/endermite_stew",
+   "endersdelight:cooking/pearl_pasta",
+   "endersdelight:cooking/steak_fries",
+   "endersdelight:cooking/stuffed_shulker",
+   "endersdelight:cooking/veil_of_flames_risotto",
+   "endersdelight:crawling_sandwich",
+   "endersdelight:crispy_skewer",
+   "endersdelight:cutting/chorus_pie",
+   "endersdelight:cutting/ender_shard",
+   "endersdelight:cutting/shulker_filet",
+   "endersdelight:cutting/sight_fragments",
+   "endersdelight:endstone_stove",
+   "endersdelight:shulker_bowl",
+   "endersdelight:strange_eclair",
+   "endersdelight:twisted_cereal",
+   "endersdelight:uncanny_cookies"
+  ],
+  "structure": [
+   "endersdelight:end_house"
+  ],
+  "tags/block": [
+   "c:storage_blocks",
+   "c:storage_blocks/chorus_fruit",
+   "farmersdelight:heat_sources",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/item": [
+   "c:foods",
+   "c:foods/cookie",
+   "c:foods/food_poisoning",
+   "c:foods/raw_meat",
+   "c:foods/soup",
+   "c:storage_blocks",
+   "c:storage_blocks/chorus",
+   "c:storage_blocks/chorus_fruit",
+   "endersdelight:enderman_loot",
+   "endersdelight:enderman_sight",
+   "endersdelight:shulker_loot",
+   "farmersdelight:serving_container",
+   "minecraft:meat"
+  ],
+  "worldgen/configured_feature": [
+   "endersdelight:amberveil",
+   "endersdelight:chorusflame",
+   "endersdelight:saffron",
+   "endersdelight:voidpepper"
+  ],
+  "worldgen/placed_feature": [
+   "endersdelight:amberveil",
+   "endersdelight:chorusflame",
+   "endersdelight:saffron",
+   "endersdelight:voidpepper"
+  ],
+  "worldgen/structure": [
+   "endersdelight:end_house"
+  ],
+  "worldgen/structure_set": [
+   "endersdelight:end_house"
+  ],
+  "worldgen/template_pool": [
+   "endersdelight:end_house"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "c:storage_blocks": [
+    "endersdelight:chorus_crate"
+   ],
+   "c:storage_blocks/chorus_fruit": [
+    "endersdelight:chorus_crate"
+   ],
+   "farmersdelight:heat_sources": [
+    "endersdelight:endstone_stove"
+   ],
+   "minecraft:mineable/axe": [
+    "endersdelight:chorus_crate"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "endersdelight:endstone_stove"
+   ]
+  },
+  "tags/item": {
+   "c:foods": [
+    "endersdelight:mite_crust",
+    "endersdelight:shulker_mollusk",
+    "endersdelight:shulker_filet",
+    "endersdelight:uncanny_cookies",
+    "endersdelight:chorus_pie",
+    "endersdelight:stuffed_shulker"
+   ],
+   "c:foods/cookie": [
+    "endersdelight:uncanny_cookies"
+   ],
+   "c:foods/food_poisoning": [
+    "endersdelight:mite_crust",
+    "endersdelight:shulker_mollusk",
+    "endersdelight:shulker_filet",
+    "endersdelight:uncanny_cookies"
+   ],
+   "c:foods/raw_meat": [
+    "endersdelight:shulker_mollusk",
+    "endersdelight:shulker_filet"
+   ],
+   "c:foods/soup": [
+    "endersdelight:chorus_stew",
+    "endersdelight:endermite_stew"
+   ],
+   "c:storage_blocks": [
+    "endersdelight:chorus_crate"
+   ],
+   "c:storage_blocks/chorus": [
+    "endersdelight:chorus_crate"
+   ],
+   "c:storage_blocks/chorus_fruit": [
+    "endersdelight:chorus_crate"
+   ],
+   "endersdelight:enderman_loot": [
+    "minecraft:ender_pearl",
+    "endersdelight:ender_shard"
+   ],
+   "endersdelight:enderman_sight": [
+    "endersdelight:enderman_sight",
+    "endersdelight:sight_fragments"
+   ],
+   "endersdelight:shulker_loot": [
+    "endersdelight:shulker_filet",
+    "endersdelight:shulker_mollusk"
+   ],
+   "farmersdelight:serving_container": [
+    "endersdelight:shulker_bowl"
+   ],
+   "minecraft:meat": [
+    "endersdelight:shulker_mollusk",
+    "endersdelight:shulker_filet"
+   ]
+  }
+ },
+ "recipe_types": {
+  "farmersdelight:cooking": 10,
+  "farmersdelight:cutting": 5,
+  "minecraft:crafting_shaped": 3,
+  "minecraft:crafting_shapeless": 8
+ },
+ "botanypots": [],
+ "problems": []
+}

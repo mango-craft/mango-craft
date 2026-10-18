@@ -1,0 +1,679 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Psi",
+ "file": "Psi-neoforge-1.21.1-110.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "2bbe6b40f230cd495a5342db61fb5a6c2a4d03fda0ee5fe0a21d8b7ccc8494d1d3e7fa5f54236d5f90cbe78a8bb75c27e3bb9cd9b85e4b6eed67aa976ffe857a",
+ "mods": [
+  {
+   "modid": "psi",
+   "name": "Psi",
+   "version": "1.21.1-110",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "patchouli",
+     "type": "required",
+     "range": "[1.21-87,)",
+     "side": null
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.207,)",
+     "side": null
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "1.21.1",
+     "side": null
+    },
+    {
+     "modid": "kubejs",
+     "type": "optional",
+     "range": "[2101.7.0,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "sablecompanion",
+   "name": "Sable Companion",
+   "version": "1.6.0",
+   "jar": "sable-companion-common-1.21.1-1.6.0.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.80,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "sable-companion-common-1.21.1-1.6.0.jar"
+ ],
+ "namespaces": [
+  "c",
+  "minecraft",
+  "patchouli",
+  "psi"
+ ],
+ "blocks": {
+  "psi:black_psimetal_plate": "Dark Psimetal Plate",
+  "psi:cad_assembler": "CAD Assembler",
+  "psi:conjured": "Conjured Block",
+  "psi:ebony_psimetal_block": "Ebony Psimetal Block",
+  "psi:ivory_psimetal_block": "Ivory Psimetal Block",
+  "psi:lit_black_psimetal_plate": "Dark Psimetal Flow Plate",
+  "psi:lit_white_psimetal_plate": "Bright Psimetal Flow Plate",
+  "psi:programmer": "Spell Programmer",
+  "psi:psidust_block": "Psidust Block",
+  "psi:psigem_block": "Psigem Block",
+  "psi:psimetal_block": "Psimetal Block",
+  "psi:white_psimetal_plate": "Bright Psimetal Plate"
+ },
+ "entities": {
+  "psi:spell_charge": "Spell Charge",
+  "psi:spell_circle": "Spell Circle",
+  "psi:spell_grenade": "Spell Grenade",
+  "psi:spell_mine": "Spell Mine",
+  "psi:spell_projectile": "Spell Projectile"
+ },
+ "items": {
+  "psi:_standard_cad": "",
+  "psi:_standard_colorizer": "",
+  "psi:_standard_sensor": "",
+  "psi:air": "",
+  "psi:black_psimetal_plate": "",
+  "psi:cad": "Casting Assistant Device",
+  "psi:cad_assembler": "",
+  "psi:cad_assembly_creative": "Creative CAD Assembly",
+  "psi:cad_assembly_ebony_psimetal": "Ebony Psimetal CAD Assembly",
+  "psi:cad_assembly_gold": "Gold CAD Assembly",
+  "psi:cad_assembly_iron": "Iron CAD Assembly",
+  "psi:cad_assembly_ivory_psimetal": "Ivory Psimetal CAD Assembly",
+  "psi:cad_assembly_psimetal": "Psimetal CAD Assembly",
+  "psi:cad_asssembler": "",
+  "psi:cad_battery_basic": "Basic CAD Battery",
+  "psi:cad_battery_extended": "Extended CAD Battery",
+  "psi:cad_battery_ultradense": "Ultradense CAD Battery",
+  "psi:cad_colorizer_black": "Black CAD Colorizer",
+  "psi:cad_colorizer_blue": "Blue CAD Colorizer",
+  "psi:cad_colorizer_brown": "Brown CAD Colorizer",
+  "psi:cad_colorizer_cyan": "Cyan CAD Colorizer",
+  "psi:cad_colorizer_empty": "Drained CAD Colorizer",
+  "psi:cad_colorizer_gray": "Gray CAD Colorizer",
+  "psi:cad_colorizer_green": "Green CAD Colorizer",
+  "psi:cad_colorizer_light_blue": "Light Blue CAD Colorizer",
+  "psi:cad_colorizer_light_gray": "Light Gray CAD Colorizer",
+  "psi:cad_colorizer_lime": "Lime CAD Colorizer",
+  "psi:cad_colorizer_magenta": "Magenta CAD Colorizer",
+  "psi:cad_colorizer_orange": "Orange CAD Colorizer",
+  "psi:cad_colorizer_pink": "Pink CAD Colorizer",
+  "psi:cad_colorizer_psi": "Psi CAD Colorizer",
+  "psi:cad_colorizer_purple": "Purple CAD Colorizer",
+  "psi:cad_colorizer_rainbow": "Full-Spectrum CAD Colorizer",
+  "psi:cad_colorizer_red": "Red CAD Colorizer",
+  "psi:cad_colorizer_white": "White CAD Colorizer",
+  "psi:cad_colorizer_yellow": "Yellow CAD Colorizer",
+  "psi:cad_core_basic": "Basic CAD Core",
+  "psi:cad_core_conductive": "Conductive CAD Core",
+  "psi:cad_core_hyperclocked": "Hyperclocked CAD Core",
+  "psi:cad_core_overclocked": "Overclocked CAD Core",
+  "psi:cad_core_radiative": "Radiative CAD Core",
+  "psi:cad_creative": "",
+  "psi:cad_ebony_psimetal": "",
+  "psi:cad_gay": "",
+  "psi:cad_gold": "",
+  "psi:cad_iron": "",
+  "psi:cad_ivory_psimetal": "",
+  "psi:cad_psimetal": "",
+  "psi:cad_socket_basic": "Basic CAD Socket",
+  "psi:cad_socket_huge": "Huge CAD Socket",
+  "psi:cad_socket_large": "Large CAD Socket",
+  "psi:cad_socket_signaling": "Signaling CAD Socket",
+  "psi:cad_socket_transmissive": "Transmissive CAD Socket",
+  "psi:detonator": "Spell Detonator",
+  "psi:ebony_psimetal": "Ebony Psimetal Ingot",
+  "psi:ebony_psimetal_block": "",
+  "psi:ebony_substance": "Ebony Substance",
+  "psi:encyclopaedia_psionica": "",
+  "psi:exosuit_controller": "Exosuit Controller",
+  "psi:exosuit_sensor_heat": "Exosuit Heat Sensor",
+  "psi:exosuit_sensor_light": "Exosuit Light Sensor",
+  "psi:exosuit_sensor_stress": "Exosuit Stress Sensor",
+  "psi:exosuit_sensor_trigger": "Exosuit Detonation Sensor",
+  "psi:exosuit_sensor_water": "Exosuit Water Sensor",
+  "psi:flash_ring": "Flash Ring",
+  "psi:flash_ring_active": "",
+  "psi:ivory_psimetal": "Ivory Psimetal Ingot",
+  "psi:ivory_psimetal_block": "",
+  "psi:ivory_substance": "Ivory Substance",
+  "psi:lit_black_psimetal_plate": "",
+  "psi:lit_white_psimetal_plate": "",
+  "psi:programmer": "",
+  "psi:psidust": "Psidust",
+  "psi:psidust_block": "",
+  "psi:psigem": "Psigem",
+  "psi:psigem_block": "",
+  "psi:psimetal": "Psimetal Ingot",
+  "psi:psimetal_axe": "Psimetal Axe",
+  "psi:psimetal_block": "",
+  "psi:psimetal_exosuit_boots": "Psimetal Exosuit Boots",
+  "psi:psimetal_exosuit_chestplate": "Psimetal Exosuit Chestplate",
+  "psi:psimetal_exosuit_helmet": "Psimetal Exosuit Helmet",
+  "psi:psimetal_exosuit_leggings": "Psimetal Exosuit Leggings",
+  "psi:psimetal_pickaxe": "Psimetal Pickaxe",
+  "psi:psimetal_shovel": "Psimetal Shovel",
+  "psi:psimetal_sword": "Psimetal Sword",
+  "psi:spell_bullet": "Spell Bullet",
+  "psi:spell_bullet_active": "",
+  "psi:spell_bullet_charge": "Charge Spell Bullet",
+  "psi:spell_bullet_charge_active": "",
+  "psi:spell_bullet_circle": "Circle Spell Bullet",
+  "psi:spell_bullet_circle_active": "",
+  "psi:spell_bullet_grenade": "Grenade Spell Bullet",
+  "psi:spell_bullet_grenade_active": "",
+  "psi:spell_bullet_loop": "Loopcast Spell Bullet",
+  "psi:spell_bullet_loop_active": "",
+  "psi:spell_bullet_mine": "Mine Spell Bullet",
+  "psi:spell_bullet_mine_active": "",
+  "psi:spell_bullet_projectile": "Projectile Spell Bullet",
+  "psi:spell_bullet_projectile_active": "",
+  "psi:spell_drive": "Spell Drive",
+  "psi:vector_ruler": "Vector Ruler",
+  "psi:white_psimetal_plate": ""
+ },
+ "data": {
+  "damage_type": [
+   "psi:psi_overload"
+  ],
+  "loot_table": [
+   "psi:blocks/black_psimetal_plate",
+   "psi:blocks/cad_assembler",
+   "psi:blocks/ebony_psimetal_block",
+   "psi:blocks/ivory_psimetal_block",
+   "psi:blocks/lit_black_psimetal_plate",
+   "psi:blocks/lit_white_psimetal_plate",
+   "psi:blocks/programmer",
+   "psi:blocks/psidust_block",
+   "psi:blocks/psigem_block",
+   "psi:blocks/psimetal_block",
+   "psi:blocks/white_psimetal_plate"
+  ],
+  "patchouli_books": [
+   "psi:encyclopaedia_psionica/book"
+  ],
+  "psi": [
+   "psi:cad_component/cad_assembly_creative",
+   "psi:cad_component/cad_assembly_ebony_psimetal",
+   "psi:cad_component/cad_assembly_gold",
+   "psi:cad_component/cad_assembly_iron",
+   "psi:cad_component/cad_assembly_ivory_psimetal",
+   "psi:cad_component/cad_assembly_psimetal",
+   "psi:cad_component/cad_battery_basic",
+   "psi:cad_component/cad_battery_extended",
+   "psi:cad_component/cad_battery_ultradense",
+   "psi:cad_component/cad_colorizer_black",
+   "psi:cad_component/cad_colorizer_blue",
+   "psi:cad_component/cad_colorizer_brown",
+   "psi:cad_component/cad_colorizer_cyan",
+   "psi:cad_component/cad_colorizer_empty",
+   "psi:cad_component/cad_colorizer_gray",
+   "psi:cad_component/cad_colorizer_green",
+   "psi:cad_component/cad_colorizer_light_blue",
+   "psi:cad_component/cad_colorizer_light_gray",
+   "psi:cad_component/cad_colorizer_lime",
+   "psi:cad_component/cad_colorizer_magenta",
+   "psi:cad_component/cad_colorizer_orange",
+   "psi:cad_component/cad_colorizer_pink",
+   "psi:cad_component/cad_colorizer_purple",
+   "psi:cad_component/cad_colorizer_red",
+   "psi:cad_component/cad_colorizer_white",
+   "psi:cad_component/cad_colorizer_yellow",
+   "psi:cad_component/cad_core_basic",
+   "psi:cad_component/cad_core_conductive",
+   "psi:cad_component/cad_core_hyperclocked",
+   "psi:cad_component/cad_core_overclocked",
+   "psi:cad_component/cad_core_radiative",
+   "psi:cad_component/cad_socket_basic",
+   "psi:cad_component/cad_socket_huge",
+   "psi:cad_component/cad_socket_large",
+   "psi:cad_component/cad_socket_signaling",
+   "psi:cad_component/cad_socket_transmissive",
+   "psi:spell_piece_group/block_conjuration",
+   "psi:spell_piece_group/block_movement",
+   "psi:spell_piece_group/block_works",
+   "psi:spell_piece_group/detection_dynamics",
+   "psi:spell_piece_group/eidos_reversal",
+   "psi:spell_piece_group/elemental_arts",
+   "psi:spell_piece_group/entities_intro",
+   "psi:spell_piece_group/exosuit_casting",
+   "psi:spell_piece_group/flow_control",
+   "psi:spell_piece_group/greater_infusion",
+   "psi:spell_piece_group/infusion",
+   "psi:spell_piece_group/list_operations",
+   "psi:spell_piece_group/loopcasting",
+   "psi:spell_piece_group/memory_management",
+   "psi:spell_piece_group/misc_tricks",
+   "psi:spell_piece_group/movement",
+   "psi:spell_piece_group/negative_effects",
+   "psi:spell_piece_group/numbers_intro",
+   "psi:spell_piece_group/positive_effects",
+   "psi:spell_piece_group/projectiles",
+   "psi:spell_piece_group/secondary_operators",
+   "psi:spell_piece_group/smeltery",
+   "psi:spell_piece_group/tool_casting",
+   "psi:spell_piece_group/trigonometry",
+   "psi:spell_piece_group/tutorial1",
+   "psi:spell_piece_group/tutorial2",
+   "psi:spell_piece_group/tutorial3",
+   "psi:spell_piece_group/tutorial4",
+   "psi:spell_piece_group/vectors_intro"
+  ],
+  "recipe": [
+   "patchouli:guide_book",
+   "psi:assembler",
+   "psi:cad_assembly_ebony",
+   "psi:cad_assembly_gold",
+   "psi:cad_assembly_iron",
+   "psi:cad_assembly_ivory",
+   "psi:cad_assembly_psimetal",
+   "psi:cad_battery_basic",
+   "psi:cad_battery_extended",
+   "psi:cad_battery_ultradense",
+   "psi:cad_colorizer_black",
+   "psi:cad_colorizer_blue",
+   "psi:cad_colorizer_brown",
+   "psi:cad_colorizer_cyan",
+   "psi:cad_colorizer_empty",
+   "psi:cad_colorizer_gray",
+   "psi:cad_colorizer_green",
+   "psi:cad_colorizer_light_blue",
+   "psi:cad_colorizer_light_gray",
+   "psi:cad_colorizer_lime",
+   "psi:cad_colorizer_magenta",
+   "psi:cad_colorizer_orange",
+   "psi:cad_colorizer_pink",
+   "psi:cad_colorizer_psi",
+   "psi:cad_colorizer_purple",
+   "psi:cad_colorizer_rainbow",
+   "psi:cad_colorizer_red",
+   "psi:cad_colorizer_white",
+   "psi:cad_colorizer_yellow",
+   "psi:cad_core_basic",
+   "psi:cad_core_conductive",
+   "psi:cad_core_hyperclocked",
+   "psi:cad_core_overclocked",
+   "psi:cad_core_radiative",
+   "psi:cad_socket_basic",
+   "psi:cad_socket_huge",
+   "psi:cad_socket_large",
+   "psi:cad_socket_signaling",
+   "psi:cad_socket_transmissive",
+   "psi:detonator",
+   "psi:dynamic/bullet_to_drive",
+   "psi:dynamic/colorizer_change",
+   "psi:dynamic/drive_duplicate",
+   "psi:dynamic/scavenge",
+   "psi:dynamic/sensor_attach",
+   "psi:dynamic/sensor_remove",
+   "psi:ebony_block",
+   "psi:ebony_ingot_shapeless",
+   "psi:ebony_psimetal",
+   "psi:ebony_substance",
+   "psi:exosuit_controller",
+   "psi:exosuit_sensor_heat",
+   "psi:exosuit_sensor_light",
+   "psi:exosuit_sensor_stress",
+   "psi:exosuit_sensor_trigger",
+   "psi:exosuit_sensor_water",
+   "psi:flash_ring",
+   "psi:gold_to_psimetal_assembly_upgrade",
+   "psi:ivory_block",
+   "psi:ivory_ingot_shapeless",
+   "psi:ivory_psimetal",
+   "psi:ivory_substance",
+   "psi:programmer",
+   "psi:psidust",
+   "psi:psidust_block",
+   "psi:psidust_shapeless",
+   "psi:psigem",
+   "psi:psigem_block",
+   "psi:psigem_shapeless",
+   "psi:psimetal",
+   "psi:psimetal_axe",
+   "psi:psimetal_block",
+   "psi:psimetal_exosuit_boots",
+   "psi:psimetal_exosuit_chestplate",
+   "psi:psimetal_exosuit_helmet",
+   "psi:psimetal_exosuit_leggings",
+   "psi:psimetal_pickaxe",
+   "psi:psimetal_plate_black",
+   "psi:psimetal_plate_black_light",
+   "psi:psimetal_plate_white",
+   "psi:psimetal_plate_white_light",
+   "psi:psimetal_shapeless",
+   "psi:psimetal_shovel",
+   "psi:psimetal_sword",
+   "psi:spell_bullet_basic",
+   "psi:spell_bullet_charge",
+   "psi:spell_bullet_charge_upgrade",
+   "psi:spell_bullet_circle",
+   "psi:spell_bullet_circle_upgrade",
+   "psi:spell_bullet_grenade",
+   "psi:spell_bullet_grenade_upgrade",
+   "psi:spell_bullet_loopcast",
+   "psi:spell_bullet_loopcast_upgrade",
+   "psi:spell_bullet_mine",
+   "psi:spell_bullet_mine_upgrade",
+   "psi:spell_bullet_projectile",
+   "psi:spell_bullet_projectile_upgrade",
+   "psi:spell_drive",
+   "psi:vector_ruler"
+  ],
+  "tags/block": [
+   "c:storage_blocks",
+   "c:storage_blocks/ebony_psimetal",
+   "c:storage_blocks/ivory_psimetal",
+   "c:storage_blocks/psigem",
+   "c:storage_blocks/psimetal",
+   "minecraft:air",
+   "minecraft:mineable/pickaxe",
+   "minecraft:needs_iron_tool"
+  ],
+  "tags/damage_type": [
+   "minecraft:bypasses_armor",
+   "minecraft:bypasses_effects",
+   "minecraft:bypasses_enchantments",
+   "minecraft:bypasses_resistance",
+   "minecraft:bypasses_shield"
+  ],
+  "tags/item": [
+   "c:dusts",
+   "c:enchantables",
+   "c:gems",
+   "c:gems/psigem",
+   "c:ingots",
+   "c:ingots/ebony_psimetal",
+   "c:ingots/ivory_psimetal",
+   "c:ingots/psimetal",
+   "c:storage_blocks",
+   "c:storage_blocks/ebony_psimetal",
+   "c:storage_blocks/ivory_psimetal",
+   "c:storage_blocks/psigem",
+   "c:storage_blocks/psimetal",
+   "minecraft:axes",
+   "minecraft:chest_armor",
+   "minecraft:enchantable/chest_armor",
+   "minecraft:enchantable/foot_armor",
+   "minecraft:enchantable/head_armor",
+   "minecraft:enchantable/leg_armor",
+   "minecraft:enchantable/mining",
+   "minecraft:enchantable/sword",
+   "minecraft:foot_armor",
+   "minecraft:head_armor",
+   "minecraft:leg_armor",
+   "minecraft:pickaxes",
+   "minecraft:shovels",
+   "minecraft:swords",
+   "psi:cad_component/assembly",
+   "psi:cad_component/battery",
+   "psi:cad_component/core",
+   "psi:cad_component/dye",
+   "psi:cad_component/socket",
+   "psi:ebony_substance",
+   "psi:ivory_substance",
+   "psi:psidust"
+  ]
+ },
+ "data_counts": {
+  "advancement": 135
+ },
+ "tags": {
+  "tags/block": {
+   "c:storage_blocks": [
+    "psi:psimetal_block",
+    "psi:psigem_block",
+    "psi:ebony_psimetal_block",
+    "psi:ivory_psimetal_block"
+   ],
+   "c:storage_blocks/ebony_psimetal": [
+    "psi:ebony_psimetal_block"
+   ],
+   "c:storage_blocks/ivory_psimetal": [
+    "psi:ivory_psimetal_block"
+   ],
+   "c:storage_blocks/psigem": [
+    "psi:psigem_block"
+   ],
+   "c:storage_blocks/psimetal": [
+    "psi:psimetal_block"
+   ],
+   "minecraft:air": [
+    "psi:conjured"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "psi:cad_assembler",
+    "psi:programmer",
+    "psi:psidust_block",
+    "psi:psimetal_block",
+    "psi:psigem_block",
+    "psi:black_psimetal_plate",
+    "psi:lit_black_psimetal_plate",
+    "psi:white_psimetal_plate",
+    "psi:lit_white_psimetal_plate",
+    "psi:ebony_psimetal_block",
+    "psi:ivory_psimetal_block"
+   ],
+   "minecraft:needs_iron_tool": [
+    "psi:psimetal_block",
+    "psi:psigem_block",
+    "psi:black_psimetal_plate",
+    "psi:lit_black_psimetal_plate",
+    "psi:white_psimetal_plate",
+    "psi:lit_white_psimetal_plate",
+    "psi:ebony_psimetal_block",
+    "psi:ivory_psimetal_block"
+   ]
+  },
+  "tags/damage_type": {
+   "minecraft:bypasses_armor": [
+    "psi:psi_overload"
+   ],
+   "minecraft:bypasses_effects": [
+    "psi:psi_overload"
+   ],
+   "minecraft:bypasses_enchantments": [
+    "psi:psi_overload"
+   ],
+   "minecraft:bypasses_resistance": [
+    "psi:psi_overload"
+   ],
+   "minecraft:bypasses_shield": [
+    "psi:psi_overload"
+   ]
+  },
+  "tags/item": {
+   "c:dusts": [
+    "psi:psidust"
+   ],
+   "c:enchantables": [
+    "psi:psimetal_sword",
+    "psi:psimetal_axe",
+    "psi:psimetal_pickaxe",
+    "psi:psimetal_shovel",
+    "psi:psimetal_exosuit_helmet",
+    "psi:psimetal_exosuit_chestplate",
+    "psi:psimetal_exosuit_leggings",
+    "psi:psimetal_exosuit_boots"
+   ],
+   "c:gems": [
+    "psi:psigem"
+   ],
+   "c:gems/psigem": [
+    "psi:psigem"
+   ],
+   "c:ingots": [
+    "psi:psimetal",
+    "psi:ebony_psimetal",
+    "psi:ivory_psimetal"
+   ],
+   "c:ingots/ebony_psimetal": [
+    "psi:ebony_psimetal"
+   ],
+   "c:ingots/ivory_psimetal": [
+    "psi:ivory_psimetal"
+   ],
+   "c:ingots/psimetal": [
+    "psi:psimetal"
+   ],
+   "c:storage_blocks": [
+    "psi:psimetal_block",
+    "psi:psigem_block",
+    "psi:ebony_psimetal_block",
+    "psi:ivory_psimetal_block"
+   ],
+   "c:storage_blocks/ebony_psimetal": [
+    "psi:ebony_psimetal_block"
+   ],
+   "c:storage_blocks/ivory_psimetal": [
+    "psi:ivory_psimetal_block"
+   ],
+   "c:storage_blocks/psigem": [
+    "psi:psigem_block"
+   ],
+   "c:storage_blocks/psimetal": [
+    "psi:psimetal_block"
+   ],
+   "minecraft:axes": [
+    "psi:psimetal_axe"
+   ],
+   "minecraft:chest_armor": [
+    "psi:psimetal_exosuit_chestplate"
+   ],
+   "minecraft:enchantable/chest_armor": [
+    "psi:psimetal_exosuit_chestplate"
+   ],
+   "minecraft:enchantable/foot_armor": [
+    "psi:psimetal_exosuit_boots"
+   ],
+   "minecraft:enchantable/head_armor": [
+    "psi:psimetal_exosuit_helmet"
+   ],
+   "minecraft:enchantable/leg_armor": [
+    "psi:psimetal_exosuit_leggings"
+   ],
+   "minecraft:enchantable/mining": [
+    "psi:psimetal_axe",
+    "psi:psimetal_pickaxe",
+    "psi:psimetal_shovel"
+   ],
+   "minecraft:enchantable/sword": [
+    "psi:psimetal_sword"
+   ],
+   "minecraft:foot_armor": [
+    "psi:psimetal_exosuit_boots"
+   ],
+   "minecraft:head_armor": [
+    "psi:psimetal_exosuit_helmet"
+   ],
+   "minecraft:leg_armor": [
+    "psi:psimetal_exosuit_leggings"
+   ],
+   "minecraft:pickaxes": [
+    "psi:psimetal_pickaxe"
+   ],
+   "minecraft:shovels": [
+    "psi:psimetal_shovel"
+   ],
+   "minecraft:swords": [
+    "psi:psimetal_sword"
+   ],
+   "psi:cad_component/assembly": [
+    "psi:cad_assembly_iron",
+    "psi:cad_assembly_gold",
+    "psi:cad_assembly_psimetal",
+    "psi:cad_assembly_ivory_psimetal",
+    "psi:cad_assembly_ebony_psimetal",
+    "psi:cad_assembly_creative"
+   ],
+   "psi:cad_component/battery": [
+    "psi:cad_battery_basic",
+    "psi:cad_battery_extended",
+    "psi:cad_battery_ultradense"
+   ],
+   "psi:cad_component/core": [
+    "psi:cad_core_basic",
+    "psi:cad_core_overclocked",
+    "psi:cad_core_conductive",
+    "psi:cad_core_hyperclocked",
+    "psi:cad_core_radiative"
+   ],
+   "psi:cad_component/dye": [
+    "psi:cad_colorizer_white",
+    "psi:cad_colorizer_orange",
+    "psi:cad_colorizer_magenta",
+    "psi:cad_colorizer_light_blue",
+    "psi:cad_colorizer_yellow",
+    "psi:cad_colorizer_lime",
+    "psi:cad_colorizer_pink",
+    "psi:cad_colorizer_gray",
+    "psi:cad_colorizer_light_gray",
+    "psi:cad_colorizer_cyan",
+    "psi:cad_colorizer_purple",
+    "psi:cad_colorizer_blue",
+    "psi:cad_colorizer_brown",
+    "psi:cad_colorizer_green",
+    "psi:cad_colorizer_red",
+    "psi:cad_colorizer_black",
+    "psi:cad_colorizer_rainbow",
+    "psi:cad_colorizer_psi",
+    "psi:cad_colorizer_empty"
+   ],
+   "psi:cad_component/socket": [
+    "psi:cad_socket_basic",
+    "psi:cad_socket_signaling",
+    "psi:cad_socket_large",
+    "psi:cad_socket_transmissive",
+    "psi:cad_socket_huge"
+   ],
+   "psi:ebony_substance": [
+    "psi:ebony_substance"
+   ],
+   "psi:ivory_substance": [
+    "psi:ivory_substance"
+   ],
+   "psi:psidust": [
+    "psi:psidust"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 73,
+  "minecraft:crafting_shapeless": 7,
+  "psi:bullet_to_drive": 1,
+  "psi:bullet_upgrade": 6,
+  "psi:colorizer_change": 1,
+  "psi:dimension_trick_crafting": 2,
+  "psi:drive_duplicate": 1,
+  "psi:scavenge": 1,
+  "psi:sensor_attach": 1,
+  "psi:sensor_remove": 1,
+  "psi:trick_crafting": 5
+ },
+ "botanypots": [],
+ "problems": []
+}

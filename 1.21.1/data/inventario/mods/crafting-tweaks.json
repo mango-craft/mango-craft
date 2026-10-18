@@ -1,0 +1,48 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Crafting Tweaks",
+ "file": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "e1869211c2e037bdaadbe9b9f592d4ccfb7ab94d7ba6803629d6525945edc05db973db6bd7568f2af4550ae4616ae6cbb832e1684412ba439d37f523b564d9a7",
+ "mods": [
+  {
+   "modid": "craftingtweaks",
+   "name": "Crafting Tweaks",
+   "version": "21.1.11",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "balm",
+     "type": "required",
+     "range": "[21.0.48,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "craftingtweaks"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

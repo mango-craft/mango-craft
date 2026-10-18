@@ -1,0 +1,101 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "OmniTools (Omni Wrench)",
+ "file": "omnitools-1.21.1-1.2.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "f04676df8d51a78d2d7d20d2840494c53e9cfafbf7a534e30906f846521defd119d9b9297b94fc2fa3dff561d0b68967a8c539971d15856278c2d60bbc31dfdd",
+ "mods": [
+  {
+   "modid": "omnitools",
+   "name": "OmniTools",
+   "version": "1.21.1-1.2.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.000,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "minecraft",
+  "neoforge",
+  "omnitools"
+ ],
+ "items": {
+  "omnitools:omni_vajra": "Omni Vajra",
+  "omnitools:omni_wrench": "Omni Wrench",
+  "omnitools:omni_wrench_binder": "",
+  "omnitools:omni_wrench_configuration": "",
+  "omnitools:omni_wrench_rename": ""
+ },
+ "data": {
+  "recipe": [
+   "omnitools:crafting/omni_vajra",
+   "omnitools:crafting/omni_wrench"
+  ],
+  "tags/item": [
+   "c:tools/wrench",
+   "minecraft:axes",
+   "minecraft:hoes",
+   "minecraft:pickaxes",
+   "minecraft:shovels",
+   "minecraft:swords",
+   "neoforge:tools/wire_cutters",
+   "neoforge:tools/wrench"
+  ]
+ },
+ "data_counts": {
+  "advancement": 2
+ },
+ "tags": {
+  "tags/item": {
+   "c:tools/wrench": [
+    "omnitools:omni_wrench",
+    "omnitools:omni_vajra"
+   ],
+   "minecraft:axes": [
+    "omnitools:omni_vajra"
+   ],
+   "minecraft:hoes": [
+    "omnitools:omni_vajra"
+   ],
+   "minecraft:pickaxes": [
+    "omnitools:omni_vajra"
+   ],
+   "minecraft:shovels": [
+    "omnitools:omni_vajra"
+   ],
+   "minecraft:swords": [
+    "omnitools:omni_vajra"
+   ],
+   "neoforge:tools/wire_cutters": [
+    "omnitools:omni_wrench",
+    "omnitools:omni_vajra"
+   ],
+   "neoforge:tools/wrench": [
+    "omnitools:omni_wrench",
+    "omnitools:omni_vajra"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 2
+ },
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,769 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Mowzie's Mobs",
+ "file": "mowziesmobs-1.21.1-1.8.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "ab10d2f759df613d5094bac26c5a8bbe144786699018f7e4ae027fc4a86632aa7f96206f2c8be9970338eadef42539614a19b41d0d70b6216c3ed1c4c4421f0a",
+ "mods": [
+  {
+   "modid": "mowziesmobs",
+   "name": "Mowzie's Mobs",
+   "version": "1.8.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.162,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "geckolib",
+     "type": "required",
+     "range": "[4.8.3,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "mowziesmobs",
+   "name": "Mowzie's Mobs",
+   "version": "1.8.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.1,21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "geckolib",
+     "type": "required",
+     "range": "[4.8.3,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "minecraft",
+  "mowziesmobs"
+ ],
+ "blocks": {
+  "mowziesmobs:clawed_log": "Clawed Log",
+  "mowziesmobs:gong": "Gong",
+  "mowziesmobs:gong_part": "",
+  "mowziesmobs:grottol": "Grottol",
+  "mowziesmobs:painted_acacia": "Painted Acacia Wood",
+  "mowziesmobs:painted_acacia_slab": "Painted Acacia Wood Slab",
+  "mowziesmobs:raked_sand": "Raked Sand",
+  "mowziesmobs:red_raked_sand": "Red Raked Sand",
+  "mowziesmobs:thatch_block": "Thatch"
+ },
+ "effects": {
+  "mowziesmobs:eclipsed": "Eclipse",
+  "mowziesmobs:fragility": "Fragility",
+  "mowziesmobs:frozen": "Frozen",
+  "mowziesmobs:geomancy": "Geomancy",
+  "mowziesmobs:poison_resist": "Poison Resistance",
+  "mowziesmobs:sunblock": "Sunblock",
+  "mowziesmobs:suns_blessing": "Sun's Blessing"
+ },
+ "entities": {
+  "mowziesmobs:baby_foliaath": "Baby Foliaath",
+  "mowziesmobs:bluff": "Bluff",
+  "mowziesmobs:boulder": "Boulder",
+  "mowziesmobs:elokosa_follower_howler": "Elokosa",
+  "mowziesmobs:elokosa_howler": "Elokosa Howler",
+  "mowziesmobs:ferrous_wroughtnaut": "Ferrous Wroughtnaut",
+  "mowziesmobs:foliaath": "Foliaath",
+  "mowziesmobs:frostmaw": "Frostmaw",
+  "mowziesmobs:grottol": "Grottol",
+  "mowziesmobs:lantern": "Lantern",
+  "mowziesmobs:naga": "Naga",
+  "mowziesmobs:sculptor": "Tongbi, the Sculptor",
+  "mowziesmobs:umvuthana": "Umvuthana",
+  "mowziesmobs:umvuthana_crane": "Umvuthana Crane",
+  "mowziesmobs:umvuthana_crane_player": "Umvuthana Crane",
+  "mowziesmobs:umvuthana_follower_player": "Umvuthana",
+  "mowziesmobs:umvuthana_follower_raptor": "Umvuthana",
+  "mowziesmobs:umvuthana_raptor": "Umvuthana Raptor",
+  "mowziesmobs:umvuthi": "Umvuthi, the Sunbird"
+ },
+ "items": {
+  "mowziesmobs:blowgun": "Blowgun",
+  "mowziesmobs:blowgun_using": "",
+  "mowziesmobs:bluff_rod": "Bluff Rod",
+  "mowziesmobs:bluff_spawn_egg": "Bluff Spawn Egg",
+  "mowziesmobs:captured_grottol": "Captured Grottol",
+  "mowziesmobs:clawed_log": "",
+  "mowziesmobs:dart": "Dart",
+  "mowziesmobs:earthrend_gauntlet": "Earthrend Gauntlet",
+  "mowziesmobs:earthrend_gauntlet_in_hand": "",
+  "mowziesmobs:elokosa_howler_spawn_egg": "Elokosa Howler Spawn Egg",
+  "mowziesmobs:elokosa_paw": "",
+  "mowziesmobs:elokosa_paw_closed": "",
+  "mowziesmobs:elokosa_paw_crescent": "Paw of the Crescent Moon",
+  "mowziesmobs:elokosa_paw_full": "Paw of the Full Moon",
+  "mowziesmobs:elokosa_paw_gibbous": "Paw of the Gibbous Moon",
+  "mowziesmobs:elokosa_paw_half": "Paw of the Half Moon",
+  "mowziesmobs:elokosa_paw_new": "Paw of the New Moon",
+  "mowziesmobs:elokosa_paw_new_closed": "",
+  "mowziesmobs:elokosa_spawn_egg": "Elokosa Spawn Egg",
+  "mowziesmobs:foliaath_seed": "Foliaath Seed",
+  "mowziesmobs:foliaath_spawn_egg": "Foliaath Spawn Egg",
+  "mowziesmobs:frostmaw_plushie": "",
+  "mowziesmobs:frostmaw_spawn_egg": "Frostmaw Spawn Egg",
+  "mowziesmobs:geomancer_beads": "Geomancer Beads",
+  "mowziesmobs:geomancer_belt": "Geomancer Belt",
+  "mowziesmobs:geomancer_robe": "Geomancer Robe",
+  "mowziesmobs:geomancer_sandals": "Geomancer Sandals",
+  "mowziesmobs:glowing_jelly": "Luminous Jelly",
+  "mowziesmobs:gong": "",
+  "mowziesmobs:grant_suns_blessing": "Receive Sun's Blessing",
+  "mowziesmobs:grottol_spawn_egg": "Grottol Spawn Egg",
+  "mowziesmobs:ice_crystal": "Ice Crystal",
+  "mowziesmobs:lantern_spawn_egg": "Lantern Spawn Egg",
+  "mowziesmobs:logo": "",
+  "mowziesmobs:mob_remover": "Mob Remover",
+  "mowziesmobs:music_disc_petiole": "Music Disc",
+  "mowziesmobs:naga_fang": "Naga Fang",
+  "mowziesmobs:naga_fang_dagger": "Naga Fang Dagger",
+  "mowziesmobs:naga_spawn_egg": "Naga Spawn Egg",
+  "mowziesmobs:painted_acacia": "",
+  "mowziesmobs:painted_acacia_slab": "",
+  "mowziesmobs:raked_sand": "",
+  "mowziesmobs:red_raked_sand": "",
+  "mowziesmobs:sand_rake": "Sand Rake",
+  "mowziesmobs:sculptor_spawn_egg": "Tongbi, the Sculptor Spawn Egg",
+  "mowziesmobs:sculptor_staff": "Geomancer Staff",
+  "mowziesmobs:sculptor_staff_in_hand": "",
+  "mowziesmobs:sol_visage": "Sol Visage",
+  "mowziesmobs:sol_visage_frame": "",
+  "mowziesmobs:spear": "Spear",
+  "mowziesmobs:spear_in_hand": "",
+  "mowziesmobs:sunblock_staff": "",
+  "mowziesmobs:test_structure": "Test Structures",
+  "mowziesmobs:thatch_block": "",
+  "mowziesmobs:umvuthana_crane_spawn_egg": "Umvuthana Crane Spawn Egg",
+  "mowziesmobs:umvuthana_mask": "",
+  "mowziesmobs:umvuthana_mask_bliss": "Mask of Bliss",
+  "mowziesmobs:umvuthana_mask_bliss_frame": "",
+  "mowziesmobs:umvuthana_mask_faith": "Mask of Faith",
+  "mowziesmobs:umvuthana_mask_faith_frame": "",
+  "mowziesmobs:umvuthana_mask_fear": "Mask of Fear",
+  "mowziesmobs:umvuthana_mask_fear_frame": "",
+  "mowziesmobs:umvuthana_mask_frame": "",
+  "mowziesmobs:umvuthana_mask_fury": "Mask of Fury",
+  "mowziesmobs:umvuthana_mask_fury_frame": "",
+  "mowziesmobs:umvuthana_mask_misery": "Mask of Misery",
+  "mowziesmobs:umvuthana_mask_misery_frame": "",
+  "mowziesmobs:umvuthana_mask_rage": "Mask of Rage",
+  "mowziesmobs:umvuthana_mask_rage_frame": "",
+  "mowziesmobs:umvuthana_raptor_spawn_egg": "Umvuthana Raptor Spawn Egg",
+  "mowziesmobs:umvuthana_spawn_egg": "Umvuthana Spawn Egg",
+  "mowziesmobs:umvuthi_spawn_egg": "Umvuthi, the Sunbird Spawn Egg",
+  "mowziesmobs:wrought_axe": "Axe of a Thousand Metals",
+  "mowziesmobs:wrought_axe_in_hand": "",
+  "mowziesmobs:wrought_helmet": "Wrought Helm",
+  "mowziesmobs:wroughtnaut_spawn_egg": "Ferrous Wroughtnaut Spawn Egg"
+ },
+ "data": {
+  "jukebox_song": [
+   "mowziesmobs:14"
+  ],
+  "loot_table": [
+   "mowziesmobs:blocks/clawed_log",
+   "mowziesmobs:blocks/gong",
+   "mowziesmobs:blocks/painted_acacia",
+   "mowziesmobs:blocks/painted_acacia_slab",
+   "mowziesmobs:blocks/raked_sand",
+   "mowziesmobs:blocks/red_raked_sand",
+   "mowziesmobs:blocks/thatch_block",
+   "mowziesmobs:chests/monastery_chest",
+   "mowziesmobs:chests/umvuthana_grove_chest",
+   "mowziesmobs:entities/bluff",
+   "mowziesmobs:entities/elokosa",
+   "mowziesmobs:entities/ferrous_wroughtnaut",
+   "mowziesmobs:entities/foliaath",
+   "mowziesmobs:entities/frostmaw",
+   "mowziesmobs:entities/grottol",
+   "mowziesmobs:entities/lantern",
+   "mowziesmobs:entities/naga",
+   "mowziesmobs:entities/sculptor",
+   "mowziesmobs:entities/sculptor_test",
+   "mowziesmobs:entities/umvuthana_bliss",
+   "mowziesmobs:entities/umvuthana_faith",
+   "mowziesmobs:entities/umvuthana_fear",
+   "mowziesmobs:entities/umvuthana_fury",
+   "mowziesmobs:entities/umvuthana_misery",
+   "mowziesmobs:entities/umvuthana_rage",
+   "mowziesmobs:entities/umvuthi"
+  ],
+  "neoforge/biome_modifier": [
+   "mowziesmobs:mowzie_mob_spawns"
+  ],
+  "recipe": [
+   "mowziesmobs:blowgun",
+   "mowziesmobs:charcoal",
+   "mowziesmobs:dart",
+   "mowziesmobs:grottol_blast",
+   "mowziesmobs:grottol_smelt",
+   "mowziesmobs:jungle_planks_from_clawed_log",
+   "mowziesmobs:naga_fang_dagger",
+   "mowziesmobs:painted_acacia",
+   "mowziesmobs:painted_acacia_block_from_slab",
+   "mowziesmobs:painted_acacia_slab",
+   "mowziesmobs:spear",
+   "mowziesmobs:thatch_block"
+  ],
+  "structure": [
+   "mowziesmobs:frostmaw_spawn",
+   "mowziesmobs:monastery/interior/monastery_banners",
+   "mowziesmobs:monastery/interior/monastery_banners_helper",
+   "mowziesmobs:monastery/interior/monastery_barrels",
+   "mowziesmobs:monastery/interior/monastery_barrels_1",
+   "mowziesmobs:monastery/interior/monastery_barrels_2",
+   "mowziesmobs:monastery/interior/monastery_barrels_3",
+   "mowziesmobs:monastery/interior/monastery_barrels_4",
+   "mowziesmobs:monastery/interior/monastery_bluff",
+   "mowziesmobs:monastery/interior/monastery_bluff_helper",
+   "mowziesmobs:monastery/interior/monastery_bookshelf",
+   "mowziesmobs:monastery/interior/monastery_bookshelf_2",
+   "mowziesmobs:monastery/interior/monastery_bookshelf_3",
+   "mowziesmobs:monastery/interior/monastery_bookshelf_4",
+   "mowziesmobs:monastery/interior/monastery_columns",
+   "mowziesmobs:monastery/interior/monastery_corner_elevated",
+   "mowziesmobs:monastery/interior/monastery_desk",
+   "mowziesmobs:monastery/interior/monastery_desk_2",
+   "mowziesmobs:monastery/interior/monastery_desk_3",
+   "mowziesmobs:monastery/interior/monastery_desk_4",
+   "mowziesmobs:monastery/interior/monastery_dojo",
+   "mowziesmobs:monastery/interior/monastery_dummies",
+   "mowziesmobs:monastery/interior/monastery_dummies_2",
+   "mowziesmobs:monastery/interior/monastery_floor_helper",
+   "mowziesmobs:monastery/interior/monastery_gong",
+   "mowziesmobs:monastery/interior/monastery_gong_helper",
+   "mowziesmobs:monastery/interior/monastery_interior_blocker",
+   "mowziesmobs:monastery/interior/monastery_landing",
+   "mowziesmobs:monastery/interior/monastery_partition",
+   "mowziesmobs:monastery/interior/monastery_punching_bag",
+   "mowziesmobs:monastery/interior/monastery_punching_bag_center",
+   "mowziesmobs:monastery/interior/monastery_punching_bag_wall",
+   "mowziesmobs:monastery/interior/monastery_room_stairs_1",
+   "mowziesmobs:monastery/interior/monastery_room_stairs_2",
+   "mowziesmobs:monastery/interior/monastery_shelf",
+   "mowziesmobs:monastery/interior/monastery_shelf_2",
+   "mowziesmobs:monastery/interior/monastery_shrine",
+   "mowziesmobs:monastery/interior/monastery_statue",
+   "mowziesmobs:monastery/interior/monastery_statue_center",
+   "mowziesmobs:monastery/interior/monastery_tower_stairs_1",
+   "mowziesmobs:monastery/interior/monastery_tower_stairs_2",
+   "mowziesmobs:monastery/interior/monastery_training_post",
+   "mowziesmobs:monastery/interior/monastery_training_post_center",
+   "mowziesmobs:monastery/interior/monastery_training_post_wall",
+   "mowziesmobs:monastery/interior/monastery_weapons",
+   "mowziesmobs:monastery/monastery_balcony",
+   "mowziesmobs:monastery/monastery_center",
+   "mowziesmobs:monastery/monastery_center_back",
+   "mowziesmobs:monastery/monastery_center_back_3way",
+   "mowziesmobs:monastery/monastery_center_doorway",
+   "mowziesmobs:monastery/monastery_corner_gap",
+   "mowziesmobs:monastery/monastery_crown",
+   "mowziesmobs:monastery/monastery_doorway",
+   "mowziesmobs:monastery/monastery_room",
+   "mowziesmobs:monastery/monastery_room_base",
+   "mowziesmobs:monastery/monastery_room_door",
+   "mowziesmobs:monastery/monastery_room_extension",
+   "mowziesmobs:monastery/monastery_room_middle",
+   "mowziesmobs:monastery/monastery_room_roof",
+   "mowziesmobs:monastery/monastery_room_roof_crown",
+   "mowziesmobs:monastery/monastery_room_roof_tower",
+   "mowziesmobs:monastery/monastery_room_top",
+   "mowziesmobs:monastery/monastery_stairs_down",
+   "mowziesmobs:monastery/monastery_stairs_end_gong",
+   "mowziesmobs:monastery/monastery_stairs_end_spawner",
+   "mowziesmobs:monastery/monastery_stairs_left",
+   "mowziesmobs:monastery/monastery_stairs_right",
+   "mowziesmobs:monastery/monastery_test_zone",
+   "mowziesmobs:monastery/monastery_tower",
+   "mowziesmobs:monastery/monastery_tower_base",
+   "mowziesmobs:monastery/monastery_tower_blank",
+   "mowziesmobs:monastery/monastery_tower_door",
+   "mowziesmobs:monastery/monastery_tower_gap",
+   "mowziesmobs:monastery/monastery_tower_middle",
+   "mowziesmobs:monastery/monastery_tower_roof",
+   "mowziesmobs:monastery/monastery_tower_top",
+   "mowziesmobs:monastery/monastery_tower_window1",
+   "mowziesmobs:monastery/monastery_tower_window1_center",
+   "mowziesmobs:monastery/monastery_tower_window_short",
+   "mowziesmobs:monastery/monastery_tower_window_tall",
+   "mowziesmobs:monastery/monastery_wall_3way",
+   "mowziesmobs:monastery/monastery_wall_3way_center",
+   "mowziesmobs:monastery/monastery_wall_4way",
+   "mowziesmobs:monastery/monastery_wall_accent",
+   "mowziesmobs:monastery/monastery_wall_connector",
+   "mowziesmobs:monastery/monastery_wall_connector_end",
+   "mowziesmobs:monastery/monastery_wall_connector_end_subtract",
+   "mowziesmobs:monastery/monastery_wall_connector_exit",
+   "mowziesmobs:monastery/monastery_wall_connector_gap",
+   "mowziesmobs:monastery/monastery_wall_corner",
+   "mowziesmobs:monastery/monastery_wall_end",
+   "mowziesmobs:monastery/monastery_wall_end_subtract",
+   "mowziesmobs:monastery/monastery_wall_gap",
+   "mowziesmobs:monastery/monastery_wall_straight",
+   "mowziesmobs:monastery/monastery_wall_straight_center",
+   "mowziesmobs:monastery_room_base",
+   "mowziesmobs:umvuthana/umvuthana_firepit",
+   "mowziesmobs:umvuthana/umvuthana_firepit_small_1",
+   "mowziesmobs:umvuthana/umvuthana_firepit_small_2",
+   "mowziesmobs:umvuthana/umvuthana_platform_1",
+   "mowziesmobs:umvuthana/umvuthana_platform_2",
+   "mowziesmobs:umvuthana/umvuthana_platform_extend",
+   "mowziesmobs:umvuthana/umvuthana_spike_1",
+   "mowziesmobs:umvuthana/umvuthana_spike_2",
+   "mowziesmobs:umvuthana/umvuthana_spike_3",
+   "mowziesmobs:umvuthana/umvuthana_spike_4",
+   "mowziesmobs:umvuthana/umvuthana_tree_1",
+   "mowziesmobs:umvuthana/umvuthana_tree_2",
+   "mowziesmobs:umvuthana/umvuthana_tree_3",
+   "mowziesmobs:umvuthana/umvuthi_throne",
+   "mowziesmobs:wroughtnaut_chamber"
+  ],
+  "structures": [
+   "mowziesmobs:monastery/interior/monastery_bookshelf",
+   "mowziesmobs:monastery/interior/monastery_bookshelf_2",
+   "mowziesmobs:monastery/interior/monastery_bookshelf_3",
+   "mowziesmobs:monastery/interior/monastery_bookshelf_4",
+   "mowziesmobs:monastery/interior/monastery_shrine",
+   "mowziesmobs:monastery/interior/monastery_weapons",
+   "mowziesmobs:monastery/monastery_center",
+   "mowziesmobs:monastery/monastery_center_doorway",
+   "mowziesmobs:monastery/monastery_room_base",
+   "mowziesmobs:monastery/monastery_room_extension",
+   "mowziesmobs:monastery/monastery_room_middle",
+   "mowziesmobs:monastery/monastery_room_top",
+   "mowziesmobs:monastery/monastery_tower",
+   "mowziesmobs:monastery/monastery_tower_base",
+   "mowziesmobs:monastery/monastery_tower_middle",
+   "mowziesmobs:monastery/monastery_tower_top"
+  ],
+  "tags/block": [
+   "c:sands/colorless",
+   "c:sands/red",
+   "minecraft:azalea_grows_on",
+   "minecraft:bamboo_plantable_on",
+   "minecraft:jungle_logs",
+   "minecraft:lush_ground_replaceable",
+   "minecraft:mineable/pickaxe",
+   "minecraft:mineable/shovel",
+   "minecraft:planks",
+   "minecraft:wooden_slabs",
+   "mowziesmobs:bricks",
+   "mowziesmobs:can_grottol_dig",
+   "mowziesmobs:concrete",
+   "mowziesmobs:concrete_powder",
+   "mowziesmobs:geomancy_tunnelable",
+   "mowziesmobs:geomancy_useable"
+  ],
+  "tags/entity_type": [
+   "c:bosses",
+   "c:capturing_not_supported",
+   "c:teleporting_not_supported",
+   "minecraft:can_breathe_under_water",
+   "minecraft:freeze_immune_entity_types",
+   "minecraft:impact_projectiles",
+   "minecraft:powder_snow_walkable_mobs",
+   "mowziesmobs:umvuthana",
+   "mowziesmobs:umvuthana_umvuthi_aligned"
+  ],
+  "tags/item": [
+   "c:music_discs",
+   "c:seeds",
+   "c:slime_balls",
+   "c:tools/spear",
+   "minecraft:axes",
+   "minecraft:chest_armor",
+   "minecraft:enchantable/bow",
+   "minecraft:enchantable/durability",
+   "minecraft:enchantable/sword",
+   "minecraft:foot_armor",
+   "minecraft:head_armor",
+   "minecraft:leg_armor",
+   "minecraft:piglin_loved",
+   "minecraft:planks",
+   "minecraft:wooden_slabs",
+   "mowziesmobs:can_hit_grottol",
+   "mowziesmobs:hand_weapons"
+  ],
+  "tags/worldgen/biome": [
+   "mowziesmobs:has_structure/has_mowzie_structure",
+   "mowziesmobs:is_magical"
+  ],
+  "worldgen/processor_list": [
+   "mowziesmobs:monastery"
+  ],
+  "worldgen/structure": [
+   "mowziesmobs:frostmaw_spawn",
+   "mowziesmobs:monastery",
+   "mowziesmobs:umvuthana_grove",
+   "mowziesmobs:wrought_chamber"
+  ],
+  "worldgen/structure_set": [
+   "mowziesmobs:frostmaw_spawns",
+   "mowziesmobs:monasteries",
+   "mowziesmobs:umvuthana_groves",
+   "mowziesmobs:wrought_chambers"
+  ],
+  "worldgen/template_pool": [
+   "mowziesmobs:monastery/center_back_pool",
+   "mowziesmobs:monastery/center_branch_pool",
+   "mowziesmobs:monastery/center_corners_pool",
+   "mowziesmobs:monastery/center_door_pool",
+   "mowziesmobs:monastery/center_walls_pool",
+   "mowziesmobs:monastery/crown_pool",
+   "mowziesmobs:monastery/dead_end_connect_pool",
+   "mowziesmobs:monastery/fallback/path_connector_fallback_pool",
+   "mowziesmobs:monastery/fallback/path_fallback_pool",
+   "mowziesmobs:monastery/fallback/room_wall_center_fallback_pool",
+   "mowziesmobs:monastery/fallback/room_wall_left_fallback_pool",
+   "mowziesmobs:monastery/fallback/room_wall_right_fallback_pool",
+   "mowziesmobs:monastery/fallback/stairs_fallback_pool",
+   "mowziesmobs:monastery/fallback/tower_wall_fallback_pool",
+   "mowziesmobs:monastery/interior/banners_pool",
+   "mowziesmobs:monastery/interior/blocker_pool",
+   "mowziesmobs:monastery/interior/bluff_pool",
+   "mowziesmobs:monastery/interior/center_pool",
+   "mowziesmobs:monastery/interior/floor_helper_pool",
+   "mowziesmobs:monastery/interior/gong_pool",
+   "mowziesmobs:monastery/interior/room_stairs_1_pool",
+   "mowziesmobs:monastery/interior/room_stairs_2_pool",
+   "mowziesmobs:monastery/interior/tower_stairs_1_pool",
+   "mowziesmobs:monastery/interior/tower_stairs_2_pool",
+   "mowziesmobs:monastery/interior/wall_corner_pool",
+   "mowziesmobs:monastery/interior/wall_middle_pool",
+   "mowziesmobs:monastery/interior/wall_pool",
+   "mowziesmobs:monastery/path_connector_pool",
+   "mowziesmobs:monastery/path_pool",
+   "mowziesmobs:monastery/roof_tower_wall_pool",
+   "mowziesmobs:monastery/room_down_pool",
+   "mowziesmobs:monastery/room_roof_pool",
+   "mowziesmobs:monastery/room_up_pool",
+   "mowziesmobs:monastery/room_wall_center_pool",
+   "mowziesmobs:monastery/room_wall_left_pool",
+   "mowziesmobs:monastery/room_wall_right_pool",
+   "mowziesmobs:monastery/stairs_pool",
+   "mowziesmobs:monastery/start_pool",
+   "mowziesmobs:monastery/test_zone_pool",
+   "mowziesmobs:monastery/tower_down_pool",
+   "mowziesmobs:monastery/tower_roof_pool",
+   "mowziesmobs:monastery/tower_up_pool",
+   "mowziesmobs:monastery/tower_wall_pool",
+   "mowziesmobs:monastery/wall_accent_pool"
+  ]
+ },
+ "data_counts": {
+  "advancement": 29
+ },
+ "tags": {
+  "tags/block": {
+   "c:sands/colorless": [
+    "mowziesmobs:raked_sand"
+   ],
+   "c:sands/red": [
+    "mowziesmobs:red_raked_sand"
+   ],
+   "minecraft:azalea_grows_on": [
+    "mowziesmobs:raked_sand",
+    "mowziesmobs:red_raked_sand",
+    "mowziesmobs:raked_sand",
+    "mowziesmobs:red_raked_sand"
+   ],
+   "minecraft:bamboo_plantable_on": [
+    "mowziesmobs:raked_sand",
+    "mowziesmobs:red_raked_sand"
+   ],
+   "minecraft:jungle_logs": [
+    "mowziesmobs:clawed_log"
+   ],
+   "minecraft:lush_ground_replaceable": [
+    "mowziesmobs:raked_sand",
+    "mowziesmobs:red_raked_sand"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "mowziesmobs:gong",
+    "mowziesmobs:gong_part"
+   ],
+   "minecraft:mineable/shovel": [
+    "mowziesmobs:raked_sand",
+    "mowziesmobs:red_raked_sand"
+   ],
+   "minecraft:planks": [
+    "mowziesmobs:painted_acacia"
+   ],
+   "minecraft:wooden_slabs": [
+    "mowziesmobs:painted_acacia_slab"
+   ],
+   "mowziesmobs:bricks": [
+    "#minecraft:stone_bricks",
+    "minecraft:bricks",
+    "minecraft:deepslate_bricks",
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:mud_bricks",
+    "minecraft:prismarine_bricks",
+    "minecraft:nether_bricks",
+    "minecraft:cracked_nether_bricks",
+    "minecraft:chiseled_nether_bricks",
+    "minecraft:red_nether_bricks",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:cracked_polished_blackstone_bricks",
+    "minecraft:end_stone_bricks",
+    "minecraft:quartz_bricks",
+    "minecraft:infested_stone_bricks",
+    "minecraft:infested_mossy_stone_bricks",
+    "minecraft:infested_cracked_stone_bricks",
+    "minecraft:infested_chiseled_stone_bricks"
+   ],
+   "mowziesmobs:can_grottol_dig": [
+    "#mowziesmobs:geomancy_useable"
+   ],
+   "mowziesmobs:concrete": [
+    "#c:concretes"
+   ],
+   "mowziesmobs:concrete_powder": [
+    "minecraft:white_concrete_powder",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:gray_concrete_powder",
+    "minecraft:black_concrete_powder",
+    "minecraft:brown_concrete_powder",
+    "minecraft:red_concrete_powder",
+    "minecraft:orange_concrete_powder",
+    "minecraft:yellow_concrete_powder",
+    "minecraft:lime_concrete_powder",
+    "minecraft:green_concrete_powder",
+    "minecraft:cyan_concrete_powder",
+    "minecraft:light_blue_concrete_powder",
+    "minecraft:purple_concrete_powder",
+    "minecraft:magenta_concrete_powder",
+    "minecraft:pink_concrete_powder"
+   ],
+   "mowziesmobs:geomancy_tunnelable": [
+    "#mowziesmobs:geomancy_useable",
+    "minecraft:snow",
+    "minecraft:snow_block",
+    "minecraft:packed_ice"
+   ],
+   "mowziesmobs:geomancy_useable": [
+    "#mowziesmobs:bricks",
+    "#mowziesmobs:concrete",
+    "#mowziesmobs:concrete_powder",
+    "#minecraft:dirt",
+    "#minecraft:terracotta",
+    "#minecraft:nylium",
+    "#c:glazed_terracottas",
+    "#c:cobblestones",
+    "#c:end_stones",
+    "#c:gravels",
+    "#c:netherracks",
+    "#c:obsidians",
+    "#c:ores",
+    "#c:sands",
+    "#c:sandstone/blocks",
+    "#c:sandstone/slabs",
+    "#c:stones",
+    "minecraft:blackstone",
+    "minecraft:basalt",
+    "minecraft:smooth_basalt",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:smooth_stone",
+    "minecraft:quartz_block",
+    "minecraft:chiseled_quartz_block",
+    "minecraft:quartz_pillar",
+    "minecraft:smooth_quartz",
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:prismarine",
+    "minecraft:dark_prismarine",
+    "minecraft:suspicious_sand",
+    "minecraft:suspicious_gravel",
+    "minecraft:magma_block",
+    "minecraft:dripstone_block",
+    "minecraft:clay",
+    "minecraft:deepslate_tiles",
+    "minecraft:polished_basalt",
+    "minecraft:dirt_path",
+    "minecraft:farmland",
+    "minecraft:chiseled_polished_blackstone",
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:stone_slab",
+    "minecraft:cobblestone_slab",
+    "minecraft:smooth_stone_slab",
+    "minecraft:stone_brick_slab",
+    "minecraft:deepslate_tile_slab",
+    "minecraft:cut_red_sandstone_slab",
+    "minecraft:brick_slab",
+    "minecraft:prismarine_slab",
+    "minecraft:prismarine_brick_slab",
+    "minecraft:dark_prismarine_slab",
+    "minecraft:mud_brick_slab",
+    "minecraft:sandstone_slab",
+    "minecraft:nether_brick_slab",
+    "minecraft:quartz_slab",
+    "minecraft:polished_blackstone_slab",
+    "minecraft:purpur_slab",
+    "minecraft:nether_brick_fence",
+    "minecraft:polished_blackstone_stairs",
+    "minecraft:polished_blackstone_wall"
+   ]
+  },
+  "tags/entity_type": {
+   "c:bosses": [
+    "mowziesmobs:frostmaw",
+    "mowziesmobs:ferrous_wroughtnaut",
+    "mowziesmobs:umvuthi",
+    "mowziesmobs:sculptor"
+   ],
+   "c:capturing_not_supported": [
+    "mowziesmobs:frostmaw",
+    "mowziesmobs:ferrous_wroughtnaut",
+    "mowziesmobs:umvuthi",
+    "mowziesmobs:sculptor"
+   ],
+   "c:teleporting_not_supported": [
+    "mowziesmobs:umvuthi",
+    "mowziesmobs:sculptor"
+   ],
+   "minecraft:can_breathe_under_water": [
+    "mowziesmobs:grottol"
+   ],
+   "minecraft:freeze_immune_entity_types": [
+    "mowziesmobs:frostmaw",
+    "mowziesmobs:frostmaw"
+   ],
+   "minecraft:impact_projectiles": [
+    "mowziesmobs:dart",
+    "mowziesmobs:boulder_projectile",
+    "mowziesmobs:poison_ball"
+   ],
+   "minecraft:powder_snow_walkable_mobs": [
+    "mowziesmobs:frostmaw"
+   ],
+   "mowziesmobs:umvuthana": [
+    "mowziesmobs:umvuthi",
+    "mowziesmobs:umvuthana",
+    "mowziesmobs:umvuthana_raptor",
+    "mowziesmobs:umvuthana_crane",
+    "mowziesmobs:umvuthana_follower_raptor",
+    "mowziesmobs:umvuthana_crane_player",
+    "mowziesmobs:umvuthana_follower_player"
+   ],
+   "mowziesmobs:umvuthana_umvuthi_aligned": [
+    "mowziesmobs:umvuthi",
+    "mowziesmobs:umvuthana",
+    "mowziesmobs:umvuthana_raptor",
+    "mowziesmobs:umvuthana_crane",
+    "mowziesmobs:umvuthana_follower_raptor"
+   ]
+  },
+  "tags/item": {
+   "c:music_discs": [
+    "mowziesmobs:music_disc_petiole"
+   ],
+   "c:seeds": [
+    "mowziesmobs:foliaath_seed"
+   ],
+   "c:slime_balls": [
+    "mowziesmobs:glowing_jelly"
+   ],
+   "c:tools/spear": [
+    "mowziesmobs:spear"
+   ],
+   "minecraft:axes": [
+    "mowziesmobs:wrought_axe"
+   ],
+   "minecraft:chest_armor": [
+    "mowziesmobs:geomancer_robe"
+   ],
+   "minecraft:enchantable/bow": [
+    "mowziesmobs:blowgun",
+    "mowziesmobs:blowgun"
+   ],
+   "minecraft:enchantable/durability": [
+    "mowziesmobs:spear",
+    "mowziesmobs:naga_fang_dagger"
+   ],
+   "minecraft:enchantable/sword": [
+    "mowziesmobs:spear",
+    "mowziesmobs:naga_fang_dagger"
+   ],
+   "minecraft:foot_armor": [
+    "mowziesmobs:geomancer_sandals"
+   ],
+   "minecraft:head_armor": [
+    "mowziesmobs:geomancer_beads",
+    "mowziesmobs:wrought_helmet",
+    "mowziesmobs:sol_visage",
+    "mowziesmobs:umvuthana_mask_fury",
+    "mowziesmobs:umvuthana_mask_fear",
+    "mowziesmobs:umvuthana_mask_rage",
+    "mowziesmobs:umvuthana_mask_bliss",
+    "mowziesmobs:umvuthana_mask_misery",
+    "mowziesmobs:umvuthana_mask_faith"
+   ],
+   "minecraft:leg_armor": [
+    "mowziesmobs:geomancer_belt"
+   ],
+   "minecraft:piglin_loved": [
+    "mowziesmobs:sol_visage"
+   ],
+   "minecraft:planks": [
+    "mowziesmobs:painted_acacia"
+   ],
+   "minecraft:wooden_slabs": [
+    "mowziesmobs:painted_acacia_slab"
+   ],
+   "mowziesmobs:can_hit_grottol": [
+    "cagedmobs:dnasamplerdiamond?",
+    "cagedmobs:dnasamplernetherite?"
+   ],
+   "mowziesmobs:hand_weapons": [
+    "mowziesmobs:earthrend_gauntlet"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "mowziesmobs:has_structure/has_mowzie_structure": [
+    "#c:is_overworld"
+   ],
+   "mowziesmobs:is_magical": [
+    "minecraft:dark_forest"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:blasting": 1,
+  "minecraft:crafting_shaped": 6,
+  "minecraft:crafting_shapeless": 3,
+  "minecraft:smelting": 2
+ },
+ "botanypots": [],
+ "problems": []
+}

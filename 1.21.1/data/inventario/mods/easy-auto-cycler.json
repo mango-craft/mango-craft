@@ -1,0 +1,54 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Easy Auto Cycler",
+ "file": "easyautocycler-neoforge-1.21.1-3.1.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "82da5a68890d6d5f301ad0a25f1ce080f758d8bd0cf22bb4a9eec985d8e2de6d00409dc4f585cdfadcf58936b1f5f9005a4e0f3707f710722f745376a4d0bd3e",
+ "mods": [
+  {
+   "modid": "easyautocycler",
+   "name": "Easy Auto Cycler",
+   "version": "3.1.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "easy_villagers",
+     "type": "optional",
+     "range": "[1.1.15,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "trade_cycling",
+     "type": "optional",
+     "range": "[1.21.1-1.0.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "easyautocycler"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

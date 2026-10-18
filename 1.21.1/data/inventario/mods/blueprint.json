@@ -1,0 +1,256 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Blueprint",
+ "file": "blueprint-1.21.1-8.2.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "0b523c2d53a56676286ddd13adbe65b1a24f5af6040dbec6af9a38cc535b7ba2531a1879afb7a496c407683eacbfbed22701053861a5fd12271b08ac93239db4",
+ "mods": [
+  {
+   "modid": "blueprint",
+   "name": "Blueprint",
+   "version": "8.2.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.160,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "blueprint",
+  "boatload",
+  "c",
+  "minecraft",
+  "neoforge",
+  "woodworks"
+ ],
+ "biomes": {
+  "blueprint:original_source_marker": "Original Source Marker"
+ },
+ "entities": {
+  "blueprint:boat": "Boat",
+  "blueprint:chest_boat": "Boat with Chest",
+  "blueprint:falling_block": "Falling Block"
+ },
+ "items": {
+  "blueprint:template_chest": ""
+ },
+ "data": {
+  "blueprint": [
+   "blueprint:modded_biome_slices/overworld",
+   "blueprint:modded_biome_slices/the_end",
+   "blueprint:modded_biome_slices/the_nether"
+  ],
+  "data_maps/dimension": [
+   "blueprint:modded_biome_slice_sizes"
+  ],
+  "data_maps/item": [
+   "neoforge:furnace_fuels"
+  ],
+  "recipe": [
+   "minecraft:cake",
+   "minecraft:pumpkin_pie",
+   "minecraft:pumpkin_seeds"
+  ],
+  "tags/block": [
+   "blueprint:attaches_blocks_to_pistons",
+   "blueprint:noteblock_top_instruments",
+   "blueprint:wooden_beehives",
+   "blueprint:wooden_bookshelves",
+   "blueprint:wooden_chests",
+   "blueprint:wooden_chiseled_bookshelves",
+   "blueprint:wooden_ladders",
+   "blueprint:wooden_trapped_chests",
+   "c:bookshelves",
+   "c:chests/trapped",
+   "c:chests/wooden",
+   "c:ladders",
+   "minecraft:beehives",
+   "minecraft:climbable",
+   "minecraft:enchantment_power_provider",
+   "minecraft:guarded_by_piglins",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/hoe",
+   "woodworks:leaf_piles",
+   "woodworks:wooden_boards"
+  ],
+  "tags/entity_type": [
+   "c:fishes",
+   "c:milkable"
+  ],
+  "tags/item": [
+   "blueprint:wooden_beehives",
+   "blueprint:wooden_bookshelves",
+   "blueprint:wooden_chests",
+   "blueprint:wooden_chiseled_bookshelves",
+   "blueprint:wooden_ladders",
+   "blueprint:wooden_trapped_chests",
+   "boatload:furnace_boats",
+   "boatload:large_boats",
+   "c:bookshelves",
+   "c:chests/trapped",
+   "c:chests/wooden",
+   "c:horse_armor",
+   "c:ladders",
+   "c:milk",
+   "c:pumpkins",
+   "woodworks:leaf_piles",
+   "woodworks:wooden_boards"
+  ],
+  "tags/point_of_interest_type": [
+   "minecraft:bee_home"
+  ],
+  "worldgen/biome": [
+   "blueprint:original_source_marker"
+  ]
+ },
+ "data_counts": {
+  "advancement": 3
+ },
+ "tags": {
+  "tags/block": {
+   "blueprint:attaches_blocks_to_pistons": [
+    "minecraft:slime_block",
+    "minecraft:honey_block"
+   ],
+   "blueprint:noteblock_top_instruments": [],
+   "blueprint:wooden_beehives": [
+    "minecraft:beehive"
+   ],
+   "blueprint:wooden_bookshelves": [
+    "minecraft:bookshelf"
+   ],
+   "blueprint:wooden_chests": [],
+   "blueprint:wooden_chiseled_bookshelves": [
+    "minecraft:chiseled_bookshelf"
+   ],
+   "blueprint:wooden_ladders": [
+    "minecraft:ladder"
+   ],
+   "blueprint:wooden_trapped_chests": [],
+   "c:bookshelves": [
+    "#blueprint:wooden_bookshelves"
+   ],
+   "c:chests/trapped": [
+    "#blueprint:wooden_trapped_chests"
+   ],
+   "c:chests/wooden": [
+    "#blueprint:wooden_chests",
+    "#blueprint:wooden_trapped_chests"
+   ],
+   "c:ladders": [
+    "#blueprint:wooden_ladders"
+   ],
+   "minecraft:beehives": [
+    "#blueprint:wooden_beehives"
+   ],
+   "minecraft:climbable": [
+    "#blueprint:wooden_ladders"
+   ],
+   "minecraft:enchantment_power_provider": [
+    "#blueprint:wooden_bookshelves"
+   ],
+   "minecraft:guarded_by_piglins": [
+    "#blueprint:wooden_chests",
+    "#blueprint:wooden_trapped_chests"
+   ],
+   "minecraft:mineable/axe": [
+    "#woodworks:wooden_boards",
+    "#blueprint:wooden_bookshelves",
+    "#blueprint:wooden_ladders",
+    "#blueprint:wooden_beehives",
+    "#blueprint:wooden_chiseled_bookshelves",
+    "#blueprint:wooden_chests",
+    "#blueprint:wooden_trapped_chests"
+   ],
+   "minecraft:mineable/hoe": [
+    "#woodworks:leaf_piles"
+   ],
+   "woodworks:leaf_piles": [],
+   "woodworks:wooden_boards": []
+  },
+  "tags/entity_type": {
+   "c:fishes": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:pufferfish",
+    "minecraft:tropical_fish"
+   ],
+   "c:milkable": [
+    "minecraft:cow",
+    "minecraft:mooshroom",
+    "minecraft:goat"
+   ]
+  },
+  "tags/item": {
+   "blueprint:wooden_beehives": [
+    "minecraft:beehive"
+   ],
+   "blueprint:wooden_bookshelves": [
+    "minecraft:bookshelf"
+   ],
+   "blueprint:wooden_chests": [],
+   "blueprint:wooden_chiseled_bookshelves": [
+    "minecraft:chiseled_bookshelf"
+   ],
+   "blueprint:wooden_ladders": [
+    "minecraft:ladder"
+   ],
+   "blueprint:wooden_trapped_chests": [],
+   "boatload:furnace_boats": [],
+   "boatload:large_boats": [],
+   "c:bookshelves": [
+    "#blueprint:wooden_bookshelves"
+   ],
+   "c:chests/trapped": [
+    "#blueprint:wooden_trapped_chests"
+   ],
+   "c:chests/wooden": [
+    "#blueprint:wooden_chests",
+    "#blueprint:wooden_trapped_chests"
+   ],
+   "c:horse_armor": [
+    "minecraft:leather_horse_armor",
+    "minecraft:iron_horse_armor",
+    "minecraft:golden_horse_armor",
+    "minecraft:diamond_horse_armor"
+   ],
+   "c:ladders": [
+    "#blueprint:wooden_ladders"
+   ],
+   "c:milk": [
+    "#c:drinks/milk"
+   ],
+   "c:pumpkins": [
+    "#c:pumpkins/normal"
+   ],
+   "woodworks:leaf_piles": [],
+   "woodworks:wooden_boards": []
+  },
+  "tags/point_of_interest_type": {
+   "minecraft:bee_home": [
+    "blueprint:beehive"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 1,
+  "minecraft:crafting_shapeless": 2
+ },
+ "botanypots": [],
+ "problems": []
+}

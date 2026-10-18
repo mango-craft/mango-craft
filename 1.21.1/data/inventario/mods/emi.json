@@ -1,0 +1,44 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "EMI",
+ "file": "emi-1.1.24+1.21.1+neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "f4c45ed686fe617311d6debadcb6ace5963e66f8cfe0cfed398231f081f87407070efc7a73c8b695d158f1d87a97180737b9107a46771e77df2bc9a7dc715ebd",
+ "mods": [
+  {
+   "modid": "emi",
+   "name": "EMI",
+   "version": "1.1.24+1.21.1+neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[20.4.72-beta,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "emi",
+  "fabric",
+  "minecraft"
+ ],
+ "items": {
+  "emi:half_item": "",
+  "emi:quarter_item": "",
+  "emi:third_item": ""
+ },
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

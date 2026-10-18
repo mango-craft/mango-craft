@@ -1,0 +1,50 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "EMI Ores",
+ "file": "emi_ores-1.3+1.21.1+neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "c5774be0eeda90253c4fa98aaf0006ecb50dbd62ef5027420385482cea21b3339abdfbe945ab1233101bac7f52663cd2860abde04941a818ac3da312d86fc4ee",
+ "mods": [
+  {
+   "modid": "emi_ores",
+   "name": "EMI Ores",
+   "version": "1.3+1.21.1+neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "1.21.1",
+     "side": "BOTH"
+    },
+    {
+     "modid": "emi",
+     "type": "required",
+     "range": "[1.1.20,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "emi",
+  "emi_ores",
+  "minecraft"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

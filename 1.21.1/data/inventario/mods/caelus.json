@@ -1,0 +1,54 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Caelus API",
+ "file": "caelus-neoforge-7.0.1+1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "3763f95304ade2bacb217828c74eeef7905a114f71d41537d56121af58c182c2685467a5afb7e03ddb3997ec3d7496bdfdf71a9946a9f33e3470393e7a13306d",
+ "mods": [
+  {
+   "modid": "caelus",
+   "name": "Caelus API",
+   "version": "7.0.1+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "caelus"
+ ],
+ "data": {
+  "tags/items": [
+   "c:elytra"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/items": {
+   "c:elytra": [
+    "minecraft:elytra",
+    "#forge:elytra?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

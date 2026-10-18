@@ -1,0 +1,406 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Snow! Real Magic!",
+ "file": "SnowRealMagic-1.21.1-NeoForge-12.2.3.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "3091d34ff887f70b13f4aafe575b27970225a155ba96375b134d35f2418b77acf93e87b9601c2b7d26b7a1e7a38fc4b55729b6eac007281678a79df00158d7f4",
+ "mods": [
+  {
+   "modid": "snowrealmagic",
+   "name": "Snow! Real Magic!",
+   "version": "12.2.3+neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "kiwi",
+     "type": "required",
+     "range": "[15.8.7, )",
+     "side": null
+    }
+   ]
+  },
+  {
+   "modid": "fabric_block_view_api_v2",
+   "name": "Forgified Fabric BlockView API (v2)",
+   "version": "1.0.10+9afaaf8c19",
+   "jar": "fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.115,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_game_rule_api_v1",
+   "name": "Forgified Fabric Game Rule API (v1)",
+   "version": "1.0.53+36d727be19",
+   "jar": "fabric-game-rule-api-v1-1.0.53+36d727be19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_model_loading_api_v1",
+   "name": "Forgified Fabric Model Loading API (v1)",
+   "version": "2.0.0+986ae77219",
+   "jar": "fabric-model-loading-api-v1-2.0.0+986ae77219.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.169,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_renderer_api_v1",
+   "name": "Forgified Fabric Renderer API (v1)",
+   "version": "3.4.0+9c40919e19",
+   "jar": "fabric-renderer-api-v1-3.4.0+9c40919e19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.169,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_renderer_indigo",
+   "name": "Forgified Fabric Renderer - Indigo",
+   "version": "1.7.0+acb05a3919",
+   "jar": "fabric-renderer-indigo-1.7.0+acb05a3919.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.115,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_renderer_api_v1",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+  "fabric-game-rule-api-v1-1.0.53+36d727be19.jar",
+  "fabric-model-loading-api-v1-2.0.0+986ae77219.jar",
+  "fabric-renderer-api-v1-3.4.0+9c40919e19.jar",
+  "fabric-renderer-indigo-1.7.0+acb05a3919.jar",
+  "forgified-fabric-loader-2.5.29+0.16.0+1.21-full.jar"
+ ],
+ "namespaces": [
+  "c",
+  "farmersdelight",
+  "minecraft",
+  "seasons",
+  "snowrealmagic"
+ ],
+ "blocks": {
+  "snowrealmagic:fence": "Snow-Covered Fence",
+  "snowrealmagic:fence2": "",
+  "snowrealmagic:fence_gate": "Snow-Covered Fence Gate",
+  "snowrealmagic:slab": "Snow-Covered Slab",
+  "snowrealmagic:snow": "",
+  "snowrealmagic:snow_extra_collision": "",
+  "snowrealmagic:snow_rope_fence": "",
+  "snowrealmagic:snowy_double_plant_lower": "",
+  "snowrealmagic:snowy_double_plant_upper": "",
+  "snowrealmagic:snowy_plant": "",
+  "snowrealmagic:stairs": "Snow-Covered Stairs",
+  "snowrealmagic:wall": "Snow-Covered Wall"
+ },
+ "data": {
+  "loot_table": [
+   "snowrealmagic:blocks/fence",
+   "snowrealmagic:blocks/fence2",
+   "snowrealmagic:blocks/fence_gate",
+   "snowrealmagic:blocks/slab",
+   "snowrealmagic:blocks/snow",
+   "snowrealmagic:blocks/snow_extra_collision",
+   "snowrealmagic:blocks/snow_rope_fence",
+   "snowrealmagic:blocks/snowy_double_plant_lower",
+   "snowrealmagic:blocks/snowy_double_plant_upper",
+   "snowrealmagic:blocks/snowy_plant",
+   "snowrealmagic:blocks/stairs",
+   "snowrealmagic:blocks/wall"
+  ],
+  "tags/block": [
+   "c:grass",
+   "c:mushrooms",
+   "minecraft:fence_gates",
+   "minecraft:fences",
+   "minecraft:foxes_spawnable_on",
+   "minecraft:goats_spawnable_on",
+   "minecraft:inside_step_sound_blocks",
+   "minecraft:mineable/pickaxe",
+   "minecraft:mineable/shovel",
+   "minecraft:mooshrooms_spawnable_on",
+   "minecraft:rabbits_spawnable_on",
+   "minecraft:slabs",
+   "minecraft:snow",
+   "minecraft:snow_layer_can_survive_on",
+   "minecraft:stairs",
+   "minecraft:walls",
+   "minecraft:wolves_spawnable_on",
+   "minecraft:wooden_fences",
+   "seasons:replaceable_by_snow",
+   "snowrealmagic:cannot_accumulate_on",
+   "snowrealmagic:containables",
+   "snowrealmagic:containables.json.archive",
+   "snowrealmagic:entity_inside",
+   "snowrealmagic:expand_model",
+   "snowrealmagic:not_containables",
+   "snowrealmagic:offset_y",
+   "snowrealmagic:plants",
+   "snowrealmagic:snow",
+   "snowrealmagic:snowy_setting"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "c:grass": [
+    "minecraft:short_grass",
+    "minecraft:fern",
+    "minecraft:tall_grass",
+    "minecraft:large_fern"
+   ],
+   "c:mushrooms": [
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom"
+   ],
+   "minecraft:fence_gates": [
+    "snowrealmagic:fence_gate"
+   ],
+   "minecraft:fences": [
+    "snowrealmagic:fence2"
+   ],
+   "minecraft:foxes_spawnable_on": [
+    "snowrealmagic:snowy_double_plant_lower",
+    "snowrealmagic:snowy_double_plant_upper",
+    "snowrealmagic:snow",
+    "snowrealmagic:snowy_plant"
+   ],
+   "minecraft:goats_spawnable_on": [
+    "snowrealmagic:snowy_double_plant_lower",
+    "snowrealmagic:snowy_double_plant_upper",
+    "snowrealmagic:snow",
+    "snowrealmagic:snowy_plant"
+   ],
+   "minecraft:inside_step_sound_blocks": [
+    "#snowrealmagic:snow"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "snowrealmagic:fence2"
+   ],
+   "minecraft:mineable/shovel": [
+    "#snowrealmagic:snow"
+   ],
+   "minecraft:mooshrooms_spawnable_on": [
+    "snowrealmagic:snowy_double_plant_lower",
+    "snowrealmagic:snowy_double_plant_upper",
+    "snowrealmagic:snow",
+    "snowrealmagic:snowy_plant"
+   ],
+   "minecraft:rabbits_spawnable_on": [
+    "snowrealmagic:snowy_double_plant_lower",
+    "snowrealmagic:snowy_double_plant_upper",
+    "snowrealmagic:snow",
+    "snowrealmagic:snowy_plant"
+   ],
+   "minecraft:slabs": [
+    "snowrealmagic:slab"
+   ],
+   "minecraft:snow": [
+    "#snowrealmagic:snow"
+   ],
+   "minecraft:snow_layer_can_survive_on": [
+    "#minecraft:leaves"
+   ],
+   "minecraft:stairs": [
+    "snowrealmagic:stairs"
+   ],
+   "minecraft:walls": [
+    "snowrealmagic:wall"
+   ],
+   "minecraft:wolves_spawnable_on": [
+    "snowrealmagic:snowy_double_plant_lower",
+    "snowrealmagic:snowy_double_plant_upper",
+    "snowrealmagic:snow",
+    "snowrealmagic:snowy_plant"
+   ],
+   "minecraft:wooden_fences": [
+    "snowrealmagic:fence"
+   ],
+   "seasons:replaceable_by_snow": [],
+   "snowrealmagic:cannot_accumulate_on": [
+    "minecraft:hay_block",
+    "#minecraft:slabs"
+   ],
+   "snowrealmagic:containables": [
+    "#snowrealmagic:offset_y",
+    "#snowrealmagic:expand_model",
+    "#snowrealmagic:plants",
+    "#c:chains"
+   ],
+   "snowrealmagic:entity_inside": [
+    "wither_rose",
+    "sweet_berry_bush"
+   ],
+   "snowrealmagic:expand_model": [
+    "#enchanted-vertical-slabs:slabs?"
+   ],
+   "snowrealmagic:not_containables": [
+    "#minecraft:leaves",
+    "mynethersdelight:powdery_chubby_sapling?"
+   ],
+   "snowrealmagic:offset_y": [
+    "pink_petals",
+    "projectvibrantjourneys:twigs?",
+    "projectvibrantjourneys:mossy_rocks?",
+    "projectvibrantjourneys:sandstone_rocks?",
+    "projectvibrantjourneys:fallen_leaves?",
+    "projectvibrantjourneys:rocks?",
+    "projectvibrantjourneys:seashells?",
+    "projectvibrantjourneys:pinecones?",
+    "projectvibrantjourneys:charred_bones?",
+    "projectvibrantjourneys:bones?",
+    "projectvibrantjourneys:ice_chunks?",
+    "projectvibrantjourneys:red_sandstone_rocks?",
+    "natprog:stone_pebble?",
+    "natprog:andesite_pebble?",
+    "natprog:diorite_pebble?",
+    "natprog:granite_pebble?",
+    "natprog:sandstone_pebble?",
+    "natprog:red_sandstone_pebble?",
+    "natprog:tuff_pebble?",
+    "natprog:deepslate_pebble?",
+    "natprog:dripstone_block_pebble?",
+    "natprog:netherrack_pebble?",
+    "natprog:end_stone_pebble?",
+    "natprog:quark_limestone_pebble?",
+    "natprog:quark_jasper_pebble?",
+    "natprog:quark_shale_pebble?",
+    "natprog:quark_myalite_pebble?",
+    "natprog:create_asurine_pebble?",
+    "natprog:create_crimsite_pebble?",
+    "natprog:create_limestone_pebble?",
+    "natprog:create_ochrum_pebble?",
+    "natprog:create_scorchia_pebble?",
+    "natprog:create_scoria_pebble?",
+    "natprog:create_veridium_pebble?",
+    "twigs:twig?",
+    "twigs:pebble?"
+   ],
+   "snowrealmagic:plants": [
+    "#c:grass?",
+    "#c:flowers?",
+    "#small_flowers",
+    "#flowers",
+    "#tall_flowers",
+    "#c:mushrooms?",
+    "#saplings",
+    "#c:bushes?",
+    "sweet_berry_bush",
+    "dead_bush",
+    "#regions_unexplored:shrubs?",
+    "biomesoplenty:dune_grass?",
+    "biomesoplenty:desert_grass?",
+    "biomesoplenty:dead_grass?",
+    "biomesoplenty:sprout?",
+    "biomesoplenty:bush?",
+    "byg:winter_grass?",
+    "byg:leaf_pile?",
+    "byg:flower_patch?",
+    "byg:clover_patch?",
+    "twigs:bamboo_leaves?",
+    "twigs:azalea_flowers?"
+   ],
+   "snowrealmagic:snow": [
+    "snowrealmagic:snow_extra_collision",
+    "snowrealmagic:snowy_double_plant_lower",
+    "snowrealmagic:snowy_double_plant_upper",
+    "snowrealmagic:snow",
+    "snowrealmagic:snowy_plant"
+   ],
+   "snowrealmagic:snowy_setting": [
+    "#minecraft:snow",
+    "snowrealmagic:fence",
+    "snowrealmagic:fence2",
+    "snowrealmagic:fence_gate",
+    "snowrealmagic:wall",
+    "snowrealmagic:snow_rope_fence?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

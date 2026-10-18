@@ -1,0 +1,60 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Born In Configuration",
+ "file": "borninconfig-NEO.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "7f604c66ffee9630ea955124e402e5d600a313df1b920af4c5ef890caa8ab63915d2f6e700ec9d900128751ad90dea379ee69d002b7f412021588e77127ed265",
+ "mods": [
+  {
+   "modid": "borninconfiguration",
+   "name": "Born In Configuration",
+   "version": "4.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "born_in_chaos_v1",
+     "type": "required",
+     "range": "[1.7.6,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "mixinextras-neoforge-0.5.4.jar"
+ ],
+ "namespaces": [
+  "borninconfiguration"
+ ],
+ "data": {
+  "tags/item": [
+   "borninconfiguration:block_breakers"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/item": {
+   "borninconfiguration:block_breakers": [
+    "#minecraft:axes"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

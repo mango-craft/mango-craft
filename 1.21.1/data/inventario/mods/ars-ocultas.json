@@ -1,0 +1,85 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Ars Ocultas",
+ "file": "ars_ocultas-1.21.1-2.6.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "89cd67402f37f2a49ea30325719098925baa5c671bcd5b4d39da49623edce837b96c4440d48d3efcad970e27f7e04f8d22334138b534c62eb7b466f1bcb4c8af",
+ "mods": [
+  {
+   "modid": "ars_ocultas",
+   "name": "Ars Ocultas",
+   "version": "2.6.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_nouveau",
+     "type": "required",
+     "range": "[5.3,6)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "occultism",
+     "type": "required",
+     "range": "[1.220.4,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "ars_nouveau",
+  "ars_ocultas",
+  "minecraft"
+ ],
+ "blocks": {
+  "ars_ocultas:altar": "Sacrificial Altar"
+ },
+ "items": {
+  "ars_ocultas:altar": ""
+ },
+ "data": {
+  "loot_table": [
+   "ars_ocultas:blocks/altar"
+  ],
+  "recipe": [
+   "ars_ocultas:altar",
+   "ars_ocultas:gold_transmute",
+   "ars_ocultas:silver_transmute",
+   "ars_ocultas:spirit_attuned_gem"
+  ],
+  "recipes": [
+   "ars_ocultas:craft_stabilizer_tier4"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe",
+   "minecraft:needs_iron_tool"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "ars_ocultas:altar"
+   ],
+   "minecraft:needs_iron_tool": [
+    "ars_ocultas:altar"
+   ]
+  }
+ },
+ "recipe_types": {
+  "ars_nouveau:enchanting_apparatus": 2,
+  "ars_nouveau:imbuement": 2
+ },
+ "botanypots": [],
+ "problems": []
+}

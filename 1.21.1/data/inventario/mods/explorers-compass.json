@@ -1,0 +1,96 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Explorer's Compass",
+ "file": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "a1b2e385aaacb547763441fc23e9a33a0b1d67bd32094cd605ded3fbdd1c7a0e5fc4520fdfa090c29d2d3384b685e3ead91b32d20030e45632c94145ee3ec668",
+ "mods": [
+  {
+   "modid": "explorerscompass",
+   "name": "Explorer's Compass",
+   "version": "1.21.1-3.4.0-neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "explorerscompass",
+  "minecraft"
+ ],
+ "items": {
+  "explorerscompass:explorerscompass": "Explorer's Compass",
+  "explorerscompass:explorerscompass_00": "",
+  "explorerscompass:explorerscompass_01": "",
+  "explorerscompass:explorerscompass_02": "",
+  "explorerscompass:explorerscompass_03": "",
+  "explorerscompass:explorerscompass_04": "",
+  "explorerscompass:explorerscompass_05": "",
+  "explorerscompass:explorerscompass_06": "",
+  "explorerscompass:explorerscompass_07": "",
+  "explorerscompass:explorerscompass_08": "",
+  "explorerscompass:explorerscompass_09": "",
+  "explorerscompass:explorerscompass_10": "",
+  "explorerscompass:explorerscompass_11": "",
+  "explorerscompass:explorerscompass_12": "",
+  "explorerscompass:explorerscompass_13": "",
+  "explorerscompass:explorerscompass_14": "",
+  "explorerscompass:explorerscompass_15": "",
+  "explorerscompass:explorerscompass_17": "",
+  "explorerscompass:explorerscompass_18": "",
+  "explorerscompass:explorerscompass_19": "",
+  "explorerscompass:explorerscompass_20": "",
+  "explorerscompass:explorerscompass_21": "",
+  "explorerscompass:explorerscompass_22": "",
+  "explorerscompass:explorerscompass_23": "",
+  "explorerscompass:explorerscompass_24": "",
+  "explorerscompass:explorerscompass_25": "",
+  "explorerscompass:explorerscompass_26": "",
+  "explorerscompass:explorerscompass_27": "",
+  "explorerscompass:explorerscompass_28": "",
+  "explorerscompass:explorerscompass_29": "",
+  "explorerscompass:explorerscompass_30": "",
+  "explorerscompass:explorerscompass_31": ""
+ },
+ "data": {
+  "recipe": [
+   "explorerscompass:explorers_compass",
+   "explorerscompass:repair_explorers_compass"
+  ],
+  "tags/items": [
+   "minecraft:compasses"
+  ]
+ },
+ "data_counts": {
+  "advancement": 4
+ },
+ "tags": {
+  "tags/items": {
+   "minecraft:compasses": [
+    "explorerscompass:explorerscompass"
+   ]
+  }
+ },
+ "recipe_types": {
+  "crafting_shaped": 1,
+  "crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

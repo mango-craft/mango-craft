@@ -1,0 +1,410 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Illager Invasion",
+ "file": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "5ad618c60d78ab9196ef386c63d5855f3eab2f90006156b786d5b4f4ea7e6bcc1fd9f61dfa45b7b2df44dd900fe9747c9ac1ccac6fdb11814e2f4a7e53d93107",
+ "mods": [
+  {
+   "modid": "extensibleenums",
+   "name": "Extensible Enums",
+   "version": "21.1.1",
+   "jar": "extensibleenums-neoforge-21.1.1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "illagerinvasion",
+   "name": "Illager Invasion",
+   "version": "21.1.6",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "puzzleslib",
+     "type": "required",
+     "range": "[21.1.7,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "extensibleenums",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "extensibleenums-neoforge-21.1.1.jar"
+ ],
+ "namespaces": [
+  "illagerinvasion",
+  "minecraft",
+  "numismatic-overhaul"
+ ],
+ "blocks": {
+  "illagerinvasion:imbuing_table": "Imbuing Table",
+  "illagerinvasion:magic_fire": "Magic Fire"
+ },
+ "entities": {
+  "illagerinvasion:alchemist": "Alchemist",
+  "illagerinvasion:archivist": "Archivist",
+  "illagerinvasion:basher": "Basher",
+  "illagerinvasion:firecaller": "Firecaller",
+  "illagerinvasion:inquisitor": "Inquisitor",
+  "illagerinvasion:invoker": "Invoker",
+  "illagerinvasion:marauder": "Marauder",
+  "illagerinvasion:necromancer": "Necromancer",
+  "illagerinvasion:provoker": "Provoker",
+  "illagerinvasion:sorcerer": "Sorcerer",
+  "illagerinvasion:surrendered": "Surrendered"
+ },
+ "items": {
+  "illagerinvasion:alchemist_spawn_egg": "Alchemist Spawn Egg",
+  "illagerinvasion:archivist_spawn_egg": "Archivist Spawn Egg",
+  "illagerinvasion:basher_spawn_egg": "Basher Spawn Egg",
+  "illagerinvasion:firecaller_spawn_egg": "Firecaller Spawn Egg",
+  "illagerinvasion:hallowed_gem": "Hallowed Gem",
+  "illagerinvasion:horn_of_sight": "Horn of Sight",
+  "illagerinvasion:illusionary_dust": "Illusionary Dust",
+  "illagerinvasion:illusioner_spawn_egg": "Illusioner Spawn Egg",
+  "illagerinvasion:imbuing_table": "",
+  "illagerinvasion:inquisitor_spawn_egg": "Inquisitor Spawn Egg",
+  "illagerinvasion:invoker_spawn_egg": "Invoker Spawn Egg",
+  "illagerinvasion:lost_candle": "Lost Candle",
+  "illagerinvasion:magical_fire_charge": "Magical Fire Charge",
+  "illagerinvasion:marauder_spawn_egg": "Marauder Spawn Egg",
+  "illagerinvasion:necromancer_spawn_egg": "Necromancer Spawn Egg",
+  "illagerinvasion:platinum_chunk": "Platinum Chunk",
+  "illagerinvasion:platinum_infused_hatchet": "Platinum Infused Hatchet",
+  "illagerinvasion:platinum_sheet": "Platinum Sheet",
+  "illagerinvasion:primal_essence": "Primal Essence",
+  "illagerinvasion:provoker_spawn_egg": "Provoker Spawn Egg",
+  "illagerinvasion:sorcerer_spawn_egg": "Sorcerer Spawn Egg",
+  "illagerinvasion:surrendered_spawn_egg": "Surrendered Spawn Egg",
+  "illagerinvasion:tooting_horn_of_sight": "",
+  "illagerinvasion:unusual_dust": "Unusual Dust"
+ },
+ "data": {
+  "loot_table": [
+   "illagerinvasion:blocks/imbuing_table",
+   "illagerinvasion:blocks/magic_fire",
+   "illagerinvasion:chests/illager_fort_ground",
+   "illagerinvasion:chests/illager_fort_tower",
+   "illagerinvasion:chests/illusioner_tower_entrance",
+   "illagerinvasion:chests/illusioner_tower_stairs",
+   "illagerinvasion:chests/labyrinth",
+   "illagerinvasion:chests/labyrinth_map",
+   "illagerinvasion:chests/sorcerer_hut",
+   "illagerinvasion:entities/alchemist",
+   "illagerinvasion:entities/archivist",
+   "illagerinvasion:entities/basher",
+   "illagerinvasion:entities/firecaller",
+   "illagerinvasion:entities/inject/illusioner",
+   "illagerinvasion:entities/inject/pillager",
+   "illagerinvasion:entities/inject/ravager",
+   "illagerinvasion:entities/inquisitor",
+   "illagerinvasion:entities/invoker",
+   "illagerinvasion:entities/marauder",
+   "illagerinvasion:entities/necromancer",
+   "illagerinvasion:entities/provoker",
+   "illagerinvasion:entities/sorcerer",
+   "illagerinvasion:entities/surrendered"
+  ],
+  "recipe": [
+   "illagerinvasion:hallowed_gem",
+   "illagerinvasion:horn_of_sight",
+   "illagerinvasion:imbuing_table",
+   "illagerinvasion:platinum_sheet"
+  ],
+  "structure": [
+   "illagerinvasion:firecaller_hut/base_plate",
+   "illagerinvasion:firecaller_hut/feature_crops",
+   "illagerinvasion:firecaller_hut/feature_hay",
+   "illagerinvasion:firecaller_hut/feature_obelisk",
+   "illagerinvasion:firecaller_hut/feature_stable",
+   "illagerinvasion:firecaller_hut/feature_well",
+   "illagerinvasion:firecaller_hut/hut",
+   "illagerinvasion:illager_fort/illager_fort",
+   "illagerinvasion:illusioner_tower/tower_1",
+   "illagerinvasion:illusioner_tower/tower_2",
+   "illagerinvasion:illusioner_tower/tower_3",
+   "illagerinvasion:labyrinth/halls/left_no_rooms",
+   "illagerinvasion:labyrinth/halls/right_no_rooms",
+   "illagerinvasion:labyrinth/halls/straight_and_left_and_right",
+   "illagerinvasion:labyrinth/halls/straight_and_left_no_rooms",
+   "illagerinvasion:labyrinth/halls/straight_and_left_right_room",
+   "illagerinvasion:labyrinth/halls/straight_and_right_left_room",
+   "illagerinvasion:labyrinth/halls/straight_and_right_no_rooms",
+   "illagerinvasion:labyrinth/halls/straight_left_room",
+   "illagerinvasion:labyrinth/halls/straight_no_rooms",
+   "illagerinvasion:labyrinth/halls/straight_right_room",
+   "illagerinvasion:labyrinth/halls/straight_two_rooms",
+   "illagerinvasion:labyrinth/rooms/room_0",
+   "illagerinvasion:labyrinth/rooms/room_1",
+   "illagerinvasion:labyrinth/rooms/room_2",
+   "illagerinvasion:labyrinth/rooms/room_3",
+   "illagerinvasion:labyrinth/rooms/room_4",
+   "illagerinvasion:labyrinth/rooms/room_5",
+   "illagerinvasion:labyrinth/rooms/room_6",
+   "illagerinvasion:labyrinth/rooms/room_7",
+   "illagerinvasion:labyrinth/rooms/room_8",
+   "illagerinvasion:labyrinth/rooms/room_9",
+   "illagerinvasion:labyrinth/tower",
+   "illagerinvasion:mobs/alchemist",
+   "illagerinvasion:mobs/allay",
+   "illagerinvasion:mobs/archivist",
+   "illagerinvasion:mobs/basher",
+   "illagerinvasion:mobs/evoker",
+   "illagerinvasion:mobs/firecaller",
+   "illagerinvasion:mobs/illusioner",
+   "illagerinvasion:mobs/inquisitor",
+   "illagerinvasion:mobs/llama",
+   "illagerinvasion:mobs/marauder",
+   "illagerinvasion:mobs/necromancer",
+   "illagerinvasion:mobs/pillager",
+   "illagerinvasion:mobs/provoker",
+   "illagerinvasion:mobs/sorcerer",
+   "illagerinvasion:mobs/villager",
+   "illagerinvasion:mobs/vindicator",
+   "illagerinvasion:sorcerer_hut/sorcerer_hut",
+   "minecraft:woodland_mansion/1x2_a4",
+   "minecraft:woodland_mansion/1x2_a9",
+   "minecraft:woodland_mansion/1x2_b3",
+   "minecraft:woodland_mansion/1x2_c1",
+   "minecraft:woodland_mansion/1x2_c4",
+   "minecraft:woodland_mansion/1x2_c_stairs",
+   "minecraft:woodland_mansion/1x2_d5",
+   "minecraft:woodland_mansion/1x2_d_stairs",
+   "minecraft:woodland_mansion/2x2_a3",
+   "minecraft:woodland_mansion/2x2_b1",
+   "minecraft:woodland_mansion/2x2_b2",
+   "minecraft:woodland_mansion/2x2_b3",
+   "minecraft:woodland_mansion/2x2_b5"
+  ],
+  "tags/block": [
+   "minecraft:fire",
+   "minecraft:mineable/axe"
+  ],
+  "tags/enchantment": [
+   "illagerinvasion:imbuing"
+  ],
+  "tags/entity_type": [
+   "minecraft:fall_damage_immune",
+   "minecraft:illager",
+   "minecraft:raiders",
+   "numismatic-overhaul:the_bourgeoisie"
+  ],
+  "tags/instrument": [
+   "illagerinvasion:horn_of_sight"
+  ],
+  "tags/item": [
+   "minecraft:enchantable/durability",
+   "minecraft:trim_materials"
+  ],
+  "tags/worldgen/biome": [
+   "illagerinvasion:has_structure/firecaller_hut",
+   "illagerinvasion:has_structure/illager_fort",
+   "illagerinvasion:has_structure/illusioner_tower",
+   "illagerinvasion:has_structure/labyrinth",
+   "illagerinvasion:has_structure/sorcerer_hut"
+  ],
+  "trim_material": [
+   "illagerinvasion:platinum"
+  ],
+  "worldgen/structure": [
+   "illagerinvasion:firecaller_hut",
+   "illagerinvasion:illager_fort",
+   "illagerinvasion:illusioner_tower",
+   "illagerinvasion:labyrinth",
+   "illagerinvasion:sorcerer_hut"
+  ],
+  "worldgen/structure_set": [
+   "illagerinvasion:firecaller_hut",
+   "illagerinvasion:illager_fort",
+   "illagerinvasion:illusioner_tower",
+   "illagerinvasion:labyrinth",
+   "illagerinvasion:sorcerer_hut"
+  ],
+  "worldgen/template_pool": [
+   "illagerinvasion:firecaller_hut/base_plates",
+   "illagerinvasion:firecaller_hut/features",
+   "illagerinvasion:firecaller_hut/huts",
+   "illagerinvasion:illager_fort/illager_fort",
+   "illagerinvasion:illusioner_tower/illusioner_tower",
+   "illagerinvasion:labyrinth/halls",
+   "illagerinvasion:labyrinth/rooms",
+   "illagerinvasion:labyrinth/towers",
+   "illagerinvasion:mobs/alchemist",
+   "illagerinvasion:mobs/allay",
+   "illagerinvasion:mobs/archivist",
+   "illagerinvasion:mobs/basher",
+   "illagerinvasion:mobs/evoker",
+   "illagerinvasion:mobs/firecaller",
+   "illagerinvasion:mobs/illusioner",
+   "illagerinvasion:mobs/inquisitor",
+   "illagerinvasion:mobs/llama",
+   "illagerinvasion:mobs/marauder",
+   "illagerinvasion:mobs/necromancer",
+   "illagerinvasion:mobs/pillager",
+   "illagerinvasion:mobs/provoker",
+   "illagerinvasion:mobs/sorcerer",
+   "illagerinvasion:mobs/villager",
+   "illagerinvasion:mobs/vindicator",
+   "illagerinvasion:sorcerer_hut/sorcerer_hut"
+  ]
+ },
+ "data_counts": {
+  "advancement": 4
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:fire": [
+    "illagerinvasion:magic_fire"
+   ],
+   "minecraft:mineable/axe": [
+    "illagerinvasion:imbuing_table"
+   ]
+  },
+  "tags/enchantment": {
+   "illagerinvasion:imbuing": [
+    "minecraft:protection",
+    "minecraft:blast_protection",
+    "minecraft:projectile_protection",
+    "minecraft:fire_protection",
+    "minecraft:feather_falling",
+    "minecraft:thorns",
+    "minecraft:sharpness",
+    "minecraft:smite",
+    "minecraft:bane_of_arthropods",
+    "minecraft:knockback",
+    "minecraft:fire_aspect",
+    "minecraft:looting",
+    "minecraft:sweeping_edge",
+    "minecraft:efficiency",
+    "minecraft:unbreaking",
+    "minecraft:fortune",
+    "minecraft:power",
+    "minecraft:punch",
+    "minecraft:luck_of_the_sea",
+    "minecraft:lure",
+    "minecraft:loyalty",
+    "minecraft:riptide",
+    "minecraft:impaling",
+    "minecraft:piercing",
+    "minecraft:density",
+    "minecraft:breach",
+    "minecraft:wind_burst"
+   ]
+  },
+  "tags/entity_type": {
+   "minecraft:fall_damage_immune": [
+    "illagerinvasion:invoker"
+   ],
+   "minecraft:illager": [
+    "illagerinvasion:basher",
+    "illagerinvasion:provoker",
+    "illagerinvasion:necromancer",
+    "illagerinvasion:sorcerer",
+    "illagerinvasion:archivist",
+    "illagerinvasion:marauder",
+    "illagerinvasion:inquisitor",
+    "illagerinvasion:alchemist",
+    "illagerinvasion:invoker",
+    "illagerinvasion:firecaller"
+   ],
+   "minecraft:raiders": [
+    "illagerinvasion:basher",
+    "illagerinvasion:provoker",
+    "illagerinvasion:necromancer",
+    "illagerinvasion:sorcerer",
+    "illagerinvasion:archivist",
+    "illagerinvasion:marauder",
+    "illagerinvasion:inquisitor",
+    "illagerinvasion:alchemist",
+    "illagerinvasion:invoker"
+   ],
+   "numismatic-overhaul:the_bourgeoisie": [
+    "illagerinvasion:basher",
+    "illagerinvasion:provoker",
+    "illagerinvasion:necromancer",
+    "illagerinvasion:sorcerer",
+    "illagerinvasion:archivist",
+    "illagerinvasion:marauder",
+    "illagerinvasion:inquisitor",
+    "illagerinvasion:alchemist"
+   ]
+  },
+  "tags/instrument": {
+   "illagerinvasion:horn_of_sight": [
+    "illagerinvasion:reveal"
+   ]
+  },
+  "tags/item": {
+   "minecraft:enchantable/durability": [
+    "illagerinvasion:platinum_infused_hatchet"
+   ],
+   "minecraft:trim_materials": [
+    "illagerinvasion:platinum_sheet"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "illagerinvasion:has_structure/firecaller_hut": [
+    "#minecraft:is_badlands"
+   ],
+   "illagerinvasion:has_structure/illager_fort": [
+    "#minecraft:is_taiga",
+    "minecraft:snowy_plains"
+   ],
+   "illagerinvasion:has_structure/illusioner_tower": [
+    "minecraft:taiga",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:dark_forest",
+    "minecraft:swamp"
+   ],
+   "illagerinvasion:has_structure/labyrinth": [
+    "#minecraft:is_taiga",
+    "#minecraft:is_jungle",
+    "#minecraft:is_forest",
+    "#minecraft:is_savanna"
+   ],
+   "illagerinvasion:has_structure/sorcerer_hut": [
+    "minecraft:dark_forest"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 3,
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}
