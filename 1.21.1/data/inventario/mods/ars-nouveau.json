@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "Ars Nouveau",
  "file": "ars_nouveau-1.21.1-5.13.3.jar",
@@ -92,7 +92,10 @@
  "nested": [
   "infiniverse-568341-5486311.jar",
   "lambdynamiclights-api-4.5.1+1.21.1-mojmap.jar",
-  "nuggets-neoforge-1.21.1-1.1.0.48.jar"
+  "nuggets-neoforge-1.21.1-1.1.0.48.jar",
+  "yumi-commons-collections-1.0.0-beta.4.jar",
+  "yumi-commons-core-1.0.0-beta.4.jar",
+  "yumi-commons-event-1.0.0-beta.4.jar"
  ],
  "namespaces": [
   "ars_nouveau",

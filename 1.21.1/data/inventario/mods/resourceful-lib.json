@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "Resourceful Lib",
  "file": "resourcefullib-neoforge-1.21-3.0.12.jar",
@@ -29,7 +29,10 @@
    ]
   }
  ],
- "nested": [],
+ "nested": [
+  "bytecodecs-1.1.2.jar",
+  "yabn-1.0.3.jar"
+ ],
  "namespaces": [],
  "data": {},
  "data_counts": {},

@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "oωo (owo-lib)",
  "file": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
@@ -8,6 +8,26 @@
  "hash_format": "sha512",
  "hash": "4de5c5d52139244b8c5260d641087664d992624b822599a32e03c08eb133be854a2f413667dbca1e55772445b04a70210c17b3bc13e3c88e425e7d928104b9fa",
  "mods": [
+  {
+   "modid": "fabric_api_base",
+   "name": "Forgified Fabric API Base",
+   "version": "0.4.42+d1308dedd1",
+   "jar": "fabric-api-base-0.4.42+d1308dedd1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.133-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
   {
    "modid": "owo",
    "name": "oωo",
@@ -29,7 +49,14 @@
    ]
   }
  ],
- "nested": [],
+ "nested": [
+  "endec-0.1.8.1.jar",
+  "fabric-api-base-0.4.42+d1308dedd1.jar",
+  "gson-0.1.5.1.jar",
+  "jankson-0.1.5.1.jar",
+  "jankson-1.2.2.jar",
+  "netty-0.1.4.1.jar"
+ ],
  "namespaces": [
   "owo"
  ],

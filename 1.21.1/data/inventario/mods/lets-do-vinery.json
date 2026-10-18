@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "[Let's Do] Vinery",
  "file": "letsdo-vinery-neoforge-1.5.5.jar",
@@ -8,6 +8,32 @@
  "hash_format": "sha512",
  "hash": "deeef53f933cd7750d32800009deff31e47c4e7e71e3a4e3714e3ecf9fede3190ab0db7fad10817d352de7cc4cbdea5b308e592ebd6bf8f0a921a2cf98f6871d",
  "mods": [
+  {
+   "modid": "foundation",
+   "name": "[Let's Do] Foundation",
+   "version": "1.0.1",
+   "jar": "foundation-neoforge-1.0.1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
   {
    "modid": "vinery",
    "name": "[Let's Do] Vinery",
@@ -41,13 +67,17 @@
    ]
   }
  ],
- "nested": [],
+ "nested": [
+  "foundation-neoforge-1.0.1.jar"
+ ],
  "namespaces": [
   "c",
   "candlelight",
   "create",
+  "foundation",
   "minecraft",
   "neoforge",
+  "sable",
   "vinery"
  ],
  "blocks": {
@@ -678,6 +708,7 @@
    "vinery:vinery_taiga"
   ],
   "tags/block": [
+   "foundation:attracts_fireflies",
    "minecraft:climbable",
    "minecraft:fences",
    "minecraft:leaves",
@@ -704,6 +735,9 @@
    "vinery:lattice",
    "vinery:wall_hanging_signs"
   ],
+  "tags/entity_type": [
+   "sable:retain_in_sub_level"
+  ],
   "tags/item": [
    "c:berries",
    "c:grapes",
@@ -714,6 +748,7 @@
    "candlelight:red_effect",
    "candlelight:white_effect",
    "create:upright_on_belt",
+   "foundation:cake_cutters",
    "minecraft:boats",
    "minecraft:chest_boats",
    "minecraft:fences",
@@ -793,6 +828,11 @@
  },
  "tags": {
   "tags/block": {
+   "foundation:attracts_fireflies": [
+    "minecraft:lantern",
+    "minecraft:soul_lantern",
+    "#c:lanterns?"
+   ],
    "minecraft:climbable": [
     "vinery:jungle_grape_bush_red",
     "vinery:jungle_grape_bush_white",
@@ -971,6 +1011,11 @@
     "vinery:dark_cherry_hanging_sign"
    ]
   },
+  "tags/entity_type": {
+   "sable:retain_in_sub_level": [
+    "foundation:chair"
+   ]
+  },
   "tags/item": {
    "c:berries": [
     "vinery:cherry?"
@@ -1014,6 +1059,10 @@
     "vinery:wine_bottle",
     "#vinery:red_wine",
     "#vinery:white_wine"
+   ],
+   "foundation:cake_cutters": [
+    "#c:tools/knife?",
+    "minecraft:shears"
    ],
    "minecraft:boats": [
     "vinery:dark_cherry_boat"

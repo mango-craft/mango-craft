@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "Illager Invasion",
  "file": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
@@ -8,6 +8,26 @@
  "hash_format": "sha512",
  "hash": "5ad618c60d78ab9196ef386c63d5855f3eab2f90006156b786d5b4f4ea7e6bcc1fd9f61dfa45b7b2df44dd900fe9747c9ac1ccac6fdb11814e2f4a7e53d93107",
  "mods": [
+  {
+   "modid": "extensibleenums",
+   "name": "Extensible Enums",
+   "version": "21.1.1",
+   "jar": "extensibleenums-neoforge-21.1.1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  },
   {
    "modid": "illagerinvasion",
    "name": "Illager Invasion",
@@ -41,7 +61,9 @@
    ]
   }
  ],
- "nested": [],
+ "nested": [
+  "extensibleenums-neoforge-21.1.1.jar"
+ ],
  "namespaces": [
   "illagerinvasion",
   "minecraft",

@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "[Let's Do] Farm & Charm",
  "file": "letsdo-farm_and_charm-neoforge-1.1.28.jar",
@@ -8,6 +8,32 @@
  "hash_format": "sha512",
  "hash": "bfa86e6c37ed6b4609ffdd29962790dd3475debd48408daa2add8324b4631527b63436d10466f65a5f6aa1abbbe73d298a7fa046e3289fc93f85e5e7b41541c6",
  "mods": [
+  {
+   "modid": "foundation",
+   "name": "[Let's Do] Foundation",
+   "version": "1.0.6",
+   "jar": "foundation-neoforge-1.0.6.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
   {
    "modid": "farm_and_charm",
    "name": "[Let's Do] Farm & Charm",
@@ -41,7 +67,9 @@
    ]
   }
  ],
- "nested": [],
+ "nested": [
+  "foundation-neoforge-1.0.6.jar"
+ ],
  "namespaces": [
   "c",
   "create",
@@ -649,6 +677,7 @@
    "farm_and_charm:ropes",
    "farm_and_charm:suppress_campfire_smoke_particles",
    "farm_and_charm:wild_crops",
+   "foundation:attracts_fireflies",
    "minecraft:climbable",
    "minecraft:crops",
    "minecraft:fences",
@@ -966,6 +995,11 @@
     "farm_and_charm:wild_onions",
     "farm_and_charm:wild_strawberries"
    ],
+   "foundation:attracts_fireflies": [
+    "minecraft:lantern",
+    "minecraft:soul_lantern",
+    "#c:lanterns?"
+   ],
    "minecraft:climbable": [
     "farm_and_charm:tomato_crop",
     "farm_and_charm:tomato_crop_body",
@@ -1096,6 +1130,7 @@
     "minecraft:chicken"
    ],
    "sable:retain_in_sub_level": [
+    "foundation:chair",
     "foundation:chair?"
    ]
   },
@@ -1580,6 +1615,8 @@
     "#c:grains/wheats"
    ],
    "foundation:cake_cutters": [
+    "#c:tools/knife?",
+    "minecraft:shears",
     "#farm_and_charm:knives?"
    ],
    "minecraft:axes": [

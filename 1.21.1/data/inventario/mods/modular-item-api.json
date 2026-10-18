@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "Truly Modular: Modular Item API (Miapi)",
  "file": "Truly-Modular-miapi-neoforge-2.3.9-1.21.jar",
@@ -8,6 +8,292 @@
  "hash_format": "sha512",
  "hash": "9130923c0b04d79773e20577317c619896bb1c031b32a40ed69bba8d28782a3138e340dcd67cab182a7087ffd8d292f837aed0ede6a5e1e691972cb2bea4a62b",
  "mods": [
+  {
+   "modid": "nucleus_codec",
+   "name": "Nucleus (Codec)",
+   "version": "1.1.4",
+   "jar": "nucleus-codec-forge-1.21+1.2.3.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_codec",
+   "name": "Nucleus (Codec)",
+   "version": "1.2.3",
+   "jar": "nucleus-codec-forge-1.21+1.2.3.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_config",
+   "name": "Nucleus (Config)",
+   "version": "1.1.5",
+   "jar": "nucleus-config-forge-1.21+1.1.7.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_config",
+   "name": "Nucleus (Config)",
+   "version": "1.1.7",
+   "jar": "nucleus-config-forge-1.21+1.1.7.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus",
+   "name": "Nucleus (Core)",
+   "version": "1.1.2",
+   "jar": "nucleus-core-forge-1.21+1.1.14.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus",
+   "name": "Nucleus (Core)",
+   "version": "1.1.14",
+   "jar": "nucleus-core-forge-1.21+1.1.14.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_facet",
+   "name": "Nucleus (Facet)",
+   "version": "1.0.1",
+   "jar": "nucleus-facet-forge-1.21+1.1.3.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_facet",
+   "name": "Nucleus (Facet)",
+   "version": "1.1.3",
+   "jar": "nucleus-facet-forge-1.21+1.1.3.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_pose",
+   "name": "Nucleus (Pose)",
+   "version": "1.0.0",
+   "jar": "nucleus-pose-forge-1.21+1.0.5.jar",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[${minecraft_version},)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[${architectury_version},)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_pose",
+   "name": "Nucleus (Pose)",
+   "version": "1.0.5",
+   "jar": "nucleus-pose-forge-1.21+1.0.5.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "nucleus_trinket",
+   "name": "Nucleus (Trinket)",
+   "version": "1.0.5",
+   "jar": "nucleus-trinket-forge-1.21+1.0.5.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.8,)",
+     "side": "BOTH"
+    }
+   ]
+  },
   {
    "modid": "miapi",
    "name": "Truly Modular",
@@ -47,12 +333,21 @@
    ]
   }
  ],
- "nested": [],
+ "nested": [
+  "EvalEx-3.2.0.jar",
+  "nucleus-codec-forge-1.21+1.2.3.jar",
+  "nucleus-config-forge-1.21+1.1.7.jar",
+  "nucleus-core-forge-1.21+1.1.14.jar",
+  "nucleus-facet-forge-1.21+1.1.3.jar",
+  "nucleus-pose-forge-1.21+1.0.5.jar",
+  "nucleus-trinket-forge-1.21+1.0.5.jar"
+ ],
  "namespaces": [
   "c",
   "miapi",
   "minecraft",
-  "neoforge"
+  "neoforge",
+  "nucleus"
  ],
  "blocks": {
   "miapi:example_stat_provider": "",
@@ -148,7 +443,8 @@
    "miapi:weapons/modular_spear",
    "miapi:weapons/modular_sword",
    "miapi:weapons/modular_throwing_knife",
-   "miapi:weapons/modular_trident"
+   "miapi:weapons/modular_trident",
+   "nucleus:test"
   ],
   "damage_type": [
    "miapi:armor_pierce_damage",

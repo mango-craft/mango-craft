@@ -2,18 +2,13 @@
 
 File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non modificarlo a mano.
 
-- Mod nell'inventario: 262 (mod id), namespace: 282
+- Mod nell'inventario: 336 (mod id), namespace: 293
 - File del datapack controllati: 30 (0 inattivi)
-- **Errori: 6** · avvisi: 15
+- **Errori: 0** · avvisi: 15
 
 ## Errori
 
-- Dipendenza mancante: `farm_and_charm` [lets-do-farm-charm] richiede `foundation` [1.0.5,)
-- Dipendenza mancante: `illagerinvasion` [illager-invasion] richiede `extensibleenums` *
-- Dipendenza mancante: `lambdynlights` [lambdynamiclights] richiede `lambdynlights_runtime` [4.8.11+1.21.1,)
-- Dipendenza mancante: `miapi` [modular-item-api] richiede `nucleus_config` [1.0.0,)
-- Dipendenza mancante: `miapi` [modular-item-api] richiede `nucleus_facet` [1.0.0,)
-- Dipendenza mancante: `vinery` [lets-do-vinery] richiede `foundation` [1.0.1,)
+- nessuno
 
 ## Avvisi
 

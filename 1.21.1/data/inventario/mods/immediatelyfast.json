@@ -1,5 +1,5 @@
 {
- "format": 1,
+ "format": 2,
  "status": "ok",
  "name": "ImmediatelyFast",
  "file": "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
@@ -29,7 +29,9 @@
    ]
   }
  ],
- "nested": [],
+ "nested": [
+  "Reflect-1.6.2.jar"
+ ],
  "namespaces": [],
  "data": {},
  "data_counts": {},
