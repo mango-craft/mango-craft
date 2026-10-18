@@ -36,9 +36,10 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 
 ## 4. Versioni, tag e istanze
 
-- Si lavora su `main`. Ogni versione rilasciata è un **tag** `<versione MC>-v<versione pack>`, es. `1.21.1-v0.3.0`. I tag di release non si spostano e non si cancellano.
+- **Rami**: si lavora su **`dev`**. **`main`** contiene solo versioni provate: avanza unicamente per *fast-forward* da `dev` (`git merge --ff-only dev`, senza pull request) quando la tappa è stata provata nell'istanza di prova e Matteo dà l'ok. Niente commit diretti su `main`; se capitasse (es. un commit automatico), si riporta `main` dentro `dev`.
+- **Versioni**: ogni versione rilasciata è un **tag** `<versione MC>-v<versione pack>` creato su `main`, es. `1.21.1-v0.3.0`. I tag di release non si spostano e non si cancellano. Le **0.x** sono tappe di prova (pre-release su GitHub); il **mondo vero parte dalla 1.0.0**. Il piano delle tappe è in `context.md` (3.0).
 - **Istanze di Prism** (tutte con `packwiz-installer-bootstrap.jar` nella cartella `minecraft/` dell'istanza e comando prima dell'avvio `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar <URL>`):
-  - prova → `https://raw.githubusercontent.com/mango-craft/mango-craft/refs/heads/main/1.21.1/pack/pack.toml`
+  - prova → `https://raw.githubusercontent.com/mango-craft/mango-craft/refs/heads/dev/1.21.1/pack/pack.toml`
   - mondo vero → `…/refs/tags/1.21.1-vX.Y.Z/1.21.1/pack/pack.toml` (si aggiorna cambiando il tag, dopo un backup del mondo)
   - archivio → un tag vecchio, con `--bootstrap-no-update` dopo il primo avvio
 - **NeoForge si imposta a mano in Prism**: packwiz-installer non riesce a cambiarlo. Ogni voce del CHANGELOG indica la versione richiesta.
@@ -78,7 +79,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 
 - Lo spazio di lavoro raggiunge **solo GitHub** dalla riga di comando. L'API di Modrinth si legge con lo strumento web. **CurseForge non è raggiungibile**: i suoi dati si ricavano dalle pagine o dalla build di GitHub.
 - Compilare ed eseguire codice scaricato (packwiz compreso) **non è permesso** qui: i file di packwiz si scrivono con script propri, e packwiz vero gira nelle GitHub Actions.
-- Da qui si possono mandare commit su `main` e avviare i workflow (`gh workflow run`), ma **non mandare tag** né scrivere tramite l'API di GitHub: per una release si usa il workflow **Release** con il tag come parametro. I log dei workflow non sono leggibili da qui: si controlla l'esito (`gh run view`) e il risultato (i file nel repository).
+- Da qui si possono mandare commit sui rami (`dev`, e `main` per fast-forward) e avviare i workflow (`gh workflow run`), ma **non mandare tag** né scrivere tramite l'API di GitHub (pull request mai provate): per una release si usa il workflow **Release** con il tag come parametro. I log dei workflow non sono leggibili da qui: si controlla l'esito (`gh run view`) e il risultato (i file nel repository).
 - Il PC di Matteo può essere collegato alla sessione: **non toccare la cartella di Prism senza il suo via**.
 - Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file.
 

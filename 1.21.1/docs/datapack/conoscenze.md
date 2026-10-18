@@ -31,7 +31,7 @@ matteo_tweaks/
     ├── <mod>/market_presets/...                prezzi del mercato per mod
     ├── create_enchantment_industry/data_maps/fluid/unit/experience.json
     ├── cataclysm/tags/worldgen/structure/berserker_spawn.json
-    ├── c/tags/item/foods/cooked_fish.json      (solo se si approva la correzione del pesce)
+    ├── c/tags/item/foods/cooked_fish.json      (pesce cotto di Starcatcher, approvato 18/10)
     ├── neoforge/loot_modifiers/                (già esistente)
     └── enhancedcelestials/...                  (già esistente)
 ```
@@ -197,7 +197,7 @@ Convertire una quantità esatta avanti e indietro e controllare che i punti torn
 | File | Contenuto | Stato |
 |---|---|---|
 | `data/cataclysm/tags/worldgen/structure/berserker_spawn.json` | `{"replace":false,"values":["betterfortresses:fortress"]}`: i Berserker infuocati tornano a comparire nelle fortezze di YUNG's. Dopo l'aggiunta riavviare il mondo, `/reload` non basta | Approvato |
-| `data/c/tags/item/foods/cooked_fish.json` (+ `c:foods/cooked_fishes` e `bountifulfares:cooked_fishes`) | Aggiunge `starcatcher:cooked_starcaught_fish`, così il pesce cotto di Starcatcher vale nei taco e fish and chips di Cultural Delights e nella zuppa di Bountiful Fares | **Proposta in sospeso** |
+| `data/c/tags/item/foods/cooked_fish.json` (+ `c:foods/cooked_fishes` e `bountifulfares:cooked_fishes`) | Aggiunge `starcatcher:cooked_starcaught_fish`, così il pesce cotto di Starcatcher vale nei taco e fish and chips di Cultural Delights e nella zuppa di Bountiful Fares | **Approvato 18/10** (tappa 2) |
 | Ricette dei vasi per Jaden's Nether Expansion e Nether Depths Upgrade | Piante del Nether nuove | Da inventariare |
 
 ### Config (non datapack, ma da preparare insieme)

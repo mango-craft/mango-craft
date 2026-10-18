@@ -99,4 +99,10 @@ jobs:
           PACK: ${{ steps.info.outputs.pack }}
         run: |
           python3 scripts/release_notes.py "$PACK" "$MC/CHANGELOG.md" "$VER" > notes.md
-          gh release create "$TAG" dist/* --verify-tag --title "Mango Craft $MC · v$VER" --notes-file notes.md
+          # Le versioni 0.x sono tappe di prova: escono come pre-release. Il mondo vero parte dalla 1.0.0
+          EXTRA=()
+          if [[ "$VER" == 0.* ]]; then
+            EXTRA=(--prerelease)
+            printf '\n> ⚠️ Versione di prova (pre-release): non usarla per il mondo vero.\n' >> notes.md
+          fi
+          gh release create "$TAG" dist/* --verify-tag "${EXTRA[@]}" --title "Mango Craft $MC · v$VER" --notes-file notes.md

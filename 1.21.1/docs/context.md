@@ -2,7 +2,7 @@
 
 _Stato della progettazione · ultimo aggiornamento: 18/10/2026_
 
-> **Stato del repository (18/10/2026)**: il pack in `1.21.1/pack/` è la **0.1.1**, la versione già provata in gioco, usata come base per verificare il nuovo sistema (packwiz + GitHub + Prism). Le aggiunte delle versioni 0.2.0–0.2.3 (Regions Unexplored, Supplementaries, Handcrafted…, ancora da provare davvero) e le 30 mod approvate il 17/10 (`decisioni/2026-10-17-round-opzionali.md`) entreranno con commit successivi. Questo documento descrive invece lo **stato della progettazione** completo, comprese quelle aggiunte.
+> **Stato del repository (18/10/2026)**: `main` e il tag `1.21.1-v0.1.1` contengono la **0.1.1**, la versione già provata in gioco. Si lavora sul ramo **`dev`** (seguito dall'istanza di prova); `main` avanza solo dopo la prova. Le aggiunte delle 0.2.x e le 30 mod approvate il 17/10 entrano a tappe secondo il **piano in 3.0**, fino alla **1.0.0** per il mondo vero. Questo documento descrive lo **stato della progettazione** completo, comprese le aggiunte non ancora nel pack.
 
 Legenda: ✅ approvata · 👀 opzionale, da attenzionare · ⛔ scartata · ❓ da verificare · 🧪 da testare subito · ⚠️ attenzione
 
@@ -62,6 +62,22 @@ Ancora da decidere: le grandi aggiunte (5.9).
 ---
 
 ## 3. Da fare e da controllare
+
+### 3.0 Piano verso la 1.0.0 (deciso il 18/10/2026)
+
+**Flusso**: si lavora sul ramo `dev`, seguito dall'istanza di prova "Mango Craft (dev)". Quando una tappa passa la prova, `main` avanza per fast-forward (niente pull request) e sul `main` si crea il tag con il workflow Release. Le **0.x** escono come pre-release, solo per prova; il **mondo vero parte dalla 1.0.0**, la prima versione con tutte le mod che generano il mondo.
+
+| Tappa | Versione | Contenuto | Stato |
+|---|---|---|---|
+| 0 | — | Strumenti: workflow **Aggiungi mod Modrinth** (versione, hash e dipendenze presi da Modrinth con packwiz) e **Inventario** (elenco di oggetti, blocchi e tabelle letto dai file delle mod, per controllare i nomi usati nel datapack) | da fare |
+| 1 | 0.2.3 | Le aggiunte del vecchio pacchetto 0.2.3: Regions Unexplored, Supplementaries, Handcrafted, Rechiseled, Construction Sticks, Chunky, Clumps, XP Tome, Just Enough Breeding/Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks (CurseForge) + Lithostitched, Fusion, Moonlight; cassaforte del Galeone nel datapack | da fare |
+| 2 | 0.3.0 | Cucina, agricoltura, esperienza: My Nether's Delight, Chef's Delight, Create Confectionery, Rustic Delight, Ocean's Delight, Autochef's Delight, Farming for Blockheads, Cognition; **pesce cotto di Starcatcher** nelle etichette del pesce cotto (approvato 18/10) | da fare |
+| 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | da fare |
+| 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae, Creeper Overhaul, Paragliders | da fare |
+| 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (~270 piante, 13 terreni, alberi di Bountiful Fares), config di Every Compat, Jaden's, Moog's, Artifacts | da fare |
+| 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
+
+Dopo ogni tappa: avvio dell'istanza di prova, mondo nuovo, controllo del log. NeoForge resta alla **21.1.259**: se una mod nuova ne chiede una più recente, va segnalato nella sua tappa.
 
 ### 3.1 Creazione dell'istanza in Prism
 
@@ -1115,3 +1131,4 @@ Legenda: 🟢 sta bene nel pack · 🟡 dipende o da provare · 🔴 poco adatta
 - **17/10/2026** — Approvate le 6 di cucina 🟢🟡 di 5.13: My Nether's Delight, Chef's Delight, Create Confectionery, Rustic Delight, Ocean's Delight, Autochef's Delight (verifica in corso). Aquaculture 2 e le sue espansioni messe da parte come alternativa a Starcatcher. Verificata nel codice la compatibilità di Starcatcher con la cucina (4.17).
 - **17/10/2026** — Round di decisione su tutte le opzionali concluso (30 mod approvate, vedi `decisioni/2026-10-17-round-opzionali.md`). Ricerche dedicate su Nether, animali con ricette, deposito dell'esperienza e copertura dei vasi (`datapack/conoscenze.md`, `datapack/vasi-copertura.md`). Deciso: niente datapack esterni, tutto nel nostro; repository GitHub pubblico con packwiz (struttura in valutazione).
 - **18/10/2026** — Creato il repository pubblico `mango-craft/mango-craft`: una cartella per versione di Minecraft, tag `1.21.1-vX.Y.Z`, nessun ramo stabile. Importata la **0.1.1** in formato packwiz (194 file da Modrinth + 5 mod CurseForge aggiunte dal workflow dedicato), release `1.21.1-v0.1.1` pubblicata (.mrpack con le sole mod Modrinth + zip dei documenti). Workflow: controllo pack, aggiunta mod CurseForge, release (avviabile a mano col tag). `AGENTS.md` per tutti gli agenti, `CLAUDE.md` che lo importa. Prossimo passo: istanza di prova in Prism collegata al tag.
+- **18/10/2026** — Piano verso la **1.0.0** (3.0): una versione per tappa (0.2.3 → 0.6.x), pre-release di prova, mondo vero dalla 1.0.0. Nuovo flusso: ramo **`dev`** seguito dall'istanza di prova, `main` avanza per fast-forward solo dopo la prova, tag su `main` (niente pull request). Approvato il **tag del pesce cotto di Starcatcher** (tappa 2). Istruzioni per le mod CurseForge da scaricare a mano (Roaster's Delight) aggiunte a README e `docs/prism.md`.

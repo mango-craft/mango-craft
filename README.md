@@ -42,6 +42,8 @@ scripts/                  script di supporto (indice, controlli, importazione)
 
 ## Versioni
 
+Il lavoro in corso sta sul ramo `dev`; `main` riceve solo versioni provate. Le **0.x** sono tappe di prova (*pre-release*), il mondo vero parte dalla **1.0.0**.
+
 Ogni versione è un tag `1.21.1-vX.Y.Z` con la sua [release](https://github.com/mango-craft/mango-craft/releases), che contiene un `.mrpack` con le sole mod di Modrinth e lo zip della documentazione. Le mod solo CurseForge non sono incluse nei file pubblici: sono elencate nelle note di ogni release.
 
 ## Licenze

@@ -6,11 +6,13 @@ Ogni istanza di Prism scarica il pack da questo repository a ogni avvio, tramite
 
 | Istanza | Indirizzo da usare | Cosa succede |
 |---|---|---|
-| **Prova** | `https://raw.githubusercontent.com/mango-craft/mango-craft/refs/heads/main/1.21.1/pack/pack.toml` | Segue sempre l'ultimo lavoro, anche non ancora rilasciato |
-| **Mondo vero** | `https://raw.githubusercontent.com/mango-craft/mango-craft/refs/tags/1.21.1-v0.1.1/1.21.1/pack/pack.toml` | Resta sulla versione indicata dal tag. Per aggiornare: backup del mondo, poi si cambia il tag nell'indirizzo |
+| **Prova** | `https://raw.githubusercontent.com/mango-craft/mango-craft/refs/heads/dev/1.21.1/pack/pack.toml` | Segue il ramo `dev`: l'ultimo lavoro, anche non ancora provato. Qui si provano le tappe prima di rilasciarle |
+| **Mondo vero** | `https://raw.githubusercontent.com/mango-craft/mango-craft/refs/tags/1.21.1-v1.0.0/1.21.1/pack/pack.toml` | Resta sulla versione indicata dal tag. Parte dalla **1.0.0** (le 0.x sono di prova). Per aggiornare: backup del mondo, poi si cambia il tag nell'indirizzo |
 | **Archivio** | come il mondo vero, con un tag vecchio, aggiungendo `--bootstrap-no-update` dopo il primo avvio | Congelata per sempre su quella versione |
 
-I tag hanno la forma `1.21.1-vX.Y.Z`: la parte prima di `-v` è la versione di Minecraft, quella dopo la versione del pack. L'elenco è nella pagina [Releases](https://github.com/mango-craft/mango-craft/releases).
+I tag hanno la forma `1.21.1-vX.Y.Z`: la parte prima di `-v` è la versione di Minecraft, quella dopo la versione del pack. L'elenco è nella pagina [Releases](https://github.com/mango-craft/mango-craft/releases); le 0.x sono segnate come *pre-release*.
+
+**Scorciatoia**: se hai già un'istanza del pack, tasto destro → *Copia*, poi cambia solo l'indirizzo nel comando prima dell'avvio (passo 5). Le mod già scaricate restano e l'installer scarica solo le differenze.
 
 ## Creare un'istanza
 
