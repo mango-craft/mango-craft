@@ -658,6 +658,11 @@ hash = "c490f7b680875f034af39a1556911d6edb1dcdd76a114ee6a4eca0f158cd92b2"
 metafile = true
 
 [[files]]
+file = "mods/framework.pw.toml"
+hash = "dd0153bc05a3ffc8592dfaf35b4e8014127e6e1b352d7c18462d49a1ed7a5035"
+metafile = true
+
+[[files]]
 file = "mods/friends-and-foes-forge.pw.toml"
 hash = "ef02ac9f94868b5c1093b044f1d33ad944cc252e674b20c77ddbb4155566dd1f"
 metafile = true
@@ -685,6 +690,11 @@ metafile = true
 [[files]]
 file = "mods/glitchcore.pw.toml"
 hash = "e53646f88aeb6bd54c38db50da972abdac91e83c145a8f974107b0ca103b15bc"
+metafile = true
+
+[[files]]
+file = "mods/goblin-traders.pw.toml"
+hash = "29abe36be13fe414e13125140f1c4fe373f7daf79a11ba511e0f77a47ea7f946"
 metafile = true
 
 [[files]]

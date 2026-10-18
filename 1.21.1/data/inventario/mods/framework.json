@@ -1,0 +1,42 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Framework",
+ "file": "framework-neoforge-1.21.1-0.13.11.jar",
+ "side": "both",
+ "source": "curseforge",
+ "hash_format": "sha1",
+ "hash": "e46eb138fbb13a12f37154fb4ec407d64b326475",
+ "mods": [
+  {
+   "modid": "framework",
+   "name": "Framework",
+   "version": "0.13.11",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "framework"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

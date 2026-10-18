@@ -1,35 +1,9 @@
-Aggiungi mod Modrinth — 2026-10-18
-== macaws-roofs 2.3.2 (jiXRXiSt)
-Project "Macaw's Roofs" successfully added! (mcw-roofs-2.3.2-mc1.21.1neoforge.jar)
-== macaws-paths-and-pavings 1.1.1 (tlymsxUG)
-Project "Macaw's Paths and Pavings" successfully added! (mcw-mcwpaths-1.1.1-mc1.21.1neoforge.jar)
-== macaws-bridges 3.1.2 (aQ7rY7ng)
-Project "Macaw's Bridges" successfully added! (mcw-bridges-3.1.2-mc1.21.1neoforge.jar)
-== macaws-windows 2.4.2 (rQUE4LCz)
-Project "Macaw's Windows" successfully added! (mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar)
-== diagonal-fences v21.1.1-1.21.1-NeoForge (bgR1e0O5)
+Aggiungi mod CurseForge — 2026-10-18
+== https://www.curseforge.com/minecraft/mc-mods/framework
+Looking up CurseForge slug...
+Project "Framework" successfully added! (framework-neoforge-1.21.1-0.13.11.jar)
+== https://www.curseforge.com/minecraft/mc-mods/goblin-traders
+Looking up CurseForge slug...
 Finding dependencies...
 All dependencies are already added!
-Project "Diagonal Fences" successfully added! (DiagonalFences-v21.1.1-1.21.1-NeoForge.jar)
-== diagonal-walls v21.1.2-1.21.1-NeoForge (2k3GCxEt)
-Finding dependencies...
-All dependencies are already added!
-Project "Diagonal Walls" successfully added! (DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar)
-== diagonal-windows v21.1.1-1.21.1-NeoForge (IwUmOLxe)
-Finding dependencies...
-All dependencies are already added!
-Project "Diagonal Windows" successfully added! (DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar)
-== chimes 2.1.1 (KIYfGvje)
-Project "Chimes" successfully added! (Chimes-v2.1.1-1.21.1-NeoForge.jar)
-== exposure 1.9.19 (iBvaR6AK)
-Project "Exposure" successfully added! (exposure-neoforge-1.21.1-1.9.19.jar)
-== guard-villagers 2.4.12 (JyXugpy2)
-Project "Guard Villagers" successfully added! (guardvillagers-2.4.12-1.21.1.jar)
-== every-compat 1.21-2.11.54 (Zhg9H64v)
-Finding dependencies...
-All dependencies are already added!
-Project "Every Compat (Wood Good)" successfully added! (everycomp-1.21-2.11.54-neoforge.jar)
-== copycats 3.0.9+mc.1.21.1-neoforge (bPYeUWZx)
-Finding dependencies...
-All dependencies are already added!
-Project "Create: Copycats+" successfully added! (copycats-3.0.9+mc.1.21.1-neoforge.jar)
+Project "Goblin Traders" successfully added! (goblintraders-neoforge-1.21.1-1.11.2.jar)

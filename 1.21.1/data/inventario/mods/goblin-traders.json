@@ -1,0 +1,89 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Goblin Traders",
+ "file": "goblintraders-neoforge-1.21.1-1.11.2.jar",
+ "side": "both",
+ "source": "curseforge",
+ "hash_format": "sha1",
+ "hash": "4507faefb977321b598daa3fb35d7e1a9a03eb80",
+ "mods": [
+  {
+   "modid": "goblintraders",
+   "name": "Goblin Traders",
+   "version": "1.11.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "framework",
+     "type": "required",
+     "range": "[0.9.4,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "goblintraders"
+ ],
+ "entities": {
+  "goblintraders:goblin_trader": "Goblin Trader",
+  "goblintraders:vein_goblin_trader": "Vein Goblin Trader"
+ },
+ "items": {
+  "goblintraders:goblin_trader_spawn_egg": "Goblin Trader Spawn Egg",
+  "goblintraders:vein_goblin_trader_spawn_egg": "Vein Goblin Trader Spawn Egg"
+ },
+ "data": {
+  "goblin_trades": [
+   "goblintraders:goblin_trader/common",
+   "goblintraders:goblin_trader/epic",
+   "goblintraders:goblin_trader/legendary",
+   "goblintraders:goblin_trader/rare",
+   "goblintraders:goblin_trader/uncommon",
+   "goblintraders:vein_goblin_trader/common",
+   "goblintraders:vein_goblin_trader/epic",
+   "goblintraders:vein_goblin_trader/legendary",
+   "goblintraders:vein_goblin_trader/rare",
+   "goblintraders:vein_goblin_trader/uncommon"
+  ],
+  "loot_table": [
+   "goblintraders:entities/goblin_trader",
+   "goblintraders:entities/vein_goblin_trader"
+  ],
+  "tags/worldgen/structure": [
+   "goblintraders:on_mystery_maps"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/worldgen/structure": {
+   "goblintraders:on_mystery_maps": [
+    "minecraft:pillager_outpost",
+    "minecraft:shipwreck_beached",
+    "minecraft:swamp_hut",
+    "minecraft:monument",
+    "minecraft:buried_treasure",
+    "minecraft:ancient_city",
+    "minecraft:trail_ruins",
+    "minecraft:trial_chambers"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}
