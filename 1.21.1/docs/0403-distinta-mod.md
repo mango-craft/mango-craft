@@ -13,7 +13,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 ## Correzioni emerse dalla verifica
 
 - **Sodium Dynamic Lights → LambDynamicLights**: la prima era un port non ufficiale fermo a gennaio 2025; LambDynamicLights è l'originale, con build NeoForge 1.21.1 (4.8.11, agosto 2026). Le due sono incompatibili tra loro.
-- **Enhanced Celestials**: scelta la mod originale (6.0.2.6), che include già lune di sangue e del raccolto. "Enhanced Celestials 2" è una riscrittura divisa in libreria + addon degli eventi, molto meno diffusa.
+- **Enhanced Celestials**: scelta la mod originale (6.0.2.6), che include già lune di sangue e del raccolto. Sostituita dalla 0.5.1 con Enhanced Celestials 2 (Core + Default Lunar Events), il suo seguito ufficiale (`../lavoro/0708-enhanced-celestials-2.md`).
 - **Versioni aggiornate**: Sodium 0.8.13 · Apotheosis 8.9.0 · Truly Modular (Miapi) 2.3.9 · HerbalBrews 1.1.4 · BotanyPotsAdditions 1.1.0 · Animal Pens 2.5.0 · Easy Villagers 1.1.47.
 - **Release da fissare** (le versioni più nuove sono beta): Create Crafts & Additions 1.6.0 · Create: Enchantment Industry 2.4.2 · Simple Backups 4.0.21 · JEI 19.51.0.418 · Polymorph 1.1.0.
 - **Create 6.0.10**: tutti gli addon Create verificati sono compilati per questa versione.
@@ -238,7 +238,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Subtle Effects | [`subtle-effects`](https://modrinth.com/mod/subtle-effects) MR | 1.15.0 | 2026-10-07 | release | ✅ |  |
 | Particle Rain | [`particle-rain`](https://modrinth.com/mod/particle-rain) MR | v4.0.1+1.21.1-neoforge | 2026-10-07 | release | ✅ |  |
 | LambDynamicLights | [`lambdynamiclights`](https://modrinth.com/mod/lambdynamiclights) MR | 4.8.11+1.21.1 | 2026-08-31 | release | ✅ | Sostituisce Sodium Dynamic Lights (port non ufficiale); ultima build per la 1.21 |
-| Enhanced Celestials | [`enhanced-celestials`](https://modrinth.com/mod/enhanced-celestials) MR | 6.0.2.6-neoforge | 2026-08-07 | release | ✅ | Mod originale, include lune di sangue e del raccolto; richiede CorgiLib + Data Anchor |
+| ~~Enhanced Celestials~~ | ~~`enhanced-celestials`~~ | ~~6.0.2.6-neoforge~~ | ~~2026-08-07~~ | ~~release~~ | — | Tolta nella 0.5.1: sostituita da Enhanced Celestials 2 (righe in fondo) |
 | Travelers Titles | [`travelers-titles`](https://modrinth.com/mod/travelers-titles) MR | 1.21.1-NeoForge-5.1.3 | 2025-03-11 | release | ⚠️ | Ultima build di marzo 2025 |
 | Not Enough Animations | [`not-enough-animations`](https://modrinth.com/mod/not-enough-animations) MR | 1.12.6-1.21.1 - NeoForge | 2026-09-19 | release | ✅ |  |
 | Entity Model Features (EMF) | [`entity-model-features`](https://modrinth.com/mod/entity-model-features) MR | 3.3.12-neoforge-1.21 | 2026-10-15 | release | ✅ |  |
@@ -338,9 +338,11 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Elysium API (dipendenza) | [`elysium-api`](https://modrinth.com/mod/elysium-api) MR | 1.21.1-2.0.1 | 2026-08-22 | release | ✅ | Richiesta da jadens-nether-expansion. GPL-2.0-only. Pack 0.5.0 |
 | Lodestone (dipendenza) | [`lodestonelib`](https://modrinth.com/mod/lodestonelib) MR | 1.8.2 | 2026-01-12 | release | ✅ | Richiesta da jadens-nether-expansion. LGPL-3.0-only. Pack 0.5.0 |
 | Fragmentum (dipendenza) | [`fragmentum`](https://modrinth.com/mod/fragmentum) MR | 5.4.0 | 2026-10-16 | release | ✅ | Richiesta da aquamirae. Licenza Obscuria (LicenseRef-Obscuria-Ecosystem). Pack 0.5.0 |
+| Enhanced Celestials 2: Core | [`enhanced-celestials-2-core`](https://modrinth.com/mod/enhanced-celestials-2-core) MR | 2.0.3.3-neoforge | 2026-09-07 | release | ✅ | Richiede CorgiLib ≥ 5.0.0.9 e Data Anchor ≥ 2.0.0.16; incompatibile con Enhanced Celestials. Pack 0.5.1 |
+| Enhanced Celestials 2: Default Lunar Events | [`enhanced-celestials-2-default-lunar-events`](https://modrinth.com/mod/enhanced-celestials-2-default-lunar-events) MR | 2.0.1.3-neoforge | 2026-09-03 | release | ✅ | Richiede il Core. Pack 0.5.1 |
 
 ## Librerie principali (arrivano come dipendenze)
 
 Versioni ricontrollate sui metafile del pack il 18/10/2026 (prima alcune erano quelle della verifica, non quelle installate). Moog's Structure Lib è passata dalla 3.0.3 alla 3.4.2 nella 0.5.0, perché Moog's Nether Structures chiede almeno la 3.3.0 (bug B28).
 
-Tutte con build NeoForge 1.21.1: YUNG's API 5.1.9 · Placebo 9.9.4 · Moog's Structure Lib 3.4.2 · Create: Dragons Plus 1.11.9 · Sophisticated Core 1.5.13 · Fzzy Config 0.7.7 · Bookshelf 21.1.81 · Prickle 21.1.11 · CorgiLib 5.0.0.9 · Data Anchor 2.0.0.14 · Puzzles Lib 21.1.64 · Resourceful Config 3.0.11 · CreativeCore 2.13.50. Non verificate una per una ma standard: Architectury, Balm, GeckoLib, Curios, Accessories, Citadel, Lionfish API, Blueprint, TerraBlender, NexusLib, Cristel Lib, Resourceful Lib.
+Tutte con build NeoForge 1.21.1: YUNG's API 5.1.9 · Placebo 9.9.4 · Moog's Structure Lib 3.4.2 · Create: Dragons Plus 1.11.9 · Sophisticated Core 1.5.13 · Fzzy Config 0.7.7 · Bookshelf 21.1.81 · Prickle 21.1.11 · CorgiLib 5.0.0.9 · Data Anchor 2.0.0.17 (dalla 0.5.1; prima 2.0.0.14) · Puzzles Lib 21.1.64 · Resourceful Config 3.0.11 · CreativeCore 2.13.50. Non verificate una per una ma standard: Architectury, Balm, GeckoLib, Curios, Accessories, Citadel, Lionfish API, Blueprint, TerraBlender, NexusLib, Cristel Lib, Resourceful Lib.

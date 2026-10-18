@@ -6,7 +6,7 @@ hash = "8eef0da096300652e97f70110ea78f45c7fa3e7556352ab29b088bb7a4164a2d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "994c284eda38c5ecf38a80f1df7b975c3d05a65871164e34260c1b2ab5db5e03"
+hash = "7ee42603076d06e6d6f5c76f6dfaa6e1930c3555f3af49e92bce6bc611d5b72a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/bountifulfares/readme.md"
@@ -29,16 +29,20 @@ file = "config/paxi/datapacks/matteo_tweaks/data/c/tags/item/foods/cooked_fishes
 hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/blood_moon.json"
-hash = "35bafcb287f69a8d54ae4c0eb0b355c06df1b8eab2fab2a55379d42732ed0307"
+file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/event_modifier/blood_moon_spawn_category_multiplier.json"
+hash = "7abc66749a756b008c4217f5e62c9021012ed47a2ea4a54fd0b7499ba573d47d"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/readme.md"
-hash = "2e34735d00e8d3ef41bf2d126ab6fd77d67d6e72791a05dc9dba68fb99824655"
+file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/event_modifier/super_blood_moon_spawn_category_multiplier.json"
+hash = "cd3d01d91f3b7e9169eed98b5546434236688767ec263d0dc8bd1d10314706d2"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials/enhancedcelestials/lunar/event/super_blood_moon.json"
-hash = "4cda6adbe44c982250182ba15c29192bba737c450c9ce18f81ea554ebe06c6ba"
+file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/event_probability/blood_moon.json"
+hash = "cf96f193d997e47193a3b55b5b75a4e4dd54db4a22795af9fb15dc8da8f1b497"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md"
+hash = "e8a217a38580e4e3116c6d50cb5984694b3e62bb69877239001878969719dfc9"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
@@ -524,7 +528,7 @@ metafile = true
 
 [[files]]
 file = "mods/data-anchor.pw.toml"
-hash = "b1ec14892ade3126c6238f82a2adbd9154e8cb68891e3f41d61746c08aea07ab"
+hash = "64bdeecf2b2217fc22d5237a6bcc3b5f54a4352233040aaa0dbec4e8216f6536"
 metafile = true
 
 [[files]]
@@ -613,8 +617,13 @@ hash = "bfacd9df75ed4c19ba58ed123f6a9dab58ab6e4b66d412c019db1d7e3bf73e78"
 metafile = true
 
 [[files]]
-file = "mods/enhanced-celestials.pw.toml"
-hash = "e50f87650e3a5becf3cd1772e8053a8bc04c48859a6fa814e75e6c71eaa87e6c"
+file = "mods/enhanced-celestials-2-core.pw.toml"
+hash = "092c2fe392d74839d1210f7c5ecf90de3f7c230cc3f5ca064cf284b29ec97f30"
+metafile = true
+
+[[files]]
+file = "mods/enhanced-celestials-2-default-lunar-events.pw.toml"
+hash = "70f586b80beb657a8676b1147b1b96c4abd0aa421c819aa138038e082c41bc4d"
 metafile = true
 
 [[files]]

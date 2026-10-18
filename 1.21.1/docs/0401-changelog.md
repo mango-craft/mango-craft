@@ -10,6 +10,17 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.5.1 — 18/10/2026 · lune (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: no. Il calendario delle lune riparte da zero nei mondi esistenti.
+- **Lune**: **Enhanced Celestials 2** (Core + Default Lunar Events) al posto di Enhanced Celestials, il suo seguito ufficiale. La vecchia mod mostrava a ogni ingresso nel mondo una schermata che annunciava questa. Stesse lune (sangue, raccolto, blu, super), con due effetti nuovi per la luna di sangue: mostri che compaiono più vicini e assedio di zombi ai villaggi.
+- **Datapack**: lune di sangue ribilanciate nel formato nuovo: più rare (peso 5 invece di 10) e mostri ×2 / ×4 (super luna) invece di ×2,25 / ×4,5.
+- **Librerie aggiornate**: **Data Anchor** dalla 2.0.0.14 alla 2.0.0.17 (Enhanced Celestials 2 chiede almeno la 2.0.0.16).
+- **Strumenti**: il controllo dei nomi segnala anche le mod dichiarate incompatibili tra loro.
+- **Stato**: ✅ provata il 18/10/2026 (due avvii in 73–88 secondi, 28.612 ricette come nella 0.5.0; Enhanced Celestials 2 carica le lune e i nostri tre file senza errori) e rilasciata come pre-release `1.21.1-v0.5.1`. Quante lune di sangue escono davvero si conta nel mondo di prova, con il comando delle previsioni.
+- **Problemi noti**: nuovo B32 (Enhanced Celestials 2 scrive in chat, a ogni ingresso nel mondo, che le impostazioni di traduzione non sono configurate; si corregge nella 0.5.2).
+
 ## 0.5.0 — 18/10/2026 · tappa 4 (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).

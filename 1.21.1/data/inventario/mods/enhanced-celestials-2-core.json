@@ -1,0 +1,93 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Enhanced Celestials 2: Core",
+ "file": "Enhanced-Celestials-2-Core-NeoForge-1.21.1-2.0.3.3.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "e23e093260ae2fca326ab102325d4a2273da9c5f4d15b00c9e42b3a9d47b3b655920cc3e012350ed1e500284762ed8ca99b840fd2a88f254f9c74f62e96c2a64",
+ "mods": [
+  {
+   "modid": "enhancedcelestials2core",
+   "name": "Enhanced Celestials 2: Core",
+   "version": "2.0.3.3",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "corgilib",
+     "type": "required",
+     "range": "[5.0.0.9,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "dataanchor",
+     "type": "required",
+     "range": "[2.0.0.16,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "enhancedcelestials",
+     "type": "incompatible",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "enhancedcelestials2core",
+  "minecraft"
+ ],
+ "data": {
+  "append_loot_tables": [
+   "enhancedcelestials2core:minecraft/chests/abandoned_mineshaft",
+   "enhancedcelestials2core:minecraft/chests/buried_treasure",
+   "enhancedcelestials2core:minecraft/chests/desert_pyramid",
+   "enhancedcelestials2core:minecraft/chests/igloo_chest",
+   "enhancedcelestials2core:minecraft/chests/jungle_temple",
+   "enhancedcelestials2core:minecraft/chests/pillager_outpost",
+   "enhancedcelestials2core:minecraft/chests/ruined_portal",
+   "enhancedcelestials2core:minecraft/chests/shipwreck_supply",
+   "enhancedcelestials2core:minecraft/chests/shipwreck_treasure",
+   "enhancedcelestials2core:minecraft/chests/simple_dungeon",
+   "enhancedcelestials2core:minecraft/chests/stronghold_corridor",
+   "enhancedcelestials2core:minecraft/chests/stronghold_crossing",
+   "enhancedcelestials2core:minecraft/chests/stronghold_library",
+   "enhancedcelestials2core:minecraft/chests/underwater_ruin_big",
+   "enhancedcelestials2core:minecraft/chests/underwater_ruin_small",
+   "enhancedcelestials2core:minecraft/chests/woodland_mansion"
+  ],
+  "enhancedcelestials2core": [
+   "enhancedcelestials2core:lunar/event/default",
+   "minecraft:lunar/dimension_settings/overworld"
+  ],
+  "tags/enhancedcelestials2core": [
+   "enhancedcelestials2core:lunar/event/moon"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/enhancedcelestials2core": {
+   "enhancedcelestials2core:lunar/event/moon": [
+    "enhancedcelestials2core:default"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}
