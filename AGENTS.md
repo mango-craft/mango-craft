@@ -78,6 +78,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 
 - Lo spazio di lavoro raggiunge **solo GitHub** dalla riga di comando. L'API di Modrinth si legge con lo strumento web. **CurseForge non è raggiungibile**: i suoi dati si ricavano dalle pagine o dalla build di GitHub.
 - Compilare ed eseguire codice scaricato (packwiz compreso) **non è permesso** qui: i file di packwiz si scrivono con script propri, e packwiz vero gira nelle GitHub Actions.
+- Da qui si possono mandare commit su `main` e avviare i workflow (`gh workflow run`), ma **non mandare tag** né scrivere tramite l'API di GitHub: per una release si usa il workflow **Release** con il tag come parametro. I log dei workflow non sono leggibili da qui: si controlla l'esito (`gh run view`) e il risultato (i file nel repository).
 - Il PC di Matteo può essere collegato alla sessione: **non toccare la cartella di Prism senza il suo via**.
 - Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file.
 

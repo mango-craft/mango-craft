@@ -42,7 +42,7 @@ Il pack di ogni versione di Minecraft sta in `<versione>/pack/` e segue il forma
 |---|---|---|
 | **Controllo pack** (`check.yml`) | A ogni push su `main` e a ogni pull request | Lancia `packwiz refresh` e `check_pack.py`. Se l'indice cambia, lo salva con un commit automatico (sulle pull request invece fallisce) |
 | **Aggiungi mod CurseForge** (`curseforge-add.yml`) | A mano (scheda *Actions* → *Run workflow*) | Aggiunge una o più mod dai link ai file esatti (`…/files/<id>`), rifiutando le dipendenze, poi aggiorna l'indice e fa il commit |
-| **Release** (`release.yml`) | Al push di un tag `<versione MC>-vX.Y.Z` | Controlla che il tag corrisponda a `pack.toml`, esporta un `.mrpack` con le sole mod Modrinth, crea lo zip della documentazione e pubblica la release |
+| **Release** (`release.yml`) | Al push di un tag `<versione MC>-vX.Y.Z`, oppure a mano indicando il tag da creare | Controlla che il tag corrisponda a `pack.toml`, esporta un `.mrpack` con le sole mod Modrinth, crea lo zip della documentazione e pubblica la release |
 
 packwiz viene installato in ogni workflow con `go install` a un commit fissato. Le dipendenze di una mod CurseForge si rifiutano perché packwiz riconosce come "già presenti" solo le mod prese da CurseForge, e aggiungerebbe doppioni di quelle prese da Modrinth.
 
@@ -51,7 +51,9 @@ packwiz viene installato in ogni workflow con `go install` a un commit fissato. 
 1. Aggiorna `version` in `<versione>/pack/pack.toml` (e `[versions]` se cambia NeoForge).
 2. Aggiungi la voce in `<versione>/CHANGELOG.md`: titolo `## X.Y.Z — data`, versione di NeoForge, se serve un mondo nuovo, cosa cambia.
 3. Rigenera l'indice e lancia i controlli, poi commit e push su `main`. Aspetta che il **Controllo pack** sia verde (e, se ha fatto un commit automatico, scarica l'aggiornamento).
-4. Crea il tag e mandalo: `git tag 1.21.1-vX.Y.Z && git push origin 1.21.1-vX.Y.Z`.
+4. Crea il tag, in uno dei due modi:
+   - **dal computer**: `git tag 1.21.1-vX.Y.Z && git push origin 1.21.1-vX.Y.Z`;
+   - **da GitHub** (è il modo che usa Claude, che non può mandare tag): scheda *Actions* → **Release** → *Run workflow*, scrivendo il tag. Il workflow crea il tag sull'ultimo commit di `main` e rifiuta un tag già esistente.
 5. Il workflow **Release** pubblica i file. Le istanze "mondo vero" si aggiornano cambiando il tag nel loro indirizzo.
 
 I tag di release non si spostano e non si cancellano: per correggere una versione se ne fa una nuova.

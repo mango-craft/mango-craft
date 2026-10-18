@@ -3,6 +3,11 @@ name: Release
 on:
   push:
     tags: ['*-v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag da creare sull'ultimo commit di main e rilasciare (es. 1.21.1-v0.1.1)
+        required: true
 
 permissions:
   contents: write
@@ -16,10 +21,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Crea il tag (avvio manuale)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          TAG: ${{ inputs.tag }}
+        run: |
+          if ! [[ "$TAG" =~ ^[0-9][0-9.]*-v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Tag non valido: $TAG (atteso <versione MC>-vX.Y.Z)"; exit 1
+          fi
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null; then
+            echo "Il tag $TAG esiste già: i tag di release non si spostano"; exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "Mango Craft $TAG"
+          git push origin "refs/tags/$TAG"
+
       - name: Leggi il tag
         id: info
         env:
-          TAG: ${{ github.ref_name }}
+          TAG: ${{ inputs.tag || github.ref_name }}
         run: |
           MC="${TAG%%-v*}"
           VER="${TAG#*-v}"
@@ -72,10 +93,10 @@ jobs:
       - name: Pubblica la release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.ref_name }}
+          TAG: ${{ inputs.tag || github.ref_name }}
           MC: ${{ steps.info.outputs.mc }}
           VER: ${{ steps.info.outputs.ver }}
           PACK: ${{ steps.info.outputs.pack }}
         run: |
           python3 scripts/release_notes.py "$PACK" "$MC/CHANGELOG.md" "$VER" > notes.md
-          gh release create "$TAG" dist/* --title "Mango Craft $MC · v$VER" --notes-file notes.md
+          gh release create "$TAG" dist/* --verify-tag --title "Mango Craft $MC · v$VER" --notes-file notes.md
