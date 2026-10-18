@@ -9,6 +9,7 @@ I file stanno in `pack/config/` e li installa packwiz-installer a ogni avvio del
 | File | Cosa fa | Quando ha effetto | Stato |
 |---|---|---|---|
 | `config/almostunified/tags.json` | 19 tag personalizzati: rende intercambiabili gli ingredienti doppi tra le mod di cucina e magia (farina, impasto di grano, sale, mais, limone, porzioni di formaggio, formaggio di capra) | Al riavvio del gioco, in tutti i mondi | ✅ |
+| `config/enhancedcelestials2core/translations.json` | Traduzioni di Enhanced Celestials 2: modalità `DISABLED`, cioè niente traduzioni scaricate dal sito dell'autore (con `AUTOMATIC`, che sembra il valore di serie, le scarica e le applica da sola) e nessuna richiesta di aiutare a tradurre. Senza il file la mod scrive in chat, a ogni ingresso nel mondo, di configurarle (B32). Nomi dei campi letti dal codice della mod. Per cambiare: `/ecc translate config` in gioco (la modifica resta finché il pack non porta una versione nuova del file) | Al riavvio del gioco | 🧪 0.5.2 |
 | `config/sparsestructures.json5` | Distanze tra le strutture: generale 1.4, villaggi 1, magione 2 | Al riavvio, solo nei chunk nuovi → mondo nuovo | ⚠️ da completare (vedi Strutture) |
 | `config/paxi/datapacks/matteo_tweaks/` | Datapack caricato da Paxi in tutti i mondi (vedi Datapack) | Artefatti e vasi con `/reload`, lune riaprendo il mondo, modificatori di struttura col riavvio del mondo; il bottino vale per le casse non ancora aperte | ✅ |
 

@@ -10,6 +10,16 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.5.2 — 18/10/2026 · shader (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: no.
+- **Shader** (facoltativi): **Iris** 1.8.14-beta.1 (l'unica versione che funziona con Sodium 0.8, ancora beta) ed **Enhanced Celestials 2: Shader Support** (i colori delle lune con gli shader). Nessun pacchetto di shader incluso: senza attivarne uno il gioco resta com'era. Le mod del pack con parti apposta per Iris sono state controllate prima (`../lavoro/0709-shader.md`); nessuna libreria nuova.
+- **Config**: traduzioni di Enhanced Celestials 2 spente (`config/enhancedcelestials2core/translations.json`): niente traduzioni scaricate da internet e niente più messaggio in chat (B32).
+- **Strumenti**: il workflow Esamina mod legge anche i testi del codice compilato delle mod (nomi dei file di config, comandi).
+- **Stato**: 🧪 in prova su `dev`.
+- **Problemi noti**: da provare; B32 corretto, da confermare in prova.
+
 ## 0.5.1 — 18/10/2026 · lune (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
