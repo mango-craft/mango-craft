@@ -1,0 +1,47 @@
+name: Esamina mod
+
+# Legge i .jar di mod che NON sono nel pack (versione, dipendenze, dati) per valutarle.
+# Il risultato va in <versione>/data/esami/<slug>.md con un commit sul ramo scelto.
+on:
+  workflow_dispatch:
+    inputs:
+      pack:
+        description: Cartella del pack (serve per versione di Minecraft e loader)
+        required: true
+        default: 1.21.1/pack
+      mods:
+        description: "Mod da esaminare, separate da spazi: slug (ultima release), slug@versione o id di versione"
+        required: true
+      filtro:
+        description: "Espressione regolare sui percorsi dei .json di cui elencare i valori (- = nessuno)"
+        required: true
+        default: "-"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pack-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  esamina:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Esamina
+        env:
+          PACK: ${{ inputs.pack }}
+          MODS: ${{ inputs.mods }}
+          FILTRO: ${{ inputs.filtro }}
+        run: |
+          out="$(dirname "$PACK")/data/esami"
+          # shellcheck disable=SC2086
+          python3 scripts/esamina.py "$PACK" "$out" "$FILTRO" $MODS
+
+      - name: Salva
+        env:
+          MODS: ${{ inputs.mods }}
+        run: |
+          bash scripts/ci_commit.sh "chore: esame di mod fuori dal pack [skip ci]" "Esaminate: $MODS"
