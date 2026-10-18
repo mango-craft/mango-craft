@@ -11,7 +11,7 @@ Ogni voce può essere:
 - un id di versione di 8 caratteri.
 
 Stampa una riga per voce, separata da tabulazioni:
-id versione · slug · numero di versione · tipo (release/beta/alpha) · data
+id versione · slug · numero di versione · tipo (release/beta/alpha) · data · id progetto
 Esce con errore se una voce non esiste o non è per Minecraft/loader del pack.
 Serve la rete verso api.modrinth.com: gira nelle GitHub Actions.
 """
@@ -83,7 +83,7 @@ def main(pack_dir: str, entries: list[str]) -> None:
         v = resolve(entry.strip(), mc, loader)
         project = api(f"/project/{v['project_id']}")
         print("\t".join([v["id"], project["slug"], v["version_number"], v.get("version_type", "?"),
-                         v["date_published"][:10]]))
+                         v["date_published"][:10], v["project_id"]]))
 
 
 if __name__ == "__main__":

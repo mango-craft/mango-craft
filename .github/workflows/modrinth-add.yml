@@ -60,9 +60,10 @@ jobs:
           cd "$PACK"
           ls mods > "$RUNNER_TEMP/prima.txt"
           failed=0
-          while IFS=$'\t' read -r id slug ver kind date; do
+          while IFS=$'\t' read -r id slug ver kind date pid; do
             echo "== $slug $ver ($id)" >> "$LOG"
-            if ! packwiz -y modrinth add --version-id "$id" >> "$LOG" 2>&1; then
+            # packwiz vuole anche l'id del progetto insieme a quello della versione
+            if ! packwiz -y modrinth add --project-id "$pid" --version-id "$id" >> "$LOG" 2>&1; then
               echo "ERRORE: $slug non aggiunta" >> "$LOG"
               failed=1
             fi
