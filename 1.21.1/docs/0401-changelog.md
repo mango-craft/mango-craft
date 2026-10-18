@@ -19,7 +19,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 - **Mob**: **Aquamirae** (boss e mob degli oceani ghiacciati; libreria nuova **Fragmentum**), **Creeper Overhaul** (creeper diversi per bioma).
 - **Librerie aggiornate**: **Moog's Structure Lib** dalla 3.0.3 alla 3.4.2 (Moog's Nether Structures chiede almeno la 3.3.0).
 - **Stato**: 🧪 in prova su `dev`.
-- **Problemi noti**: B28 (il gioco non partiva per la libreria vecchia) risolto prima del rilascio.
+- **Problemi noti**: B28 (il gioco non partiva per la libreria vecchia) risolto prima del rilascio; B29 (ricette e suoni mancanti di Jaden's, minori). Prima prova 18/10: avvio in 73 secondi, 28.612 ricette, mondo nuovo creato senza errori, il Nether di Jaden's si inizializza correttamente.
 
 ## 0.4.0 — 18/10/2026 · tappa 3 (pre-release di prova)
 
