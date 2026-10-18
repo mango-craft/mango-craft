@@ -9,8 +9,9 @@ on:
 permissions:
   contents: write
 
+# Un solo workflow alla volta per ramo: tutti possono fare commit
 concurrency:
-  group: check-${{ github.ref }}
+  group: pack-${{ github.ref }}
   cancel-in-progress: false
 
 env:
@@ -32,30 +33,22 @@ jobs:
           go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
           echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
-      - name: Aggiorna l'indice con packwiz refresh
+      - name: Indice, controlli, inventario e controllo dei nomi
+        id: checks
         run: |
+          status=0
           for pack in */pack/pack.toml; do
-            (cd "$(dirname "$pack")" && packwiz refresh)
+            bash scripts/ci_pack.sh "$(dirname "$pack")" || status=1
           done
+          echo "status=$status" >> "$GITHUB_OUTPUT"
 
-      - name: Controlli
+      - name: Salva indice, inventario e rapporto
+        if: github.event_name != 'pull_request'
         run: |
-          for pack in */pack/pack.toml; do
-            python3 scripts/check_pack.py "$(dirname "$pack")"
-          done
+          bash scripts/ci_commit.sh "chore: indice e inventario aggiornati [skip ci]"
 
-      - name: Salva l'indice aggiornato
-        if: github.event_name == 'push'
+      - name: Esito
+        if: steps.checks.outputs.status != '0'
         run: |
-          if git diff --quiet; then
-            echo "Indice già aggiornato."
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -am "chore: indice aggiornato da packwiz refresh [skip ci]"
-            git push
-          fi
-
-      - name: Indice da aggiornare
-        if: github.event_name == 'pull_request'
-        run: git diff --exit-code
+          echo "Controlli falliti: vedi <versione>/data/inventario/controllo.md nel ramo"
+          exit 1

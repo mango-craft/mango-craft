@@ -1,0 +1,276 @@
+#!/usr/bin/env python3
+"""Controllo dei nomi sull'inventario: dipendenze delle mod e nomi usati nel datapack.
+
+Uso: python3 scripts/check_ids.py <cartella pack> <cartella inventario> [--report FILE]
+
+Si basa sull'inventario creato da inventory.py (non serve la rete).
+
+Errori (uscita 1):
+- una mod richiede (dipendenza obbligatoria) una mod che non c'è;
+- nel datapack, per mod presenti nel pack: oggetti, blocchi, liquidi, entità, tag,
+  tabelle del bottino o modificatori che non esistono;
+- condizioni di caricamento che non possono mai essere vere (il file non si
+  caricherebbe mai, senza dare errori in gioco);
+- mod il cui file scaricato non corrisponde all'hash del metafile.
+Avvisi:
+- tabelle del bottino nominate dai modificatori che non esistono (in gioco non danno
+  errori, semplicemente non vengono mai toccate);
+- mod non inventariate (download non riuscito): i loro nomi non si possono verificare.
+Informazioni: file del datapack inattivi perché la loro mod non è nel pack.
+"""
+import json
+import sys
+from collections import defaultdict
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from inventory import categorize  # noqa: E402
+
+BUILTIN_MODS = {"minecraft", "neoforge", "forge", "java", "fml"}
+# Tipo di riferimento -> campo dell'inventario (o categoria di dati)
+FIELDS = {"item": ("items", "blocks"), "block": ("blocks",), "fluid": ("fluids",),
+          "entity_type": ("entities",)}
+
+
+class Index:
+    def __init__(self):
+        self.modids: set[str] = set()
+        self.namespaces: set[str] = set()
+        self.names: dict[str, set[str]] = defaultdict(set)
+        self.data: dict[str, set[str]] = defaultdict(set)
+        self.tags: dict[str, set[str]] = defaultdict(set)
+        self.mods: list[tuple[str, dict]] = []   # (sorgente, voce mod)
+        self.unverified: list[str] = []          # mod non inventariate
+        self.hash_errors: list[str] = []
+
+    def add_doc(self, label: str, d: dict) -> None:
+        for m in d.get("mods", []):
+            if m.get("modid"):
+                self.modids.add(m["modid"])
+                self.mods.append((label, m))
+        self.namespaces.update(d.get("namespaces", []))
+        for field in ("items", "blocks", "fluids", "entities", "effects", "biomes"):
+            self.names[field].update(d.get(field, {}))
+        for cat, ids in d.get("data", {}).items():
+            self.data[cat].update(ids)
+        for cat, tags in d.get("tags", {}).items():
+            self.tags[cat].update(tags)
+
+    def has(self, kind: str, rid: str) -> bool:
+        if kind in FIELDS:
+            return any(rid in self.names[f] for f in FIELDS[kind])
+        if kind == "biome":
+            return rid in self.names["biomes"] or rid in self.data["worldgen/biome"]
+        if kind.startswith("tag:"):
+            return rid in self.tags[f"tags/{kind[4:]}"]
+        return rid in self.data[kind]
+
+
+def load_index(inv: Path) -> Index:
+    idx = Index()
+    for name in ("minecraft.json", "neoforge.json"):
+        p = inv / name
+        if p.exists():
+            idx.add_doc(name[:-5], json.loads(p.read_text(encoding="utf-8")))
+    for p in sorted((inv / "mods").glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        status = d.get("status", "")
+        if status == "ok":
+            idx.add_doc(p.stem, d)
+        elif "hash diverso" in status:
+            idx.hash_errors.append(f"{p.stem}: {status}")
+        else:
+            idx.unverified.append(f"{p.stem} ({d.get('source')}): {status}")
+    return idx
+
+
+def add_datapack_definitions(idx: Index, files: list[tuple[Path, str, str, str, dict]]) -> None:
+    """Quello che il nostro datapack definisce esiste, anche se nessuna mod lo ha."""
+    for _, ns, cat, rid, _ in files:
+        idx.namespaces.add(ns)
+        if cat.startswith("tags/"):
+            idx.tags[cat].add(rid)
+        else:
+            idx.data[cat].add(rid)
+
+
+def parse_conditions(d: dict) -> tuple[set, list, bool]:
+    """-> (mod richieste, [(tipo, id)] richiesti, analizzabile)."""
+    mods, ids, ok = set(), [], True
+
+    def neo(c):
+        nonlocal ok
+        t = c.get("type", "")
+        if t == "neoforge:mod_loaded":
+            mods.add(c.get("modid"))
+        elif t == "neoforge:item_exists":
+            ids.append(("item", c.get("item")))
+        elif t == "neoforge:and":
+            for v in c.get("values", []):
+                neo(v)
+        elif t in ("neoforge:or", "neoforge:not"):
+            ok = False  # non si può dire a priori: niente controllo sulle condizioni
+    for c in d.get("neoforge:conditions", []) or []:
+        neo(c)
+    for c in d.get("bookshelf:load_conditions", []) or []:
+        t, vals = c.get("type", ""), c.get("values", [])
+        if t == "bookshelf:mod_loaded":
+            mods.update(vals)
+        elif t == "bookshelf:block_exists":
+            ids += [("block", v) for v in vals]
+        elif t == "bookshelf:item_exists":
+            ids += [("item", v) for v in vals]
+        elif t:
+            ok = False
+    return mods, ids, ok
+
+
+def collect_refs(node, refs: list, key: str | None = None, parent: dict | None = None) -> None:
+    """Raccoglie (tipo, id) dai campi che contengono nomi di registro."""
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if k in ("neoforge:conditions", "bookshelf:load_conditions"):
+                continue
+            if isinstance(v, (str, list)) and k in ("item", "items", "block", "blocks", "fluid",
+                                                    "tag", "loot_table_id", "lootTable", "loot_table"):
+                for s in ([v] if isinstance(v, str) else v):
+                    if not isinstance(s, str) or ":" not in s:
+                        continue
+                    if k == "tag" or s.startswith("#"):
+                        reg = "block" if ("block" in str(node.get("type", "")) or k.startswith("block")) else "item"
+                        refs.append((f"tag:{reg}", s.lstrip("#")))
+                    elif k in ("item", "items"):
+                        refs.append(("item", s))
+                    elif k in ("block", "blocks"):
+                        refs.append(("block", s))
+                    elif k == "fluid":
+                        refs.append(("fluid", s))
+                    elif k == "loot_table_id":
+                        refs.append(("loot_table?", s))
+                    else:
+                        refs.append(("loot_table", s))
+            elif k == "id" and isinstance(v, str) and ":" in v and ("count" in node or key in ("result", "results", "output")):
+                refs.append(("item", v))
+            else:
+                collect_refs(v, refs, k, node)
+    elif isinstance(node, list):
+        for v in node:
+            collect_refs(v, refs, key, parent)
+
+
+def tag_refs(cat: str, d: dict) -> list:
+    reg = cat[len("tags/"):]
+    kind = {"item": "item", "block": "block", "fluid": "fluid", "entity_type": "entity_type",
+            "worldgen/biome": "biome"}.get(reg, reg)
+    out = []
+    for v in d.get("values", []):
+        if isinstance(v, dict):
+            if not v.get("required", True):
+                continue
+            v = v.get("id", "")
+        if not isinstance(v, str) or ":" not in v:
+            continue
+        out.append((f"tag:{reg}", v[1:]) if v.startswith("#") else (kind, v))
+    return out
+
+
+def datapack_files(pack: Path) -> list:
+    out = []
+    for dp in sorted((pack / "config" / "paxi" / "datapacks").glob("*/data")):
+        for p in sorted(dp.rglob("*.json")):
+            parts = p.relative_to(dp).parts
+            c = categorize(list(parts[1:]))
+            if not c:
+                continue
+            cat, path = c
+            try:
+                d = json.loads(p.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                continue  # lo segnala già check_pack.py
+            out.append((p, parts[0], cat, f"{parts[0]}:{path}", d))
+    return out
+
+
+def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
+    pack, inv = Path(pack_dir), Path(inv_dir)
+    idx = load_index(inv)
+    errors, warnings, inactive = [], [], []
+    errors += [f"File scaricato diverso dal metafile: {e}" for e in idx.hash_errors]
+
+    # 1. Dipendenze obbligatorie
+    present = idx.modids | BUILTIN_MODS
+    for label, m in idx.mods:
+        for dep in m.get("deps", []):
+            if dep.get("type") == "required" and dep.get("modid") not in present:
+                who = m["modid"] + (f" (dentro {m['jar']})" if m.get("jar") else "")
+                errors.append(f"Dipendenza mancante: `{who}` [{label}] richiede `{dep['modid']}` {dep.get('range') or ''}".rstrip())
+
+    # 2. Datapack
+    files = datapack_files(pack)
+    add_datapack_definitions(idx, files)
+    can_verify = not idx.unverified
+    for p, ns, cat, rid, d in files:
+        rel = p.relative_to(pack).as_posix()
+        if not isinstance(d, dict):
+            continue
+        mods, cond_ids, analyzable = parse_conditions(d)
+        missing_mods = [m for m in mods if m not in present]
+        missing_ns = [i for _, i in cond_ids if i and i.split(":")[0] not in idx.namespaces]
+        if missing_mods or missing_ns:
+            note = " (o è in una mod non inventariata)" if idx.unverified else ""
+            inactive.append(f"`{rel}`: inattivo, manca {', '.join(missing_mods + missing_ns)}{note}")
+            continue
+        if analyzable:
+            for kind, i in cond_ids:
+                if i and not idx.has(kind, i):
+                    errors.append(f"`{rel}`: condizione mai vera, `{i}` non esiste ({kind}): il file non si caricherà mai")
+        if cat.startswith("tags/"):
+            refs = tag_refs(cat, d)
+        elif cat == "loot_modifiers" and rid == "neoforge:global_loot_modifiers":
+            refs = [("loot_modifiers", e) for e in d.get("entries", []) if isinstance(e, str)]
+        else:
+            refs = []
+            collect_refs(d, refs)
+        for kind, i in refs:
+            ins = i.split(":")[0]
+            soft = kind == "loot_table?"
+            k = "loot_table" if soft else kind
+            if ins not in idx.namespaces:
+                if soft:
+                    continue  # tabella di una mod non nel pack: innocuo
+                msg = f"`{rel}`: `{i}` ({k}) appartiene a `{ins}`, che non è nel pack"
+                (warnings if not can_verify else errors).append(msg + ("" if can_verify else " (o è in una mod non inventariata)"))
+                continue
+            if not idx.has(k, i):
+                msg = f"`{rel}`: `{i}` ({k}) non esiste"
+                (warnings if soft else errors).append(msg)
+    warnings += [f"Mod non inventariata, nomi non verificabili: {u}" for u in idx.unverified]
+
+    lines = ["# Controllo dei nomi", "",
+             "File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non modificarlo a mano.", "",
+             f"- Mod nell'inventario: {len(idx.mods)} (mod id), namespace: {len(idx.namespaces)}",
+             f"- File del datapack controllati: {len(files)} ({len(inactive)} inattivi)",
+             f"- **Errori: {len(errors)}** · avvisi: {len(warnings)}", ""]
+    for title, items in (("Errori", errors), ("Avvisi", warnings), ("File inattivi (mod non nel pack)", inactive)):
+        lines.append(f"## {title}")
+        lines.append("")
+        lines += [f"- {x}" for x in sorted(set(items))] or ["- nessuno"]
+        lines.append("")
+    text = "\n".join(lines)
+    print(text)
+    if report:
+        Path(report).parent.mkdir(parents=True, exist_ok=True)
+        Path(report).write_text(text, encoding="utf-8")
+    return 1 if errors else 0
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    rep = None
+    if "--report" in args:
+        i = args.index("--report")
+        rep = args[i + 1]
+        args = args[:i] + args[i + 2:]
+    if len(args) != 2:
+        raise SystemExit(__doc__)
+    sys.exit(main(args[0], args[1], rep))

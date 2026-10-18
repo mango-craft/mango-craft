@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: check-refs/heads/main
+  group: pack-${{ github.ref }}
   cancel-in-progress: false
 
 env:
@@ -50,20 +50,24 @@ jobs:
             printf 'n\nn\nn\n' | packwiz curseforge add "$url"
             echo "::endgroup::"
           done
-          packwiz refresh
 
-      - name: Controlli
+      - name: Indice, controlli, inventario e controllo dei nomi
+        id: checks
         env:
           PACK: ${{ inputs.pack }}
-        run: python3 scripts/check_pack.py "$PACK"
+        run: |
+          status=0
+          bash scripts/ci_pack.sh "$PACK" || status=1
+          echo "status=$status" >> "$GITHUB_OUTPUT"
 
       - name: Commit
         env:
-          PACK: ${{ inputs.pack }}
           URLS: ${{ inputs.urls }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A "$PACK"
-          git commit -m "feat: mod CurseForge aggiunte da GitHub Actions" -m "$URLS"
-          git push
+          bash scripts/ci_commit.sh "feat: mod CurseForge aggiunte da GitHub Actions" "$URLS"
+
+      - name: Esito
+        if: steps.checks.outputs.status != '0'
+        run: |
+          echo "Controlli falliti: vedi <versione>/data/inventario/controllo.md nel ramo"
+          exit 1

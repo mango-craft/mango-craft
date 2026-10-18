@@ -50,11 +50,11 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 ## 5. Aggiungere o cambiare una mod
 
 1. Approvazione esplicita di Matteo.
-2. Versione esatta per **1.21.1 + NeoForge** dall'API di Modrinth (`/v2/project/<slug>/version?game_versions=["1.21.1"]&loaders=["neoforge"]`), preferendo le release.
-3. **Hash verificati**: ricerca inversa `/v2/version_file/<sha512>?algorithm=sha512`, che deve restituire la stessa versione con lo stesso sha1. Gli hash lunghi vanno letti a pezzi (gli strumenti web troncano).
-4. Dipendenze obbligatorie: aggiungere quelle mancanti, segnalarle come librerie nuove.
+2. **Mod da Modrinth**: workflow **Aggiungi mod Modrinth** sul ramo `dev` (`gh workflow run modrinth-add.yml --ref dev -f mods="slug1 slug2@versione …"`). Sceglie l'ultima **release** per 1.21.1 + NeoForge (o la versione indicata), la aggiunge con `packwiz modrinth add` (versione, hash e dipendenze obbligatorie presi da Modrinth) e nel commit elenca versioni, tipo e data scelti e i metafile nuovi (le dipendenze sono **librerie nuove** da segnalare).
+3. **Controllo automatico** (in ogni workflow che tocca il pack): indice, metafile, **inventario** dei .jar (`<versione>/data/inventario/`) e **controllo dei nomi** (`controllo.md`: dipendenze mancanti, nomi del datapack inesistenti). Se fallisce, leggere `controllo.md` nel ramo: i log dei workflow non sono leggibili da qui.
+4. A mano, solo se il workflow non si può usare: versione dall'API di Modrinth (`/v2/project/<slug>/version?game_versions=["1.21.1"]&loaders=["neoforge"]`), hash verificati con la ricerca inversa `/v2/version_file/<sha512>?algorithm=sha512` (stessa versione, stesso sha1; gli hash lunghi vanno letti a pezzi), metafile scritto a mano (formato in `docs/sviluppo.md`), indice con `python3 scripts/packwiz_index.py 1.21.1/pack`, controllo con `python3 scripts/check_pack.py 1.21.1/pack`.
 5. Licenza, data, se genera mondo o strutture (⚠️ = va aggiunta **prima del mondo vero**).
-6. Scrivere il file `.pw.toml` (formato in `docs/sviluppo.md`), rigenerare l'indice con `python3 scripts/packwiz_index.py 1.21.1/pack`, controllare con `python3 scripts/check_pack.py 1.21.1/pack`, aggiornare `docs/verifica-versioni.md`, `CHANGELOG.md` e `context.md`. Nelle GitHub Actions `packwiz refresh` riallinea comunque l'indice.
+6. Aggiornare `docs/verifica-versioni.md`, `CHANGELOG.md` e `context.md`.
 7. **Mod solo CurseForge**: si aggiungono con il workflow **Aggiungi mod CurseForge** (link al file esatto, `…/files/<id>`), che usa `packwiz curseforge add` rifiutando le dipendenze (sono già nel pack da Modrinth). I .jar non entrano mai nel repository. Quelle con distribuzione bloccata vanno scaricate a mano: l'installer mostra pagina e percorso.
 
 ## 6. Regole del datapack `matteo_tweaks`
@@ -80,6 +80,8 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato.
 
 - Lo spazio di lavoro raggiunge **solo GitHub** dalla riga di comando. L'API di Modrinth si legge con lo strumento web. **CurseForge non è raggiungibile**: i suoi dati si ricavano dalle pagine o dalla build di GitHub.
 - Compilare ed eseguire codice scaricato (packwiz compreso) **non è permesso** qui: i file di packwiz si scrivono con script propri, e packwiz vero gira nelle GitHub Actions.
+- Quello che da qui non si raggiunge (Modrinth, CDN, Maven) lo fanno i workflow, che salvano i risultati nel repository: l'**inventario** in `<versione>/data/inventario/` dice cosa contiene ogni .jar (oggetti, blocchi, tag, tabelle del bottino, strutture, ricette di Botany Pots, dipendenze). Usarlo prima di scrivere nomi nel datapack; `python3 scripts/check_ids.py <pack> <inventario>` lo verifica anche in locale.
+- I log del gioco dell'istanza di prova si leggono dal PC di Matteo (solo la cartella `logs` dell'istanza dev, accesso concesso da lui) quando la sessione è collegata.
 - Da qui si possono mandare commit sui rami (`dev`, e `main` tramite merge) e avviare i workflow (`gh workflow run`), ma **non mandare tag** né scrivere tramite l'API di GitHub (pull request mai provate): per una release si usa il workflow **Release** con il tag come parametro. I log dei workflow non sono leggibili da qui: si controlla l'esito (`gh run view`) e il risultato (i file nel repository).
 - Il PC di Matteo può essere collegato alla sessione: **non toccare la cartella di Prism senza il suo via**.
 - Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file.
