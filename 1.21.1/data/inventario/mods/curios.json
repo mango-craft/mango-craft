@@ -1,0 +1,56 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Curios API",
+ "file": "curios-neoforge-9.5.1+1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "5981a267686b744e7e3c227f78cbcd5267c14ac6979a28e814695f4589273998563147207fef4a5cdb7cdbdc39797cd95d9e4abadb55869f18e02a38d0654ae5",
+ "mods": [
+  {
+   "modid": "curios",
+   "name": "Curios API",
+   "version": "9.5.1+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.60,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "curios",
+  "minecraft"
+ ],
+ "data": {
+  "curios": [
+   "curios:slots/back",
+   "curios:slots/belt",
+   "curios:slots/body",
+   "curios:slots/bracelet",
+   "curios:slots/charm",
+   "curios:slots/curio",
+   "curios:slots/hands",
+   "curios:slots/head",
+   "curios:slots/necklace",
+   "curios:slots/ring"
+  ]
+ },
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

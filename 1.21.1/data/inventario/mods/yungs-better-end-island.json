@@ -1,0 +1,113 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "YUNG's Better End Island",
+ "file": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "02923a1a97eb81ec13d69bdc6b7e8b36dfb9e6f1a98adfcf103707ec3afde35831ccd4b210e9b3a9c7662541c38ea593a3d94c12171b4072ea7feafa75c95f96",
+ "mods": [
+  {
+   "modid": "betterendisland",
+   "name": "YUNG's Better End Island",
+   "version": "1.21.1-NeoForge-3.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": null
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0,)",
+     "side": null
+    },
+    {
+     "modid": "yungsapi",
+     "type": "required",
+     "range": "[1.21.1-NeoForge-5.1.4,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "betterendisland",
+  "minecraft"
+ ],
+ "data": {
+  "structure": [
+   "betterendisland:gateway",
+   "betterendisland:pillar_bottom_1",
+   "betterendisland:pillar_bottom_2",
+   "betterendisland:pillar_bottom_3",
+   "betterendisland:pillar_bottom_4",
+   "betterendisland:pillar_bottom_5",
+   "betterendisland:pillar_bottom_6",
+   "betterendisland:pillar_bottom_7",
+   "betterendisland:pillar_bottom_8",
+   "betterendisland:pillar_bottom_9",
+   "betterendisland:pillar_broken_1",
+   "betterendisland:pillar_broken_2",
+   "betterendisland:pillar_broken_3",
+   "betterendisland:pillar_broken_4",
+   "betterendisland:pillar_broken_5",
+   "betterendisland:pillar_broken_6",
+   "betterendisland:pillar_broken_7",
+   "betterendisland:pillar_broken_8",
+   "betterendisland:pillar_broken_9",
+   "betterendisland:pillar_guarded_1",
+   "betterendisland:pillar_guarded_2",
+   "betterendisland:pillar_guarded_3",
+   "betterendisland:pillar_guarded_4",
+   "betterendisland:pillar_guarded_5",
+   "betterendisland:pillar_guarded_6",
+   "betterendisland:pillar_guarded_7",
+   "betterendisland:pillar_guarded_8",
+   "betterendisland:pillar_guarded_9",
+   "betterendisland:pillar_initial_1",
+   "betterendisland:pillar_initial_2",
+   "betterendisland:pillar_initial_3",
+   "betterendisland:pillar_initial_4",
+   "betterendisland:pillar_initial_5",
+   "betterendisland:pillar_initial_6",
+   "betterendisland:pillar_initial_7",
+   "betterendisland:pillar_initial_8",
+   "betterendisland:pillar_initial_9",
+   "betterendisland:spawn_platform",
+   "betterendisland:tower_bottom_open",
+   "betterendisland:tower_broken",
+   "betterendisland:tower_initial"
+  ],
+  "tags/block": [
+   "betterendisland:end_gateway_cannot_place_player_on",
+   "minecraft:dragon_immune"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "betterendisland:end_gateway_cannot_place_player_on": [
+    "minecraft:obsidian",
+    "minecraft:end_stone_bricks",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_wall"
+   ],
+   "minecraft:dragon_immune": [
+    "minecraft:end_stone_bricks",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_slab",
+    "minecraft:end_stone_brick_wall",
+    "minecraft:bell"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

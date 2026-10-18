@@ -1,0 +1,47 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Spice of Life: Carrot Edition",
+ "file": "solcarrot-1.21.1-1.16.6.jar",
+ "side": "both",
+ "source": "curseforge",
+ "hash_format": "sha1",
+ "hash": "32e9bbe18ae1f2f7f672ce08af51ec1928599182",
+ "mods": [
+  {
+   "modid": "solcarrot",
+   "name": "Spice of Life: Carrot Edition",
+   "version": "1.16.6",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "solcarrot"
+ ],
+ "items": {
+  "solcarrot:food_book": "Food Book"
+ },
+ "data": {
+  "recipe": [
+   "solcarrot:food_book"
+  ]
+ },
+ "data_counts": {
+  "advancement": 1
+ },
+ "tags": {},
+ "recipe_types": {
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

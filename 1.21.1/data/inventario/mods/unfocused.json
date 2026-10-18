@@ -1,0 +1,47 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Unfocused",
+ "file": "unfocused-neoforge-0.3.10-1.21.1-sgd.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "72af5cfa3e84a37a227c264e726f1343c3247617098002aabd0229657358aec86df9f54bee7e24de11f2bba5d7ea1f88e3444a7c81b27d5753a0d3d6ef9eea0f",
+ "mods": [
+  {
+   "modid": "unfocused",
+   "name": "Unfocused",
+   "version": "0.3.10-1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "unfocused",
+  "unfocusedtest"
+ ],
+ "data": {
+  "neoforge/biome_modifier": [
+   "unfocused:features"
+  ]
+ },
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

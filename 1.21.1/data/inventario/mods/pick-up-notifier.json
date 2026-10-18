@@ -1,0 +1,46 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Pick Up Notifier",
+ "file": "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "9754f44f3bf084f45b47c88c3830dc37ffc68b4b5d6cf03ca5015177611068e8c1725670d20c0ed4674fb619227b18ccbff39cfc687a46f5258caf91c96db6db",
+ "mods": [
+  {
+   "modid": "pickupnotifier",
+   "name": "Pick Up Notifier",
+   "version": "21.1.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "puzzleslib",
+     "type": "required",
+     "range": "[21.1.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

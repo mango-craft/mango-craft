@@ -1,0 +1,48 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "YUNG's Menu Tweaks",
+ "file": "YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "509327f5f5542246e2b98811b36cf2f7e26fe81b7538f3443b958c0134029e0e1ae8483165adaf1f2c4ee5a531bf8b57a2628305f7caf6bf1301cf34ad46b5fb",
+ "mods": [
+  {
+   "modid": "yungsmenutweaks",
+   "name": "YUNG's Menu Tweaks",
+   "version": "1.21.1-NeoForge-2.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": null
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0,)",
+     "side": null
+    },
+    {
+     "modid": "yungsapi",
+     "type": "required",
+     "range": "[1.21.1-NeoForge-5.1.2,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "bettermenu"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

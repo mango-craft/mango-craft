@@ -1,0 +1,222 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Let's Do Addon Compat",
+ "file": "letsdocompat-neoforge-2.3.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "22678b7094de594e1d8241ad709752a3fa2dce1b22706c768b18e95546c2133ad35d9b32ae70cc6925565d02bbeded9400e85d170fcb2f5c65d05792f3e761de",
+ "mods": [
+  {
+   "modid": "letsdocompat",
+   "name": "[Let's Do Addon] Compat",
+   "version": "2.3.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[9.2.14,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farm_and_charm",
+     "type": "optional",
+     "range": "[1.1.6,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "brewinandchewin",
+  "c",
+  "dehydration",
+  "farm_and_charm",
+  "toughasnails"
+ ],
+ "data": {
+  "hydration_items": [
+   "dehydration:beachparty_items",
+   "dehydration:brewery_items",
+   "dehydration:candlelight_items",
+   "dehydration:cornexpansion_items",
+   "dehydration:farm_and_charm_items",
+   "dehydration:herbalbrews_items",
+   "dehydration:meadow_items"
+  ],
+  "tags/items": [
+   "brewinandchewin:cheese_wedges",
+   "brewinandchewin:pizza_toppings",
+   "c:foods/leafy_green",
+   "c:salad_ingredients",
+   "c:salad_ingredients/cabbage",
+   "farm_and_charm:container",
+   "toughasnails:hydration/10_hydration_drinks",
+   "toughasnails:hydration/20_hydration_drinks",
+   "toughasnails:hydration/30_hydration_drinks",
+   "toughasnails:hydration/50_hydration_drinks"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/items": {
+   "brewinandchewin:cheese_wedges": [
+    "meadow:piece_of_cheese?",
+    "meadow:piece_of_sheep_cheese?",
+    "meadow:piece_of_grain_cheese?",
+    "meadow:piece_of_amethyst_cheese?",
+    "meadow:piece_of_buffalo_cheese?",
+    "meadow:piece_of_goat_cheese?",
+    "meadow:piece_of_warped_cheese?",
+    "candlelight:mozzarella?"
+   ],
+   "brewinandchewin:pizza_toppings": [
+    "farm_and_charm:onion?",
+    "farm_and_charm:lettuce?"
+   ],
+   "c:foods/leafy_green": [
+    "farm_and_charm:lettuce"
+   ],
+   "c:salad_ingredients": [
+    "farm_and_charm:lettuce?"
+   ],
+   "c:salad_ingredients/cabbage": [
+    "#farm_and_charm:cabbage?"
+   ],
+   "farm_and_charm:container": [
+    "minecraft:pumpkin?",
+    "createfood:cacao_mass_bucket?",
+    "farmersdelight:milk_bottle?",
+    "farmersdelight:nether_salad?",
+    "farmersdelight:tomato_sauce?",
+    "meadow:wooden_bucket?",
+    "bakery:jar?",
+    "bakery:tray?",
+    "expandeddelight:glass_jar?",
+    "minecraft:bowl?",
+    "minecraft:glass_bottle?",
+    "minecraft:honey_bottle?",
+    "minecraft:milk_bucket?",
+    "minecraft:water_bucket?",
+    "minecraft:suspicious_stew?",
+    "minecraft:dragon_breath?",
+    "ubesdelight:condensed_milk_bottle?",
+    "ubesdelight:fish_sauce_bottle?",
+    "ubesdelight:sinangag?",
+    "#c:milk?",
+    "#c:milks?",
+    "#c:water_buckets?",
+    "#c:buckets/water?",
+    "#c:buckets/milk?",
+    "#c:milk_buckets?",
+    "#c:condensed_milk?",
+    "#c:milk_bottle?",
+    "#meadow:milk?",
+    "#meadow:water_bottles?"
+   ],
+   "toughasnails:hydration/10_hydration_drinks": [
+    "beachparty:coconut_open?",
+    "beachparty:honey_cocktail?",
+    "beachparty:sweetberry_milkshake?",
+    "beachparty:coconut_milkshake?",
+    "beachparty:chocolate_milkshake?",
+    "beachparty:sweetberry_icecream?",
+    "beachparty:coconut_icecream?",
+    "beachparty:chocolate_icecream?",
+    "beachparty:icecream_coconut?",
+    "beachparty:icecream_cactus?",
+    "beachparty:icecream_chocolate?",
+    "beachparty:icecream_sweetberries?",
+    "beachparty:icecream_melon?",
+    "candlelight:beetroot_salad?",
+    "candlelight:salad?",
+    "candlelight:mozzarella?",
+    "candlelight:fresh_garden_salad?",
+    "candlelight:tomato_mozzarella_salad?",
+    "cornexpansion:corn_syrup?",
+    "farm_and_charm:tomato?",
+    "farm_and_charm:farmer_salad?",
+    "herbalbrews:coffee?",
+    "herbalbrews:milk_coffee?"
+   ],
+   "toughasnails:hydration/20_hydration_drinks": [
+    "beachparty:coconut_cocktail?",
+    "beachparty:sweetberries_cocktail?",
+    "beachparty:cocoa_cocktail?",
+    "beachparty:pumpkin_cocktail?",
+    "beachparty:melon_cocktail?",
+    "brewery:whiskey?",
+    "brewery:whiskey_jojannik?",
+    "brewery:whiskey_lilitusinglemalt?",
+    "brewery:whiskey_cristelwalker?",
+    "brewery:whiskey_maggoallan?",
+    "brewery:whiskey_carrasconlabel?",
+    "brewery:whiskey_ak?",
+    "brewery:whiskey_highland_hearth?",
+    "brewery:whiskey_smokey_reverie?",
+    "brewery:whiskey_jamesons_malt?",
+    "farm_and_charm:strawberry_tea?",
+    "farm_and_charm:nettle_tea?",
+    "farm_and_charm:ribwort_tea?",
+    "farm_and_charm:strawberry_tea_cup?",
+    "farm_and_charm:nettle_tea_cup?",
+    "farm_and_charm:ribwort_tea_cup?",
+    "herbalbrews:green_tea?",
+    "herbalbrews:black_tea?",
+    "herbalbrews:hibiscus_tea?",
+    "herbalbrews:lavender_tea?",
+    "herbalbrews:yerba_mate_tea?",
+    "herbalbrews:rooibos_tea?",
+    "herbalbrews:oolong_tea?",
+    "herbalbrews:armor_flask?",
+    "herbalbrews:armor_flask_big?",
+    "herbalbrews:damage_flask?",
+    "herbalbrews:damage_flask_big?",
+    "herbalbrews:feral_flask?",
+    "herbalbrews:feral_flask_big?",
+    "meadow:wooden_milk_bucket?",
+    "meadow:wooden_sheep_milk_bucket?",
+    "meadow:wooden_buffalo_milk_bucket?",
+    "meadow:wooden_goat_milk_bucket?",
+    "meadow:wooden_warped_milk_bucket?",
+    "meadow:wooden_grain_milk_bucket?",
+    "meadow:wooden_amethyst_milk_bucket?"
+   ],
+   "toughasnails:hydration/30_hydration_drinks": [
+    "brewery:beer_wheat?",
+    "brewery:beer_barley?",
+    "brewery:beer_hops?",
+    "brewery:beer_nettle?",
+    "brewery:beer_oat?",
+    "brewery:beer_haley?",
+    "candlelight:tomato_soup?",
+    "candlelight:mushroom_soup?",
+    "farm_and_charm:simple_tomato_soup?",
+    "farm_and_charm:barley_soup?",
+    "farm_and_charm:onion_soup?",
+    "farm_and_charm:potato_soup?"
+   ],
+   "toughasnails:hydration/50_hydration_drinks": [
+    "beachparty:refreshing_drink?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

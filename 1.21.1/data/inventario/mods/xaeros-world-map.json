@@ -1,0 +1,97 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Xaero's World Map",
+ "file": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "4d2d78bc85afa002f682ef344b7284cf1baa4903cc5a11cd1d7bd260ac63952580ae717bab47079540ead633cdd5d8e4fdf230dc99a68bcb7a269500e7dada13",
+ "mods": [
+  {
+   "modid": "xaeroworldmap",
+   "name": "Xaero's World Map",
+   "version": "1.47.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.110-beta, 21.2.0)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "openpartiesandclaims",
+     "type": "optional",
+     "range": "[0.32.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "xaerominimap",
+     "type": "optional",
+     "range": "[26.4.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "xaerobetterpvp",
+     "type": "optional",
+     "range": "[26.4.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "xaerolib",
+     "type": "required",
+     "range": "[1.0,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "xaerolib",
+   "name": "XaeroLib",
+   "version": "1.7.3",
+   "jar": "xaerolib-neoforge-1.21.1-1.7.3.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.110-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "xaerolib-neoforge-1.21.1-1.7.3.jar"
+ ],
+ "namespaces": [
+  "minecraft",
+  "xaerolib",
+  "xaeroworldmap"
+ ],
+ "effects": {
+  "xaeroworldmap:no_cave_maps": "No WM Cave Maps",
+  "xaeroworldmap:no_cave_maps_harmful": "No WM Cave Maps",
+  "xaeroworldmap:no_world_map": "No World Map",
+  "xaeroworldmap:no_world_map_beneficial": "No World Map",
+  "xaeroworldmap:no_world_map_harmful": "No World Map"
+ },
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

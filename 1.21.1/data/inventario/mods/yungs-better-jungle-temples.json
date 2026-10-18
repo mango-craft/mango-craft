@@ -1,0 +1,247 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "YUNG's Better Jungle Temples",
+ "file": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "eca4233e874a55886c63d2111b8685d479771d3627bad2922582e65b78c51ba74733dc4624aabf91f2a2178a940a72d9209ae33eef74e34f84f07d62256709d9",
+ "mods": [
+  {
+   "modid": "betterjungletemples",
+   "name": "YUNG's Better Jungle Temples",
+   "version": "1.21.1-NeoForge-3.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": null
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0,)",
+     "side": null
+    },
+    {
+     "modid": "yungsapi",
+     "type": "required",
+     "range": "[1.21.1-NeoForge-5.1.3,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "betterjungletemples",
+  "morevillagers",
+  "yungsapi"
+ ],
+ "data": {
+  "loot_table": [
+   "betterjungletemples:archaeology/emerald",
+   "betterjungletemples:chests/campsite",
+   "betterjungletemples:chests/treasure"
+  ],
+  "structure": [
+   "betterjungletemples:challenge_room/challenge_room_emerald_gravel_l",
+   "betterjungletemples:challenge_room/challenge_room_emerald_gravel_r",
+   "betterjungletemples:challenge_room/challenge_room_emerald_water_l",
+   "betterjungletemples:challenge_room/challenge_room_emerald_water_r",
+   "betterjungletemples:challenge_room/challenge_room_serpent",
+   "betterjungletemples:challenge_room/challenge_room_statue_trade",
+   "betterjungletemples:challenge_room/challenge_room_water_parkour",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_0_l",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_0_r",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_1_l",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_1_r",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_2_l",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_2_r",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_3_l",
+   "betterjungletemples:challenge_room/emerald_water_bottom/challenge_room_emerald_water_bottom_3_r",
+   "betterjungletemples:challenge_room/serpent_back/challenge_room_serpent_back_0",
+   "betterjungletemples:challenge_room/serpent_back/challenge_room_serpent_back_1",
+   "betterjungletemples:challenge_room/serpent_back/challenge_room_serpent_back_2",
+   "betterjungletemples:challenge_room/serpent_back/challenge_room_serpent_back_3",
+   "betterjungletemples:challenge_room/serpent_back/challenge_room_serpent_back_4",
+   "betterjungletemples:challenge_room/statue/challenge_statue_azalea",
+   "betterjungletemples:challenge_room/statue/challenge_statue_bamboo",
+   "betterjungletemples:challenge_room/statue/challenge_statue_bone",
+   "betterjungletemples:challenge_room/statue/challenge_statue_candle",
+   "betterjungletemples:challenge_room/statue/challenge_statue_cherryblossom",
+   "betterjungletemples:challenge_room/statue/challenge_statue_cocoabeans",
+   "betterjungletemples:challenge_room/statue/challenge_statue_emerald",
+   "betterjungletemples:challenge_room/statue/challenge_statue_glowberry",
+   "betterjungletemples:challenge_room/statue/challenge_statue_gold",
+   "betterjungletemples:challenge_room/statue/challenge_statue_honey",
+   "betterjungletemples:challenge_room/statue/challenge_statue_iron",
+   "betterjungletemples:challenge_room/statue/challenge_statue_mossblock",
+   "betterjungletemples:challenge_room/statue/challenge_statue_watermelon",
+   "betterjungletemples:entrance/entrance_0",
+   "betterjungletemples:entrance/entrance_1",
+   "betterjungletemples:entrance/entrance_2",
+   "betterjungletemples:entrance/entrance_3",
+   "betterjungletemples:entrance/entrance_4",
+   "betterjungletemples:entrance/entrance_5",
+   "betterjungletemples:floor_1/room/floor_1_room_10",
+   "betterjungletemples:floor_1/room/floor_1_room_11",
+   "betterjungletemples:floor_1/room/floor_1_room_2",
+   "betterjungletemples:floor_1/room/floor_1_room_3",
+   "betterjungletemples:floor_1/room/floor_1_room_4",
+   "betterjungletemples:floor_1/room/floor_1_room_5",
+   "betterjungletemples:floor_1/room/floor_1_room_6",
+   "betterjungletemples:floor_1/room/floor_1_room_7",
+   "betterjungletemples:floor_1/room/floor_1_room_8",
+   "betterjungletemples:floor_1/room/floor_1_room_9",
+   "betterjungletemples:floor_1/room_back/floor_1_room_back_1",
+   "betterjungletemples:floor_1/room_back/floor_1_room_back_2",
+   "betterjungletemples:floor_2/hallway/floor_2_hallway_0",
+   "betterjungletemples:floor_2/hallway/floor_2_hallway_1",
+   "betterjungletemples:floor_2/hallway/floor_2_hallway_2",
+   "betterjungletemples:floor_2/hallway/floor_2_hallway_3",
+   "betterjungletemples:floor_2/hallway/floor_2_hallway_4",
+   "betterjungletemples:floor_2/hallway/floor_2_hallway_5",
+   "betterjungletemples:floor_2/hallway/floor_2_hallway_6",
+   "betterjungletemples:floor_2/pit/floor_2_pit_dripstone",
+   "betterjungletemples:floor_2/pit/floor_2_pit_magma",
+   "betterjungletemples:floor_2/room/floor_2_corridor_room_0",
+   "betterjungletemples:floor_2/room/floor_2_corridor_room_1",
+   "betterjungletemples:floor_2/room/floor_2_corridor_room_2",
+   "betterjungletemples:floor_2/room/floor_2_dripstone_room_0",
+   "betterjungletemples:floor_2/room/floor_2_dripstone_room_1",
+   "betterjungletemples:floor_2/room/floor_2_dripstone_room_2",
+   "betterjungletemples:floor_2/room/floor_2_parkour_room_0",
+   "betterjungletemples:floor_2/room/floor_2_parkour_room_1",
+   "betterjungletemples:floor_2/room/floor_2_parkour_room_2",
+   "betterjungletemples:floor_2/room/floor_2_parkour_room_3",
+   "betterjungletemples:floor_2/room/floor_2_parkour_room_4",
+   "betterjungletemples:floor_2/room/floor_2_pressure_plate_room_0",
+   "betterjungletemples:floor_2/room/floor_2_pressure_plate_room_1",
+   "betterjungletemples:floor_2/room/floor_2_pressure_plate_room_2",
+   "betterjungletemples:floor_2/room/floor_2_pressure_plate_room_3",
+   "betterjungletemples:floor_2/room/floor_2_pressure_plate_room_4",
+   "betterjungletemples:floor_2/room/floor_2_puzzle_room_0",
+   "betterjungletemples:floor_2/room/floor_2_puzzle_room_1",
+   "betterjungletemples:floor_2/room/floor_2_puzzle_room_2",
+   "betterjungletemples:floor_2/room/floor_2_vine_room_0",
+   "betterjungletemples:floor_2/room/floor_2_vine_room_1",
+   "betterjungletemples:floor_2/room/floor_2_vine_room_2",
+   "betterjungletemples:floor_2/room/floor_2_vine_room_3",
+   "betterjungletemples:floor_2/room/floor_2_water_room_0",
+   "betterjungletemples:floor_2/room/floor_2_water_room_1",
+   "betterjungletemples:floor_2/room/floor_2_water_room_2",
+   "betterjungletemples:floor_2/room/floor_2_water_room_3",
+   "betterjungletemples:floor_2/room/floor_2_water_room_4",
+   "betterjungletemples:misc/minecart",
+   "betterjungletemples:mod_integration/alexsmobs_floor_2_pit_crocodiles",
+   "betterjungletemples:mod_integration/create_floor_2_crushing_corridor",
+   "betterjungletemples:mod_integration/create_floor_2_sawblade_room",
+   "betterjungletemples:mod_integration/create_floor_2_supp_crushing_corridor",
+   "betterjungletemples:mod_integration/supplementaries_floor_2_pit_spikes",
+   "betterjungletemples:props/prop_campsite_0",
+   "betterjungletemples:props/prop_campsite_1",
+   "betterjungletemples:props/prop_campsite_2",
+   "betterjungletemples:props/prop_campsite_3",
+   "betterjungletemples:props/prop_campsite_4",
+   "betterjungletemples:props/prop_emerald_block",
+   "betterjungletemples:props/prop_statue_0",
+   "betterjungletemples:props/prop_statue_1",
+   "betterjungletemples:props/prop_statue_2",
+   "betterjungletemples:props/prop_statue_sus",
+   "betterjungletemples:props/prop_table_0",
+   "betterjungletemples:props/prop_table_1",
+   "betterjungletemples:stairs/stairs_0",
+   "betterjungletemples:stairs/stairs_1",
+   "betterjungletemples:stairs/stairs_2",
+   "betterjungletemples:stairs/stairs_3",
+   "betterjungletemples:stairs/stairs_4",
+   "betterjungletemples:stairs/stairs_5",
+   "betterjungletemples:start/start_0",
+   "betterjungletemples:start/start_1",
+   "betterjungletemples:start/start_2",
+   "betterjungletemples:top/top_0",
+   "betterjungletemples:top/top_1",
+   "betterjungletemples:top/top_2",
+   "betterjungletemples:top/top_3",
+   "betterjungletemples:top/top_4",
+   "betterjungletemples:treasure_room/treasure_room_0",
+   "betterjungletemples:treasure_room/treasure_room_1",
+   "betterjungletemples:treasure_room/treasure_room_2",
+   "betterjungletemples:treasure_room/treasure_room_2_sakura",
+   "betterjungletemples:treasure_room/treasure_room_3",
+   "betterjungletemples:treasure_room/treasure_room_water_fill_0",
+   "betterjungletemples:treasure_room/treasure_room_water_fill_1"
+  ],
+  "tags/worldgen/biome": [
+   "betterjungletemples:has_structure/better_jungle_temple"
+  ],
+  "tags/worldgen/structure": [
+   "betterjungletemples:better_jungle_temples",
+   "morevillagers:on_jungle_temple_explorer_maps",
+   "yungsapi:remove_vines_feature_in"
+  ],
+  "tags/worldgen/structure_set": [
+   "betterjungletemples:jungle_temple_avoid"
+  ],
+  "worldgen/processor_list": [
+   "betterjungletemples:main",
+   "betterjungletemples:main_waterlog"
+  ],
+  "worldgen/structure": [
+   "betterjungletemples:jungle_temple"
+  ],
+  "worldgen/structure_set": [
+   "betterjungletemples:jungle_temples"
+  ],
+  "worldgen/template_pool": [
+   "betterjungletemples:challenge_room",
+   "betterjungletemples:challenge_room_emerald_water_bottom",
+   "betterjungletemples:challenge_room_serpent_back",
+   "betterjungletemples:challenge_room_statue",
+   "betterjungletemples:entrance",
+   "betterjungletemples:floor_1_room",
+   "betterjungletemples:floor_1_room_back",
+   "betterjungletemples:floor_2_hallway",
+   "betterjungletemples:floor_2_pit",
+   "betterjungletemples:floor_2_room",
+   "betterjungletemples:misc",
+   "betterjungletemples:prop_campsite",
+   "betterjungletemples:prop_statue",
+   "betterjungletemples:stairs",
+   "betterjungletemples:starts",
+   "betterjungletemples:top",
+   "betterjungletemples:treasure_room"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/worldgen/biome": {
+   "betterjungletemples:has_structure/better_jungle_temple": [
+    "#minecraft:has_structure/jungle_temple"
+   ]
+  },
+  "tags/worldgen/structure": {
+   "betterjungletemples:better_jungle_temples": [
+    "betterjungletemples:jungle_temple"
+   ],
+   "morevillagers:on_jungle_temple_explorer_maps": [
+    "#betterjungletemples:better_jungle_temples"
+   ],
+   "yungsapi:remove_vines_feature_in": [
+    "betterjungletemples:jungle_temple"
+   ]
+  },
+  "tags/worldgen/structure_set": {
+   "betterjungletemples:jungle_temple_avoid": [
+    "minecraft:jungle_temples"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

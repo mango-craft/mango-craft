@@ -1,0 +1,1259 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Cultural Delights",
+ "file": "culturaldelights-1.21.1-0.19.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "888510ad4f52a0d30cf58674f53137789d3f607cc0c7d5408bbedc3a5f8b4c6229e17b07f394613a55a783e38685cce8de4145ee1e257b7276bbd776a74e8156",
+ "mods": [
+  {
+   "modid": "culturaldelights",
+   "name": "Cultural Delights",
+   "version": "0.19.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.247,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[1.3.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "supplementaries",
+     "type": "optional",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "moonlight",
+     "type": "optional",
+     "range": "[1.21.1-3.6.3,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "appleskin",
+     "type": "optional",
+     "range": "[3.0.0,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "cookscollection",
+     "type": "incompatible",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "brewinandchewin",
+  "c",
+  "create",
+  "culturaldelights",
+  "farmersdelight",
+  "minecraft",
+  "neoforge",
+  "supplementaries"
+ ],
+ "blocks": {
+  "culturaldelights:agave": "Agave",
+  "culturaldelights:ash_brick_counter": "Ash Brick Counter",
+  "culturaldelights:avocado_bundle": "Avocado Bundle",
+  "culturaldelights:avocado_crate": "Avocado Crate",
+  "culturaldelights:avocado_leaf_carpet": "",
+  "culturaldelights:avocado_leaves": "Avocado Leaves",
+  "culturaldelights:avocado_log": "Avocado Log",
+  "culturaldelights:avocado_pit": "Avocado Pit",
+  "culturaldelights:avocado_sapling": "Avocado Sapling",
+  "culturaldelights:avocado_wood": "Avocado Wood",
+  "culturaldelights:bamboo_mat": "",
+  "culturaldelights:bean_bag": "Bag of Beans",
+  "culturaldelights:bean_crate": "Bean Crate",
+  "culturaldelights:beans": "Beans",
+  "culturaldelights:beanstalk": "Beanstalk",
+  "culturaldelights:beanstalk_button": "Beanstalk Button",
+  "culturaldelights:beanstalk_cabinet": "Beanstalk Cabinet",
+  "culturaldelights:beanstalk_door": "Beanstalk Door",
+  "culturaldelights:beanstalk_fence": "Beanstalk Fence",
+  "culturaldelights:beanstalk_fence_gate": "Beanstalk Fence Gate",
+  "culturaldelights:beanstalk_hanging_sign": "Beanstalk Hanging Sign",
+  "culturaldelights:beanstalk_leaf": "Beanstalk Leaf",
+  "culturaldelights:beanstalk_planks": "Beanstalk Planks",
+  "culturaldelights:beanstalk_pressure_plate": "Beanstalk Pressure Plate",
+  "culturaldelights:beanstalk_sign": "Beanstalk Sign",
+  "culturaldelights:beanstalk_slab": "Beanstalk Slab",
+  "culturaldelights:beanstalk_stairs": "Beanstalk Stairs",
+  "culturaldelights:beanstalk_trapdoor": "Beanstalk Trapdoor",
+  "culturaldelights:beanstalk_wall_hanging_sign": "Beanstalk Wall Hanging Sign",
+  "culturaldelights:beanstalk_wall_sign": "Beanstalk Wall Sign",
+  "culturaldelights:brick_counter": "Brick Counter",
+  "culturaldelights:budding_beans": "Budding Beans",
+  "culturaldelights:butterscotch_cinnamon_pie": "Butterscotch Cinnamon Pie",
+  "culturaldelights:cheese_block": "Block of Cheese",
+  "culturaldelights:cheese_wheel": "Cheese Wheel",
+  "culturaldelights:corn": "Corn",
+  "culturaldelights:corn_cob_crate": "Corn Cob Crate",
+  "culturaldelights:cucumber_crate": "Cucumber Crate",
+  "culturaldelights:cucumbers": "Cucumbers",
+  "culturaldelights:eggplant_crate": "Eggplant Crate",
+  "culturaldelights:eggplant_parmesan_block": "Eggplant Parmesan",
+  "culturaldelights:eggplants": "Eggplants",
+  "culturaldelights:exotic_roll_medley": "Exotic Roll Medley",
+  "culturaldelights:fruiting_avocado_leaves": "Fruiting Avocado Leaves",
+  "culturaldelights:fruiting_lemon_leaves": "Fruiting Lemon Leaves",
+  "culturaldelights:lemon_crate": "Lemon Crate",
+  "culturaldelights:lemon_leaves": "Lemon Leaves",
+  "culturaldelights:lemon_log": "Lemon Log",
+  "culturaldelights:lemon_sapling": "Lemon Sapling",
+  "culturaldelights:lemon_wood": "Lemon Wood",
+  "culturaldelights:magic_beans": "Magic Beans",
+  "culturaldelights:mint": "Mint",
+  "culturaldelights:oven": "Oven",
+  "culturaldelights:pickle_crate": "Pickle Crate",
+  "culturaldelights:potted_agave": "Potted Agave",
+  "culturaldelights:potted_avocado_sapling": "",
+  "culturaldelights:potted_mint": "Potted Mint",
+  "culturaldelights:rope_beans": "",
+  "culturaldelights:rustic_loaf": "Rustic Loaf",
+  "culturaldelights:salt_block": "Salt Block",
+  "culturaldelights:salt_spike": "Salt Spike",
+  "culturaldelights:silt_brick_counter": "Silt Brick Counter",
+  "culturaldelights:stick_beans": "",
+  "culturaldelights:stripped_beanstalk": "Stripped Beanstalk",
+  "culturaldelights:vat": "Vat",
+  "culturaldelights:white_eggplant_crate": "White Eggplant Crate",
+  "culturaldelights:white_eggplants": "",
+  "culturaldelights:wild_beans": "Wild Beans",
+  "culturaldelights:wild_corn": "Wild Corn",
+  "culturaldelights:wild_cucumbers": "Wild Cucumbers",
+  "culturaldelights:wild_eggplants": "Wild Eggplants"
+ },
+ "effects": {
+  "culturaldelights:cheesy": "Cheesy",
+  "culturaldelights:intoxication": "Intoxication"
+ },
+ "items": {
+  "culturaldelights:acid": "Acid",
+  "culturaldelights:agave": "",
+  "culturaldelights:apple_cider": "Apple Cider",
+  "culturaldelights:ash_brick_counter": "",
+  "culturaldelights:avocado": "Avocado",
+  "culturaldelights:avocado_bundle": "",
+  "culturaldelights:avocado_crate": "",
+  "culturaldelights:avocado_leaf_carpet": "",
+  "culturaldelights:avocado_leaves": "",
+  "culturaldelights:avocado_log": "",
+  "culturaldelights:avocado_pit": "",
+  "culturaldelights:avocado_sapling": "",
+  "culturaldelights:avocado_toast": "Avocado Toast",
+  "culturaldelights:avocado_wood": "",
+  "culturaldelights:bamboo_mat": "",
+  "culturaldelights:bean_bag": "",
+  "culturaldelights:bean_crate": "",
+  "culturaldelights:bean_pod": "Bean Pod",
+  "culturaldelights:beans": "Beans",
+  "culturaldelights:beanstalk": "Beanstalk",
+  "culturaldelights:beanstalk_button": "",
+  "culturaldelights:beanstalk_cabinet": "",
+  "culturaldelights:beanstalk_chest_raft": "Beanstalk Raft with Chest",
+  "culturaldelights:beanstalk_door": "",
+  "culturaldelights:beanstalk_fence": "",
+  "culturaldelights:beanstalk_fence_gate": "",
+  "culturaldelights:beanstalk_hanging_sign": "",
+  "culturaldelights:beanstalk_leaf": "Beanstalk Leaf",
+  "culturaldelights:beanstalk_planks": "",
+  "culturaldelights:beanstalk_pressure_plate": "",
+  "culturaldelights:beanstalk_raft": "Beanstalk Raft",
+  "culturaldelights:beanstalk_sign": "",
+  "culturaldelights:beanstalk_slab": "",
+  "culturaldelights:beanstalk_stairs": "",
+  "culturaldelights:beanstalk_trapdoor": "",
+  "culturaldelights:beef_burrito": "Beef Burrito",
+  "culturaldelights:beer": "Beer",
+  "culturaldelights:bloody_mary": "Bloody Mary",
+  "culturaldelights:brandy": "Brandy",
+  "culturaldelights:brick_counter": "",
+  "culturaldelights:butter": "Butter",
+  "culturaldelights:butterbeer": "Butterbeer",
+  "culturaldelights:buttered_toast": "Buttered Toast",
+  "culturaldelights:butterscotch_cinnamon_pie": "",
+  "culturaldelights:butterscotch_cinnamon_pie_slice": "Butterscotch Cinnamon Pie Slice",
+  "culturaldelights:calamari_roll": "Calamari Roll",
+  "culturaldelights:caramelized_marshmallow_on_a_stick": "Caramelized Marshmallow on a Stick",
+  "culturaldelights:charred_marshmallow_on_a_stick": "Charred Marshmallow on a Stick",
+  "culturaldelights:cheese_block": "",
+  "culturaldelights:cheese_cracker": "Cheese Cracker",
+  "culturaldelights:cheese_wedge": "Cheese Wedge",
+  "culturaldelights:cheese_wheel": "",
+  "culturaldelights:cheesy_chip_wrap": "Cheesy Chip Wrap",
+  "culturaldelights:chicken_roll": "Chicken Roll",
+  "culturaldelights:chicken_roll_slice": "Chicken Roll Slice",
+  "culturaldelights:chicken_taco": "Chicken Taco",
+  "culturaldelights:chips_with_cheese": "Chips with Cheese",
+  "culturaldelights:chocolate_muffin": "Chocolate Muffin",
+  "culturaldelights:cinnamon": "Cinnamon",
+  "culturaldelights:cinnamon_cracker": "Cinnamon Cracker",
+  "culturaldelights:cinnamon_mint_curry": "Cinnamon Mint Curry",
+  "culturaldelights:cola": "Cola",
+  "culturaldelights:cooked_calamari": "Cooked Calamari",
+  "culturaldelights:cooked_sausage": "Cooked Sausage",
+  "culturaldelights:cooked_squid": "Cooked Squid",
+  "culturaldelights:cooking_oil": "Cooking Oil",
+  "culturaldelights:corn_cob": "Corn Cob",
+  "culturaldelights:corn_cob_crate": "",
+  "culturaldelights:corn_dog": "Corn Dog",
+  "culturaldelights:corn_dough": "Corn Dough",
+  "culturaldelights:corn_kernels": "Corn Kernels",
+  "culturaldelights:creamed_corn": "Creamed Corn",
+  "culturaldelights:cucumber": "Cucumber",
+  "culturaldelights:cucumber_crate": "",
+  "culturaldelights:cucumber_seeds": "Cucumber Seeds",
+  "culturaldelights:cut_avocado": "Cut Avocado",
+  "culturaldelights:cut_cucumber": "Cut Cucumber",
+  "culturaldelights:cut_eggplant": "Cut Eggplant",
+  "culturaldelights:cut_pickle": "Cut Pickle",
+  "culturaldelights:egg_roll": "Egg Roll",
+  "culturaldelights:eggplant": "Eggplant",
+  "culturaldelights:eggplant_burger": "Eggplant Burger",
+  "culturaldelights:eggplant_crate": "",
+  "culturaldelights:eggplant_parmesan": "Plate of Eggplant Parmesan",
+  "culturaldelights:eggplant_parmesan_block": "",
+  "culturaldelights:eggplant_seeds": "Eggplant Seeds",
+  "culturaldelights:elote": "Elote",
+  "culturaldelights:empanada": "Empanada",
+  "culturaldelights:exotic_roll_medley": "",
+  "culturaldelights:fish_and_chips": "Fish and Chips",
+  "culturaldelights:fish_taco": "Fish Taco",
+  "culturaldelights:fried_eggplant_pasta": "",
+  "culturaldelights:fried_potato": "Fried Potato",
+  "culturaldelights:fruiting_avocado_leaves": "",
+  "culturaldelights:fruiting_lemon_leaves": "",
+  "culturaldelights:gin": "Gin",
+  "culturaldelights:ginger": "Ginger",
+  "culturaldelights:ginger_beer": "Ginger Beer",
+  "culturaldelights:glow_squid": "Glow Squid",
+  "culturaldelights:glow_wine": "Glow Wine",
+  "culturaldelights:hearty_salad": "Hearty Salad",
+  "culturaldelights:hot_dog": "Hot Dog",
+  "culturaldelights:lemon": "Lemon",
+  "culturaldelights:lemon_crate": "",
+  "culturaldelights:lemon_leaves": "",
+  "culturaldelights:lemon_liqueur": "Lemon Liqueur",
+  "culturaldelights:lemon_log": "",
+  "culturaldelights:lemon_muffin": "Lemon Muffin",
+  "culturaldelights:lemon_sapling": "",
+  "culturaldelights:lemon_wood": "",
+  "culturaldelights:lemonade": "Lemonade",
+  "culturaldelights:magic_beans": "Magic Beans",
+  "culturaldelights:margarita": "Margarita",
+  "culturaldelights:marshmallow": "Marshmallow",
+  "culturaldelights:marshmallow_on_a_stick": "Marshmallow on a Stick",
+  "culturaldelights:mead": "Mead",
+  "culturaldelights:midori_roll": "Midori Roll",
+  "culturaldelights:midori_roll_slice": "Midori Roll Slice",
+  "culturaldelights:mint": "",
+  "culturaldelights:mojito": "Mojito",
+  "culturaldelights:mutton_sandwich": "Mutton Sandwich",
+  "culturaldelights:oven": "",
+  "culturaldelights:pickle": "Pickle",
+  "culturaldelights:pickle_crate": "",
+  "culturaldelights:pickled_egg": "Pickled Egg",
+  "culturaldelights:poached_eggplants": "Poached Eggplants",
+  "culturaldelights:popcorn": "Popcorn",
+  "culturaldelights:popcorn_bucket": "Popcorn Bucket",
+  "culturaldelights:pork_wrap": "Pork Wrap",
+  "culturaldelights:pufferfish_roll": "Pufferfish Roll",
+  "culturaldelights:raw_calamari": "Raw Calamari",
+  "culturaldelights:raw_sausage": "Raw Sausage",
+  "culturaldelights:refried_beans": "Refried Beans",
+  "culturaldelights:rice_ball": "Rice Ball",
+  "culturaldelights:rum": "Rum",
+  "culturaldelights:rustic_loaf": "",
+  "culturaldelights:rustic_loaf_slice": "Slice of Rustic Loaf",
+  "culturaldelights:salt": "Salt",
+  "culturaldelights:salt_block": "",
+  "culturaldelights:salt_spike": "",
+  "culturaldelights:sausages_and_mash": "Sausages and Mash",
+  "culturaldelights:silt_brick_counter": "",
+  "culturaldelights:smoked_corn": "Smoked Corn",
+  "culturaldelights:smoked_cut_eggplant": "Smoked Cut Eggplant",
+  "culturaldelights:smoked_eggplant": "Smoked Eggplant",
+  "culturaldelights:smoked_tomato": "Smoked Tomato",
+  "culturaldelights:smoked_white_eggplant": "Smoked White Eggplant",
+  "culturaldelights:snag": "Snag",
+  "culturaldelights:spicy_curry": "Spicy Curry",
+  "culturaldelights:squid": "Squid",
+  "culturaldelights:stripped_beanstalk": "",
+  "culturaldelights:sunflower_seeds": "Sunflower Seeds",
+  "culturaldelights:tequila": "Tequila",
+  "culturaldelights:tofu": "Tofu",
+  "culturaldelights:tortilla": "Tortilla",
+  "culturaldelights:tortilla_chips": "Tortilla Chips",
+  "culturaldelights:tropical_roll": "Tropical Roll",
+  "culturaldelights:vat": "",
+  "culturaldelights:vinegar": "Vinegar",
+  "culturaldelights:vodka": "Vodka",
+  "culturaldelights:whiskey": "Whiskey",
+  "culturaldelights:white_eggplant": "White Eggplant",
+  "culturaldelights:white_eggplant_crate": "",
+  "culturaldelights:wild_beans": "",
+  "culturaldelights:wild_corn": "",
+  "culturaldelights:wild_cucumbers": "",
+  "culturaldelights:wild_eggplants": "",
+  "culturaldelights:wine": "Wine"
+ },
+ "data": {
+  "data_maps/item": [
+   "neoforge:compostables"
+  ],
+  "loot_modifiers": [
+   "culturaldelights:straw_from_mature_corn",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "culturaldelights:blocks/agave",
+   "culturaldelights:blocks/ash_brick_counter",
+   "culturaldelights:blocks/avocado_crate",
+   "culturaldelights:blocks/avocado_leaves",
+   "culturaldelights:blocks/avocado_log",
+   "culturaldelights:blocks/avocado_pit",
+   "culturaldelights:blocks/avocado_sapling",
+   "culturaldelights:blocks/avocado_wood",
+   "culturaldelights:blocks/bean_bag",
+   "culturaldelights:blocks/bean_crate",
+   "culturaldelights:blocks/beans",
+   "culturaldelights:blocks/beanstalk",
+   "culturaldelights:blocks/beanstalk_button",
+   "culturaldelights:blocks/beanstalk_cabinet",
+   "culturaldelights:blocks/beanstalk_door",
+   "culturaldelights:blocks/beanstalk_fence",
+   "culturaldelights:blocks/beanstalk_fence_gate",
+   "culturaldelights:blocks/beanstalk_hanging_sign",
+   "culturaldelights:blocks/beanstalk_leaf",
+   "culturaldelights:blocks/beanstalk_planks",
+   "culturaldelights:blocks/beanstalk_pressure_plate",
+   "culturaldelights:blocks/beanstalk_sign",
+   "culturaldelights:blocks/beanstalk_slab",
+   "culturaldelights:blocks/beanstalk_stairs",
+   "culturaldelights:blocks/beanstalk_trapdoor",
+   "culturaldelights:blocks/brick_counter",
+   "culturaldelights:blocks/butterscotch_cinnamon_pie",
+   "culturaldelights:blocks/cheese_block",
+   "culturaldelights:blocks/cheese_wheel",
+   "culturaldelights:blocks/corn",
+   "culturaldelights:blocks/corn_cob_crate",
+   "culturaldelights:blocks/cucumber_crate",
+   "culturaldelights:blocks/cucumbers",
+   "culturaldelights:blocks/eggplant_crate",
+   "culturaldelights:blocks/eggplants",
+   "culturaldelights:blocks/fruiting_avocado_leaves",
+   "culturaldelights:blocks/fruiting_lemon_leaves",
+   "culturaldelights:blocks/lemon_crate",
+   "culturaldelights:blocks/lemon_leaves",
+   "culturaldelights:blocks/lemon_log",
+   "culturaldelights:blocks/lemon_sapling",
+   "culturaldelights:blocks/lemon_wood",
+   "culturaldelights:blocks/magic_beans",
+   "culturaldelights:blocks/mint",
+   "culturaldelights:blocks/oven",
+   "culturaldelights:blocks/pickle_crate",
+   "culturaldelights:blocks/potted_agave",
+   "culturaldelights:blocks/potted_avocado_sapling",
+   "culturaldelights:blocks/potted_mint",
+   "culturaldelights:blocks/rustic_loaf",
+   "culturaldelights:blocks/salt_block",
+   "culturaldelights:blocks/salt_spike",
+   "culturaldelights:blocks/silt_brick_counter",
+   "culturaldelights:blocks/stripped_beanstalk",
+   "culturaldelights:blocks/vat",
+   "culturaldelights:blocks/white_eggplant_crate",
+   "culturaldelights:blocks/wild_beans",
+   "culturaldelights:blocks/wild_corn",
+   "culturaldelights:blocks/wild_cucumbers",
+   "culturaldelights:blocks/wild_eggplants",
+   "minecraft:entities/glow_squid",
+   "minecraft:entities/squid"
+  ],
+  "moonlight": [
+   "culturaldelights:soft_fluid/acid",
+   "culturaldelights:soft_fluid/apple_cider",
+   "culturaldelights:soft_fluid/beer",
+   "culturaldelights:soft_fluid/bloody_mary",
+   "culturaldelights:soft_fluid/brandy",
+   "culturaldelights:soft_fluid/butterbeer",
+   "culturaldelights:soft_fluid/cinnamon_mint_curry",
+   "culturaldelights:soft_fluid/cola",
+   "culturaldelights:soft_fluid/creamed_corn",
+   "culturaldelights:soft_fluid/eggplant_parmesan",
+   "culturaldelights:soft_fluid/gin",
+   "culturaldelights:soft_fluid/glow_wine",
+   "culturaldelights:soft_fluid/hearty_salad",
+   "culturaldelights:soft_fluid/lemon_liqueur",
+   "culturaldelights:soft_fluid/margarita",
+   "culturaldelights:soft_fluid/mead",
+   "culturaldelights:soft_fluid/mojito",
+   "culturaldelights:soft_fluid/poached_eggplants",
+   "culturaldelights:soft_fluid/refried_beans",
+   "culturaldelights:soft_fluid/rum",
+   "culturaldelights:soft_fluid/sausages_and_mash",
+   "culturaldelights:soft_fluid/spicy_curry",
+   "culturaldelights:soft_fluid/tequila",
+   "culturaldelights:soft_fluid/vinegar",
+   "culturaldelights:soft_fluid/vodka",
+   "culturaldelights:soft_fluid/whiskey",
+   "culturaldelights:soft_fluid/wine"
+  ],
+  "neoforge/biome_modifier": [
+   "culturaldelights:add_agave",
+   "culturaldelights:add_avocado_tree",
+   "culturaldelights:add_mint",
+   "culturaldelights:add_salt",
+   "culturaldelights:add_tree_lemon",
+   "culturaldelights:add_wild_beans",
+   "culturaldelights:add_wild_corn",
+   "culturaldelights:add_wild_cucumbers",
+   "culturaldelights:add_wild_eggplants"
+  ],
+  "recipe": [
+   "brewinandchewin:horror_lasagna",
+   "brewinandchewin:pizza_from_dough",
+   "brewinandchewin:pizza_from_wheat",
+   "brewinandchewin:quiche_bacon",
+   "brewinandchewin:quiche_mushroom",
+   "create:crushing/salt_spike",
+   "create:milling/salt_spike",
+   "create:sweet_roll",
+   "culturaldelights:aging/chilling/bloody_mary",
+   "culturaldelights:aging/chilling/cola",
+   "culturaldelights:aging/chilling/margarita",
+   "culturaldelights:aging/chilling/mojito",
+   "culturaldelights:aging/distilling/brandy",
+   "culturaldelights:aging/distilling/brandy_from_vodka",
+   "culturaldelights:aging/distilling/gin_from_vodka",
+   "culturaldelights:aging/distilling/lemon_liqueur_from_vodka",
+   "culturaldelights:aging/distilling/rum",
+   "culturaldelights:aging/distilling/tequila",
+   "culturaldelights:aging/distilling/vodka",
+   "culturaldelights:aging/distilling/whiskey",
+   "culturaldelights:aging/fermenting/acid",
+   "culturaldelights:aging/fermenting/apple_cider",
+   "culturaldelights:aging/fermenting/beer",
+   "culturaldelights:aging/fermenting/cheese_wheel",
+   "culturaldelights:aging/fermenting/gin",
+   "culturaldelights:aging/fermenting/glow_wine",
+   "culturaldelights:aging/fermenting/lemon_liqueur",
+   "culturaldelights:aging/fermenting/mead",
+   "culturaldelights:aging/fermenting/pickle",
+   "culturaldelights:aging/fermenting/pickled_egg",
+   "culturaldelights:aging/fermenting/poisonous_potato",
+   "culturaldelights:aging/fermenting/rotten_tomato",
+   "culturaldelights:aging/fermenting/tofu",
+   "culturaldelights:aging/fermenting/vinegar",
+   "culturaldelights:aging/fermenting/wine",
+   "culturaldelights:ash_brick_counter",
+   "culturaldelights:avocado_crate",
+   "culturaldelights:avocado_pit",
+   "culturaldelights:avocado_toast",
+   "culturaldelights:avocado_wood",
+   "culturaldelights:baking/butterscotch_cinnamon_pie",
+   "culturaldelights:baking/cheese_cracker",
+   "culturaldelights:baking/chips_with_cheese",
+   "culturaldelights:baking/cinnamon_cracker",
+   "culturaldelights:baking/eggplant_parmesan",
+   "culturaldelights:baking/sausages_and_mash",
+   "culturaldelights:bean_bag",
+   "culturaldelights:bean_crate",
+   "culturaldelights:beans",
+   "culturaldelights:beanstalk_button",
+   "culturaldelights:beanstalk_cabinet",
+   "culturaldelights:beanstalk_chest_raft",
+   "culturaldelights:beanstalk_door",
+   "culturaldelights:beanstalk_fence",
+   "culturaldelights:beanstalk_fence_gate",
+   "culturaldelights:beanstalk_hanging_sign",
+   "culturaldelights:beanstalk_planks",
+   "culturaldelights:beanstalk_pressure_plate",
+   "culturaldelights:beanstalk_raft",
+   "culturaldelights:beanstalk_sign",
+   "culturaldelights:beanstalk_slab",
+   "culturaldelights:beanstalk_stairs",
+   "culturaldelights:beanstalk_trapdoor",
+   "culturaldelights:beef_burrito",
+   "culturaldelights:brick_counter",
+   "culturaldelights:butter",
+   "culturaldelights:butterbeer",
+   "culturaldelights:buttered_toast",
+   "culturaldelights:calamari_roll",
+   "culturaldelights:cheese_block",
+   "culturaldelights:cheese_block_alt",
+   "culturaldelights:cheesy_chip_wrap",
+   "culturaldelights:chicken_roll",
+   "culturaldelights:chicken_taco",
+   "culturaldelights:chocolate_muffin",
+   "culturaldelights:cooking/cinnamon_mint_curry",
+   "culturaldelights:cooking/corn_dog",
+   "culturaldelights:cooking/creamed_corn",
+   "culturaldelights:cooking/elote",
+   "culturaldelights:cooking/empanada",
+   "culturaldelights:cooking/marshmallow",
+   "culturaldelights:cooking/milk_from_beans",
+   "culturaldelights:cooking/poached_eggplants",
+   "culturaldelights:cooking/raw_pasta",
+   "culturaldelights:cooking/refried_beans",
+   "culturaldelights:cooking/spicy_curry",
+   "culturaldelights:corn_cob_crate",
+   "culturaldelights:corn_dough",
+   "culturaldelights:corn_kernels",
+   "culturaldelights:cucumber_crate",
+   "culturaldelights:cutting/avocado_log",
+   "culturaldelights:cutting/avocado_wood",
+   "culturaldelights:cutting/beans",
+   "culturaldelights:cutting/beanstalk",
+   "culturaldelights:cutting/beanstalk_chest_raft",
+   "culturaldelights:cutting/beanstalk_furniture",
+   "culturaldelights:cutting/butterscotch_cinnamon_pie_cutting",
+   "culturaldelights:cutting/butterscotch_cinnamon_pie_from_slices",
+   "culturaldelights:cutting/cheese_wedge",
+   "culturaldelights:cutting/cheese_wedge_block",
+   "culturaldelights:cutting/chicken_roll_slice",
+   "culturaldelights:cutting/corn_kernels",
+   "culturaldelights:cutting/cut_avocado",
+   "culturaldelights:cutting/cut_cucumber",
+   "culturaldelights:cutting/cut_eggplant",
+   "culturaldelights:cutting/cut_pickle",
+   "culturaldelights:cutting/jungle_log_cinnamon",
+   "culturaldelights:cutting/jungle_wood_cinnamon",
+   "culturaldelights:cutting/lemon_log",
+   "culturaldelights:cutting/lemon_wood",
+   "culturaldelights:cutting/midori_roll_slice",
+   "culturaldelights:cutting/raw_calamari",
+   "culturaldelights:cutting/raw_calamari_from_glowsquid",
+   "culturaldelights:cutting/rustic_loaf",
+   "culturaldelights:cutting/tortilla_chips",
+   "culturaldelights:cutting/wild_beans",
+   "culturaldelights:cutting/wild_corn",
+   "culturaldelights:cutting/wild_cucumbers",
+   "culturaldelights:cutting/wild_eggplants",
+   "culturaldelights:egg_roll",
+   "culturaldelights:eggplant_burger",
+   "culturaldelights:eggplant_crate",
+   "culturaldelights:eggplant_parmesan_block",
+   "culturaldelights:exotic_roll_medley",
+   "culturaldelights:fish_and_chips",
+   "culturaldelights:fish_taco",
+   "culturaldelights:fried_potato",
+   "culturaldelights:from_crate/avocado",
+   "culturaldelights:from_crate/bean_pod",
+   "culturaldelights:from_crate/beans",
+   "culturaldelights:from_crate/corn_cob",
+   "culturaldelights:from_crate/cucumber",
+   "culturaldelights:from_crate/eggplant",
+   "culturaldelights:from_crate/pickle",
+   "culturaldelights:from_crate/white_eggplant",
+   "culturaldelights:hearty_salad",
+   "culturaldelights:hot_dog",
+   "culturaldelights:jungle_planks",
+   "culturaldelights:lemon",
+   "culturaldelights:lemon_crate",
+   "culturaldelights:lemon_muffin",
+   "culturaldelights:lemon_wood",
+   "culturaldelights:lemonade",
+   "culturaldelights:magic_beans",
+   "culturaldelights:magic_beans_from_infusing",
+   "culturaldelights:marshmallow",
+   "culturaldelights:marshmallow_on_a_stick",
+   "culturaldelights:midori_roll",
+   "culturaldelights:mutton_sandwich",
+   "culturaldelights:oven",
+   "culturaldelights:pickle_crate",
+   "culturaldelights:pie_crust_alt",
+   "culturaldelights:popcorn_bucket",
+   "culturaldelights:pork_wrap",
+   "culturaldelights:pufferfish_roll",
+   "culturaldelights:raw_sausage",
+   "culturaldelights:rice_ball",
+   "culturaldelights:rustic_loaf",
+   "culturaldelights:rustic_loaf_alt",
+   "culturaldelights:salt",
+   "culturaldelights:salt_block",
+   "culturaldelights:silt_brick_counter",
+   "culturaldelights:smelting/cooked_calamari",
+   "culturaldelights:smelting/cooked_calamari_from_campfire",
+   "culturaldelights:smelting/cooked_calamari_from_smoking",
+   "culturaldelights:smelting/cooked_glowsquid",
+   "culturaldelights:smelting/cooked_glowsquid_from_campfire",
+   "culturaldelights:smelting/cooked_glowsquid_from_smoking",
+   "culturaldelights:smelting/cooked_sausage",
+   "culturaldelights:smelting/cooked_sausage_from_campfire",
+   "culturaldelights:smelting/cooked_sausage_from_smoking",
+   "culturaldelights:smelting/cooked_squid",
+   "culturaldelights:smelting/cooked_squid_from_campfire",
+   "culturaldelights:smelting/cooked_squid_from_smoking",
+   "culturaldelights:smelting/popcorn",
+   "culturaldelights:smelting/popcorn_from_campfire",
+   "culturaldelights:smelting/popcorn_from_smoking",
+   "culturaldelights:smelting/smoked_cut_eggplant",
+   "culturaldelights:smelting/smoked_eggplant",
+   "culturaldelights:smelting/smoked_tomato",
+   "culturaldelights:smelting/smoked_white_eggplant",
+   "culturaldelights:smelting/tortilla",
+   "culturaldelights:smelting/tortilla_from_campfire",
+   "culturaldelights:smelting/tortilla_from_smoking",
+   "culturaldelights:snag",
+   "culturaldelights:sunflower_oil",
+   "culturaldelights:tofu/barbecue_stick",
+   "culturaldelights:tofu/cinnamon_mint_curry",
+   "culturaldelights:tofu/dumplings",
+   "culturaldelights:tofu/hamburger",
+   "culturaldelights:tofu/noodle_soup",
+   "culturaldelights:tofu/pasta_with_meatballs",
+   "culturaldelights:tofu/pumpkin_soup",
+   "culturaldelights:tofu/spicy_curry",
+   "culturaldelights:tofu/stuffed_potato",
+   "culturaldelights:tortilla_chips",
+   "culturaldelights:tropical_roll",
+   "culturaldelights:vat",
+   "culturaldelights:white_eggplant_crate",
+   "farmersdelight:apple_pie",
+   "farmersdelight:bread_from_dough",
+   "farmersdelight:bread_from_wheat",
+   "farmersdelight:cake_from_dough",
+   "farmersdelight:cake_from_wheat",
+   "farmersdelight:chocolate_pie",
+   "farmersdelight:cookies_from_dough",
+   "farmersdelight:cookies_from_wheat",
+   "farmersdelight:cooking/baked_potato",
+   "farmersdelight:cooking/beef_patty",
+   "farmersdelight:cooking/cod",
+   "farmersdelight:cooking/cooked_bacon",
+   "farmersdelight:cooking/cooked_beef",
+   "farmersdelight:cooking/cooked_chicken",
+   "farmersdelight:cooking/cooked_chicken_cuts",
+   "farmersdelight:cooking/cooked_cod_slices",
+   "farmersdelight:cooking/cooked_mutton",
+   "farmersdelight:cooking/cooked_mutton_chops",
+   "farmersdelight:cooking/cooked_porkchops",
+   "farmersdelight:cooking/cooked_rabbit",
+   "farmersdelight:cooking/cooked_salmon_slices",
+   "farmersdelight:cooking/fried_rice",
+   "farmersdelight:cooking/salmon",
+   "farmersdelight:honey_cookies_from_dough",
+   "farmersdelight:honey_cookies_from_wheat",
+   "farmersdelight:honey_glazed_ham",
+   "farmersdelight:mutton_wrap",
+   "farmersdelight:pie_crust",
+   "farmersdelight:pumpkin_pie",
+   "farmersdelight:ratatouille",
+   "farmersdelight:roast_chicken",
+   "farmersdelight:shepherds_pie",
+   "farmersdelight:stuffed_potato",
+   "farmersdelight:sweet_berry_cheesecake",
+   "farmersdelight:sweet_berry_cookies_from_dough",
+   "farmersdelight:sweet_berry_cookies_from_wheat",
+   "minecraft:beetroot_soup",
+   "minecraft:fermented_spider_eye",
+   "minecraft:mushroom_stew",
+   "minecraft:rabbit_stew_from_brown_mushroom",
+   "minecraft:rabbit_stew_from_red_mushroom"
+  ],
+  "tags/block": [
+   "c:fence_gates/wooden",
+   "c:storage_blocks",
+   "c:storage_blocks/bean_pod",
+   "c:storage_blocks/beans",
+   "c:stripped_logs",
+   "culturaldelights:beanstalks",
+   "culturaldelights:cold_conductors",
+   "culturaldelights:cold_sources",
+   "culturaldelights:counters",
+   "culturaldelights:heat_conductors",
+   "culturaldelights:heat_sources",
+   "farmersdelight:cabinets/wooden",
+   "farmersdelight:mineable/knife",
+   "minecraft:ceiling_hanging_signs",
+   "minecraft:climbable",
+   "minecraft:crops",
+   "minecraft:fence_gates",
+   "minecraft:frog_prefer_jump_to",
+   "minecraft:leaves",
+   "minecraft:logs",
+   "minecraft:logs_that_burn",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/hoe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:planks",
+   "minecraft:saplings",
+   "minecraft:standing_signs",
+   "minecraft:wall_hanging_signs",
+   "minecraft:wall_signs",
+   "minecraft:wooden_buttons",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_stairs",
+   "minecraft:wooden_trapdoors",
+   "supplementaries:hang_from_ropes"
+  ],
+  "tags/item": [
+   "brewinandchewin:cheese_wheels/ripe",
+   "brewinandchewin:foods/cheese_wedge",
+   "c:butter",
+   "c:cooking_oil",
+   "c:crops",
+   "c:crops/avocado",
+   "c:crops/corn",
+   "c:crops/cucumber",
+   "c:crops/eggplant",
+   "c:drinks/alcohol",
+   "c:dusts/salt",
+   "c:fence_gates/wooden",
+   "c:foods/bread",
+   "c:foods/cooked_calamari",
+   "c:foods/cooked_squid",
+   "c:foods/dough",
+   "c:foods/fruit",
+   "c:foods/pie",
+   "c:foods/popcorn",
+   "c:foods/raw_calamari",
+   "c:foods/raw_squid",
+   "c:foods/vegetable",
+   "c:fruits/lemon",
+   "c:seeds",
+   "c:seeds/corn",
+   "c:storage_blocks",
+   "c:storage_blocks/bean_pod",
+   "c:storage_blocks/beans",
+   "c:stripped_logs",
+   "c:vegetables/corn",
+   "culturaldelights:all_eggplants",
+   "culturaldelights:avocado_logs",
+   "culturaldelights:avocados",
+   "culturaldelights:beanstalks",
+   "culturaldelights:cheese_wedges",
+   "culturaldelights:counters",
+   "culturaldelights:cucumbers",
+   "culturaldelights:full_meats",
+   "culturaldelights:marshmallows",
+   "culturaldelights:regular_eggplants",
+   "culturaldelights:smoked_all_eggplants",
+   "culturaldelights:smoked_regular_eggplants",
+   "farmersdelight:cabbage_roll_ingredients",
+   "farmersdelight:cabinets/wooden",
+   "minecraft:boats",
+   "minecraft:chest_boats",
+   "minecraft:fence_gates",
+   "minecraft:hanging_signs",
+   "minecraft:leaves",
+   "minecraft:logs",
+   "minecraft:logs_that_burn",
+   "minecraft:planks",
+   "minecraft:saplings",
+   "minecraft:signs",
+   "minecraft:wooden_buttons",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_stairs",
+   "minecraft:wooden_trapdoors",
+   "supplementaries:cookies",
+   "supplementaries:flower_box_plantable"
+  ],
+  "tags/worldgen/biome": [
+   "culturaldelights:has_wild_beans"
+  ],
+  "worldgen/configured_feature": [
+   "culturaldelights:agave",
+   "culturaldelights:avocado",
+   "culturaldelights:avocado_pit",
+   "culturaldelights:avocado_spawn",
+   "culturaldelights:lemon",
+   "culturaldelights:mint",
+   "culturaldelights:salt",
+   "culturaldelights:wild_beans",
+   "culturaldelights:wild_corn",
+   "culturaldelights:wild_cucumbers",
+   "culturaldelights:wild_eggplants"
+  ],
+  "worldgen/placed_feature": [
+   "culturaldelights:agave_placed",
+   "culturaldelights:avocado_checked",
+   "culturaldelights:avocado_placed",
+   "culturaldelights:lemon_placed",
+   "culturaldelights:mint_placed",
+   "culturaldelights:salt_placed",
+   "culturaldelights:wild_beans_placed",
+   "culturaldelights:wild_corn_placed",
+   "culturaldelights:wild_cucumbers_placed",
+   "culturaldelights:wild_eggplants_placed"
+  ]
+ },
+ "data_counts": {
+  "advancement": 8
+ },
+ "tags": {
+  "tags/block": {
+   "c:fence_gates/wooden": [
+    "culturaldelights:beanstalk_fence_gate"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/bean_pod",
+    "#c:storage_blocks/beans"
+   ],
+   "c:storage_blocks/bean_pod": [
+    "culturaldelights:bean_crate"
+   ],
+   "c:storage_blocks/beans": [
+    "culturaldelights:bean_bag"
+   ],
+   "c:stripped_logs": [
+    "culturaldelights:stripped_beanstalk"
+   ],
+   "culturaldelights:beanstalks": [
+    "culturaldelights:beanstalk",
+    "culturaldelights:stripped_beanstalk"
+   ],
+   "culturaldelights:cold_conductors": [
+    "#culturaldelights:heat_conductors"
+   ],
+   "culturaldelights:cold_sources": [
+    "#minecraft:ice"
+   ],
+   "culturaldelights:counters": [
+    "culturaldelights:brick_counter",
+    "culturaldelights:ash_brick_counter?",
+    "culturaldelights:silt_brick_counter?"
+   ],
+   "culturaldelights:heat_conductors": [
+    "#farmersdelight:heat_conductors"
+   ],
+   "culturaldelights:heat_sources": [
+    "#farmersdelight:heat_sources"
+   ],
+   "farmersdelight:cabinets/wooden": [
+    "culturaldelights:beanstalk_cabinet"
+   ],
+   "farmersdelight:mineable/knife": [
+    "culturaldelights:bean_bag"
+   ],
+   "minecraft:ceiling_hanging_signs": [
+    "culturaldelights:beanstalk_hanging_sign"
+   ],
+   "minecraft:climbable": [
+    "culturaldelights:beans",
+    "culturaldelights:rope_beans",
+    "culturaldelights:stick_beans"
+   ],
+   "minecraft:crops": [
+    "culturaldelights:beans",
+    "culturaldelights:rope_beans",
+    "culturaldelights:stick_beans"
+   ],
+   "minecraft:fence_gates": [
+    "culturaldelights:beanstalk_fence_gate"
+   ],
+   "minecraft:frog_prefer_jump_to": [
+    "culturaldelights:beanstalk_leaf"
+   ],
+   "minecraft:leaves": [
+    "culturaldelights:avocado_leaves",
+    "culturaldelights:fruiting_avocado_leaves",
+    "culturaldelights:lemon_leaves",
+    "culturaldelights:fruiting_lemon_leaves"
+   ],
+   "minecraft:logs": [
+    "culturaldelights:avocado_log",
+    "culturaldelights:avocado_wood",
+    "culturaldelights:lemon_log",
+    "culturaldelights:lemon_wood"
+   ],
+   "minecraft:logs_that_burn": [
+    "culturaldelights:avocado_log",
+    "culturaldelights:avocado_wood",
+    "culturaldelights:lemon_log",
+    "culturaldelights:lemon_wood",
+    "#culturaldelights:beanstalks"
+   ],
+   "minecraft:mineable/axe": [
+    "culturaldelights:avocado_wood",
+    "culturaldelights:avocado_log",
+    "culturaldelights:lemon_wood",
+    "culturaldelights:lemon_log",
+    "culturaldelights:lemon_crate",
+    "culturaldelights:bean_crate",
+    "culturaldelights:beanstalk",
+    "culturaldelights:beanstalk_cabinet"
+   ],
+   "minecraft:mineable/hoe": [
+    "culturaldelights:avocado_leaves",
+    "culturaldelights:fruiting_avocado_leaves",
+    "culturaldelights:lemon_leaves",
+    "culturaldelights:fruiting_lemon_leaves",
+    "culturaldelights:beanstalk_leaf"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "#culturaldelights:counters",
+    "culturaldelights:oven",
+    "culturaldelights:salt_block",
+    "culturaldelights:salt_spike",
+    "culturaldelights:vat"
+   ],
+   "minecraft:planks": [
+    "culturaldelights:beanstalk_planks"
+   ],
+   "minecraft:saplings": [
+    "culturaldelights:avocado_sapling",
+    "culturaldelights:lemon_sapling"
+   ],
+   "minecraft:standing_signs": [
+    "culturaldelights:beanstalk_sign"
+   ],
+   "minecraft:wall_hanging_signs": [
+    "culturaldelights:beanstalk_wall_hanging_sign"
+   ],
+   "minecraft:wall_signs": [
+    "culturaldelights:beanstalk_wall_sign"
+   ],
+   "minecraft:wooden_buttons": [
+    "culturaldelights:beanstalk_button"
+   ],
+   "minecraft:wooden_doors": [
+    "culturaldelights:beanstalk_door"
+   ],
+   "minecraft:wooden_fences": [
+    "culturaldelights:beanstalk_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "culturaldelights:beanstalk_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "culturaldelights:beanstalk_slab"
+   ],
+   "minecraft:wooden_stairs": [
+    "culturaldelights:beanstalk_stairs"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "culturaldelights:beanstalk_trapdoor"
+   ],
+   "supplementaries:hang_from_ropes": [
+    "culturaldelights:beans?",
+    "culturaldelights:budding_beans?",
+    "culturaldelights:rope_beans?",
+    "culturaldelights:stick_beans?"
+   ]
+  },
+  "tags/item": {
+   "brewinandchewin:cheese_wheels/ripe": [
+    "culturaldelights:cheese_wheel"
+   ],
+   "brewinandchewin:foods/cheese_wedge": [
+    "culturaldelights:cheese_wedge"
+   ],
+   "c:butter": [
+    "culturaldelights:butter"
+   ],
+   "c:cooking_oil": [
+    "culturaldelights:cooking_oil?",
+    "cookscollection:cooking_oil?",
+    "hearthandharvest:cooking_oil?",
+    "#rusticdelight:cooking_oil?"
+   ],
+   "c:crops": [
+    "#c:crops/cucumber",
+    "#c:crops/eggplant",
+    "#c:crops/corn",
+    "#c:crops/avocado",
+    "culturaldelights:cut_cucumber",
+    "culturaldelights:cut_eggplant",
+    "culturaldelights:cut_avocado"
+   ],
+   "c:crops/avocado": [
+    "culturaldelights:avocado"
+   ],
+   "c:crops/corn": [
+    "culturaldelights:corn_cob"
+   ],
+   "c:crops/cucumber": [
+    "culturaldelights:cucumber"
+   ],
+   "c:crops/eggplant": [
+    "culturaldelights:eggplant",
+    "culturaldelights:white_eggplant"
+   ],
+   "c:drinks/alcohol": [
+    "culturaldelights:beer",
+    "culturaldelights:wine",
+    "culturaldelights:glow_wine",
+    "culturaldelights:mead",
+    "culturaldelights:apple_cider",
+    "culturaldelights:mojito",
+    "culturaldelights:margarita",
+    "culturaldelights:bloody_mary",
+    "culturaldelights:lemon_liqueur",
+    "culturaldelights:tequila",
+    "culturaldelights:gin",
+    "culturaldelights:brandy",
+    "culturaldelights:vodka",
+    "culturaldelights:whiskey",
+    "culturaldelights:rum"
+   ],
+   "c:dusts/salt": [
+    "culturaldelights:salt?",
+    "cookscollection:salt?"
+   ],
+   "c:fence_gates/wooden": [
+    "culturaldelights:beanstalk_fence_gate"
+   ],
+   "c:foods/bread": [
+    "culturaldelights:rustic_loaf_slice"
+   ],
+   "c:foods/cooked_calamari": [
+    "culturaldelights:cooked_squid",
+    "culturaldelights:cooked_calamari"
+   ],
+   "c:foods/cooked_squid": [
+    "culturaldelights:cooked_squid",
+    "culturaldelights:cooked_calamari"
+   ],
+   "c:foods/dough": [
+    "culturaldelights:corn_dough"
+   ],
+   "c:foods/fruit": [
+    "culturaldelights:avocado",
+    "culturaldelights:cut_avocado",
+    "culturaldelights:lemon"
+   ],
+   "c:foods/pie": [
+    "culturaldelights:butterscotch_cinnamon_pie",
+    "culturaldelights:butterscotch_cinnamon_pie_slice"
+   ],
+   "c:foods/popcorn": [
+    "culturaldelights:popcorn"
+   ],
+   "c:foods/raw_calamari": [
+    "culturaldelights:squid",
+    "culturaldelights:glow_squid",
+    "culturaldelights:raw_calamari"
+   ],
+   "c:foods/raw_squid": [
+    "culturaldelights:squid",
+    "culturaldelights:glow_squid",
+    "culturaldelights:raw_calamari"
+   ],
+   "c:foods/vegetable": [
+    "#c:crops/cucumber",
+    "#c:crops/eggplant",
+    "#c:crops/corn",
+    "culturaldelights:cut_cucumber",
+    "culturaldelights:cut_eggplant",
+    "culturaldelights:smoked_eggplant",
+    "culturaldelights:smoked_white_eggplant",
+    "culturaldelights:smoked_cut_eggplant",
+    "culturaldelights:pickle",
+    "culturaldelights:cut_pickle",
+    "culturaldelights:beans"
+   ],
+   "c:fruits/lemon": [
+    "culturaldelights:lemon?",
+    "cookscollection:lemon?"
+   ],
+   "c:seeds": [
+    "culturaldelights:cucumber_seeds",
+    "culturaldelights:eggplant_seeds",
+    "culturaldelights:corn_kernels",
+    "culturaldelights:avocado_pit"
+   ],
+   "c:seeds/corn": [
+    "culturaldelights:corn_kernels"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/bean_pod",
+    "#c:storage_blocks/beans"
+   ],
+   "c:storage_blocks/bean_pod": [
+    "culturaldelights:bean_crate"
+   ],
+   "c:storage_blocks/beans": [
+    "culturaldelights:bean_bag"
+   ],
+   "c:stripped_logs": [
+    "culturaldelights:stripped_beanstalk"
+   ],
+   "c:vegetables/corn": [
+    "culturaldelights:corn_cob"
+   ],
+   "culturaldelights:all_eggplants": [
+    "#c:crops/eggplant",
+    "culturaldelights:cut_eggplant"
+   ],
+   "culturaldelights:avocado_logs": [
+    "culturaldelights:avocado_log",
+    "culturaldelights:avocado_wood"
+   ],
+   "culturaldelights:avocados": [
+    "culturaldelights:avocado",
+    "culturaldelights:cut_avocado"
+   ],
+   "culturaldelights:beanstalks": [
+    "culturaldelights:beanstalk",
+    "culturaldelights:stripped_beanstalk"
+   ],
+   "culturaldelights:cheese_wedges": [
+    "culturaldelights:cheese_wedge",
+    "#brewinandchewin:foods/cheese_wedge?",
+    "#hearthandharvest:cheese_slices?"
+   ],
+   "culturaldelights:counters": [
+    "culturaldelights:brick_counter",
+    "culturaldelights:ash_brick_counter?",
+    "culturaldelights:silt_brick_counter?"
+   ],
+   "culturaldelights:cucumbers": [
+    "culturaldelights:cucumber",
+    "culturaldelights:cut_cucumber"
+   ],
+   "culturaldelights:full_meats": [
+    "minecraft:porkchop",
+    "minecraft:beef",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:mutton",
+    "culturaldelights:tofu"
+   ],
+   "culturaldelights:marshmallows": [
+    "culturaldelights:marshmallow",
+    "culturaldelights:marshmallow_on_a_stick",
+    "culturaldelights:caramelized_marshmallow_on_a_stick",
+    "culturaldelights:charred_marshmallow_on_a_stick"
+   ],
+   "culturaldelights:regular_eggplants": [
+    "culturaldelights:eggplant",
+    "culturaldelights:cut_eggplant"
+   ],
+   "culturaldelights:smoked_all_eggplants": [
+    "culturaldelights:smoked_eggplant",
+    "culturaldelights:smoked_cut_eggplant",
+    "culturaldelights:smoked_white_eggplant"
+   ],
+   "culturaldelights:smoked_regular_eggplants": [
+    "culturaldelights:smoked_eggplant",
+    "culturaldelights:smoked_cut_eggplant"
+   ],
+   "farmersdelight:cabbage_roll_ingredients": [
+    "culturaldelights:tofu"
+   ],
+   "farmersdelight:cabinets/wooden": [
+    "culturaldelights:beanstalk_cabinet"
+   ],
+   "minecraft:boats": [
+    "culturaldelights:beanstalk_raft"
+   ],
+   "minecraft:chest_boats": [
+    "culturaldelights:beanstalk_chest_raft"
+   ],
+   "minecraft:fence_gates": [
+    "culturaldelights:beanstalk_fence_gate"
+   ],
+   "minecraft:hanging_signs": [
+    "culturaldelights:beanstalk_hanging_sign"
+   ],
+   "minecraft:leaves": [
+    "culturaldelights:avocado_leaves",
+    "culturaldelights:lemon_leaves",
+    "culturaldelights:fruiting_lemon_leaves"
+   ],
+   "minecraft:logs": [
+    "culturaldelights:avocado_log",
+    "culturaldelights:avocado_wood",
+    "culturaldelights:lemon_log",
+    "culturaldelights:lemon_wood"
+   ],
+   "minecraft:logs_that_burn": [
+    "culturaldelights:avocado_log",
+    "culturaldelights:avocado_wood",
+    "culturaldelights:lemon_log",
+    "culturaldelights:lemon_wood",
+    "#culturaldelights:beanstalks"
+   ],
+   "minecraft:planks": [
+    "culturaldelights:beanstalk_planks"
+   ],
+   "minecraft:saplings": [
+    "culturaldelights:avocado_sapling",
+    "culturaldelights:lemon_sapling"
+   ],
+   "minecraft:signs": [
+    "culturaldelights:beanstalk_sign"
+   ],
+   "minecraft:wooden_buttons": [
+    "culturaldelights:beanstalk_button"
+   ],
+   "minecraft:wooden_doors": [
+    "culturaldelights:beanstalk_door"
+   ],
+   "minecraft:wooden_fences": [
+    "culturaldelights:beanstalk_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "culturaldelights:beanstalk_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "culturaldelights:beanstalk_slab"
+   ],
+   "minecraft:wooden_stairs": [
+    "culturaldelights:beanstalk_stairs"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "culturaldelights:beanstalk_trapdoor"
+   ],
+   "supplementaries:cookies": [
+    "culturaldelights:cheese_cracker?",
+    "culturaldelights:cinnamon_cracker?",
+    "culturaldelights:popcorn?",
+    "culturaldelights:tortilla_chips?"
+   ],
+   "supplementaries:flower_box_plantable": [
+    "culturaldelights:mint?",
+    "culturaldelights:agave?"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "culturaldelights:has_wild_beans": [
+    "minecraft:dark_forest",
+    "#c:is_swamp"
+   ]
+  }
+ },
+ "recipe_types": {
+  "create:crushing": 1,
+  "create:milling": 1,
+  "culturaldelights:aging": 28,
+  "culturaldelights:baking": 49,
+  "farmersdelight:cooking": 20,
+  "farmersdelight:cutting": 28,
+  "minecraft:campfire_cooking": 6,
+  "minecraft:crafting_shaped": 31,
+  "minecraft:crafting_shapeless": 59,
+  "minecraft:smelting": 6,
+  "minecraft:smoking": 10,
+  "modestmagic:infusing": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

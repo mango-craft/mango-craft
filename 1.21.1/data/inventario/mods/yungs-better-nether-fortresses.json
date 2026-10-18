@@ -1,0 +1,300 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "YUNG's Better Nether Fortresses",
+ "file": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "18b461298d3df1215fa3b4d2c0cb2ef1c7ed76701d8a0bb140277b21923e31abd939f0fd9b400c5bd676d739f1cda31c43b4dc753f9187251542223f3424d336",
+ "mods": [
+  {
+   "modid": "betterfortresses",
+   "name": "YUNG's Better Nether Fortresses",
+   "version": "1.21.1-NeoForge-3.1.5",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": null
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0,)",
+     "side": null
+    },
+    {
+     "modid": "yungsapi",
+     "type": "required",
+     "range": "[1.21.1-NeoForge-5.1.4,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "betterfortresses",
+  "minecraft",
+  "morevillagers",
+  "yungsapi"
+ ],
+ "data": {
+  "loot_table": [
+   "betterfortresses:chests/beacon",
+   "betterfortresses:chests/extra",
+   "betterfortresses:chests/hall",
+   "betterfortresses:chests/keep",
+   "betterfortresses:chests/obsidian",
+   "betterfortresses:chests/puzzle",
+   "betterfortresses:chests/quarters",
+   "betterfortresses:chests/storage",
+   "betterfortresses:chests/worship"
+  ],
+  "structure": [
+   "betterfortresses:battle_bridge/battle_bridge_gate",
+   "betterfortresses:battle_bridge/battle_bridge_pillar",
+   "betterfortresses:battle_bridge/battle_bridge_split",
+   "betterfortresses:battle_bridge/battle_bridge_start",
+   "betterfortresses:battle_bridge/battle_bridge_straight",
+   "betterfortresses:battle_bridge/battle_bridge_straight_bothsides",
+   "betterfortresses:battle_bridge/battle_bridge_straight_oneside",
+   "betterfortresses:blaze/blaze_0",
+   "betterfortresses:blaze/blaze_broken_0_l",
+   "betterfortresses:blaze/blaze_broken_0_r",
+   "betterfortresses:blaze/blaze_broken_1_l",
+   "betterfortresses:blaze/blaze_broken_1_r",
+   "betterfortresses:blaze/blaze_broken_2_l",
+   "betterfortresses:blaze/blaze_broken_2_r",
+   "betterfortresses:blaze/blaze_broken_3_l",
+   "betterfortresses:blaze/blaze_broken_3_r",
+   "betterfortresses:blaze/blaze_broken_4_l",
+   "betterfortresses:blaze/blaze_broken_4_r",
+   "betterfortresses:bridge/blaze_stairs",
+   "betterfortresses:bridge/blaze_stairs_broken_0",
+   "betterfortresses:bridge/blaze_stairs_broken_1",
+   "betterfortresses:bridge/blaze_stairs_broken_2",
+   "betterfortresses:bridge/blaze_stairs_broken_3",
+   "betterfortresses:bridge/blaze_stairs_broken_4",
+   "betterfortresses:bridge/blaze_stairs_ruined_0",
+   "betterfortresses:bridge/blaze_stairs_ruined_1",
+   "betterfortresses:bridge/bridge_chest",
+   "betterfortresses:bridge/bridge_chest_empty",
+   "betterfortresses:bridge/bridge_end",
+   "betterfortresses:bridge/bridge_end_ruined_0",
+   "betterfortresses:bridge/bridge_end_wall",
+   "betterfortresses:bridge/bridge_junction_2",
+   "betterfortresses:bridge/bridge_junction_2_covered",
+   "betterfortresses:bridge/bridge_junction_3",
+   "betterfortresses:bridge/bridge_junction_3_covered",
+   "betterfortresses:bridge/bridge_junction_4",
+   "betterfortresses:bridge/bridge_junction_4_covered",
+   "betterfortresses:bridge/bridge_pillar",
+   "betterfortresses:bridge/bridge_pillar_beacon_lit",
+   "betterfortresses:bridge/bridge_pillar_beacon_unlit",
+   "betterfortresses:bridge/bridge_pillar_covered",
+   "betterfortresses:bridge/bridge_pillar_ruined_0",
+   "betterfortresses:bridge/bridge_pillar_ruined_1",
+   "betterfortresses:bridge/bridge_pillar_ruined_2",
+   "betterfortresses:bridge/bridge_pillar_ruined_3",
+   "betterfortresses:bridge/bridge_pillar_ruined_4",
+   "betterfortresses:bridge/bridge_pillar_shelter",
+   "betterfortresses:bridge/bridge_pillar_wall",
+   "betterfortresses:bridge/bridge_stairs_l",
+   "betterfortresses:bridge/bridge_stairs_r",
+   "betterfortresses:bridge/bridge_start",
+   "betterfortresses:bridge/bridge_start_long_ruined_0",
+   "betterfortresses:bridge/bridge_start_long_ruined_1",
+   "betterfortresses:bridge/bridge_start_long_ruined_2",
+   "betterfortresses:bridge/bridge_start_long_ruined_3",
+   "betterfortresses:bridge/bridge_start_long_ruined_4",
+   "betterfortresses:bridge/bridge_start_ruined_0",
+   "betterfortresses:bridge/bridge_start_ruined_1",
+   "betterfortresses:bridge/bridge_start_ruined_2",
+   "betterfortresses:bridge/bridge_start_ruined_3",
+   "betterfortresses:bridge/bridge_start_ruined_4",
+   "betterfortresses:bridge/bridge_start_wall",
+   "betterfortresses:halls/hall_3",
+   "betterfortresses:halls/hall_3_decor",
+   "betterfortresses:halls/hall_3_prop",
+   "betterfortresses:halls/hall_4_",
+   "betterfortresses:halls/hall_deadend",
+   "betterfortresses:halls/hall_deadend_decor",
+   "betterfortresses:halls/hall_deadend_prop",
+   "betterfortresses:halls/hall_stairs",
+   "betterfortresses:halls/hall_straight",
+   "betterfortresses:halls/hall_straight_decor",
+   "betterfortresses:halls/hall_straight_prop",
+   "betterfortresses:halls/hall_terminator",
+   "betterfortresses:halls/hall_turn_left",
+   "betterfortresses:halls/hall_turn_left_decor",
+   "betterfortresses:halls/hall_turn_left_prop_0",
+   "betterfortresses:halls/hall_turn_left_prop_1",
+   "betterfortresses:halls/halls_entrance_frame",
+   "betterfortresses:halls/halls_entrance_tunnel",
+   "betterfortresses:halls/prop/hall_prop_armory_4wide_0",
+   "betterfortresses:halls/prop/hall_prop_armory_5wide_0",
+   "betterfortresses:halls/prop/hall_prop_broken_statue_0",
+   "betterfortresses:halls/prop/hall_prop_broken_statue_1",
+   "betterfortresses:halls/prop/hall_prop_broken_statue_2",
+   "betterfortresses:halls/prop/hall_prop_desk",
+   "betterfortresses:halls/prop/hall_prop_fireplace_3wide_0",
+   "betterfortresses:halls/prop/hall_prop_fireplace_3wide_1",
+   "betterfortresses:halls/prop/hall_prop_fireplace_3wide_2",
+   "betterfortresses:halls/prop/hall_prop_fireplace_4wide_0",
+   "betterfortresses:halls/prop/hall_prop_fireplace_4wide_1",
+   "betterfortresses:halls/prop/hall_prop_fireplace_crumbled_3wide_0",
+   "betterfortresses:halls/prop/hall_prop_glowstone_3wide_0",
+   "betterfortresses:halls/prop/hall_prop_glowstone_3wide_1",
+   "betterfortresses:halls/prop/hall_prop_glowstone_3wide_2",
+   "betterfortresses:halls/prop/hall_prop_glowstone_3wide_3",
+   "betterfortresses:halls/prop/hall_prop_glowstone_4wide_0",
+   "betterfortresses:halls/prop/hall_prop_glowstone_4wide_1",
+   "betterfortresses:halls/prop/hall_prop_hearth_5wide_0",
+   "betterfortresses:halls/prop/hall_prop_hearth_5wide_1",
+   "betterfortresses:halls/prop/hall_prop_shelf_4wide_0",
+   "betterfortresses:halls/prop/hall_prop_shelf_4wide_1",
+   "betterfortresses:halls/prop/hall_prop_shelf_5wide_0",
+   "betterfortresses:halls/prop/hall_prop_shelf_5wide_1",
+   "betterfortresses:halls/prop/hall_prop_wart_3wide",
+   "betterfortresses:halls/prop/hall_prop_wart_5wide",
+   "betterfortresses:halls/prop/obsidian_deposit_0",
+   "betterfortresses:halls/prop/obsidian_deposit_1",
+   "betterfortresses:halls/prop/obsidian_deposit_2",
+   "betterfortresses:halls/room/a_very_ethical_room",
+   "betterfortresses:halls/room/alchemy_md_side_0",
+   "betterfortresses:halls/room/armory_md_side_0",
+   "betterfortresses:halls/room/better_portals",
+   "betterfortresses:halls/room/jail_md_l_0",
+   "betterfortresses:halls/room/jail_md_r_0",
+   "betterfortresses:halls/room/mess_md_l_0",
+   "betterfortresses:halls/room/mess_md_r_0",
+   "betterfortresses:halls/room/nether_reactor_md_l_0",
+   "betterfortresses:halls/room/nether_reactor_md_r_0",
+   "betterfortresses:halls/room/obsidan_md_side_0",
+   "betterfortresses:halls/room/officer_sm",
+   "betterfortresses:halls/room/puzzle_md_side_0",
+   "betterfortresses:halls/room/quarters_md_l_0",
+   "betterfortresses:halls/room/quarters_md_r_0",
+   "betterfortresses:halls/room/quarters_sm",
+   "betterfortresses:halls/room/storeroom_sm_0",
+   "betterfortresses:halls/room/storeroom_sm_1",
+   "betterfortresses:halls/room/study_md_l_0",
+   "betterfortresses:halls/room/study_md_r_0",
+   "betterfortresses:halls/room/study_sm",
+   "betterfortresses:halls/room/worship_md_l_0",
+   "betterfortresses:halls/room/worship_md_r_0",
+   "betterfortresses:keep",
+   "betterfortresses:keep/keep_left_side",
+   "betterfortresses:keep/keep_right_side",
+   "betterfortresses:keep/keep_well",
+   "betterfortresses:keep/tower/keep_tower_back_left",
+   "betterfortresses:keep/tower/keep_tower_back_right",
+   "betterfortresses:keep/tower/keep_tower_front_left",
+   "betterfortresses:keep/tower/keep_tower_front_right",
+   "betterfortresses:keep/tower/tower_bottom_back_left",
+   "betterfortresses:keep/tower/tower_bottom_back_right",
+   "betterfortresses:keep/tower/tower_bottom_front_left",
+   "betterfortresses:keep/tower/tower_bottom_front_right",
+   "betterfortresses:keep/tower/tower_stairs_back_left",
+   "betterfortresses:keep/tower/tower_stairs_back_right",
+   "betterfortresses:keep/tower/tower_stairs_bottom_back_left",
+   "betterfortresses:keep/tower/tower_stairs_bottom_back_right",
+   "betterfortresses:keep/tower/tower_stairs_bottom_front_left",
+   "betterfortresses:keep/tower/tower_stairs_bottom_front_right",
+   "betterfortresses:keep/tower/tower_stairs_chainable_back_left",
+   "betterfortresses:keep/tower/tower_stairs_chainable_back_right",
+   "betterfortresses:keep/tower/tower_stairs_chainable_front_left",
+   "betterfortresses:keep/tower/tower_stairs_chainable_front_right",
+   "betterfortresses:keep/tower/tower_stairs_front_left",
+   "betterfortresses:keep/tower/tower_stairs_front_right",
+   "betterfortresses:keep/tower/tower_stairs_mid_back_left",
+   "betterfortresses:keep/tower/tower_stairs_mid_back_right",
+   "betterfortresses:keep/tower/tower_stairs_mid_front_left",
+   "betterfortresses:keep/tower/tower_stairs_mid_front_right",
+   "betterfortresses:keep/tower/tower_stairs_top_back_left",
+   "betterfortresses:keep/tower/tower_stairs_top_back_right",
+   "betterfortresses:keep/tower/tower_stairs_top_front_left",
+   "betterfortresses:keep/tower/tower_stairs_top_front_right",
+   "betterfortresses:mobs/piglin",
+   "betterfortresses:mobs/skeleton",
+   "betterfortresses:mobs/wither_skeleton",
+   "betterfortresses:mod_integration/battle_bridge_gate_create",
+   "betterfortresses:mod_integration/keep_create"
+  ],
+  "tags/worldgen/biome": [
+   "betterfortresses:has_structure/better_fortress"
+  ],
+  "tags/worldgen/structure": [
+   "betterfortresses:better_fortresses",
+   "morevillagers:on_fortress_explorer_maps",
+   "yungsapi:remove_basalt_columns_feature_in",
+   "yungsapi:remove_delta_feature_in"
+  ],
+  "tags/worldgen/structure_set": [
+   "betterfortresses:fortress_avoid"
+  ],
+  "worldgen/processor_list": [
+   "betterfortresses:main"
+  ],
+  "worldgen/structure": [
+   "betterfortresses:fortress"
+  ],
+  "worldgen/structure_set": [
+   "betterfortresses:fortress"
+  ],
+  "worldgen/template_pool": [
+   "betterfortresses:battle_bridge",
+   "betterfortresses:blaze",
+   "betterfortresses:bridge",
+   "betterfortresses:bridge_chest",
+   "betterfortresses:bridge_terminators",
+   "betterfortresses:hall_prop_any",
+   "betterfortresses:halls",
+   "betterfortresses:halls_terminators",
+   "betterfortresses:keep",
+   "betterfortresses:mobs",
+   "betterfortresses:starts",
+   "betterfortresses:tower_stairs/tower_stairs_back_left",
+   "betterfortresses:tower_stairs/tower_stairs_back_right",
+   "betterfortresses:tower_stairs/tower_stairs_front_left",
+   "betterfortresses:tower_stairs/tower_stairs_front_right"
+  ]
+ },
+ "data_counts": {
+  "advancement": 1
+ },
+ "tags": {
+  "tags/worldgen/biome": {
+   "betterfortresses:has_structure/better_fortress": [
+    "#minecraft:is_nether",
+    "#c:in_nether?"
+   ]
+  },
+  "tags/worldgen/structure": {
+   "betterfortresses:better_fortresses": [
+    "betterfortresses:fortress"
+   ],
+   "morevillagers:on_fortress_explorer_maps": [
+    "#betterfortresses:better_fortresses"
+   ],
+   "yungsapi:remove_basalt_columns_feature_in": [
+    "betterfortresses:fortress"
+   ],
+   "yungsapi:remove_delta_feature_in": [
+    "betterfortresses:fortress"
+   ]
+  },
+  "tags/worldgen/structure_set": {
+   "betterfortresses:fortress_avoid": [
+    "minecraft:nether_complexes"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

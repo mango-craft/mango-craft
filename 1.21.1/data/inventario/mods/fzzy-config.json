@@ -1,0 +1,48 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Fzzy Config",
+ "file": "fzzy_config-0.7.7+1.21+neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "ef03b411b0e1b241a9952e1a8fdac61979665953eb5f28116aac06530964e7378eb20a78594a47ba4d942c74dfa20d550c292014b5de8e63c42b882a33aef5a5",
+ "mods": [
+  {
+   "modid": "fzzy_config",
+   "name": "Fzzy Config",
+   "version": "0.7.7+1.21+neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "kotlinforforge",
+     "type": "required",
+     "range": "[5.3.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "fzzy_config"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

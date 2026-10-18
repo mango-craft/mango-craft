@@ -1,0 +1,52 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Xaero's Minimap & World Map - Waystones Compatibility",
+ "file": "xaeros_waystones_compatibility-NeoForge-1.21.1-2.1.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "440da659b1c406ff410841248a28adba60b73f3d91f513ba335b9e5d44b3e48ab63d5ecc86484ff1e3d1a4f7830ad7566fc1efec2a03eba3c958b414b61feea0",
+ "mods": [
+  {
+   "modid": "w2w2",
+   "name": "Waystones2Waypoints2",
+   "version": "2.1.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "waystones",
+     "type": "required",
+     "range": "[0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "xaerominimap",
+     "type": "optional",
+     "range": "[0,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

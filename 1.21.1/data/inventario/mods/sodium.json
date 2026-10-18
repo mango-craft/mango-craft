@@ -1,0 +1,173 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Sodium",
+ "file": "sodium-neoforge-0.8.13+mc1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "4f537696af95411e9daf15795fb5fcbc49913d488a96fa912fa8f1d7db408710995e8a1461190f3cd0f8217bf9e35e9539176592428ed587ca2d7aa84450a390",
+ "mods": [
+  {
+   "modid": "fabric_api_base",
+   "name": "Forgified Fabric API Base",
+   "version": "0.4.42+d1308ded19",
+   "jar": "fabric-api-base-0.4.42+d1308ded19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_block_view_api_v2",
+   "name": "Forgified Fabric BlockView API (v2)",
+   "version": "1.0.10+9afaaf8c19",
+   "jar": "fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.115,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_renderer_api_v1",
+   "name": "Forgified Fabric Renderer API (v1)",
+   "version": "3.4.1+9125b6dc19",
+   "jar": "fabric-renderer-api-v1-3.4.1+9125b6dc19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.219,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_api_base",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "fabric_rendering_data_attachment_v1",
+   "name": "Forgified Fabric Rendering Data Attachment (v1)",
+   "version": "0.3.48+73761d2e19",
+   "jar": "fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.115,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fabric_block_view_api_v2",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "sodium",
+   "name": "Sodium",
+   "version": "0.8.13+mc1.21.1",
+   "jar": "net.caffeinemc.sodium-neoforge-0.8.13+mc1.21.1-mod.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "1.21.1",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.82,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "embeddium",
+     "type": "incompatible",
+     "range": "[0.0.1,)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "sodium",
+   "name": "Sodium",
+   "version": "0.8.13+mc1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "1.21.1",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.82,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "embeddium",
+     "type": "incompatible",
+     "range": "[0.0.1,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "fabric-api-base-0.4.42+d1308ded19.jar",
+  "fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+  "fabric-renderer-api-v1-3.4.1+9125b6dc19.jar",
+  "fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+  "net.caffeinemc.sodium-neoforge-0.8.13+mc1.21.1-mod.jar"
+ ],
+ "namespaces": [
+  "minecraft",
+  "sodium"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,54 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Sound Physics Remastered",
+ "file": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "ff7e9f0b968eeb2ba0e833328a122813cad0434cfe2d5c3d527c1c0d564504f13a737fc05f22d3fea562a2f86568d31b95212bf5347dd10da36cd49ad56143a6",
+ "mods": [
+  {
+   "modid": "sound_physics_remastered",
+   "name": "Sound Physics Remastered",
+   "version": "1.21.1-1.5.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.0-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "cloth_config",
+     "type": "optional",
+     "range": "[15.0.127,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "voicechat",
+     "type": "optional",
+     "range": "[1.21-2.3.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "sound_physics_remastered"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

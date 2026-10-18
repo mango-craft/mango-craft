@@ -1,0 +1,42 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Simple Backups",
+ "file": "SimpleBackups-1.21-4.0.21.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "e31b437c9c2000f38d9d130fdde62276932081dbd3f62d1db9575a55a97164889efe5a40e7754c1e964483b1ca49327ce88c565879a59263b2523bd1dc0e64b1",
+ "mods": [
+  {
+   "modid": "simplebackups",
+   "name": "Simple Backups",
+   "version": "1.21-4.0.21",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.115,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "simplebackups"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

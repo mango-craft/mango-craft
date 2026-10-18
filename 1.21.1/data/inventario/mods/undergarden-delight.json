@@ -1,0 +1,920 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Undergarden Delight",
+ "file": "undergardendelight-2.0.2-neoforge-1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "b2516ea3cb1ff8adae695d2870810eb8dd670200cf58a7719aa4c1551cfa8c5322f6a963cd7a25c819b696462921383cdac243a5d9122adcaa60230973d9fef9",
+ "mods": [
+  {
+   "modid": "undergardendelight",
+   "name": "Undergarden Delight",
+   "version": "1.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.20.1]",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "undergardendelight",
+   "name": "[NoCube's] Undergarden Delight",
+   "version": "2.0.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.176,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "dragonsurvival",
+  "farmersdelight",
+  "forge",
+  "minecraft",
+  "undergarden",
+  "undergardendelight"
+ ],
+ "blocks": {
+  "undergardendelight:ancient_root_cabinet": "Ancient Root Cabinet",
+  "undergardendelight:blisterberry_crate": "Blisterberry Crate",
+  "undergardendelight:blisterberry_pie": "Blisterberry Pie",
+  "undergardendelight:blisterberry_pie_1": "Blisterberry Pie",
+  "undergardendelight:blisterberry_pie_2": "Blisterberry Pie",
+  "undergardendelight:blisterberry_pie_3": "Blisterberry Pie",
+  "undergardendelight:blood_mushroom_colony": "Blood Mushroom Colony",
+  "undergardendelight:blood_mushroom_colony_0": "Blood Mushroom Colony",
+  "undergardendelight:blood_mushroom_colony_1": "Blood Mushroom Colony",
+  "undergardendelight:blood_mushroom_colony_2": "Blood Mushroom Colony",
+  "undergardendelight:blood_mushroom_colony_3": "Blood Mushroom Colony",
+  "undergardendelight:ditchbulb_crate": "Ditchbulb Crate",
+  "undergardendelight:droopfruit_crate": "Droopfruit Crate",
+  "undergardendelight:droopfruit_pie": "Droopfruit Pie",
+  "undergardendelight:droopfruit_pie_1": "Droopfruit Pie",
+  "undergardendelight:droopfruit_pie_2": "Droopfruit Pie",
+  "undergardendelight:droopfruit_pie_3": "Droopfruit Pie",
+  "undergardendelight:gloomgourd_pie": "Gloomgourd Pie",
+  "undergardendelight:gloomgourd_pie_1": "Gloomgourd Pie",
+  "undergardendelight:gloomgourd_pie_2": "Gloomgourd Pie",
+  "undergardendelight:gloomgourd_pie_3": "Gloomgourd Pie",
+  "undergardendelight:grongle_cabinet": "Grongle Cabinet",
+  "undergardendelight:indigo_mushroom_colony": "Indigo Mushroom Colony",
+  "undergardendelight:indigo_mushroom_colony_0": "Indigo Mushroom Colony",
+  "undergardendelight:indigo_mushroom_colony_1": "Indigo Mushroom Colony",
+  "undergardendelight:indigo_mushroom_colony_2": "Indigo Mushroom Colony",
+  "undergardendelight:indigo_mushroom_colony_3": "Indigo Mushroom Colony",
+  "undergardendelight:ink_mushroom_colony": "Ink Mushroom Colony",
+  "undergardendelight:ink_mushroom_colony_0": "Ink Mushroom Colony",
+  "undergardendelight:ink_mushroom_colony_1": "Ink Mushroom Colony",
+  "undergardendelight:ink_mushroom_colony_2": "Ink Mushroom Colony",
+  "undergardendelight:ink_mushroom_colony_3": "Ink Mushroom Colony",
+  "undergardendelight:puff_mushroom_colony": "Puff Mushroom Colony",
+  "undergardendelight:puff_mushroom_colony_0": "Puff Mushroom Colony",
+  "undergardendelight:puff_mushroom_colony_1": "Puff Mushroom Colony",
+  "undergardendelight:puff_mushroom_colony_2": "Puff Mushroom Colony",
+  "undergardendelight:puff_mushroom_colony_3": "Puff Mushroom Colony",
+  "undergardendelight:smogstem_cabinet": "Smogstem Cabinet",
+  "undergardendelight:stuffed_gloomgourd": "Stuffed Gloomgourd",
+  "undergardendelight:stuffed_gloomgourd_1": "Stuffed Gloomgourd",
+  "undergardendelight:stuffed_gloomgourd_2": "Stuffed Gloomgourd",
+  "undergardendelight:stuffed_gloomgourd_3": "Stuffed Gloomgourd",
+  "undergardendelight:twistytwig_bundle": "Bundle of Twistytwigs",
+  "undergardendelight:underbean_crate": "Underbean Crate",
+  "undergardendelight:veil_mushroom_colony": "Veiled Mushroom Colony",
+  "undergardendelight:veil_mushroom_colony_0": "Veiled Mushroom Colony",
+  "undergardendelight:veil_mushroom_colony_1": "Veiled Mushroom Colony",
+  "undergardendelight:veil_mushroom_colony_2": "Veiled Mushroom Colony",
+  "undergardendelight:veil_mushroom_colony_3": "Veiled Mushroom Colony",
+  "undergardendelight:wigglewood_cabinet": "Wigglewood Cabinet"
+ },
+ "effects": {
+  "undergardendelight:blist_resistance": "Blist Resistance",
+  "undergardendelight:depthrock_reach": "Decreased Reach",
+  "undergardendelight:rogdorium_reach": "Increased Reach"
+ },
+ "items": {
+  "undergardendelight:ancient_root_cabinet": "",
+  "undergardendelight:baked_gwibling_and_vegetables": "Baked Gwibling and Vegetables",
+  "undergardendelight:blisterberry_crate": "",
+  "undergardendelight:blisterberry_juice": "Blisterberry Juice",
+  "undergardendelight:blisterberry_pie": "",
+  "undergardendelight:blisterberry_pie_slice": "Slice of Blisterberry Pie",
+  "undergardendelight:blisterberry_popsicle": "Blisterberry Popsicle",
+  "undergardendelight:blood_brew": "Blood Brew",
+  "undergardendelight:blood_mushroom_colony": "",
+  "undergardendelight:blood_tomato_soup": "Blood Tomato Stew",
+  "undergardendelight:boiled_mogmoss": "Boiled Mogmoss",
+  "undergardendelight:brute_tusk_knife": "Brute Tusk Knife",
+  "undergardendelight:cloggrum_knife": "Cloggrum Knife",
+  "undergardendelight:cooked_dweller_meat_slice": "Dweller Steak Slice",
+  "undergardendelight:cooked_gloomper_cuts": "Cooked Gloomper Cuts",
+  "undergardendelight:cooked_gwibfillet": "Cooked Gwibfillet",
+  "undergardendelight:cooked_gwibsteak": "Cooked Gwibsteak",
+  "undergardendelight:depth_barbecue": "Depth Barbecue",
+  "undergardendelight:depth_shroom_cream_soup": "Depth Shroom Cream Soup",
+  "undergardendelight:depthflower_tea": "Depthflower Tea",
+  "undergardendelight:depthrock_knife": "Depthrock Knife",
+  "undergardendelight:ditchbulb_crate": "",
+  "undergardendelight:ditchbulb_pasta": "Ditchbulb Pasta",
+  "undergardendelight:ditchbulb_sauce": "Ditchbulb Sauce",
+  "undergardendelight:droopfruit_crate": "",
+  "undergardendelight:droopfruit_custard": "Droopfruit Custard",
+  "undergardendelight:droopfruit_juice": "Droopfruit Juice",
+  "undergardendelight:droopfruit_pie": "",
+  "undergardendelight:droopfruit_pie_slice": "Slice of Droopfruit Pie",
+  "undergardendelight:droopfruit_popsicle": "Droopfruit Popsicle",
+  "undergardendelight:droopfruit_salad": "Droopfruit Salad",
+  "undergardendelight:droopstew": "Droopstew",
+  "undergardendelight:dweller_feed": "Dweller Feed",
+  "undergardendelight:dweller_meat_slice": "Dweller Meat Slice",
+  "undergardendelight:forgotten_knife": "§aForgotten Knife",
+  "undergardendelight:frosteel_knife": "Froststeel Knife",
+  "undergardendelight:glitterdish": "Glitterdish",
+  "undergardendelight:glitterkelp_roll": "Glitterkelp Roll",
+  "undergardendelight:glitterkelp_roll_slice": "Glitterkelp Roll Slice",
+  "undergardendelight:glitterwrap": "Glitterwrap",
+  "undergardendelight:gloomgourd_juice": "Gloomgourd Juice",
+  "undergardendelight:gloomgourd_pie_slice": "Slice of Gloomgourd Pie",
+  "undergardendelight:gloomgourd_slice": "Gloomgourd Slice",
+  "undergardendelight:gloomper_and_gloomgourd_stew": "Gloomper and Gloomgourd Stew",
+  "undergardendelight:gloomper_fresh_salad": "Gloomper Fresh Salad",
+  "undergardendelight:gooey_brew": "Scintling Gooey Brew",
+  "undergardendelight:greater_dweller_hamleg": "Dweller Hamleg",
+  "undergardendelight:grongle_cabinet": "",
+  "undergardendelight:gronglet_roll": "Gronglet Roll",
+  "undergardendelight:gronglet_with_roasted_veggies": "Gronglet with Roasted Veggies",
+  "undergardendelight:gronglunch": "Gronglunch",
+  "undergardendelight:gwibfillet_roll": "Gwibfillet Roll",
+  "undergardendelight:gwibfillet_sashimi": "Gwibfillet Sashimi",
+  "undergardendelight:indigo_mushroom_colony": "",
+  "undergardendelight:ink_mushroom_colony": "",
+  "undergardendelight:mogmoss_brew": "Mogmoss Brew",
+  "undergardendelight:mogmoss_slice": "Mogleaf",
+  "undergardendelight:mogsteak": "Mogsteak",
+  "undergardendelight:mushroom_ink_pasta": "Mushroom Ink Pasta",
+  "undergardendelight:puff_mushroom_colony": "",
+  "undergardendelight:raw_gloomper_cuts": "Raw Gloomper Cuts",
+  "undergardendelight:raw_gwibfillet": "Raw Gwibfillet",
+  "undergardendelight:raw_gwibsteak": "Raw Gwibsteak",
+  "undergardendelight:regalium_knife": "Regalium Knife",
+  "undergardendelight:roasted_underbean_on_a_stick": "Roasted Underbean on a Stick",
+  "undergardendelight:rogdorium_knife": "§eRogdorium Knife",
+  "undergardendelight:scintling_stew": "Scintling Stew",
+  "undergardendelight:shimmerpearl": "Shimmerpearl",
+  "undergardendelight:smogstem_cabinet": "",
+  "undergardendelight:smoked_greater_dweller_hamleg": "Smoked Dweller Hamleg",
+  "undergardendelight:stuffed_gloomgourd": "",
+  "undergardendelight:stuffed_gloomgourd_bowl": "Bowl of Stuffed Gloomgourd",
+  "undergardendelight:twistytwig_bundle": "",
+  "undergardendelight:underbean_crate": "",
+  "undergardendelight:underbean_hotpot": "Underbean Hotpot",
+  "undergardendelight:underbean_salad": "Underbean Salad",
+  "undergardendelight:underdumplings": "Underdumplings",
+  "undergardendelight:utherium_knife": "§cUtherium Knife",
+  "undergardendelight:veil_mushroom_colony": "",
+  "undergardendelight:wigglewood_cabinet": ""
+ },
+ "data": {
+  "loot_table": [
+   "undergardendelight:blocks/ancient_root_cabinet",
+   "undergardendelight:blocks/blisterberry_crate",
+   "undergardendelight:blocks/blisterberry_pie",
+   "undergardendelight:blocks/blisterberry_pie_1",
+   "undergardendelight:blocks/blisterberry_pie_2",
+   "undergardendelight:blocks/blisterberry_pie_3",
+   "undergardendelight:blocks/blood_mushroom_colony",
+   "undergardendelight:blocks/blood_mushroom_colony_0",
+   "undergardendelight:blocks/blood_mushroom_colony_1",
+   "undergardendelight:blocks/blood_mushroom_colony_2",
+   "undergardendelight:blocks/blood_mushroom_colony_3",
+   "undergardendelight:blocks/ditchbulb_crate",
+   "undergardendelight:blocks/droopfruit_crate",
+   "undergardendelight:blocks/droopfruit_pie",
+   "undergardendelight:blocks/droopfruit_pie_1",
+   "undergardendelight:blocks/droopfruit_pie_2",
+   "undergardendelight:blocks/droopfruit_pie_3",
+   "undergardendelight:blocks/gloomgourd_pie",
+   "undergardendelight:blocks/gloomgourd_pie_1",
+   "undergardendelight:blocks/gloomgourd_pie_2",
+   "undergardendelight:blocks/gloomgourd_pie_3",
+   "undergardendelight:blocks/grongle_cabinet",
+   "undergardendelight:blocks/indigo_mushroom_colony",
+   "undergardendelight:blocks/indigo_mushroom_colony_0",
+   "undergardendelight:blocks/indigo_mushroom_colony_1",
+   "undergardendelight:blocks/indigo_mushroom_colony_2",
+   "undergardendelight:blocks/indigo_mushroom_colony_3",
+   "undergardendelight:blocks/ink_mushroom_colony",
+   "undergardendelight:blocks/ink_mushroom_colony_0",
+   "undergardendelight:blocks/ink_mushroom_colony_1",
+   "undergardendelight:blocks/ink_mushroom_colony_2",
+   "undergardendelight:blocks/ink_mushroom_colony_3",
+   "undergardendelight:blocks/puff_mushroom_colony",
+   "undergardendelight:blocks/puff_mushroom_colony_0",
+   "undergardendelight:blocks/puff_mushroom_colony_1",
+   "undergardendelight:blocks/puff_mushroom_colony_2",
+   "undergardendelight:blocks/puff_mushroom_colony_3",
+   "undergardendelight:blocks/smogstem_cabinet",
+   "undergardendelight:blocks/stuffed_gloomgourd",
+   "undergardendelight:blocks/stuffed_gloomgourd_1",
+   "undergardendelight:blocks/stuffed_gloomgourd_2",
+   "undergardendelight:blocks/stuffed_gloomgourd_3",
+   "undergardendelight:blocks/twistytwig_bundle",
+   "undergardendelight:blocks/underbean_crate",
+   "undergardendelight:blocks/veil_mushroom_colony",
+   "undergardendelight:blocks/veil_mushroom_colony_0",
+   "undergardendelight:blocks/veil_mushroom_colony_1",
+   "undergardendelight:blocks/veil_mushroom_colony_2",
+   "undergardendelight:blocks/veil_mushroom_colony_3",
+   "undergardendelight:blocks/wigglewood_cabinet",
+   "undergardendelight:gameplay/blood_globule",
+   "undergardendelight:gameplay/blue_mogmoss",
+   "undergardendelight:gameplay/brute_tusk",
+   "undergardendelight:gameplay/cooked_gwibsteak",
+   "undergardendelight:gameplay/dweller_hamleg",
+   "undergardendelight:gameplay/greater_dweller_hamleg",
+   "undergardendelight:gameplay/leather",
+   "undergardendelight:gameplay/mogmoss",
+   "undergardendelight:gameplay/raw_gwibsteak",
+   "undergardendelight:gameplay/smoked_dweller_hamleg",
+   "undergardendelight:gameplay/smoked_greater_dweller_hamleg"
+  ],
+  "recipe": [
+   "undergardendelight:ancient_root_cabinet",
+   "undergardendelight:baked_gwibling_and_vegetables",
+   "undergardendelight:blisterberry_crate",
+   "undergardendelight:blisterberry_from_crate",
+   "undergardendelight:blisterberry_pie",
+   "undergardendelight:blisterberry_pie_from_slices",
+   "undergardendelight:brute_tusk_knife",
+   "undergardendelight:cloggrum_knife",
+   "undergardendelight:cooking/blisterberry_juice",
+   "undergardendelight:cooking/blood_brew",
+   "undergardendelight:cooking/bloody_stew",
+   "undergardendelight:cooking/bloody_tomato_stew",
+   "undergardendelight:cooking/boiled_mogmoss",
+   "undergardendelight:cooking/depth_shroom_cream_soup",
+   "undergardendelight:cooking/depthflower_tea",
+   "undergardendelight:cooking/ditchbulb_pasta",
+   "undergardendelight:cooking/ditchbulb_sauce",
+   "undergardendelight:cooking/droopfruit_juice",
+   "undergardendelight:cooking/droopstew",
+   "undergardendelight:cooking/glitterdish",
+   "undergardendelight:cooking/gloomgourd_juice",
+   "undergardendelight:cooking/gloomper_and_gloomgourd_stew",
+   "undergardendelight:cooking/gronglet_with_roasted_veggies",
+   "undergardendelight:cooking/gronglunch",
+   "undergardendelight:cooking/indigo_stew",
+   "undergardendelight:cooking/inky_stew",
+   "undergardendelight:cooking/mushroom_ink_pasta",
+   "undergardendelight:cooking/scintling_stew",
+   "undergardendelight:cooking/slop_bowl",
+   "undergardendelight:cooking/stuffed_gloomgourd",
+   "undergardendelight:cooking/underbean_hotpot",
+   "undergardendelight:cooking/underdumplings",
+   "undergardendelight:cooking/veiled_stew",
+   "undergardendelight:cutting/axe/ancient_root_planks",
+   "undergardendelight:cutting/axe/engorged_blood_mushroom_cap",
+   "undergardendelight:cutting/axe/grongle_log",
+   "undergardendelight:cutting/axe/grongle_planks",
+   "undergardendelight:cutting/axe/grongle_wood",
+   "undergardendelight:cutting/axe/rogdoric_ancient_root",
+   "undergardendelight:cutting/axe/smogstem_log",
+   "undergardendelight:cutting/axe/smogstem_planks",
+   "undergardendelight:cutting/axe/smogstem_wood",
+   "undergardendelight:cutting/axe/wigglewood_log",
+   "undergardendelight:cutting/axe/wigglewood_planks",
+   "undergardendelight:cutting/axe/wigglewood_wood",
+   "undergardendelight:cutting/knife/amorous_bristle",
+   "undergardendelight:cutting/knife/blisterberry_pie",
+   "undergardendelight:cutting/knife/blood_mushroom",
+   "undergardendelight:cutting/knife/blood_mushroom_colony",
+   "undergardendelight:cutting/knife/blood_mushroom_globule",
+   "undergardendelight:cutting/knife/blue_mogmoss",
+   "undergardendelight:cutting/knife/butterbunch",
+   "undergardendelight:cutting/knife/cooked_gloomper_leg",
+   "undergardendelight:cutting/knife/cooked_gwibling",
+   "undergardendelight:cutting/knife/cooked_gwibsteak",
+   "undergardendelight:cutting/knife/ditchbulb",
+   "undergardendelight:cutting/knife/droopfruit_pie",
+   "undergardendelight:cutting/knife/dweller_meat",
+   "undergardendelight:cutting/knife/dweller_steak",
+   "undergardendelight:cutting/knife/glitterkelp_roll",
+   "undergardendelight:cutting/knife/gloomgourd",
+   "undergardendelight:cutting/knife/gloomgourd_pie",
+   "undergardendelight:cutting/knife/greater_dweller_hamleg",
+   "undergardendelight:cutting/knife/indigo_mushroom",
+   "undergardendelight:cutting/knife/indigo_mushroom_colony",
+   "undergardendelight:cutting/knife/ink_mushroom",
+   "undergardendelight:cutting/knife/ink_mushroom_colony",
+   "undergardendelight:cutting/knife/miserabell",
+   "undergardendelight:cutting/knife/mogmoss",
+   "undergardendelight:cutting/knife/puff_mushroom_colony",
+   "undergardendelight:cutting/knife/raw_gloomper_leg",
+   "undergardendelight:cutting/knife/raw_gwibling",
+   "undergardendelight:cutting/knife/raw_gwibsteak",
+   "undergardendelight:cutting/knife/shimmerweed",
+   "undergardendelight:cutting/knife/smoked_greater_dweller_hamleg",
+   "undergardendelight:cutting/knife/tall_shimmerweed",
+   "undergardendelight:cutting/knife/twistytwig",
+   "undergardendelight:cutting/knife/veil_mushroom",
+   "undergardendelight:cutting/knife/veil_mushroom_colony",
+   "undergardendelight:cutting/pickaxe/catalyst",
+   "undergardendelight:cutting/pickaxe/crumbling_catalyst",
+   "undergardendelight:cutting/pickaxe/depthrock",
+   "undergardendelight:cutting/shears/denizen_mask",
+   "undergardendelight:cutting/shovel/sediment",
+   "undergardendelight:depth_barbecue",
+   "undergardendelight:depthrock_knife",
+   "undergardendelight:ditchbulb_crate",
+   "undergardendelight:ditchbulb_from_crate",
+   "undergardendelight:droopfruit_crate",
+   "undergardendelight:droopfruit_from_crate",
+   "undergardendelight:droopfruit_pie",
+   "undergardendelight:droopfruit_pie_from_slices",
+   "undergardendelight:droopfruit_salad",
+   "undergardendelight:dweller_feed",
+   "undergardendelight:forgotten_knife_smithing",
+   "undergardendelight:frosteel_knife",
+   "undergardendelight:glitterkelp_roll",
+   "undergardendelight:glitterwrap",
+   "undergardendelight:gloomgourd_from_slices",
+   "undergardendelight:gloomgourd_pie_from_pie_crust",
+   "undergardendelight:gloomgourd_pie_from_slices",
+   "undergardendelight:gloomgourd_seeds",
+   "undergardendelight:grongle_cabinet",
+   "undergardendelight:gronglet_roll",
+   "undergardendelight:gwibfillet_roll",
+   "undergardendelight:gwibfillet_sashimi",
+   "undergardendelight:mogsteak",
+   "undergardendelight:moss_from_mogmoss_slice",
+   "undergardendelight:quality_of_life/glass_bottle_from_sediment_glass",
+   "undergardendelight:quality_of_life/organic_compost_from_deepsoil",
+   "undergardendelight:quality_of_life/organic_compost_from_deepsoil_rotten_flesh",
+   "undergardendelight:rogdorium_knife",
+   "undergardendelight:smelting/cooked_dweller_meat_slice",
+   "undergardendelight:smelting/cooked_dweller_meat_slice_from_campfire_cooking",
+   "undergardendelight:smelting/cooked_dweller_meat_slice_from_smoking",
+   "undergardendelight:smelting/cooked_gloomper_cuts",
+   "undergardendelight:smelting/cooked_gloomper_cuts_from_campfire_cooking",
+   "undergardendelight:smelting/cooked_gloomper_cuts_from_smoking",
+   "undergardendelight:smelting/cooked_gwibfillet",
+   "undergardendelight:smelting/cooked_gwibfillet_from_campfire_cooking",
+   "undergardendelight:smelting/cooked_gwibfillet_from_smoking",
+   "undergardendelight:smelting/cooked_gwibsteak",
+   "undergardendelight:smelting/cooked_gwibsteak_from_campfire_cooking",
+   "undergardendelight:smelting/cooked_gwibsteak_from_smoking",
+   "undergardendelight:smelting/smoked_greater_dweller_hamleg",
+   "undergardendelight:smelting/underbean_on_a_stick_campfire_cooking",
+   "undergardendelight:smelting/underbean_on_a_stick_smelting",
+   "undergardendelight:smelting/underbean_on_a_stick_smoking",
+   "undergardendelight:smogstem_cabinet",
+   "undergardendelight:twistytwig_bundle",
+   "undergardendelight:twistytwig_from_bundle",
+   "undergardendelight:underbean_crate",
+   "undergardendelight:underbean_salad",
+   "undergardendelight:underbeans_from_crate",
+   "undergardendelight:utherium_knife",
+   "undergardendelight:wigglewood_cabinet"
+  ],
+  "tags/block": [
+   "farmersdelight:cabinets/wooden",
+   "farmersdelight:campfire_signal_smoke",
+   "farmersdelight:compost_activators",
+   "farmersdelight:heat_sources",
+   "farmersdelight:mineable/knife",
+   "farmersdelight:mushroom_colonies",
+   "farmersdelight:planted_from_below",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/hoe",
+   "undergardendelight:grows_into_blood_mushroom_colony",
+   "undergardendelight:grows_into_indigo_mushroom_colony",
+   "undergardendelight:grows_into_ink_mushroom_colony",
+   "undergardendelight:grows_into_puff_mushroom_colony",
+   "undergardendelight:grows_into_veil_mushroom_colony",
+   "undergardendelight:undergarden_mushroom_colony_growable_on",
+   "undergardendelight:undergarden_straw_sources"
+  ],
+  "tags/entity_type": [
+   "undergardendelight:brute_tusk_knife_affected",
+   "undergardendelight:drops_blue_mogmoss",
+   "undergardendelight:drops_dweller_hamleg",
+   "undergardendelight:drops_greater_dweller_hamleg",
+   "undergardendelight:drops_gwibsteak",
+   "undergardendelight:drops_leather",
+   "undergardendelight:drops_mogmoss",
+   "undergardendelight:dweller_feed_users",
+   "undergardendelight:forgotten_knife_affected",
+   "undergardendelight:froststeel_knife_unaffected",
+   "undergardendelight:regalium_knife_affected",
+   "undergardendelight:utherium_knife_affected"
+  ],
+  "tags/item": [
+   "c:foods/berry",
+   "c:foods/cooked_fish",
+   "c:foods/cooked_meat",
+   "c:foods/edible_when_placed",
+   "c:foods/fruit",
+   "c:foods/leafy_green",
+   "c:foods/raw_fish",
+   "c:foods/raw_meat",
+   "c:foods/vegetable",
+   "c:tools/knife",
+   "dragonsurvival:cooked_mushrooms",
+   "dragonsurvival:cooked_vegetables",
+   "farmersdelight:cabinets/wooden",
+   "farmersdelight:tools/knives",
+   "forge:berries",
+   "forge:cooked_fishes",
+   "forge:cooked_meats",
+   "forge:crops",
+   "forge:fruits",
+   "forge:raw_fishes",
+   "forge:raw_meats",
+   "forge:salad_ingredients",
+   "forge:tools/knives",
+   "forge:vegetables",
+   "minecraft:meat",
+   "minecraft:swords",
+   "undergarden:cloggrum_items",
+   "undergarden:froststeel_items",
+   "undergarden:utherium_items",
+   "undergardendelight:brute_tusk_knife_drops",
+   "undergardendelight:cooked_dweller",
+   "undergardendelight:cooked_gloomper",
+   "undergardendelight:cooked_gwibling",
+   "undergardendelight:ditchbulb",
+   "undergardendelight:furniture/ancient_root",
+   "undergardendelight:furniture/grongle",
+   "undergardendelight:furniture/smogstem",
+   "undergardendelight:furniture/wigglewood",
+   "undergardendelight:mogmoss",
+   "undergardendelight:organic_compost_materials",
+   "undergardendelight:placeable_gloomgourd_pies",
+   "undergardendelight:raw_dweller",
+   "undergardendelight:raw_gloomper",
+   "undergardendelight:raw_gwibling",
+   "undergardendelight:repair_materials/brute_tusk",
+   "undergardendelight:repair_materials/cloggrum",
+   "undergardendelight:repair_materials/depthrock",
+   "undergardendelight:repair_materials/forgotten",
+   "undergardendelight:repair_materials/froststeel",
+   "undergardendelight:repair_materials/regalium",
+   "undergardendelight:repair_materials/rogdorium",
+   "undergardendelight:repair_materials/utherium",
+   "undergardendelight:rogdoric_ancient_root_cutting_tools",
+   "undergardendelight:sticks",
+   "undergardendelight:undergarden_hunting_tools",
+   "undergardendelight:undergarden_plants",
+   "undergardendelight:undergarden_straw_harvesters"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "farmersdelight:cabinets/wooden": [
+    "undergardendelight:grongle_cabinet",
+    "undergardendelight:ancient_root_cabinet",
+    "undergardendelight:wigglewood_cabinet",
+    "undergardendelight:smogstem_cabinet"
+   ],
+   "farmersdelight:campfire_signal_smoke": [
+    "undergardendelight:twistytwig_bundle"
+   ],
+   "farmersdelight:compost_activators": [
+    "undergardendelight:blood_mushroom_colony",
+    "undergarden:blood_mushroom?",
+    "undergardendelight:indigo_mushroom_colony",
+    "undergarden:puff_mushroom?",
+    "undergardendelight:ink_mushroom_colony",
+    "undergarden:veil_mushroom?",
+    "undergardendelight:puff_mushroom_colony",
+    "undergarden:ink_mushroom?",
+    "undergarden:indigo_mushroom?",
+    "undergardendelight:veil_mushroom_colony"
+   ],
+   "farmersdelight:heat_sources": [
+    "undergarden:smog_vent?"
+   ],
+   "farmersdelight:mineable/knife": [
+    "undergarden:mogmoss_rug?",
+    "undergarden:shard_o_lantern?",
+    "undergarden:gloomgourd?",
+    "undergarden:carved_gloomgourd?",
+    "undergardendelight:twistytwig_bundle",
+    "undergarden:gloom_o_lantern?",
+    "undergarden:blue_mogmoss_rug?"
+   ],
+   "farmersdelight:mushroom_colonies": [
+    "undergardendelight:blood_mushroom_colony",
+    "undergardendelight:indigo_mushroom_colony",
+    "undergardendelight:ink_mushroom_colony",
+    "undergardendelight:puff_mushroom_colony",
+    "undergardendelight:veil_mushroom_colony"
+   ],
+   "farmersdelight:planted_from_below": [
+    "undergarden:droopvine_plant?",
+    "undergarden:droopvine?"
+   ],
+   "minecraft:mineable/axe": [
+    "undergardendelight:underbean_crate",
+    "undergardendelight:ditchbulb_crate",
+    "undergardendelight:grongle_cabinet",
+    "undergardendelight:blisterberry_crate",
+    "undergardendelight:ancient_root_cabinet",
+    "undergardendelight:droopfruit_crate",
+    "undergardendelight:wigglewood_cabinet",
+    "undergardendelight:smogstem_cabinet"
+   ],
+   "minecraft:mineable/hoe": [
+    "undergardendelight:twistytwig_bundle"
+   ],
+   "undergardendelight:grows_into_blood_mushroom_colony": [
+    "undergarden:blood_mushroom?"
+   ],
+   "undergardendelight:grows_into_indigo_mushroom_colony": [
+    "undergarden:indigo_mushroom?"
+   ],
+   "undergardendelight:grows_into_ink_mushroom_colony": [
+    "undergarden:ink_mushroom?"
+   ],
+   "undergardendelight:grows_into_puff_mushroom_colony": [
+    "undergarden:puff_mushroom?"
+   ],
+   "undergardendelight:grows_into_veil_mushroom_colony": [
+    "undergarden:veil_mushroom?"
+   ],
+   "undergardendelight:undergarden_mushroom_colony_growable_on": [
+    "farmersdelight:organic_compost?",
+    "#farmersdelight:mushroom_colony_growable_on?",
+    "farmersdelight:rich_soil?"
+   ],
+   "undergardendelight:undergarden_straw_sources": [
+    "undergarden:frozen_deepturf?",
+    "undergarden:tall_deepturf?",
+    "undergarden:deepturf?",
+    "undergarden:ashen_deepturf?"
+   ]
+  },
+  "tags/entity_type": {
+   "undergardendelight:brute_tusk_knife_affected": [
+    "#undergarden:rotspawn?"
+   ],
+   "undergardendelight:drops_blue_mogmoss": [
+    "undergarden:smog_mog?"
+   ],
+   "undergardendelight:drops_dweller_hamleg": [
+    "undergarden:dweller?"
+   ],
+   "undergardendelight:drops_greater_dweller_hamleg": [
+    "undergarden:greater_dweller?"
+   ],
+   "undergardendelight:drops_gwibsteak": [
+    "undergarden:gwib?"
+   ],
+   "undergardendelight:drops_leather": [
+    "undergarden:dweller?",
+    "undergarden:gloomper?",
+    "undergarden:greater_dweller?"
+   ],
+   "undergardendelight:drops_mogmoss": [
+    "undergarden:mog?"
+   ],
+   "undergardendelight:dweller_feed_users": [
+    "undergarden:dweller?"
+   ],
+   "undergardendelight:forgotten_knife_affected": [
+    "undergarden:stoneborn?",
+    "undergarden:muncher?",
+    "undergarden:gwibling?",
+    "undergarden:scintling?",
+    "#undergarden:rotspawn?",
+    "undergarden:nargoyle?",
+    "undergarden:dweller?",
+    "undergarden:forgotten?",
+    "undergarden:gwib?",
+    "undergarden:gloomper?",
+    "undergarden:mog?",
+    "undergarden:smog_mog?",
+    "undergarden:brute?",
+    "undergarden:sploogie?"
+   ],
+   "undergardendelight:froststeel_knife_unaffected": [
+    "snow_golem",
+    "stray",
+    "polar_bear"
+   ],
+   "undergardendelight:regalium_knife_affected": [
+    "#undergardendelight:forgotten_knife_affected?"
+   ],
+   "undergardendelight:utherium_knife_affected": [
+    "undergarden:rotwalker?",
+    "undergarden:rotling?",
+    "undergarden:rotbeast?",
+    "#undergarden:rotspawn?",
+    "undergarden:rotbelcher?"
+   ]
+  },
+  "tags/item": {
+   "c:foods/berry": [
+    "undergarden:blisterberry?"
+   ],
+   "c:foods/cooked_fish": [
+    "#undergardendelight:cooked_gwibling?"
+   ],
+   "c:foods/cooked_meat": [
+    "#undergardendelight:cooked_gloomper?",
+    "#undergardendelight:cooked_dweller?"
+   ],
+   "c:foods/edible_when_placed": [
+    "undergarden:gloomgourd_pie?",
+    "undergardendelight:droopfruit_pie",
+    "undergardendelight:blisterberry_pie",
+    "undergardendelight:stuffed_gloomgourd"
+   ],
+   "c:foods/fruit": [
+    "undergarden:droopvine_item?"
+   ],
+   "c:foods/leafy_green": [
+    "undergardendelight:mogmoss_slice"
+   ],
+   "c:foods/raw_fish": [
+    "#undergardendelight:raw_gwibling?"
+   ],
+   "c:foods/raw_meat": [
+    "#undergardendelight:raw_gloomper?",
+    "#undergardendelight:raw_dweller?"
+   ],
+   "c:foods/vegetable": [
+    "undergarden:underbeans?"
+   ],
+   "c:tools/knife": [
+    "undergardendelight:forgotten_knife",
+    "undergardendelight:brute_tusk_knife",
+    "undergardendelight:frosteel_knife",
+    "undergardendelight:rogdorium_knife",
+    "undergardendelight:utherium_knife",
+    "undergardendelight:depthrock_knife",
+    "undergardendelight:cloggrum_knife"
+   ],
+   "dragonsurvival:cooked_mushrooms": [
+    "undergardendelight:depth_shroom_cream_soup"
+   ],
+   "dragonsurvival:cooked_vegetables": [
+    "undergardendelight:underbean_hotpot",
+    "undergardendelight:roasted_underbean_on_a_stick"
+   ],
+   "farmersdelight:cabinets/wooden": [
+    "undergardendelight:grongle_cabinet",
+    "undergardendelight:ancient_root_cabinet",
+    "undergardendelight:wigglewood_cabinet",
+    "undergardendelight:smogstem_cabinet"
+   ],
+   "farmersdelight:tools/knives": [
+    "undergardendelight:forgotten_knife",
+    "undergardendelight:brute_tusk_knife",
+    "undergardendelight:frosteel_knife",
+    "undergardendelight:rogdorium_knife",
+    "undergardendelight:utherium_knife",
+    "undergardendelight:depthrock_knife",
+    "undergardendelight:cloggrum_knife"
+   ],
+   "forge:berries": [
+    "undergarden:blisterberry?"
+   ],
+   "forge:cooked_fishes": [
+    "#undergardendelight:cooked_gwibling?"
+   ],
+   "forge:cooked_meats": [
+    "#undergardendelight:cooked_gloomper?",
+    "#undergardendelight:cooked_dweller?"
+   ],
+   "forge:crops": [
+    "undergarden:underbeans?"
+   ],
+   "forge:fruits": [
+    "undergarden:droopvine_item?"
+   ],
+   "forge:raw_fishes": [
+    "#undergardendelight:raw_gwibling?"
+   ],
+   "forge:raw_meats": [
+    "#undergardendelight:raw_gloomper?",
+    "#undergardendelight:raw_dweller?"
+   ],
+   "forge:salad_ingredients": [
+    "undergardendelight:mogmoss_slice"
+   ],
+   "forge:tools/knives": [
+    "undergardendelight:forgotten_knife",
+    "undergardendelight:brute_tusk_knife",
+    "undergardendelight:frosteel_knife",
+    "undergardendelight:rogdorium_knife",
+    "undergardendelight:utherium_knife",
+    "undergardendelight:depthrock_knife",
+    "undergardendelight:cloggrum_knife"
+   ],
+   "forge:vegetables": [
+    "undergarden:underbeans?"
+   ],
+   "minecraft:meat": [
+    "undergardendelight:cooked_gloomper_cuts",
+    "undergardendelight:greater_dweller_hamleg",
+    "undergardendelight:dweller_meat_slice",
+    "undergardendelight:smoked_greater_dweller_hamleg",
+    "undergardendelight:cooked_dweller_meat_slice",
+    "undergardendelight:raw_gloomper_cuts"
+   ],
+   "minecraft:swords": [
+    "undergardendelight:forgotten_knife",
+    "undergardendelight:brute_tusk_knife",
+    "undergardendelight:frosteel_knife",
+    "undergardendelight:regalium_knife",
+    "undergardendelight:rogdorium_knife",
+    "undergardendelight:utherium_knife",
+    "undergardendelight:depthrock_knife",
+    "undergardendelight:cloggrum_knife"
+   ],
+   "undergarden:cloggrum_items": [
+    "undergardendelight:cloggrum_knife"
+   ],
+   "undergarden:froststeel_items": [
+    "undergardendelight:frosteel_knife"
+   ],
+   "undergarden:utherium_items": [
+    "undergardendelight:utherium_knife"
+   ],
+   "undergardendelight:brute_tusk_knife_drops": [
+    "undergarden:blood_globule?"
+   ],
+   "undergardendelight:cooked_dweller": [
+    "undergarden:dweller_steak?",
+    "undergardendelight:cooked_dweller_meat_slice"
+   ],
+   "undergardendelight:cooked_gloomper": [
+    "undergardendelight:cooked_gloomper_cuts",
+    "undergarden:gloomper_leg?"
+   ],
+   "undergardendelight:cooked_gwibling": [
+    "undergarden:cooked_gwibling?",
+    "undergardendelight:cooked_gwibfillet"
+   ],
+   "undergardendelight:ditchbulb": [
+    "undergarden:ditchbulb_paste?",
+    "undergarden:ditchbulb?"
+   ],
+   "undergardendelight:furniture/ancient_root": [
+    "undergarden:ancient_root_fence_gate?",
+    "undergardendelight:ancient_root_cabinet",
+    "undergarden:ancient_root_hanging_sign?",
+    "undergarden:ancient_root_sign?",
+    "undergarden:ancient_root_button?",
+    "undergarden:ancient_root_pressure_plate?",
+    "undergarden:ancient_root_fence?",
+    "undergarden:ancient_root_door?",
+    "undergarden:ancient_root_trapdoor?",
+    "undergarden:ancient_root_boat?"
+   ],
+   "undergardendelight:furniture/grongle": [
+    "undergarden:grongle_boat?",
+    "undergarden:grongle_button?",
+    "undergardendelight:grongle_cabinet",
+    "undergarden:grongle_door?",
+    "undergarden:grongle_trapdoor?",
+    "undergarden:grongle_fence_gate?",
+    "undergarden:grongle_fence?",
+    "undergarden:grongle_pressure_plate?",
+    "undergarden:grongle_hanging_sign?",
+    "undergarden:grongle_sign?"
+   ],
+   "undergardendelight:furniture/smogstem": [
+    "undergarden:smogstem_pressure_plate?",
+    "undergarden:smogstem_sign?",
+    "undergarden:smogstem_boat?",
+    "undergarden:smogstem_hanging_sign?",
+    "undergarden:smogstem_fence_gate?",
+    "undergarden:smogstem_button?",
+    "undergarden:smogstem_fence?",
+    "undergardendelight:smogstem_cabinet",
+    "undergarden:smogstem_door?",
+    "undergarden:smogstem_trapdoor?"
+   ],
+   "undergardendelight:furniture/wigglewood": [
+    "undergarden:wigglewood_button?",
+    "undergarden:wigglewood_trapdoor?",
+    "undergarden:wigglewood_sign?",
+    "undergarden:wigglewood_fence_gate?",
+    "undergarden:wigglewood_pressure_plate?",
+    "undergardendelight:wigglewood_cabinet",
+    "undergarden:wigglewood_hanging_sign?",
+    "undergarden:wigglewood_fence?",
+    "undergarden:wigglewood_door?",
+    "undergarden:wigglewood_boat?"
+   ],
+   "undergardendelight:mogmoss": [
+    "undergarden:mogmoss?",
+    "undergarden:blue_mogmoss?",
+    "undergardendelight:mogmoss_slice"
+   ],
+   "undergardendelight:organic_compost_materials": [
+    "#undergardendelight:mogmoss?",
+    "farmersdelight:tree_bark?"
+   ],
+   "undergardendelight:placeable_gloomgourd_pies": [
+    "undergarden:gloomgourd_pie?"
+   ],
+   "undergardendelight:raw_dweller": [
+    "undergarden:raw_dweller_meat?",
+    "undergardendelight:dweller_meat_slice"
+   ],
+   "undergardendelight:raw_gloomper": [
+    "undergarden:raw_gloomper_leg?",
+    "undergardendelight:raw_gloomper_cuts"
+   ],
+   "undergardendelight:raw_gwibling": [
+    "undergarden:raw_gwibling?",
+    "undergardendelight:raw_gwibfillet"
+   ],
+   "undergardendelight:repair_materials/brute_tusk": [
+    "#c:bones?",
+    "minecraft:bone",
+    "#forge:bones?",
+    "undergarden:brute_tusk?"
+   ],
+   "undergardendelight:repair_materials/cloggrum": [
+    "undergarden:cloggrum_ingot?"
+   ],
+   "undergardendelight:repair_materials/depthrock": [
+    "undergarden:depthrock_pebble?",
+    "undergarden:depthrock?"
+   ],
+   "undergardendelight:repair_materials/forgotten": [
+    "undergarden:forgotten_ingot?"
+   ],
+   "undergardendelight:repair_materials/froststeel": [
+    "undergarden:froststeel_ingot?"
+   ],
+   "undergardendelight:repair_materials/regalium": [
+    "undergarden:regalium_crystal?"
+   ],
+   "undergardendelight:repair_materials/rogdorium": [
+    "undergarden:rogdorium?"
+   ],
+   "undergardendelight:repair_materials/utherium": [
+    "undergarden:utherium_crystal?"
+   ],
+   "undergardendelight:rogdoric_ancient_root_cutting_tools": [
+    "undergarden:forgotten_axe?",
+    "minecraft:netherite_axe",
+    "minecraft:diamond_axe"
+   ],
+   "undergardendelight:sticks": [
+    "minecraft:stick",
+    "#c:rods/wooden?",
+    "#forge:rods/wooden?"
+   ],
+   "undergardendelight:undergarden_hunting_tools": [
+    "#farmersdelight:tools/knives?"
+   ],
+   "undergardendelight:undergarden_plants": [
+    "undergarden:miserabell?",
+    "undergarden:amorous_bristle?",
+    "undergarden:tall_deepturf?",
+    "undergarden:deepturf?",
+    "undergarden:butterbunch?"
+   ],
+   "undergardendelight:undergarden_straw_harvesters": [
+    "#farmersdelight:straw_harvesters?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "farmersdelight:cooking": 25,
+  "farmersdelight:cutting": 51,
+  "minecraft:campfire_cooking": 5,
+  "minecraft:crafting_shaped": 27,
+  "minecraft:crafting_shapeless": 16,
+  "minecraft:smelting": 5,
+  "minecraft:smithing_transform": 1,
+  "minecraft:smoking": 6
+ },
+ "botanypots": [],
+ "problems": []
+}

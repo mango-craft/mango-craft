@@ -1,0 +1,204 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Delightful Fares",
+ "file": "delightful_fares-1.1.2-neoforge-1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "46909e61b1b9f6f6496e5fc7ddde3da6320cc17fddb7e18195421cb0b3b28c99fe9c8d75ad84b8a3628fe475384ea39625d6ff40f918a9295fb6b0802fe97272",
+ "mods": [
+  {
+   "modid": "delightful_fares",
+   "name": "Delightful Fares",
+   "version": "1.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.176,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "delightful_fares",
+  "farmersdelight",
+  "minecraft"
+ ],
+ "blocks": {
+  "delightful_fares:bellflower_tea": "Bellflower Tea",
+  "delightful_fares:black_tea": "Black Tea",
+  "delightful_fares:chamomile_tea": "Chamomile Tea",
+  "delightful_fares:green_tea": "Green Tea",
+  "delightful_fares:honeysuckle_tea": "Honeysuckle Tea",
+  "delightful_fares:kettle": "Kettle",
+  "delightful_fares:red_tea": "Red Tea",
+  "delightful_fares:torchflower_tea": "Torchflower Tea"
+ },
+ "fluids": {
+  "delightful_fares:bellflower_tea": "Bellflower Tea",
+  "delightful_fares:black_tea": "Black Tea",
+  "delightful_fares:chamomile_tea": "Chamomile Tea",
+  "delightful_fares:green_tea": "Green Tea",
+  "delightful_fares:honeysuckle_tea": "Honeysuckle Tea",
+  "delightful_fares:red_tea": "Red Tea",
+  "delightful_fares:torchflower_tea": "Torchflower Tea"
+ },
+ "items": {
+  "delightful_fares:bellflower_tea_bag": "Tea Bag",
+  "delightful_fares:bellflower_tea_bucket": "",
+  "delightful_fares:black_tea_bag": "Tea Bag",
+  "delightful_fares:black_tea_bucket": "",
+  "delightful_fares:chamomile_tea_bag": "Tea Bag",
+  "delightful_fares:chamomile_tea_bucket": "",
+  "delightful_fares:fermented_tea_leaves": "Fermented Tea Leaves",
+  "delightful_fares:green_tea_bag": "Tea Bag",
+  "delightful_fares:green_tea_bucket": "",
+  "delightful_fares:honeysuckle_tea_bag": "Tea Bag",
+  "delightful_fares:honeysuckle_tea_bucket": "",
+  "delightful_fares:kettle": "",
+  "delightful_fares:kettle_blackstone": "",
+  "delightful_fares:kettle_deepslate": "",
+  "delightful_fares:kettle_glass": "",
+  "delightful_fares:kettle_gold": "",
+  "delightful_fares:kettle_iron": "",
+  "delightful_fares:kettle_netherite": "Netherite Kettle",
+  "delightful_fares:kettle_stone": "",
+  "delightful_fares:kettle_template": "Smithing Template",
+  "delightful_fares:kettle_terracotta": "",
+  "delightful_fares:red_tea_bag": "Tea Bag",
+  "delightful_fares:red_tea_bottle": "Red Tea Cup",
+  "delightful_fares:red_tea_bucket": "",
+  "delightful_fares:tea_bag": "Tea Bag",
+  "delightful_fares:torchflower_tea_bag": "Tea Bag",
+  "delightful_fares:torchflower_tea_bucket": ""
+ },
+ "data": {
+  "loot_table": [
+   "delightful_fares:blocks/kettle"
+  ],
+  "recipe": [
+   "delightful_fares:bellflower_tea",
+   "delightful_fares:bellflower_tea_bag_recipe",
+   "delightful_fares:bellflower_tea_cup",
+   "delightful_fares:black_tea",
+   "delightful_fares:black_tea_bag_recipe",
+   "delightful_fares:black_tea_cup",
+   "delightful_fares:chamomile_tea",
+   "delightful_fares:chamomile_tea_bag_recipe",
+   "delightful_fares:chamomile_tea_cup",
+   "delightful_fares:fermented_tea_leaves_from_fermenting",
+   "delightful_fares:green_tea",
+   "delightful_fares:green_tea_bag_recipe",
+   "delightful_fares:green_tea_cup",
+   "delightful_fares:honeysuckle_tea",
+   "delightful_fares:honeysuckle_tea_bag_recipe",
+   "delightful_fares:honeysuckle_tea_cup",
+   "delightful_fares:kettle_recipe",
+   "delightful_fares:kettle_template",
+   "delightful_fares:kettle_upgrade_blackstone",
+   "delightful_fares:kettle_upgrade_copper",
+   "delightful_fares:kettle_upgrade_deepslate",
+   "delightful_fares:kettle_upgrade_glass",
+   "delightful_fares:kettle_upgrade_gold",
+   "delightful_fares:kettle_upgrade_iron",
+   "delightful_fares:kettle_upgrade_netherite",
+   "delightful_fares:kettle_upgrade_stone",
+   "delightful_fares:kettle_upgrade_terracotta",
+   "delightful_fares:red_tea",
+   "delightful_fares:red_tea_bag_recipe",
+   "delightful_fares:red_tea_cup",
+   "delightful_fares:teabag_racipe",
+   "delightful_fares:torchflower_tea",
+   "delightful_fares:torchflower_tea_bag_recipe",
+   "delightful_fares:torchflower_tea_cup",
+   "delightful_fares:water_bottle",
+   "delightful_fares:water_bucket",
+   "delightful_fares:water_cup"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe",
+   "minecraft:replaceable"
+  ],
+  "tags/item": [
+   "delightful_fares:bellflower_tea_ingredients",
+   "delightful_fares:black_tea_ingredients",
+   "delightful_fares:chamomile_tea_ingredients",
+   "delightful_fares:green_tea_ingredients",
+   "delightful_fares:honeysuckle_tea_ingredients",
+   "delightful_fares:red_tea_ingredients",
+   "delightful_fares:torchflower_tea_ingredients",
+   "farmersdelight:serving_containers"
+  ]
+ },
+ "data_counts": {
+  "advancement": 9
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [],
+   "minecraft:replaceable": [
+    "delightful_fares:bellflower_tea",
+    "delightful_fares:green_tea",
+    "delightful_fares:black_tea",
+    "delightful_fares:torchflower_tea",
+    "delightful_fares:honeysuckle_tea",
+    "delightful_fares:red_tea",
+    "delightful_fares:chamomile_tea"
+   ]
+  },
+  "tags/item": {
+   "delightful_fares:bellflower_tea_ingredients": [
+    "bountifulfares:violet_bellflower?",
+    "delightful_fares:bellflower_tea_bag?"
+   ],
+   "delightful_fares:black_tea_ingredients": [
+    "bountifulfares:dried_tea_leaves?",
+    "delightful_fares:black_tea_bag?"
+   ],
+   "delightful_fares:chamomile_tea_ingredients": [
+    "bountifulfares:chamomile_flowers?",
+    "delightful_fares:chamomile_tea_bag?"
+   ],
+   "delightful_fares:green_tea_ingredients": [
+    "bountifulfares:tea_leaves?",
+    "delightful_fares:green_tea_bag?"
+   ],
+   "delightful_fares:honeysuckle_tea_ingredients": [
+    "bountifulfares:honeysuckle?",
+    "delightful_fares:honeysuckle_tea_bag?"
+   ],
+   "delightful_fares:red_tea_ingredients": [
+    "delightful_fares:fermented_tea_leaves?",
+    "delightful_fares:red_tea_bag?"
+   ],
+   "delightful_fares:torchflower_tea_ingredients": [
+    "minecraft:torchflower?",
+    "delightful_fares:torchflower_tea_bag?"
+   ],
+   "farmersdelight:serving_containers": [
+    "bountifulfares:jar?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "bountifulfares:fermenting": 1,
+  "delightful_fares:brewing": 7,
+  "delightful_fares:fluid_take": 10,
+  "minecraft:crafting_shaped": 3,
+  "minecraft:crafting_shapeless": 7,
+  "minecraft:smithing_transform": 9
+ },
+ "botanypots": [],
+ "problems": []
+}

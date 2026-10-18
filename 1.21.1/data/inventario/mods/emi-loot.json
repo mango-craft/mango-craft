@@ -1,0 +1,77 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "EMI Loot",
+ "file": "emi_loot-0.7.9+1.21+neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "9c67ff502da7a94ef7707c144deb4ec6472f445e99cc8eab30b77f22d886a86b8793338452fe394296f3132ed4d37271d475af184e3a9519ddebdad1a82eecf7",
+ "mods": [
+  {
+   "modid": "emi_loot",
+   "name": "EMI Loot",
+   "version": "0.7.9+1.21+neoforge",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "emi",
+     "type": "required",
+     "range": "[1.0.0,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "fzzy_config",
+     "type": "required",
+     "range": "[0.4.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "emi",
+  "emi_loot",
+  "minecraft"
+ ],
+ "data": {
+  "direct_drops": [
+   "minecraft:entities/creeper",
+   "minecraft:entities/drowned",
+   "minecraft:entities/evoker",
+   "minecraft:entities/husk",
+   "minecraft:entities/piglin",
+   "minecraft:entities/piglin_brute",
+   "minecraft:entities/pillager",
+   "minecraft:entities/skeleton",
+   "minecraft:entities/stray",
+   "minecraft:entities/vindicator",
+   "minecraft:entities/wither",
+   "minecraft:entities/wither_skeleton",
+   "minecraft:entities/zombie",
+   "minecraft:entities/zombie_villager",
+   "minecraft:entities/zombified_piglin"
+  ],
+  "emi_loot_data": [
+   "emi_loot:table_exclusions"
+  ]
+ },
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

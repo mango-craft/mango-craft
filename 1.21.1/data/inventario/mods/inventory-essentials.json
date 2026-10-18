@@ -1,0 +1,48 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Inventory Essentials",
+ "file": "inventoryessentials-neoforge-1.21.1-21.1.20.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "70687fe3abd640cd6f9145e107b58b1b11a94c2cbb67cd8e5aa9a924b33e9532fe8bd6a47026250d65f379c89202a67eb32ab74105cc717b70871a0481925a9c",
+ "mods": [
+  {
+   "modid": "inventoryessentials",
+   "name": "Inventory Essentials",
+   "version": "21.1.20",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "balm",
+     "type": "required",
+     "range": "[21.0.48,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "inventoryessentials"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

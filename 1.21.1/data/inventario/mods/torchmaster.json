@@ -1,0 +1,83 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Torchmaster",
+ "file": "torchmaster-neoforge-1.21.1-21.1.13.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "bfd009d48bef914c200b37395773372cec9bd2686eb8c726d2071d9799a13382f0c588c06caadfd5fce165eb9c34ddc38c91c890463e2dd9ae42b40b82feeeda",
+ "mods": [
+  {
+   "modid": "torchmaster",
+   "name": "Torchmaster",
+   "version": "21.1.13",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.41,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "minecraft",
+  "torchmaster"
+ ],
+ "blocks": {
+  "torchmaster:dreadlamp": "Dread Lamp",
+  "torchmaster:feral_flare_lantern": "Feral Flare Lantern",
+  "torchmaster:invisible_light": "Invisible Light",
+  "torchmaster:megatorch": "Mega Torch"
+ },
+ "items": {
+  "torchmaster:dreadlamp": "",
+  "torchmaster:feral_flare_lantern": "",
+  "torchmaster:frozen_pearl": "Frozen Pearl",
+  "torchmaster:megatorch": ""
+ },
+ "data": {
+  "loot_table": [
+   "torchmaster:blocks/dreadlamp",
+   "torchmaster:blocks/feral_flare_lantern",
+   "torchmaster:blocks/megatorch"
+  ],
+  "recipe": [
+   "torchmaster:dreadlamp",
+   "torchmaster:feral_flare_lantern",
+   "torchmaster:frozen_pearl",
+   "torchmaster:megatorch"
+  ],
+  "tags/blocks": [
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/blocks": {
+   "minecraft:mineable/axe": [
+    "torchmaster:megatorch"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "torchmaster:feral_flare_lantern",
+    "torchmaster:dreadlamp"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 4
+ },
+ "botanypots": [],
+ "problems": []
+}

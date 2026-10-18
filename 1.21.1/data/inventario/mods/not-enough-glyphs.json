@@ -1,0 +1,338 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Not Enough Glyphs",
+ "file": "not_enough_glyphs-1.21.1-4.6.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "2867c2263dc19675d27b1780f4eeb0e77973b368e47da6ee94042adbf6f45b714d00c4bbd17413a9c09c17ff1c850d0ca10cdf8018557e934b8866dcc9e301ed",
+ "mods": [
+  {
+   "modid": "not_enough_glyphs",
+   "name": "Not Enough Glyphs",
+   "version": "4.6.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "optional",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_nouveau",
+     "type": "optional",
+     "range": "[1.21.1-5.12,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_elemental",
+     "type": "optional",
+     "range": "[0.7.9,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "sauce",
+   "name": "Sauce Library",
+   "version": "0.0.42.89",
+   "jar": "sauce-1.21.1-0.0.42.89.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "optional",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.200,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_nouveau",
+     "type": "optional",
+     "range": "[1.21.1-5.12,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "sauce-1.21.1-0.0.42.89.jar"
+ ],
+ "namespaces": [
+  "ars_controle",
+  "ars_elemental",
+  "ars_nouveau",
+  "ars_scalaes",
+  "ars_trinkets",
+  "arsomega",
+  "not_enough_glyphs",
+  "sauce",
+  "toomanyglyphs"
+ ],
+ "blocks": {
+  "sauce:source_fluid_block": "Liquified Source",
+  "sauce:source_jar_core": "Source Jar Core",
+  "sauce:source_jar_frame": "Source Jar Frame",
+  "sauce:source_jar_valve": "Source Jar Valve"
+ },
+ "effects": {
+  "not_enough_glyphs:grow": "Growing",
+  "not_enough_glyphs:shrink": "Shrinking",
+  "not_enough_glyphs:stuffed": "Stuffed",
+  "sauce:contingency": "Contingency Spell",
+  "sauce:mana_cost_down": "Arcanist Blessing",
+  "sauce:rage": "Rage",
+  "sauce:spell_crit_up": "Spell Affinity"
+ },
+ "fluids": {
+  "sauce:source_fluid": "Liquefied Source"
+ },
+ "items": {
+  "ars_controle:glyph_filter_random": "",
+  "ars_elemental:glyph_arc_projectile": "",
+  "ars_elemental:glyph_homing_projectile": "",
+  "ars_elemental:glyph_propagator_arc": "",
+  "ars_elemental:glyph_propagator_homing": "",
+  "ars_nouveau:thread_air_focus": "",
+  "ars_nouveau:thread_cheap_damage": "",
+  "ars_nouveau:thread_earth_focus": "",
+  "ars_nouveau:thread_fire_focus": "",
+  "ars_nouveau:thread_knockback": "",
+  "ars_nouveau:thread_scritchance": "",
+  "ars_nouveau:thread_scritdamage": "",
+  "ars_nouveau:thread_shaper_focus": "",
+  "ars_nouveau:thread_sharp_paper": "",
+  "ars_nouveau:thread_slow_power": "",
+  "ars_nouveau:thread_summon_focus": "",
+  "ars_nouveau:thread_water_focus": "",
+  "ars_nouveau:thread_wild_magic": "",
+  "ars_scalaes:glyph_resize": "",
+  "ars_trinkets:glyph_filter_not_self": "",
+  "ars_trinkets:glyph_filter_self": "",
+  "arsomega:glyph_flatten": "",
+  "arsomega:glyph_missile": "",
+  "arsomega:glyph_overhead": "",
+  "arsomega:glyph_propagate_missile": "",
+  "arsomega:glyph_propagate_overhead": "",
+  "arsomega:glyph_propagate_projectile": "",
+  "arsomega:glyph_propagate_self": "",
+  "arsomega:glyph_propagate_underfoot": "",
+  "not_enough_glyphs:glyph_contingency_blink": "",
+  "not_enough_glyphs:glyph_contingency_death": "",
+  "not_enough_glyphs:glyph_contingency_fall": "",
+  "not_enough_glyphs:glyph_contingency_fire": "",
+  "not_enough_glyphs:glyph_contingency_heal": "",
+  "not_enough_glyphs:glyph_contingency_health": "",
+  "not_enough_glyphs:glyph_contingency_time": "",
+  "not_enough_glyphs:glyph_feed": "",
+  "not_enough_glyphs:glyph_filter_dark": "",
+  "not_enough_glyphs:glyph_filter_light": "",
+  "not_enough_glyphs:glyph_momentum": "",
+  "not_enough_glyphs:glyph_plow": "",
+  "not_enough_glyphs:glyph_propagate_orbit": "",
+  "not_enough_glyphs:glyph_propagate_plane": "",
+  "not_enough_glyphs:glyph_ride": "",
+  "not_enough_glyphs:glyph_trail": "",
+  "not_enough_glyphs:spell_binder": "Spell Binder",
+  "not_enough_glyphs:thread_air_focus": "Air Focus",
+  "not_enough_glyphs:thread_air_focus_icon": "",
+  "not_enough_glyphs:thread_cheap_damage": "Cheap Damage",
+  "not_enough_glyphs:thread_cheap_damage_icon": "",
+  "not_enough_glyphs:thread_earth_focus": "Earth Focus",
+  "not_enough_glyphs:thread_earth_focus_icon": "",
+  "not_enough_glyphs:thread_fire_focus": "Fire Focus",
+  "not_enough_glyphs:thread_fire_focus_icon": "",
+  "not_enough_glyphs:thread_knockback": "Heavy Cover",
+  "not_enough_glyphs:thread_knockback_icon": "",
+  "not_enough_glyphs:thread_scritchance": "Lucky Cover",
+  "not_enough_glyphs:thread_scritchance_icon": "",
+  "not_enough_glyphs:thread_scritdamage": "Keen Cover",
+  "not_enough_glyphs:thread_scritdamage_icon": "",
+  "not_enough_glyphs:thread_shaper_focus": "BlockShaping Focus",
+  "not_enough_glyphs:thread_shaper_focus_icon": "",
+  "not_enough_glyphs:thread_sharp_paper": "Sharp Pages",
+  "not_enough_glyphs:thread_sharp_paper_icon": "",
+  "not_enough_glyphs:thread_slow_power": "Slow Power",
+  "not_enough_glyphs:thread_slow_power_icon": "",
+  "not_enough_glyphs:thread_summon_focus": "Summoning Focus",
+  "not_enough_glyphs:thread_summon_focus_icon": "",
+  "not_enough_glyphs:thread_water_focus": "Water Focus",
+  "not_enough_glyphs:thread_water_focus_icon": "",
+  "not_enough_glyphs:thread_wild_magic": "Wheel of Fortune",
+  "not_enough_glyphs:thread_wild_magic_icon": "",
+  "sauce:anima_essence": "Anima Essence",
+  "sauce:glyph_test": "",
+  "sauce:source_fluid_bucket": "Liquefied Source Bucket",
+  "sauce:source_jar_core": "",
+  "sauce:source_jar_frame": "",
+  "sauce:source_jar_valve": "",
+  "sauce:star_hat": "",
+  "toomanyglyphs:glyph_chaining": "",
+  "toomanyglyphs:glyph_filter_animal": "",
+  "toomanyglyphs:glyph_filter_block": "",
+  "toomanyglyphs:glyph_filter_entity": "",
+  "toomanyglyphs:glyph_filter_is_baby": "",
+  "toomanyglyphs:glyph_filter_is_mature": "",
+  "toomanyglyphs:glyph_filter_item": "",
+  "toomanyglyphs:glyph_filter_living": "",
+  "toomanyglyphs:glyph_filter_living_not_monster": "",
+  "toomanyglyphs:glyph_filter_living_not_player": "",
+  "toomanyglyphs:glyph_filter_monster": "",
+  "toomanyglyphs:glyph_filter_player": "",
+  "toomanyglyphs:glyph_ray": "",
+  "toomanyglyphs:glyph_reverse_direction": ""
+ },
+ "data": {
+  "banner_pattern": [
+   "sauce:anima"
+  ],
+  "recipe": [
+   "ars_controle:glyph_filter_random",
+   "ars_elemental:glyph_arc_projectile",
+   "ars_elemental:glyph_homing_projectile",
+   "ars_elemental:glyph_propagator_arc",
+   "ars_elemental:glyph_propagator_homing",
+   "ars_nouveau:thread_air_focus",
+   "ars_nouveau:thread_cheap_damage",
+   "ars_nouveau:thread_earth_focus",
+   "ars_nouveau:thread_fire_focus",
+   "ars_nouveau:thread_knockback",
+   "ars_nouveau:thread_scritchance",
+   "ars_nouveau:thread_scritdamage",
+   "ars_nouveau:thread_shaper_focus",
+   "ars_nouveau:thread_sharp_paper",
+   "ars_nouveau:thread_slow_power",
+   "ars_nouveau:thread_summon_focus",
+   "ars_nouveau:thread_water_focus",
+   "ars_nouveau:thread_wild_magic",
+   "ars_scalaes:glyph_resize",
+   "ars_trinkets:glyph_filter_not_self",
+   "ars_trinkets:glyph_filter_self",
+   "arsomega:glyph_flatten",
+   "arsomega:glyph_missile",
+   "arsomega:glyph_overhead",
+   "arsomega:glyph_propagate_missile",
+   "arsomega:glyph_propagate_overhead",
+   "arsomega:glyph_propagate_projectile",
+   "arsomega:glyph_propagate_self",
+   "arsomega:glyph_propagate_underfoot",
+   "not_enough_glyphs:dye_binder",
+   "not_enough_glyphs:glyph_contingency_blink",
+   "not_enough_glyphs:glyph_contingency_death",
+   "not_enough_glyphs:glyph_contingency_fall",
+   "not_enough_glyphs:glyph_contingency_fire",
+   "not_enough_glyphs:glyph_contingency_heal",
+   "not_enough_glyphs:glyph_contingency_health",
+   "not_enough_glyphs:glyph_contingency_time",
+   "not_enough_glyphs:glyph_feed",
+   "not_enough_glyphs:glyph_filter_dark",
+   "not_enough_glyphs:glyph_filter_light",
+   "not_enough_glyphs:glyph_plow",
+   "not_enough_glyphs:glyph_propagate_plane",
+   "not_enough_glyphs:glyph_ride",
+   "not_enough_glyphs:glyph_trail",
+   "not_enough_glyphs:spell_binder",
+   "toomanyglyphs:glyph_chaining",
+   "toomanyglyphs:glyph_filter_animal",
+   "toomanyglyphs:glyph_filter_block",
+   "toomanyglyphs:glyph_filter_entity",
+   "toomanyglyphs:glyph_filter_is_baby",
+   "toomanyglyphs:glyph_filter_is_mature",
+   "toomanyglyphs:glyph_filter_item",
+   "toomanyglyphs:glyph_filter_living",
+   "toomanyglyphs:glyph_filter_living_not_monster",
+   "toomanyglyphs:glyph_filter_living_not_player",
+   "toomanyglyphs:glyph_filter_monster",
+   "toomanyglyphs:glyph_filter_player",
+   "toomanyglyphs:glyph_ray",
+   "toomanyglyphs:glyph_reverse_direction"
+  ],
+  "tags/banner_pattern": [
+   "ars_nouveau:pattern_item/ars_stencil"
+  ],
+  "tags/damage_type": [
+   "sauce:air_damage",
+   "sauce:earth_damage",
+   "sauce:fire_damage",
+   "sauce:water_damage"
+  ],
+  "tags/entity_type": [
+   "not_enough_glyphs:ride_blacklist"
+  ],
+  "tags/item": [
+   "ars_nouveau:spellbook",
+   "sauce:anima_essence"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/banner_pattern": {
+   "ars_nouveau:pattern_item/ars_stencil": [
+    "ars_nouveau:textures/gui/documentation/doc_icon_anima.png?"
+   ]
+  },
+  "tags/damage_type": {
+   "sauce:air_damage": [
+    "minecraft:fall",
+    "minecraft:fly_into_wall",
+    "minecraft:sonic_boom",
+    "#minecraft:is_lightning",
+    "ars_nouveau:windshear?"
+   ],
+   "sauce:earth_damage": [
+    "minecraft:falling_block",
+    "minecraft:falling_stalactite",
+    "minecraft:stalagmite",
+    "minecraft:cactus",
+    "minecraft:falling_anvil",
+    "minecraft:sting",
+    "minecraft:sweet_berry_bush",
+    "#neoforge:is_poison",
+    "ars_nouveau:crush?",
+    "ars_nouveau:sourceberry_bush?"
+   ],
+   "sauce:fire_damage": [
+    "minecraft:dragon_breath",
+    "minecraft:explosion",
+    "minecraft:player_explosion",
+    "minecraft:fireworks",
+    "#minecraft:is_fire"
+   ],
+   "sauce:water_damage": [
+    "minecraft:trident",
+    "minecraft:magic",
+    "#minecraft:is_freezing",
+    "#minecraft:is_drowning"
+   ]
+  },
+  "tags/entity_type": {
+   "not_enough_glyphs:ride_blacklist": []
+  },
+  "tags/item": {
+   "ars_nouveau:spellbook": [
+    "ars_nouveau:novice_spell_book",
+    "ars_nouveau:apprentice_spell_book",
+    "ars_nouveau:archmage_spell_book",
+    "ars_nouveau:creative_spell_book",
+    "ars_omega:arcane_book?"
+   ],
+   "sauce:anima_essence": [
+    "sauce:anima_essence?",
+    "ars_elemental:anima_essence?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "ars_nouveau:dye": 1,
+  "ars_nouveau:enchanting_apparatus": 14,
+  "ars_nouveau:glyph": 44
+ },
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,88 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Ars Creo",
+ "file": "ars_creo-1.21.1-5.4.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "55204c30088bdfbb8764a50b0bf61aa80aeb234c5200aa5cc35224d1b58940df3e0fbbddc95df5277a60243f1bb8a3f565a0927e956ced1a2147605318a8631b",
+ "mods": [
+  {
+   "modid": "ars_creo",
+   "name": "Ars Creo",
+   "version": "5.4.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.20.6,1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ars_nouveau",
+     "type": "required",
+     "range": "[5.0.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "required",
+     "range": "[6.0.9,)",
+     "side": null
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "ars_creo",
+  "create",
+  "minecraft"
+ ],
+ "blocks": {
+  "ars_creo:starbuncle_wheel": "Starbuncle Wheel"
+ },
+ "items": {
+  "ars_creo:starbuncle_wheel": ""
+ },
+ "data": {
+  "loot_table": [
+   "ars_creo:blocks/starbuncle_wheel"
+  ],
+  "recipe": [
+   "ars_creo:starbuncle_wheel"
+  ],
+  "tags/block": [
+   "create:brittle",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "create:brittle": [
+    "ars_nouveau:portal"
+   ],
+   "minecraft:mineable/axe": [
+    "ars_creo:starbuncle_wheel"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "ars_creo:starbuncle_wheel"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

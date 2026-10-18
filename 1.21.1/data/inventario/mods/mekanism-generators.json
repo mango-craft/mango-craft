@@ -1,0 +1,426 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Mekanism Generators",
+ "file": "MekanismGenerators-1.21.1-10.7.19.85.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "6c3d5b7ea2f67f43c3d169c97de2855a7085f38019cf426e015ccc8ca9bc4f66e96b1cdf4a9afdc92bef7b2e236f16c81415ed5e48736805d5961d29525316d6",
+ "mods": [
+  {
+   "modid": "mekanismgenerators",
+   "name": "Mekanism: Generators",
+   "version": "10.7.19",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "mekanism",
+     "type": "required",
+     "range": "[10.7.19]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "create",
+  "emi",
+  "framedblocks",
+  "mekanism",
+  "mekanismgenerators",
+  "minecraft",
+  "neoforge"
+ ],
+ "blocks": {
+  "mekanismgenerators:advanced_solar_generator": "Advanced Solar Generator",
+  "mekanismgenerators:bio_generator": "Bio-Generator",
+  "mekanismgenerators:bioethanol": "Bioethanol",
+  "mekanismgenerators:control_rod_assembly": "Control Rod Assembly",
+  "mekanismgenerators:deuterium": "Liquid Deuterium",
+  "mekanismgenerators:electromagnetic_coil": "Electromagnetic Coil",
+  "mekanismgenerators:fission_fuel_assembly": "Fission Fuel Assembly",
+  "mekanismgenerators:fission_reactor_casing": "Fission Reactor Casing",
+  "mekanismgenerators:fission_reactor_logic_adapter": "Fission Reactor Logic Adapter",
+  "mekanismgenerators:fission_reactor_port": "Fission Reactor Port",
+  "mekanismgenerators:fusion_fuel": "Liquid D-T Fuel",
+  "mekanismgenerators:fusion_reactor_controller": "Fusion Reactor Controller",
+  "mekanismgenerators:fusion_reactor_frame": "Fusion Reactor Frame",
+  "mekanismgenerators:fusion_reactor_logic_adapter": "Fusion Reactor Logic Adapter",
+  "mekanismgenerators:fusion_reactor_port": "Fusion Reactor Port",
+  "mekanismgenerators:gas_burning_generator": "Gas-Burning Generator",
+  "mekanismgenerators:heat_generator": "Heat Generator",
+  "mekanismgenerators:laser_focus_matrix": "Laser Focus Matrix",
+  "mekanismgenerators:reactor_glass": "Reactor Glass",
+  "mekanismgenerators:rotational_complex": "Rotational Complex",
+  "mekanismgenerators:saturating_condenser": "Saturating Condenser",
+  "mekanismgenerators:solar_generator": "Solar Generator",
+  "mekanismgenerators:superheating_element": "",
+  "mekanismgenerators:tritium": "Liquid Tritium",
+  "mekanismgenerators:turbine_casing": "Turbine Casing",
+  "mekanismgenerators:turbine_rotor": "Turbine Rotor",
+  "mekanismgenerators:turbine_valve": "Turbine Valve",
+  "mekanismgenerators:turbine_vent": "Turbine Vent",
+  "mekanismgenerators:wind_generator": "Wind Generator"
+ },
+ "items": {
+  "mekanismgenerators:advanced_solar_generator": "",
+  "mekanismgenerators:bio_generator": "",
+  "mekanismgenerators:bioethanol_bucket": "Bioethanol Bucket",
+  "mekanismgenerators:control_rod_assembly": "",
+  "mekanismgenerators:deuterium_bucket": "Liquid Deuterium Bucket",
+  "mekanismgenerators:electromagnetic_coil": "",
+  "mekanismgenerators:fission_fuel_assembly": "",
+  "mekanismgenerators:fission_reactor_casing": "",
+  "mekanismgenerators:fission_reactor_logic_adapter": "",
+  "mekanismgenerators:fission_reactor_port": "",
+  "mekanismgenerators:fusion_fuel_bucket": "Liquid D-T Fuel Bucket",
+  "mekanismgenerators:fusion_reactor_controller": "",
+  "mekanismgenerators:fusion_reactor_frame": "",
+  "mekanismgenerators:fusion_reactor_logic_adapter": "",
+  "mekanismgenerators:fusion_reactor_port": "",
+  "mekanismgenerators:gas_burning_generator": "",
+  "mekanismgenerators:heat_generator": "",
+  "mekanismgenerators:hohlraum": "Hohlraum",
+  "mekanismgenerators:laser_focus_matrix": "",
+  "mekanismgenerators:module_geothermal_generator_unit": "",
+  "mekanismgenerators:module_solar_recharging_unit": "",
+  "mekanismgenerators:reactor_glass": "",
+  "mekanismgenerators:rotational_complex": "",
+  "mekanismgenerators:saturating_condenser": "",
+  "mekanismgenerators:solar_generator": "",
+  "mekanismgenerators:solar_panel": "Solar Panel",
+  "mekanismgenerators:tritium_bucket": "Liquid Tritium Bucket",
+  "mekanismgenerators:turbine_blade": "Turbine Blade",
+  "mekanismgenerators:turbine_casing": "",
+  "mekanismgenerators:turbine_rotor": "",
+  "mekanismgenerators:turbine_valve": "",
+  "mekanismgenerators:turbine_vent": "",
+  "mekanismgenerators:wind_generator": ""
+ },
+ "data": {
+  "damage_type": [
+   "mekanismgenerators:fusion"
+  ],
+  "loot_table": [
+   "mekanismgenerators:blocks/advanced_solar_generator",
+   "mekanismgenerators:blocks/bio_generator",
+   "mekanismgenerators:blocks/control_rod_assembly",
+   "mekanismgenerators:blocks/electromagnetic_coil",
+   "mekanismgenerators:blocks/fission_fuel_assembly",
+   "mekanismgenerators:blocks/fission_reactor_casing",
+   "mekanismgenerators:blocks/fission_reactor_logic_adapter",
+   "mekanismgenerators:blocks/fission_reactor_port",
+   "mekanismgenerators:blocks/fusion_reactor_controller",
+   "mekanismgenerators:blocks/fusion_reactor_frame",
+   "mekanismgenerators:blocks/fusion_reactor_logic_adapter",
+   "mekanismgenerators:blocks/fusion_reactor_port",
+   "mekanismgenerators:blocks/gas_burning_generator",
+   "mekanismgenerators:blocks/heat_generator",
+   "mekanismgenerators:blocks/laser_focus_matrix",
+   "mekanismgenerators:blocks/reactor_glass",
+   "mekanismgenerators:blocks/rotational_complex",
+   "mekanismgenerators:blocks/saturating_condenser",
+   "mekanismgenerators:blocks/solar_generator",
+   "mekanismgenerators:blocks/turbine_casing",
+   "mekanismgenerators:blocks/turbine_rotor",
+   "mekanismgenerators:blocks/turbine_valve",
+   "mekanismgenerators:blocks/turbine_vent",
+   "mekanismgenerators:blocks/wind_generator"
+  ],
+  "recipe": [
+   "mekanismgenerators:activating/tritium",
+   "mekanismgenerators:chemical_infusing/fusion_fuel",
+   "mekanismgenerators:electromagnetic_coil",
+   "mekanismgenerators:fission_reactor/casing",
+   "mekanismgenerators:fission_reactor/control_rod_assembly",
+   "mekanismgenerators:fission_reactor/fuel_assembly",
+   "mekanismgenerators:fission_reactor/logic_adapter",
+   "mekanismgenerators:fission_reactor/port",
+   "mekanismgenerators:generator/advanced_solar",
+   "mekanismgenerators:generator/bio",
+   "mekanismgenerators:generator/gas_burning",
+   "mekanismgenerators:generator/heat",
+   "mekanismgenerators:generator/solar",
+   "mekanismgenerators:generator/wind",
+   "mekanismgenerators:hohlraum",
+   "mekanismgenerators:laser_focus_matrix",
+   "mekanismgenerators:module_geothermal_generator_unit",
+   "mekanismgenerators:module_solar_recharging_unit",
+   "mekanismgenerators:reactor/controller",
+   "mekanismgenerators:reactor/frame",
+   "mekanismgenerators:reactor/glass",
+   "mekanismgenerators:reactor/logic_adapter",
+   "mekanismgenerators:reactor/port",
+   "mekanismgenerators:rotary/deuterium",
+   "mekanismgenerators:rotary/fusion_fuel",
+   "mekanismgenerators:rotary/tritium",
+   "mekanismgenerators:rotational_complex",
+   "mekanismgenerators:saturating_condenser",
+   "mekanismgenerators:separator/heavy_water",
+   "mekanismgenerators:solar_panel",
+   "mekanismgenerators:turbine/blade",
+   "mekanismgenerators:turbine/casing",
+   "mekanismgenerators:turbine/rotor",
+   "mekanismgenerators:turbine/valve",
+   "mekanismgenerators:turbine/vent"
+  ],
+  "tags/block": [
+   "c:relocation_not_supported",
+   "framedblocks:blockentity_whitelisted",
+   "framedblocks:frameable",
+   "minecraft:impermeable",
+   "minecraft:mineable/pickaxe",
+   "minecraft:replaceable",
+   "minecraft:snow_layer_cannot_survive_on",
+   "neoforge:enderman_place_on_blacklist"
+  ],
+  "tags/damage_type": [
+   "minecraft:always_hurts_ender_dragons",
+   "minecraft:always_kills_armor_stands",
+   "minecraft:bypasses_armor",
+   "minecraft:bypasses_cooldown",
+   "minecraft:bypasses_effects",
+   "minecraft:bypasses_enchantments",
+   "minecraft:bypasses_resistance",
+   "minecraft:bypasses_shield",
+   "minecraft:bypasses_wolf_armor",
+   "minecraft:no_knockback",
+   "minecraft:panic_environmental_causes"
+  ],
+  "tags/data_component_type": [
+   "mekanism:config/clearable"
+  ],
+  "tags/fluid": [
+   "c:bioethanol",
+   "c:deuterium",
+   "c:fusion_fuel",
+   "c:tritium",
+   "create:no_infinite_draining"
+  ],
+  "tags/item": [
+   "c:buckets/bioethanol",
+   "c:buckets/deuterium",
+   "c:buckets/fusion_fuel",
+   "c:buckets/tritium",
+   "mekanism:unit"
+  ],
+  "tags/mekanism": [
+   "mekanism:chemical/deuterium",
+   "mekanism:chemical/fusion_fuel",
+   "mekanism:chemical/gaseous",
+   "mekanism:chemical/tritium"
+  ]
+ },
+ "data_counts": {
+  "advancement": 4
+ },
+ "tags": {
+  "tags/block": {
+   "c:relocation_not_supported": [
+    "mekanismgenerators:advanced_solar_generator",
+    "mekanismgenerators:wind_generator"
+   ],
+   "framedblocks:blockentity_whitelisted": [
+    "mekanismgenerators:reactor_glass",
+    "mekanismgenerators:laser_focus_matrix"
+   ],
+   "framedblocks:frameable": [
+    "mekanismgenerators:reactor_glass",
+    "mekanismgenerators:laser_focus_matrix"
+   ],
+   "minecraft:impermeable": [
+    "mekanismgenerators:reactor_glass"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "mekanismgenerators:heat_generator",
+    "mekanismgenerators:solar_generator",
+    "mekanismgenerators:advanced_solar_generator",
+    "mekanismgenerators:gas_burning_generator",
+    "mekanismgenerators:bio_generator",
+    "mekanismgenerators:wind_generator",
+    "mekanismgenerators:turbine_rotor",
+    "mekanismgenerators:rotational_complex",
+    "mekanismgenerators:electromagnetic_coil",
+    "mekanismgenerators:turbine_casing",
+    "mekanismgenerators:turbine_valve",
+    "mekanismgenerators:turbine_vent",
+    "mekanismgenerators:saturating_condenser",
+    "mekanismgenerators:reactor_glass",
+    "mekanismgenerators:laser_focus_matrix",
+    "mekanismgenerators:fission_reactor_casing",
+    "mekanismgenerators:fission_reactor_port",
+    "mekanismgenerators:fission_reactor_logic_adapter",
+    "mekanismgenerators:fission_fuel_assembly",
+    "mekanismgenerators:control_rod_assembly",
+    "mekanismgenerators:fusion_reactor_controller",
+    "mekanismgenerators:fusion_reactor_frame",
+    "mekanismgenerators:fusion_reactor_port",
+    "mekanismgenerators:fusion_reactor_logic_adapter"
+   ],
+   "minecraft:replaceable": [
+    "mekanismgenerators:bioethanol",
+    "mekanismgenerators:deuterium",
+    "mekanismgenerators:fusion_fuel",
+    "mekanismgenerators:tritium"
+   ],
+   "minecraft:snow_layer_cannot_survive_on": [
+    "mekanismgenerators:reactor_glass",
+    "mekanismgenerators:fission_reactor_casing",
+    "mekanismgenerators:fission_reactor_port",
+    "mekanismgenerators:fission_reactor_logic_adapter",
+    "mekanismgenerators:fission_fuel_assembly",
+    "mekanismgenerators:control_rod_assembly",
+    "mekanismgenerators:turbine_casing",
+    "mekanismgenerators:turbine_vent",
+    "mekanismgenerators:turbine_valve",
+    "mekanismgenerators:turbine_rotor",
+    "mekanismgenerators:saturating_condenser",
+    "mekanismgenerators:electromagnetic_coil",
+    "mekanismgenerators:rotational_complex",
+    "mekanismgenerators:fusion_reactor_controller",
+    "mekanismgenerators:fusion_reactor_frame",
+    "mekanismgenerators:fusion_reactor_port",
+    "mekanismgenerators:fusion_reactor_logic_adapter",
+    "mekanismgenerators:laser_focus_matrix"
+   ],
+   "neoforge:enderman_place_on_blacklist": [
+    "mekanismgenerators:turbine_casing",
+    "mekanismgenerators:turbine_valve",
+    "mekanismgenerators:turbine_vent",
+    "mekanismgenerators:electromagnetic_coil",
+    "mekanismgenerators:rotational_complex",
+    "mekanismgenerators:saturating_condenser",
+    "mekanismgenerators:turbine_rotor",
+    "mekanismgenerators:fission_reactor_casing",
+    "mekanismgenerators:fission_reactor_port",
+    "mekanismgenerators:fission_reactor_logic_adapter",
+    "mekanismgenerators:fission_fuel_assembly",
+    "mekanismgenerators:control_rod_assembly",
+    "mekanismgenerators:fusion_reactor_controller",
+    "mekanismgenerators:fusion_reactor_port",
+    "mekanismgenerators:fusion_reactor_frame",
+    "mekanismgenerators:fusion_reactor_logic_adapter",
+    "mekanismgenerators:laser_focus_matrix",
+    "mekanismgenerators:reactor_glass"
+   ]
+  },
+  "tags/damage_type": {
+   "minecraft:always_hurts_ender_dragons": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:always_kills_armor_stands": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:bypasses_armor": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:bypasses_cooldown": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:bypasses_effects": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:bypasses_enchantments": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:bypasses_resistance": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:bypasses_shield": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:bypasses_wolf_armor": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:no_knockback": [
+    "mekanismgenerators:fusion"
+   ],
+   "minecraft:panic_environmental_causes": [
+    "mekanismgenerators:fusion"
+   ]
+  },
+  "tags/data_component_type": {
+   "mekanism:config/clearable": [
+    "mekanismgenerators:fission_logic",
+    "mekanismgenerators:fusion_logic",
+    "mekanismgenerators:active_cooled"
+   ]
+  },
+  "tags/fluid": {
+   "c:bioethanol": [
+    "mekanismgenerators:bioethanol",
+    "mekanismgenerators:flowing_bioethanol"
+   ],
+   "c:deuterium": [
+    "mekanismgenerators:deuterium",
+    "mekanismgenerators:flowing_deuterium"
+   ],
+   "c:fusion_fuel": [
+    "mekanismgenerators:fusion_fuel",
+    "mekanismgenerators:flowing_fusion_fuel"
+   ],
+   "c:tritium": [
+    "mekanismgenerators:tritium",
+    "mekanismgenerators:flowing_tritium"
+   ],
+   "create:no_infinite_draining": [
+    "mekanismgenerators:bioethanol",
+    "mekanismgenerators:flowing_bioethanol",
+    "mekanismgenerators:deuterium",
+    "mekanismgenerators:flowing_deuterium",
+    "mekanismgenerators:fusion_fuel",
+    "mekanismgenerators:flowing_fusion_fuel",
+    "mekanismgenerators:tritium",
+    "mekanismgenerators:flowing_tritium"
+   ]
+  },
+  "tags/item": {
+   "c:buckets/bioethanol": [
+    "mekanismgenerators:bioethanol_bucket"
+   ],
+   "c:buckets/deuterium": [
+    "mekanismgenerators:deuterium_bucket"
+   ],
+   "c:buckets/fusion_fuel": [
+    "mekanismgenerators:fusion_fuel_bucket"
+   ],
+   "c:buckets/tritium": [
+    "mekanismgenerators:tritium_bucket"
+   ],
+   "mekanism:unit": [
+    "mekanismgenerators:module_solar_recharging_unit",
+    "mekanismgenerators:module_geothermal_generator_unit"
+   ]
+  },
+  "tags/mekanism": {
+   "mekanism:chemical/deuterium": [
+    "mekanismgenerators:deuterium"
+   ],
+   "mekanism:chemical/fusion_fuel": [
+    "mekanismgenerators:fusion_fuel"
+   ],
+   "mekanism:chemical/gaseous": [
+    "mekanismgenerators:deuterium",
+    "mekanismgenerators:tritium",
+    "mekanismgenerators:fusion_fuel"
+   ],
+   "mekanism:chemical/tritium": [
+    "mekanismgenerators:tritium"
+   ]
+  }
+ },
+ "recipe_types": {
+  "mekanism:activating": 1,
+  "mekanism:chemical_infusing": 1,
+  "mekanism:mek_data": 1,
+  "mekanism:metallurgic_infusing": 1,
+  "mekanism:rotary": 3,
+  "mekanism:separating": 1,
+  "minecraft:crafting_shaped": 27
+ },
+ "botanypots": [],
+ "problems": []
+}

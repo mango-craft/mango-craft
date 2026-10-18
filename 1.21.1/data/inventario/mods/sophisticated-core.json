@@ -1,0 +1,80 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Sophisticated Core (dipendenza)",
+ "file": "sophisticatedcore-1.21.1-1.5.13.2404.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "de9820a5e21cd6dcb68a0c967cbd0756dd12b00bfe6368249ff90becf0809a586080494b41ede72377693ada905d30a7f8ef3617b21394e9f3b841f48ab12785",
+ "mods": [
+  {
+   "modid": "sophisticatedcore",
+   "name": "Sophisticated Core",
+   "version": "1.5.13",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "[19.32.0.359,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.229,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.21.2)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "sophisticatedcore"
+ ],
+ "fluids": {
+  "sophisticatedcore:experience": "Experience"
+ },
+ "items": {
+  "sophisticatedcore:ender_linker": "Ender Linker",
+  "sophisticatedcore:ender_linker_bound": "",
+  "sophisticatedcore:xp_bucket": "Bucket of Experience"
+ },
+ "data": {
+  "recipe": [
+   "sophisticatedcore:ender_linker",
+   "sophisticatedcore:ender_linker_clear",
+   "sophisticatedcore:ender_linker_endpoint",
+   "sophisticatedcore:upgrade_clear"
+  ],
+  "tags/fluid": [
+   "c:experience"
+  ]
+ },
+ "data_counts": {
+  "advancement": 1
+ },
+ "tags": {
+  "tags/fluid": {
+   "c:experience": [
+    "sophisticatedcore:xp_still"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 1,
+  "sophisticatedcore:ender_linker_clear": 1,
+  "sophisticatedcore:ender_linker_endpoint": 1,
+  "sophisticatedcore:upgrade_clear": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

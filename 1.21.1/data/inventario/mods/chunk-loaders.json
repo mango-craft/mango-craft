@@ -1,0 +1,98 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Chunk Loaders",
+ "file": "chunkloaders-1.2.9-neoforge-mc1.21.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "3cd043e66f5b8fbbf81ae690d4d76fc9f11088e3b0e1c7a3693d3dee5d089ab10e787eab80132857d0c42b67f08f5566ebc0dd37b89e64063c7d9ba1592b7cee",
+ "mods": [
+  {
+   "modid": "chunkloaders",
+   "name": "Chunk Loaders",
+   "version": "1.2.9",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.78-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "supermartijn642corelib",
+     "type": "required",
+     "range": "[1.1.17,1.2.0)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "supermartijn642configlib",
+     "type": "required",
+     "range": "[1.1.6,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "chunkloaders",
+  "minecraft"
+ ],
+ "blocks": {
+  "chunkloaders:advanced_chunk_loader": "",
+  "chunkloaders:basic_chunk_loader": "",
+  "chunkloaders:single_chunk_loader": "",
+  "chunkloaders:ultimate_chunk_loader": ""
+ },
+ "items": {
+  "chunkloaders:advanced_chunk_loader": "",
+  "chunkloaders:basic_chunk_loader": "",
+  "chunkloaders:single_chunk_loader": "",
+  "chunkloaders:ultimate_chunk_loader": ""
+ },
+ "data": {
+  "loot_table": [
+   "chunkloaders:blocks/advanced_chunk_loader",
+   "chunkloaders:blocks/basic_chunk_loader",
+   "chunkloaders:blocks/single_chunk_loader",
+   "chunkloaders:blocks/ultimate_chunk_loader"
+  ],
+  "recipe": [
+   "chunkloaders:advanced_chunk_loader",
+   "chunkloaders:basic_chunk_loader",
+   "chunkloaders:single_chunk_loader",
+   "chunkloaders:single_to_basic_chunk_loader",
+   "chunkloaders:ultimate_chunk_loader"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe"
+  ]
+ },
+ "data_counts": {
+  "advancement": 5
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "chunkloaders:basic_chunk_loader",
+    "chunkloaders:ultimate_chunk_loader",
+    "chunkloaders:single_chunk_loader",
+    "chunkloaders:advanced_chunk_loader"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 4,
+  "minecraft:crafting_shapeless": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

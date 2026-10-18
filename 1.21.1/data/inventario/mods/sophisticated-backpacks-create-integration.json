@@ -1,0 +1,58 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Sophisticated Backpacks Create Integration",
+ "file": "sophisticatedbackpackscreateintegration-1.21.1-0.2.0.168.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "78007bbc59d498a53a5c7b6d4f1b7aabeacd34ed878f9528ab6cabaa832520bf5bf172cd27c1f7c256bfa6ce9c92b53d667fb8fec7e610863e52d8d0e5d4f557",
+ "mods": [
+  {
+   "modid": "sophisticatedbackpackscreateintegration",
+   "name": "Sophisticated Backpacks Create Integration",
+   "version": "0.2.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "sophisticatedbackpacks",
+     "type": "required",
+     "range": "[3.26.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "required",
+     "range": "[6.0.7,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "[19.32.0.359,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.229,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.21.2)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

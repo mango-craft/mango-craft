@@ -1,0 +1,106 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Balm",
+ "file": "balm-neoforge-1.21.1-21.0.66.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "0262d51c0e931d10c3dccefb3b5426a1622edecab243d4b15dce07a23309641370184776739765067d292d808242d088c6fbf249762689824eff9ba42c2d1e63",
+ "mods": [
+  {
+   "modid": "balm",
+   "name": "Balm",
+   "version": "21.0.66",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.82-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "kuma_api",
+   "name": "KumaAPI",
+   "version": "21.0.8",
+   "jar": "kuma-api-neoforge-21.0.8+1.21.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "kuma-api-neoforge-21.0.8+1.21.jar"
+ ],
+ "namespaces": [
+  "balm",
+  "c"
+ ],
+ "data": {
+  "neoforge/biome_modifier": [
+   "balm:balm"
+  ],
+  "tags/item": [
+   "c:eggs",
+   "c:nuggets",
+   "c:nuggets/gold",
+   "c:nuggets/iron",
+   "c:stones"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/item": {
+   "c:eggs": [
+    "minecraft:egg"
+   ],
+   "c:nuggets": [
+    "#c:nuggets/gold",
+    "#c:nuggets/iron"
+   ],
+   "c:nuggets/gold": [
+    "minecraft:gold_nugget"
+   ],
+   "c:nuggets/iron": [
+    "minecraft:iron_nugget"
+   ],
+   "c:stones": [
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:infested_stone",
+    "minecraft:stone",
+    "minecraft:polished_andesite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_granite",
+    "minecraft:deepslate",
+    "minecraft:polished_deepslate",
+    "minecraft:infested_deepslate",
+    "minecraft:tuff"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

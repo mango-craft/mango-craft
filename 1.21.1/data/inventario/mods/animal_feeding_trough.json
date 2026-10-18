@@ -1,0 +1,65 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Animal Feeding Trough",
+ "file": "animal_feeding_trough-1.1.2+1.21-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "d9d5df677432ae68040ce413c6123e876d77a663ddcdc8bd06ee7d9e4f0b04b67872ce6b639cebc4bbb12259742168820a6a713032e4f1376e98a01f6e23ecb8",
+ "mods": [
+  {
+   "modid": "animal_feeding_trough",
+   "name": "Animal Feeding Trough",
+   "version": "1.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "animal_feeding_trough"
+ ],
+ "blocks": {
+  "animal_feeding_trough:feeding_trough": "Feeding Trough"
+ },
+ "items": {
+  "animal_feeding_trough:feeding_trough": "Feeding Trough"
+ },
+ "data": {
+  "loot_table": [
+   "animal_feeding_trough:blocks/feeding_trough"
+  ],
+  "recipe": [
+   "animal_feeding_trough:feeding_trough"
+  ]
+ },
+ "data_counts": {
+  "advancement": 1
+ },
+ "tags": {},
+ "recipe_types": {
+  "minecraft:crafting_shaped": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

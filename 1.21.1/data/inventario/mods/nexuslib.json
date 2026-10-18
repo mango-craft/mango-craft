@@ -1,0 +1,75 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "NexusLib",
+ "file": "nexuslib-neoforge-1.21.1-1.2.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "8fe74f311c75ca85f7fd8f8fa15f40954df9ec5b14e1f6210521d4961ac78c1ef80d6686c9532ce177d4e20a1ba96f8135945a05b6d5cc76d7f1d4c9269a6f00",
+ "mods": [
+  {
+   "modid": "nexuslib",
+   "name": "NexusLib",
+   "version": "1.2.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.206,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "nexuslib"
+ ],
+ "data": {
+  "tags/worldgen/biome": [
+   "nexuslib:has_wolf_ashen_variant",
+   "nexuslib:has_wolf_black_variant",
+   "nexuslib:has_wolf_chestnut_variant",
+   "nexuslib:has_wolf_rusty_variant",
+   "nexuslib:has_wolf_snowy_variant",
+   "nexuslib:has_wolf_spotted_variant",
+   "nexuslib:has_wolf_striped_variant",
+   "nexuslib:has_wolf_woods_variant",
+   "nexuslib:overrides_wolf_variant"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/worldgen/biome": {
+   "nexuslib:has_wolf_ashen_variant": [],
+   "nexuslib:has_wolf_black_variant": [],
+   "nexuslib:has_wolf_chestnut_variant": [],
+   "nexuslib:has_wolf_rusty_variant": [],
+   "nexuslib:has_wolf_snowy_variant": [],
+   "nexuslib:has_wolf_spotted_variant": [],
+   "nexuslib:has_wolf_striped_variant": [],
+   "nexuslib:has_wolf_woods_variant": [],
+   "nexuslib:overrides_wolf_variant": [
+    "#nexuslib:has_wolf_ashen_variant",
+    "#nexuslib:has_wolf_black_variant",
+    "#nexuslib:has_wolf_chestnut_variant",
+    "#nexuslib:has_wolf_rusty_variant",
+    "#nexuslib:has_wolf_snowy_variant",
+    "#nexuslib:has_wolf_spotted_variant",
+    "#nexuslib:has_wolf_striped_variant",
+    "#nexuslib:has_wolf_woods_variant"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,51 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Subtle Effects",
+ "file": "SubtleEffects-neoforge-1.21.1-1.15.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "0bfaeb859f865cb3a68c6dff713ea45d7e38fb4f7b05c5ac6f5acf83163ae9ce0d910c704a89857dcbb4308480de1aa125a2cd5a243c946d5208ba1108b3f61c",
+ "mods": [
+  {
+   "modid": "subtle_effects",
+   "name": "Subtle Effects",
+   "version": "1.15.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.200,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.21.2)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "fzzy_config",
+     "type": "required",
+     "range": "[0.7.7+1.21,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "mixinconstraints-1.1.0.jar"
+ ],
+ "namespaces": [
+  "minecraft",
+  "subtle_effects"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

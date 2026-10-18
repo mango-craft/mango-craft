@@ -1,0 +1,74 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "FallingTree",
+ "file": "FallingTree-1.21.1-1.21.1.11.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "21876b270ca40e3ad6168423f2aba04460f590be191c5558d53e4f542993efa6070589029cb3218557309b096cd920e4da65e53f19687b86c638ec6c342d83e5",
+ "mods": [
+  {
+   "modid": "fallingtree",
+   "name": "FallingTree",
+   "version": "1.21.1.11",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[52,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "cloth-config",
+     "type": "optional",
+     "range": "[15.0.0,)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "fallingtree",
+   "name": "FallingTree",
+   "version": "1.21.1.11",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "cloth-config",
+     "type": "optional",
+     "range": "[15.0.0,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "fallingtree"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

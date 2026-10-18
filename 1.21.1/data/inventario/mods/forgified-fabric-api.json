@@ -1,0 +1,60 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Forgified Fabric API",
+ "file": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "2b44ecd839544e3668a02f8de86433d507417d068dcafeee7f698744fc2b12fd888a1bba509da57c8e2884d01dbaf344f49bbac0f22cdae599507356ed0cbe30",
+ "mods": [
+  {
+   "modid": "fabric_api",
+   "name": "Forgified Fabric API",
+   "version": "0.116.15+2.3.5+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.169,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "forgified_fabric_api",
+   "name": "Forgified Fabric API (dummy)",
+   "version": "0.116.15+2.3.5+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.169,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

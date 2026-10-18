@@ -1,0 +1,64 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "AlmostUnified",
+ "file": "almostunified-neoforge-1.21.1-1.4.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "82ddfb82b86dcbf62c729ebbb2ed571bf284d31a8ad494b7e10db2da24a87e7887969e6092b78e79053ea0279c75de58dc548d30eca6ba60c2816a9bd3e436fd",
+ "mods": [
+  {
+   "modid": "almostunified",
+   "name": "AlmostUnified",
+   "version": "1.21.1-1.4.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "optional",
+     "range": "[21.1.37,)",
+     "side": null
+    },
+    {
+     "modid": "minecraft",
+     "type": "optional",
+     "range": "[1.21.1,)",
+     "side": null
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "[19.10.0.126,)",
+     "side": null
+    },
+    {
+     "modid": "roughlyenoughitems",
+     "type": "optional",
+     "range": "[16.0.762,)",
+     "side": null
+    },
+    {
+     "modid": "emi",
+     "type": "optional",
+     "range": "[1.1.13,)",
+     "side": null
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "almostunified"
+ ],
+ "data": {
+  "neoforge/biome_modifier": [
+   "almostunified:worldgen"
+  ]
+ },
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

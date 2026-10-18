@@ -1,0 +1,40 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "ImmediatelyFast",
+ "file": "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "7d1c2e6ce306f4bb9aa155f64ba87732dc2443d57fde249467a99e0ed90fec89a706252888b97f882efbc55d6044971519db704125f27ae53cd9ae40424f9b2c",
+ "mods": [
+  {
+   "modid": "immediatelyfast",
+   "name": "ImmediatelyFast",
+   "version": "1.6.14+1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "optional",
+     "range": "[1.21,1.21.1]",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "neoforge",
+     "type": "optional",
+     "range": "[21.0.0,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

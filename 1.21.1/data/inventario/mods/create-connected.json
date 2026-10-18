@@ -1,0 +1,1414 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Create: Connected",
+ "file": "create_connected-1.3.3-mc1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "485675693980a266611669857fa9cd348e2a29140b87bf0a8ab3e13c3591422cceaa36b7a2eb90084d35ec1868c8eec9f924383bb4dada2dddcb72e9f09361b0",
+ "mods": [
+  {
+   "modid": "create_connected",
+   "name": "Create: Connected",
+   "version": "1.3.3-mc1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.200,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "required",
+     "range": "[6.0.10,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "sablecompanion",
+   "name": "Sable Companion",
+   "version": "1.6.0",
+   "jar": "sable-companion-common-1.21.1-1.6.0.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.80,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "sable-companion-common-1.21.1-1.6.0.jar"
+ ],
+ "namespaces": [
+  "c",
+  "copycats",
+  "create",
+  "create_connected",
+  "create_dragons_plus",
+  "create_more_catalysts",
+  "create_shimmer",
+  "createnetherindustry",
+  "createnuclear",
+  "diagonalfences",
+  "dndesires",
+  "garnished",
+  "minecraft"
+ ],
+ "blocks": {
+  "create_connected:andesite_encased_cross_connector": "Andesite Encased Cross Connector",
+  "create_connected:black_fan_dyeing_catalyst": "Black Fan Dyeing Catalyst",
+  "create_connected:blue_fan_dyeing_catalyst": "Blue Fan Dyeing Catalyst",
+  "create_connected:brake": "Brake",
+  "create_connected:brass_chute": "Brass Chute",
+  "create_connected:brass_encased_cross_connector": "Brass Encased Cross Connector",
+  "create_connected:brass_gearbox": "Brass Gearbox",
+  "create_connected:brown_fan_dyeing_catalyst": "Brown Fan Dyeing Catalyst",
+  "create_connected:centrifugal_clutch": "Centrifugal Clutch",
+  "create_connected:copycat_beam": "Copycat Beam",
+  "create_connected:copycat_block": "Copycat Block",
+  "create_connected:copycat_board": "Copycat Board",
+  "create_connected:copycat_fence": "Copycat Fence",
+  "create_connected:copycat_fence_gate": "Copycat Fence Gate",
+  "create_connected:copycat_slab": "Copycat Slab",
+  "create_connected:copycat_stairs": "Copycat Stairs",
+  "create_connected:copycat_vertical_step": "Copycat Vertical Step",
+  "create_connected:copycat_wall": "Copycat Wall",
+  "create_connected:crank_wheel": "Crank Wheel",
+  "create_connected:creative_fluid_vessel": "Creative Fluid Vessel",
+  "create_connected:cross_connector": "Cross Connector",
+  "create_connected:cyan_fan_dyeing_catalyst": "Cyan Fan Dyeing Catalyst",
+  "create_connected:dashboard": "Dashboard",
+  "create_connected:dye_depot_amber_fan_dyeing_catalyst": "Amber Fan Dyeing Catalyst",
+  "create_connected:dye_depot_aqua_fan_dyeing_catalyst": "Aqua Fan Dyeing Catalyst",
+  "create_connected:dye_depot_beige_fan_dyeing_catalyst": "Beige Fan Dyeing Catalyst",
+  "create_connected:dye_depot_coral_fan_dyeing_catalyst": "Coral Fan Dyeing Catalyst",
+  "create_connected:dye_depot_forest_fan_dyeing_catalyst": "Forest Fan Dyeing Catalyst",
+  "create_connected:dye_depot_ginger_fan_dyeing_catalyst": "Ginger Fan Dyeing Catalyst",
+  "create_connected:dye_depot_indigo_fan_dyeing_catalyst": "Indigo Fan Dyeing Catalyst",
+  "create_connected:dye_depot_maroon_fan_dyeing_catalyst": "Maroon Fan Dyeing Catalyst",
+  "create_connected:dye_depot_mint_fan_dyeing_catalyst": "Mint Fan Dyeing Catalyst",
+  "create_connected:dye_depot_navy_fan_dyeing_catalyst": "Navy Fan Dyeing Catalyst",
+  "create_connected:dye_depot_olive_fan_dyeing_catalyst": "Olive Fan Dyeing Catalyst",
+  "create_connected:dye_depot_rose_fan_dyeing_catalyst": "Rose Fan Dyeing Catalyst",
+  "create_connected:dye_depot_slate_fan_dyeing_catalyst": "Slate Fan Dyeing Catalyst",
+  "create_connected:dye_depot_tan_fan_dyeing_catalyst": "Tan Fan Dyeing Catalyst",
+  "create_connected:dye_depot_teal_fan_dyeing_catalyst": "Teal Fan Dyeing Catalyst",
+  "create_connected:dye_depot_verdant_fan_dyeing_catalyst": "Verdant Fan Dyeing Catalyst",
+  "create_connected:empty_fan_catalyst": "Empty Fan Catalyst",
+  "create_connected:encased_chain_cogwheel": "Encased Chain Cogwheel",
+  "create_connected:fan_blasting_catalyst": "Fan Blasting Catalyst",
+  "create_connected:fan_chocolate_coating_catalyst": "Fan Chocolate Coating Catalyst",
+  "create_connected:fan_ending_catalyst_dragon_head": "Fan Ending Catalyst with Dragon Head",
+  "create_connected:fan_ending_catalyst_dragons_breath": "Fan Ending Catalyst with Dragon's Breath",
+  "create_connected:fan_enriched_catalyst": "Fan Enriched Catalyst",
+  "create_connected:fan_exploding_catalyst": "Fan Exploding Catalyst",
+  "create_connected:fan_freezing_catalyst": "Fan Freezing Catalyst",
+  "create_connected:fan_glooming_catalyst": "Fan Glooming Catalyst",
+  "create_connected:fan_haunting_catalyst": "Fan Haunting Catalyst",
+  "create_connected:fan_honey_coating_catalyst": "Fan Honey Coating Catalyst",
+  "create_connected:fan_purifying_catalyst": "Fan Purifying Catalyst",
+  "create_connected:fan_resonance_catalyst": "Fan Resonance Catalyst",
+  "create_connected:fan_sanding_catalyst": "Fan Sanding Catalyst",
+  "create_connected:fan_sculking_catalyst": "Fan Sculking Catalyst",
+  "create_connected:fan_seething_catalyst": "Fan Seething Catalyst",
+  "create_connected:fan_smoking_catalyst": "Fan Smoking Catalyst",
+  "create_connected:fan_soul_stripping_catalyst": "Fan Soul Stripping Catalyst",
+  "create_connected:fan_splashing_catalyst": "Fan Washing Catalyst",
+  "create_connected:fan_transmutation_catalyst": "Fan Transmutation Catalyst",
+  "create_connected:fan_withering_catalyst": "Fan Withering Catalyst",
+  "create_connected:fluid_vessel": "Fluid Vessel",
+  "create_connected:freewheel_clutch": "Freewheel Clutch",
+  "create_connected:gray_fan_dyeing_catalyst": "Gray Fan Dyeing Catalyst",
+  "create_connected:green_fan_dyeing_catalyst": "Green Fan Dyeing Catalyst",
+  "create_connected:inventory_access_port": "Inventory Access Port",
+  "create_connected:inventory_bridge": "Inventory Bridge",
+  "create_connected:inverted_clutch": "Inverted Clutch",
+  "create_connected:inverted_gearshift": "Inverted Gearshift",
+  "create_connected:item_silo": "Item Silo",
+  "create_connected:kinetic_battery": "Kinetic Battery",
+  "create_connected:kinetic_bridge": "Kinetic Bridge",
+  "create_connected:kinetic_bridge_destination": "Kinetic Bridge",
+  "create_connected:large_crank_wheel": "Large Crank Wheel",
+  "create_connected:light_blue_fan_dyeing_catalyst": "Light Blue Fan Dyeing Catalyst",
+  "create_connected:light_gray_fan_dyeing_catalyst": "Light Gray Fan Dyeing Catalyst",
+  "create_connected:lime_fan_dyeing_catalyst": "Lime Fan Dyeing Catalyst",
+  "create_connected:linked_acacia_button": "Linked Acacia Button",
+  "create_connected:linked_analog_lever": "Linked Analog Lever",
+  "create_connected:linked_bamboo_button": "Linked Bamboo Button",
+  "create_connected:linked_birch_button": "Linked Birch Button",
+  "create_connected:linked_cherry_button": "Linked Cherry Button",
+  "create_connected:linked_crimson_button": "Linked Crimson Button",
+  "create_connected:linked_dark_oak_button": "Linked Dark Oak Button",
+  "create_connected:linked_jungle_button": "Linked Jungle Button",
+  "create_connected:linked_lever": "Linked Lever",
+  "create_connected:linked_mangrove_button": "Linked Mangrove Button",
+  "create_connected:linked_oak_button": "Linked Oak Button",
+  "create_connected:linked_polished_blackstone_button": "Linked Polished Blackstone Button",
+  "create_connected:linked_spruce_button": "Linked Spruce Button",
+  "create_connected:linked_stone_button": "Linked Stone Button",
+  "create_connected:linked_throttle_lever": "Linked Throttle Lever",
+  "create_connected:linked_warped_button": "Linked Warped Button",
+  "create_connected:magenta_fan_dyeing_catalyst": "Magenta Fan Dyeing Catalyst",
+  "create_connected:orange_fan_dyeing_catalyst": "Orange Fan Dyeing Catalyst",
+  "create_connected:overstress_clutch": "Overstress Clutch",
+  "create_connected:parallel_gearbox": "Parallel Gearbox",
+  "create_connected:pink_fan_dyeing_catalyst": "Pink Fan Dyeing Catalyst",
+  "create_connected:purple_fan_dyeing_catalyst": "Purple Fan Dyeing Catalyst",
+  "create_connected:red_fan_dyeing_catalyst": "Red Fan Dyeing Catalyst",
+  "create_connected:sequenced_pulse_generator": "Sequenced Pulse Generator",
+  "create_connected:shear_pin": "Shear Pin",
+  "create_connected:six_way_gearbox": "6-way Gearbox",
+  "create_connected:white_fan_dyeing_catalyst": "White Fan Dyeing Catalyst",
+  "create_connected:wrapped_copycat_fence": "Wrapped Copycat Fence",
+  "create_connected:wrapped_copycat_fence_gate": "Wrapped Copycat Fence Gate",
+  "create_connected:wrapped_copycat_stairs": "Wrapped Copycat Stairs",
+  "create_connected:wrapped_copycat_wall": "Wrapped Copycat Wall",
+  "create_connected:yellow_fan_dyeing_catalyst": "Yellow Fan Dyeing Catalyst"
+ },
+ "items": {
+  "create_connected:andesite_encased_cross_connector": "",
+  "create_connected:black_fan_dyeing_catalyst": "",
+  "create_connected:blue_fan_dyeing_catalyst": "",
+  "create_connected:brake": "",
+  "create_connected:brass_chute": "",
+  "create_connected:brass_encased_cross_connector": "",
+  "create_connected:brass_gearbox": "",
+  "create_connected:brown_fan_dyeing_catalyst": "",
+  "create_connected:centrifugal_clutch": "",
+  "create_connected:charged_kinetic_battery": "Charged Kinetic Battery",
+  "create_connected:control_chip": "Control Chip",
+  "create_connected:copycat_beam": "",
+  "create_connected:copycat_block": "",
+  "create_connected:copycat_board": "",
+  "create_connected:copycat_box": "Copycat Box",
+  "create_connected:copycat_catwalk": "Copycat Catwalk",
+  "create_connected:copycat_fence": "",
+  "create_connected:copycat_fence_gate": "",
+  "create_connected:copycat_slab": "",
+  "create_connected:copycat_stairs": "",
+  "create_connected:copycat_vertical_step": "",
+  "create_connected:copycat_wall": "",
+  "create_connected:crank_wheel": "",
+  "create_connected:creative_fluid_vessel": "",
+  "create_connected:cross_connector": "",
+  "create_connected:cyan_fan_dyeing_catalyst": "",
+  "create_connected:dashboard": "",
+  "create_connected:dye_depot_amber_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_aqua_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_beige_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_coral_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_forest_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_ginger_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_indigo_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_maroon_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_mint_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_navy_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_olive_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_rose_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_slate_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_tan_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_teal_fan_dyeing_catalyst": "",
+  "create_connected:dye_depot_verdant_fan_dyeing_catalyst": "",
+  "create_connected:empty_fan_catalyst": "",
+  "create_connected:encased_chain_cogwheel": "",
+  "create_connected:fan_blasting_catalyst": "",
+  "create_connected:fan_chocolate_coating_catalyst": "",
+  "create_connected:fan_ending_catalyst_dragon_head": "",
+  "create_connected:fan_ending_catalyst_dragons_breath": "",
+  "create_connected:fan_enriched_catalyst": "",
+  "create_connected:fan_exploding_catalyst": "",
+  "create_connected:fan_freezing_catalyst": "",
+  "create_connected:fan_glooming_catalyst": "",
+  "create_connected:fan_haunting_catalyst": "",
+  "create_connected:fan_honey_coating_catalyst": "",
+  "create_connected:fan_purifying_catalyst": "",
+  "create_connected:fan_resonance_catalyst": "",
+  "create_connected:fan_sanding_catalyst": "",
+  "create_connected:fan_sculking_catalyst": "",
+  "create_connected:fan_seething_catalyst": "",
+  "create_connected:fan_smoking_catalyst": "",
+  "create_connected:fan_soul_stripping_catalyst": "",
+  "create_connected:fan_splashing_catalyst": "",
+  "create_connected:fan_transmutation_catalyst": "",
+  "create_connected:fan_withering_catalyst": "",
+  "create_connected:fluid_vessel": "",
+  "create_connected:freewheel_clutch": "",
+  "create_connected:gray_fan_dyeing_catalyst": "",
+  "create_connected:green_fan_dyeing_catalyst": "",
+  "create_connected:incomplete_control_chip": "Incomplete Control Chip",
+  "create_connected:inventory_access_port": "",
+  "create_connected:inventory_bridge": "",
+  "create_connected:inverted_clutch": "",
+  "create_connected:inverted_gearshift": "",
+  "create_connected:item_silo": "",
+  "create_connected:kinetic_battery": "",
+  "create_connected:kinetic_battery_level_0": "",
+  "create_connected:kinetic_battery_level_1": "",
+  "create_connected:kinetic_battery_level_2": "",
+  "create_connected:kinetic_battery_level_3": "",
+  "create_connected:kinetic_battery_level_4": "",
+  "create_connected:kinetic_battery_level_5": "",
+  "create_connected:kinetic_bridge": "",
+  "create_connected:large_crank_wheel": "",
+  "create_connected:light_blue_fan_dyeing_catalyst": "",
+  "create_connected:light_gray_fan_dyeing_catalyst": "",
+  "create_connected:lime_fan_dyeing_catalyst": "",
+  "create_connected:linked_transmitter": "Linked Transmitter",
+  "create_connected:magenta_fan_dyeing_catalyst": "",
+  "create_connected:music_disc_elevator": "Music Disc",
+  "create_connected:music_disc_interlude": "Music Disc",
+  "create_connected:orange_fan_dyeing_catalyst": "",
+  "create_connected:overstress_clutch": "",
+  "create_connected:parallel_gearbox": "",
+  "create_connected:pink_fan_dyeing_catalyst": "",
+  "create_connected:purple_fan_dyeing_catalyst": "",
+  "create_connected:red_fan_dyeing_catalyst": "",
+  "create_connected:redstone_link_wildcard": "Redstone Link Wildcard",
+  "create_connected:sequenced_pulse_generator": "",
+  "create_connected:shear_pin": "",
+  "create_connected:six_way_gearbox": "",
+  "create_connected:vertical_brass_gearbox": "Vertical Brass Gearbox",
+  "create_connected:vertical_parallel_gearbox": "Vertical Parallel Gearbox",
+  "create_connected:vertical_six_way_gearbox": "Vertical 6-way Gearbox",
+  "create_connected:white_fan_dyeing_catalyst": "",
+  "create_connected:yellow_fan_dyeing_catalyst": ""
+ },
+ "data": {
+  "data_maps/block": [
+   "create_dragons_plus:fan_processing_catalysts/coloring"
+  ],
+  "jukebox_song": [
+   "create_connected:elevator",
+   "create_connected:interlude"
+  ],
+  "loot_table": [
+   "create_connected:blocks/andesite_encased_cross_connector",
+   "create_connected:blocks/black_fan_dyeing_catalyst",
+   "create_connected:blocks/blue_fan_dyeing_catalyst",
+   "create_connected:blocks/brake",
+   "create_connected:blocks/brass_chute",
+   "create_connected:blocks/brass_encased_cross_connector",
+   "create_connected:blocks/brass_gearbox",
+   "create_connected:blocks/brown_fan_dyeing_catalyst",
+   "create_connected:blocks/centrifugal_clutch",
+   "create_connected:blocks/copycat_beam",
+   "create_connected:blocks/copycat_block",
+   "create_connected:blocks/copycat_board",
+   "create_connected:blocks/copycat_fence",
+   "create_connected:blocks/copycat_fence_gate",
+   "create_connected:blocks/copycat_slab",
+   "create_connected:blocks/copycat_stairs",
+   "create_connected:blocks/copycat_vertical_step",
+   "create_connected:blocks/copycat_wall",
+   "create_connected:blocks/crank_wheel",
+   "create_connected:blocks/creative_fluid_vessel",
+   "create_connected:blocks/cross_connector",
+   "create_connected:blocks/cyan_fan_dyeing_catalyst",
+   "create_connected:blocks/dashboard",
+   "create_connected:blocks/dye_depot_amber_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_aqua_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_beige_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_coral_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_forest_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_ginger_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_indigo_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_maroon_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_mint_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_navy_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_olive_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_rose_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_slate_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_tan_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_teal_fan_dyeing_catalyst",
+   "create_connected:blocks/dye_depot_verdant_fan_dyeing_catalyst",
+   "create_connected:blocks/empty_fan_catalyst",
+   "create_connected:blocks/encased_chain_cogwheel",
+   "create_connected:blocks/fan_blasting_catalyst",
+   "create_connected:blocks/fan_chocolate_coating_catalyst",
+   "create_connected:blocks/fan_ending_catalyst_dragon_head",
+   "create_connected:blocks/fan_ending_catalyst_dragons_breath",
+   "create_connected:blocks/fan_enriched_catalyst",
+   "create_connected:blocks/fan_exploding_catalyst",
+   "create_connected:blocks/fan_freezing_catalyst",
+   "create_connected:blocks/fan_glooming_catalyst",
+   "create_connected:blocks/fan_haunting_catalyst",
+   "create_connected:blocks/fan_honey_coating_catalyst",
+   "create_connected:blocks/fan_purifying_catalyst",
+   "create_connected:blocks/fan_resonance_catalyst",
+   "create_connected:blocks/fan_sanding_catalyst",
+   "create_connected:blocks/fan_sculking_catalyst",
+   "create_connected:blocks/fan_seething_catalyst",
+   "create_connected:blocks/fan_smoking_catalyst",
+   "create_connected:blocks/fan_soul_stripping_catalyst",
+   "create_connected:blocks/fan_splashing_catalyst",
+   "create_connected:blocks/fan_transmutation_catalyst",
+   "create_connected:blocks/fan_withering_catalyst",
+   "create_connected:blocks/fluid_vessel",
+   "create_connected:blocks/freewheel_clutch",
+   "create_connected:blocks/gray_fan_dyeing_catalyst",
+   "create_connected:blocks/green_fan_dyeing_catalyst",
+   "create_connected:blocks/inventory_access_port",
+   "create_connected:blocks/inventory_bridge",
+   "create_connected:blocks/inverted_clutch",
+   "create_connected:blocks/inverted_gearshift",
+   "create_connected:blocks/item_silo",
+   "create_connected:blocks/kinetic_battery",
+   "create_connected:blocks/kinetic_bridge",
+   "create_connected:blocks/kinetic_bridge_destination",
+   "create_connected:blocks/large_crank_wheel",
+   "create_connected:blocks/light_blue_fan_dyeing_catalyst",
+   "create_connected:blocks/light_gray_fan_dyeing_catalyst",
+   "create_connected:blocks/lime_fan_dyeing_catalyst",
+   "create_connected:blocks/linked_acacia_button",
+   "create_connected:blocks/linked_analog_lever",
+   "create_connected:blocks/linked_bamboo_button",
+   "create_connected:blocks/linked_birch_button",
+   "create_connected:blocks/linked_cherry_button",
+   "create_connected:blocks/linked_crimson_button",
+   "create_connected:blocks/linked_dark_oak_button",
+   "create_connected:blocks/linked_jungle_button",
+   "create_connected:blocks/linked_lever",
+   "create_connected:blocks/linked_mangrove_button",
+   "create_connected:blocks/linked_oak_button",
+   "create_connected:blocks/linked_polished_blackstone_button",
+   "create_connected:blocks/linked_spruce_button",
+   "create_connected:blocks/linked_stone_button",
+   "create_connected:blocks/linked_throttle_lever",
+   "create_connected:blocks/linked_warped_button",
+   "create_connected:blocks/magenta_fan_dyeing_catalyst",
+   "create_connected:blocks/orange_fan_dyeing_catalyst",
+   "create_connected:blocks/overstress_clutch",
+   "create_connected:blocks/parallel_gearbox",
+   "create_connected:blocks/pink_fan_dyeing_catalyst",
+   "create_connected:blocks/purple_fan_dyeing_catalyst",
+   "create_connected:blocks/red_fan_dyeing_catalyst",
+   "create_connected:blocks/sequenced_pulse_generator",
+   "create_connected:blocks/shear_pin",
+   "create_connected:blocks/six_way_gearbox",
+   "create_connected:blocks/white_fan_dyeing_catalyst",
+   "create_connected:blocks/wrapped_copycat_fence",
+   "create_connected:blocks/wrapped_copycat_fence_gate",
+   "create_connected:blocks/wrapped_copycat_stairs",
+   "create_connected:blocks/wrapped_copycat_wall",
+   "create_connected:blocks/yellow_fan_dyeing_catalyst"
+  ],
+  "neruina": [
+   "create_connected:auto_report"
+  ],
+  "recipe": [
+   "create:cutting/shaft",
+   "create_connected:crafting/kinetics/brake",
+   "create_connected:crafting/kinetics/brass_chute",
+   "create_connected:crafting/kinetics/brass_gearbox",
+   "create_connected:crafting/kinetics/brass_gearbox_from_conversion",
+   "create_connected:crafting/kinetics/centrifugal_clutch",
+   "create_connected:crafting/kinetics/clutch_from_conversion",
+   "create_connected:crafting/kinetics/crank_wheel",
+   "create_connected:crafting/kinetics/cross_connector",
+   "create_connected:crafting/kinetics/dashboard",
+   "create_connected:crafting/kinetics/empty_fan_catalyst",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_black_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_blasting",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_blue_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_brown_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_chocolate_coating",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_cyan_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_amber_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_aqua_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_beige_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_coral_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_forest_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_ginger_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_indigo_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_maroon_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_mint_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_navy_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_olive_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_rose_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_slate_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_tan_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_teal_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_dye_depot_verdant_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragon_head",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_ending_dragons_breath",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_enriched",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_exploding",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_freezing",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_glooming",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_gray_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_green_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_haunting",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_honey_coating",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_light_blue_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_light_gray_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_lime_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_magenta_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_orange_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_pink_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_purifying",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_purple_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_red_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_resonance",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_sanding",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_sculking",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_seething",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_smoking",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_soul_stripping",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_splashing",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_transmutation",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_white_dye",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_withering",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_yellow_dye",
+   "create_connected:crafting/kinetics/encased_chain_cogwheel",
+   "create_connected:crafting/kinetics/fluid_tank_from_conversion",
+   "create_connected:crafting/kinetics/fluid_vessel",
+   "create_connected:crafting/kinetics/fluid_vessel_from_conversion",
+   "create_connected:crafting/kinetics/freewheel_clutch",
+   "create_connected:crafting/kinetics/gearshift_from_conversion",
+   "create_connected:crafting/kinetics/inventory_access_port",
+   "create_connected:crafting/kinetics/inventory_bridge",
+   "create_connected:crafting/kinetics/inverted_clutch_from_conversion",
+   "create_connected:crafting/kinetics/inverted_gearshift_from_conversion",
+   "create_connected:crafting/kinetics/item_silo",
+   "create_connected:crafting/kinetics/item_silo_from_conversion",
+   "create_connected:crafting/kinetics/item_vault_from_conversion",
+   "create_connected:crafting/kinetics/kinetic_battery",
+   "create_connected:crafting/kinetics/kinetic_battery_discharge",
+   "create_connected:crafting/kinetics/kinetic_battery_from_charged",
+   "create_connected:crafting/kinetics/kinetic_bridge",
+   "create_connected:crafting/kinetics/large_crank_wheel",
+   "create_connected:crafting/kinetics/linked_transmitter_from_conversion",
+   "create_connected:crafting/kinetics/overstress_clutch",
+   "create_connected:crafting/kinetics/parallel_gearbox",
+   "create_connected:crafting/kinetics/parallel_gearbox_from_conversion",
+   "create_connected:crafting/kinetics/redstone_link_from_conversion",
+   "create_connected:crafting/kinetics/redstone_link_wildcard",
+   "create_connected:crafting/kinetics/sequenced_pulse_generator",
+   "create_connected:crafting/kinetics/six_way_gearbox",
+   "create_connected:crafting/kinetics/six_way_gearbox_from_conversion",
+   "create_connected:crafting/kinetics/six_way_gearbox_from_gearbox",
+   "create_connected:crafting/kinetics/six_way_gearbox_from_parallel",
+   "create_connected:crafting/kinetics/vertical_brass_gearbox_from_conversion",
+   "create_connected:crafting/kinetics/vertical_parallel_gearbox_from_conversion",
+   "create_connected:crafting/kinetics/vertical_six_way_gearbox_from_conversion",
+   "create_connected:crafting/palettes/copycat_beam",
+   "create_connected:crafting/palettes/copycat_beam_compat",
+   "create_connected:crafting/palettes/copycat_block",
+   "create_connected:crafting/palettes/copycat_block_compat",
+   "create_connected:crafting/palettes/copycat_block_from_slabs",
+   "create_connected:crafting/palettes/copycat_board",
+   "create_connected:crafting/palettes/copycat_board_compat",
+   "create_connected:crafting/palettes/copycat_box",
+   "create_connected:crafting/palettes/copycat_catwalk",
+   "create_connected:crafting/palettes/copycat_fence",
+   "create_connected:crafting/palettes/copycat_fence_compat",
+   "create_connected:crafting/palettes/copycat_fence_gate",
+   "create_connected:crafting/palettes/copycat_fence_gate_compat",
+   "create_connected:crafting/palettes/copycat_slab",
+   "create_connected:crafting/palettes/copycat_slab_compat",
+   "create_connected:crafting/palettes/copycat_slab_from_beams",
+   "create_connected:crafting/palettes/copycat_slab_from_panels",
+   "create_connected:crafting/palettes/copycat_slab_from_steps",
+   "create_connected:crafting/palettes/copycat_stairs",
+   "create_connected:crafting/palettes/copycat_stairs_compat",
+   "create_connected:crafting/palettes/copycat_step_from_conversion",
+   "create_connected:crafting/palettes/copycat_vertical_step",
+   "create_connected:crafting/palettes/copycat_vertical_step_compat",
+   "create_connected:crafting/palettes/copycat_vertical_step_from_conversion",
+   "create_connected:crafting/palettes/copycat_wall",
+   "create_connected:crafting/palettes/copycat_wall_compat",
+   "create_connected:filling/amber_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/amber_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/aqua_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/aqua_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/beige_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/beige_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/black_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/black_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/blue_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/blue_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/brown_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/brown_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/coral_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/coral_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/cyan_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/cyan_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/fan_blasting_catalyst",
+   "create_connected:filling/fan_chocolate_coating_catalyst",
+   "create_connected:filling/fan_ending_catalyst_dragons_breath",
+   "create_connected:filling/fan_honey_coating_catalyst",
+   "create_connected:filling/fan_splashing_catalyst",
+   "create_connected:filling/fan_transmutation_catalyst",
+   "create_connected:filling/forest_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/forest_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/ginger_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/ginger_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/gray_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/gray_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/green_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/green_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/indigo_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/indigo_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/light_blue_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/light_blue_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/light_gray_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/light_gray_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/lime_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/lime_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/magenta_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/magenta_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/maroon_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/maroon_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/mint_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/mint_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/navy_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/navy_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/olive_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/olive_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/orange_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/orange_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/pink_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/pink_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/purple_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/purple_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/red_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/red_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/rose_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/rose_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/slate_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/slate_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/tan_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/tan_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/teal_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/teal_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/verdant_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/verdant_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/white_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/white_fan_dyeing_catalyst_garnished",
+   "create_connected:filling/yellow_fan_dyeing_catalyst_dragons_plus",
+   "create_connected:filling/yellow_fan_dyeing_catalyst_garnished",
+   "create_connected:item_application/amber_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/amber_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/aqua_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/aqua_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/beige_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/beige_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/black_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/black_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/blasting_catalyst_from_empty",
+   "create_connected:item_application/blue_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/blue_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/brown_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/brown_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/chocolate_coating_catalyst_from_empty",
+   "create_connected:item_application/coral_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/coral_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/cyan_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/cyan_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/ending_catalyst_dragon_head_from_empty",
+   "create_connected:item_application/ending_catalyst_dragons_breath_from_empty",
+   "create_connected:item_application/enriched_catalyst_from_empty",
+   "create_connected:item_application/exploding_catalyst_from_empty",
+   "create_connected:item_application/forest_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/forest_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/freezing_catalyst_from_empty",
+   "create_connected:item_application/ginger_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/ginger_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/glooming_catalyst_from_empty",
+   "create_connected:item_application/gray_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/gray_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/green_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/green_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/haunting_catalyst_from_empty",
+   "create_connected:item_application/honey_coating_catalyst_from_empty",
+   "create_connected:item_application/indigo_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/indigo_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/light_blue_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/light_blue_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/light_gray_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/light_gray_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/lime_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/lime_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/magenta_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/magenta_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/maroon_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/maroon_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/mint_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/mint_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/navy_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/navy_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/olive_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/olive_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/orange_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/orange_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/pink_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/pink_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/purifying_catalyst_from_empty",
+   "create_connected:item_application/purple_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/purple_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/red_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/red_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/resonance_catalyst_from_empty",
+   "create_connected:item_application/rose_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/rose_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/sanding_catalyst_from_empty",
+   "create_connected:item_application/sculking_catalyst_from_empty",
+   "create_connected:item_application/seething_catalyst_from_empty",
+   "create_connected:item_application/slate_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/slate_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/smoking_catalyst_from_empty",
+   "create_connected:item_application/soul_stripping_catalyst_from_empty",
+   "create_connected:item_application/splashing_catalyst_from_empty",
+   "create_connected:item_application/tan_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/tan_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/teal_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/teal_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/transmutation_catalyst_from_empty",
+   "create_connected:item_application/verdant_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/verdant_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/white_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/white_dyeing_catalyst_garnished_from_empty",
+   "create_connected:item_application/withering_catalyst_from_empty",
+   "create_connected:item_application/yellow_dyeing_catalyst_dragons_plus_from_empty",
+   "create_connected:item_application/yellow_dyeing_catalyst_garnished_from_empty",
+   "create_connected:sequenced_assembly/control_chip"
+  ],
+  "tags/block": [
+   "c:dyes",
+   "c:dyes/amber",
+   "c:dyes/aqua",
+   "c:dyes/beige",
+   "c:dyes/black",
+   "c:dyes/blue",
+   "c:dyes/brown",
+   "c:dyes/coral",
+   "c:dyes/cyan",
+   "c:dyes/forest",
+   "c:dyes/ginger",
+   "c:dyes/gray",
+   "c:dyes/green",
+   "c:dyes/indigo",
+   "c:dyes/light_blue",
+   "c:dyes/light_gray",
+   "c:dyes/lime",
+   "c:dyes/magenta",
+   "c:dyes/maroon",
+   "c:dyes/mint",
+   "c:dyes/navy",
+   "c:dyes/olive",
+   "c:dyes/orange",
+   "c:dyes/pink",
+   "c:dyes/purple",
+   "c:dyes/red",
+   "c:dyes/rose",
+   "c:dyes/slate",
+   "c:dyes/tan",
+   "c:dyes/teal",
+   "c:dyes/verdant",
+   "c:dyes/white",
+   "c:dyes/yellow",
+   "c:fence_gates",
+   "c:fences",
+   "create:brittle",
+   "create:fan_processing_catalysts/blasting",
+   "create:fan_processing_catalysts/haunting",
+   "create:fan_processing_catalysts/smoking",
+   "create:fan_processing_catalysts/splashing",
+   "create:fan_transparent",
+   "create:movable_empty_collider",
+   "create:safe_nbt",
+   "create_dragons_plus:fan_processing_catalysts/ending",
+   "create_dragons_plus:fan_processing_catalysts/sanding",
+   "create_dragons_plus:passive_block_freezers",
+   "create_more_catalysts:fan_catalysts/chocolate_coating",
+   "create_more_catalysts:fan_catalysts/exploding",
+   "create_more_catalysts:fan_catalysts/honey_coating",
+   "create_more_catalysts:fan_catalysts/purifying",
+   "create_more_catalysts:fan_catalysts/resonance",
+   "create_more_catalysts:fan_catalysts/sculking",
+   "create_shimmer:fan_glooming_catalysts",
+   "create_shimmer:fan_transmutation_catalysts",
+   "createnetherindustry:fan_soul_stripping_catalysts",
+   "createnuclear:fan_processing_catalysts/enriched",
+   "diagonalfences:non_diagonal_fences",
+   "dndesires:fan_processing_catalysts/freezing",
+   "dndesires:fan_processing_catalysts/sanding",
+   "dndesires:fan_processing_catalysts/seething",
+   "dndesires:fan_processing_catalysts_freezing",
+   "dndesires:fan_processing_catalysts_sanding",
+   "dndesires:fan_processing_catalysts_superheating",
+   "garnished:fan_processing_catalysts/dye/amber",
+   "garnished:fan_processing_catalysts/dye/aqua",
+   "garnished:fan_processing_catalysts/dye/beige",
+   "garnished:fan_processing_catalysts/dye/black",
+   "garnished:fan_processing_catalysts/dye/blue",
+   "garnished:fan_processing_catalysts/dye/brown",
+   "garnished:fan_processing_catalysts/dye/coral",
+   "garnished:fan_processing_catalysts/dye/cyan",
+   "garnished:fan_processing_catalysts/dye/forest",
+   "garnished:fan_processing_catalysts/dye/ginger",
+   "garnished:fan_processing_catalysts/dye/gray",
+   "garnished:fan_processing_catalysts/dye/green",
+   "garnished:fan_processing_catalysts/dye/indigo",
+   "garnished:fan_processing_catalysts/dye/light_blue",
+   "garnished:fan_processing_catalysts/dye/light_gray",
+   "garnished:fan_processing_catalysts/dye/lime",
+   "garnished:fan_processing_catalysts/dye/magenta",
+   "garnished:fan_processing_catalysts/dye/maroon",
+   "garnished:fan_processing_catalysts/dye/mint",
+   "garnished:fan_processing_catalysts/dye/navy",
+   "garnished:fan_processing_catalysts/dye/olive",
+   "garnished:fan_processing_catalysts/dye/orange",
+   "garnished:fan_processing_catalysts/dye/pink",
+   "garnished:fan_processing_catalysts/dye/purple",
+   "garnished:fan_processing_catalysts/dye/red",
+   "garnished:fan_processing_catalysts/dye/rose",
+   "garnished:fan_processing_catalysts/dye/slate",
+   "garnished:fan_processing_catalysts/dye/tan",
+   "garnished:fan_processing_catalysts/dye/teal",
+   "garnished:fan_processing_catalysts/dye/verdant",
+   "garnished:fan_processing_catalysts/dye/white",
+   "garnished:fan_processing_catalysts/dye/yellow",
+   "garnished:fan_processing_catalysts/freezing",
+   "minecraft:fence_gates",
+   "minecraft:fences",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:slabs",
+   "minecraft:stairs",
+   "minecraft:unstable_bottom_center",
+   "minecraft:walls"
+  ],
+  "tags/item": [
+   "c:music_discs",
+   "copycats:copycat_beam",
+   "copycats:copycat_block",
+   "copycats:copycat_board",
+   "copycats:copycat_fence",
+   "copycats:copycat_fence_gate",
+   "copycats:copycat_slab",
+   "copycats:copycat_stairs",
+   "copycats:copycat_vertical_step",
+   "copycats:copycat_wall",
+   "create:contraption_controlled",
+   "minecraft:creeper_drop_music_discs"
+  ]
+ },
+ "data_counts": {
+  "advancement": 129
+ },
+ "tags": {
+  "tags/block": {
+   "c:dyes": [
+    "create_connected:white_fan_dyeing_catalyst?",
+    "create_connected:orange_fan_dyeing_catalyst?",
+    "create_connected:magenta_fan_dyeing_catalyst?",
+    "create_connected:light_blue_fan_dyeing_catalyst?",
+    "create_connected:yellow_fan_dyeing_catalyst?",
+    "create_connected:lime_fan_dyeing_catalyst?",
+    "create_connected:pink_fan_dyeing_catalyst?",
+    "create_connected:gray_fan_dyeing_catalyst?",
+    "create_connected:light_gray_fan_dyeing_catalyst?",
+    "create_connected:cyan_fan_dyeing_catalyst?",
+    "create_connected:purple_fan_dyeing_catalyst?",
+    "create_connected:blue_fan_dyeing_catalyst?",
+    "create_connected:brown_fan_dyeing_catalyst?",
+    "create_connected:green_fan_dyeing_catalyst?",
+    "create_connected:red_fan_dyeing_catalyst?",
+    "create_connected:black_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_maroon_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_rose_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_coral_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_indigo_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_navy_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_slate_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_olive_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_amber_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_beige_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_teal_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_mint_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_aqua_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_verdant_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_forest_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_ginger_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_tan_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/amber": [
+    "create_connected:dye_depot_amber_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/aqua": [
+    "create_connected:dye_depot_aqua_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/beige": [
+    "create_connected:dye_depot_beige_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/black": [
+    "create_connected:black_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/blue": [
+    "create_connected:blue_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/brown": [
+    "create_connected:brown_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/coral": [
+    "create_connected:dye_depot_coral_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/cyan": [
+    "create_connected:cyan_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/forest": [
+    "create_connected:dye_depot_forest_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/ginger": [
+    "create_connected:dye_depot_ginger_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/gray": [
+    "create_connected:gray_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/green": [
+    "create_connected:green_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/indigo": [
+    "create_connected:dye_depot_indigo_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/light_blue": [
+    "create_connected:light_blue_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/light_gray": [
+    "create_connected:light_gray_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/lime": [
+    "create_connected:lime_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/magenta": [
+    "create_connected:magenta_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/maroon": [
+    "create_connected:dye_depot_maroon_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/mint": [
+    "create_connected:dye_depot_mint_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/navy": [
+    "create_connected:dye_depot_navy_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/olive": [
+    "create_connected:dye_depot_olive_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/orange": [
+    "create_connected:orange_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/pink": [
+    "create_connected:pink_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/purple": [
+    "create_connected:purple_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/red": [
+    "create_connected:red_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/rose": [
+    "create_connected:dye_depot_rose_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/slate": [
+    "create_connected:dye_depot_slate_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/tan": [
+    "create_connected:dye_depot_tan_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/teal": [
+    "create_connected:dye_depot_teal_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/verdant": [
+    "create_connected:dye_depot_verdant_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/white": [
+    "create_connected:white_fan_dyeing_catalyst?"
+   ],
+   "c:dyes/yellow": [
+    "create_connected:yellow_fan_dyeing_catalyst?"
+   ],
+   "c:fence_gates": [
+    "create_connected:copycat_fence_gate",
+    "create_connected:wrapped_copycat_fence_gate"
+   ],
+   "c:fences": [
+    "create_connected:copycat_fence",
+    "create_connected:wrapped_copycat_fence"
+   ],
+   "create:brittle": [
+    "create_connected:crank_wheel",
+    "create_connected:large_crank_wheel"
+   ],
+   "create:fan_processing_catalysts/blasting": [
+    "create_connected:fan_blasting_catalyst"
+   ],
+   "create:fan_processing_catalysts/haunting": [
+    "create_connected:fan_haunting_catalyst"
+   ],
+   "create:fan_processing_catalysts/smoking": [
+    "create_connected:fan_smoking_catalyst"
+   ],
+   "create:fan_processing_catalysts/splashing": [
+    "create_connected:fan_splashing_catalyst"
+   ],
+   "create:fan_transparent": [
+    "create_connected:empty_fan_catalyst",
+    "create_connected:fan_blasting_catalyst",
+    "create_connected:fan_smoking_catalyst",
+    "create_connected:fan_splashing_catalyst",
+    "create_connected:fan_haunting_catalyst",
+    "create_connected:fan_freezing_catalyst",
+    "create_connected:fan_seething_catalyst",
+    "create_connected:fan_sanding_catalyst",
+    "create_connected:fan_enriched_catalyst",
+    "create_connected:fan_ending_catalyst_dragons_breath",
+    "create_connected:fan_ending_catalyst_dragon_head",
+    "create_connected:fan_withering_catalyst",
+    "create_connected:fan_chocolate_coating_catalyst",
+    "create_connected:fan_honey_coating_catalyst",
+    "create_connected:fan_exploding_catalyst",
+    "create_connected:fan_resonance_catalyst",
+    "create_connected:fan_sculking_catalyst",
+    "create_connected:fan_purifying_catalyst",
+    "create_connected:fan_transmutation_catalyst",
+    "create_connected:fan_glooming_catalyst",
+    "create_connected:fan_soul_stripping_catalyst",
+    "create_connected:white_fan_dyeing_catalyst?",
+    "create_connected:orange_fan_dyeing_catalyst?",
+    "create_connected:magenta_fan_dyeing_catalyst?",
+    "create_connected:light_blue_fan_dyeing_catalyst?",
+    "create_connected:yellow_fan_dyeing_catalyst?",
+    "create_connected:lime_fan_dyeing_catalyst?",
+    "create_connected:pink_fan_dyeing_catalyst?",
+    "create_connected:gray_fan_dyeing_catalyst?",
+    "create_connected:light_gray_fan_dyeing_catalyst?",
+    "create_connected:cyan_fan_dyeing_catalyst?",
+    "create_connected:purple_fan_dyeing_catalyst?",
+    "create_connected:blue_fan_dyeing_catalyst?",
+    "create_connected:brown_fan_dyeing_catalyst?",
+    "create_connected:green_fan_dyeing_catalyst?",
+    "create_connected:red_fan_dyeing_catalyst?",
+    "create_connected:black_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_maroon_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_rose_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_coral_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_indigo_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_navy_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_slate_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_olive_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_amber_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_beige_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_teal_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_mint_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_aqua_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_verdant_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_forest_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_ginger_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_tan_fan_dyeing_catalyst?"
+   ],
+   "create:movable_empty_collider": [
+    "create_connected:copycat_fence_gate",
+    "create_connected:wrapped_copycat_fence_gate"
+   ],
+   "create:safe_nbt": [
+    "create_connected:sequenced_pulse_generator",
+    "create_connected:linked_stone_button",
+    "create_connected:linked_polished_blackstone_button",
+    "create_connected:linked_oak_button",
+    "create_connected:linked_spruce_button",
+    "create_connected:linked_birch_button",
+    "create_connected:linked_acacia_button",
+    "create_connected:linked_cherry_button",
+    "create_connected:linked_jungle_button",
+    "create_connected:linked_dark_oak_button",
+    "create_connected:linked_crimson_button",
+    "create_connected:linked_warped_button",
+    "create_connected:linked_mangrove_button",
+    "create_connected:linked_bamboo_button",
+    "create_connected:linked_lever",
+    "create_connected:linked_analog_lever",
+    "create_connected:creative_fluid_vessel",
+    "create_connected:linked_throttle_lever?"
+   ],
+   "create_dragons_plus:fan_processing_catalysts/ending": [
+    "create_connected:fan_ending_catalyst_dragons_breath",
+    "create_connected:fan_ending_catalyst_dragon_head"
+   ],
+   "create_dragons_plus:fan_processing_catalysts/sanding": [
+    "create_connected:fan_sanding_catalyst"
+   ],
+   "create_dragons_plus:passive_block_freezers": [
+    "create_connected:fan_freezing_catalyst"
+   ],
+   "create_more_catalysts:fan_catalysts/chocolate_coating": [
+    "create_connected:fan_chocolate_coating_catalyst"
+   ],
+   "create_more_catalysts:fan_catalysts/exploding": [
+    "create_connected:fan_exploding_catalyst"
+   ],
+   "create_more_catalysts:fan_catalysts/honey_coating": [
+    "create_connected:fan_honey_coating_catalyst"
+   ],
+   "create_more_catalysts:fan_catalysts/purifying": [
+    "create_connected:fan_purifying_catalyst"
+   ],
+   "create_more_catalysts:fan_catalysts/resonance": [
+    "create_connected:fan_resonance_catalyst"
+   ],
+   "create_more_catalysts:fan_catalysts/sculking": [
+    "create_connected:fan_sculking_catalyst"
+   ],
+   "create_shimmer:fan_glooming_catalysts": [
+    "create_connected:fan_glooming_catalyst"
+   ],
+   "create_shimmer:fan_transmutation_catalysts": [
+    "create_connected:fan_transmutation_catalyst"
+   ],
+   "createnetherindustry:fan_soul_stripping_catalysts": [
+    "create_connected:fan_soul_stripping_catalyst"
+   ],
+   "createnuclear:fan_processing_catalysts/enriched": [
+    "create_connected:fan_enriched_catalyst"
+   ],
+   "diagonalfences:non_diagonal_fences": [
+    "create_connected:copycat_fence",
+    "create_connected:wrapped_copycat_fence"
+   ],
+   "dndesires:fan_processing_catalysts/freezing": [
+    "create_connected:fan_freezing_catalyst"
+   ],
+   "dndesires:fan_processing_catalysts/sanding": [
+    "create_connected:fan_sanding_catalyst"
+   ],
+   "dndesires:fan_processing_catalysts/seething": [
+    "create_connected:fan_seething_catalyst"
+   ],
+   "dndesires:fan_processing_catalysts_freezing": [
+    "create_connected:fan_freezing_catalyst"
+   ],
+   "dndesires:fan_processing_catalysts_sanding": [
+    "create_connected:fan_sanding_catalyst"
+   ],
+   "dndesires:fan_processing_catalysts_superheating": [
+    "create_connected:fan_seething_catalyst"
+   ],
+   "garnished:fan_processing_catalysts/dye/amber": [
+    "create_connected:dye_depot_amber_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/aqua": [
+    "create_connected:dye_depot_aqua_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/beige": [
+    "create_connected:dye_depot_beige_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/black": [
+    "create_connected:black_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/blue": [
+    "create_connected:blue_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/brown": [
+    "create_connected:brown_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/coral": [
+    "create_connected:dye_depot_coral_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/cyan": [
+    "create_connected:cyan_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/forest": [
+    "create_connected:dye_depot_forest_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/ginger": [
+    "create_connected:dye_depot_ginger_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/gray": [
+    "create_connected:gray_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/green": [
+    "create_connected:green_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/indigo": [
+    "create_connected:dye_depot_indigo_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/light_blue": [
+    "create_connected:light_blue_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/light_gray": [
+    "create_connected:light_gray_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/lime": [
+    "create_connected:lime_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/magenta": [
+    "create_connected:magenta_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/maroon": [
+    "create_connected:dye_depot_maroon_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/mint": [
+    "create_connected:dye_depot_mint_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/navy": [
+    "create_connected:dye_depot_navy_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/olive": [
+    "create_connected:dye_depot_olive_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/orange": [
+    "create_connected:orange_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/pink": [
+    "create_connected:pink_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/purple": [
+    "create_connected:purple_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/red": [
+    "create_connected:red_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/rose": [
+    "create_connected:dye_depot_rose_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/slate": [
+    "create_connected:dye_depot_slate_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/tan": [
+    "create_connected:dye_depot_tan_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/teal": [
+    "create_connected:dye_depot_teal_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/verdant": [
+    "create_connected:dye_depot_verdant_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/white": [
+    "create_connected:white_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/dye/yellow": [
+    "create_connected:yellow_fan_dyeing_catalyst?"
+   ],
+   "garnished:fan_processing_catalysts/freezing": [
+    "create_connected:fan_freezing_catalyst"
+   ],
+   "minecraft:fence_gates": [
+    "create_connected:copycat_fence_gate",
+    "create_connected:wrapped_copycat_fence_gate"
+   ],
+   "minecraft:fences": [
+    "create_connected:copycat_fence",
+    "create_connected:wrapped_copycat_fence"
+   ],
+   "minecraft:mineable/axe": [
+    "create_connected:encased_chain_cogwheel",
+    "create_connected:crank_wheel",
+    "create_connected:large_crank_wheel",
+    "create_connected:parallel_gearbox",
+    "create_connected:six_way_gearbox",
+    "create_connected:cross_connector",
+    "create_connected:andesite_encased_cross_connector",
+    "create_connected:brass_encased_cross_connector",
+    "create_connected:overstress_clutch",
+    "create_connected:inverted_clutch",
+    "create_connected:inverted_gearshift",
+    "create_connected:centrifugal_clutch",
+    "create_connected:freewheel_clutch",
+    "create_connected:kinetic_bridge",
+    "create_connected:kinetic_bridge_destination",
+    "create_connected:brass_gearbox",
+    "create_connected:brake",
+    "create_connected:kinetic_battery",
+    "create_connected:inventory_access_port",
+    "create_connected:inventory_bridge",
+    "create_connected:dashboard",
+    "create_connected:copycat_slab",
+    "create_connected:copycat_block",
+    "create_connected:copycat_beam",
+    "create_connected:copycat_vertical_step",
+    "create_connected:copycat_stairs",
+    "create_connected:copycat_fence",
+    "create_connected:copycat_wall",
+    "create_connected:copycat_fence_gate",
+    "create_connected:copycat_board"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "create_connected:encased_chain_cogwheel",
+    "create_connected:crank_wheel",
+    "create_connected:large_crank_wheel",
+    "create_connected:parallel_gearbox",
+    "create_connected:six_way_gearbox",
+    "create_connected:cross_connector",
+    "create_connected:andesite_encased_cross_connector",
+    "create_connected:brass_encased_cross_connector",
+    "create_connected:overstress_clutch",
+    "create_connected:shear_pin",
+    "create_connected:inverted_clutch",
+    "create_connected:inverted_gearshift",
+    "create_connected:centrifugal_clutch",
+    "create_connected:freewheel_clutch",
+    "create_connected:kinetic_bridge",
+    "create_connected:kinetic_bridge_destination",
+    "create_connected:brass_gearbox",
+    "create_connected:brake",
+    "create_connected:kinetic_battery",
+    "create_connected:empty_fan_catalyst",
+    "create_connected:fan_blasting_catalyst",
+    "create_connected:fan_smoking_catalyst",
+    "create_connected:fan_splashing_catalyst",
+    "create_connected:fan_haunting_catalyst",
+    "create_connected:fan_freezing_catalyst",
+    "create_connected:fan_seething_catalyst",
+    "create_connected:fan_sanding_catalyst",
+    "create_connected:fan_enriched_catalyst",
+    "create_connected:fan_ending_catalyst_dragons_breath",
+    "create_connected:fan_ending_catalyst_dragon_head",
+    "create_connected:fan_withering_catalyst",
+    "create_connected:fan_chocolate_coating_catalyst",
+    "create_connected:fan_honey_coating_catalyst",
+    "create_connected:fan_exploding_catalyst",
+    "create_connected:fan_resonance_catalyst",
+    "create_connected:fan_sculking_catalyst",
+    "create_connected:fan_purifying_catalyst",
+    "create_connected:fan_transmutation_catalyst",
+    "create_connected:fan_glooming_catalyst",
+    "create_connected:fan_soul_stripping_catalyst",
+    "create_connected:white_fan_dyeing_catalyst?",
+    "create_connected:orange_fan_dyeing_catalyst?",
+    "create_connected:magenta_fan_dyeing_catalyst?",
+    "create_connected:light_blue_fan_dyeing_catalyst?",
+    "create_connected:yellow_fan_dyeing_catalyst?",
+    "create_connected:lime_fan_dyeing_catalyst?",
+    "create_connected:pink_fan_dyeing_catalyst?",
+    "create_connected:gray_fan_dyeing_catalyst?",
+    "create_connected:light_gray_fan_dyeing_catalyst?",
+    "create_connected:cyan_fan_dyeing_catalyst?",
+    "create_connected:purple_fan_dyeing_catalyst?",
+    "create_connected:blue_fan_dyeing_catalyst?",
+    "create_connected:brown_fan_dyeing_catalyst?",
+    "create_connected:green_fan_dyeing_catalyst?",
+    "create_connected:red_fan_dyeing_catalyst?",
+    "create_connected:black_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_maroon_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_rose_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_coral_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_indigo_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_navy_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_slate_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_olive_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_amber_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_beige_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_teal_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_mint_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_aqua_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_verdant_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_forest_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_ginger_fan_dyeing_catalyst?",
+    "create_connected:dye_depot_tan_fan_dyeing_catalyst?",
+    "create_connected:item_silo",
+    "create_connected:fluid_vessel",
+    "create_connected:creative_fluid_vessel",
+    "create_connected:inventory_access_port",
+    "create_connected:inventory_bridge",
+    "create_connected:brass_chute",
+    "create_connected:dashboard",
+    "create_connected:copycat_slab",
+    "create_connected:copycat_block",
+    "create_connected:copycat_beam",
+    "create_connected:copycat_vertical_step",
+    "create_connected:copycat_stairs",
+    "create_connected:copycat_fence",
+    "create_connected:copycat_wall",
+    "create_connected:copycat_fence_gate",
+    "create_connected:copycat_board"
+   ],
+   "minecraft:slabs": [
+    "create_connected:copycat_slab"
+   ],
+   "minecraft:stairs": [
+    "create_connected:copycat_stairs",
+    "create_connected:wrapped_copycat_stairs"
+   ],
+   "minecraft:unstable_bottom_center": [
+    "create_connected:copycat_fence_gate",
+    "create_connected:wrapped_copycat_fence_gate"
+   ],
+   "minecraft:walls": [
+    "create_connected:copycat_wall",
+    "create_connected:wrapped_copycat_wall"
+   ]
+  },
+  "tags/item": {
+   "c:music_discs": [
+    "create_connected:music_disc_elevator",
+    "create_connected:music_disc_interlude"
+   ],
+   "copycats:copycat_beam": [
+    "create_connected:copycat_beam"
+   ],
+   "copycats:copycat_block": [
+    "create_connected:copycat_block"
+   ],
+   "copycats:copycat_board": [
+    "create_connected:copycat_board"
+   ],
+   "copycats:copycat_fence": [
+    "create_connected:copycat_fence"
+   ],
+   "copycats:copycat_fence_gate": [
+    "create_connected:copycat_fence_gate"
+   ],
+   "copycats:copycat_slab": [
+    "create_connected:copycat_slab"
+   ],
+   "copycats:copycat_stairs": [
+    "create_connected:copycat_stairs"
+   ],
+   "copycats:copycat_vertical_step": [
+    "create_connected:copycat_vertical_step"
+   ],
+   "copycats:copycat_wall": [
+    "create_connected:copycat_wall"
+   ],
+   "create:contraption_controlled": [
+    "minecraft:jukebox",
+    "minecraft:note_block"
+   ],
+   "minecraft:creeper_drop_music_discs": [
+    "create_connected:music_disc_elevator",
+    "create_connected:music_disc_interlude"
+   ]
+  }
+ },
+ "recipe_types": {
+  "create:cutting": 1,
+  "create:filling": 70,
+  "create:item_application": 84,
+  "create:sequenced_assembly": 1,
+  "minecraft:crafting_shaped": 18,
+  "minecraft:crafting_shapeless": 93,
+  "minecraft:stonecutting": 9
+ },
+ "botanypots": [],
+ "problems": []
+}

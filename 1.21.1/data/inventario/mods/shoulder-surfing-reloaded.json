@@ -1,0 +1,74 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Shoulder Surfing Reloaded",
+ "file": "ShoulderSurfing-NeoForge-1.21.1-5.2.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "4497d2f8a992d6d8985b1a6fa7018158a877521052302682866f89171d14eafa7c6b75d92c6e08531003476bc292f71c67c7e4f34b8c1a6864074a3b0dcd7e75",
+ "mods": [
+  {
+   "modid": "shouldersurfing",
+   "name": "Shoulder Surfing Reloaded",
+   "version": "1.21.1-5.2.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.143,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "betterthirdperson",
+     "type": "incompatible",
+     "range": null,
+     "side": "CLIENT"
+    },
+    {
+     "modid": "camerautils",
+     "type": "incompatible",
+     "range": null,
+     "side": "CLIENT"
+    },
+    {
+     "modid": "nimble",
+     "type": "incompatible",
+     "range": null,
+     "side": "CLIENT"
+    },
+    {
+     "modid": "valkyrienskies",
+     "type": "incompatible",
+     "range": "(,2.4.11]",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "customcameraview",
+     "type": "incompatible",
+     "range": null,
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "shouldersurfing"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": [
+  "assets/shouldersurfing/lang/en_us.json: JSON non valido"
+ ]
+}

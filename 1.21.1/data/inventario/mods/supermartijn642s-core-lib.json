@@ -1,0 +1,63 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "SuperMartijn642's Core Lib",
+ "file": "supermartijn642corelib-1.1.24-neoforge-mc1.21.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "df3844f66fef9f58ab41119bd2c86096e7ca613ecc646ff910344a25d891ebd3c50267bfe2057e18f96de3bdb3fc0e4ada5aec64d97fe12865b42700dc47bb97",
+ "mods": [
+  {
+   "modid": "supermartijn642corelib",
+   "name": "SuperMartijn642's Core Lib",
+   "version": "1.1.24",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.102-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.21.2)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "minecraft",
+  "supermartijn642corelib"
+ ],
+ "data": {
+  "tags/block": [
+   "minecraft:mineable/axe",
+   "minecraft:mineable/hoe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:mineable/shovel",
+   "minecraft:needs_diamond_tool",
+   "minecraft:needs_iron_tool",
+   "minecraft:needs_stone_tool"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/axe": [],
+   "minecraft:mineable/hoe": [],
+   "minecraft:mineable/pickaxe": [],
+   "minecraft:mineable/shovel": [],
+   "minecraft:needs_diamond_tool": [],
+   "minecraft:needs_iron_tool": [],
+   "minecraft:needs_stone_tool": []
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

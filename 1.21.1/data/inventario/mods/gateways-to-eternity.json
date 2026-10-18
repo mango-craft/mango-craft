@@ -1,0 +1,89 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Gateways to Eternity",
+ "file": "GatewaysToEternity-1.21.1-5.1.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "83448ff2215b9a5d645bf9b0e0a0babfdfb04e60a2d9ca07783c962575b5770d095fdbfdd8ab6cb861871b98ecbc29204af3be14cb830623b442ad9894d462fb",
+ "mods": [
+  {
+   "modid": "gateways",
+   "name": "Gateways To Eternity",
+   "version": "5.1.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.187,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "placebo",
+     "type": "required",
+     "range": "[9.9.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "apothic_attributes",
+     "type": "required",
+     "range": "[2.7.0,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "gateways"
+ ],
+ "entities": {
+  "gateways:gateway": "Gateway to Eternity"
+ },
+ "items": {
+  "gateways:gate_pearl": "Gate Pearl",
+  "gateways:gate_pearl_large": "",
+  "gateways:gate_pearl_med": ""
+ },
+ "data": {
+  "gateways": [
+   "gateways:basic/blaze",
+   "gateways:basic/enderman",
+   "gateways:basic/slime",
+   "gateways:emerald_grove",
+   "gateways:endless/blaze",
+   "gateways:hellish_fortress",
+   "gateways:overworldian_nights"
+  ],
+  "gear_sets": [
+   "gateways:chain_with_bow",
+   "gateways:gold_with_axe",
+   "gateways:iron",
+   "gateways:iron_with_diamond"
+  ],
+  "recipe": [
+   "gateways:basic/blaze",
+   "gateways:basic/enderman",
+   "gateways:basic/slime",
+   "gateways:emerald_grove",
+   "gateways:endless/blaze",
+   "gateways:hellish_fortress",
+   "gateways:overworldian_nights"
+  ]
+ },
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {
+  "gateways:gate_recipe": 7
+ },
+ "botanypots": [],
+ "problems": []
+}

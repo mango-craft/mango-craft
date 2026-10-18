@@ -1,0 +1,921 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Expanded Delight",
+ "file": "expandeddelight-0.1.4.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "13a2bd17c5c184902da9eb78ce9b993073864301e8cb4a038f7fd7e596188826ef13381cf615533286f53eaeaabfc4c8b27ab91113a15ea68e4bd9f84ca16b8b",
+ "mods": [
+  {
+   "modid": "expandeddelight",
+   "name": "Expanded Delight",
+   "version": "0.1.4",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.93,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "1.21-1.2.4",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "create",
+  "expandeddelight",
+  "farmersdelight",
+  "farmersrespite",
+  "minecraft",
+  "neoforge",
+  "sereneseasons",
+  "supplementaries",
+  "toughasnails"
+ ],
+ "blocks": {
+  "expandeddelight:asparagus_crate": "Asparagus Crate",
+  "expandeddelight:asparagus_crop": "Asparagus",
+  "expandeddelight:cask": "Cask",
+  "expandeddelight:cheese_cask": "Cheese Cask",
+  "expandeddelight:cheese_wheel": "Cheese Wheel",
+  "expandeddelight:chili_pepper_crate": "Chili Pepper Crate",
+  "expandeddelight:chili_pepper_crop": "Chili Peppers",
+  "expandeddelight:cinnamon_button": "Cinnamon Button",
+  "expandeddelight:cinnamon_cabinet": "Cinnamon Cabinet",
+  "expandeddelight:cinnamon_ceiling_hanging_sign": "Cinnamon Hanging Sign",
+  "expandeddelight:cinnamon_door": "Cinnamon Door",
+  "expandeddelight:cinnamon_fence": "Cinnamon Fence",
+  "expandeddelight:cinnamon_fence_gate": "Cinnamon Fence Gate",
+  "expandeddelight:cinnamon_leaves": "Cinnamon Leaves",
+  "expandeddelight:cinnamon_log": "Cinnamon Log",
+  "expandeddelight:cinnamon_planks": "Cinnamon Planks",
+  "expandeddelight:cinnamon_pressure_plate": "Cinnamon Pressure Plate",
+  "expandeddelight:cinnamon_sapling": "Cinnamon Sapling",
+  "expandeddelight:cinnamon_sign": "Cinnamon Sign",
+  "expandeddelight:cinnamon_slab": "Cinnamon Slab",
+  "expandeddelight:cinnamon_stairs": "Cinnamon Stairs",
+  "expandeddelight:cinnamon_trapdoor": "Cinnamon Trap Door",
+  "expandeddelight:cinnamon_wall_hanging_sign": "",
+  "expandeddelight:cinnamon_wall_sign": "",
+  "expandeddelight:cinnamon_wood": "Cinnamon Wood",
+  "expandeddelight:cranberry_bag": "Bag of Cranberries",
+  "expandeddelight:cranberry_cobbler": "Cranberry Cobbler",
+  "expandeddelight:cranberry_plant": "Cranberries",
+  "expandeddelight:deepslate_salt_ore": "Deepslate Salt Ore",
+  "expandeddelight:goat_cheese_cask": "Goat Cheese Cask",
+  "expandeddelight:goat_cheese_wheel": "Goat Cheese Wheel",
+  "expandeddelight:goat_milk_cask": "Goat Milk Cask",
+  "expandeddelight:honeyed_goat_cheese_tart": "Honeyed Goat Cheese Tart",
+  "expandeddelight:juicer": "Juicer",
+  "expandeddelight:milk_cask": "Milk Cask",
+  "expandeddelight:peanut_crop": "Peanuts",
+  "expandeddelight:salt_ore": "Salt Ore",
+  "expandeddelight:stripped_cinnamon_log": "Stripped Cinnamon Log",
+  "expandeddelight:stripped_cinnamon_wood": "Stripped Cinnamon Wood",
+  "expandeddelight:sweet_potato_crate": "Sweet Potato Crate",
+  "expandeddelight:sweet_potato_crop": "Sweet Potato",
+  "expandeddelight:wild_asparagus": "Wild Asparagus",
+  "expandeddelight:wild_chili_pepper": "Wild Chili Pepper",
+  "expandeddelight:wild_peanuts": "Wild Peanuts",
+  "expandeddelight:wild_sweet_potato": "Wild Sweet Potatoes"
+ },
+ "items": {
+  "expandeddelight:apple_juice": "Apple Juice",
+  "expandeddelight:asparagus": "Asparagus",
+  "expandeddelight:asparagus_and_bacon_cheesy": "Cheesy Asparagus and Bacon",
+  "expandeddelight:asparagus_crate": "",
+  "expandeddelight:asparagus_frittata": "Asparagus Frittata",
+  "expandeddelight:asparagus_mushroom_pasta": "Asparagus Mushroom Pasta",
+  "expandeddelight:asparagus_seeds": "Asparagus Seeds",
+  "expandeddelight:asparagus_soup": "Asparagus Soup",
+  "expandeddelight:asparagus_soup_creamy": "Creamy Asparagus Soup",
+  "expandeddelight:baked_sweet_potato": "Baked Sweet Potato",
+  "expandeddelight:berry_sweet_roll": "Berry Sweet Roll",
+  "expandeddelight:cask": "",
+  "expandeddelight:cheese_cask": "",
+  "expandeddelight:cheese_sandwich": "Cheese Sandwich",
+  "expandeddelight:cheese_slice": "Slice of Cheese",
+  "expandeddelight:cheese_wheel": "",
+  "expandeddelight:chili_pepper": "Chili Pepper",
+  "expandeddelight:chili_pepper_crate": "",
+  "expandeddelight:chili_pepper_salmon": "Chili Pepper Salmon",
+  "expandeddelight:chili_pepper_seeds": "Chili Pepper Seeds",
+  "expandeddelight:chocolate_cookie": "Chocolate Cookie",
+  "expandeddelight:cinnamon": "Cinnamon",
+  "expandeddelight:cinnamon_apples": "Cinnamon Apples",
+  "expandeddelight:cinnamon_boat": "Cinnamon Boat",
+  "expandeddelight:cinnamon_button": "",
+  "expandeddelight:cinnamon_cabinet": "",
+  "expandeddelight:cinnamon_chest_boat": "Cinnamon Boat with Chest",
+  "expandeddelight:cinnamon_door": "",
+  "expandeddelight:cinnamon_fence": "",
+  "expandeddelight:cinnamon_fence_gate": "",
+  "expandeddelight:cinnamon_hanging_sign": "",
+  "expandeddelight:cinnamon_leaves": "",
+  "expandeddelight:cinnamon_log": "",
+  "expandeddelight:cinnamon_planks": "",
+  "expandeddelight:cinnamon_pressure_plate": "",
+  "expandeddelight:cinnamon_rice": "Cinnamon Rice",
+  "expandeddelight:cinnamon_sapling": "",
+  "expandeddelight:cinnamon_sign": "",
+  "expandeddelight:cinnamon_slab": "",
+  "expandeddelight:cinnamon_stairs": "",
+  "expandeddelight:cinnamon_stick": "Cinnamon Stick",
+  "expandeddelight:cinnamon_trapdoor": "",
+  "expandeddelight:cinnamon_wood": "",
+  "expandeddelight:cranberries": "Cranberries",
+  "expandeddelight:cranberry_bag": "",
+  "expandeddelight:cranberry_chicken": "Cranberry Chicken",
+  "expandeddelight:cranberry_cobbler": "",
+  "expandeddelight:cranberry_cobbler_slice": "Slice of Cranberry Cobbler",
+  "expandeddelight:cranberry_goat_cheese_toast": "Cranberry Goat Cheese Toast",
+  "expandeddelight:cranberry_jelly": "Cranberry Jelly",
+  "expandeddelight:cranberry_jelly_sandwich": "",
+  "expandeddelight:cranberry_juice": "Cranberry Juice",
+  "expandeddelight:cranberry_plant": "",
+  "expandeddelight:crushing_mallet": "Crushing Mallet",
+  "expandeddelight:deepslate_salt_ore": "",
+  "expandeddelight:glass_jar": "Glass Jar",
+  "expandeddelight:glow_berry_jelly": "Glow Berry Jelly",
+  "expandeddelight:glow_berry_jelly_sandwich": "Peanut Butter and Glow Berry Jelly Sandwich",
+  "expandeddelight:glow_berry_juice": "Glow Berry Juice",
+  "expandeddelight:glow_berry_sweet_roll": "Glow Berry Sweet Roll",
+  "expandeddelight:goat_cheese_beetroot_salad": "Goat Cheese Beetroot Salad",
+  "expandeddelight:goat_cheese_cask": "",
+  "expandeddelight:goat_cheese_slice": "Slice of Goat Cheese",
+  "expandeddelight:goat_cheese_wheel": "",
+  "expandeddelight:goat_milk_bottle": "Goat Milk Bottle",
+  "expandeddelight:goat_milk_bucket": "Goat Milk Bucket",
+  "expandeddelight:goat_milk_cask": "",
+  "expandeddelight:grilled_cheese": "Grilled Cheese",
+  "expandeddelight:honeyed_goat_cheese_tart": "",
+  "expandeddelight:honeyed_goat_cheese_tart_slice": "Slice of Honeyed Goat Cheese Tart",
+  "expandeddelight:juicer": "",
+  "expandeddelight:lemon": "Lemon",
+  "expandeddelight:mac_and_cheese": "Mac and Cheese",
+  "expandeddelight:milk_cask": "",
+  "expandeddelight:peanut": "Peanut",
+  "expandeddelight:peanut_butter": "Peanut Butter",
+  "expandeddelight:peanut_butter_honey_sandwich": "Peanut Butter and Honey Sandwich",
+  "expandeddelight:peanut_butter_sandwich": "Peanut Butter Sandwich",
+  "expandeddelight:peanut_honey_soup": "Honey Peanut Soup",
+  "expandeddelight:peanut_salad": "Peanut Salad",
+  "expandeddelight:peperonata": "Peperonata",
+  "expandeddelight:salt": "Salt",
+  "expandeddelight:salt_ore": "",
+  "expandeddelight:salt_rock": "Salt Rock",
+  "expandeddelight:snickerdoodle": "Snickerdoodle",
+  "expandeddelight:stripped_cinnamon_log": "",
+  "expandeddelight:stripped_cinnamon_wood": "",
+  "expandeddelight:sugar_cookie": "Sugar Cookie",
+  "expandeddelight:sweet_berry_jelly": "Sweet Berry Jelly",
+  "expandeddelight:sweet_berry_jelly_sandwich": "Peanut Butter and Sweet Berry Jelly Sandwich",
+  "expandeddelight:sweet_berry_juice": "Sweet Berry Juice",
+  "expandeddelight:sweet_potato": "Sweet Potato",
+  "expandeddelight:sweet_potato_casserole": "Sweet Potato Casserole",
+  "expandeddelight:sweet_potato_crate": "",
+  "expandeddelight:sweet_potato_salad": "Sweet Potato Salad",
+  "expandeddelight:sweet_roll": "Sweet Roll",
+  "expandeddelight:wild_asparagus": "",
+  "expandeddelight:wild_chili_pepper": "",
+  "expandeddelight:wild_peanuts": "",
+  "expandeddelight:wild_sweet_potato": ""
+ },
+ "data": {
+  "data_maps/item": [
+   "neoforge:compostables"
+  ],
+  "loot_modifiers": [
+   "expandeddelight:add_loot_village_desert_house",
+   "expandeddelight:add_loot_village_plains_house",
+   "expandeddelight:add_loot_village_savanna_house",
+   "expandeddelight:add_loot_village_snowy_house",
+   "expandeddelight:add_loot_village_taiga_house",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "expandeddelight:blocks/asparagus_crate",
+   "expandeddelight:blocks/asparagus_crop",
+   "expandeddelight:blocks/cask",
+   "expandeddelight:blocks/cheese_cask",
+   "expandeddelight:blocks/cheese_wheel",
+   "expandeddelight:blocks/chili_pepper_crate",
+   "expandeddelight:blocks/chili_pepper_crop",
+   "expandeddelight:blocks/cinnamon_button",
+   "expandeddelight:blocks/cinnamon_cabinet",
+   "expandeddelight:blocks/cinnamon_ceiling_hanging_sign",
+   "expandeddelight:blocks/cinnamon_door",
+   "expandeddelight:blocks/cinnamon_fence",
+   "expandeddelight:blocks/cinnamon_fence_gate",
+   "expandeddelight:blocks/cinnamon_leaves",
+   "expandeddelight:blocks/cinnamon_log",
+   "expandeddelight:blocks/cinnamon_planks",
+   "expandeddelight:blocks/cinnamon_pressure_plate",
+   "expandeddelight:blocks/cinnamon_sapling",
+   "expandeddelight:blocks/cinnamon_sign",
+   "expandeddelight:blocks/cinnamon_slab",
+   "expandeddelight:blocks/cinnamon_stairs",
+   "expandeddelight:blocks/cinnamon_trapdoor",
+   "expandeddelight:blocks/cinnamon_wall_hanging_sign",
+   "expandeddelight:blocks/cinnamon_wall_sign",
+   "expandeddelight:blocks/cinnamon_wood",
+   "expandeddelight:blocks/cranberry_bag",
+   "expandeddelight:blocks/cranberry_plant",
+   "expandeddelight:blocks/deepslate_salt_ore",
+   "expandeddelight:blocks/goat_cheese_cask",
+   "expandeddelight:blocks/goat_cheese_wheel",
+   "expandeddelight:blocks/goat_milk_cask",
+   "expandeddelight:blocks/juicer",
+   "expandeddelight:blocks/milk_cask",
+   "expandeddelight:blocks/peanut_crop",
+   "expandeddelight:blocks/salt_ore",
+   "expandeddelight:blocks/stripped_cinnamon_log",
+   "expandeddelight:blocks/stripped_cinnamon_wood",
+   "expandeddelight:blocks/sweet_potato_crate",
+   "expandeddelight:blocks/sweet_potato_crop",
+   "expandeddelight:blocks/wild_asparagus",
+   "expandeddelight:blocks/wild_chili_pepper",
+   "expandeddelight:blocks/wild_peanuts",
+   "expandeddelight:blocks/wild_sweet_potato",
+   "expandeddelight:chests/village_desert_house",
+   "expandeddelight:chests/village_plains_house",
+   "expandeddelight:chests/village_savanna_house",
+   "expandeddelight:chests/village_snowy_house",
+   "expandeddelight:chests/village_taiga_house"
+  ],
+  "neoforge/biome_modifier": [
+   "expandeddelight:cinnamon_tree",
+   "expandeddelight:cranberries",
+   "expandeddelight:salt_ore",
+   "expandeddelight:wild_asparagus",
+   "expandeddelight:wild_chili_pepper",
+   "expandeddelight:wild_peanuts",
+   "expandeddelight:wild_sweet_potato"
+  ],
+  "recipe": [
+   "expandeddelight:asparagus",
+   "expandeddelight:asparagus_crate",
+   "expandeddelight:asparagus_seeds",
+   "expandeddelight:baked_sweet_potato",
+   "expandeddelight:baked_sweet_potato_from_campfire_cooking",
+   "expandeddelight:baked_sweet_potato_from_smoking",
+   "expandeddelight:berry_sweet_roll",
+   "expandeddelight:cask",
+   "expandeddelight:cheese_sandwich",
+   "expandeddelight:chili_pepper",
+   "expandeddelight:chili_pepper_crate",
+   "expandeddelight:chili_pepper_seeds",
+   "expandeddelight:chocolate_cookie",
+   "expandeddelight:cinnamon_boat",
+   "expandeddelight:cinnamon_button",
+   "expandeddelight:cinnamon_cabinet",
+   "expandeddelight:cinnamon_chest_boat",
+   "expandeddelight:cinnamon_door",
+   "expandeddelight:cinnamon_fence",
+   "expandeddelight:cinnamon_fence_gate",
+   "expandeddelight:cinnamon_hanging_sign",
+   "expandeddelight:cinnamon_planks",
+   "expandeddelight:cinnamon_pressure_plate",
+   "expandeddelight:cinnamon_sign",
+   "expandeddelight:cinnamon_slab",
+   "expandeddelight:cinnamon_stairs",
+   "expandeddelight:cinnamon_trapdoor",
+   "expandeddelight:cinnamon_wood",
+   "expandeddelight:cooking/asparagus_and_bacon_cheesy",
+   "expandeddelight:cooking/asparagus_frittata",
+   "expandeddelight:cooking/asparagus_mushroom_pasta",
+   "expandeddelight:cooking/asparagus_soup",
+   "expandeddelight:cooking/asparagus_soup_creamy",
+   "expandeddelight:cooking/chili_pepper_salmon",
+   "expandeddelight:cooking/cinnamon_apples",
+   "expandeddelight:cooking/cinnamon_rice",
+   "expandeddelight:cooking/cranberry_chicken",
+   "expandeddelight:cooking/cranberry_jelly",
+   "expandeddelight:cooking/glow_berry_jelly",
+   "expandeddelight:cooking/mac_and_cheese",
+   "expandeddelight:cooking/peanut_butter",
+   "expandeddelight:cooking/peanut_honey_soup",
+   "expandeddelight:cooking/peperonata",
+   "expandeddelight:cooking/sweet_berry_jelly",
+   "expandeddelight:cooking/sweet_potato_casserole",
+   "expandeddelight:cranberries",
+   "expandeddelight:cranberry_bag",
+   "expandeddelight:cranberry_cobbler",
+   "expandeddelight:cranberry_cobbler_from_slices",
+   "expandeddelight:cranberry_goat_cheese_toast",
+   "expandeddelight:cranberry_jelly_sandwich",
+   "expandeddelight:crushing_mallet",
+   "expandeddelight:cutting/cheese_wheel",
+   "expandeddelight:cutting/cinnamon_door",
+   "expandeddelight:cutting/cinnamon_hanging_sign",
+   "expandeddelight:cutting/cinnamon_log",
+   "expandeddelight:cutting/cinnamon_sign",
+   "expandeddelight:cutting/cinnamon_stick",
+   "expandeddelight:cutting/cinnamon_trapdoor",
+   "expandeddelight:cutting/cinnamon_wood",
+   "expandeddelight:cutting/cranberry_cobbler",
+   "expandeddelight:cutting/goat_cheese_wheel",
+   "expandeddelight:cutting/honeyed_goat_cheese_tart",
+   "expandeddelight:cutting/salt_rock",
+   "expandeddelight:cutting/sugar_cane",
+   "expandeddelight:cutting/wild_asparagus",
+   "expandeddelight:cutting/wild_chili_pepper",
+   "expandeddelight:cutting/wild_peanuts",
+   "expandeddelight:cutting/wild_sweet_potato",
+   "expandeddelight:deepslate_salt_rock_from_blasting",
+   "expandeddelight:deepslate_salt_rock_from_smelting",
+   "expandeddelight:glass_jar",
+   "expandeddelight:glow_berry_jelly_sandwich",
+   "expandeddelight:glow_berry_sweet_roll",
+   "expandeddelight:goat_cheese_beetroot_salad",
+   "expandeddelight:goat_milk_bottle",
+   "expandeddelight:grilled_cheese",
+   "expandeddelight:honeyed_goat_cheese_tart",
+   "expandeddelight:honeyed_goat_cheese_tart_from_slices",
+   "expandeddelight:juicer",
+   "expandeddelight:juicing/apple_juice",
+   "expandeddelight:juicing/cranberry_juice",
+   "expandeddelight:juicing/glow_berry_juice",
+   "expandeddelight:juicing/melon_juice",
+   "expandeddelight:juicing/sweet_berry_juice",
+   "expandeddelight:peanut_butter_honey_sandwich",
+   "expandeddelight:peanut_butter_sandwich",
+   "expandeddelight:peanut_salad",
+   "expandeddelight:salt_rock_from_blasting",
+   "expandeddelight:salt_rock_from_smelting",
+   "expandeddelight:snickerdoodle",
+   "expandeddelight:sugar_cookie",
+   "expandeddelight:sweet_berry_jelly_sandwich",
+   "expandeddelight:sweet_potato",
+   "expandeddelight:sweet_potato_crate",
+   "expandeddelight:sweet_potato_salad",
+   "expandeddelight:sweet_roll",
+   "farmersdelight:melon_juice",
+   "farmersdelight:wheat_dough_from_eggs",
+   "farmersdelight:wheat_dough_from_water",
+   "farmersrespite:brewing/melon_juice_from_water",
+   "minecraft:cutting/blaze_rod",
+   "minecraft:cutting/bone"
+  ],
+  "tags/block": [
+   "c:fence_gates/wooden",
+   "c:stripped_logs",
+   "c:stripped_woods",
+   "expandeddelight:cinnamon_logs",
+   "expandeddelight:milk_activators",
+   "farmersdelight:mineable/knife",
+   "farmersdelight:wild_crops",
+   "minecraft:bee_growables",
+   "minecraft:ceiling_hanging_signs",
+   "minecraft:crops",
+   "minecraft:fence_gates",
+   "minecraft:leaves",
+   "minecraft:logs_that_burn",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/hoe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:overworld_natural_logs",
+   "minecraft:planks",
+   "minecraft:saplings",
+   "minecraft:small_flowers",
+   "minecraft:snaps_goat_horn",
+   "minecraft:standing_signs",
+   "minecraft:sword_efficient",
+   "minecraft:wall_hanging_signs",
+   "minecraft:wall_signs",
+   "minecraft:wooden_buttons",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_stairs",
+   "minecraft:wooden_trapdoors",
+   "sereneseasons:autumn_crops",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops"
+  ],
+  "tags/item": [
+   "c:buckets/milk",
+   "c:crops",
+   "c:crops/asparagus",
+   "c:crops/chili_pepper",
+   "c:crops/peanut",
+   "c:crops/sweet_potato",
+   "c:dusts",
+   "c:dusts/cinnamon",
+   "c:dusts/salt",
+   "c:fence_gates/wooden",
+   "c:foods",
+   "c:foods/asparagus",
+   "c:foods/berry",
+   "c:foods/cheese",
+   "c:foods/chili_pepper",
+   "c:foods/cookie",
+   "c:foods/edible_when_placed",
+   "c:foods/goat_cheese",
+   "c:foods/milk",
+   "c:foods/peanut",
+   "c:foods/soup",
+   "c:foods/sweet_potato",
+   "c:foods/vegetable",
+   "c:jams",
+   "c:jams/cranberry",
+   "c:jams/glow_berry",
+   "c:jams/sweet_berry",
+   "c:juices",
+   "c:juices/apple",
+   "c:juices/cranberry",
+   "c:juices/glow_berry",
+   "c:juices/sweet_berry",
+   "c:ores",
+   "c:ores/salt",
+   "c:seeds",
+   "c:stripped_logs",
+   "c:stripped_woods",
+   "create:upright_on_belt",
+   "expandeddelight:cinnamon_logs",
+   "expandeddelight:crushing_tools",
+   "farmersdelight:cabinets/wooden",
+   "farmersdelight:serving_containers",
+   "farmersdelight:wild_crops",
+   "minecraft:boats",
+   "minecraft:chest_boats",
+   "minecraft:chicken_food",
+   "minecraft:fence_gates",
+   "minecraft:fox_food",
+   "minecraft:hanging_signs",
+   "minecraft:leaves",
+   "minecraft:logs_that_burn",
+   "minecraft:parrot_food",
+   "minecraft:pig_food",
+   "minecraft:planks",
+   "minecraft:saplings",
+   "minecraft:signs",
+   "minecraft:small_flowers",
+   "minecraft:wooden_buttons",
+   "minecraft:wooden_doors",
+   "minecraft:wooden_fences",
+   "minecraft:wooden_pressure_plates",
+   "minecraft:wooden_slabs",
+   "minecraft:wooden_stairs",
+   "minecraft:wooden_trapdoors",
+   "sereneseasons:autumn_crops",
+   "sereneseasons:spring_crops",
+   "sereneseasons:summer_crops",
+   "supplementaries:cookies",
+   "toughasnails:drinks"
+  ],
+  "worldgen/configured_feature": [
+   "expandeddelight:cinnamon_tree",
+   "expandeddelight:patch_cranberries",
+   "expandeddelight:patch_wild_asparagus",
+   "expandeddelight:patch_wild_chili_pepper",
+   "expandeddelight:patch_wild_peanuts",
+   "expandeddelight:patch_wild_sweet_potato",
+   "expandeddelight:salt_ore"
+  ],
+  "worldgen/placed_feature": [
+   "expandeddelight:cinnamon_tree",
+   "expandeddelight:patch_cranberries",
+   "expandeddelight:patch_wild_asparagus",
+   "expandeddelight:patch_wild_chili_pepper",
+   "expandeddelight:patch_wild_peanuts",
+   "expandeddelight:patch_wild_sweet_potato",
+   "expandeddelight:salt_ore"
+  ]
+ },
+ "data_counts": {
+  "advancement": 83
+ },
+ "tags": {
+  "tags/block": {
+   "c:fence_gates/wooden": [
+    "expandeddelight:cinnamon_fence_gate"
+   ],
+   "c:stripped_logs": [
+    "expandeddelight:stripped_cinnamon_log"
+   ],
+   "c:stripped_woods": [
+    "expandeddelight:stripped_cinnamon_wood"
+   ],
+   "expandeddelight:cinnamon_logs": [
+    "expandeddelight:cinnamon_log",
+    "expandeddelight:cinnamon_wood",
+    "expandeddelight:stripped_cinnamon_log",
+    "expandeddelight:stripped_cinnamon_wood"
+   ],
+   "expandeddelight:milk_activators": [
+    "minecraft:mycelium",
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+    "farmersdelight:red_mushroom_colony",
+    "farmersdelight:brown_mushroom_colony"
+   ],
+   "farmersdelight:mineable/knife": [
+    "expandeddelight:cheese_wheel",
+    "expandeddelight:goat_cheese_wheel",
+    "expandeddelight:cranberry_bag",
+    "expandeddelight:cranberry_cobbler"
+   ],
+   "farmersdelight:wild_crops": [
+    "expandeddelight:wild_asparagus",
+    "expandeddelight:wild_sweet_potato",
+    "expandeddelight:wild_chili_pepper",
+    "expandeddelight:wild_peanuts"
+   ],
+   "minecraft:bee_growables": [
+    "expandeddelight:cranberry_plant"
+   ],
+   "minecraft:ceiling_hanging_signs": [
+    "expandeddelight:cinnamon_ceiling_hanging_sign"
+   ],
+   "minecraft:crops": [
+    "expandeddelight:asparagus_crop",
+    "expandeddelight:sweet_potato_crop",
+    "expandeddelight:chili_pepper_crop",
+    "expandeddelight:peanut_crop"
+   ],
+   "minecraft:fence_gates": [
+    "expandeddelight:cinnamon_fence_gate"
+   ],
+   "minecraft:leaves": [
+    "expandeddelight:cinnamon_leaves"
+   ],
+   "minecraft:logs_that_burn": [
+    "#expandeddelight:cinnamon_logs"
+   ],
+   "minecraft:mineable/axe": [
+    "expandeddelight:cinnamon_cabinet",
+    "expandeddelight:juicer",
+    "expandeddelight:cask",
+    "expandeddelight:asparagus_crate",
+    "expandeddelight:sweet_potato_crate",
+    "expandeddelight:chili_pepper_crate"
+   ],
+   "minecraft:mineable/hoe": [
+    "expandeddelight:cinnamon_leaves"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "expandeddelight:salt_ore",
+    "expandeddelight:deepslate_salt_ore"
+   ],
+   "minecraft:overworld_natural_logs": [
+    "expandeddelight:cinnamon_log"
+   ],
+   "minecraft:planks": [
+    "expandeddelight:cinnamon_planks"
+   ],
+   "minecraft:saplings": [
+    "expandeddelight:cinnamon_sapling"
+   ],
+   "minecraft:small_flowers": [
+    "expandeddelight:wild_asparagus",
+    "expandeddelight:wild_sweet_potato",
+    "expandeddelight:wild_chili_pepper",
+    "expandeddelight:wild_peanuts"
+   ],
+   "minecraft:snaps_goat_horn": [
+    "expandeddelight:cinnamon_log"
+   ],
+   "minecraft:standing_signs": [
+    "expandeddelight:cinnamon_sign"
+   ],
+   "minecraft:sword_efficient": [
+    "expandeddelight:cranberry_plant"
+   ],
+   "minecraft:wall_hanging_signs": [
+    "expandeddelight:cinnamon_wall_hanging_sign"
+   ],
+   "minecraft:wall_signs": [
+    "expandeddelight:cinnamon_wall_sign"
+   ],
+   "minecraft:wooden_buttons": [
+    "expandeddelight:cinnamon_button"
+   ],
+   "minecraft:wooden_doors": [
+    "expandeddelight:cinnamon_door"
+   ],
+   "minecraft:wooden_fences": [
+    "expandeddelight:cinnamon_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "expandeddelight:cinnamon_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "expandeddelight:cinnamon_slab"
+   ],
+   "minecraft:wooden_stairs": [
+    "expandeddelight:cinnamon_stairs"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "expandeddelight:cinnamon_trapdoor"
+   ],
+   "sereneseasons:autumn_crops": [
+    "expandeddelight:sweet_potato_crop",
+    "expandeddelight:cranberry_plant"
+   ],
+   "sereneseasons:spring_crops": [
+    "expandeddelight:asparagus_crop",
+    "expandeddelight:peanut_crop"
+   ],
+   "sereneseasons:summer_crops": [
+    "expandeddelight:chili_pepper_crop"
+   ]
+  },
+  "tags/item": {
+   "c:buckets/milk": [
+    "expandeddelight:goat_milk_bucket"
+   ],
+   "c:crops": [
+    "#c:crops/asparagus",
+    "#c:crops/sweet_potato",
+    "#c:crops/chili_pepper",
+    "#c:crops/peanut?"
+   ],
+   "c:crops/asparagus": [
+    "expandeddelight:asparagus"
+   ],
+   "c:crops/chili_pepper": [
+    "expandeddelight:chili_pepper"
+   ],
+   "c:crops/peanut": [
+    "expandeddelight:peanut"
+   ],
+   "c:crops/sweet_potato": [
+    "expandeddelight:sweet_potato"
+   ],
+   "c:dusts": [
+    "#c:dusts/salt",
+    "#c:dusts/cinnamon"
+   ],
+   "c:dusts/cinnamon": [
+    "expandeddelight:cinnamon"
+   ],
+   "c:dusts/salt": [
+    "expandeddelight:salt"
+   ],
+   "c:fence_gates/wooden": [
+    "expandeddelight:cinnamon_fence_gate"
+   ],
+   "c:foods": [
+    "#c:foods/cheese",
+    "#c:foods/goat_cheese"
+   ],
+   "c:foods/asparagus": [
+    "expandeddelight:asparagus"
+   ],
+   "c:foods/berry": [
+    "expandeddelight:cranberries"
+   ],
+   "c:foods/cheese": [
+    "expandeddelight:cheese_slice"
+   ],
+   "c:foods/chili_pepper": [
+    "expandeddelight:chili_pepper"
+   ],
+   "c:foods/cookie": [
+    "expandeddelight:chocolate_cookie",
+    "expandeddelight:sugar_cookie",
+    "expandeddelight:snickerdoodle"
+   ],
+   "c:foods/edible_when_placed": [
+    "expandeddelight:cheese_wheel",
+    "expandeddelight:goat_cheese_wheel",
+    "expandeddelight:cranberry_cobbler",
+    "expandeddelight:honeyed_goat_cheese_tart"
+   ],
+   "c:foods/goat_cheese": [
+    "expandeddelight:goat_cheese_slice",
+    "hearthandharvest:goat_cheese_slice?"
+   ],
+   "c:foods/milk": [
+    "expandeddelight:goat_milk_bucket",
+    "expandeddelight:goat_milk_bottle"
+   ],
+   "c:foods/peanut": [
+    "expandeddelight:peanut"
+   ],
+   "c:foods/soup": [
+    "expandeddelight:asparagus_soup",
+    "expandeddelight:asparagus_soup_creamy",
+    "expandeddelight:peanut_honey_soup"
+   ],
+   "c:foods/sweet_potato": [
+    "expandeddelight:sweet_potato"
+   ],
+   "c:foods/vegetable": [
+    "#c:foods/asparagus",
+    "#c:foods/sweet_potato",
+    "#c:foods/chili_pepper"
+   ],
+   "c:jams": [
+    "#c:jams/sweet_berry",
+    "#c:jams/glow_berry",
+    "#c:jams/cranberry"
+   ],
+   "c:jams/cranberry": [
+    "expandeddelight:cranberry_jelly"
+   ],
+   "c:jams/glow_berry": [
+    "expandeddelight:glow_berry_jelly"
+   ],
+   "c:jams/sweet_berry": [
+    "expandeddelight:sweet_berry_jelly"
+   ],
+   "c:juices": [
+    "#c:juices/apple",
+    "#c:juices/sweet_berry",
+    "#c:juices/glow_berry",
+    "#c:juices/cranberry"
+   ],
+   "c:juices/apple": [
+    "expandeddelight:apple_juice"
+   ],
+   "c:juices/cranberry": [
+    "expandeddelight:cranberry_juice"
+   ],
+   "c:juices/glow_berry": [
+    "expandeddelight:glow_berry_juice"
+   ],
+   "c:juices/sweet_berry": [
+    "expandeddelight:sweet_berry_juice"
+   ],
+   "c:ores": [
+    "#c:ores/salt"
+   ],
+   "c:ores/salt": [
+    "expandeddelight:salt_ore",
+    "expandeddelight:deepslate_salt_ore"
+   ],
+   "c:seeds": [
+    "expandeddelight:asparagus_seeds",
+    "expandeddelight:chili_pepper_seeds"
+   ],
+   "c:stripped_logs": [
+    "expandeddelight:stripped_cinnamon_log"
+   ],
+   "c:stripped_woods": [
+    "expandeddelight:stripped_cinnamon_wood"
+   ],
+   "create:upright_on_belt": [
+    "expandeddelight:glass_jar",
+    "expandeddelight:cheese_wheel",
+    "expandeddelight:goat_cheese_wheel",
+    "expandeddelight:goat_milk_bucket",
+    "expandeddelight:goat_milk_bottle",
+    "expandeddelight:apple_juice",
+    "expandeddelight:sweet_berry_juice",
+    "expandeddelight:sweet_berry_jelly",
+    "expandeddelight:glow_berry_juice",
+    "expandeddelight:glow_berry_jelly",
+    "expandeddelight:cranberry_juice",
+    "expandeddelight:cranberry_jelly",
+    "expandeddelight:cranberry_cobbler",
+    "expandeddelight:honeyed_goat_cheese_tart"
+   ],
+   "expandeddelight:cinnamon_logs": [
+    "expandeddelight:cinnamon_log",
+    "expandeddelight:cinnamon_wood",
+    "expandeddelight:stripped_cinnamon_log",
+    "expandeddelight:stripped_cinnamon_wood"
+   ],
+   "expandeddelight:crushing_tools": [
+    "expandeddelight:crushing_mallet"
+   ],
+   "farmersdelight:cabinets/wooden": [
+    "expandeddelight:cinnamon_cabinet"
+   ],
+   "farmersdelight:serving_containers": [
+    "expandeddelight:glass_jar"
+   ],
+   "farmersdelight:wild_crops": [
+    "expandeddelight:wild_asparagus",
+    "expandeddelight:wild_sweet_potato",
+    "expandeddelight:wild_chili_pepper",
+    "expandeddelight:wild_peanuts"
+   ],
+   "minecraft:boats": [
+    "expandeddelight:cinnamon_boat"
+   ],
+   "minecraft:chest_boats": [
+    "expandeddelight:cinnamon_chest_boat"
+   ],
+   "minecraft:chicken_food": [
+    "expandeddelight:asparagus_seeds",
+    "expandeddelight:chili_pepper_seeds"
+   ],
+   "minecraft:fence_gates": [
+    "expandeddelight:cinnamon_fence_gate"
+   ],
+   "minecraft:fox_food": [
+    "expandeddelight:cranberries"
+   ],
+   "minecraft:hanging_signs": [
+    "expandeddelight:cinnamon_hanging_sign"
+   ],
+   "minecraft:leaves": [
+    "expandeddelight:cinnamon_leaves"
+   ],
+   "minecraft:logs_that_burn": [
+    "#expandeddelight:cinnamon_logs"
+   ],
+   "minecraft:parrot_food": [
+    "expandeddelight:asparagus_seeds",
+    "expandeddelight:chili_pepper_seeds"
+   ],
+   "minecraft:pig_food": [
+    "expandeddelight:chili_pepper"
+   ],
+   "minecraft:planks": [
+    "expandeddelight:cinnamon_planks"
+   ],
+   "minecraft:saplings": [
+    "expandeddelight:cinnamon_sapling"
+   ],
+   "minecraft:signs": [
+    "expandeddelight:cinnamon_sign"
+   ],
+   "minecraft:small_flowers": [
+    "expandeddelight:wild_asparagus",
+    "expandeddelight:wild_sweet_potato",
+    "expandeddelight:wild_chili_pepper",
+    "expandeddelight:wild_peanuts"
+   ],
+   "minecraft:wooden_buttons": [
+    "expandeddelight:cinnamon_button"
+   ],
+   "minecraft:wooden_doors": [
+    "expandeddelight:cinnamon_door"
+   ],
+   "minecraft:wooden_fences": [
+    "expandeddelight:cinnamon_fence"
+   ],
+   "minecraft:wooden_pressure_plates": [
+    "expandeddelight:cinnamon_pressure_plate"
+   ],
+   "minecraft:wooden_slabs": [
+    "expandeddelight:cinnamon_slab"
+   ],
+   "minecraft:wooden_stairs": [
+    "expandeddelight:cinnamon_stairs"
+   ],
+   "minecraft:wooden_trapdoors": [
+    "expandeddelight:cinnamon_trapdoor"
+   ],
+   "sereneseasons:autumn_crops": [
+    "expandeddelight:sweet_potato",
+    "expandeddelight:cranberries"
+   ],
+   "sereneseasons:spring_crops": [
+    "expandeddelight:asparagus_seeds",
+    "expandeddelight:peanut"
+   ],
+   "sereneseasons:summer_crops": [
+    "expandeddelight:chili_pepper_seeds"
+   ],
+   "supplementaries:cookies": [
+    "expandeddelight:chocolate_cookie",
+    "expandeddelight:sugar_cookie",
+    "expandeddelight:snickerdoodle"
+   ],
+   "toughasnails:drinks": [
+    "expandeddelight:goat_milk_bottle",
+    "expandeddelight:goat_milk_bucket",
+    "expandeddelight:apple_juice",
+    "expandeddelight:sweet_berry_juice",
+    "expandeddelight:glow_berry_juice",
+    "expandeddelight:cranberry_juice"
+   ]
+  }
+ },
+ "recipe_types": {
+  "None": 2,
+  "expandeddelight:juicing": 5,
+  "farmersdelight:cooking": 17,
+  "farmersdelight:cutting": 19,
+  "minecraft:blasting": 2,
+  "minecraft:campfire_cooking": 2,
+  "minecraft:crafting_shaped": 23,
+  "minecraft:crafting_shapeless": 29,
+  "minecraft:smelting": 3,
+  "minecraft:smoking": 1
+ },
+ "botanypots": [],
+ "problems": []
+}

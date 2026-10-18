@@ -1,0 +1,434 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Create: Enchantment Industry",
+ "file": "create-enchantment-industry-2.4.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "16bd3dcd82159d6793bd9cc24dcb911b90e838c67f781581afea8c6af21f53106ac54de7f2dffe1a8576cf8908e68658538a1c76d3c44691109a24bc60460436",
+ "mods": [
+  {
+   "modid": "create_enchantment_industry",
+   "name": "Create: Enchantment Industry",
+   "version": "2.4.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "required",
+     "range": "[6.0.10,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create_dragons_plus",
+     "type": "required",
+     "range": "[1.11.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "apothic_enchanting",
+     "type": "optional",
+     "range": "[1.5.3,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "apotheosis",
+     "type": "optional",
+     "range": "[8.5.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "apothic_spawners",
+     "type": "optional",
+     "range": "[1.3.4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "sable",
+     "type": "optional",
+     "range": "[1.2.2,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "touhou_little_maid",
+     "type": "optional",
+     "range": "[1.2.0,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "conditional_mixin",
+   "name": "conditional mixin",
+   "version": "0.6.4",
+   "jar": "conditional-mixin-neoforge-0.6.4.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[20.5,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "conditional-mixin-neoforge-0.6.4.jar"
+ ],
+ "namespaces": [
+  "c",
+  "create",
+  "create_dragons_plus",
+  "create_enchantment_industry",
+  "minecraft",
+  "sable"
+ ],
+ "blocks": {
+  "create_enchantment_industry:affix_augmentor": "Affix Augmentor",
+  "create_enchantment_industry:apotheotic_essence": "Apotheotic Essence",
+  "create_enchantment_industry:blaze_enchanter": "Blaze Enchanter",
+  "create_enchantment_industry:blaze_forger": "Blaze Forger",
+  "create_enchantment_industry:brass_bookshelf": "Brass Bookshelf",
+  "create_enchantment_industry:classic_blaze_enchanter": "Classic Blaze Enchanter",
+  "create_enchantment_industry:creative_bookshelf": "Creative Bookshelf",
+  "create_enchantment_industry:crystal_essence": "Crystal Essence",
+  "create_enchantment_industry:ender_woven_bag": "Ender Woven Bag",
+  "create_enchantment_industry:experience": "Liquid Experience",
+  "create_enchantment_industry:experience_hatch": "Experience Hatch",
+  "create_enchantment_industry:experience_lantern": "Experience Lantern",
+  "create_enchantment_industry:gem_cutter": "Gem Cutter",
+  "create_enchantment_industry:grindstone_drain": "Grindstone Drain",
+  "create_enchantment_industry:infused_dragon_breath": "Infused Dragon's Breath",
+  "create_enchantment_industry:infuser": "Infuser",
+  "create_enchantment_industry:mechanical_grindstone": "Mechanical Grindstone",
+  "create_enchantment_industry:printer": "Printer",
+  "create_enchantment_industry:super_experience_block": "Block of Super Experience"
+ },
+ "fluids": {
+  "create_enchantment_industry:infused_dragon_breath": "Infused Dragon's Breath"
+ },
+ "items": {
+  "create_enchantment_industry:affix_augmentor": "",
+  "create_enchantment_industry:apotheotic_affix_template": "Apotheotic Affix Template",
+  "create_enchantment_industry:apotheotic_essence_bucket": "Apotheotic Essence Bucket",
+  "create_enchantment_industry:blaze_enchanter": "",
+  "create_enchantment_industry:blaze_forger": "",
+  "create_enchantment_industry:blazes_enchanting_handbook": "Blaze's Enchanting Handbook",
+  "create_enchantment_industry:brass_affix_template": "Brass Affix Template",
+  "create_enchantment_industry:brass_bookshelf": "",
+  "create_enchantment_industry:classic_blaze_enchanter": "",
+  "create_enchantment_industry:creative_bookshelf": "",
+  "create_enchantment_industry:crystal_affix_template": "Crystal Affix Template",
+  "create_enchantment_industry:crystal_essence_bucket": "Crystal Essence Bucket",
+  "create_enchantment_industry:enchanting_template": "Enchanting Template",
+  "create_enchantment_industry:ender_woven_bag": "",
+  "create_enchantment_industry:experience_bucket": "Bucket o' Enchanting",
+  "create_enchantment_industry:experience_cake": "Cake o' Enchanting",
+  "create_enchantment_industry:experience_cake_base": "Cake Base o' Enchanting",
+  "create_enchantment_industry:experience_cake_slice": "Cake Slice o' Enchanting",
+  "create_enchantment_industry:experience_hatch": "",
+  "create_enchantment_industry:experience_lantern": "",
+  "create_enchantment_industry:gem_cutter": "",
+  "create_enchantment_industry:grindstone_drain": "",
+  "create_enchantment_industry:incomplete_brass_bookshelf": "Incomplete Brass Bookshelf",
+  "create_enchantment_industry:infused_dragon_breath_bucket": "Infused Dragon's Breath Bucket",
+  "create_enchantment_industry:infuser": "",
+  "create_enchantment_industry:mechanical_grindstone": "",
+  "create_enchantment_industry:printer": "",
+  "create_enchantment_industry:super_enchanting_template": "Super Enchanting Template",
+  "create_enchantment_industry:super_experience_block": "",
+  "create_enchantment_industry:super_experience_nugget": "Nugget of Super Experience"
+ },
+ "data": {
+  "damage_type": [
+   "create_enchantment_industry:grind"
+  ],
+  "data_maps/enchantment": [
+   "create_enchantment_industry:forging/cost_multiplier",
+   "create_enchantment_industry:forging/split_enchantment_cost_multiplier",
+   "create_enchantment_industry:printing/enchanted_book/custom_cost",
+   "create_enchantment_industry:super_enchanting/custom_level_extension"
+  ],
+  "data_maps/fluid": [
+   "create_enchantment_industry:printing/address/ingredient",
+   "create_enchantment_industry:printing/banner_pattern/ingredient",
+   "create_enchantment_industry:printing/copy/ingredient",
+   "create_enchantment_industry:printing/custom_name/ingredient",
+   "create_enchantment_industry:printing/custom_name/style",
+   "create_enchantment_industry:printing/pattern/ingredient",
+   "create_enchantment_industry:printing/written_book/ingredient",
+   "create_enchantment_industry:unit/experience"
+  ],
+  "data_maps/item": [
+   "create_enchantment_industry:experience_fuel"
+  ],
+  "loot_table": [
+   "create_enchantment_industry:blocks/affix_augmentor",
+   "create_enchantment_industry:blocks/blaze_enchanter",
+   "create_enchantment_industry:blocks/blaze_forger",
+   "create_enchantment_industry:blocks/brass_bookshelf",
+   "create_enchantment_industry:blocks/classic_blaze_enchanter",
+   "create_enchantment_industry:blocks/creative_bookshelf",
+   "create_enchantment_industry:blocks/ender_woven_bag",
+   "create_enchantment_industry:blocks/experience_hatch",
+   "create_enchantment_industry:blocks/experience_lantern",
+   "create_enchantment_industry:blocks/gem_cutter",
+   "create_enchantment_industry:blocks/grindstone_drain",
+   "create_enchantment_industry:blocks/infuser",
+   "create_enchantment_industry:blocks/mechanical_grindstone",
+   "create_enchantment_industry:blocks/printer",
+   "create_enchantment_industry:blocks/super_experience_block"
+  ],
+  "physics_block_properties": [
+   "sable:create_enchantment_industry_heavy_machines",
+   "sable:create_enchantment_industry_light_machines",
+   "sable:create_enchantment_industry_medium_machines",
+   "sable:create_enchantment_industry_super_heavy_machines"
+  ],
+  "recipe": [
+   "create_enchantment_industry:compacting/experience_block",
+   "create_enchantment_industry:compacting/experience_cake_base",
+   "create_enchantment_industry:compacting/infested_stone",
+   "create_enchantment_industry:crafting/affix_augmentor",
+   "create_enchantment_industry:crafting/blazes_enchanting_handbook",
+   "create_enchantment_industry:crafting/ender_woven_bag",
+   "create_enchantment_industry:crafting/experience_lantern",
+   "create_enchantment_industry:crafting/gem_cutter",
+   "create_enchantment_industry:crafting/infuser",
+   "create_enchantment_industry:crafting/mechanical_grindstone",
+   "create_enchantment_industry:crafting/printer",
+   "create_enchantment_industry:crafting/super_experience_block",
+   "create_enchantment_industry:crafting/super_experience_nugget",
+   "create_enchantment_industry:crushing/infested_cobblestone",
+   "create_enchantment_industry:cutting/experience_cake_slice",
+   "create_enchantment_industry:cutting/farmersdelight/experience_cake_slice",
+   "create_enchantment_industry:emptying/experience_bottle",
+   "create_enchantment_industry:emptying/infused_dragon_breath",
+   "create_enchantment_industry:emptying/mysticalagriculture/experience_droplet",
+   "create_enchantment_industry:filling/experience_bottle",
+   "create_enchantment_industry:filling/experience_cake",
+   "create_enchantment_industry:filling/infused_dragon_breath",
+   "create_enchantment_industry:grinding/ars_nouveau/experience_gem",
+   "create_enchantment_industry:grinding/ars_nouveau/greater_experience_gem",
+   "create_enchantment_industry:grinding/create_sa/heap_of_experience",
+   "create_enchantment_industry:grinding/experience_block",
+   "create_enchantment_industry:grinding/experience_nugget",
+   "create_enchantment_industry:grinding/super_experience_block",
+   "create_enchantment_industry:grinding/super_experience_nugget",
+   "create_enchantment_industry:infusing/infused_dragon_breath",
+   "create_enchantment_industry:item_application/experience_hatch",
+   "create_enchantment_industry:mixing/dissolve_common_material",
+   "create_enchantment_industry:mixing/dissolve_epic_material",
+   "create_enchantment_industry:mixing/dissolve_gem_dust",
+   "create_enchantment_industry:mixing/dissolve_mythic_material",
+   "create_enchantment_industry:mixing/dissolve_rare_material",
+   "create_enchantment_industry:mixing/dissolve_uncommon_material",
+   "create_enchantment_industry:pressing/enchanting_template",
+   "create_enchantment_industry:pressing/super_enchanting_template",
+   "create_enchantment_industry:sequenced_assembly/brass_bookshelf",
+   "create_enchantment_industry:smithing/blaze_enchanter",
+   "create_enchantment_industry:smithing/blaze_forger",
+   "create_enchantment_industry:smithing/classic_blaze_enchanter"
+  ],
+  "tags/block": [
+   "c:lightning_rods",
+   "c:storage_blocks",
+   "create:fan_processing_catalysts/smoking",
+   "create:fan_transparent",
+   "create_enchantment_industry:fan_processing_catalysts/salvaging",
+   "create_enchantment_industry:sable/heavy_machines",
+   "create_enchantment_industry:sable/light_machines",
+   "create_enchantment_industry:sable/medium_machines",
+   "create_enchantment_industry:sable/super_heavy_machines",
+   "minecraft:beacon_base_blocks",
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/enchantment": [
+   "create_enchantment_industry:blaze_enchanter/enchanting",
+   "create_enchantment_industry:blaze_enchanter/enchanting_exclusive",
+   "create_enchantment_industry:blaze_enchanter/super_enchanting",
+   "create_enchantment_industry:blaze_enchanter/super_enchanting_exclusive",
+   "create_enchantment_industry:printer/deny"
+  ],
+  "tags/fluid": [
+   "c:dragon_breath",
+   "create:bottomless/deny",
+   "create_enchantment_industry:fan_processing_catalysts/salvaging",
+   "create_enchantment_industry:infusing/ingredients"
+  ],
+  "tags/item": [
+   "c:buckets",
+   "c:buckets/dragon_breath",
+   "c:nuggets",
+   "c:storage_blocks",
+   "create:upright_on_belt"
+  ],
+  "tags/point_of_interest_type": [
+   "c:lightning_rods"
+  ]
+ },
+ "data_counts": {
+  "advancement": 45
+ },
+ "tags": {
+  "tags/block": {
+   "c:lightning_rods": [
+    "minecraft:lightning_rod",
+    "#friendsandfoes:lightning_rods?"
+   ],
+   "c:storage_blocks": [
+    "create_enchantment_industry:super_experience_block"
+   ],
+   "create:fan_processing_catalysts/smoking": [
+    "create_enchantment_industry:blaze_enchanter",
+    "create_enchantment_industry:blaze_forger",
+    "create_enchantment_industry:classic_blaze_enchanter"
+   ],
+   "create:fan_transparent": [
+    "create_enchantment_industry:blaze_enchanter",
+    "create_enchantment_industry:blaze_forger",
+    "create_enchantment_industry:classic_blaze_enchanter"
+   ],
+   "create_enchantment_industry:fan_processing_catalysts/salvaging": [],
+   "create_enchantment_industry:sable/heavy_machines": [
+    "create_enchantment_industry:mechanical_grindstone",
+    "create_enchantment_industry:grindstone_drain",
+    "create_enchantment_industry:super_experience_block",
+    "create_enchantment_industry:brass_bookshelf?"
+   ],
+   "create_enchantment_industry:sable/light_machines": [
+    "create_enchantment_industry:experience_hatch",
+    "create_enchantment_industry:experience_lantern"
+   ],
+   "create_enchantment_industry:sable/medium_machines": [
+    "create_enchantment_industry:printer",
+    "create_enchantment_industry:blaze_enchanter",
+    "create_enchantment_industry:blaze_forger",
+    "create_enchantment_industry:infuser?",
+    "create_enchantment_industry:ender_woven_bag?",
+    "create_enchantment_industry:gem_cutter?",
+    "create_enchantment_industry:affix_augmentor?"
+   ],
+   "create_enchantment_industry:sable/super_heavy_machines": [
+    "create_enchantment_industry:creative_bookshelf?"
+   ],
+   "minecraft:beacon_base_blocks": [
+    "create_enchantment_industry:super_experience_block"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "create_enchantment_industry:mechanical_grindstone",
+    "create_enchantment_industry:grindstone_drain",
+    "create_enchantment_industry:experience_hatch",
+    "create_enchantment_industry:printer",
+    "create_enchantment_industry:blaze_enchanter",
+    "create_enchantment_industry:blaze_forger",
+    "create_enchantment_industry:classic_blaze_enchanter",
+    "create_enchantment_industry:super_experience_block",
+    "create_enchantment_industry:experience_lantern",
+    "create_enchantment_industry:gem_cutter?",
+    "create_enchantment_industry:affix_augmentor?",
+    "create_enchantment_industry:infuser?",
+    "create_enchantment_industry:brass_bookshelf?",
+    "create_enchantment_industry:creative_bookshelf?",
+    "create_enchantment_industry:ender_woven_bag?"
+   ]
+  },
+  "tags/enchantment": {
+   "create_enchantment_industry:blaze_enchanter/enchanting": [
+    "#minecraft:in_enchanting_table"
+   ],
+   "create_enchantment_industry:blaze_enchanter/enchanting_exclusive": [],
+   "create_enchantment_industry:blaze_enchanter/super_enchanting": [
+    "#create_enchantment_industry:blaze_enchanter/enchanting",
+    "#create_enchantment_industry:blaze_enchanter/super_enchanting_exclusive"
+   ],
+   "create_enchantment_industry:blaze_enchanter/super_enchanting_exclusive": [
+    "#minecraft:treasure"
+   ],
+   "create_enchantment_industry:printer/deny": []
+  },
+  "tags/fluid": {
+   "c:dragon_breath": [
+    "create_enchantment_industry:infused_dragon_breath?",
+    "create_enchantment_industry:flowing_infused_dragon_breath?"
+   ],
+   "create:bottomless/deny": [
+    "create_enchantment_industry:flowing_experience",
+    "create_enchantment_industry:experience",
+    "create_enchantment_industry:apotheotic_essence?",
+    "create_enchantment_industry:flowing_apotheotic_essence?",
+    "create_enchantment_industry:crystal_essence?",
+    "create_enchantment_industry:flowing_crystal_essence?"
+   ],
+   "create_enchantment_industry:fan_processing_catalysts/salvaging": [
+    "create_enchantment_industry:infused_dragon_breath?"
+   ],
+   "create_enchantment_industry:infusing/ingredients": [
+    "create_enchantment_industry:experience",
+    "create_enchantment_industry:flowing_experience"
+   ]
+  },
+  "tags/item": {
+   "c:buckets": [
+    "create_enchantment_industry:experience_bucket",
+    "create_enchantment_industry:apotheotic_essence_bucket?",
+    "create_enchantment_industry:crystal_essence_bucket?",
+    "create_enchantment_industry:infused_dragon_breath_bucket?"
+   ],
+   "c:buckets/dragon_breath": [
+    "create_enchantment_industry:infused_dragon_breath_bucket?"
+   ],
+   "c:nuggets": [
+    "create_enchantment_industry:super_experience_nugget"
+   ],
+   "c:storage_blocks": [
+    "create_enchantment_industry:super_experience_block"
+   ],
+   "create:upright_on_belt": [
+    "create_enchantment_industry:experience_cake_base",
+    "create_enchantment_industry:experience_cake",
+    "apothic_enchanting:infused_breath?"
+   ]
+  },
+  "tags/point_of_interest_type": {
+   "c:lightning_rods": [
+    "minecraft:lightning_rod",
+    "#friendsandfoes:lightning_rods?",
+    "minecraft:lightning_rod",
+    "#minecraft:lightning_rods?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "create:compacting": 3,
+  "create:crushing": 1,
+  "create:cutting": 1,
+  "create:emptying": 3,
+  "create:filling": 3,
+  "create:item_application": 1,
+  "create:mixing": 6,
+  "create:pressing": 2,
+  "create:sequenced_assembly": 1,
+  "create_enchantment_industry:grinding": 7,
+  "create_enchantment_industry:infusing": 1,
+  "farmersdelight:cutting": 1,
+  "minecraft:crafting_shaped": 8,
+  "minecraft:crafting_shapeless": 2,
+  "minecraft:smithing_transform": 3
+ },
+ "botanypots": [],
+ "problems": []
+}

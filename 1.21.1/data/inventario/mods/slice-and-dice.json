@@ -1,0 +1,255 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Create Slice & Dice",
+ "file": "sliceanddice-4.3.4-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "18fc9c70d2958ad6a0e7106ca2a5659d664fe9d5001a02afbd0c7d6980749764fcd90203abb2b9c6d7b1c8e564e421be04dfca1aeb25974371d7deeabf4b96a3",
+ "mods": [
+  {
+   "modid": "sliceanddice",
+   "name": "Create Slice & Dice",
+   "version": "4.3.4",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "kotlinforforge",
+     "type": "optional",
+     "range": "[5.8,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "atmosphere",
+     "type": "optional",
+     "range": "[1.0.7,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create",
+     "type": "optional",
+     "range": "[6.0.9,7.0.0)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "create_enchantment_industry",
+     "type": "optional",
+     "range": "[1.3.0,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "atmosphere",
+   "name": "Atmosphere",
+   "version": "1.0.18",
+   "jar": "atmosphere-1.21.1-neoforge-1.0.18.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "ponder",
+   "name": "Ponder",
+   "version": "1.0.87+mc1.21.1",
+   "jar": "ponder-neoforge-1.0.87+mc1.21.1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.206,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "flywheel",
+     "type": "required",
+     "range": "[1.0.0,2.0)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "sablecompanion",
+   "name": "Sable Companion",
+   "version": "1.6.0",
+   "jar": "sable-companion-common-1.21.1-1.6.0.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.80,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "atmosphere-1.21.1-neoforge-1.0.18.jar",
+  "ponder-neoforge-1.0.87+mc1.21.1.jar",
+  "sable-companion-common-1.21.1-1.6.0.jar"
+ ],
+ "namespaces": [
+  "atmosphere",
+  "c",
+  "create",
+  "minecraft",
+  "ponder",
+  "sliceanddice"
+ ],
+ "blocks": {
+  "sliceanddice:fertilizer": "Fertilizer",
+  "sliceanddice:slicer": "Slicer",
+  "sliceanddice:sprinkler": "Sprinkler"
+ },
+ "fluids": {
+  "sliceanddice:fertilizer": "Liquid Fertilizer"
+ },
+ "items": {
+  "sliceanddice:fertilizer_bucket": "Bucket of Liquid Fertilizer",
+  "sliceanddice:floor_sprinkler": "",
+  "sliceanddice:slicer": "",
+  "sliceanddice:sprinkler": ""
+ },
+ "data": {
+  "atmosphere": [
+   "minecraft:weather_condition/rain",
+   "minecraft:weather_condition/snow",
+   "minecraft:weather_condition/sunny",
+   "minecraft:weather_condition/thunder_storm"
+  ],
+  "loot_table": [
+   "sliceanddice:blocks/slicer",
+   "sliceanddice:blocks/sprinkler"
+  ],
+  "recipe": [
+   "create:crafting/appliances/slime_ball",
+   "minecraft:sprinkler_conversion_0",
+   "minecraft:sprinkler_conversion_1",
+   "sliceanddice:filling/hot_cocoa_from_fluid",
+   "sliceanddice:filling/rich_soil",
+   "sliceanddice:mixing/fertilizer/from_compost",
+   "sliceanddice:mixing/fertilizer/from_phyto",
+   "sliceanddice:mixing/fertilizer/from_tree_fertilizer",
+   "sliceanddice:slicer",
+   "sliceanddice:sprinkler"
+  ],
+  "sliceanddice": [
+   "sliceanddice:sprinkler/burn",
+   "sliceanddice:sprinkler/experience",
+   "sliceanddice:sprinkler/fertilize",
+   "sliceanddice:sprinkler/lead",
+   "sliceanddice:sprinkler/potion",
+   "sliceanddice:sprinkler/rain"
+  ],
+  "tags/block": [
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe",
+   "sliceanddice:fertilizer_blacklist"
+  ],
+  "tags/dimension_type": [
+   "atmosphere:has_weather"
+  ],
+  "tags/fluid": [
+   "sliceanddice:burning",
+   "sliceanddice:fertilizer",
+   "sliceanddice:moisturizing"
+  ],
+  "tags/item": [
+   "c:buckets",
+   "c:dough/wheat",
+   "c:foods/dough",
+   "sliceanddice:allowed_tools"
+  ]
+ },
+ "data_counts": {
+  "advancement": 5
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/axe": [
+    "sliceanddice:slicer"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "sliceanddice:slicer",
+    "sliceanddice:sprinkler"
+   ],
+   "sliceanddice:fertilizer_blacklist": []
+  },
+  "tags/dimension_type": {
+   "atmosphere:has_weather": [
+    "minecraft:overworld"
+   ]
+  },
+  "tags/fluid": {
+   "sliceanddice:burning": [
+    "minecraft:lava"
+   ],
+   "sliceanddice:fertilizer": [
+    "sliceanddice:flowing_fertilizer",
+    "sliceanddice:fertilizer"
+   ],
+   "sliceanddice:moisturizing": [
+    "minecraft:water"
+   ]
+  },
+  "tags/item": {
+   "c:buckets": [
+    "sliceanddice:fertilizer_bucket"
+   ],
+   "c:dough/wheat": [
+    "farmersdelight:wheat_dough?"
+   ],
+   "c:foods/dough": [
+    "create:dough"
+   ],
+   "sliceanddice:allowed_tools": [
+    "#c:tools/knife?",
+    "#minecraft:axes"
+   ]
+  }
+ },
+ "recipe_types": {
+  "create:filling": 2,
+  "create:mixing": 3,
+  "minecraft:crafting_shaped": 2,
+  "minecraft:crafting_shapeless": 3
+ },
+ "botanypots": [],
+ "problems": []
+}

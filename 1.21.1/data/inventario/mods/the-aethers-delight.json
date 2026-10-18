@@ -1,0 +1,855 @@
+{
+ "format": 1,
+ "status": "ok",
+ "name": "Aether's Delight",
+ "file": "aethersdelight-0.1.4.2-1.21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "8e5a29a71751c5eaa0957de11d54b8ca78e43d6ba8516747998ea82c8d72a03898bef62737009b6e15ab7cf364fd732262afd8f5705ba44562445412763e5e5b",
+ "mods": [
+  {
+   "modid": "aethersdelight",
+   "name": "Aethers Delight",
+   "version": "0.1.4.2-1.21.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "aether",
+     "type": "required",
+     "range": "[1.5.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "farmersdelight",
+     "type": "required",
+     "range": "[1.2.7,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "aether",
+  "aethersdelight",
+  "c",
+  "create",
+  "farmersdelight",
+  "minecraft",
+  "neoforge",
+  "origins"
+ ],
+ "blocks": {
+  "aethersdelight:aechor_ice_cream_bucket_block": "Aechor Ice Cream Bucket",
+  "aethersdelight:arkenium_blast_furnace": "Arkenium Blast Furnace",
+  "aethersdelight:arkenium_block": "Block of Arkenium",
+  "aethersdelight:arkenium_chain": "Arkenium Chain",
+  "aethersdelight:arkenium_lantern": "Arkenium Lantern",
+  "aethersdelight:arkenium_ore": "Arkenium Ore",
+  "aethersdelight:blue_berry_crate": "Blue Berry Crate",
+  "aethersdelight:enchanted_berry_crate": "Enchanted Berry Crate",
+  "aethersdelight:ginger_crate": "Ginger Crate",
+  "aethersdelight:ginger_crop": "",
+  "aethersdelight:holystone_furnace": "Holystone Furnace",
+  "aethersdelight:holystone_smoker": "Holystone Smoker",
+  "aethersdelight:holystone_stove": "Holystone Stove",
+  "aethersdelight:leek_crate": "Leek Crate",
+  "aethersdelight:leek_crop": "",
+  "aethersdelight:parsnip_crate": "Parsnip Crate",
+  "aethersdelight:parsnip_crop": "",
+  "aethersdelight:peppermint_bush": "Peppermint Bush",
+  "aethersdelight:peppermint_bush_stem": "Peppermint Bush Stem",
+  "aethersdelight:peppermint_leaf_bag": "Bag of Peppermint Leaves",
+  "aethersdelight:raw_arkenium_block": "Block of Raw Arkenium",
+  "aethersdelight:roast_moa_block": "Roast Moa",
+  "aethersdelight:skyroot_cabinet": "Skyroot Cabinet",
+  "aethersdelight:white_apple_pie": "White Apple Pie",
+  "aethersdelight:wild_ginger": "Wild Ginger",
+  "aethersdelight:wild_leek": "Wild Leek",
+  "aethersdelight:wild_parsnip": "Wild Parsnip"
+ },
+ "items": {
+  "aethersdelight:aechor_ice_cream": "Aechor Ice Cream",
+  "aethersdelight:aechor_ice_cream_base": "Aechor Ice Cream Base",
+  "aethersdelight:aechor_ice_cream_bucket_block": "",
+  "aethersdelight:arkenium_blast_furnace": "",
+  "aethersdelight:arkenium_block": "",
+  "aethersdelight:arkenium_chain": "",
+  "aethersdelight:arkenium_ingot": "Arkenium Ingot",
+  "aethersdelight:arkenium_knife": "Arkenium Knife",
+  "aethersdelight:arkenium_lantern": "",
+  "aethersdelight:arkenium_nugget": "Arkenium Nugget",
+  "aethersdelight:arkenium_ore": "",
+  "aethersdelight:blue_berry_crate": "",
+  "aethersdelight:blue_berry_jam": "Blue Berry Jam",
+  "aethersdelight:blue_berry_muffin": "Blue Berry Muffin",
+  "aethersdelight:candied_white_apple": "Candied White Apple",
+  "aethersdelight:cooked_moa": "Cooked Moa",
+  "aethersdelight:cooked_moa_cuts": "Cooked Moa Cuts",
+  "aethersdelight:cooked_parsnip": "Cooked Parsnip",
+  "aethersdelight:cooked_wing": "Cooked Wing",
+  "aethersdelight:cookie_cutter_man": "Cookie Cutter",
+  "aethersdelight:cookie_cutter_moa": "Cookie Cutter",
+  "aethersdelight:cookie_cutter_star": "Cookie Cutter",
+  "aethersdelight:enchanted_berry_crate": "",
+  "aethersdelight:enchanted_berry_jam": "Enchanted Berry Jam",
+  "aethersdelight:enchanted_berry_muffin": "Enchanted Berry Muffin",
+  "aethersdelight:flying_beef_stew": "Flying Beef Stew",
+  "aethersdelight:fried_moa_egg": "Fried Moa Egg",
+  "aethersdelight:ginger": "Ginger",
+  "aethersdelight:ginger_ale": "Ginger Ale",
+  "aethersdelight:ginger_crate": "",
+  "aethersdelight:ginger_soup": "Ginger Soup",
+  "aethersdelight:ginger_spice": "Ginger Spice",
+  "aethersdelight:gingerbread": "Gingerbread",
+  "aethersdelight:gingerbread_dough": "Gingerbread Dough",
+  "aethersdelight:gingerbread_man_base": "Gingerbread Man Base",
+  "aethersdelight:gingerbread_moa": "Gingerbread Moa",
+  "aethersdelight:gingerbread_moa_base": "Gingerbread Moa Base",
+  "aethersdelight:gingerbread_star": "Gingerbread Star",
+  "aethersdelight:gingerbread_star_base": "Gingerbread Star Base",
+  "aethersdelight:gravitite_knife": "Gravitite Knife",
+  "aethersdelight:holystone_furnace": "",
+  "aethersdelight:holystone_knife": "Holystone Knife",
+  "aethersdelight:holystone_smoker": "",
+  "aethersdelight:holystone_stove": "",
+  "aethersdelight:leek": "Leek",
+  "aethersdelight:leek_crate": "",
+  "aethersdelight:moa_egg_omelette": "Moa Egg Omelette",
+  "aethersdelight:moa_stew": "Moa Stew",
+  "aethersdelight:mug": "",
+  "aethersdelight:parsnip": "Parsnip",
+  "aethersdelight:parsnip_crate": "",
+  "aethersdelight:parsnip_pasta": "Parsnip Pasta",
+  "aethersdelight:peppermint_bush": "",
+  "aethersdelight:peppermint_bush_stem": "",
+  "aethersdelight:peppermint_candy": "Peppermint Candy",
+  "aethersdelight:peppermint_candy_dough": "Peppermint Candy Dough",
+  "aethersdelight:peppermint_extract": "Peppermint Extract",
+  "aethersdelight:peppermint_leaf": "Peppermint Leaf",
+  "aethersdelight:peppermint_leaf_bag": "",
+  "aethersdelight:peppermint_tea": "Peppermint Tea",
+  "aethersdelight:raw_arkenium": "Raw Arkenium",
+  "aethersdelight:raw_arkenium_block": "",
+  "aethersdelight:raw_moa": "Raw Moa",
+  "aethersdelight:raw_moa_cuts": "Raw Moa Cuts",
+  "aethersdelight:roast_moa": "Roast Moa Portion",
+  "aethersdelight:roast_moa_block": "",
+  "aethersdelight:skyroot_cabinet": "",
+  "aethersdelight:swet_soup": "Swet Soup",
+  "aethersdelight:white_apple_pie": "",
+  "aethersdelight:white_apple_pie_slice": "White Apple Pie Slice",
+  "aethersdelight:wild_ginger": "",
+  "aethersdelight:wild_leek": "",
+  "aethersdelight:wild_parsnip": "",
+  "aethersdelight:wing": "Wing",
+  "aethersdelight:zanite_knife": "Zanite Knife"
+ },
+ "data": {
+  "data_maps/item": [
+   "neoforge:compostables"
+  ],
+  "loot_modifiers": [
+   "aethersdelight:cooked_moa_from_moa",
+   "aethersdelight:raw_moa_from_moa",
+   "aethersdelight:scavenging_cooked_wings_from_flying_cow",
+   "aethersdelight:scavenging_cooked_wings_from_phyg",
+   "aethersdelight:scavenging_ham_from_phyg",
+   "aethersdelight:scavenging_smoked_ham_from_phyg",
+   "aethersdelight:scavenging_wings_from_flying_cow",
+   "aethersdelight:scavenging_wings_from_phyg",
+   "aethersdelight:sugar_from_blue_swet_ad",
+   "aethersdelight:sugar_from_golden_swet_ad",
+   "neoforge:global_loot_modifiers"
+  ],
+  "loot_table": [
+   "aethersdelight:blocks/aechor_ice_cream_bucket_block",
+   "aethersdelight:blocks/arkenium_blast_furnace",
+   "aethersdelight:blocks/arkenium_block",
+   "aethersdelight:blocks/arkenium_chain",
+   "aethersdelight:blocks/arkenium_lantern",
+   "aethersdelight:blocks/arkenium_ore",
+   "aethersdelight:blocks/blue_berry_crate",
+   "aethersdelight:blocks/enchanted_berry_crate",
+   "aethersdelight:blocks/ginger_crate",
+   "aethersdelight:blocks/ginger_crop",
+   "aethersdelight:blocks/holystone_furnace",
+   "aethersdelight:blocks/holystone_smoker",
+   "aethersdelight:blocks/holystone_stove",
+   "aethersdelight:blocks/leek_crate",
+   "aethersdelight:blocks/leek_crop",
+   "aethersdelight:blocks/parsnip_crate",
+   "aethersdelight:blocks/parsnip_crop",
+   "aethersdelight:blocks/peppermint_bush",
+   "aethersdelight:blocks/peppermint_bush_stem",
+   "aethersdelight:blocks/peppermint_leaf_bag",
+   "aethersdelight:blocks/raw_arkenium_block",
+   "aethersdelight:blocks/roast_moa_block",
+   "aethersdelight:blocks/skyroot_cabinet",
+   "aethersdelight:blocks/wild_ginger",
+   "aethersdelight:blocks/wild_leek",
+   "aethersdelight:blocks/wild_parsnip"
+  ],
+  "neoforge/biome_modifier": [
+   "aethersdelight:add_arkenium_ore",
+   "aethersdelight:add_peppermint_bush",
+   "aethersdelight:add_wild_ginger",
+   "aethersdelight:add_wild_leek",
+   "aethersdelight:add_wild_parsnip"
+  ],
+  "recipe": [
+   "aether:blue_berry",
+   "aether:candy_cane_sword",
+   "aether:enchanted_berry",
+   "aether:gravitite_knife_repairing",
+   "aether:holystone_knife_repairing",
+   "aether:sugar_from_enchanting_blue",
+   "aether:zanite_knife_repairing",
+   "aethersdelight:aechor_ice_cream_base",
+   "aethersdelight:aechor_ice_cream_freezing",
+   "aethersdelight:aether_compost_from_bone_meal",
+   "aethersdelight:aether_compost_from_rotten_flesh",
+   "aethersdelight:anvil_from_arkenium",
+   "aethersdelight:arkenium_blast_furnace",
+   "aethersdelight:arkenium_block",
+   "aethersdelight:arkenium_chain",
+   "aethersdelight:arkenium_from_blasting",
+   "aethersdelight:arkenium_from_smelting",
+   "aethersdelight:arkenium_ingot",
+   "aethersdelight:arkenium_lantern",
+   "aethersdelight:arkenium_nugget",
+   "aethersdelight:arkenium_nugget_compression",
+   "aethersdelight:arkenium_skyroot_vanilla_shield",
+   "aethersdelight:arkenium_vanilla_shield",
+   "aethersdelight:basket_from_skyroot_sticks",
+   "aethersdelight:blue_berry_crate",
+   "aethersdelight:blue_berry_muffin",
+   "aethersdelight:bowl_from_skyroot",
+   "aethersdelight:candied_white_apple",
+   "aethersdelight:canvas_sign_from_skyroot",
+   "aethersdelight:cooked_moa_cuts_from_campfire_cooking",
+   "aethersdelight:cooked_moa_cuts_from_smelting",
+   "aethersdelight:cooked_moa_cuts_from_smoking",
+   "aethersdelight:cooked_moa_from_campfire_cooking",
+   "aethersdelight:cooked_moa_from_smelting",
+   "aethersdelight:cooked_moa_from_smoking",
+   "aethersdelight:cooked_wings_from_campfire_cooking",
+   "aethersdelight:cooked_wings_from_smelting",
+   "aethersdelight:cooked_wings_from_smoking",
+   "aethersdelight:cookie_cutter_man",
+   "aethersdelight:cookie_cutter_moa",
+   "aethersdelight:cookie_cutter_star",
+   "aethersdelight:cooking_pot_from_arkenium_recipe",
+   "aethersdelight:crossbow_from_arkenium",
+   "aethersdelight:cutting/cutting/gingerbread_man_base",
+   "aethersdelight:cutting/cutting/gingerbread_moa_base",
+   "aethersdelight:cutting/cutting/gingerbread_star_base",
+   "aethersdelight:cutting_board_from_skyroot",
+   "aethersdelight:enchanted_berry_crate",
+   "aethersdelight:enchanted_berry_muffin",
+   "aethersdelight:enchanted_jam_enchanting",
+   "aethersdelight:enchanted_muffin_enchanting",
+   "aethersdelight:fried_moa_egg_from_campfire_cooking",
+   "aethersdelight:fried_moa_egg_from_smelting",
+   "aethersdelight:fried_moa_egg_from_smoking",
+   "aethersdelight:ginger",
+   "aethersdelight:ginger_crate",
+   "aethersdelight:gingerbread_dough",
+   "aethersdelight:gingerbread_from_smelting",
+   "aethersdelight:gingerbread_from_smoking",
+   "aethersdelight:gingerbread_man_from_smelting",
+   "aethersdelight:gingerbread_man_from_smoking",
+   "aethersdelight:gingerbread_moa_from_smelting",
+   "aethersdelight:gingerbread_moa_from_smoking",
+   "aethersdelight:gingerbread_star_from_smelting",
+   "aethersdelight:gingerbread_star_from_smoking",
+   "aethersdelight:glass_bottles_from_quicksoil_glass",
+   "aethersdelight:gravitite_knife",
+   "aethersdelight:hanging_canvas_sign_from_skyroot",
+   "aethersdelight:holystone_furnace",
+   "aethersdelight:holystone_knife",
+   "aethersdelight:holystone_smoker",
+   "aethersdelight:holystone_stove",
+   "aethersdelight:hopper_from_arkenium",
+   "aethersdelight:leek",
+   "aethersdelight:leek_crate",
+   "aethersdelight:milk_bottles_from_skyroot_bucket",
+   "aethersdelight:moa_egg_omelette",
+   "aethersdelight:paper_from_aechor_petals",
+   "aethersdelight:parsnip",
+   "aethersdelight:parsnip_crate",
+   "aethersdelight:peppermint_candy",
+   "aethersdelight:peppermint_extract",
+   "aethersdelight:peppermint_leaf",
+   "aethersdelight:peppermint_leaf_bag",
+   "aethersdelight:roast_moa_block",
+   "aethersdelight:shears_from_arkenium",
+   "aethersdelight:skillet_from_arkenium_recipe",
+   "aethersdelight:skyroot_cabinet",
+   "aethersdelight:skyroot_crossbow_from_arkenium",
+   "aethersdelight:skyroot_smithing_table_from_arkenium",
+   "aethersdelight:skyroot_tripwire_hook_from_arkenium",
+   "aethersdelight:smithing_table_from_arkenium",
+   "aethersdelight:stonecutter_from_arkenium",
+   "aethersdelight:tripwire_hook_from_arkenium",
+   "aethersdelight:white_apple_pie",
+   "aethersdelight:white_apple_pie_from_slices",
+   "aethersdelight:zanite_knife",
+   "farmersdelight:cooking/blue_berry_jam",
+   "farmersdelight:cooking/cooked_parsnip",
+   "farmersdelight:cooking/enchanted_berry_jam",
+   "farmersdelight:cooking/flying_beef_stew",
+   "farmersdelight:cooking/ginger_ale",
+   "farmersdelight:cooking/ginger_soup",
+   "farmersdelight:cooking/moa_stew",
+   "farmersdelight:cooking/parsnip_pasta",
+   "farmersdelight:cooking/peppermint_candy_dough",
+   "farmersdelight:cooking/peppermint_tea",
+   "farmersdelight:cooking/swet_soup",
+   "farmersdelight:cutting/amber_from_log",
+   "farmersdelight:cutting/amber_from_wood",
+   "farmersdelight:cutting/blue_berry",
+   "farmersdelight:cutting/cooked_moa",
+   "farmersdelight:cutting/enchanted_berry",
+   "farmersdelight:cutting/ginger",
+   "farmersdelight:cutting/no_amber_from_log",
+   "farmersdelight:cutting/no_amber_from_wood",
+   "farmersdelight:cutting/peppermint_candy_dough",
+   "farmersdelight:cutting/peppermint_leaf",
+   "farmersdelight:cutting/purple_flower",
+   "farmersdelight:cutting/raw_moa",
+   "farmersdelight:cutting/skyroot_door",
+   "farmersdelight:cutting/skyroot_log",
+   "farmersdelight:cutting/skyroot_trapdoor",
+   "farmersdelight:cutting/skyroot_wood",
+   "farmersdelight:cutting/white_flower"
+  ],
+  "recipes": [
+   "aether:ice_cream_bucket_from_base",
+   "aether:skyroot_zanite_vanilla_shield",
+   "aether:wood_zanite_vanilla_shield"
+  ],
+  "tags/block": [
+   "c:chains",
+   "c:ores",
+   "c:ores/arkenium",
+   "c:player_workstations/furnaces",
+   "c:storage_blocks",
+   "c:storage_blocks/arkenium",
+   "c:storage_blocks/blue_berry",
+   "c:storage_blocks/enchanted_berry",
+   "c:storage_blocks/ginger",
+   "c:storage_blocks/leek",
+   "c:storage_blocks/parsnip",
+   "c:storage_blocks/peppermint_leaf",
+   "c:storage_blocks/raw_arkenium",
+   "create:passive_boiler_heaters",
+   "farmersdelight:heat_sources",
+   "farmersdelight:mineable/knife",
+   "farmersdelight:wild_crops",
+   "minecraft:mineable/axe",
+   "minecraft:mineable/pickaxe",
+   "minecraft:needs_iron_tool",
+   "minecraft:needs_stone_tool",
+   "minecraft:small_flowers"
+  ],
+  "tags/item": [
+   "aether:treated_as_aether_item",
+   "aethersdelight:not_golden_amber_harvesters",
+   "c:chains",
+   "c:crops",
+   "c:crops/ginger",
+   "c:crops/leek",
+   "c:crops/parsnip",
+   "c:foods",
+   "c:foods/cooked_egg",
+   "c:foods/cooked_meat",
+   "c:foods/cooked_moa",
+   "c:foods/cookie",
+   "c:foods/edible_when_placed",
+   "c:foods/food_poisoning",
+   "c:foods/gingerbread",
+   "c:foods/gingerbread_dough",
+   "c:foods/milk",
+   "c:foods/raw_meat",
+   "c:foods/raw_moa",
+   "c:foods/soup",
+   "c:foods/vegetable",
+   "c:foods/vegetable/aether",
+   "c:ingots",
+   "c:ingots/arkenium",
+   "c:nuggets",
+   "c:nuggets/arkenium",
+   "c:ores",
+   "c:ores/arkenium",
+   "c:player_workstations/furnaces",
+   "c:raw_materials",
+   "c:raw_materials/arkenium",
+   "c:storage_blocks",
+   "c:storage_blocks/arkenium",
+   "c:storage_blocks/blue_berry",
+   "c:storage_blocks/enchanted_berry",
+   "c:storage_blocks/ginger",
+   "c:storage_blocks/leek",
+   "c:storage_blocks/parsnip",
+   "c:storage_blocks/peppermint_leaf",
+   "c:storage_blocks/raw_arkenium",
+   "c:tools/knife",
+   "create:upright_on_belt",
+   "farmersdelight:cabbage_roll_ingredients",
+   "farmersdelight:cabinets/wooden",
+   "farmersdelight:tools/knives",
+   "farmersdelight:wild_crops",
+   "minecraft:meat",
+   "minecraft:small_flowers",
+   "origins:meat"
+  ],
+  "tags/worldgen/biome": [
+   "aether:no_wheat_seeds",
+   "aethersdelight:peppermint_bush_biomes",
+   "aethersdelight:wild_ginger_biomes",
+   "aethersdelight:wild_leek_biomes",
+   "aethersdelight:wild_parsnip_biomes"
+  ],
+  "worldgen/configured_feature": [
+   "aethersdelight:arkenium_ore",
+   "aethersdelight:peppermint_bush",
+   "aethersdelight:wild_ginger",
+   "aethersdelight:wild_leek",
+   "aethersdelight:wild_parsnip"
+  ],
+  "worldgen/placed_feature": [
+   "aethersdelight:arkenium_ore_placed",
+   "aethersdelight:peppermint_bush_placed",
+   "aethersdelight:wild_ginger_placed",
+   "aethersdelight:wild_leek_placed",
+   "aethersdelight:wild_parsnip_placed"
+  ]
+ },
+ "data_counts": {
+  "advancement": 105
+ },
+ "tags": {
+  "tags/block": {
+   "c:chains": [
+    "aethersdelight:arkenium_chain"
+   ],
+   "c:ores": [
+    "#c:ores/arkenium"
+   ],
+   "c:ores/arkenium": [
+    "aethersdelight:arkenium_ore"
+   ],
+   "c:player_workstations/furnaces": [
+    "aethersdelight:holystone_furnace"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/ginger",
+    "#c:storage_blocks/leek",
+    "#c:storage_blocks/parsnip",
+    "#c:storage_blocks/peppermint_leaf",
+    "#c:storage_blocks/blue_berry",
+    "#c:storage_blocks/enchanted_berry",
+    "#c:storage_blocks/arkenium",
+    "#c:storage_blocks/raw_arkenium"
+   ],
+   "c:storage_blocks/arkenium": [
+    "aethersdelight:arkenium_block"
+   ],
+   "c:storage_blocks/blue_berry": [
+    "aethersdelight:blue_berry_crate"
+   ],
+   "c:storage_blocks/enchanted_berry": [
+    "aethersdelight:enchanted_berry_crate"
+   ],
+   "c:storage_blocks/ginger": [
+    "aethersdelight:ginger_crate"
+   ],
+   "c:storage_blocks/leek": [
+    "aethersdelight:leek_crate"
+   ],
+   "c:storage_blocks/parsnip": [
+    "aethersdelight:parsnip_crate"
+   ],
+   "c:storage_blocks/peppermint_leaf": [
+    "aethersdelight:peppermint_leaf_bag"
+   ],
+   "c:storage_blocks/raw_arkenium": [
+    "aethersdelight:raw_arkenium_block"
+   ],
+   "create:passive_boiler_heaters": [
+    "aethersdelight:holystone_stove"
+   ],
+   "farmersdelight:heat_sources": [
+    "aethersdelight:holystone_stove",
+    "aether:light_hellfire_stone"
+   ],
+   "farmersdelight:mineable/knife": [
+    "aethersdelight:peppermint_leaf_bag",
+    "aethersdelight:white_apple_pie",
+    "aethersdelight:roast_moa_block"
+   ],
+   "farmersdelight:wild_crops": [
+    "aethersdelight:wild_ginger",
+    "aethersdelight:wild_leek",
+    "aethersdelight:wild_parsnip"
+   ],
+   "minecraft:mineable/axe": [
+    "aethersdelight:skyroot_cabinet",
+    "aethersdelight:ginger_crate",
+    "aethersdelight:parsnip_crate",
+    "aethersdelight:leek_crate",
+    "aethersdelight:blue_berry_crate",
+    "aethersdelight:enchanted_berry_crate"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "aethersdelight:arkenium_block",
+    "aethersdelight:arkenium_chain",
+    "aethersdelight:raw_arkenium_block",
+    "aethersdelight:arkenium_ore",
+    "aethersdelight:holystone_furnace",
+    "aethersdelight:arkenium_blast_furnace",
+    "aethersdelight:holystone_smoker",
+    "aethersdelight:holystone_stove",
+    "aethersdelight:arkenium_lantern"
+   ],
+   "minecraft:needs_iron_tool": [
+    "aethersdelight:arkenium_block",
+    "aethersdelight:raw_arkenium_block",
+    "aethersdelight:arkenium_ore",
+    "aethersdelight:arkenium_blast_furnace",
+    "aethersdelight:arkenium_chain",
+    "aethersdelight:arkenium_lantern"
+   ],
+   "minecraft:needs_stone_tool": [
+    "aethersdelight:holystone_furnace",
+    "aethersdelight:holystone_smoker",
+    "aethersdelight:holystone_stove"
+   ],
+   "minecraft:small_flowers": [
+    "aethersdelight:wild_ginger",
+    "aethersdelight:wild_leek",
+    "aethersdelight:wild_parsnip"
+   ]
+  },
+  "tags/item": {
+   "aether:treated_as_aether_item": [
+    "aethersdelight:holystone_knife",
+    "aethersdelight:zanite_knife",
+    "aethersdelight:gravitite_knife"
+   ],
+   "aethersdelight:not_golden_amber_harvesters": [
+    "#minecraft:axes"
+   ],
+   "c:chains": [
+    "aethersdelight:arkenium_chain"
+   ],
+   "c:crops": [
+    "#c:crops/ginger",
+    "#c:crops/parsnip",
+    "#c:crops/leek"
+   ],
+   "c:crops/ginger": [
+    "aethersdelight:ginger"
+   ],
+   "c:crops/leek": [
+    "aethersdelight:leek"
+   ],
+   "c:crops/parsnip": [
+    "aethersdelight:parsnip"
+   ],
+   "c:foods": [
+    "#c:foods/gingerbread_dough",
+    "#c:foods/gingerbread"
+   ],
+   "c:foods/cooked_egg": [
+    "aethersdelight:fried_moa_egg"
+   ],
+   "c:foods/cooked_meat": [
+    "aethersdelight:cooked_moa",
+    "aethersdelight:cooked_moa_cuts"
+   ],
+   "c:foods/cooked_moa": [
+    "aethersdelight:cooked_moa",
+    "aethersdelight:cooked_moa_cuts"
+   ],
+   "c:foods/cookie": [
+    "aethersdelight:gingerbread_moa",
+    "aethersdelight:gingerbread_star"
+   ],
+   "c:foods/edible_when_placed": [
+    "aethersdelight:white_apple_pie",
+    "aethersdelight:roast_moa_block",
+    "aethersdelight:aechor_ice_cream_bucket_block"
+   ],
+   "c:foods/food_poisoning": [
+    "aethersdelight:raw_moa",
+    "aethersdelight:raw_moa_cuts",
+    "aethersdelight:gingerbread_dough",
+    "aethersdelight:gingerbread_man_base",
+    "aethersdelight:gingerbread_moa_base",
+    "aethersdelight:gingerbread_star_base"
+   ],
+   "c:foods/gingerbread": [
+    "aethersdelight:gingerbread"
+   ],
+   "c:foods/gingerbread_dough": [
+    "aethersdelight:gingerbread_dough"
+   ],
+   "c:foods/milk": [
+    "aether:skyroot_milk_bucket"
+   ],
+   "c:foods/raw_meat": [
+    "aethersdelight:raw_moa",
+    "aethersdelight:raw_moa_cuts"
+   ],
+   "c:foods/raw_moa": [
+    "aethersdelight:raw_moa",
+    "aethersdelight:raw_moa_cuts"
+   ],
+   "c:foods/soup": [
+    "aethersdelight:swet_soup",
+    "aethersdelight:ginger_soup",
+    "aethersdelight:moa_stew",
+    "aethersdelight:flying_beef_stew"
+   ],
+   "c:foods/vegetable": [
+    "aethersdelight:ginger",
+    "aethersdelight:parsnip",
+    "aethersdelight:leek"
+   ],
+   "c:foods/vegetable/aether": [
+    "aethersdelight:ginger",
+    "aethersdelight:parsnip",
+    "aethersdelight:leek"
+   ],
+   "c:ingots": [
+    "#c:ingots/arkenium"
+   ],
+   "c:ingots/arkenium": [
+    "aethersdelight:arkenium_ingot"
+   ],
+   "c:nuggets": [
+    "#c:nuggets/arkenium"
+   ],
+   "c:nuggets/arkenium": [
+    "aethersdelight:arkenium_nugget"
+   ],
+   "c:ores": [
+    "#c:ores/arkenium"
+   ],
+   "c:ores/arkenium": [
+    "aethersdelight:arkenium_ore"
+   ],
+   "c:player_workstations/furnaces": [
+    "aethersdelight:holystone_furnace"
+   ],
+   "c:raw_materials": [
+    "#c:raw_materials/arkenium"
+   ],
+   "c:raw_materials/arkenium": [
+    "aethersdelight:raw_arkenium"
+   ],
+   "c:storage_blocks": [
+    "#c:storage_blocks/ginger",
+    "#c:storage_blocks/leek",
+    "#c:storage_blocks/parsnip",
+    "#c:storage_blocks/peppermint_leaf",
+    "#c:storage_blocks/blue_berry",
+    "#c:storage_blocks/enchanted_berry",
+    "#c:storage_blocks/arkenium",
+    "#c:storage_blocks/raw_arkenium"
+   ],
+   "c:storage_blocks/arkenium": [
+    "aethersdelight:arkenium_block"
+   ],
+   "c:storage_blocks/blue_berry": [
+    "aethersdelight:blue_berry_crate"
+   ],
+   "c:storage_blocks/enchanted_berry": [
+    "aethersdelight:enchanted_berry_crate"
+   ],
+   "c:storage_blocks/ginger": [
+    "aethersdelight:ginger_crate"
+   ],
+   "c:storage_blocks/leek": [
+    "aethersdelight:leek_crate"
+   ],
+   "c:storage_blocks/parsnip": [
+    "aethersdelight:parsnip_crate"
+   ],
+   "c:storage_blocks/peppermint_leaf": [
+    "aethersdelight:peppermint_leaf_bag"
+   ],
+   "c:storage_blocks/raw_arkenium": [
+    "aethersdelight:raw_arkenium_block"
+   ],
+   "c:tools/knife": [
+    "aethersdelight:holystone_knife",
+    "aethersdelight:zanite_knife",
+    "aethersdelight:gravitite_knife",
+    "aether:pig_slayer"
+   ],
+   "create:upright_on_belt": [
+    "aethersdelight:white_apple_pie",
+    "aethersdelight:blue_berry_jam",
+    "aethersdelight:enchanted_berry_jam",
+    "aethersdelight:ginger_ale",
+    "aethersdelight:peppermint_tea",
+    "aethersdelight:swet_soup",
+    "aethersdelight:ginger_soup",
+    "aethersdelight:moa_stew",
+    "aethersdelight:flying_beef_stew",
+    "aethersdelight:peppermint_extract"
+   ],
+   "farmersdelight:cabbage_roll_ingredients": [
+    "#c:foods/raw_moa"
+   ],
+   "farmersdelight:cabinets/wooden": [
+    "aethersdelight:skyroot_cabinet"
+   ],
+   "farmersdelight:tools/knives": [
+    "aethersdelight:holystone_knife",
+    "aethersdelight:zanite_knife",
+    "aethersdelight:gravitite_knife",
+    "aether:pig_slayer"
+   ],
+   "farmersdelight:wild_crops": [
+    "aethersdelight:wild_ginger",
+    "aethersdelight:wild_leek",
+    "aethersdelight:wild_parsnip"
+   ],
+   "minecraft:meat": [
+    "aethersdelight:raw_moa",
+    "aethersdelight:cooked_moa",
+    "aethersdelight:raw_moa_cuts",
+    "aethersdelight:cooked_moa_cuts"
+   ],
+   "minecraft:small_flowers": [
+    "aethersdelight:wild_ginger",
+    "aethersdelight:wild_leek",
+    "aethersdelight:wild_parsnip"
+   ],
+   "origins:meat": [
+    "aethersdelight:fried_moa_egg",
+    "aethersdelight:moa_egg_omelette"
+   ]
+  },
+  "tags/worldgen/biome": {
+   "aether:no_wheat_seeds": [],
+   "aethersdelight:peppermint_bush_biomes": [
+    "aether:skyroot_meadow",
+    "aether:skyroot_woodland",
+    "aether:skyroot_grove",
+    "aether:skyroot_forest",
+    "ancient_aether:sun_forest?",
+    "ancient_aether:wyndcap_taiga?",
+    "ancient_aether:festive_wyndcap_taiga?",
+    "ancient_aether:wyndcap_highland?",
+    "ancient_aether:elevated_forest?",
+    "ancient_aether:elevated_clearing?",
+    "aether_redux:frosted_forest?",
+    "aether_redux:glacial_tundra?",
+    "aether_redux:skyroot_shrublands?",
+    "deep_aether:blue_aerglow_forest?",
+    "ancient_aether:crystal_skyroot_forest?",
+    "ancient_aether:crystal_skyroot_grove?",
+    "ancient_aether:golden_skyroot_forest?",
+    "ancient_aether:golden_skyroot_grove?",
+    "ancient_aether:golden_thicket?"
+   ],
+   "aethersdelight:wild_ginger_biomes": [
+    "aether:skyroot_meadow",
+    "aether:skyroot_woodland",
+    "aether:skyroot_grove",
+    "aether:skyroot_forest",
+    "ancient_aether:sun_forest?",
+    "ancient_aether:elevated_forest?",
+    "ancient_aether:elevated_clearing?",
+    "ancient_aether:sakura_jungle?",
+    "ancient_aether:skyroot_jungle?",
+    "aether_redux:skyfields?",
+    "aether_redux:skyroot_shrublands?",
+    "deep_aether:aerglow_forest?",
+    "deep_aether:blue_aerglow_forest?",
+    "deep_aether:mystic_aerglow_forest?",
+    "deep_aether:aerlavender_fields?",
+    "ancient_aether:crystal_skyroot_forest?",
+    "ancient_aether:crystal_skyroot_grove?",
+    "ancient_aether:golden_skyroot_forest?",
+    "ancient_aether:golden_skyroot_grove?",
+    "ancient_aether:golden_thicket?"
+   ],
+   "aethersdelight:wild_leek_biomes": [
+    "aether:skyroot_meadow",
+    "aether:skyroot_woodland",
+    "aether:skyroot_grove",
+    "aether:skyroot_forest",
+    "ancient_aether:sun_forest?",
+    "ancient_aether:elevated_forest?",
+    "ancient_aether:elevated_clearing?",
+    "ancient_aether:sakura_jungle?",
+    "ancient_aether:skyroot_jungle?",
+    "aether_redux:skyfields?",
+    "aether_redux:skyroot_shrublands?",
+    "deep_aether:aerglow_forest?",
+    "deep_aether:mystic_aerglow_forest?",
+    "deep_aether:aerlavender_fields?",
+    "ancient_aether:crystal_skyroot_forest?",
+    "ancient_aether:crystal_skyroot_grove?",
+    "ancient_aether:golden_skyroot_forest?",
+    "ancient_aether:golden_skyroot_grove?",
+    "ancient_aether:golden_thicket?"
+   ],
+   "aethersdelight:wild_parsnip_biomes": [
+    "aether:skyroot_meadow",
+    "aether:skyroot_woodland",
+    "aether:skyroot_grove",
+    "aether:skyroot_forest",
+    "ancient_aether:sun_forest?",
+    "ancient_aether:elevated_forest?",
+    "ancient_aether:elevated_clearing?",
+    "ancient_aether:sakura_jungle?",
+    "ancient_aether:skyroot_jungle?",
+    "aether_redux:skyfields?",
+    "aether_redux:skyroot_shrublands?",
+    "deep_aether:aerglow_forest?",
+    "deep_aether:mystic_aerglow_forest?",
+    "deep_aether:aerlavender_fields?",
+    "ancient_aether:crystal_skyroot_forest?",
+    "ancient_aether:crystal_skyroot_grove?",
+    "ancient_aether:golden_skyroot_forest?",
+    "ancient_aether:golden_skyroot_grove?",
+    "ancient_aether:golden_thicket?"
+   ]
+  }
+ },
+ "recipe_types": {
+  "aether:enchanting": 3,
+  "aether:freezing": 1,
+  "aether:repairing": 3,
+  "farmersdelight:cooking": 11,
+  "farmersdelight:cutting": 20,
+  "minecraft:blasting": 1,
+  "minecraft:campfire_cooking": 4,
+  "minecraft:crafting_shaped": 47,
+  "minecraft:crafting_shapeless": 18,
+  "minecraft:smelting": 9,
+  "minecraft:smoking": 8
+ },
+ "botanypots": [],
+ "problems": []
+}
