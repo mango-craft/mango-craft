@@ -26,7 +26,14 @@ I tag hanno la forma `1.21.1-vX.Y.Z`: la parte prima di `-v` è la versione di M
 
 ## Mod di CurseForge da scaricare a mano
 
-Alcuni autori di CurseForge non permettono il download dai launcher esterni. L'installer allora mostra la pagina della mod e il percorso esatto dove salvare il file: scaricalo dal browser, mettilo lì e continua. Succede una volta per istanza, e di nuovo solo se quella mod cambia versione.
+Alcuni autori di CurseForge non permettono il download dai launcher esterni (oggi succede con **Roaster's Delight**). L'installer allora si ferma con la finestra **Failed file downloads**:
+
+1. Clicca il nome della mod nell'elenco: a destra compare il messaggio con la pagina e il **percorso esatto** dove salvare il file (la cartella `mods` dell'istanza).
+2. Premi **Open missing mods**: si apre la pagina del file giusto su CurseForge. Premi *Download* e aspetta qualche secondo.
+3. Sposta il file scaricato in quel percorso, **senza rinominarlo** (attenzione ai doppioni tipo `(1)` nel nome).
+4. Torna alla finestra e premi **Continue**: l'installer ricontrolla, trova il file e prosegue.
+
+Se premi *Continue* senza aver messo il file, la finestra ricompare. Succede una volta per istanza, e di nuovo solo se quella mod cambia versione.
 
 ## Da sapere
 
