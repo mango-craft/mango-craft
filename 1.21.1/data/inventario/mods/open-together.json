@@ -1,0 +1,66 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Open Together",
+ "file": "OpenTogether-v21.1.2-mc1.21.1-NeoForge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "b712994a3de7c967f2a0f428ada176bcdb47abf09482233ed4477cf160fc6804509186e230806cb20b2c1abf8461823c2c6b9de17ed5916c8a5f391ec628a67a",
+ "mods": [
+  {
+   "modid": "opentogether",
+   "name": "Open Together",
+   "version": "21.1.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,1.21.2)",
+     "side": null
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.21,)",
+     "side": null
+    },
+    {
+     "modid": "puzzleslib",
+     "type": "required",
+     "range": "[21.1.48,)",
+     "side": null
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "opentogether"
+ ],
+ "data": {
+  "tags/block": [
+   "opentogether:double_doors",
+   "opentogether:double_fence_gates",
+   "opentogether:double_trapdoors"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "opentogether:double_doors": [
+    "#minecraft:doors"
+   ],
+   "opentogether:double_fence_gates": [
+    "#minecraft:fence_gates"
+   ],
+   "opentogether:double_trapdoors": [
+    "#minecraft:trapdoors"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

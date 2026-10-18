@@ -1,0 +1,218 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Lithostitched",
+ "file": "lithostitched-1.8.1-neoforge-21.1.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "6c02b8b269269d5aa84cb03bf824a1b5d52838e806c2fec8727eb4049925592dac9bb65c996858751fbb722f22ac59c4be09860e1f01e8f7b97c95be3faf7a57",
+ "mods": [
+  {
+   "modid": "lithostitched",
+   "name": "Lithostitched",
+   "version": "1.8.1",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.21.1]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "apollib",
+     "type": "required",
+     "range": "[1.2.0,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "apollib",
+   "name": "Apollib",
+   "version": "1.2.0",
+   "jar": "apollib-1.2.0-neoforge-21.1.jar",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "apollib-1.2.0-neoforge-21.1.jar",
+  "json5-java-3.0.0.jar"
+ ],
+ "namespaces": [
+  "apollib",
+  "lithostitched",
+  "minecraft"
+ ],
+ "data": {
+  "lithostitched": [
+   "lithostitched:fast_noise_config/region/overworld",
+   "lithostitched:fast_noise_config/region/the_end",
+   "lithostitched:fast_noise_config/region/the_nether",
+   "lithostitched:region/overworld",
+   "lithostitched:region/the_end",
+   "lithostitched:region/the_nether",
+   "lithostitched:template_list/nether_fossil",
+   "lithostitched:template_list/ruined_portal/giant",
+   "lithostitched:template_list/ruined_portal/standard",
+   "lithostitched:template_list/shipwreck/beached",
+   "lithostitched:template_list/shipwreck/ocean",
+   "lithostitched:template_list/woodland_mansion/first_floor/1x1",
+   "lithostitched:template_list/woodland_mansion/first_floor/1x1_secret",
+   "lithostitched:template_list/woodland_mansion/first_floor/1x2_front",
+   "lithostitched:template_list/woodland_mansion/first_floor/1x2_secret",
+   "lithostitched:template_list/woodland_mansion/first_floor/1x2_side",
+   "lithostitched:template_list/woodland_mansion/first_floor/2x2",
+   "lithostitched:template_list/woodland_mansion/first_floor/2x2_secret",
+   "lithostitched:template_list/woodland_mansion/second_floor/1x1",
+   "lithostitched:template_list/woodland_mansion/second_floor/1x1_secret",
+   "lithostitched:template_list/woodland_mansion/second_floor/1x2_front",
+   "lithostitched:template_list/woodland_mansion/second_floor/1x2_secret",
+   "lithostitched:template_list/woodland_mansion/second_floor/1x2_side",
+   "lithostitched:template_list/woodland_mansion/second_floor/2x2",
+   "lithostitched:template_list/woodland_mansion/second_floor/2x2_secret",
+   "lithostitched:template_list/woodland_mansion/third_floor/1x1",
+   "lithostitched:template_list/woodland_mansion/third_floor/1x1_secret",
+   "lithostitched:template_list/woodland_mansion/third_floor/1x2_front",
+   "lithostitched:template_list/woodland_mansion/third_floor/1x2_secret",
+   "lithostitched:template_list/woodland_mansion/third_floor/1x2_side",
+   "lithostitched:template_list/woodland_mansion/third_floor/2x2",
+   "lithostitched:template_list/woodland_mansion/third_floor/2x2_secret",
+   "lithostitched:worldgen_modifier/compile_raw_templates",
+   "lithostitched:worldgen_modifier/rereference_noise_settings",
+   "lithostitched:worldgen_modifier/set_trial_chambers_pool_aliases"
+  ],
+  "tags/block": [
+   "lithostitched:supports_mineshaft_extension",
+   "lithostitched:supports_ruined_portal_leaves"
+  ],
+  "tags/worldgen/biome": [
+   "lithostitched:has_villager_type/desert",
+   "lithostitched:has_villager_type/jungle",
+   "lithostitched:has_villager_type/plains",
+   "lithostitched:has_villager_type/savanna",
+   "lithostitched:has_villager_type/snow",
+   "lithostitched:has_villager_type/swamp",
+   "lithostitched:has_villager_type/taiga"
+  ],
+  "tags/worldgen/biome_source": [
+   "lithostitched:cannot_inject_into"
+  ],
+  "tags/worldgen/processor_list": [
+   "lithostitched:shipwreck_palettes"
+  ],
+  "tags/worldgen/template_pool": [
+   "lithostitched:trial_spawner/melee",
+   "lithostitched:trial_spawner/ranged",
+   "lithostitched:trial_spawner/slow_ranged",
+   "lithostitched:trial_spawner/small_melee"
+  ],
+  "worldgen/density_function": [
+   "lithostitched:region/overworld",
+   "lithostitched:region/shift_x",
+   "lithostitched:region/shift_z",
+   "lithostitched:region/the_end",
+   "lithostitched:region/the_nether"
+  ],
+  "worldgen/noise": [
+   "lithostitched:region/offset"
+  ],
+  "worldgen/processor_list": [
+   "lithostitched:buried_treasure",
+   "lithostitched:desert_temple",
+   "lithostitched:end_city",
+   "lithostitched:igloo",
+   "lithostitched:jungle_temple",
+   "lithostitched:mineshaft",
+   "lithostitched:nether_fortress",
+   "lithostitched:nether_fossil",
+   "lithostitched:ocean_monument",
+   "lithostitched:ocean_ruin_cold",
+   "lithostitched:ocean_ruin_warm",
+   "lithostitched:ruined_portal",
+   "lithostitched:shipwreck",
+   "lithostitched:shipwreck_palette/dark_oak_and_jungle",
+   "lithostitched:shipwreck_palette/dark_oak_and_spruce",
+   "lithostitched:shipwreck_palette/jungle_and_spruce",
+   "lithostitched:shipwreck_palette/oak_and_birch",
+   "lithostitched:shipwreck_palette/oak_and_spruce",
+   "lithostitched:shipwreck_palette/spruce_and_dark_oak",
+   "lithostitched:shipwreck_palette/spruce_and_jungle",
+   "lithostitched:shipwreck_palette/spruce_and_oak",
+   "lithostitched:stronghold",
+   "lithostitched:swamp_hut",
+   "lithostitched:woodland_mansion"
+  ],
+  "worldgen/template_pool": [
+   "minecraft:trial_chambers/chamber/entrance_cap"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "lithostitched:supports_mineshaft_extension": [],
+   "lithostitched:supports_ruined_portal_leaves": []
+  },
+  "tags/worldgen/biome": {
+   "lithostitched:has_villager_type/desert": [],
+   "lithostitched:has_villager_type/jungle": [],
+   "lithostitched:has_villager_type/plains": [],
+   "lithostitched:has_villager_type/savanna": [],
+   "lithostitched:has_villager_type/snow": [],
+   "lithostitched:has_villager_type/swamp": [],
+   "lithostitched:has_villager_type/taiga": []
+  },
+  "tags/worldgen/biome_source": {
+   "lithostitched:cannot_inject_into": [
+    "minecraft:fixed",
+    "minecraft:checkerboard"
+   ]
+  },
+  "tags/worldgen/processor_list": {
+   "lithostitched:shipwreck_palettes": [
+    "lithostitched:shipwreck_palette/oak_and_birch",
+    "lithostitched:shipwreck_palette/oak_and_spruce",
+    "lithostitched:shipwreck_palette/dark_oak_and_jungle",
+    "lithostitched:shipwreck_palette/dark_oak_and_spruce",
+    "lithostitched:shipwreck_palette/jungle_and_spruce",
+    "lithostitched:shipwreck_palette/spruce_and_dark_oak",
+    "lithostitched:shipwreck_palette/spruce_and_jungle",
+    "lithostitched:shipwreck_palette/spruce_and_oak"
+   ]
+  },
+  "tags/worldgen/template_pool": {
+   "lithostitched:trial_spawner/melee": [
+    "minecraft:trial_chambers/spawner/melee/zombie",
+    "minecraft:trial_chambers/spawner/melee/husk",
+    "minecraft:trial_chambers/spawner/melee/spider"
+   ],
+   "lithostitched:trial_spawner/ranged": [
+    "minecraft:trial_chambers/spawner/ranged/skeleton",
+    "minecraft:trial_chambers/spawner/ranged/stray",
+    "minecraft:trial_chambers/spawner/ranged/poison_skeleton"
+   ],
+   "lithostitched:trial_spawner/slow_ranged": [
+    "minecraft:trial_chambers/spawner/slow_ranged/skeleton",
+    "minecraft:trial_chambers/spawner/slow_ranged/stray",
+    "minecraft:trial_chambers/spawner/slow_ranged/poison_skeleton"
+   ],
+   "lithostitched:trial_spawner/small_melee": [
+    "minecraft:trial_chambers/spawner/small_melee/slime",
+    "minecraft:trial_chambers/spawner/small_melee/cave_spider",
+    "minecraft:trial_chambers/spawner/small_melee/silverfish",
+    "minecraft:trial_chambers/spawner/small_melee/baby_zombie"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

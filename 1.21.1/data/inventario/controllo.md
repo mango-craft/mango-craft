@@ -2,9 +2,9 @@
 
 File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non modificarlo a mano.
 
-- Mod nell'inventario: 336 (mod id), namespace: 293
+- Mod nell'inventario: 357 (mod id), namespace: 311
 - File del datapack controllati: 30 (0 inattivi)
-- **Errori: 0** · avvisi: 16
+- **Errori: 0** · avvisi: 15
 
 ## Errori
 
@@ -14,7 +14,6 @@ File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non 
 
 - `config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/desert_pyramid.json`: `dungeons_arise:chests/desert_city_big` (loot_table) non esiste
 - `config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json`: `dungeons_arise:chests/illager_fortress_small` (loot_table) non esiste
-- `config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json`: `supplementaries:loot/galleon/safe` (loot_table) non esiste
 - `config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json`: `dungeons_arise:chests/giant_mushroom/red_giant_mushroom` (loot_table) non esiste
 - `config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json`: `dungeons_arise:chests/giant_mushroom/twin_giant_mushroom` (loot_table) non esiste
 - `config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json`: `dungeons_arise:chests/temple_treasure_small` (loot_table) non esiste

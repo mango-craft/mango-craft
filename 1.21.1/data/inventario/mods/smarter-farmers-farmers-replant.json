@@ -1,0 +1,130 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Smarter Farmers (farmers replant)",
+ "file": "smarterfarmers-1.21-2.2.4-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "a79babd2e4fd42823dbbfc6afedd30e57462d693fe255b7e4306023d0567f183196c9b142356b43803ad8e503a386642aa91b9b29835f739c233bce768018d62",
+ "mods": [
+  {
+   "modid": "smarterfarmers",
+   "name": "Smarter Farmers",
+   "version": "1.21-2.2.4",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[4,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "moonlight",
+     "type": "required",
+     "range": "*",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "minecraft",
+  "smarterfarmers"
+ ],
+ "data": {
+  "tags/block": [
+   "smarterfarmers:farmland",
+   "smarterfarmers:harvest_blacklist",
+   "smarterfarmers:harvest_on_farmland",
+   "smarterfarmers:harvest_on_tillable",
+   "smarterfarmers:harvest_on_tillable_no_replant",
+   "smarterfarmers:tillable"
+  ],
+  "tags/item": [
+   "minecraft:villager_plantable_seeds",
+   "smarterfarmers:stem_seeds",
+   "smarterfarmers:villagers_cant_eat"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "smarterfarmers:farmland": [
+    "minecraft:farmland",
+    "#neoforge:villager_farmlands?",
+    "immersive_weathering:mulch_block?",
+    "immersive_weathering:mulch?",
+    "supplementaries:planter?",
+    "supplementaries:rich_soil_planter?",
+    "farmers_delight:rich_soil_farmland?"
+   ],
+   "smarterfarmers:harvest_blacklist": [],
+   "smarterfarmers:harvest_on_farmland": [
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "minecraft:large_fern",
+    "minecraft:fern"
+   ],
+   "smarterfarmers:harvest_on_tillable": [
+    "heftycrops:hefty_beetroot?",
+    "heftycrops:hefty_carrot?",
+    "heftycrops:hefty_potato?",
+    "heftycrops:hefty_cocoa?",
+    "heftycrops:hefty_cabbage?",
+    "heftycrops:hefty_onion?",
+    "heftycrops:hefty_tomato?",
+    "overweight_farming:overweight_tomato_block?",
+    "overweight_farming:overweight_onion_block?",
+    "overweight_farming:overweight_carrot_block?",
+    "overweight_farming:overweight_cabbage_block?",
+    "overweight_farming:overweight_ginger_block?",
+    "overweight_farming:overweight_beetroot_block?",
+    "overweight_farming:overweight_cocoa_block?",
+    "overweight_farming:overweight_potato_block?"
+   ],
+   "smarterfarmers:harvest_on_tillable_no_replant": [
+    "minecraft:pumpkin",
+    "minecraft:melon",
+    "immersive_weathering:weeds?"
+   ],
+   "smarterfarmers:tillable": [
+    "#minecraft:dirt",
+    "farmers_delight:rich_soil?"
+   ]
+  },
+  "tags/item": {
+   "minecraft:villager_plantable_seeds": [
+    "farmersdelight:cabbage_seeds?",
+    "farmersdelight:tomato_seeds?",
+    "minecraft:pumpkin_seeds?",
+    "minecraft:melon_seeds?"
+   ],
+   "smarterfarmers:stem_seeds": [
+    "minecraft:melon_seeds",
+    "minecraft:pumpkin_seeds"
+   ],
+   "smarterfarmers:villagers_cant_eat": [
+    "#c:foods/meat?",
+    "#c:foods/raw_meat?",
+    "#c:foods/raw_fish?",
+    "#c:foods/cooked_meat?",
+    "#c:foods/cooked_fish?",
+    "#c:foods/soup?",
+    "#c:foods/food_poisoning?",
+    "#c:foods/golden?"
+   ]
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -1,0 +1,126 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Moonlight Lib",
+ "file": "moonlight-1.21.1-3.7.2-neoforge.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "b4e8efba91e5f46729928335cce8952ad70af3e33b851e8cf4887a24346f7bbdfe3609f8cc482f76a715aa050bf39e7048ee97b33183e5c358f149bc3678183c",
+ "mods": [
+  {
+   "modid": "moonlight",
+   "name": "Moonlight Lib",
+   "version": "1.21.1-3.7.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1]",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "codecui",
+   "name": "CodecUI",
+   "version": "1.21.1-1.4.7",
+   "jar": "codecui-neoforge-1.21.1-1.4.7.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": null,
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.21.2)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "codecui-neoforge-1.21.1-1.4.7.jar"
+ ],
+ "namespaces": [
+  "c",
+  "minecraft",
+  "moonlight"
+ ],
+ "blocks": {
+  "moonlight:spawn_box": "Spawn Box Block"
+ },
+ "fluids": {
+  "moonlight:generic_fluid": "Unnamed Fluid"
+ },
+ "items": {
+  "minecraft:potion_lingering": "Lingering Potion",
+  "minecraft:potion_splash": "Splash Potion",
+  "moonlight:placeable_item": "",
+  "moonlight:spawn_box": ""
+ },
+ "data": {
+  "color_sets": [
+   "moonlight:rune",
+   "moonlight:sacks",
+   "moonlight:shard",
+   "moonlight:stained_glass",
+   "moonlight:stained_glass_pane"
+  ],
+  "moonlight": [
+   "moonlight:map_marker/generic_structure",
+   "moonlight:soft_fluid/beetroot_soup",
+   "moonlight:soft_fluid/dragon_breath",
+   "moonlight:soft_fluid/empty",
+   "moonlight:soft_fluid/experience",
+   "moonlight:soft_fluid/ghast_tear",
+   "moonlight:soft_fluid/honey",
+   "moonlight:soft_fluid/lava",
+   "moonlight:soft_fluid/magma_cream",
+   "moonlight:soft_fluid/milk",
+   "moonlight:soft_fluid/mushroom_stew",
+   "moonlight:soft_fluid/ominous_liquid",
+   "moonlight:soft_fluid/potion",
+   "moonlight:soft_fluid/powder_snow",
+   "moonlight:soft_fluid/rabbit_stew",
+   "moonlight:soft_fluid/slime",
+   "moonlight:soft_fluid/suspicious_stew",
+   "moonlight:soft_fluid/water",
+   "moonlight:token"
+  ],
+  "tags/block": [
+   "minecraft:dragon_immune",
+   "minecraft:mineable/shear",
+   "minecraft:wither_immune"
+  ],
+  "tags/item": [
+   "c:hidden_from_recipe_viewers",
+   "moonlight:non_recolorable"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:dragon_immune": [
+    "moonlight:spawn_box"
+   ],
+   "minecraft:mineable/shear": [],
+   "minecraft:wither_immune": [
+    "moonlight:spawn_box"
+   ]
+  },
+  "tags/item": {
+   "c:hidden_from_recipe_viewers": [
+    "moonlight:placeable_item"
+   ],
+   "moonlight:non_recolorable": []
+  }
+ },
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

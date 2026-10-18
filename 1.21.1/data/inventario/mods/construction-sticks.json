@@ -1,0 +1,140 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Construction Sticks",
+ "file": "ConstructionSticks-1.21.1-1.5.0.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "8ac03ef221e657d8c864130e03dbc0b5f45627836547128fcd866fc5f04a0a5ad66d72c1c7a3cceec906146ec728fba9dc1f976a48a62dfa40d3efabeead5ad6",
+ "mods": [
+  {
+   "modid": "constructionstick",
+   "name": "Construction Sticks",
+   "version": "1.5.0",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "constructionstick",
+  "emi"
+ ],
+ "items": {
+  "constructionstick:copper_stick": "Copper Stick",
+  "constructionstick:copper_stick_angel": "",
+  "constructionstick:copper_stick_destruction": "",
+  "constructionstick:diamond_stick": "Diamond Stick",
+  "constructionstick:diamond_stick_angel": "",
+  "constructionstick:diamond_stick_destruction": "",
+  "constructionstick:iron_stick": "Iron Stick",
+  "constructionstick:iron_stick_angel": "",
+  "constructionstick:iron_stick_destruction": "",
+  "constructionstick:netherite_stick": "Netherite Stick",
+  "constructionstick:netherite_stick_angel": "",
+  "constructionstick:netherite_stick_destruction": "",
+  "constructionstick:template_angel": "Angel Stick Template",
+  "constructionstick:template_battery": "Battery Template",
+  "constructionstick:template_destruction": "Destruction Stick Template",
+  "constructionstick:template_replacement": "Replacement Stick Template",
+  "constructionstick:template_unbreakable": "Unbreakable Template",
+  "constructionstick:wooden_stick": "Stickiest Stick",
+  "constructionstick:wooden_stick_angel": "",
+  "constructionstick:wooden_stick_destruction": ""
+ },
+ "data": {
+  "recipe": [
+   "constructionstick:copper_stick",
+   "constructionstick:diamond_stick",
+   "constructionstick:iron_stick",
+   "constructionstick:netherite_stick",
+   "constructionstick:smithing_upgrade/copper_stick_with_template_angel",
+   "constructionstick:smithing_upgrade/copper_stick_with_template_battery",
+   "constructionstick:smithing_upgrade/copper_stick_with_template_destruction",
+   "constructionstick:smithing_upgrade/copper_stick_with_template_replacement",
+   "constructionstick:smithing_upgrade/copper_stick_with_template_unbreakable",
+   "constructionstick:smithing_upgrade/diamond_stick_with_template_angel",
+   "constructionstick:smithing_upgrade/diamond_stick_with_template_battery",
+   "constructionstick:smithing_upgrade/diamond_stick_with_template_destruction",
+   "constructionstick:smithing_upgrade/diamond_stick_with_template_replacement",
+   "constructionstick:smithing_upgrade/diamond_stick_with_template_unbreakable",
+   "constructionstick:smithing_upgrade/iron_stick_with_template_angel",
+   "constructionstick:smithing_upgrade/iron_stick_with_template_battery",
+   "constructionstick:smithing_upgrade/iron_stick_with_template_destruction",
+   "constructionstick:smithing_upgrade/iron_stick_with_template_replacement",
+   "constructionstick:smithing_upgrade/iron_stick_with_template_unbreakable",
+   "constructionstick:smithing_upgrade/netherite_stick_with_template_angel",
+   "constructionstick:smithing_upgrade/netherite_stick_with_template_battery",
+   "constructionstick:smithing_upgrade/netherite_stick_with_template_destruction",
+   "constructionstick:smithing_upgrade/netherite_stick_with_template_replacement",
+   "constructionstick:smithing_upgrade/netherite_stick_with_template_unbreakable",
+   "constructionstick:smithing_upgrade/wooden_stick_with_template_angel",
+   "constructionstick:smithing_upgrade/wooden_stick_with_template_battery",
+   "constructionstick:smithing_upgrade/wooden_stick_with_template_destruction",
+   "constructionstick:smithing_upgrade/wooden_stick_with_template_replacement",
+   "constructionstick:smithing_upgrade/wooden_stick_with_template_unbreakable",
+   "constructionstick:template_angel",
+   "constructionstick:template_battery",
+   "constructionstick:template_destruction",
+   "constructionstick:template_replacement",
+   "constructionstick:template_unbreakable",
+   "constructionstick:wooden_stick"
+  ],
+  "tags/block": [
+   "constructionstick:non_placable",
+   "constructionstick:non_replaceable"
+  ],
+  "tags/item": [
+   "constructionstick:construction_sticks"
+  ]
+ },
+ "data_counts": {
+  "advancement": 42
+ },
+ "tags": {
+  "tags/block": {
+   "constructionstick:non_placable": [
+    "powah:reactor_starter?",
+    "powah:reactor_basic?",
+    "powah:reactor_hardened?",
+    "powah:reactor_blazing?",
+    "powah:reactor_niotic?",
+    "powah:reactor_spirited?",
+    "powah:reactor_nitro?"
+   ],
+   "constructionstick:non_replaceable": [
+    "#c:relocation_not_supported",
+    "#constructionstick:non_placable"
+   ]
+  },
+  "tags/item": {
+   "constructionstick:construction_sticks": [
+    "constructionstick:wooden_stick",
+    "constructionstick:copper_stick",
+    "constructionstick:iron_stick",
+    "constructionstick:diamond_stick",
+    "constructionstick:netherite_stick"
+   ]
+  }
+ },
+ "recipe_types": {
+  "constructionstick:smithing_upgrade": 25,
+  "minecraft:crafting_shaped": 10
+ },
+ "botanypots": [],
+ "problems": []
+}
