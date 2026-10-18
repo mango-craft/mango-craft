@@ -304,6 +304,20 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Autochef's Delight | [`autochefs-delight`](https://modrinth.com/mod/autochefs-delight) MR | 2.0.3+neoforge | 2026-04-30 | release | ✅ | ARR; modifica la pentola di FD. Pack 0.3.0 |
 | Farming for Blockheads | [`farming-for-blockheads`](https://modrinth.com/mod/farming-for-blockheads) MR | 21.1.14+neoforge-1.21.1 | 2026-09-25 | release | ✅ | ARR; richiede Balm; niente irrigatori nella 1.21.1. Pack 0.3.0 |
 | Cognition (ex Experience Obelisk) | [`cognition`](https://modrinth.com/mod/cognition) MR | 2.4.13 | 2026-07-10 | release | ✅ | MIT; richiede GeckoLib; liquido `cognition:cognitium_source` (20 mB per punto, `c:experience`). Pack 0.3.0 |
+| Macaw's Roofs | [`macaws-roofs`](https://modrinth.com/mod/macaws-roofs) MR | 2.3.2 | 2025-05-04 | release | ✅ | ARR. Pack 0.4.0 (18/10/2026) |
+| Macaw's Paths and Pavings | [`macaws-paths-and-pavings`](https://modrinth.com/mod/macaws-paths-and-pavings) MR | 1.1.1 | 2025-09-24 | release | ✅ | MIT. Pack 0.4.0 |
+| Macaw's Bridges | [`macaws-bridges`](https://modrinth.com/mod/macaws-bridges) MR | 3.1.2 | 2026-02-15 | release | ✅ | ARR. Pack 0.4.0 |
+| Macaw's Windows | [`macaws-windows`](https://modrinth.com/mod/macaws-windows) MR | 2.4.2 | 2025-12-10 | release | ✅ | ARR. Pack 0.4.0 |
+| Diagonal Fences | [`diagonal-fences`](https://modrinth.com/mod/diagonal-fences) MR | v21.1.1-1.21.1-NeoForge | 2024-11-18 | release | ⚠️ | MPL-2.0; ramo 1.21.1 fermo al 2024; richiede Puzzles Lib. Pack 0.4.0 |
+| Diagonal Walls | [`diagonal-walls`](https://modrinth.com/mod/diagonal-walls) MR | v21.1.2-1.21.1-NeoForge | 2024-11-19 | release | ⚠️ | MPL-2.0; ramo 1.21.1 fermo al 2024. Pack 0.4.0 |
+| Diagonal Windows | [`diagonal-windows`](https://modrinth.com/mod/diagonal-windows) MR | v21.1.1-1.21.1-NeoForge | 2024-11-18 | release | ⚠️ | MPL-2.0; ramo 1.21.1 fermo al 2024. Pack 0.4.0 |
+| Chimes | [`chimes`](https://modrinth.com/mod/chimes) MR | 2.1.1 | 2026-10-02 | release | ✅ | ARR. Pack 0.4.0 |
+| Exposure | [`exposure`](https://modrinth.com/mod/exposure) MR | 1.9.19 | 2026-09-23 | release | ✅ | MIT. Pack 0.4.0 |
+| Guard Villagers | [`guard-villagers`](https://modrinth.com/mod/guard-villagers) MR | 2.4.12 | 2026-08-30 | release | ✅ | Licenza propria. ⚠️ guardie nei villaggi generati. Pack 0.4.0 |
+| Every Compat (Wood Good) | [`every-compat`](https://modrinth.com/mod/every-compat) MR | 1.21-2.11.54 | 2026-10-17 | release | ✅ | ARR; richiede Moonlight. Config ridotta prevista nella 0.6.0. Pack 0.4.0 |
+| Create: Copycats+ | [`copycats`](https://modrinth.com/mod/copycats) MR | 3.0.9+mc.1.21.1-neoforge | 2026-09-06 | release | ✅ | ARR; richiede Create. Pack 0.4.0 |
+| Goblin Traders | [`goblin-traders`](https://www.curseforge.com/minecraft/mc-mods/goblin-traders) CF | 1.11.2 | — | release | ✅ | MIT; **solo CurseForge**; richiede Framework. Pack 0.4.0 |
+| Framework (dipendenza) | [`framework`](https://www.curseforge.com/minecraft/mc-mods/framework) CF | 0.13.11 | — | release | ✅ | Libreria di MrCrayfish, **solo CurseForge**; licenza da verificare. Pack 0.4.0 |
 
 ## Librerie principali (scaricate da Prism)
 
