@@ -15,13 +15,14 @@ Il pack è gestito con [packwiz](https://packwiz.infra.link/): il repository con
 ## Installazione in Prism (in breve)
 
 1. Scarica `packwiz-installer-bootstrap.jar` dalle [release ufficiali](https://github.com/packwiz/packwiz-installer-bootstrap/releases).
-2. In Prism crea un'istanza **Minecraft 1.21.1** con **NeoForge 21.1.259**.
+2. In Prism crea un'istanza **Minecraft 1.21.1** con **NeoForge 21.1.259**, e nelle sue impostazioni (*Java*) dai 8 GB di memoria massima.
 3. Metti il `.jar` nella cartella `minecraft` dell'istanza (tasto destro sull'istanza → *Cartella*).
 4. Nelle impostazioni dell'istanza, *Comandi personalizzati* → *Comando prima dell'avvio* (Pre-launch command):
    ```
    "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/mango-craft/mango-craft/refs/tags/1.21.1-v0.1.1/1.21.1/pack/pack.toml
    ```
-5. Avvia: la prima volta scarica circa 200 file. Alcune mod di CurseForge vanno scaricate a mano: l'installer mostra la pagina e dove salvare il file.
+5. Avvia: la prima volta scarica circa 200 file.
+6. Alcune mod di CurseForge (oggi Roaster's Delight) vanno scaricate a mano: nella finestra *Failed file downloads* clicca la mod per vedere dove salvarla, premi *Open missing mods*, scarica il file, mettilo in quel percorso senza rinominarlo e premi *Continue*. Passi dettagliati: [mod da scaricare a mano](docs/prism.md#mod-di-curseforge-da-scaricare-a-mano).
 
 Guida completa, con le istanze di prova, del mondo vero e di archivio: [`docs/prism.md`](docs/prism.md).
 
