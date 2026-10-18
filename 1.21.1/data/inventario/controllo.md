@@ -4,11 +4,11 @@ File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non 
 
 - Mod nell'inventario: 400 (mod id), namespace: 373
 - File del datapack controllati: 33 (0 inattivi)
-- **Errori: 0** · avvisi: 15
+- **Errori: 1** · avvisi: 15
 
 ## Errori
 
-- nessuno
+- Versione non adatta: `mns` [mns-moogs-nether-structures] richiede moogs_structures [3.3.0,), nel pack c'è 3.0.3
 
 ## Avvisi
 
