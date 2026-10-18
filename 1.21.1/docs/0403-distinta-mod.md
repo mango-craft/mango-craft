@@ -341,4 +341,6 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 
 ## Librerie principali (arrivano come dipendenze)
 
-Tutte con build NeoForge 1.21.1: YUNG's API 5.1.9 · Placebo 9.9.2 · Moog's Structure Lib 3.4.2 · Create: Dragons Plus 1.11.9 · Sophisticated Core 1.5.13 · Fzzy Config 0.7.7 · Bookshelf 21.1.81 · Prickle 21.1.11 · CorgiLib 5.0.0.10 · Data Anchor 2.0.0.17 · Puzzles Lib 21.1.64 · Resourceful Config 3.0.11 · CreativeCore 2.13.50. Non verificate una per una ma standard: Architectury, Balm, GeckoLib, Curios, Accessories, Citadel, Lionfish API, Blueprint, TerraBlender, NexusLib, Cristel Lib, Resourceful Lib.
+Versioni ricontrollate sui metafile del pack il 18/10/2026 (prima alcune erano quelle della verifica, non quelle installate). Moog's Structure Lib è passata dalla 3.0.3 alla 3.4.2 nella 0.5.0, perché Moog's Nether Structures chiede almeno la 3.3.0 (bug B28).
+
+Tutte con build NeoForge 1.21.1: YUNG's API 5.1.9 · Placebo 9.9.4 · Moog's Structure Lib 3.4.2 · Create: Dragons Plus 1.11.9 · Sophisticated Core 1.5.13 · Fzzy Config 0.7.7 · Bookshelf 21.1.81 · Prickle 21.1.11 · CorgiLib 5.0.0.9 · Data Anchor 2.0.0.14 · Puzzles Lib 21.1.64 · Resourceful Config 3.0.11 · CreativeCore 2.13.50. Non verificate una per una ma standard: Architectury, Balm, GeckoLib, Curios, Accessories, Citadel, Lionfish API, Blueprint, TerraBlender, NexusLib, Cristel Lib, Resourceful Lib.

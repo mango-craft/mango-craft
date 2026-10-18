@@ -59,4 +59,5 @@ _Ultimo aggiornamento: 18/10/2026 (versioni fino alla 0.4.0, prima prova)._
 | B18 | 0.1.0 | `README.md` maiuscoli dentro `data/` del datapack: "Invalid path in pack" | Rinominati `readme.md` | 0.1.1 |
 | B19 | 0.1.0 | Il file per i vasi di Ars Elemental è nel formato vecchio e con il nome sbagliato: non si carica | Coltura e terreni scritti nel nostro datapack | 0.1.0 |
 | B20 | 0.1.0 | Il pesce cotto di Starcatcher non vale come "pesce cotto" nelle ricette | Etichette del pesce cotto nel datapack | 0.3.0 |
+| B28 | 0.5.0 | Il gioco non parte: Moog's Nether Structures richiede Moog's Structure Lib 3.3.0 o più recente, nel pack c'era la 3.0.3. packwiz non aggiorna una libreria già presente quando una mod nuova ne chiede una versione più recente, e il controllo dei nomi verificava solo la versione di NeoForge | Libreria aggiornata alla 3.4.2; il controllo dei nomi ora verifica le versioni richieste di tutte le dipendenze | 0.5.0 |
 | B21 | 0.1.1 | Istanza nuova: il bootstrap riceve 403 da GitHub e non parte | Non è un bug del pack (limite di GitHub): copiare `packwiz-installer.jar` o creare l'istanza per copia. In `../../docs/0101-installazione.md` | — |

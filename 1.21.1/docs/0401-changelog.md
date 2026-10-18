@@ -17,8 +17,9 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 - **Nether**: **Jaden's Nether Expansion** (biomi ridecorati e sottobiomi, mob, strutture, piante; librerie nuove **Elysium API** e **Lodestone**), **Moog's Nether Structures** (52 strutture fino a una mega-fortezza; la fortezza vanilla resta a YUNG's, opzione spenta di serie), **Nether Depths Upgrade** (alghe e pesci nei mari di lava, canna da pesca per la lava, accanto alla pesca di Starcatcher).
 - **Esplorazione**: **Aures Farmers Structures** (costruzioni rurali a tema Farmer's Delight), **Better Archeology** (fossili, reperti, siti di scavo), **Nature's Compass** (bussola che trova i biomi), **Paragliders** (parapendio; genera statue).
 - **Mob**: **Aquamirae** (boss e mob degli oceani ghiacciati; libreria nuova **Fragmentum**), **Creeper Overhaul** (creeper diversi per bioma).
+- **Librerie aggiornate**: **Moog's Structure Lib** dalla 3.0.3 alla 3.4.2 (Moog's Nether Structures chiede almeno la 3.3.0).
 - **Stato**: 🧪 in prova su `dev`.
-- **Problemi noti**: da provare.
+- **Problemi noti**: B28 (il gioco non partiva per la libreria vecchia) risolto prima del rilascio.
 
 ## 0.4.0 — 18/10/2026 · tappa 3 (pre-release di prova)
 
