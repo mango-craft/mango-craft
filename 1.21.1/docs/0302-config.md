@@ -63,6 +63,7 @@ Non sono ancora file del pack: vanno impostate a mano o entreranno come file di 
   - Config di Cataclysm
   - Born in Chaos: Born In Configuration, oppure la gamerule `naughtinessMechanics` per disattivare il Krampus
   - In Control! ed Enhanced AI sono state scartate nel round del 17/10 (`../lavoro/0602-mod-scartate.md`): da rivalutare solo se la difficoltà non bastasse
+- **Impostazioni video** (Minecraft, Sodium, Iris): **nessun file nel pack**, decisione dell'utente del 19/10/2026: si regolano a seconda del PC. Sodium di serie è già impostato per le prestazioni e in parte si adatta da solo (verificato nel codice della 0.8.13: thread per costruire i chunk = processori meno 6, da 1 a 10, cioè 10 su un Ryzen 7 9700X; correzioni automatiche per alcuni driver NVIDIA, AMD e Intel; contesto OpenGL "senza errori" solo se la scheda lo supporta). Iris non regola niente da sola: la qualità si sceglie dentro ogni pacchetto di shader (profili)
 - **Carry On**: `pickupAllBlocks = true` per prendere in mano anche i blocchi normali (di default solo quelli con inventario o macchinari). La lista nera di default esclude già tutto Create, Ender Storage, Enchantment Industry e alcuni generatori di Mekanism (wind, heat)
 - **FallingTree**: abbatte l'albero intero, stesso principio del vein mining → valutare l'opzione che lo attiva solo da accovacciati
 - **Zaini**: Sophisticated e Traveler's aprono entrambi con **B** → cambiare il tasto di uno (es. Sophisticated su N). Traveler's: `allowShulkerBoxes = true` se si vogliono shulker box o zaini Sophisticated al suo interno
