@@ -1,20 +1,20 @@
 # Documenti di lavoro della versione 1.21.1
 
-Piano, prove, decisioni, progettazione e ricerche per il pack di Minecraft 1.21.1. Codici e regole dei documenti: [`AGENTS.md`](../../AGENTS.md); la documentazione del pack è in [`../docs/`](../docs/README.md).
+Piano, prove, temi aperti, mod candidate e scartate, e un file per ogni versione del pack di Minecraft 1.21.1. Regole dei documenti: [`AGENTS.md`](../../AGENTS.md), sezione 4. La documentazione del pack è in [`../docs/`](../docs/README.md), la conoscenza sulle mod in [`../mod-knowledge/`](../mod-knowledge/README.md), i risultati grezzi delle ricerche in [`../../ai-agents/stage/`](../../ai-agents/README.md).
 
-I documenti **vivi** si aggiornano; quelli **storici** sono fotografie e non si correggono (il log riceve solo righe nuove in fondo).
+Qui ci sono solo documenti **vivi**; le versioni rilasciate sono chiuse (fotografie che non si correggono).
 
 | Codice | Documento | Contenuto | Tipo |
 |---|---|---|---|
-| **0501** | [piano](0501-piano.md) | Tappe verso la 1.0.0 e stato di avanzamento per gruppi | vivo |
-| **0502** | [prove-in-gioco](0502-prove-in-gioco.md) | Prove prioritarie, controlli, rischi, mondo di prova | vivo |
-| **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e dove sono le mod in valutazione | vivo |
-| **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle | vivo |
-| **0602** | [mod-scartate](0602-mod-scartate.md) | Mod lasciate fuori, con il motivo | vivo |
+| **0501** | [piano](0501-piano.md) | Tappe verso la 1.0.0 e stato di avanzamento | vivo |
+| **0502** | [prove-in-gioco](0502-prove-in-gioco.md) | Controlli da fare in gioco, rischi, mondo di prova | vivo |
+| **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e decisioni aperte che valgono per più versioni | vivo |
+| **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle (indice, con le schede) | vivo |
+| **0602** | [mod-scartate](0602-mod-scartate.md) | Mod lasciate fuori, con il motivo (indice) | vivo |
 
 ## Un file per versione (`versioni/`)
 
-Ogni versione del pack ha un file che racconta le sue valutazioni, decisioni, lavoro e prove, nato il 19/10/2026 dalla riorganizzazione dei documenti (prima: log delle decisioni 0610, round 0611, ricerche 0701–0713). Le versioni rilasciate sono chiuse; quella in corso è viva.
+Ogni versione del pack ha un file (`vX.Y.Z.md`) che racconta obiettivo, valutazioni, decisioni, lavoro, prove ed esito. Le versioni rilasciate sono chiuse; quella in corso è viva. Una versione nuova prende lo schema delle precedenti (AGENTS.md, sezione 4). Prima del 19/10/2026 questo materiale stava nel log delle decisioni 0610, nei round 0611 e nelle ricerche 0701–0713.
 
 | File | Versione | Stato |
 |---|---|---|

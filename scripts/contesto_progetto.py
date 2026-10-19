@@ -96,6 +96,39 @@ def index_table(readme, base):
     return rows
 
 
+def current_version_file(mc):
+    """Il file della versione in corso: quello con stato 🔧 (in lavorazione), altrimenti il primo 📋 (pianificata)."""
+    files = sorted((ROOT / mc / "lavoro" / "versioni").glob("v*.md"),
+                   key=lambda f: [int(x) for x in re.findall(r"\d+", f.stem)])
+    for mark in ("🔧", "📋"):
+        for f in files:
+            m = re.search(r"^\*\*Stato\*\*: (.*)$", f.read_text(encoding="utf-8"), flags=re.M)
+            if m and m.group(1).startswith(mark):
+                return f
+    return None
+
+
+def version_summary(mc, f):
+    """Stato, obiettivo e domande ancora da decidere del file della versione in corso."""
+    text = f.read_text(encoding="utf-8")
+    title = text.split("\n", 1)[0].lstrip("# ").strip()
+    stato = re.search(r"^\*\*Stato\*\*: (.*)$", text, flags=re.M).group(1)
+    link = f"{REPO_URL}/{mc}/lavoro/versioni/{f.name}"
+    out = [f"### {title}", f"**Stato**: {stato}", "",
+           section(text, "1. Obiettivo") or "", "",
+           "**Da decidere**", "", section(text, "Da decidere", level=3) or "(niente)", "",
+           f"Valutazioni, lavoro e prove: [{f.name}]({link})."]
+    return "\n".join(out)
+
+
+def sheets_index(mc):
+    """Tabella delle schede di mod-knowledge, con i link al repository."""
+    text = read(f"{mc}/mod-knowledge/README.md")
+    base = f"{REPO_URL}/{mc}/mod-knowledge/"
+    rows = [l for l in text.split("\n") if l.startswith("|")]
+    return re.sub(r"\]\(([^)/]+\.md)\)", lambda m: f"]({base}{m.group(1)})", "\n".join(rows))
+
+
 def main():
     mc = sys.argv[1] if len(sys.argv) > 1 else "1.21.1"
     sha = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT,
@@ -103,6 +136,7 @@ def main():
     agents = read("AGENTS.md")
     bug = read(f"{mc}/docs/0402-bug-report.md")
 
+    cur = current_version_file(mc)
     index = ["| Codice | Documento | Contenuto | Tipo |", "|---|---|---|---|"]
     index += index_table(read("docs/README.md"), "docs")
     index += index_table(read(f"{mc}/docs/README.md"), f"{mc}/docs")
@@ -117,15 +151,20 @@ def main():
         "## 1. Il progetto\n\n" + demote(body(read("docs/0001-progetto.md")), 1),
         "## 2. Come rispondere\n\n" + section(agents, "2. Come rispondere"),
         "## 3. Stato e piano\n\n" + demote(body(read(f"{mc}/lavoro/0501-piano.md")), 1),
-        "## 4. Ultima versione\n\n" + first_entry(read(f"{mc}/docs/0401-changelog.md")),
+        "## 4. Versione in corso e ultima versione\n\n" + (version_summary(mc, cur) + "\n\n" if cur else "")
+        + "### Ultima versione rilasciata\n\n" + demote(first_entry(read(f"{mc}/docs/0401-changelog.md")), 1),
         "## 5. Mod nel pack, per tema\n\n⏳ = approvata, non ancora nel pack. Ruolo, licenza e note di ogni mod: "
         f"[0301-mod]({REPO_URL}/{mc}/docs/0301-mod.md).\n\n" + mod_list(read(f"{mc}/docs/0301-mod.md")),
         "## 6. Cose da non rompere\n\n" + section(read(f"{mc}/docs/0303-note-tecniche.md"), "Cose da non rompere"),
         "## 7. Problemi aperti\n\n### Da correggere da noi\n\n" + section(bug, "🔧")
         + "\n\n### Da verificare in gioco\n\n" + section(bug, "🔍")
         + f"\n\nGli altri (problemi delle mod, risolti): [0402-bug-report]({REPO_URL}/{mc}/docs/0402-bug-report.md).",
-        "## 8. Mod candidate\n\n" + body(read(f"{mc}/lavoro/0601-mod-candidate.md")),
-        "## 9. Dove trovare il resto\n\n" + "\n".join(index),
+        "## 8. Temi aperti\n\n" + demote(body(read(f"{mc}/lavoro/0503-temi-aperti.md")), 1),
+        "## 9. Mod candidate\n\n" + body(read(f"{mc}/lavoro/0601-mod-candidate.md")),
+        "## 10. Schede delle mod e dei temi\n\nConoscenza verificata, con data e fonti (cartella `mod-knowledge`).\n\n" + sheets_index(mc),
+        "## 11. Dove trovare il resto\n\nUn file per versione in "
+        f"[lavoro/versioni]({REPO_URL.replace('/blob/', '/tree/')}/{mc}/lavoro/versioni); risultati grezzi delle ricerche in "
+        f"[ai-agents/stage]({REPO_URL.replace('/blob/', '/tree/')}/ai-agents/stage).\n\n" + "\n".join(index),
     ]
     print("\n\n".join(parts).rstrip() + "\n")
 

@@ -42,3 +42,14 @@ Proposto dall'utente il 19/10/2026. Ricerca completa: `versioni/v0.6.0.md`, sezi
 Sconsigliate: FTB Quests (già scartata), Odyssey Quests (beta appena riscritta), le mod che danno bonus permanenti per ogni progresso (con migliaia di sblocchi di ricette sbilanciano il gioco).
 
 **Da decidere**: se partire dalla schermata (1) e quale delle due, e se e quando scrivere la scheda del pack (2). Le mod sono tra le candidate (`0601-mod-candidate.md`).
+
+## 4. Decisioni aperte che valgono per più versioni
+
+Le decisioni che riguardano solo una versione stanno nel suo file (`versioni/`, sezione Decisioni, "Da decidere"). Qui quelle che attraversano più versioni; quando una si chiude, la riga passa nelle Decisioni della versione che la applica e si toglie da qui.
+
+| # | Decisione | Proposta | Dove si applica |
+|---|---|---|---|
+| 1 | Effetti nuovi della luna di sangue di Enhanced Celestials 2 (mostri più vicini, assedio di zombi ai villaggi): tenerli? Oggi attivi | da decidere, anche prima del mondo di prova | datapack delle lune (scheda `../mod-knowledge/enhanced-celestials-2.md`) |
+| 2 | Achievement: partire dalla schermata dei progressi (Reliable o Lucid) e se e quando scrivere la scheda "Mango Craft" nel datapack | 🟢 una mod per la schermata, poi la scheda | sezione 3; scheda `../mod-knowledge/tema-achievement.md` |
+| 3 | Tasti in conflitto (B, C): elenco dei tasti consigliati | da fare a mano nelle opzioni | prima del mondo vero |
+| 4 | Lingua del gioco: italiano o no, e che fare con le mod senza traduzione | da chiarire | prima del mondo vero |
