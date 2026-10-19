@@ -1449,3 +1449,13 @@ metafile = true
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "1661e7cf8d318e556552fcd2d999038eb728cff74599f65f3ab843f508e28c71"
 metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "507cb3963240110bc71ed7c75cac1682e66d3609536b0bc5ef90a01db3cce21f"
+metafile = true
+
+[[files]]
+file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
+hash = "124adb8dc2e059324dc6b4d80d2b381ab92181a96abe1c2a7c58964c17903bfe"
+metafile = true
