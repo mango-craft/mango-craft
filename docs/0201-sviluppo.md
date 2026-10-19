@@ -62,7 +62,7 @@ La procedura passo per passo. Le regole (rami `dev` e `main`, tag, pre-release, 
 1. Su `dev`: aggiorna `version` in `<versione>/pack/pack.toml` (e `[versions]` se cambia NeoForge).
 2. Aggiungi la voce in `<versione>/docs/0401-changelog.md`: titolo `## X.Y.Z — data`, versione di NeoForge, se serve un mondo nuovo, cosa cambia, **Stato**: 🧪 in prova su `dev`.
 3. Rigenera l'indice e lancia i controlli, poi commit e push su `dev`. Aspetta che il **Controllo pack** sia verde (e, se ha fatto un commit automatico, scarica l'aggiornamento).
-4. **Prova** nell'istanza che segue `dev` (dopo circa 5 minuti, per la cache di GitHub): avvio, mondo nuovo, log. Poi bug report, changelog e piano come dice `AGENTS.md` (Prova di una tappa).
+4. **Prova di uscita** nell'istanza che segue `dev` (dopo circa 5 minuti, per la cache di GitHub): avvio, mondo nuovo, log. Poi bug report, changelog e piano come dice `AGENTS.md` (Prova di una tappa).
 5. Se la prova passa, unisci `dev` in `main` con un merge vero, che conserva il grafico dei rami: `git checkout main && git merge --no-ff dev -m "Versione X.Y.Z" && git push`, poi torna su `dev`.
 6. Crea il tag su `main`, in uno dei due modi:
    - **dal computer**: `git tag 1.21.1-vX.Y.Z && git push origin 1.21.1-vX.Y.Z`;

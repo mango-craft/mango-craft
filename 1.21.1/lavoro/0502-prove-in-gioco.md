@@ -2,6 +2,8 @@
 
 Le prove e i controlli da fare nell'istanza di prova. Documento vivo: i controlli che valgono finché non sono fatti. Una prova fatta si spunta e il risultato va dove serve (un problema nel bug report `../docs/0402-bug-report.md`, un fatto verificato nella scheda della mod in `../mod-knowledge/`, l'esito della versione nel suo file in `versioni/`). Le prove di una versione in lavorazione stanno nel suo file.
 
+**Questo documento raccoglie le prove «nel tempo»**: si fanno giocando, **non bloccano** nessuna uscita (le prove di uscita, poche e rapide, stanno nella sezione 5 del file di ogni versione: regola in `../../AGENTS.md`, sezione 5). Un controllo qui non ancora fatto vuol dire «da tenere d'occhio», non «versione incompleta».
+
 ## Prove prioritarie 🧪
 
 - [ ] **Shader** (Iris, dalla 0.5.2/0.5.3; risultati delle prove già fatte in `versioni/v0.5.2.md` e `v0.5.3.md`). Da fare: accendere a turno **Complementary Reimagined** e **MakeUp - Ultra Fast** e guardare macchinari di Create in movimento, foglie e luci delle mod (MakeUp le riconosce, Complementary no), cielo e luna con una luna di sangue (colori di EC2), Twilight Forest e Aether, blocchi Skyweave di Ars Nouveau (con gli shader diventano neri), effetti di Lodestone nel Nether; poi spegnere gli shader e controllare che il gioco torni com'era; **riprovare con 12 GB di memoria** dopo un ricaricamento delle risorse (B33). Rischi nel tema `../theme-knowledge/shader.md`
