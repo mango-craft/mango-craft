@@ -21,7 +21,7 @@ _Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3)._
 | B01 | 0.1.1 | Datapack, artefatti | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie non esistono più: in quelle casse gli artefatti non compaiono mai | medio | 0.6.0, con i nomi veri dell'inventario |
 | B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati sono legati alla fortezza vanilla, che YUNG's sostituisce: non compaiono mai | medio | 0.6.0 (`berserker_spawn.json` nel datapack) |
 | B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs e Born in Chaos non hanno gli artefatti (nomi delle tabelle mai verificati) | basso | 0.6.0, nomi presi dall'inventario |
-| B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | 0.6.0, config ridotta di Every Compat: rivedere anche il modulo di Rechiseled, che il piano voleva tenere |
+| B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | 0.6.0: i moduli attivi servono tutti, quindi si agisce sulle varianti "connecting" di Rechiseled, sui legni e sulla generazione delle risorse (`../lavoro/0630-pre-progettazione-0.6.md`, sezione 2) |
 
 ## 🔍 Da verificare in gioco
 

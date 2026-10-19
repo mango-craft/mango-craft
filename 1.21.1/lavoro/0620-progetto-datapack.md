@@ -47,6 +47,7 @@ matteo_tweaks/
 - **8 piante di Regions Unexplored** che Botany Pots copre con nomi pre-0.6 (alias): da verificare in gioco.
 - **3 escluse** perché non adatte ai vasi (due fagioli magici, il tronco della vite di Vinery).
 - **13 terreni** da aggiungere.
+- **Ricontato il 19/10/2026** sull'inventario: stessi numeri; in più 4 piante di Jaden's e 2 di Nether Depths; i nomi di Roaster's ora si leggono dall'inventario. Dettagli e piano di lavoro: `0630-pre-progettazione-0.6.md`, sezioni 1 e 7.
 
 | Mod | Da scrivere |
 |---|---:|
@@ -63,12 +64,12 @@ matteo_tweaks/
 | HerbalBrews | 9 (ex BotanyCompatLayer) |
 | Vinery, Meadow | 8 ciascuna (ex BotanyCompatLayer) |
 | Hexerei, Aether's Delight | 7 ciascuna |
-| Roaster's Delight | 5 (sorgente chiuso: nomi da ricavare in gioco) |
+| Roaster's Delight | 5 (sorgente chiuso, nomi letti dall'inventario: `0630`) |
 | Ender's Delight, My Nether's Delight | 4 ciascuna |
 | Twilight's Flavor & Delight, Aether | 3 ciascuna |
 | Reactive, Rustic Delight (2 peperoni) | 2 ciascuna |
 | Veggies Delight, Ars Elemental, Deeper and Darker, Friends & Foes | 1 ciascuna |
-| Jaden's Nether Expansion, Nether Depths Upgrade | da inventariare (zucca del dolore, torciafiore delle anime, verruca distorta, funghi cerebrage, sporeshroom; alghe di lava) |
+| Jaden's Nether Expansion, Nether Depths Upgrade | 4 + 2 (nomi in `0630`, sezione 7; le alghe crescono nella lava) |
 
 ### 2.2 Formato (1.21.1)
 - **Coltura**: `botanypots:block_derived_crop` con `"block"`; seme, aspetto e raccolto si ricavano dal blocco (stato a età massima) e dalla sua loot table. Esempio minimo, come nelle ricette vanilla di Botany Pots: `{"type":"botanypots:block_derived_crop","block":"minecraft:wheat"}`. Terreno di default: `botanypots:soil/dirt`.
@@ -85,7 +86,7 @@ matteo_tweaks/
 - **Alberi di Bountiful Fares**: le 8 ricette e le loot table esistono nel sorgente di Botany Trees (LGPL-2.1, commit successivo alla 21.1.7). Si copiano citando la fonte e si tolgono quando esce la nuova versione di Botany Trees.
 - **Terreni da aggiungere**: terra ricca e terreno arato di Twilight's Flavor & Delight; terra risorgente, il suo terreno arato e il compost letios di My Nether's Delight; terra infusa e terreno arato di Hexalia (servono anche al saltsprout); terra e terreno arato fertilizzati di Farm & Charm; loam di Vinery; terre di Aether e Deep Aether e la terra erbosa di Bountiful Fares (facoltativi).
 - **Terreni particolari di alcune piante**: alga sirena di Hexalia in acqua, piante di Ender's Delight su pietra dell'End.
-- **Roaster's Delight**: sorgente chiuso, i nomi di pianta del caffè, tè, camomilla, menta e matcha vanno letti in gioco (F3 o EMI).
+- **Roaster's Delight**: sorgente chiuso, ma i nomi delle piante (caffè, tè, camomilla, menta, matcha) ora si leggono dall'inventario (`0630`, sezione 1).
 - **Regions Unexplored 0.6** ha rinominato alcuni blocchi (es. `leaf_pile` → `leaf_litter`, `mauve_shrub` → `lavender_wisteria_shrub`, `stone_bud`/`medium_grass` → `grass_sprouts`, `cactus_flower` → `saguaro_cactus_flower`). Botany Pots usa i vecchi nomi: se gli alias non funzionano, si riscrivono le 8 ricette.
 
 ### 2.4 Bilanciamento (proposta da confermare)

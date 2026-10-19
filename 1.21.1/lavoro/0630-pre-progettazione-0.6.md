@@ -4,15 +4,15 @@ Documento vivo finché la tappa 5 non è finita. Prepara il lavoro: cosa c'è da
 
 ## 0. In breve
 
-La tappa 5 ha sette parti (dal piano, `0501-piano.md`), molto diverse per peso e rischio:
+La tappa 5 ha otto parti (dal piano, `0501-piano.md`, più le correzioni degli artefatti), molto diverse per peso e rischio:
 
 | Parte | Cosa | Peso | Tocca il mondo? |
 |---|---|---|---|
-| A. Every Compat | Config ridotta: solo i moduli che servono (B22, aiuta B33) | medio | **sì**: toglie blocchi |
+| A. Every Compat | Meno blocchi e risorse generate una volta sola (B22, B33) | medio | **sì** se toglie blocchi |
 | B. Artifacts | Config: solo Curios, niente Accessories | piccolo | **sì**: da fare prima del mondo vero |
 | C. Altre config | Comodità decise in `0302` e paracadute di Jaden's | piccolo | no |
 | D. Berserker (B02) | Un'etichetta nel datapack | piccolo | **sì**: solo strutture nuove |
-| E. Artefatti (B01, B03) | 15 nomi di casse sbagliati, casse di Mowzie's e Born in Chaos | piccolo | no (casse non ancora aperte) |
+| E. Artefatti (B01, B03) | 15 nomi vecchi da togliere, 8 casse tesoro da aggiungere, casse di Mowzie's e Born in Chaos | piccolo | no (vale per le casse non ancora aperte) |
 | F. Esperienza | Valore del liquido di Cognition per Create, scambio nel Mescolatore | piccolo | no |
 | G. Vasi | Circa 260 piante e 11 terreni | **grande** | no |
 | H. Mercato | Semi e alberelli di una quindicina di mod | medio | no |
@@ -30,7 +30,7 @@ Ricontato il 19/10/2026 sull'inventario del pack (`../data/inventario/`, version
 
 | Parte | Com'è oggi |
 |---|---|
-| Every Compat | Config di serie: 10.733 blocchi (40,7% del pack), avvio da 51 a 78 secondi (B22). Rigenera le sue risorse a **ogni** ricaricamento (nel log: "REGEN_ON_EVERY_RELOAD"), anche dentro il gioco: è una delle cause probabili del crash per memoria finita (B33) |
+| Every Compat | Config di serie: 10.733 blocchi (40,7% del pack), avvio da 51 a 78 secondi (B22). I suoi 12 moduli attivi sono tutti tra quelli da tenere (sezione 2). Rigenera le sue risorse a **ogni** ricaricamento (nel log: "REGEN_ON_EVERY_RELOAD"), anche dentro il gioco: è una delle cause probabili del crash per memoria finita (B33) |
 | Artifacts | Config di serie: compatibilità sia con Curios sia con Accessories (slot doppi) |
 | Berserker | L'etichetta `cataclysm:berserker_spawn` contiene solo `minecraft:fortress`; la fortezza di YUNG's (`betterfortresses:fortress`) esiste nell'inventario. Basta aggiungerla |
 | Artefatti | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns (`nova_structures`) non esistono più (avvisi del controllo dei nomi): sono nomi vecchi di strutture che i nostri file coprono già con il nome nuovo; mancano invece 3 casse tesoro di When Dungeons Arise e 5 di Dungeons and Taverns (sezione 5). Mowzie's Mobs ha 2 tabelle di casse (`monastery_chest`, `umvuthana_grove_chest`); Born in Chaos ne ha 7, scritte con il namespace `minecraft` (`minecraft:chests/chest_level_1`…) |
@@ -45,11 +45,42 @@ Le 9 piante da chiarire:
 
 ## 2. Every Compat (parte A)
 
-*(da completare con la ricerca sui file di config in corso: nome del file, chiavi dei moduli, opzioni che alleggeriscono le risorse)*
+Verificato nel sorgente di Every Compat 2.11.54 (la versione del pack) il 19/10/2026.
+
+**Correzione al piano.** I 12 moduli attivi nel pack (Create, Farmer's Delight, Friends & Foes, Handcrafted, Macaw's ×4, Rechiseled, Regions Unexplored, Storage Drawers, Twilight Forest) sono **tutti** nell'elenco da tenere di `0302`, e un modulo per Botany Pots non esiste. "Spegnere i moduli che non servono" quindi non toglie niente: B22 si riduce solo con le leve qui sotto.
+
+| Leva | File e chiave | Effetto | Proposta |
+|---|---|---|---|
+| Varianti "connecting" di Rechiseled | `config/everycomp-hazardous.toml`, `[entryset] blacklist = ["rechiseled:.*_connecting"]` | Il modulo di Rechiseled crea 111 blocchi per ogni legno, 54 sono le varianti con le texture collegate: circa metà del modulo, quindi circa 1.000 blocchi in meno su 2.183 (stima) | 🟡 decidi tu: le varianti collegate ti servono per costruire? |
+| Legni di singole mod | stesso file, `[woodtype] blacklist` (espressione sul nome del legno) | Toglie tutti i blocchi di quel legno, in tutti i moduli | 🟡 solo per legni che non userai mai |
+| Generazione delle risorse | `config/everycomp-client.toml` `dynamic_assets_generation_mode` e `config/everycomp-common.toml` `server_assets_generation_mode`, di serie `ALWAYS` | `ALWAYS` rifà texture e modelli a **ogni** ricaricamento delle risorse, anche con F3+T: probabile causa di B33. `RUN_ONCE`: una volta per avvio. `CACHED`: salva su disco e rifà solo quando cambiano le mod; ma dopo ogni modifica alla config di Every Compat vanno cancellate a mano due cartelle della cache dell'istanza | 🟢 `RUN_ONCE`; 🟡 `CACHED` se si vuole anche un avvio più veloce |
+| Etichette per tipo di blocco | `everycomp-common.toml` `generate_blocktype_tags = false` | Secondo la mod "rende il pack un po' più veloce" | 🔴 non toccare finché non si sa se qualche ricetta le usa |
+
+Note:
+- Solo il file `hazardous` toglie davvero i blocchi. `everycomp-entries.toml` li nasconde soltanto (schede e ricette) e non aiuta B22. Il file `hazardous` avverte "modpack makers DO NOT use it" pensando ai server con config diverse: nel single player non vale.
+- Togliere blocchi va fatto **prima del mondo vero**; nel mondo di prova i blocchi tolti dovrebbero diventare aria (comportamento normale, non verificato).
+- Da provare anche l'effetto di `RUN_ONCE` su B30 (ricette delle finestre di Create in un secondo mondo).
+- Misure prima e dopo: tempo di avvio, numero di blocchi e ricette (B22), memoria dopo un F3+T (B33).
 
 ## 3. Artifacts e altre config (parti B e C)
 
-*(da completare con la ricerca sui file di config in corso)*
+Verificato nei sorgenti delle versioni del pack (o del ramo più vicino) il 19/10/2026.
+
+**Regole dei file.** I file TOML di NeoForge possono essere parziali (le chiavi mancanti prendono il valore di serie), ma al primo avvio il gioco li "corregge" riscrivendoli, con un avviso nel log: conviene portare file **completi**. La base migliore sono i file che il gioco ha già generato nell'istanza di prova (serve il tuo permesso per leggere la cartella `config` dell'istanza). Nella 1.21.1 le config "server" sono globali, in `config/` (un mondo può sovrascriverle in `saves/<mondo>/serverconfig/`).
+
+| Mod | File | Chiave | Di serie | Proposta | Decisione |
+|---|---|---|---|---|---|
+| Artifacts | `config/artifacts/general.toml` | `[slots] enableAccessoriesCompat` / `enableCuriosCompat` | `true` / `true` | `false` / `true` (serve un riavvio) | presa (`0302`) |
+| Carry On | `config/carryon-common.toml` | `[settings] pickupAllBlocks` | `false` | `true` | presa (`0302`) |
+| Inventory Essentials | `config/inventoryessentials-common.toml` | `enableShiftDrag` | `true` | `false` (doppione di Mouse Tweaks) | presa (`0302`) |
+| FallingTree | `config/fallingtree.json` | `sneakMode` | `SNEAK_DISABLE` (abbatte l'albero intero, accovacciati no) | `SNEAK_ENABLE`: abbatte l'albero intero **solo** da accovacciati | da prendere |
+| Traveler's Backpack | `config/travelersbackpack-server.toml` | `[server.backpackSettings] allowShulkerBoxes` | `false` | `true` se vuoi shulker box (e forse zaini Sophisticated) dentro | da prendere |
+| Jaden's Nether Expansion | `config/netherexp-common.toml` | `[worldSettings] netherWorldGenOverhaul`, `improvedNetherBiomeSource` | `true` | lasciare: è solo un paracadute | nessun file |
+| Moog's Nether Structures | `config/moogs_structures.json` | `presets.mns.replace_nether_fortress` | `false` | lasciare | nessun file |
+| Cognition | `config/cognition-common.toml` | `AllowedFluids` | 6 liquidi d'esperienza di altre mod | lasciare (mai aggiungere il liquido di Create: `0303`) | nessun file |
+| Subtle Effects, Sound Physics | client | increspature della pioggia, qualità del suono | — | solo se in gioco danno problemi | — |
+
+I **tasti** in conflitto (B, C) non sono config delle mod ma di Minecraft (`options.txt`): restano fuori dal pack, tema in `0503-temi-aperti.md`.
 
 ## 4. Berserker (parte D, B02)
 
@@ -104,12 +135,14 @@ Formato in `0620`, sezione 3. Uno script genera una voce per seme e alberello de
 | 4 | Vasi: graticci di Bountiful Fares e alghe di lava di Nether Depths, se servono soluzioni particolari | 🟡 includerle solo se il formato standard funziona |
 | 5 | Mercato: prezzo unico di 1 smeraldo, o più caro per piante di altre dimensioni (Aether, Undergarden, Nether, End)? | 🟡 1 smeraldo base, 2 per le altre dimensioni |
 | 6 | Artefatti: aggiungere solo la cassa "tesoro" delle strutture mancanti, come per le altre? | 🟢 sì |
-| 7 | Every Compat: confermare i moduli da tenere (elenco in `0302`) | sezione 2 |
-| 8 | Config di comodità (Carry On, FallingTree, Inventory Essentials, Traveler's): quali diventano file del pack | sezione 3 |
+| 7 | Every Compat: togliere le varianti "connecting" di Rechiseled (circa 1.000 blocchi)? Togliere i legni di qualche mod? | 🟡 decidi tu (sezione 2) |
+| 7b | Every Compat: generare le risorse una volta per avvio (`RUN_ONCE`) invece che a ogni ricaricamento | 🟢 sì |
+| 8 | FallingTree: albero intero solo da accovacciati? Traveler's: shulker box dentro lo zaino? | da decidere (sezione 3) |
+| 9 | Permesso di leggere la cartella `config` dell'istanza di prova, per usare i file generati dal gioco come base | 🟢 sì, solo lettura |
 
 ## 10. Rischi
 
-- **Every Compat**: togliere un modulo cancella i blocchi già creati di quel modulo. Nessun problema prima del mondo vero, ma dopo la 0.6.0 la lista non si tocca più a cuor leggero.
+- **Every Compat**: togliere blocchi (varianti, legni) li cancella dal mondo. Nessun problema prima del mondo vero, ma dopo la 0.6.0 le liste nere non si toccano più a cuor leggero. Con la generazione `CACHED`, dimenticare di svuotare la cache dopo un cambio di config lascia risorse vecchie.
 - **Vasi**: ricette sbagliate non danno errori evidenti (la pianta cresce ma non lascia niente): per questo serve `check_crops` in gioco.
 - **Mercato**: un errore di prezzo o una pianta "rara" in vendita cambiano il bilanciamento: lista di esclusioni rivista da Matteo.
 - **Aggiornamenti delle mod** durante la tappa: i nomi cambiano (come Regions Unexplored 0.6). Lo script generatore e il controllo dei nomi servono proprio a rifare il lavoro in fretta.

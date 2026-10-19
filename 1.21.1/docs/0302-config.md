@@ -79,8 +79,8 @@ Non sono ancora file del pack: vanno impostate a mano o entreranno come file di 
 
 ## Config previste per la 0.6.0
 
-- **Every Compat**: spegnere i moduli che non servono; tenere Handcrafted, Macaw's ×4, credenze di FD, Storage Drawers, finestre di Create, Rechiseled, alveari di Friends & Foes, Twilight Forest, Regions Unexplored, Botany Pots. Va decisa prima di costruire molto: togliere un modulo cancella i blocchi già creati. Con la config di serie crea il 40% dei blocchi del pack e il modulo di Rechiseled è il più pesante (bug B22): decidere se tenerlo.
-- **Jaden's Nether Expansion** (`config/netherexp-startup.toml`, sezione `packSettings`, serve riavvio), solo come paracadute se il Nether nuovo desse problemi: `improvedNetherBiomeSource = false` (disposizione dei biomi vanilla), `netherWorldGenOverhaul = false` (altezza vanilla).
+- **Every Compat**: moduli da tenere Handcrafted, Macaw's ×4, credenze di FD, Storage Drawers, finestre di Create, Rechiseled, alveari di Friends & Foes, Twilight Forest, Regions Unexplored. **Correzione del 19/10**: sono proprio i 12 moduli attivi nel pack (un modulo per Botany Pots non esiste), quindi spegnere moduli non toglie niente; le leve vere (varianti "connecting" di Rechiseled, legni di singole mod, generazione delle risorse una volta per avvio) sono in `../lavoro/0630-pre-progettazione-0.6.md`, sezione 2. Va decisa prima di costruire molto: togliere blocchi li cancella dal mondo.
+- **Jaden's Nether Expansion** (`config/netherexp-common.toml`, sezione `worldSettings`, serve riavvio; corretto il 19/10, prima qui c'era scritto `netherexp-startup.toml`), solo come paracadute se il Nether nuovo desse problemi: `improvedNetherBiomeSource = false` (disposizione dei biomi vanilla), `netherWorldGenOverhaul = false` (altezza vanilla).
 - **Artifacts**: l'impostazione decisa sopra (solo Curios) diventa un file del pack.
 - **Moog's Nether Structures**: niente da fare. La sostituzione della fortezza vanilla con la sua mega-fortezza è spenta di serie e deve restare così (la fortezza la rifà YUNG's).
 - **Sparse Structures**: regolazioni per struttura dopo il mondo di prova.
