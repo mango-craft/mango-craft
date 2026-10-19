@@ -1,7 +1,7 @@
-Aggiungi mod Modrinth — 2026-10-18
-== iris 1.8.14-beta.1+1.21.1-neoforge (KduFYu4t)
-Project "Iris Shaders" successfully added! (iris-neoforge-1.8.14-beta.1+mc1.21.1.jar)
-== enhanced-celestials-2-shader-support 2.0.0.3-neoforge (4uOjogNm)
-Finding dependencies...
-All dependencies are already added!
-Project "Enhanced Celestials 2: Shader Support" successfully added! (Enhanced-Celestials-2-Shaders-NeoForge-1.21.1-2.0.0.3.jar)
+Aggiungi mod Modrinth — 2026-10-19
+== complementary-reimagined r5.9.3 (Bqen1mJX)
+Warning: Project (complementary-reimagined) has unknown environment value: `unknown`. Since packwiz doesn't understand this value, it'll be marked for both server and client
+Project "Complementary Shaders - Reimagined" successfully added! (ComplementaryReimagined_r5.9.3.zip)
+== makeup-ultra-fast-shaders 9.5g (pgb0JjoN)
+Warning: Project (makeup-ultra-fast-shaders) has unknown environment value: `unknown`. Since packwiz doesn't understand this value, it'll be marked for both server and client
+Project "MakeUp - Ultra Fast" successfully added! (MakeUp-UltraFast-9.5g.zip)

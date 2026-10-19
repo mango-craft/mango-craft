@@ -18,7 +18,7 @@ Modpack personale da giocare **in single player**, non da pubblicare.
 
 - Il proprietario (Matteo) decide **mod per mod**: un agente propone, verifica e prepara, non aggiunge niente senza approvazione esplicita.
 - **Single player**: niente mod pensate solo per il multiplayer.
-- **Shader facoltativi**: il pack li supporta (nella 1.21.1 dalla 0.5.2, con Iris) ma non ne include nessuno, e senza attivarne uno il gioco resta com'è. Come provarne uno: `0101-installazione.md`.
+- **Shader facoltativi**: il pack li supporta (nella 1.21.1 dalla 0.5.2, con Iris) e ne porta due pacchetti **spenti di serie** (dalla 0.5.3): senza attivarne uno il gioco resta com'è. Le impostazioni video restano a chi gioca. Come provarne uno: `0101-installazione.md`.
 - **Launcher**: Prism Launcher, con le istanze collegate al repository tramite packwiz (`0101-installazione.md`).
 - **Memoria dell'istanza**: quanta darne è in `0101-installazione.md`.
 - **Niente datapack esterni**: tutte le integrazioni stanno nel datapack del pack, scritto da noi (regole in `AGENTS.md`).

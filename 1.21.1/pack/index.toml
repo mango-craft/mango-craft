@@ -46,7 +46,7 @@ hash = "cf96f193d997e47193a3b55b5b75a4e4dd54db4a22795af9fb15dc8da8f1b497"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md"
-hash = "cb3ddd657f416d33035b8960d19381a2df0f4e92823068f3063449180ba92ecf"
+hash = "f8e33516a89e4aa5fe88234cd3a2012dece6aa496a9a2ca2cd69d7abdadac745"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
@@ -1448,4 +1448,14 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "1661e7cf8d318e556552fcd2d999038eb728cff74599f65f3ab843f508e28c71"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "507cb3963240110bc71ed7c75cac1682e66d3609536b0bc5ef90a01db3cce21f"
+metafile = true
+
+[[files]]
+file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
+hash = "124adb8dc2e059324dc6b4d80d2b381ab92181a96abe1c2a7c58964c17903bfe"
 metafile = true

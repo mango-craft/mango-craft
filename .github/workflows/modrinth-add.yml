@@ -58,7 +58,8 @@ jobs:
           mkdir -p "$(dirname "$LOG")"
           echo "Aggiungi mod Modrinth — $(date -u +%F)" > "$LOG"
           cd "$PACK"
-          ls mods > "$RUNNER_TEMP/prima.txt"
+          # metafile di mod, resource pack e shader (cartelle diverse)
+          find . -name "*.pw.toml" | sort > "$RUNNER_TEMP/prima.txt"
           failed=0
           while IFS=$'\t' read -r id slug ver kind date pid; do
             echo "== $slug $ver ($id)" >> "$LOG"
@@ -68,7 +69,7 @@ jobs:
               failed=1
             fi
           done < "$RUNNER_TEMP/scelte.tsv"
-          ls mods > "$RUNNER_TEMP/dopo.txt"
+          find . -name "*.pw.toml" | sort > "$RUNNER_TEMP/dopo.txt"
           cat "$LOG"
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
 

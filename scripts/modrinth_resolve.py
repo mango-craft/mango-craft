@@ -6,6 +6,8 @@ Uso: python3 scripts/modrinth_resolve.py <cartella pack> <voce> [<voce> …]
 Ogni voce può essere:
 - `slug`                      → l'ultima **release** per la versione di Minecraft e il loader
                                 del pack (se non c'è: l'ultima beta, poi l'ultima alpha);
+                                per i pacchetti di shader il "loader" è Iris, per i resource
+                                pack è "minecraft" (packwiz li mette nella cartella giusta);
 - `slug@versione`             → quella versione esatta (numero di versione o id);
 - un link `https://modrinth.com/<tipo>/<slug>/version/<versione>` → come sopra;
 - un id di versione di 8 caratteri.
@@ -27,6 +29,8 @@ from pathlib import Path
 API = "https://api.modrinth.com/v2"
 USER_AGENT = "mango-craft (github.com/mango-craft/mango-craft)"
 ORDER = ("release", "beta", "alpha")
+# Progetti che non sono mod: su Modrinth il campo "loaders" delle versioni indica altro
+TYPE_LOADER = {"shader": "iris", "resourcepack": "minecraft", "datapack": "datapack"}
 
 
 def api(path: str):
@@ -42,6 +46,10 @@ def check(v: dict, mc: str, loader: str, entry: str) -> dict:
     return v
 
 
+def loader_for(project: dict, pack_loader: str) -> str:
+    return TYPE_LOADER.get(project.get("project_type"), pack_loader)
+
+
 def resolve(entry: str, mc: str, loader: str) -> dict:
     m = re.fullmatch(r"https://modrinth\.com/[a-z]+/([^/]+)/version/([^/?#]+)", entry)
     if m:
@@ -49,11 +57,16 @@ def resolve(entry: str, mc: str, loader: str) -> dict:
     elif "@" in entry:
         entry_slug, wanted = entry.split("@", 1)
     elif re.fullmatch(r"[A-Za-z0-9]{8}", entry) and not re.fullmatch(r"[a-z0-9-]+", entry):
-        return check(api(f"/version/{entry}"), mc, loader, entry)
+        v = api(f"/version/{entry}")
+        return check(v, mc, loader_for(api(f"/project/{v['project_id']}"), loader), entry)
     else:
         entry_slug, wanted = entry, None
     if not re.fullmatch(r"[A-Za-z0-9_.-]+", entry_slug):
         raise SystemExit(f"{entry}: slug non valido")
+    try:
+        loader = loader_for(api(f"/project/{entry_slug}"), loader)
+    except urllib.error.HTTPError as e:
+        raise SystemExit(f"{entry}: progetto non trovato ({e.code})")
     if wanted:
         try:
             v = api(f"/project/{entry_slug}/version/{urllib.parse.quote(wanted, safe='')}")
