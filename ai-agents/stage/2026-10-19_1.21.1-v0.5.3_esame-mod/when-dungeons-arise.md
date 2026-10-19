@@ -1,0 +1,998 @@
+# When Dungeons Arise (when-dungeons-arise)
+
+File generato da `scripts/esamina.py` (workflow "Esamina mod"): la mod **non** è nel pack. Non modificarlo a mano.
+
+- Versione: **2.1.68** (release, 2025-10-26), file `DungeonsArise-1.21.1-2.1.68-release.jar`, id versione `XIRJSFQ0`
+- Licenza su Modrinth: LicenseRef-All-Rights-Reserved · download: 11380075
+- Filtro dei valori: `loot_table/chests/.*(vault|kisegi_sanctuary_treasure|mechanical_nest_treasure|mining_complex_treasure|ruin_loot_master|hamlet_tresure|desert_ruin_lesser_treasure|illager_hideout_lesser_tresure|shrine_lesser_treasure).*\.json$`
+
+## Mod nel file e dipendenze dichiarate
+
+- `dungeons_arise` 2.1.68
+  - required: `neoforge` [21.0.0-beta,)
+  - required: `minecraft` [1.21,1.21.1)
+
+## Cartelle di dati (file .json)
+
+- `dungeons_arise:advancement`: 39
+- `dungeons_arise:enchantment`: 5
+- `dungeons_arise:loot_table/archeology/kisegi_sanctuary`: 1
+- `dungeons_arise:loot_table/chests`: 3
+- `dungeons_arise:loot_table/chests/abandoned_temple`: 3
+- `dungeons_arise:loot_table/chests/aviary`: 3
+- `dungeons_arise:loot_table/chests/bandit_towers`: 6
+- `dungeons_arise:loot_table/chests/bandit_village`: 4
+- `dungeons_arise:loot_table/chests/bathhouse`: 2
+- `dungeons_arise:loot_table/chests/ceryneian_hind`: 1
+- `dungeons_arise:loot_table/chests/fishing_hut`: 1
+- `dungeons_arise:loot_table/chests/foundry`: 6
+- `dungeons_arise:loot_table/chests/greenwood_pub`: 3
+- `dungeons_arise:loot_table/chests/heavenly_challenger`: 4
+- `dungeons_arise:loot_table/chests/heavenly_conqueror`: 3
+- `dungeons_arise:loot_table/chests/heavenly_rider`: 3
+- `dungeons_arise:loot_table/chests/illager_campsite`: 3
+- `dungeons_arise:loot_table/chests/illager_corsair`: 3
+- `dungeons_arise:loot_table/chests/illager_fort`: 3
+- `dungeons_arise:loot_table/chests/illager_galley`: 3
+- `dungeons_arise:loot_table/chests/illager_windmill`: 2
+- `dungeons_arise:loot_table/chests/infested_temple`: 10
+- `dungeons_arise:loot_table/chests/jungle_tree_house`: 3
+- `dungeons_arise:loot_table/chests/keep_kayra`: 6
+- `dungeons_arise:loot_table/chests/kisegi_sanctuary`: 8
+- `dungeons_arise:loot_table/chests/lighthouse`: 1
+- `dungeons_arise:loot_table/chests/mechanical_nest`: 4
+- `dungeons_arise:loot_table/chests/merchant_campsite`: 3
+- `dungeons_arise:loot_table/chests/mining_complex`: 5
+- `dungeons_arise:loot_table/chests/mining_system`: 2
+- `dungeons_arise:loot_table/chests/monastery`: 3
+- `dungeons_arise:loot_table/chests/mushroom_house`: 3
+- `dungeons_arise:loot_table/chests/mushroom_mines`: 4
+- `dungeons_arise:loot_table/chests/mushroom_village`: 2
+- `dungeons_arise:loot_table/chests/plague_asylum`: 6
+- `dungeons_arise:loot_table/chests/scorched_mines`: 5
+- `dungeons_arise:loot_table/chests/shiraz_palace`: 8
+- `dungeons_arise:loot_table/chests/small_blimp`: 3
+- `dungeons_arise:loot_table/chests/thornborn_towers`: 4
+- `dungeons_arise:loot_table/chests/typhon`: 1
+- `dungeons_arise:loot_table/chests/undead_pirate_ship`: 4
+- `dungeons_arise:loot_table/entities`: 1
+- `dungeons_arise:loot_table/pots/infested_temple`: 1
+- `dungeons_arise:loot_table/pots/kisegi_sanctuary`: 1
+- `dungeons_arise:loot_table/pots/mining_complex`: 1
+- `dungeons_arise:loot_table/spawners/infested_temple`: 3
+- `dungeons_arise:loot_table/spawners/kisegi_sanctuary`: 2
+- `dungeons_arise:predicate`: 1
+- `dungeons_arise:tags/enchantment`: 5
+- `dungeons_arise:tags/entity_type`: 1
+- `dungeons_arise:tags/worldgen/biome/collections`: 11
+- `dungeons_arise:tags/worldgen/biome/has_structure`: 41
+- `dungeons_arise:tags/worldgen/damage_type`: 1
+- `dungeons_arise:tags/worldgen/structure/explorer_maps`: 12
+- `dungeons_arise:worldgen/processor_list`: 7
+- `dungeons_arise:worldgen/structure`: 40
+- `dungeons_arise:worldgen/structure_set`: 2
+- `dungeons_arise:worldgen/template_pool/aquatic/illager_corsair`: 2
+- `dungeons_arise:worldgen/template_pool/aquatic/illager_galley`: 2
+- `dungeons_arise:worldgen/template_pool/aquatic/typhon`: 2
+- `dungeons_arise:worldgen/template_pool/aquatic/undead_pirate_ship`: 2
+- `dungeons_arise:worldgen/template_pool/bandit/bandit_towers`: 7
+- `dungeons_arise:worldgen/template_pool/bandit/bandit_village`: 4
+- `dungeons_arise:worldgen/template_pool/bathhouse`: 4
+- `dungeons_arise:worldgen/template_pool/campsites/illager_campsite`: 5
+- `dungeons_arise:worldgen/template_pool/campsites/merchant_campsite`: 4
+- `dungeons_arise:worldgen/template_pool/desertic/ceryneian_hind`: 2
+- `dungeons_arise:worldgen/template_pool/desertic/shiraz_palace`: 3
+- `dungeons_arise:worldgen/template_pool/eerie/aviary`: 3
+- `dungeons_arise:worldgen/template_pool/eerie/heavenly_challenger`: 3
+- `dungeons_arise:worldgen/template_pool/eerie/heavenly_conqueror`: 2
+- `dungeons_arise:worldgen/template_pool/eerie/heavenly_rider`: 3
+- `dungeons_arise:worldgen/template_pool/enigmatic/lighthouse`: 2
+- `dungeons_arise:worldgen/template_pool/enigmatic/small_blimp`: 3
+- `dungeons_arise:worldgen/template_pool/fortified/abandoned_temple`: 4
+- `dungeons_arise:worldgen/template_pool/fortified/illager_castle`: 3
+- `dungeons_arise:worldgen/template_pool/fortified/illager_fort`: 4
+- `dungeons_arise:worldgen/template_pool/fortified/illager_hall`: 4
+- `dungeons_arise:worldgen/template_pool/fortified/monastery`: 8
+- `dungeons_arise:worldgen/template_pool/fortified/thornborn_towers`: 6
+- `dungeons_arise:worldgen/template_pool/fungi/giant_mushroom`: 3
+- `dungeons_arise:worldgen/template_pool/fungi/mushroom_house`: 3
+- `dungeons_arise:worldgen/template_pool/fungi/mushroom_mines`: 3
+- `dungeons_arise:worldgen/template_pool/fungi/mushroom_village`: 2
+- `dungeons_arise:worldgen/template_pool/fungi/mushroom_village_old`: 3
+- `dungeons_arise:worldgen/template_pool/greenwood_pub`: 6
+- `dungeons_arise:worldgen/template_pool/haunted/infested_temple`: 5
+- `dungeons_arise:worldgen/template_pool/haunted/plague_asylum`: 6
+- `dungeons_arise:worldgen/template_pool/jungle/jungle_tree_house`: 3
+- `dungeons_arise:worldgen/template_pool/keep_kayra`: 2
+- `dungeons_arise:worldgen/template_pool/kisegi_sanctuary`: 4
+- `dungeons_arise:worldgen/template_pool/mechanical_nest`: 9
+- `dungeons_arise:worldgen/template_pool/mining_complex`: 9
+- `dungeons_arise:worldgen/template_pool/prairie/coliseum`: 2
+- `dungeons_arise:worldgen/template_pool/prairie/fishing_hut`: 2
+- `dungeons_arise:worldgen/template_pool/prairie/illager_windmill`: 4
+- `dungeons_arise:worldgen/template_pool/prairie/wishing_well`: 3
+- `dungeons_arise:worldgen/template_pool/underworld/foundry`: 7
+- `dungeons_arise:worldgen/template_pool/underworld/mining_system`: 2
+- `dungeons_arise:worldgen/template_pool/underworld/scorched_mines`: 6
+- `minecraft:tags/worldgen/structure`: 1
+
+## Valori dei file filtrati
+
+
+### `data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_vault_normal.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "item"
+- `pools[0].entries[0].weight` = 1
+- `pools[0].entries[0].name` = "minecraft:trial_key"
+- `pools[0].entries[0].functions[0].function` = "set_count"
+- `pools[0].entries[0].functions[0].count` = 1
+- `pools[0].entries[0].functions[1].function` = "set_components"
+- `pools[0].entries[0].functions[1].components.minecraft:custom_model_data` = 2341669
+- `pools[0].entries[0].functions[2].function` = "set_name"
+- `pools[0].entries[0].functions[2].name[0].color` = "light_purple"
+- `pools[0].entries[0].functions[2].name[0].italic` = false
+- `pools[0].entries[0].functions[2].name[0].text` = "Infested Temple Treasure Key"
+- `pools[0].entries[0].functions[3].function` = "set_lore"
+- `pools[0].entries[0].functions[3].lore[0].italic` = true
+- `pools[0].entries[0].functions[3].lore[0].text` = "This key twists and turns, signaling its use for a higher vault."
+- `pools[0].entries[0].functions[3].mode` = "append"
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].weight` = 2
+- `pools[1].entries[0].name` = "minecraft:book"
+- `pools[1].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[0].functions[0].count.min` = 3
+- `pools[1].entries[0].functions[0].count.max` = 6
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:book"
+- `pools[1].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[1].functions[0].levels.type` = "minecraft:uniform"
+- `pools[1].entries[1].functions[0].levels.min` = 15
+- `pools[1].entries[1].functions[0].levels.max` = 20
+- `pools[1].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].name` = "minecraft:experience_bottle"
+- `pools[1].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[2].functions[0].count.min` = 24
+- `pools[1].entries[2].functions[0].count.max` = 32
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:empty"
+- `pools[2].entries[0].weight` = 3
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:diamond_helmet"
+- `pools[2].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[1].functions[0].levels` = 10
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:diamond_boots"
+- `pools[2].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[2].functions[0].levels` = 10
+- `pools[3].rolls` = 1
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].name` = "minecraft:iron_ingot"
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 4
+- `pools[3].entries[0].functions[0].count.max` = 16
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].weight` = 2
+- `pools[3].entries[1].name` = "minecraft:diamond"
+- `pools[3].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[1].functions[0].count.min` = 1
+- `pools[3].entries[1].functions[0].count.max` = 2
+- `pools[4].rolls.min` = 2
+- `pools[4].rolls.max` = 3
+- `pools[4].entries[0].type` = "minecraft:item"
+- `pools[4].entries[0].weight` = 80
+- `pools[4].entries[0].name` = "minecraft:golden_apple"
+- `pools[4].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[0].functions[0].count.min` = 1
+- `pools[4].entries[0].functions[0].count.max` = 3
+- `pools[4].entries[1].type` = "minecraft:item"
+- `pools[4].entries[1].weight` = 250
+- `pools[4].entries[1].name` = "minecraft:golden_carrot"
+- `pools[4].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[1].functions[0].count.min` = 1
+- `pools[4].entries[1].functions[0].count.max` = 4
+- `pools[4].entries[2].type` = "minecraft:item"
+- `pools[4].entries[2].weight` = 250
+- `pools[4].entries[2].name` = "minecraft:cooked_porkchop"
+- `pools[4].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[2].functions[0].count.min` = 1
+- `pools[4].entries[2].functions[0].count.max` = 3
+- `pools[4].entries[3].type` = "minecraft:item"
+- `pools[4].entries[3].name` = "minecraft:enchanted_golden_apple"
+
+### `data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_vault_ominous.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].name` = "minecraft:book"
+- `pools[0].entries[0].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[0].functions[0].options` = "#dungeons_arise:purification"
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].weight` = 2
+- `pools[0].entries[1].name` = "minecraft:book"
+- `pools[0].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[1].functions[0].count.min` = 3
+- `pools[0].entries[1].functions[0].count.max` = 6
+- `pools[0].entries[2].type` = "minecraft:item"
+- `pools[0].entries[2].name` = "minecraft:book"
+- `pools[0].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[0].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[0].entries[2].functions[0].levels` = 20
+- `pools[0].entries[3].type` = "minecraft:item"
+- `pools[0].entries[3].name` = "minecraft:experience_bottle"
+- `pools[0].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[3].functions[0].count.min` = 24
+- `pools[0].entries[3].functions[0].count.max` = 32
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:empty"
+- `pools[1].entries[0].weight` = 3
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:diamond_leggings"
+- `pools[1].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[1].functions[0].levels` = 10
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].name` = "minecraft:diamond_boots"
+- `pools[1].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[2].functions[0].levels` = 10
+- `pools[1].entries[3].type` = "minecraft:item"
+- `pools[1].entries[3].name` = "minecraft:diamond_chestplate"
+- `pools[1].entries[3].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[3].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[3].functions[0].levels` = 10
+- `pools[1].entries[4].type` = "minecraft:item"
+- `pools[1].entries[4].name` = "minecraft:diamond_sword"
+- `pools[1].entries[4].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[4].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[4].functions[0].levels` = 10
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:item"
+- `pools[2].entries[0].name` = "minecraft:iron_ingot"
+- `pools[2].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[0].functions[0].count.min` = 4
+- `pools[2].entries[0].functions[0].count.max` = 16
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:gold_block"
+- `pools[2].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[1].functions[0].count.min` = 1
+- `pools[2].entries[1].functions[0].count.max` = 2
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:diamond_block"
+- `pools[2].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[2].functions[0].count.min` = 1
+- `pools[2].entries[2].functions[0].count.max` = 2
+- `pools[2].entries[3].type` = "minecraft:item"
+- `pools[2].entries[3].weight` = 6
+- `pools[2].entries[3].name` = "minecraft:diamond"
+- `pools[2].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[3].functions[0].count.min` = 2
+- `pools[2].entries[3].functions[0].count.max` = 6
+- `pools[3].rolls.min` = 2
+- `pools[3].rolls.max` = 3
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].weight` = 80
+- `pools[3].entries[0].name` = "minecraft:golden_apple"
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 1
+- `pools[3].entries[0].functions[0].count.max` = 3
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].weight` = 250
+- `pools[3].entries[1].name` = "minecraft:golden_carrot"
+- `pools[3].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[1].functions[0].count.min` = 1
+- `pools[3].entries[1].functions[0].count.max` = 4
+- `pools[3].entries[2].type` = "minecraft:item"
+- `pools[3].entries[2].weight` = 250
+- `pools[3].entries[2].name` = "minecraft:cooked_porkchop"
+- `pools[3].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[2].functions[0].count.min` = 1
+- `pools[3].entries[2].functions[0].count.max` = 3
+- `pools[3].entries[3].type` = "minecraft:item"
+- `pools[3].entries[3].name` = "minecraft:enchanted_golden_apple"
+
+### `data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_vault_treasure.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].weight` = 2
+- `pools[0].entries[0].name` = "minecraft:book"
+- `pools[0].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[0].functions[0].count.min` = 3
+- `pools[0].entries[0].functions[0].count.max` = 6
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].name` = "minecraft:book"
+- `pools[0].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[0].entries[1].functions[0].levels` = 20
+- `pools[0].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[0].entries[2].type` = "minecraft:item"
+- `pools[0].entries[2].name` = "minecraft:experience_bottle"
+- `pools[0].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[2].functions[0].count.min` = 24
+- `pools[0].entries[2].functions[0].count.max` = 32
+- `pools[0].entries[3].type` = "minecraft:item"
+- `pools[0].entries[3].name` = "minecraft:book"
+- `pools[0].entries[3].weight` = 2
+- `pools[0].entries[3].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[3].functions[0].options` = "#dungeons_arise:purification"
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:empty"
+- `pools[1].entries[0].weight` = 3
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:diamond_leggings"
+- `pools[1].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[1].functions[0].levels` = 15
+- `pools[1].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].name` = "minecraft:diamond_boots"
+- `pools[1].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[2].functions[0].levels` = 15
+- `pools[1].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[3].type` = "minecraft:item"
+- `pools[1].entries[3].name` = "minecraft:diamond_chestplate"
+- `pools[1].entries[3].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[3].functions[0].levels` = 15
+- `pools[1].entries[3].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[4].type` = "minecraft:item"
+- `pools[1].entries[4].name` = "minecraft:diamond_sword"
+- `pools[1].entries[4].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[4].functions[0].levels` = 15
+- `pools[1].entries[4].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[5].type` = "minecraft:item"
+- `pools[1].entries[5].name` = "minecraft:diamond_chestplate"
+- `pools[1].entries[5].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[1].entries[5].functions[0].options` = "#dungeons_arise:purification"
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:item"
+- `pools[2].entries[0].name` = "minecraft:iron_ingot"
+- `pools[2].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[0].functions[0].count.min` = 8
+- `pools[2].entries[0].functions[0].count.max` = 16
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:gold_block"
+- `pools[2].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[1].functions[0].count.min` = 1
+- `pools[2].entries[1].functions[0].count.max` = 2
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:diamond_block"
+- `pools[2].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[2].functions[0].count` = 1
+- `pools[2].entries[3].type` = "minecraft:item"
+- `pools[2].entries[3].weight` = 6
+- `pools[2].entries[3].name` = "minecraft:diamond"
+- `pools[2].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[3].functions[0].count.min` = 2
+- `pools[2].entries[3].functions[0].count.max` = 6
+- `pools[3].rolls` = 1
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].weight` = 80
+- `pools[3].entries[0].name` = "minecraft:golden_apple"
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 5
+- `pools[3].entries[0].functions[0].count.max` = 7
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].name` = "minecraft:enchanted_golden_apple"
+- `pools[3].entries[1].weight` = 50
+
+### `data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_treasure.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].name` = "minecraft:netherite_helmet"
+- `pools[0].entries[0].functions[0].function` = "minecraft:set_damage"
+- `pools[0].entries[0].functions[0].damage.type` = "minecraft:uniform"
+- `pools[0].entries[0].functions[0].damage.min` = 0.05
+- `pools[0].entries[0].functions[0].damage.max` = 0.15
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].name` = "minecraft:shield"
+- `pools[0].entries[1].weight` = 3
+- `pools[0].entries[2].type` = "minecraft:item"
+- `pools[0].entries[2].name` = "minecraft:diamond_axe"
+- `pools[0].entries[2].weight` = 3
+- `pools[0].entries[3].type` = "minecraft:item"
+- `pools[0].entries[3].name` = "minecraft:diamond_helmet"
+- `pools[0].entries[3].weight` = 3
+- `pools[0].entries[4].type` = "minecraft:item"
+- `pools[0].entries[4].name` = "minecraft:diamond_leggings"
+- `pools[0].entries[4].weight` = 3
+- `pools[0].entries[5].type` = "minecraft:item"
+- `pools[0].entries[5].name` = "minecraft:diamond_boots"
+- `pools[0].entries[5].weight` = 3
+- `pools[0].entries[6].type` = "minecraft:item"
+- `pools[0].entries[6].name` = "minecraft:bow"
+- `pools[0].entries[6].weight` = 3
+- `pools[0].entries[6].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[0].entries[6].functions[0].levels` = 20
+- `pools[0].entries[6].functions[0].options` = "#minecraft:non_treasure"
+- `pools[0].entries[7].type` = "minecraft:item"
+- `pools[0].entries[7].name` = "minecraft:crossbow"
+- `pools[0].entries[7].weight` = 3
+- `pools[0].entries[7].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[0].entries[7].functions[0].levels` = 20
+- `pools[0].entries[7].functions[0].options` = "#minecraft:non_treasure"
+- `pools[1].rolls.min` = 1
+- `pools[1].rolls.max` = 2
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].name` = "minecraft:beetroot"
+- `pools[1].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[0].functions[0].count.min` = 1
+- `pools[1].entries[0].functions[0].count.max` = 3
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:carrot"
+- `pools[1].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[1].functions[0].count.min` = 2
+- `pools[1].entries[1].functions[0].count.max` = 4
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].weight` = 3
+- `pools[1].entries[2].name` = "minecraft:bread"
+- `pools[1].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[2].functions[0].count.min` = 2
+- `pools[1].entries[2].functions[0].count.max` = 4
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:item"
+- `pools[2].entries[0].name` = "minecraft:book"
+- `pools[2].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[0].functions[0].count.type` = "minecraft:uniform"
+- `pools[2].entries[0].functions[0].count.min` = 2
+- `pools[2].entries[0].functions[0].count.max` = 3
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:red_candle"
+- `pools[2].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[1].functions[0].count.type` = "minecraft:uniform"
+- `pools[2].entries[1].functions[0].count.min` = 1
+- `pools[2].entries[1].functions[0].count.max` = 3
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:spider_eye"
+- `pools[2].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[2].functions[0].count.min` = 1
+- `pools[2].entries[2].functions[0].count.max` = 3
+- `pools[2].entries[3].type` = "minecraft:item"
+- `pools[2].entries[3].name` = "minecraft:bamboo"
+- `pools[2].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[3].functions[0].count.min` = 1
+- `pools[2].entries[3].functions[0].count.max` = 3
+- `pools[2].entries[4].type` = "minecraft:item"
+- `pools[2].entries[4].name` = "minecraft:string"
+- `pools[2].entries[4].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[4].functions[0].count.min` = 1
+- `pools[2].entries[4].functions[0].count.max` = 3
+- `pools[2].entries[5].type` = "minecraft:item"
+- `pools[2].entries[5].name` = "minecraft:stick"
+- `pools[2].entries[5].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[5].functions[0].count.min` = 1
+- `pools[2].entries[5].functions[0].count.max` = 3
+- `pools[2].entries[6].type` = "minecraft:item"
+- `pools[2].entries[6].name` = "minecraft:cobweb"
+- `pools[2].entries[6].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[6].functions[0].count.min` = 1
+- `pools[2].entries[6].functions[0].count.max` = 2
+- `pools[3].rolls` = 1
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].name` = "minecraft:diamond"
+- `pools[3].entries[0].weight` = 5
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 3
+- `pools[3].entries[0].functions[0].count.max` = 6
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].weight` = 3
+- `pools[3].entries[1].name` = "minecraft:gold_ingot"
+- `pools[3].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[1].functions[0].count.min` = 3
+- `pools[3].entries[1].functions[0].count.max` = 6
+- `pools[3].entries[2].type` = "minecraft:item"
+- `pools[3].entries[2].weight` = 2
+- `pools[3].entries[2].name` = "minecraft:emerald"
+- `pools[3].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[2].functions[0].count.min` = 4
+- `pools[3].entries[2].functions[0].count.max` = 5
+- `pools[4].rolls` = 1
+- `pools[4].entries[0].type` = "minecraft:item"
+- `pools[4].entries[0].name` = "minecraft:experience_bottle"
+- `pools[4].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[0].functions[0].count.type` = "minecraft:uniform"
+- `pools[4].entries[0].functions[0].count.min` = 5
+- `pools[4].entries[0].functions[0].count.max` = 9
+
+### `data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "item"
+- `pools[0].entries[0].weight` = 1
+- `pools[0].entries[0].name` = "minecraft:trial_key"
+- `pools[0].entries[0].functions[0].function` = "set_count"
+- `pools[0].entries[0].functions[0].count` = 1
+- `pools[0].entries[0].functions[1].function` = "set_components"
+- `pools[0].entries[0].functions[1].components.minecraft:custom_model_data` = 2341673
+- `pools[0].entries[0].functions[2].function` = "set_name"
+- `pools[0].entries[0].functions[2].name[0].color` = "gold"
+- `pools[0].entries[0].functions[2].name[0].italic` = false
+- `pools[0].entries[0].functions[2].name[0].text` = "Kisegi Sanctuary Treasure Key"
+- `pools[0].entries[0].functions[3].function` = "set_lore"
+- `pools[0].entries[0].functions[3].lore[0].text` = "Meant for a more complex mechanism, this key may open higher vaults."
+- `pools[0].entries[0].functions[3].lore[0].italic` = true
+- `pools[0].entries[0].functions[3].lore[1].text` = "Two treasure keys are required to open a treasure vault."
+- `pools[0].entries[0].functions[3].lore[1].italic` = true
+- `pools[0].entries[0].functions[3].mode` = "append"
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].name` = "minecraft:book"
+- `pools[1].entries[0].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[0].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[0].functions[0].levels.type` = "minecraft:uniform"
+- `pools[1].entries[0].functions[0].levels.min` = 15
+- `pools[1].entries[0].functions[0].levels.max` = 20
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:experience_bottle"
+- `pools[1].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[1].functions[0].count.min` = 6
+- `pools[1].entries[1].functions[0].count.max` = 12
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:empty"
+- `pools[2].entries[0].weight` = 3
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:diamond_helmet"
+- `pools[2].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[1].functions[0].levels` = 10
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:diamond_boots"
+- `pools[2].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[2].functions[0].levels` = 10
+- `pools[3].rolls` = 1
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].name` = "minecraft:iron_ingot"
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 4
+- `pools[3].entries[0].functions[0].count.max` = 16
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].weight` = 2
+- `pools[3].entries[1].name` = "minecraft:diamond"
+- `pools[3].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[1].functions[0].count.min` = 1
+- `pools[3].entries[1].functions[0].count.max` = 2
+- `pools[3].entries[2].type` = "minecraft:item"
+- `pools[3].entries[2].name` = "minecraft:emerald"
+- `pools[3].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[2].functions[0].count.type` = "minecraft:uniform"
+- `pools[3].entries[2].functions[0].count.min` = 3
+- `pools[3].entries[2].functions[0].count.max` = 6
+- `pools[3].entries[3].type` = "minecraft:item"
+- `pools[3].entries[3].name` = "minecraft:gold_ingot"
+- `pools[3].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[3].functions[0].count.type` = "minecraft:uniform"
+- `pools[3].entries[3].functions[0].count.min` = 3
+- `pools[3].entries[3].functions[0].count.max` = 6
+- `pools[4].rolls` = 1
+- `pools[4].entries[0].type` = "minecraft:item"
+- `pools[4].entries[0].weight` = 80
+- `pools[4].entries[0].name` = "minecraft:golden_apple"
+- `pools[4].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[0].functions[0].count.min` = 1
+- `pools[4].entries[0].functions[0].count.max` = 3
+- `pools[4].entries[1].type` = "minecraft:item"
+- `pools[4].entries[1].weight` = 250
+- `pools[4].entries[1].name` = "minecraft:golden_carrot"
+- `pools[4].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[1].functions[0].count.min` = 1
+- `pools[4].entries[1].functions[0].count.max` = 4
+- `pools[4].entries[2].type` = "minecraft:item"
+- `pools[4].entries[2].name` = "minecraft:enchanted_golden_apple"
+
+### `data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].name` = "minecraft:book"
+- `pools[0].entries[0].weight` = 3
+- `pools[0].entries[0].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[0].functions[0].options` = "#dungeons_arise:ensnaring"
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].name` = "minecraft:book"
+- `pools[0].entries[1].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[1].functions[0].options` = "#dungeons_arise:lolths_curse"
+- `pools[0].entries[2].type` = "minecraft:empty"
+- `pools[0].entries[2].weight` = 12
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].name` = "minecraft:book"
+- `pools[1].entries[0].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[0].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[0].functions[0].levels.type` = "minecraft:uniform"
+- `pools[1].entries[0].functions[0].levels.min` = 15
+- `pools[1].entries[0].functions[0].levels.max` = 20
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:experience_bottle"
+- `pools[1].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[1].functions[0].count.min` = 6
+- `pools[1].entries[1].functions[0].count.max` = 12
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:item"
+- `pools[2].entries[0].name` = "minecraft:diamond_helmet"
+- `pools[2].entries[0].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[0].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[0].functions[0].levels` = 20
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:diamond_boots"
+- `pools[2].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[1].functions[0].levels` = 20
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:diamond_sword"
+- `pools[2].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[2].functions[0].levels` = 20
+- `pools[2].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[3].type` = "minecraft:item"
+- `pools[2].entries[3].name` = "minecraft:bow"
+- `pools[2].entries[3].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[3].functions[0].levels` = 20
+- `pools[2].entries[3].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[4].type` = "minecraft:item"
+- `pools[2].entries[4].name` = "minecraft:diamond_chestplate"
+- `pools[2].entries[5].type` = "minecraft:item"
+- `pools[2].entries[5].name` = "minecraft:netherite_scrap"
+- `pools[3].rolls` = 1
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].name` = "minecraft:iron_ingot"
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 4
+- `pools[3].entries[0].functions[0].count.max` = 16
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].weight` = 2
+- `pools[3].entries[1].name` = "minecraft:diamond"
+- `pools[3].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[1].functions[0].count.min` = 1
+- `pools[3].entries[1].functions[0].count.max` = 2
+- `pools[3].entries[2].type` = "minecraft:item"
+- `pools[3].entries[2].name` = "minecraft:emerald"
+- `pools[3].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[2].functions[0].count.type` = "minecraft:uniform"
+- `pools[3].entries[2].functions[0].count.min` = 3
+- `pools[3].entries[2].functions[0].count.max` = 6
+- `pools[3].entries[3].type` = "minecraft:item"
+- `pools[3].entries[3].name` = "minecraft:gold_ingot"
+- `pools[3].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[3].functions[0].count.type` = "minecraft:uniform"
+- `pools[3].entries[3].functions[0].count.min` = 3
+- `pools[3].entries[3].functions[0].count.max` = 6
+- `pools[4].rolls` = 1
+- `pools[4].entries[0].type` = "minecraft:item"
+- `pools[4].entries[0].weight` = 80
+- `pools[4].entries[0].name` = "minecraft:golden_apple"
+- `pools[4].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[0].functions[0].count.min` = 1
+- `pools[4].entries[0].functions[0].count.max` = 3
+- `pools[4].entries[1].type` = "minecraft:item"
+- `pools[4].entries[1].weight` = 250
+- `pools[4].entries[1].name` = "minecraft:golden_carrot"
+- `pools[4].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[1].functions[0].count.min` = 1
+- `pools[4].entries[1].functions[0].count.max` = 4
+- `pools[4].entries[2].type` = "minecraft:item"
+- `pools[4].entries[2].name` = "minecraft:enchanted_golden_apple"
+
+### `data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "item"
+- `pools[0].entries[0].weight` = 1
+- `pools[0].entries[0].name` = "minecraft:ominous_trial_key"
+- `pools[0].entries[0].functions[0].function` = "set_count"
+- `pools[0].entries[0].functions[0].count` = 1
+- `pools[0].entries[0].functions[1].function` = "set_components"
+- `pools[0].entries[0].functions[1].components.minecraft:custom_model_data` = 2341674
+- `pools[0].entries[0].functions[2].function` = "set_name"
+- `pools[0].entries[0].functions[2].name[0].color` = "light_purple"
+- `pools[0].entries[0].functions[2].name[0].italic` = false
+- `pools[0].entries[0].functions[2].name[0].text` = "Kisegi Sanctuary Ominous Treasure Key"
+- `pools[0].entries[0].functions[3].function` = "set_lore"
+- `pools[0].entries[0].functions[3].lore[0].text` = "A faint chant can be heard in the distance when holding this key. An arachnid chorus of familiar faces."
+- `pools[0].entries[0].functions[3].lore[0].italic` = true
+- `pools[0].entries[0].functions[3].mode` = "append"
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].weight` = 5
+- `pools[1].entries[0].name` = "minecraft:book"
+- `pools[1].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[0].functions[0].count.min` = 3
+- `pools[1].entries[0].functions[0].count.max` = 6
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:book"
+- `pools[1].entries[1].weight` = 5
+- `pools[1].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[1].functions[0].levels.type` = "minecraft:uniform"
+- `pools[1].entries[1].functions[0].levels.min` = 15
+- `pools[1].entries[1].functions[0].levels.max` = 20
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].name` = "minecraft:experience_bottle"
+- `pools[1].entries[2].weight` = 5
+- `pools[1].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[2].functions[0].count.min` = 24
+- `pools[1].entries[2].functions[0].count.max` = 32
+- `pools[1].entries[3].type` = "minecraft:item"
+- `pools[1].entries[3].name` = "minecraft:book"
+- `pools[1].entries[3].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[1].entries[3].functions[0].options` = "#dungeons_arise:lolths_curse"
+- `pools[1].entries[4].type` = "minecraft:item"
+- `pools[1].entries[4].name` = "minecraft:book"
+- `pools[1].entries[4].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[1].entries[4].functions[0].options` = "#dungeons_arise:ensnaring"
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:empty"
+- `pools[2].entries[0].weight` = 3
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:diamond_helmet"
+- `pools[2].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[1].functions[0].levels` = 10
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:diamond_boots"
+- `pools[2].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[2].functions[0].levels` = 10
+- `pools[2].entries[3].type` = "minecraft:item"
+- `pools[2].entries[3].name` = "minecraft:netherite_boots"
+- `pools[2].entries[3].functions[0].function` = "minecraft:set_damage"
+- `pools[2].entries[3].functions[0].damage.type` = "minecraft:uniform"
+- `pools[2].entries[3].functions[0].damage.min` = 0.05
+- `pools[2].entries[3].functions[0].damage.max` = 0.2
+- `pools[2].entries[4].type` = "minecraft:item"
+- `pools[2].entries[4].name` = "minecraft:diamond_chestplate"
+- `pools[2].entries[4].functions[0].function` = "minecraft:set_damage"
+- `pools[2].entries[4].functions[0].damage.type` = "minecraft:uniform"
+- `pools[2].entries[4].functions[0].damage.min` = 0.6
+- `pools[2].entries[4].functions[0].damage.max` = 0.8
+- `pools[3].rolls` = 1
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].name` = "minecraft:iron_ingot"
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 4
+- `pools[3].entries[0].functions[0].count.max` = 16
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].weight` = 2
+- `pools[3].entries[1].name` = "minecraft:diamond"
+- `pools[3].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[1].functions[0].count.min` = 4
+- `pools[3].entries[1].functions[0].count.max` = 6
+- `pools[3].entries[2].type` = "minecraft:item"
+- `pools[3].entries[2].name` = "minecraft:netherite_scrap"
+- `pools[4].rolls.min` = 2
+- `pools[4].rolls.max` = 3
+- `pools[4].entries[0].type` = "minecraft:item"
+- `pools[4].entries[0].weight` = 80
+- `pools[4].entries[0].name` = "minecraft:golden_apple"
+- `pools[4].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[0].functions[0].count.min` = 1
+- `pools[4].entries[0].functions[0].count.max` = 3
+- `pools[4].entries[1].type` = "minecraft:item"
+- `pools[4].entries[1].weight` = 250
+- `pools[4].entries[1].name` = "minecraft:golden_carrot"
+- `pools[4].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[1].functions[0].count.min` = 1
+- `pools[4].entries[1].functions[0].count.max` = 4
+- `pools[4].entries[2].type` = "minecraft:item"
+- `pools[4].entries[2].name` = "minecraft:enchanted_golden_apple"
+
+### `data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous_treasure.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].name` = "minecraft:book"
+- `pools[0].entries[0].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[0].functions[0].options` = "#dungeons_arise:ensnaring"
+- `pools[0].entries[1].type` = "minecraft:empty"
+- `pools[0].entries[1].weight` = 5
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].weight` = 2
+- `pools[1].entries[0].name` = "minecraft:book"
+- `pools[1].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[0].functions[0].count.min` = 3
+- `pools[1].entries[0].functions[0].count.max` = 6
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:book"
+- `pools[1].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[1].entries[1].functions[0].levels` = 20
+- `pools[1].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].name` = "minecraft:experience_bottle"
+- `pools[1].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[2].functions[0].count.min` = 24
+- `pools[1].entries[2].functions[0].count.max` = 32
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:empty"
+- `pools[2].entries[0].weight` = 3
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].name` = "minecraft:diamond_leggings"
+- `pools[2].entries[1].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[1].functions[0].levels` = 15
+- `pools[2].entries[1].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[2].type` = "minecraft:item"
+- `pools[2].entries[2].name` = "minecraft:diamond_boots"
+- `pools[2].entries[2].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[2].functions[0].levels` = 15
+- `pools[2].entries[2].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[3].type` = "minecraft:item"
+- `pools[2].entries[3].name` = "minecraft:diamond_chestplate"
+- `pools[2].entries[3].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[3].functions[0].levels` = 15
+- `pools[2].entries[3].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[4].type` = "minecraft:item"
+- `pools[2].entries[4].name` = "minecraft:diamond_sword"
+- `pools[2].entries[4].functions[0].function` = "minecraft:enchant_with_levels"
+- `pools[2].entries[4].functions[0].levels` = 15
+- `pools[2].entries[4].functions[0].options` = "#minecraft:on_random_loot"
+- `pools[2].entries[5].type` = "minecraft:item"
+- `pools[2].entries[5].name` = "minecraft:netherite_chestplate"
+- `pools[2].entries[5].functions[0].function` = "minecraft:set_damage"
+- `pools[2].entries[5].functions[0].damage.type` = "minecraft:uniform"
+- `pools[2].entries[5].functions[0].damage.min` = 0.1
+- `pools[2].entries[5].functions[0].damage.max` = 0.2
+- `pools[3].rolls` = 1
+- `pools[3].entries[0].type` = "minecraft:item"
+- `pools[3].entries[0].name` = "minecraft:iron_ingot"
+- `pools[3].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[0].functions[0].count.min` = 8
+- `pools[3].entries[0].functions[0].count.max` = 16
+- `pools[3].entries[1].type` = "minecraft:item"
+- `pools[3].entries[1].name` = "minecraft:gold_block"
+- `pools[3].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[1].functions[0].count.min` = 1
+- `pools[3].entries[1].functions[0].count.max` = 2
+- `pools[3].entries[2].type` = "minecraft:item"
+- `pools[3].entries[2].name` = "minecraft:diamond_block"
+- `pools[3].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[2].functions[0].count` = 1
+- `pools[3].entries[3].type` = "minecraft:item"
+- `pools[3].entries[3].weight` = 6
+- `pools[3].entries[3].name` = "minecraft:diamond"
+- `pools[3].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[3].entries[3].functions[0].count.min` = 2
+- `pools[3].entries[3].functions[0].count.max` = 6
+- `pools[4].rolls` = 1
+- `pools[4].entries[0].type` = "minecraft:item"
+- `pools[4].entries[0].weight` = 80
+- `pools[4].entries[0].name` = "minecraft:golden_apple"
+- `pools[4].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[4].entries[0].functions[0].count.min` = 5
+- `pools[4].entries[0].functions[0].count.max` = 7
+- `pools[4].entries[1].type` = "minecraft:item"
+- `pools[4].entries[1].name` = "minecraft:enchanted_golden_apple"
+- `pools[4].entries[1].weight` = 50
+
+### `data/dungeons_arise/loot_table/chests/mechanical_nest/mechanical_nest_treasure.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].name` = "minecraft:crossbow"
+- `pools[0].entries[0].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[0].functions[0].options` = "#dungeons_arise:voltaic_shot"
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].name` = "minecraft:book"
+- `pools[0].entries[1].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[1].functions[0].options` = "#dungeons_arise:voltaic_shot"
+- `pools[0].entries[2].type` = "minecraft:item"
+- `pools[0].entries[2].name` = "minecraft:book"
+- `pools[0].entries[2].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[2].functions[0].options` = "#dungeons_arise:discharge"
+- `pools[0].entries[3].type` = "minecraft:item"
+- `pools[0].entries[3].name` = "minecraft:diamond_sword"
+- `pools[0].entries[3].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[3].functions[0].options` = "#dungeons_arise:discharge"
+- `pools[0].entries[4].type` = "minecraft:empty"
+- `pools[0].entries[4].weight` = 6
+- `pools[1].rolls.min` = 1
+- `pools[1].rolls.max` = 2
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].name` = "minecraft:diamond_block"
+- `pools[1].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[0].functions[0].count.min` = 2
+- `pools[1].entries[0].functions[0].count.max` = 5
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:emerald_block"
+- `pools[1].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[1].functions[0].count.min` = 2
+- `pools[1].entries[1].functions[0].count.max` = 5
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].name` = "minecraft:netherite_scrap"
+- `pools[1].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[2].functions[0].count.min` = 1
+- `pools[1].entries[2].functions[0].count.max` = 4
+- `pools[1].entries[3].type` = "minecraft:item"
+- `pools[1].entries[3].name` = "minecraft:diamond"
+- `pools[1].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[3].functions[0].count.min` = 6
+- `pools[1].entries[3].functions[0].count.max` = 12
+- `pools[1].entries[4].type` = "minecraft:item"
+- `pools[1].entries[4].name` = "minecraft:gold_ingot"
+- `pools[1].entries[4].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[4].functions[0].count.min` = 4
+- `pools[1].entries[4].functions[0].count.max` = 30
+- `pools[1].entries[5].type` = "minecraft:item"
+- `pools[1].entries[5].name` = "minecraft:raw_iron_block"
+- `pools[1].entries[5].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[5].functions[0].count.min` = 8
+- `pools[1].entries[5].functions[0].count.max` = 12
+- `pools[1].entries[6].type` = "minecraft:item"
+- `pools[1].entries[6].name` = "minecraft:gold_block"
+- `pools[1].entries[6].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[6].functions[0].count.min` = 2
+- `pools[1].entries[6].functions[0].count.max` = 5
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:item"
+- `pools[2].entries[0].weight` = 50
+- `pools[2].entries[0].name` = "minecraft:golden_apple"
+- `pools[2].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[0].functions[0].count.min` = 2
+- `pools[2].entries[0].functions[0].count.max` = 14
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].weight` = 1
+- `pools[2].entries[1].name` = "minecraft:enchanted_golden_apple"
+
+### `data/dungeons_arise/loot_table/chests/mining_complex/mining_complex_treasure.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls` = 1
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].name` = "minecraft:crossbow"
+- `pools[0].entries[0].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[0].functions[0].options` = "#dungeons_arise:voltaic_shot"
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].name` = "minecraft:book"
+- `pools[0].entries[1].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[1].functions[0].options` = "#dungeons_arise:voltaic_shot"
+- `pools[0].entries[2].type` = "minecraft:item"
+- `pools[0].entries[2].name` = "minecraft:book"
+- `pools[0].entries[2].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[2].functions[0].options` = "#dungeons_arise:discharge"
+- `pools[0].entries[3].type` = "minecraft:item"
+- `pools[0].entries[3].name` = "minecraft:diamond_sword"
+- `pools[0].entries[3].functions[0].function` = "minecraft:enchant_randomly"
+- `pools[0].entries[3].functions[0].options` = "#dungeons_arise:discharge"
+- `pools[0].entries[4].type` = "minecraft:empty"
+- `pools[0].entries[4].weight` = 3
+- `pools[1].rolls` = 1
+- `pools[1].entries[0].type` = "minecraft:item"
+- `pools[1].entries[0].name` = "minecraft:diamond_block"
+- `pools[1].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[0].functions[0].count.min` = 1
+- `pools[1].entries[0].functions[0].count.max` = 2
+- `pools[1].entries[1].type` = "minecraft:item"
+- `pools[1].entries[1].name` = "minecraft:diamond"
+- `pools[1].entries[1].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[1].functions[0].count.min` = 6
+- `pools[1].entries[1].functions[0].count.max` = 12
+- `pools[1].entries[2].type` = "minecraft:item"
+- `pools[1].entries[2].name` = "minecraft:raw_iron_block"
+- `pools[1].entries[2].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[2].functions[0].count.min` = 8
+- `pools[1].entries[2].functions[0].count.max` = 12
+- `pools[1].entries[3].type` = "minecraft:item"
+- `pools[1].entries[3].name` = "minecraft:gold_block"
+- `pools[1].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[1].entries[3].functions[0].count.min` = 2
+- `pools[1].entries[3].functions[0].count.max` = 3
+- `pools[2].rolls` = 1
+- `pools[2].entries[0].type` = "minecraft:item"
+- `pools[2].entries[0].weight` = 10
+- `pools[2].entries[0].name` = "minecraft:golden_apple"
+- `pools[2].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[2].entries[0].functions[0].count.min` = 2
+- `pools[2].entries[0].functions[0].count.max` = 14
+- `pools[2].entries[1].type` = "minecraft:item"
+- `pools[2].entries[1].weight` = 1
+- `pools[2].entries[1].name` = "minecraft:enchanted_golden_apple"
