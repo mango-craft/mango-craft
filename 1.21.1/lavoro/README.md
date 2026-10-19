@@ -11,22 +11,20 @@ I documenti **vivi** si aggiornano; quelli **storici** sono fotografie e non si 
 | **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e dove sono le mod in valutazione | vivo |
 | **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle | vivo |
 | **0602** | [mod-scartate](0602-mod-scartate.md) | Mod lasciate fuori, con il motivo | vivo |
-| **0610** | [log-decisioni](0610-log-decisioni.md) | Una riga per decisione, dal 14/10/2026 | storico (si aggiunge in fondo) |
-| **0611** | [round-2026-10-17](0611-round-2026-10-17.md) | Round di decisione su tutte le opzionali, con le valutazioni di partenza in allegato | storico |
 | **0620** | [progetto-datapack](0620-progetto-datapack.md) | Parti del datapack da scrivere: vasi, mercato, esperienza, correzioni | vivo |
-| **0621** | [copertura-vasi](0621-copertura-vasi.md) | Tabella pianta per pianta della copertura nei vasi | vivo |
 | **0630** | [pre-progettazione-0.6](0630-pre-progettazione-0.6.md) | Tappa 5 (0.6.x): parti, stato verificato, decisioni, suddivisione in versioni, prove, rischi | vivo fino alla fine della tappa |
-| **0701** | [nether](0701-nether.md) | Ricerca sul Nether (in inglese) | storico |
-| **0702** | [animali](0702-animali.md) | Animali con cibi integrati nella cucina (in inglese) | storico |
-| **0703** | [esperienza](0703-esperienza.md) | Deposito e farm di esperienza (italiano e inglese) | storico |
-| **0704** | [vasi-compat-esistenti](0704-vasi-compat-esistenti.md) | Compatibilità esistenti per vasi e mercato (in inglese) | storico |
-| **0705** | [sovrapposizioni-e-calderoni](0705-sovrapposizioni-e-calderoni.md) | Revisione delle sovrapposizioni e analisi dei sei calderoni | storico |
-| **0706** | [livelli-di-integrazione](0706-livelli-di-integrazione.md) | Tag, datapack o script: quanto integrare | storico |
-| **0707** | [magia](0707-magia.md) | Mappa della magia e proposte | storico |
-| **0708** | [enhanced-celestials-2](0708-enhanced-celestials-2.md) | Enhanced Celestials 2 al posto di EC1: mod, lune, calendario, datapack, rischi | storico |
-| **0709** | [shader](0709-shader.md) | Supporto agli shader: Iris compatibile con Sodium 0.8, mod del pack con gli shader, pacchetti e licenze | storico |
-| **0710** | [confronto-modpack-famosi](0710-confronto-modpack-famosi.md) | Primo confronto con 8 modpack (zaini, ordinamento, grandi aggiunte) | storico |
-| **0711** | [secondo-confronto-modpack](0711-secondo-confronto-modpack.md) | Secondo confronto con pack grandi e a tema, con le note grezze | storico |
-| **0712** | [shader-pack](0712-shader-pack.md) | Pacchetti di shader da includere: licenze, blocchi delle mod riconosciuti, Colorwheel, Enhanced Celestials 2 | storico |
-| **0713** | [achievement](0713-achievement.md) | Achievement: progressi già presenti nel pack, mod per la schermata, progressione del pack | storico |
-| **0901** | [pacchetti-mrpack](0901-pacchetti-mrpack.md) | Le versioni prima del repository e l'installazione a mano | storico |
+
+## Un file per versione (`versioni/`)
+
+Ogni versione del pack ha un file che racconta le sue valutazioni, decisioni, lavoro e prove, nato il 19/10/2026 dalla riorganizzazione dei documenti (prima: log delle decisioni 0610, round 0611, ricerche 0701–0713). Le versioni rilasciate sono chiuse; quella in corso è viva.
+
+| File | Versione | Stato |
+|---|---|---|
+| [v0.1.1](versioni/v0.1.1.md) | base del repository (mod scelte il 14–16/10) | chiuso |
+| [v0.2.3](versioni/v0.2.3.md) | tappa 1; contiene il round del 17/10 che ha deciso anche le mod di 0.3.0–0.5.0 | chiuso |
+| [v0.3.0](versioni/v0.3.0.md) · [v0.4.0](versioni/v0.4.0.md) · [v0.5.0](versioni/v0.5.0.md) | tappe 2–4 | chiusi |
+| [v0.5.1](versioni/v0.5.1.md) · [v0.5.2](versioni/v0.5.2.md) · [v0.5.3](versioni/v0.5.3.md) | lune, shader, pacchetti di shader | chiusi |
+| [v0.6.0](versioni/v0.6.0.md) | tappa 5: config e correzioni | **in progettazione** |
+| [v0.6.1](versioni/v0.6.1.md) · [v0.6.2](versioni/v0.6.2.md) | tappa 5: vasi, mercato | pianificati |
+
+Dove sono finiti i documenti di prima: ricerche 0705, 0706, 0707, 0710 → `v0.1.1`; 0611, 0703, 0711 → `v0.2.3`; 0708 → `v0.5.1`; 0709 → `v0.5.2`; 0712 → `v0.5.3`; 0713 → `v0.6.0`; le righe del log 0610 → sezione "Decisioni" della loro versione; le parti grezze e in inglese (0701, 0702, 0704, 0621, 0901, allegati e appendici) → `ai-agents/stage/`.
