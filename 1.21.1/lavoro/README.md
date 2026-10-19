@@ -11,8 +11,6 @@ I documenti **vivi** si aggiornano; quelli **storici** sono fotografie e non si 
 | **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e dove sono le mod in valutazione | vivo |
 | **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle | vivo |
 | **0602** | [mod-scartate](0602-mod-scartate.md) | Mod lasciate fuori, con il motivo | vivo |
-| **0620** | [progetto-datapack](0620-progetto-datapack.md) | Parti del datapack da scrivere: vasi, mercato, esperienza, correzioni | vivo |
-| **0630** | [pre-progettazione-0.6](0630-pre-progettazione-0.6.md) | Tappa 5 (0.6.x): parti, stato verificato, decisioni, suddivisione in versioni, prove, rischi | vivo fino alla fine della tappa |
 
 ## Un file per versione (`versioni/`)
 
@@ -27,4 +25,4 @@ Ogni versione del pack ha un file che racconta le sue valutazioni, decisioni, la
 | [v0.6.0](versioni/v0.6.0.md) | tappa 5: config e correzioni | **in progettazione** |
 | [v0.6.1](versioni/v0.6.1.md) · [v0.6.2](versioni/v0.6.2.md) | tappa 5: vasi, mercato | pianificati |
 
-Dove sono finiti i documenti di prima: ricerche 0705, 0706, 0707, 0710 → `v0.1.1`; 0611, 0703, 0711 → `v0.2.3`; 0708 → `v0.5.1`; 0709 → `v0.5.2`; 0712 → `v0.5.3`; 0713 → `v0.6.0`; le righe del log 0610 → sezione "Decisioni" della loro versione; le parti grezze e in inglese (0701, 0702, 0704, 0621, 0901, allegati e appendici) → `ai-agents/stage/`.
+Dove sono finiti i documenti di prima: ricerche 0705, 0706, 0707, 0710 → `v0.1.1`; 0611, 0703, 0711 → `v0.2.3`; 0708 → `v0.5.1`; 0709 → `v0.5.2`; 0712 → `v0.5.3`; 0713 → `v0.6.0`; le righe del log 0610 → sezione "Decisioni" della loro versione; le parti grezze e in inglese (0701, 0702, 0704, 0621, 0901, allegati e appendici) → `ai-agents/stage/`; il progetto del datapack 0620 e la pre-progettazione 0630 → `v0.6.0`, `v0.6.1`, `v0.6.2` e le schede di `../mod-knowledge/` (formati dei file: `botany-pots`, `farming-for-blockheads`, `tema-esperienza`, `cataclysm`).

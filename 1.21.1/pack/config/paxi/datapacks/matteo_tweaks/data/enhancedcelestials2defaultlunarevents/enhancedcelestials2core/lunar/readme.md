@@ -1,6 +1,6 @@
 # Lune di sangue più rare (Enhanced Celestials 2)
 
-Dalla 0.5.1 le lune vengono da **Enhanced Celestials 2** (EC2): la mod **Core** fa il calendario e legge i dati, la mod **Default Lunar Events** porta le lune (sangue, raccolto, blu, super). Prima c'era Enhanced Celestials 1, con un formato diverso (storia e confronto: `1.21.1/lavoro/0708-enhanced-celestials-2.md` nel repository).
+Dalla 0.5.1 le lune vengono da **Enhanced Celestials 2** (EC2): la mod **Core** fa il calendario e legge i dati, la mod **Default Lunar Events** porta le lune (sangue, raccolto, blu, super). Prima c'era Enhanced Celestials 1, con un formato diverso (storia e confronto: `1.21.1/lavoro/versioni/v0.5.1.md` e la scheda `1.21.1/mod-knowledge/enhanced-celestials-2.md` nel repository).
 
 ## Come funziona
 

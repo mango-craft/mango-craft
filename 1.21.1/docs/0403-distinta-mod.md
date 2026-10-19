@@ -13,7 +13,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 ## Correzioni emerse dalla verifica
 
 - **Sodium Dynamic Lights → LambDynamicLights**: la prima era un port non ufficiale fermo a gennaio 2025; LambDynamicLights è l'originale, con build NeoForge 1.21.1 (4.8.11, agosto 2026). Le due sono incompatibili tra loro.
-- **Enhanced Celestials**: scelta la mod originale (6.0.2.6), che include già lune di sangue e del raccolto. Sostituita dalla 0.5.1 con Enhanced Celestials 2 (Core + Default Lunar Events), il suo seguito ufficiale (`../lavoro/0708-enhanced-celestials-2.md`).
+- **Enhanced Celestials**: scelta la mod originale (6.0.2.6), che include già lune di sangue e del raccolto. Sostituita dalla 0.5.1 con Enhanced Celestials 2 (Core + Default Lunar Events), il suo seguito ufficiale (`../lavoro/versioni/v0.5.1.md`).
 - **Versioni aggiornate**: Sodium 0.8.13 · Apotheosis 8.9.0 · Truly Modular (Miapi) 2.3.9 · HerbalBrews 1.1.4 · BotanyPotsAdditions 1.1.0 · Animal Pens 2.5.0 · Easy Villagers 1.1.47.
 - **Release da fissare** (le versioni più nuove sono beta): Create Crafts & Additions 1.6.0 · Create: Enchantment Industry 2.4.2 · Simple Backups 4.0.21 · JEI 19.51.0.418 · Polymorph 1.1.0.
 - **Create 6.0.10**: tutti gli addon Create verificati sono compilati per questa versione.

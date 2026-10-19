@@ -12,9 +12,9 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.4.0`) |
 | 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae (+ Fragmentum), Creeper Overhaul, Paragliders | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.0`) |
 | 4.1 | 0.5.1 | Lune: Enhanced Celestials 2 (Core + Default Lunar Events) al posto di Enhanced Celestials, luna di sangue ribilanciata nel formato nuovo, Data Anchor aggiornata (decisa il 18/10) | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.1`) |
-| 4.2 | 0.5.2 | Supporto agli shader: Iris 1.8.14-beta.1 ed Enhanced Celestials 2: Shader Support (nessuna mod di compatibilità obbligatoria: `0709-shader.md`); gli shader restano facoltativi; config delle traduzioni di EC2 (B32) (decisa il 18/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.2`) |
+| 4.2 | 0.5.2 | Supporto agli shader: Iris 1.8.14-beta.1 ed Enhanced Celestials 2: Shader Support (nessuna mod di compatibilità obbligatoria: `versioni/v0.5.2.md`); gli shader restano facoltativi; config delle traduzioni di EC2 (B32) (decisa il 18/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.2`) |
 | 4.3 | 0.5.3 | Due pacchetti di shader facoltativi scelti per le mod del pack (Complementary Reimagined, MakeUp - Ultra Fast); impostazioni video lasciate a chi gioca (Sodium si regola già da solo); Every Compat resta nella 0.6.0 (decisa il 19/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.3`) |
-| 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `0620-progetto-datapack.md`), config di Every Compat, Artifacts e, se serve, Jaden's. Pre-progettazione in `0630-pre-progettazione-0.6.md`, che propone di dividerla in 0.6.0 (config e correzioni), 0.6.1 (vasi), 0.6.2 (mercato) | in progettazione |
+| 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `versioni/v0.6.1.md`), config di Every Compat, Artifacts e, se serve, Jaden's. Progettazione in `versioni/v0.6.0.md`, che propone di dividerla in 0.6.0 (config e correzioni), 0.6.1 (vasi, `v0.6.1.md`), 0.6.2 (mercato, `v0.6.2.md`) | in progettazione |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
 
 **Stato per gruppi** (aggiornato al 19/10/2026) · ✅ fatto · 🧪 da provare · ⏳ previsto
@@ -40,7 +40,7 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | Artefatti nelle casse | 153 casse di strutture modded, Galeone compreso | ✅ 0.2.3 |
 | Artefatti: correzioni | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns sbagliati; casse di Mowzie's Mobs e Born in Chaos | ⏳ 0.6.0 |
 | Vasi: Ars Nouveau | Magebloom, Sourceberry, 5 frutti di archwood | ✅ 0.1.1 |
-| Vasi: tutto il resto | Piante, terreni e alberi mancanti (conti in 0620), piante di Jaden's e Nether Depths, nomi vecchi di Regions Unexplored | ⏳ 0.6.0 |
+| Vasi: tutto il resto | Piante, terreni e alberi mancanti (conti in `versioni/v0.6.1.md`), piante di Jaden's e Nether Depths, nomi vecchi di Regions Unexplored | ⏳ 0.6.0 |
 | Pesce cotto di Starcatcher | Nelle etichette del pesce cotto | ✅ 0.3.0 |
 | Esperienza | Scambio Create ↔ Cognition nel Mescolatore, valore del liquido di Cognition | ⏳ 0.6.0 |
 | Mercato di Farming for Blockheads | Voci per le mod che il mercato non conosce | ⏳ 0.6.0 |

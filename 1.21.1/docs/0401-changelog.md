@@ -14,7 +14,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 
 - **NeoForge**: 21.1.259 (invariato).
 - **Mondo nuovo**: no.
-- **Shader**: due pacchetti **spenti di serie**, nella cartella `shaderpacks`: **Complementary Reimagined** (il più completo, profili da Potato a Ultra) e **MakeUp - Ultra Fast** (il più leggero, riconosce i blocchi di Create, Farmer's Delight, Twilight Forest, Ars Nouveau e altre mod del pack). Si scelgono in gioco dalle impostazioni video. Scelta: `../lavoro/0712-shader-pack.md`.
+- **Shader**: due pacchetti **spenti di serie**, nella cartella `shaderpacks`: **Complementary Reimagined** (il più completo, profili da Potato a Ultra) e **MakeUp - Ultra Fast** (il più leggero, riconosce i blocchi di Create, Farmer's Delight, Twilight Forest, Ars Nouveau e altre mod del pack). Si scelgono in gioco dalle impostazioni video. Scelta: `../lavoro/versioni/v0.5.3.md`.
 - **Impostazioni video**: nessun file nel pack, restano a chi gioca; Sodium di serie è già regolato per le prestazioni (`0302-config.md`).
 - **Strumenti**: il workflow Aggiungi mod Modrinth accetta anche pacchetti di shader e resource pack.
 - **Stato**: ✅ provata il 19/10/2026 (i due pacchetti funzionano, anche cambiandoli in gioco; la luna di sangue avviata da comando si vede con gli shader; pacchetti lasciati con le impostazioni di serie) e rilasciata come pre-release `1.21.1-v0.5.3`.
@@ -24,7 +24,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 
 - **NeoForge**: 21.1.259 (invariato).
 - **Mondo nuovo**: no.
-- **Shader** (facoltativi): **Iris** 1.8.14-beta.1 (l'unica versione che funziona con Sodium 0.8, ancora beta) ed **Enhanced Celestials 2: Shader Support** (i colori delle lune con gli shader). Nessun pacchetto di shader incluso: senza attivarne uno il gioco resta com'era. Le mod del pack con parti apposta per Iris sono state controllate prima (`../lavoro/0709-shader.md`); nessuna libreria nuova.
+- **Shader** (facoltativi): **Iris** 1.8.14-beta.1 (l'unica versione che funziona con Sodium 0.8, ancora beta) ed **Enhanced Celestials 2: Shader Support** (i colori delle lune con gli shader). Nessun pacchetto di shader incluso: senza attivarne uno il gioco resta com'era. Le mod del pack con parti apposta per Iris sono state controllate prima (`../lavoro/versioni/v0.5.2.md`); nessuna libreria nuova.
 - **Config**: traduzioni di Enhanced Celestials 2 spente (`config/enhancedcelestials2core/translations.json`): niente traduzioni scaricate da internet e niente più messaggio in chat (B32).
 - **Strumenti**: il workflow Esamina mod legge anche i testi del codice compilato delle mod (nomi dei file di config, comandi).
 - **Stato**: ✅ provata il 19/10/2026 (mondo nuovo, avvio in 70 secondi, 28.612 ricette; Iris attiva senza shader, nessun errore nuovo) e rilasciata come pre-release `1.21.1-v0.5.2`.
