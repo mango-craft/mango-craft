@@ -36,15 +36,15 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/illager_fortress_small"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/illager_hideout_tresure"
         },
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/pillager_outpost_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_lesser_tresure"
         },
         {
           "condition": "neoforge:loot_table_id",

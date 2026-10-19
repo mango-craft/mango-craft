@@ -17,10 +17,6 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_main"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/trident_trial_monument/ttm_treasure_chest"
         }
       ]
     }

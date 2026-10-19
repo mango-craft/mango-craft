@@ -44,6 +44,10 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/badland_miner_outpost"
         }
       ]

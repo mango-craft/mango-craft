@@ -10,7 +10,7 @@ Crea le varianti (credenze, cassetti, tetti, finestre, blocchi cesellati…) di 
 
 - Con la config di serie crea **10.733 blocchi**, il 40,7% di tutti i blocchi del pack; il modulo più pesante è Rechiseled (2.183 blocchi). Avvio da 51 a 78 secondi, ricette da 22.123 a 28.026 (B22).
 - Il modulo di Rechiseled crea 37 voci × 3 (blocco, lastra, scala) = **111 blocchi per ogni legno**; 54 sono le varianti `_connecting` (texture collegate): escluderle dimezza il modulo.
-- Rigenera texture e modelli a **ogni** ricaricamento delle risorse, anche con F3+T dentro il gioco (nel log: "REGEN_ON_EVERY_RELOAD"): causa probabile del crash per memoria finita (B33).
+- Rigenera texture e modelli a **ogni** ricaricamento delle risorse, anche con F3+T dentro il gioco (nel log: "REGEN_ON_EVERY_RELOAD"). **Misurato nel log dell'istanza di prova (19/10)**: la generazione grafica dura 2,4 secondi (189 compiti) dentro un ricaricamento di oltre 35 secondi; quella di ricette e bottino 0,24 secondi a ogni apertura di un mondo. Quindi non è la causa principale di B33 (una mia ipotesi precedente, non confermata): il resto del tempo è di Minecraft, che rimette insieme modelli e atlante delle texture dei blocchi (8192×8192 pixel) con i blocchi in più. Che sia questo a esaurire la memoria è un'ipotesi non misurata; la prova è con 12 GB (B33).
 
 ## Config
 
@@ -30,6 +30,7 @@ Crea le varianti (credenze, cassetti, tetti, finestre, blocchi cesellati…) di 
 - Solo il file `hazardous` toglie davvero i blocchi (`EveryCompat.addModule`, `HardcodedBlockType`). Il file avverte "modpack makers DO NOT use it" pensando ai server con config diverse dal client: nel single player non vale.
 - Togliere blocchi li cancella dal mondo (dovrebbero diventare aria: comportamento normale, non verificato nel sorgente). Va fatto **prima del mondo vero**.
 - `RUN_ONCE` genera una volta per avvio e non rigenera con F3+T. `CACHED` salva in `dynamic-resource-pack-cache/` e `dynamic-data-pack-cache/` dell'istanza e rigenera solo quando cambia l'impronta (elenco delle mod con versioni più i resource pack): **le modifiche alla config di Every Compat non invalidano la cache**, quindi dopo ogni cambio vanno cancellate a mano le due cartelle. Moonlight non ha una strategia di cache propria.
+- **Cosa fa davvero `RUN_ONCE`** (letto nel codice, `PackGenerationStrategy.runOnce` di Moonlight e `ECConfigs.GenMode` di Every Compat): il pacchetto di risorse generato sta in memoria in tutti i modi tranne `CACHED`; con `ALWAYS` viene svuotato e rifatto da zero a ogni ricaricamento, con `RUN_ONCE` si genera la prima volta dopo l'avvio e i ricaricamenti seguenti lo riusano (nel log: "Skipping regeneration"). Con `use_external_resource_pack = false` (di serie) la generazione parte solo da vanilla e mod, quindi le resource pack dell'utente non la cambiano e non si perde niente. Svantaggi: un errore nella prima generazione resta fino al riavvio; vantaggio possibile, non verificato: il secondo mondo della stessa sessione riusa le ricette già generate (B30). Il codice letto è l'ultimo ramo (WoodGood @90ed8ef, Moonlight @7610478), non esattamente 2.11.54 / 3.7.2; i nomi nel log del pack coincidono. Il commento della mod dice che `ALWAYS` è spesso il più veloce perché evita il disco.
 - I file sono TOML di NeoForge: parziali ammessi, ma meglio completi (scheda `../theme-knowledge/neoforge.md`).
 
 ## Problemi
@@ -38,4 +39,4 @@ B22 (peso), B24 (48 traduzioni mancanti dei tronchi cavi di Twilight Forest), B2
 
 ## Storia nel pack
 
-0.4.0 aggiunta con la config di serie (`../lavoro/versioni/v0.4.0.md`); 0.6.0 config (`../lavoro/versioni/v0.6.0.md`).
+0.4.0 aggiunta con la config di serie (`../lavoro/versioni/v0.4.0.md`). Decisione del 19/10 (`../lavoro/versioni/v0.6.0.md`): **tutte le varianti e tutti i legni restano** (Matteo usa tutte le varianti), quindi nessuna lista nera e nessun cambio ai blocchi; `generate_blocktype_tags` non si tocca. Resta da decidere solo `RUN_ONCE`, come prova.

@@ -5,8 +5,24 @@ file = "config/almostunified/tags.json"
 hash = "8eef0da096300652e97f70110ea78f45c7fa3e7556352ab29b088bb7a4164a2d"
 
 [[files]]
+file = "config/artifacts/general.toml"
+hash = "89914268eb2411fa4b644ba77da79f558d2b1bca69810004dad1a0589596684a"
+
+[[files]]
+file = "config/carryon-common.toml"
+hash = "0eb4c3e401dd747c6dc91674fcd2e342b1b9d9d50068d710e4a65d840fe78518"
+
+[[files]]
 file = "config/enhancedcelestials2core/translations.json"
 hash = "ca187fe5c82c892b512d33479b28c0ade281734322ad2261732654cb3fb52d88"
+
+[[files]]
+file = "config/fallingtree.json"
+hash = "65bd759c9ffa558f971a9a1b87e3400f66bcb1d6d671d9fe90bf57cd0c401d9d"
+
+[[files]]
+file = "config/inventoryessentials-common.toml"
+hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
@@ -33,6 +49,14 @@ file = "config/paxi/datapacks/matteo_tweaks/data/c/tags/item/foods/cooked_fishes
 hash = "863fa88ee5bddd00f9168653fe63a524aa321f0fc3e28309c537532262615abf"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/cataclysm/readme.md"
+hash = "3320051d3e585af7cbdb269eadcc5c327e7ebcbc363bfe4490bc3ca91a5dd2a0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/cataclysm/tags/worldgen/structure/berserker_spawn.json"
+hash = "cbd620723beaa7328b2497aebd44f199cc9b6750727f402feb6fcc5b5f8482f4"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/event_modifier/blood_moon_spawn_category_multiplier.json"
 hash = "7abc66749a756b008c4217f5e62c9021012ed47a2ea4a54fd0b7499ba573d47d"
 
@@ -50,7 +74,7 @@ hash = "5cfbd52b40adefb6df0246084029404e4b1e53bca03bb51de8e684e57acd872a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
-hash = "d3b005a7db3f7384aa186431c8e9df1e0c1cc2cb7e57f7d78420d47499c3acf9"
+hash = "564ff440219e8ed2d649f0a33371c90e2c52b1ae0b0194be0391fd8687d853ba"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ancient_city.json"
@@ -62,7 +86,7 @@ hash = "40cccdb81940224cec0a7613ac3832e9939abe5a442792b8ad0418bdd16be0e4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/desert_pyramid.json"
-hash = "5e0518d9d4b4fc3705a033f6f2de610216a6e96df7cfc4b2dd1ab7d509fa3ec1"
+hash = "45cb210f0db742fb4c144163a8a7650a5105ccc6b735ccdcc64378b1df89fb5e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/end_city_treasure.json"
@@ -82,11 +106,11 @@ hash = "49f6ba41c98b4f6497f1ee83c2a975963e96843ada5c7740112889f4b287b684"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json"
-hash = "1c8b869dcb069301dd63d31b145937f9e6c193b366f5a4576852bb11aabcbe81"
+hash = "a5a02da51286619c7533cfd338a67549aadf0a1f8322200e598ba45f04837477"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/readme.md"
-hash = "4b9779b3c69e10eaa1ac964d8cb887803150655076ef150816c3b1a238145b8f"
+hash = "8507f57efe93446c51176481b8b7c11afd62a23f04c280dc6698ab0ae040f45b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ruined_portal.json"
@@ -98,19 +122,19 @@ hash = "4d47796a2e14538e764d8c1cfee279850fcc20d82a3d4beb36606cda94ee1a59"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json"
-hash = "eda2e51abaf5bc9c012d78ab8abc6c88fcaeacd1fba448e9afc8632a3773cc0c"
+hash = "b31a316e7f417ae061deb0f0bede546e615d2c9531b2ab976f58658998473ba4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/stronghold_corridor.json"
-hash = "2861a325780e00d673dc540615f82a9568bf1114b6477bf04c5a75ece3a54e56"
+hash = "eadada9628dae0515f80fa2cfee99abcb3236bfac622961a00b02f630c3235d6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/underwater_ruin_big.json"
-hash = "b08265c770f02587b5e82b75d4797c035943a3bf77bfbd5fb2fc1e0da137f1cd"
+hash = "5c4dbe38971d4458f838d97567bf8bece833152deddd8a788976fd5c1ebb1cad"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/woodland_mansion.json"
-hash = "e1f30c9a4a36f58865e9a2ea3ad34ce33c059f43399d5d5cb1ebc1ec9bc6af9c"
+hash = "9df2727e240a04077669f185e35d0876718042da148b0a4650a2d0ca9cbd7c09"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/ars_magebloom.json"
@@ -174,7 +198,7 @@ hash = "ba89dee89777fe240c0692b29a378f11973d2d1998a8eb88d88c524809f6e7e1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/pack.mcmeta"
-hash = "c304d8bebeffc0ed106ba3077c25d26edfdfe7c2b655d2a359efee119a664618"
+hash = "7de063ac01b6797d0f7d9b3bd493970dfefa6f41547be18df27bf8ebf374cc3a"
 
 [[files]]
 file = "config/sparsestructures.json5"

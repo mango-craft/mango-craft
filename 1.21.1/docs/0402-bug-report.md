@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3)._
+_Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3; correzioni della 0.6.0 preparate, non ancora provate)._
 
 ---
 
@@ -18,10 +18,10 @@ _Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3)._
 
 | Codice | Visto in | Dove | Problema | Effetto | Piano |
 |---|---|---|---|---|---|
-| B01 | 0.1.1 | Datapack, artefatti | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie non esistono più: in quelle casse gli artefatti non compaiono mai | medio | 0.6.0, con i nomi veri dell'inventario |
-| B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati sono legati alla fortezza vanilla, che YUNG's sostituisce: non compaiono mai | medio | 0.6.0 (`berserker_spawn.json` nel datapack) |
-| B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs e Born in Chaos non hanno gli artefatti (nomi delle tabelle mai verificati) | basso | 0.6.0, nomi presi dall'inventario |
-| B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | 0.6.0: i moduli attivi servono tutti, quindi si agisce sulle varianti "connecting" di Rechiseled, sui legni e sulla generazione delle risorse (`../lavoro/versioni/v0.6.0.md`, parte A; scheda `../mod-knowledge/every-compat.md`) |
+| B01 | 0.1.1 | Datapack, artefatti | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie non esistono più: in quelle casse gli artefatti non compaiono mai | medio | 0.6.0: **preparato il 19/10**, da provare: tolti i 15 nomi e aggiunte 10 casse con i nomi veri (controllo dei nomi: 0 errori). Quattro strutture di Dungeons and Taverns con tesoro "vault" restano senza cassa: da decidere (`../lavoro/versioni/v0.6.0.md`, sezione 3) |
+| B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati sono legati alla fortezza vanilla, che YUNG's sostituisce: non compaiono mai | medio | 0.6.0: **preparato il 19/10**, da provare: `berserker_spawn.json` nel datapack (solo fortezze nuove) |
+| B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs e Born in Chaos non hanno gli artefatti (nomi delle tabelle mai verificati) | basso | 0.6.0: **preparato il 19/10** per Mowzie's Mobs (`monastery_chest`, `umvuthana_grove_chest`), da provare. **Born in Chaos non collegata**: le sue 7 tabelle sono generiche (`minecraft:`), motivo nella scheda `../mod-knowledge/artifacts.md` |
+| B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | **Decisione del 19/10: si tengono tutte le varianti e tutti i legni**, quindi il costo resta. Resta solo la prova di `RUN_ONCE` (circa 2,5 secondi a ricaricamento: non risolve il problema, solo lo riduce; `../lavoro/versioni/v0.6.0.md`, parte A; scheda `../mod-knowledge/every-compat.md`) |
 
 ## 🔍 Da verificare in gioco
 
@@ -33,7 +33,7 @@ _Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3)._
 | B07 | 0.1.0 | Accessories (dentro l'Aether) + Miapi/Hexalia | Bug noto di Accessories quando un'entità subisce danno; Forgified Fabric API dovrebbe evitarlo | alto se si presenta | Prova "Miapi + Accessories" in `0502`: subire e infliggere danno con armi Miapi e oggetti di Hexalia |
 | B23 | 0.4.0 | Diagonal Walls + Aether, Deep Aether | Il modello diagonale di 11 muri non si costruisce (muro di aerogel dell'Aether, muri di tronco di Deep Aether: proprietà diverse da quelle dei muri normali). Stesso avviso per muro e recinto "wrapped copycat" di Create: Connected | basso | Piazzare in diagonale un muro di tronco di Deep Aether: si vede bene o senza texture? |
 | B24 | 0.4.0 | Every Compat (Moonlight) + Twilight Forest | 48 traduzioni mancanti per i tronchi cavi (`item_type.twilightforest.hollow_log`) | basso | In EMI, i tronchi cavi creati da Every Compat hanno un nome leggibile? |
-| B33 | 0.5.3 | Memoria dell'istanza (8 GB) | Il gioco si blocca e si chiude per **memoria finita** (`OutOfMemoryError: Java heap space`) circa 3 minuti dopo un ricaricamento completo delle risorse fatto in gioco (lo stesso che fa F3+T; qui scattato cambiando impostazioni, con gli shader attivi). Prima del crash il server rallenta ("Can't keep up"). Il ricaricamento rigenera anche le risorse di Every Compat (B22) e tiene in memoria per un po' due copie di modelli e texture | alto: crash | Alzare la memoria dell'istanza a 12 GB (`../../docs/0101-installazione.md`) e ripetere: shader a turno, un cambio di impostazioni che ricarica le risorse, qualche minuto di gioco. La config ridotta di Every Compat (0.6.0) dovrebbe abbassare il consumo |
+| B33 | 0.5.3 | Memoria dell'istanza (8 GB) | Il gioco si blocca e si chiude per **memoria finita** (`OutOfMemoryError: Java heap space`) circa 3 minuti dopo un ricaricamento completo delle risorse fatto in gioco (lo stesso che fa F3+T; qui scattato cambiando impostazioni, con gli shader attivi). Prima del crash il server rallenta ("Can't keep up"). Il ricaricamento rigenera anche le risorse di Every Compat (B22: nel log pesa 2,4 secondi su un ricaricamento di oltre 35, quindi non ne è la causa principale) e tiene in memoria per un po' due copie di modelli e texture (atlante dei blocchi 8192x8192) | alto: crash | Alzare la memoria dell'istanza a 12 GB (`../../docs/0101-installazione.md`) e ripetere: shader a turno, un cambio di impostazioni che ricarica le risorse, qualche minuto di gioco. Con tutti i blocchi di Every Compat mantenuti (decisione del 19/10) non c'è una riduzione da attendersi dalla config: la leva è la memoria |
 
 ## 👁️ Delle mod (non correggibili da noi)
 
