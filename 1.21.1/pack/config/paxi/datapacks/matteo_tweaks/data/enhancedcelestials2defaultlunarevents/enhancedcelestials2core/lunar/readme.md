@@ -67,5 +67,6 @@ EC2 legge questi file **all'apertura del mondo**: dopo una modifica bisogna usci
 
 - Il comando delle previsioni lunari mostra le lune dei prossimi giorni: serve a contare le lune di sangue e tarare il peso.
 - Il comando che avvia una luna e quello che elenca gli effetti attivi ("dumpmodifiers") servono a controllare che i nostri ×2 e ×4 siano quelli usati.
+- EC2 **sostituisce il comando `/time`**: secondo i testi della mod, `/time set` porta all'ora indicata del giorno dopo e dice in che giorno del calendario si è.
 
-I nomi esatti dei comandi di EC2 vanno confermati in gioco (con EC1 erano `/ec lunarForecast` e `/ec setLunarEvent`).
+I comandi di EC2 iniziano con `/ecc` (il tasto Tab completa i nomi); con EC1 erano `/ec lunarForecast` e `/ec setLunarEvent`.

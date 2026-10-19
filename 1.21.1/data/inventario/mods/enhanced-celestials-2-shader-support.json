@@ -1,0 +1,70 @@
+{
+ "format": 2,
+ "status": "ok",
+ "name": "Enhanced Celestials 2: Shader Support",
+ "file": "Enhanced-Celestials-2-Shaders-NeoForge-1.21.1-2.0.0.3.jar",
+ "side": "client",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "1624d1472e98ca2d115217bb0a76ff0de61b82f1f0dc8f1bdd3036f7c5eda70a54b7e7ed2f502ddc0d2d85800b0e73228afb0752ec4b49c4848d145e96d442c6",
+ "mods": [
+  {
+   "modid": "enhancedcelestials2shaders",
+   "name": "Enhanced Celestials 2: Shaders",
+   "version": "2.0.0.3",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "enhancedcelestials2core",
+     "type": "required",
+     "range": "[2.0.3.1,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "corgilib",
+     "type": "required",
+     "range": "[5.0.0.9,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "sodium",
+     "type": "required",
+     "range": "*",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "iris",
+     "type": "required",
+     "range": "*",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "enhancedcelestials",
+     "type": "incompatible",
+     "range": "*",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "problems": []
+}

@@ -89,7 +89,6 @@ Le mod valutate e lasciate fuori, con il motivo. Documento vivo: una mod scartat
 | Wrenched | Alpha; cicla gli stati dei blocchi, non è una wrench multi-mod |
 | TooManyRecipeViewers | Non necessaria con EMI + JEI |
 | JourneyMap | Valida, ma basta una mappa (Xaero's) |
-| Shader (Iris…) | Scelta dell'utente. Se un giorno servissero: Iris ≥ 1.8.13 + una sola tra Colorwheel e Iris Flywheel Compat per i contraption di Create |
 | Embeddium | Non serve più: Sodium esce ufficialmente per NeoForge |
 
 ## Dal confronto con i modpack famosi (16/10/2026)

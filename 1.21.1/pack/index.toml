@@ -5,6 +5,10 @@ file = "config/almostunified/tags.json"
 hash = "8eef0da096300652e97f70110ea78f45c7fa3e7556352ab29b088bb7a4164a2d"
 
 [[files]]
+file = "config/enhancedcelestials2core/translations.json"
+hash = "ca187fe5c82c892b512d33479b28c0ade281734322ad2261732654cb3fb52d88"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
 hash = "7ee42603076d06e6d6f5c76f6dfaa6e1930c3555f3af49e92bce6bc611d5b72a"
 
@@ -42,7 +46,7 @@ hash = "cf96f193d997e47193a3b55b5b75a4e4dd54db4a22795af9fb15dc8da8f1b497"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md"
-hash = "e8a217a38580e4e3116c6d50cb5984694b3e62bb69877239001878969719dfc9"
+hash = "cb3ddd657f416d33035b8960d19381a2df0f4e92823068f3063449180ba92ecf"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
@@ -627,6 +631,11 @@ hash = "70f586b80beb657a8676b1147b1b96c4abd0aa421c819aa138038e082c41bc4d"
 metafile = true
 
 [[files]]
+file = "mods/enhanced-celestials-2-shader-support.pw.toml"
+hash = "118cc51b91c098a97d8a95de27c43d95556515a3bde0dce7a2a3eb1eff336a64"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "fa20fb7362040ed5528555ee03cb97e4597c1229bdbb0e67fa1adb4e34ce67c8"
 metafile = true
@@ -769,6 +778,11 @@ metafile = true
 [[files]]
 file = "mods/inventory-essentials.pw.toml"
 hash = "904d4d9bdabf6a6cbedab254debd43ccecc2986304fddfc26ff9031752ce1a39"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
 metafile = true
 
 [[files]]

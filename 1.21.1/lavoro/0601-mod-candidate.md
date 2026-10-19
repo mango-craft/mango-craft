@@ -15,3 +15,5 @@ Le valutazioni complete stanno nelle ricerche (`07xx`) e negli allegati del roun
 | **Fluid Converter**, **Land's Utilities** | Convertitori di liquidi, pochi download, gestione dei rapporti sconosciuta | Se si vuole un convertitore d'esperienza al posto del Mescolatore |
 | **Botania, Roots 4, Hex Casting** | Nessuna release stabile 1.21.1 | All'uscita |
 | **Magical Psi: Revival, PsiTweaks** | Addon di Psi | Dopo aver provato Psi |
+| **Colorwheel** | 🟡 Facoltativa per gli shader: con uno shader attivo ridà a Create l'accelerazione di Flywheel. Compilata su una Iris più vecchia, non provata con la 1.8.14 (`0709-shader.md`) | Se si usano gli shader con molti macchinari di Create |
+| **Ars Skyweave Shader Fix** | 🟡 Solo CurseForge, poco diffusa: con gli shader i blocchi Skyweave di Ars Nouveau diventano neri, questa li corregge | Se si usano gli shader |

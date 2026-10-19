@@ -3,8 +3,8 @@
 File generato da `scripts/esamina.py` (workflow "Esamina mod"): la mod **non** è nel pack. Non modificarlo a mano.
 
 - Versione: **2.0.3.3-neoforge** (release, 2026-09-07), file `Enhanced-Celestials-2-Core-NeoForge-1.21.1-2.0.3.3.jar`, id versione `CWaaEX5L`
-- Licenza su Modrinth: LicenseRef-All-Rights-Reserved · download: 66323
-- Filtro dei valori: `enhancedcelestials|lunar|moon`
+- Licenza su Modrinth: LicenseRef-All-Rights-Reserved · download: 66767
+- Filtro dei valori: `enhancedcelestials|lunar|moon` · filtro dei testi del codice: `(?i)^(automatic|manual|disabled)$|gson|getSerializedName|getAsString|getAsBoolean|JsonObject|fromJson|toJson|translations\.json|Translation_Mode|override_existing|Prompt_Language|codec`
 
 ## Mod nel file e dipendenze dichiarate
 
@@ -102,25 +102,25 @@ File generato da `scripts/esamina.py` (workflow "Esamina mod"): la mod **non** �
 - `enhancedcelestials2core.lunarforecast.recompute` = "Lunar forecast was recomputed!"
 - `enhancedcelestials2core.missing_addon.curseforge` = "Download from CurseForge"
 - `enhancedcelestials2core.missing_addon.default_lunar_events.continue_without` = "Continue Without Default Lunar Events"
-- `enhancedcelestials2core.missing_addon.default_lunar_events.prompt` = "Enhanced Celestials 2: Default Lunar Events isn't installed! Run %s to add a curated set of lunar events out of the box. Modpack developers: ship a config/enha…
+- `enhancedcelestials2core.missing_addon.default_lunar_events.prompt` = "Enhanced Celestials 2: Default Lunar Events isn't installed! Run %s to add a curated set of lunar events out of the box. Modpack developers: ship a config/enhancedcelestials2core/dle-prompt.json file with your pack to hide this prompt."
 - `enhancedcelestials2core.missing_addon.default_lunar_events.subtitle` = "Enhanced Celestials 2: Default Lunar Events isn't installed"
 - `enhancedcelestials2core.missing_addon.default_lunar_events.title` = "Missing Default Lunar Events"
 - `enhancedcelestials2core.missing_addon.modrinth` = "Download from Modrinth"
 - `enhancedcelestials2core.missing_addon.shaders.continue_without` = "Continue Without Shader Support"
-- `enhancedcelestials2core.missing_addon.shaders.prompt` = "You're running a shader mod, but Enhanced Celestials 2: Shader Support isn't installed! Run %s to get lunar events working correctly with your shaders. Modpack…
+- `enhancedcelestials2core.missing_addon.shaders.prompt` = "You're running a shader mod, but Enhanced Celestials 2: Shader Support isn't installed! Run %s to get lunar events working correctly with your shaders. Modpack developers: ship a config/enhancedcelestials2core/shaders-prompt.json file with your pack to hide this prompt."
 - `enhancedcelestials2core.missing_addon.shaders.subtitle` = "Iris was detected without Enhanced Celestials 2: Shader Support"
 - `enhancedcelestials2core.missing_addon.shaders.title` = "Missing Shader Support"
 - `enhancedcelestials2core.mob_effect_instance` = "%s (amplifier %s, %s ticks)"
 - `enhancedcelestials2core.sleep.fail` = "You may not rest now because the current lunar event prevents it."
 - `enhancedcelestials2core.translation.incomplete` = "Your selected language's Enhanced Celestials 2 translations are incomplete! Run %s to help translate."
-- `enhancedcelestials2core.translation.not_configured` = "Enhanced Celestials 2 translation settings not yet configured. Use %s to set up these rules. Modpack developers: once these settings are created ship them with…
+- `enhancedcelestials2core.translation.not_configured` = "Enhanced Celestials 2 translation settings not yet configured. Use %s to set up these rules. Modpack developers: once these settings are created ship them with your modpack to hide this prompt from showing again."
 - `enhancedcelestials2core.translation_config.cancel.tooltip` = "Discard any changes and return without saving."
 - `enhancedcelestials2core.translation_config.done.tooltip` = "Save these translation settings and return."
 - `enhancedcelestials2core.translation_config.mode` = "Translation Mode"
 - `enhancedcelestials2core.translation_config.mode.automatic` = "Automatic"
 - `enhancedcelestials2core.translation_config.mode.disabled` = "Disabled"
 - `enhancedcelestials2core.translation_config.mode.manual` = "Manual"
-- `enhancedcelestials2core.translation_config.mode.tooltip` = "Click to Cycle\n\nAutomatic: downloads and applies community translations automatically.\n\nManual: downloaded translations are never applied automatically.\n\…
+- `enhancedcelestials2core.translation_config.mode.tooltip` = "Click to Cycle\n\nAutomatic: downloads and applies community translations automatically.\n\nManual: downloaded translations are never applied automatically.\n\nDisabled: never downloads or applies community translations."
 - `enhancedcelestials2core.translation_config.override_existing` = "Override Existing Translations"
 - `enhancedcelestials2core.translation_config.override_existing.tooltip` = "When on, downloaded translations replace existing translation strings for keys you already have. When off, they only fill in keys that are missing."
 - `enhancedcelestials2core.translation_config.prompt_incomplete` = "Prompt When Incomplete"
@@ -828,3 +828,891 @@ File generato da `scripts/esamina.py` (workflow "Esamina mod"): la mod **non** �
 - `requires_clear_skies` = true
 - `tracked_past_events_max_count` = 100
 - `year_length_in_days` = 100
+
+## Testi nel codice
+
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/DropSettings.class`
+
+- "DROP_ENHANCER_CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "hashedCodec"
+- "(Lnet/minecraft/resources/ResourceKey;)Lcom/mojang/serialization/Codec;"
+- "codec"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "TARGET_CODEC"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/codecs/UnboundedMapCodec;"
+- "MULTIPLIERS_CODEC"
+- "(II)Lcom/mojang/serialization/Codec;"
+- "()Lcom/mojang/serialization/Codec;"
+- "DROP_ENHANCER_ENTRY_CODEC"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "LEGACY_DROP_ENHANCER_CODEC"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec<Lcom/mojang/datafixers/util/Either<Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/item/Item;>;>;>;"
+- "Lcom/mojang/serialization/Codec<Ljava/util/Map<Lcom/mojang/datafixers/util/Either<Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/item/Item;>;>;Ljava/lang/Double;>;>;"
+- "Lcom/mojang/serialization/Codec<Lcom/mojang/datafixers/util/Pair<Ljava/lang/Integer;Ljava/util/Map<Lcom/mojang/datafixers/util/Either<Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/item/Item;>;>;Ljava/lang/Double;>;>;>;"
+- "Lcom/mojang/serialization/Codec<Ljava/util/List<Lcom/mojang/datafixers/util/Pair<Ljava/lang/Integer;Ljava/util/Map<Lcom/mojang/datafixers/util/Either<Lnet/minecraft/tags/TagKey<Lnet/minecraft/world/item/Item;>;Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/world/item/Item;>;>;Ljava/lang/Double;…"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/DropSettings;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarDimensionSettings.class`
+
+- "codec"
+- "(Lnet/minecraft/resources/ResourceKey;)Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarDimensionSettings;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEvent$SpawnRequirements.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "()Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEvent$SpawnRequirements;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEvent.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "()Lcom/mojang/serialization/Codec;"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "BASE_CODEC"
+- "DIRECT_CODEC"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEvent;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEventProbabilities$DimensionProbability.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEventProbabilities$DimensionProbability;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEventProbabilities.class`
+
+- "codec"
+- "(Lnet/minecraft/resources/ResourceKey;)Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/codecs/UnboundedMapCodec;"
+- "com/mojang/serialization/codecs/UnboundedMapCodec"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarEventProbabilities;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarForecast.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "()Lcom/mojang/serialization/Codec;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarTextComponents$Notification.class`
+
+- "getSerializedName"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarTextComponents$Notification;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarTextComponents$NotificationType.class`
+
+- "(Ljava/util/function/Supplier;)Lnet/minecraft/util/StringRepresentable$EnumCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarTextComponents$NotificationType;>;"
+- "getSerializedName"
+- "net/minecraft/util/StringRepresentable$EnumCodec"
+- "EnumCodec"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarTextComponents.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/LunarTextComponents;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/MobEffectInstanceBuilder.class`
+
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/MobEffectInstanceBuilder;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/AnvilCostModifier.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/AnvilCostModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BeaconRadiusModifier.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BeaconRadiusModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BlockItemDropModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BlockItemDropModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BlockSleepingModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BlockSleepingModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/DisableBiomeSpawnSettingsModifier.class`
+
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Supplier;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/DisableBiomeSpawnSettingsModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/EnchantmentCostModifier.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/EnchantmentCostModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/EntityDropModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "codec"
+- "()Lcom/mojang/serialization/Codec;"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/EntityDropModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/EquipmentSet.class`
+
+- "CODEC"
+- "Lnet/minecraft/util/StringRepresentable$EnumCodec;"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/codecs/UnboundedMapCodec;"
+- "com/mojang/serialization/codecs/UnboundedMapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "DIRECT_CODEC"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/EquipmentSet;>;"
+- "net/minecraft/util/StringRepresentable$EnumCodec"
+- "EnumCodec"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/ExistingMobEquipmentModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "()Lcom/mojang/serialization/Codec;"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "mapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/ExistingMobEquipmentModifier;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/ExperienceModifier.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/ExperienceModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/ForceSurfaceSpawningModifier.class`
+
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Supplier;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/ForceSurfaceSpawningModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/GlowColorModifier.class`
+
+- "FLEXIBLE_COLOR_CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "mapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/GlowColorModifier;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifierType.class`
+
+- "codec"
+- "()Lcom/mojang/serialization/MapCodec;"
+- "()Lcom/mojang/serialization/MapCodec<TT;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifierTypes.class`
+
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "codec"
+- "(Lcom/mojang/serialization/MapCodec;)Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifierType;"
+- "byNameCodec"
+- "()Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "(Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifierType;"
+- "(Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifier;>;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BlockItemDropModifier;>;"
+- "(Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BlockItemDropModifier;>;)Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/BlockItemDropModifier;>;"
+- "settingsCodec"
+- "Lcom/mojang/serialization/MapCodec<TT;>;"
+- "<T::Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifier;>(Ljava/lang/String;Lcom/mojang/serialization/MapCodec<TT;>;)Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifierType<TT;>;"
+- "()Lcom/mojang/serialization/MapCodec;"
+- "(Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/LunarEventModifierType;)Lcom/mojang/serialization/MapCodec;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobEffectsModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "codec"
+- "()Lcom/mojang/serialization/Codec;"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobEffectsModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobEquipment$EquipmentCombination.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "(FF)Lcom/mojang/serialization/Codec;"
+- "(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;"
+- "DIRECT_CODEC"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "wrappedCodecAllowingEmpty"
+- "(Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobEquipment$EquipmentCombination;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobEquipment$EquipmentEntry.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "NON_NEGATIVE_CODEC"
+- "(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobEquipment$EquipmentEntry;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobSpawnDistancesModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/codecs/UnboundedMapCodec;"
+- "com/mojang/serialization/codecs/UnboundedMapCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobSpawnDistancesModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobSpawnEquipmentModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "()Lcom/mojang/serialization/Codec;"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "mapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobSpawnEquipmentModifier;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobSpawnSettingsModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MobSpawnSettingsModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MoonSizeModifier.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MoonSizeModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MoonTextureColorModifier.class`
+
+- "COLOR_CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MoonTextureColorModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MoonTextureModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/MoonTextureModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/NameColorModifier.class`
+
+- "COLOR_CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/NameColorModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SkyLightColorModifier.class`
+
+- "COLOR_CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SkyLightColorModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SlimesSpawnEverywhereModifier.class`
+
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Supplier;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SlimesSpawnEverywhereModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SoundTrackModifier.class`
+
+- "DIRECT_CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SoundTrackModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SpawnCategoryMultiplierModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/codecs/UnboundedMapCodec;"
+- "com/mojang/serialization/codecs/UnboundedMapCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/SpawnCategoryMultiplierModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/TextComponentsModifier.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/TextComponentsModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/VillageSiegeProbabilityModifier.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/modifier/VillageSiegeProbabilityModifier;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRuleType.class`
+
+- "codec"
+- "()Lcom/mojang/serialization/MapCodec;"
+- "()Lcom/mojang/serialization/MapCodec<TT;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRuleTypes.class`
+
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "codec"
+- "(Lcom/mojang/serialization/MapCodec;)Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRuleType;"
+- "byNameCodec"
+- "()Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/MapCodec;"
+- "(Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRuleType;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRule;>;"
+- "settingsCodec"
+- "Lcom/mojang/serialization/MapCodec<TT;>;"
+- "<T::Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRule;>(Ljava/lang/String;Lcom/mojang/serialization/MapCodec<TT;>;)Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRuleType<TT;>;"
+- "(Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;"
+- "()Lcom/mojang/serialization/MapCodec;"
+- "(Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/LunarEventSpawnRuleType;)Lcom/mojang/serialization/MapCodec;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/MinNightsBetweenRule.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/MinNightsBetweenRule;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/ValidMoonPhaseRule.class`
+
+- "com/mojang/serialization/Codec"
+- "(II)Lcom/mojang/serialization/Codec;"
+- "(Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;"
+- "CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/MapCodec<Ldev/corgitaco/enhancedcelestials2core/api/lunarevent/spawnrule/ValidMoonPhaseRule;>;"
+
+### `dev/corgitaco/enhancedcelestials2core/client/screen/TranslationConfigScreen.class`
+
+- "Translation_Mode"
+- "Prompt_Language_When_Translation_Incomplete"
+- "override_existing_translations"
+- "enhancedcelestials2core.translation_config.override_existing"
+- "enhancedcelestials2core.translation_config.override_existing.tooltip"
+
+### `dev/corgitaco/enhancedcelestials2core/lunarevent/LunarEventInstance.class`
+
+- "net/minecraft/resources/RegistryFixedCodec"
+- "(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/resources/RegistryFixedCodec;"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/lunarevent/LunarEventInstance;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/neoforge/ECModBusEventsHandler.class`
+
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V"
+- "DIRECT_CODEC"
+
+### `dev/corgitaco/enhancedcelestials2core/neoforge/datagen/ECDataGen.class`
+
+- "addCodec"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lnet/minecraft/core/Cloner$Factory;"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V"
+
+### `dev/corgitaco/enhancedcelestials2core/neoforge/platform/NeoForgeRegistrationService.class`
+
+- "com/mojang/serialization/Codec"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V"
+- "codec"
+- "Ljava/util/function/Supplier<Lcom/mojang/serialization/Codec<TT;>;>;"
+- "<T:Ljava/lang/Object;>(Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/core/Registry<TT;>;>;Ljava/util/function/Supplier<Lcom/mojang/serialization/Codec<TT;>;>;)V"
+
+### `dev/corgitaco/enhancedcelestials2core/platform/services/RegistrationService.class`
+
+- "<T:Ljava/lang/Object;>(Lnet/minecraft/resources/ResourceKey<Lnet/minecraft/core/Registry<TT;>;>;Ljava/util/function/Supplier<Lcom/mojang/serialization/Codec<TT;>;>;)V"
+
+### `dev/corgitaco/enhancedcelestials2core/util/CodecUtil$1.class`
+
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil$1"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/Codec"
+- "(Lcom/mojang/serialization/Codec;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V"
+- "Ldev/corgitaco/enhancedcelestials2core/util/CodecUtil$1;"
+- "Ljava/lang/Object;Lcom/mojang/serialization/Codec<Lnet/minecraft/core/Holder<TE;>;>;"
+- "CodecUtil.java"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+
+### `dev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec.class`
+
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec"
+- "com/mojang/serialization/Codec"
+- "(Ldev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec;)Ljava/lang/String;"
+- "(Ldev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec;)I"
+- "(Ldev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec;Ljava/lang/Object;)Z"
+- "Ljava/util/function/Supplier<Lcom/mojang/serialization/Codec<TTYPE;>;>;"
+- "Ldev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec;"
+- "Ldev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec<TTYPE;>;"
+- "(Ljava/util/function/Supplier<Lcom/mojang/serialization/Codec<TTYPE;>;>;)V"
+- "()Ljava/util/function/Supplier<Lcom/mojang/serialization/Codec<TTYPE;>;>;"
+- "<TYPE:Ljava/lang/Object;>Ljava/lang/Record;Lcom/mojang/serialization/Codec<TTYPE;>;"
+- "CodecUtil.java"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "LazyCodec"
+
+### `dev/corgitaco/enhancedcelestials2core/util/CodecUtil.class`
+
+- "net/minecraft/resources/RegistryFileCodec"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lnet/minecraft/resources/RegistryFileCodec;"
+- "com/mojang/serialization/Codec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil$1"
+- "(Lcom/mojang/serialization/Codec;Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)V"
+- "CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "CLICK_EVENT_ACTION_CODEC"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "createLoggedExceptionRegistryCodec"
+- "(Lnet/minecraft/core/Registry;)Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "CLICK_EVENT_CODEC"
+- "STYLE_CODEC"
+- "Lcom/mojang/serialization/Codec<Lnet/minecraft/world/effect/MobEffect;>;"
+- "Lcom/mojang/serialization/Codec<Lnet/minecraft/world/entity/EntityType<*>;>;"
+- "Lcom/mojang/serialization/Codec<Lnet/minecraft/network/chat/ClickEvent$Action;>;"
+- "Lcom/mojang/serialization/Codec<Lnet/minecraft/network/chat/ClickEvent;>;"
+- "Lcom/mojang/serialization/Codec<Lnet/minecraft/network/chat/Style;>;"
+- "Ldev/corgitaco/enhancedcelestials2core/util/CodecUtil;"
+- "(Lnet/minecraft/resources/ResourceKey;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "elementCodec"
+- "Lcom/mojang/serialization/Codec<TE;>;"
+- "Lcom/mojang/serialization/Codec<Lnet/minecraft/core/Holder<TE;>;>;"
+- "<E:Ljava/lang/Object;>(Lnet/minecraft/resources/ResourceKey<+Lnet/minecraft/core/Registry<TE;>;>;Lcom/mojang/serialization/Codec<TE;>;)Lcom/mojang/serialization/Codec<Lnet/minecraft/core/Holder<TE;>;>;"
+- "<T:Ljava/lang/Object;>(Lnet/minecraft/core/Registry<TT;>;)Lcom/mojang/serialization/Codec<TT;>;"
+- "lambda$createLoggedExceptionRegistryCodec$3"
+- "lambda$createLoggedExceptionRegistryCodec$2"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+- "CodecUtil.java"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec"
+- "LazyCodec"
+
+### `dev/corgitaco/enhancedcelestials2core/util/ColorUtil.class`
+
+- "com/mojang/serialization/Codec"
+- "(II)Lcom/mojang/serialization/Codec;"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "NAMED_OR_HEX_CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "RGB_CODEC"
+- "(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+- "FLEXIBLE_COLOR_CODEC"
+- "COLOR_CODEC"
+- "Lcom/mojang/serialization/MapCodec;"
+- "Lcom/mojang/serialization/Codec<Ljava/lang/Integer;>;"
+- "Lcom/mojang/serialization/MapCodec<Ljava/lang/Integer;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+
+### `dev/corgitaco/enhancedcelestials2core/util/CustomTranslationTextComponent.class`
+
+- "com/mojang/serialization/Codec"
+- "Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+- "com/mojang/serialization/codecs/PrimitiveCodec"
+- "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+- "com/mojang/serialization/MapCodec"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil"
+- "STYLE_CODEC"
+- "Lcom/mojang/serialization/Codec;"
+- "(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;"
+- "dev/corgitaco/enhancedcelestials2core/util/CodecUtil$LazyCodec"
+- "()Lcom/mojang/serialization/Codec;"
+- "com/mojang/serialization/codecs/RecordCodecBuilder$Instance"
+- "CODEC"
+- "com/mojang/serialization/codecs/RecordCodecBuilder"
+- "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+- "Lcom/mojang/serialization/Codec<Ldev/corgitaco/enhancedcelestials2core/util/CustomTranslationTextComponent;>;"
+- "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;"
+- "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;"
+- "LazyCodec"
+
+### `dev/corgitaco/enhancedcelestials2core/util/Translations$Cache.class`
+
+- "com/google/gson/JsonParser"
+- "(Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+- "com/google/gson/JsonElement"
+- "getAsJsonObject"
+- "()Lcom/google/gson/JsonObject;"
+- "com/google/gson/JsonObject"
+- "(Ljava/lang/String;)Lcom/google/gson/JsonObject;"
+- "(Ljava/lang/String;Lcom/google/gson/JsonElement;)V"
+- "(Ljava/lang/String;Ljava/lang/String;)Lcom/google/gson/JsonObject;"
+- "Lcom/google/gson/JsonObject;"
+- "(Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;)V"
+
+### `dev/corgitaco/enhancedcelestials2core/util/Translations$Config$TranslationMode.class`
+
+- "AUTOMATIC"
+- "MANUAL"
+- "DISABLED"
+
+### `dev/corgitaco/enhancedcelestials2core/util/Translations$Config.class`
+
+- "AUTOMATIC"
+- "Translation_Mode"
+- "Prompt_Language_When_Translation_Incomplete"
+- "override_existing_translations"
+- "GSON"
+- "Lcom/google/gson/Gson;"
+- "com/google/gson/Gson"
+- "fromJson"
+- "toJson"
+- "./config/enhancedcelestials2core/translations.json"
+- "com/google/gson/GsonBuilder"
+- "()Lcom/google/gson/GsonBuilder;"
+- "()Lcom/google/gson/Gson;"
+
+### `dev/corgitaco/enhancedcelestials2core/util/Translations$Contribution.class`
+
+- "GSON"
+- "Lcom/google/gson/Gson;"
+- "com/google/gson/Gson"
+- "toJson"
+- "fromJson"
+- "com/google/gson/GsonBuilder"
+- "()Lcom/google/gson/GsonBuilder;"
+- "()Lcom/google/gson/Gson;"
+
+### `dev/corgitaco/enhancedcelestials2core/util/Translations.class`
+
+- "com/google/gson/JsonObject"
+- "com/google/gson/JsonElement"
+- "getAsString"
+- "(Ljava/lang/String;Lcom/google/gson/JsonElement;)V"
+- "Prompt_Language_When_Translation_Incomplete"
+- "Translation_Mode"
+- "AUTOMATIC"
+- "override_existing_translations"
+- "(Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;)V"
+- "(Lcom/google/gson/JsonObject;Ljava/util/Map;)Lcom/google/gson/JsonObject;"
+- "com/google/gson/JsonParser"
+- "(Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+- "getAsJsonObject"
+- "()Lcom/google/gson/JsonObject;"
+- "(Ljava/lang/String;Ljava/lang/String;)Lcom/google/gson/JsonObject;"
+- "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljava/util/concurrent/CompletableFuture<Lcom/google/gson/JsonObject;>;"
+- "Lcom/google/gson/JsonObject;"
+- "Ljava/util/Map$Entry<Ljava/lang/String;Lcom/google/gson/JsonElement;>;"
+- "(Lcom/google/gson/JsonObject;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lcom/google/gson/JsonObject;"
+- "(Ljava/lang/String;Ljava/util/Set;Ldev/corgitaco/enhancedcelestials2core/util/Translations$Config;Lcom/google/gson/JsonObject;)V"
+- "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/google/gson/JsonObject;)Ljava/util/concurrent/CompletionStage;"
+- "(Ljava/lang/String;Ljava/lang/String;Lcom/google/gson/JsonObject;)Lcom/google/gson/JsonObject;"
+- "(Ljava/util/Map;Lcom/google/gson/JsonObject;)Lcom/google/gson/JsonObject;"
+- "(Ljava/lang/String;)Lcom/google/gson/JsonObject;"
+- "(Lcom/google/gson/JsonObject;)Ljava/util/concurrent/CompletionStage;"
+- "(Lcom/google/gson/JsonObject;)V"
+- "(Lcom/google/gson/JsonObject;)Lcom/google/gson/JsonObject;"
