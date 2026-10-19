@@ -39,4 +39,4 @@ B22 (peso), B24 (48 traduzioni mancanti dei tronchi cavi di Twilight Forest), B2
 
 ## Storia nel pack
 
-0.4.0 aggiunta con la config di serie (`../lavoro/versioni/v0.4.0.md`). Decisione del 19/10 (`../lavoro/versioni/v0.6.0.md`): **tutte le varianti e tutti i legni restano** (Matteo usa tutte le varianti), quindi nessuna lista nera e nessun cambio ai blocchi; `generate_blocktype_tags` non si tocca. Resta da decidere solo `RUN_ONCE`, come prova.
+0.4.0 aggiunta con la config di serie (`../lavoro/versioni/v0.4.0.md`). Decisione del 19/10 (`../lavoro/versioni/v0.6.0.md`): **tutte le varianti e tutti i legni restano** (Matteo usa tutte le varianti), quindi nessuna lista nera e nessun cambio ai blocchi; `generate_blocktype_tags` non si tocca. Decisione della sera del 19/10: anche `RUN_ONCE` **non si usa**, Every Compat resta con la config di serie (generazione `ALWAYS`) e nel pack non c'è nessun suo file di config.

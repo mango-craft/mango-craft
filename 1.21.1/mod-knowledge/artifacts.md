@@ -26,13 +26,13 @@ Artifacts mette i suoi oggetti solo nelle casse vanilla (si aggancia ai nomi com
 
 ### Cosa è stato fatto nella 0.6.0 (B01, B03)
 
-- **Tolti i 15 nomi che non esistevano** (controllo dei nomi): When Dungeons Arise `desert_city_big`, `illager_fortress_small`, `giant_mushroom/red_giant_mushroom`, `giant_mushroom/twin_giant_mushroom`, `temple_treasure_small`, `house_tower_treasure`, `pillager_palace_treasure`; Dungeons and Taverns `ruin_loot_1…7` e `trident_trial_monument/ttm_treasure_chest`. Sono nomi di versioni vecchie: `ruin_loot_master` è la tabella radice che ora sceglie tra `dungeon_1…7` (già collegate), il palazzo Shiraz e le torri/templi hanno i nomi nuovi già nei file; `desert_city_big` non ha più una tabella con quel nome; il monumento del tridente ha tre tabelle nuove, ancora non collegate (vedi sotto).
+- **Tolti i 15 nomi che non esistevano** (controllo dei nomi): When Dungeons Arise `desert_city_big`, `illager_fortress_small`, `giant_mushroom/red_giant_mushroom`, `giant_mushroom/twin_giant_mushroom`, `temple_treasure_small`, `house_tower_treasure`, `pillager_palace_treasure`; Dungeons and Taverns `ruin_loot_1…7` e `trident_trial_monument/ttm_treasure_chest`. Sono nomi di versioni vecchie: `ruin_loot_master` è la tabella radice che ora sceglie tra `dungeon_1…7` (già collegate), il palazzo Shiraz e le torri/templi hanno i nomi nuovi già nei file; `desert_city_big` non ha più una tabella con quel nome; il monumento del tridente ha tre tabelle nuove, di cui una collegata il 19/10 (vedi sotto).
 - **Aggiunte, con il livello** (livello = tabella di Artifacts di riferimento, scelto per somiglianza con le casse già collegate della stessa struttura o dello stesso tipo): When Dungeons Arise `kisegi_sanctuary/kisegi_sanctuary_treasure` e `mechanical_nest/mechanical_nest_treasure` → corridoio della roccaforte (30%); `mining_complex/mining_complex_treasure` → miniera (30%). Dungeons and Taverns `ruin_loot_master`, `hamlet/hamlet_tresure`, `shrine/shrine_lesser_treasure` → dungeon (15%); `desert_ruins/desert_ruin_lesser_treasure` → piramide del deserto (20%); `illager_hideout_lesser_tresure` → avamposto dei predoni (25%). Mowzie's Mobs `monastery_chest` e `umvuthana_grove_chest` → dungeon (15%, prudente). I nomi con "tresure" sono scritti così dalla mod.
 - **Letto nei file delle mod** (workflow Esamina mod, 19/10): tutte le tabelle di When Dungeons Arise e Dungeons and Taverns con "vault" nel nome sono di tipo **cassa** (`minecraft:chest`), non ricompense dei blocchi caveau. Una mia affermazione precedente ("le tabelle `vault` non sono casse") era **sbagliata**: per questo erano rimaste fuori anche strutture che hanno come tesoro proprio una tabella "vault".
 
-### Ancora da decidere (Matteo)
+### Aggiunte il 19/10 (decisione di Matteo)
 
-Strutture di Dungeons and Taverns che oggi non hanno nessuna cassa collegata e il cui tesoro si chiama "vault" (proposta 🟢, una cassa per struttura): `nether_keep/vault_keep` e `piglin_donjon/vault_piglin_donjon` → fortezza del Nether (15%); `toxic_lair/toxic_boss_vault` → dungeon (15%); `trident_trial_monument/ttm_boss_vault_trident` → grande rovina sottomarina (45%, come il vecchio nome del monumento).
+Quattro strutture di Dungeons and Taverns erano rimaste senza cassa perché il loro tesoro si chiama "vault" (vedi la correzione sopra). Collegate, una cassa per struttura: `nether_keep/vault_keep` e `piglin_donjon/vault_piglin_donjon` → fortezza del Nether (15%); `toxic_lair/toxic_boss_vault` → dungeon (15%); `trident_trial_monument/ttm_boss_vault_trident` → grande rovina sottomarina (45%, come il vecchio nome del monumento). Totale: **152 casse**. Da provare in gioco: che quelle quattro casse esistano davvero nelle strutture e contengano l'artefatto (le tabelle sono di tipo cassa nei file della mod, ma non è stato visto in una struttura generata).
 
 ### Escluse di proposito
 
@@ -103,18 +103,18 @@ Nelle strutture di When Dungeons Arise con più tabelle «vault» (`infested_tem
 | illager_hideout | `illager_hideout_lesser_tresure`, `illager_hideout_tresure` | `illager_hideout_brewing`, `illager_hideout_fishing`, `illager_hideout_heart_loot`, `illager_hideout_library`, `illager_hideout_meat`, `illager_hideout_random`, `illager_hideout_raw_ores`, `illager_hideout_trash`, `illager_hideout_utility`, `illager_hideout_vegitarian`, `illager_hideout_weaponry` |
 | jungle_ruins | `jungle_ruins_main_temple` | `jungle_ruins_house`, `jungle_ruins_main_temple_wild` |
 | lone_citadel | `c_vault`, `c_vault_boss` | `c_banner`, `c_cold_barrel`, `c_dispenser`, `c_forge`, `c_forge_chest`, `c_grave`, `c_library`, `c_supply` |
-| nether_keep | — | `vault_keep`, `vault_keep_generic` (**da decidere**: `vault_keep`) |
+| nether_keep | `vault_keep` | `vault_keep_generic` |
 | nether_port | `nether_port_chest` | `nether_port_supplies` |
 | nether_skeleton_tower | `skeleton_tower_chest` | `skeleton_tower_camp`, `skeleton_tower_supply` |
 | piglin_camp | — | `chest` |
-| piglin_donjon | — | `donjon_generic`, `vault_piglin_donjon` (**da decidere**: `vault_piglin_donjon`) |
+| piglin_donjon | `vault_piglin_donjon` | `donjon_generic` |
 | piglin_outstation | `outstation_treasure` | `outstation_generic`, `outstation_tower`, `vault_piglin_outstation` |
 | pillager_outpost | `pillager_outpost_treasure` | `pillager_outpost_kitchen` |
 | ruin_loot | `ruin_loot_master` | — |
 | shrine | `combat_treasure_1` … `combat_treasure_5`, `shrine_lesser_treasure` | `combat_pot`, `shrine_lesser_ominous`, `vault_shrine_ominous` |
 | stray_fort | `stray_fort_tresure` | `stray_fort_archer`, `stray_fort_loot_generic` |
-| toxic_lair | — | `brewing`, `generic`, `kitchen`, `toxic_boss_vault`, `toxic_ominous_vault`, `toxic_vault` (**da decidere**: `toxic_boss_vault`) |
-| trident_trial_monument | — | `ttm_boss_vault_heart`, `ttm_boss_vault_trident`, `ttm_common_vault` (**da decidere**: `ttm_boss_vault_trident`) |
+| toxic_lair | `toxic_boss_vault` | `brewing`, `generic`, `kitchen`, `toxic_ominous_vault`, `toxic_vault` |
+| trident_trial_monument | `ttm_boss_vault_trident` | `ttm_boss_vault_heart`, `ttm_common_vault` |
 | village | — | `village_birch_house` |
 | witch_villa | `lab` | `bedroom`, `dirty_clothes`, `gardening`, `general_storage`, `kitchen`, `library`, `music_room`, `potion_brewing`, `pumpkin_room`, `slime_room` |
 

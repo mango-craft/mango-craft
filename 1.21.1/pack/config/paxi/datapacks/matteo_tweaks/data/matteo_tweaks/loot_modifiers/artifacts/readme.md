@@ -13,7 +13,7 @@ Il **nome del file non dice dove va l'artefatto, ma quanto è probabile trovarlo
 Usare le tabelle di Artifacts ha tre vantaggi:
 - sono già bilanciate dall'autore, quindi non abbiamo inventato nessuna probabilità;
 - rispettano la config di Artifacts: se cambi `artifactRarity` o disattivi un oggetto, vale anche qui;
-- bastano 15 file invece di uno per ognuna delle 148 casse collegate.
+- bastano 15 file invece di uno per ognuna delle 152 casse collegate.
 
 ## Com'è fatto un file
 
@@ -62,7 +62,7 @@ Probabilità di base, con `artifactRarity = 1` (il default). La colonna "Casse" 
 | File | Struttura vanilla di riferimento | Probabilità | Casse | Mod collegate |
 |---|---|---|---|---|
 | `bastion_treasure.json` | Tesoro del bastione | 65% | 3 | Aether, Twilight Forest |
-| `underwater_ruin_big.json` | Grande rovina sottomarina | 45% | 2 | Cataclysm, Dungeons and Taverns |
+| `underwater_ruin_big.json` | Grande rovina sottomarina | 45% | 3 | Cataclysm, Dungeons and Taverns |
 | `woodland_mansion.json` | Magione | 40% | 17 | Twilight Forest, Aether, Illager Invasion, Cataclysm, Friends & Foes, When Dungeons Arise, Dungeons and Taverns |
 | `jungle_temple.json` | Tempio della giungla | 35% | 4 | YUNG's Jungle Temples, Twilight Forest, When Dungeons Arise, Dungeons and Taverns |
 | `stronghold_corridor.json` | Corridoio della roccaforte | 30% | 26 | YUNG's Strongholds, Twilight Forest, Aether, When Dungeons Arise, Dungeons and Taverns, Unusual End |
@@ -71,9 +71,9 @@ Probabilità di base, con `artifactRarity = 1` (il default). La colonna "Casse" 
 | `igloo_chest.json` | Igloo | 30% | 3 | Friends & Foes, Twilight Forest, Dungeons and Taverns |
 | `pillager_outpost.json` | Avamposto dei predoni | 25% | 10 | Illager Invasion, When Dungeons Arise, Dungeons and Taverns, Supplementaries (cassaforte del Galeone) |
 | `desert_pyramid.json` | Piramide del deserto | 20% | 6 | YUNG's Desert Temples, Cataclysm, When Dungeons Arise, Dungeons and Taverns |
-| `simple_dungeon.json` | Dungeon | 15% | 39 | YUNG's Dungeons, Twilight Forest, Aether, Deep Aether, Undergarden, Cataclysm, When Dungeons Arise, Dungeons and Taverns, Unusual End, Mowzie's Mobs |
+| `simple_dungeon.json` | Dungeon | 15% | 40 | YUNG's Dungeons, Twilight Forest, Aether, Deep Aether, Undergarden, Cataclysm, When Dungeons Arise, Dungeons and Taverns, Unusual End, Mowzie's Mobs |
 | `shipwreck_treasure.json` | Tesoro del relitto | 15% | 1 | When Dungeons Arise |
-| `nether_bridge.json` | Fortezza del Nether | 15% | 10 | YUNG's Fortresses, YUNG's Dungeons, Dungeons and Taverns |
+| `nether_bridge.json` | Fortezza del Nether | 15% | 12 | YUNG's Fortresses, YUNG's Dungeons, Dungeons and Taverns |
 | `ancient_city.json` | Città antica | 15% | 3 | Deeper and Darker |
 | `ruined_portal.json` | Portale in rovina | 15% | 1 | Aether |
 
@@ -144,7 +144,7 @@ Ogni cassa deve stare in **un solo** livello, altrimenti tirerebbe gli artefatti
 
 - **Verificati nei sorgenti delle versioni 1.21.1**: mod YUNG's, Twilight Forest, Aether, Deep Aether, Deeper and Darker, Undergarden, Cataclysm, Illager Invasion, Friends & Foes, Moog's End Structures, Unusual End.
 - **When Dungeons Arise e Dungeons and Taverns**: i primi nomi erano presi da versioni precedenti pubblicate su GitHub (When Dungeons Arise 1.18.2 dell'autore più una copia del 2025; copia del datapack di Dungeons and Taverns di marzo 2024), perché il sorgente 1.21.1 non è pubblico. Il controllo dei nomi sull'inventario dei .jar ha mostrato che **15 nomi non esistevano** (bug B01): nella 0.6.0 sono stati tolti e, per ogni struttura rimasta senza cassa, è stato aggiunto il tesoro con il nome vero. Un nome che non esiste più non dà errori: semplicemente non scatta mai.
-- **Il tipo di ogni tabella** (cassa o altro) è stato letto nei file della mod (workflow Esamina mod, 19/10/2026, `ai-agents/stage/2026-10-19_1.21.1-v0.5.3_esame-mod/`): tutte le tabelle con "vault" nel nome di Dungeons and Taverns e di When Dungeons Arise sono di tipo cassa (`minecraft:chest`), non ricompense dei blocchi caveau.
+- **Il tipo di ogni tabella** (cassa o altro) è stato letto nei file della mod (workflow Esamina mod, 19/10/2026, `ai-agents/stage/2026-10-19_1.21.1-v0.5.3_esame-mod/`): tutte le tabelle con "vault" nel nome di Dungeons and Taverns e di When Dungeons Arise sono di tipo cassa (`minecraft:chest`), non ricompense dei blocchi caveau. Su questa base, il 19/10 (decisione di Matteo) sono state collegate le quattro strutture di Dungeons and Taverns il cui tesoro è una tabella «vault»: `nether_keep/vault_keep` e `piglin_donjon/vault_piglin_donjon` (fortezza del Nether), `toxic_lair/toxic_boss_vault` (dungeon), `trident_trial_monument/ttm_boss_vault_trident` (grande rovina sottomarina).
 - **Supplementaries**: cassaforte del Galeone (`supplementaries:loot/galleon/safe`), verificata nei file della struttura e nell'inventario (dalla 0.2.3).
 - **Mowzie's Mobs** (dalla 0.6.0, bug B03): le sue due casse, `monastery_chest` e `umvuthana_grove_chest`, sono nel livello Dungeon (15%, scelta prudente: si alza dopo la prova se le strutture si rivelano rare). **Born in Chaos** non è collegata: le sue 7 tabelle (`minecraft:chests/basic_chest`, `chest_level_1…3`, `farm_drop`, `firewell_d`, `shater`) sono generiche, a livelli, e usano il prefisso `minecraft`; collegarle metterebbe gli artefatti in ogni cassa delle sue strutture, contro la regola di una cassa per struttura.
 

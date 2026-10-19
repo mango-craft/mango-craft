@@ -49,6 +49,14 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/nether_port/nether_port_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/nether_keep/vault_keep"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_donjon/vault_piglin_donjon"
         }
       ]
     }

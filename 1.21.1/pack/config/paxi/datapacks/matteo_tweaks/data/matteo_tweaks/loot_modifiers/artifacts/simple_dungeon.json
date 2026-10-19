@@ -152,6 +152,10 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/toxic_lair/toxic_boss_vault"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "minecraft:chests/end_house_library"
         },
         {

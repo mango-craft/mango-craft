@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "7ee42603076d06e6d6f5c76f6dfaa6e1930c3555f3af49e92bce6bc611d5b72a"
+hash = "34b463c9e8613761a64a5158bf63d877f91e3c165b8f3088710449714c0589e0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/bountifulfares/readme.md"
@@ -102,7 +102,7 @@ hash = "7efab5065033c65d253d0bd12fbf6f5f49ccda4c5d9e8918879e33e421473a4c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/nether_bridge.json"
-hash = "49f6ba41c98b4f6497f1ee83c2a975963e96843ada5c7740112889f4b287b684"
+hash = "0505efc1a722929db7f89448efcc972bc5448506d811894f04a6afd537a81769"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json"
@@ -110,7 +110,7 @@ hash = "a5a02da51286619c7533cfd338a67549aadf0a1f8322200e598ba45f04837477"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/readme.md"
-hash = "8507f57efe93446c51176481b8b7c11afd62a23f04c280dc6698ab0ae040f45b"
+hash = "c15311474f69f289249e8875c87b2036c1b351133b2c1581bbd57ab2a4875601"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ruined_portal.json"
@@ -122,7 +122,7 @@ hash = "4d47796a2e14538e764d8c1cfee279850fcc20d82a3d4beb36606cda94ee1a59"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json"
-hash = "b31a316e7f417ae061deb0f0bede546e615d2c9531b2ab976f58658998473ba4"
+hash = "02ef2b50be16d12630a65f44bfca2c4d2f11aa6026350f826a52d9fad66d70c6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/stronghold_corridor.json"
@@ -130,7 +130,7 @@ hash = "eadada9628dae0515f80fa2cfee99abcb3236bfac622961a00b02f630c3235d6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/underwater_ruin_big.json"
-hash = "5c4dbe38971d4458f838d97567bf8bece833152deddd8a788976fd5c1ebb1cad"
+hash = "ddf13f3924ab30908bd15ec922c900315e7869b17ef821cf319594ce7d691bae"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/woodland_mansion.json"
