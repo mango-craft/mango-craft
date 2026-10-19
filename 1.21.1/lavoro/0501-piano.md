@@ -13,7 +13,7 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae (+ Fragmentum), Creeper Overhaul, Paragliders | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.0`) |
 | 4.1 | 0.5.1 | Lune: Enhanced Celestials 2 (Core + Default Lunar Events) al posto di Enhanced Celestials, luna di sangue ribilanciata nel formato nuovo, Data Anchor aggiornata (decisa il 18/10) | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.1`) |
 | 4.2 | 0.5.2 | Supporto agli shader: Iris 1.8.14-beta.1 ed Enhanced Celestials 2: Shader Support (nessuna mod di compatibilità obbligatoria: `0709-shader.md`); gli shader restano facoltativi; config delle traduzioni di EC2 (B32) (decisa il 18/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.2`) |
-| 4.3 | 0.5.3 | Due pacchetti di shader facoltativi scelti per le mod del pack (Complementary Reimagined, MakeUp - Ultra Fast); impostazioni video lasciate a chi gioca (Sodium si regola già da solo); Every Compat resta nella 0.6.0 (decisa il 19/10) | 🧪 su `dev`, da provare |
+| 4.3 | 0.5.3 | Due pacchetti di shader facoltativi scelti per le mod del pack (Complementary Reimagined, MakeUp - Ultra Fast); impostazioni video lasciate a chi gioca (Sodium si regola già da solo); Every Compat resta nella 0.6.0 (decisa il 19/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.3`) |
 | 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `0620-progetto-datapack.md`), config di Every Compat, Artifacts e, se serve, Jaden's | da fare |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
 
@@ -32,7 +32,7 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae (+ Fragmentum), Creeper Overhaul | ✅ 0.5.0 |
 | Lune | Enhanced Celestials 2 al posto di Enhanced Celestials | ✅ 0.5.1 |
 | Shader | Iris ed Enhanced Celestials 2: Shader Support (facoltativi da usare) | ✅ 0.5.2 |
-| Pacchetti di shader | Complementary Reimagined, MakeUp - Ultra Fast (spenti di serie) | 🧪 0.5.3 su `dev` |
+| Pacchetti di shader | Complementary Reimagined, MakeUp - Ultra Fast (spenti di serie) | ✅ 0.5.3 |
 
 | Datapack e config | Cosa | Stato |
 |---|---|---|
