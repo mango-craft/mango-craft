@@ -342,6 +342,8 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Enhanced Celestials 2: Default Lunar Events | [`enhanced-celestials-2-default-lunar-events`](https://modrinth.com/mod/enhanced-celestials-2-default-lunar-events) MR | 2.0.1.3-neoforge | 2026-09-03 | release | ✅ | Richiede il Core. Pack 0.5.1 |
 | Iris Shaders | [`iris`](https://modrinth.com/mod/iris) MR | 1.8.14-beta.1+1.21.1-neoforge | 2026-06-13 | beta | ⚠️ | Beta voluta: l'unica che funziona con Sodium 0.8 (la release 1.8.12 va in crash; `0303`). Dichiara Minecraft `[1.21,1.21.1)`, accettato da NeoForge sulla 1.21.1. Contiene 4 moduli di Fabric API già nel pack con versioni uguali o più nuove. Solo lato client. Pack 0.5.2 |
 | Enhanced Celestials 2: Shader Support | [`enhanced-celestials-2-shader-support`](https://modrinth.com/mod/enhanced-celestials-2-shader-support) MR | 2.0.0.3-neoforge | 2026-09-03 | release | ✅ | Richiede Core ≥ 2.0.3.1, CorgiLib, Sodium e Iris. Solo lato client. Pack 0.5.2 |
+| Complementary Reimagined (pacchetto di shader) | [`complementary-reimagined`](https://modrinth.com/shader/complementary-reimagined) MR | r5.9.3 | 2026-09-15 | release | ✅ | Per Iris; cartella `shaderpacks`. Pack 0.5.3 |
+| MakeUp - Ultra Fast (pacchetto di shader) | [`makeup-ultra-fast-shaders`](https://modrinth.com/shader/makeup-ultra-fast-shaders) MR | 9.5g | 2026-10-04 | release | ✅ | Per Iris; cartella `shaderpacks`. Pack 0.5.3 |
 
 ## Librerie principali (arrivano come dipendenze)
 

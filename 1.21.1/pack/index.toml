@@ -46,7 +46,7 @@ hash = "cf96f193d997e47193a3b55b5b75a4e4dd54db4a22795af9fb15dc8da8f1b497"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md"
-hash = "cb3ddd657f416d33035b8960d19381a2df0f4e92823068f3063449180ba92ecf"
+hash = "ec37ef16ca878f54a57895c2b7523212de1271a954dc7b4cf062b0d8fd6441ca"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
