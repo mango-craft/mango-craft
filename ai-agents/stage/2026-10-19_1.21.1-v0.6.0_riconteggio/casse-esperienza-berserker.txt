@@ -1,0 +1,39 @@
+# Riconteggio del 19/10/2026 sull'inventario della 0.5.3
+
+## Berserker
+betterfortresses:fortress tra le strutture: True
+tag cataclysm:berserker_spawn: ['minecraft:fortress']
+
+## Casse degli artefatti (B01)
+15 nomi che non esistono (vecchi):
+   dungeons_arise:chests/desert_city_big → candidati: ['dungeons_arise:chests/mines_treasure_big', 'dungeons_arise:chests/monastery/monastery_bridges', 'dungeons_arise:chests/mines_treasure_medium']
+   dungeons_arise:chests/illager_fortress_small → candidati: ['dungeons_arise:chests/mines_treasure_small', 'dungeons_arise:chests/illager_fort/illager_fort_normal', 'dungeons_arise:chests/illager_fort/illager_fort_barrels']
+   dungeons_arise:chests/giant_mushroom/red_giant_mushroom → candidati: ['dungeons_arise:chests/mushroom_mines/mushroom_mines_ores', 'dungeons_arise:chests/mushroom_mines/mushroom_mines_tools', 'dungeons_arise:chests/mushroom_mines/mushroom_mines_barrels']
+   dungeons_arise:chests/giant_mushroom/twin_giant_mushroom → candidati: ['dungeons_arise:chests/mushroom_mines/mushroom_mines_ores', 'dungeons_arise:chests/mushroom_mines/mushroom_mines_tools', 'dungeons_arise:chests/mushroom_mines/mushroom_mines_barrels']
+   dungeons_arise:chests/temple_treasure_small → candidati: ['dungeons_arise:chests/mines_treasure_small', 'dungeons_arise:chests/mines_treasure_big', 'dungeons_arise:chests/mines_treasure_medium']
+   nova_structures:chests/ruin_loot_1 → candidati: ['nova_structures:chests/ruin_loot_master', 'nova_structures:chests/dungeon_1', 'nova_structures:chests/bunker_altar']
+   nova_structures:chests/ruin_loot_2 → candidati: ['nova_structures:chests/ruin_loot_master', 'nova_structures:chests/dungeon_2', 'nova_structures:chests/bunker_altar']
+   nova_structures:chests/ruin_loot_3 → candidati: ['nova_structures:chests/ruin_loot_master', 'nova_structures:chests/dungeon_3', 'nova_structures:chests/bunker_altar']
+   nova_structures:chests/ruin_loot_4 → candidati: ['nova_structures:chests/ruin_loot_master', 'nova_structures:chests/dungeon_4', 'nova_structures:chests/bunker_altar']
+   nova_structures:chests/ruin_loot_5 → candidati: ['nova_structures:chests/ruin_loot_master', 'nova_structures:chests/dungeon_5', 'nova_structures:chests/bunker_altar']
+   nova_structures:chests/ruin_loot_6 → candidati: ['nova_structures:chests/ruin_loot_master', 'nova_structures:chests/dungeon_6', 'nova_structures:chests/bunker_altar']
+   nova_structures:chests/ruin_loot_7 → candidati: ['nova_structures:chests/ruin_loot_master', 'nova_structures:chests/dungeon_7', 'nova_structures:chests/bunker_altar']
+   dungeons_arise:chests/house_tower_treasure → candidati: ['dungeons_arise:chests/typhon/typhon_treasure', 'dungeons_arise:chests/mines_treasure_big', 'dungeons_arise:chests/foundry/foundry_treasure']
+   nova_structures:chests/trident_trial_monument/ttm_treasure_chest → candidati: ['nova_structures:chests/trident_trial_monument/ttm_boss_vault_heart', 'nova_structures:chests/trident_trial_monument/ttm_common_vault', 'nova_structures:chests/trident_trial_monument/ttm_boss_vault_trident']
+   dungeons_arise:chests/pillager_palace_treasure → candidati: ['dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure', 'dungeons_arise:chests/illager_fort/illager_fort_treasure', 'dungeons_arise:chests/illager_corsair/illager_corsair_treasure']
+dungeons_arise tabelle di casse: 141 usate nei nostri file: 40 tesori/vault non usati: ['infested_temple/infested_temple_vault_normal', 'infested_temple/infested_temple_vault_ominous', 'infested_temple/infested_temple_vault_treasure', 'kisegi_sanctuary/kisegi_sanctuary_treasure', 'kisegi_sanctuary/kisegi_sanctuary_vault_normal', 'kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure', 'kisegi_sanctuary/kisegi_sanctuary_vault_ominous', 'kisegi_sanctuary/kisegi_sanctuary_vault_ominous_treasure', 'mechanical_nest/mechanical_nest_treasure', 'mining_complex/mining_complex_treasure']
+nova_structures tabelle di casse: 119 usate nei nostri file: 41 tesori/vault non usati: ['creeping_crypt/vault_creeping', 'desert_ruins/desert_ruin_lesser_treasure', 'hamlet/hamlet_tresure', 'illager_hideout_lesser_tresure', 'nether_keep/vault_keep', 'nether_keep/vault_keep_generic', 'piglin_donjon/vault_piglin_donjon', 'piglin_outstation/vault_piglin_outstation', 'shrine/shrine_lesser_treasure', 'shrine/vault_shrine_ominous', 'toxic_lair/toxic_boss_vault', 'toxic_lair/toxic_ominous_vault', 'toxic_lair/toxic_vault', 'trident_trial_monument/ttm_boss_vault_heart', 'trident_trial_monument/ttm_boss_vault_trident', 'trident_trial_monument/ttm_common_vault']
+mowzies-mobs casse: ['mowziesmobs:chests/monastery_chest', 'mowziesmobs:chests/umvuthana_grove_chest']
+borninchaos casse: ['minecraft:chests/basic_chest', 'minecraft:chests/chest_level_1', 'minecraft:chests/chest_level_2', 'minecraft:chests/chest_level_3', 'minecraft:chests/farm_drop', 'minecraft:chests/firewell_d', 'minecraft:chests/shater']
+
+## Esperienza liquida
+create-enchantment-industry liquidi: {'create_enchantment_industry:infused_dragon_breath': "Infused Dragon's Breath"}
+   data map data_maps/fluid ['create_enchantment_industry:printing/address/ingredient', 'create_enchantment_industry:printing/banner_pattern/ingredient', 'create_enchantment_industry:printing/copy/ingredient', 'create_enchantment_industry:printing/custom_name/ingredient', 'create_enchantment_industry:printing/custom_name/style', 'create_enchantment_industry:printing/pattern/ingredient', 'create_enchantment_industry:printing/written_book/ingredient', 'create_enchantment_industry:unit/experience']
+cognition liquidi: {'cognition:cognitium': 'Cognitium'}
+   tag c:experience ['cognition:cognitium_source', 'mob_grinding_utils:fluid_xp?', 'cofh_core:experience?', 'industrialforegoing:essence?', 'sophisticatedcore:xp_still?', 'enderio:fluid_xp_juice_still?', 'reliquary:xp_still?']
+supplementaries liquidi: {'supplementaries:experience': 'Experience', 'supplementaries:honey': 'Honey', 'supplementaries:jar_fluid': 'Jar Fluid', 'supplementaries:lumisene': 'Lumisene', 'supplementaries:milk': 'Milk', 'supplementaries:sap': 'Sap', 'supplementaries:slime': 'Slime'}
+sophisticated-core liquidi: {'sophisticatedcore:experience': 'Experience'}
+   tag c:experience ['sophisticatedcore:xp_still']
+
+## Mercato di Farming for Blockheads: voci per cartella nel jar della mod
+{'actuallyadditions': 4, 'ars_elemental': 1, 'ars_nouveau': 5, 'betterendforge': 35, 'betternether': 26, 'biomesoplenty': 40, 'biomeswevegone': 100, 'buzzier_bees': 3, 'byg': 117, 'cinderscapes': 2, 'corn_delight': 1, 'create': 1, 'croptopia': 85, 'culturaldelights': 3, 'endergetic': 2, 'expandeddelight': 3, 'extradelight': 5, 'farmersdelight': 15, 'farmingforblockheads': 3, 'fruitsdelight': 13, 'ic2': 1, 'minecolonies': 1, 'minecraft_earth_mod': 2, 'mynethersdelight': 2, 'nethers_delight': 2, 'outer_end': 3, 'pamhc2crops': 96, 'pamhc2trees': 49, 'quark': 6, 'rusticdelight': 3, 'simplefarming': 41, 'snowyspirit': 1, 'supplementaries': 1, 'theabyss': 10, 'thermal': 18, 'trailandtales_delight': 1, 'tropicraft': 25, 'twilightforest': 12, 'youkaishomecoming': 7, 'minecraft': 65}

@@ -1,0 +1,47 @@
+tipi di ricette Botany Pots: {'botanypots:block_derived_crop': 1183, 'botanypots:block_derived_soil': 239, 'botanypots:soil': 18, 'botanypots:fertilizer': 1, 'botanypots:pot_interaction': 6, 'botanypots:crop': 1, 'botanypots:block_derived_soil (nostro)': 5, 'botanypots:block_derived_crop (nostro)': 7}
+copertura del 17/10: {'bp': 160, 'mod': 22, 'none': 196, 'bcl': 51, 'bt': 74, 'bt-unreleased': 8, 'mt': 7, 'alias': 8}
+oggi: {'coperta': 263, 'scoperta': 254, 'manca il blocco': 9}
+cambiate dal 17/10: 0
+blocchi spariti: 9
+   ('roasters-delight', '? (pianta del caffè; seme: chicco non tostato)', 'none')
+   ('roasters-delight', '? (cespuglio del tè)', 'none')
+   ('roasters-delight', '? (camomilla)', 'none')
+   ('roasters-delight', '? (menta)', 'none')
+   ('roasters-delight', '? (matcha)', 'none')
+   ('bountiful-fares', 'trellis:elderberry', 'none')
+   ('bountiful-fares', 'trellis:lapisberry', 'none')
+   ('bountiful-fares', 'trellis:passion_fruit', 'none')
+   ('twilight-forest', 'twilightforest:magic_beans', 'none')
+
+hexalia                             scoperte  31  coperte   0  blocco mancante 0
+bountiful-fares                     scoperte  27  coperte   0  blocco mancante 3
+deep-aether                         scoperte  21  coperte   6  blocco mancante 0
+the-undergarden                     scoperte  21  coperte   3  blocco mancante 0
+lets-do-farm-charm                  scoperte  20  coperte   0  blocco mancante 0
+unusual_end                         scoperte  19  coperte   0  blocco mancante 0
+regions-unexplored                  scoperte  17  coperte 158  blocco mancante 0
+cultural-delights                   scoperte  14  coperte   0  blocco mancante 0
+twilight-forest                     scoperte  12  coperte  20  blocco mancante 1
+expanded-delight                    scoperte  10  coperte   0  blocco mancante 0
+lets-do-herbalbrews                 scoperte   9  coperte   0  blocco mancante 0
+lets-do-vinery                      scoperte   9  coperte   2  blocco mancante 0
+lets-do-meadow                      scoperte   8  coperte   3  blocco mancante 0
+the-aethers-delight                 scoperte   7  coperte   0  blocco mancante 0
+hexerei                             scoperte   7  coperte   3  blocco mancante 0
+enders-delight                      scoperte   4  coperte   0  blocco mancante 0
+my-nethers-delight                  scoperte   4  coperte   0  blocco mancante 0
+twilight-delight                    scoperte   3  coperte   0  blocco mancante 0
+aether                              scoperte   3  coperte   2  blocco mancante 0
+rustic-delight                      scoperte   2  coperte   8  blocco mancante 0
+reactive                            scoperte   2  coperte   0  blocco mancante 0
+veggies-delight                     scoperte   1  coperte  14  blocco mancante 0
+ars-elemental                       scoperte   1  coperte   2  blocco mancante 0
+deeperdarker                        scoperte   1  coperte  11  blocco mancante 0
+friends-and-foes-forge              scoperte   1  coperte   0  blocco mancante 0
+roasters-delight                    scoperte   0  coperte   0  blocco mancante 5
+
+mod fuori dal conteggio del 17/10 con blocchi che sembrano piante non coperte:
+  the-twilight-forest (9): blackberry_bush, blightberry_bush, blueberry_bush, duskberry_bush, maloberry_bush, mangrove_root, raspberry_bush, skyberry_bush, stingberry_bush
+  nether-depths-upgrade (8): crimson_kelp, crimson_kelp_block, crimson_kelp_carpet_block, crimson_kelp_plant, warped_kelp, warped_kelp_block, warped_kelp_carpet_block, warped_kelp_plant
+  jadens-nether-expansion (5): crimson_sprouts, sorrowsquash_stem_plant, soul_torchflower_crop, twilight_vines, twilight_vines_plant
+  travelersbackpack (1): cactus

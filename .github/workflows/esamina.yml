@@ -1,7 +1,8 @@
 name: Esamina mod
 
 # Legge i .jar di mod che NON sono nel pack (versione, dipendenze, dati) per valutarle.
-# Il risultato va in <versione>/data/esami/<slug>.md con un commit sul ramo scelto.
+# Il risultato va in ai-agents/stage/<data>_<MC>-v<versione del pack>_esame-mod/<slug>.md
+# con un commit sul ramo scelto (materiale grezzo: non si modifica mai).
 on:
   workflow_dispatch:
     inputs:
@@ -41,7 +42,8 @@ jobs:
           FILTRO: ${{ inputs.filtro }}
           STRINGHE: ${{ inputs.stringhe }}
         run: |
-          out="$(dirname "$PACK")/data/esami"
+          ver=$(python3 -c "import tomllib,sys;d=tomllib.load(open(sys.argv[1],'rb'));print(d['versions']['minecraft']+'-v'+d['version'])" "$PACK/pack.toml")
+          out="ai-agents/stage/$(date -u +%F)_${ver}_esame-mod"
           # shellcheck disable=SC2086
           python3 scripts/esamina.py "$PACK" "$out" "$FILTRO" --stringhe "${STRINGHE:--}" $MODS
 
@@ -49,4 +51,4 @@ jobs:
         env:
           MODS: ${{ inputs.mods }}
         run: |
-          bash scripts/ci_commit.sh "chore: esame di mod fuori dal pack [skip ci]" "Esaminate: $MODS"
+          bash scripts/ci_commit.sh "chore: esame di mod fuori dal pack (stage) [skip ci]" "Esaminate: $MODS"
