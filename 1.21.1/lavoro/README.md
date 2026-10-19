@@ -23,7 +23,7 @@ I documenti **vivi** si aggiornano; quelli **storici** sono fotografie e non si 
 | **0707** | [magia](0707-magia.md) | Mappa della magia e proposte | storico |
 | **0708** | [enhanced-celestials-2](0708-enhanced-celestials-2.md) | Enhanced Celestials 2 al posto di EC1: mod, lune, calendario, datapack, rischi | storico |
 | **0709** | [shader](0709-shader.md) | Supporto agli shader: Iris compatibile con Sodium 0.8, mod del pack con gli shader, pacchetti e licenze | storico |
-| **0710** | [shader-pack](0710-shader-pack.md) | Pacchetti di shader da includere: licenze, blocchi delle mod riconosciuti, Colorwheel, Enhanced Celestials 2 | storico |
 | **0710** | [confronto-modpack-famosi](0710-confronto-modpack-famosi.md) | Primo confronto con 8 modpack (zaini, ordinamento, grandi aggiunte) | storico |
 | **0711** | [secondo-confronto-modpack](0711-secondo-confronto-modpack.md) | Secondo confronto con pack grandi e a tema, con le note grezze | storico |
+| **0712** | [shader-pack](0712-shader-pack.md) | Pacchetti di shader da includere: licenze, blocchi delle mod riconosciuti, Colorwheel, Enhanced Celestials 2 | storico |
 | **0901** | [pacchetti-mrpack](0901-pacchetti-mrpack.md) | Le versioni prima del repository e l'installazione a mano | storico |

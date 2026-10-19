@@ -14,7 +14,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 
 - **NeoForge**: 21.1.259 (invariato).
 - **Mondo nuovo**: no.
-- **Shader**: due pacchetti **spenti di serie**, nella cartella `shaderpacks`: **Complementary Reimagined** (il più completo, profili da Potato a Ultra) e **MakeUp - Ultra Fast** (il più leggero, riconosce i blocchi di Create, Farmer's Delight, Twilight Forest, Ars Nouveau e altre mod del pack). Si scelgono in gioco dalle impostazioni video. Scelta: `../lavoro/0710-shader-pack.md`.
+- **Shader**: due pacchetti **spenti di serie**, nella cartella `shaderpacks`: **Complementary Reimagined** (il più completo, profili da Potato a Ultra) e **MakeUp - Ultra Fast** (il più leggero, riconosce i blocchi di Create, Farmer's Delight, Twilight Forest, Ars Nouveau e altre mod del pack). Si scelgono in gioco dalle impostazioni video. Scelta: `../lavoro/0712-shader-pack.md`.
 - **Impostazioni video**: nessun file nel pack, restano a chi gioca; Sodium di serie è già regolato per le prestazioni (`0302-config.md`).
 - **Strumenti**: il workflow Aggiungi mod Modrinth accetta anche pacchetti di shader e resource pack.
 - **Stato**: ✅ provata il 19/10/2026 (i due pacchetti funzionano, anche cambiandoli in gioco; la luna di sangue avviata da comando si vede con gli shader; pacchetti lasciati con le impostazioni di serie) e rilasciata come pre-release `1.21.1-v0.5.3`.
