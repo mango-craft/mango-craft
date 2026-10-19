@@ -18,7 +18,7 @@ I tag hanno la forma `<MC>-vX.Y.Z` (es. `1.21.1-v0.3.0`): la parte prima di `-v`
 
 1. **Scarica il bootstrap**: `packwiz-installer-bootstrap.jar` dalle [release ufficiali](https://github.com/packwiz/packwiz-installer-bootstrap/releases). È lo stesso file per tutte le istanze.
 2. **Nuova istanza** in Prism: *Aggiungi istanza* → la versione di Minecraft e il loader con la versione indicati nel changelog della versione del pack che vuoi usare (`<MC>/docs/0401-changelog.md`; per l'ultima versione anche nel `README.md` del repository). Dagli un nome che dica che istanza è, ad esempio "Mango Craft (prova)".
-3. **Memoria**: *Modifica* → *Impostazioni* → *Java*: 8 GB di massima (il PC ha 32 GB; salire a 10–12 GB solo se servisse). Assegnarne troppa non aiuta e può allungare le pause del garbage collector.
+3. **Memoria**: *Modifica* → *Impostazioni* → *Java* → *Memoria massima*: **12 GB** (12288 MB; il PC ha 32 GB). Con 8 GB il gioco parte, ma un ricaricamento delle risorse in gioco (F3+T, mipmap, resource pack) può finire la memoria e chiudere il gioco (bug B33 della 1.21.1, 19/10/2026). Assegnarne molta di più non aiuta e può allungare le pause del garbage collector.
 4. **Il file**: tasto destro sull'istanza → *Cartella*, entra in `minecraft` (o `.minecraft`; se non c'è, avvia una volta l'istanza vanilla o creala) e copia lì `packwiz-installer-bootstrap.jar`.
 5. **Il comando**: *Modifica* → *Impostazioni* → *Comandi personalizzati* (Custom commands) → attiva → *Comando prima dell'avvio* (Pre-launch command):
    ```

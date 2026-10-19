@@ -68,7 +68,7 @@ EC2 legge questi file **all'apertura del mondo**: dopo una modifica bisogna usci
 I comandi di EC2 sono sotto **`/ec`**, come in EC1 (nomi letti dal codice della mod; il tasto Tab completa gli argomenti). Servono i comandi attivi nel mondo.
 
 - `/ec lunarForecast` → le lune dei prossimi giorni: serve a contare le lune di sangue e tarare il peso.
-- `/ec setLunarEvent enhancedcelestials2defaultlunarevents:blood_moon` → avvia una luna di sangue. Solo con il cielo sereno (`/weather clear`), di notte.
+- `/ec setLunarEvent enhancedcelestials2defaultlunarevents:blood_moon` → avvia una luna di sangue. Solo con il cielo sereno (`/weather clear`), di notte. Provato in gioco: compare "The Blood Moon rises...".
 - `/ec dumpModifiers enhancedcelestials2defaultlunarevents:blood_moon` → elenca gli effetti di una luna: devono comparire i nostri ×2 (×4 per `super_blood_moon`).
 - EC2 **sostituisce il comando `/time`**: `/time set` porta all'ora indicata del giorno dopo e dice in che giorno del calendario si è (provato in gioco: `/time set 18000` → "Set time to 18000 for the next day. You are now on day 1.").
 
