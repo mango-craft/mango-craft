@@ -70,9 +70,11 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 | Versione, data ed esito della verifica di ogni file | `0403-distinta-mod` |
 | Tappe e avanzamento | `0501-piano` |
 | Prove e controlli da fare | `0502-prove-in-gioco` |
+| Argomenti non ancora affrontati | `0503-temi-aperti` |
 | Mod candidate / scartate | `0601` / `0602` |
 | Decisioni prese (una riga ciascuna) | `0610-log-decisioni` |
 | Parti del datapack da scrivere | `0620-progetto-datapack` |
+| Progettazione di una tappa (parti, decisioni, prove) | `063x` (oggi `0630`, tappa 5) |
 | Come funziona una parte del datapack già fatta | il readme dentro il datapack |
 | Regole del repository e dei documenti | questo file |
 

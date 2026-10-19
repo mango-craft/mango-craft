@@ -8,12 +8,14 @@ I documenti **vivi** si aggiornano; quelli **storici** sono fotografie e non si 
 |---|---|---|---|
 | **0501** | [piano](0501-piano.md) | Tappe verso la 1.0.0 e stato di avanzamento per gruppi | vivo |
 | **0502** | [prove-in-gioco](0502-prove-in-gioco.md) | Prove prioritarie, controlli, rischi, mondo di prova | vivo |
+| **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e dove sono le mod in valutazione | vivo |
 | **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle | vivo |
 | **0602** | [mod-scartate](0602-mod-scartate.md) | Mod lasciate fuori, con il motivo | vivo |
 | **0610** | [log-decisioni](0610-log-decisioni.md) | Una riga per decisione, dal 14/10/2026 | storico (si aggiunge in fondo) |
 | **0611** | [round-2026-10-17](0611-round-2026-10-17.md) | Round di decisione su tutte le opzionali, con le valutazioni di partenza in allegato | storico |
 | **0620** | [progetto-datapack](0620-progetto-datapack.md) | Parti del datapack da scrivere: vasi, mercato, esperienza, correzioni | vivo |
 | **0621** | [copertura-vasi](0621-copertura-vasi.md) | Tabella pianta per pianta della copertura nei vasi | vivo |
+| **0630** | [pre-progettazione-0.6](0630-pre-progettazione-0.6.md) | Tappa 5 (0.6.x): parti, stato verificato, decisioni, suddivisione in versioni, prove, rischi | vivo fino alla fine della tappa |
 | **0701** | [nether](0701-nether.md) | Ricerca sul Nether (in inglese) | storico |
 | **0702** | [animali](0702-animali.md) | Animali con cibi integrati nella cucina (in inglese) | storico |
 | **0703** | [esperienza](0703-esperienza.md) | Deposito e farm di esperienza (italiano e inglese) | storico |
