@@ -17,3 +17,7 @@ Le valutazioni complete stanno nelle ricerche (`07xx`) e negli allegati del roun
 | **Magical Psi: Revival, PsiTweaks** | Addon di Psi | Dopo aver provato Psi |
 | **Colorwheel** | 🟡 Facoltativa per gli shader: con uno shader attivo ridà a Create l'accelerazione di Flywheel. Compilata su una Iris più vecchia, non provata con la 1.8.14 (`0709-shader.md`). Complementary Reimagined (nel pack dalla 0.5.3) la supporta ufficialmente, MakeUp no | Se si usano gli shader con molti macchinari di Create |
 | **Ars Skyweave Shader Fix** | 🟡 Solo CurseForge, poco diffusa: con gli shader i blocchi Skyweave di Ars Nouveau diventano neri, questa li corregge | Se si usano gli shader |
+| **Reliable Advancements** | 🟢 Schermata dei progressi a tutta finestra, con editor in gioco; MIT, 6.3.1 del 15/10/2026 (`0713-achievement.md`) | Quando si affronta il tema achievement (`0503-temi-aperti.md`): una sola mod per la schermata |
+| **Lucid Advancements** | 🟢 Elenco dei progressi con ricerca e percentuali, in italiano; GPL-3.0, recente e poco diffusa (`0713`) | Come sopra, in alternativa a Reliable Advancements |
+| **Questlog** | 🟡 Libro di missioni con pagine di testo; Apache-2.0, richiede Cloth Config (già nel pack) (`0713`) | Se serve una guida del pack |
+| **Achievements Optimizer** | 🟡 Alleggerisce i controlli degli sblocchi di ricette (circa 10.000 nel pack); MIT (`0713`) | Solo se si nota lag raccogliendo oggetti |

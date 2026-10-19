@@ -28,4 +28,5 @@ I documenti **vivi** si aggiornano; quelli **storici** sono fotografie e non si 
 | **0710** | [confronto-modpack-famosi](0710-confronto-modpack-famosi.md) | Primo confronto con 8 modpack (zaini, ordinamento, grandi aggiunte) | storico |
 | **0711** | [secondo-confronto-modpack](0711-secondo-confronto-modpack.md) | Secondo confronto con pack grandi e a tema, con le note grezze | storico |
 | **0712** | [shader-pack](0712-shader-pack.md) | Pacchetti di shader da includere: licenze, blocchi delle mod riconosciuti, Colorwheel, Enhanced Celestials 2 | storico |
+| **0713** | [achievement](0713-achievement.md) | Achievement: progressi già presenti nel pack, mod per la schermata, progressione del pack | storico |
 | **0901** | [pacchetti-mrpack](0901-pacchetti-mrpack.md) | Le versioni prima del repository e l'installazione a mano | storico |
