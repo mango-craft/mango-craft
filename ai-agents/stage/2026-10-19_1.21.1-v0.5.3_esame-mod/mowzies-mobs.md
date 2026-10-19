@@ -1,0 +1,231 @@
+# Mowzie's Mobs (mowzies-mobs)
+
+File generato da `scripts/esamina.py` (workflow "Esamina mod"): la mod **non** è nel pack. Non modificarlo a mano.
+
+- Versione: **1.8.2** (release, 2026-03-15), file `mowziesmobs-1.21.1-1.8.2.jar`, id versione `xgAXTl17`
+- Licenza su Modrinth: LicenseRef-Mowzies-Mobs-License · download: 8839474
+- Filtro dei valori: `loot_table/chests?/.*\.json$`
+
+## Mod nel file e dipendenze dichiarate
+
+- `mowziesmobs` 1.8.2
+  - required: `neoforge` [21.1.1,21.2)
+  - required: `minecraft` [1.21, 1.21.2)
+  - required: `geckolib` [4.8.3,)
+
+## Cartelle di dati (file .json)
+
+- `c:tags/block/sands`: 2
+- `c:tags/entity_type`: 3
+- `c:tags/item`: 3
+- `c:tags/item/tools`: 1
+- `minecraft:tags/block`: 6
+- `minecraft:tags/block/mineable`: 2
+- `minecraft:tags/entity_type`: 4
+- `minecraft:tags/item`: 8
+- `minecraft:tags/item/enchantable`: 3
+- `mowziesmobs:advancement`: 17
+- `mowziesmobs:advancement/recipes/building_blocks`: 5
+- `mowziesmobs:advancement/recipes/combat`: 4
+- `mowziesmobs:advancement/recipes/misc`: 3
+- `mowziesmobs:jukebox_song`: 1
+- `mowziesmobs:loot_table/blocks`: 7
+- `mowziesmobs:loot_table/chests`: 2
+- `mowziesmobs:loot_table/entities`: 17
+- `mowziesmobs:neoforge/biome_modifier`: 1
+- `mowziesmobs:recipe`: 12
+- `mowziesmobs:tags/block`: 6
+- `mowziesmobs:tags/entity_type`: 2
+- `mowziesmobs:tags/item`: 2
+- `mowziesmobs:tags/worldgen/biome`: 1
+- `mowziesmobs:tags/worldgen/biome/has_structure`: 1
+- `mowziesmobs:worldgen/processor_list`: 1
+- `mowziesmobs:worldgen/structure`: 4
+- `mowziesmobs:worldgen/structure_set`: 4
+- `mowziesmobs:worldgen/template_pool/monastery`: 24
+- `mowziesmobs:worldgen/template_pool/monastery/fallback`: 7
+- `mowziesmobs:worldgen/template_pool/monastery/interior`: 13
+
+## Valori dei file filtrati
+
+
+### `data/mowziesmobs/loot_table/chests/monastery_chest.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls.min` = 3.0
+- `pools[0].rolls.max` = 8.0
+- `pools[0].rolls.type` = "minecraft:uniform"
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].weight` = 4
+- `pools[0].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[0].functions[0].count.min` = 1.0
+- `pools[0].entries[0].functions[0].count.max` = 3.0
+- `pools[0].entries[0].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[0].name` = "minecraft:amethyst_shard"
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].weight` = 4
+- `pools[0].entries[1].name` = "minecraft:emerald"
+- `pools[0].entries[2].type` = "minecraft:item"
+- `pools[0].entries[2].weight` = 8
+- `pools[0].entries[2].name` = "mowziesmobs:sand_rake"
+- `pools[0].entries[3].type` = "minecraft:item"
+- `pools[0].entries[3].weight` = 32
+- `pools[0].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[3].functions[0].weight` = 1
+- `pools[0].entries[3].functions[0].count.min` = 1.0
+- `pools[0].entries[3].functions[0].count.max` = 6.0
+- `pools[0].entries[3].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[3].name` = "minecraft:stone"
+- `pools[0].entries[4].type` = "minecraft:item"
+- `pools[0].entries[4].weight` = 20
+- `pools[0].entries[4].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[4].functions[0].weight` = 1
+- `pools[0].entries[4].functions[0].count.min` = 1.0
+- `pools[0].entries[4].functions[0].count.max` = 6.0
+- `pools[0].entries[4].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[4].name` = "minecraft:diorite"
+- `pools[0].entries[5].type` = "minecraft:item"
+- `pools[0].entries[5].weight` = 20
+- `pools[0].entries[5].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[5].functions[0].count.min` = 1.0
+- `pools[0].entries[5].functions[0].count.max` = 2.0
+- `pools[0].entries[5].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[5].name` = "minecraft:cooked_mutton"
+- `pools[0].entries[6].type` = "minecraft:item"
+- `pools[0].entries[6].weight` = 20
+- `pools[0].entries[6].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[6].functions[0].count.min` = 1.0
+- `pools[0].entries[6].functions[0].count.max` = 2
+- `pools[0].entries[6].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[6].name` = "minecraft:book"
+- `pools[0].entries[7].type` = "minecraft:item"
+- `pools[0].entries[7].weight` = 20
+- `pools[0].entries[7].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[7].functions[0].count.min` = 1.0
+- `pools[0].entries[7].functions[0].count.max` = 4.0
+- `pools[0].entries[7].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[7].name` = "minecraft:paper"
+- `pools[0].entries[8].type` = "minecraft:item"
+- `pools[0].entries[8].weight` = 20
+- `pools[0].entries[8].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[8].functions[0].count.min` = 1.0
+- `pools[0].entries[8].functions[0].count.max` = 2.0
+- `pools[0].entries[8].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[8].name` = "minecraft:apple"
+- `pools[0].entries[9].type` = "minecraft:item"
+- `pools[0].entries[9].weight` = 4
+- `pools[0].entries[9].name` = "minecraft:mushroom_stew"
+- `pools[0].entries[10].type` = "minecraft:item"
+- `pools[0].entries[10].weight` = 12
+- `pools[0].entries[10].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[10].functions[0].count.min` = 1.0
+- `pools[0].entries[10].functions[0].count.max` = 2.0
+- `pools[0].entries[10].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[10].name` = "minecraft:cobweb"
+- `pools[0].entries[11].type` = "minecraft:item"
+- `pools[0].entries[11].weight` = 12
+- `pools[0].entries[11].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[11].functions[0].count.min` = 1.0
+- `pools[0].entries[11].functions[0].count.max` = 2.0
+- `pools[0].entries[11].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[11].name` = "minecraft:torch"
+- `pools[0].entries[12].type` = "minecraft:item"
+- `pools[0].entries[12].weight` = 4
+- `pools[0].entries[12].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[12].functions[0].count.min` = 1.0
+- `pools[0].entries[12].functions[0].count.max` = 4.0
+- `pools[0].entries[12].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[12].name` = "minecraft:rabbit_foot"
+- `pools[0].entries[13].type` = "minecraft:item"
+- `pools[0].entries[13].weight` = 10
+- `pools[0].entries[13].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[13].functions[0].count.min` = 1.0
+- `pools[0].entries[13].functions[0].count.max` = 4.0
+- `pools[0].entries[13].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[13].name` = "minecraft:sugar"
+- `pools[0].entries[14].type` = "minecraft:item"
+- `pools[0].entries[14].weight` = 2
+- `pools[0].entries[14].name` = "mowziesmobs:sculptor_staff"
+- `pools[0].entries[15].type` = "minecraft:item"
+- `pools[0].entries[15].weight` = 2
+- `pools[0].entries[15].name` = "mowziesmobs:geomancer_beads"
+- `pools[0].entries[16].type` = "minecraft:item"
+- `pools[0].entries[16].weight` = 2
+- `pools[0].entries[16].name` = "mowziesmobs:geomancer_robe"
+- `pools[0].entries[17].type` = "minecraft:item"
+- `pools[0].entries[17].weight` = 2
+- `pools[0].entries[17].name` = "mowziesmobs:geomancer_belt"
+- `pools[0].entries[18].type` = "minecraft:item"
+- `pools[0].entries[18].weight` = 2
+- `pools[0].entries[18].name` = "mowziesmobs:geomancer_sandals"
+
+### `data/mowziesmobs/loot_table/chests/umvuthana_grove_chest.json`
+
+- `type` = "minecraft:chest"
+- `pools[0].rolls.min` = 3.0
+- `pools[0].rolls.max` = 8.0
+- `pools[0].rolls.type` = "minecraft:uniform"
+- `pools[0].entries[0].type` = "minecraft:item"
+- `pools[0].entries[0].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[0].functions[0].count.min` = 1.0
+- `pools[0].entries[0].functions[0].count.max` = 3.0
+- `pools[0].entries[0].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[0].name` = "minecraft:gold_nugget"
+- `pools[0].entries[1].type` = "minecraft:item"
+- `pools[0].entries[1].weight` = 5
+- `pools[0].entries[1].name` = "minecraft:short_grass"
+- `pools[0].entries[2].type` = "minecraft:item"
+- `pools[0].entries[2].weight` = 5
+- `pools[0].entries[2].name` = "minecraft:tall_grass"
+- `pools[0].entries[3].type` = "minecraft:item"
+- `pools[0].entries[3].weight` = 5
+- `pools[0].entries[3].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[3].functions[0].count.min` = 1.0
+- `pools[0].entries[3].functions[0].count.max` = 2.0
+- `pools[0].entries[3].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[3].name` = "minecraft:cooked_porkchop"
+- `pools[0].entries[4].type` = "minecraft:item"
+- `pools[0].entries[4].weight` = 8
+- `pools[0].entries[4].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[4].functions[0].count.min` = 1.0
+- `pools[0].entries[4].functions[0].count.max` = 2
+- `pools[0].entries[4].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[4].name` = "minecraft:feather"
+- `pools[0].entries[5].type` = "minecraft:item"
+- `pools[0].entries[5].weight` = 10
+- `pools[0].entries[5].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[5].functions[0].count.min` = 1.0
+- `pools[0].entries[5].functions[0].count.max` = 2.0
+- `pools[0].entries[5].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[5].name` = "minecraft:acacia_sapling"
+- `pools[0].entries[6].type` = "minecraft:item"
+- `pools[0].entries[6].weight` = 10
+- `pools[0].entries[6].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[6].functions[0].count.min` = 1.0
+- `pools[0].entries[6].functions[0].count.max` = 2.0
+- `pools[0].entries[6].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[6].name` = "minecraft:bone"
+- `pools[0].entries[7].type` = "minecraft:item"
+- `pools[0].entries[7].name` = "mowziesmobs:umvuthana_mask_fury"
+- `pools[0].entries[7].weight` = 1
+- `pools[0].entries[8].type` = "minecraft:item"
+- `pools[0].entries[8].name` = "mowziesmobs:umvuthana_mask_bliss"
+- `pools[0].entries[8].weight` = 1
+- `pools[0].entries[9].type` = "minecraft:item"
+- `pools[0].entries[9].name` = "mowziesmobs:umvuthana_mask_misery"
+- `pools[0].entries[9].weight` = 1
+- `pools[0].entries[10].type` = "minecraft:item"
+- `pools[0].entries[10].name` = "mowziesmobs:umvuthana_mask_fear"
+- `pools[0].entries[10].weight` = 1
+- `pools[0].entries[11].type` = "minecraft:item"
+- `pools[0].entries[11].name` = "mowziesmobs:umvuthana_mask_rage"
+- `pools[0].entries[11].weight` = 1
+- `pools[0].entries[12].type` = "minecraft:item"
+- `pools[0].entries[12].name` = "mowziesmobs:umvuthana_mask_faith"
+- `pools[0].entries[12].weight` = 1
+- `pools[0].entries[13].type` = "minecraft:item"
+- `pools[0].entries[13].functions[0].function` = "minecraft:set_count"
+- `pools[0].entries[13].functions[0].count.min` = 1.0
+- `pools[0].entries[13].functions[0].count.max` = 2.0
+- `pools[0].entries[13].functions[0].count.type` = "minecraft:uniform"
+- `pools[0].entries[13].name` = "minecraft:torch"
