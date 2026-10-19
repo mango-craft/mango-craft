@@ -122,11 +122,15 @@ def version_summary(mc, f):
 
 
 def sheets_index(mc):
-    """Tabella delle schede di mod-knowledge, con i link al repository."""
-    text = read(f"{mc}/mod-knowledge/README.md")
-    base = f"{REPO_URL}/{mc}/mod-knowledge/"
-    rows = [l for l in text.split("\n") if l.startswith("|")]
-    return re.sub(r"\]\(([^)/]+\.md)\)", lambda m: f"]({base}{m.group(1)})", "\n".join(rows))
+    """Tabelle delle schede delle mod (mod-knowledge) e dei temi (theme-knowledge), con i link al repository."""
+    out = []
+    for folder, label in (("mod-knowledge", "Schede delle mod"), ("theme-knowledge", "Schede dei temi")):
+        text = read(f"{mc}/{folder}/README.md")
+        base = f"{REPO_URL}/{mc}/{folder}/"
+        rows = [l for l in text.split("\n") if l.startswith("|")]
+        table = re.sub(r"\]\(([^)/]+\.md)\)", lambda m: f"]({base}{m.group(1)})", "\n".join(rows))
+        out.append(f"### {label}\n\n{table}")
+    return "\n\n".join(out)
 
 
 def main():
@@ -161,7 +165,7 @@ def main():
         + f"\n\nGli altri (problemi delle mod, risolti): [0402-bug-report]({REPO_URL}/{mc}/docs/0402-bug-report.md).",
         "## 8. Temi aperti\n\n" + demote(body(read(f"{mc}/lavoro/0503-temi-aperti.md")), 1),
         "## 9. Mod candidate\n\n" + body(read(f"{mc}/lavoro/0601-mod-candidate.md")),
-        "## 10. Schede delle mod e dei temi\n\nConoscenza verificata, con data e fonti (cartella `mod-knowledge`).\n\n" + sheets_index(mc),
+        "## 10. Schede delle mod e dei temi\n\nConoscenza verificata, con data e fonti (cartelle `mod-knowledge` e `theme-knowledge`).\n\n" + sheets_index(mc),
         "## 11. Dove trovare il resto\n\nUn file per versione in "
         f"[lavoro/versioni]({REPO_URL.replace('/blob/', '/tree/')}/{mc}/lavoro/versioni); risultati grezzi delle ricerche in "
         f"[ai-agents/stage]({REPO_URL.replace('/blob/', '/tree/')}/ai-agents/stage).\n\n" + "\n".join(index),

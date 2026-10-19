@@ -23,7 +23,7 @@ L'inventario conta i file `advancement` di ogni mod: **10.769 file in 98 mod**, 
 | Farmer's Delight | 218 | 21 |
 | Mekanism (+ Generators) | 97 + 4 | tutti veri |
 
-Alberi che fanno già da guida: Create, Mekanism, Farmer's Delight, Aether, Ars Nouveau, Undergarden. **Twilight Forest usa i progressi dei boss come lucchetto**: non vanno mai tolti (`twilight-forest.md`). Animal Pens e Nether Depths Upgrade usano ancora la cartella `advancements/` della 1.20, ignorata: innocuo.
+Alberi che fanno già da guida: Create, Mekanism, Farmer's Delight, Aether, Ars Nouveau, Undergarden. **Twilight Forest usa i progressi dei boss come lucchetto**: non vanno mai tolti (`../mod-knowledge/twilight-forest.md`). Animal Pens e Nether Depths Upgrade usano ancora la cartella `advancements/` della 1.20, ignorata: innocuo.
 
 ## Mod per la schermata (NeoForge 1.21.1)
 
@@ -47,6 +47,12 @@ Advancements Debug esiste solo per Fabric fino alla 1.19.3. Mod che danno bonus 
 | **Progressi nostri nel datapack** | Nessuna mod nuova; JSON controllati dal controllo dei nomi; condizioni di caricamento; agganciabili ai progressi delle mod; ricompense esperienza, bottino, ricette, funzioni | Niente editor in gioco (salvo quello di Reliable Advancements, da cui copiare i file); schermata vanilla piccola; "fai N cose" richiede funzioni |
 | Questlog 3.3.2 | Apache-2.0, Cloth Config già nel pack; libro di missioni con pagine di testo, circa 30 obiettivi, editor in gioco; missioni in JSON | Una mod in più; su GitHub c'è già la 3.4.1 non su Modrinth |
 | Odyssey Quests (ex Heracles) 2.0.3 | MIT, editor | Beta di due settimane, riscritta da zero |
-| FTB Quests | L'editor migliore | Solo CurseForge, licenza chiusa, due librerie nuove; scartata |
+| FTB Quests | L'editor migliore | Solo CurseForge, licenza chiusa, due librerie nuove; scartata (`../lavoro/0602-mod-scartate.md`) |
 
 Proposta del 19/10: provare una mod per la schermata (una sola alla volta), poi una scheda "Mango Craft" nel datapack con 20–40 traguardi; Questlog solo se serve una guida con pagine di testo.
+
+## Non verificato
+
+- Per Ars Nouveau, Bountiful Fares e Deep Aether i rami dei sorgenti letti potrebbero non corrispondere alla versione del pack: numeri approssimati.
+- Problemi noti delle mod per la schermata con alberi molto grandi (la pagina delle segnalazioni di Better Advancements non era raggiungibile).
+- Numero esatto dei progressi veri del pack: l'inventario conta i file senza distinguere gli sblocchi di ricette; si potrebbe estendere `scripts/inventory.py` per separarli.

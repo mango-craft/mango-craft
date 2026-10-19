@@ -2,7 +2,7 @@
 
 Le mod che non sono nel pack ma restano in considerazione, con il momento in cui rivalutarle. Documento vivo: quando una candidata viene approvata passa in `../docs/0301-mod.md`, quando viene scartata in `0602-mod-scartate.md`.
 
-È un indice: le valutazioni complete stanno nel file della versione in cui sono state fatte (`versioni/`, sezione Valutazioni) e, per le mod con una scheda, in `../mod-knowledge/`. Fuori da questa lista: l'aggiornamento di owo-lib (bug B17 e `../docs/0303-note-tecniche.md`) e la prossima Botany Trees (scheda `botany-pots`).
+È un indice: le valutazioni complete stanno nel file della versione in cui sono state fatte (`versioni/`, sezione Valutazioni) e, per le mod e i temi con una scheda, in `../mod-knowledge/` e `../theme-knowledge/`. Fuori da questa lista: l'aggiornamento di owo-lib (bug B17 e `../docs/0303-note-tecniche.md`) e la prossima Botany Trees (scheda `botany-pots`).
 
 | Mod | Stato | Quando rivalutare |
 |---|---|---|
@@ -17,7 +17,7 @@ Le mod che non sono nel pack ma restano in considerazione, con il momento in cui
 | **Magical Psi: Revival, PsiTweaks** | Addon di Psi | Dopo aver provato Psi |
 | **Colorwheel** | 🟡 Facoltativa per gli shader: con uno shader attivo ridà a Create l'accelerazione di Flywheel. Compilata su una Iris più vecchia, non provata con la 1.8.14 (scheda `../mod-knowledge/colorwheel.md`). Complementary Reimagined (nel pack dalla 0.5.3) la supporta ufficialmente, MakeUp no | Se si usano gli shader con molti macchinari di Create |
 | **Ars Skyweave Shader Fix** | 🟡 Solo CurseForge, poco diffusa: con gli shader i blocchi Skyweave di Ars Nouveau diventano neri, questa li corregge | Se si usano gli shader |
-| **Reliable Advancements** | 🟢 Schermata dei progressi a tutta finestra, con editor in gioco; MIT, 6.3.1 del 15/10/2026 (scheda `../mod-knowledge/tema-achievement.md`) | Quando si affronta il tema achievement (`0503-temi-aperti.md`): una sola mod per la schermata |
-| **Lucid Advancements** | 🟢 Elenco dei progressi con ricerca e percentuali, in italiano; GPL-3.0, recente e poco diffusa (scheda `tema-achievement`) | Come sopra, in alternativa a Reliable Advancements |
-| **Questlog** | 🟡 Libro di missioni con pagine di testo; Apache-2.0, richiede Cloth Config (già nel pack) (scheda `tema-achievement`) | Se serve una guida del pack |
-| **Achievements Optimizer** | 🟡 Alleggerisce i controlli degli sblocchi di ricette (circa 10.000 nel pack); MIT (scheda `tema-achievement`) | Solo se si nota lag raccogliendo oggetti |
+| **Reliable Advancements** | 🟢 Schermata dei progressi a tutta finestra, con editor in gioco; MIT, 6.3.1 del 15/10/2026 (tema `../theme-knowledge/achievement.md`) | Quando si affronta il tema achievement (`0503-temi-aperti.md`): una sola mod per la schermata |
+| **Lucid Advancements** | 🟢 Elenco dei progressi con ricerca e percentuali, in italiano; GPL-3.0, recente e poco diffusa (tema `../theme-knowledge/achievement.md`) | Come sopra, in alternativa a Reliable Advancements |
+| **Questlog** | 🟡 Libro di missioni con pagine di testo; Apache-2.0, richiede Cloth Config (già nel pack) (tema `../theme-knowledge/achievement.md`) | Se serve una guida del pack |
+| **Achievements Optimizer** | 🟡 Alleggerisce i controlli degli sblocchi di ricette (circa 10.000 nel pack); MIT (tema `../theme-knowledge/achievement.md`) | Solo se si nota lag raccogliendo oggetti |

@@ -14,7 +14,7 @@ Non si ripetono qui, per non avere due elenchi da tenere allineati:
 
 | Tema | Cosa manca | Dove se ne parla già | Quando (proposta) |
 |---|---|---|---|
-| **Achievement e progressione** (nuovo, 19/10) | Schermata dei progressi più comoda, eventuale scheda di traguardi del pack | sezione 3; scheda `../mod-knowledge/tema-achievement.md`; ricerca in `versioni/v0.6.0.md` | Da decidere (la prova della schermata si può fare quando vuoi) |
+| **Achievement e progressione** (nuovo, 19/10) | Schermata dei progressi più comoda, eventuale scheda di traguardi del pack | sezione 3; tema `../theme-knowledge/achievement.md`; ricerca in `versioni/v0.6.0.md` | Da decidere (la prova della schermata si può fare quando vuoi) |
 | **Difficoltà** | Le fonti di difficoltà non sono mai state bilanciate insieme: World Tier ed Elites di Apotheosis, config di Cataclysm, buff permanenti di Cataclysm Delight, Born in Chaos (Krampus), lune di sangue. In più va deciso se tenere i due effetti nuovi della luna di sangue di Enhanced Celestials 2 (mostri più vicini, assedio di zombi ai villaggi) | `../docs/0302-config.md`, Impostazioni decise; readme delle lune nel datapack | Mondo di prova (tappa 6); la decisione sulle lune anche prima |
 | **Tasti in conflitto** | Sophisticated e Traveler's aprono entrambi con B, Psi e Ars Nouveau usano entrambi C. I tasti stanno in `options.txt`, che il pack non porta (decisione del 19/10): vanno cambiati a mano, serve solo un elenco dei tasti consigliati | `0302`, Impostazioni decise | Prima del mondo vero |
 | **Memoria e prestazioni** | Crash per memoria finita con 8 GB (B33); Every Compat pesa il 40% dei blocchi (B22). La prima leva è nella 0.6.0: Every Compat che genera le sue risorse una volta per avvio invece che a ogni ricaricamento (`versioni/v0.6.0.md`, parte A). Dopo va rimisurato tutto (avvio, memoria) e, se serve, valutate altre ottimizzazioni | `../docs/0402-bug-report.md`, B22 e B33 | 0.6.0, poi mondo di prova |
@@ -28,7 +28,7 @@ Restano nei loro documenti, perché sono già pianificati: densità delle strutt
 
 ## 3. Achievement e progressione
 
-Proposto dall'utente il 19/10/2026. Ricerca completa: `versioni/v0.6.0.md`, sezione 2; fatti sulle mod nella scheda `../mod-knowledge/tema-achievement.md`.
+Proposto dall'utente il 19/10/2026. Ricerca completa: `versioni/v0.6.0.md`, sezione 2; fatti sulle mod nella tema `../theme-knowledge/achievement.md`.
 
 **Cosa c'è già**: circa 1.000–1.500 progressi veri nelle mod (più i 122 di Minecraft), sparsi in decine di schede. Alcuni alberi fanno già da guida (Create, Mekanism, Farmer's Delight, Aether, Ars Nouveau). Twilight Forest usa i progressi dei boss come lucchetto per aprire le zone: quelli non vanno mai toccati.
 
@@ -50,6 +50,6 @@ Le decisioni che riguardano solo una versione stanno nel suo file (`versioni/`, 
 | # | Decisione | Proposta | Dove si applica |
 |---|---|---|---|
 | 1 | Effetti nuovi della luna di sangue di Enhanced Celestials 2 (mostri più vicini, assedio di zombi ai villaggi): tenerli? Oggi attivi | da decidere, anche prima del mondo di prova | datapack delle lune (scheda `../mod-knowledge/enhanced-celestials-2.md`) |
-| 2 | Achievement: partire dalla schermata dei progressi (Reliable o Lucid) e se e quando scrivere la scheda "Mango Craft" nel datapack | 🟢 una mod per la schermata, poi la scheda | sezione 3; scheda `../mod-knowledge/tema-achievement.md` |
+| 2 | Achievement: partire dalla schermata dei progressi (Reliable o Lucid) e se e quando scrivere la scheda "Mango Craft" nel datapack | 🟢 una mod per la schermata, poi la scheda | sezione 3; tema `../theme-knowledge/achievement.md` |
 | 3 | Tasti in conflitto (B, C): elenco dei tasti consigliati | da fare a mano nelle opzioni | prima del mondo vero |
 | 4 | Lingua del gioco: italiano o no, e che fare con le mod senza traduzione | da chiarire | prima del mondo vero |

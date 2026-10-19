@@ -4,7 +4,7 @@ Aggiornata il 19/10/2026 · nel pack dalla 0.5.0: Moog's Nether Structures 3.1.1
 
 ## Cose da non rompere
 
-- Richiede Moog's Structure Lib **≥ 3.3.0**: con la 3.0.3 il gioco non partiva (B28). packwiz non aggiorna una libreria già presente: il controllo dei nomi ora lo segnala (scheda `neoforge.md` per la regola generale).
+- Richiede Moog's Structure Lib **≥ 3.3.0**: con la 3.0.3 il gioco non partiva (B28). packwiz non aggiorna una libreria già presente: il controllo dei nomi ora lo segnala (scheda `../theme-knowledge/neoforge.md` per la regola generale).
 - La sostituzione della fortezza vanilla con la mega-fortezza è **spenta di serie e deve restare così**: la fortezza la rifà YUNG's (e i Berserker di Cataclysm dipendono da quella: `cataclysm.md`).
 
 ## Fatti verificati

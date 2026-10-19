@@ -4,7 +4,7 @@ Aggiornata il 19/10/2026 · nel pack: NeoForge **21.1.259** (la versione usata �
 
 ## Cose da non rompere
 
-- **Fermo a 21.1.259**: dalla 21.1.261 NeoForge ha cambiato il codice di rete e owo-lib 0.12.15.5 (libreria di Accessories, incorporata nell'Aether) non "spacchetta" più i suoi pacchetti → "Connection lost" appena si entra nel mondo (bug B17, aggirato). Si torna all'ultimo NeoForge solo quando esce owo-lib 0.12.15.6 (correzione già scritta nella 0.12.15.6-beta.1, commit del 16/10/2026). Scheda: `aether.md`.
+- **Fermo a 21.1.259**: dalla 21.1.261 NeoForge ha cambiato il codice di rete e owo-lib 0.12.15.5 (libreria di Accessories, incorporata nell'Aether) non "spacchetta" più i suoi pacchetti → "Connection lost" appena si entra nel mondo (bug B17, aggirato). Si torna all'ultimo NeoForge solo quando esce owo-lib 0.12.15.6 (correzione già scritta nella 0.12.15.6-beta.1, commit del 16/10/2026). Scheda: `../mod-knowledge/aether.md`.
 - Il minimo richiesto dalle mod del pack è 21.1.229 (BotanyPotsAdditions); il controllo dei nomi verifica da solo le richieste di ogni mod.
 
 ## Fatti verificati

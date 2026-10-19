@@ -37,7 +37,8 @@ scripts/                  inventario, controlli, aggiunta mod, note di release
 1.21.1/
 ├── pack/                 il pack vero e proprio (solo questo finisce nel gioco)
 ├── docs/                 documentazione della versione: mod, config, note tecniche, changelog, bug report
-├── mod-knowledge/        una scheda per mod o tema: fatti verificati, con data e fonti
+├── mod-knowledge/        una scheda per mod: fatti verificati, con data e fonti
+├── theme-knowledge/      una scheda per tema trasversale (esperienza, Nether, shader…)
 ├── lavoro/               piano, prove, temi aperti e, in versioni/, un file per versione (valutazioni, decisioni, lavoro)
 └── data/                 inventario delle mod e dati dei conteggi
 ai-agents/stage/          risultati grezzi delle ricerche (non documentazione)

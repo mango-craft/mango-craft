@@ -1,17 +1,17 @@
 # Note tecniche — Minecraft 1.21.1
 
-Le cose da **non rompere** in questa versione, in breve, ognuna con la scheda che spiega il perché (`../mod-knowledge/`). Da leggere prima di toccare il pack. Documento vivo: una regola nuova si aggiunge qui, il fatto che la motiva nella sua scheda.
+Le cose da **non rompere** in questa versione, in breve, ognuna con la scheda che spiega il perché (`../mod-knowledge/` per le mod, `../theme-knowledge/` per i temi e la piattaforma; i nomi delle schede sono unici). Da leggere prima di toccare il pack. Documento vivo: una regola nuova si aggiunge qui, il fatto che la motiva nella sua scheda.
 
 ## Cose da non rompere
 
 - **NeoForge fermo a 21.1.259**: dalla 21.1.261 owo-lib 0.12.15.5 (incorporata nell'Aether) non "spacchetta" più i suoi pacchetti di rete → "Connection lost" appena si entra nel mondo. Si torna all'ultimo NeoForge solo quando esce owo-lib 0.12.15.6 (bug B17). Schede `neoforge`, `aether`.
-- **Esperienza liquida**: il liquido di Create: Enchantment Industry vale 1 mB per punto, gli altri 20. **Mai** mescolarli per etichetta (`c:experience`) o per config (`AllowedFluids` di Cognition). Scheda `tema-esperienza`.
+- **Esperienza liquida**: il liquido di Create: Enchantment Industry vale 1 mB per punto, gli altri 20. **Mai** mescolarli per etichetta (`c:experience`) o per config (`AllowedFluids` di Cognition). Scheda `esperienza`.
 - **Regions Unexplored 0.6** usa Lithostitched (non TerraBlender) e ha rinominato alcuni blocchi: Botany Pots usa ancora 8 nomi vecchi. Schede `regions-unexplored`, `botany-pots`.
 - **Frantumatore di Occultism**: non modificarlo (scelta dell'utente: `0302-config.md`). Scheda `occultism`.
 - **Starcatcher**: i pesci crudi sono in `c:foods/raw_fish`; il pesce cotto è generico e lo mettiamo noi nelle etichette del pesce cotto (datapack, dalla 0.3.0). Scheda `starcatcher`.
 - **Librerie già nel pack**: quando una mod nuova chiede una versione più recente di una libreria che c'è già, packwiz non la aggiorna. Il controllo dei nomi lo segnala come errore ("Versione non adatta"); la libreria si aggiorna con il workflow Modrinth, indicando `slug@id-versione` (bug B28).
 - **Botany Pots 1.21.1**: le ricette in formato 1.20 vengono ignorate; le piante raccolte col click destro richiedono raccolti espliciti. Scheda `botany-pots`.
-- **Iris e Sodium** (dalla 0.5.2): con Sodium 0.8 funziona solo **Iris 1.8.14-beta.1** (la release 1.8.12 va in crash). Iris si aggiunge o aggiorna solo indicando la versione (`iris@<id versione>`): il workflow da solo sceglierebbe la release e il controllo dei nomi non fermerebbe l'errore. Prima di aggiornare Sodium, verificare che Iris lo supporti. Schede `iris`, `sodium`.
+- **Iris e Sodium** (dalla 0.5.2): con Sodium 0.8 funziona solo **Iris 1.8.14-beta.1** (la release 1.8.12 va in crash). Iris si aggiunge o aggiorna solo indicando la versione (`iris@<id versione>`): il workflow da solo sceglierebbe la release e il controllo dei nomi non fermerebbe l'errore. Prima di aggiornare Sodium, verificare che Iris lo supporti. Schede `iris`, `sodium`, `shader`.
 - **Pacchetti di shader** (dalla 0.5.3): Complementary non si modifica mai, nemmeno per aggiungere blocchi al suo elenco (licenza, punto 1.2.c), e si aggiunge solo tramite Modrinth. Schede `complementary-reimagined`, `makeup-ultra-fast-shaders`.
 - **Sparse Structures**: il file `config/sparsestructures.json5` va sempre portato **completo** (`spreadFactor`, `idBasedSalt`, `customSpreadFactors`): se manca `spreadFactor` spariscono tutte le strutture, se manca l'elenco il gioco va in errore. Scheda `sparse-structures`.
 - **Every Compat**: togliere blocchi dalla config (`everycomp-hazardous.toml`) li cancella dal mondo: si fa solo **prima del mondo vero**. Scheda `every-compat`.

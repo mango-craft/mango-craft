@@ -30,7 +30,7 @@ Crea le varianti (credenze, cassetti, tetti, finestre, blocchi cesellati…) di 
 - Solo il file `hazardous` toglie davvero i blocchi (`EveryCompat.addModule`, `HardcodedBlockType`). Il file avverte "modpack makers DO NOT use it" pensando ai server con config diverse dal client: nel single player non vale.
 - Togliere blocchi li cancella dal mondo (dovrebbero diventare aria: comportamento normale, non verificato nel sorgente). Va fatto **prima del mondo vero**.
 - `RUN_ONCE` genera una volta per avvio e non rigenera con F3+T. `CACHED` salva in `dynamic-resource-pack-cache/` e `dynamic-data-pack-cache/` dell'istanza e rigenera solo quando cambia l'impronta (elenco delle mod con versioni più i resource pack): **le modifiche alla config di Every Compat non invalidano la cache**, quindi dopo ogni cambio vanno cancellate a mano le due cartelle. Moonlight non ha una strategia di cache propria.
-- I file sono TOML di NeoForge: parziali ammessi, ma meglio completi (scheda `neoforge.md`).
+- I file sono TOML di NeoForge: parziali ammessi, ma meglio completi (scheda `../theme-knowledge/neoforge.md`).
 
 ## Problemi
 
