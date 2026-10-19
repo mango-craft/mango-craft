@@ -17,8 +17,8 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 - **Shader** (facoltativi): **Iris** 1.8.14-beta.1 (l'unica versione che funziona con Sodium 0.8, ancora beta) ed **Enhanced Celestials 2: Shader Support** (i colori delle lune con gli shader). Nessun pacchetto di shader incluso: senza attivarne uno il gioco resta com'era. Le mod del pack con parti apposta per Iris sono state controllate prima (`../lavoro/0709-shader.md`); nessuna libreria nuova.
 - **Config**: traduzioni di Enhanced Celestials 2 spente (`config/enhancedcelestials2core/translations.json`): niente traduzioni scaricate da internet e niente più messaggio in chat (B32).
 - **Strumenti**: il workflow Esamina mod legge anche i testi del codice compilato delle mod (nomi dei file di config, comandi).
-- **Stato**: 🧪 in prova su `dev`.
-- **Problemi noti**: da provare; B32 corretto, da confermare in prova.
+- **Stato**: ✅ provata il 19/10/2026 (mondo nuovo, avvio in 70 secondi, 28.612 ricette; Iris attiva senza shader, nessun errore nuovo) e rilasciata come pre-release `1.21.1-v0.5.2`.
+- **Problemi noti**: B32 risolto (il messaggio in chat non compare più). Messaggi innocui di Iris aggiunti a B14.
 
 ## 0.5.1 — 18/10/2026 · lune (pre-release di prova)
 

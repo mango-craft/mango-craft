@@ -12,11 +12,12 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | 3 | 0.4.0 | Decorazione e tech: Macaw's Roofs/Paths/Bridges/Windows, Diagonal Fences/Walls/Windows, Chimes, Exposure, Goblin Traders, Guard Villagers, Every Compat, Copycats+ | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.4.0`) |
 | 4 | 0.5.0 | Esplorazione: Jaden's Nether Expansion (+ Elysium API, Lodestone), Moog's Nether Structures, Nether Depths Upgrade, Aures Farmers Structures, Better Archeology, Nature's Compass, Aquamirae (+ Fragmentum), Creeper Overhaul, Paragliders | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.0`) |
 | 4.1 | 0.5.1 | Lune: Enhanced Celestials 2 (Core + Default Lunar Events) al posto di Enhanced Celestials, luna di sangue ribilanciata nel formato nuovo, Data Anchor aggiornata (decisa il 18/10) | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.1`) |
-| 4.2 | 0.5.2 | Supporto agli shader: Iris 1.8.14-beta.1 ed Enhanced Celestials 2: Shader Support (nessuna mod di compatibilità obbligatoria: `0709-shader.md`); gli shader restano facoltativi; config delle traduzioni di EC2 (B32) (decisa il 18/10) | 🧪 su `dev`, da provare |
+| 4.2 | 0.5.2 | Supporto agli shader: Iris 1.8.14-beta.1 ed Enhanced Celestials 2: Shader Support (nessuna mod di compatibilità obbligatoria: `0709-shader.md`); gli shader restano facoltativi; config delle traduzioni di EC2 (B32) (decisa il 18/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.2`) |
+| 4.3 | 0.5.3 | Ottimizzazione: impostazioni video e di Sodium, due pacchetti di shader facoltativi scelti per le mod del pack (decisa il 19/10) | in preparazione |
 | 5 | 0.6.0 | Datapack e config: correzione Berserker, esperienza Create ↔ Cognition, mercato di Farming for Blockheads, vasi (piante, terreni e alberi mancanti: conti in `0620-progetto-datapack.md`), config di Every Compat, Artifacts e, se serve, Jaden's | da fare |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero | da fare |
 
-**Stato per gruppi** (aggiornato al 18/10/2026) · ✅ fatto · 🧪 da provare · ⏳ previsto
+**Stato per gruppi** (aggiornato al 19/10/2026) · ✅ fatto · 🧪 da provare · ⏳ previsto
 
 | Gruppo di mod | Cosa | Stato |
 |---|---|---|
@@ -30,7 +31,7 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | Nether | Jaden's Nether Expansion, Moog's Nether Structures, Nether Depths Upgrade (+ Elysium API, Lodestone) | ✅ 0.5.0 |
 | Esplorazione e mob | Aures Farmers Structures, Better Archeology, Nature's Compass, Paragliders, Aquamirae (+ Fragmentum), Creeper Overhaul | ✅ 0.5.0 |
 | Lune | Enhanced Celestials 2 al posto di Enhanced Celestials | ✅ 0.5.1 |
-| Shader | Iris ed Enhanced Celestials 2: Shader Support (facoltativi da usare) | 🧪 0.5.2 su `dev` |
+| Shader | Iris ed Enhanced Celestials 2: Shader Support (facoltativi da usare) | ✅ 0.5.2 |
 
 | Datapack e config | Cosa | Stato |
 |---|---|---|

@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 18/10/2026 (versioni fino alla 0.5.1)._
+_Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.2)._
 
 ---
 
@@ -22,7 +22,6 @@ _Ultimo aggiornamento: 18/10/2026 (versioni fino alla 0.5.1)._
 | B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati sono legati alla fortezza vanilla, che YUNG's sostituisce: non compaiono mai | medio | 0.6.0 (`berserker_spawn.json` nel datapack) |
 | B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs e Born in Chaos non hanno gli artefatti (nomi delle tabelle mai verificati) | basso | 0.6.0, nomi presi dall'inventario |
 | B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | 0.6.0, config ridotta di Every Compat: rivedere anche il modulo di Rechiseled, che il piano voleva tenere |
-| B32 | 0.5.1 | Enhanced Celestials 2 (config di serie) | A ogni ingresso nel mondo scrive in chat che le impostazioni di traduzione non sono configurate e chiede ai modpack di includerle (comando `/ecc translate config`). Le impostazioni decidono se la mod scarica da internet le traduzioni della comunità | basso: solo un messaggio | 0.5.2: `config/enhancedcelestials2core/translations.json` nel pack (traduzioni scaricate spente), da confermare in prova |
 
 ## 🔍 Da verificare in gioco
 
@@ -45,7 +44,7 @@ _Ultimo aggiornamento: 18/10/2026 (versioni fino alla 0.5.1)._
 | B11 | 0.1.0 | Aspect Alchemy | Il plugin per Jade non si carica | basso: niente informazioni di Jade sui suoi blocchi |
 | B12 | 0.1.0 | Varie | Grafica e suoni mancanti: zuppa di guardiano piazzata (Ocean's Delight, 0.3.0), una variante dell'altare del vuoto (Cognition, 0.3.0), modello `icysweetness` (Born in Chaos), animazioni GeckoLib (Ars Nouveau, Ars Elemental, Cataclysm…), suoni di Deep Aether, Cataclysm, Born in Chaos, Aether's Delight | basso, estetico |
 | B13 | 0.1.0 | Da identificare | 9 pozioni con dati non validi in qualche ricetta o bottino ("Failed to apply component patch") | basso |
-| B14 | 0.1.0 | Varie | Messaggi innocui all'avvio: conflitto Lithium/ModernFix (`getTemperature`), file di accesso mancanti in librerie incorporate (`wdutils` di Starcatcher, `pride` di LambDynamicLights), data map di esempio `modid:example`, tag `blueprint:generates_overrides`, file con nome non valido in Create: Integrated Farming, progressi con riferimenti mancanti, Paxi "repository source", avviso di Moonlight su Forgified Fabric API (0.2.3, atteso), errore di OpenAL alla chiusura. Dalla 0.5.0: Aquamirae registra lo Scuttler in una categoria di mob diversa da quella in cui lo fa comparire, file di config corretti al primo avvio (Every Compat, Jaden's), Biolith (dentro Jaden's) ignora i mondi di prova di un'altra mod, 3 file con spazi nel nome in Starcatcher's Delight. Dalla 0.5.1: JEI scrive come errore che il plugin di Create: Central Kitchen ci mette più di 5 secondi a registrare le ricette (solo un avviso sul tempo) | nessuno |
+| B14 | 0.1.0 | Varie | Messaggi innocui all'avvio: conflitto Lithium/ModernFix (`getTemperature`), file di accesso mancanti in librerie incorporate (`wdutils` di Starcatcher, `pride` di LambDynamicLights), data map di esempio `modid:example`, tag `blueprint:generates_overrides`, file con nome non valido in Create: Integrated Farming e in Jaden's Nether Expansion (file di licenza tra le texture), progressi con riferimenti mancanti, Paxi "repository source", avviso di Moonlight su Forgified Fabric API (0.2.3, atteso), errore di OpenAL alla chiusura. Dalla 0.5.0: Aquamirae registra lo Scuttler in una categoria di mob diversa da quella in cui lo fa comparire, file di config corretti al primo avvio (Every Compat, Jaden's), Biolith (dentro Jaden's) ignora i mondi di prova di un'altra mod, 3 file con spazi nel nome in Starcatcher's Delight. Dalla 0.5.1: JEI scrive come errore che il plugin di Create: Central Kitchen ci mette più di 5 secondi a registrare le ricette (solo un avviso sul tempo). Dalla 0.5.2: avvisi normali di Iris (mappe dei mixin non lette, controllo degli aggiornamenti non disponibile per la beta, tre mixin di Sodium per il cielo spenti su richiesta di Iris, classi di mod assenti cercate per compatibilità); i file con nome non valido di Chimes (B26), Create: Integrated Farming e Jaden's ora compaiono anche come `…_condition.json` | nessuno |
 | B15 | 0.3.0 | Strutture sotterranee (mod non identificata) | 42 cornici o quadri generati in posizione non valida a quota −50 circa | basso: quelle decorazioni non vengono piazzate |
 | B16 | 0.1.1 | Brewin' And Chewin' 4.5.0 + AlmostUnified | Il nostro tag del mais cita `brewinandchewin:corn`, che in questa versione non esiste: voce saltata | nessuno (si attiva da sola quando B&C aggiungerà il mais) |
 | B29 | 0.5.0 | Jaden's Nether Expansion 2.4.1 | 5 ricette della mod citano oggetti che nella versione riscritta non esistono più (`iron_scrap`, `warphopper_fur`, `igneous_reeds`, `indented_soul_slate_tiles`) e vengono saltate; lo stesso per una ricetta di Just Enough Breeding (uovo del False Carcass). Mancano anche 2 suoni, 2 etichette e alcuni parametri di shader (Lodestone) | basso: ricette di oggetti inesistenti, al massimo qualche suono o effetto grafico in meno |
@@ -59,6 +58,7 @@ _Ultimo aggiornamento: 18/10/2026 (versioni fino alla 0.5.1)._
 
 | Codice | Visto in | Problema | Soluzione | In |
 |---|---|---|---|---|
+| B32 | 0.5.1 | Enhanced Celestials 2 scriveva in chat, a ogni ingresso nel mondo, che le impostazioni di traduzione non erano configurate | `config/enhancedcelestials2core/translations.json` nel pack (traduzioni scaricate spente); verificato in gioco | 0.5.2 |
 | B17 | 0.1.0 | Con NeoForge 21.1.261 o successive: "Connection lost" entrando nel mondo (owo-lib 0.12.15.5 dentro l'Aether) | **Aggirato**: NeoForge fermo a 21.1.259. Si chiude davvero quando esce owo-lib 0.12.15.6 | 0.1.1 |
 | B18 | 0.1.0 | `README.md` maiuscoli dentro `data/` del datapack: "Invalid path in pack" | Rinominati `readme.md` | 0.1.1 |
 | B19 | 0.1.0 | Il file per i vasi di Ars Elemental è nel formato vecchio e con il nome sbagliato: non si carica | Coltura e terreni scritti nel nostro datapack | 0.1.0 |
