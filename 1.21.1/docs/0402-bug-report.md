@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3; correzioni della 0.6.0 preparate, non ancora provate)._
+_Ultimo aggiornamento: 21/10/2026 (versioni fino alla 0.5.3; correzioni della 0.6.0 provate nelle prove di uscita, versione non ancora rilasciata)._
 
 ---
 
@@ -34,6 +34,8 @@ _Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3; correzioni della 0.
 | B23 | 0.4.0 | Diagonal Walls + Aether, Deep Aether | Il modello diagonale di 11 muri non si costruisce (muro di aerogel dell'Aether, muri di tronco di Deep Aether: proprietà diverse da quelle dei muri normali). Stesso avviso per muro e recinto "wrapped copycat" di Create: Connected | basso | Piazzare in diagonale un muro di tronco di Deep Aether: si vede bene o senza texture? |
 | B24 | 0.4.0 | Every Compat (Moonlight) + Twilight Forest | 48 traduzioni mancanti per i tronchi cavi (`item_type.twilightforest.hollow_log`) | basso | In EMI, i tronchi cavi creati da Every Compat hanno un nome leggibile? |
 | B33 | 0.5.3 | Memoria dell'istanza (8 GB) | Il gioco si blocca e si chiude per **memoria finita** (`OutOfMemoryError: Java heap space`) circa 3 minuti dopo un ricaricamento completo delle risorse fatto in gioco (lo stesso che fa F3+T; qui scattato cambiando impostazioni, con gli shader attivi). Prima del crash il server rallenta ("Can't keep up"). Il ricaricamento rigenera anche le risorse di Every Compat (B22: nel log pesa 2,4 secondi su un ricaricamento di oltre 35, quindi non ne è la causa principale) e tiene in memoria per un po' due copie di modelli e texture (atlante dei blocchi 8192x8192) | alto: crash | Alzare la memoria dell'istanza a 12 GB (`../../docs/0101-installazione.md`) e ripetere: shader a turno, un cambio di impostazioni che ricarica le risorse, qualche minuto di gioco. Con tutti i blocchi di Every Compat mantenuti (decisione del 19/10) non c'è una riduzione da attendersi dalla config: la leva è la memoria |
+| B35 | 0.6.0 (già nei log del 18/10) | Strutture generate, mod non identificata | Errore `Block-attached entity at invalid position` durante la generazione dei chunk (quadri, cornici o nodi di guinzaglio messi dove non c'è un blocco valido): da 1 a 42 righe per sessione, anche a quota negativa (log del 19/10: y da -26 a -20; log del 21/10: y 48) | basso: forse qualche cornice o quadro che non compare | Trovare quale struttura li produce: tornare alle coordinate nel log, con `/tp` e F3 vedere cosa c'è lì |
+| B36 | 0.6.0 (già nel log del 18/10) | Suoni dei pesci, origine da stabilire | Avviso `Unable to play empty soundEvent` per i versi di merluzzo, salmone e pesce tropicale (`minecraft:entity.cod.ambient`, `salmon.ambient`, `tropical_fish.ambient`): eventi sonori senza nessun file audio. Non si sa se sia comportamento del gioco base o di una mod | nessuno: solo nel log | Confrontare con un'istanza di Minecraft 1.21.1 senza mod: se l'avviso compare anche lì, non è un problema del pack e si chiude |
 
 ## 👁️ Delle mod (non correggibili da noi)
 
@@ -54,6 +56,7 @@ _Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3; correzioni della 0.
 | B27 | 0.4.0 | Generazione del mondo (mod non identificata) | 123 avvisi "Ignoring unknown attribute 'forge:entity_gravity'" mentre si genera il mondo (e, dalla 0.5.0, 10 per `forge:step_height_addition` nel Nether): qualche mob delle strutture ha un attributo col nome vecchio di Forge, che viene ignorato | nessuno: il mob usa la gravità normale |
 | B30 | 0.5.0 | Every Compat + Create | Aprendo un secondo mondo nella stessa sessione di gioco, Every Compat non riesce a creare le ricette delle finestre di Create per i legni delle altre mod (circa 50 errori, 29 ricette in meno) | basso: basta riavviare il gioco |
 | B31 | 0.5.0 | Jaden's Nether Expansion | Le stalattiti di netherrack (`netherexp:netherrack_speleothem`) piazzano blocchi fuori dal chunk che si sta generando (11 avvisi "setBlock in a far chunk") | basso: qualche stalattite tagliata ai bordi dei chunk |
+| B34 | 0.6.0 | When Dungeons Arise (fonderia sotterranea, `underworld/foundry`) | Il pezzo `foundry_corridor_gears` è citato da due blocchi di collegamento ma il pool `dungeons_arise:underworld/foundry/foundry_corridor_gears` non esiste nel .jar (esistono `foundry_corridor_deco`, `foundry_corridors`, `foundry_corridor_terminators` e altri): 2 avvisi di Lithostitched alla generazione | basso: nel corridoio può mancare un pezzo decorativo |
 
 ## ✅ Risolti o aggirati
 
