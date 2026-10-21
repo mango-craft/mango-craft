@@ -6,7 +6,8 @@ Uso: python3 scripts/vasi_genera.py <cartella pack> [--dry-run] [--report FILE]
 
 Dati di partenza (nel repository, da riguardare a ogni aggiornamento delle mod):
 - 1.21.1/data/vasi/copertura.json: le piante delle mod e una bozza di ricetta per ognuna (17/10/2026);
-- 1.21.1/data/vasi/aggiunte.json: terreni, colture scritte a mano, raccolti diretti, esclusioni (con il motivo).
+- 1.21.1/data/vasi/aggiunte.json: terreni, colture scritte a mano, colture libere (senza blocco proprio, es. i graticci
+  di Bountiful Fares), raccolti diretti, esclusioni (con il motivo).
 
 Cosa scrive (tutto sotto <pack>/config/paxi/datapacks/matteo_tweaks/data/):
 - matteo_tweaks/recipe/botanypots/<mod>/crop/<blocco>.json   una coltura per pianta scoperta
@@ -72,18 +73,21 @@ def main() -> int:
     add = json.loads(a.aggiunte.read_text(encoding="utf-8"))
     blocks, items = carica_inventario(a.inventario)
     esclusi = add.get("esclusi", {})
+    sostituite = add.get("sostituite", {})
 
     colture: dict[str, dict] = {}   # blocco -> ricetta
     origine: dict[str, str] = {}    # blocco -> mod (slug)
     da_provare: list[str] = []      # colture scritte con nomi non verificabili sul sorgente
     saltate: list[tuple[str, str, str]] = []  # (mod, blocco, motivo)
 
-    def aggiungi(mod: str, ricetta: dict, verifica: bool = False) -> None:
-        blocco = ricetta["block"]
+    def aggiungi(mod: str, ricetta: dict, verifica: bool = False, chiave: str | None = None, richiesti: list | None = None) -> None:
+        # chiave: nome del file (<mod>:<nome>) per le colture libere, che non hanno un blocco proprio (graticci)
+        blocco = chiave or ricetta["block"]
         if blocco in esclusi:
             saltate.append((mod, blocco, "esclusa: " + esclusi[blocco])); return
-        if blocco not in blocks:
-            saltate.append((mod, blocco, "il blocco non esiste nell'inventario")); return
+        for b in (richiesti if richiesti is not None else [blocco]):
+            if b not in blocks:
+                saltate.append((mod, blocco, f"il blocco {b} non esiste nell'inventario")); return
         seme = (ricetta.get("input") or {}).get("item")
         if seme and seme not in items:
             saltate.append((mod, blocco, f"il seme {seme} non esiste nell'inventario")); return
@@ -100,6 +104,8 @@ def main() -> int:
         if p.get("prio") == "skip":
             saltate.append((p["mod"], p["block"], "esclusa nella bozza del 17/10: " + (p.get("special") or p.get("note") or "prio skip")))
             continue
+        if p["block"] in sostituite:  # bozza con un nome finto, sostituita da una coltura libera in aggiunte.json
+            continue
         draft = p.get("recipe_draft")
         if not draft:
             if not p["block"].startswith("?"):  # i nomi da chiarire (Roaster's Delight) sono in aggiunte.json
@@ -108,6 +114,8 @@ def main() -> int:
         aggiungi(p["mod"], draft)
     for c in add.get("colture", []):
         aggiungi(c["mod"], c["ricetta"], verifica=c.get("da_provare", False))
+    for c in add.get("colture_libere", []):
+        aggiungi(c["mod"], c["ricetta"], verifica=c.get("da_provare", False), chiave=c["id"], richiesti=c["richiesti"])
 
     # raccolto scritto a mano per le piante che nel vaso senza attrezzo non darebbero niente (tabella del bottino con le cesoie)
     diretti = add.get("raccolti_diretti", {})
@@ -162,7 +170,7 @@ def main() -> int:
         out.append(f"Con raccolto scritto a mano (senza cesoie non darebbero niente): {len(scritti)}")
     if da_provare:
         out.append("")
-        out.append("Da provare in gioco (nomi non verificabili sul sorgente): " + ", ".join(da_provare))
+        out.append("Da provare in gioco (aspetto o comportamento non ancora visti): " + ", ".join(da_provare))
     if saltate:
         out.append("")
         out.append("Saltate:")

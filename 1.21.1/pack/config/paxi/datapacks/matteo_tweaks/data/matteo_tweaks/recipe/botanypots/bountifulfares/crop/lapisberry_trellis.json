@@ -1,0 +1,45 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:vine_trellis"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "input": {
+    "item": "bountifulfares:lapisberry_seeds"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "bountifulfares:vine_trellis"
+    }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "bountifulfares:lapisberries",
+            "count": 2
+          }
+        }
+      ]
+    },
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "bountifulfares:lapisberries",
+            "count": 1
+          },
+          "chance": 0.5
+        }
+      ]
+    }
+  ]
+}

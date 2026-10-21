@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "netherdepthsupgrade:warped_kelp",
+        "netherdepthsupgrade:warped_kelp_plant"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "netherdepthsupgrade:warped_kelp",
+  "soil": {
+    "tag": "botanypots:soil/lava"
+  },
+  "display": [
+    {
+      "type": "botanypots:simple",
+      "block_state": {
+        "block": "netherdepthsupgrade:warped_kelp_plant"
+      },
+      "options": {
+        "offset": [
+          0,
+          -0.3,
+          0
+        ]
+      }
+    },
+    {
+      "type": "botanypots:simple",
+      "block_state": {
+        "block": "netherdepthsupgrade:warped_kelp"
+      }
+    }
+  ]
+}

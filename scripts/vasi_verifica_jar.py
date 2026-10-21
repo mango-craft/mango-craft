@@ -210,6 +210,21 @@ def nomi_oggetto(x, out: set) -> None:
             nomi_oggetto(v, out)
 
 
+def blocchi_aspetto(display) -> list:
+    """I blocchi nominati nell'aspetto (display) di una coltura."""
+    out = []
+    if isinstance(display, dict):
+        bs = display.get("block_state")
+        if isinstance(bs, dict) and bs.get("block"):
+            out.append(bs["block"])
+        for v in display.values():
+            out += blocchi_aspetto(v)
+    elif isinstance(display, list):
+        for v in display:
+            out += blocchi_aspetto(v)
+    return out
+
+
 def raccolto_senza_attrezzo(lt: dict, st, sv, note) -> set:
     out = set()
     for p in lt.get("pools", []):
@@ -237,10 +252,13 @@ def main() -> int:
     n_derivate = n_scritte = 0
     for f, d in colture:
         nome = f.relative_to(bp).as_posix()
-        b = d["block"]
-        if not jar.blocco(b):
-            errori["blocco non trovato nei jar"].append(f"{nome}: {b}")
-        seme = (d.get("input") or {}).get("item")
+        b = d.get("block")  # le colture libere (graticci) non hanno un blocco proprio: si controlla l'aspetto
+        for bl in ([b] if b else []) + blocchi_aspetto(d.get("display")):
+            if not jar.blocco(bl):
+                errori["blocco non trovato nei jar"].append(f"{nome}: {bl}")
+        if not b and not d.get("drops"):
+            errori["coltura senza blocco e senza raccolto scritto"].append(nome)
+        seme = d.get("input", {}).get("item") if isinstance(d.get("input"), dict) else None
         if seme and not jar.oggetto(seme):
             errori["seme non trovato nei jar"].append(f"{nome}: {seme}")
         if d.get("drops"):

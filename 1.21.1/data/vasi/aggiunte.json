@@ -1,5 +1,5 @@
 {
-  "_nota": "Aggiunte a mano per scripts/vasi_genera.py (0.6.1). 'terreni': un terreno per blocco ('terra': true = entra nell'etichetta botanypots:soil/dirt, così lo accettano le colture di terra; 'growth_modifier' come la terra ricca di Farmer's Delight, 0,15). 'colture': piante la cui bozza del 17/10 non aveva i nomi (Roaster's Delight, sorgente chiuso: blocchi, semi e fasi di crescita verificati il 22/10 sui jar dell'istanza di prova; 'da_provare' = nomi non ancora verificati). 'raccolti_diretti': blocco -> {id, count}: piante la cui tabella del bottino dà qualcosa solo con le cesoie (o un attrezzo) e che nel vaso senza attrezzo non darebbero niente; il raccolto è scritto a mano (quello che darebbero con le cesoie, verificato sui jar il 22/10). 'esclusi': blocco -> motivo.",
+  "_nota": "Aggiunte a mano per scripts/vasi_genera.py (0.6.1). 'terreni': un terreno per blocco ('terra': true = entra nell'etichetta botanypots:soil/dirt, così lo accettano le colture di terra; 'growth_modifier' come la terra ricca di Farmer's Delight, 0,15). 'colture': piante la cui bozza del 17/10 non aveva i nomi (Roaster's Delight, sorgente chiuso: blocchi, semi e fasi di crescita verificati il 22/10 sui jar dell'istanza di prova; 'da_provare' = aspetto o comportamento non ancora visti in gioco). 'raccolti_diretti': blocco -> {id, count}: piante la cui tabella del bottino dà qualcosa solo con le cesoie (o un attrezzo) e che nel vaso senza attrezzo non darebbero niente; il raccolto è scritto a mano (quello che darebbero con le cesoie, verificato sui jar il 22/10). 'esclusi': blocco -> motivo. 'colture_libere': piante senza blocco proprio (i tre rampicanti su graticcio di Bountiful Fares sono dati, non blocchi): 'id' = nome del file (<mod>:<nome>), 'richiesti' = blocchi che devono esistere, 'ricetta' = ricetta completa (di tipo botanypots:crop); raccolto = media di quello a mano (1–3 → 2; lapisberry 2–3 → 2 + 50% di 1). 'sostituite': bozze del 17/10 con un nome finto (trellis:…), sostituite da una coltura libera.",
   "terreni": [
     {
       "mod": "twilight-delight",
@@ -221,6 +221,253 @@
           "item": "roasters_delight:matcha_seeds"
         }
       }
+    },
+    {
+      "mod": "nether-depths-upgrade",
+      "da_provare": false,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "netherdepthsupgrade:crimson_kelp",
+              "netherdepthsupgrade:crimson_kelp_plant"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "netherdepthsupgrade:crimson_kelp",
+        "soil": {
+          "tag": "botanypots:soil/lava"
+        },
+        "display": [
+          {
+            "type": "botanypots:simple",
+            "block_state": {
+              "block": "netherdepthsupgrade:crimson_kelp_plant"
+            },
+            "options": {
+              "offset": [
+                0,
+                -0.3,
+                0
+              ]
+            }
+          },
+          {
+            "type": "botanypots:simple",
+            "block_state": {
+              "block": "netherdepthsupgrade:crimson_kelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "mod": "nether-depths-upgrade",
+      "da_provare": false,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "netherdepthsupgrade:warped_kelp",
+              "netherdepthsupgrade:warped_kelp_plant"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "netherdepthsupgrade:warped_kelp",
+        "soil": {
+          "tag": "botanypots:soil/lava"
+        },
+        "display": [
+          {
+            "type": "botanypots:simple",
+            "block_state": {
+              "block": "netherdepthsupgrade:warped_kelp_plant"
+            },
+            "options": {
+              "offset": [
+                0,
+                -0.3,
+                0
+              ]
+            }
+          },
+          {
+            "type": "botanypots:simple",
+            "block_state": {
+              "block": "netherdepthsupgrade:warped_kelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "mod": "jadens-nether-expansion",
+      "da_provare": false,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "netherexp:crimson_sprouts"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "netherexp:crimson_sprouts",
+        "soil": {
+          "type": "bookshelf:either",
+          "ingredients": [
+            {
+              "type": "bookshelf:block_tag",
+              "tag": "minecraft:nylium"
+            },
+            {
+              "tag": "botanypots:soil/nether"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "colture_libere": [
+    {
+      "mod": "bountiful-fares",
+      "id": "bountifulfares:elderberry_trellis",
+      "richiesti": [
+        "bountifulfares:vine_trellis"
+      ],
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "bountifulfares:vine_trellis"
+            ]
+          }
+        ],
+        "type": "botanypots:crop",
+        "input": {
+          "item": "bountifulfares:elderberries"
+        },
+        "display": {
+          "type": "botanypots:simple",
+          "block_state": {
+            "block": "bountifulfares:vine_trellis"
+          }
+        },
+        "drops": [
+          {
+            "type": "botanypots:items",
+            "items": [
+              {
+                "result": {
+                  "id": "bountifulfares:elderberries",
+                  "count": 2
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "mod": "bountiful-fares",
+      "id": "bountifulfares:lapisberry_trellis",
+      "richiesti": [
+        "bountifulfares:vine_trellis"
+      ],
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "bountifulfares:vine_trellis"
+            ]
+          }
+        ],
+        "type": "botanypots:crop",
+        "input": {
+          "item": "bountifulfares:lapisberry_seeds"
+        },
+        "display": {
+          "type": "botanypots:simple",
+          "block_state": {
+            "block": "bountifulfares:vine_trellis"
+          }
+        },
+        "drops": [
+          {
+            "type": "botanypots:items",
+            "items": [
+              {
+                "result": {
+                  "id": "bountifulfares:lapisberries",
+                  "count": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "botanypots:items",
+            "items": [
+              {
+                "result": {
+                  "id": "bountifulfares:lapisberries",
+                  "count": 1
+                },
+                "chance": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "mod": "bountiful-fares",
+      "id": "bountifulfares:passion_fruit_trellis",
+      "richiesti": [
+        "bountifulfares:vine_trellis"
+      ],
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "bountifulfares:vine_trellis"
+            ]
+          }
+        ],
+        "type": "botanypots:crop",
+        "input": {
+          "item": "bountifulfares:passion_fruit"
+        },
+        "display": {
+          "type": "botanypots:simple",
+          "block_state": {
+            "block": "bountifulfares:vine_trellis"
+          }
+        },
+        "drops": [
+          {
+            "type": "botanypots:items",
+            "items": [
+              {
+                "result": {
+                  "id": "bountifulfares:passion_fruit",
+                  "count": 2
+                }
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "raccolti_diretti": {
@@ -283,7 +530,16 @@
     "undergarden:tall_shimmerweed": {
       "id": "undergarden:shimmerweed",
       "count": 2
+    },
+    "netherexp:crimson_sprouts": {
+      "id": "netherexp:crimson_sprouts",
+      "count": 1
     }
   },
-  "esclusi": {}
+  "esclusi": {},
+  "sostituite": {
+    "trellis:elderberry": "bountifulfares:elderberry_trellis",
+    "trellis:lapisberry": "bountifulfares:lapisberry_trellis",
+    "trellis:passion_fruit": "bountifulfares:passion_fruit_trellis"
+  }
 }

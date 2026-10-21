@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "f2738b2b3e4255f2a24fdd3f929981e78ad4e4394ded4e780e4dd0afab786ce3"
+hash = "ecbab13fbee75d059c04b1cb2b7fdee39f0b44808715a83d67e037c86f7c7066"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/readme.md"
@@ -281,6 +281,10 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots
 hash = "88257732a414dcb2633c5fbc125f9594d1f07cdacc9419c4eed912c8b7db446f"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/elderberry_trellis.json"
+hash = "20bb8d5f67712216b1be95c82392b21100a7ea4d1f9af65bf31ad51e29da8aed"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/hoary_apple_sapling_crop.json"
 hash = "d13d45979bc33a6fcd4ed801def48b01d827a6b92499de02f45307f66f6ddbaa"
 
@@ -289,12 +293,20 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots
 hash = "4f683eeaa6b1a4fefc6f6b7038663efbc1c2634f6afa41b4e6dd12318fdf2673"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/lapisberry_trellis.json"
+hash = "576fcb06d4eaa0e80208734ded166a90b184e0acaef5a438b436fc16d34bb4e2"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/leeks.json"
 hash = "955f6591d564098a7a20bf9b6aca415292c82777c7118b5230cc4550da17f3b2"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/maize_crop.json"
 hash = "cbd1b86df2acec800260dac6fd17b5f4ae621eba07b1b401dbe2a6e286d98d13"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/passion_fruit_trellis.json"
+hash = "0790b241d193cfc75dc684a452dc73278c5e114ab9c443e7585aa25c25fa5221"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/prismarine_blossom.json"
@@ -945,6 +957,18 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots
 hash = "aa0b303925bd159140ef40bb3d16eaf89b53f131761aa99462645a0584e5f372"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/crop/crimson_kelp.json"
+hash = "b92f181bf25e1523637ba150916afff25b601cc341e6234b28ecad79d16af052"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/crop/warped_kelp.json"
+hash = "7de113e1bde7048a52c679e1e7c3bf4a67ed3e715ffeffb76a1d092bdc15d667"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/crimson_sprouts.json"
+hash = "e66c4075db1eeb07ab2f1ae1e72b7ed78fbb454126b3ba7be4c4ea7ff6cc9189"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/reactive/crop/flower_vine.json"
 hash = "5058da9634d03d7478334d9cd0a51db2b4b97716d69a9fcdb0a0f2ef39a96801"
 
@@ -954,7 +978,7 @@ hash = "73696d3423cbcec6d59f0e1a5dff6202d52534b207f6ffc1d9c44d981800a0e4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/readme.md"
-hash = "3ed383ed10f55d7493a790761b951f431faf4182fe9445c1c146f4b51a67672b"
+hash = "56aaa191daa82cdad39612bd3fc91f60df52ba9496e31aca070aaa263523056f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/blue_bioshroom.json"

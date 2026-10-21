@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "netherexp:crimson_sprouts"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "netherexp:crimson_sprouts",
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:nylium"
+      },
+      {
+        "tag": "botanypots:soil/nether"
+      }
+    ]
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "netherexp:crimson_sprouts",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}
