@@ -18,7 +18,7 @@ Aggiornata il 19/10/2026 · nel pack dalla 0.1.1, versione 13.2.5 (`../docs/0403
 
 Dove si trovano gli accessori nel pack (Curios, Accessories, menu dell'Aether): tema `../theme-knowledge/accessori.md`.
 
-Decisione del 16/10: `enableAccessoriesCompat = false`, `enableCuriosCompat = true`, **prima di creare il mondo vero**, così Artifacts e Ars Nouveau condividono un'unica interfaccia Curios, non si possono indossare due copie dello stesso artefatto e Artifacts non passa mai per Accessories. Funziona con overlay di dati nel `pack.mcmeta` della mod (`overlay_disable_accessories` svuota le etichette degli slot di Accessories). File portato nel pack dalla 0.6.0 (in preparazione, `../lavoro/versioni/v0.6.0.md`).
+Decisione del 16/10: `enableAccessoriesCompat = false`, `enableCuriosCompat = true`, **prima di creare il mondo vero**, così Artifacts e Ars Nouveau condividono un'unica interfaccia Curios, non si possono indossare due copie dello stesso artefatto e Artifacts non passa mai per Accessories. Funziona con overlay di dati nel `pack.mcmeta` della mod (`overlay_disable_accessories` svuota le etichette degli slot di Accessories). File portato nel pack dalla 0.6.0 (provata il 21/10, `../lavoro/versioni/v0.6.0.md`).
 
 Slot contesi con Ars Nouveau (testa, collana, cintura, 1 slot ciascuno): se diventano stretti si aumentano con un file di slot Curios nel datapack, formato da verificare (tema aperto, `../lavoro/0503-temi-aperti.md`).
 

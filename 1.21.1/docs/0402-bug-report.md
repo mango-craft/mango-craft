@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 21/10/2026 (versioni fino alla 0.5.3; correzioni della 0.6.0 provate nelle prove di uscita, versione non ancora rilasciata)._
+_Ultimo aggiornamento: 22/10/2026 (versioni fino alla 0.6.0)._
 
 ---
 
@@ -18,15 +18,14 @@ _Ultimo aggiornamento: 21/10/2026 (versioni fino alla 0.5.3; correzioni della 0.
 
 | Codice | Visto in | Dove | Problema | Effetto | Piano |
 |---|---|---|---|---|---|
-| B01 | 0.1.1 | Datapack, artefatti | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie non esistono più: in quelle casse gli artefatti non compaiono mai | medio | 0.6.0: **preparato il 19/10**, da provare: tolti i 15 nomi e aggiunte 14 casse con i nomi veri, comprese le quattro strutture di Dungeons and Taverns con tesoro "vault" (collegate la sera, decisione di Matteo); 152 casse in tutto, controllo dei nomi: 0 errori |
-| B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati sono legati alla fortezza vanilla, che YUNG's sostituisce: non compaiono mai | medio | 0.6.0: **preparato il 19/10**, da provare: `berserker_spawn.json` nel datapack (solo fortezze nuove) |
-| B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs e Born in Chaos non hanno gli artefatti (nomi delle tabelle mai verificati) | basso | 0.6.0: **preparato il 19/10** per Mowzie's Mobs (`monastery_chest`, `umvuthana_grove_chest`), da provare. **Born in Chaos non collegata**: le sue 7 tabelle sono generiche (`minecraft:`), motivo nella scheda `../mod-knowledge/artifacts.md` |
 | B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | **Decisione del 19/10: si tengono tutte le varianti e tutti i legni**, quindi il costo resta. `RUN_ONCE` non si usa (decisione del 19/10, sera; avrebbe tolto solo circa 2,5 secondi a ricaricamento; `../lavoro/versioni/v0.6.0.md`, parte A; scheda `../mod-knowledge/every-compat.md`) |
 
 ## 🔍 Da verificare in gioco
 
 | Codice | Visto in | Dove | Problema | Effetto | Come verificare |
 |---|---|---|---|---|---|
+| B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati erano legati alla fortezza vanilla, che YUNG's sostituisce: non comparivano mai. **Corretto nella 0.6.0** (`berserker_spawn.json` nel datapack) | medio | `/locate structure betterfortresses:fortress` in un Nether **nuovo** (vale solo per le fortezze generate dopo), entrare e aspettare i Berserker infuocati |
+| B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs non avevano gli artefatti. **Collegate nella 0.6.0** (`monastery_chest`, `umvuthana_grove_chest`; nomi verificati dal controllo dei nomi). Born in Chaos **volutamente non collegata**: le sue 7 tabelle sono generiche (`minecraft:`), motivo nella scheda `../mod-knowledge/artifacts.md` | basso | Aprire una cassa del monastero o del boschetto degli Umvuthana: compare un artefatto? |
 | B04 | 0.1.0 | Apotheosis + Truly Modular | All'avvio Apotheosis non riesce a leggere il "livello" (tier) di 20 armi e attrezzi modulari di Miapi | medio | Prova "Apotheosis + Truly Modular" in `0502` |
 | B05 | 0.1.0 | Truly Modular | 48 errori nella creazione delle ricette del tavolo da forgiatura, un materiale di prova (`tm_armory:test`) non trovato, due attributi di danno nulli | medio | In EMI: ci sono le ricette di potenziamento delle parti modulari? |
 | B06 | 0.3.0 | Animal Pen + My Nether's Delight | Le due mod modificano lo stesso punto del codice (probabilità di drop dell'equipaggiamento dei mob) | basso | Un mob con armatura uccisa lascia cadere l'equipaggiamento come al solito? |
@@ -62,6 +61,7 @@ _Ultimo aggiornamento: 21/10/2026 (versioni fino alla 0.5.3; correzioni della 0.
 
 | Codice | Visto in | Problema | Soluzione | In |
 |---|---|---|---|---|
+| B01 | 0.1.1 | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie non esistevano più: in quelle casse gli artefatti non comparivano mai | Tolti i 15 nomi e aggiunte 14 casse con i nomi veri, comprese le quattro strutture di Dungeons and Taverns con tesoro «vault» (collegate il 19/10, decisione di Matteo): 152 casse in tutto. Controllo dei nomi a 0 errori e nessun nome di cassa inesistente nel log del 21/10. Che un artefatto compaia davvero in una struttura nuova è una prova nel tempo (`0502`) | 0.6.0 |
 | B32 | 0.5.1 | Enhanced Celestials 2 scriveva in chat, a ogni ingresso nel mondo, che le impostazioni di traduzione non erano configurate | `config/enhancedcelestials2core/translations.json` nel pack (traduzioni scaricate spente); verificato in gioco | 0.5.2 |
 | B17 | 0.1.0 | Con NeoForge 21.1.261 o successive: "Connection lost" entrando nel mondo (owo-lib 0.12.15.5 dentro l'Aether) | **Aggirato**: NeoForge fermo a 21.1.259. Si chiude davvero quando esce owo-lib 0.12.15.6 | 0.1.1 |
 | B18 | 0.1.0 | `README.md` maiuscoli dentro `data/` del datapack: "Invalid path in pack" | Rinominati `readme.md` | 0.1.1 |

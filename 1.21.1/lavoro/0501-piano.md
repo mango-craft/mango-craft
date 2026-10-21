@@ -14,17 +14,17 @@ Le tappe verso la **1.0.0**, la prima versione per il mondo vero, e lo stato di 
 | 4.1 | [0.5.1](versioni/v0.5.1.md) | Lune: Enhanced Celestials 2 (Core + Default Lunar Events) al posto di Enhanced Celestials, luna di sangue ribilanciata nel formato nuovo, Data Anchor aggiornata (decisa il 18/10) | ✅ provata e rilasciata (18/10, pre-release `1.21.1-v0.5.1`) |
 | 4.2 | [0.5.2](versioni/v0.5.2.md) | Supporto agli shader: Iris 1.8.14-beta.1 ed Enhanced Celestials 2: Shader Support (nessuna mod di compatibilità obbligatoria: `versioni/v0.5.2.md`); gli shader restano facoltativi; config delle traduzioni di EC2 (B32) (decisa il 18/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.2`) |
 | 4.3 | [0.5.3](versioni/v0.5.3.md) | Due pacchetti di shader facoltativi scelti per le mod del pack (Complementary Reimagined, MakeUp - Ultra Fast); impostazioni video lasciate a chi gioca (Sodium si regola già da solo); Every Compat resta nella 0.6.0 (decisa il 19/10) | ✅ provata e rilasciata (19/10, pre-release `1.21.1-v0.5.3`) |
-| 5 | [0.6.0](versioni/v0.6.0.md) | Config e correzioni: correzione Berserker, config di Artifacts, Carry On, Inventory Essentials e FallingTree, 152 casse con gli artefatti (comprese Mowzie's e quattro strutture con «vault»); Every Compat invariato (tutti i blocchi, niente `RUN_ONCE`). Divisione della tappa **approvata il 19/10** | prove di uscita fatte il 21/10: attende l'OK di Matteo per merge e tag |
-| 5.1 | [0.6.1](versioni/v0.6.1.md) | Vasi: piante, terreni e alberi mancanti (conti in `versioni/v0.6.1.md`), con uno script generatore | prossima |
+| 5 | [0.6.0](versioni/v0.6.0.md) | Config e correzioni: correzione Berserker, config di Artifacts, Carry On, Inventory Essentials e FallingTree, 152 casse con gli artefatti (comprese Mowzie's e quattro strutture con «vault»); Every Compat invariato (tutti i blocchi, niente `RUN_ONCE`). Divisione della tappa **approvata il 19/10** | ✅ provata (21/10) e rilasciata (22/10, pre-release `1.21.1-v0.6.0`) |
+| 5.1 | [0.6.1](versioni/v0.6.1.md) | Vasi: piante, terreni e alberi mancanti (conti in `versioni/v0.6.1.md`), con uno script generatore | prossima (in corso dopo la 0.6.0) |
 | 5.2 | [0.6.2](versioni/v0.6.2.md) | Mercato di Farming for Blockheads: semi e alberelli delle mod mancanti | da fare |
 | 5.3 | [0.6.3](versioni/v0.6.3.md) | Esperienza Create ↔ Cognition: unità del liquido e scambio nel Mescolatore (spostata fuori dalla 0.6.0 per decisione di Matteo, 21/10) | da fare |
 | 6 | 0.6.x → **1.0.0** | Mondo di prova: Chunky, mappa di Xaero, densità delle strutture, Nether, `/botanypots debug`, esperienza; correzioni; poi release 1.0.0 e mondo vero (suddivisione proposta qui sotto) | da fare |
 
 NeoForge resta fermo (motivo in `../docs/0303-note-tecniche.md`): se una mod nuova ne chiede uno più recente, va segnalato nella sua tappa (il controllo dei nomi lo verifica da solo).
 
-## Proposta del 21/10/2026 per dopo la tappa 5 (da approvare)
+## Proposta del 21/10/2026 per dopo la tappa 5 (in sospeso)
 
-Richiesta di Matteo: il piano delle prossime versioni. **Non è deciso**: quando Matteo approva, le righe passano nella tabella qui sopra e la «tappa 6» di oggi (mondo di prova) prende il suo nuovo numero negli altri documenti (`0502`, `0503`, `../docs/0302-config.md`).
+Richiesta di Matteo: il piano delle prossime versioni. **Non è deciso, in sospeso**: il 22/10 Matteo ha approvato solo la 0.6.x con le sue figlie (0.6.0–0.6.3) e ha detto che per le versioni successive «ci sarà tempo». Quando approverà, le righe passano nella tabella qui sopra e la «tappa 6» di oggi (mondo di prova) prende il suo nuovo numero negli altri documenti (`0502`, `0503`, `../docs/0302-config.md`).
 
 **Ordine**: prima il contenuto, poi gli aggiornamenti, poi il mondo di prova. Il mondo di prova deve girare con il pack **finale**: aggiornare una mod può cambiare nomi e generazione del mondo, e dopo la 1.0.0 certe cose non si correggono più (`0503`, sezione 4, n. 5). Ogni versione ha poche prove di uscita rapide (`AGENTS.md`, sezione 5); il resto si prova giocando.
 
