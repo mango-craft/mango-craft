@@ -72,10 +72,6 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/pillager_palace_treasure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/lone_citadel/c_vault_boss"
         },
         {

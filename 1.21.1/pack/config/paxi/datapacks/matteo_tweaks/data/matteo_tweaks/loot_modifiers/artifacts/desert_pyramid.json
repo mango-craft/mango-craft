@@ -28,11 +28,11 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/desert_city_big"
+          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_main_temple"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_main_temple"
+          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_lesser_treasure"
         }
       ]
     }

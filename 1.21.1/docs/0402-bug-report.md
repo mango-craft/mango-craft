@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3)._
+_Ultimo aggiornamento: 22/10/2026 (versioni fino alla 0.6.0)._
 
 ---
 
@@ -18,22 +18,23 @@ _Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3)._
 
 | Codice | Visto in | Dove | Problema | Effetto | Piano |
 |---|---|---|---|---|---|
-| B01 | 0.1.1 | Datapack, artefatti | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie non esistono più: in quelle casse gli artefatti non compaiono mai | medio | 0.6.0, con i nomi veri dell'inventario |
-| B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati sono legati alla fortezza vanilla, che YUNG's sostituisce: non compaiono mai | medio | 0.6.0 (`berserker_spawn.json` nel datapack) |
-| B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs e Born in Chaos non hanno gli artefatti (nomi delle tabelle mai verificati) | basso | 0.6.0, nomi presi dall'inventario |
-| B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | 0.6.0, config ridotta di Every Compat: rivedere anche il modulo di Rechiseled, che il piano voleva tenere |
+| B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | **Decisione del 19/10: si tengono tutte le varianti e tutti i legni**, quindi il costo resta. `RUN_ONCE` non si usa (decisione del 19/10, sera; avrebbe tolto solo circa 2,5 secondi a ricaricamento; `../lavoro/versioni/v0.6.0.md`, parte A; scheda `../mod-knowledge/every-compat.md`) |
 
 ## 🔍 Da verificare in gioco
 
 | Codice | Visto in | Dove | Problema | Effetto | Come verificare |
 |---|---|---|---|---|---|
+| B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati erano legati alla fortezza vanilla, che YUNG's sostituisce: non comparivano mai. **Corretto nella 0.6.0** (`berserker_spawn.json` nel datapack) | medio | `/locate structure betterfortresses:fortress` in un Nether **nuovo** (vale solo per le fortezze generate dopo), entrare e aspettare i Berserker infuocati |
+| B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs non avevano gli artefatti. **Collegate nella 0.6.0** (`monastery_chest`, `umvuthana_grove_chest`; nomi verificati dal controllo dei nomi). Born in Chaos **volutamente non collegata**: le sue 7 tabelle sono generiche (`minecraft:`), motivo nella scheda `../mod-knowledge/artifacts.md` | basso | Aprire una cassa del monastero o del boschetto degli Umvuthana: compare un artefatto? |
 | B04 | 0.1.0 | Apotheosis + Truly Modular | All'avvio Apotheosis non riesce a leggere il "livello" (tier) di 20 armi e attrezzi modulari di Miapi | medio | Prova "Apotheosis + Truly Modular" in `0502` |
 | B05 | 0.1.0 | Truly Modular | 48 errori nella creazione delle ricette del tavolo da forgiatura, un materiale di prova (`tm_armory:test`) non trovato, due attributi di danno nulli | medio | In EMI: ci sono le ricette di potenziamento delle parti modulari? |
 | B06 | 0.3.0 | Animal Pen + My Nether's Delight | Le due mod modificano lo stesso punto del codice (probabilità di drop dell'equipaggiamento dei mob) | basso | Un mob con armatura uccisa lascia cadere l'equipaggiamento come al solito? |
 | B07 | 0.1.0 | Accessories (dentro l'Aether) + Miapi/Hexalia | Bug noto di Accessories quando un'entità subisce danno; Forgified Fabric API dovrebbe evitarlo | alto se si presenta | Prova "Miapi + Accessories" in `0502`: subire e infliggere danno con armi Miapi e oggetti di Hexalia |
 | B23 | 0.4.0 | Diagonal Walls + Aether, Deep Aether | Il modello diagonale di 11 muri non si costruisce (muro di aerogel dell'Aether, muri di tronco di Deep Aether: proprietà diverse da quelle dei muri normali). Stesso avviso per muro e recinto "wrapped copycat" di Create: Connected | basso | Piazzare in diagonale un muro di tronco di Deep Aether: si vede bene o senza texture? |
 | B24 | 0.4.0 | Every Compat (Moonlight) + Twilight Forest | 48 traduzioni mancanti per i tronchi cavi (`item_type.twilightforest.hollow_log`) | basso | In EMI, i tronchi cavi creati da Every Compat hanno un nome leggibile? |
-| B33 | 0.5.3 | Memoria dell'istanza (8 GB) | Il gioco si blocca e si chiude per **memoria finita** (`OutOfMemoryError: Java heap space`) circa 3 minuti dopo un ricaricamento completo delle risorse fatto in gioco (lo stesso che fa F3+T; qui scattato cambiando impostazioni, con gli shader attivi). Prima del crash il server rallenta ("Can't keep up"). Il ricaricamento rigenera anche le risorse di Every Compat (B22) e tiene in memoria per un po' due copie di modelli e texture | alto: crash | Alzare la memoria dell'istanza a 12 GB (`../../docs/0101-installazione.md`) e ripetere: shader a turno, un cambio di impostazioni che ricarica le risorse, qualche minuto di gioco. La config ridotta di Every Compat (0.6.0) dovrebbe abbassare il consumo |
+| B33 | 0.5.3 | Memoria dell'istanza (8 GB) | Il gioco si blocca e si chiude per **memoria finita** (`OutOfMemoryError: Java heap space`) circa 3 minuti dopo un ricaricamento completo delle risorse fatto in gioco (lo stesso che fa F3+T; qui scattato cambiando impostazioni, con gli shader attivi). Prima del crash il server rallenta ("Can't keep up"). Il ricaricamento rigenera anche le risorse di Every Compat (B22: nel log pesa 2,4 secondi su un ricaricamento di oltre 35, quindi non ne è la causa principale) e tiene in memoria per un po' due copie di modelli e texture (atlante dei blocchi 8192x8192) | alto: crash | Alzare la memoria dell'istanza a 12 GB (`../../docs/0101-installazione.md`) e ripetere: shader a turno, un cambio di impostazioni che ricarica le risorse, qualche minuto di gioco. Con tutti i blocchi di Every Compat mantenuti (decisione del 19/10) non c'è una riduzione da attendersi dalla config: la leva è la memoria |
+| B35 | 0.6.0 (già nei log del 18/10) | Strutture generate, mod non identificata | Errore `Block-attached entity at invalid position` durante la generazione dei chunk (quadri, cornici o nodi di guinzaglio messi dove non c'è un blocco valido): da 1 a 42 righe per sessione, anche a quota negativa (log del 19/10: y da -26 a -20; log del 21/10: y 48) | basso: forse qualche cornice o quadro che non compare | Trovare quale struttura li produce: tornare alle coordinate nel log, con `/tp` e F3 vedere cosa c'è lì |
+| B36 | 0.6.0 (già nel log del 18/10) | Suoni dei pesci, origine da stabilire | Avviso `Unable to play empty soundEvent` per i versi di merluzzo, salmone e pesce tropicale (`minecraft:entity.cod.ambient`, `salmon.ambient`, `tropical_fish.ambient`): eventi sonori senza nessun file audio. Non si sa se sia comportamento del gioco base o di una mod | nessuno: solo nel log | Confrontare con un'istanza di Minecraft 1.21.1 senza mod: se l'avviso compare anche lì, non è un problema del pack e si chiude |
 
 ## 👁️ Delle mod (non correggibili da noi)
 
@@ -54,11 +55,13 @@ _Ultimo aggiornamento: 19/10/2026 (versioni fino alla 0.5.3)._
 | B27 | 0.4.0 | Generazione del mondo (mod non identificata) | 123 avvisi "Ignoring unknown attribute 'forge:entity_gravity'" mentre si genera il mondo (e, dalla 0.5.0, 10 per `forge:step_height_addition` nel Nether): qualche mob delle strutture ha un attributo col nome vecchio di Forge, che viene ignorato | nessuno: il mob usa la gravità normale |
 | B30 | 0.5.0 | Every Compat + Create | Aprendo un secondo mondo nella stessa sessione di gioco, Every Compat non riesce a creare le ricette delle finestre di Create per i legni delle altre mod (circa 50 errori, 29 ricette in meno) | basso: basta riavviare il gioco |
 | B31 | 0.5.0 | Jaden's Nether Expansion | Le stalattiti di netherrack (`netherexp:netherrack_speleothem`) piazzano blocchi fuori dal chunk che si sta generando (11 avvisi "setBlock in a far chunk") | basso: qualche stalattite tagliata ai bordi dei chunk |
+| B34 | 0.6.0 | When Dungeons Arise (fonderia sotterranea, `underworld/foundry`) | Il pezzo `foundry_corridor_gears` è citato da due blocchi di collegamento ma il pool `dungeons_arise:underworld/foundry/foundry_corridor_gears` non esiste nel .jar (esistono `foundry_corridor_deco`, `foundry_corridors`, `foundry_corridor_terminators` e altri): 2 avvisi di Lithostitched alla generazione | basso: nel corridoio può mancare un pezzo decorativo |
 
 ## ✅ Risolti o aggirati
 
 | Codice | Visto in | Problema | Soluzione | In |
 |---|---|---|---|---|
+| B01 | 0.1.1 | 15 nomi di casse di When Dungeons Arise e Dungeons and Taverns presi da versioni vecchie non esistevano più: in quelle casse gli artefatti non comparivano mai | Tolti i 15 nomi e aggiunte 14 casse con i nomi veri, comprese le quattro strutture di Dungeons and Taverns con tesoro «vault» (collegate il 19/10, decisione di Matteo): 152 casse in tutto. Controllo dei nomi a 0 errori e nessun nome di cassa inesistente nel log del 21/10. Che un artefatto compaia davvero in una struttura nuova è una prova nel tempo (`0502`) | 0.6.0 |
 | B32 | 0.5.1 | Enhanced Celestials 2 scriveva in chat, a ogni ingresso nel mondo, che le impostazioni di traduzione non erano configurate | `config/enhancedcelestials2core/translations.json` nel pack (traduzioni scaricate spente); verificato in gioco | 0.5.2 |
 | B17 | 0.1.0 | Con NeoForge 21.1.261 o successive: "Connection lost" entrando nel mondo (owo-lib 0.12.15.5 dentro l'Aether) | **Aggirato**: NeoForge fermo a 21.1.259. Si chiude davvero quando esce owo-lib 0.12.15.6 | 0.1.1 |
 | B18 | 0.1.0 | `README.md` maiuscoli dentro `data/` del datapack: "Invalid path in pack" | Rinominati `readme.md` | 0.1.1 |

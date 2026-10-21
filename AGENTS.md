@@ -1,6 +1,6 @@
 # Guida per gli agenti — Mango Craft
 
-Istruzioni per qualsiasi agente AI che lavora su questo repository (standard aperto `AGENTS.md`). Qui ci sono le **regole stabili** e la **struttura del repository**. Lo stato del lavoro è nei documenti numerati (sezione 4): all'inizio di un lavoro leggi almeno il piano (`1.21.1/lavoro/0501-piano.md`), le note tecniche (`1.21.1/docs/0303-note-tecniche.md`), il bug report (`1.21.1/docs/0402-bug-report.md`) e le ultime righe del log (`1.21.1/lavoro/0610-log-decisioni.md`).
+Istruzioni per qualsiasi agente AI che lavora su questo repository (standard aperto `AGENTS.md`). Qui ci sono le **regole stabili** e la **struttura del repository**. Come sono organizzati i documenti: sezione 4. All'inizio di un lavoro leggi almeno il piano (`1.21.1/lavoro/0501-piano.md`), le note tecniche (`1.21.1/docs/0303-note-tecniche.md`), il bug report (`1.21.1/docs/0402-bug-report.md`) e il file della versione in corso (`1.21.1/lavoro/versioni/`, quella con stato 🔧 o 📋 nel README).
 
 ---
 
@@ -22,21 +22,38 @@ README.md · LICENSE · AGENTS.md (questa guida) · CLAUDE.md (la importa)
 docs/                       documentazione comune a tutte le versioni (gruppi 00–02)
 scripts/                    inventario, controlli, risoluzione delle mod, note di release
 .github/workflows/          controllo a ogni modifica, aggiunta mod, release
+ai-agents/stage/            risultati grezzi delle ricerche, una cartella per ricerca (non è documentazione)
 1.21.1/                     una cartella per versione di Minecraft
 ├── pack/                   SOLO ciò che finisce nel gioco: pack.toml, index.toml, mods/*.pw.toml, config/…
 │   └── config/paxi/datapacks/matteo_tweaks/   il datapack del pack, con i suoi readme
 ├── docs/                   documentazione della versione (gruppi 03–04)
-├── lavoro/                 documenti di lavoro della versione (gruppi 05–09)
-└── data/                   dati: inventario generato dai workflow, dati grezzi delle ricerche
+├── mod-knowledge/          una scheda per mod: conoscenza verificata, con data e fonti
+├── theme-knowledge/        una scheda per tema trasversale (più mod insieme, piattaforma): stessa forma
+├── lavoro/                 documenti vivi di lavoro (gruppi 05–06) e, in versioni/, un file per versione
+└── data/                   dati: inventario generato dai workflow, dati grezzi dei conteggi
 ```
 
 Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova di Minecraft avrà la sua cartella accanto, con la stessa struttura.
 
 ## 4. Documentazione
 
-**Documentazione e lavoro sono separati.** La documentazione descrive cosa c'è e come si usa (`docs/`); i documenti di lavoro servono a decidere e costruire (`lavoro/`).
+Cinque livelli, dal grezzo al distillato:
 
-**Codici.** Ogni documento ha un codice di quattro cifre prima del nome: `GGnn-nome.md`. `GG` è il **gruppo** (tema), `nn` il progressivo dentro il gruppo. Le decine del progressivo possono raggruppare documenti dello stesso tipo (es. 0610 log, 0611 un round di decisioni). Un codice non cambia e non si riusa mai; un documento nuovo prende il primo numero libero del suo gruppo. Lo stesso codice indica lo stesso tipo di documento in ogni versione di Minecraft (0402 è sempre il bug report).
+| Livello | Dove | Cos'è | Vivo o fermo |
+|---|---|---|---|
+| **Stage** | `ai-agents/stage/` | Risultati grezzi delle ricerche (report, tabelle, estratti, script), nella lingua in cui sono nati | fermo: si aggiunge, non si modifica |
+| **Versioni** | `<versione>/lavoro/versioni/vX.Y.Z.md` | Un file per versione del pack: obiettivo, valutazioni, decisioni, lavoro, prove, esito. È la tracciabilità: il perché delle scelte | la versione in corso è viva; le rilasciate sono chiuse |
+| **Schede delle mod** | `<versione>/mod-knowledge/` | Una scheda per mod (nome dello slug): fatti verificati, chiavi di config, compatibilità, storia nel pack. In testa "Aggiornata il …", lo stato e le fonti | vive: si aggiornano quando si riverifica un fatto |
+| **Schede dei temi** | `<versione>/theme-knowledge/` | Una scheda per argomento che attraversa più mod o la piattaforma (esperienza, Nether, shader…): stessa forma, rimanda alle schede delle mod | vive, come sopra |
+| **Documentazione** | `docs/`, `<versione>/docs/` | Com'è il pack oggi: mod, config, note tecniche, changelog, bug report, distinta | viva |
+
+**Stage.** Una cartella per ricerca, `<data>_<versione MC>-v<versione del pack>_<nome>` (senza il segmento della versione se la ricerca non riguarda una versione). Non è una fonte per lo stato attuale e non ha un indice (regole in [`ai-agents/README.md`](ai-agents/README.md)). Il workflow Esamina mod scrive qui.
+
+**File delle versioni.** Nome `vX.Y.Z.md`, senza codice numerico. Sezioni: 1 Obiettivo, 2 Valutazioni (il distillato delle ricerche, con il rimando allo stage), 3 Decisioni (una riga ciascuna, con la data, più le domande ancora aperte), 4 Lavoro, 5 Prove, 6 Rischi, 7 Esito. Si apre alla pianificazione della versione e si chiude al rilascio (Esito = Stato, tag, problemi noti). Le decisioni valide per più versioni stanno nei temi aperti (`0503`). Le righe di decisione non si correggono a posteriori: una decisione cambiata è una riga nuova.
+
+**Schede.** Si crea o si aggiorna una scheda quando si verifica un fatto (nel sorgente, nell'inventario o in gioco). Un fatto che riguarda **una mod** va nella scheda della mod; uno che riguarda **due o più mod insieme** o tutto il pack va nella scheda del tema; l'una rimanda all'altra. I nomi delle schede sono unici nelle due cartelle. Le mod senza conoscenza verificata hanno solo la riga in `0301`. Una scheda può riguardare anche una mod candidata o scartata (lo stato è in testa). Gli indici sono i `README.md` delle due cartelle.
+
+**Codici.** I documenti di `docs/` e dei livelli vivi di `lavoro/` hanno un codice di quattro cifre prima del nome: `GGnn-nome.md`. `GG` è il **gruppo** (tema), `nn` il progressivo. Un codice non cambia e non si riusa mai (i codici 0610, 0611, 0620, 0630, 0701–0713 e 09xx appartengono a documenti dissolti nel riordino del 19/10/2026: non si riusano); un documento nuovo prende il primo numero libero del suo gruppo. Lo stesso codice indica lo stesso tipo di documento in ogni versione di Minecraft (0402 è sempre il bug report). I file delle versioni, le schede e le cartelle di stage non hanno codice.
 
 | Gruppo | Tema | Cartella | Tipo |
 |---|---|---|---|
@@ -45,42 +62,38 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 | **02** | Sviluppo: formati, script, workflow, rilascio, decisioni tecniche | `docs/` | documentazione comune |
 | **03** | Contenuto del pack: mod, config, note tecniche | `<versione>/docs/` | documentazione della versione |
 | **04** | Versioni: changelog, bug report, distinta delle mod | `<versione>/docs/` | documentazione della versione |
-| **05** | Pianificazione: piano, prove in gioco | `<versione>/lavoro/` | lavoro |
-| **06** | Progettazione: candidate, scartate, decisioni, datapack | `<versione>/lavoro/` | lavoro |
-| **07** | Ricerche e confronti | `<versione>/lavoro/` | lavoro |
-| **08** | (libero) | | |
-| **09** | Archivio | `<versione>/lavoro/` | lavoro |
-| **10–99** | liberi per gruppi futuri | | |
+| **05** | Pianificazione: piano, prove in gioco, temi aperti | `<versione>/lavoro/` | lavoro vivo |
+| **06** | Mod candidate e scartate (indici) | `<versione>/lavoro/` | lavoro vivo |
+| **07–99** | liberi per gruppi futuri | | |
 
-**Indici.** Ogni cartella di documenti ha un `README.md` con l'indice dei suoi documenti (codice, nome, contenuto, vivo o storico). Quando si aggiunge, rinomina o toglie un documento si aggiorna il README della sua cartella.
+**Indici.** Ogni cartella di documenti ha un `README.md` con l'indice dei suoi documenti. Quando si aggiunge, rinomina o toglie un documento (o una scheda, o un file di versione) si aggiorna il README della sua cartella.
 
-**Documenti vivi e storici.**
-- **Vivi**: descrivono lo stato attuale e si aggiornano (mod, config, note tecniche, changelog, bug report, distinta, piano, prove, candidate, scartate, progetto del datapack).
-- **Storici**: fotografie di un momento, non si aggiornano mai (log delle decisioni, round, ricerche, archivio). Il log riceve solo righe nuove in fondo. Ogni documento storico lo dichiara in testa.
+**Un fatto, un posto.** Ogni informazione che cambia sta in **un solo posto vivo**; gli altri ci rimandano. Le righe dei file delle versioni e lo stage sono fotografie: possono ripetere informazioni, ma non vanno corretti a posteriori.
 
-**Un fatto, un posto.** Ogni informazione che cambia sta in **un solo documento vivo**; gli altri ci rimandano con il codice. I documenti storici possono ripetere informazioni (sono fotografie) ma non vanno corretti a posteriori. Dove va cosa:
-
-| Informazione | Documento |
+| Informazione | Dove |
 |---|---|
 | Cosa c'è nel pack, per tema, perché e con che licenza (senza numeri di versione) | `0301-mod` |
-| File di config e impostazioni decise | `0302-config` |
-| Fatti verificati, cose da non rompere | `0303-note-tecniche` |
+| File di config portati dal pack e impostazioni decise | `0302-config` |
+| Regole da non rompere, in breve (con il rimando alla scheda che le motiva) | `0303-note-tecniche` |
+| Fatti verificati su una mod, chiavi di config, formati, fonti | scheda in `mod-knowledge/` |
+| Fatti verificati che attraversano più mod o la piattaforma | scheda in `theme-knowledge/` |
 | Cosa è cambiato in ogni versione | `0401-changelog` |
 | Problemi trovati | `0402-bug-report` |
 | Versione, data ed esito della verifica di ogni file | `0403-distinta-mod` |
 | Tappe e avanzamento | `0501-piano` |
-| Prove e controlli da fare | `0502-prove-in-gioco` |
-| Mod candidate / scartate | `0601` / `0602` |
-| Decisioni prese (una riga ciascuna) | `0610-log-decisioni` |
-| Parti del datapack da scrivere | `0620-progetto-datapack` |
+| Controlli stabili da fare in gioco | `0502-prove-in-gioco` |
+| Argomenti non ancora affrontati e decisioni aperte che valgono per più versioni | `0503-temi-aperti` |
+| Mod candidate / scartate (indici, con il rimando alla valutazione) | `0601` / `0602` |
+| Obiettivo, valutazioni, decisioni, lavoro e prove di una versione | `lavoro/versioni/vX.Y.Z.md` |
+| Risultati grezzi di una ricerca | `ai-agents/stage/` |
 | Come funziona una parte del datapack già fatta | il readme dentro il datapack |
 | Regole del repository e dei documenti | questo file |
 
-**Lingua e forma.** Italiano; le ricerche possono restare in inglese. Link relativi tra i documenti. Dentro `pack/` i nomi seguono le regole del gioco (sezione 7), non i codici.
+**Lingua e forma.** Italiano; lo stage può restare in inglese. Link relativi tra i documenti. Dentro `pack/` i nomi seguono le regole del gioco (sezione 7), non i codici.
 
 ## 5. Versioni, tag e istanze
 
-- **Rami**: si lavora su **`dev`**. **`main`** contiene solo versioni provate: riceve `dev` con un **merge vero** (`git merge --no-ff dev`: niente fast-forward, per conservare il grafico dei rami; niente pull request) quando la tappa è stata provata nell'istanza di prova e Matteo dà l'ok. Niente commit diretti su `main`; se capitasse (es. un commit automatico), si riporta `main` dentro `dev`.
+- **Rami**: si lavora su **`dev`**. **`main`** contiene solo versioni provate: riceve `dev` con un **merge vero** (`git merge --no-ff dev`: niente fast-forward, per conservare il grafico dei rami; niente pull request) quando le prove di uscita della tappa sono fatte nell'istanza di prova e Matteo dà l'ok. Niente commit diretti su `main`; se capitasse (es. un commit automatico), si riporta `main` dentro `dev`.
 - **Cosa va su `main` e quando**: mod, config e datapack solo con una versione e il suo tag. Documenti e workflow anche senza versione, con lo stesso merge, ma solo se su `dev` non c'è una tappa in corso (altrimenti aspettano la versione).
 - **Versioni**: ogni versione rilasciata è un **tag** `<versione MC>-v<versione pack>` creato su `main`, es. `1.21.1-v0.3.0`. I tag di release non si spostano e non si cancellano. Le **0.x** sono tappe di prova (pre-release su GitHub); il **mondo vero parte dalla 1.0.0**, la prima versione con tutte le mod che generano il mondo. Il piano delle tappe è in `<versione>/lavoro/0501-piano.md`.
 - **Istanze di Prism** (tutte con `packwiz-installer-bootstrap.jar` nella cartella `minecraft/` dell'istanza e comando prima dell'avvio `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar <URL>`; guida completa in `docs/0101-installazione.md`):
@@ -90,7 +103,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 - **NeoForge si imposta a mano in Prism**: packwiz-installer non riesce a cambiarlo. Ogni voce del changelog indica la versione richiesta.
 - Le mod di queste istanze **non si toccano dalla scheda Mod di Prism**: si modifica il repository.
 - GitHub tiene in cache i file grezzi per circa 5 minuti: dopo un push, aspettare prima di avviare.
-- **Prova di una tappa**: leggere i log dell'istanza dev e confrontarli con quelli della versione precedente. **Ogni problema nuovo, anche minore** (errori nel log, grafica mancante, ricette rotte, avvisi del controllo dei nomi), va nel **bug report** (`0402`) con un codice nuovo `Bnn` che non si riusa mai. Prima del merge, la voce della versione nel **changelog** (`0401`) riceve **Stato** (provata, data, tag) e **Problemi noti** (i codici comparsi o risolti); il piano (`0501`) segna la tappa come fatta. Quando un problema si risolve, la riga passa tra i risolti con la versione che lo chiude.
+- **Prova di una tappa, in due tempi** (decisione del 19/10/2026: «ha funzionato» non vuol dire «è tutto perfetto»). **Prove di uscita**: poche e rapide, nell'istanza di prova, prima del merge in `main` e del tag; il caso di prova di ogni cosa cambiata sta nella sezione 5 del file della versione. Sono: il gioco parte e carica un mondo; i log dell'istanza dev, confrontati con quelli della versione precedente, non hanno errori nuovi gravi; ciò che la versione ha cambiato funziona con un controllo semplice. **Bloccano l'uscita solo**: avvio o mondo che non vanno, crash in gioco normale, la modifica principale della versione che non fa il suo lavoro, rischio per il mondo. **Prove nel tempo**: tutto il resto (`1.21.1/lavoro/0502-prove-in-gioco.md` e le voci «nel tempo» del file della versione) si fa giocando e non blocca: la versione esce con i suoi problemi noti e si può già giocare. La **1.0.0** ha una soglia più alta, perché a mondo creato alcune cose non si correggono più: `1.21.1/lavoro/0503-temi-aperti.md`, sezione 4, n. 5. **Ogni problema nuovo, anche minore** (errori nel log, grafica mancante, ricette rotte, avvisi del controllo dei nomi), va nel **bug report** (`0402`) con un codice nuovo `Bnn` che non si riusa mai. Prima del merge, la voce della versione nel **changelog** (`0401`) riceve **Stato** (provata, data, tag) e **Problemi noti** (i codici comparsi o risolti); il piano (`0501`) segna la tappa come fatta e il file della versione (`lavoro/versioni/vX.Y.Z.md`) riceve l'**Esito** e si chiude. Quando un problema si risolve, la riga passa tra i risolti con la versione che lo chiude.
 
 ## 6. Aggiungere o cambiare una mod
 
@@ -100,7 +113,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 4. **Controllo automatico** (in ogni workflow che tocca il pack): indice, metafile, **inventario** dei .jar (`<versione>/data/inventario/`) e **controllo dei nomi** (`controllo.md`: dipendenze mancanti, versioni richieste di NeoForge e delle altre mod, mod incompatibili tra loro, nomi del datapack inesistenti). L'output di packwiz va in `data/inventario/ultimo-workflow.log`. Se qualcosa fallisce, leggere questi due file nel ramo: i log dei workflow non sono leggibili da qui.
 5. A mano, solo se i workflow non si possono usare: versione dall'API di Modrinth (`/v2/project/<slug>/version?game_versions=["1.21.1"]&loaders=["neoforge"]`), hash verificati con la ricerca inversa `/v2/version_file/<sha512>?algorithm=sha512` (stessa versione, stesso sha1; gli hash lunghi vanno letti a pezzi), metafile scritto a mano (formato in `docs/0201-sviluppo.md`), indice con `python3 scripts/packwiz_index.py 1.21.1/pack`, controllo con `python3 scripts/check_pack.py 1.21.1/pack`.
 6. Licenza, data, se genera mondo o strutture (⚠️ = va aggiunta **prima del mondo vero**).
-7. Documenti: riga della mod in `0301-mod` (ruolo, licenza, "Dalla X.Y.Z"), riga in `0403-distinta-mod` (versione, data, esito), voce della versione in corso in `0401-changelog`, avanzamento in `0501-piano`; se la mod porta problemi noti, `0402-bug-report`; se era tra le candidate, toglierla da `0601`.
+7. Documenti: scheda in `mod-knowledge/` (e in `theme-knowledge/` se tocca un tema) se c'è conoscenza verificata da registrare; riga della mod in `0301-mod` (ruolo, licenza, "Dalla X.Y.Z"), riga in `0403-distinta-mod` (versione, data, esito), voce della versione in corso in `0401-changelog`, avanzamento in `0501-piano` e decisione nel file della versione; se la mod porta problemi noti, `0402-bug-report`; se era tra le candidate, toglierla da `0601` (e aggiornare la sua scheda).
 
 ## 7. Regole del datapack `matteo_tweaks`
 
@@ -111,7 +124,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 - Paxi carica il pacchetto in tutti i mondi, sopra gli altri (vince sui file con lo stesso percorso).
 - `global_loot_modifiers.json` di NeoForge: un modificatore non elencato è spento; un nome elencato senza file dà errore.
 - Le lune di Enhanced Celestials si ricaricano solo riaprendo il mondo; il resto con `/reload`. I modificatori di struttura (es. Berserker) richiedono il riavvio del mondo.
-- Le parti da scrivere sono progettate in `<versione>/lavoro/0620-progetto-datapack.md`.
+- Le parti da scrivere sono progettate nel file della versione che le porta (`<versione>/lavoro/versioni/`); i formati dei file stanno nelle schede (`botany-pots`, `farming-for-blockheads`, `cataclysm` per le mod; `esperienza` per i temi…).
 
 ## 8. Ambiente di lavoro di Claude
 
@@ -122,4 +135,5 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 - Da qui si possono mandare commit sui rami (`dev`, e `main` tramite merge) e avviare i workflow (`gh workflow run`), ma **non mandare tag** né scrivere tramite l'API di GitHub (pull request mai provate): per una release si usa il workflow **Release** con il tag come parametro. I log dei workflow non sono leggibili da qui: si controlla l'esito (`gh run view`) e il risultato (i file nel repository).
 - Il PC di Matteo può essere collegato alla sessione: **non toccare la cartella di Prism senza il suo via**.
 - Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file.
+- I risultati grezzi di una ricerca vanno in `ai-agents/stage/<data>_<versione>_<nome>/` (il workflow Esamina mod lo fa da solo); il distillato in un file di versione e in una scheda.
 - Il progetto Claude "Minecraft modpack" contiene solo `context.md`, un riassunto generato da `scripts/contesto_progetto.py` (istruzioni in `CLAUDE.md`): non è una fonte, si rigenera.

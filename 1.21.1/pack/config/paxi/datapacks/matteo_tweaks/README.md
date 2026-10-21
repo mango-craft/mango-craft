@@ -10,7 +10,7 @@ Ritocchi del modpack. **Paxi** carica questo pacchetto in **tutti i mondi**, anc
 
 | Parte | Cosa fa | Dove | Spiegazione |
 |---|---|---|---|
-| **Artefatti nelle strutture modded** | Aggiunge gli oggetti di Artifacts a 153 casse di strutture modded | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
+| **Artefatti nelle strutture modded** | Aggiunge gli oggetti di Artifacts a 152 casse di strutture modded | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
 | **Ars Nouveau nei vasi** | Magebloom, Sourceberry e i 5 frutti di archwood in Botany Pots | `data/matteo_tweaks/recipe/botanypots/` | [botanypots/readme.md](data/matteo_tweaks/recipe/botanypots/readme.md) |
 | **Lune di sangue** | Più rare (peso 5 invece di 10 nel calendario) e meno affollate (mostri ×2 e ×4), per Enhanced Celestials 2 | `data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/` | [lunar/readme.md](data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md) |
 | **Pesce cotto di Starcatcher** | Vale come "pesce cotto" nelle ricette di cucina | `data/c/tags/item/foods/`, `data/bountifulfares/tags/item/` | [c/readme.md](data/c/readme.md) |

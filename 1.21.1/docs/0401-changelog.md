@@ -10,11 +10,23 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.6.0 — 22/10/2026 · config e correzioni (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: non serve; conviene per vedere i Berserker, che compaiono solo nelle fortezze del Nether generate dopo. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Config nel pack** (file completi copiati dall'istanza di prova): **Artifacts solo con Curios** (niente slot doppi con Accessories), **Carry On** che solleva anche i blocchi normali, **Inventory Essentials** senza trascinamento con Shift (doppione di Mouse Tweaks), **FallingTree** che abbatte l'albero intero solo da accovacciati.
+- **Datapack**: i **Berserker infuocati** di Cataclysm compaiono anche nelle fortezze di YUNG's Better Nether Fortresses (B02); gli **artefatti nelle casse**: tolti 15 nomi che non esistevano più (B01), aggiunte 14 casse (When Dungeons Arise, Dungeons and Taverns con le quattro strutture dal tesoro «vault», Mowzie's Mobs: B03), 152 casse in tutto; l'elenco delle casse escluse è nella scheda `artifacts`.
+- **Invariato**: Every Compat tiene tutte le varianti e tutti i legni (generazione delle risorse di serie); nessuna mod aggiunta o tolta.
+- **Menu degli accessori**: in gioco i menu per indossare oggetti sono tre (Curios, Accessories standard, Aether). È come sono fatte le mod; restano così (decisione del 21/10, tema `accessori`).
+- **Regole**: le prove di una versione si dividono in prove di uscita (poche, rapide) e prove nel tempo (`AGENTS.md`, sezione 5).
+- **Stato**: ✅ provata il 21/10/2026 (mondo nuovo, avvio in 78 secondi, 28.612 ricette, datapack caricato, nessun errore nuovo grave nel log; Artifacts, Carry On, Inventory Essentials e FallingTree funzionano) e rilasciata come pre-release `1.21.1-v0.6.0`. L'esperienza (scambio Create ↔ Cognition) è passata alla 0.6.3.
+- **Problemi noti**: B01 risolto; B02 e B03 corretti, da verificare in gioco (fortezza nuova, cassa di Mowzie's); nuovi B34 (When Dungeons Arise, un pezzo della fonderia che manca), B35 (entità senza blocco valido nella generazione, mod non identificata) e B36 (suoni dei pesci vuoti, forse del gioco base), tutti minori; B22 invariato; B33 da riprovare con 12 GB di memoria.
+
 ## 0.5.3 — 19/10/2026 · pacchetti di shader (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
 - **Mondo nuovo**: no.
-- **Shader**: due pacchetti **spenti di serie**, nella cartella `shaderpacks`: **Complementary Reimagined** (il più completo, profili da Potato a Ultra) e **MakeUp - Ultra Fast** (il più leggero, riconosce i blocchi di Create, Farmer's Delight, Twilight Forest, Ars Nouveau e altre mod del pack). Si scelgono in gioco dalle impostazioni video. Scelta: `../lavoro/0710-shader-pack.md`.
+- **Shader**: due pacchetti **spenti di serie**, nella cartella `shaderpacks`: **Complementary Reimagined** (il più completo, profili da Potato a Ultra) e **MakeUp - Ultra Fast** (il più leggero, riconosce i blocchi di Create, Farmer's Delight, Twilight Forest, Ars Nouveau e altre mod del pack). Si scelgono in gioco dalle impostazioni video. Scelta: `../lavoro/versioni/v0.5.3.md`.
 - **Impostazioni video**: nessun file nel pack, restano a chi gioca; Sodium di serie è già regolato per le prestazioni (`0302-config.md`).
 - **Strumenti**: il workflow Aggiungi mod Modrinth accetta anche pacchetti di shader e resource pack.
 - **Stato**: ✅ provata il 19/10/2026 (i due pacchetti funzionano, anche cambiandoli in gioco; la luna di sangue avviata da comando si vede con gli shader; pacchetti lasciati con le impostazioni di serie) e rilasciata come pre-release `1.21.1-v0.5.3`.
@@ -24,7 +36,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 
 - **NeoForge**: 21.1.259 (invariato).
 - **Mondo nuovo**: no.
-- **Shader** (facoltativi): **Iris** 1.8.14-beta.1 (l'unica versione che funziona con Sodium 0.8, ancora beta) ed **Enhanced Celestials 2: Shader Support** (i colori delle lune con gli shader). Nessun pacchetto di shader incluso: senza attivarne uno il gioco resta com'era. Le mod del pack con parti apposta per Iris sono state controllate prima (`../lavoro/0709-shader.md`); nessuna libreria nuova.
+- **Shader** (facoltativi): **Iris** 1.8.14-beta.1 (l'unica versione che funziona con Sodium 0.8, ancora beta) ed **Enhanced Celestials 2: Shader Support** (i colori delle lune con gli shader). Nessun pacchetto di shader incluso: senza attivarne uno il gioco resta com'era. Le mod del pack con parti apposta per Iris sono state controllate prima (`../lavoro/versioni/v0.5.2.md`); nessuna libreria nuova.
 - **Config**: traduzioni di Enhanced Celestials 2 spente (`config/enhancedcelestials2core/translations.json`): niente traduzioni scaricate da internet e niente più messaggio in chat (B32).
 - **Strumenti**: il workflow Esamina mod legge anche i testi del codice compilato delle mod (nomi dei file di config, comandi).
 - **Stato**: ✅ provata il 19/10/2026 (mondo nuovo, avvio in 70 secondi, 28.612 ricette; Iris attiva senza shader, nessun errore nuovo) e rilasciata come pre-release `1.21.1-v0.5.2`.
@@ -102,7 +114,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 
 ## Prima del repository (pacchetti `.mrpack`, 16–17/10/2026)
 
-Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`../lavoro/0901-pacchetti-mrpack.md`](../lavoro/0901-pacchetti-mrpack.md).
+Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`](../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md).
 
 - **0.2.3** (17/10): Just Enough Breeding e Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks. Mai provata in gioco: rifatta come 0.2.3 del repository.
 - **0.2.2** (17/10): XP Tome.

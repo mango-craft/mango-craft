@@ -80,19 +80,7 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/giant_mushroom/red_giant_mushroom"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/giant_mushroom/twin_giant_mushroom"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "dungeons_arise:chests/mines_treasure_small"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/temple_treasure_small"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -152,31 +140,19 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/ruin_loot_1"
+          "loot_table_id": "nova_structures:chests/ruin_loot_master"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/ruin_loot_2"
+          "loot_table_id": "nova_structures:chests/hamlet/hamlet_tresure"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/ruin_loot_3"
+          "loot_table_id": "nova_structures:chests/shrine/shrine_lesser_treasure"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/ruin_loot_4"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/ruin_loot_5"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/ruin_loot_6"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/ruin_loot_7"
+          "loot_table_id": "nova_structures:chests/toxic_lair/toxic_boss_vault"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -185,6 +161,14 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "unusualend:chests/wandering_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:chests/monastery_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:chests/umvuthana_grove_chest"
         }
       ]
     }

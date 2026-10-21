@@ -20,7 +20,7 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/trident_trial_monument/ttm_treasure_chest"
+          "loot_table_id": "nova_structures:chests/trident_trial_monument/ttm_boss_vault_trident"
         }
       ]
     }

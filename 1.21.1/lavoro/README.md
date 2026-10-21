@@ -1,29 +1,28 @@
 # Documenti di lavoro della versione 1.21.1
 
-Piano, prove, decisioni, progettazione e ricerche per il pack di Minecraft 1.21.1. Codici e regole dei documenti: [`AGENTS.md`](../../AGENTS.md); la documentazione del pack è in [`../docs/`](../docs/README.md).
+Piano, prove, temi aperti, mod candidate e scartate, e un file per ogni versione del pack di Minecraft 1.21.1. Regole dei documenti: [`AGENTS.md`](../../AGENTS.md), sezione 4. La documentazione del pack è in [`../docs/`](../docs/README.md), la conoscenza sulle mod in [`../mod-knowledge/`](../mod-knowledge/README.md) e sui temi in [`../theme-knowledge/`](../theme-knowledge/README.md), i risultati grezzi delle ricerche in [`../../ai-agents/stage/`](../../ai-agents/README.md).
 
-I documenti **vivi** si aggiornano; quelli **storici** sono fotografie e non si correggono (il log riceve solo righe nuove in fondo).
+Qui ci sono solo documenti **vivi**; le versioni rilasciate sono chiuse (fotografie che non si correggono).
 
 | Codice | Documento | Contenuto | Tipo |
 |---|---|---|---|
-| **0501** | [piano](0501-piano.md) | Tappe verso la 1.0.0 e stato di avanzamento per gruppi | vivo |
-| **0502** | [prove-in-gioco](0502-prove-in-gioco.md) | Prove prioritarie, controlli, rischi, mondo di prova | vivo |
-| **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle | vivo |
-| **0602** | [mod-scartate](0602-mod-scartate.md) | Mod lasciate fuori, con il motivo | vivo |
-| **0610** | [log-decisioni](0610-log-decisioni.md) | Una riga per decisione, dal 14/10/2026 | storico (si aggiunge in fondo) |
-| **0611** | [round-2026-10-17](0611-round-2026-10-17.md) | Round di decisione su tutte le opzionali, con le valutazioni di partenza in allegato | storico |
-| **0620** | [progetto-datapack](0620-progetto-datapack.md) | Parti del datapack da scrivere: vasi, mercato, esperienza, correzioni | vivo |
-| **0621** | [copertura-vasi](0621-copertura-vasi.md) | Tabella pianta per pianta della copertura nei vasi | vivo |
-| **0701** | [nether](0701-nether.md) | Ricerca sul Nether (in inglese) | storico |
-| **0702** | [animali](0702-animali.md) | Animali con cibi integrati nella cucina (in inglese) | storico |
-| **0703** | [esperienza](0703-esperienza.md) | Deposito e farm di esperienza (italiano e inglese) | storico |
-| **0704** | [vasi-compat-esistenti](0704-vasi-compat-esistenti.md) | Compatibilità esistenti per vasi e mercato (in inglese) | storico |
-| **0705** | [sovrapposizioni-e-calderoni](0705-sovrapposizioni-e-calderoni.md) | Revisione delle sovrapposizioni e analisi dei sei calderoni | storico |
-| **0706** | [livelli-di-integrazione](0706-livelli-di-integrazione.md) | Tag, datapack o script: quanto integrare | storico |
-| **0707** | [magia](0707-magia.md) | Mappa della magia e proposte | storico |
-| **0708** | [enhanced-celestials-2](0708-enhanced-celestials-2.md) | Enhanced Celestials 2 al posto di EC1: mod, lune, calendario, datapack, rischi | storico |
-| **0709** | [shader](0709-shader.md) | Supporto agli shader: Iris compatibile con Sodium 0.8, mod del pack con gli shader, pacchetti e licenze | storico |
-| **0710** | [shader-pack](0710-shader-pack.md) | Pacchetti di shader da includere: licenze, blocchi delle mod riconosciuti, Colorwheel, Enhanced Celestials 2 | storico |
-| **0710** | [confronto-modpack-famosi](0710-confronto-modpack-famosi.md) | Primo confronto con 8 modpack (zaini, ordinamento, grandi aggiunte) | storico |
-| **0711** | [secondo-confronto-modpack](0711-secondo-confronto-modpack.md) | Secondo confronto con pack grandi e a tema, con le note grezze | storico |
-| **0901** | [pacchetti-mrpack](0901-pacchetti-mrpack.md) | Le versioni prima del repository e l'installazione a mano | storico |
+| **0501** | [piano](0501-piano.md) | Tappe verso la 1.0.0 e stato di avanzamento | vivo |
+| **0502** | [prove-in-gioco](0502-prove-in-gioco.md) | Controlli da fare in gioco, rischi, mondo di prova | vivo |
+| **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e decisioni aperte che valgono per più versioni | vivo |
+| **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle (indice, con le schede) | vivo |
+| **0602** | [mod-scartate](0602-mod-scartate.md) | Mod lasciate fuori, con il motivo (indice) | vivo |
+
+## Un file per versione (`versioni/`)
+
+Ogni versione del pack ha un file (`vX.Y.Z.md`) che racconta obiettivo, valutazioni, decisioni, lavoro, prove ed esito. Le versioni rilasciate sono chiuse; quella in corso è viva. Una versione nuova prende lo schema delle precedenti (AGENTS.md, sezione 4). Prima del 19/10/2026 questo materiale stava nel log delle decisioni 0610, nei round 0611 e nelle ricerche 0701–0713.
+
+| File | Versione | Stato |
+|---|---|---|
+| [v0.1.1](versioni/v0.1.1.md) | base del repository (mod scelte il 14–16/10) | chiuso |
+| [v0.2.3](versioni/v0.2.3.md) | tappa 1; contiene il round del 17/10 che ha deciso anche le mod di 0.3.0–0.5.0 | chiuso |
+| [v0.3.0](versioni/v0.3.0.md) · [v0.4.0](versioni/v0.4.0.md) · [v0.5.0](versioni/v0.5.0.md) | tappe 2–4 | chiusi |
+| [v0.5.1](versioni/v0.5.1.md) · [v0.5.2](versioni/v0.5.2.md) · [v0.5.3](versioni/v0.5.3.md) | lune, shader, pacchetti di shader | chiusi |
+| [v0.6.0](versioni/v0.6.0.md) | tappa 5: config e correzioni | chiuso (rilasciata il 22/10) |
+| [v0.6.1](versioni/v0.6.1.md) · [v0.6.2](versioni/v0.6.2.md) · [v0.6.3](versioni/v0.6.3.md) | tappa 5: vasi, mercato, esperienza | pianificati (la 0.6.1 è la prossima) |
+
+Dove sono finiti i documenti di prima: ricerche 0705, 0706, 0707, 0710 → `v0.1.1`; 0611, 0703, 0711 → `v0.2.3`; 0708 → `v0.5.1`; 0709 → `v0.5.2`; 0712 → `v0.5.3`; 0713 → `v0.6.0`; le righe del log 0610 → sezione "Decisioni" della loro versione; le parti grezze e in inglese (0701, 0702, 0704, 0621, 0901, allegati e appendici) → `ai-agents/stage/`; il progetto del datapack 0620 e la pre-progettazione 0630 → `v0.6.0`, `v0.6.1`, `v0.6.2` e le schede di `../mod-knowledge/` e `../theme-knowledge/` (formati dei file: `botany-pots`, `farming-for-blockheads`, `esperienza`, `cataclysm`).

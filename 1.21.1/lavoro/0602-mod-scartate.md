@@ -1,6 +1,6 @@
 # Mod scartate — Minecraft 1.21.1
 
-Le mod valutate e lasciate fuori, con il motivo. Documento vivo: una mod scartata che torna in considerazione passa in `0601-mod-candidate.md`.
+Le mod valutate e lasciate fuori, con il motivo. Documento vivo: una mod scartata che torna in considerazione passa in `0601-mod-candidate.md`. È un indice: le valutazioni complete stanno nel file della versione in cui sono state fatte (`versioni/`, sezione Valutazioni).
 
 ## Cucina e bevande
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Salva con un commit i file che i workflow rigenerano (indice, metafile, inventario, esami)
+# Salva con un commit i file che i workflow rigenerano (indice, metafile, inventario, esami in stage)
 # e lo manda sul ramo corrente, riprovando se nel frattempo il ramo è andato avanti.
 # Uso: bash scripts/ci_commit.sh "<messaggio>" ["<descrizione>"]
 set -euo pipefail
 git config user.name "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-for d in */pack */data/inventario */data/esami; do
+for d in */pack */data/inventario ai-agents/stage; do
   if [ -e "$d" ]; then git add -A -- "$d"; fi
 done
 if git diff --cached --quiet; then

@@ -2,7 +2,7 @@
 
 Cosa fanno i file di configurazione del pack e quali impostazioni delle mod sono state decise. Documento vivo.
 
-I file stanno in `pack/config/` e li installa packwiz-installer a ogni avvio dell'istanza (`../../docs/0101-installazione.md`). Prima del repository si copiavano a mano (storico in `../lavoro/0901-pacchetti-mrpack.md`).
+I file stanno in `pack/config/` e li installa packwiz-installer a ogni avvio dell'istanza (`../../docs/0101-installazione.md`). Prima del repository si copiavano a mano (storico in `../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`).
 
 ## I file nel pack
 
@@ -10,6 +10,10 @@ I file stanno in `pack/config/` e li installa packwiz-installer a ogni avvio del
 |---|---|---|---|
 | `config/almostunified/tags.json` | 19 tag personalizzati: rende intercambiabili gli ingredienti doppi tra le mod di cucina e magia (farina, impasto di grano, sale, mais, limone, porzioni di formaggio, formaggio di capra) | Al riavvio del gioco, in tutti i mondi | ✅ |
 | `config/enhancedcelestials2core/translations.json` | Traduzioni di Enhanced Celestials 2: modalità `DISABLED`, cioè niente traduzioni scaricate dal sito dell'autore (con `AUTOMATIC`, che sembra il valore di serie, le scarica e le applica da sola) e nessuna richiesta di aiutare a tradurre. Senza il file la mod scrive in chat, a ogni ingresso nel mondo, di configurarle (B32). Nomi dei campi letti dal codice della mod. Per cambiare: `/ecc translate config` in gioco (la modifica resta finché il pack non porta una versione nuova del file) | Al riavvio del gioco | ✅ 0.5.2 |
+| `config/artifacts/general.toml` | Artifacts solo con Curios: `enableAccessoriesCompat = false`, il resto di serie (file completo copiato dall'istanza). Va portato **prima di creare il mondo** | Al riavvio del gioco | ✅ 0.6.0: provato il 21/10 |
+| `config/carryon-common.toml` | Carry On prende in mano anche i blocchi normali (`pickupAllBlocks = true`), il resto di serie | Al riavvio del gioco | ✅ 0.6.0: provato il 21/10 |
+| `config/inventoryessentials-common.toml` | Inventory Essentials senza trascinamento con Shift (`enableShiftDrag = false`: doppione di Mouse Tweaks), il resto di serie | Al riavvio del gioco | ✅ 0.6.0: provato il 21/10 |
+| `config/fallingtree.json` | FallingTree abbatte l'albero intero solo da accovacciati (`"sneakMode": "SNEAK_ENABLE"`), il resto di serie | Al riavvio del gioco | ✅ 0.6.0: provato il 21/10 |
 | `config/sparsestructures.json5` | Distanze tra le strutture: generale 1.4, villaggi 1, magione 2 | Al riavvio, solo nei chunk nuovi → mondo nuovo | ⚠️ da completare (vedi Strutture) |
 | `config/paxi/datapacks/matteo_tweaks/` | Datapack caricato da Paxi in tutti i mondi (vedi Datapack) | Artefatti e vasi con `/reload`, lune riaprendo il mondo, modificatori di struttura col riavvio del mondo; il bottino vale per le casse non ancora aperte | ✅ |
 
@@ -49,39 +53,29 @@ La config di default di AlmostUnified unifica già i metalli; i cibi sono gestit
 
 ## Datapack `matteo_tweaks`
 
-La documentazione del datapack sta **dentro il datapack**, così viaggia con i file: `../pack/config/paxi/datapacks/matteo_tweaks/README.md` (panoramica, cartelle, condizioni di caricamento, quando hanno effetto le modifiche) e un `readme.md` in ogni cartella di `data/`. Parti attuali: lune di sangue (Enhanced Celestials), artefatti nelle casse delle strutture modded, Ars Nouveau nei vasi di Botany Pots, pesce cotto di Starcatcher. Le parti in progettazione sono in `../lavoro/0620-progetto-datapack.md`.
+La documentazione del datapack sta **dentro il datapack**, così viaggia con i file: `../pack/config/paxi/datapacks/matteo_tweaks/README.md` (panoramica, cartelle, condizioni di caricamento, quando hanno effetto le modifiche) e un `readme.md` in ogni cartella di `data/`. Parti attuali: lune di sangue (Enhanced Celestials), artefatti nelle casse delle strutture modded (nomi corretti nella 0.6.0: 148 casse, vedi sotto), Ars Nouveau nei vasi di Botany Pots, pesce cotto di Starcatcher, Berserker nelle fortezze di YUNG's (0.6.0, preparato). Le parti in lavorazione sono nei file delle versioni in corso (`../lavoro/versioni/`: 0.6.0 correzioni ed esperienza, 0.6.1 vasi, 0.6.2 mercato).
 
 - **Caricamento automatico in tutti i mondi** ✅: **Paxi** (vedi 0301). I datapack vanno in `config/paxi/datapacks/`; l'ordine si fissa in `config/paxi/datapack_load_order.json` (facoltativo). Verificato nel codice: Paxi li registra come pacchetti obbligatori, quindi valgono anche alla creazione del mondo
+- **Artefatti nelle casse** (corretti nella 0.6.0; log del 21/10 senza nomi di cassa inesistenti, l'apertura delle casse è una prova nel tempo): 15 modificatori, uno per livello di rarità, con una cassa per struttura (non tutte, per non riempire ogni barile). I nomi sono verificati sull'inventario e sui file delle mod; **le casse escluse sono elencate**, struttura per struttura, nella scheda `../mod-knowledge/artifacts.md`, che porta anche le quattro strutture di Dungeons and Taverns con tesoro «vault», collegate il 19/10 (`../lavoro/versioni/v0.6.0.md`, sezione 3).
+- **Berserker nelle fortezze di YUNG's** (0.6.0, preparato; prova nel tempo): l'etichetta `data/cataclysm/tags/worldgen/structure/berserker_spawn.json` aggiunge `betterfortresses:fortress` (con `required: false`: senza YUNG's non dà errore). Vale solo per le fortezze generate **dopo**; prova: `/locate structure betterfortresses:fortress`, poi cercare i Berserker infuocati. Spiegazione nel `readme.md` della cartella.
 - **Lune di sangue** (deciso 16/10/2026; dalla 0.5.1 con Enhanced Celestials 2): più rare (peso 5 invece di 10 nel calendario, obiettivo circa 3 ogni 100 giorni), mostri ×2; super luna ×4 (datapack `matteo_tweaks`). Gli effetti nuovi di EC2 (mostri più vicini, assedio ai villaggi) restano attivi. Altre leve di difficoltà se servisse: pesi di Mutant Monsters, Born In Configuration, `invader_spawn_rules` di Apotheosis
 
 ## Impostazioni decise per le mod
 
-Non sono ancora file del pack: vanno impostate a mano o entreranno come file di config (piano in `../lavoro/0501-piano.md`).
+Decisioni prese che non sono ancora file del pack. Quelle che diventano file entrano con la versione indicata (dettaglio e chiavi: `../lavoro/versioni/` e le schede in `../mod-knowledge/`).
 
-- **Difficoltà** (si sommano World Tier ed Elites di Apotheosis, mod di boss e buff permanenti di Cataclysm Delight):
-  - World Tier di Apotheosis (si sceglie in gioco) + datapack per i Tier Augments
-  - Config di Cataclysm
-  - Born in Chaos: Born In Configuration, oppure la gamerule `naughtinessMechanics` per disattivare il Krampus
-  - In Control! ed Enhanced AI sono state scartate nel round del 17/10 (`../lavoro/0602-mod-scartate.md`): da rivalutare solo se la difficoltà non bastasse
-- **Impostazioni video** (Minecraft, Sodium, Iris): **nessun file nel pack**, decisione dell'utente del 19/10/2026: si regolano a seconda del PC. Sodium di serie è già impostato per le prestazioni e in parte si adatta da solo (verificato nel codice della 0.8.13: thread per costruire i chunk = processori meno 6, da 1 a 10, cioè 10 su un Ryzen 7 9700X; correzioni automatiche per alcuni driver NVIDIA, AMD e Intel; contesto OpenGL "senza errori" solo se la scheda lo supporta). Iris non regola niente da sola: la qualità si sceglie dentro ogni pacchetto di shader (profili)
-- **Carry On**: `pickupAllBlocks = true` per prendere in mano anche i blocchi normali (di default solo quelli con inventario o macchinari). La lista nera di default esclude già tutto Create, Ender Storage, Enchantment Industry e alcuni generatori di Mekanism (wind, heat)
-- **FallingTree**: abbatte l'albero intero, stesso principio del vein mining → valutare l'opzione che lo attiva solo da accovacciati
-- **Zaini**: Sophisticated e Traveler's aprono entrambi con **B** → cambiare il tasto di uno (es. Sophisticated su N). Traveler's: `allowShulkerBoxes = true` se si vogliono shulker box o zaini Sophisticated al suo interno
-- **Inventory Essentials**: `enableShiftDrag = false` (doppione di Mouse Tweaks)
-- **Artifacts** (`config/artifacts/general.toml`, sezione `[slots]`): `enableAccessoriesCompat = false`, lasciare `enableCuriosCompat = true`, **prima di creare il mondo**. Così Artifacts e Ars Nouveau condividono un'unica interfaccia Curios, non si possono indossare due copie dello stesso artefatto (con entrambe attive gli slot sono doppi e alcuni bonus si sommerebbero) e Artifacts non passa mai dal bug di Accessories. Non aggiungere l'Accessories Compatibility Layer. `artifactRarity` (default 1.0) regola la frequenza degli artefatti nel bottino: utile con tante mod di strutture
-- **Slot Curios contesi**: Ars Nouveau e Artifacts usano entrambe testa, collana e cintura (1 slot ciascuno). Se diventano stretti, si possono aumentare con un file di slot Curios nel datapack del pack (da verificare il formato)
-- **Subtle Effects**: se le increspature della pioggia compaiono doppie con Particle Rain, disattivare `rainWaterRipples`
-- **Sound Physics Remastered**: costa un po' di CPU; se pesa, abbassarne la qualità
-- **Tasto C**: Psi (tasto principale) e Ars Nouveau (apri libro) usano entrambi **C** → cambiarne uno (Controlling aiuta a trovare i conflitti)
-- **Frantumatore di Occultism**: lasciato con i moltiplicatori di default (fino a 6 polveri per minerale con il Marid), **decisione dell'utente**: non modificarlo
-- **Magazzino dimensionale di Occultism**: convive con Tom's Simple Storage (accettato: si sblocca con i rituali)
-- **Akashic Tome**: lista dei nomi di libri ammessi, se qualche libro non viene riconosciuto
+**Preso il 19/10/2026, provato il 21/10** (nel pack dalla 0.6.0, vedi la tabella dei file sopra): Artifacts solo con Curios (un'unica interfaccia con Ars Nouveau, niente doppi slot, niente bug di Accessories; **non aggiungere l'Accessories Compatibility Layer**); Carry On che prende in mano anche i blocchi normali; Inventory Essentials senza trascinamento con Shift; FallingTree solo da accovacciati. In gioco restano **tre menu** per indossare oggetti (Curios, Accessories standard, Aether): Matteo ha deciso il 21/10 di lasciarli così (tema `../theme-knowledge/accessori.md`).
 
-## Config previste per la 0.6.0
+**Deciso, senza file**: Traveler's Backpack lascia le shulker box fuori dallo zaino (`allowShulkerBoxes = false`, di serie); Every Compat **tiene tutte le varianti e tutti i legni** (nessuna lista nera: decisione del 19/10, scheda `../mod-knowledge/every-compat.md`). Niente `RUN_ONCE` (decisione del 19/10, sera): la generazione resta quella di serie, nessun file di config di Every Compat nel pack.
 
-- **Every Compat**: spegnere i moduli che non servono; tenere Handcrafted, Macaw's ×4, credenze di FD, Storage Drawers, finestre di Create, Rechiseled, alveari di Friends & Foes, Twilight Forest, Regions Unexplored, Botany Pots. Va decisa prima di costruire molto: togliere un modulo cancella i blocchi già creati. Con la config di serie crea il 40% dei blocchi del pack e il modulo di Rechiseled è il più pesante (bug B22): decidere se tenerlo.
-- **Jaden's Nether Expansion** (`config/netherexp-startup.toml`, sezione `packSettings`, serve riavvio), solo come paracadute se il Nether nuovo desse problemi: `improvedNetherBiomeSource = false` (disposizione dei biomi vanilla), `netherWorldGenOverhaul = false` (altezza vanilla).
-- **Artifacts**: l'impostazione decisa sopra (solo Curios) diventa un file del pack.
-- **Moog's Nether Structures**: niente da fare. La sostituzione della fortezza vanilla con la sua mega-fortezza è spenta di serie e deve restare così (la fortezza la rifà YUNG's).
-- **Sparse Structures**: regolazioni per struttura dopo il mondo di prova.
-- **Cognition**: lasciare `AllowedFluids` com'è.
+**Decisioni che restano a mano o di principio**:
+- **Difficoltà** (si sommano World Tier ed Elites di Apotheosis, mod di boss e buff permanenti di Cataclysm Delight): World Tier di Apotheosis (si sceglie in gioco) + datapack per i Tier Augments; config di Cataclysm; Born in Chaos: Born In Configuration, oppure la gamerule `naughtinessMechanics` per disattivare il Krampus. In Control! ed Enhanced AI sono state scartate nel round del 17/10 (`../lavoro/0602-mod-scartate.md`): da rivalutare solo se la difficoltà non bastasse. Tema aperto in `../lavoro/0503-temi-aperti.md`.
+- **Impostazioni video** (Minecraft, Sodium, Iris): **nessun file nel pack**, decisione dell'utente del 19/10/2026: si regolano a seconda del PC. Sodium di serie è già impostato per le prestazioni e in parte si adatta da solo; Iris non regola niente da sola, la qualità si sceglie nel profilo di ogni pacchetto di shader (schede `sodium`, `iris`).
+- **Tasti in conflitto**: Sophisticated e Traveler's aprono entrambi con **B**, Psi e Ars Nouveau usano entrambi **C**: si cambiano a mano nelle impostazioni di Minecraft (Controlling aiuta a trovare i conflitti). Tema aperto in `0503`.
+- **Slot Curios contesi**: Ars Nouveau e Artifacts usano entrambe testa, collana e cintura (1 slot ciascuno). Se diventano stretti, si possono aumentare con un file di slot Curios nel datapack (formato da verificare). `artifactRarity` di Artifacts (default 1.0) regola la frequenza degli artefatti nel bottino: utile con tante mod di strutture.
+- **Frantumatore di Occultism**: lasciato con i moltiplicatori di default (fino a 6 polveri per minerale con il Marid), **decisione dell'utente**: non modificarlo.
+- **Magazzino dimensionale di Occultism**: convive con Tom's Simple Storage (accettato: si sblocca con i rituali).
+- **Akashic Tome**: lista dei nomi di libri ammessi, se qualche libro non viene riconosciuto.
+- **Subtle Effects** e **Sound Physics Remastered**: si toccano solo se in gioco danno problemi (increspature doppie con Particle Rain, CPU): chiavi nelle schede.
+- **Jaden's Nether Expansion**, **Moog's Nether Structures**, **Cognition**: nessun file, config di serie (motivi nelle schede e in `v0.6.0.md`).
+- **Sparse Structures**: regolazioni struttura per struttura dopo il mondo di prova (tappa 6).
