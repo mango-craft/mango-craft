@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "culturaldelights:wild_cucumbers"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "culturaldelights:wild_cucumbers",
+  "input": {
+    "item": "culturaldelights:wild_cucumbers"
+  }
+}

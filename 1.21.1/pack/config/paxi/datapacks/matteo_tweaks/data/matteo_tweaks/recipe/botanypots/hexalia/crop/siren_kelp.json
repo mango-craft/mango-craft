@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:siren_kelp"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:siren_kelp",
+  "input": {
+    "item": "hexalia:siren_kelp"
+  },
+  "soil": {
+    "tag": "botanypots:soil/water"
+  }
+}

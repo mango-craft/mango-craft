@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "aethersdelight:parsnip_crop"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "aethersdelight:parsnip_crop",
+  "input": {
+    "item": "aethersdelight:parsnip"
+  }
+}

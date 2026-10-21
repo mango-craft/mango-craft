@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "aethersdelight:peppermint_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "aethersdelight:peppermint_bush",
+  "input": {
+    "item": "aethersdelight:peppermint_bush_stem"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "aethersdelight:peppermint_leaf",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

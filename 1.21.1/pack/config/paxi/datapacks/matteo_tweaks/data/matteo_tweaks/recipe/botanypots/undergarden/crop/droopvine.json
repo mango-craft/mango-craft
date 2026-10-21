@@ -1,0 +1,31 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "undergarden:droopvine"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "undergarden:droopvine",
+  "input": {
+    "item": "undergarden:droopvine_item"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "undergarden:droopvine_item",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

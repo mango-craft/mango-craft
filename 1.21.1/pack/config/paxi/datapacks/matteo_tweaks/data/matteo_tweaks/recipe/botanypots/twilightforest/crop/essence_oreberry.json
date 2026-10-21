@@ -1,0 +1,24 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "twilightforest:essence_oreberry"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "twilightforest:essence_oreberry",
+  "input": {
+    "item": "twilightforest:essence_oreberry"
+  },
+  "soil": {
+    "tag": "botanypots:soil/moss"
+  },
+  "drops": [
+    {
+      "type": "botanypots:loot_table",
+      "table_id": "twilightforest:blocks/essence_berry_bush_berries"
+    }
+  ]
+}

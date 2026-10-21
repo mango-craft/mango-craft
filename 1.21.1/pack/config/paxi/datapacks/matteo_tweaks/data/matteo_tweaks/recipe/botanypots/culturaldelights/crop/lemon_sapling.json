@@ -1,0 +1,42 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "culturaldelights:lemon_sapling"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "culturaldelights:lemon_sapling",
+  "input": {
+    "item": "culturaldelights:lemon_sapling"
+  },
+  "grow_time": 2400,
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "culturaldelights:lemon_log",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "culturaldelights:lemon",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "culturaldelights:lemon_sapling",
+            "count": 1
+          },
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

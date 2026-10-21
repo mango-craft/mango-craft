@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:flowering_gloopy_pile"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:flowering_gloopy_pile",
+  "input": {
+    "item": "unusualend:flowering_gloopy_pile"
+  }
+}

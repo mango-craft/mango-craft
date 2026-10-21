@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "endersdelight:amberveil_mushroom"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "endersdelight:amberveil_mushroom",
+  "input": {
+    "item": "endersdelight:amberveil"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  }
+}

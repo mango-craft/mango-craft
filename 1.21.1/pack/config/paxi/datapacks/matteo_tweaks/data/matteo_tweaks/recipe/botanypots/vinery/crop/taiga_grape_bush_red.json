@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "vinery:taiga_grape_bush_red"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "vinery:taiga_grape_bush_red",
+  "input": {
+    "item": "vinery:taiga_grape_seeds_red"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "vinery:taiga_grapes_red",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

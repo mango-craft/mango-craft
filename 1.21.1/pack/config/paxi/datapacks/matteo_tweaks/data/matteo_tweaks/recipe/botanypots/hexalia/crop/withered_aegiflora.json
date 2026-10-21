@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:withered_aegiflora"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:withered_aegiflora",
+  "input": {
+    "item": "hexalia:withered_aegiflora"
+  }
+}

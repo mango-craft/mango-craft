@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:spongekin_sprout"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:spongekin_sprout",
+  "input": {
+    "item": "bountifulfares:spongekin_sprout"
+  },
+  "soil": {
+    "tag": "botanypots:soil/water"
+  }
+}

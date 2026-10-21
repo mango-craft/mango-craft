@@ -109,3 +109,13 @@ Per trovare i semi che non hanno ancora una ricetta, Botany Pots ha i comandi `/
 ## Nota su Ars Elemental
 
 Ars Elemental contiene già un file per far crescere l'archwood giallo nei vasi, ma è scritto nel formato vecchio di Botany Pots e controlla una mod chiamata `botany_pots` (il nome giusto è `botanypots`). Quindi non si carica mai e non va in conflitto con nulla. L'alberello giallo è coperto da Botany Trees, il Flashpine da questa cartella.
+
+## Le altre mod (0.6.1): file generati
+
+Le cartelle con il nome di una mod (`hexalia/`, `undergarden/`, `bountifulfares/`…) contengono **colture e terreni di tutte le altre mod del pack**, che Botany Pots non conosce: **241 colture e 18 terreni**. Non si scrivono a mano: li genera `scripts/vasi_genera.py` a partire da `1.21.1/data/vasi/copertura.json` (le piante e una bozza di ricetta per ognuna) e `1.21.1/data/vasi/aggiunte.json` (terreni, colture a mano, esclusioni). A ogni esecuzione le cartelle delle mod si cancellano e si riscrivono; `crop/` e `soil/` qui sopra (Ars Nouveau) non si toccano.
+
+- **Condizioni**: ogni file si carica solo se il suo blocco esiste (`bookshelf:block_exists`), quindi togliere una mod non dà errori.
+- **Bilanciamento**: crescita di serie di Botany Pots (1200 tick; 2400 per gli alberelli), raccolto uguale a quello della pianta raccolta a mano; terreni speciali con bonus come la terra ricca di Farmer's Delight (+15%: `growth_modifier` 0,15) dove la mod ha una terra ricca; nessuna scorciatoia per le piante magiche (fagioli magici di Cultural Delights e di Twilight Forest esclusi).
+- **Terreni**: i terreni "di terra" sono anche nell'etichetta `botanypots:soil/dirt` (`data/botanypots/tags/item/soil/dirt.json`, voci `required: false`), così le colture di terra li accettano.
+- **Non ci sono**: gli alberi di Bountiful Fares (si copiano dal sorgente di Botany Trees), le tre piante su graticcio di Bountiful Fares, le 8 piante di Regions Unexplored con i nomi vecchi (le copre già Botany Pots, se gli alias funzionano), Vinery `grapevine_stem` e le alghe di lava di Nether Depths. Il motivo di ogni esclusione è in `1.21.1/lavoro/versioni/v0.6.1.md`.
+- **Roaster's Delight** (sorgente chiuso): le 5 colture sono scritte con i nomi letti dall'inventario e il seme dedotto dal nome; da controllare con `/botanypots debug check_crops`.

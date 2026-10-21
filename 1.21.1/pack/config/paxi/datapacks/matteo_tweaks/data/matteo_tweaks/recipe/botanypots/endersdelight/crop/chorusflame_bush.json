@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "endersdelight:chorusflame_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "endersdelight:chorusflame_bush",
+  "input": {
+    "item": "endersdelight:chorusflame"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  }
+}

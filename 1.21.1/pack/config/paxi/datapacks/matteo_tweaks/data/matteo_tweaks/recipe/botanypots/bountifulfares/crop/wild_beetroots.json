@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:wild_beetroots"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:wild_beetroots",
+  "input": {
+    "item": "bountifulfares:wild_beetroots"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "deep_aether:tall_golden_grass"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "deep_aether:tall_golden_grass",
+  "input": {
+    "item": "deep_aether:tall_golden_grass"
+  }
+}

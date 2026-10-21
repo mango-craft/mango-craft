@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:wild_mandrake"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:wild_mandrake",
+  "input": {
+    "item": "hexalia:wild_mandrake"
+  }
+}

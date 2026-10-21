@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:leeks"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:leeks",
+  "input": {
+    "item": "bountifulfares:leek_seeds"
+  }
+}

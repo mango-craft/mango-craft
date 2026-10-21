@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "undergarden:tall_deepturf"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "undergarden:tall_deepturf",
+  "input": {
+    "item": "undergarden:tall_deepturf"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:gloopilon_bulb"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:gloopilon_bulb",
+  "input": {
+    "item": "unusualend:gloopilon_seeds"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "unusualend:gloopilon_slice",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

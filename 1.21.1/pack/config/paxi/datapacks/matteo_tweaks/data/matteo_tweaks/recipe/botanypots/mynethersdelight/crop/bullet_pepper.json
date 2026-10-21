@@ -1,0 +1,40 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "mynethersdelight:bullet_pepper"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "mynethersdelight:bullet_pepper",
+  "input": {
+    "item": "mynethersdelight:bullet_pepper"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:nylium"
+      },
+      {
+        "tag": "botanypots:soil/nether"
+      }
+    ]
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "mynethersdelight:bullet_pepper",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

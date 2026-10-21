@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "herbalbrews:hibiscus"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "herbalbrews:hibiscus",
+  "input": {
+    "item": "herbalbrews:hibiscus"
+  }
+}

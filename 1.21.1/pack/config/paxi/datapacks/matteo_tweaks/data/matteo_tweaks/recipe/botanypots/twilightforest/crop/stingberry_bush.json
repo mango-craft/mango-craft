@@ -1,0 +1,33 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "twilightforest:stingberry_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "twilightforest:stingberry_bush",
+  "input": {
+    "item": "twilightforest:stingberry_bush"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:nylium"
+      },
+      {
+        "tag": "botanypots:soil/nether"
+      }
+    ]
+  },
+  "drops": [
+    {
+      "type": "botanypots:loot_table",
+      "table_id": "twilightforest:blocks/stingberry_bush_berries"
+    }
+  ]
+}

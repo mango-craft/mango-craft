@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "deep_aether:echaisy"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "deep_aether:echaisy",
+  "input": {
+    "item": "deep_aether:echaisy"
+  }
+}

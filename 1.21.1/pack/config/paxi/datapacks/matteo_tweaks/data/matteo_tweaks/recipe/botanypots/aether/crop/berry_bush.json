@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "aether:berry_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "aether:berry_bush",
+  "input": {
+    "item": "aether:berry_bush_stem"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "aether:blue_berry",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

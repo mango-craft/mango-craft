@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexerei:willow_vines"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexerei:willow_vines",
+  "input": {
+    "item": "hexerei:willow_vines"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  }
+}

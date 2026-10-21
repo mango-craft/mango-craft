@@ -1,0 +1,13 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "farm_and_charm:fertilized_farmland"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_soil",
+  "block": "farm_and_charm:fertilized_farmland",
+  "growth_modifier": 0.15
+}

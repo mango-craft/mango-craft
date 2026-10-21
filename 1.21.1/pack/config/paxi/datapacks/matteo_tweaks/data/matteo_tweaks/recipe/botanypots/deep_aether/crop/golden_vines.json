@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "deep_aether:golden_vines"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "deep_aether:golden_vines",
+  "input": {
+    "item": "deep_aether:goldenleaf_berries"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  }
+}

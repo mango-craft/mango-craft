@@ -1,0 +1,77 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aether:aether_dirt",
+      "required": false
+    },
+    {
+      "id": "aether:aether_farmland",
+      "required": false
+    },
+    {
+      "id": "aether:aether_grass_block",
+      "required": false
+    },
+    {
+      "id": "aether:enchanted_aether_grass_block",
+      "required": false
+    },
+    {
+      "id": "bountifulfares:grassy_dirt",
+      "required": false
+    },
+    {
+      "id": "deep_aether:aether_coarse_dirt",
+      "required": false
+    },
+    {
+      "id": "deep_aether:aether_moss_block",
+      "required": false
+    },
+    {
+      "id": "deep_aether:aether_mud",
+      "required": false
+    },
+    {
+      "id": "deep_aether:golden_heights_grass_block",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:fertilized_farmland",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:fertilized_soil",
+      "required": false
+    },
+    {
+      "id": "hexalia:infused_dirt",
+      "required": false
+    },
+    {
+      "id": "hexalia:infused_farmland",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:letios_compost",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:resurgent_soil",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:resurgent_soil_farmland",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:twilight_rich_soil",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:twilight_rich_soil_farmland",
+      "required": false
+    }
+  ]
+}

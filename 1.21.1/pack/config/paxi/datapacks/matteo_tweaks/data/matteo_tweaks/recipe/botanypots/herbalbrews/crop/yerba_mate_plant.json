@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "herbalbrews:yerba_mate_plant"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "herbalbrews:yerba_mate_plant",
+  "input": {
+    "item": "herbalbrews:yerba_mate_leaf"
+  }
+}

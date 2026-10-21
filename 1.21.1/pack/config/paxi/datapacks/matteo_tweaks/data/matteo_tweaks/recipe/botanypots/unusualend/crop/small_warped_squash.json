@@ -1,0 +1,43 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:small_warped_squash"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:small_warped_squash",
+  "input": {
+    "item": "unusualend:small_warped_squash"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "unusualend:warped_squash"
+    }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "unusualend:warped_squash_wedge",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "unusualend:warped_squash",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

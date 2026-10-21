@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "culturaldelights:wild_eggplants"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "culturaldelights:wild_eggplants",
+  "input": {
+    "item": "culturaldelights:wild_eggplants"
+  }
+}

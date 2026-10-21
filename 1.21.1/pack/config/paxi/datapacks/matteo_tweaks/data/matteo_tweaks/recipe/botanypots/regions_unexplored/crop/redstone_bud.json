@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "regions_unexplored:redstone_bud"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "regions_unexplored:redstone_bud",
+  "input": {
+    "item": "regions_unexplored:redstone_bud"
+  },
+  "soil": {
+    "tag": "botanypots:soil/moss"
+  }
+}

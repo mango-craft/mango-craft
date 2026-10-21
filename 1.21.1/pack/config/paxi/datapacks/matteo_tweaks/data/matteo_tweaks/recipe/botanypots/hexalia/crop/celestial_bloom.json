@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:celestial_bloom"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:celestial_bloom",
+  "input": {
+    "item": "hexalia:celestial_bloom"
+  }
+}

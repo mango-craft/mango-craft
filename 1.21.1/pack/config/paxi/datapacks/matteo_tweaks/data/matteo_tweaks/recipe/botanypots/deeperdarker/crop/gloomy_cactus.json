@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "deeperdarker:gloomy_cactus"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "deeperdarker:gloomy_cactus",
+  "input": {
+    "item": "deeperdarker:gloomy_cactus"
+  },
+  "soil": {
+    "tag": "botanypots:soil/sculk"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "twilightforest:blueberry_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "twilightforest:blueberry_bush",
+  "input": {
+    "item": "twilightforest:blueberry_bush"
+  },
+  "drops": [
+    {
+      "type": "botanypots:loot_table",
+      "table_id": "twilightforest:blocks/blueberry_bush_berries"
+    }
+  ]
+}

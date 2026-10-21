@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:wild_elderberry_vine"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:wild_elderberry_vine",
+  "input": {
+    "item": "bountifulfares:wild_elderberry_vine"
+  }
+}

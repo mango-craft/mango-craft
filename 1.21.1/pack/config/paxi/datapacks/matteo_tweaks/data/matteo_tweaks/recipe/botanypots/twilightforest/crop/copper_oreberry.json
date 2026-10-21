@@ -1,0 +1,24 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "twilightforest:copper_oreberry"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "twilightforest:copper_oreberry",
+  "input": {
+    "item": "twilightforest:copper_oreberry"
+  },
+  "soil": {
+    "tag": "botanypots:soil/moss"
+  },
+  "drops": [
+    {
+      "type": "botanypots:loot_table",
+      "table_id": "twilightforest:blocks/copper_oreberry_bush_berries"
+    }
+  ]
+}

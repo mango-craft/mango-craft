@@ -1,0 +1,34 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexerei:yellow_dock_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexerei:yellow_dock_bush",
+  "input": {
+    "item": "hexerei:yellow_dock_bush"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "hexerei:yellow_dock_leaves",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "hexerei:yellow_dock_flowers",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

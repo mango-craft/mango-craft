@@ -1,0 +1,31 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "endersdelight:voidpepper_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "endersdelight:voidpepper_bush",
+  "input": {
+    "item": "endersdelight:voidpepper"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "endersdelight:voidpepper",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

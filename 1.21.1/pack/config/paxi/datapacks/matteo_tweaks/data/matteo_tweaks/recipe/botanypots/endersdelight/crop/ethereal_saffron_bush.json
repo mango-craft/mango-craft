@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "endersdelight:ethereal_saffron_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "endersdelight:ethereal_saffron_bush",
+  "input": {
+    "item": "endersdelight:ethereal_saffron"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  }
+}

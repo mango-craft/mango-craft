@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "undergarden:mushroom_veil"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "undergarden:mushroom_veil",
+  "input": {
+    "item": "undergarden:mushroom_veil"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  }
+}

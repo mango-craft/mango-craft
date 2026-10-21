@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "farm_and_charm:lettuce_crop"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "farm_and_charm:lettuce_crop",
+  "input": {
+    "item": "farm_and_charm:lettuce_seeds"
+  }
+}

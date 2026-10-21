@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "culturaldelights:corn"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "culturaldelights:corn",
+  "input": {
+    "item": "culturaldelights:corn_kernels"
+  }
+}

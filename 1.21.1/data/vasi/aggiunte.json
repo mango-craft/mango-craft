@@ -1,0 +1,227 @@
+{
+  "_nota": "Aggiunte a mano per scripts/vasi_genera.py (0.6.1). 'terreni': un terreno per blocco ('terra': true = entra nell'etichetta botanypots:soil/dirt, così lo accettano le colture di terra; 'growth_modifier' come la terra ricca di Farmer's Delight, 0,15). 'colture': piante la cui bozza del 17/10 non aveva i nomi (Roaster's Delight, sorgente chiuso: nomi letti dall'inventario, seme dedotto dal nome, 'da_provare' = da controllare con /botanypots debug). 'esclusi': blocco -> motivo.",
+  "terreni": [
+    {
+      "mod": "twilight-delight",
+      "block": "twilightdelight:twilight_rich_soil",
+      "terra": true,
+      "growth_modifier": 0.15,
+      "nota": "terra ricca, come quella di Farmer's Delight (+15%)"
+    },
+    {
+      "mod": "twilight-delight",
+      "block": "twilightdelight:twilight_rich_soil_farmland",
+      "terra": true,
+      "growth_modifier": 0.15
+    },
+    {
+      "mod": "my-nethers-delight",
+      "block": "mynethersdelight:resurgent_soil",
+      "terra": true,
+      "growth_modifier": 0.15,
+      "nota": "terra del Nether in stile terra ricca"
+    },
+    {
+      "mod": "my-nethers-delight",
+      "block": "mynethersdelight:resurgent_soil_farmland",
+      "terra": true,
+      "growth_modifier": 0.15
+    },
+    {
+      "mod": "my-nethers-delight",
+      "block": "mynethersdelight:letios_compost",
+      "terra": true,
+      "nota": "compost del Nether, senza bonus"
+    },
+    {
+      "mod": "hexalia",
+      "block": "hexalia:infused_dirt",
+      "terra": true,
+      "growth_modifier": 0.15,
+      "nota": "nel tag minecraft:dirt"
+    },
+    {
+      "mod": "hexalia",
+      "block": "hexalia:infused_farmland",
+      "terra": true,
+      "growth_modifier": 0.15,
+      "nota": "serve anche al saltsprout"
+    },
+    {
+      "mod": "lets-do-farm-charm",
+      "block": "farm_and_charm:fertilized_soil",
+      "terra": true,
+      "growth_modifier": 0.15
+    },
+    {
+      "mod": "lets-do-farm-charm",
+      "block": "farm_and_charm:fertilized_farmland",
+      "terra": true,
+      "growth_modifier": 0.15
+    },
+    {
+      "mod": "lets-do-vinery",
+      "block": "vinery:loam",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "aether",
+      "block": "aether:aether_dirt",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "aether",
+      "block": "aether:aether_grass_block",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "aether",
+      "block": "aether:enchanted_aether_grass_block",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "aether",
+      "block": "aether:aether_farmland",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "deep-aether",
+      "block": "deep_aether:aether_mud",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "deep-aether",
+      "block": "deep_aether:aether_coarse_dirt",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "deep-aether",
+      "block": "deep_aether:aerglow_grass_block",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "deep-aether",
+      "block": "deep_aether:golden_heights_grass_block",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "deep-aether",
+      "block": "deep_aether:aether_moss_block",
+      "terra": true,
+      "nota": "facoltativo"
+    },
+    {
+      "mod": "bountiful-fares",
+      "block": "bountifulfares:grassy_dirt",
+      "terra": true,
+      "nota": "facoltativo, nel tag minecraft:dirt"
+    }
+  ],
+  "colture": [
+    {
+      "mod": "roasters-delight",
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "roasters_delight:coffee_plant"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "roasters_delight:coffee_plant",
+        "input": {
+          "item": "roasters_delight:unroasted_coffee_bean"
+        }
+      }
+    },
+    {
+      "mod": "roasters-delight",
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "roasters_delight:tea_bush"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "roasters_delight:tea_bush",
+        "input": {
+          "item": "roasters_delight:tea_seeds"
+        }
+      }
+    },
+    {
+      "mod": "roasters-delight",
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "roasters_delight:chamomile_crop"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "roasters_delight:chamomile_crop",
+        "input": {
+          "item": "roasters_delight:chamomile_seeds"
+        }
+      }
+    },
+    {
+      "mod": "roasters-delight",
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "roasters_delight:mint_crop"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "roasters_delight:mint_crop",
+        "input": {
+          "item": "roasters_delight:mint_seeds"
+        }
+      }
+    },
+    {
+      "mod": "roasters-delight",
+      "da_provare": true,
+      "ricetta": {
+        "bookshelf:load_conditions": [
+          {
+            "type": "bookshelf:block_exists",
+            "values": [
+              "roasters_delight:matcha_crop"
+            ]
+          }
+        ],
+        "type": "botanypots:block_derived_crop",
+        "block": "roasters_delight:matcha_crop",
+        "input": {
+          "item": "roasters_delight:matcha_seeds"
+        }
+      }
+    }
+  ],
+  "esclusi": {}
+}

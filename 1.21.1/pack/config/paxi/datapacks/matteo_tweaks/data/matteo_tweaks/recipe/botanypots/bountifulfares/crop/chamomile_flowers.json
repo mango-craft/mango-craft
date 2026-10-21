@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:chamomile_flowers"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:chamomile_flowers",
+  "input": {
+    "item": "bountifulfares:chamomile_flowers"
+  }
+}

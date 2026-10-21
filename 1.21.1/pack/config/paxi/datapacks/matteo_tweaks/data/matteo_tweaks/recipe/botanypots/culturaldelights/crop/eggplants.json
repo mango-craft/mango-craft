@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "culturaldelights:eggplants"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "culturaldelights:eggplants",
+  "input": {
+    "item": "culturaldelights:eggplant_seeds"
+  }
+}

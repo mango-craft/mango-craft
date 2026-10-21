@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "reactive:flower_vine"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "reactive:flower_vine",
+  "input": {
+    "item": "reactive:flower_vine"
+  }
+}
