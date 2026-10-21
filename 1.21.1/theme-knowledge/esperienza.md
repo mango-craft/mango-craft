@@ -1,6 +1,6 @@
 # Tema: esperienza liquida e deposito
 
-Aggiornata il 19/10/2026 · mod coinvolte: Create: Enchantment Industry, Cognition (ex Experience Obelisk), Sophisticated Backpacks/Core, XP Tome, Supplementaries · fonti: sorgenti di Create: Enchantment Industry 2.4.2, Cognition 2.4.13, Sophisticated Core, NeoForge (`Tags.java`), inventario del pack. Ricerca: `../lavoro/versioni/v0.2.3.md` (analisi del 17/10); materiale grezzo `../../ai-agents/stage/2026-10-17_1.21.1-v0.2.3_esperienza/`.
+Aggiornata il 21/10/2026 · mod coinvolte: Create: Enchantment Industry, Cognition (ex Experience Obelisk), Sophisticated Backpacks/Core, XP Tome, Supplementaries · fonti: sorgenti di Create: Enchantment Industry 2.4.2, Cognition 2.4.13, Sophisticated Core, NeoForge (`Tags.java`), Create (ramo `mc1.21.1/dev`, commit `7ff2760`, letto il 21/10: `BasinBlockEntity` e ricette generate del Mescolatore), inventario del pack. Ricerca: `../lavoro/versioni/v0.2.3.md` (analisi del 17/10); materiale grezzo `../../ai-agents/stage/2026-10-17_1.21.1-v0.2.3_esperienza/`.
 
 ## Cose da non rompere
 
@@ -19,7 +19,7 @@ Aggiornata il 19/10/2026 · mod coinvolte: Create: Enchantment Industry, Cogniti
 
 Lo standard NeoForge è 20 mB per punto (`Tags.java`). I serbatoi di Mekanism tengono un solo liquido alla volta: i due liquidi non si mescolano per sbaglio. **Experience Hatch** di Create con liquidi "stranieri": con la quantità impostata su "tutto" ogni click deposita solo 1/20 dell'esperienza (si perde al massimo l'arrotondamento): usare quantità fisse (10–1000 punti).
 
-## File del datapack (versione 0.6.0, `../lavoro/versioni/v0.6.0.md`)
+## File del datapack (versione 0.6.3, `../lavoro/versioni/v0.6.3.md`; spostati dalla 0.6.0 il 21/10)
 
 1. **Unità del liquido di Cognition per Create** (lo fa capire all'Experience Hatch e alle parti di Create che leggono questa tabella; non all'incantatore): `data/create_enchantment_industry/data_maps/fluid/unit/experience.json` con `{"values":{"cognition:cognitium_source":20}}`. La tabella esiste nel jar (`create_enchantment_industry:unit/experience`) e include già 20 per Sophisticated, Mob Grinding Utils, Just Dire Things, Ender IO, Industrial Foregoing, PneumaticCraft, Cyclic, Reliquary e 25 per CoFH: il nostro file si aggiunge.
 2. **Conversione nel Mescolatore** senza perdite, nelle due direzioni (formato di Create 6 per la 1.21.1):
@@ -29,7 +29,7 @@ Lo standard NeoForge è 20 mB per punto (`Tags.java`). I serbatoi di Mekanism te
     "ingredients":[{"type":"neoforge:single","amount":50,"fluid":"create_enchantment_industry:experience"}],
     "results":[{"amount":1000,"id":"cognition:cognitium_source"}]}
    ```
-   e la ricetta inversa (1000 mB di cognitium → 50 mB di esperienza di Create). Le quantità vanno controllate rispetto alla capienza della bacinella.
+   e la ricetta inversa (1000 mB di cognitium → 50 mB di esperienza di Create). Capienza della bacinella verificata il 21/10 nel sorgente di Create: **2 serbatoi di ingresso e 2 di uscita da 1000 mB ciascuno**, quindi 1000 mB di cognitium ci stanno esattamente (50 punti, il lotto più grande possibile). Formato dei liquidi nelle ricette del Mescolatore: ingredienti `{"type":"neoforge:single","amount":…,"fluid":…}`, risultati `{"amount":…,"id":…}`.
 
 ## Schema della base
 

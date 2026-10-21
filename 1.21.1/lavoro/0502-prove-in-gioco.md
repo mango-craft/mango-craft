@@ -64,5 +64,5 @@ Obbligatorio prima del mondo vero (deciso il 17/10/2026, `versioni/v0.2.3.md`). 
 - [ ] **Densità delle strutture**: regolarla con Sparse Structures struttura per struttura invece di togliere mod (`../docs/0302-config.md`)
 - [ ] **Jaden's Nether Expansion**: Nether più alto e biomi; paracadute nella sua config (`../docs/0302-config.md`)
 - [ ] **Vasi**: comandi di debug di Botany Pots (scheda `../mod-knowledge/botany-pots.md`; prove in `versioni/v0.6.1.md`)
-- [ ] **Esperienza**: conversione Create ↔ Cognition avanti e indietro, Experience Hatch su un serbatoio di Mekanism (tema `../theme-knowledge/esperienza.md`; prove in `versioni/v0.6.0.md`)
+- [ ] **Esperienza**: conversione Create ↔ Cognition avanti e indietro, Experience Hatch su un serbatoio di Mekanism (tema `../theme-knowledge/esperienza.md`; prove in `versioni/v0.6.3.md`)
 - [ ] **Every Compat**: quanti blocchi crea e quanto allunga l'avvio, prima di costruire molto (toglierla cancella i blocchi creati)

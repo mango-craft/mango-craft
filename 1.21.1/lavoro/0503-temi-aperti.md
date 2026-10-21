@@ -2,7 +2,7 @@
 
 Gli argomenti del modpack non ancora affrontati, o rimasti a metà, e dove si trovano le mod in valutazione. Documento vivo: quando un tema entra in una tappa, il lavoro passa nel piano (`0501-piano.md`) e qui resta un rimando; quando è chiuso si toglie, con una riga nelle decisioni del file della versione (`versioni/`).
 
-Ultimo aggiornamento: 19/10/2026.
+Ultimo aggiornamento: 21/10/2026.
 
 ## 1. Mod in valutazione
 
@@ -14,13 +14,13 @@ Non si ripetono qui, per non avere due elenchi da tenere allineati:
 
 | Tema | Cosa manca | Dove se ne parla già | Quando (proposta) |
 |---|---|---|---|
-| **Achievement e progressione** (nuovo, 19/10) | Schermata dei progressi più comoda, eventuale scheda di traguardi del pack | sezione 3; tema `../theme-knowledge/achievement.md`; ricerca in `versioni/v0.6.0.md` | Da decidere (la prova della schermata si può fare quando vuoi) |
+| **Achievement e progressione** (nuovo, 19/10) | Schermata dei progressi più comoda, eventuale scheda di traguardi del pack | sezione 3; tema `../theme-knowledge/achievement.md`; ricerca in `versioni/v0.6.0.md` | Proposta del 21/10: 0.7.0 (schermata) e 0.7.1 (scheda), `0501-piano.md` |
 | **Difficoltà** | Le fonti di difficoltà non sono mai state bilanciate insieme: World Tier ed Elites di Apotheosis, config di Cataclysm, buff permanenti di Cataclysm Delight, Born in Chaos (Krampus), lune di sangue. In più va deciso se tenere i due effetti nuovi della luna di sangue di Enhanced Celestials 2 (mostri più vicini, assedio di zombi ai villaggi) | `../docs/0302-config.md`, Impostazioni decise; readme delle lune nel datapack | Mondo di prova (tappa 6); la decisione sulle lune anche prima |
 | **Tasti in conflitto** | Sophisticated e Traveler's aprono entrambi con B, Psi e Ars Nouveau usano entrambi C. I tasti stanno in `options.txt`, che il pack non porta (decisione del 19/10): vanno cambiati a mano, serve solo un elenco dei tasti consigliati | `0302`, Impostazioni decise | Prima del mondo vero |
 | **Memoria e prestazioni** | Crash per memoria finita con 8 GB (B33); Every Compat pesa il 40% dei blocchi (B22). Decisione del 19/10: Every Compat **tiene tutti i blocchi**, quindi il costo resta. Misurato nel log (19/10): la generazione delle sue risorse pesa 2,4 secondi su un ricaricamento di oltre 35, e `RUN_ONCE` (scartato la sera del 19/10) avrebbe tolto solo quelli. La leva principale è la memoria dell'istanza (12 GB, B33); dopo va rimisurato tutto (avvio, memoria) e, se serve, valutate altre ottimizzazioni | `../docs/0402-bug-report.md`, B22 e B33 | 0.6.0, poi mondo di prova |
-| **Aggiornamento delle mod prima della 1.0.0** | Le versioni sono quelle verificate tra il 16 e il 19/10. Non c'è un controllo automatico degli aggiornamenti: servirebbe un workflow che elenca le versioni nuove (senza installarle) e un giro di aggiornamenti prima del mondo vero. Ci rientra il ritorno all'ultimo NeoForge quando esce owo-lib 0.12.15.6 (B17) | `../docs/0303-note-tecniche.md`; `0502` (owo-lib) | Prima della 1.0.0 |
-| **Licenze da verificare** | La licenza di diverse mod (addon di Farmer's Delight, Let's Do, Botany Pots e altre) non è ancora stata controllata | Legenda di `../docs/0301-mod.md` | Prima della 1.0.0 |
-| **Slot degli accessori** | Ars Nouveau e Artifacts si contendono testa, collana e cintura (Curios); se gli slot diventano stretti si aumentano con un file nel datapack, formato da verificare. **Tre menu** dove indossare (Curios, menu standard di Accessories, menu dell'Aether; scoperto il 21/10): cosa fare per ridurli è da decidere, fatti nel tema `../theme-knowledge/accessori.md` | `0302`, Impostazioni decise | Mondo di prova |
+| **Aggiornamento delle mod prima della 1.0.0** | Le versioni sono quelle verificate tra il 16 e il 19/10. Non c'è un controllo automatico degli aggiornamenti: servirebbe un workflow che elenca le versioni nuove (senza installarle) e un giro di aggiornamenti prima del mondo vero. Ci rientra il ritorno all'ultimo NeoForge quando esce owo-lib 0.12.15.6 (B17) | `../docs/0303-note-tecniche.md`; `0502` (owo-lib) | Proposta del 21/10: 0.8.0, `0501-piano.md` |
+| **Licenze da verificare** | La licenza di diverse mod (addon di Farmer's Delight, Let's Do, Botany Pots e altre) non è ancora stata controllata | Legenda di `../docs/0301-mod.md` | Proposta del 21/10: 0.8.0, `0501-piano.md` |
+| **Slot degli accessori** | Ars Nouveau e Artifacts si contendono testa, collana e cintura (Curios); se gli slot diventano stretti si aumentano con un file nel datapack, formato da verificare. **Tre menu** dove indossare (Curios, menu standard di Accessories, menu dell'Aether; scoperto il 21/10): Matteo ha deciso di **lasciarli così** (21/10, `versioni/v0.6.0.md`); fatti nel tema `../theme-knowledge/accessori.md` | `0302`, Impostazioni decise | Mondo di prova |
 | **Lingua del gioco** | Non è stato deciso se giocare in italiano né cosa fare con le mod senza traduzione italiana (quante siano non è stato contato). Enhanced Celestials 2 le traduzioni le scaricherebbe da internet: spente nella 0.5.2 | `0302` (traduzioni di EC2) | Da chiarire |
 | **Guida del pack** | Ogni mod ha il suo manuale, ma il pack non ha una guida sua (come iniziare, cosa si collega a cosa). Si lega agli achievement | sezione 3 | Insieme agli achievement |
 
