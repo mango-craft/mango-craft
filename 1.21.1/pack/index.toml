@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "1fd49b100bdee47eadb4776511ae3b9f1dda6e916d58ef2dd1e0298f72fa3030"
+hash = "f2738b2b3e4255f2a24fdd3f929981e78ad4e4394ded4e780e4dd0afab786ce3"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/readme.md"
@@ -145,6 +145,42 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/ar
 hash = "9df2727e240a04077669f185e35d0876718042da148b0a4650a2d0ca9cbd7c09"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/readme.md"
+hash = "3c6e39730311d505ae11b804540cf20c1802e9bc9012e2f14915b9a01d3013cb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/apple.json"
+hash = "42a298b5ebd01eaff6708ee629463b7994680df4321add298e32c0335498b644"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/golden_apple.json"
+hash = "e92f76243b85e3b7436600f4e866538e5798960def4a4eda88bc0fed6b330bc4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/hoary_apple.json"
+hash = "85efa5ad171d399ab655bbedb365a1821f35118b43ec81fda0e1e51f8b7a97ad"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/lemon.json"
+hash = "2fdc5465a7b0cac530623fa452fad2a80dbb9f139a8664abba702a6ab2aca349"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/orange.json"
+hash = "a0c00afe7aeeca81a09b3f461e6b1d943189d9e188e4e1e4ef88bf003e9ed620"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/palm.json"
+hash = "534f890f627fdf8f69960e1698025c18013bb112fc815a8b356ab6c65035f83a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/plum.json"
+hash = "5232452c5b01563ef6297d33bbd59e79aa6e7490002d8950404bf8e8a825dfcd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/walnut.json"
+hash = "a89bf09aaf9eb668e0e68953086a46b9527bba513a21c47f52b572fc460c6ab7"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/crop/berry_bush.json"
 hash = "014286346181099699e3b3385dee12a00d1c15a6ea7cd5350e992a34677adfc7"
 
@@ -199,6 +235,42 @@ hash = "96526cda92f513eb9024fc3504502b1b4acdeb2e3376347386a500a10e8ca7be"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/wild_parsnip.json"
 hash = "5db1b1dcda041284b32b078723b5899abd06871c106cdea3e26111f611ba068d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/apple.json"
+hash = "d1592f0e1f6dcfc85ebc355bad03cecb079c1af9642173a2c7609b88b3186c6e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/golden_apple.json"
+hash = "74d8157d4a52914e2113a4dab28de6d66e24535176423ec5b88ef7198962aacc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/hoary_apple.json"
+hash = "a37d10f7b9de6fa5578f67063800bcf1382e1f750b278bca5836048f7debab19"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/lemon.json"
+hash = "4ecd3116c8afd1bf5b09b247dc141ea47cbef3c2d4363255e92c189cedbefaaa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/orange.json"
+hash = "c2f923619885d1835c615eb511600396c0b5bc429533647c2a2886f992cb7708"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/palm.json"
+hash = "08b4408d2133d85f9386ca06a1b3ac00d1a301d9514f48e0317322d1ff0fbc9e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/plum.json"
+hash = "b74d217a01e4fa410be5163b531c258b7294ab0c912c8c8154eadc10626f5230"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/walnut.json"
+hash = "ea0001b6ddc8cbbd83b7c3d311ff254a9947b0be0beac6f13bb76210cc668265"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/readme.md"
+hash = "733528b32689e3f6dfd6f4105e2db6274dad11dc43da4cb3d5fac0bb04fe700f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/ars_elemental/crop/sparkflower.json"
@@ -882,7 +954,7 @@ hash = "73696d3423cbcec6d59f0e1a5dff6202d52534b207f6ffc1d9c44d981800a0e4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/readme.md"
-hash = "a4f689147f589c9e3183ef1d82fb2acd6ab4d574e57150d23a0d235e3a201351"
+hash = "3ed383ed10f55d7493a790761b951f431faf4182fe9445c1c146f4b51a67672b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/blue_bioshroom.json"

@@ -8,6 +8,7 @@ terreno scritti da `vasi_genera.py` (e a mano) controlla nei jar:
 - il blocco esiste (file `blockstates/`, oppure voce di lingua);
 - il seme e i raccolti scritti a mano esistono (modello dell'oggetto, oppure voce di lingua);
 - il terreno ha un oggetto, e le voci dell'etichetta `botanypots:soil/dirt` esistono;
+- gli alberi di `alberi/` (copiati da Botany Trees): la loro tabella del bottino esiste nel datapack e i suoi oggetti nei jar;
 - per le colture senza raccolto scritto (Botany Pots lo ricava dalla tabella del bottino del blocco): la tabella
   esiste e, con il vaso **senza attrezzo** (impostazione predefinita di Botany Pots), dà almeno un oggetto.
   Le tabelle che chiedono le cesoie o un incantesimo non danno niente senza attrezzo: la coltura va scritta con
@@ -197,6 +198,18 @@ def voci(es: list, st, sv, note, out: set) -> None:
             out.add("tabella:" + str(e.get("value") or e.get("name")))
 
 
+def nomi_oggetto(x, out: set) -> None:
+    """Tutti gli oggetti nominati in una tabella del bottino."""
+    if isinstance(x, dict):
+        if x.get("type") == "minecraft:item" and "name" in x:
+            out.add(x["name"])
+        for v in x.values():
+            nomi_oggetto(v, out)
+    elif isinstance(x, list):
+        for v in x:
+            nomi_oggetto(v, out)
+
+
 def raccolto_senza_attrezzo(lt: dict, st, sv, note) -> set:
     out = set()
     for p in lt.get("pools", []):
@@ -213,7 +226,8 @@ def main() -> int:
     a = ap.parse_args()
 
     bp = a.pack / DP / "matteo_tweaks" / "recipe" / "botanypots"
-    colture = [(f, json.loads(f.read_text(encoding="utf-8"))) for f in sorted(bp.glob("**/crop/*.json"))]
+    colture = [(f, json.loads(f.read_text(encoding="utf-8"))) for f in sorted([*bp.glob("**/crop/*.json"), *bp.glob("alberi/**/*.json")])]
+    tabelle = a.pack / DP / "matteo_tweaks" / "loot_table"
     terreni = [(f, json.loads(f.read_text(encoding="utf-8"))) for f in sorted(bp.glob("**/soil/*.json"))]
     jar = Jar(a.mods)
     print(f"jar letti: {jar.n} · namespace: {len(jar.ns)}")
@@ -236,8 +250,20 @@ def main() -> int:
                     for it in dr["items"]:
                         if not jar.oggetto(it["result"]["id"]):
                             errori["raccolto scritto non trovato nei jar"].append(f"{nome}: {it['result']['id']}")
-                elif dr.get("type") == "botanypots:loot_table" and not jar.loot_per_id(dr["table_id"]):
-                    errori["tabella del bottino scritta non trovata"].append(f"{nome}: {dr['table_id']}")
+                elif dr.get("type") == "botanypots:loot_table":
+                    ns, p = dr["table_id"].split(":")
+                    if ns == "matteo_tweaks":  # tabella nostra (alberi copiati da Botany Trees): esiste, e i suoi oggetti pure
+                        tf = tabelle / f"{p}.json"
+                        if not tf.exists():
+                            errori["tabella del bottino nostra non trovata"].append(f"{nome}: {dr['table_id']}")
+                        else:
+                            ogg = set()
+                            nomi_oggetto(json.loads(tf.read_text(encoding="utf-8")), ogg)
+                            for o in sorted(ogg):
+                                if not jar.oggetto(o):
+                                    errori["oggetto di una tabella nostra non trovato nei jar"].append(f"{p}: {o}")
+                    elif not jar.loot_per_id(dr["table_id"]):
+                        errori["tabella del bottino scritta non trovata"].append(f"{nome}: {dr['table_id']}")
             continue
         n_derivate += 1
         lt = jar.loot(b)

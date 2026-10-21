@@ -117,5 +117,15 @@ Le cartelle con il nome di una mod (`hexalia/`, `undergarden/`, `bountifulfares/
 - **Condizioni**: ogni file si carica solo se il suo blocco esiste (`bookshelf:block_exists`), quindi togliere una mod non dà errori.
 - **Bilanciamento**: crescita di serie di Botany Pots (1200 tick; 2400 per gli alberelli), raccolto uguale a quello della pianta raccolta a mano; terreni speciali con bonus come la terra ricca di Farmer's Delight (+15%: `growth_modifier` 0,15) dove la mod ha una terra ricca; nessuna scorciatoia per le piante magiche (fagioli magici di Cultural Delights e di Twilight Forest esclusi).
 - **Terreni**: i terreni "di terra" sono anche nell'etichetta `botanypots:soil/dirt` (`data/botanypots/tags/item/soil/dirt.json`, voci `required: false`), così le colture di terra li accettano.
-- **Non ci sono**: gli alberi di Bountiful Fares (si copiano dal sorgente di Botany Trees), le tre piante su graticcio di Bountiful Fares, le 8 piante di Regions Unexplored con i nomi vecchi (le copre già Botany Pots, se gli alias funzionano), Vinery `grapevine_stem` e le alghe di lava di Nether Depths. Il motivo di ogni esclusione è in `1.21.1/lavoro/versioni/v0.6.1.md`.
+- **Alberi di Bountiful Fares**: stanno a parte in `alberi/` (non li tocca lo script), copiati da Botany Trees: vedi sotto.
+- **Non ci sono**: le tre piante su graticcio di Bountiful Fares, le 8 piante di Regions Unexplored con i nomi vecchi (le copre già Botany Pots, se gli alias funzionano), Vinery `grapevine_stem` e le alghe di lava di Nether Depths. Il motivo di ogni esclusione è in `1.21.1/lavoro/versioni/v0.6.1.md`.
 - **Roaster's Delight** (sorgente chiuso): le 5 colture sono scritte con i nomi letti dall'inventario e il seme dedotto dal nome; da controllare con `/botanypots debug check_crops`.
+
+## Alberi di Bountiful Fares (0.6.1): copiati da Botany Trees
+
+Gli 8 alberi da frutto di Bountiful Fares (mela, mela dorata, mela canuta, limone, arancia, palma, prugna, noce) nei vasi: `alberi/bountifulfares/<albero>.json`, con la tabella dei raccolti in `data/matteo_tweaks/loot_table/tree_drops/bountifulfares/<albero>.json` (tronchi, foglie con le cesoie, qualche alberello, il frutto).
+
+- **Fonte**: Botany Trees di Darkhax (`Darkhax-Minecraft/BotanyTrees`, ramo `1.21.1`, commit `eee0890` «Add support for Bountiful Fares», **dopo** la 21.1.7 che abbiamo nel pack), licenza **LGPL-2.1**. I file sono copiati così come sono; cambia solo il nome della tabella dei raccolti, che nel nostro datapack è `matteo_tweaks:tree_drops/bountifulfares/<albero>` (invece di `botanytrees:…`).
+- **Crescita**: 2400 tick, come gli altri alberi di Botany Trees. Come gli altri alberi di Botany Trees, le foglie si ottengono solo con le cesoie nello slot attrezzo.
+- **Condizione**: ogni file si carica solo se esiste il suo alberello (`bookshelf:block_exists`).
+- **Quando toglierli**: appena esce una versione di Botany Trees che supporta Bountiful Fares (dopo la 21.1.7; controllato su Modrinth il 22/10/2026). Se restano insieme, ogni alberello avrebbe **due** colture: si cancellano la cartella `alberi/` e `loot_table/tree_drops/`.

@@ -15,7 +15,8 @@ Cosa scrive (tutto sotto <pack>/config/paxi/datapacks/matteo_tweaks/data/):
                                                               li accettino (etichetta botanypots:soil/dirt)
 
 Le cartelle <mod> sono di proprietà dello script: a ogni esecuzione si cancellano e si riscrivono. Le cartelle
-`crop` e `soil` direttamente sotto botanypots/ sono scritte a mano (Ars Nouveau) e non si toccano.
+`crop` e `soil` direttamente sotto botanypots/ sono scritte a mano (Ars Nouveau) e `alberi/` contiene gli alberi di
+Bountiful Fares copiati da Botany Trees (con le loro tabelle in `loot_table/tree_drops/`): non si toccano.
 
 Si salta (con il motivo nel rapporto) ciò che non si può scrivere sicuro: blocco o seme che non esiste
 nell'inventario, pianta esclusa, terreno il cui blocco non ha un oggetto (Botany Pots non saprebbe cosa metterci).
@@ -133,7 +134,7 @@ def main() -> int:
     if not a.dry_run:
         if bp.exists():
             for d in bp.iterdir():
-                if d.is_dir() and d.name not in ("crop", "soil"):
+                if d.is_dir() and d.name not in ("crop", "soil", "alberi"):
                     shutil.rmtree(d)
         for blocco, ric in colture.items():
             ns, nome = blocco.split(":")
