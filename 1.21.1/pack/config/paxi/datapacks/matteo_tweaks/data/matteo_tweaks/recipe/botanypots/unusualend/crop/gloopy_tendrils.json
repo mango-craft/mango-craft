@@ -11,5 +11,18 @@
   "block": "unusualend:gloopy_tendrils",
   "input": {
     "item": "unusualend:gloopy_tendrils"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "unusualend:gloopy_tendrils",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
 }

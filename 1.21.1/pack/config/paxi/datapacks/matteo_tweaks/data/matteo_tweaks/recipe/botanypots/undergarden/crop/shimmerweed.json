@@ -11,5 +11,18 @@
   "block": "undergarden:shimmerweed",
   "input": {
     "item": "undergarden:shimmerweed"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "undergarden:shimmerweed",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -11,5 +11,18 @@
   "block": "undergarden:ashen_deepturf",
   "input": {
     "item": "undergarden:ashen_deepturf"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "undergarden:ashen_deepturf",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
 }

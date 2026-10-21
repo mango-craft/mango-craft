@@ -446,7 +446,7 @@ hash = "f80f83fc1fd5fe36cc367e2cf1924d7dad309c95931756cecf332ddb97e28f57"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/yagroot_vine.json"
-hash = "a8e5b1b5888cb28c32d8ca677763813b16d33a29793b0ccf12114d9c38b1d2bd"
+hash = "d873543ee2d998ac74ea3018da7140b5788aa08aa4f79f93ce1a3c875a718303"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aether_coarse_dirt.json"
@@ -806,7 +806,7 @@ hash = "e3795269f2f37852b4c44095fd139ffdd92b20102ddbef8e851d3794ca0f9759"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/willow_vines.json"
-hash = "2e285fa34744ac7e26b76861d46aaf5778d3528acacff77b37363f2967fb3ead"
+hash = "7bdd81095958b8bed92d58428825e61030e2c4a350f5e36b07537b0a43eb6c83"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/yellow_dock_bush.json"
@@ -1042,7 +1042,7 @@ hash = "505b1a4b96b671c7d2243763b666d32d3eb9e27d2b0d943fe26516ebea594682"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/ashen_deepturf.json"
-hash = "7f34027f4f734f8053f9bcc6f1cd0d79d7d2a934744a764ec37f79f8c12c8791"
+hash = "24989266173c3e523f897e56806908f0272c268c972560aafb09363aa5bd799c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/blisterberry_bush.json"
@@ -1058,7 +1058,7 @@ hash = "f22ca27284eda2791604673b54f079647b7282c80a1755fc80f26b993eb8dd38"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/deepturf.json"
-hash = "98bc3e0b0fdbe790cb8e4e94ea3da5f9879b4f2d512778162643ee6641eaedeb"
+hash = "be10520d8acf751234a467ac5533d01a506bed1e1b75819b90f2b1e6bac319d4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/ditchbulb_plant.json"
@@ -1070,7 +1070,7 @@ hash = "1d05a54732cc8a73f245364b2aeaa5bde6b2b2f955bf1a95cc24406578eb6936"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/frozen_deepturf.json"
-hash = "4482cfe80717428a00453bce7c0bcb3621b65c6b660ac9866d170bb1070cdebf"
+hash = "994724351f4cdfe856684dec506f8ea36a6c39980531a837aa33d50a72064113"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/glitterkelp.json"
@@ -1094,7 +1094,7 @@ hash = "994feaacdede68e71339d2007b051878629098201b431f8a366f27cd0f5b98e6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/mushroom_veil.json"
-hash = "452ac7543a59b2d32af85ba8db51c11d0dfe695d9ab85f1ba90c32c94ead00a8"
+hash = "fca67c2a0f9e8c26e0f55166dc76f2c53bf6915e38b4646dd778f0b043be39ff"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/puff_mushroom.json"
@@ -1102,15 +1102,15 @@ hash = "af1737c6ac4259b815f78d1a235359fd5a5a74793eb1a9e123bb6c159e4c67e6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/shimmerweed.json"
-hash = "d1d9ac597a34ee69f13e06cd73f71ec11e83a3fa1cf81bcafe60c3de190e066b"
+hash = "037bea58a3801e946d9fb4505c45fb595c53c2ced74007f282e420c385b46d28"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/tall_deepturf.json"
-hash = "418e67a1c0fcf60eb26564ba890543b2dc7d65337af18b0ec20844cbb3e2ca58"
+hash = "e64fc20bc41027f4060d92383e1dd9afab601a7634bafd9791aa6f569efc6a01"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/tall_shimmerweed.json"
-hash = "fd38e0db90fa60bc6db42e06d12563e4213e92705952b6f1309d35c25f89a1ff"
+hash = "ef256c6cd82da54eb719f92dc3d06a26498ab9d6e37fbedb6ec4aa4c0effad7b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/underbean_bush.json"
@@ -1142,7 +1142,7 @@ hash = "6be96b41a8dbc1017625a13976c27e10a62853a8c1b260712d9a5e28198423dc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/endstone_sprouts.json"
-hash = "8d4d4200f46d643eb1f37165ba308652c59d68468af369fc0acc58ba86787389"
+hash = "6107a40c62b1ce5f7f6c948ca75449166e75d961845230b3b37de17a2285f54a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/flowering_gloopy_pile.json"
@@ -1162,11 +1162,11 @@ hash = "8c1a257dec359956a281807905214e3b9e426a0490f93a89e215159d990bd949"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/gloopy_tendrils.json"
-hash = "734e0b077ec898b63e5570da55221e79bbf01a7ecbed3d28c3b703402355626f"
+hash = "be41881e3aefba942b71134a1ccf12384c58ef0497ba1c45f17a50acb75704c3"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/purpur_grass.json"
-hash = "44fcd3fa50c94588d24859e990a875ec01705232fb862d5d98c108cd4aeda121"
+hash = "2f4779726a73b0f0df3b0fcc3cc4f923a74211bfa15f2ecc1927268f60835320"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/shiny_spirea.json"
@@ -1174,7 +1174,7 @@ hash = "3aecb1a70292ab419d981810d40efefeca7761a5fab8547dc73198a9dd5921d5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/small_warped_algae.json"
-hash = "dcef5bb1be1ac7750fb80e92958ddaf086e8cb082386e7f41aca69cf63edc914"
+hash = "211ba23b66f7a768b9053646e08353734c246975dde8337bb83bec00e7287f5e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/small_warped_squash.json"
@@ -1190,11 +1190,11 @@ hash = "6073847e9c2944330793fe2b288bbba751e56c17b5f02d3080771a27154568a2"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_endstone_sprouts.json"
-hash = "3553b874c3a8aef33f693db8d7ce36a02f42a0abc32febf2f951d142ec625f11"
+hash = "e28c0133fa93aafed4c6879b6fca974074f29620404473e53e52d5b0437b2763"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_sprouts.json"
-hash = "1ce46e8d5c042f3ab81bb8e14af2177f13116e87ebaac19d8ad330dfff35d72b"
+hash = "8efc9a980ed14856756a524a8474be1ee052cb300fa605f04a09491056c120bc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/veggiesdelight/crop/mature_dandelion.json"

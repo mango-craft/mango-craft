@@ -14,5 +14,18 @@
   },
   "soil": {
     "tag": "botanypots:soil/end"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "unusualend:small_warped_algae",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
 }

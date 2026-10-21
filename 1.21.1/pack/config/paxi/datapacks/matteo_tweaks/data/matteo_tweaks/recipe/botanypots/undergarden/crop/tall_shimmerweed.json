@@ -11,5 +11,18 @@
   "block": "undergarden:tall_shimmerweed",
   "input": {
     "item": "undergarden:tall_shimmerweed"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "undergarden:shimmerweed",
+            "count": 2
+          }
+        }
+      ]
+    }
+  ]
 }

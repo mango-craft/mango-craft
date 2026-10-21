@@ -14,5 +14,18 @@
   },
   "render_options": {
     "rotation": "X_180"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "undergarden:mushroom_veil",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -6,7 +6,7 @@ Uso: python3 scripts/vasi_genera.py <cartella pack> [--dry-run] [--report FILE]
 
 Dati di partenza (nel repository, da riguardare a ogni aggiornamento delle mod):
 - 1.21.1/data/vasi/copertura.json: le piante delle mod e una bozza di ricetta per ognuna (17/10/2026);
-- 1.21.1/data/vasi/aggiunte.json: terreni, colture scritte a mano, esclusioni (con il motivo).
+- 1.21.1/data/vasi/aggiunte.json: terreni, colture scritte a mano, raccolti diretti, esclusioni (con il motivo).
 
 Cosa scrive (tutto sotto <pack>/config/paxi/datapacks/matteo_tweaks/data/):
 - matteo_tweaks/recipe/botanypots/<mod>/crop/<blocco>.json   una coltura per pianta scoperta
@@ -108,6 +108,16 @@ def main() -> int:
     for c in add.get("colture", []):
         aggiungi(c["mod"], c["ricetta"], verifica=c.get("da_provare", False))
 
+    # raccolto scritto a mano per le piante che nel vaso senza attrezzo non darebbero niente (tabella del bottino con le cesoie)
+    diretti = add.get("raccolti_diretti", {})
+    for blocco, r in diretti.items():
+        if blocco not in colture:
+            saltate.append((origine.get(blocco, "?"), blocco, "raccolto diretto: la coltura non è tra quelle scritte"))
+            continue
+        if r["id"] not in items:
+            saltate.append((origine[blocco], blocco, f"raccolto diretto: {r['id']} non esiste nell'inventario")); continue
+        colture[blocco]["drops"] = [{"type": "botanypots:items", "items": [{"result": {"id": r["id"], "count": r.get("count", 1)}}]}]
+
     terreni: list[dict] = []
     for t in add.get("terreni", []):
         b = t["block"]
@@ -146,6 +156,9 @@ def main() -> int:
     out.append(f"Colture scritte: {len(colture)} · terreni: {len(terreni)} · saltate: {len(saltate)}")
     out.append("")
     out.append("Colture per mod: " + ", ".join(f"{m} {n}" for m, n in sorted(per_mod.items(), key=lambda x: (-x[1], x[0]))))
+    scritti = [b for b in diretti if b in colture and "drops" in colture[b]]
+    if scritti:
+        out.append(f"Con raccolto scritto a mano (senza cesoie non darebbero niente): {len(scritti)}")
     if da_provare:
         out.append("")
         out.append("Da provare in gioco (nomi non verificabili sul sorgente): " + ", ".join(da_provare))

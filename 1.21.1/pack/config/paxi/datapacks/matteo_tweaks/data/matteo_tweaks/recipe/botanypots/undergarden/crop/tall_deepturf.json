@@ -11,5 +11,18 @@
   "block": "undergarden:tall_deepturf",
   "input": {
     "item": "undergarden:tall_deepturf"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "undergarden:deepturf",
+            "count": 2
+          }
+        }
+      ]
+    }
+  ]
 }

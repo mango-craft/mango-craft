@@ -1,5 +1,5 @@
 {
-  "_nota": "Aggiunte a mano per scripts/vasi_genera.py (0.6.1). 'terreni': un terreno per blocco ('terra': true = entra nell'etichetta botanypots:soil/dirt, così lo accettano le colture di terra; 'growth_modifier' come la terra ricca di Farmer's Delight, 0,15). 'colture': piante la cui bozza del 17/10 non aveva i nomi (Roaster's Delight, sorgente chiuso: nomi letti dall'inventario, seme dedotto dal nome, 'da_provare' = da controllare con /botanypots debug). 'esclusi': blocco -> motivo.",
+  "_nota": "Aggiunte a mano per scripts/vasi_genera.py (0.6.1). 'terreni': un terreno per blocco ('terra': true = entra nell'etichetta botanypots:soil/dirt, così lo accettano le colture di terra; 'growth_modifier' come la terra ricca di Farmer's Delight, 0,15). 'colture': piante la cui bozza del 17/10 non aveva i nomi (Roaster's Delight, sorgente chiuso: blocchi, semi e fasi di crescita verificati il 22/10 sui jar dell'istanza di prova; 'da_provare' = nomi non ancora verificati). 'raccolti_diretti': blocco -> {id, count}: piante la cui tabella del bottino dà qualcosa solo con le cesoie (o un attrezzo) e che nel vaso senza attrezzo non darebbero niente; il raccolto è scritto a mano (quello che darebbero con le cesoie, verificato sui jar il 22/10). 'esclusi': blocco -> motivo.",
   "terreni": [
     {
       "mod": "twilight-delight",
@@ -129,7 +129,7 @@
   "colture": [
     {
       "mod": "roasters-delight",
-      "da_provare": true,
+      "da_provare": false,
       "ricetta": {
         "bookshelf:load_conditions": [
           {
@@ -148,7 +148,7 @@
     },
     {
       "mod": "roasters-delight",
-      "da_provare": true,
+      "da_provare": false,
       "ricetta": {
         "bookshelf:load_conditions": [
           {
@@ -167,7 +167,7 @@
     },
     {
       "mod": "roasters-delight",
-      "da_provare": true,
+      "da_provare": false,
       "ricetta": {
         "bookshelf:load_conditions": [
           {
@@ -186,7 +186,7 @@
     },
     {
       "mod": "roasters-delight",
-      "da_provare": true,
+      "da_provare": false,
       "ricetta": {
         "bookshelf:load_conditions": [
           {
@@ -205,7 +205,7 @@
     },
     {
       "mod": "roasters-delight",
-      "da_provare": true,
+      "da_provare": false,
       "ricetta": {
         "bookshelf:load_conditions": [
           {
@@ -223,5 +223,67 @@
       }
     }
   ],
+  "raccolti_diretti": {
+    "deep_aether:yagroot_vine": {
+      "id": "deep_aether:yagroot_vine",
+      "count": 1
+    },
+    "hexerei:willow_vines": {
+      "id": "hexerei:willow_vines",
+      "count": 1
+    },
+    "undergarden:ashen_deepturf": {
+      "id": "undergarden:ashen_deepturf",
+      "count": 1
+    },
+    "undergarden:deepturf": {
+      "id": "undergarden:deepturf",
+      "count": 1
+    },
+    "undergarden:frozen_deepturf": {
+      "id": "undergarden:frozen_deepturf",
+      "count": 1
+    },
+    "undergarden:mushroom_veil": {
+      "id": "undergarden:mushroom_veil",
+      "count": 1
+    },
+    "undergarden:shimmerweed": {
+      "id": "undergarden:shimmerweed",
+      "count": 1
+    },
+    "unusualend:endstone_sprouts": {
+      "id": "unusualend:endstone_sprouts",
+      "count": 1
+    },
+    "unusualend:gloopy_tendrils": {
+      "id": "unusualend:gloopy_tendrils",
+      "count": 1
+    },
+    "unusualend:purpur_grass": {
+      "id": "unusualend:purpur_grass",
+      "count": 1
+    },
+    "unusualend:small_warped_algae": {
+      "id": "unusualend:small_warped_algae",
+      "count": 1
+    },
+    "unusualend:warped_endstone_sprouts": {
+      "id": "unusualend:warped_endstone_sprouts",
+      "count": 1
+    },
+    "unusualend:warped_sprouts": {
+      "id": "unusualend:warped_sprouts",
+      "count": 1
+    },
+    "undergarden:tall_deepturf": {
+      "id": "undergarden:deepturf",
+      "count": 2
+    },
+    "undergarden:tall_shimmerweed": {
+      "id": "undergarden:shimmerweed",
+      "count": 2
+    }
+  },
   "esclusi": {}
 }
