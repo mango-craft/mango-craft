@@ -37,7 +37,7 @@ Idea di Matteo (`../lavoro/0503-temi-aperti.md`): gli accessori non crescono. Gr
 
 | Mod | Versione | Licenza | Usa | Cosa fa | Giudizio |
 |---|---|---|---|---|---|
-| Reliquified Artifacts | 1.0.9 beta, 12/10/2026 | ARR | Curios, Relics, OctoLib; vuole **esattamente** Artifacts 13.2.5 | Rifà tutti i 48 artefatti come reliquie di Relics, con livelli e ranghi | 🟡 È l'idea, ma rompe il nostro pack: vedi la scheda `artifacts` |
+| Reliquified Artifacts | 1.0.9 beta, 12/10/2026 | ARR | Curios, Relics, OctoLib; vuole esattamente Artifacts 13.2.5 (la nostra) | Rifà tutti i 48 artefatti come reliquie di Relics, con livelli e ranghi | 🟡 È l'idea. Le casse si sistemano col datapack; la config di Artifacts invece viene ignorata: scheda `artifacts` |
 | Relics | 0.12.9 beta, 18/10/2026 | ARR (uso nei modpack permesso) | Curios, OctoLib/ShatterLib | 20 reliquie sue, il livello sale usandole, punti, rilancio delle statistiche, ranghi, ricerca | 🟡 Mod autonoma interessante; i mantelli vanno nello slot `back` degli zaini |
 | More Relics | beta, legata a build precise di Relics | ARR | Relics | Reliquie in più, con evoluzioni | 🔴 |
 | L2 Artifacts | 3.0.7 | LGPL-2.1 | Curios, L2 Library | Set di artefatti suoi con statistiche casuali, che salgono di livello | 🔴 |
