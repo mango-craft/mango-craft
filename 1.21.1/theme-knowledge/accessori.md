@@ -37,13 +37,15 @@ Idea di Matteo (`../lavoro/0503-temi-aperti.md`): gli accessori non crescono. Gr
 
 | Mod | Versione | Licenza | Usa | Cosa fa | Giudizio |
 |---|---|---|---|---|---|
-| Reliquified Artifacts | 1.0.9 beta, 12/10/2026 | ARR | Curios, Relics, OctoLib; vuole esattamente Artifacts 13.2.5 (la nostra) | Rifà tutti i 48 artefatti come reliquie di Relics, con livelli e ranghi | 🟡 È l'idea. Le casse si sistemano col datapack; la config di Artifacts invece viene ignorata: scheda `artifacts` |
+| Reliquified Artifacts | 1.0.9 beta, 12/10/2026 | ARR | Curios, Relics, OctoLib; vuole esattamente Artifacts 13.2.5 (la nostra) | Rifà tutti i 48 artefatti come reliquie di Relics, con livelli e ranghi | 🟡 È l'idea. Casse e slot di Accessories si sistemano col datapack; la config di Artifacts viene ignorata: scheda `artifacts` |
 | Relics | 0.12.9 beta, 18/10/2026 | ARR (uso nei modpack permesso) | Curios, OctoLib/ShatterLib | 20 reliquie sue, il livello sale usandole, punti, rilancio delle statistiche, ranghi, ricerca | 🟡 Mod autonoma interessante; i mantelli vanno nello slot `back` degli zaini |
-| More Relics | beta, legata a build precise di Relics | ARR | Relics | Reliquie in più, con evoluzioni | 🔴 |
+| More Relics | 1.7.7 beta, legata a build precise di Relics (l'ultima vuole la 0.12.8, è uscita la 0.12.9) | ARR | Relics | Reliquie in più, con evoluzioni | 🔴 |
 | L2 Artifacts | 3.0.7 | LGPL-2.1 | Curios, L2 Library | Set di artefatti suoi con statistiche casuali, che salgono di livello | 🔴 |
 | BaublesReforked | 1.0.3 | ARR, codice chiuso | Curios | Attributi casuali sugli accessori, rifatti sull'incudine | 🟡 Non si sa quali accessori tocchi |
 | Tiered More | — | — | Curios o Accessories | Livelli di qualità sugli oggetti | 🔴 Con Accessories presente (nell'Aether) spegne il supporto a Curios |
 | Apothic Curios | solo 1.20.1 / 1.19.2 Forge | — | — | Affissi di Apotheosis sugli accessori | Non esiste per 1.21.1 |
+
+**Diffusione e affidabilità (23/10)**: Relics e Reliquified Artifacts sono in **All The Mods 10** e in **Craftoria** (elenchi delle mod del 16/10); More Relics in nessuno dei due. Download: Relics 64,6 milioni su CurseForge e 3,3 su Modrinth, usata in circa 12.400 modpack (Modpack Index); Reliquified Artifacts 28,7 milioni su CurseForge; More Relics 160 mila su Modrinth. Recensioni vere non ce ne sono: Moddex 4,1/5 con 5 voti e nessun commento, nessuna discussione trovata su Reddit. Segnali dai changelog dei modpack: Craftoria ha abbassato la probabilità delle reliquie dal 20% al 10% (1.36.0); un suo aggiornamento ha azzerato i livelli delle reliquie (1.3.0) e un altro ha cancellato le reliquie vecchie con il «nuovo sistema» (1.34.0, insieme alla rimozione di due addon Reliquified); più correzioni di crash all'indossare certe reliquie. Su GitHub Relics ha 63 segnalazioni aperte, diverse di crash su 1.21.1; la pagina CurseForge dice che l'API di Relics «è ancora instabile e cambia spesso».
 
 **Cosa si può fare col nostro datapack** (non crea oggetti né effetti nuovi, non fa crescere con l'uso):
 - 🟢 **Lo stesso artefatto "potenziato"** con valori fissi più alti (es. guanto del potere +6 danno invece di +4), ottenuto con un'infusione al tavolo d'incantamento di Apothic Enchanting (le tappe diventano tappe dell'incantamento), una ricetta, o il bottino delle casse dei boss. Formati verificati nei jar; scheda `artifacts`.
