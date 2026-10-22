@@ -14,5 +14,6 @@ Conoscenza **trasversale**: argomenti che attraversano più mod o la piattaforma
 | [nether](nether.md) | Com'è fatto il Nether del pack (Jaden's, Moog's, Nether Depths, Regions Unexplored, YUNG's) e cosa provare |
 | [cucina](cucina.md) | Farmer's Delight e addon: ricette per etichetta, ingredienti intercambiabili, automazione |
 | [achievement](achievement.md) | Progressi già presenti, mod per la schermata, progressione propria del pack |
-| [accessori](accessori.md) | I tre menu dove indossare oggetti (Curios, Accessories standard, menu dell'Aether): chi usa cosa, come ridurli |
+| [accessori](accessori.md) | I tre menu dove indossare oggetti (Curios, Accessories standard, menu dell'Aether): chi usa cosa, come ridurli; potenziamento ed evoluzione (valutazione iniziale) |
+| [strumenti](strumenti.md) | Strumenti con materiali avanzati: set delle mod, livelli di scavo, materiali di Truly Modular; valutazione iniziale di una progressione a tappe |
 | [shader](shader.md) | Shader facoltativi: le mod del pack con uno shader attivo, pacchetti, licenze |
