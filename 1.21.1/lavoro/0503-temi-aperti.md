@@ -23,8 +23,8 @@ Non si ripetono qui, per non avere due elenchi da tenere allineati:
 | **Slot degli accessori** | Ars Nouveau e Artifacts si contendono testa, collana e cintura (Curios); se gli slot diventano stretti si aumentano con un file nel datapack (formato verificato il 23/10: `data/<ns>/curios/slots/<slot>.json`, tema `accessori`). **Tre menu** dove indossare (Curios, menu standard di Accessories, menu dell'Aether; scoperto il 21/10): Matteo ha deciso di **lasciarli così** (21/10, `versioni/v0.6.0.md`); fatti nel tema `../theme-knowledge/accessori.md` | `0302`, Impostazioni decise | Mondo di prova |
 | **Lingua del gioco** | Non è stato deciso se giocare in italiano né cosa fare con le mod senza traduzione italiana (quante siano non è stato contato). Enhanced Celestials 2 le traduzioni le scaricherebbe da internet: spente nella 0.5.2 | `0302` (traduzioni di EC2) | Da chiarire |
 | **Fornaci: livelli e potenziamenti fuori dalle mod tech** (nuovo, 23/10) | Idea di Matteo: una progressione delle fornaci (livelli, accessori che le potenziano) che non passi da Create o Mekanism. Da valutare: mod che aggiungono fornaci a livelli o potenziamenti (candidate da cercare), oppure una nostra scala nel datapack sul modello della rarità dei terreni dei vasi (`../mod-knowledge/botany-pots/analisi.md`) | — | Dopo la 0.6.x |
-| **Strumenti con materiali avanzati, a tappe** (nuovo, 23/10) | Idea di Matteo: come gestire a step la creazione degli strumenti con i materiali avanzati delle mod (Truly Modular, Aether, Undergarden, Twilight Forest, Mekanism…), così che ogni materiale sia una tappa e non un salto. Da valutare: quali materiali esistono, in che ordine si ottengono, cosa cambiare (ricette, parti di Truly Modular) | Tema `../theme-knowledge/strumenti.md` (fatti e valutazione iniziale del 23/10) | Dopo la 0.6.x, prima del mondo di prova |
-| **Accessori: potenziamento ed evoluzione** (nuovo, 23/10) | Idea di Matteo: gli accessori (Artifacts, Ars Nouveau, Curios) non crescono: valutare un modo per potenziarli o farli evolvere a tappe (ricette di aggiornamento nel datapack, mod dedicate). Si lega agli slot degli accessori qui sopra | Tema `../theme-knowledge/accessori.md`, sezione «Potenziamento ed evoluzione» (ricerca del 23/10: mod esterne, catene già nel pack, artefatti potenziati col datapack); scheda `../mod-knowledge/artifacts.md` | Dopo la 0.6.x; prima le prove con `/give` |
+| **Strumenti con materiali avanzati, a tappe** (nuovo, 23/10) | Idea di Matteo: come gestire a step la creazione degli strumenti con i materiali avanzati delle mod (Truly Modular, Aether, Undergarden, Twilight Forest, Mekanism…), così che ogni materiale sia una tappa e non un salto. Da valutare: quali materiali esistono, in che ordine si ottengono, cosa cambiare (ricette, parti di Truly Modular) | Tema `../theme-knowledge/strumenti.md` (fatti e valutazione del 23/10); strade e decisioni nella **sezione 5** | Proposta del 23/10: 0.7.3 (`0501-piano.md`); i materiali che contano prima del mondo vero |
+| **Accessori: potenziamento ed evoluzione** (nuovo, 23/10) | Idea di Matteo: gli accessori (Artifacts, Ars Nouveau, Curios) non crescono: valutare un modo per potenziarli o farli evolvere a tappe (ricette di aggiornamento nel datapack, mod dedicate). Si lega agli slot degli accessori qui sopra | Tema `../theme-knowledge/accessori.md`, sezione «Potenziamento ed evoluzione» (ricerca del 23/10); scheda `../mod-knowledge/artifacts.md`; strade e decisioni nella **sezione 6** | Proposta del 23/10: 0.7.3 (`0501-piano.md`); prima le prove con `/give` |
 | **Guida del pack** | Ogni mod ha il suo manuale, ma il pack non ha una guida sua (come iniziare, cosa si collega a cosa). Si lega agli achievement | sezione 3 | Insieme agli achievement |
 
 Restano nei loro documenti, perché sono già pianificati: densità delle strutture e Chunky (tappa 6, `0501`), controlli durante la creazione del mondo e prove di compatibilità (`0502-prove-in-gioco.md`), parti del datapack (`versioni/v0.6.0.md`, `v0.6.1.md`, `v0.6.2.md`).
@@ -56,4 +56,39 @@ Le decisioni che riguardano solo una versione stanno nel suo file (`versioni/`, 
 | 2 | Achievement: partire dalla schermata dei progressi (Reliable o Lucid) e se e quando scrivere la scheda "Mango Craft" nel datapack | 🟢 una mod per la schermata, poi la scheda | sezione 3; tema `../theme-knowledge/achievement.md` |
 | 3 | Tasti in conflitto (B, C): elenco dei tasti consigliati | da fare a mano nelle opzioni | prima del mondo vero |
 | 4 | Lingua del gioco: italiano o no, e che fare con le mod senza traduzione | da chiarire | prima del mondo vero |
+| 6 | Strumenti a tappe: quali gradini e quali materiali di Truly Modular scrivere a mano | 🟢 prima la tabella dei materiali letta in gioco, poi i gradini | sezione 5; i materiali scritti **prima del mondo vero** |
+| 7 | Accessori: artefatti di «livello II» nel datapack, oppure Relics + Reliquified Artifacts | 🟢 datapack; 🟡 Relics solo dopo una prova in un'istanza a parte | sezione 6; **prima del mondo di prova** (Relics cambia oggetti e bottino) |
 | 5 | **Prove di uscita della 1.0.0** (deciso da Matteo il 19/10/2026, si applica alla 1.0.0): le tappe 0.x seguono le prove di uscita rapide di `AGENTS.md` (sezione 5); la 1.0.0 ha una soglia più alta, perché dopo la creazione del mondo vero alcune cose non si correggono più. Per uscire servono: **(a)** fatte tutte le prove della sezione «Mondo di prova» di `0502-prove-in-gioco.md`; **(b)** definitive e provate in un mondo di prova le cose che non si cambiano a mondo creato: mod che generano mondo o strutture (⚠️ in `../docs/0301-mod.md`), Sparse Structures completo, varianti e legni di Every Compat, Jaden's, Chunky con la config finale, e le decisioni dei punti 3 e 4 qui sopra; **(c)** nessun problema di effetto «alto» (crash) aperto nel bug report, quindi B33 va riprovato con 12 GB. Un problema «medio» o «basso» non blocca se non mette a rischio il mondo | già deciso | 1.0.0 |
+
+## 5. Strumenti con materiali avanzati, a tappe
+
+Idea di Matteo del 23/10/2026. Fatti verificati e ricerca su Truly Modular nel tema `../theme-knowledge/strumenti.md` (grezzo: `../../ai-agents/stage/2026-10-23_truly-modular-materiali/`). Qui le strade e cosa decidere.
+
+**Cosa c'è già**: Truly Modular crea da solo **18 materiali** dagli strumenti delle mod (Aether, Deep Aether, Twilight Forest, Undergarden, Deeper and Darker, Cataclysm, Unusual End, Psi, Cognition), con statistiche coerenti con quelle vanilla; le forgiature delle mod (es. diamante → resonarium) diventano potenziamenti delle parti modulari. Le tappe di oggi le danno dimensioni e boss, non i livelli di scavo.
+
+**Le strade**:
+1. 🟢 **Tabella dei materiali**: statistiche vere lette in gioco (`/miapi material <id>`) e momento in cui ogni materiale si ottiene; da lì i gradini. Si può riusare il metodo dei vasi (regole in CSV → generatore di file).
+2. 🟡 **Materiali scritti a mano** nel datapack: correggere le stranezze (Undergarden più duro della netherite, zanite nel gruppo «pietra»), aggiungere i mancanti (fiery, iesnium), fissare gli id. I cancelli si fanno con un progresso richiesto dal materiale (es. aver battuto un boss).
+3. 🟡 **Cancelli nelle ricette** degli strumenti non modulari: solo se non si punta tutto su Truly Modular.
+- 🔴 Cambiare i livelli di scavo dei blocchi: tocca il mondo di tutte le mod.
+
+**Prima cosa da fare**: le prove in gioco elencate nel tema (statistiche di 3–4 materiali, skyroot, un potenziamento in forgiatura, un materiale di prova dal datapack).
+
+**Quando**: proposta 0.7.3 (`0501-piano.md`). I materiali che contano vanno scritti **prima del mondo vero**: gli id dei materiali generati possono cambiare con un aggiornamento della mod. Prima di scriverli va adattata la regola delle condizioni di caricamento (`AGENTS.md`, sezione 7): per questi file vale `load_condition` di Truly Modular.
+
+## 6. Accessori: potenziamento ed evoluzione
+
+Idea di Matteo del 23/10/2026. Fatti verificati nel tema `../theme-knowledge/accessori.md` (sezione «Potenziamento ed evoluzione») e nella scheda `../mod-knowledge/artifacts.md` (grezzo: `../../ai-agents/stage/2026-10-23_accessori-evoluzione/`). Qui le strade e cosa decidere.
+
+**Cosa c'è già**: catene «base → migliore» in Ars Nouveau, Twilight Forest, Aether, Deep Aether, Unusual End e negli zaini; gli artefatti di Artifacts non hanno livelli; Apotheosis non tocca gli accessori.
+
+**Le strade** (la 1 e la 3 sono alternative: con Reliquified Artifacts gli artefatti sono rifatti da capo, e non è verificato se i dati di Artifacts valgono ancora):
+1. 🟢 **Artefatti di «livello II» nel datapack**: la stessa copia con valori più alti (le abilità sono dati dell'oggetto), ottenuta con l'infusione di Apothic Enchanting, una ricetta o le casse dei boss. Pilota con 3–5 artefatti. In più, ricette di passaggio dove esistono già «fratelli» più forti (anelli e pendenti dell'Aether).
+2. 🟡 **Attributi o slot in più** sugli accessori potenziati (`curios:attribute_modifiers`).
+3. 🟡 **Relics + Reliquified Artifacts** (mod candidate, `0601-mod-candidate.md`): gli artefatti salgono di livello usandoli. Sono in All The Mods 10 e Craftoria; però sono in beta, in Craftoria un aggiornamento ha azzerato i livelli, e bloccano Artifacts alla 13.2.5. Casse (`neoforge:add_table`) e slot di Accessories (`remove` nelle etichette) si sistemano col datapack. Solo dopo una prova in un'istanza a parte; dopo la 1.0.0, versioni ferme.
+- 🔴 More Relics, L2 Artifacts, Tiered More.
+
+**Prima cosa da fare**: le prove con `/give` (comandi nel grezzo, sezione 5).
+
+**Quando**: proposta 0.7.3 (`0501-piano.md`). La scelta tra datapack e Relics va fatta **prima del mondo di prova**, perché Relics cambia oggetti e bottino.
+

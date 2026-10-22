@@ -28,4 +28,4 @@ Aggiornata il 23/10/2026 · stato: **valutazione iniziale**, con la ricerca su T
 
 ## Rimandi
 
-- Temi aperti: `../lavoro/0503-temi-aperti.md`, sezione 2. Metodo di analisi: `../mod-knowledge/botany-pots/analisi.md`.
+- Temi aperti: `../lavoro/0503-temi-aperti.md`, sezione 2 (riga) e sezione 5 (strade, decisioni, versione proposta). Metodo di analisi: `../mod-knowledge/botany-pots/analisi.md`.
