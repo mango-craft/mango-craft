@@ -12,7 +12,7 @@ terreno scritti da `botanypots_genera.py` (e a mano) controlla nei jar:
 - per le colture senza raccolto scritto (Botany Pots lo ricava dalla tabella del bottino del blocco): la tabella
   esiste e, con il vaso **senza attrezzo** (impostazione predefinita di Botany Pots), dà almeno un oggetto.
   Le tabelle che chiedono le cesoie o un incantesimo non danno niente senza attrezzo: la coltura va scritta con
-  un raccolto diretto (`1.21.1/data/vasi/coltura_raccolto_settings.csv`).
+  un raccolto diretto (`1.21.1/data/vasi/coltura_raccolto_custom.csv`).
 
 Il giudizio sulle tabelle è statico (non sostituisce `/botanypots debug` in gioco): le condizioni che non sa
 valutare le conta come soddisfatte e le elenca come «incerte» con `--lungo`.

@@ -22,8 +22,8 @@ Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
   viste         POTS_TERRENO_VINCENTE, POTS_COLTURA_VINCENTE (il file che il gioco usa per ogni id; `avviso` se due jar
                 portano lo stesso id, caso in cui l'ordine non è noto e non blocca)
   esplosa       TERRENO_TAG   (per ogni terreno, tutti i tag in cui sta, con il tag che lo elenca davvero)
-  scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA, TERRENO_TAG_SETTINGS, COLTURA_SETTINGS, COLTURA_TAG_SETTINGS,
-                COLTURA_RACCOLTO_SETTINGS   (le regole nostre, lette anche da scripts/botanypots_genera.py)
+  scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA, TERRENO_TAG_CUSTOM, COLTURA_CUSTOM, COLTURA_TAG_CUSTOM,
+                COLTURA_RACCOLTO_CUSTOM   (le regole nostre, lette anche da scripts/botanypots_genera.py)
                 POTS_COMPATIBILITA   (terreno × coltura, dai file vincenti, con il tag che fa da ponte)
 
 Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
@@ -133,13 +133,13 @@ CREATE TABLE TERRENO_RARITA (
   motivo     TEXT NOT NULL              -- come si ottiene
 );
 -- Le altre regole nostre (CSV a mano, lette da scripts/botanypots_genera.py): qui per le analisi.
-CREATE TABLE TERRENO_TAG_SETTINGS (
+CREATE TABLE TERRENO_TAG_CUSTOM (
   terreno_id TEXT NOT NULL REFERENCES TERRENO,
   ambito     TEXT NOT NULL CHECK (ambito IN ('oggetti', 'blocchi')),
   tag        TEXT NOT NULL,
   PRIMARY KEY (terreno_id, ambito, tag)
 );
-CREATE TABLE COLTURA_SETTINGS (
+CREATE TABLE COLTURA_CUSTOM (
   coltura_id     TEXT PRIMARY KEY,      -- il blocco della pianta, o l'id del file per le colture senza blocco
   mod            TEXT NOT NULL,
   seme           TEXT,
@@ -151,15 +151,15 @@ CREATE TABLE COLTURA_SETTINGS (
   da_provare     TEXT,
   nota           TEXT
 );
-CREATE TABLE COLTURA_TAG_SETTINGS (
-  coltura_id TEXT NOT NULL REFERENCES COLTURA_SETTINGS,
+CREATE TABLE COLTURA_TAG_CUSTOM (
+  coltura_id TEXT NOT NULL REFERENCES COLTURA_CUSTOM,
   ordine     INTEGER NOT NULL,
   ambito     TEXT NOT NULL CHECK (ambito IN ('oggetti', 'blocchi')),
   tag        TEXT NOT NULL,
   PRIMARY KEY (coltura_id, ordine)
 );
-CREATE TABLE COLTURA_RACCOLTO_SETTINGS (
-  coltura_id TEXT NOT NULL REFERENCES COLTURA_SETTINGS,
+CREATE TABLE COLTURA_RACCOLTO_CUSTOM (
+  coltura_id TEXT NOT NULL REFERENCES COLTURA_CUSTOM,
   gruppo     INTEGER NOT NULL,
   tipo       TEXT NOT NULL CHECK (tipo IN ('oggetto', 'tabella')),
   id         TEXT NOT NULL,
@@ -506,10 +506,10 @@ class BotanyPotsDB:
         # scelte
         self._carica_csv(c, "RARITA_POTS_SETTINGS", "rarita_pots_settings.csv", ("classe", "ordine", "crescita", "resa"))
         self._carica_csv(c, "TERRENO_RARITA", "terreno_rarita.csv", ("terreno_id", "classe", "motivo"))
-        self._carica_csv(c, "TERRENO_TAG_SETTINGS", "terreno_tag_settings.csv", ("terreno_id", "ambito", "tag"))
-        self._carica_csv(c, "COLTURA_SETTINGS", "coltura_settings.csv", ("coltura_id", "mod", "seme", "tempo", "richiesti", "display_blocco", "display_offset", "rotazione", "da_provare", "nota"))
-        self._carica_csv(c, "COLTURA_TAG_SETTINGS", "coltura_tag_settings.csv", ("coltura_id", "ordine", "ambito", "tag"))
-        self._carica_csv(c, "COLTURA_RACCOLTO_SETTINGS", "coltura_raccolto_settings.csv", ("coltura_id", "gruppo", "tipo", "id", "count", "chance"))
+        self._carica_csv(c, "TERRENO_TAG_CUSTOM", "terreno_tag_custom.csv", ("terreno_id", "ambito", "tag"))
+        self._carica_csv(c, "COLTURA_CUSTOM", "coltura_custom.csv", ("coltura_id", "mod", "seme", "tempo", "richiesti", "display_blocco", "display_offset", "rotazione", "da_provare", "nota"))
+        self._carica_csv(c, "COLTURA_TAG_CUSTOM", "coltura_tag_custom.csv", ("coltura_id", "ordine", "ambito", "tag"))
+        self._carica_csv(c, "COLTURA_RACCOLTO_CUSTOM", "coltura_raccolto_custom.csv", ("coltura_id", "gruppo", "tipo", "id", "count", "chance"))
 
         # conteggio diretto delle coppie, indipendente dalla vista: per ogni coltura vincente, gli oggetti dei suoi tag
         membri = defaultdict(set)

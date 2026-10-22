@@ -5,17 +5,17 @@ Uso: python3 scripts/botanypots_genera.py <cartella versione> [--dry-run] [--rep
 
 Le regole (una tabella per cosa, caricate anche nella base dati di scripts/botanypots_db.py):
 - terreno_rarita.csv            terreno → classe di rarità (bonus in rarita_pots_settings.csv), motivo
-- terreno_tag_settings.csv      terreno → tag `botanypots:soil/*` in cui lo mettiamo
-- coltura_settings.csv          una coltura da scrivere: seme, tempo, blocchi richiesti, grafica, note
-- coltura_tag_settings.csv      coltura → tag ammessi (uno per riga, ne basta uno; nessuna riga = soil/dirt)
-- coltura_raccolto_settings.csv coltura → raccolto (oggetti con quantità e probabilità, o una tabella del bottino)
+- terreno_tag_custom.csv      terreno → tag `botanypots:soil/*` in cui lo mettiamo
+- coltura_custom.csv          una coltura da scrivere: seme, tempo, blocchi richiesti, grafica, note
+- coltura_tag_custom.csv      coltura → tag ammessi (uno per riga, ne basta uno; nessuna riga = soil/dirt)
+- coltura_raccolto_custom.csv coltura → raccolto (oggetti con quantità e probabilità, o una tabella del bottino)
 
 Cosa scrive, sotto <versione>/pack/config/paxi/datapacks/matteo_tweaks/data/:
-- matteo_tweaks/recipe/botanypots/<mod>/crop/<nome>.json   una coltura per riga di coltura_settings
+- matteo_tweaks/recipe/botanypots/<mod>/crop/<nome>.json   una coltura per riga di coltura_custom
 - matteo_tweaks/recipe/botanypots/<mod>/soil/<nome>.json   un terreno per riga di terreno_rarita senza file originale;
   se il terreno ha già un file di una mod e la classe gli dà un bonus diverso, il file si scrive **allo stesso
   percorso del file originale** (botanypots/recipe/…), che così lo sostituisce (Paxi carica il datapack sopra alle mod)
-- botanypots/tags/item/soil/<nome>.json                   un tag per ogni tag di terreno_tag_settings
+- botanypots/tags/item/soil/<nome>.json                   un tag per ogni tag di terreno_tag_custom
 
 Le cartelle <mod>/ sotto recipe/botanypots/ e i tag botanypots:soil/* sono dello script: si cancellano e si
 riscrivono a ogni esecuzione. Non si toccano `crop/`, `soil/` e `alberi/` (scritti a mano).
@@ -127,12 +127,12 @@ def main() -> int:
 
     classi = {r["classe"]: r for r in leggi_csv(vasi / "rarita_pots_settings.csv")}
     rarita = leggi_csv(vasi / "terreno_rarita.csv")
-    ttag = leggi_csv(vasi / "terreno_tag_settings.csv")
-    colture = leggi_csv(vasi / "coltura_settings.csv")
+    ttag = leggi_csv(vasi / "terreno_tag_custom.csv")
+    colture = leggi_csv(vasi / "coltura_custom.csv")
     ctag, cracc = defaultdict(list), defaultdict(list)
-    for t in leggi_csv(vasi / "coltura_tag_settings.csv"):
+    for t in leggi_csv(vasi / "coltura_tag_custom.csv"):
         ctag[t["coltura_id"]].append(t)
-    for x in leggi_csv(vasi / "coltura_raccolto_settings.csv"):
+    for x in leggi_csv(vasi / "coltura_raccolto_custom.csv"):
         cracc[x["coltura_id"]].append(x)
 
     saltate: list[tuple[str, str]] = []
