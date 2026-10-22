@@ -26,11 +26,11 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "ecbab13fbee75d059c04b1cb2b7fdee39f0b44808715a83d67e037c86f7c7066"
+hash = "9f2e1b62b237c0b87f212108ac8ec5fe68567ee1cfe410534bcbf183d04571d9"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/readme.md"
-hash = "b21818fb2bdae0e56c65f597c07f16ec7b7638ca56a0b8d176199ee1038e793d"
+hash = "71253d39d03baec20b8cc09d9db11c8f86a82246af773bdece2485908d774e9e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/tags/item/soil/dirt.json"
@@ -978,7 +978,7 @@ hash = "73696d3423cbcec6d59f0e1a5dff6202d52534b207f6ffc1d9c44d981800a0e4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/readme.md"
-hash = "56aaa191daa82cdad39612bd3fc91f60df52ba9496e31aca070aaa263523056f"
+hash = "5e4b3b57f6e9b8cef51f05f9a0af769e292a6cc8bc954d46c62e67bb082f1233"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/blue_bioshroom.json"

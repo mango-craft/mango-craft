@@ -1,1 +1,19 @@
 terreno_id,classe,motivo
+aether:aether_dirt,comune,facoltativo
+aether:aether_farmland,comune,facoltativo
+aether:aether_grass_block,comune,facoltativo
+aether:enchanted_aether_grass_block,comune,facoltativo
+bountifulfares:grassy_dirt,comune,"facoltativo, nel tag minecraft:dirt"
+deep_aether:aether_coarse_dirt,comune,facoltativo
+deep_aether:aether_moss_block,comune,facoltativo
+deep_aether:aether_mud,comune,facoltativo
+deep_aether:golden_heights_grass_block,comune,facoltativo
+farm_and_charm:fertilized_farmland,compost_base,come oggi (migrazione del 22/10/2026)
+farm_and_charm:fertilized_soil,compost_base,come oggi (migrazione del 22/10/2026)
+hexalia:infused_dirt,compost_base,nel tag minecraft:dirt
+hexalia:infused_farmland,compost_base,serve anche al saltsprout
+mynethersdelight:letios_compost,comune,"compost del Nether, senza bonus"
+mynethersdelight:resurgent_soil,compost_base,terra del Nether in stile terra ricca
+mynethersdelight:resurgent_soil_farmland,compost_base,come oggi (migrazione del 22/10/2026)
+twilightdelight:twilight_rich_soil,compost_base,"terra ricca, come quella di Farmer's Delight (+15%)"
+twilightdelight:twilight_rich_soil_farmland,compost_base,come oggi (migrazione del 22/10/2026)

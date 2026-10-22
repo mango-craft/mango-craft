@@ -13,7 +13,7 @@ tutti i vincoli e i controlli passano. Modello, fatti verificati e query: 1.21.1
 Fonti (si leggono direttamente, niente copie intermedie):
 - <versione>/data/inventario/: ricette e tag di ogni jar (generato dai workflow), più minecraft.json e neoforge.json;
 - <versione>/pack/config/paxi/datapacks/matteo_tweaks/data/: le nostre ricette e i nostri tag;
-- <versione>/data/vasi/rarita_pots_settings.csv e terreno_rarita.csv: le scelte di rarità, scritte a mano.
+- <versione>/data/vasi/*.csv: le regole nostre, scritte a mano.
 Il file <versione>/data/vasi/vasi.sqlite non va nel repository: si rigenera.
 
 Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
@@ -22,7 +22,8 @@ Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
   viste         POTS_TERRENO_VINCENTE, POTS_COLTURA_VINCENTE (il file che il gioco usa per ogni id; `avviso` se due jar
                 portano lo stesso id, caso in cui l'ordine non è noto e non blocca)
   esplosa       TERRENO_TAG   (per ogni terreno, tutti i tag in cui sta, con il tag che lo elenca davvero)
-  scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA
+  scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA, TERRENO_TAG_SETTINGS, COLTURA_SETTINGS, COLTURA_TAG_SETTINGS,
+                COLTURA_RACCOLTO_SETTINGS   (le regole nostre, lette anche da scripts/botanypots_genera.py)
                 POTS_COMPATIBILITA   (terreno × coltura, dai file vincenti, con il tag che fa da ponte)
 
 Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
@@ -130,6 +131,41 @@ CREATE TABLE TERRENO_RARITA (
   terreno_id TEXT PRIMARY KEY REFERENCES TERRENO,
   classe     TEXT NOT NULL REFERENCES RARITA_POTS_SETTINGS,
   motivo     TEXT NOT NULL              -- come si ottiene
+);
+-- Le altre regole nostre (CSV a mano, lette da scripts/botanypots_genera.py): qui per le analisi.
+CREATE TABLE TERRENO_TAG_SETTINGS (
+  terreno_id TEXT NOT NULL REFERENCES TERRENO,
+  ambito     TEXT NOT NULL CHECK (ambito IN ('oggetti', 'blocchi')),
+  tag        TEXT NOT NULL,
+  PRIMARY KEY (terreno_id, ambito, tag)
+);
+CREATE TABLE COLTURA_SETTINGS (
+  coltura_id     TEXT PRIMARY KEY,      -- il blocco della pianta, o l'id del file per le colture senza blocco
+  mod            TEXT NOT NULL,
+  seme           TEXT,
+  tempo          INTEGER,
+  richiesti      TEXT,                  -- blocchi richiesti dalla condizione di caricamento, separati da |
+  display_blocco TEXT,
+  display_offset TEXT,
+  rotazione      TEXT,
+  da_provare     TEXT,
+  nota           TEXT
+);
+CREATE TABLE COLTURA_TAG_SETTINGS (
+  coltura_id TEXT NOT NULL REFERENCES COLTURA_SETTINGS,
+  ordine     INTEGER NOT NULL,
+  ambito     TEXT NOT NULL CHECK (ambito IN ('oggetti', 'blocchi')),
+  tag        TEXT NOT NULL,
+  PRIMARY KEY (coltura_id, ordine)
+);
+CREATE TABLE COLTURA_RACCOLTO_SETTINGS (
+  coltura_id TEXT NOT NULL REFERENCES COLTURA_SETTINGS,
+  gruppo     INTEGER NOT NULL,
+  tipo       TEXT NOT NULL CHECK (tipo IN ('oggetto', 'tabella')),
+  id         TEXT NOT NULL,
+  count      INTEGER,
+  chance     REAL,
+  PRIMARY KEY (coltura_id, gruppo, id)
 );
 -- File vincenti: tra file con lo stesso id vince il nostro datapack (Paxi lo carica sopra a tutti). Se due jar
 -- portano lo stesso id l'ordine non è noto: `avviso` = 1 e si tiene il primo per nome di fonte.
@@ -470,6 +506,10 @@ class BotanyPotsDB:
         # scelte
         self._carica_csv(c, "RARITA_POTS_SETTINGS", "rarita_pots_settings.csv", ("classe", "ordine", "crescita", "resa"))
         self._carica_csv(c, "TERRENO_RARITA", "terreno_rarita.csv", ("terreno_id", "classe", "motivo"))
+        self._carica_csv(c, "TERRENO_TAG_SETTINGS", "terreno_tag_settings.csv", ("terreno_id", "ambito", "tag"))
+        self._carica_csv(c, "COLTURA_SETTINGS", "coltura_settings.csv", ("coltura_id", "mod", "seme", "tempo", "richiesti", "display_blocco", "display_offset", "rotazione", "da_provare", "nota"))
+        self._carica_csv(c, "COLTURA_TAG_SETTINGS", "coltura_tag_settings.csv", ("coltura_id", "ordine", "ambito", "tag"))
+        self._carica_csv(c, "COLTURA_RACCOLTO_SETTINGS", "coltura_raccolto_settings.csv", ("coltura_id", "gruppo", "tipo", "id", "count", "chance"))
 
         # conteggio diretto delle coppie, indipendente dalla vista: per ogni coltura vincente, gli oggetti dei suoi tag
         membri = defaultdict(set)
@@ -493,7 +533,7 @@ class BotanyPotsDB:
             if mancanti:
                 raise ErroreDati(f"{nome}: colonne mancanti {mancanti}")
         c.executemany(f"INSERT INTO {tabella} ({','.join(colonne)}) VALUES ({','.join('?' * len(colonne))})",
-                      [tuple(r[k] for k in colonne) for r in righe])
+                      [tuple(r[k] if r[k] != "" else None for k in colonne) for r in righe])
 
 
 def main(argv: list[str]) -> int:

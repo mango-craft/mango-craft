@@ -4,7 +4,7 @@
 Uso: python3 scripts/vasi_verifica_jar.py <cartella mods> [--pack CARTELLA] [--lungo]
 
 Si lancia dove stanno i jar (es. sul PC di Matteo, in sola lettura: non scrive niente). Per ogni coltura e
-terreno scritti da `vasi_genera.py` (e a mano) controlla nei jar:
+terreno scritti da `botanypots_genera.py` (e a mano) controlla nei jar:
 - il blocco esiste (file `blockstates/`, oppure voce di lingua);
 - il seme e i raccolti scritti a mano esistono (modello dell'oggetto, oppure voce di lingua);
 - il terreno ha un oggetto, e le voci dell'etichetta `botanypots:soil/dirt` esistono;
@@ -12,7 +12,7 @@ terreno scritti da `vasi_genera.py` (e a mano) controlla nei jar:
 - per le colture senza raccolto scritto (Botany Pots lo ricava dalla tabella del bottino del blocco): la tabella
   esiste e, con il vaso **senza attrezzo** (impostazione predefinita di Botany Pots), dà almeno un oggetto.
   Le tabelle che chiedono le cesoie o un incantesimo non danno niente senza attrezzo: la coltura va scritta con
-  un raccolto diretto (`raccolti_diretti` in `1.21.1/data/vasi/aggiunte.json`).
+  un raccolto diretto (`1.21.1/data/vasi/coltura_raccolto_settings.csv`).
 
 Il giudizio sulle tabelle è statico (non sostituisce `/botanypots debug` in gioco): le condizioni che non sa
 valutare le conta come soddisfatte e le elenca come «incerte» con `--lungo`.
