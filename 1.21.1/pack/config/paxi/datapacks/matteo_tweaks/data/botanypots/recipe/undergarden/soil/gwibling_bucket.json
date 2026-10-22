@@ -1,0 +1,16 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "undergarden:gwibling_bucket"
+      ]
+    }
+  ],
+  "type": "botanypots:soil",
+  "input": {
+    "item": "undergarden:gwibling_bucket"
+  },
+  "growth_modifier": 0.1,
+  "yield_modifier": 0.02
+}

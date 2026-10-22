@@ -1,0 +1,16 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "minecraft:axolotl_bucket"
+      ]
+    }
+  ],
+  "type": "botanypots:soil",
+  "input": {
+    "item": "minecraft:axolotl_bucket"
+  },
+  "growth_modifier": 0.1,
+  "yield_modifier": 0.06
+}

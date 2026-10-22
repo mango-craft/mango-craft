@@ -1,0 +1,13 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "minecraft:soul_soil"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_soil",
+  "block": "minecraft:soul_soil",
+  "yield_modifier": 0.06
+}

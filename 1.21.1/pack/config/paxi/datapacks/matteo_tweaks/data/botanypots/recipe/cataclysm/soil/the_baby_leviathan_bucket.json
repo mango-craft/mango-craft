@@ -1,0 +1,16 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "cataclysm:the_baby_leviathan_bucket"
+      ]
+    }
+  ],
+  "type": "botanypots:soil",
+  "input": {
+    "item": "cataclysm:the_baby_leviathan_bucket"
+  },
+  "growth_modifier": 0.3,
+  "yield_modifier": 0.06
+}
