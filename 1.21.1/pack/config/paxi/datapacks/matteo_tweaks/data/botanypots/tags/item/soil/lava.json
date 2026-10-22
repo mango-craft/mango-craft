@@ -1,0 +1,49 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "netherdepthsupgrade:blazefish_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:bonefish_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:eyeball_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:fortress_grouper_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:glowdine_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:lava_pufferfish_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:magmacubefish_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:obsidianfish_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:searing_cod_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:soulsucker_bucket",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:wither_bonefish_bucket",
+      "required": false
+    }
+  ]
+}

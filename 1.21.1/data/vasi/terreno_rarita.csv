@@ -3,6 +3,13 @@ aether:aether_dirt,rare,"altra dimensione, abbondante nelle isole dell'Aether"
 aether:aether_farmland,rare,"altra dimensione, abbondante nelle isole dell'Aether"
 aether:aether_grass_block,rare,"altra dimensione, abbondante nelle isole dell'Aether"
 aether:enchanted_aether_grass_block,super-rare,più rara delle altre terre dell'Aether (come si ottiene: da verificare)
+aether:skyroot_axolotl_bucket,super-rare,"come l'axolotl, nel secchio di skyroot"
+aether:skyroot_cod_bucket,uncommon,"come il merluzzo, nel secchio di skyroot"
+aether:skyroot_pufferfish_bucket,rare,"come il pesce palla, nel secchio di skyroot"
+aether:skyroot_salmon_bucket,uncommon,"come il salmone, nel secchio di skyroot"
+aether:skyroot_tadpole_bucket,uncommon,"come il girino, nel secchio di skyroot"
+aether:skyroot_tropical_fish_bucket,uncommon,"come il pesce tropicale, nel secchio di skyroot"
+aether:skyroot_water_bucket,common,acqua nel secchio di skyroot
 ars_elemental:yellow_archwood_log,common,"terreno base, come nelle mod"
 ars_nouveau:blue_archwood_log,common,"terreno base, come nelle mod"
 ars_nouveau:green_archwood_log,common,"terreno base, come nelle mod"
@@ -10,10 +17,12 @@ ars_nouveau:purple_archwood_log,common,"terreno base, come nelle mod"
 ars_nouveau:red_archwood_log,common,"terreno base, come nelle mod"
 bountifulfares:grassy_dirt,craft-diff-0,semi d'erba + terra: decorativa
 cataclysm:the_baby_leviathan_bucket,epic,leviatano neonato: dal boss dell'oceano di Cataclysm
+deep_aether:aerglow_fish_bucket,rare,"pesce aerglow: acque di Deep Aether, altra dimensione"
 deep_aether:aether_coarse_dirt,rare,"altra dimensione, abbondante nelle isole dell'Aether"
 deep_aether:aether_moss_block,rare,"altra dimensione, abbondante nelle isole dell'Aether"
 deep_aether:aether_mud,rare,"altra dimensione, abbondante nelle isole dell'Aether"
 deep_aether:golden_heights_grass_block,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+deep_aether:skyroot_aerglow_fish_bucket,rare,"come il pesce aerglow, nel secchio di skyroot"
 deeperdarker:blooming_moss_block,common,"terreno base, come nelle mod"
 deeperdarker:gloomslate,common,"terreno base, come nelle mod"
 deeperdarker:sculk_stone,common,"terreno base, come nelle mod"
@@ -83,6 +92,17 @@ minecraft:water_bucket,common,"terreno base, come nelle mod"
 mynethersdelight:letios_compost,craft-diff-2,"come il compost organico, con sabbia delle anime e radici del Nether"
 mynethersdelight:resurgent_soil,craft-diff-4,compost del Nether lasciato maturare
 mynethersdelight:resurgent_soil_farmland,craft-diff-4,aratura della terra risorgente
+netherdepthsupgrade:blazefish_bucket,super-rare,blazefish: nasce solo nelle fortezze del Nether (peso 15 alla pesca)
+netherdepthsupgrade:bonefish_bucket,uncommon,pesce osso: in tutto il Nether (peso 15)
+netherdepthsupgrade:eyeball_fish_bucket,rare,pesce occhio: solo foresta cremisi (peso 10)
+netherdepthsupgrade:fortress_grouper_bucket,ultimate-rare,"cernia delle fortezze: solo fortezze e delta, il più raro (peso 1)"
+netherdepthsupgrade:glowdine_bucket,uncommon,"glowdine: delta, valle delle anime e distese (peso 25)"
+netherdepthsupgrade:lava_pufferfish_bucket,rare,pesce palla di lava: foreste cremisi e distorte (peso 13)
+netherdepthsupgrade:magmacubefish_bucket,super-rare,"pesce cubo di magma: delta di basalto, raro (peso 2)"
+netherdepthsupgrade:obsidianfish_bucket,rare,pesce d'ossidiana: solo delta di basalto (peso 13)
+netherdepthsupgrade:searing_cod_bucket,uncommon,"merluzzo bruciante: in tutto il Nether, il più comune (peso 60 nella pesca di lava)"
+netherdepthsupgrade:soulsucker_bucket,ultra-rare,"succhia-anime: valle delle anime, il più raro (peso 1)"
+netherdepthsupgrade:wither_bonefish_bucket,ultra-rare,pesce osso del wither: raro (peso 2)
 regions_unexplored:alpha_grass_block,common,"terreno base, come nelle mod"
 regions_unexplored:argillite,common,"terreno base, come nelle mod"
 regions_unexplored:argillite_grass_block,common,"terreno base, come nelle mod"

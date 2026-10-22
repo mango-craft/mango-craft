@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aether:skyroot_axolotl_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_cod_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_pufferfish_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_salmon_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_tadpole_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_tropical_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_water_bucket",
+      "required": false
+    },
+    {
+      "id": "deep_aether:aerglow_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "deep_aether:skyroot_aerglow_fish_bucket",
+      "required": false
+    }
+  ]
+}

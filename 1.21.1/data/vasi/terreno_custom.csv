@@ -1,0 +1,21 @@
+terreno_id,display_blocco,fluido,nota
+netherdepthsupgrade:searing_cod_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:bonefish_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:glowdine_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:obsidianfish_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:lava_pufferfish_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:eyeball_fish_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:blazefish_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:magmacubefish_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:wither_bonefish_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:soulsucker_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+netherdepthsupgrade:fortress_grouper_bucket,minecraft:lava,sì,secchio con un pesce di lava (Nether Depths Upgrade)
+deep_aether:aerglow_fish_bucket,minecraft:water,sì,secchio con acqua o un pesce
+deep_aether:skyroot_aerglow_fish_bucket,minecraft:water,sì,secchio con acqua o un pesce
+aether:skyroot_water_bucket,minecraft:water,sì,secchio con acqua o un pesce
+aether:skyroot_cod_bucket,minecraft:water,sì,secchio con acqua o un pesce
+aether:skyroot_salmon_bucket,minecraft:water,sì,secchio con acqua o un pesce
+aether:skyroot_tropical_fish_bucket,minecraft:water,sì,secchio con acqua o un pesce
+aether:skyroot_tadpole_bucket,minecraft:water,sì,secchio con acqua o un pesce
+aether:skyroot_pufferfish_bucket,minecraft:water,sì,secchio con acqua o un pesce
+aether:skyroot_axolotl_bucket,minecraft:water,sì,secchio con acqua o un pesce

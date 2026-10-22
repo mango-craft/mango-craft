@@ -6,6 +6,7 @@ Uso: python3 scripts/botanypots_genera.py <cartella versione> [--dry-run] [--rep
 Le regole (una tabella per cosa, caricate anche nella base dati di scripts/botanypots_db.py):
 - terreno_rarita.csv            terreno → classe di rarità (bonus in rarita_pots_settings.csv), motivo
 - terreno_tag_custom.csv      terreno → tag `botanypots:soil/*` in cui lo mettiamo
+- terreno_custom.csv          i terreni che non sono blocchi (secchi): il blocco da mostrare nel vaso (liquido o no)
 - coltura_custom.csv          una coltura da scrivere: seme, tempo, blocchi richiesti, grafica, note
 - coltura_tag_custom.csv      coltura → tag ammessi (uno per riga, ne basta uno; nessuna riga = soil/dirt)
 - coltura_raccolto_custom.csv coltura → raccolto (oggetti con quantità e probabilità, o una tabella del bottino)
@@ -137,6 +138,7 @@ def main() -> int:
     classi = {r["classe"]: r for r in leggi_csv(vasi / "rarita_pots_settings.csv")}
     rarita = leggi_csv(vasi / "terreno_rarita.csv")
     ttag = leggi_csv(vasi / "terreno_tag_custom.csv")
+    tcustom = {r["terreno_id"]: r for r in leggi_csv(vasi / "terreno_custom.csv")} if (vasi / "terreno_custom.csv").exists() else {}
     colture = leggi_csv(vasi / "coltura_custom.csv")
     ctag, cracc = defaultdict(list), defaultdict(list)
     for t in leggi_csv(vasi / "coltura_tag_custom.csv"):
@@ -195,10 +197,20 @@ def main() -> int:
                 ric["yield_modifier"] = resa
             sostituzioni[Path(ns) / "recipe" / f"{path}.json"] = ric
             continue
-        if t not in blocks:
-            saltate.append((t, "terreno: non è un blocco, serve un file scritto a mano")); continue
         ns, nome = t.split(":")
-        ric = {**cond([t]), "type": "botanypots:block_derived_soil", "block": t}
+        if t in tcustom:  # non è un blocco (un secchio): file esteso, con il blocco da mostrare
+            d = tcustom[t]
+            if d["display_blocco"] not in blocks:
+                saltate.append((t, f"terreno: blocco da mostrare inesistente {d['display_blocco']}")); continue
+            display = {"type": "botanypots:simple", "block_state": {"block": d["display_blocco"]}}
+            if d["fluido"]:
+                display["options"] = {"render_fluid": True}
+            ric = {"bookshelf:load_conditions": [{"type": "bookshelf:item_exists", "values": [t]}],
+                   "type": "botanypots:soil", "input": {"item": t}, "display": display}
+        elif t not in blocks:
+            saltate.append((t, "terreno: non è un blocco; va descritto in terreno_custom.csv")); continue
+        else:
+            ric = {**cond([t]), "type": "botanypots:block_derived_soil", "block": t}
         if crescita:
             ric["growth_modifier"] = crescita
         if resa:

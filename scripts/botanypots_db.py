@@ -23,7 +23,7 @@ Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
   viste         POTS_TERRENO_VINCENTE, POTS_COLTURA_VINCENTE (il file che il gioco usa per ogni id; `avviso` se due jar
                 portano lo stesso id, caso in cui l'ordine non è noto e non blocca)
   esplosa       TERRENO_TAG   (per ogni terreno, tutti i tag in cui sta, con il tag che lo elenca davvero)
-  scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA, TERRENO_TAG_CUSTOM, COLTURA_CUSTOM, COLTURA_TAG_CUSTOM,
+  scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA, TERRENO_TAG_CUSTOM, TERRENO_CUSTOM, COLTURA_CUSTOM, COLTURA_TAG_CUSTOM,
                 COLTURA_RACCOLTO_CUSTOM   (le regole nostre, lette anche da scripts/botanypots_genera.py)
                 POTS_COMPATIBILITA   (terreno × coltura, dai file vincenti, con il tag che fa da ponte)
 
@@ -141,6 +141,12 @@ CREATE TABLE TERRENO_TAG_CUSTOM (
   ambito     TEXT NOT NULL CHECK (ambito IN ('oggetti', 'blocchi')),
   tag        TEXT NOT NULL,
   PRIMARY KEY (terreno_id, ambito, tag)
+);
+CREATE TABLE TERRENO_CUSTOM (
+  terreno_id     TEXT PRIMARY KEY,      -- un terreno che non è un blocco (un secchio)
+  display_blocco TEXT NOT NULL,         -- il blocco mostrato nel vaso
+  fluido         TEXT,                  -- non vuoto: mostrato come liquido
+  nota           TEXT
 );
 CREATE TABLE COLTURA_CUSTOM (
   coltura_id     TEXT PRIMARY KEY,      -- il blocco della pianta, o l'id del file per le colture senza blocco
@@ -521,6 +527,7 @@ class BotanyPotsDB:
         self._carica_csv(c, "RARITA_POTS_SETTINGS", "rarita_pots_settings.csv", ("classe", "famiglia", "ordine", "crescita", "resa"))
         self._carica_csv(c, "TERRENO_RARITA", "terreno_rarita.csv", ("terreno_id", "classe", "motivo"))
         self._carica_csv(c, "TERRENO_TAG_CUSTOM", "terreno_tag_custom.csv", ("terreno_id", "ambito", "tag"))
+        self._carica_csv(c, "TERRENO_CUSTOM", "terreno_custom.csv", ("terreno_id", "display_blocco", "fluido", "nota"))
         self._carica_csv(c, "COLTURA_CUSTOM", "coltura_custom.csv", ("coltura_id", "mod", "seme", "tempo", "richiesti", "display_blocco", "display_offset", "rotazione", "da_provare", "nota"))
         self._carica_csv(c, "COLTURA_TAG_CUSTOM", "coltura_tag_custom.csv", ("coltura_id", "ordine", "ambito", "tag"))
         self._carica_csv(c, "COLTURA_RACCOLTO_CUSTOM", "coltura_raccolto_custom.csv", ("coltura_id", "gruppo", "tipo", "id", "count", "chance"))

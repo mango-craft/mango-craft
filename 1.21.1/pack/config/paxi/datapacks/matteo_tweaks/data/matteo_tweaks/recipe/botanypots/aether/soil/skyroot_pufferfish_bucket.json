@@ -1,0 +1,25 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "aether:skyroot_pufferfish_bucket"
+      ]
+    }
+  ],
+  "type": "botanypots:soil",
+  "input": {
+    "item": "aether:skyroot_pufferfish_bucket"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "minecraft:water"
+    },
+    "options": {
+      "render_fluid": true
+    }
+  },
+  "growth_modifier": 0.1,
+  "yield_modifier": 0.02
+}
