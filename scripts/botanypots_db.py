@@ -124,9 +124,11 @@ CREATE TABLE TERRENO_TAG (
 );
 CREATE TABLE RARITA_POTS_SETTINGS (
   classe   TEXT PRIMARY KEY,
-  ordine   INTEGER NOT NULL UNIQUE,     -- 1 = la più facile da ottenere
+  famiglia TEXT NOT NULL CHECK (famiglia IN ('natura', 'craft')),  -- si trova nel mondo / si crafta
+  ordine   INTEGER NOT NULL,            -- 0 = la più facile da ottenere, dentro la famiglia
   crescita REAL NOT NULL,
-  resa     REAL NOT NULL
+  resa     REAL NOT NULL,
+  UNIQUE (famiglia, ordine)
 );
 CREATE TABLE TERRENO_RARITA (
   terreno_id TEXT PRIMARY KEY REFERENCES TERRENO,
@@ -265,6 +267,8 @@ class BotanyPotsDB:
         ctl("i terreni in_vaso hanno un file vincente", "SELECT count(*) FROM TERRENO t WHERE (stato='in_vaso') <> EXISTS (SELECT 1 FROM POTS_TERRENO_VINCENTE p WHERE p.terreno_id=t.terreno_id)")
         n = c.execute("SELECT count(*) FROM (SELECT ricetta_id FROM POTS_TERRENO_VINCENTE WHERE avviso UNION ALL SELECT ricetta_id FROM POTS_COLTURA_VINCENTE WHERE avviso)").fetchone()[0]
         out.append(("avviso: id portati da due jar (non blocca)", True, f"trovati: {n}"))
+        n = c.execute("SELECT count(*) FROM TERRENO t WHERE t.stato='in_vaso' AND NOT EXISTS (SELECT 1 FROM TERRENO_RARITA r WHERE r.terreno_id=t.terreno_id)").fetchone()[0]
+        out.append(("avviso: terreni in vaso senza classe di rarità (non blocca)", True, f"trovati: {n}"))
         if self._coppie_attese is not None:
             n = c.execute("SELECT count(*) FROM (SELECT DISTINCT terreno_id, coltura_id FROM POTS_COMPATIBILITA)").fetchone()[0]
             out.append(("coppie terreno-coltura = conteggio diretto sui file", n == self._coppie_attese, f"vista {n}, diretto {self._coppie_attese}"))
@@ -514,7 +518,7 @@ class BotanyPotsDB:
             (t, tag_ids[tag], tag_ids[t0], liv, int((t, tag, t0) not in senza_k)) for (t, tag, t0), liv in esploso.items()])
 
         # scelte
-        self._carica_csv(c, "RARITA_POTS_SETTINGS", "rarita_pots_settings.csv", ("classe", "ordine", "crescita", "resa"))
+        self._carica_csv(c, "RARITA_POTS_SETTINGS", "rarita_pots_settings.csv", ("classe", "famiglia", "ordine", "crescita", "resa"))
         self._carica_csv(c, "TERRENO_RARITA", "terreno_rarita.csv", ("terreno_id", "classe", "motivo"))
         self._carica_csv(c, "TERRENO_TAG_CUSTOM", "terreno_tag_custom.csv", ("terreno_id", "ambito", "tag"))
         self._carica_csv(c, "COLTURA_CUSTOM", "coltura_custom.csv", ("coltura_id", "mod", "seme", "tempo", "richiesti", "display_blocco", "display_offset", "rotazione", "da_provare", "nota"))

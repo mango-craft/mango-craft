@@ -8,5 +8,7 @@
     }
   ],
   "type": "botanypots:block_derived_soil",
-  "block": "aether:enchanted_aether_grass_block"
+  "block": "aether:enchanted_aether_grass_block",
+  "growth_modifier": 0.1,
+  "yield_modifier": 0.06
 }

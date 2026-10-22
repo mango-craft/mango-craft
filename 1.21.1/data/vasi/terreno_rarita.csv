@@ -1,19 +1,131 @@
 terreno_id,classe,motivo
-aether:aether_dirt,comune,facoltativo
-aether:aether_farmland,comune,facoltativo
-aether:aether_grass_block,comune,facoltativo
-aether:enchanted_aether_grass_block,comune,facoltativo
-bountifulfares:grassy_dirt,comune,"facoltativo, nel tag minecraft:dirt"
-deep_aether:aether_coarse_dirt,comune,facoltativo
-deep_aether:aether_moss_block,comune,facoltativo
-deep_aether:aether_mud,comune,facoltativo
-deep_aether:golden_heights_grass_block,comune,facoltativo
-farm_and_charm:fertilized_farmland,compost_base,come oggi (migrazione del 22/10/2026)
-farm_and_charm:fertilized_soil,compost_base,come oggi (migrazione del 22/10/2026)
-hexalia:infused_dirt,compost_base,nel tag minecraft:dirt
-hexalia:infused_farmland,compost_base,serve anche al saltsprout
-mynethersdelight:letios_compost,comune,"compost del Nether, senza bonus"
-mynethersdelight:resurgent_soil,compost_base,terra del Nether in stile terra ricca
-mynethersdelight:resurgent_soil_farmland,compost_base,come oggi (migrazione del 22/10/2026)
-twilightdelight:twilight_rich_soil,compost_base,"terra ricca, come quella di Farmer's Delight (+15%)"
-twilightdelight:twilight_rich_soil_farmland,compost_base,come oggi (migrazione del 22/10/2026)
+aether:aether_dirt,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+aether:aether_farmland,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+aether:aether_grass_block,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+aether:enchanted_aether_grass_block,super-rare,più rara delle altre terre dell'Aether (come si ottiene: da verificare)
+ars_elemental:yellow_archwood_log,common,"terreno base, come nelle mod"
+ars_nouveau:blue_archwood_log,common,"terreno base, come nelle mod"
+ars_nouveau:green_archwood_log,common,"terreno base, come nelle mod"
+ars_nouveau:purple_archwood_log,common,"terreno base, come nelle mod"
+ars_nouveau:red_archwood_log,common,"terreno base, come nelle mod"
+bountifulfares:grassy_dirt,craft-diff-0,semi d'erba + terra: decorativa
+cataclysm:the_baby_leviathan_bucket,common,"terreno base, come nelle mod"
+deep_aether:aether_coarse_dirt,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+deep_aether:aether_moss_block,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+deep_aether:aether_mud,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+deep_aether:golden_heights_grass_block,rare,"altra dimensione, abbondante nelle isole dell'Aether"
+deeperdarker:blooming_moss_block,common,"terreno base, come nelle mod"
+deeperdarker:gloomslate,common,"terreno base, come nelle mod"
+deeperdarker:sculk_stone,common,"terreno base, come nelle mod"
+farm_and_charm:fertilized_farmland,craft-diff-3,aratura della terra fertilizzata
+farm_and_charm:fertilized_soil,craft-diff-3,9 fertilizzanti (carne putrida nel tritacarne) per un blocco
+farmersdelight:organic_compost,craft-diff-2,9 ingredienti comuni; serve solo ai funghi
+farmersdelight:rich_soil,craft-diff-4,compost organico lasciato maturare nel mondo
+farmersdelight:rich_soil_farmland,craft-diff-4,aratura della terra ricca
+farmingforblockheads:fertilized_farmland_healthy,craft-diff-3,aratura con il fertilizzante dedicato di Farming for Blockheads
+farmingforblockheads:fertilized_farmland_healthy_stable,craft-diff-3,aratura con il fertilizzante dedicato di Farming for Blockheads
+farmingforblockheads:fertilized_farmland_rich,craft-diff-3,aratura con il fertilizzante dedicato di Farming for Blockheads
+farmingforblockheads:fertilized_farmland_rich_stable,craft-diff-3,aratura con il fertilizzante dedicato di Farming for Blockheads
+farmingforblockheads:fertilized_farmland_stable,craft-diff-3,aratura con il fertilizzante dedicato di Farming for Blockheads
+hexalia:infused_dirt,craft-diff-2,"terra + alga delle sirene, ne dà 2"
+hexalia:infused_farmland,craft-diff-2,aratura della terra infusa
+minecraft:andesite,common,"terreno base, come nelle mod"
+minecraft:axolotl_bucket,common,"terreno base, come nelle mod"
+minecraft:coarse_dirt,common,"terreno base, come nelle mod"
+minecraft:cod_bucket,common,"terreno base, come nelle mod"
+minecraft:crimson_nylium,common,"terreno base, come nelle mod"
+minecraft:deepslate,common,"terreno base, come nelle mod"
+minecraft:diorite,common,"terreno base, come nelle mod"
+minecraft:dirt,common,"terreno base, come nelle mod"
+minecraft:dirt_path,common,"terreno base, come nelle mod"
+minecraft:end_stone,common,"terreno base, come nelle mod"
+minecraft:farmland,craft-diff-1,come oggetto solo con il Metamorfizzatore di Cognition
+minecraft:granite,common,"terreno base, come nelle mod"
+minecraft:grass_block,common,"terreno base, come nelle mod"
+minecraft:infested_deepslate,common,"terreno base, come nelle mod"
+minecraft:infested_stone,common,"terreno base, come nelle mod"
+minecraft:jungle_log,common,"terreno base, come nelle mod"
+minecraft:jungle_wood,common,"terreno base, come nelle mod"
+minecraft:lava_bucket,common,"terreno base, come nelle mod"
+minecraft:moss_block,common,"terreno base, come nelle mod"
+minecraft:mud,common,"terreno base, come nelle mod"
+minecraft:muddy_mangrove_roots,common,"terreno base, come nelle mod"
+minecraft:mycelium,common,"terreno base, come nelle mod"
+minecraft:netherrack,common,"terreno base, come nelle mod"
+minecraft:obsidian,common,"terreno base, come nelle mod"
+minecraft:podzol,common,"terreno base, come nelle mod"
+minecraft:polished_andesite,common,"terreno base, come nelle mod"
+minecraft:polished_deepslate,common,"terreno base, come nelle mod"
+minecraft:polished_diorite,common,"terreno base, come nelle mod"
+minecraft:polished_granite,common,"terreno base, come nelle mod"
+minecraft:powder_snow_bucket,common,"terreno base, come nelle mod"
+minecraft:pufferfish_bucket,common,"terreno base, come nelle mod"
+minecraft:red_sand,common,"terreno base, come nelle mod"
+minecraft:rooted_dirt,common,"terreno base, come nelle mod"
+minecraft:salmon_bucket,common,"terreno base, come nelle mod"
+minecraft:sand,common,"terreno base, come nelle mod"
+minecraft:sculk,common,"terreno base, come nelle mod"
+minecraft:sculk_catalyst,ultra-rare,"Deep Dark o Warden; coltivabile nel vaso, quindi non oltre"
+minecraft:snow,common,"terreno base, come nelle mod"
+minecraft:snow_block,common,"terreno base, come nelle mod"
+minecraft:snowball,common,"terreno base, come nelle mod"
+minecraft:soul_sand,common,"terreno base, come nelle mod"
+minecraft:soul_soil,common,"terreno base, come nelle mod"
+minecraft:stone,common,"terreno base, come nelle mod"
+minecraft:stripped_jungle_log,common,"terreno base, come nelle mod"
+minecraft:stripped_jungle_wood,common,"terreno base, come nelle mod"
+minecraft:suspicious_sand,common,"terreno base, come nelle mod"
+minecraft:tadpole_bucket,common,"terreno base, come nelle mod"
+minecraft:tropical_fish_bucket,common,"terreno base, come nelle mod"
+minecraft:tuff,common,"terreno base, come nelle mod"
+minecraft:warped_nylium,common,"terreno base, come nelle mod"
+minecraft:water_bucket,common,"terreno base, come nelle mod"
+mynethersdelight:letios_compost,craft-diff-2,"come il compost organico, con sabbia delle anime e radici del Nether"
+mynethersdelight:resurgent_soil,craft-diff-4,compost del Nether lasciato maturare
+mynethersdelight:resurgent_soil_farmland,craft-diff-4,aratura della terra risorgente
+regions_unexplored:alpha_grass_block,common,"terreno base, come nelle mod"
+regions_unexplored:argillite,common,"terreno base, come nelle mod"
+regions_unexplored:argillite_grass_block,common,"terreno base, come nelle mod"
+regions_unexplored:ashen_dirt,common,"terreno base, come nelle mod"
+regions_unexplored:brimsprout_nylium,common,"terreno base, come nelle mod"
+regions_unexplored:chalk,common,"terreno base, come nelle mod"
+regions_unexplored:chalk_grass_block,common,"terreno base, come nelle mod"
+regions_unexplored:cobalt_nylium,common,"terreno base, come nelle mod"
+regions_unexplored:deepslate_grass_block,common,"terreno base, come nelle mod"
+regions_unexplored:deepslate_prismoss,common,"terreno base, come nelle mod"
+regions_unexplored:deepslate_viridescent_nylium,common,"terreno base, come nelle mod"
+regions_unexplored:glistering_nylium,common,"terreno base, come nelle mod"
+regions_unexplored:mossy_stone,common,"terreno base, come nelle mod"
+regions_unexplored:mycotoxic_moss,common,"terreno base, come nelle mod"
+regions_unexplored:overgrown_bone_block,common,"terreno base, come nelle mod"
+regions_unexplored:peat_coarse_dirt,common,"terreno base, come nelle mod"
+regions_unexplored:peat_dirt,common,"terreno base, come nelle mod"
+regions_unexplored:peat_dirt_path,common,"terreno base, come nelle mod"
+regions_unexplored:peat_farmland,common,"terreno base, come nelle mod"
+regions_unexplored:peat_grass_block,common,"terreno base, come nelle mod"
+regions_unexplored:peat_mud,common,"terreno base, come nelle mod"
+regions_unexplored:peat_podzol,common,"terreno base, come nelle mod"
+regions_unexplored:prismoss,common,"terreno base, come nelle mod"
+regions_unexplored:silt_coarse_dirt,common,"terreno base, come nelle mod"
+regions_unexplored:silt_dirt,common,"terreno base, come nelle mod"
+regions_unexplored:silt_dirt_path,common,"terreno base, come nelle mod"
+regions_unexplored:silt_farmland,common,"terreno base, come nelle mod"
+regions_unexplored:silt_grass_block,common,"terreno base, come nelle mod"
+regions_unexplored:silt_mud,common,"terreno base, come nelle mod"
+regions_unexplored:silt_podzol,common,"terreno base, come nelle mod"
+regions_unexplored:stone_grass_block,common,"terreno base, come nelle mod"
+regions_unexplored:viridescent_nylium,common,"terreno base, come nelle mod"
+supplementaries:planter,common,"terreno base, come nelle mod"
+twilightdelight:twilight_rich_soil,craft-diff-5,terra ricca + radice viva del Twilight Forest
+twilightdelight:twilight_rich_soil_farmland,craft-diff-5,aratura della terra ricca del Crepuscolo
+twilightforest:uberous_soil,ultimate-rare,"solo nei giardini delle caverne dei troll (Twilight Forest), non craftabile"
+undergarden:ashen_deepturf_block,common,"terreno base, come nelle mod"
+undergarden:coarse_deepsoil,common,"terreno base, come nelle mod"
+undergarden:deepsoil,common,"terreno base, come nelle mod"
+undergarden:deepsoil_farmland,craft-diff-1,aratura: come oggetto non si ottiene; allineata alla terra arata vanilla
+undergarden:deepturf_block,common,"terreno base, come nelle mod"
+undergarden:depthrock,common,"terreno base, come nelle mod"
+undergarden:frozen_deepturf_block,common,"terreno base, come nelle mod"
+undergarden:gwibling_bucket,common,"terreno base, come nelle mod"
+undergarden:shiverstone,common,"terreno base, come nelle mod"
+undergarden:tremblecrust,common,"terreno base, come nelle mod"

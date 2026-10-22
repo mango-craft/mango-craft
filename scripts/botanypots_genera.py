@@ -126,6 +126,13 @@ def main() -> int:
     ver = a.versione if a.versione.is_absolute() else ROOT / a.versione
     vasi = ver / "data" / "vasi"
     blocks, items, originali = carica_inventario(ver / "data" / "inventario")
+    # terreni scritti a mano nel datapack (cartelle crop/, soil/, alberi/): non si rigenerano né si sostituiscono
+    a_mano: dict[str, Path] = {}
+    for d in MIEI:
+        for f in (ver / DP / "matteo_tweaks" / "recipe" / "botanypots" / d).glob("**/*.json"):
+            r = json.loads(f.read_text(encoding="utf-8"))
+            if r.get("type") in ("botanypots:soil", "botanypots:block_derived_soil"):
+                a_mano[r["input"]["item"] if r.get("input") else r["block"]] = f
 
     classi = {r["classe"]: r for r in leggi_csv(vasi / "rarita_pots_settings.csv")}
     rarita = leggi_csv(vasi / "terreno_rarita.csv")
@@ -169,6 +176,12 @@ def main() -> int:
             saltate.append((t, f"terreno: classe sconosciuta {r['classe']}")); continue
         cl = classi[r["classe"]]
         crescita, resa = float(cl["crescita"]), float(cl["resa"])
+        if t in a_mano:
+            f = a_mano[t]
+            r0 = json.loads(f.read_text(encoding="utf-8"))
+            if (float(r0.get("growth_modifier", 0)), float(r0.get("yield_modifier", 0))) != (crescita, resa):
+                saltate.append((t, f"terreno scritto a mano ({f.relative_to(ver / DP)}): bonus della classe diverso, aggiornarlo a mano"))
+            continue
         orig = originali.get(t)
         if orig is not None:
             if (float(orig.get("growth_modifier", 0)), float(orig.get("yield_modifier", 0))) == (crescita, resa):

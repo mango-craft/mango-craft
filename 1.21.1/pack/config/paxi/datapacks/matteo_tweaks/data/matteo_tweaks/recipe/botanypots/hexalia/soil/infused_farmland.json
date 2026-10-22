@@ -9,5 +9,6 @@
   ],
   "type": "botanypots:block_derived_soil",
   "block": "hexalia:infused_farmland",
-  "growth_modifier": 0.15
+  "growth_modifier": 0.1,
+  "yield_modifier": 0.02
 }

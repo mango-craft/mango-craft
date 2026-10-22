@@ -8,5 +8,7 @@
     }
   ],
   "type": "botanypots:block_derived_soil",
-  "block": "deep_aether:aether_moss_block"
+  "block": "deep_aether:aether_moss_block",
+  "growth_modifier": 0.1,
+  "yield_modifier": 0.02
 }
