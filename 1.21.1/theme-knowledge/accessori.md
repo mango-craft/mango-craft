@@ -22,18 +22,38 @@ Nel pack ci sono **due librerie di accessori che non si parlano** (Curios e Acce
 - Log del 21/10: `Loaded 18 curio slots`; nessun dato su quanti slot carica Accessories. L'avviso `It seems the given player has no slots bound to it within a init call` di Accessories compare anche nei log precedenti.
 - Per ridurre i menu le strade sono: Aether con il menu standard (`use_default_accessories_menu = true`, ma lo scudo di repulsione e gli zaini si contendono lo slot `back`), il Compatibility Layer (scartato il 16/10), oppure togliere l'Aether (che porta con sé Accessories). **Deciso il 21/10/2026 (Matteo): «ok così»**, restano tre menu e nessuna config da cambiare (`../lavoro/versioni/v0.6.0.md`, Decisioni). Le strade restano qui come memoria, se un giorno servisse ridurli.
 
-## Potenziamento ed evoluzione (valutazione iniziale del 23/10)
+## Potenziamento ed evoluzione (ricerca del 23/10)
 
-Idea di Matteo (`../lavoro/0503-temi-aperti.md`): gli accessori non crescono. Fatti dall'inventario:
-- **Chi porta accessori** (oggetti nei tag `curios:`): Traveler's Backpack 44 (zaini), Twilight Forest 23 (soprattutto trofei e amuleti), Ars Elemental 18, Starcatcher 17 (cappelli e amuleti da pesca), Ars Nouveau 14, Cataclysm 13, Unusual End 13, Occultism 6; **Artifacts** 54 oggetti, ognuno a sé.
-- **Catene già esistenti** (versione migliore = un altro oggetto, non un potenziamento): Ars Nouveau anello dello sconto minore → maggiore; Aether anelli e pendenti di ferro → oro → zanite (più quelli di ghiaccio) e guanti per materiale (cotta di maglia, oro, diamante, gravitite… con le finiture).
-- **Vincolo**: il datapack non crea oggetti nuovi e non cambia gli effetti scritti nel codice (Artifacts ha una config, ma vale per tutti, non per livelli). Quindi "evolvere" nel datapack vuol dire solo **ricette che trasformano un accessorio esistente in un altro esistente** (es. A + materiale raro → B, se B è davvero migliore).
+Idea di Matteo (`../lavoro/0503-temi-aperti.md`): gli accessori non crescono. Grezzo della ricerca: `../../ai-agents/stage/2026-10-23_accessori-evoluzione/` (jar e config dell'istanza, sorgenti delle versioni del pack, API di Modrinth).
 
-Valutazione:
-- 🟢 Prima l'analisi: per ogni slot, gli accessori e il loro effetto; dove ci sono già "fratelli" più forti (come sopra) una ricetta di passaggio nel datapack è semplice e coerente.
-- 🟡 Una mod dedicata ai livelli degli accessori (cresce con l'uso o con materiali): da cercare per 1.21.1 NeoForge e da mettere tra le candidate; aggiunge oggetti suoi più che potenziare quelli delle altre mod.
-- 🟡 Apotheosis (affissi e gemme): potenzia armi e armature; se valga anche per gli accessori Curios **non è verificato**.
-- 🔴 Riscrivere gli effetti degli accessori: serve codice, fuori dal datapack.
+**Cosa c'è già nel pack**
+- **Catene "versione migliore = altro oggetto"**: Ars Nouveau anello del potenziale → sconto minore → sconto maggiore (Apparato); Ars Elemental focus minore → focus (conserva i dati); Twilight Forest 4 amuleti della vita di grado 1 → 1 di grado 2, conservazione fino al 3; Aether anelli e pendenti di ferro/oro → di ghiaccio, guanti per materiale e guanti di diamante → netherite alla forgia; Deep Aether alla forgia guanti di skyjade → stormforged, guanti e anello di gravitite → stratus; Unusual End sfera del golem → sfere di fiamma, shulker, avvizzimento. Zaini: dal base alla netherite conservando il contenuto.
+- **Crescono con l'uso**: gli strumenti di zanite dell'Aether (più sono consumati, più sono veloci), i guanti della fenice che diventano d'ossidiana; il famiglio fabbro di Occultism potenzia gli altri famigli.
+- **Artifacts** (48 oggetti): nessuna ricetta di accessori e nessun livello; la config (`items.toml`) vale per tipo di oggetto e per tutte le copie. Ma le **abilità sono componenti dell'oggetto** che accettano anche **valori fissi**: vedi la scheda `../mod-knowledge/artifacts.md`.
+- **Apotheosis 8.9.0 non agisce sugli accessori Curios**: affissi, gemme e rifacimento valgono solo per armi, armature, scudi e attrezzi negli slot vanilla; la categoria per Curios è commentata nel codice (`compat/curios/CuriosCompat.java`, "Experimental"). Il suo unico accessorio, il talismano di pozione, con l'infusione diventa indistruttibile.
+- **Slot (risponde al «formato da verificare» dei temi aperti)**: `data/<ns>/curios/slots/<slot>.json` con `size` e `operation` (`SET`, `ADD`, `REMOVE`; di serie `SET`), `replace`, `add_cosmetic`, `drop_rule`; le entità in `data/<ns>/curios/entities/*.json` (Curios 9.5.1, `CuriosSlotManager`). Il componente `curios:attribute_modifiers` dà a un accessorio attributi in più **o uno slot in più** (`type: "curios:<slot>"`) solo mentre è indossato nello slot indicato; se presente, sostituisce i modificatori Curios propri dell'oggetto.
+
+**Mod esterne (1.21.1 NeoForge, dati di Modrinth del 23/10)**
+
+| Mod | Versione | Licenza | Usa | Cosa fa | Giudizio |
+|---|---|---|---|---|---|
+| Reliquified Artifacts | 1.0.9 beta, 12/10/2026 | ARR | Curios, Relics, OctoLib; vuole **esattamente** Artifacts 13.2.5 | Rifà tutti i 48 artefatti come reliquie di Relics, con livelli e ranghi | 🟡 È l'idea, ma rompe il nostro pack: vedi la scheda `artifacts` |
+| Relics | 0.12.9 beta, 18/10/2026 | ARR (uso nei modpack permesso) | Curios, OctoLib/ShatterLib | 20 reliquie sue, il livello sale usandole, punti, rilancio delle statistiche, ranghi, ricerca | 🟡 Mod autonoma interessante; i mantelli vanno nello slot `back` degli zaini |
+| More Relics | beta, legata a build precise di Relics | ARR | Relics | Reliquie in più, con evoluzioni | 🔴 |
+| L2 Artifacts | 3.0.7 | LGPL-2.1 | Curios, L2 Library | Set di artefatti suoi con statistiche casuali, che salgono di livello | 🔴 |
+| BaublesReforked | 1.0.3 | ARR, codice chiuso | Curios | Attributi casuali sugli accessori, rifatti sull'incudine | 🟡 Non si sa quali accessori tocchi |
+| Tiered More | — | — | Curios o Accessories | Livelli di qualità sugli oggetti | 🔴 Con Accessories presente (nell'Aether) spegne il supporto a Curios |
+| Apothic Curios | solo 1.20.1 / 1.19.2 Forge | — | — | Affissi di Apotheosis sugli accessori | Non esiste per 1.21.1 |
+
+**Cosa si può fare col nostro datapack** (non crea oggetti né effetti nuovi, non fa crescere con l'uso):
+- 🟢 **Lo stesso artefatto "potenziato"** con valori fissi più alti (es. guanto del potere +6 danno invece di +4), ottenuto con un'infusione al tavolo d'incantamento di Apothic Enchanting (le tappe diventano tappe dell'incantamento), una ricetta, o il bottino delle casse dei boss. Formati verificati nei jar; scheda `artifacts`.
+- 🟢 **Ricette di passaggio** dove ci sono già "fratelli" più forti (es. anelli e pendenti dell'Aether di ferro o d'oro + zanite → di zanite).
+- 🟡 **Attributi o slot in più** con `curios:attribute_modifiers` sugli accessori potenziati.
+- 🔴 Livelli che crescono con l'uso, effetti nuovi, affissi di Apotheosis sugli accessori: servono mod.
+
+**Da provare in gioco** (con `/give`, comandi nel grezzo, sezione 5): un guanto del potere con il componente a +6; sciarpa fortunata con Fortuna II; `curios:attribute_modifiers` con +2 armatura e con uno slot anello in più; una ricetta di prova con risultato a componenti (anche alla forgia); un artefatto nel tavolo del rifacimento di Apotheosis (atteso: non entra).
+
+**Valutazione**: 🟢 prima le prove con `/give`, poi un pilota nel datapack con 3–5 artefatti di "livello II" per infusione. Relics da solo resta un'alternativa 🟡 da valutare come mod candidata; Reliquified Artifacts solo in un'istanza a parte e prima del mondo vero.
 
 ## Rimandi
 
