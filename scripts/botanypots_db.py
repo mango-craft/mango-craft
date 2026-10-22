@@ -19,9 +19,11 @@ Il file <versione>/data/vasi/vasi.sqlite non va nel repository: si rigenera.
 Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
   anagrafiche   TAG, TERRENO, COLTURA
   file del vaso POTS_TERRENO, POTS_COLTURA, POTS_COLTURA_SEME, POTS_COLTURA_TAG   (chiave: ricetta + fonte)
+  viste         POTS_TERRENO_VINCENTE, POTS_COLTURA_VINCENTE (il file che il gioco usa per ogni id; `avviso` se due jar
+                portano lo stesso id, caso in cui l'ordine non è noto e non blocca)
   esplosa       TERRENO_TAG   (per ogni terreno, tutti i tag in cui sta, con il tag che lo elenca davvero)
   scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA
-  vista         POTS_COMPATIBILITA   (terreno × coltura, dai file vincenti, con il tag che fa da ponte)
+                POTS_COMPATIBILITA   (terreno × coltura, dai file vincenti, con il tag che fa da ponte)
 
 Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
 - il vaso cerca il file di terreno con l'oggetto nello slot del terreno e il file di coltura con l'oggetto nello
@@ -82,7 +84,6 @@ CREATE TABLE POTS_TERRENO (
   crescita   REAL NOT NULL DEFAULT 0,
   resa       REAL NOT NULL DEFAULT 0,
   luce       INTEGER NOT NULL DEFAULT 0,
-  vincente   INTEGER NOT NULL CHECK (vincente IN (0, 1)),   -- il file che il gioco usa per questo id
   PRIMARY KEY (ricetta_id, fonte)
 );
 CREATE TABLE POTS_COLTURA (
@@ -93,7 +94,6 @@ CREATE TABLE POTS_COLTURA (
   tempo      INTEGER NOT NULL DEFAULT 1200,  -- tick
   resa_base  REAL NOT NULL DEFAULT 1,
   scala_resa REAL NOT NULL DEFAULT 1,
-  vincente   INTEGER NOT NULL CHECK (vincente IN (0, 1)),
   PRIMARY KEY (ricetta_id, fonte)
 );
 CREATE TABLE POTS_COLTURA_SEME (
@@ -131,11 +131,23 @@ CREATE TABLE TERRENO_RARITA (
   classe     TEXT NOT NULL REFERENCES RARITA_POTS_SETTINGS,
   motivo     TEXT NOT NULL              -- come si ottiene
 );
+-- File vincenti: tra file con lo stesso id vince il nostro datapack (Paxi lo carica sopra a tutti). Se due jar
+-- portano lo stesso id l'ordine non è noto: `avviso` = 1 e si tiene il primo per nome di fonte.
+CREATE VIEW POTS_TERRENO_VINCENTE AS
+  SELECT p.*, (SELECT count(*) FROM POTS_TERRENO q WHERE q.ricetta_id = p.ricetta_id AND q.strato = 'originale') > 1 AS avviso
+  FROM POTS_TERRENO p
+  WHERE p.fonte = (SELECT fonte FROM POTS_TERRENO q WHERE q.ricetta_id = p.ricetta_id
+                   ORDER BY q.strato = 'nostro' DESC, q.fonte LIMIT 1);
+CREATE VIEW POTS_COLTURA_VINCENTE AS
+  SELECT p.*, (SELECT count(*) FROM POTS_COLTURA q WHERE q.ricetta_id = p.ricetta_id AND q.strato = 'originale') > 1 AS avviso
+  FROM POTS_COLTURA p
+  WHERE p.fonte = (SELECT fonte FROM POTS_COLTURA q WHERE q.ricetta_id = p.ricetta_id
+                   ORDER BY q.strato = 'nostro' DESC, q.fonte LIMIT 1);
 CREATE VIEW POTS_COMPATIBILITA AS
   SELECT tt.terreno_id, pc.coltura_id, pct.tag_id, MIN(tt.da_noi) AS da_noi
   FROM TERRENO_TAG tt
   JOIN POTS_COLTURA_TAG pct ON pct.tag_id = tt.tag_id
-  JOIN POTS_COLTURA pc ON pc.ricetta_id = pct.ricetta_id AND pc.fonte = pct.fonte AND pc.vincente = 1
+  JOIN POTS_COLTURA_VINCENTE pc ON pc.ricetta_id = pct.ricetta_id AND pc.fonte = pct.fonte
   GROUP BY tt.terreno_id, pc.coltura_id, pct.tag_id;
 """
 
@@ -198,13 +210,15 @@ class BotanyPotsDB:
             out.append((nome, n == atteso, f"{dettaglio or 'trovati'}: {n}"))
 
         out.append(("chiavi esterne valide", not c.execute("PRAGMA foreign_key_check").fetchall(), ""))
-        ctl("un solo file vincente per terreno", "SELECT count(*) FROM (SELECT terreno_id FROM POTS_TERRENO WHERE vincente=1 GROUP BY terreno_id HAVING count(*)>1)")
-        ctl("un solo file vincente per coltura", "SELECT count(*) FROM (SELECT coltura_id FROM POTS_COLTURA WHERE vincente=1 GROUP BY coltura_id HAVING count(*)>1)")
-        ctl("un seme non trova due colture vincenti", "SELECT count(*) FROM (SELECT s.seme FROM POTS_COLTURA_SEME s JOIN POTS_COLTURA p ON p.ricetta_id=s.ricetta_id AND p.fonte=s.fonte AND p.vincente=1 GROUP BY s.seme HAVING count(*)>1)")
+        ctl("un solo file vincente per terreno", "SELECT count(*) FROM (SELECT terreno_id FROM POTS_TERRENO_VINCENTE GROUP BY terreno_id HAVING count(*)>1)")
+        ctl("un solo file vincente per coltura", "SELECT count(*) FROM (SELECT coltura_id FROM POTS_COLTURA_VINCENTE GROUP BY coltura_id HAVING count(*)>1)")
+        ctl("un seme non trova due colture vincenti", "SELECT count(*) FROM (SELECT s.seme FROM POTS_COLTURA_SEME s JOIN POTS_COLTURA_VINCENTE p ON p.ricetta_id=s.ricetta_id AND p.fonte=s.fonte GROUP BY s.seme HAVING count(*)>1)")
         ctl("ogni coltura ha almeno un seme", "SELECT count(*) FROM POTS_COLTURA p WHERE NOT EXISTS (SELECT 1 FROM POTS_COLTURA_SEME s WHERE s.ricetta_id=p.ricetta_id AND s.fonte=p.fonte)")
         ctl("ogni coltura ha almeno un tag", "SELECT count(*) FROM POTS_COLTURA p WHERE NOT EXISTS (SELECT 1 FROM POTS_COLTURA_TAG t WHERE t.ricetta_id=p.ricetta_id AND t.fonte=p.fonte)")
-        ctl("ogni coltura vincente ha almeno un terreno", "SELECT count(*) FROM POTS_COLTURA p WHERE p.vincente=1 AND NOT EXISTS (SELECT 1 FROM POTS_COMPATIBILITA k WHERE k.coltura_id=p.coltura_id)")
-        ctl("i terreni in_vaso hanno un file vincente", "SELECT count(*) FROM TERRENO t WHERE (stato='in_vaso') <> EXISTS (SELECT 1 FROM POTS_TERRENO p WHERE p.terreno_id=t.terreno_id AND p.vincente=1)")
+        ctl("ogni coltura vincente ha almeno un terreno", "SELECT count(*) FROM POTS_COLTURA_VINCENTE p WHERE NOT EXISTS (SELECT 1 FROM POTS_COMPATIBILITA k WHERE k.coltura_id=p.coltura_id)")
+        ctl("i terreni in_vaso hanno un file vincente", "SELECT count(*) FROM TERRENO t WHERE (stato='in_vaso') <> EXISTS (SELECT 1 FROM POTS_TERRENO_VINCENTE p WHERE p.terreno_id=t.terreno_id)")
+        n = c.execute("SELECT count(*) FROM (SELECT ricetta_id FROM POTS_TERRENO_VINCENTE WHERE avviso UNION ALL SELECT ricetta_id FROM POTS_COLTURA_VINCENTE WHERE avviso)").fetchone()[0]
+        out.append(("avviso: id portati da due jar (non blocca)", True, f"trovati: {n}"))
         if self._coppie_attese is not None:
             n = c.execute("SELECT count(*) FROM (SELECT DISTINCT terreno_id, coltura_id FROM POTS_COMPATIBILITA)").fetchone()[0]
             out.append(("coppie terreno-coltura = conteggio diretto sui file", n == self._coppie_attese, f"vista {n}, diretto {self._coppie_attese}"))
@@ -335,13 +349,11 @@ class BotanyPotsDB:
         terreni_r = [r for r in ricette if r["type"] in TIPI_TERRENO]
         colture_r = [r for r in ricette if r["type"] in TIPI_COLTURA]
 
-        # vincente: tra file con lo stesso id vince il nostro datapack
+        # file vincenti (stessa regola della vista): il datapack vince; tra jar, il primo per nome di fonte
         def vincenti(rs):
             best = {}
-            for r in rs:
-                k = r["id"]
-                if k not in best or (r["_strato"] == "nostro" and best[k]["_strato"] != "nostro"):
-                    best[k] = r
+            for r in sorted(rs, key=lambda r: (r["_strato"] != "nostro", r["_fonte"])):
+                best.setdefault(r["id"], r)
             return {(r["id"], r["_fonte"]) for r in best.values()}
 
         vinc_t, vinc_c = vincenti(terreni_r), vincenti(colture_r)
@@ -439,12 +451,12 @@ class BotanyPotsDB:
                       [(r["_coltura"], r["_coltura"].split(":")[0], "in_vaso") for r in colture_r])
 
         # file del vaso
-        c.executemany("INSERT INTO POTS_TERRENO VALUES (?,?,?,?,?,?,?,?)", [
+        c.executemany("INSERT INTO POTS_TERRENO VALUES (?,?,?,?,?,?,?)", [
             (r["id"], r["_fonte"], r["_strato"], r["_terreno"], r.get("growth_modifier", 0), r.get("yield_modifier", 0),
-             r.get("light_level", 0), int((r["id"], r["_fonte"]) in vinc_t)) for r in terreni_r])
-        c.executemany("INSERT INTO POTS_COLTURA VALUES (?,?,?,?,?,?,?,?)", [
+             r.get("light_level", 0)) for r in terreni_r])
+        c.executemany("INSERT INTO POTS_COLTURA VALUES (?,?,?,?,?,?,?)", [
             (r["id"], r["_fonte"], r["_strato"], r["_coltura"], r.get("grow_time", 1200), r.get("yield", 1),
-             r.get("yield_scale", 1), int((r["id"], r["_fonte"]) in vinc_c)) for r in colture_r])
+             r.get("yield_scale", 1)) for r in colture_r])
         c.executemany("INSERT INTO POTS_COLTURA_SEME VALUES (?,?,?,?)",
                       [(r["id"], r["_fonte"], s, r["_orig"]) for r in colture_r for s in r["_semi"]])
         righe = set()

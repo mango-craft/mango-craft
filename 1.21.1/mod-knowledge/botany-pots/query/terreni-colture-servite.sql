@@ -12,7 +12,7 @@ SELECT t.terreno_id,
        COUNT(DISTINCT CASE WHEN k.da_noi = 0 THEN k.coltura_id END) AS colture_originali,
        r.motivo
 FROM TERRENO t
-LEFT JOIN POTS_TERRENO p ON p.terreno_id = t.terreno_id AND p.vincente = 1
+LEFT JOIN POTS_TERRENO_VINCENTE p ON p.terreno_id = t.terreno_id
 LEFT JOIN TERRENO_RARITA r ON r.terreno_id = t.terreno_id
 LEFT JOIN RARITA_POTS_SETTINGS s ON s.classe = r.classe
 LEFT JOIN POTS_COMPATIBILITA k ON k.terreno_id = t.terreno_id

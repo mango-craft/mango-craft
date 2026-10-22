@@ -34,8 +34,9 @@ Costruita da `scripts/botanypots_db.py` in `1.21.1/data/vasi/vasi.sqlite` (non n
 | `TAG` | i tag nominati dalle colture e tutti quelli che contengono | `tag_id`; unici `ambito` + `nome` |
 | `TERRENO` | ogni oggetto che può stare nello slot: `stato` in_vaso (ha un file vincente) o candidato | `terreno_id` |
 | `COLTURA` | ogni pianta con un file | `coltura_id` |
-| `POTS_TERRENO` | i file di terreno attivi: bonus, fonte, `vincente` | `ricetta_id` + `fonte` |
-| `POTS_COLTURA` | i file di coltura attivi: tempo, resa base, scala, `vincente` | `ricetta_id` + `fonte` |
+| `POTS_TERRENO` | i file di terreno attivi: bonus, fonte | `ricetta_id` + `fonte` |
+| `POTS_COLTURA` | i file di coltura attivi: tempo, resa base, scala | `ricetta_id` + `fonte` |
+| viste `POTS_TERRENO_VINCENTE`, `POTS_COLTURA_VINCENTE` | il file che il gioco usa per ogni id: il nostro datapack vince; tra due jar con lo stesso id l'ordine non è noto (`avviso` = 1, non blocca) | — |
 | `POTS_COLTURA_SEME` | i semi di ogni file (origine: file, blocco, eccezione) | ricetta + fonte + seme |
 | `POTS_COLTURA_TAG` | i tag ammessi da ogni file, uno per riga; `implicito` per `soil/dirt` non scritto | ricetta + fonte + tag |
 | `TERRENO_TAG` | **esplosa**: per ogni terreno tutti i tag in cui sta, con il tag che lo elenca davvero (`tag_diretto_id`), il livello e `da_noi` | terreno + tag + tag diretto |
