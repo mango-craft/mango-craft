@@ -2,7 +2,7 @@
 
 Gli argomenti del modpack non ancora affrontati, o rimasti a metà, e dove si trovano le mod in valutazione. Documento vivo: quando un tema entra in una tappa, il lavoro passa nel piano (`0501-piano.md`) e qui resta un rimando; quando è chiuso si toglie, con una riga nelle decisioni del file della versione (`versioni/`).
 
-Ultimo aggiornamento: 21/10/2026.
+Ultimo aggiornamento: 23/10/2026.
 
 ## 1. Mod in valutazione
 
@@ -22,6 +22,9 @@ Non si ripetono qui, per non avere due elenchi da tenere allineati:
 | **Licenze da verificare** | La licenza di diverse mod (addon di Farmer's Delight, Let's Do, Botany Pots e altre) non è ancora stata controllata | Legenda di `../docs/0301-mod.md` | Proposta del 21/10: 0.8.0, `0501-piano.md` |
 | **Slot degli accessori** | Ars Nouveau e Artifacts si contendono testa, collana e cintura (Curios); se gli slot diventano stretti si aumentano con un file nel datapack, formato da verificare. **Tre menu** dove indossare (Curios, menu standard di Accessories, menu dell'Aether; scoperto il 21/10): Matteo ha deciso di **lasciarli così** (21/10, `versioni/v0.6.0.md`); fatti nel tema `../theme-knowledge/accessori.md` | `0302`, Impostazioni decise | Mondo di prova |
 | **Lingua del gioco** | Non è stato deciso se giocare in italiano né cosa fare con le mod senza traduzione italiana (quante siano non è stato contato). Enhanced Celestials 2 le traduzioni le scaricherebbe da internet: spente nella 0.5.2 | `0302` (traduzioni di EC2) | Da chiarire |
+| **Fornaci: livelli e potenziamenti fuori dalle mod tech** (nuovo, 23/10) | Idea di Matteo: una progressione delle fornaci (livelli, accessori che le potenziano) che non passi da Create o Mekanism. Da valutare: mod che aggiungono fornaci a livelli o potenziamenti (candidate da cercare), oppure una nostra scala nel datapack sul modello della rarità dei terreni dei vasi (`../mod-knowledge/botany-pots/analisi.md`) | — | Dopo la 0.6.x |
+| **Strumenti con materiali avanzati, a tappe** (nuovo, 23/10) | Idea di Matteo: come gestire a step la creazione degli strumenti con i materiali avanzati delle mod (Truly Modular, Aether, Undergarden, Twilight Forest, Mekanism…), così che ogni materiale sia una tappa e non un salto. Da valutare: quali materiali esistono, in che ordine si ottengono, cosa cambiare (ricette, parti di Truly Modular) | Truly Modular: `../mod-knowledge/README.md` | Dopo la 0.6.x, prima del mondo di prova |
+| **Accessori: potenziamento ed evoluzione** (nuovo, 23/10) | Idea di Matteo: gli accessori (Artifacts, Ars Nouveau, Curios) non crescono: valutare un modo per potenziarli o farli evolvere a tappe (ricette di aggiornamento nel datapack, mod dedicate). Si lega agli slot degli accessori qui sopra | Riga «Slot degli accessori» | Dopo la 0.6.x |
 | **Guida del pack** | Ogni mod ha il suo manuale, ma il pack non ha una guida sua (come iniziare, cosa si collega a cosa). Si lega agli achievement | sezione 3 | Insieme agli achievement |
 
 Restano nei loro documenti, perché sono già pianificati: densità delle strutture e Chunky (tappa 6, `0501`), controlli durante la creazione del mondo e prove di compatibilità (`0502-prove-in-gioco.md`), parti del datapack (`versioni/v0.6.0.md`, `v0.6.1.md`, `v0.6.2.md`).
