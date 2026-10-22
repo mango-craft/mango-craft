@@ -7,7 +7,8 @@ Uso:  python3 scripts/botanypots_db.py <cartella versione> refresh
       python3 scripts/botanypots_db.py <cartella versione> tabelle | controlli
 
 Da Python:  db = BotanyPotsDB("1.21.1"); db.query("SELECT ..."); db.analisi("nome"); db.refresh(); db.tabelle(); db.controlli()
-`query` e `analisi` creano il database se non esiste. `refresh` lo ricostruisce da zero e lo sostituisce solo se
+`query` e `analisi` creano il database se non esiste o se inventario, datapack, CSV o questo script sono più
+recenti (così non si lavora mai su dati vecchi). `refresh` lo ricostruisce da zero e lo sostituisce solo se
 tutti i vincoli e i controlli passano. Modello, fatti verificati e query: 1.21.1/mod-knowledge/botany-pots/.
 
 Fonti (si leggono direttamente, niente copie intermedie):
@@ -208,8 +209,17 @@ class BotanyPotsDB:
         self.query_dir = self.ver / "mod-knowledge" / "botany-pots" / "query"
 
     # ---------------------------------------------------------------- uso
-    def connetti(self) -> sqlite3.Connection:
+    def aggiornato(self) -> bool:
+        """Vero se il database esiste ed è più recente di inventario, datapack e CSV delle regole."""
         if not self.db_path.exists():
+            return False
+        t = self.db_path.stat().st_mtime
+        fonti = [*self.inventario.rglob("*.json"), *self.datapack.rglob("*.json"), *self.vasi.glob("*.csv"),
+                 Path(__file__)]
+        return all(f.stat().st_mtime <= t for f in fonti)
+
+    def connetti(self) -> sqlite3.Connection:
+        if not self.aggiornato():
             self.refresh()
         c = sqlite3.connect(self.db_path)
         c.execute("PRAGMA foreign_keys = ON")

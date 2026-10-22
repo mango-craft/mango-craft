@@ -120,6 +120,8 @@ def main() -> int:
     ap.add_argument("versione", type=Path)
     ap.add_argument("--dry-run", action="store_true", help="non scrive niente, stampa solo il rapporto")
     ap.add_argument("--report", type=Path)
+    ap.add_argument("--verifica", action="store_true",
+                    help="non scrive: confronta i file che scriverebbe con quelli nel datapack ed esce con 1 se differiscono")
     a = ap.parse_args()
     ver = a.versione if a.versione.is_absolute() else ROOT / a.versione
     vasi = ver / "data" / "vasi"
@@ -202,6 +204,33 @@ def main() -> int:
     data = ver / DP
     bp = data / "matteo_tweaks" / "recipe" / "botanypots"
     tagdir = data / "botanypots" / "tags" / "item" / "soil"
+    attesi: dict[Path, dict] = {}  # percorso relativo a data/ -> contenuto
+    for p, ric in file_colture.items():
+        attesi[Path("matteo_tweaks/recipe/botanypots") / p] = ric
+    for p, ric in file_terreni.items():
+        attesi[Path("matteo_tweaks/recipe/botanypots") / p] = ric
+    attesi.update(sostituzioni)
+    for tag, terreni in tags.items():
+        attesi[Path("botanypots/tags/item/soil") / f"{tag.split('/', 1)[1]}.json"] = {
+            "replace": False, "values": [{"id": b, "required": False} for b in sorted(set(terreni))]}
+    if a.verifica:
+        presenti = set()
+        for d in (bp.iterdir() if bp.exists() else []):
+            if d.is_dir() and d.name not in MIEI:
+                presenti |= {q.relative_to(data) for q in d.rglob("*.json")}
+        if tagdir.exists():
+            presenti |= {q.relative_to(data) for q in tagdir.glob("*.json")}
+        for ns in {p.parts[0] for p in sostituzioni}:
+            presenti |= {q.relative_to(data) for q in (data / ns / "recipe").rglob("*.json")} if (data / ns / "recipe").exists() else set()
+        diversi = sorted(str(q) for q in presenti - set(attesi)) + sorted(str(q) for q in set(attesi) - presenti)
+        diversi += sorted(str(q) for q in set(attesi) & presenti
+                          if json.loads((data / q).read_text(encoding="utf-8")) != attesi[q])
+        if diversi:
+            print("File del datapack diversi da quelli generati dalle regole (rilanciare scripts/botanypots_genera.py):")
+            print("\n".join(f"- {q}" for q in diversi))
+            return 1
+        print(f"Datapack dei vasi coerente con le regole: {len(attesi)} file.")
+        return 0
     if not a.dry_run:
         if bp.exists():
             for d in bp.iterdir():

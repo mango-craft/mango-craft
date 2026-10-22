@@ -50,7 +50,7 @@ Il join delle regole: `TERRENO → TERRENO_TAG → TAG ← POTS_COLTURA_TAG ← 
 
 **Il flusso** (dal 22/10): le regole stanno nei CSV `*_custom.csv` e `terreno_rarita.csv` → `scripts/botanypots_genera.py` scrive il datapack (e, per un terreno di una mod a cui la classe dà un bonus diverso, il file allo stesso percorso di quello della mod) → l'inventario e il datapack entrano nella base dati, dove le regole compaiono anche come tabelle `*_CUSTOM` e il loro effetto come righe `nostro` / `da_noi`. Il generatore è stato verificato rigenerando file identici a quelli scritti prima a mano in `aggiunte.json`.
 
-Controlli eseguiti a ogni `refresh` (il database si sostituisce solo se passano): chiavi esterne; un solo file vincente per terreno e per coltura; nessun seme che trova due colture; ogni coltura con seme, tag e almeno un terreno; coppie della vista uguali al conteggio diretto sui file.
+Il database si rifà da solo a ogni `query` se inventario, datapack o CSV sono più recenti; il workflow di controllo (`check.yml`) a ogni push verifica che i file generati corrispondano alle regole (`botanypots_genera.py --verifica`) e rifà il database con i controlli. Controlli eseguiti a ogni `refresh` (il database si sostituisce solo se passano): chiavi esterne; un solo file vincente per terreno e per coltura; nessun seme che trova due colture; ogni coltura con seme, tag e almeno un terreno; coppie della vista uguali al conteggio diretto sui file.
 
 ## 4. Decisioni e domande aperte
 
