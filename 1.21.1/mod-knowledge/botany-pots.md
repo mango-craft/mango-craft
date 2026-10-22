@@ -49,9 +49,11 @@ Aggiornata il 22/10/2026 · nel pack dalla 0.1.1: Botany Pots 21.1.44, Botany Tr
 
 ## Comandi di verifica (mondo di prova con i trucchi)
 
-- `/botanypots debug missing seeds true true`: elenca i semi senza ricetta e scrive bozze JSON in `<istanza>/botanypots/generated/crops`.
-- `/botanypots debug missing soils true`: lo stesso per i terreni.
-- `/botanypots debug check_crops`: piazza un vaso e segnala nel log le colture che non producono niente.
+Letti nel sorgente il 22/10/2026 (correggono la versione precedente di questa scheda):
+- `/botanypots debug missing seeds` (con `true` dopo: include gli alberelli): **stampa in chat** quanti semi sembrano senza ricetta; **cliccando il messaggio la lista si copia negli appunti**. Può avere falsi positivi (lo dice il messaggio). Con un secondo `true` (`… seeds true true`) invece **scrive** bozze JSON in `<istanza>/botanypots/generated/crops` e **non stampa la lista**.
+- `/botanypots debug missing soils`: lo stesso per i terreni (`… soils true` scrive le bozze in `generated/soils`).
+- `/botanypots debug check_crops`: **sostituisce con un vaso il blocco su cui si sta in piedi** e prova ogni coltura con il suo primo terreno e **7 attrezzi** (mano vuota, cesoie, zappa, piccone, ascia, spada e pala di netherite, tutti con tocco di velluto), fino a 1.000 raccolti ciascuno. Una coltura è «ok» se **un** attrezzo dà qualcosa: **non vede quindi le piante che senza cesoie non darebbero niente** (per quelle c'è `scripts/vasi_verifica_jar.py`). Il risultato è in chat («Tested N crops and found no errors» o «Found X errors»), i dettagli nel log (`did not drop any items`, `Could not find a valid soil`). Può bloccare il gioco qualche decina di secondi.
+- **Il vaso in gioco**: clic destro sul vaso apre il menu con tre posti (1 terreno, 2 seme, 3 attrezzo); con l'oggetto giusto in mano e vaso di terracotta base, a pianta matura il clic destro **raccoglie** (gli oggetti cadono a terra); l'osso (`minecraft:bone_meal`) fa crescere di 400–600 tick per volta (una crescita normale è 1.200 tick, gli alberi 2.400).
 
 ## Da provare
 
