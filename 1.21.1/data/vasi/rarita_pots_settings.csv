@@ -1,0 +1,6 @@
+classe,ordine,crescita,resa
+comune,1,0,0
+altra_dimensione,2,0.10,0
+compost_base,3,0.15,0
+compost_difficile,4,0.20,0
+rarissimo,5,0.25,0.10
