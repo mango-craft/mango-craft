@@ -128,7 +128,7 @@ def sheets_index(mc):
         text = read(f"{mc}/{folder}/README.md")
         base = f"{REPO_URL}/{mc}/{folder}/"
         rows = [l for l in text.split("\n") if l.startswith("|")]
-        table = re.sub(r"\]\(([^)/]+\.md)\)", lambda m: f"]({base}{m.group(1)})", "\n".join(rows))
+        table = re.sub(r"\]\(((?!https?://)[^)]+\.md)\)", lambda m: f"]({base}{m.group(1)})", "\n".join(rows))
         out.append(f"### {label}\n\n{table}")
     return "\n\n".join(out)
 

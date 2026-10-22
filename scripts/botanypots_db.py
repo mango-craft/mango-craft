@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Base dati dei vasi di Botany Pots: terreni, colture, tag e le nostre scelte di rarità, in SQLite.
 
-Uso:  python3 scripts/vasi_db.py <cartella versione> refresh
-      python3 scripts/vasi_db.py <cartella versione> query "SELECT ..."
-      python3 scripts/vasi_db.py <cartella versione> tabelle | controlli
+Uso:  python3 scripts/botanypots_db.py <cartella versione> refresh
+      python3 scripts/botanypots_db.py <cartella versione> query "SELECT ..."
+      python3 scripts/botanypots_db.py <cartella versione> analisi <nome>     (esegue mod-knowledge/botany-pots/query/<nome>.sql)
+      python3 scripts/botanypots_db.py <cartella versione> tabelle | controlli
 
-Da Python:  db = VasiDB("1.21.1"); db.query("SELECT ..."); db.refresh(); db.tabelle(); db.controlli()
-`query` crea il database se non esiste. `refresh` lo ricostruisce da zero e lo sostituisce solo se tutti i
-vincoli e i controlli passano.
+Da Python:  db = BotanyPotsDB("1.21.1"); db.query("SELECT ..."); db.analisi("nome"); db.refresh(); db.tabelle(); db.controlli()
+`query` e `analisi` creano il database se non esiste. `refresh` lo ricostruisce da zero e lo sostituisce solo se
+tutti i vincoli e i controlli passano. Modello, fatti verificati e query: 1.21.1/mod-knowledge/botany-pots/.
 
 Fonti (si leggono direttamente, niente copie intermedie):
 - <versione>/data/inventario/: ricette e tag di ogni jar (generato dai workflow), più minecraft.json e neoforge.json;
@@ -147,7 +148,7 @@ def _carica_json(p: Path):
     return json.loads(p.read_text(encoding="utf-8-sig"))
 
 
-class VasiDB:
+class BotanyPotsDB:
     def __init__(self, versione: str | Path):
         self.ver = Path(versione)
         if not self.ver.is_absolute():
@@ -156,6 +157,7 @@ class VasiDB:
         self.datapack = self.ver / DP
         self.vasi = self.ver / "data" / "vasi"
         self.db_path = self.vasi / "vasi.sqlite"
+        self.query_dir = self.ver / "mod-knowledge" / "botany-pots" / "query"
 
     # ---------------------------------------------------------------- uso
     def connetti(self) -> sqlite3.Connection:
@@ -169,6 +171,14 @@ class VasiDB:
     def query(self, sql: str, params=()) -> list[sqlite3.Row]:
         with self.connetti() as c:
             return c.execute(sql, params).fetchall()
+
+    def analisi(self, nome: str, params=()) -> list[sqlite3.Row]:
+        """Esegue la query salvata in mod-knowledge/botany-pots/query/<nome>.sql."""
+        p = self.query_dir / f"{nome}.sql"
+        if not p.exists():
+            disponibili = ", ".join(sorted(q.stem for q in self.query_dir.glob("*.sql")))
+            raise FileNotFoundError(f"query {nome} non trovata in {self.query_dir} (disponibili: {disponibili})")
+        return self.query(p.read_text(encoding="utf-8"), params)
 
     def tabelle(self) -> list[tuple[str, str, int]]:
         out = []
@@ -300,7 +310,7 @@ class VasiDB:
         if ing is None:
             return [TAG_DIRT]
         if isinstance(ing, list):
-            return [x for i in ing for x in VasiDB._tag_di_soil(i, rid)]
+            return [x for i in ing for x in BotanyPotsDB._tag_di_soil(i, rid)]
         t = ing.get("type")
         if t is None and "tag" in ing:
             return [("oggetti", ing["tag"])]
@@ -308,13 +318,13 @@ class VasiDB:
             tags = ing["tag"] if isinstance(ing["tag"], list) else [ing["tag"]]
             return [("blocchi", x) for x in tags]
         if t in ("bookshelf:either", "neoforge:compound"):
-            return [x for i in ing.get("ingredients", ing.get("children", [])) for x in VasiDB._tag_di_soil(i, rid)]
+            return [x for i in ing.get("ingredients", ing.get("children", [])) for x in BotanyPotsDB._tag_di_soil(i, rid)]
         raise ErroreDati(f"forma di `soil` non prevista in {rid}: {json.dumps(ing)[:120]}")
 
     @staticmethod
     def _oggetti_di_input(ing, rid: str) -> list[str]:
         if isinstance(ing, list):
-            return [x for i in ing for x in VasiDB._oggetti_di_input(i, rid)]
+            return [x for i in ing for x in BotanyPotsDB._oggetti_di_input(i, rid)]
         if isinstance(ing, dict) and "item" in ing and ing.get("type") is None:
             return [ing["item"]]
         raise ErroreDati(f"forma di `input` non prevista in {rid}: {json.dumps(ing)[:120]}")
@@ -478,13 +488,13 @@ def main(argv: list[str]) -> int:
     if len(argv) < 2:
         print(__doc__)
         return 2
-    db, cmd = VasiDB(argv[0]), argv[1]
+    db, cmd = BotanyPotsDB(argv[0]), argv[1]
     if cmd == "refresh":
         for nome, ok, det in db.refresh():
             print(("✅" if ok else "❌"), nome, det)
         print("scritto", db.db_path)
-    elif cmd == "query":
-        righe = db.query(argv[2])
+    elif cmd in ("query", "analisi"):
+        righe = db.query(argv[2]) if cmd == "query" else db.analisi(argv[2])
         if righe:
             print("\t".join(righe[0].keys()))
             for r in righe:
@@ -503,4 +513,7 @@ def main(argv: list[str]) -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))
+    try:
+        sys.exit(main(sys.argv[1:]))
+    except BrokenPipeError:  # output troncato da `head` e simili
+        sys.exit(0)

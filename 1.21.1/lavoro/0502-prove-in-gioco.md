@@ -63,6 +63,6 @@ Obbligatorio prima del mondo vero (deciso il 17/10/2026, `versioni/v0.2.3.md`). 
 - [ ] **Pre-generazione** con Chunky e controllo sulla mappa di Xaero, Overworld e Nether
 - [ ] **Densità delle strutture**: regolarla con Sparse Structures struttura per struttura invece di togliere mod (`../docs/0302-config.md`)
 - [ ] **Jaden's Nether Expansion**: Nether più alto e biomi; paracadute nella sua config (`../docs/0302-config.md`)
-- [ ] **Vasi**: comandi di debug di Botany Pots (scheda `../mod-knowledge/botany-pots.md`; prove in `versioni/v0.6.1.md`); una pianta con raccolto scritto per le cesoie (es. `unusualend:purpur_grass`) e una selvatica (carota selvatica) **senza cesoie nello slot attrezzo**: la prima dà la pianta, la seconda il suo prodotto
+- [ ] **Vasi**: comandi di debug di Botany Pots (scheda `../mod-knowledge/botany-pots/botany-pots.md`; prove in `versioni/v0.6.1.md`); una pianta con raccolto scritto per le cesoie (es. `unusualend:purpur_grass`) e una selvatica (carota selvatica) **senza cesoie nello slot attrezzo**: la prima dà la pianta, la seconda il suo prodotto
 - [ ] **Esperienza**: conversione Create ↔ Cognition avanti e indietro, Experience Hatch su un serbatoio di Mekanism (tema `../theme-knowledge/esperienza.md`; prove in `versioni/v0.6.3.md`)
 - [ ] **Every Compat**: quanti blocchi crea e quanto allunga l'avvio, prima di costruire molto (toglierla cancella i blocchi creati)
