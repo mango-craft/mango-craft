@@ -1,0 +1,30 @@
+{
+    "parent": "miapi:glass/glass",
+    "data": {
+        "icon": {
+            "type": "item",
+            "item": "minecraft:black_stained_glass"
+        },
+        "color": "191919",
+        "color_palette": {
+            "type": "grayscale_map",
+            "colors": {
+                "0": "191919FF",
+                "24": "191919FF",
+                "68": "191919FF",
+                "107": "19191966",
+                "150": "19191966",
+                "190": "1919199B",
+                "216": "19191966",
+                "255": "19191966"
+            },
+            "filler": "interpolate"
+        },
+        "items": [
+            {
+                "item": "minecraft:black_stained_glass",
+                "value": 1.0
+            }
+        ]
+    }
+}
