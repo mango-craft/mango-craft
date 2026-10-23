@@ -31,9 +31,12 @@ Costruita da `scripts/botanypots_db.py` in `1.21.1/data/vasi/vasi.sqlite` (non n
 
 | Tabella | Contenuto | Chiave |
 |---|---|---|
+| `MOD` | ogni file installato (lo slug del metafile di packwiz; `minecraft` e `neoforge` a parte): nome, jar, origine, lato (dall'inventario, 24/10) | `slug` |
+| `MOD_ID` | gli id dichiarati dentro ogni file (un jar può portarne più d'uno, es. Farm & Charm porta anche Foundation; una libreria può stare in più jar) | `modid` + `slug` |
+| `MOD_NAMESPACE` | il prefisso dei nomi di oggetti e blocchi → il file che ne porta di più (pochi prefissi sono in più file: `minecraft` anche in Jaden's e Supplementaries, `farmersdelight` anche in Bountiful Fares…) | `namespace` |
 | `TAG` | i tag nominati dalle colture e tutti quelli che contengono | `tag_id`; unici `ambito` + `nome` |
-| `TERRENO` | ogni oggetto che può stare nello slot: `stato` in_vaso (ha un file vincente) o candidato | `terreno_id` |
-| `COLTURA` | ogni pianta con un file | `coltura_id` |
+| `TERRENO` | ogni oggetto che può stare nello slot: `stato` in_vaso (ha un file vincente) o candidato; la mod via `namespace` → `MOD_NAMESPACE` → `MOD` | `terreno_id` |
+| `COLTURA` | ogni pianta con un file; la mod come sopra | `coltura_id` |
 | `POTS_TERRENO` | i file di terreno attivi: bonus, fonte | `ricetta_id` + `fonte` |
 | `POTS_COLTURA` | i file di coltura attivi: tempo, resa base, scala | `ricetta_id` + `fonte` |
 | viste `POTS_TERRENO_VINCENTE`, `POTS_COLTURA_VINCENTE` | il file che il gioco usa per ogni id: il nostro datapack vince; tra due jar con lo stesso id l'ordine non è noto (`avviso` = 1, non blocca) | — |
@@ -44,10 +47,10 @@ Costruita da `scripts/botanypots_db.py` in `1.21.1/data/vasi/vasi.sqlite` (non n
 | `TERRENO_RARITA` | la classe di ogni terreno e il motivo (CSV a mano) | `terreno_id` |
 | `TERRENO_TAG_CUSTOM` | i terreni che mettiamo nei tag `botanypots:soil/*` (CSV a mano) | terreno + tag |
 | `TERRENO_CUSTOM` | i terreni nostri che non sono blocchi (secchi): il blocco da mostrare nel vaso (CSV a mano) | terreno |
-| `COLTURA_CUSTOM`, `COLTURA_TAG_CUSTOM`, `COLTURA_RACCOLTO_CUSTOM` | le colture che scriviamo: seme, tempo, grafica, note; i tag ammessi; i raccolti (CSV a mano) | coltura (+ ordine / gruppo, id) |
+| `COLTURA_CUSTOM`, `COLTURA_TAG_CUSTOM`, `COLTURA_RACCOLTO_CUSTOM` | le colture che scriviamo: mod (lo slug, → `MOD`), seme, tempo, grafica, note; i tag ammessi; i raccolti (CSV a mano) | coltura (+ ordine / gruppo, id) |
 | vista `POTS_COMPATIBILITA` | terreno × coltura dai file vincenti, con il tag ponte e `da_noi` | — |
 
-Il join delle regole: `TERRENO → TERRENO_TAG → TAG ← POTS_COLTURA_TAG ← POTS_COLTURA`. L'esplosione dei tag (annidamenti risolti, blocchi tradotti in oggetti) avviene solo all'importazione; `da_noi` si ottiene esplodendo due volte, senza e con le voci del datapack. Le condizioni di caricamento si valutano all'importazione sull'inventario. Fuori dal modello: grafica e raccolti dei file delle mod (fase 2), concime e interazioni.
+Il join delle regole: `TERRENO → TERRENO_TAG → TAG ← POTS_COLTURA_TAG ← POTS_COLTURA`. La mod di una pianta o di un terreno: `COLTURA.namespace → MOD_NAMESPACE.slug → MOD` (il prefisso del nome non è l'id della mod: `MOD_ID` li tiene distinti; serve anche se un giorno si vorranno condizioni `mod_loaded`, oggi non usate: i file si caricano con `block_exists` / `item_exists`). L'esplosione dei tag (annidamenti risolti, blocchi tradotti in oggetti) avviene solo all'importazione; `da_noi` si ottiene esplodendo due volte, senza e con le voci del datapack. Le condizioni di caricamento si valutano all'importazione sull'inventario. Fuori dal modello: grafica e raccolti dei file delle mod (fase 2), concime e interazioni.
 
 **Il flusso** (dal 22/10): le regole stanno nei CSV `*_custom.csv` e `terreno_rarita.csv` → `scripts/botanypots_genera.py` scrive il datapack (e, per un terreno di una mod a cui la classe dà un bonus diverso, il file allo stesso percorso di quello della mod) → l'inventario e il datapack entrano nella base dati, dove le regole compaiono anche come tabelle `*_CUSTOM` e il loro effetto come righe `nostro` / `da_noi`. Il generatore è stato verificato rigenerando file identici a quelli scritti prima a mano in `aggiunte.json`.
 

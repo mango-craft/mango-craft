@@ -18,7 +18,8 @@ Fonti (si leggono direttamente, niente copie intermedie):
 Il file <versione>/data/vasi/vasi.sqlite non va nel repository: si rigenera.
 
 Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
-  anagrafiche   TAG, TERRENO, COLTURA
+  anagrafiche   MOD (un file installato: slug del metafile), MOD_ID (gli id dichiarati dentro ogni file), MOD_NAMESPACE
+                (il prefisso dei nomi di oggetti e blocchi → il file che li porta), TAG, TERRENO, COLTURA
   file del vaso POTS_TERRENO, POTS_COLTURA, POTS_COLTURA_SEME, POTS_COLTURA_TAG   (chiave: ricetta + fonte)
   viste         POTS_TERRENO_VINCENTE, POTS_COLTURA_VINCENTE (il file che il gioco usa per ogni id; `avviso` se due jar
                 portano lo stesso id, caso in cui l'ordine non è noto e non blocca)
@@ -42,7 +43,7 @@ import os
 import sqlite3
 import sys
 import tempfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 DP = "pack/config/paxi/datapacks/matteo_tweaks/data"
@@ -64,6 +65,25 @@ SEMI_ECCEZIONI = {
 }
 
 SCHEMA = """
+CREATE TABLE MOD (
+  slug    TEXT PRIMARY KEY,             -- nome del metafile di packwiz (es. regions-unexplored); minecraft e neoforge a parte
+  nome    TEXT NOT NULL,
+  file    TEXT,                         -- il .jar
+  origine TEXT,                         -- modrinth, curseforge, gioco
+  lato    TEXT                          -- both, client, server
+);
+CREATE TABLE MOD_ID (
+  modid    TEXT NOT NULL,               -- id dichiarato nel jar (neoforge.mods.toml); un jar può portarne più d'uno
+  slug     TEXT NOT NULL REFERENCES MOD,
+  nome     TEXT,
+  versione TEXT,
+  PRIMARY KEY (modid, slug)
+);
+CREATE TABLE MOD_NAMESPACE (
+  namespace TEXT PRIMARY KEY,           -- prefisso dei nomi (es. farm_and_charm); il file che porta più oggetti e blocchi
+  slug      TEXT NOT NULL REFERENCES MOD,
+  oggetti   INTEGER NOT NULL            -- quanti oggetti e blocchi con quel prefisso porta quel file
+);
 CREATE TABLE TAG (
   tag_id   INTEGER PRIMARY KEY,
   ambito   TEXT NOT NULL CHECK (ambito IN ('oggetti', 'blocchi')),
@@ -72,12 +92,12 @@ CREATE TABLE TAG (
 );
 CREATE TABLE TERRENO (
   terreno_id TEXT PRIMARY KEY,          -- l'oggetto che va nello slot del terreno
-  mod        TEXT NOT NULL,
+  namespace  TEXT NOT NULL REFERENCES MOD_NAMESPACE,  -- la mod: MOD_NAMESPACE → MOD
   stato      TEXT NOT NULL CHECK (stato IN ('in_vaso', 'candidato'))  -- candidato: nei tag delle colture, senza file
 );
 CREATE TABLE COLTURA (
   coltura_id TEXT PRIMARY KEY,          -- la pianta: il blocco; per le colture senza blocco, il seme
-  mod        TEXT NOT NULL,
+  namespace  TEXT NOT NULL REFERENCES MOD_NAMESPACE,  -- la mod: MOD_NAMESPACE → MOD
   stato      TEXT NOT NULL CHECK (stato IN ('in_vaso'))
 );
 CREATE TABLE POTS_TERRENO (
@@ -152,7 +172,7 @@ CREATE TABLE TERRENO_CUSTOM (
 );
 CREATE TABLE COLTURA_CUSTOM (
   coltura_id     TEXT PRIMARY KEY,      -- il blocco della pianta, o l'id del file per le colture senza blocco
-  mod            TEXT NOT NULL,
+  mod            TEXT NOT NULL REFERENCES MOD,  -- lo slug
   seme           TEXT,
   tempo          INTEGER,
   richiesti      TEXT,                  -- blocchi richiesti dalla condizione di caricamento, separati da |
@@ -312,6 +332,8 @@ class BotanyPotsDB:
         items, blocks, mods = set(), set(), set()
         tag_voci = {"oggetti": defaultdict(list), "blocchi": defaultdict(list)}  # (fonte, voce, facoltativa)
         ricette = []
+        mod_righe, modid_righe = [], []
+        ns_conta = defaultdict(Counter)  # namespace -> {slug: oggetti+blocchi}
         files = [self.inventario / "minecraft.json", self.inventario / "neoforge.json", *sorted((self.inventario / "mods").glob("*.json"))]
         for f in files:
             if not f.exists():
@@ -321,6 +343,16 @@ class BotanyPotsDB:
             items |= set(d.get("items", {}))
             blocks |= set(d.get("blocks", {}))
             mods |= {m["modid"] for m in d.get("mods", [])}
+            dichiarate = d.get("mods") or []
+            nome = d.get("name") or (dichiarate[0]["name"] if dichiarate else fonte)
+            mod_righe.append((fonte, nome, d.get("file"), d.get("source") or "gioco", d.get("side")))
+            visti = set()
+            for m in dichiarate:
+                if m["modid"] not in visti:  # l'inventario può ripetere un id
+                    visti.add(m["modid"])
+                    modid_righe.append((m["modid"], fonte, m.get("name"), m.get("version")))
+            for i in {*d.get("items", {}), *d.get("blocks", {})}:
+                ns_conta[i.split(":")[0]][fonte] += 1
             for amb, cat in (("oggetti", "tags/item"), ("blocchi", "tags/block")):
                 for nome, vals in (d.get("tags", {}).get(cat) or {}).items():
                     for v in vals:
@@ -348,7 +380,9 @@ class BotanyPotsDB:
                 rel = f.relative_to(self.datapack).parts
                 d["id"] = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
                 ricette.append({**d, "_fonte": NOSTRO, "_strato": "nostro"})
-        return {"items": items, "blocks": blocks, "mods": mods, "tag_voci": tag_voci, "ricette": ricette}
+        ns_righe = [(ns, c.most_common(1)[0][0], c.most_common(1)[0][1]) for ns, c in sorted(ns_conta.items())]
+        return {"items": items, "blocks": blocks, "mods": mods, "tag_voci": tag_voci, "ricette": ricette,
+                "mod": mod_righe, "mod_id": modid_righe, "mod_namespace": ns_righe}
 
     # -- condizioni di caricamento
     @staticmethod
@@ -406,6 +440,9 @@ class BotanyPotsDB:
         ricette = [r for r in dati["ricette"] if self._caricabile(r, items, blocks, mods)]
         terreni_r = [r for r in ricette if r["type"] in TIPI_TERRENO]
         colture_r = [r for r in ricette if r["type"] in TIPI_COLTURA]
+        c.executemany("INSERT INTO MOD VALUES (?,?,?,?,?)", dati["mod"])
+        c.executemany("INSERT INTO MOD_ID VALUES (?,?,?,?)", dati["mod_id"])
+        c.executemany("INSERT INTO MOD_NAMESPACE VALUES (?,?,?)", dati["mod_namespace"])
 
         # file vincenti (stessa regola della vista): il datapack vince; tra jar, il primo per nome di fonte
         def vincenti(rs):
