@@ -6,7 +6,7 @@ Le cose da **non rompere** in questa versione, in breve, ognuna con la scheda ch
 
 - **NeoForge fermo a 21.1.259**: dalla 21.1.261 owo-lib 0.12.15.5 (incorporata nell'Aether) non "spacchetta" più i suoi pacchetti di rete → "Connection lost" appena si entra nel mondo. Si torna all'ultimo NeoForge solo quando esce owo-lib 0.12.15.6 (bug B17). Schede `neoforge`, `aether`.
 - **Esperienza liquida**: il liquido di Create: Enchantment Industry vale 1 mB per punto, gli altri 20. **Mai** mescolarli per etichetta (`c:experience`) o per config (`AllowedFluids` di Cognition). Scheda `esperienza`.
-- **Regions Unexplored 0.6** usa Lithostitched (non TerraBlender) e ha rinominato alcuni blocchi: Botany Pots usa ancora 8 nomi vecchi. Schede `regions-unexplored`, `botany-pots`.
+- **Regions Unexplored 0.6** usa Lithostitched (non TerraBlender) e ha rinominato alcuni blocchi: Botany Pots usa ancora 8 nomi vecchi, che non si caricano (prova del 24/10); dalla 0.6.1 quelle 8 piante le scriviamo noi con i nomi nuovi. Schede `regions-unexplored`, `botany-pots`.
 - **Frantumatore di Occultism**: non modificarlo (scelta dell'utente: `0302-config.md`). Scheda `occultism`.
 - **Starcatcher**: i pesci crudi sono in `c:foods/raw_fish`; il pesce cotto è generico e lo mettiamo noi nelle etichette del pesce cotto (datapack, dalla 0.3.0). Scheda `starcatcher`.
 - **Librerie già nel pack**: quando una mod nuova chiede una versione più recente di una libreria che c'è già, packwiz non la aggiorna. Il controllo dei nomi lo segnala come errore ("Versione non adatta"); la libreria si aggiorna con il workflow Modrinth, indicando `slug@id-versione` (bug B28).

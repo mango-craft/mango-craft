@@ -246,3 +246,11 @@ vinery:savanna_grape_bush_white,lets-do-vinery,vinery:savanna_grape_seeds_white,
 vinery:taiga_grape_bush_red,lets-do-vinery,vinery:taiga_grape_seeds_red,,,,,,,
 vinery:taiga_grape_bush_white,lets-do-vinery,vinery:taiga_grape_seeds_white,,,,,,,
 vinery:white_grape_bush,lets-do-vinery,vinery:white_grape_seeds,,,,,,,
+regions_unexplored:grass_sprouts,regions-unexplored,regions_unexplored:grass_sprouts,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio stone_bud, che non si carica (prova 2 del 24/10)"
+regions_unexplored:lavender_wisteria_shrub,regions-unexplored,regions_unexplored:lavender_wisteria_shrub,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio mauve_shrub, che non si carica (prova 2 del 24/10)"
+regions_unexplored:sky_wisteria_shrub,regions-unexplored,regions_unexplored:sky_wisteria_shrub,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio enchanted_birch_shrub, che non si carica (prova 2 del 24/10)"
+regions_unexplored:maple_leaf_litter,regions-unexplored,regions_unexplored:maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio maple_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:red_maple_leaf_litter,regions-unexplored,regions_unexplored:red_maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio red_maple_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:orange_maple_leaf_litter,regions-unexplored,regions_unexplored:orange_maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio orange_maple_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:silver_birch_leaf_litter,regions-unexplored,regions_unexplored:silver_birch_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio silver_birch_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:enchanted_birch_leaf_litter,regions-unexplored,regions_unexplored:enchanted_birch_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio enchanted_birch_leaf_pile, che non si carica (prova 2 del 24/10)"

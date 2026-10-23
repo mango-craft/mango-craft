@@ -1157,8 +1157,32 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots
 hash = "56ad229c80aaf8f0d584196d536ba7224e7609ca8070972cc2cd52ce67b17b17"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/enchanted_birch_leaf_litter.json"
+hash = "2dd907d40459f38fc79fe6aacf35a62fc68593c321843501a68e9335899b7b63"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/grass_sprouts.json"
+hash = "31c85bdcf51f008970c57f6ac1379ac14ac29b2fec635820089747077e6546e2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/lavender_wisteria_shrub.json"
+hash = "b2166bfef4521cc458b91a7b5374b7cc8fd5a9cd2c3c3a607f2db231a1bacc6a"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/lavender_wisteria_vines.json"
 hash = "936ce7ec3700b90ca7f5c226137a960cbec8ccc87459c9a529a09c4cca7d1273"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/maple_leaf_litter.json"
+hash = "1067b86ef7b1626d9727cfba03290576e72af9e631f10fd27f1572e950fa04cb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/orange_maple_leaf_litter.json"
+hash = "9aac22d3ddf800e8deb6b3276814b68fc834b8c656472db9c062ad53917a2565"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/red_maple_leaf_litter.json"
+hash = "b7ce755005fc3d51b228fdd54beb2f2d1c9d84deb1b1a8f71286ec46d3dfdbae"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/redstone_bud.json"
@@ -1179,6 +1203,14 @@ hash = "1460f710d4019cd122b4ef188b538537ce353f0b93bb693ff962d3380a893ea4"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/salmon_wisteria_vines.json"
 hash = "a5f27315484cc8a81d1fe53ba62ef108a9953da0e0fb4be2d9ce054bf7918615"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/silver_birch_leaf_litter.json"
+hash = "5096fd92f2cdae0b5aca2f4b993d3211f53f8e5a1c7fdb7f55333c807be81e65"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/sky_wisteria_shrub.json"
+hash = "60c8ba669b482888915e3c2989eb9bf2dac0a8fe15a874a5aba8911742d4e68d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/sky_wisteria_vines.json"
