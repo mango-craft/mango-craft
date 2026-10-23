@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 22/10/2026 (versioni fino alla 0.6.0)._
+_Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.6.1, in prova)._
 
 ---
 
@@ -24,6 +24,7 @@ _Ultimo aggiornamento: 22/10/2026 (versioni fino alla 0.6.0)._
 
 | Codice | Visto in | Dove | Problema | Effetto | Come verificare |
 |---|---|---|---|---|---|
+| B37 | 0.6.1 | Datapack, vasi | 8 terreni a secchio (merluzzo, salmone, pesce palla, pesce tropicale, axolotl, girino, leviatano neonato, gwibling) non si caricavano: «No key display». I nostri file sostituiscono quelli di Botany Pots ma erano senza grafica, e senza un file valido il terreno spariva del tutto. **Corretto il 24/10** (grafica da `data/vasi/terreno_custom.csv`; il generatore si ferma se manca; `versioni/v0.6.1.md`, Lavoro) | medio | Prova 1 della 0.6.1 rifatta: nessun «Parsing error loading recipe botanypots» nel log; prova 8 |
 | B02 | 0.1.0 | Cataclysm + YUNG's Better Nether Fortresses | I Berserker infuocati erano legati alla fortezza vanilla, che YUNG's sostituisce: non comparivano mai. **Corretto nella 0.6.0** (`berserker_spawn.json` nel datapack) | medio | `/locate structure betterfortresses:fortress` in un Nether **nuovo** (vale solo per le fortezze generate dopo), entrare e aspettare i Berserker infuocati |
 | B03 | 0.1.0 | Datapack, artefatti | Le casse di Mowzie's Mobs non avevano gli artefatti. **Collegate nella 0.6.0** (`monastery_chest`, `umvuthana_grove_chest`; nomi verificati dal controllo dei nomi). Born in Chaos **volutamente non collegata**: le sue 7 tabelle sono generiche (`minecraft:`), motivo nella scheda `../mod-knowledge/artifacts.md` | basso | Aprire una cassa del monastero o del boschetto degli Umvuthana: compare un artefatto? |
 | B04 | 0.1.0 | Apotheosis + Truly Modular | All'avvio Apotheosis non riesce a leggere il "livello" (tier) di 20 armi e attrezzi modulari di Miapi | medio | Prova "Apotheosis + Truly Modular" in `0502` |

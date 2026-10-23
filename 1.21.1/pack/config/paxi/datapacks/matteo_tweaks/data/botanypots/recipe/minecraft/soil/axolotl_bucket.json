@@ -11,6 +11,15 @@
   "input": {
     "item": "minecraft:axolotl_bucket"
   },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "minecraft:water"
+    },
+    "options": {
+      "render_fluid": true
+    }
+  },
   "growth_modifier": 0.1,
   "yield_modifier": 0.06
 }

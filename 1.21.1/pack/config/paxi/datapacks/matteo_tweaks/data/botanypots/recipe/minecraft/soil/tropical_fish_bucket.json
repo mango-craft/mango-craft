@@ -11,5 +11,14 @@
   "input": {
     "item": "minecraft:tropical_fish_bucket"
   },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "minecraft:water"
+    },
+    "options": {
+      "render_fluid": true
+    }
+  },
   "yield_modifier": 0.06
 }

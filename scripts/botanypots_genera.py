@@ -6,7 +6,9 @@ Uso: python3 scripts/botanypots_genera.py <cartella versione> [--dry-run] [--rep
 Le regole (una tabella per cosa, caricate anche nella base dati di scripts/botanypots_db.py):
 - terreno_rarita.csv            terreno → classe di rarità (bonus in rarita_pots_settings.csv), motivo
 - terreno_tag_custom.csv      terreno → tag `botanypots:soil/*` in cui lo mettiamo
-- terreno_custom.csv          i terreni che non sono blocchi (secchi): il blocco da mostrare nel vaso (liquido o no)
+- terreno_custom.csv          i terreni che non sono blocchi (secchi): il blocco da mostrare nel vaso (liquido o no).
+                              Vale anche per i secchi che hanno già un file di una mod: l'inventario non conserva la
+                              grafica (`display`) dei file originali, quindi un file sostitutivo la prende da qui
 - coltura_custom.csv          una coltura da scrivere: seme, tempo, blocchi richiesti, grafica, note
 - coltura_tag_custom.csv      coltura → tag ammessi (uno per riga, ne basta uno; nessuna riga = soil/dirt)
 - coltura_raccolto_custom.csv coltura → raccolto (oggetti con quantità e probabilità, o una tabella del bottino)
@@ -33,6 +35,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DP = "pack/config/paxi/datapacks/matteo_tweaks/data"
 MIEI = ("crop", "soil", "alberi")  # cartelle scritte a mano, non si toccano
+
+
+def mostra(d: dict) -> dict:
+    """La grafica di un terreno che non è un blocco, da una riga di terreno_custom.csv."""
+    display = {"type": "botanypots:simple", "block_state": {"block": d["display_blocco"]}}
+    if d["fluido"]:
+        display["options"] = {"render_fluid": True}
+    return display
 
 
 def carica_inventario(inv: Path):
@@ -191,6 +201,13 @@ def main() -> int:
             ns, path = orig["id"].split(":", 1)
             ric = {k: v for k, v in orig.items() if k != "id"}
             ric.pop("growth_modifier", None); ric.pop("yield_modifier", None)
+            if ric.get("type") == "botanypots:soil":
+                # l'inventario toglie `display`, che per questo tipo è obbligatorio: senza, il file non si carica
+                # e il terreno sparisce (successo nella 0.6.1 con 8 secchi)
+                if t not in tcustom or tcustom[t]["display_blocco"] not in blocks:
+                    saltate.append((t, "terreno: file della mod da sostituire senza blocco da mostrare; "
+                                       "descriverlo in terreno_custom.csv")); continue
+                ric["display"] = mostra(tcustom[t])
             if crescita:
                 ric["growth_modifier"] = crescita
             if resa:
@@ -202,11 +219,8 @@ def main() -> int:
             d = tcustom[t]
             if d["display_blocco"] not in blocks:
                 saltate.append((t, f"terreno: blocco da mostrare inesistente {d['display_blocco']}")); continue
-            display = {"type": "botanypots:simple", "block_state": {"block": d["display_blocco"]}}
-            if d["fluido"]:
-                display["options"] = {"render_fluid": True}
             ric = {"bookshelf:load_conditions": [{"type": "bookshelf:item_exists", "values": [t]}],
-                   "type": "botanypots:soil", "input": {"item": t}, "display": display}
+                   "type": "botanypots:soil", "input": {"item": t}, "display": mostra(d)}
         elif t not in blocks:
             saltate.append((t, "terreno: non è un blocco; va descritto in terreno_custom.csv")); continue
         else:
@@ -238,6 +252,17 @@ def main() -> int:
     for tag, terreni in tags.items():
         attesi[Path("botanypots/tags/item/soil") / f"{tag.split('/', 1)[1]}.json"] = {
             "replace": False, "values": [{"id": b, "required": False} for b in sorted(set(terreni))]}
+    # ogni terreno `botanypots:soil` (generato o scritto a mano) deve avere oggetto e grafica, o non si carica
+    da_controllare = dict(attesi)
+    for d in (bp.iterdir() if bp.exists() else []):
+        if d.is_dir() and d.name in MIEI:
+            da_controllare |= {q.relative_to(data): json.loads(q.read_text(encoding="utf-8")) for q in d.rglob("*.json")}
+    invalidi = sorted(str(q) for q, r in da_controllare.items()
+                      if isinstance(r, dict) and r.get("type") == "botanypots:soil" and not ("input" in r and "display" in r))
+    if invalidi:
+        print("Terreni `botanypots:soil` senza `input` o `display` (Botany Pots li scarterebbe):")
+        print("\n".join(f"- {q}" for q in invalidi))
+        return 1
     if a.verifica:
         presenti = set()
         for d in (bp.iterdir() if bp.exists() else []):

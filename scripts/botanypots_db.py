@@ -59,6 +59,8 @@ SEMI_ECCEZIONI = {
     "minecraft:pumpkin_stem": "minecraft:pumpkin_seeds", "minecraft:sweet_berry_bush": "minecraft:sweet_berries",
     "rusticdelight:bell_peppers": "rusticdelight:bell_pepper_seeds", "rusticdelight:cotton": "rusticdelight:cotton_seeds",
     "bountifulfares:palm_sapling": "bountifulfares:coconut",
+    # il blocco ha un oggetto omonimo che però è il raccolto, non il seme (trovato il 24/10/2026)
+    "minecraft:wheat": "minecraft:wheat_seeds",
 }
 
 SCHEMA = """
@@ -492,10 +494,10 @@ class BotanyPotsDB:
         for r in colture_r:
             if r.get("input"):
                 semi, orig = self._oggetti_di_input(r["input"], r["id"]), "file"
+            elif r["block"] in SEMI_ECCEZIONI:  # prima delle altre: il blocco può avere un omonimo che non è il seme
+                semi, orig = [SEMI_ECCEZIONI[r["block"]]], "eccezione"
             elif r["block"] in items:
                 semi, orig = [r["block"]], "blocco"
-            elif r["block"] in SEMI_ECCEZIONI:
-                semi, orig = [SEMI_ECCEZIONI[r["block"]]], "eccezione"
             else:
                 raise ErroreDati(f"seme sconosciuto per {r['id']} (blocco {r['block']})")
             for s in semi:
