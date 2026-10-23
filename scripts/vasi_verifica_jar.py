@@ -298,6 +298,13 @@ def main() -> int:
             incerte.append(f"{nome}: {sorted(n for n in note if n.startswith('incerta'))}")
     for f, d in terreni:
         nome = f.relative_to(bp).as_posix()
+        if "block" not in d:  # terreno che non è un blocco (secchio): ha `input` e `display`
+            ogg = d["input"]["item"]
+            if not jar.oggetto(ogg):
+                errori["terreno: oggetto non trovato nei jar"].append(f"{nome}: {ogg}")
+            if not d.get("display"):
+                errori["terreno senza grafica (display)"].append(nome)
+            continue
         if not jar.blocco(d["block"]):
             errori["terreno: blocco non trovato nei jar"].append(f"{nome}: {d['block']}")
         if not jar.oggetto(d["block"]):
