@@ -10,6 +10,8 @@ aethersdelight:wild_ginger,the-aethers-delight,aethersdelight:wild_ginger,,,,,,,
 aethersdelight:wild_leek,the-aethers-delight,aethersdelight:wild_leek,,,,,,,
 aethersdelight:wild_parsnip,the-aethers-delight,aethersdelight:wild_parsnip,,,,,,,
 ars_elemental:sparkflower,ars-elemental,ars_elemental:sparkflower,,,,,,,
+born_in_chaos_v1:marigolds,borninchaos,born_in_chaos_v1:marigolds,,,,,,,
+born_in_chaos_v1:river_mint,borninchaos,born_in_chaos_v1:river_mint,,,,,,,
 bountifulfares:chamomile_flowers,bountiful-fares,bountifulfares:chamomile_flowers,,,,,,,
 bountifulfares:elderberry_trellis,bountiful-fares,bountifulfares:elderberries,,bountifulfares:vine_trellis,bountifulfares:vine_trellis,,,sì,
 bountifulfares:hoary_apple_sapling_crop,bountiful-fares,bountifulfares:hoary_seeds,,,,,,,
@@ -47,9 +49,11 @@ culturaldelights:wild_cucumbers,cultural-delights,culturaldelights:wild_cucumber
 culturaldelights:wild_eggplants,cultural-delights,culturaldelights:wild_eggplants,,,,,,,
 deep_aether:aerlavender,deep-aether,deep_aether:aerlavender,,,,,,,
 deep_aether:aether_cattails,deep-aether,deep_aether:aether_cattails,,,,,,,
+deep_aether:blue_aercloud_mushrooms,deep-aether,deep_aether:blue_aercloud_mushrooms,,,,,,,
 deep_aether:echaisy,deep-aether,deep_aether:echaisy,,,,,,,
 deep_aether:enchanted_blossom,deep-aether,deep_aether:enchanted_blossom,,,,,,,
 deep_aether:feather_grass,deep-aether,deep_aether:feather_grass,,,,,,,
+deep_aether:glowing_spores,deep-aether,deep_aether:glowing_spores,,,,,,sì,stato predefinito (1 fiore): da provare
 deep_aether:golden_aspess,deep-aether,deep_aether:golden_aspess,,,,,,,
 deep_aether:golden_flower,deep-aether,deep_aether:golden_flower,,,,,,,
 deep_aether:golden_vines,deep-aether,deep_aether:goldenleaf_berries,,,,,X_180,,
@@ -57,12 +61,14 @@ deep_aether:iaspove,deep-aether,deep_aether:iaspove,,,,,,,
 deep_aether:lightcap_mushrooms,deep-aether,deep_aether:lightcap_mushrooms,,,,,,,
 deep_aether:medium_golden_grass,deep-aether,deep_aether:medium_golden_grass,,,,,,,
 deep_aether:mini_golden_grass,deep-aether,deep_aether:mini_golden_grass,,,,,,,
+deep_aether:pink_aercloud_mushrooms,deep-aether,deep_aether:pink_aercloud_mushrooms,,,,,,,
 deep_aether:radiant_orchid,deep-aether,deep_aether:radiant_orchid,,,,,,,
 deep_aether:short_golden_grass,deep-aether,deep_aether:short_golden_grass,,,,,,,
 deep_aether:sky_tulips,deep-aether,deep_aether:sky_tulips,,,,,,,
 deep_aether:squash_stem,deep-aether,deep_aether:squash_seeds,,,deep_aether:blue_squash,,,,
 deep_aether:tall_aerlavender,deep-aether,deep_aether:tall_aerlavender,,,,,,,
 deep_aether:tall_aether_cattails,deep-aether,deep_aether:tall_aether_cattails,,,,,,,
+deep_aether:tall_alien_plant,deep-aether,deep_aether:tall_alien_plant,,,,,,sì,pianta alta come le altre di Deep Aether
 deep_aether:tall_feather_grass,deep-aether,deep_aether:tall_feather_grass,,,,,,,
 deep_aether:tall_golden_grass,deep-aether,deep_aether:tall_golden_grass,,,,,,,
 deep_aether:yagroot_vine,deep-aether,deep_aether:yagroot_vine,,,,,,,
@@ -163,16 +169,33 @@ mynethersdelight:powdery_cannon,my-nethers-delight,mynethersdelight:powder_canno
 mynethersdelight:warped_fungus_colony,my-nethers-delight,mynethersdelight:warped_fungus_colony,,,,,,,
 netherdepthsupgrade:crimson_kelp,nether-depths-upgrade,,,netherdepthsupgrade:crimson_kelp|netherdepthsupgrade:crimson_kelp_plant,netherdepthsupgrade:crimson_kelp_plant|netherdepthsupgrade:crimson_kelp,"0,-0.3,0|",,,
 netherdepthsupgrade:warped_kelp,nether-depths-upgrade,,,netherdepthsupgrade:warped_kelp|netherdepthsupgrade:warped_kelp_plant,netherdepthsupgrade:warped_kelp_plant|netherdepthsupgrade:warped_kelp,"0,-0.3,0|",,,
+netherexp:crimson_sporeshroom,jadens-nether-expansion,netherexp:crimson_sporeshroom,,,,,,,
 netherexp:crimson_sprouts,jadens-nether-expansion,,,,,,,,
+netherexp:damp_siltmarram,jadens-nether-expansion,netherexp:damp_siltmarram,,,,,,,raccolto scritto: la tabella dà l'oggetto solo con le cesoie
+netherexp:dry_siltmarram,jadens-nether-expansion,netherexp:dry_siltmarram,,,,,,,raccolto scritto: la tabella dà l'oggetto solo con le cesoie
+netherexp:moist_siltmarram,jadens-nether-expansion,netherexp:moist_siltmarram,,,,,,,raccolto scritto: la tabella dà l'oggetto solo con le cesoie
+netherexp:soul_swirls,jadens-nether-expansion,netherexp:soul_swirls,,,,,,,raccolto scritto: la tabella dà l'oggetto solo con le cesoie (variante a soffitto non scritta)
+netherexp:warped_sporeshroom,jadens-nether-expansion,netherexp:warped_sporeshroom,,,,,,,
+netherexp:warped_wart,jadens-nether-expansion,netherexp:warped_wart,,,,,,sì,"due blocchi, con età: raccolto ricavato dalla tabella, da provare (check_crops)"
 reactive:flower_vine,reactive,reactive:flower_vine,,,,,,,
 reactive:mind_lichen,reactive,reactive:mind_lichen,,,,,,,
 regions_unexplored:blue_bioshroom,regions-unexplored,regions_unexplored:blue_bioshroom,2400,,,,,,
+regions_unexplored:enchanted_birch_leaf_litter,regions-unexplored,regions_unexplored:enchanted_birch_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio enchanted_birch_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:grass_sprouts,regions-unexplored,regions_unexplored:grass_sprouts,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio stone_bud, che non si carica (prova 2 del 24/10)"
+regions_unexplored:hanging_earlight,regions-unexplored,regions_unexplored:hanging_earlight_fruit,,,,,X_180,sì,appesa; il seme è il frutto (il blocco non ha un oggetto): da provare che si pianti
+regions_unexplored:lavender_wisteria_shrub,regions-unexplored,regions_unexplored:lavender_wisteria_shrub,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio mauve_shrub, che non si carica (prova 2 del 24/10)"
 regions_unexplored:lavender_wisteria_vines,regions-unexplored,regions_unexplored:lavender_wisteria_vines,,,,,X_180,,
+regions_unexplored:maple_leaf_litter,regions-unexplored,regions_unexplored:maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio maple_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:orange_maple_leaf_litter,regions-unexplored,regions_unexplored:orange_maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio orange_maple_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:red_maple_leaf_litter,regions-unexplored,regions_unexplored:red_maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio red_maple_leaf_pile, che non si carica (prova 2 del 24/10)"
 regions_unexplored:redstone_bud,regions-unexplored,regions_unexplored:redstone_bud,,,,,,,
+regions_unexplored:redstone_bulb,regions-unexplored,regions_unexplored:redstone_bulb,,,,,,,
 regions_unexplored:saguaro_cactus_flower,regions-unexplored,regions_unexplored:saguaro_cactus_flower,,,,,,,
 regions_unexplored:salmon_poppy,regions-unexplored,regions_unexplored:salmon_poppy,,,,,,,
 regions_unexplored:salmon_wisteria_shrub,regions-unexplored,regions_unexplored:salmon_wisteria_shrub,,,,,,,
 regions_unexplored:salmon_wisteria_vines,regions-unexplored,regions_unexplored:salmon_wisteria_vines,,,,,X_180,,
+regions_unexplored:silver_birch_leaf_litter,regions-unexplored,regions_unexplored:silver_birch_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio silver_birch_leaf_pile, che non si carica (prova 2 del 24/10)"
+regions_unexplored:sky_wisteria_shrub,regions-unexplored,regions_unexplored:sky_wisteria_shrub,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio enchanted_birch_shrub, che non si carica (prova 2 del 24/10)"
 regions_unexplored:sky_wisteria_vines,regions-unexplored,regions_unexplored:sky_wisteria_vines,,,,,X_180,,
 regions_unexplored:tall_hyacinth_stock,regions-unexplored,regions_unexplored:tall_hyacinth_stock,,,,,,,
 roasters_delight:chamomile_crop,roasters-delight,roasters_delight:chamomile_seeds,,,,,,,
@@ -180,8 +203,12 @@ roasters_delight:coffee_plant,roasters-delight,roasters_delight:unroasted_coffee
 roasters_delight:matcha_crop,roasters-delight,roasters_delight:matcha_seeds,,,,,,,
 roasters_delight:mint_crop,roasters-delight,roasters_delight:mint_seeds,,,,,,,
 roasters_delight:tea_bush,roasters-delight,roasters_delight:tea_seeds,,,,,,,
+roasters_delight:wild_chamomile,roasters-delight,roasters_delight:wild_chamomile,,,,,,,"selvatica: senza cesoie dà il prodotto, non la pianta intera (scelta del 22/10/2026)"
+roasters_delight:wild_matcha,roasters-delight,roasters_delight:wild_matcha,,,,,,,"selvatica: senza cesoie dà il prodotto, non la pianta intera (scelta del 22/10/2026)"
+roasters_delight:wild_mint,roasters-delight,roasters_delight:wild_mint,,,,,,,"selvatica: senza cesoie dà il prodotto, non la pianta intera (scelta del 22/10/2026)"
 rusticdelight:dark_bell_peppers,rustic-delight,rusticdelight:dark_bell_pepper_seeds,,,,,,,
 rusticdelight:pale_bell_peppers,rustic-delight,rusticdelight:pale_bell_pepper_seeds,,,,,,,
+tombstone:thornveil,corail-tombstone,tombstone:thornveil,,,,,,,
 twilightdelight:fiddlehead_clump,twilight-delight,twilightdelight:fiddlehead_clump,,,,,,,
 twilightdelight:ironwood_sapling,twilight-delight,twilightdelight:ironwood_sapling,2400,,,,,,
 twilightdelight:mushgloom_colony,twilight-delight,twilightdelight:mushgloom_colony,,,,,,,
@@ -218,6 +245,11 @@ undergarden:tall_deepturf,the-undergarden,undergarden:tall_deepturf,,,,,,,
 undergarden:tall_shimmerweed,the-undergarden,undergarden:tall_shimmerweed,,,,,,,
 undergarden:underbean_bush,the-undergarden,undergarden:underbeans,,,,,,,
 undergarden:veil_mushroom,the-undergarden,undergarden:veil_mushroom,,,,,,,
+undergardendelight:blood_mushroom_colony,undergarden-delight,undergardendelight:blood_mushroom_colony,,,,,,,"colonia: senza cesoie dà i funghi, non la colonia"
+undergardendelight:indigo_mushroom_colony,undergarden-delight,undergardendelight:indigo_mushroom_colony,,,,,,,"colonia: senza cesoie dà i funghi, non la colonia"
+undergardendelight:ink_mushroom_colony,undergarden-delight,undergardendelight:ink_mushroom_colony,,,,,,,"colonia: senza cesoie dà i funghi, non la colonia"
+undergardendelight:puff_mushroom_colony,undergarden-delight,undergardendelight:puff_mushroom_colony,,,,,,,"colonia: senza cesoie dà i funghi, non la colonia"
+undergardendelight:veil_mushroom_colony,undergarden-delight,undergardendelight:veil_mushroom_colony,,,,,,,"colonia: senza cesoie dà i funghi, non la colonia"
 unusualend:chorus_cane,unusual_end,unusualend:chorus_cane,,,,,,,
 unusualend:chorus_cane_flower,unusual_end,unusualend:chorus_cane_flower,,,,,,,
 unusualend:chorus_fungus,unusual_end,unusualend:chorus_fungus,,,,,,,
@@ -246,11 +278,3 @@ vinery:savanna_grape_bush_white,lets-do-vinery,vinery:savanna_grape_seeds_white,
 vinery:taiga_grape_bush_red,lets-do-vinery,vinery:taiga_grape_seeds_red,,,,,,,
 vinery:taiga_grape_bush_white,lets-do-vinery,vinery:taiga_grape_seeds_white,,,,,,,
 vinery:white_grape_bush,lets-do-vinery,vinery:white_grape_seeds,,,,,,,
-regions_unexplored:grass_sprouts,regions-unexplored,regions_unexplored:grass_sprouts,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio stone_bud, che non si carica (prova 2 del 24/10)"
-regions_unexplored:lavender_wisteria_shrub,regions-unexplored,regions_unexplored:lavender_wisteria_shrub,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio mauve_shrub, che non si carica (prova 2 del 24/10)"
-regions_unexplored:sky_wisteria_shrub,regions-unexplored,regions_unexplored:sky_wisteria_shrub,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio enchanted_birch_shrub, che non si carica (prova 2 del 24/10)"
-regions_unexplored:maple_leaf_litter,regions-unexplored,regions_unexplored:maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio maple_leaf_pile, che non si carica (prova 2 del 24/10)"
-regions_unexplored:red_maple_leaf_litter,regions-unexplored,regions_unexplored:red_maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio red_maple_leaf_pile, che non si carica (prova 2 del 24/10)"
-regions_unexplored:orange_maple_leaf_litter,regions-unexplored,regions_unexplored:orange_maple_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio orange_maple_leaf_pile, che non si carica (prova 2 del 24/10)"
-regions_unexplored:silver_birch_leaf_litter,regions-unexplored,regions_unexplored:silver_birch_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio silver_birch_leaf_pile, che non si carica (prova 2 del 24/10)"
-regions_unexplored:enchanted_birch_leaf_litter,regions-unexplored,regions_unexplored:enchanted_birch_leaf_litter,,,,,,,"nome di RU 0.6: Botany Pots ha ancora il vecchio enchanted_birch_leaf_pile, che non si carica (prova 2 del 24/10)"

@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "born_in_chaos_v1:marigolds"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "born_in_chaos_v1:marigolds",
+  "input": {
+    "item": "born_in_chaos_v1:marigolds"
+  }
+}

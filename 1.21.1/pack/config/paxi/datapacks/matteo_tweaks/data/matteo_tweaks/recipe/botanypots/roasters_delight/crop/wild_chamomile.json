@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "roasters_delight:wild_chamomile"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "roasters_delight:wild_chamomile",
+  "input": {
+    "item": "roasters_delight:wild_chamomile"
+  }
+}

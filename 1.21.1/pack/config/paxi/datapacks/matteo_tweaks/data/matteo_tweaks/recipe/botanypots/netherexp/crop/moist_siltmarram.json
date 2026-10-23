@@ -1,0 +1,31 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "netherexp:moist_siltmarram"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "netherexp:moist_siltmarram",
+  "input": {
+    "item": "netherexp:moist_siltmarram"
+  },
+  "soil": {
+    "tag": "botanypots:soil/nether"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "netherexp:moist_siltmarram",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

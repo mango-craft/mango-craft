@@ -1,0 +1,21 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "regions_unexplored:hanging_earlight"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "regions_unexplored:hanging_earlight",
+  "input": {
+    "item": "regions_unexplored:hanging_earlight_fruit"
+  },
+  "soil": {
+    "tag": "botanypots:soil/nether"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  }
+}

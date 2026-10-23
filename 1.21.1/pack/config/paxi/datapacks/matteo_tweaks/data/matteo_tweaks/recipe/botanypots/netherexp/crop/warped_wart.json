@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "netherexp:warped_wart"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "netherexp:warped_wart",
+  "input": {
+    "item": "netherexp:warped_wart"
+  },
+  "soil": {
+    "tag": "botanypots:soil/soul_sand"
+  }
+}

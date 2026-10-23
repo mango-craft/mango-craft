@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "deep_aether:glowing_spores"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "deep_aether:glowing_spores",
+  "input": {
+    "item": "deep_aether:glowing_spores"
+  }
+}
