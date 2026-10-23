@@ -56,6 +56,15 @@ Letti nel sorgente il 22/10/2026 (correggono la versione precedente di questa sc
 - `/botanypots debug check_crops`: **sostituisce con un vaso il blocco su cui si sta in piedi** e prova ogni coltura con il suo primo terreno e **7 attrezzi** (mano vuota, cesoie, zappa, piccone, ascia, spada e pala di netherite, tutti con tocco di velluto), fino a 1.000 raccolti ciascuno. Una coltura è «ok» se **un** attrezzo dà qualcosa: **non vede quindi le piante che senza cesoie non darebbero niente** (per quelle c'è `scripts/vasi_verifica_jar.py`). Il risultato è in chat («Tested N crops and found no errors» o «Found X errors»), i dettagli nel log (`did not drop any items`, `Could not find a valid soil`). Può bloccare il gioco qualche decina di secondi.
 - **Il vaso in gioco**: clic destro sul vaso apre il menu con tre posti (1 terreno, 2 seme, 3 attrezzo); con l'oggetto giusto in mano e vaso di terracotta base, a pianta matura il clic destro **raccoglie** (gli oggetti cadono a terra); l'osso (`minecraft:bone_meal`) fa crescere di 400–600 tick per volta (una crescita normale è 1.200 tick, gli alberi 2.400).
 
+## Piante a più facce, blocchi pieni e stadi (24/10/2026)
+
+Verificato nei jar mentre si scrivevano le ultime 24 piante dei vasi:
+- Un blocco **a più facce** (edere di Jaden's: `north`, `down`… in `multipart`) nello stato predefinito non disegna niente: nel vaso sarebbe invisibile. Escluse.
+- Un blocco **`cube_all`** che sta in `soul_speed_blocks` e `soul_fire_base_blocks` (`netherexp:sorroweed`) è terreno, non pianta.
+- Lo **stadio cresciuto** di una pianta (`unusualend:grown_warped_bush`) è la grafica della pianta, non una coltura a parte: il censimento dei blocchi lo dava per mancante.
+- Le tabelle che danno l'oggetto **solo con le cesoie** (siltmarram e soul swirls di Jaden's) vogliono il raccolto scritto; le colonie di Undergarden Delight e le selvatiche di Roaster's, senza cesoie, danno il prodotto (funghi, foglie) e non la pianta intera: restano così (scelta del 22/10).
+- La verruca deformata (`netherexp:warped_wart`, due blocchi con età) si pianta su sabbia delle anime ectoplasmica (`elysium_api:nether_wart_plantable_on`); nei vasi la mettiamo sull'etichetta `botanypots:soil/soul_sand`, la stessa che Botany Pots dà alla verruca del Nether (sabbia e terra delle anime). Da provare in gioco.
+
 ## Da provare
 
 BotanyPotsAdditions e Roaster's Delight da sole prima di affidarci un mondo lungo (mod recenti); Botany Pots Tiers + BotanyPotsAdditions insieme (`../../lavoro/0502-prove-in-gioco.md`).
