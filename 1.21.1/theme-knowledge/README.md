@@ -16,5 +16,7 @@ Conoscenza **trasversale**: argomenti che attraversano più mod o la piattaforma
 | [achievement](achievement.md) | Progressi già presenti, mod per la schermata, progressione propria del pack |
 | [accessori](accessori.md) | I tre menu dove indossare oggetti (Curios, Accessories standard, menu dell'Aether): chi usa cosa, come ridurli; potenziamento ed evoluzione (valutazione iniziale) |
 | [strumenti](strumenti.md) | Strumenti con materiali avanzati: set delle mod, livelli di scavo, materiali di Truly Modular; valutazione iniziale di una progressione a tappe |
+| [fornaci](fornaci.md) | Fornaci a livelli fuori da Create e Mekanism: cosa c'è già nel pack, mod candidate (Iron Furnaces, Iron Smelters, Jumbo Furnace) e scartate; valutazione iniziale |
 | [piante](piante.md) | Come il pack tratta le piante delle mod: vasi di Botany Pots e mercato di Farming for Blockheads su una base dati sola, anagrafica della rarità condivisa, regole nei CSV e file generati |
+| [pozioni](pozioni.md) | Effetti e pozioni delle mod (censimento del 24/10), sistemi per ottenerli, doppioni, amuleti di Apotheosis, automazione con Create; analisi iniziale |
 | [shader](shader.md) | Shader facoltativi: le mod del pack con uno shader attivo, pacchetti, licenze |

@@ -1,0 +1,13 @@
+{
+  "values": {
+    "cognition:cognitium_source": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "cognition"
+        }
+      ],
+      "neoforge:value": 20
+    }
+  }
+}

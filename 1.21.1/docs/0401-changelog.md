@@ -10,6 +10,16 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.6.3 — 24/10/2026 · esperienza (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: non serve. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Datapack, esperienza liquida**: il liquido di Cognition (cognitium, 20 mB per punto) entra nella tabella delle unità di Create: Enchantment Industry, quindi l'Experience Hatch e le macchine di Create lo contano giusto. Due ricette del **Mescolatore** di Create scambiano i due liquidi senza perdite né guadagni: 50 mB di esperienza di Create ↔ 1000 mB di cognitium (50 punti da entrambe le parti). In una bacinella senza filtro le due ricette vanno avanti e indietro; per un verso solo si mette nel filtro il secchio del liquido che si vuole ottenere.
+- **Strumenti**: il controllo dei nomi riconosce i liquidi dalle loro etichette e i risultati liquidi delle ricette di Create.
+- **Invariato**: nessuna mod aggiunta o tolta; config invariate.
+- **Stato**: ✅ provata il 24/10/2026 (avvio e mondo, 29.373 ricette, cioè le 2 del Mescolatore in più; nessun errore o avviso nuovo nel log; scambio nelle due direzioni come atteso) e rilasciata come pre-release `1.21.1-v0.6.3`.
+- **Problemi noti**: nessuno nuovo; B41, B39, B38 e B04 come nella 0.6.2.
+
 ## 0.6.2 — 24/10/2026 · mercato (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).

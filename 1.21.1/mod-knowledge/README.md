@@ -20,4 +20,4 @@ Tutto quello che sappiamo di **una mod**, con le fonti e la data dell'ultimo agg
 | [iris](iris.md) · [sodium](sodium.md) | nel pack | Versioni obbligate, config di Iris, impostazioni automatiche di Sodium (le mod del pack con gli shader: tema `shader`) |
 | [jadens-nether-expansion](jadens-nether-expansion.md) · [moogs-nether-structures](moogs-nether-structures.md) · [nether-depths-upgrade](nether-depths-upgrade.md) | nel pack | Config, bug, piante |
 | [occultism](occultism.md) · [starcatcher](starcatcher.md) · [regions-unexplored](regions-unexplored.md) · [twilight-forest](twilight-forest.md) · [sparse-structures](sparse-structures.md) | nel pack | Fatti verificati e cose da non rompere |
-| [colorwheel](colorwheel.md) · [malum](malum.md) · [tectonic](tectonic.md) | candidate | Cosa sappiamo, quando rivalutarle |
+| [colorwheel](colorwheel.md) · [furnacemk2](furnacemk2.md) (approvata) · [malum](malum.md) · [tectonic](tectonic.md) | candidate | Cosa sappiamo, quando rivalutarle |
