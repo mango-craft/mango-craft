@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:seeds",
-  "preset": "matteo_tweaks:end_common",
+  "preset": "matteo_tweaks:end_rare",
   "result": {
     "item": "unusualend:gloopilon_seeds"
   }

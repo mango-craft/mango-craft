@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:seeds",
-  "preset": "matteo_tweaks:otherside_common",
+  "preset": "matteo_tweaks:otherside_rare",
   "result": {
     "item": "deeperdarker:bloom_berries"
   }

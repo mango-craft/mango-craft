@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:other",
-  "preset": "matteo_tweaks:nether_common",
+  "preset": "matteo_tweaks:nether_rare",
   "result": {
     "item": "netherexp:crimson_sporeshroom"
   }

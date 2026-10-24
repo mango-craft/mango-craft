@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:flowers",
-  "preset": "matteo_tweaks:undergarden_common",
+  "preset": "matteo_tweaks:undergarden_rare",
   "result": {
     "item": "undergarden:miserabell"
   }

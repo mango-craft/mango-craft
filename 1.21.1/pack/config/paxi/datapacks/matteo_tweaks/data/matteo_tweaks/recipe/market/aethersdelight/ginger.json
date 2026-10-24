@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:seeds",
-  "preset": "matteo_tweaks:aether_common",
+  "preset": "matteo_tweaks:aether_rare",
   "result": {
     "item": "aethersdelight:ginger"
   }

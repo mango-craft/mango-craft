@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:flowers",
-  "preset": "matteo_tweaks:aether_common",
+  "preset": "matteo_tweaks:aether_super-rare",
   "result": {
     "item": "deep_aether:echaisy"
   }

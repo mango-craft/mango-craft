@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:flowers",
-  "preset": "matteo_tweaks:end_common",
+  "preset": "matteo_tweaks:end_rare",
   "result": {
     "item": "unusualend:shiny_spirea"
   }

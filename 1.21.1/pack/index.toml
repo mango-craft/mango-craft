@@ -309,24 +309,36 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_d
 hash = "a89bf09aaf9eb668e0e68953086a46b9527bba513a21c47f52b572fc460c6ab7"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/aether_common.json"
-hash = "b313b9c41da3a1f794538e55fa4f2343f7e4add687049f2b939a795ef67eee66"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/aether_rare.json"
+hash = "1e75cba6ff7c27243bc355dd96250365aa8585b2174b05a3904e49647ea3687e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/aether_super-rare.json"
+hash = "057f20b7f35003df1f948d866d2fc162d23877a835d35faab17137bb5a33b51c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/end_common.json"
 hash = "051c15c278a0db9d380c5468cc52bbb3c6d848ad69f59833cbb31bf3dd23e6f5"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/end_rare.json"
+hash = "cf8ec313a26e325d43797d684e9fd90b5b8578244ef5910aa02e0c6f4b449703"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_common.json"
 hash = "5bb6a57cf2fd1cb25dc1ece9815667073b80298d85ef4501de75aaa5bd1cb900"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_rare.json"
+hash = "dd32a2f56078db2e485eb8c2c64d6231f6fe763d69c441d525da9b17a4286816"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_super-rare.json"
 hash = "4c034ee8d69168bdbb90436e7cc825c8b10015b2b96c8888f6101320f9967966"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/otherside_common.json"
-hash = "6c7dccfa6b64c5cbe414da1c6830ffb362876f8e362c16ef02eace4a92062805"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/otherside_rare.json"
+hash = "8947d0d63e9454df69f8f7cbb412bcc1312371265435c3c8e7804f6510a46afa"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_common.json"
@@ -357,12 +369,12 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/ov
 hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/twilight_common.json"
-hash = "3dc6b8a55b2f0796707c8047342b2d9a8e2a811e70b8d65077e4bda0483a8e76"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/twilight_rare.json"
+hash = "ce4dbad0ed47e2cef6f382a9425b0190ef011a58b5397afd0437c9c336898019"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/undergarden_common.json"
-hash = "00996b239ea3099544713c6b62289bcbe4708a65f2e6f7a902911f32a62f3c03"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/undergarden_rare.json"
+hash = "ebc62484ddf0e519b801a0765c918ad23361c885257456e80588eb73bc125d18"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/crop/berry_bush.json"
@@ -1722,39 +1734,39 @@ hash = "8f252a81a3f188fb7720e67f053210407441082ed6ddb2d96e78a9defacf6981"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aether/purple_flower.json"
-hash = "a5d26e851b09b6371209118dfd1cf029925881ffbce0325d3826d32d2016eae8"
+hash = "4172f2e7ee6fb33f2aa978233750366bda4c7a1b13c5e6d48dc23165915784dc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aether/skyroot_sapling.json"
-hash = "74004f31cb1b0f66c940f78fd14c38044d779f17d2a4b84e7f83d71b2363bd10"
+hash = "8c4962048e4137859fe04da7ed57ffa73495422debbb6e4ad01958f32ae003ff"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aether/white_flower.json"
-hash = "35d88160cd78948abc133f15b5109f2049c3554487da1ed180508e985bf97892"
+hash = "b23056a593df15b83685077e1597490bff51613b6bd40c1983594cca78531635"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/ginger.json"
-hash = "917f990c6a239da4f04fdd058b081fe683ee4bb77288fed2076ad87b46e6a026"
+hash = "c96d5438db4eebd13925a546e6a09ebf8d53baa87348098c012d5281faa4cb00"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/leek.json"
-hash = "fa5029da3ef270301447cd2e5f0603fe3a03f2c071fad70ae02d844c179f9403"
+hash = "3aec690ac09776c2b0bef8ca7a83f2bfcc2f625ddfefaf7868176ef1350152f6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/parsnip.json"
-hash = "8e36f1af07f9c3901ed497ff4c02652020f5609743b0c70f458d29ae1842931a"
+hash = "b91c630ffaec7624e1f5769068e3ef0dc11922ab806e1af7b2750b7a733113f1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/wild_ginger.json"
-hash = "06737b3182659192a0322d98e0cb22a8d74875aa40805f9d0b9593d86a4960b0"
+hash = "615634439af7c542909a2fd6bfc821d3584ff7cda05b95fa4eecf0540959587c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/wild_leek.json"
-hash = "a5c3dda49f99e917852807d5c3ec78708baa39b0f8a2cdcc2cdbe7127805accb"
+hash = "4532d3b194afa02c6f656445a954ce4e1e949efcec0a5574da55b63bd69c3bc1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/wild_parsnip.json"
-hash = "98ec07fb8b33e47cea7616b5b7f11695e5e2691be12f737f7022eda12859410a"
+hash = "e325d3098d7df26fd30528ddb2acfdeacfa3df3941500be1711bf7ca6807d27a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/ars_elemental/flashpine_pod.json"
@@ -1970,135 +1982,135 @@ hash = "4e31b7abf2c82e0f9b4a348fad21767f36443f35cf5f61948e801acfdac1a665"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/aerlavender.json"
-hash = "7f6aff51448b69f3d2e91ec9eb026fdaa38abdf6630329276b40807335cbe2f7"
+hash = "bcc6a524754ab9964735262f69626bec5c3b3557d5ede743220373c2e1e9b39d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/aether_cattails.json"
-hash = "80dcc0af0b11f4cc9e7404f86fd278865bfc5205a7ba8af488520d66b35be0e9"
+hash = "1898d61db0461bcb87163481850b6d659dc9f889b2564fdcfdab3b5ef931da2e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/blue_aercloud_mushrooms.json"
-hash = "9bf21da2381f4aa88d0b44f34e12674c9dc8ad6a7564f6f0dd82d2dfe50dcf90"
+hash = "377834b7a2020413bdfd3a6e983a1c03e23ff1e9c9627054e37f4b6cd794bb96"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/blue_roseroot_sapling.json"
-hash = "0cc122f64ae68b49db6ae45642600d900d10b0fd9e81d471cae5e7ffc8e6a4ce"
+hash = "d6260d413392983d60e09f142cc387e4fef9478563e698d1a45ec678b2d38021"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/conberry_sapling.json"
-hash = "0c0828971dae3f8c70bf2701e6bf4b9e556c3abe83f1d2969c5bd19dfee62cfd"
+hash = "46f3e81d4ea655cfea8ca6824d2e65dc731c37bfbb77b64ed3a20e42a8400437"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/cruderoot_sapling.json"
-hash = "1665fd1ced1e131cc978b8a7e4f302bb4511ac6b643b8002ec7df2dbf81e6d11"
+hash = "d85e499488ecf2c53ccf22eed09e84a79da83d2d6c35d0b1c55d0360236bde64"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/echaisy.json"
-hash = "c221318517b386cd44cc74667c40828940dea801a017e5d1874879206d8fdc78"
+hash = "3855fca9edbcd8a4cc94707da2fcad74dfa595122e83b31c66733c0310efa9f7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/flowering_blue_roseroot_leaves.json"
-hash = "f0e7bc74874cf4af55d134d832408c06869b791f2a2b65d2e08c3de5491573dc"
+hash = "3859e599c9da4a9742d342d14d0ac4e5bc95c50b5400863e89803c113b5ffc88"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/flowering_roseroot_leaves.json"
-hash = "e90c0108d5f01208f7901e0f22e5216e6fc9fb739b5eaff0016b9b6d6b511626"
+hash = "ee1d5176ae8e3991319586559be559157344f73b57219def5260fa8d76a8dab6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/glowing_spores.json"
-hash = "5b7ca4141c95dce486dadfd5ede4d634625a5313ed57e3ec8b3870cae1631c6e"
+hash = "b7e470ddd2791f4ab1d9928966b1c01c6978732904bdfead0d2964bb0a78cbf1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/golden_aspess.json"
-hash = "7f076e498bd2ba7811742ca4fa82bd06aef4ffd751c39b49972d8d3be3599f16"
+hash = "0e06fbf8aea4c8aa555a323271836b00e8f9093b57613c52f68114873469c76e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/golden_flower.json"
-hash = "504170dd890697de1c4b322de77337c64f64e49985f1bce42460e3fdf630339c"
+hash = "f7224df8ce1e7084c6b4955b2f8f0e8f724fb037cfb4504d901b8adc84494966"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/goldenleaf_berries.json"
-hash = "4ccab2408471377ea5e994ea22f3be094758aff29ed87a5af041b35591ef3999"
+hash = "c635c314077fc8d0d2bc1eac3d6648cdbd9c5eb23363c00aa33670dcd173224c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/iaspove.json"
-hash = "888c470b0daf849c0705e05b4df63eb8999cdf4b6e89fe7aa5d0a623c9c24aa8"
+hash = "f5ce17c47869f068d6c13b2ff4648b5b8666c1029bfc5137dd7064b1fbae9eaf"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/lightcap_mushrooms.json"
-hash = "478ba16004602b577f383bf78365c2c5485e3ca90804f4ef2be4389937eac571"
+hash = "12f8d88421af18455a6771a46cfdb1a07ab0837ea86eaf70a1011d3a9940a6f1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/pink_aercloud_mushrooms.json"
-hash = "1d6d65dcd1d714499986cfc87852cdce1d08d0a3adcee531a19a3274d6ab260a"
+hash = "7a15c47c1fd38d291a1674ae70df96ba8e00a32525bdb1969626b452dbd49d21"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/radiant_orchid.json"
-hash = "6b42fe853c5a2c2cce178c7a5a5f4127dc61d38f213f8836652ff41943c9aa1f"
+hash = "f1a566c17e54e3ccea481691dc0f94ecc9ba27011de3af1b83ca54eacc43eb6d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/roseroot_sapling.json"
-hash = "b6ed7f8de95fe369023d2a107c5b9dc77b9ad1bbdfc44257ea019fa1837a2732"
+hash = "f7ab57d7170d8c5e90277f5f4a4073a21d7b0d30545fa4facc1b60fbe30b09ba"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/sky_tulips.json"
-hash = "9805f24284ff9dfa0974c5cef89db9b3514d46e8f54ed8bfc893e4967e7e1b87"
+hash = "77ea1d7f36bf85c98f7b93cd3621204d522e73666754a9a04233b6cd99664427"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/squash_seeds.json"
-hash = "0fa9ffc8f914062e7dce5fc093e694ad2f53bce91ff2665bd7a6d46b959c7d18"
+hash = "a066981bae14798e12663ac98058a3df2f213252192c2032ce452087bfaf55d8"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/sunroot_sapling.json"
-hash = "4f59c2ba5e05315569c6030f6a109b2d6a849716522a4668f900478ba0cb78bf"
+hash = "c492dacca940fb91b35141cf5002b16720a195a7d52fd6509eb6a75e0dbde0df"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/tall_aerlavender.json"
-hash = "717a1e0424b44bb30d6da21b596f63bc87340d76a2b99af02934e3d13f338d98"
+hash = "701c15a3050416353790ac9cb13c97214298cc0d9157321ce201f1754a956fd8"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/tall_aether_cattails.json"
-hash = "4f2e013ce162b005483e6fd516af28d08abc37cb1729e3d869d842875af38c70"
+hash = "de3443cab29f2cd45e9790e2245e975cb364ce6576094230bced637b2bdc2ff6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/tall_alien_plant.json"
-hash = "f25f50b3417c26457308ec77723384c7e10549f44703ea435f9006767f142d66"
+hash = "342c3c84e8af9dd37a683493121b1f9fbab6b59c13f52a8fe9c34d384004e676"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/yagroot_sapling.json"
-hash = "50b88afdb1147e17f25dcadaa8a62f2912fae91ac7934ec89b0e9b920e565f09"
+hash = "b6efea083505f261e6d53546a36d0ed40e3e5c87649842baa86f002cd35cf251"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/bloom_berries.json"
-hash = "59370e31539eca2b4bb0d976e9991fd5cba7b73303109e84c50e638d6ef17050"
+hash = "8b6c4339a95d4902862fb5b8adc15c7a66dc0000a98bf1cead833a7d197fb582"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/echo_sapling.json"
-hash = "cab1b74204d114c9cbd9a223dbe67cacb5bafabf21303a3fc5b595d9bc67a325"
+hash = "f5ab40a33dcf8f432c286573a5033e53a93a247b7e7bf64a7369e6bc147b26ce"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/glowing_flowers.json"
-hash = "344062251cb22c61909fab85ab3df88d7c81d29caf6c492f19171d883ad3813b"
+hash = "320e12b117cf768bd085d22a2a246758228ad0fe05d0360830d4ba9eefc954c7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/lily_flower.json"
-hash = "4fe91977c318c15289764b8919e449fc778c96c16bbeb96097d2159a95787a36"
+hash = "785ffffd36a8c4424cb1f01fef01ae953f4f36b2e6663a6b614d698fa63e0886"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/amberveil.json"
-hash = "068a10fd2ff307c925254a5ae95c98acb2ca2d3b896538fa6041189f2ab5aed5"
+hash = "3ae83547eeb52339af7ab775b81ed223fb4d54aa5e6cf44b209969e4d97b64f7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/chorusflame.json"
-hash = "47ab2c299ad75c8a066fd95065a77abc3d50b7d19c7ce67c3d6f8f15f9a56a90"
+hash = "591a7857e26b13a1adfab796789b2c9d4e443a185e6dcbf011ea01fff2958c05"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/ethereal_saffron.json"
-hash = "42429f12b24a4f3de4e1171b060e2b7ff125644ae6a417315579f74a5a62146c"
+hash = "532f598ea56f238a15bd0f2b303b665c8ee01bb98cdcb7a81cd6d489a953d7d0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/voidpepper.json"
-hash = "c23b93b933ab1a05d19051e0abcc3d1342609689bffd97e307c7608fd17a7aaa"
+hash = "4097f4233bfb579a72468d55808a3eb58b812974390c813e89ebdc0b2a6307c3"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/cranberries.json"
@@ -2610,31 +2622,31 @@ hash = "38b27ff8cc4b3b0577b156dcd7a4e4dfd909dcdf732c8a1d496caa3346b862c0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/bullet_pepper.json"
-hash = "62acbda83b050acd253924376c20fb00f85ba4a6e7e46730ed27b8488deb00ca"
+hash = "9345fdbc95b9a370a8e3c182370c0e47b93ff06bb81dbf230a4b62d0d6f111ef"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/crimson_fungus_colony.json"
-hash = "60f88d26ec0a850d54cf591a47b316b69cf2867fe6d0fc7d8c6805d36ce70991"
+hash = "608326d82d71a5a518e43b0c6463250ded2ab5af9f0056021a5246b10f0e483e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/powder_cannon.json"
-hash = "2d11a9376df6e28e94ac9bd7163a2bf3699e8ee8368f705fcfdfa8a5e16cdf15"
+hash = "12eb0b8b0075cc5c0c4447420350b399952a9f6858022b5e75bf41044ce56bb4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/warped_fungus_colony.json"
-hash = "cf11f1540d0a7d8b6bc0158e4384c200e018aa09e5bb1194952bb091d76a7a26"
+hash = "bd9052d90e510fb0fbca3fd8d2069c8ae016ab7bc375e221fa1f03066e29cdd7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/netherexp/crimson_sporeshroom.json"
-hash = "265df8da65e73346a74e7fc852b0ce5d124a6b4d52df89a5f269fc14914dd7af"
+hash = "8d1b4bcb13a6f4940477362ecb5d03fee8bc64382ef1d091855508b111add02d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/netherexp/warped_sporeshroom.json"
-hash = "28cb0122f39632aac29335dc2de332cede32da2a94994224f3794aa74bc25415"
+hash = "1a8d4f1b88ff67cd4940d9aa873c7c5e6f91a51138b3c6a76b43622519c01849"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/netherexp/warped_wart.json"
-hash = "e5ba41572041bbc0daa24cd851bde82c0b9a22ec50e3c41b12a3355c58a4f152"
+hash = "32f10f5bcc7338510b900d024fe7dab45c6cafe9e35ad616548557d082940f26"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/occultism/datura_seeds.json"
@@ -3186,195 +3198,195 @@ hash = "5fe27424e08ca671af949dc46f08e7e5211a980d5228d780ecf6eeb38c38ea11"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightdelight/fiddlehead_clump.json"
-hash = "c7738d68c6ed5483c005a3f96a77ca00d6bae9776df8d1b024fca9944fe44752"
+hash = "463d7a5ee4e3b5d525aa8c47f7bba7e822068a6b5cd347e908da4f33aa95a3bc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightdelight/ironwood_sapling.json"
-hash = "5af49f0a22a37e81a6ea9ccdd9aa0197cc116aa2d443c662a2dd4773a74d511e"
+hash = "e63c36d0064e4b7cfae07f20061966ab729e061c6face70d0ec029e0423b0f7f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightdelight/mushgloom_colony.json"
-hash = "6663803900fe2853b51856b2b2660482067fd3354ca5566c201c21afa118e945"
+hash = "e6d293798f106dda029aa7a398c651aaaf50bdb60bd1bfa75fc4515df5d55697"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/canopy_sapling.json"
-hash = "e2c96d43c41257f50705a0f2bcbf880015d66f0526e40b0b76570d82e9cccd89"
+hash = "14275f4d04764fee12b318d72d148d5843dc5243bb3365bedc59f148356e8ccc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/copper_oreberry.json"
-hash = "3a5cd3ba0c4eb675e5bc67a28e2c7af370b6afca978232076af45a8b9a377dc1"
+hash = "0fe66096bf4672df4e35b57d3ab25f521c6ba48bca7c0d827cea1557a3c1fc9f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/darkwood_sapling.json"
-hash = "44869f1c61bcfb8763f179ab94649d3accba6556866c34e6d720f2f24d29988c"
+hash = "2cc6c8ce65cb4cb163626256628d35068173c26cdc6b38d81dccf5ea72056b91"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/essence_oreberry.json"
-hash = "52da6f78f472ddb37a30d529d0cf3efbbb9649724a1b2881dcdd2ffba44b39b9"
+hash = "3e1d190762b5d648db020eb7fd67b3ad5b84006fac900932cbf8438b0128472e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/fiddlehead.json"
-hash = "4d98908526cda50b98391837720ce35fd0b72e83aeae2ac6611a81f6af960c1c"
+hash = "39eae6680c92a1e699336df2454adff68753a46599c029a433d6582c0b1c7e48"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/gold_oreberry.json"
-hash = "7a46882223187185323b7684cb49ca69673661c16d9f70865ce3a02ba410f339"
+hash = "34c628c5490e39446823c6d82a0f1b077774baca5a2fda132128f7e0c649e325"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/iron_oreberry.json"
-hash = "b853c9f8cf6c632e837446b79ac94e5684f4e94b914443fa4c9b7dd4f5b6b89b"
+hash = "66d9f0c9a2b6b61e062c91b0333b6bb9a63f5b03a9cf90b1e508ebba2a188eb5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/mangrove_sapling.json"
-hash = "0ef82c214a098f3464e69e3a352ece6a9bb8138b4f22611680d091112803526b"
+hash = "9b3711aea91cc229559ae7bbd6fe2b46a91af729e75aed5534482b216ac37c2a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/mayapple.json"
-hash = "0b4c991b808b88a03dd1d178b379520db40fdf88af56e30c82bead85d963f8cb"
+hash = "12e1e5c28d149948d6ef5177170ff2282cdfe2bd541a47581915a952fd64b2f8"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/mushgloom.json"
-hash = "a3ba3deb146ed35a768d593512733d92d478d280d85486ecebec06a5dd8fe2f2"
+hash = "56dfd576f6cffb1ed0e66a24e217dc751f2f646ee032f14f71c01d09d95f3803"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/root_strand.json"
-hash = "e1f9fc2a8c5dd069de08b159dc8a9f715a26f06c55c0139325cb3d9d1fa66994"
+hash = "69f4487b243c01b24f607ee82a8848927de98e6c77635c19dc571c4c10685ae1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/thorn_rose.json"
-hash = "f95a04bf4c818d65ecfea1cb9003cf7164c0113e97c96db3625de10cfd146011"
+hash = "ae7849b168a75dca354d17992032034384d02d50b01576b8e7ba756c68ccdf16"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/twilight_oak_sapling.json"
-hash = "61e9a3e745ea44eeeb2206b375423ce766eb5c2c1f98263448c0a5f4b402d64c"
+hash = "da8c3bd9173aa39c6100dd2defa7b6a19cce98a85fe3ac81ecdf7261cde237e4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/amorous_bristle.json"
-hash = "ce596654bc0bc2fca0bca65b4d722630a3edb19661587e27e8a7b7e2c20b93cb"
+hash = "dd236c0895bb09725d089c7a542e13a74a70cbe5d47eddfcbd4c825cd148269c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/blisterberry.json"
-hash = "25712eff5b7415de70daa21638208b0ad65e97581bfee6e3abe11383c8056920"
+hash = "c41eb28e08e741a2ebe88dd5926a952e5a2fe117d4e17942b6f4454d313d5d86"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/blood_mushroom.json"
-hash = "b4c3716cf78dbd1bde0d8d6809fccc9297abf4cb269bdb34cefb58ad799abefe"
+hash = "d37bb69379874b40fa2f4becc8fe5cd97c4bef5b9684c6e9efb19165d60c9962"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/butterbunch.json"
-hash = "89f08766d73455d1428ec7c8e2dd14c0681ce5babfe701fa5627cf79eb49fb58"
+hash = "a9d1c0124bdb66fbf2618fcbac2eeb301e048c43906b0fad67b7db319cfc5cb0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/ditchbulb.json"
-hash = "7b9100e02480bf13dc6dfb760fc2af5264d3bccd09cb5f5ceb6ff04101da46ce"
+hash = "6da40ebbaef00e7adcdca8b1dd69da9b04447290e294eddb337b1cab2f0585bf"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/droopvine_item.json"
-hash = "580fd114bb48e45df10c5be5c279a828a58de7a08cf0e2af02460b06fc208d2b"
+hash = "8f635971154178cae8f3af0f0939358d82c58fe52583ab092daf864ec4693e0a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/glitterkelp.json"
-hash = "4019c8475410acac459bf83fe720355db0c8e96bbe00c75a6fe9d3e11d044554"
+hash = "453ee0d9c320f06cf2f3bdbbce8f1e5471a35133610eda4f3a35b41c036edb0b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/gloomgourd_seeds.json"
-hash = "8e161d110090a639d3e2d594c6617006900d1b50d3dd43259a545d92df37e7a4"
+hash = "35684daea00262a3efe5f3f050ed033b1a7db77aca10c9aa5111205d49a51f2c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/grongle_sapling.json"
-hash = "bbcd8f6803cfe724be3016fa3110dceef920b0932d63b0df7f773f9f16268e68"
+hash = "0c5195a22dd68f15a8601fb305c3242d2fdb477c4e46a0bac510ebabce3992c7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/indigo_mushroom.json"
-hash = "8928e4a675addca9bf546048606ec7b39cf3dc3266b01fe245aad8d38462400f"
+hash = "fa821aaed4ab91b6ef982c476cfc4b8abc8447a363cdeaaf99f40930dec9afea"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/ink_mushroom.json"
-hash = "68df8de26771809336ad908814eaa7928704099b46e5f5a3f29738795844bb85"
+hash = "5cb66067c81d20541d5d187fef370034be6cb575b6ef2a16084b36347ad04709"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/miserabell.json"
-hash = "d9d063ff4a8b43f9ff4a5e13d095202642c69d95822c86cdd8e13ef929da8da0"
+hash = "6c3a81f7eb2618fec7fac83aa8670764f5aa033207253dd87cbba3833562ecb4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/mushroom_veil.json"
-hash = "9e6aaa48aa23c91993bfc9b1d87cd51bccf18e42becb541634c7f1bd11a6cba1"
+hash = "96c6ea7a2344018a8670915da5098cf7b57c41467bb47561e18aaacb9a0f4d1a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/puff_mushroom.json"
-hash = "861f766e4e14e6e986a71123be97b099e6308325491bbf3855f3d26e0632893b"
+hash = "a7bf46982b569e4238eea8bcaa615e1ed1529d3d938a8522bc7c10ab2fbe5b83"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/shimmerweed.json"
-hash = "e376bb778558685cd7e2adf9be19f0ba22ab5b5e3893989446b64522ad82cb7d"
+hash = "61cfd69b5feec8fd1a65d2f3fbd079018c666df6e1c4e6ccfb04119ef6bfa169"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/smogstem_sapling.json"
-hash = "e7ed82f70637c09435ff3887755e215ff700181ebdafe7fb407c6aa310954046"
+hash = "89c4cd8eed63beb6f9650b90ba909f2cba8c7cd90062e422e58f8d48939abbd5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/tall_shimmerweed.json"
-hash = "30bfb1633a40d3f3d9635575413910ed5262226f3b734ba38f09c518e0aae823"
+hash = "7d5c8edbb7c52162f3eaaaa7fe80b13ce2d410b66da5bafc6f9938241539c3be"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/underbeans.json"
-hash = "34ffdff0f25df6ca2a9b5923f5562e0034b7e72b2757b42979efff3b92ccc6fb"
+hash = "92000057293a6cffdb3da86895717c68a446281bb889e770729f217b1f713d58"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/veil_mushroom.json"
-hash = "7f2f767cde54e5096fd66f1469ca8a2496ae5050bc16e87476a137e1f7d2cb32"
+hash = "31e01806013cf3eb3770069b28ba56af213d0eb4c24bd09bae052eb036d09c67"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/wigglewood_sapling.json"
-hash = "c29b5b305418082aa3c8231fdd6cba95b9ac5037765e8fd550c9adac44364bc6"
+hash = "946ce6d2451cb3312aeeeb4fe7218c70b65d0830548c3da04f21558490c0d7d3"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/blood_mushroom_colony.json"
-hash = "8cc5b7d2ac9641aed2787d6c16e64208e50f2d55fead43eb6f506ffb9b885f0c"
+hash = "aa8c1f2ee69d54cfad1cc0140d5846a6781e5e0b3795fbf058721f954aecfc1d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/indigo_mushroom_colony.json"
-hash = "0c24553353f32a0ac4f3becc893a4fd899981288c2cc24fe7fa8561211ffb18a"
+hash = "dadee4a3c514ab0bf27fbcb43ba5cc541e259da162e2fe276fcdc09936b28c74"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/ink_mushroom_colony.json"
-hash = "d9bf84dc341b18a7bca3f08c90e2fe448dd577d1cc047eb3946668d0453f2a8f"
+hash = "4696424659106efbfa2cb7540072e7d82031365e63a5cb8344a1aa6b1da27908"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/puff_mushroom_colony.json"
-hash = "d2376120497ae499c4b754a2d67c9006d23c43c4d4d8fc73596174ccb1499b83"
+hash = "74017756513a0eae21f690dd4b45c22acc94dfb4c6f17c5a25abb357bef03357"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/veil_mushroom_colony.json"
-hash = "98dee4ffb4253142fba8f3bdc58b7d41e26f65b12518c70bf50eb611dc3ef668"
+hash = "086895f43a06ba453dfadeffc2a9268d15d0d9d1bbbd83d145e6ce26813e222b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/chorus_cane.json"
-hash = "96747ec1b952986b2b6f1f7f0ab18eff4fad58ad7e58c39fe2a5743cf5b4f984"
+hash = "e818ccb4c4a590271660b6cfb3d01756b58d78bfe3c8a7a4347903fb34db50c4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/chorus_fungus.json"
-hash = "81f78c2cc6011fe524a3ea5f50eda2a7a3e28240a63b192e32a6bf8aeaef540a"
+hash = "ba5cfecc8d81c2351ddc84606a235d547cf04db560ed18f8e50a10d283f5c9d5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/crystal_flower.json"
-hash = "ed8791ca776d38c69c19d178045ed47ba9d189ac07b551653ece8e8e791063de"
+hash = "cdee79cf871bff37dbe2a681cdcbcd8f67a5c62417ea9972516ece54e436082d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/flowering_purpur_grass.json"
-hash = "b0cf84bcdfc60db4f4f7882e4d3793ebb64c255a061ad33a4ffaf349d46fc9b9"
+hash = "cb2087a6e1c691f37c80d2453feb3c0f8cf9dd1849b5b2023aeffa764152ff4d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/gloopilon_seeds.json"
-hash = "b9ccb944a40bbaf7f28ab25167114913e870d722aba547822903ae502c938783"
+hash = "7c2d4bcb135008d15408e39c65ac6c5eab186f921b9e8e27a3839387404886c5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/shiny_spirea.json"
-hash = "e564b2236b6e8d8d08bcf92d870e0647e4c9bf848268372b9294bd5d34323915"
+hash = "2aafa6b800b63e7954db339b28e65298dca79160a33f63e671a111e06ba8e852"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/small_warped_squash.json"
-hash = "ef8aa7b46f9f8e20bdaed53d3f9e6eaed6fe8850992e376c75f13809936fcd9a"
+hash = "134174ab2ca71aea5b2ff05fa2b0491ee723665d0fbd804c232dc470b05ac744"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/bellpepper_seeds.json"

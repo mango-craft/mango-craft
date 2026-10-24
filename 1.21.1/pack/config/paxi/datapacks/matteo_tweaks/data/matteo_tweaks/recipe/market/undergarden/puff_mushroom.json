@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:other",
-  "preset": "matteo_tweaks:undergarden_common",
+  "preset": "matteo_tweaks:undergarden_rare",
   "result": {
     "item": "undergarden:puff_mushroom"
   }

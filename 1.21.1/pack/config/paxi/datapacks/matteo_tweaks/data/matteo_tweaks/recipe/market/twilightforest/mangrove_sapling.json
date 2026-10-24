@@ -7,7 +7,7 @@
   ],
   "type": "farmingforblockheads:market",
   "category": "farmingforblockheads:saplings",
-  "preset": "matteo_tweaks:twilight_common",
+  "preset": "matteo_tweaks:twilight_rare",
   "result": {
     "item": "twilightforest:mangrove_sapling"
   }
