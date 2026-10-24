@@ -1,6 +1,6 @@
 # Tema: fornaci a livelli
 
-Aggiornata il 24/10/2026 · stato: **Iron Furnaces e FurnaceMk2 approvate** (24/10), entrano nella 0.7.1 (`../lavoro/versioni/v0.7.1.md`) (idea di Matteo del 23/10: una progressione delle fornaci che non passi da Create o Mekanism, `../lavoro/0503-temi-aperti.md`) · fonti: ricerca su Modrinth (24/10); jar delle candidate letti dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/`); sorgente di Jumbo Furnace (ramo `1.21.1`, commit `915c310`); sorgente di FurnaceMk2 e VapourWare (scheda `../mod-knowledge/furnacemk2.md`); inventario del pack. Schede vicine: `strumenti.md` (la stessa scala dei materiali), `piante.md` (rarità e monete del mercato).
+Aggiornata il 24/10/2026 · stato: **Iron Furnaces, FurnaceMk2 e Jumbo Furnace nel pack dalla 0.7.1** (decisioni del 24/10: tutto Iron Furnaces, ricette e valori originali; `../lavoro/versioni/v0.7.1.md`) (idea di Matteo del 23/10: una progressione delle fornaci che non passi da Create o Mekanism, `../lavoro/0503-temi-aperti.md`) · fonti: ricerca su Modrinth (24/10); jar delle candidate letti dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/`); sorgente di Jumbo Furnace (ramo `1.21.1`, commit `915c310`); sorgente di FurnaceMk2 e VapourWare (scheda `../mod-knowledge/furnacemk2.md`); inventario del pack. Schede vicine: `strumenti.md` (la stessa scala dei materiali), `piante.md` (rarità e monete del mercato).
 
 ## Cosa c'è già nel pack
 
@@ -25,7 +25,7 @@ Aggiornata il 24/10/2026 · stato: **Iron Furnaces e FurnaceMk2 approvate** (24/
 
 **Correzione del 24/10**: nella prima stesura FurnaceMk2 era scartata come «beta, sorgente non pubblico». Il sorgente è pubblico su GitHub e il file 1.21.1 è una release (è la pagina della mod a dirsi in beta): rivalutata a 🟡 dopo la lettura del sorgente.
 
-**Iron Furnaces e FurnaceMk2.** Sono due idee diverse: Iron Furnaces è una **scala** (9 livelli, accessori), FurnaceMk2 **un gradino** fatto bene (velocità, combustibile ed esperienza, con tre nuclei). **Decisione di Matteo del 24/10: entrambe nel pack**, usate in punti diversi delle sue automazioni (Iron Smelters quindi non serve: in `0602`; Jumbo Furnace resta da decidere).
+**Iron Furnaces e FurnaceMk2.** Sono due idee diverse: Iron Furnaces è una **scala** (9 livelli, accessori), FurnaceMk2 **un gradino** fatto bene (velocità, combustibile ed esperienza, con tre nuclei). **Decisione di Matteo del 24/10: entrambe nel pack**, usate in punti diversi delle sue automazioni (Iron Smelters quindi non serve: in `0602`). Jumbo Furnace aggiunta anche lei il 24/10 («scenica e fa ridere»).
 
 ## Energia in Iron Furnaces (verificato il 24/10)
 
@@ -39,7 +39,7 @@ Quindi togliere il generatore non toglie l'energia dalla mod: fabbrica e riscald
 
 ## Jumbo Furnace in dettaglio (sorgente, ramo `1.21.1` @`915c310`)
 
-- Si costruisce con **27 blocchi** dell'etichetta `c:player_workstations/furnaces` in un cubo 3×3×3 (nel pack: fornace vanilla e fornace di holystone di Aether's Delight); diventa un blocco solo.
+- Si costruisce con **27 blocchi** dell'etichetta `c:player_workstations/furnaces` in un cubo 3×3×3 (nel pack, verificato sull'inventario della 0.7.1: solo la fornace vanilla e la fornace di holystone di Aether's Delight; le fornaci di Iron Furnaces e la FurnaceMk2 **non** valgono); diventa un blocco solo.
 - **9 slot di ingresso, 9 di combustibile, 9 di uscita** e uno per i potenziamenti; con tramogge e tubi.
 - Cuoce **1 + il numero di potenziamenti** ricette insieme, ognuna con il suo tempo normale; il potenziamento di serie è un'altra Jumbo Furnace (etichetta `jumbofurnace:multiprocessing_upgrade`), fino a 64: **65 ricette alla volta**.
 - Usa le ricette della fornace normale più ricette sue a più ingredienti (`jumbofurnace:jumbo_smelting`, scrivibili nel datapack); raccoglie l'esperienza.

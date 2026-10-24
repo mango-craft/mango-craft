@@ -10,6 +10,15 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.7.1 — in lavorazione · fornaci (in prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: non serve. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Mod nuove**: **Iron Furnaces** 4.3.2 (fornaci dal rame alla netherite e arcobaleno, potenziamenti sul posto, accessori compresi generatore, fabbrica e riscaldatore), **FurnaceMk2** 0.1.11 con la libreria **VapourWare** 0.2.37 (una fornace migliorata con tre nuclei e l'esperienza raccolta in un cristallo), **Jumbo Furnace** 5.0.0.9 da CurseForge (cubo di 27 fornaci che cuoce molte cose insieme). Ricette e valori originali.
+- **Invariato**: datapack e config.
+- **Stato**: 🧪 in prova sul ramo `dev`.
+- **Problemi noti**: da vedere nella prova.
+
 ## 0.7.0 — 24/10/2026 · accessori: Relics (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
