@@ -18,4 +18,8 @@ if [ -f "$VER/data/vasi/coltura_custom.csv" ]; then
   python3 scripts/botanypots_genera.py "$VER" --verifica || status=1
   python3 scripts/botanypots_db.py "$VER" refresh > /dev/null || status=1
 fi
+# Mercato di Farming for Blockheads: stessa verifica (legge la base dati appena rifatta)
+if [ -f "$VER/data/mercato/mercato_base.csv" ]; then
+  python3 scripts/mercato_genera.py "$VER" --verifica || status=1
+fi
 exit $status

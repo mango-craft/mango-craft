@@ -1,0 +1,8 @@
+origine,ordine_min,ordine_max,pagamento_id,quantita,blocco_id,motivo
+overworld,0,1,minecraft:emerald,9,minecraft:emerald_block,piante comuni dell'Overworld: smeraldi (un blocco di base)
+overworld,2,9,minecraft:diamond,3,minecraft:diamond_block,piante rare dell'Overworld: diamanti
+nether,0,9,minecraft:blaze_rod,3,,solo dalle fortezze del Nether
+end,0,9,minecraft:shulker_shell,2,,solo dalle città dell'End: base 2 (con 1 le classi rare e uncommon costerebbero uguale)
+aether,0,9,aether:zanite_gemstone,3,,"minerale dell'Aether, primo gradino di equipaggiamento"
+undergarden,0,9,undergarden:utherium_crystal,2,,"minerale profondo dell'Undergarden, più raro del cloggrum"
+twilight,0,9,twilightforest:ironwood_ingot,3,,liveroot del bosco più ferro; steeleaf e fiery sono dietro labirinti e boss
