@@ -11,5 +11,33 @@
   "block": "deep_aether:tall_golden_grass",
   "input": {
     "item": "deep_aether:tall_golden_grass"
-  }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "minecraft:wheat_seeds",
+            "count": 1
+          },
+          "chance": 0.125
+        },
+        {
+          "result": {
+            "id": "deep_aether:golden_grass_seeds",
+            "count": 1
+          },
+          "chance": 0.1
+        },
+        {
+          "result": {
+            "id": "aether:ambrosium_shard",
+            "count": 1
+          },
+          "chance": 0.01
+        }
+      ]
+    }
+  ]
 }

@@ -22,10 +22,15 @@ culturaldelights:lemon_sapling,1,oggetto,culturaldelights:lemon_sapling,1,0.05
 deep_aether:squash_stem,1,oggetto,deep_aether:blue_squash,1,0.34
 deep_aether:squash_stem,1,oggetto,deep_aether:green_squash,1,0.33
 deep_aether:squash_stem,1,oggetto,deep_aether:purple_squash,1,0.33
+deep_aether:tall_golden_grass,1,oggetto,minecraft:wheat_seeds,1,0.125
+deep_aether:tall_golden_grass,1,oggetto,deep_aether:golden_grass_seeds,1,0.1
+deep_aether:tall_golden_grass,1,oggetto,aether:ambrosium_shard,1,0.01
 deep_aether:yagroot_vine,1,oggetto,deep_aether:yagroot_vine,1,
 endersdelight:voidpepper_bush,1,oggetto,endersdelight:voidpepper,1,
 expandeddelight:cinnamon_sapling,1,oggetto,expandeddelight:cinnamon_log,1,
 expandeddelight:cinnamon_sapling,1,oggetto,expandeddelight:cinnamon_sapling,1,0.05
+farm_and_charm:wild_corn,1,oggetto,farm_and_charm:corn,3,
+farm_and_charm:wild_corn,1,oggetto,farm_and_charm:kernels,1,0.125
 hexalia:cottonwood_sapling,1,oggetto,hexalia:cottonwood_log,1,
 hexalia:cottonwood_sapling,1,oggetto,hexalia:cottonwood_sapling,1,0.05
 hexalia:willow_sapling,1,oggetto,hexalia:willow_log,1,

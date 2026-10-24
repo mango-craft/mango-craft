@@ -65,6 +65,8 @@ Verificato nei jar mentre si scrivevano le ultime 24 piante dei vasi:
 - Le tabelle che danno l'oggetto **solo con le cesoie** (siltmarram e soul swirls di Jaden's) vogliono il raccolto scritto; le colonie di Undergarden Delight e le selvatiche di Roaster's, senza cesoie, danno il prodotto (funghi, foglie) e non la pianta intera: restano così (scelta del 22/10).
 - La verruca deformata (`netherexp:warped_wart`, due blocchi con età) si pianta su sabbia delle anime ectoplasmica (`elysium_api:nether_wart_plantable_on`); nei vasi la mettiamo sull'etichetta `botanypots:soil/soul_sand`, la stessa che Botany Pots dà alla verruca del Nether (sabbia e terra delle anime). Da provare in gioco.
 
+- Le piante **alte** la cui tabella chiede la metà opposta (`location_check` con `offsetY` ±1) non danno niente nel vaso, anche se il controllo statico le dà per «incerte»: `check_crops` le trova (B40, 24/10). Quelle che hanno passato la prova (golden_flower, tall_aether_cattails, tall_eriophorum…) non hanno questa condizione.
+
 ## Da provare
 
 BotanyPotsAdditions e Roaster's Delight da sole prima di affidarci un mondo lungo (mod recenti); Botany Pots Tiers + BotanyPotsAdditions insieme (`../../lavoro/0502-prove-in-gioco.md`).

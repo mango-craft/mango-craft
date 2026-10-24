@@ -670,7 +670,7 @@ hash = "92f59ce805ba4edce4af9ceda2243e03298ae0f3b88644a73e4df6afbdab4b17"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/tall_golden_grass.json"
-hash = "f80f83fc1fd5fe36cc367e2cf1924d7dad309c95931756cecf332ddb97e28f57"
+hash = "4c1d3f422f3754f444f5b7412b87b28369382a3f136aaf3bb8ac561a22661df4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/yagroot_vine.json"
@@ -802,7 +802,7 @@ hash = "d63c8413f3f153e4b2b35ecf019ccbfca58c22ebfe98213b3b2f4ac9e77fbc8a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_corn.json"
-hash = "2245b0bba708ae88089cd131d2a00b2fd1cc0dee6fa358414a2608a27680f0d6"
+hash = "7473131ff6acbecce6d4b8b1ba99b03bd95dfd647600625fa9963e41dfa7e4b3"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_emmer.json"

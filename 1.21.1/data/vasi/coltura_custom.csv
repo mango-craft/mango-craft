@@ -70,7 +70,7 @@ deep_aether:tall_aerlavender,deep-aether,deep_aether:tall_aerlavender,,,,,,,
 deep_aether:tall_aether_cattails,deep-aether,deep_aether:tall_aether_cattails,,,,,,,
 deep_aether:tall_alien_plant,deep-aether,deep_aether:tall_alien_plant,,,,,,sì,pianta alta come le altre di Deep Aether
 deep_aether:tall_feather_grass,deep-aether,deep_aether:tall_feather_grass,,,,,,,
-deep_aether:tall_golden_grass,deep-aether,deep_aether:tall_golden_grass,,,,,,,
+deep_aether:tall_golden_grass,deep-aether,deep_aether:tall_golden_grass,,,,,,,raccolto scritto: la tabella chiede il blocco sopra (check_crops 24/10); senza cesoie dà solo semi
 deep_aether:yagroot_vine,deep-aether,deep_aether:yagroot_vine,,,,,,,
 deeperdarker:gloomy_cactus,deeperdarker,deeperdarker:gloomy_cactus,,,,,,,
 endersdelight:amberveil_mushroom,enders-delight,endersdelight:amberveil,,,,,,,
@@ -97,7 +97,7 @@ farm_and_charm:tomato_crop,lets-do-farm-charm,farm_and_charm:tomato_seeds,,,,,,,
 farm_and_charm:wild_barley,lets-do-farm-charm,farm_and_charm:wild_barley,,,,,,,
 farm_and_charm:wild_beetroots,lets-do-farm-charm,farm_and_charm:wild_beetroots,,,,,,,
 farm_and_charm:wild_carrots,lets-do-farm-charm,farm_and_charm:wild_carrots,,,,,,,
-farm_and_charm:wild_corn,lets-do-farm-charm,farm_and_charm:wild_corn,,,,,,,
+farm_and_charm:wild_corn,lets-do-farm-charm,farm_and_charm:wild_corn,,,,,,,raccolto scritto: la tabella chiede il blocco sopra (check_crops 24/10); granturco 2-5 (media 3) e a volte chicchi
 farm_and_charm:wild_emmer,lets-do-farm-charm,farm_and_charm:wild_emmer,,,,,,,
 farm_and_charm:wild_lettuce,lets-do-farm-charm,farm_and_charm:wild_lettuce,,,,,,,
 farm_and_charm:wild_nettle,lets-do-farm-charm,farm_and_charm:wild_nettle,,,,,,,
