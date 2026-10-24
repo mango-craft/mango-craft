@@ -1,6 +1,6 @@
 # FurnaceMk2 (candidata)
 
-Aggiornata il 24/10/2026 · **non nel pack**: candidata 🟡 (`../lavoro/0601-mod-candidate.md`), tema `../theme-knowledge/fornaci.md` · fonti: API di Modrinth (24/10); jar 0.1.11 letto dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/furnacemk2.md`); sorgente su GitHub (`ColinGBos/FurnaceMk2`, ramo `1.21.1-neoforge`, commit `bacfaa0` del 15/09/2026; `ColinGBos/VapourWare`, stesso ramo, commit `cb73d84`).
+Aggiornata il 24/10/2026 · **non ancora nel pack**: **approvata da Matteo il 24/10**, insieme a Iron Furnaces (`../lavoro/0601-mod-candidate.md`), tema `../theme-knowledge/fornaci.md` · fonti: API di Modrinth (24/10); jar 0.1.11 letto dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/furnacemk2.md`); sorgente su GitHub (`ColinGBos/FurnaceMk2`, ramo `1.21.1-neoforge`, commit `bacfaa0` del 15/09/2026; `ColinGBos/VapourWare`, stesso ramo, commit `cb73d84`).
 
 ## La mod
 
@@ -34,4 +34,4 @@ Config di tipo **server**: nel pack sarebbe `config/furnacemk2-server.toml`, val
 ## Da tenere presente
 
 - L'esperienza moltiplicata rende più facile farne con la fusione: per esempio il cactus (1 punto nel gioco base) ne darebbe 2,5 con il nucleo. Si regola con `furnaceUpgradedExperience`.
-- Da sola dà due gradini (fornace → FurnaceMk2 → nuclei), non una progressione lunga: per quella resta Iron Furnaces (tema `fornaci`).
+- Da sola dà due gradini (fornace → FurnaceMk2 → nuclei), non una progressione lunga: quella la fa Iron Furnaces, che entra con lei (tema `fornaci`).

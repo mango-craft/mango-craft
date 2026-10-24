@@ -169,6 +169,7 @@ Ricerca del 24/10, tema `../theme-knowledge/fornaci.md`.
 
 | Mod | Motivo |
 |---|---|
+| Iron Smelters | Superata: Matteo ha scelto Iron Furnaces e FurnaceMk2 (24/10) |
 | Better Furnaces Reforged | Beta ferma ad aprile 2025, libreria in più; i potenziamenti raddoppiano e quadruplicano i minerali (scavalcano Create, Mekanism e Occultism) |
 | Compressed Furnace | Sorgente non pubblico; il frantumatore raddoppia i minerali; tecnologica |
 | Iron Furnace: Reburn | Per ora: fork molto giovane (2.000 download) con librerie proprie; da rivedere se cresce |

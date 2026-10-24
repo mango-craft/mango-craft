@@ -1,6 +1,6 @@
 # Tema: fornaci a livelli
 
-Aggiornata il 24/10/2026 · stato: **valutazione iniziale**, nessuna decisione (idea di Matteo del 23/10: una progressione delle fornaci che non passi da Create o Mekanism, `../lavoro/0503-temi-aperti.md`) · fonti: ricerca su Modrinth (24/10); jar delle candidate letti dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/`); sorgente di Jumbo Furnace (ramo `1.21.1`, commit `915c310`); sorgente di FurnaceMk2 e VapourWare (scheda `../mod-knowledge/furnacemk2.md`); inventario del pack. Schede vicine: `strumenti.md` (la stessa scala dei materiali), `piante.md` (rarità e monete del mercato).
+Aggiornata il 24/10/2026 · stato: **Iron Furnaces e FurnaceMk2 approvate** (24/10), da aggiungere (idea di Matteo del 23/10: una progressione delle fornaci che non passi da Create o Mekanism, `../lavoro/0503-temi-aperti.md`) · fonti: ricerca su Modrinth (24/10); jar delle candidate letti dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/`); sorgente di Jumbo Furnace (ramo `1.21.1`, commit `915c310`); sorgente di FurnaceMk2 e VapourWare (scheda `../mod-knowledge/furnacemk2.md`); inventario del pack. Schede vicine: `strumenti.md` (la stessa scala dei materiali), `piante.md` (rarità e monete del mercato).
 
 ## Cosa c'è già nel pack
 
@@ -25,7 +25,7 @@ Aggiornata il 24/10/2026 · stato: **valutazione iniziale**, nessuna decisione (
 
 **Correzione del 24/10**: nella prima stesura FurnaceMk2 era scartata come «beta, sorgente non pubblico». Il sorgente è pubblico su GitHub e il file 1.21.1 è una release (è la pagina della mod a dirsi in beta): rivalutata a 🟡 dopo la lettura del sorgente.
 
-**Iron Furnaces o FurnaceMk2.** Sono due idee diverse: Iron Furnaces è una **scala** (9 livelli, accessori), FurnaceMk2 **un gradino** fatto bene (velocità, combustibile ed esperienza, con tre nuclei). Insieme si sovrappongono (due «fornaci migliori»): se si vuole la progressione lunga legata ai materiali, Iron Furnaces; se basta un passo in stile vanilla con l'esperienza raccolta, FurnaceMk2.
+**Iron Furnaces e FurnaceMk2.** Sono due idee diverse: Iron Furnaces è una **scala** (9 livelli, accessori), FurnaceMk2 **un gradino** fatto bene (velocità, combustibile ed esperienza, con tre nuclei). **Decisione di Matteo del 24/10: entrambe nel pack**, usate in punti diversi delle sue automazioni (Iron Smelters quindi non serve: in `0602`; Jumbo Furnace resta da decidere).
 
 ## Come si legherebbe al resto
 
