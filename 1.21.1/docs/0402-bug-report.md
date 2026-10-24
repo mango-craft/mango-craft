@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.6.3, rilasciata)._
+_Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.7.0, rilasciata)._
 
 ---
 
@@ -59,6 +59,9 @@ _Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.6.3, rilasciata)._
 | B38 | 0.6.1 (log del 24/10 mattina) | Every Compat + Macaw's Windows | Una finestra generata, `everycomp:mcw/regions_unexplored/redwood_plank_four_window`, non riesce a leggere il modello `mcwwindows:models/block/window_barred/oak_plank_four_window.json` («null»): Every Compat riporta 1 errore nella generazione delle risorse. Non c'era nel log del 24/10 notte | basso: una finestra con il modello sbagliato o mancante Comparso una volta su cinque avvii del 24/10: intermittente |
 | B39 | 0.6.1 (log del 24/10 mattina) | Reactive | Errore `Timeout loading contents for the reaction formula for block_fall_effect` un minuto dopo l'ingresso nel mondo (mentre EMI indicizzava). Non c'era nei log precedenti: forse dovuto al carico di quel momento | basso: forse l'effetto della caduta dei blocchi non parte in quella sessione Ricomparso nei due avvii successivi (24/10, 10:10 e 12:34): non è un caso isolato |
 | B41 | 0.6.2 (log del 24/10, 12:34) | Sodium + EMI | Avviso `Class dev.emi.emi.screen.StackBatcher$UnlitFacade$Consumer does not support optimized vertex writing code paths`: Sodium segnala che il disegno degli oggetti nelle schermate di EMI non usa la sua via veloce. Mai visto nei 14 log precedenti: compare aprendo una schermata di EMI | basso: forse un po' di lentezza nelle schermate di EMI |
+| B42 | 0.7.0 (log del 24/10, 15:20) | Reliquified Artifacts + Artifacts | Avviso di Artifacts: `Tag entries for artifacts:tags/item/slot/all.json` (e `belt`, `hands`) `cleared by mod/reliquified_artifacts, this is probably a bug`. È voluto da Reliquified Artifacts, che sposta alcuni artefatti negli slot `charm` e `bracelet` di Curios (inventario) | basso: solo nel log; se un artefatto non si può indossare, guardare qui |
+| B43 | 0.7.0 (log del 24/10) | AllTheLeaks + ShatterLib/OctoLib | Avvisi di mixin: `@Mixin target it.hurts.octostudios.octolib.modules.particles.OctoRenderManager was not found` (e `...perception...TrailWrapper`): AllTheLeaks prepara correzioni per classi che nella nostra OctoLib 0.6.2 (e senza la mod Perception) non ci sono, e le salta | basso: solo nel log |
+| B44 | 0.7.0 (log del 24/10) | Relics, Reliquified Artifacts | Piccoli difetti di grafica e suono: lo shader `relics:reveal_panel` non trova due uniform (`ColorModulator`, `color`), fotogrammi non usati nella texture `relics:item/springy_boot_flawless`, manca il suono `reliquified_artifacts:night_vision_toggle` | basso: forse un effetto del pannello delle reliquie diverso dal previsto e nessun suono accendendo gli occhiali |
 
 ## ✅ Risolti o aggirati
 

@@ -1,0 +1,9 @@
+{
+  "values": [],
+  "remove": [
+    {
+      "id": "#artifacts:slot/belt",
+      "required": false
+    }
+  ]
+}

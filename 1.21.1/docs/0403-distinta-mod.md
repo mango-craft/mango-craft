@@ -344,6 +344,9 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Enhanced Celestials 2: Shader Support | [`enhanced-celestials-2-shader-support`](https://modrinth.com/mod/enhanced-celestials-2-shader-support) MR | 2.0.0.3-neoforge | 2026-09-03 | release | ✅ | Richiede Core ≥ 2.0.3.1, CorgiLib, Sodium e Iris. Solo lato client. Pack 0.5.2 |
 | Complementary Reimagined (pacchetto di shader) | [`complementary-reimagined`](https://modrinth.com/shader/complementary-reimagined) MR | r5.9.3 | 2026-09-15 | release | ✅ | Per Iris; cartella `shaderpacks`. Pack 0.5.3 |
 | MakeUp - Ultra Fast (pacchetto di shader) | [`makeup-ultra-fast-shaders`](https://modrinth.com/shader/makeup-ultra-fast-shaders) MR | 9.5g | 2026-10-04 | release | ✅ | Per Iris; cartella `shaderpacks`. Pack 0.5.3 |
+| Relics | [`relics-mod`](https://modrinth.com/mod/relics-mod) MR | 0.12.9 | 2026-10-18 | beta | ⚠️ | Tutte le build 1.21.1 sono beta (scelta con `relics-mod@CWPAvFMI`). Richiede ShatterLib/OctoLib e Curios. Pack 0.7.0 |
+| Reliquified Artifacts | [`reliquified-artifacts`](https://modrinth.com/mod/reliquified-artifacts) MR | 1.0.9 | 2026-10-12 | beta | ⚠️ | Beta; vuole esattamente Artifacts 13.2.5. Richiede Relics e Artifacts. ARR. Pack 0.7.0 |
+| ShatterLib \| OctoLib (dipendenza) | [`shatterbyte-lib`](https://modrinth.com/mod/shatterbyte-lib) MR | 0.6.2 | 2026-05-04 | release | ✅ | Richiesta da relics-mod. ARR. Pack 0.7.0 |
 
 ## Librerie principali (arrivano come dipendenze)
 

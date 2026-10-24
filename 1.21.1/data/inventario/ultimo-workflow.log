@@ -1,7 +1,12 @@
-Aggiungi mod Modrinth — 2026-10-19
-== complementary-reimagined r5.9.3 (Bqen1mJX)
-Warning: Project (complementary-reimagined) has unknown environment value: `unknown`. Since packwiz doesn't understand this value, it'll be marked for both server and client
-Project "Complementary Shaders - Reimagined" successfully added! (ComplementaryReimagined_r5.9.3.zip)
-== makeup-ultra-fast-shaders 9.5g (pgb0JjoN)
-Warning: Project (makeup-ultra-fast-shaders) has unknown environment value: `unknown`. Since packwiz doesn't understand this value, it'll be marked for both server and client
-Project "MakeUp - Ultra Fast" successfully added! (MakeUp-UltraFast-9.5g.zip)
+Aggiungi mod Modrinth — 2026-10-24
+== relics-mod 0.12.9 (CWPAvFMI)
+Finding dependencies...
+Dependencies found:
+ShatterLib | OctoLib
+Would you like to add them? [Y/n]: Y (non-interactive mode)
+Dependency "ShatterLib | OctoLib" successfully added! (OctoLib-NEOFORGE-0.6.2+1.21.jar)
+Project "Relics" successfully added! (relics-1.21.1-0.12.9.jar)
+== reliquified-artifacts 1.0.9 (rAl46NpA)
+Finding dependencies...
+All dependencies are already added!
+Project "Reliquified Artifacts" successfully added! (reliquified_artifacts-1.21.1-1.0.9.jar)

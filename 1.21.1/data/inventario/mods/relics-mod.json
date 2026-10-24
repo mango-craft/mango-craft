@@ -1,0 +1,346 @@
+{
+ "format": 3,
+ "status": "ok",
+ "name": "Relics",
+ "file": "relics-1.21.1-0.12.9.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "0ccb106f2ee6b5901de8f694575be07c078684d39a83af12146bb39fc7270380d29e4a8713637d999c734ece2c32ad27e2deacf0b6b206ec92b759bed2fc7826",
+ "mods": [
+  {
+   "modid": "relics",
+   "name": "Relics",
+   "version": "0.12.9",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.140-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "curios",
+     "type": "required",
+     "range": "[9.3.1+1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "octolib",
+     "type": "required",
+     "range": "[0.5.0.1,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "curios",
+  "minecraft",
+  "neoforge",
+  "relics",
+  "reliquified_artifacts"
+ ],
+ "blocks": {
+  "relics:phantom_block": "Phantom Bridge Block"
+ },
+ "effects": {
+  "relics:anti_heal": "Anti-Regeneration",
+  "relics:bleeding": "Bleeding",
+  "relics:confusion": "Confusion",
+  "relics:flight": "Flight",
+  "relics:glitch": "Glitch",
+  "relics:immortality": "Immortality",
+  "relics:paralysis": "Paralysis",
+  "relics:stun": "Stun",
+  "relics:tremor": "Tremor",
+  "relics:vanishing": "Vanishing"
+ },
+ "entities": {
+  "relics:constellation_star": "Constellation Star",
+  "relics:death_essence": "Death Essence",
+  "relics:electric_spark": "Electric Spark",
+  "relics:falling_star": "Falling Star",
+  "relics:ghostly_fog": "Ghostly Fog",
+  "relics:glitchy_illusion": "Glitchy Illusion",
+  "relics:golden_tooth": "Golden Tooth",
+  "relics:kinetic_electricity": "Electrical chain",
+  "relics:leaves_block": "Leaf Projectile",
+  "relics:life_essence": "Life Essence",
+  "relics:reflective_orb": "Reflected Damage Orb",
+  "relics:relic_experience_orb": "Relic Experience Orb",
+  "relics:roller_spark": "Roller Spark",
+  "relics:shadow_glaive": "Shadow Glaive",
+  "relics:shockwave_block": "Shockwave Segment",
+  "relics:spore": "Spore",
+  "relics:thrown_relic_experience_bottle": "Thrown Relic Experience Bottle"
+ },
+ "items": {
+  "relics:chef_hat": "Chef's Hat",
+  "relics:chef_hat_flawless": "",
+  "relics:chorus_staff": "Chorus Staff",
+  "relics:chorus_staff_2d": "",
+  "relics:chorus_staff_2d_flawless": "",
+  "relics:chorus_staff_3d": "",
+  "relics:chorus_staff_3d_flawless": "",
+  "relics:chorus_staff_flawless": "",
+  "relics:chorus_staff_non_flawless": "",
+  "relics:clot_of_time": "Clot of Time",
+  "relics:clot_of_time_2d": "",
+  "relics:clot_of_time_2d_disabled": "",
+  "relics:clot_of_time_2d_disabled_flawless": "",
+  "relics:clot_of_time_2d_enabled": "",
+  "relics:clot_of_time_2d_enabled_flawless": "",
+  "relics:clot_of_time_3d_disabled": "",
+  "relics:clot_of_time_3d_disabled_flawless": "",
+  "relics:clot_of_time_3d_enabled": "",
+  "relics:clot_of_time_3d_enabled_flawless": "",
+  "relics:clot_of_time_disabled": "",
+  "relics:clot_of_time_disabled_flawless": "",
+  "relics:clot_of_time_enabled": "",
+  "relics:clot_of_time_enabled_flawless": "",
+  "relics:cooked_meatball": "Cooked Meatball",
+  "relics:cut_glass_boot": "Cut Glass Boot",
+  "relics:cut_glass_boot_flawless": "",
+  "relics:experience_disperser": "Experience Disperser",
+  "relics:experience_disperser_flawless": "",
+  "relics:ghostly_mantle": "Ghostly Mantle",
+  "relics:ghostly_mantle_flawless": "",
+  "relics:glitchy_mantle": "Glitchy Mantle",
+  "relics:glitchy_mantle_flawless": "",
+  "relics:golden_tooth": "Golden Tooth",
+  "relics:hunting_belt": "Hunting Belt",
+  "relics:hunting_belt_flawless": "",
+  "relics:jellyfish_necklace": "Jellyfish Necklace",
+  "relics:jellyfish_necklace_flawless": "",
+  "relics:kinetic_belt": "Kinetic Belt",
+  "relics:kinetic_belt_flawless": "",
+  "relics:leafy_mantle": "Leafy Mantle",
+  "relics:leafy_mantle_flawless": "",
+  "relics:midnight_mantle": "Midnight Mantle",
+  "relics:midnight_mantle_full_moon": "",
+  "relics:midnight_mantle_full_moon_flawless": "",
+  "relics:midnight_mantle_new_moon": "",
+  "relics:midnight_mantle_new_moon_flawless": "",
+  "relics:pet_bone": "Pet Bone",
+  "relics:piglin_mask": "Piglin Mask",
+  "relics:piglin_mask_flawless": "",
+  "relics:raw_meatball": "Raw Meatball",
+  "relics:reflective_necklace": "Reflective Necklace",
+  "relics:reflective_necklace_flawless": "",
+  "relics:relic_experience_bottle": "Relic Experience Bottle",
+  "relics:rider_flute": "Rider Flute",
+  "relics:rider_flute_2d_empty": "",
+  "relics:rider_flute_2d_empty_flawless": "",
+  "relics:rider_flute_2d_full": "",
+  "relics:rider_flute_2d_full_flawless": "",
+  "relics:rider_flute_3d": "",
+  "relics:rider_flute_3d_flawless": "",
+  "relics:rider_flute_empty": "",
+  "relics:rider_flute_empty_flawless": "",
+  "relics:rider_flute_full": "",
+  "relics:rider_flute_full_3d": "",
+  "relics:rider_flute_full_3d_flawless": "",
+  "relics:rider_flute_full_flawless": "",
+  "relics:ring_of_the_seven_deadly_sins": "Ring of the Seven Deadly Sins",
+  "relics:ring_of_the_seven_deadly_sins_flawless": "",
+  "relics:roller_skate": "Roller Skate",
+  "relics:roller_skate_flawless": "",
+  "relics:shield_of_retaliation": "Shield of Retaliation",
+  "relics:shield_of_retaliation_2d": "",
+  "relics:shield_of_retaliation_2d_flawless": "",
+  "relics:shield_of_retaliation_3d": "",
+  "relics:shield_of_retaliation_3d_flawless": "",
+  "relics:shield_of_retaliation_flawless": "",
+  "relics:shield_of_retaliation_non_flawless": "",
+  "relics:sphere_of_self_sacrifice": "Sphere of Self-Sacrifice",
+  "relics:sphere_of_self_sacrifice_0": "",
+  "relics:sphere_of_self_sacrifice_0_2d": "",
+  "relics:sphere_of_self_sacrifice_0_2d_flawless": "",
+  "relics:sphere_of_self_sacrifice_0_flawless": "",
+  "relics:sphere_of_self_sacrifice_1": "",
+  "relics:sphere_of_self_sacrifice_1_2d": "",
+  "relics:sphere_of_self_sacrifice_1_2d_flawless": "",
+  "relics:sphere_of_self_sacrifice_1_flawless": "",
+  "relics:sphere_of_self_sacrifice_2": "",
+  "relics:sphere_of_self_sacrifice_2_2d": "",
+  "relics:sphere_of_self_sacrifice_2_2d_flawless": "",
+  "relics:sphere_of_self_sacrifice_2_flawless": "",
+  "relics:sphere_of_self_sacrifice_3d": "",
+  "relics:sphere_of_self_sacrifice_3d_flawless": "",
+  "relics:springy_boot": "Springy Boot",
+  "relics:springy_boot_flawless": ""
+ },
+ "data": {
+  "curios": [
+   "relics:entities/modifier",
+   "relics:slots/back",
+   "relics:slots/belt",
+   "relics:slots/charm",
+   "relics:slots/curio",
+   "relics:slots/feet",
+   "relics:slots/hands",
+   "relics:slots/head",
+   "relics:slots/necklace",
+   "relics:slots/ring"
+  ],
+  "loot_modifiers": [
+   "neoforge:global_loot_modifiers",
+   "relics:greed_loot",
+   "relics:relic_loot"
+  ],
+  "recipe": [
+   "relics:cooked_meatball_from_campfire_cooking_raw_meatball",
+   "relics:cooked_meatball_from_smelting_raw_meatball",
+   "relics:cooked_meatball_from_smoking_raw_meatball",
+   "relics:gold_ingot_from_golden_tooth",
+   "relics:gold_nugget_from_golden_tooth"
+  ],
+  "tags/item": [
+   "curios:back",
+   "curios:belt",
+   "curios:charm",
+   "curios:feet",
+   "curios:hands",
+   "curios:head",
+   "curios:necklace",
+   "curios:ring",
+   "minecraft:meat",
+   "minecraft:piglin_loved",
+   "minecraft:wolf_food",
+   "relics:relic",
+   "reliquified_artifacts:mimic_loot",
+   "reliquified_artifacts:mimificable"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/item": {
+   "curios:back": [
+    "relics:midnight_mantle",
+    "relics:leafy_mantle",
+    "relics:glitchy_mantle",
+    "relics:ghostly_mantle"
+   ],
+   "curios:belt": [
+    "relics:kinetic_belt",
+    "relics:hunting_belt"
+   ],
+   "curios:charm": [
+    "relics:experience_disperser"
+   ],
+   "curios:feet": [
+    "relics:roller_skate",
+    "relics:springy_boot",
+    "relics:cut_glass_boot"
+   ],
+   "curios:hands": [],
+   "curios:head": [
+    "relics:piglin_mask",
+    "relics:chef_hat"
+   ],
+   "curios:necklace": [
+    "relics:reflective_necklace",
+    "relics:jellyfish_necklace"
+   ],
+   "curios:ring": [
+    "relics:ring_of_the_seven_deadly_sins"
+   ],
+   "minecraft:meat": [
+    "relics:raw_meatball",
+    "relics:cooked_meatball"
+   ],
+   "minecraft:piglin_loved": [
+    "relics:golden_tooth"
+   ],
+   "minecraft:wolf_food": [
+    "relics:raw_meatball",
+    "relics:cooked_meatball"
+   ],
+   "relics:relic": [
+    "relics:leafy_mantle",
+    "relics:springy_boot",
+    "relics:kinetic_belt",
+    "relics:reflective_necklace",
+    "relics:jellyfish_necklace",
+    "relics:midnight_mantle",
+    "relics:roller_skate",
+    "relics:chorus_staff",
+    "relics:clot_of_time",
+    "relics:piglin_mask",
+    "relics:chef_hat",
+    "relics:cut_glass_boot",
+    "relics:rider_flute",
+    "relics:ring_of_the_seven_deadly_sins",
+    "relics:sphere_of_self_sacrifice",
+    "relics:hunting_belt",
+    "relics:experience_disperser",
+    "relics:glitchy_mantle",
+    "relics:ghostly_mantle",
+    "relics:shield_of_retaliation"
+   ],
+   "reliquified_artifacts:mimic_loot": [
+    "relics:leafy_mantle",
+    "relics:springy_boot",
+    "relics:kinetic_belt",
+    "relics:reflective_necklace",
+    "relics:jellyfish_necklace",
+    "relics:midnight_mantle",
+    "relics:roller_skate",
+    "relics:chorus_staff",
+    "relics:clot_of_time",
+    "relics:piglin_mask",
+    "relics:chef_hat",
+    "relics:cut_glass_boot",
+    "relics:rider_flute",
+    "relics:ring_of_the_seven_deadly_sins",
+    "relics:sphere_of_self_sacrifice",
+    "relics:hunting_belt",
+    "relics:experience_disperser",
+    "relics:glitchy_mantle",
+    "relics:ghostly_mantle",
+    "relics:shield_of_retaliation"
+   ],
+   "reliquified_artifacts:mimificable": [
+    "relics:leafy_mantle",
+    "relics:springy_boot",
+    "relics:kinetic_belt",
+    "relics:reflective_necklace",
+    "relics:jellyfish_necklace",
+    "relics:midnight_mantle",
+    "relics:roller_skate",
+    "relics:chorus_staff",
+    "relics:clot_of_time",
+    "relics:piglin_mask",
+    "relics:chef_hat",
+    "relics:cut_glass_boot",
+    "relics:rider_flute",
+    "relics:ring_of_the_seven_deadly_sins",
+    "relics:sphere_of_self_sacrifice",
+    "relics:hunting_belt",
+    "relics:experience_disperser",
+    "relics:glitchy_mantle",
+    "relics:ghostly_mantle",
+    "relics:shield_of_retaliation"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:campfire_cooking": 1,
+  "minecraft:crafting_shapeless": 2,
+  "minecraft:smelting": 1,
+  "minecraft:smoking": 1
+ },
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "problems": []
+}

@@ -26,7 +26,31 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "b699389e0c4a3e02376688e6833107b0957b8f12ce9f9522230d9bc75809ea9f"
+hash = "967876c7885a1abef11bfb04841c0300f223b880d5ce3eaf82affe441f2e1d2b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/accessories/readme.md"
+hash = "9b3c32c755e3dc38fa1835ae42f3e3279083ea6b48b92a2ce1d80f1bde2c34b5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/accessories/tags/item/belt.json"
+hash = "80822191a093e77284d55302046af3a4adcdcdf6f1d6f5058d71a371a7deba58"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/accessories/tags/item/hand.json"
+hash = "5128c8de4811d7e79e7be923a9bc67285e545631d635d3edf43d9ea8a4cf55cc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/accessories/tags/item/hat.json"
+hash = "1ce506bb050c529405bb1949021166922a6965e2a08eb81ce3e4ea95f192b067"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/accessories/tags/item/necklace.json"
+hash = "a358567a1bdb7e5b484faf1e1e978253ea2cf91574c6460ea543efc66628549b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/accessories/tags/item/shoes.json"
+hash = "6d24f675f6ca4dc1c6e4f385c33f34bfceba300b33053970529ad701a2edaf55"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/ars_elemental/market_presets/saplings.json"
@@ -43,6 +67,30 @@ hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/ars_nouveau/market_presets/seeds.json"
 hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/artifacts/loot_modifiers/inject/archaeology/desert_pyramid.json"
+hash = "923a21933d25ba52fd245dff72a267f4889e203c9a6dfb2b0c34474ed4eacaed"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/artifacts/loot_modifiers/inject/archaeology/desert_well.json"
+hash = "0ce7ff7923bcfa4f8bd920a63344a4b4341d777ea2e9c63f58a9b23f06cbcc86"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/artifacts/loot_modifiers/inject/archaeology/ocean_ruin_cold.json"
+hash = "bdfedc3e9acb4cecfb24b101b6615790416901f7d8184d1f9480b55c8b0385d2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/artifacts/loot_modifiers/inject/archaeology/ocean_ruin_warm.json"
+hash = "b165718fe2df56287392ad619929181583083f4bd9a2a32ef40a7f1af49535dd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/artifacts/loot_modifiers/inject/archaeology/trail_ruins_rare.json"
+hash = "e3206f72b4f6c00cb0877491360fc0973a02b6a2a8c085160f7ae47ef343f096"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/artifacts/readme.md"
+hash = "f19576ccf11c367dc388a131cfe485bf986f16d4a2ed68e7b3ec4b1e197ffc32"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/readme.md"
@@ -218,67 +266,47 @@ hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
-hash = "564ff440219e8ed2d649f0a33371c90e2c52b1ae0b0194be0391fd8687d853ba"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ancient_city.json"
-hash = "a7e10028a0590a0c9623d85088df6ec55d265b3d43a4e3dfcca8692eb9349fc6"
+hash = "6c4be7153edf61d2c01ab43b31ef8852e15a158c06d8df9cc0c8c6134d4f398c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/bastion_treasure.json"
-hash = "40cccdb81940224cec0a7613ac3832e9939abe5a442792b8ad0418bdd16be0e4"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/desert_pyramid.json"
-hash = "45cb210f0db742fb4c144163a8a7650a5105ccc6b735ccdcc64378b1df89fb5e"
+hash = "e2db9dceb82fd0c64d9ff5c823120030ef675b362c56b440faa9b52744bb013e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/end_city_treasure.json"
-hash = "9436b611cc784ebf427d11ebe549a1395ad2e054de20bb3ee762194badae1e89"
+hash = "8063b307518ba7beacfc87a26eb3e35056d08cf6207953e298da3643560c7644"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/igloo_chest.json"
-hash = "cbdecbf3cdb8becd8a0f092935766ac65de244dd2cb502d6aebb1ba3b3d2c52d"
+hash = "3122b2ef0ecd91c11e66f0a1a7161b7698a805d243e28770a0089d46282ebe4f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/jungle_temple.json"
-hash = "7efab5065033c65d253d0bd12fbf6f5f49ccda4c5d9e8918879e33e421473a4c"
+hash = "de0df05bb983c43ab2af7043f3bf0725fbdbe8aa6653b266a1d69433f9782b5f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/nether_bridge.json"
-hash = "0505efc1a722929db7f89448efcc972bc5448506d811894f04a6afd537a81769"
+hash = "e5a0038fea2572623491e39b4763fcba50b8047617bd578b309bf6e738825829"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json"
-hash = "a5a02da51286619c7533cfd338a67549aadf0a1f8322200e598ba45f04837477"
+hash = "cb052a14c96cdc7d890453ffbba947f1b21106bb35e0f38f0eceee86a5b0d772"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/readme.md"
-hash = "c15311474f69f289249e8875c87b2036c1b351133b2c1581bbd57ab2a4875601"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/ruined_portal.json"
-hash = "dd6aa77e3f9debceb72718602f50b1f0376cdf3eb38d06895af2abe2c9eb2b49"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/shipwreck_treasure.json"
-hash = "4d47796a2e14538e764d8c1cfee279850fcc20d82a3d4beb36606cda94ee1a59"
+hash = "fc0131bb92260914aa036354e3671c88a1a417126e8f09de1a71f85f951d2b2c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json"
-hash = "02ef2b50be16d12630a65f44bfca2c4d2f11aa6026350f826a52d9fad66d70c6"
+hash = "acc221e791b6e45b042cacc74aa0a5ccd1b6b91c6d12deefa2e970d8675cd778"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/stronghold_corridor.json"
-hash = "eadada9628dae0515f80fa2cfee99abcb3236bfac622961a00b02f630c3235d6"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/underwater_ruin_big.json"
-hash = "ddf13f3924ab30908bd15ec922c900315e7869b17ef821cf319594ce7d691bae"
+hash = "b71f0ea4de2a8aaaee68f7d9d7f0027d795ffc2d7a37507eb1d8a86344ecd0a0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/woodland_mansion.json"
-hash = "9df2727e240a04077669f185e35d0876718042da148b0a4650a2d0ca9cbd7c09"
+hash = "fe5a799e3cdd6364216ee4468f0fce72280c3d6775592adbf0498c7747fc0e3c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/readme.md"
@@ -3509,6 +3537,30 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vin
 hash = "4b0ce217e394ed395ff80f1850e6a191b35e5fb0f697bbf220f81417af0e4b48"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/loot_table/archaeology/desert_pyramid.json"
+hash = "a6680c498b68addaaaf632697ff53a301a2e59671f3db4b69091aee98ce31c70"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/loot_table/archaeology/desert_well.json"
+hash = "a0f08de5813683a50d719609daf5d21e2230b0b7db3cbc2b91848a8816b7275b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/loot_table/archaeology/ocean_ruin_cold.json"
+hash = "f9c7f86d1909e2dace77960d16cba358bcfcb85b43fa429ad4383fe445a107a9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/loot_table/archaeology/ocean_ruin_warm.json"
+hash = "c8499a3a3d2c6a3bb859084130785380c4f2d57d62da4ce9537ca0931b98680c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/loot_table/archaeology/readme.md"
+hash = "4a0b860326db36b47a4f232b1f573f035d782ab54f3dd74ea6b47e41b45388f9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/loot_table/archaeology/trail_ruins_rare.json"
+hash = "65adb668d4cc8fdca1d83ccae955aa5ac1f5f20bf1c48b01bcb057bf71d9c1a6"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/market_presets/saplings.json"
 hash = "70ae1b1cf142d7420072db89ced962bd8f62868a83a80c50eb074ecde8aa7749"
 
@@ -3518,11 +3570,19 @@ hash = "70ae1b1cf142d7420072db89ced962bd8f62868a83a80c50eb074ecde8aa7749"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/neoforge/loot_modifiers/global_loot_modifiers.json"
-hash = "d9688413aacb19f3ae56257fffe3dec7eaa4ddf435b849e44bb08facd38728fc"
+hash = "88760a2cef0d773add697d194f1cec1dbbbaefb4fb4b57158e3fb49f5bbc451c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/neoforge/loot_modifiers/readme.md"
-hash = "ba89dee89777fe240c0692b29a378f11973d2d1998a8eb88d88c524809f6e7e1"
+hash = "56264abd00f73192e6524e5f066468321fe1689e11ad676b25852ba5adcc4829"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/relics/loot_modifiers/relic_loot.json"
+hash = "e4ca02b4985dafcbdc9dd53e6fdaefdc52cb20bd21ed7c6d1ef189cc04d51ddf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/relics/readme.md"
+hash = "7749f6d2b8922bdb3353174abc36a005230b2b3e825df948a39b023e66de547a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/rusticdelight/market_presets/saplings.json"
@@ -4475,6 +4535,16 @@ hash = "9a94f2e57b081963d11a33a9be6435046bfb8720defac9d2cced4d37b3db7299"
 metafile = true
 
 [[files]]
+file = "mods/relics-mod.pw.toml"
+hash = "69f7f6957a351617507c9961d98e2bbfcbd3f7dd48a47c7abf57447a1cbc2571"
+metafile = true
+
+[[files]]
+file = "mods/reliquified-artifacts.pw.toml"
+hash = "6332130dba21e2ee04b9fae4ecc88a652a5bb39fc7423f14723362969badece5"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-config.pw.toml"
 hash = "27721caca5a03b743bf25888e1d984142948069dace31453f103f94f7f24d2ce"
 metafile = true
@@ -4522,6 +4592,11 @@ metafile = true
 [[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "bcaac076ac981463ee57b7469430e5fb7ff99f8e2387681e7ac737ca5d22596b"
+metafile = true
+
+[[files]]
+file = "mods/shatterbyte-lib.pw.toml"
+hash = "3f552bbdc42f07fd7d5695ced1d27d774af63cff5460be45817939e5f8e4f9de"
 metafile = true
 
 [[files]]

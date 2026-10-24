@@ -186,6 +186,13 @@ def collect_refs(node, refs: list, key: str | None = None, parent: dict | None =
                         refs.append(("loot_table?", s))
                     else:
                         refs.append(("loot_table", s))
+            elif isinstance(v, str) and ":" in v and (
+                    (k == "table" and node.get("type") == "neoforge:add_table")
+                    or (k == "value" and node.get("type") == "minecraft:loot_table")):
+                # tabella tirata da un modificatore `neoforge:add_table` o voce che rimanda a un'altra tabella;
+                # `minecraft:empty` non è un file ma vale come «niente»
+                if v != "minecraft:empty":
+                    refs.append(("loot_table", v))
             elif k == "id" and isinstance(v, str) and ":" in v and ("count" in node or key in ("result", "results", "output")):
                 # un risultato con `amount` e senza `count` è un liquido (ricette di Create con liquidi)
                 refs.append(("fluid" if "amount" in node and "count" not in node else "item", v))
