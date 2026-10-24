@@ -11,6 +11,7 @@ Modpack **personale, single player**, giocato con **Prism Launcher**: oggi per M
 ## 2. Come rispondere
 
 - **Italiano**, conciso, leggibile da telefono: frasi brevi, elenchi solo quando servono, niente gergo tecnico non spiegato.
+- **Nomi di mod e dimensioni in inglese**, sempre (Twilight Forest, Aether, Nether, End, Undergarden, Overworld): niente traduzioni come «Crepuscolo» (regola di Matteo, 24/10/2026).
 - **Verificare prima di affermare**: versioni, compatibilità, licenze e dipendenze si controllano nelle fonti (API di Modrinth, codice sorgente della mod, file del pack, inventario), non a memoria. Se una cosa non si è potuta verificare, dirlo.
 - **Proporre con una raccomandazione chiara** (🟢 consigliata · 🟡 dipende · 🔴 sconsigliata) e lasciare la scelta a Matteo.
 - **Errori**: se un'affermazione precedente era sbagliata, correggerla esplicitamente.

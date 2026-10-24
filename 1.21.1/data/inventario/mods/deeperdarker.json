@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Deeper and Darker",
  "file": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
@@ -2631,5 +2631,7 @@
   "pneumaticcraft:heat_properties": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

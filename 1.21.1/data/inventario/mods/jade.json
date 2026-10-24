@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Jade",
  "file": "Jade-1.21.1-NeoForge-15.10.6.jar",
@@ -32,5 +32,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

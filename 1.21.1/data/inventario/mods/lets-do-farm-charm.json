@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "[Let's Do] Farm & Charm",
  "file": "letsdo-farm_and_charm-neoforge-1.1.28.jar",
@@ -1806,5 +1806,7 @@
   "minecraft:smoking": 2
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

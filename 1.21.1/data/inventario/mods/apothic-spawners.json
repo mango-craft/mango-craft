@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Apothic Spawners (modulo)",
  "file": "ApothicSpawners-1.21.1-1.4.0.jar",
@@ -112,5 +112,7 @@
   "apothic_spawners:spawner_modifier": 32
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

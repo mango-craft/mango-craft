@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Regions Unexplored",
  "file": "regions-unexplored-0.6.2-neoforge-21.1.jar",
@@ -8176,5 +8176,7 @@
   "minecraft:stonecutting": 18
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

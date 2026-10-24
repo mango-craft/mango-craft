@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "undergarden:glitterkelp"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:undergarden_rare",
+  "result": {
+    "item": "undergarden:glitterkelp"
+  }
+}

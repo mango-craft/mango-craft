@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "culturaldelights:lemon_sapling"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:saplings",
+  "preset": "matteo_tweaks:overworld_uncommon",
+  "result": {
+    "item": "culturaldelights:lemon_sapling"
+  }
+}

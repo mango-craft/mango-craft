@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "twilightdelight:fiddlehead_clump"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:twilight_rare",
+  "result": {
+    "item": "twilightdelight:fiddlehead_clump"
+  }
+}

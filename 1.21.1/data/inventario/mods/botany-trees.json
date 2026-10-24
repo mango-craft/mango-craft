@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Botany Trees",
  "file": "botanytrees-neoforge-1.21.1-21.1.7.jar",
@@ -8200,5 +8200,7 @@
    "id": "botanytrees:woolytrees/wooly"
   }
  ],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

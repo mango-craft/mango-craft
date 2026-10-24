@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Sophisticated Backpacks Create Integration",
  "file": "sophisticatedbackpackscreateintegration-1.21.1-0.2.0.168.jar",
@@ -54,5 +54,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

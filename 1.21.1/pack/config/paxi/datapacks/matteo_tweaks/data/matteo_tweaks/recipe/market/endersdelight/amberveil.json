@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "endersdelight:amberveil"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:end_rare",
+  "result": {
+    "item": "endersdelight:amberveil"
+  }
+}

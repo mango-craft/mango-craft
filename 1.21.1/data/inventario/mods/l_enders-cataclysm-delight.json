@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Cataclysm Delight",
  "file": "lendersdelight-1.21.1-1.0.10b.jar",
@@ -369,5 +369,7 @@
   "minecraft:smoking": 14
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

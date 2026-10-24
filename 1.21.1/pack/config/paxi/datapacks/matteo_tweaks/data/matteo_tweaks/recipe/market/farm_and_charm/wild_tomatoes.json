@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "farm_and_charm:wild_tomatoes"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:overworld_uncommon",
+  "result": {
+    "item": "farm_and_charm:wild_tomatoes"
+  }
+}

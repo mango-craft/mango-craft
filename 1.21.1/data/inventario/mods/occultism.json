@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Occultism",
  "file": "occultism-1.21.1-neoforge-1.224.5.jar",
@@ -4481,5 +4481,7 @@
   "occultism:spirit_trade": 14
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

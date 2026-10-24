@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Macaw's Roofs",
  "file": "mcw-roofs-2.3.2-mc1.21.1neoforge.jar",
@@ -3086,5 +3086,7 @@
   "minecraft:stonecutting": 388
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

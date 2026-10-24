@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Guard Villagers",
  "file": "guardvillagers-2.4.12-1.21.1.jar",
@@ -65,5 +65,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

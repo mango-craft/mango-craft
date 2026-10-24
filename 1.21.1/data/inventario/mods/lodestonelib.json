@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Lodestone",
  "file": "lodestone-1.21.1-1.8.2.jar",
@@ -147,5 +147,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Apotheosis",
  "file": "Apotheosis-1.21.1-8.9.0.jar",
@@ -1013,5 +1013,7 @@
   "minecraft:crafting_shapeless": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

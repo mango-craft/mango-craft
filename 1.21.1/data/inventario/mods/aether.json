@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "The Aether",
  "file": "aether-1.21.1-1.5.10-neoforge.jar",
@@ -3871,5 +3871,7 @@
   "minecraft:stonecutting": 40
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

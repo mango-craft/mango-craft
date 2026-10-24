@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Kotlin for Forge",
  "file": "kotlinforforge-5.12.0-all.jar",
@@ -56,5 +56,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

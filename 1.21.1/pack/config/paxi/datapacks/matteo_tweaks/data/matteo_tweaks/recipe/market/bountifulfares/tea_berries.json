@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "bountifulfares:tea_berries"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:overworld_uncommon",
+  "result": {
+    "item": "bountifulfares:tea_berries"
+  }
+}

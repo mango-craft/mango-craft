@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "netherexp:warped_wart"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:nether_rare",
+  "result": {
+    "item": "netherexp:warped_wart"
+  }
+}

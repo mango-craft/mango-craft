@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "vinery:jungle_grape_seeds_red"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:overworld_rare",
+  "result": {
+    "item": "vinery:jungle_grape_seeds_red"
+  }
+}

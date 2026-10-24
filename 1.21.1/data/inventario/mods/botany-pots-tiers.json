@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Botany Pots Tiers",
  "file": "botanypotstiers-neoforge-1.21.1-7.0.11.jar",
@@ -4428,5 +4428,7 @@
   "minecraft:crafting_shapeless": 366
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Rustic Delight",
  "file": "rusticdelight-neoforge-1.21-1.7.1.jar",
@@ -1501,5 +1501,7 @@
    "id": "botanypots:rusticdelight/crop/wild_pale_bell_peppers"
   }
  ],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "My Nether's Delight",
  "file": "MyNethersDelight-1.21.1-1.10.4.1.jar",
@@ -1184,5 +1184,7 @@
   "mynethersdelight:blazier_heating": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

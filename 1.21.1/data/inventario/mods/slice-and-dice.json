@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Create Slice & Dice",
  "file": "sliceanddice-4.3.4-neoforge.jar",
@@ -251,5 +251,7 @@
   "minecraft:crafting_shapeless": 3
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

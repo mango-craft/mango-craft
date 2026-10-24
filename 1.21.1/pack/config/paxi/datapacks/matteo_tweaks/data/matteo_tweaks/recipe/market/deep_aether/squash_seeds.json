@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "deep_aether:squash_seeds"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:aether_super-rare",
+  "result": {
+    "item": "deep_aether:squash_seeds"
+  }
+}

@@ -26,7 +26,23 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "9f2e1b62b237c0b87f212108ac8ec5fe68567ee1cfe410534bcbf183d04571d9"
+hash = "e17465aac54ef9dace7bb570bd4a6db578022c6279eb62183a1f7008a4ad6291"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/ars_elemental/market_presets/saplings.json"
+hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/ars_elemental/market_presets/seeds.json"
+hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/ars_nouveau/market_presets/saplings.json"
+hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/ars_nouveau/market_presets/seeds.json"
+hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/readme.md"
@@ -157,6 +173,14 @@ file = "config/paxi/datapacks/matteo_tweaks/data/cataclysm/tags/worldgen/structu
 hash = "cbd620723beaa7328b2497aebd44f199cc9b6750727f402feb6fcc5b5f8482f4"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/culturaldelights/market_presets/saplings.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/culturaldelights/market_presets/seeds.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/event_modifier/blood_moon_spawn_category_multiplier.json"
 hash = "7abc66749a756b008c4217f5e62c9021012ed47a2ea4a54fd0b7499ba573d47d"
 
@@ -171,6 +195,18 @@ hash = "cf96f193d997e47193a3b55b5b75a4e4dd54db4a22795af9fb15dc8da8f1b497"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md"
 hash = "5cfbd52b40adefb6df0246084029404e4b1e53bca03bb51de8e684e57acd872a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/expandeddelight/market_presets/saplings.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/expandeddelight/market_presets/seeds.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/farmersdelight/market_presets/seeds.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
@@ -271,6 +307,74 @@ hash = "5232452c5b01563ef6297d33bbd59e79aa6e7490002d8950404bf8e8a825dfcd"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/walnut.json"
 hash = "a89bf09aaf9eb668e0e68953086a46b9527bba513a21c47f52b572fc460c6ab7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/aether_rare.json"
+hash = "ce7cf9517609854d73dd5f39bc29bec59d8dda93aca53ed8a03cca90a1968585"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/aether_super-rare.json"
+hash = "8afa79ff78c3e0905e92c109759c25948f1b46830c32eeb948111173ff3906d1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/end_common.json"
+hash = "cf8ec313a26e325d43797d684e9fd90b5b8578244ef5910aa02e0c6f4b449703"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/end_rare.json"
+hash = "1f10a870b4a1d9c932e9fb0f24202ee8ff11c75d94dc05c9563e721aae636351"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_common.json"
+hash = "9bc2bfe549a5862c871d2712caede6abff4162ee633ec609b6e843b0a4a154a5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_rare.json"
+hash = "0032c58884c49e7440df8b257caf82a452034e2173725b7b1483f6b6387b87b1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_super-rare.json"
+hash = "c6aacb2aad9d63d099aa08f59f186a0849136eab66318057cbde8d8b467eeef3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/otherside_rare.json"
+hash = "493c823cf9652532da56b8c549197ffb83239d7a660167d29f7e0568f2ef56fe"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_common.json"
+hash = "70ae1b1cf142d7420072db89ced962bd8f62868a83a80c50eb074ecde8aa7749"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_rare.json"
+hash = "dda39ceba9b880e108c16240863ba224ad56da46c08a0e0f5bd5d5a15b6f4375"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_secret-rare.json"
+hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_super-rare.json"
+hash = "dc3357ca00330739e1da2a74b538db9e0948f530b4584008dd2446b481f999d6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_ultimate-rare.json"
+hash = "fcaf90c1ad7b952d84b17ec858590f19313a84c1b4694abb726e8d763a5f74a2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_ultra-rare.json"
+hash = "928a0fe358dc13adf37b23d69d8dcedeef868927a1d255b2fbd4221e4446b6f8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_uncommon.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/twilight_rare.json"
+hash = "b3f6543f85c406f166977cbbad053c39d0df5f1f035cf37258e5a2cb024a8c44"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/undergarden_rare.json"
+hash = "e454ef08dffcd05830ff9f455fd22e71117443a8d37e88731151afd2ed4b690e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/crop/berry_bush.json"
@@ -1629,12 +1733,1788 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots
 hash = "8f252a81a3f188fb7720e67f053210407441082ed6ddb2d96e78a9defacf6981"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aether/purple_flower.json"
+hash = "4172f2e7ee6fb33f2aa978233750366bda4c7a1b13c5e6d48dc23165915784dc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aether/skyroot_sapling.json"
+hash = "8c4962048e4137859fe04da7ed57ffa73495422debbb6e4ad01958f32ae003ff"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aether/white_flower.json"
+hash = "b23056a593df15b83685077e1597490bff51613b6bd40c1983594cca78531635"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/ginger.json"
+hash = "c96d5438db4eebd13925a546e6a09ebf8d53baa87348098c012d5281faa4cb00"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/leek.json"
+hash = "3aec690ac09776c2b0bef8ca7a83f2bfcc2f625ddfefaf7868176ef1350152f6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/parsnip.json"
+hash = "b91c630ffaec7624e1f5769068e3ef0dc11922ab806e1af7b2750b7a733113f1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/wild_ginger.json"
+hash = "615634439af7c542909a2fd6bfc821d3584ff7cda05b95fa4eecf0540959587c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/wild_leek.json"
+hash = "4532d3b194afa02c6f656445a954ce4e1e949efcec0a5574da55b63bd69c3bc1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/aethersdelight/wild_parsnip.json"
+hash = "e325d3098d7df26fd30528ddb2acfdeacfa3df3941500be1711bf7ca6807d27a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/ars_elemental/flashpine_pod.json"
+hash = "ecc91f6d36c88a17992e54064a8a20317462b82d03177d37e489452035341af0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/ars_elemental/sparkflower.json"
+hash = "8f45af17ae26867de676f5665bad125887b5298b0d43c2c200aa17dfa2f65c81"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/ars_nouveau/bastion_pod.json"
+hash = "3233c9ea7782afb575dfff28302f8e76b1da0c26765195f8fdb34f8139d7141c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/ars_nouveau/bombegranate_pod.json"
+hash = "c8f38922f6f7419e51dffdaba7eb933fd9fa5a43794284cfcae8cf816a8a36be"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/ars_nouveau/frostaya_pod.json"
+hash = "2674f7e46ea9daf7d34347fd6c9b6402e29f1a41163f413e8b0e1ba2971d3395"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/ars_nouveau/mendosteen_pod.json"
+hash = "40ce2688011c6ffefd8e79da56bc7cf4b9fe5b295bd568c4802f641e7078bdaf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/betterarcheology/growth_totem.json"
+hash = "34b4df9edbc7b5b3b1f45aa5fecc99d1aa49c3e541686576453d4edb057d6443"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/born_in_chaos_v1/marigolds.json"
+hash = "fd905bf54f856af03015dc488525ae884538890850a825f83d41c5d1acd91dec"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/born_in_chaos_v1/river_mint.json"
+hash = "c0d9b68ba0343f1431bddd0a3c84481f2f489fe5981277a87a34d5a9942eb1f6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/apple_sapling.json"
+hash = "4d3220ab3f5c756c8b05528c32be3d9146b36effaf2ffd546920031326bc72fc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/chamomile_flowers.json"
+hash = "a2fc88d35c1ff2ea5a14e0d2effc74dbf20f363393272843a04feeba2d3cfeb8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/coconut.json"
+hash = "adf1eccaa4ffb18a40d611bd784bf0cbc886219c588f166dc957d963f49eed25"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/elderberries.json"
+hash = "f9b0ef59011747a5cb19c7bd1b71b3efea72a471ad1af69f1020ca0b6bdb31fa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/flowering_apple_leaves.json"
+hash = "4797fbe74d5244286222cadd5e2a869832f0f665e309d365c3e1607199e89be5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/flowering_golden_apple_leaves.json"
+hash = "2cd2b3fc8bfa9ebb6930fce4f9d9f6034c4f572571608c286e8b8c595ca6143b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/flowering_lemon_leaves.json"
+hash = "83dfa268268237a4a17c3a20c38aa520f4a39347b9b0d4d6c92a24843e9f45cc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/flowering_orange_leaves.json"
+hash = "35cda9a99e325e12e8c5198fcbbd4323f35efc670a17656457019b6506f18e77"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/flowering_plum_leaves.json"
+hash = "28b4b512058b2e342dccd7a40f12ddcf0d03d1d109a4ff154c995a453a2c8f90"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/golden_apple_sapling.json"
+hash = "ec7e1eec8ae1c8c047f2ba38e3b4c68a9ee9b11c9daa74c8db64c0d4e464c47e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/hoary_apple_sapling.json"
+hash = "0fd5e4ed09b9310f4477e6e113d7d10fe3e9c22dc68a9be907e249b1c22d678d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/hoary_seeds.json"
+hash = "93ddd7baebf90d593f3bc74dd4c219026ea3341c2d75b550dd96f56af3cbc605"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/honeysuckle.json"
+hash = "32f18a312841cefbba94ad1ad2449d83d4369ffa77a182e74a783505dad808a5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/lapisberry_seeds.json"
+hash = "3503e854715afbe70e9197b50644a46b7a9bd4e3cd62a1693b223731bc55b94f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/leek_seeds.json"
+hash = "e2bad31295b323699d4377849fe8ec19d457f45639c776ef254fd141d5d72641"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/lemon_sapling.json"
+hash = "8cf575923eef643a3768e2604d4359112e3464e1de228a882651c43dc93f64f8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/maize_seeds.json"
+hash = "2a6df2ff8560dfc0d0e877c839105bf8bbba6fbc97deafa33ecb83b2645ea5ee"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/orange_sapling.json"
+hash = "1f7020f090b8c7cc632d73f96500d2ebc6bcd53fb63ec4f372c73c3c1adbb844"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/passion_fruit.json"
+hash = "d9009be4d077c6a39f46b0889794c45d2a164e1bdfff958684ea491b1c6dc2d1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/plum_sapling.json"
+hash = "62d035656ecd042aba957ef9842e355de1eef0bdea40d0ef7383dae0beea4aec"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/prismarine_blossom.json"
+hash = "aa5ee6c530415b3e77fe9f96e60c53e42733d5e14d47acd52c878975b7e3f147"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/scorchkin_seeds.json"
+hash = "8e300c2641b97741fa5206706f5fee899dffa1e05a1689ca489e1f3cd7622571"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/spongekin_seeds.json"
+hash = "93392a4ec9e2d3b49fdefe976943619b0c5cbf855716dd24e7cf158a9a504036"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/tea_berries.json"
+hash = "6d2677682489a85a4072205547cf1ade40484b4e0f2890716d5b00a0539075b9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/violet_bellflower.json"
+hash = "985341c9ecf214dec4831e22e66323617e87e3acae7d8057b15d630a1fb0281b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/walnut_sapling.json"
+hash = "e7ee349bc656680790b6001dd03956d179ba01753e630a64616002b1a1ad3dd5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_beetroots.json"
+hash = "8a57399caefb5b52fe0b60beb8f357acbe64d38b5fbd0b9b9ab705aec92aec1b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_carrots.json"
+hash = "aad4eff7f0ddaa232f377dddc165286adde2b53e218ee22186c71a9b25850d9e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_elderberry_vine.json"
+hash = "7ef7ff1c6481400a298b7d478a4fd156ae28206260bcb01d4375fc8fc2d0f19e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_leeks.json"
+hash = "308add88dc255488c357cbec9d3dff78054837ad721e53d3194b5adf5111ea54"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_maize.json"
+hash = "b755aef5c0c9d8a1e4f2ad8cc4795d02b4730c4fc574890f27b3283852d9367e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_passion_fruit_vine.json"
+hash = "5311606cc64e3e39d123c2e3527114fac700288d4bd6d92bc1cbf5a66a352994"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_potatoes.json"
+hash = "c0cabb44c711d59007cc4c823d2d80db7eda787d19f1804cf4fb4975154a813e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/bountifulfares/wild_wheat.json"
+hash = "fb3a836a14ff973e45fc6616344133c91f1609d417f2094164529824d3b50cfe"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/agave.json"
+hash = "72c95bf1bfed593db96d1d225804cf8649301aab88540cf9c39cfc9891ace387"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/avocado_pit.json"
+hash = "6aba9d0dcb57f60c2a51d0665fd65eb8312ceda4b3eb97be48257a929d3bd8fa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/beans.json"
+hash = "be9f5f6c50479c9c8e1f8f2c4d5a43ccff6e62b5a4541fc599d2828b11bef989"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/corn_kernels.json"
+hash = "e8ef12359761069f68c62e46976de8ddd666fa57116f5a0b9c67c8a3c304c660"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/lemon_sapling.json"
+hash = "47afc22180805f56db6ddb7d7778ad65fc8ea3d29eafe85a13515d2462552b13"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/mint.json"
+hash = "cbd138fbf0dc2c414460466875291a703666b2a10d76bb63a1b34eb9db5ec691"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/wild_beans.json"
+hash = "dcabe7b67a4d938930308e6c2dc4cda27a03c392184fa8631c75d24bf21c8645"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/wild_corn.json"
+hash = "e633a59c461c621ab10cd9e5824a7e7a00c5303828681433af932390c71100cd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/wild_cucumbers.json"
+hash = "72217b529a1b60dbed15a6c59e0889df0db92525094622053e1bc0d86d0ddec1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/culturaldelights/wild_eggplants.json"
+hash = "4e31b7abf2c82e0f9b4a348fad21767f36443f35cf5f61948e801acfdac1a665"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/aerlavender.json"
+hash = "bcc6a524754ab9964735262f69626bec5c3b3557d5ede743220373c2e1e9b39d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/aether_cattails.json"
+hash = "1898d61db0461bcb87163481850b6d659dc9f889b2564fdcfdab3b5ef931da2e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/blue_aercloud_mushrooms.json"
+hash = "377834b7a2020413bdfd3a6e983a1c03e23ff1e9c9627054e37f4b6cd794bb96"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/blue_roseroot_sapling.json"
+hash = "d6260d413392983d60e09f142cc387e4fef9478563e698d1a45ec678b2d38021"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/conberry_sapling.json"
+hash = "46f3e81d4ea655cfea8ca6824d2e65dc731c37bfbb77b64ed3a20e42a8400437"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/cruderoot_sapling.json"
+hash = "d85e499488ecf2c53ccf22eed09e84a79da83d2d6c35d0b1c55d0360236bde64"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/echaisy.json"
+hash = "3855fca9edbcd8a4cc94707da2fcad74dfa595122e83b31c66733c0310efa9f7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/flowering_blue_roseroot_leaves.json"
+hash = "3859e599c9da4a9742d342d14d0ac4e5bc95c50b5400863e89803c113b5ffc88"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/flowering_roseroot_leaves.json"
+hash = "ee1d5176ae8e3991319586559be559157344f73b57219def5260fa8d76a8dab6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/glowing_spores.json"
+hash = "b7e470ddd2791f4ab1d9928966b1c01c6978732904bdfead0d2964bb0a78cbf1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/golden_aspess.json"
+hash = "0e06fbf8aea4c8aa555a323271836b00e8f9093b57613c52f68114873469c76e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/golden_flower.json"
+hash = "f7224df8ce1e7084c6b4955b2f8f0e8f724fb037cfb4504d901b8adc84494966"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/goldenleaf_berries.json"
+hash = "c635c314077fc8d0d2bc1eac3d6648cdbd9c5eb23363c00aa33670dcd173224c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/iaspove.json"
+hash = "f5ce17c47869f068d6c13b2ff4648b5b8666c1029bfc5137dd7064b1fbae9eaf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/lightcap_mushrooms.json"
+hash = "12f8d88421af18455a6771a46cfdb1a07ab0837ea86eaf70a1011d3a9940a6f1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/pink_aercloud_mushrooms.json"
+hash = "7a15c47c1fd38d291a1674ae70df96ba8e00a32525bdb1969626b452dbd49d21"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/radiant_orchid.json"
+hash = "f1a566c17e54e3ccea481691dc0f94ecc9ba27011de3af1b83ca54eacc43eb6d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/roseroot_sapling.json"
+hash = "f7ab57d7170d8c5e90277f5f4a4073a21d7b0d30545fa4facc1b60fbe30b09ba"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/sky_tulips.json"
+hash = "77ea1d7f36bf85c98f7b93cd3621204d522e73666754a9a04233b6cd99664427"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/squash_seeds.json"
+hash = "a066981bae14798e12663ac98058a3df2f213252192c2032ce452087bfaf55d8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/sunroot_sapling.json"
+hash = "c492dacca940fb91b35141cf5002b16720a195a7d52fd6509eb6a75e0dbde0df"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/tall_aerlavender.json"
+hash = "701c15a3050416353790ac9cb13c97214298cc0d9157321ce201f1754a956fd8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/tall_aether_cattails.json"
+hash = "de3443cab29f2cd45e9790e2245e975cb364ce6576094230bced637b2bdc2ff6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/tall_alien_plant.json"
+hash = "342c3c84e8af9dd37a683493121b1f9fbab6b59c13f52a8fe9c34d384004e676"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deep_aether/yagroot_sapling.json"
+hash = "b6efea083505f261e6d53546a36d0ed40e3e5c87649842baa86f002cd35cf251"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/bloom_berries.json"
+hash = "8b6c4339a95d4902862fb5b8adc15c7a66dc0000a98bf1cead833a7d197fb582"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/echo_sapling.json"
+hash = "f5ab40a33dcf8f432c286573a5033e53a93a247b7e7bf64a7369e6bc147b26ce"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/glowing_flowers.json"
+hash = "320e12b117cf768bd085d22a2a246758228ad0fe05d0360830d4ba9eefc954c7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/deeperdarker/lily_flower.json"
+hash = "785ffffd36a8c4424cb1f01fef01ae953f4f36b2e6663a6b614d698fa63e0886"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/amberveil.json"
+hash = "3ae83547eeb52339af7ab775b81ed223fb4d54aa5e6cf44b209969e4d97b64f7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/chorusflame.json"
+hash = "591a7857e26b13a1adfab796789b2c9d4e443a185e6dcbf011ea01fff2958c05"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/ethereal_saffron.json"
+hash = "532f598ea56f238a15bd0f2b303b665c8ee01bb98cdcb7a81cd6d489a953d7d0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/endersdelight/voidpepper.json"
+hash = "4097f4233bfb579a72468d55808a3eb58b812974390c813e89ebdc0b2a6307c3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/cranberries.json"
+hash = "88fbbef48fb22619610388645d58c14245221621d25851d0ff2d059951110ef7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/peanut.json"
+hash = "ac90c41ecec83f4ba39c8a3a769f94d6a2613452d3c2531b24a9e95ecd32973f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/sweet_potato.json"
+hash = "3645f976b9b97e47eec019101a5bb04a4aacea08ed500b92c59bb182d946cb17"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/wild_asparagus.json"
+hash = "308b431c484218ffd0c4e591d67c1394d75e1772025b3876e10ef1627f4585a0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/wild_chili_pepper.json"
+hash = "219de2ef251ab0fc7fd8baffca0a8207e5122e605ab447b5a43a5f7b2213270b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/wild_peanuts.json"
+hash = "103590ed93653d4a1c14222af26badf39cb8b34249cd609726dbc438b47d73ec"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/expandeddelight/wild_sweet_potato.json"
+hash = "43f68d452c56d596f777c50c604ce9f00b38d2019ceff89bb444473c88e0e7f4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/barley_seeds.json"
+hash = "b43c7796288e250d13f8259dcb32249b7f2d0d93ad15fb77aea601f7b862774e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/kernels.json"
+hash = "6735629030d3a60c77cfc0e7c399c7b8460695ec24a794af34b81edb7f3ff666"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/lettuce_seeds.json"
+hash = "8bd95e1b5cefa13bbf954d65f847032f5aa31aa192a1f6d30541f789b7a6e292"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/oat_seeds.json"
+hash = "a7ad11ecc7b2291e9141a483414d49ed2984f5bb288448288ecfa19b3e42f6f4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/onion.json"
+hash = "5475b218abeeca42a194ec51d466a10f00692c057725fffd464b8365bbd4a75c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/strawberry_seeds.json"
+hash = "4c8e381d2534883bd539df019b8e5650889063e7869d26ec2b9ce12f7297d202"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/tomato_seeds.json"
+hash = "af4839769feb1b74afe0bca085d4a037c4f46036d7e1e12d69ef7077ae9b1143"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_barley.json"
+hash = "647bf318e974583eb1b1db0371b2fe48de1a09bf53924b298fcf79772a69eb1e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_beetroots.json"
+hash = "dbd81e6a7c22ffdde9c14433150f52aaf2ac99a2ce41bc3b0ebeeb87e4aa0ea4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_carrots.json"
+hash = "f449729afee286d8d078e59bb94f02668a90cfe561be38a2550f70be5550561f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_corn.json"
+hash = "88b9e0e7c96a1bba26fd1ecfa433846f6f573798e69a5efbe7737c5518df35df"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_emmer.json"
+hash = "0ae50e8d17d658929afc6c806cd708df59e0606d0122f0f994320d24b8166b1d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_lettuce.json"
+hash = "db107f119e6749315c9da5b477377c8f39c76aaff830c09e66c579ff92337588"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_nettle.json"
+hash = "a15e45a503b4a2101f66bbee443230a9ae093930381435acc2b009dba77f17fe"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_oat.json"
+hash = "256f3757c4959673ee1bbb896e1c4cd7c9f4f0c92afcbcf2bdaf0691f960d632"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_onions.json"
+hash = "f890134f4d790e2e28071ec6931310aaacf956e36891b48b9ab389de7cb11043"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_potatoes.json"
+hash = "5346ce81a8dfb2599966bfc2198e9c6c125db1aad9d43659bb002a2155cbdc4d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_ribwort.json"
+hash = "d7b612777ead48da0ccb41c683faf917805d83b170f2995b6bfda7cfd258071c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_strawberries.json"
+hash = "8933a34304ea0e2a9da3bf92c6a96a2ecddbc2bc14f714d21336e5e3d4298426"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farm_and_charm/wild_tomatoes.json"
+hash = "06402103c706b2409eae09dcfc2021623a5642c363bd1ef9aaa4caf469dd532f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/brown_mushroom_colony.json"
+hash = "bad49c8b9f7f17f2bfb561f07a05a5e587a27f6204a2fc334b9d9e2f0fd73cc7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/onion.json"
+hash = "6b01f92cbdd2ed3a7984025df0287c009ecf5a38d881dd9c9c7ed190a31dc959"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/red_mushroom_colony.json"
+hash = "dfb5d7647d145b1d25233ae3e4e051a5d047cb9286d5f5cb1acbd35e4a46fd9d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/rice.json"
+hash = "d3b1258cb8f8df612331556ec7018fad5a326498163fc1f467b5910c2f1697ef"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/wild_beetroots.json"
+hash = "0922cd4cb37692d8fd303477e3bb3c6ada9a8f817418931b9fa21392a0777438"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/wild_cabbages.json"
+hash = "769c71bae1c9fc1ee4fa3db41a5d0714838f98aeef9e6f62329a5daf4a479624"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/wild_carrots.json"
+hash = "f466e0512a716b49b93c7ac7d0ca12dcc928b0df29976e23090435aa9f014a62"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/wild_onions.json"
+hash = "edc6dda13f29988c1fce8e2f3499091ca56e9e358ad955229ccd69bf59ed4c0c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/wild_potatoes.json"
+hash = "5aecfb50ca225fa15c0bcb5dead872b7c604a210e081b948847122d3552ae255"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/wild_rice.json"
+hash = "0fcfbc268bd77605b259cf732b275f3739793bbd564e197d1d8a03ca1bb9cdb4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/farmersdelight/wild_tomatoes.json"
+hash = "0370fbf7525df8b4073312885676792bed0b27b03f83521f669f258c486808e6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/friendsandfoes/buttercup.json"
+hash = "145a5f9bf528463d487245f42637b5eef88df3bb66f9cc5883c49623b6a1d485"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/herbalbrews/coffee_beans.json"
+hash = "01e0edaf6ad01125de82390078601c3e8b6fbae15e8be4744f465a8f949654a7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/herbalbrews/hibiscus.json"
+hash = "65f50a7d980be02110dd8d5936b0cc3282b23ed9257f36bca559c0b13507c04a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/herbalbrews/lavender.json"
+hash = "3d38ad8bf1801e704a4d977cda0042312c4c8d0ec541b13ef6daff85bdd78629"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/herbalbrews/tea_blossom.json"
+hash = "015fb2fc978edefe9c53f348cd348ece4d9b3900dd8c7c6103a99315925bb573"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/herbalbrews/wild_coffee_plant.json"
+hash = "14778c1ec30404ce2fdaa06f280503943475d4bb11fb6a2c55d82b9e82407fa8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/herbalbrews/wild_rooibos_plant.json"
+hash = "bc2fdb029a273fd0841ca1811fb91580c154c46124b9824608cd5e23b585b6ae"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/herbalbrews/wild_yerba_mate_plant.json"
+hash = "35df9506c8567db3940889f761fc7d8b455f9fb4ce12a20c8df4a287b18d201c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/aegiflora.json"
+hash = "1f7a86ca711154baf3c4a8d43d711b98e36c4f415deaedc05866106a5665516a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/astrylis.json"
+hash = "455d9c4d055b42f149e61a84b178bbf1e559ef739fab86af8d8516dcbf2bd075"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/begonia.json"
+hash = "f0194e879ea429efa8b2cd8eae480097084e06e1bbfeed970cf71936a5a4de97"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/celestial_bloom.json"
+hash = "5decc1a5be7f3a8466ab7b762bc123bbe0c7570f5a07afaeee05e623028b1831"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/chillberries.json"
+hash = "1dfa838278393ae3f2f6f1c29dc28b104e37e2324e24e43efb8bf137faf2dbc2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/cottonwood_sapling.json"
+hash = "31180f5984f8ce004c501b7829bbdf9d38b2effd1233d2c7c12a1db3c6b7e338"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/dahlia.json"
+hash = "625d7b3b22a92b8d7840c0e9f402befeac9f18ad15a207df00c593578c05a5c2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/dreamshroom.json"
+hash = "d75b326e69de82f851bb36636ae560bfeafa97787923ede318b5399968de387b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/galeberries.json"
+hash = "178164a6040225ccb465c9937838a43f42969b14d888c59e9144bce466fefd3f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/ghost_fern.json"
+hash = "856b46e669466f59f03ae641dba5bce7a4f433590b2938ac8d8cddc229f74067"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/grimshade.json"
+hash = "5d84671250ffdbb1fc04f941caaea7c6d95e1469930bcf2fa03cae87fc5a0848"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/lavender.json"
+hash = "1a2add4a2faa3fcc3e5018c53869a6bd5cf6e956b3eafbc5fad5b8bfe206c165"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/lourdes.json"
+hash = "4d139b8b2b1ab3a7dcb28eec8a6b5bb1df2142acb20aa5f4292a8c0a428060fe"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/mandrake_seeds.json"
+hash = "c2d85fcede1d4ac54a6516341f6d1d596c4984c588b3c2b0d15cd65b98978ba2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/morphora.json"
+hash = "5941e56e0dd71ed3bf90471934cc70b08a8369810b6312157fe54a742352a1b8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/nautilite.json"
+hash = "7b5f04fa87c61fd791d19cb8180d96070687b94a576fa81096c390c71c9c4f2e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/nightshade_bush.json"
+hash = "d4b20db3fc98c9af5741c9fe58079616689f6cc8fc663c9f65f34e1b4bad484b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/pale_mushroom.json"
+hash = "c6e7485299207f9808de68d0e5b40a6dd4591a5842c26011085109d13c8d48a3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/rabbage_seeds.json"
+hash = "7403d6b1217c201620525ca019e91b42690f1a54b59f9ab531e4aa199141367e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/saltsprout.json"
+hash = "4a30bcb9e3124d636e46feffb56d3feae68c93ad55983415e9961716a5735559"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/spirit_bloom.json"
+hash = "a2f3bf0fc59cf1b4726cd4391a4a93ce2d0d2e01435791744927f904b4b052d4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/sunfire_tomato_seeds.json"
+hash = "0085a79d764f92259608d69bd173ed8bfe33012fc7044364bd841de3a6d52a92"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/wild_mandrake.json"
+hash = "792ec706eeddf4cf5abec2ac2ffe91c87b47c01205e98f24f1ca30c423adcb2c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/wild_sunfire_tomato.json"
+hash = "16e09b63eba7973dff50bced21851e500c6402bf2e8820bda4004619b4120f48"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/willow_sapling.json"
+hash = "84e6f1bd9528a70e912070c93aaaccf86f2f4dd645bba956ea35a86b975055c6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/windsong.json"
+hash = "da2b5fd64122d73516c5bae8d947ea430ca5a6deb142263a99d308f8e376007d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/witchweed.json"
+hash = "389e7a06ca602c66df0214ffdfdfdf43ce69c47a5accc0b27b987b3f8fd7f625"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/withered_aegiflora.json"
+hash = "81c6220fd6086ff4a187fb3e9f2bf7c05f00b16d05c2258b32fecee620e6e431"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexalia/withered_celestial_bloom.json"
+hash = "74e95ce257aa19f95cc2781268581dfb374cdcef284918d9d520b24877607cb1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexerei/mahogany_sapling.json"
+hash = "84e6371339f15afeddcc5de1bc6ee81459eea537b076b0b4d7f9f6c5138ae954"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexerei/sage_seed.json"
+hash = "e2d5aa6b78e213e7a4cee1b8e04dec3379469511074f713f3b6fce5789d90102"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexerei/willow_sapling.json"
+hash = "1e621c0c3e1eae94e136bf4bf32c00785aab9e40a9c71c6f6989d3e94f4edf75"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/hexerei/witch_hazel_sapling.json"
+hash = "7483b42c4c85a7dd89e517558375ba36bda9bf9336cd90be35f0f165e34a4cb4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/alpine_birch_sapling.json"
+hash = "97fd8616c25a03b9f7e163b9ea066173b38f934eb45a128c2d88c2fbed383ee4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/alpine_poppy.json"
+hash = "143d96bbbe2ef2c2aa50c5e29814c827b33c735fd7612253c05a1be502e1b50c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/delphinium.json"
+hash = "f237e30f54aea2badac3ee8c0afbc5bf6d24e0236ad8eca36777cba9aeacc62a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/enzian.json"
+hash = "e97cab6c5ccd75610ba54156f0a70b626c9ae2aed790c56d7662b248726ae21e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/eriophorum.json"
+hash = "3067f79fe571a70735495c6ed137dff4caaac3b0caf0061a8eb5f175f3a65217"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/fire_lily.json"
+hash = "7e375161cd57f35e3b12ea5cac418783ee68487dc6eacc88552118c317416ef2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/pine_sapling.json"
+hash = "bff18239116d6001541e45f96fe206350b530ac6ea353225470bdb73a5414ba0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/saxifrage.json"
+hash = "7f594ba37cb243e74a465394e8effd26e7cb0eabd9714345c21caf973de19bc0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/small_fir.json"
+hash = "13f3f6d291122e036bcfd7ae21a2a5f1cad8c79e0c98a072733350fd575a40d2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/tall_eriophorum.json"
+hash = "fc7eef5e5b434c618e54bf8ab68c167378a261e80816fa7b141d1c3971c7992f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/meadow/yellow_pine_sapling.json"
+hash = "7ef09508bab259c9b2296465689426eb803c8ef6c3352a07b963e38764014f60"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/allium.json"
+hash = "bdad4b8365bd50fbd358d46028a0c3ff27f9233fc5f0fea79fa30768cc0b61a2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/azalea.json"
+hash = "b99d84b28fc27735dea31a250010285814c509e84b4e56259229e0366fdf5a6e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/azure_bluet.json"
+hash = "a9b9866f1517686f9c1f4ef8bb2bbfb83f15b22991c93bdbeb763aee0b384163"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/blue_orchid.json"
+hash = "94972728136e3ead442962dc07b5a611a28c99cce23af03fa419202443a8b097"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/brown_mushroom.json"
+hash = "4a5362352563cb3e899d72663afc0abb75bde7fc8f56063a1363103820d23ece"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/carrot.json"
+hash = "7a09b190b4a9de95bed1262af526220ed400e2bd23f55838162639c30f16563e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/cherry_leaves.json"
+hash = "a6027c49fc2809eae28dabc4594c7b51db5d6f7db802e6e7b4465b192bd3e811"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/chorus_flower.json"
+hash = "0fdbce971cded69d9034a8ac25875968421d8e9e7720da97ccd8a3370f925495"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/cocoa_beans.json"
+hash = "5ca22151c992421d4c9830e4ead6db657f0e1c2140975fc63ed73e638d4032f5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/cornflower.json"
+hash = "f1683df16cafcee6fd9230e780f2342397000b5eea13f61113db4dbb1508a280"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/crimson_fungus.json"
+hash = "79d32129c8c3aa041754b5b6bef74e61894fbf2501722ec2638848bb085d29f5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/dandelion.json"
+hash = "a802ac87ecfc81ae9f8570edfad94ca50a9a92c98c5d731f3ffc1ce23adcd2f8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/flowering_azalea.json"
+hash = "f34215073e20c2ff0d1da08d11c2377b23eb2af5e022f2a46233bbfadd5e20c4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/flowering_azalea_leaves.json"
+hash = "219fa76f8e033075a9f99317c5d3efb330c4d4ca087e026d08f040279c6901a4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/glow_berries.json"
+hash = "9b78535effdcc51dc3a96c245ae94578894f14a68810f7ddb1d9c7f26bc6cc7f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/lilac.json"
+hash = "e9315f7972517ece113f595f26c501dc2ca57e16aea8210689d177e94888c71c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/lily_of_the_valley.json"
+hash = "d8479838326329bbff72e5444557657b384027d32c713a3c912282687a128aff"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/mangrove_propagule.json"
+hash = "fff86ab69960d5ef4ef032cc21fd35fa2d0545890bbc03be84532cd286622553"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/nether_wart.json"
+hash = "c48a6c1a5557bdebcf3d3c8ddd770566ac4ffb8e70d62df743510adb51556401"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/orange_tulip.json"
+hash = "3ddddc65d2e6274a07da0103f8208e5df41e8c09f9ede4ad82eaa4bf731da99e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/oxeye_daisy.json"
+hash = "79f0cf5eede0350c22132508e3235fe656a17ad3d23009563b21c34dfdba64d6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/peony.json"
+hash = "2c313c37f107494ec91f0b3a3f40bd0e19e574df77cf352d92ed0a242faee4c9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/pink_petals.json"
+hash = "d20b13b04ab6d21977c45f1c3f26ba4f4573f6c4eeadef41128cdf3bafcaaaec"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/pink_tulip.json"
+hash = "8850746fed44d8b5975c893e66bcf7871048a7a1d7a9999441abf54e96d28e27"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/poppy.json"
+hash = "2b54a7648c569b4633ec5ad9c6977010443a662c5d66239013333094a215a083"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/potato.json"
+hash = "18df0e3728c78f7c7d84a529902da0e88a20090e96ea5603d333f9f56af963ed"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/red_mushroom.json"
+hash = "39c00702adf128a9582c6c37c849d8b91ef9706b0cc8b1c291d1dc400473fd0e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/red_tulip.json"
+hash = "83a4ddabf67339f81fd5991ccc26908dd728f6d458edfada5b07a0320f121913"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/rose_bush.json"
+hash = "515146d60bdde51e4807aa3f02b755722eabc3ada49b6c89d8aaf8225ba782e3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/sea_pickle.json"
+hash = "6c4c1f01d775fc1393db0ad2c46b9cb380279cd0850dd678a7e3e089d29dac81"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/spore_blossom.json"
+hash = "0f7d23a9dd30213aec921a35c8c58d86ff9fd5e65a130079e3aa9754dde0d0f0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/sugar_cane.json"
+hash = "5b9ee89e20ca164121b80454f4d29db84d58c4828a05ef0d012118661c027684"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/sunflower.json"
+hash = "430a7514615fa6c3df2757726890db7f529a79accdef7e032907cc3832fba1c1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/sweet_berries.json"
+hash = "705df66b2f09a226b571bbe46364cfa09f8e33aa46b65ecca4a3233cd884e837"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/warped_fungus.json"
+hash = "01fd667cc9be2636403e7529aa67853b62c9d26301869b952cba909517265db9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/white_tulip.json"
+hash = "ddbacfe823e8bf6afd982d3f7d7fb0656a0edb7feb8d15e6ea6fb869c687294d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/minecraft/wither_rose.json"
+hash = "38b27ff8cc4b3b0577b156dcd7a4e4dfd909dcdf732c8a1d496caa3346b862c0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/bullet_pepper.json"
+hash = "9345fdbc95b9a370a8e3c182370c0e47b93ff06bb81dbf230a4b62d0d6f111ef"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/crimson_fungus_colony.json"
+hash = "608326d82d71a5a518e43b0c6463250ded2ab5af9f0056021a5246b10f0e483e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/powder_cannon.json"
+hash = "12eb0b8b0075cc5c0c4447420350b399952a9f6858022b5e75bf41044ce56bb4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/mynethersdelight/warped_fungus_colony.json"
+hash = "bd9052d90e510fb0fbca3fd8d2069c8ae016ab7bc375e221fa1f03066e29cdd7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/netherexp/crimson_sporeshroom.json"
+hash = "8d1b4bcb13a6f4940477362ecb5d03fee8bc64382ef1d091855508b111add02d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/netherexp/warped_sporeshroom.json"
+hash = "1a8d4f1b88ff67cd4940d9aa873c7c5e6f91a51138b3c6a76b43622519c01849"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/netherexp/warped_wart.json"
+hash = "32f10f5bcc7338510b900d024fe7dab45c6cafe9e35ad616548557d082940f26"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/occultism/datura_seeds.json"
+hash = "79256b3491e020aa45281e0a5d8edfd01c3eaace5e42dd80c0ee7768d56b7092"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/occultism/otherflower.json"
+hash = "4df6bbb71ba7e0d249fcf2d1a840db4c7d73a84c737d4a2a2cc409b939375072"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/occultism/otherflower_natural.json"
+hash = "c14fa0157833d100065c87901e85db24fc0895b31a339d153ad00bbda395fe94"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/readme.md"
+hash = "6f6952f713c531a6468646bbad9654b82aad920ee89b945e4100211df8424ae7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/alpha_dandelion.json"
+hash = "e1451583c954952ea9dde059db6cd6bcddfbb8104270540b40d853fb1195638c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/alpha_rose.json"
+hash = "0f8d992b87a3aac0022bd53d8a2d4d22c3bd6c5563697afaad2652349212c8a9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/alpha_sapling.json"
+hash = "0331d9e2c1e6df9b6bdd34a8a3bb4543234e71de246f79e9363af29fd6f00902"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/apple_oak_sapling.json"
+hash = "56fc2ad1ad000d9ce05dfff0c1d8211f5ec347cf4ffb5931f51f8a56bcf3441f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/ashen_sapling.json"
+hash = "d2142b3e481095e83cf9e26fca0ac2eca1b7cdcbd01a8dca68df2208089acd6d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/aster.json"
+hash = "2123436faadf4dfa8bbcedd041111e3062ef204772db26d0f8c4998e506d3d68"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/bamboo_sapling.json"
+hash = "02a853edab7a78a625cc3e9acbe10ae61eea56805e0dbfd1b590c9d7392a60b2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/baobab_sapling.json"
+hash = "96b8e98e890322f9b947d7d03650fe4ef0f8d83496a048fdd6d5e794c3194409"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/barley.json"
+hash = "32f8498fe6bcc1a4e4b47dc14bf474fc258ae0dbb41fe13143e477b84dd6626f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/black_snowbelle.json"
+hash = "4f439905189b436678de55f5410f835cd394e59c5fa452fb81fd37636ca8dcfd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/blackwood_sapling.json"
+hash = "3c67ce590bec40d2c269aa96fe226ab33f5dc02806ddc50494742485b84eb84f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/bleeding_heart.json"
+hash = "e18862b709d4c74c49519130f8c128495e058c0bfed77ea97a7966eb674d1393"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/blue_bioshroom.json"
+hash = "4c8e46cb7f59a87e7e8a9fb5113522fe4bb349b3eafe62bd002aefaa34ea30d2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/blue_lupine.json"
+hash = "2be3c09b0183c7a90fe6c2d1117baf5c5dbace0f9db4bb522693579d08d661b9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/blue_magnolia_flowers.json"
+hash = "92bcc760ccfb6711407a816dd3d7d1ee3c8bb20a7d36acd9168933d18d9178dc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/blue_magnolia_sapling.json"
+hash = "25bd313a33f82fbf7fbcdaf37bca8c746c5d1d86c4897c715cc6c9879b926844"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/blue_snowbelle.json"
+hash = "a25d8d3132b6967343c5d35a5c8055c1a01f68e8c996313986ec037e42e5e2c4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/brimsprout.json"
+hash = "c1ed6d630d2bab832a080eb5f16e0f021076bdce12248784b6c4ee9324ad8a48"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/brimwood_sapling.json"
+hash = "d5b4d656dd2d978ee9b3573a818816749c50432c16df84fe0fd942f2fb995f3d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/brown_snowbelle.json"
+hash = "016ad1bf475ffa913b7bf1065262a9013647ea28a8bcad5b07248c309617142f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/cattail.json"
+hash = "dbba88d16af1fc726955a0b1e6de3d9f8219f9cd21e823e9e8b9b412aba536a2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/cave_hyssop.json"
+hash = "eebdc07c5d3e04b83dbe221b2dc05abeeec421ee2d7c4495c6f7ea3e86f98abc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/clover.json"
+hash = "860af502cdfbb9e60dd670b45847f714e899e2eeb0cfadbb7539611dfe6113d4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/cobalt_earlight.json"
+hash = "5638050f65e4185e16a70564db1f9af926d20510b45f655b4ed000c286258f8d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/cobalt_sapling.json"
+hash = "00fea02396b741d2f40251765cac7511e32e9582a024c1abfa4c13d0ac6547fd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/cyan_snowbelle.json"
+hash = "54ac1c33759ec27866d1610386691597f6620d5c8bec5c9295051f8f112e022b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/cypress_sapling.json"
+hash = "18243c5786c47ef32ae21422b2032f94ce156c1e060631c73547b6705a849ef1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/daisy.json"
+hash = "0f10bce1fd6bee5c6f3a4efa86a04dda2cfc5e4ff6e0bb98488b45e21f9b8d8d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/day_lily.json"
+hash = "5d52268f1d4dd409c9fc5c0ae05cb3d3226291c07bcabf779739df9c0621b0d5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/dead_pine_sapling.json"
+hash = "0cf36680e5f71e432bf4e66a3965b7daab5a5432917424ad7a2d174915ae2a0b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/dead_sapling.json"
+hash = "b8781460f7e00bfd0fbefd254ccbded1392015e5321906accab90a162dd6c5a0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/dorcel.json"
+hash = "1e5abf0d99f1d2ed1dfe113e2bc36ee3a93b65197822863c90042bac918e4f2b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/dropleaf.json"
+hash = "b3a4f50e7c8e288eabfc00c1493c67dbbb7e250c6bf680d5beeaacce8443aae2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/duckweed.json"
+hash = "6b247fcac7fa770efde91db334031157e22fc9b655c13dd5136fb5f1175efc1b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/duskmelon_slice.json"
+hash = "fa018558c152d9ba828918c4a6aa6fabaffbde9e74f0c61998ffb9f88f7f4591"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/dusktrap.json"
+hash = "e63c5634149d1e72c2b2e5425cae22af51d36c7779b1de30b2386a522e972293"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/elephant_ear.json"
+hash = "8aa68d92fdf2fdcb44098bfe3afd88d00cf10fa2a437f34b784222bf49c8518a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/eucalyptus_sapling.json"
+hash = "5a3ef738c6c3c5f5b2a96778d8b5e8b8bb7875da4a50f2ab00c6bf88a4f589e1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/felicia_daisy.json"
+hash = "b1db9654fffc64561e1abb763c001614f598aa77a697e91caafc32b558264d0b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/fireweed.json"
+hash = "7d54666c7acdbd13a7333f4ecab4c2d39e0a42f431e6216b55a9c7d6ca95e0c1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/flowering_sapling.json"
+hash = "550be5821b64c1d9951cc8c4efb65fc7333cc008da41a1f66a00f057b42d6953"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/glister_bulb.json"
+hash = "411dc44dccb18cb59944a0081dce52f4bb1ffa509337fb8e06bb5c370e046749"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/glister_spire.json"
+hash = "b529d84ef241a6abca636f0a9c92b4279d434f77b271e01e3efccd501f8b7e7c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/glistering_bloom.json"
+hash = "23746438f2cc5ef5ef6ef10672778c6ed4d1df0dcff928deeaf9ef1e0c66b42b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/glistering_ivy.json"
+hash = "d25420f8d021e3a02dfe5255d0b88e18cbde8e2e63774d3d8ce9ed06dab89631"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/golden_larch_sapling.json"
+hash = "77af058d0dbb79eb14cd7c238b25ef96453ae3f32750df6b16d89cf67eac0689"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/gray_snowbelle.json"
+hash = "597bd26b70e6d2674268a886f3c48028f2a1e55bc7234dcaccdd140c30646aa0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/green_bioshroom.json"
+hash = "ed8b5bbac65e783449c7346fb2eaaf45898beba050f1a3925e28a2eded5a0cc3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/green_snowbelle.json"
+hash = "6e67a7f608d5da8741c16406ac409153f2d551c40f9ed0812ae57144827cf628"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/hanging_earlight_fruit.json"
+hash = "31132a65e66818216d0dda65d10d499492398a1eb2ab74553975bc4a5e6b095d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/hibiscus.json"
+hash = "e523e84c88bb19ae7729b1a82d10e290b54123d4b566ac9519c6adfc0d4bb0fe"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/hyacinth_bloom.json"
+hash = "82f34dc998cd49e3df0cfd86fd8cbe4c38ea3dfd3353f6d6a2f0fa0e7c3aa7a7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/hyacinth_flowers.json"
+hash = "722a18e121d20da4db7c7e81803b87560108f39b8cd0872de822fbce29758268"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/hyssop.json"
+hash = "4281eb46401ec43fed51c77a3774b00bf8c9eedd6e710dc0f3f5bcf5e42bf66f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/joshua_sapling.json"
+hash = "d6198ff93f45d16907c48267e777129e0f7fa908277544c0a02100e3d062a75f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/kapok_sapling.json"
+hash = "44aeee45a4583a02aa910243823c696a4c93151af4908a4dc8c6f43d2bea22b3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/larch_sapling.json"
+hash = "c7cca3599c7989c94fd87b35690fe148dcd44ba32598b0f894679cd73c8e7b36"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/lavender_wisteria_sapling.json"
+hash = "52698374b149e824257625918a9fb7fff7f1536dac21f925945b0249a33821af"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/light_blue_snowbelle.json"
+hash = "a44ede44c58a4de888b28865bc8fffb51d63e4b63b01be823927c92cd6945b84"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/light_gray_snowbelle.json"
+hash = "1060900af7d3f4513220097f60971c4396f0590eefaf8d03c0d473207916b6ba"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/lime_snowbelle.json"
+hash = "f7b2d877effb695ac9564a991c661f3d84e9aecab224d6e9aef3508f11063dd0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/magenta_snowbelle.json"
+hash = "5c592fcd79034bc13215fdde6ea023e771c48b3f0543a6ac5e80093b7d3b970f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/magnolia_sapling.json"
+hash = "29022d5986b1be92e7a7111bb20d89412e176d72c883ed1f06e485679b952c6f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/mallow.json"
+hash = "a597edd6662b113c59859f4d19c517e91b5babca8db54ba78a103d9cabde92db"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/maple_sapling.json"
+hash = "4ccf32f6a4a3c4aecb78f142e1ec86611cfadca9e05f535c3274afb34a8ee76f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/meadow_sage.json"
+hash = "366cbc9ee84924311671d06a37d0c36718ac6b7ac8375c04eec8c6a079efcb7a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/mycotoxic_daisy.json"
+hash = "2a9e1c040e5055d11c9adf17869dfd6b5702133a21cd5e7cb5f8118b6d528bdd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/mycotoxic_mushrooms.json"
+hash = "4c668d6bdb0b1fd79301bb859a10a839ee7b086cfa9e88aa640b79b8b5204661"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/orange_coneflower.json"
+hash = "c443b653f5579b50d771b231d21054631f61d9b32ee07b51bec83fb4dd9b19f8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/orange_maple_sapling.json"
+hash = "5e29bb59b35791eb3532afc6220a5cb1dd80ef71b9dcc406a8a040c4a6c5e713"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/orange_snowbelle.json"
+hash = "c1040dc9fdb595d949ee469ef62407e5180b3daa335250eaf30b0664095836de"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/palm_sapling.json"
+hash = "6c66c69b1a16f200b876bdad4940dd7978bcf81ca421f02a0cae07ce92b685b5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/pine_sapling.json"
+hash = "4a6bf90d31a2a0bed7dd864939f590a685e01737a7af0d5752bcb490e0790635"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/pink_bioshroom.json"
+hash = "325bd01eb1a5decf8c914613f8810e81d553c74945b6916dea2ee59d151a4fa9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/pink_lupine.json"
+hash = "7142a2aa49b241f382d43c78f0bee06f67c7f126c65a4b246a634c0fd4712b39"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/pink_magnolia_flowers.json"
+hash = "f24c9a693247ba0df87622ed5a3475b46220d65bf3c9d6cb9cbc7797c2bf0024"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/pink_magnolia_sapling.json"
+hash = "089f3713b0b4b23c76afb62794e9fe9c00338c68b662aadc75d92d5208e6c3b1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/pink_snowbelle.json"
+hash = "0449ed03fd0dcd188cb2efdb7b20d2e8ff7e672b0f56698cb0f7b093705a74ef"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/poppy_bush.json"
+hash = "b2e23f906c1b901bf843b6aa4b7f33b012a222df829ca8792baebe62d8fcf478"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/purple_coneflower.json"
+hash = "46858a7c18644ad0875531c501db28dc5ab1546a5cb9ef22af4626cd345fda90"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/purple_lupine.json"
+hash = "9a3eb4dc1ceb0a8816b7529381b6c56868c44867aebe426f7301388974df6314"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/purple_snowbelle.json"
+hash = "215856c09a0ad807e6b4feac5572a625cdc0dd92c626be0078d854e8b5122b78"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/red_lupine.json"
+hash = "58575e4f94afe1d598d60d433f72b271152dae66781641ac014b6b863a83833c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/red_maple_sapling.json"
+hash = "799353f3b9bb9a2c076e1ce915aed893e10950a92f44e8bd9965eacd938c6d4e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/red_snowbelle.json"
+hash = "d2df38a158ba81d17ffdc737abe210b8a768f8f9032940aac1aecb45b1a2b575"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/redstone_bud.json"
+hash = "0cea91aca027de1e0769ca3661b44810974d955900958e0183852a927a30f61b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/redstone_bulb.json"
+hash = "d0ff1abd28032b3ac01948c80c2898463d9eca815c5d429fe30b04559d261734"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/redwood_sapling.json"
+hash = "9731eebf832f6c8c690fff20fa50cabf98678e286dd76c686e2cb7b40e38a4d0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/saguaro_cactus_flower.json"
+hash = "fba29e5c5a035fec8e77226de4d25dbd14a490d4f8a392e1d226a31ce496058c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/salmon_poppy.json"
+hash = "e4177523751a453ba78ffde6b89cc5647c5288cac34a13d94005202f4c8a3944"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/salmon_poppy_bush.json"
+hash = "6b7a09a3eb1768bbb479e2e1fbaa99e63b55b01073493f4c480cbcd8c37729b8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/salmon_wisteria_sapling.json"
+hash = "f6d861647bd59fe9554907a535e4b84a2bef5e2ad2002abc3e877428e0b58cd0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/salmonberry.json"
+hash = "68bae08dfb0330483e18318335e39ec9e8c2a4789b095f9d53d9675267fa51b5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/silver_birch_sapling.json"
+hash = "70ae9aec3384ebb30ee27e1478bbd8348d4022abd83557d85b8df716f36a28c8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/sky_wisteria_sapling.json"
+hash = "391443026d3be975f36dd142b826f53b6c16e2dcc41648f48020e18e1686e772"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/small_oak_sapling.json"
+hash = "ad0d8302ccc55cc3734e9d9679ef44d0b9d5e610488beebfb0caab042ef0eb5e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/socotra_sapling.json"
+hash = "ef291f9ebdd845696be135854ca0c5c1ef9d6e2c1697f63dbc7e33debd601cd4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tall_blue_bioshroom.json"
+hash = "2fb4002fcf9bdade6959d1bb70b6af8dcef8d15b3ac12699f8a70e9d17902101"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tall_cobalt_earlight.json"
+hash = "cdf03b34c8cc1f8c28af945ad0c425cafac785c736b9aff2093285ce02bb13e9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tall_green_bioshroom.json"
+hash = "b1e3170d65a297676d708b18a195c4f9728c9d6d466e1b6a2f0c26d4d11abba7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tall_hyacinth_stock.json"
+hash = "5bab432625fc488f093acece4f010ad2c922d12d8d2994cbf003276b53750b31"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tall_pink_bioshroom.json"
+hash = "10efe96412ea511ba0ae605ce1becc9e054a5ec76f8acf28697b80b66a7f6cb3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tall_yellow_bioshroom.json"
+hash = "20ded0bce2bddc0e4fb421f029565561b12f8a198b26bccf113b9c9ea6c6f7a8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tassel.json"
+hash = "6ee9042a9298c912bad58298cfa95acf03f92bd3b6baff361e40cdea7e3b1977"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/tsubaki.json"
+hash = "3e8c42d8443c4b00ee032d9beec0f6d020a44556aa4f0525b10b2f745d18344f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/waratah.json"
+hash = "538be212427fb1e559987763a7e9c5f4bbe02a0c7ec5cfac454297e655aff8d0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/white_magnolia_flowers.json"
+hash = "f7be021339b94c9976ffdfadd5a20ca1c7d3605dc4c03984aa043ee8bf382040"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/white_magnolia_sapling.json"
+hash = "e4918ccb87826f1cfa272e08e25a5d836263ae9812a2fd97a8add5b93565a4d9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/white_snowbelle.json"
+hash = "7294ee21a42801b63bb9261314686c3023cdef41c11a2fe8511e6aca192e3227"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/white_trillium.json"
+hash = "f0d59c57c5c1ccd0a06c9f04c3b7ca3d161e8a73a8674a04545f532078982822"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/willow_sapling.json"
+hash = "df1d40dcc286c0befb4dbe8b350875cdbce62369a08cda6b8c35fbbacc3fbf4d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/wilting_trillium.json"
+hash = "4d1e6c96354af58fdad96af2eff5a9145d58ce7e7a20090be1683075304d3aff"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/yellow_bioshroom.json"
+hash = "df4b3583cf1aab7060bbf159a121699d3c1d8236c3deeee4c17f9d9e52ef969e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/yellow_lupine.json"
+hash = "e724cb04aa165314abb6eab17b7944ed1a8d067c3a78304a3590675d73000288"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/yellow_snowbelle.json"
+hash = "5e367c450f096a87f4257fcd9f8a9b1dd9c4bf40d19a6c561e332c80809b0d69"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/chamomile_seeds.json"
+hash = "ee0cbe0360408abef7dd8e520f4a3d63a0a23995938055fc6066b5f060e8e0a4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/matcha_seeds.json"
+hash = "c96911ecb03ad9067b23bd121001b272c618690c5c76971bb4d084ade93ab7ad"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/mint_seeds.json"
+hash = "0809cc378415bde8ba0bb6cb177d36d2593cad973c2b0a3b7ce9ab3b239ff290"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/tea_seeds.json"
+hash = "aa08b7be1f0644c151773d94d518468125e8bcd7e866d5e7b6fdfbae35b6f670"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/unroasted_coffee_bean.json"
+hash = "8440f19b485a7b8474b358a9cc5428e4765c0b0bb806c624669ad88f31a693f2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/wild_chamomile.json"
+hash = "bde16066f997e97af31cf7827a59e4b7c61e0d201c5d17156b523ac83a6dbab3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/wild_matcha.json"
+hash = "1d11b17826c968f87108a0b676b4af4bb6b298c4c1af61840c60a68b576b3672"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/roasters_delight/wild_mint.json"
+hash = "68491195411842d00536c07e4bf7c779b0b183fee9d3a52a8debf5cd39e32e4a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/coffee.json"
+hash = "fe3873dfeefa42e174e51e9e686362886e6fa19a296d93999826d7c004de7688"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/dark_bell_pepper_seeds.json"
+hash = "39db0936c74321c92b8b4dee066708459f7e40e26e30938a0ef1ddb21b0306ad"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/pale_bell_pepper_seeds.json"
+hash = "ed6aa88ff7f3ab9daae28d518973a1bb579fe4786592edcd2e579f4526cd3cd6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/wild_bell_peppers.json"
+hash = "5b3e7bc19a275ed91d0caabe07de71ee8e8d6d7a87aa095ccfb093d419a4d361"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/wild_coffee.json"
+hash = "a7b351f14feb350664668d7ff7203f2876f9c04acf568a7e36015e2f05be7abf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/wild_cotton.json"
+hash = "cf0da902453ecbe65b88866227d0af3402917eb9b225f2db6fd4f1493b8a0ced"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/wild_dark_bell_peppers.json"
+hash = "88b99f798ffde7ecbb195e6d4f23146d99372cb42141df67c9facd57535b8f45"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/rusticdelight/wild_pale_bell_peppers.json"
+hash = "7220c91a790dd6570a7ff4fda5f4c524eff66055014c43533045bb2e620ab0b5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/supplementaries/wild_flax.json"
+hash = "85be111d0e63e78537997af03e2368957f3a1d53408d7a2ac49d4500b7f0e849"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/tombstone/thornveil.json"
+hash = "5fe27424e08ca671af949dc46f08e7e5211a980d5228d780ecf6eeb38c38ea11"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightdelight/fiddlehead_clump.json"
+hash = "463d7a5ee4e3b5d525aa8c47f7bba7e822068a6b5cd347e908da4f33aa95a3bc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightdelight/ironwood_sapling.json"
+hash = "e63c36d0064e4b7cfae07f20061966ab729e061c6face70d0ec029e0423b0f7f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightdelight/mushgloom_colony.json"
+hash = "e6d293798f106dda029aa7a398c651aaaf50bdb60bd1bfa75fc4515df5d55697"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/canopy_sapling.json"
+hash = "14275f4d04764fee12b318d72d148d5843dc5243bb3365bedc59f148356e8ccc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/copper_oreberry.json"
+hash = "0fe66096bf4672df4e35b57d3ab25f521c6ba48bca7c0d827cea1557a3c1fc9f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/darkwood_sapling.json"
+hash = "2cc6c8ce65cb4cb163626256628d35068173c26cdc6b38d81dccf5ea72056b91"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/essence_oreberry.json"
+hash = "3e1d190762b5d648db020eb7fd67b3ad5b84006fac900932cbf8438b0128472e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/fiddlehead.json"
+hash = "39eae6680c92a1e699336df2454adff68753a46599c029a433d6582c0b1c7e48"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/gold_oreberry.json"
+hash = "34c628c5490e39446823c6d82a0f1b077774baca5a2fda132128f7e0c649e325"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/iron_oreberry.json"
+hash = "66d9f0c9a2b6b61e062c91b0333b6bb9a63f5b03a9cf90b1e508ebba2a188eb5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/mangrove_sapling.json"
+hash = "9b3711aea91cc229559ae7bbd6fe2b46a91af729e75aed5534482b216ac37c2a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/mayapple.json"
+hash = "12e1e5c28d149948d6ef5177170ff2282cdfe2bd541a47581915a952fd64b2f8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/mushgloom.json"
+hash = "56dfd576f6cffb1ed0e66a24e217dc751f2f646ee032f14f71c01d09d95f3803"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/root_strand.json"
+hash = "69f4487b243c01b24f607ee82a8848927de98e6c77635c19dc571c4c10685ae1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/thorn_rose.json"
+hash = "ae7849b168a75dca354d17992032034384d02d50b01576b8e7ba756c68ccdf16"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/twilightforest/twilight_oak_sapling.json"
+hash = "da8c3bd9173aa39c6100dd2defa7b6a19cce98a85fe3ac81ecdf7261cde237e4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/amorous_bristle.json"
+hash = "dd236c0895bb09725d089c7a542e13a74a70cbe5d47eddfcbd4c825cd148269c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/blisterberry.json"
+hash = "c41eb28e08e741a2ebe88dd5926a952e5a2fe117d4e17942b6f4454d313d5d86"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/blood_mushroom.json"
+hash = "d37bb69379874b40fa2f4becc8fe5cd97c4bef5b9684c6e9efb19165d60c9962"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/butterbunch.json"
+hash = "a9d1c0124bdb66fbf2618fcbac2eeb301e048c43906b0fad67b7db319cfc5cb0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/ditchbulb.json"
+hash = "6da40ebbaef00e7adcdca8b1dd69da9b04447290e294eddb337b1cab2f0585bf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/droopvine_item.json"
+hash = "8f635971154178cae8f3af0f0939358d82c58fe52583ab092daf864ec4693e0a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/glitterkelp.json"
+hash = "453ee0d9c320f06cf2f3bdbbce8f1e5471a35133610eda4f3a35b41c036edb0b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/gloomgourd_seeds.json"
+hash = "35684daea00262a3efe5f3f050ed033b1a7db77aca10c9aa5111205d49a51f2c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/grongle_sapling.json"
+hash = "0c5195a22dd68f15a8601fb305c3242d2fdb477c4e46a0bac510ebabce3992c7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/indigo_mushroom.json"
+hash = "fa821aaed4ab91b6ef982c476cfc4b8abc8447a363cdeaaf99f40930dec9afea"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/ink_mushroom.json"
+hash = "5cb66067c81d20541d5d187fef370034be6cb575b6ef2a16084b36347ad04709"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/miserabell.json"
+hash = "6c3a81f7eb2618fec7fac83aa8670764f5aa033207253dd87cbba3833562ecb4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/mushroom_veil.json"
+hash = "96c6ea7a2344018a8670915da5098cf7b57c41467bb47561e18aaacb9a0f4d1a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/puff_mushroom.json"
+hash = "a7bf46982b569e4238eea8bcaa615e1ed1529d3d938a8522bc7c10ab2fbe5b83"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/shimmerweed.json"
+hash = "61cfd69b5feec8fd1a65d2f3fbd079018c666df6e1c4e6ccfb04119ef6bfa169"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/smogstem_sapling.json"
+hash = "89c4cd8eed63beb6f9650b90ba909f2cba8c7cd90062e422e58f8d48939abbd5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/tall_shimmerweed.json"
+hash = "7d5c8edbb7c52162f3eaaaa7fe80b13ce2d410b66da5bafc6f9938241539c3be"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/underbeans.json"
+hash = "92000057293a6cffdb3da86895717c68a446281bb889e770729f217b1f713d58"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/veil_mushroom.json"
+hash = "31e01806013cf3eb3770069b28ba56af213d0eb4c24bd09bae052eb036d09c67"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergarden/wigglewood_sapling.json"
+hash = "946ce6d2451cb3312aeeeb4fe7218c70b65d0830548c3da04f21558490c0d7d3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/blood_mushroom_colony.json"
+hash = "aa8c1f2ee69d54cfad1cc0140d5846a6781e5e0b3795fbf058721f954aecfc1d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/indigo_mushroom_colony.json"
+hash = "dadee4a3c514ab0bf27fbcb43ba5cc541e259da162e2fe276fcdc09936b28c74"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/ink_mushroom_colony.json"
+hash = "4696424659106efbfa2cb7540072e7d82031365e63a5cb8344a1aa6b1da27908"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/puff_mushroom_colony.json"
+hash = "74017756513a0eae21f690dd4b45c22acc94dfb4c6f17c5a25abb357bef03357"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/undergardendelight/veil_mushroom_colony.json"
+hash = "086895f43a06ba453dfadeffc2a9268d15d0d9d1bbbd83d145e6ce26813e222b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/chorus_cane.json"
+hash = "e818ccb4c4a590271660b6cfb3d01756b58d78bfe3c8a7a4347903fb34db50c4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/chorus_fungus.json"
+hash = "ba5cfecc8d81c2351ddc84606a235d547cf04db560ed18f8e50a10d283f5c9d5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/crystal_flower.json"
+hash = "cdee79cf871bff37dbe2a681cdcbcd8f67a5c62417ea9972516ece54e436082d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/flowering_purpur_grass.json"
+hash = "cb2087a6e1c691f37c80d2453feb3c0f8cf9dd1849b5b2023aeffa764152ff4d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/gloopilon_seeds.json"
+hash = "7c2d4bcb135008d15408e39c65ac6c5eab186f921b9e8e27a3839387404886c5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/shiny_spirea.json"
+hash = "2aafa6b800b63e7954db339b28e65298dca79160a33f63e671a111e06ba8e852"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/unusualend/small_warped_squash.json"
+hash = "134174ab2ca71aea5b2ff05fa2b0491ee723665d0fbd804c232dc470b05ac744"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/bellpepper_seeds.json"
+hash = "9f930e7b74c1be7973c88fda11e194d7be7de71420de5798ecb5969f14fa14f2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/broccoli_seeds.json"
+hash = "313f48e72f9ef3bd20239e4af34bda5422392198a9d302ce295c27f92d04e78f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/cauliflower_seeds.json"
+hash = "13183709cdce0f5076b0a13ad2d1e291c0f1a30e7b8f8977818d437ead2bf592"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/garlic_clove.json"
+hash = "1a09ab1fe5c05d5c9fe462377452e00cab861b411252cd83b010ec03ad4b1825"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/mature_dandelion.json"
+hash = "aa58fdd750ea2e7b345425522c150e861296cd6ee9ae5c241d3aed2371d93659"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/sweet_potato.json"
+hash = "35caa2953e4c8ecfee553e395c33e752b0efbd9baf60f3d8dc702e2593fcb58c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/turnip_seeds.json"
+hash = "61ba98538683b38b040dd6f2607ab3986dbdcf134f9673757aea8ec84deb1afb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/wild_bellpeppers.json"
+hash = "7cf5c5c4901e6e37f5509a6db4a61ccb0a40e4a9049cd9f86737b15813c6271f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/wild_broccoli.json"
+hash = "2cf33ee27c32b129f1bef4bc2ab690ccedb645a685a4c42b3cf4318b71902333"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/wild_cauliflowers.json"
+hash = "32c679aed8ca52d954449b0ba14054e5da4aa7799bf1d2f6d7c0d36550ef1e76"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/wild_garlic.json"
+hash = "007edecead4cc6bd6e55664d3d6af20be94fc5332cedae3f5340c606d8381598"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/wild_sweet_potatoes.json"
+hash = "3492dbe858bd3e1488f0dbede845765a39e714bb6dff049805cfc748577d013e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/wild_turnips.json"
+hash = "6f20b64a049e7363f0db61fcc5b11a1f845e7f20bedbbbc7306598cd3fcf0ca4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/wild_zucchinis.json"
+hash = "347444c321775c30e14364de8e29efc803d68edce08b089839d4571be05ea717"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/veggiesdelight/zucchini_seeds.json"
+hash = "0dc1fc4a047fef1b81225a29837e640b185490899a851f856a8075d993a06c20"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/apple_tree_sapling.json"
+hash = "34c9ed0538b1f64ea66e426b289f7c7ab2a7e12de892fa8f2ecc99457332fdcd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/dark_cherry_sapling.json"
+hash = "c80a1817a6cdc6247b01ad9814df4d4a8adc6cb278b8f0cff3d2b20b72501106"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/jungle_grape_seeds_red.json"
+hash = "20b13428544ec0f1d1413ac201ccc6a0b1dbc5bdf257defb8b0feb2a22bcf641"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/jungle_grape_seeds_white.json"
+hash = "d71a38e84adf5ac4f2041f265cb163d0913d8a9894227cbb4f62a5dea0774459"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/red_grape_seeds.json"
+hash = "237293acd9acd2b7236d188eea4b0cfc0c60d927ce43b3a9d66eca327fbdf87a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/savanna_grape_seeds_red.json"
+hash = "9b071624d2835c2353671d980b6c78199c16f6661a78084f3b37c2152c12d65e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/savanna_grape_seeds_white.json"
+hash = "d85195238267d39b6c5d0af3fb2793486a19ef21c7dc242e32526adf02782467"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/taiga_grape_seeds_red.json"
+hash = "a6cb9931a472625d8686283b1e0f78ad36cbc64d986c860d17b3d12d6a71a7bf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/taiga_grape_seeds_white.json"
+hash = "e29a2994308d4f759d4ab25df77d6dd62c6509193c99bfb74543dfd84251378a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/vinery/white_grape_seeds.json"
+hash = "4b0ce217e394ed395ff80f1850e6a191b35e5fb0f697bbf220f81417af0e4b48"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/market_presets/saplings.json"
+hash = "70ae1b1cf142d7420072db89ced962bd8f62868a83a80c50eb074ecde8aa7749"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/minecraft/market_presets/seeds.json"
+hash = "70ae1b1cf142d7420072db89ced962bd8f62868a83a80c50eb074ecde8aa7749"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/neoforge/loot_modifiers/global_loot_modifiers.json"
 hash = "d9688413aacb19f3ae56257fffe3dec7eaa4ddf435b849e44bb08facd38728fc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/neoforge/loot_modifiers/readme.md"
 hash = "ba89dee89777fe240c0692b29a378f11973d2d1998a8eb88d88c524809f6e7e1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/rusticdelight/market_presets/saplings.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/rusticdelight/market_presets/seeds.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/supplementaries/market_presets/seeds.json"
+hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/pack.mcmeta"

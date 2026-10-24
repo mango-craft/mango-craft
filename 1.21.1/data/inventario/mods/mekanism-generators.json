@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Mekanism Generators",
  "file": "MekanismGenerators-1.21.1-10.7.19.85.jar",
@@ -422,5 +422,7 @@
   "minecraft:crafting_shaped": 27
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Prickle",
  "file": "prickle-neoforge-1.21.1-21.1.11.jar",
@@ -36,5 +36,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Resourceful Lib",
  "file": "resourcefullib-neoforge-1.21-3.0.12.jar",
@@ -39,5 +39,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "hexerei:willow_sapling"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:saplings",
+  "preset": "matteo_tweaks:overworld_ultra-rare",
+  "result": {
+    "item": "hexerei:willow_sapling"
+  }
+}

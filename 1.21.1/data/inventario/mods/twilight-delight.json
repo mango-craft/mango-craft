@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Twilight's Flavor & Delight",
  "file": "twilightdelight-3.2.6.jar",
@@ -1120,5 +1120,7 @@
   "twilightdelight:scepter_duplicate": 4
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

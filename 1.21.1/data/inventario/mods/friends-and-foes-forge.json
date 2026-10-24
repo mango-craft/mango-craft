@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Friends & Foes",
  "file": "friendsandfoes-neoforge-5.0.2+mc1.21.1.jar",
@@ -900,5 +900,7 @@
   "minecraft:crafting_shapeless": 9
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

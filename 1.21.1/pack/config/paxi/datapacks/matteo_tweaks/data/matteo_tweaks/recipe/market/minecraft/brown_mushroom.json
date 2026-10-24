@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:overworld_common",
+  "result": {
+    "item": "minecraft:brown_mushroom"
+  }
+}

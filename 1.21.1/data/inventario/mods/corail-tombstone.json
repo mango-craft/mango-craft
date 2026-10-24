@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Corail Tombstone",
  "file": "tombstone-neoforge-1.21.1-9.5.6.jar",
@@ -1142,5 +1142,7 @@
   "tombstone:receptacle_capturable_type": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

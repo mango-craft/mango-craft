@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "meadow:delphinium"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:overworld_rare",
+  "result": {
+    "item": "meadow:delphinium"
+  }
+}

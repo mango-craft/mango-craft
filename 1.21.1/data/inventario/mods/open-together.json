@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Open Together",
  "file": "OpenTogether-v21.1.2-mc1.21.1-NeoForge.jar",
@@ -62,5 +62,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

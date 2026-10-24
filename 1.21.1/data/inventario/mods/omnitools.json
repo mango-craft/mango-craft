@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "OmniTools (Omni Wrench)",
  "file": "omnitools-1.21.1-1.2.1.jar",
@@ -97,5 +97,7 @@
   "minecraft:crafting_shaped": 2
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "meadow:yellow_pine_sapling"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:saplings",
+  "preset": "matteo_tweaks:overworld_rare",
+  "result": {
+    "item": "meadow:yellow_pine_sapling"
+  }
+}

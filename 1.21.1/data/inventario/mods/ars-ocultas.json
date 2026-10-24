@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Ars Ocultas",
  "file": "ars_ocultas-1.21.1-2.6.1.jar",
@@ -81,5 +81,7 @@
   "ars_nouveau:imbuement": 2
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

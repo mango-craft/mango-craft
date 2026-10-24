@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Mutant Monsters",
  "file": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
@@ -296,5 +296,7 @@
   "minecraft:crafting_shaped": 6
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

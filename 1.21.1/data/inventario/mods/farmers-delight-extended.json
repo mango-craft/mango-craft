@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Farmer's Delight: Extended",
  "file": "farmersdelight_extended-1.21.1-0.2.2.jar",
@@ -196,5 +196,7 @@
   "minecraft:smoking": 7
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

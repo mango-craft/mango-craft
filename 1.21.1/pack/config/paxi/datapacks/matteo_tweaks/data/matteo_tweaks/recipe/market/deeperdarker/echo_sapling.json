@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "deeperdarker:echo_sapling"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:saplings",
+  "preset": "matteo_tweaks:otherside_rare",
+  "result": {
+    "item": "deeperdarker:echo_sapling"
+  }
+}

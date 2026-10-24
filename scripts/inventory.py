@@ -8,7 +8,7 @@ Per ogni metafile (*.pw.toml) che punta a un .jar:
 - salva `<inventario>/mods/<nome metafile>.json` con: mod id, versione e dipendenze
   (da neoforge.mods.toml), oggetti e blocchi con il nome inglese, entità, liquidi,
   effetti, biomi, tutti i dati (ricette, tabelle del bottino, strutture, tag con il
-  contenuto…), i tipi di ricetta usati e le ricette di Botany Pots;
+  contenuto…), i tipi di ricetta usati, le ricette di Botany Pots, le voci e i listini (preset) del mercato di Farming for Blockheads;
 - guarda anche dentro i .jar incorporati (META-INF/jarjar).
 I file già inventariati con lo stesso hash non vengono riscaricati; quelli di mod
 tolte dal pack vengono cancellati.
@@ -36,7 +36,7 @@ USER_AGENT = "mango-craft-inventory (github.com/mango-craft/mango-craft)"
 MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/{mc}-summary/"
 NEOFORGE_JAR = ("https://maven.neoforged.net/releases/net/neoforged/neoforge/"
                 "{v}/neoforge-{v}-universal.jar")
-FORMAT = 2  # cambiare se cambia il formato dei file: forza un nuovo inventario
+FORMAT = 3  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB)
 
 # Chiavi dei file di lingua -> campo dell'inventario
 LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
@@ -112,6 +112,8 @@ class Inv:
         self.tags: dict[str, dict[str, list]] = defaultdict(dict)
         self.recipe_types: Counter = Counter()
         self.botanypots: list[dict] = []
+        self.market: list[dict] = []          # voci del mercato di Farming for Blockheads (ricette farmingforblockheads:market)
+        self.market_presets: list[dict] = []  # listini del mercato (data/<ns>/market_presets/*.json)
         self.nested: list[str] = []
         self.problems: list[str] = []
 
@@ -126,6 +128,8 @@ class Inv:
             "tags": {k: dict(sorted(v.items())) for k, v in sorted(self.tags.items())},
             "recipe_types": dict(sorted(self.recipe_types.items())),
             "botanypots": sorted(self.botanypots, key=lambda r: r["id"]),
+            "market": sorted(self.market, key=lambda r: r["id"]),
+            "market_presets": sorted(self.market_presets, key=lambda r: r["id"]),
             "problems": self.problems,
         }
 
@@ -217,7 +221,7 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                 inv.counts[cat] += 1
                 continue
             inv.data[cat].add(rid)
-            if not n.endswith(".json") or not (cat.startswith("tags/") or cat == "recipe"):
+            if not n.endswith(".json") or not (cat.startswith("tags/") or cat in ("recipe", "market_presets")):
                 continue
             try:
                 d = json.loads(z.read(n).decode("utf-8-sig"))
@@ -227,6 +231,12 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
             if cat.startswith("tags/"):
                 prev = inv.tags[cat].get(rid, [])
                 inv.tags[cat][rid] = prev + [v for v in tag_values(d) if v not in prev]
+            elif cat == "market_presets" and isinstance(d, dict):
+                pay = d.get("payment") or {}
+                ing = pay.get("ingredient") or {}
+                inv.market_presets.append({"id": rid, "enabled": bool(d.get("enabled", True)),
+                                           "payment_item": ing.get("item"), "payment_tag": ing.get("tag"),
+                                           "payment_count": int(pay.get("count", 1))})
             elif isinstance(d, dict):
                 rtype = str(d.get("type"))
                 inv.recipe_types[rtype] += 1
@@ -234,6 +244,13 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                     rec = {k: v for k, v in d.items() if k != "display"}
                     rec["id"] = rid
                     inv.botanypots.append(rec)
+                elif rtype == "farmingforblockheads:market":
+                    res = d.get("result") or {}
+                    conds = [c.get("item") for c in d.get("neoforge:conditions") or []
+                             if isinstance(c, dict) and c.get("type") == "neoforge:item_exists"]
+                    inv.market.append({"id": rid, "item": res.get("item") or res.get("id"),
+                                       "count": int(res.get("count", 1)), "category": d.get("category"),
+                                       "preset": d.get("preset"), "item_exists": conds})
     for rid in item_models:
         inv.names["items"].setdefault(rid, "")
     for rid in blockstates:

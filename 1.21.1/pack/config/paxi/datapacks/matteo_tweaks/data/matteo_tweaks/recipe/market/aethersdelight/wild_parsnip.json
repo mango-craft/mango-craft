@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "aethersdelight:wild_parsnip"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:aether_rare",
+  "result": {
+    "item": "aethersdelight:wild_parsnip"
+  }
+}

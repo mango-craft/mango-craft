@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Compass to Map: Xaero's",
  "file": "compasstomapxaeros-0.1.2-neoforge-1.21.1.jar",
@@ -50,5 +50,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

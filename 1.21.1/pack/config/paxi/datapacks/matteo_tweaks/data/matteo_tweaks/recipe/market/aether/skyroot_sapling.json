@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "aether:skyroot_sapling"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:saplings",
+  "preset": "matteo_tweaks:aether_rare",
+  "result": {
+    "item": "aether:skyroot_sapling"
+  }
+}

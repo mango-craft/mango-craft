@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "unusualend:chorus_fungus"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:end_rare",
+  "result": {
+    "item": "unusualend:chorus_fungus"
+  }
+}

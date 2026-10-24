@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "rusticdelight:wild_cotton"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:overworld_uncommon",
+  "result": {
+    "item": "rusticdelight:wild_cotton"
+  }
+}

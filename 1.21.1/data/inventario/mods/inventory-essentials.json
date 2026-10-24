@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Inventory Essentials",
  "file": "inventoryessentials-neoforge-1.21.1-21.1.20.jar",
@@ -44,5 +44,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

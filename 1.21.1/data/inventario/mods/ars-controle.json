@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Ars Controle",
  "file": "ars_controle-1.21.1-1.6.16.jar",
@@ -149,5 +149,7 @@
   "minecraft:crafting_shaped": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

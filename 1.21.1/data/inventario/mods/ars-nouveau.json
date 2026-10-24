@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Ars Nouveau",
  "file": "ars_nouveau-1.21.1-5.13.3.jar",
@@ -3374,5 +3374,7 @@
   "minecraft:stonecutting": 65
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

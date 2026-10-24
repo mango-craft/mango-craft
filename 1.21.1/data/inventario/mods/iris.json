@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Iris Shaders",
  "file": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
@@ -137,5 +137,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

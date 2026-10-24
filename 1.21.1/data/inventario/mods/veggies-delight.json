@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Veggies Delight",
  "file": "VeggiesDelight-1.21.1-1.9.3.jar",
@@ -1330,5 +1330,7 @@
    "id": "veggiesdelight:integration/botany/zucchini"
   }
  ],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

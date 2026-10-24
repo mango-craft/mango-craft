@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "ars_nouveau:mendosteen_pod"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:overworld_secret-rare",
+  "result": {
+    "item": "ars_nouveau:mendosteen_pod"
+  }
+}

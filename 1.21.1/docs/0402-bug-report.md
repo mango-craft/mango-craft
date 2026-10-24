@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.6.1, rilasciata)._
+_Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.6.2, rilasciata)._
 
 ---
 
@@ -56,8 +56,9 @@ _Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.6.1, rilasciata)._
 | B30 | 0.5.0 | Every Compat + Create | Aprendo un secondo mondo nella stessa sessione di gioco, Every Compat non riesce a creare le ricette delle finestre di Create per i legni delle altre mod (circa 50 errori, 29 ricette in meno) | basso: basta riavviare il gioco |
 | B31 | 0.5.0 | Jaden's Nether Expansion | Le stalattiti di netherrack (`netherexp:netherrack_speleothem`) piazzano blocchi fuori dal chunk che si sta generando (11 avvisi "setBlock in a far chunk") | basso: qualche stalattite tagliata ai bordi dei chunk |
 | B34 | 0.6.0 | When Dungeons Arise (fonderia sotterranea, `underworld/foundry`) | Il pezzo `foundry_corridor_gears` è citato da due blocchi di collegamento ma il pool `dungeons_arise:underworld/foundry/foundry_corridor_gears` non esiste nel .jar (esistono `foundry_corridor_deco`, `foundry_corridors`, `foundry_corridor_terminators` e altri): 2 avvisi di Lithostitched alla generazione | basso: nel corridoio può mancare un pezzo decorativo |
-| B38 | 0.6.1 (log del 24/10 mattina) | Every Compat + Macaw's Windows | Una finestra generata, `everycomp:mcw/regions_unexplored/redwood_plank_four_window`, non riesce a leggere il modello `mcwwindows:models/block/window_barred/oak_plank_four_window.json` («null»): Every Compat riporta 1 errore nella generazione delle risorse. Non c'era nel log del 24/10 notte | basso: una finestra con il modello sbagliato o mancante |
-| B39 | 0.6.1 (log del 24/10 mattina) | Reactive | Errore `Timeout loading contents for the reaction formula for block_fall_effect` un minuto dopo l'ingresso nel mondo (mentre EMI indicizzava). Non c'era nei log precedenti: forse dovuto al carico di quel momento | basso: forse l'effetto della caduta dei blocchi non parte in quella sessione |
+| B38 | 0.6.1 (log del 24/10 mattina) | Every Compat + Macaw's Windows | Una finestra generata, `everycomp:mcw/regions_unexplored/redwood_plank_four_window`, non riesce a leggere il modello `mcwwindows:models/block/window_barred/oak_plank_four_window.json` («null»): Every Compat riporta 1 errore nella generazione delle risorse. Non c'era nel log del 24/10 notte | basso: una finestra con il modello sbagliato o mancante Comparso una volta su cinque avvii del 24/10: intermittente |
+| B39 | 0.6.1 (log del 24/10 mattina) | Reactive | Errore `Timeout loading contents for the reaction formula for block_fall_effect` un minuto dopo l'ingresso nel mondo (mentre EMI indicizzava). Non c'era nei log precedenti: forse dovuto al carico di quel momento | basso: forse l'effetto della caduta dei blocchi non parte in quella sessione Ricomparso nei due avvii successivi (24/10, 10:10 e 12:34): non è un caso isolato |
+| B41 | 0.6.2 (log del 24/10, 12:34) | Sodium + EMI | Avviso `Class dev.emi.emi.screen.StackBatcher$UnlitFacade$Consumer does not support optimized vertex writing code paths`: Sodium segnala che il disegno degli oggetti nelle schermate di EMI non usa la sua via veloce. Mai visto nei 14 log precedenti: compare aprendo una schermata di EMI | basso: forse un po' di lentezza nelle schermate di EMI |
 
 ## ✅ Risolti o aggirati
 

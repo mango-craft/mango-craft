@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "[Let's Do] Vinery",
  "file": "letsdo-vinery-neoforge-1.5.5.jar",
@@ -1337,5 +1337,7 @@
   "vinery:wine_fermentation": 26
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

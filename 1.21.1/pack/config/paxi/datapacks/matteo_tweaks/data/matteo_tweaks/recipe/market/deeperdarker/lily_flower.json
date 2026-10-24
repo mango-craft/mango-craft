@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "deeperdarker:lily_flower"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:otherside_rare",
+  "result": {
+    "item": "deeperdarker:lily_flower"
+  }
+}

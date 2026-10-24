@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "hexalia:withered_celestial_bloom"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:overworld_ultra-rare",
+  "result": {
+    "item": "hexalia:withered_celestial_bloom"
+  }
+}

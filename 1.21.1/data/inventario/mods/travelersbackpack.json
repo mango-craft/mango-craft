@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Traveler's Backpack",
  "file": "travelersbackpack-neoforge-1.21.1-10.1.39.jar",
@@ -786,5 +786,7 @@
   "travelersbackpack:backpack_upgrade": 44
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

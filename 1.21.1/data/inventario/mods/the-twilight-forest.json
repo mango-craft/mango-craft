@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "The Twilight Forest",
  "file": "twilightforest-1.21.1-4.8.3345-universal.jar",
@@ -7468,5 +7468,7 @@
   "twilightforest:uncrafting": 3
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

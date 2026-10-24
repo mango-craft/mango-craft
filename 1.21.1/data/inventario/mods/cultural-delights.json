@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Cultural Delights",
  "file": "culturaldelights-1.21.1-0.19.1.jar",
@@ -1255,5 +1255,7 @@
   "modestmagic:infusing": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

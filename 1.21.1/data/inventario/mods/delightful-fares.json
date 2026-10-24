@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Delightful Fares",
  "file": "delightful_fares-1.1.2-neoforge-1.21.1.jar",
@@ -200,5 +200,7 @@
   "minecraft:smithing_transform": 9
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

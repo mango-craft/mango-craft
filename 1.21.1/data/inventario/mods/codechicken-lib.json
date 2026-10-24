@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "CodeChicken Lib",
  "file": "CodeChickenLib-1.21.1-4.6.1.529.jar",
@@ -220,5 +220,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

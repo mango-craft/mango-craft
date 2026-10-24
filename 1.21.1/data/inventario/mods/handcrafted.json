@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Handcrafted",
  "file": "handcrafted-neoforge-1.21.1-4.0.3.jar",
@@ -2678,5 +2678,7 @@
   "minecraft:crafting_shapeless": 78
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "XP Tome",
  "file": "xptome-1.21.1-2.4.jar",
@@ -60,5 +60,7 @@
   "minecraft:crafting_shaped": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

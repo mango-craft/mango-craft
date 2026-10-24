@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Botany Pots Additions",
  "file": "botanypotsadditions-1.1.0.jar",
@@ -9986,5 +9986,7 @@
   "minecraft:crafting_shapeless": 976
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }
