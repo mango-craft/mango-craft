@@ -85,6 +85,13 @@ class Index:
             self.data[cat].update(ids)
         for cat, tags in d.get("tags", {}).items():
             self.tags[cat].update(tags)
+        # I nomi dei liquidi: l'inventario li ricava dalle traduzioni, che non sempre usano il nome del registro
+        # (Cognition traduce `cognitium` ma il liquido è `cognition:cognitium_source`). Valgono anche i liquidi
+        # che una mod elenca come obbligatori nelle etichette di liquidi (24/10/2026).
+        # Limite: un nome preso dalle traduzioni può essere il tipo di liquido e non il liquido (`cognition:cognitium`):
+        # il controllo lo accetta lo stesso. Il nome giusto si prende dalle etichette della mod; la prova finale è il log.
+        for vals in (d.get("tags", {}).get("tags/fluid") or {}).values():
+            self.names["fluids"].update(v for v in vals if isinstance(v, str) and not v.startswith("#") and not v.endswith("?"))
 
     def has(self, kind: str, rid: str) -> bool:
         if kind in FIELDS:
@@ -180,7 +187,8 @@ def collect_refs(node, refs: list, key: str | None = None, parent: dict | None =
                     else:
                         refs.append(("loot_table", s))
             elif k == "id" and isinstance(v, str) and ":" in v and ("count" in node or key in ("result", "results", "output")):
-                refs.append(("item", v))
+                # un risultato con `amount` e senza `count` è un liquido (ricette di Create con liquidi)
+                refs.append(("fluid" if "amount" in node and "count" not in node else "item", v))
             else:
                 collect_refs(v, refs, k, node)
     elif isinstance(node, list):
