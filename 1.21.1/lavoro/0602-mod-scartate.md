@@ -162,3 +162,15 @@ Le mod valutate e lasciate fuori, con il motivo. Documento vivo: una mod scartat
 | Esperienza | Global XP | Niente liquidi, quindi niente tubi |
 | | Mob Grinding Utils | Restituisce l'esperienza solo in sfere (Mending se la mangia) |
 | | Just Dire Things, XP Obelisk, Liquid Experience, Better Exp Storage, Bottle Your Xp | Troppo grandi, acerbe o rischiose per i liquidi |
+
+## Fornaci (24/10/2026)
+
+Ricerca del 24/10, tema `../theme-knowledge/fornaci.md`.
+
+| Mod | Motivo |
+|---|---|
+| Better Furnaces Reforged | Beta ferma ad aprile 2025, libreria in più; i potenziamenti raddoppiano e quadruplicano i minerali (scavalcano Create, Mekanism e Occultism) |
+| Compressed Furnace | Sorgente non pubblico; il frantumatore raddoppia i minerali; tecnologica |
+| Iron Furnace: Reburn | Per ora: fork molto giovane (2.000 download) con librerie proprie; da rivedere se cresce |
+| FurnaceMk2 | Beta, libreria in più, sorgente non pubblico |
+| Brick Furnace | Fornaci di mattoni uguali alle vanilla: non è una progressione |
