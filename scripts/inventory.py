@@ -36,7 +36,7 @@ USER_AGENT = "mango-craft-inventory (github.com/mango-craft/mango-craft)"
 MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/{mc}-summary/"
 NEOFORGE_JAR = ("https://maven.neoforged.net/releases/net/neoforged/neoforge/"
                 "{v}/neoforge-{v}-universal.jar")
-FORMAT = 3  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB)
+FORMAT = 4  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti)
 
 # Chiavi dei file di lingua -> campo dell'inventario
 LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
@@ -44,7 +44,12 @@ LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
               "biome": "biomes"}
 # Registri di Minecraft che finiscono nei campi principali invece che in "data"
 VANILLA_FIELDS = {"item": "items", "block": "blocks", "entity_type": "entities",
-                  "fluid": "fluids", "mob_effect": "effects", "worldgen/biome": "biomes"}
+                  "fluid": "fluids", "mob_effect": "effects", "worldgen/biome": "biomes",
+                  "potion": "potions"}
+# Pozioni delle mod: la chiave di traduzione `item.minecraft.potion.effect.<nome>` non dice il namespace; si usa quello
+# del file di lingua che la contiene (assets/<ns>/lang/en_us.json). Le descrizioni degli effetti
+# (`effect.<ns>.<nome>.desc[ription]`) servono a classificarli (0.7.2, amuleti di Apotheosis).
+POTION_KEY = ("item", "minecraft", "potion", "effect")
 # Categorie di dati di cui si tiene solo il numero (sono tante e non servono per nome)
 COUNT_ONLY = {"advancement"}
 # Registri di Minecraft che non servono ai controlli (risorse grafiche e sonore)
@@ -203,8 +208,14 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                     continue
                 for key, val in lang.items():
                     kp = key.split(".")
-                    if len(kp) == 3 and kp[0] in LANG_KINDS and isinstance(val, str):
+                    if not isinstance(val, str):
+                        continue
+                    if len(kp) == 3 and kp[0] in LANG_KINDS:
                         inv.names[LANG_KINDS[kp[0]]][f"{kp[1]}:{kp[2]}"] = val
+                    elif len(kp) == 5 and tuple(kp[:4]) == POTION_KEY and ns != "minecraft":
+                        inv.names["potions"][f"{ns}:{kp[4]}"] = val
+                    elif len(kp) == 4 and kp[0] == "effect" and kp[3] in ("desc", "description"):
+                        inv.names["effect_descriptions"][f"{kp[1]}:{kp[2]}"] = val[:300]
             elif len(parts) == 4 and parts[2] == "blockstates" and n.endswith(".json"):
                 blockstates.add(f"{ns}:{parts[3][:-5]}")
             elif len(parts) == 5 and parts[2] == "models" and parts[3] == "item" and n.endswith(".json"):

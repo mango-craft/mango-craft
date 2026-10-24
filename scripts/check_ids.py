@@ -59,7 +59,7 @@ def in_range(version: str, rng: str | None) -> bool:
 BUILTIN_MODS = {"minecraft", "neoforge", "forge", "java", "fml"}
 # Tipo di riferimento -> campo dell'inventario (o categoria di dati)
 FIELDS = {"item": ("items", "blocks"), "block": ("blocks",), "fluid": ("fluids",),
-          "entity_type": ("entities",)}
+          "entity_type": ("entities",), "potion": ("potions",)}
 
 
 class Index:
@@ -79,7 +79,7 @@ class Index:
                 self.modids.add(m["modid"])
                 self.mods.append((label, m))
         self.namespaces.update(d.get("namespaces", []))
-        for field in ("items", "blocks", "fluids", "entities", "effects", "biomes"):
+        for field in ("items", "blocks", "fluids", "entities", "effects", "biomes", "potions"):
             self.names[field].update(d.get(field, {}))
         for cat, ids in d.get("data", {}).items():
             self.data[cat].update(ids)
