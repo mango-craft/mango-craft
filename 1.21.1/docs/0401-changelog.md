@@ -10,6 +10,16 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.6.2 — 24/10/2026 · mercato (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: non serve. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Datapack, mercato di Farming for Blockheads**: si possono comprare le piante di quasi tutte le mod del pack (**438 voci nuove**: semi, alberelli, fiori, selvatiche, funghi), escluse le piante decorative (erba, cespugli, liane) e quelle magiche o rare. I prezzi sono **alti** di proposito, perché il mercato non sostituisca l'esplorazione: moneta e quantità per **origine** e **rarità** della mod. Overworld: da 9 a 14 smeraldi per le piante comuni, poi da 6 a 15 diamanti (le mod salgono di classe: common solo Minecraft, uncommon le mod di cucina, poi a salire fino ad Ars Nouveau). Le altre dimensioni si pagano con il loro materiale più raro: 4 frammenti di netherite (Nether), 8 gusci di shulker (End), 4–5 gravitite incantate (Aether, Deep Aether), 6 cristalli di regalium (Undergarden), 6 steeleaf (Twilight Forest), 4 cristalli d'anima (Otherside di Deeper and Darker). I listini della mod per i semi e gli alberelli vanilla, delle Delight e di Ars sono **rincarati** con lo stesso criterio (prima 1 smeraldo). Tutto è generato da `scripts/mercato_genera.py` dalle regole in `1.21.1/data/mercato/*.csv`.
+- **Strumenti**: la base dati dei vasi diventa la base dati delle piante del pack (oggetti e blocchi come anagrafiche, rarità condivisa tra vasi e mercato); l'inventario conserva voci e listini del mercato.
+- **Invariato**: nessuna mod aggiunta o tolta; config invariate.
+- **Stato**: ✅ provata il 24/10/2026 (avvio e mondo, 29.371 ricette, cioè le 438 voci in più; nessun errore del mercato, dei vasi o del datapack nel log; mercato e acquisti come attesi) e rilasciata come pre-release `1.21.1-v0.6.2`.
+- **Problemi noti**: nuovo B41 (avviso di Sodium sulle schermate di EMI, minore); B39 (timeout di Reactive) ricompare a ogni avvio; B38 intermittente; B04 invariato.
+
 ## 0.6.1 — 24/10/2026 · vasi (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
