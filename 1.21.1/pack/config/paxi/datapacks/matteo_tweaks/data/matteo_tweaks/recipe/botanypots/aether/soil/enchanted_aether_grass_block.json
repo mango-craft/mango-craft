@@ -1,0 +1,14 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "aether:enchanted_aether_grass_block"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_soil",
+  "block": "aether:enchanted_aether_grass_block",
+  "growth_modifier": 0.2,
+  "yield_modifier": 0.15
+}

@@ -1,0 +1,14 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "aether:aether_dirt"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_soil",
+  "block": "aether:aether_dirt",
+  "growth_modifier": 0.2,
+  "yield_modifier": 0.06
+}

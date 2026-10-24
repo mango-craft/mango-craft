@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "undergarden:tall_shimmerweed"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "undergarden:tall_shimmerweed",
+  "input": {
+    "item": "undergarden:tall_shimmerweed"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "undergarden:shimmerweed",
+            "count": 2
+          }
+        }
+      ]
+    }
+  ]
+}

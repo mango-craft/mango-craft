@@ -1,0 +1,60 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "regions_unexplored:blue_bioshroom"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "regions_unexplored:blue_bioshroom",
+  "input": {
+    "item": "regions_unexplored:blue_bioshroom"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:mushroom_grow_block"
+      },
+      {
+        "tag": "botanypots:soil/mushroom"
+      }
+    ]
+  },
+  "grow_time": 2400,
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "regions_unexplored:blue_bioshroom_stem",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "regions_unexplored:blue_bioshroom_block",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "regions_unexplored:glowing_blue_bioshroom_block",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "regions_unexplored:blue_bioshroom",
+            "count": 1
+          },
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

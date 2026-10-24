@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:shiny_spirea"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:shiny_spirea",
+  "input": {
+    "item": "unusualend:shiny_spirea"
+  }
+}

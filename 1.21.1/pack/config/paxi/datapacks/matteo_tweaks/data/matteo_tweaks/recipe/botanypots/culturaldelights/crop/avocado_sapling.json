@@ -1,0 +1,42 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "culturaldelights:avocado_sapling"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "culturaldelights:avocado_sapling",
+  "input": {
+    "item": "culturaldelights:avocado_sapling"
+  },
+  "grow_time": 2400,
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "culturaldelights:avocado_log",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "culturaldelights:avocado",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "culturaldelights:avocado_sapling",
+            "count": 1
+          },
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

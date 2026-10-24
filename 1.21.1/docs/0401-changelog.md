@@ -10,6 +10,16 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.6.1 — 24/10/2026 · vasi (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: non serve. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Datapack, vasi di Botany Pots**: si possono coltivare nei vasi le piante di quasi tutte le mod del pack (**279 colture** che Botany Pots non conosceva), gli **8 alberi di Bountiful Fares** (copiati da Botany Trees, LGPL-2.1) e **38 terreni nuovi** (terre delle altre dimensioni, secchi con pesci delle mod su acqua e lava); 21 file di terreno delle mod sostituiti; le terre «di terra» delle mod nell'etichetta `botanypots:soil/dirt`. Tutto è generato da `scripts/botanypots_genera.py` dalle regole in `1.21.1/data/vasi/*.csv`; escluse con il motivo le piante magiche o rare e quelle che nel vaso non funzionano (`lavoro/versioni/v0.6.1.md`).
+- **Scala di rarità dei terreni**: 10 classi (da common a mythic) più 10 per i terreni da fabbricare; crescita da 0 a +80% e resa da 0 a +35%. I vasi di Botany Pots Tiers restano più importanti: un vaso elite con la terra semplice produce circa quattro volte un vaso normale con il terreno migliore.
+- **Invariato**: nessuna mod aggiunta o tolta; config invariate.
+- **Stato**: ✅ provata il 24/10/2026 (avvio e mondo, 28.933 ricette, nessun errore dei vasi né del datapack nel log; `check_crops` senza errori dopo B40; vasi elite con e senza tramoggia come atteso) e rilasciata come pre-release `1.21.1-v0.6.1`. La scala di rarità definitiva e la prova «una pianta per tipo» non sono state rifatte in gioco (decisione di Matteo): passano nelle prove nel tempo.
+- **Problemi noti**: B37 (terreni a secchio senza grafica) e B40 (due piante alte senza raccolto) risolti; nuovi B38 (una finestra di Every Compat senza modello) e B39 (timeout di Reactive), minori; B04 intermittente.
+
 ## 0.6.0 — 22/10/2026 · config e correzioni (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).

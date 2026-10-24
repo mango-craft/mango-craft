@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:lotus_flower"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:lotus_flower",
+  "input": {
+    "item": "hexalia:lotus_flower"
+  },
+  "soil": {
+    "tag": "botanypots:soil/water"
+  }
+}

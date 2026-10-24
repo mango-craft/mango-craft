@@ -1,0 +1,31 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "netherexp:soul_swirls"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "netherexp:soul_swirls",
+  "input": {
+    "item": "netherexp:soul_swirls"
+  },
+  "soil": {
+    "tag": "botanypots:soil/soul_sand"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "netherexp:soul_swirls",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

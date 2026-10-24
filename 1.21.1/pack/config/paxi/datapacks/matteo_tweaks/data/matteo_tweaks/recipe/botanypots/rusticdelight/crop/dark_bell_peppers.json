@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "rusticdelight:dark_bell_peppers"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "rusticdelight:dark_bell_peppers",
+  "input": {
+    "item": "rusticdelight:dark_bell_pepper_seeds"
+  }
+}

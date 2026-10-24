@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "reactive:mind_lichen"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "reactive:mind_lichen",
+  "input": {
+    "item": "reactive:mind_lichen"
+  }
+}

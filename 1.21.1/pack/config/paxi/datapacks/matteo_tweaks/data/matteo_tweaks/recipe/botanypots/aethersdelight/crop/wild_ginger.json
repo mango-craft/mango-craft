@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "aethersdelight:wild_ginger"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "aethersdelight:wild_ginger",
+  "input": {
+    "item": "aethersdelight:wild_ginger"
+  }
+}

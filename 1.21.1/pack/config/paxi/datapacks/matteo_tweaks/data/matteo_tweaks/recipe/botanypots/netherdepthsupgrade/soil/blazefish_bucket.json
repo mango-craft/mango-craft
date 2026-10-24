@@ -1,0 +1,25 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "netherdepthsupgrade:blazefish_bucket"
+      ]
+    }
+  ],
+  "type": "botanypots:soil",
+  "input": {
+    "item": "netherdepthsupgrade:blazefish_bucket"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "minecraft:lava"
+    },
+    "options": {
+      "render_fluid": true
+    }
+  },
+  "growth_modifier": 0.2,
+  "yield_modifier": 0.15
+}

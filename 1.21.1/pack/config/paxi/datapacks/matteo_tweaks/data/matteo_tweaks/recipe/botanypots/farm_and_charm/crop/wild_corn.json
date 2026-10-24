@@ -1,0 +1,35 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "farm_and_charm:wild_corn"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "farm_and_charm:wild_corn",
+  "input": {
+    "item": "farm_and_charm:wild_corn"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "farm_and_charm:corn",
+            "count": 3
+          }
+        },
+        {
+          "result": {
+            "id": "farm_and_charm:kernels",
+            "count": 1
+          },
+          "chance": 0.125
+        }
+      ]
+    }
+  ]
+}

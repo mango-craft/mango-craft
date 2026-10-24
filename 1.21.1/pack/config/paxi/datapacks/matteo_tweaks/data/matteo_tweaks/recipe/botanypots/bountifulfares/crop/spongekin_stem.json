@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:spongekin_stem"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:spongekin_stem",
+  "input": {
+    "item": "bountifulfares:spongekin_seeds"
+  },
+  "soil": {
+    "tag": "botanypots:soil/water"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "bountifulfares:spongekin"
+    }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "bountifulfares:spongekin",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

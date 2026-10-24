@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "deep_aether:yagroot_vine"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "deep_aether:yagroot_vine",
+  "input": {
+    "item": "deep_aether:yagroot_vine"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "deep_aether:yagroot_vine",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

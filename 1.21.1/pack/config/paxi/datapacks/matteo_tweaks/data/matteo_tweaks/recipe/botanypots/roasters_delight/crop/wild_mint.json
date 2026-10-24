@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "roasters_delight:wild_mint"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "roasters_delight:wild_mint",
+  "input": {
+    "item": "roasters_delight:wild_mint"
+  }
+}

@@ -15,3 +15,6 @@ options.txt
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Base dati dei vasi: si rigenera con scripts/vasi_db.py
+1.21.1/data/vasi/vasi.sqlite

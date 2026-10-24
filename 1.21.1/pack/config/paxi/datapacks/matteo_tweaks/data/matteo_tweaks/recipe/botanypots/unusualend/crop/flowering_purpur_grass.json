@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:flowering_purpur_grass"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:flowering_purpur_grass",
+  "input": {
+    "item": "unusualend:flowering_purpur_grass"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  }
+}

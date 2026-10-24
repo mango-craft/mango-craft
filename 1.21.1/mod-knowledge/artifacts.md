@@ -1,6 +1,6 @@
 # Artifacts
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.1.1, versione 13.2.5 (`../docs/0403-distinta-mod.md`; ruolo e licenza in `../docs/0301-mod.md`) · fonti: sorgente (ochotonida/artifacts @7cf7dc42), file generato dall'istanza di prova, inventario del pack, controllo dei nomi, file delle mod letti con il workflow Esamina mod. Materiale grezzo: `../../ai-agents/stage/2026-10-19_1.21.1-v0.6.0_config-mod/`, `_riconteggio/` e `2026-10-19_1.21.1-v0.5.3_esame-mod/`.
+Aggiornata il 23/10/2026 · nel pack dalla 0.1.1, versione 13.2.5 (`../docs/0403-distinta-mod.md`; ruolo e licenza in `../docs/0301-mod.md`) · fonti: sorgente (ochotonida/artifacts @7cf7dc42), file generato dall'istanza di prova, inventario del pack, controllo dei nomi, file delle mod letti con il workflow Esamina mod. Materiale grezzo: `../../ai-agents/stage/2026-10-19_1.21.1-v0.6.0_config-mod/`, `_riconteggio/` e `2026-10-19_1.21.1-v0.5.3_esame-mod/`.
 
 ## Config
 
@@ -130,3 +130,19 @@ Tutte escluse (overhaul non installati): `illager_mansion/ancient_city_raid_ches
 
 - **Mowzie's Mobs**: `monastery_chest` (set del Geomante e bastone dello Scultore) e `umvuthana_grove_chest` (maschere degli Umvuthana) sono le uniche casse delle loro strutture: collegate.
 - Copertura delle altre mod (Twilight Forest, Unusual End, Supplementaries, YUNG's, Aether, Cataclysm…): nel readme del datapack, livello per livello.
+
+## Abilità come componenti: potenziamenti nel datapack (23/10)
+
+Dal sorgente 13.2.5 (`ochotonida/artifacts` @7cf7dc4) e dal jar del pack; grezzo in `../../ai-agents/stage/2026-10-23_accessori-evoluzione/`.
+- Le abilità di ogni artefatto sono **componenti dei dati dell'oggetto**. Ogni valore è o un rimando alla config o una **costante** (`config/value/type/ValueType.java`, `codec()`: alternativa tra `ConfigValue` e `Value.Constant`). Artifacts le legge **dalla singola copia** (`EquipmentHelper.reduceAbilities`). Quindi una copia con valori fissi è più forte delle altre, e la config non la tocca.
+- Esempi di componenti: `artifacts:attribute_modifiers` (lista di `{attribute, amount, operation, id}`, con `id` di serie `artifacts:<oggetto>/<attributo>`, es. `artifacts:power_glove/generic.attack_damage`), `artifacts:enchantment_level_modifiers`, `artifacts:tool_tier_upgrade`.
+- Un risultato di ricetta, di infusione (Apothic Enchanting, `apothic_enchanting:infusion`, `result` con componenti; **non** usare `keep_nbt_infusion`, che ricopierebbe i componenti dell'ingresso) o una voce di bottino (`minecraft:set_components`) può portare questi componenti. Per distinguere i livelli: un `minecraft:custom_data` nostro e gli ingredienti `neoforge:components` / `neoforge:difference`.
+- Limiti: i valori fissi non seguono più `items.toml`; dopo un aggiornamento di Artifacts i nomi dei componenti vanno ricontrollati (c'è un `TODO (>1.21.1)` nel codice); `scripts/check_ids.py` non controlla i nomi dei componenti.
+- **Reliquified Artifacts** (addon di Relics, 1.0.9 beta; verificato nel codice il 23/10, `Octo-Studios/rar-compat` @2b6d624 e `relics` @da846fc):
+  - **Versione**: vuole esattamente Artifacts 13.2.5, cioè la nostra, che è anche l'ultima per 1.21.1 NeoForge (Modrinth, 23/10). Il vincolo è per il futuro: un aggiornamento di Artifacts aspetta una Reliquified Artifacts nuova (la 1.0.8 voleva la 13.2.3).
+  - Rifà tutti i 48 artefatti con gli stessi nomi, con abilità diverse e livelli.
+  - **Config**: annulla del tutto la lettura della config di Artifacts (`ConfigManagerMixin`): valgono i valori di serie, quindi il nostro `enableAccessoriesCompat = false` torna `true`. Non si corregge da config, ma l'effetto sì: gli artefatti finiscono negli slot di Accessories perché il jar di Artifacts mette `#artifacts:slot/*` nelle etichette `accessories:belt`, `hand`, `hat`, `necklace` e `shoes` (inventario). ATM10 lo corregge togliendoli da quelle etichette (changelog 8.1→8.2, #4409); da noi si fa nel datapack con il campo `remove` delle etichette di NeoForge (`TagFile`, verificato nel sorgente). Da provare in gioco.
+  - **Casse**: riscrive `artifacts:roll_loot_table` (`RollLootTableModifierMixin`) scartando ogni reliquia, in qualunque tabella. Le nostre 152 casse e le casse vanilla di Artifacts non darebbero più artefatti. **Si corregge**: nei 15 file si cambia il tipo in `neoforge:add_table` (campo `table` al posto di `lootTable`), che fa la stessa cosa e non è toccato dalla mod.
+  - **Bottino di Relics**: Relics aggiunge da solo una reliquia nel 20% delle casse aperte da un giocatore (`relicGenChance = 0.2`), scelta per nome della cassa, bioma e dimensione (`RelicLootModifier`). Vale solo per le tabelle `<mod>:chests/…`: 127 delle nostre 152 casse. Insieme ai nostri file queste avrebbero due possibilità. Per tenere solo la nostra distribuzione: `enabledExtendedConfigs = true` nella config di Relics (segnata come «WIP» e non aggiornata in automatico quando la mod cambia), poi `relicGenChance = 0` nella sua config del bottino; lì si possono anche scegliere casse e pesi per ogni reliquia. Nome ed estensione dei file di config di Relics: da vedere in gioco.
+  - Da valutare solo in un'istanza a parte, prima del mondo vero.
+

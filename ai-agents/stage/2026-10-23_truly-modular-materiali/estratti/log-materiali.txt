@@ -1,0 +1,29 @@
+# Estratto da /mnt/user-data/uploads/logs/latest.log (istanza dev, 21/10/2026, Miapi 2.3.9)
+4636:[21Oct2026 23:30:30.414] [Render thread/INFO] [ModularItem API/]: Loaded 130 Materials
+4642:[21Oct2026 23:30:30.452] [Render thread/INFO] [ModularItem API/]: Server load took 859.7285 ms
+6481:[21Oct2026 23:31:09.675] [Render thread/INFO] [ModularItem API/]: Loaded 242 Materials
+
+# Materiali generati (nomi negli errori di doppia registrazione)
+      2 Entry with name 'miapi:generated/block.aether.enchanted_gravititeitem.aether.gravitite_sword' already exists
+      2 Entry with name 'miapi:generated/block.aether.holystoneitem.aether.holystone_sword' already exists
+      2 Entry with name 'miapi:generated/item.aether.zanite_gemstoneitem.aether.zanite_sword' already exists
+      2 Entry with name 'miapi:generated/item.cataclysm.black_steel_ingotitem.cataclysm.black_steel_sword' already exists
+      2 Entry with name 'miapi:generated/item.cognition.cognitive_alloyitem.cognition.cognitive_sword' already exists
+      2 Entry with name 'miapi:generated/item.deep_aether.skyjadeitem.deep_aether.skyjade_sword' already exists
+      2 Entry with name 'miapi:generated/item.deep_aether.stratus_ingotitem.deep_aether.stratus_sword' already exists
+      4 Entry with name 'miapi:generated/item.deeperdarker.reinforced_echo_sharditem.deeperdarker.warden_sword' already exists
+      2 Entry with name 'miapi:generated/item.deeperdarker.resonariumitem.deeperdarker.resonarium_sword' already exists
+      2 Entry with name 'miapi:generated/item.psi.psimetalitem.psi.psimetal_sword' already exists
+      2 Entry with name 'miapi:generated/item.twilightforest.ironwood_ingotitem.twilightforest.ironwood_sword' already exists
+      2 Entry with name 'miapi:generated/item.twilightforest.knightmetal_ingotitem.twilightforest.knightmetal_sword' already exists
+      2 Entry with name 'miapi:generated/item.twilightforest.steeleaf_ingotitem.twilightforest.steeleaf_sword' already exists
+      2 Entry with name 'miapi:generated/item.undergarden.cloggrum_ingotitem.undergarden.cloggrum_battleaxe' already exists
+      2 Entry with name 'miapi:generated/item.undergarden.forgotten_ingotitem.undergarden.forgotten_battleaxe' already exists
+      2 Entry with name 'miapi:generated/item.undergarden.froststeel_ingotitem.undergarden.froststeel_sword' already exists
+      2 Entry with name 'miapi:generated/item.undergarden.utherium_crystalitem.undergarden.utherium_sword' already exists
+      2 Entry with name 'miapi:generated/item.unusualend.pearlescent_ingotitem.unusualend.pearlescent_sword' already exists
+
+2026-10-19-2.log.gz:4902:[19Oct2026 09:56:39.288] [Render thread/INFO] [ModularItem API/]: Loaded 130 Materials
+2026-10-19-2.log.gz:6806:[19Oct2026 09:57:00.331] [Render thread/INFO] [ModularItem API/]: Loaded 242 Materials
+2026-10-19-2.log.gz:9079:[19Oct2026 09:59:57.410] [Server thread/INFO] [ModularItem API/]: Loaded 130 Materials
+2026-10-19-2.log.gz:10312:[19Oct2026 09:59:58.093] [Render thread/INFO] [ModularItem API/]: Loaded 242 Materials

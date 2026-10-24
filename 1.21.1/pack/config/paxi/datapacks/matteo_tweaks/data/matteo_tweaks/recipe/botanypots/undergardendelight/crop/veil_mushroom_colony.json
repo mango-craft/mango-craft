@@ -1,0 +1,27 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "undergardendelight:veil_mushroom_colony"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "undergardendelight:veil_mushroom_colony",
+  "input": {
+    "item": "undergardendelight:veil_mushroom_colony"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:mushroom_grow_block"
+      },
+      {
+        "tag": "botanypots:soil/mushroom"
+      }
+    ]
+  }
+}

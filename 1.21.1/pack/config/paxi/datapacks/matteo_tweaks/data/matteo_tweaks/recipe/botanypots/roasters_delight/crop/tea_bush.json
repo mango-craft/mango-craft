@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "roasters_delight:tea_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "roasters_delight:tea_bush",
+  "input": {
+    "item": "roasters_delight:tea_seeds"
+  }
+}

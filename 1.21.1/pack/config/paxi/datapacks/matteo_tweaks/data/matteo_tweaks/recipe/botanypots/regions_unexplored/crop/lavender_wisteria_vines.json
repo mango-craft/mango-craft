@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "regions_unexplored:lavender_wisteria_vines"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "regions_unexplored:lavender_wisteria_vines",
+  "input": {
+    "item": "regions_unexplored:lavender_wisteria_vines"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "meadow:alpine_poppy"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "meadow:alpine_poppy",
+  "input": {
+    "item": "meadow:alpine_poppy"
+  }
+}

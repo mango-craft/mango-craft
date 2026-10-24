@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "aethersdelight:wild_leek"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "aethersdelight:wild_leek",
+  "input": {
+    "item": "aethersdelight:wild_leek"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "expandeddelight:wild_chili_pepper"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "expandeddelight:wild_chili_pepper",
+  "input": {
+    "item": "expandeddelight:wild_chili_pepper"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "vinery:jungle_grape_bush_white"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "vinery:jungle_grape_bush_white",
+  "input": {
+    "item": "vinery:jungle_grape_seeds_white"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "vinery:jungle_grapes_white",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

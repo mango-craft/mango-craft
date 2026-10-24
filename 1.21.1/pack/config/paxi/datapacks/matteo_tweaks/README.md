@@ -11,7 +11,7 @@ Ritocchi del modpack. **Paxi** carica questo pacchetto in **tutti i mondi**, anc
 | Parte | Cosa fa | Dove | Spiegazione |
 |---|---|---|---|
 | **Artefatti nelle strutture modded** | Aggiunge gli oggetti di Artifacts a 152 casse di strutture modded | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
-| **Ars Nouveau nei vasi** | Magebloom, Sourceberry e i 5 frutti di archwood in Botany Pots | `data/matteo_tweaks/recipe/botanypots/` | [botanypots/readme.md](data/matteo_tweaks/recipe/botanypots/readme.md) |
+| **Vasi di Botany Pots** | Ars Nouveau (Magebloom, Sourceberry, 5 frutti di archwood) a mano; 8 alberi di Bountiful Fares copiati da Botany Trees; le piante e i terreni delle altre mod (247 colture, 18 terreni) generati da `scripts/botanypots_genera.py` dalle regole in `1.21.1/data/vasi/` | `data/matteo_tweaks/recipe/botanypots/`, `data/botanypots/tags/item/soil/` | [botanypots/readme.md](data/matteo_tweaks/recipe/botanypots/readme.md) |
 | **Lune di sangue** | Più rare (peso 5 invece di 10 nel calendario) e meno affollate (mostri ×2 e ×4), per Enhanced Celestials 2 | `data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/` | [lunar/readme.md](data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md) |
 | **Pesce cotto di Starcatcher** | Vale come "pesce cotto" nelle ricette di cucina | `data/c/tags/item/foods/`, `data/bountifulfares/tags/item/` | [c/readme.md](data/c/readme.md) |
 
@@ -25,10 +25,16 @@ matteo_tweaks/
     ├── matteo_tweaks/           i nostri file nuovi
     │   ├── loot_modifiers/
     │   │   └── artifacts/       15 modificatori di bottino, uno per livello di rarità
+    │   ├── loot_table/
+    │   │   └── tree_drops/      i raccolti degli 8 alberi di Bountiful Fares (copiati da Botany Trees)
     │   └── recipe/
     │       └── botanypots/
-    │           ├── crop/        7 colture (cosa cresce nel vaso)
-    │           └── soil/        5 terreni (i tronchi di archwood)
+    │           ├── alberi/      8 alberi di Bountiful Fares nei vasi (copiati da Botany Trees, LGPL-2.1)
+    │           ├── crop/        7 colture di Ars Nouveau (cosa cresce nel vaso)
+    │           ├── soil/        5 terreni (i tronchi di archwood)
+    │           └── <mod>/       colture e terreni delle altre mod, generati dallo script (crop/ e soil/)
+    ├── botanypots/
+    │   └── tags/item/soil/      i terreni di terra delle altre mod (generato)
     ├── neoforge/
     │   └── loot_modifiers/      l'elenco dei modificatori da attivare
     ├── enhancedcelestials2defaultlunarevents/

@@ -26,7 +26,107 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "34b463c9e8613761a64a5158bf63d877f91e3c165b8f3088710449714c0589e0"
+hash = "9f2e1b62b237c0b87f212108ac8ec5fe68567ee1cfe410534bcbf183d04571d9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/readme.md"
+hash = "25def3e6f337c0415c7546740d8c2077e43831ddeee6d2d9f838dfffb5d53db0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/cataclysm/soil/the_baby_leviathan_bucket.json"
+hash = "259b46b881147cbc8f04a1af4f1b7c1a635f5b482637ba1e2bac48f7f3748a27"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmersdelight/soil/organic_compost.json"
+hash = "69d7b2c49c0cf14ef36e83b503fcd810a90ff7519f09c654ea100585b32d9594"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmersdelight/soil/rich_soil.json"
+hash = "cb026b3b6606a94e7d3ccc5e5f793eb2d57632f41ff631ce5848a54c30e9ed2f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmersdelight/soil/rich_soil_farmland.json"
+hash = "23f1f22eac5814121a6a73bb6154d47054aac13df5453e5c518a68979297a51c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_healthy.json"
+hash = "fde8259a3d8c17522daed8de311a9c08c765fbdcd7a946126a8ed59e3d8ee628"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_healthy_stable.json"
+hash = "9fce3892bcd23bf6a71999f633cdce23e3bbef443590288a743bbca3e8505918"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_rich.json"
+hash = "80973c744af1257e386d550acf5e45e5ae93a437029ffcf0c1a6f22480ae4823"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_rich_stable.json"
+hash = "cd21697a1e96b08c044878fafa3c2948d13724e903c98021e5348b3ef6f384d4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_stable.json"
+hash = "ebc55615babb756e0b6f983b39ba291593fb7a19a2451465918f00b808cb8c23"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/axolotl_bucket.json"
+hash = "830b4d797031f843340e1ee10ddc6495746155392e40fe7de3b651087d5e234e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/cod_bucket.json"
+hash = "28ab58b3eda85b94da80829f7140feddd591f2ca857dda3c4605c1815d183511"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/farmland.json"
+hash = "3e6955984ebddd123b9e996db3e3915bcb3782b268d60e45aa3576521b1ff792"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/pufferfish_bucket.json"
+hash = "7d071864c6eb0c1bcaf967aee267fd701facd1a39a864ef5e3c5fd736ac267d2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/salmon_bucket.json"
+hash = "aea062735aad57b506d7b56b50b6de06afe6961da31bc577ab52a46a38d27716"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/sculk_catalyst.json"
+hash = "0ce85ad8fef01cae6d50f1761388ed9d0e9cc7a9b5a1578af0bcc80c5fbd41cf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/soul_soil.json"
+hash = "3f87c937e807a15d24a35a279c2125ae0adf03faaff4d5a9230570bf277fdf2e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/tadpole_bucket.json"
+hash = "55e185721458094ddecd8a62e316d5440522b6484c0f3671fb1c1198d45187bb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/tropical_fish_bucket.json"
+hash = "95db6aeb8b0e5b4fccefbde91414de422d5497b0c4c8945e5b4616ab6762d2dc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/twilightforest/soil/uberous_soil.json"
+hash = "235256221604ba4e5823947dcf0f08873e5765184e12c480fb99f3c81e776a0c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/undergarden/soil/deepsoil_farmland.json"
+hash = "04cc09ffa4818946494cfd89b9d7b64d27e8859d7f670928888dcfb2235f8628"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/undergarden/soil/gwibling_bucket.json"
+hash = "af30571004fa6f5178b5e0df83ed1e99d9efd7eb52ef741431b287371c48783f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/tags/item/soil/dirt.json"
+hash = "009d511bc49d3691bab7489465ea82295c64d62d2bab4c63c044b8866a05c4b7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/tags/item/soil/lava.json"
+hash = "c38fd24ca70506d3f8e4387eec6a4e53f0ee3777b9289f4dcd290de1bbddf19c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/tags/item/soil/water.json"
+hash = "710fb282d461649f6305b64d1f5d9ae21883a5ad1712b0763ff7aa58830ad1da"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/bountifulfares/readme.md"
@@ -137,6 +237,266 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/ar
 hash = "9df2727e240a04077669f185e35d0876718042da148b0a4650a2d0ca9cbd7c09"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/readme.md"
+hash = "3c6e39730311d505ae11b804540cf20c1802e9bc9012e2f14915b9a01d3013cb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/apple.json"
+hash = "42a298b5ebd01eaff6708ee629463b7994680df4321add298e32c0335498b644"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/golden_apple.json"
+hash = "e92f76243b85e3b7436600f4e866538e5798960def4a4eda88bc0fed6b330bc4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/hoary_apple.json"
+hash = "85efa5ad171d399ab655bbedb365a1821f35118b43ec81fda0e1e51f8b7a97ad"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/lemon.json"
+hash = "2fdc5465a7b0cac530623fa452fad2a80dbb9f139a8664abba702a6ab2aca349"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/orange.json"
+hash = "a0c00afe7aeeca81a09b3f461e6b1d943189d9e188e4e1e4ef88bf003e9ed620"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/palm.json"
+hash = "534f890f627fdf8f69960e1698025c18013bb112fc815a8b356ab6c65035f83a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/plum.json"
+hash = "5232452c5b01563ef6297d33bbd59e79aa6e7490002d8950404bf8e8a825dfcd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/walnut.json"
+hash = "a89bf09aaf9eb668e0e68953086a46b9527bba513a21c47f52b572fc460c6ab7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/crop/berry_bush.json"
+hash = "014286346181099699e3b3385dee12a00d1c15a6ea7cd5350e992a34677adfc7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/crop/purple_flower.json"
+hash = "5154e7b95a30e98385fcce2ac647750b80879f8b823fe44da583336448f39d1b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/crop/white_flower.json"
+hash = "d4cbde7d8ba9405b627030e54699e2ed9f9345d024961472a7064abef768d5f4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/aether_dirt.json"
+hash = "92a0fcf327a21fa8fc1a5516930b3a4b1c3532c09c6bcdb0f1b34a019063f70b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/aether_farmland.json"
+hash = "e1a2365cfa7e74eb7f159a724a2d4bee15be92e0d8b37a8b04b2d40804059919"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/aether_grass_block.json"
+hash = "dcc2d400c6a1050f7b7aaa6a94132ff639445bea867a2089d715303e077eb557"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/enchanted_aether_grass_block.json"
+hash = "83002ead645dbf56fbe5cf56796a97f0953d411717c79ebcbe2fb403abed49e6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_axolotl_bucket.json"
+hash = "62083020238641afa1ac58698fcce941872a38009080f837b48799937d8beee7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_cod_bucket.json"
+hash = "fdaf6f022cb6db2de2bb8f80fe5f58b9535f90f90d2c053c1ebc869d94b34b20"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_pufferfish_bucket.json"
+hash = "a45c890f310edfb4f3e6eeb030ea62dce52a62752c178c391d980752ae47340c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_salmon_bucket.json"
+hash = "4556640293adc80b5dbec78f3ca4915d8c27ba5edc4109e3465ab8383d4dee7e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_tadpole_bucket.json"
+hash = "9923d2a4e440aa3f3cc6bc64f7dbe6a18306a0adec7871bcd64a29d4c64f8838"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_tropical_fish_bucket.json"
+hash = "7e587d7f9af711fae760d1ecae41bcb4672f6ffa62eb96fe9bdb486dd721044d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_water_bucket.json"
+hash = "c608f5660eed7f089d7055cd75743200829a29e97a9270b7c3558b33b4433f79"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/ginger_crop.json"
+hash = "a824d7e2b67b5369a3b90cbde8833cb60d03b9b919d4b451ade8a8c5544284ca"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/leek_crop.json"
+hash = "f4cf5c8a6e8e8a541e3f01e1d947ae7480ec036ed3a8f0ed65b3a6a5cfb9392b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/parsnip_crop.json"
+hash = "f902e25026748eb23ad0db02342b112ef8d370f59f6b257e32831e32133b2baa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/peppermint_bush.json"
+hash = "4c3463a52d0d86ed54a8f2f2eb1b48b1ff1b70bcd6e32a225369e792f30f504a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/wild_ginger.json"
+hash = "03b6435be63aa402a9111701e6caf177058120733c0b12f95d439282d94960b5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/wild_leek.json"
+hash = "96526cda92f513eb9024fc3504502b1b4acdeb2e3376347386a500a10e8ca7be"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aethersdelight/crop/wild_parsnip.json"
+hash = "5db1b1dcda041284b32b078723b5899abd06871c106cdea3e26111f611ba068d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/apple.json"
+hash = "d1592f0e1f6dcfc85ebc355bad03cecb079c1af9642173a2c7609b88b3186c6e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/golden_apple.json"
+hash = "74d8157d4a52914e2113a4dab28de6d66e24535176423ec5b88ef7198962aacc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/hoary_apple.json"
+hash = "a37d10f7b9de6fa5578f67063800bcf1382e1f750b278bca5836048f7debab19"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/lemon.json"
+hash = "4ecd3116c8afd1bf5b09b247dc141ea47cbef3c2d4363255e92c189cedbefaaa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/orange.json"
+hash = "c2f923619885d1835c615eb511600396c0b5bc429533647c2a2886f992cb7708"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/palm.json"
+hash = "08b4408d2133d85f9386ca06a1b3ac00d1a301d9514f48e0317322d1ff0fbc9e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/plum.json"
+hash = "b74d217a01e4fa410be5163b531c258b7294ab0c912c8c8154eadc10626f5230"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/bountifulfares/walnut.json"
+hash = "ea0001b6ddc8cbbd83b7c3d311ff254a9947b0be0beac6f13bb76210cc668265"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/readme.md"
+hash = "733528b32689e3f6dfd6f4105e2db6274dad11dc43da4cb3d5fac0bb04fe700f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/ars_elemental/crop/sparkflower.json"
+hash = "381d5a74f4fc1c731cbfeabb93abf92f2814f2dece1a8a01d1d6a15bc655e91d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/born_in_chaos_v1/crop/marigolds.json"
+hash = "574e0a01d176c6c8177de2b09ff72cb032f2d56667dd87482591717993a99435"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/born_in_chaos_v1/crop/river_mint.json"
+hash = "d40969ca463d1ce80a81c055e7b54588a6881d8e0e4103e026d0bbf44458a590"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/chamomile_flowers.json"
+hash = "88257732a414dcb2633c5fbc125f9594d1f07cdacc9419c4eed912c8b7db446f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/elderberry_trellis.json"
+hash = "20bb8d5f67712216b1be95c82392b21100a7ea4d1f9af65bf31ad51e29da8aed"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/hoary_apple_sapling_crop.json"
+hash = "d13d45979bc33a6fcd4ed801def48b01d827a6b92499de02f45307f66f6ddbaa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/honeysuckle.json"
+hash = "4f683eeaa6b1a4fefc6f6b7038663efbc1c2634f6afa41b4e6dd12318fdf2673"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/lapisberry_trellis.json"
+hash = "576fcb06d4eaa0e80208734ded166a90b184e0acaef5a438b436fc16d34bb4e2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/leeks.json"
+hash = "955f6591d564098a7a20bf9b6aca415292c82777c7118b5230cc4550da17f3b2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/maize_crop.json"
+hash = "cbd1b86df2acec800260dac6fd17b5f4ae621eba07b1b401dbe2a6e286d98d13"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/passion_fruit_trellis.json"
+hash = "0790b241d193cfc75dc684a452dc73278c5e114ab9c443e7585aa25c25fa5221"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/prismarine_blossom.json"
+hash = "5f8327351b759640f27de298d3cc65cdeeb7846e119e7a6bd1beebbe5337d022"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/scorchkin_stem.json"
+hash = "683c61ee60c39449c709b315a02a43c39ee29281d3faedf3b2231ee86a319251"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/spongekin_sprout.json"
+hash = "0b5de3bfed14ddd6264ec60b5a1a0b0a3085c9e56792b5f09945fcafbe18717f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/spongekin_stem.json"
+hash = "a80c33560fa02e5a9bebf557437794a55687e7ce50c1d9d3e69ecf051d62fcfb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/tea_shrub.json"
+hash = "6ff3169fb3e362d3547a29fef8af46657ea58803f4139a3b213dfa1478f1662a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/violet_bellflower.json"
+hash = "c8e28c79c92ad3a3737e99baea0cac5a0f3f7fc6d4134afb2ab724e03ca9349e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_beetroots.json"
+hash = "be6f4d5a3dfe7e2e9cc2b17ba744fd1015664eb715da956d4031525cd67271d1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_carrots.json"
+hash = "24190f4f0785989686a6f8058e8a4ef25f84bd2a37409c904c0b2d8433e1d8ea"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_elderberry_vine.json"
+hash = "f3400193e9f6d9dd3bed813383137d98e5b0cd80efbf411fdcaf0b59617da150"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_leeks.json"
+hash = "2737306e7463e0cf5e8b663a0516df674a82f41c0115e16c1f8b3157646797e2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_maize.json"
+hash = "ba1ab15d16a8fa0b9bb6016b8bb06f56d5176980a79ca6492d34956bc3609d60"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_passion_fruit_vine.json"
+hash = "0e1d6023015999511030518f09a34d239506f819b4c4242b1e98c6abb8845cc1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_potatoes.json"
+hash = "11014df863cb8b1228679e8e42b0415f92076d604e9a90ba3218ecd2a0f8a104"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/wild_wheat.json"
+hash = "0a369c4a8f2761f3c49e9d49920eb69e1ec881550f7c4bce36af8785316b2207"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/soil/grassy_dirt.json"
+hash = "8434ebbbbc7f6eda48a75bcdb872ad62221d4758b6e0607996020c7b0f79bd7a"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/crop/ars_magebloom.json"
 hash = "4840eb0432855418dd3a6033de975ff60be199503b9421969b66af3ccb6869f5"
 
@@ -165,8 +525,800 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots
 hash = "5810be2b136d682bb8fbc83681e5e803b48a20bfe105632005a616b6cbcd3f6b"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/agave.json"
+hash = "e8d0fc71a1cc7cf780d16be2dc13d34f53fd5b5a325060a07af222df46cb9c4e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/avocado_pit.json"
+hash = "e72320f8c5a11188e0e328d1aa8f9e9bf2771fb6bd7652338ec22d94824269c5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/avocado_sapling.json"
+hash = "5c7815f14c659f04de9cd1c455aaeb3daaefb19596947cce91e3a75312b3105a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/beans.json"
+hash = "1f8ec0fcbff06e38183194a365b6d449d6b0c8eaa460d6fcd33ce5612c7c1ca8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/corn.json"
+hash = "1aa57321e63ff473c762e9aeb6da6e1ef6f6a56a7fe0e9090ba16a39b2e90f05"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/cucumbers.json"
+hash = "1080d5ba68f48018a9ed37c15f3080e7bc77c85c86188ff022b40d3301747099"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/eggplants.json"
+hash = "86aa3f00f6cd955122c6ad2c631336f91c07fd6a710b22c98f508facef9eff1a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/lemon_sapling.json"
+hash = "177f8b05b0e0bc44653f6edd464ed75271e1cab7ca28539c9d982d7218a94659"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/mint.json"
+hash = "58d3a253057127c1f5f9be18f118368031410e846b964e42b52cae969498770c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/wild_beans.json"
+hash = "e3182c0e3ae8769b20501243e7a8523fc690a6626e7b5aa06a4386bfd9ee6c4e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/wild_corn.json"
+hash = "279919a717a1590456cf845b8398f76387de8e35736cb26d474eb8f0e5f9948a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/wild_cucumbers.json"
+hash = "89139ae201a94aea60421be606361415b99fda871842e2f006d92b76f1824a14"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/culturaldelights/crop/wild_eggplants.json"
+hash = "79021220e7d2c8693d0265f435cf61f988285e1e08a02d52ae88e588312e4e99"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/aerlavender.json"
+hash = "f500b751c4e676c7a7af245b7ea4bd82f622742c4edc20f909918fc7b033821c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/aether_cattails.json"
+hash = "f45cdd3059eaa0810e94460b223565a06f71fb66c580097481de231575315b92"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/blue_aercloud_mushrooms.json"
+hash = "8e28977fc6a29b26b3e815e2b9ee0e42dace4de53940c67897f024e059187127"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/echaisy.json"
+hash = "79449be42b1567a7bf2d98549fcb70849327dc382ec9b1f3712d804d9bd0d6af"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/enchanted_blossom.json"
+hash = "1b4a0a32e33aa0f3fb6ea1d9ceccd459aacd3ecf093507b60445c7670c7044cf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/feather_grass.json"
+hash = "aa0ffdb09fd3dad7525fc4599c55275a6e530b942f35729d7df03d5cf230c7d6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/glowing_spores.json"
+hash = "7d0cd1b3aa18418954e1f66f5965a83e161db0b53593083251950712faf6be30"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/golden_aspess.json"
+hash = "8bcba4c07fd8a8e7dd20968dc07d41780f6515ecd38f18739e1613adeb965e41"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/golden_flower.json"
+hash = "e0c43cc432ba9ce2ea46becf8103d97ce65c9cc19f5fd09f64ad57f2f4a8c683"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/golden_vines.json"
+hash = "ac294c587287a3075a7e5034d61afb393b6ccfb99eb25c0c4aa31acf6864613e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/iaspove.json"
+hash = "2aafa23fc102aa6b988d0b736e6d34fa6389d54487cd8c635594af14745cd379"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/lightcap_mushrooms.json"
+hash = "8dfcbd6ba68a88850d0c1fcb28bba45a602231870706736ff471b23f5750270e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/medium_golden_grass.json"
+hash = "54f2880de3b1063f97afff18b1a63d33ccf9fdc564c8907a3275eef5e03cfe1e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/mini_golden_grass.json"
+hash = "f7d501ba70cb74bae45b2f0f1a7f631b64f1d026d8a5ef3149e593790ec6d42b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/pink_aercloud_mushrooms.json"
+hash = "af4c3e3d078803b562169ce382b59b1d581e8544a7b3bc0194282d3c03487806"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/radiant_orchid.json"
+hash = "68af974e25a0e7ce0969aabedbaaae8ae0af863a957617198d13164a8f0e3694"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/short_golden_grass.json"
+hash = "8ddd56916255480e12af16712fd54b50af19f85db7b3566284d6a7689d01432d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/sky_tulips.json"
+hash = "19a204cec773346f102d0caf35aa7c2de4fc06d8e0e2b99d79aca8abb1636b6d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/squash_stem.json"
+hash = "bc318f99f5d82eba3f7fea22bf48134175d722ffa149078697f064f6c79c76f5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/tall_aerlavender.json"
+hash = "5d10db867a38dd43b0c0ffaf4c0527e3f71a8d0785f422a2bfa1c93597f5f4c7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/tall_aether_cattails.json"
+hash = "8fc95a4319e4d42dae19c9c0fcc044683134d03999cb18d6c74c470ac4ea9374"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/tall_alien_plant.json"
+hash = "f08efe1bb06729893b98e7e47db0441faf58519c3f5e254360c88382b5189347"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/tall_feather_grass.json"
+hash = "92f59ce805ba4edce4af9ceda2243e03298ae0f3b88644a73e4df6afbdab4b17"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/tall_golden_grass.json"
+hash = "4c1d3f422f3754f444f5b7412b87b28369382a3f136aaf3bb8ac561a22661df4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/crop/yagroot_vine.json"
+hash = "d873543ee2d998ac74ea3018da7140b5788aa08aa4f79f93ce1a3c875a718303"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aerglow_fish_bucket.json"
+hash = "e564080d7c38bf7fe7a236ea60adbef1bfb6f38be500bbf18aa85a994951de95"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aether_coarse_dirt.json"
+hash = "db8f5479647168b52568d8732c27034185cdfacd0ebda1134ffce1fc45692f25"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aether_moss_block.json"
+hash = "7e717a8b066e8df0452fd3771145595e8a2f8e41ef891a994ffa9e70c981293b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aether_mud.json"
+hash = "ed05e1ec1167d13e580667c4d2a22ad5b3ed0ade0929f829c3e31477f28eab5e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/golden_heights_grass_block.json"
+hash = "e9e5d34b5e17942a5e04327a79213c30967df8775f0fac45f7c09f2e9facde35"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/skyroot_aerglow_fish_bucket.json"
+hash = "17c5cf04dbe673bf49f3cd48102f156905c02e690e0c9dde3f2c525536d3b370"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deeperdarker/crop/gloomy_cactus.json"
+hash = "040812ac25382bc5e6629551981cb466645631bda14ad00fe8ac2046f00fa353"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/endersdelight/crop/amberveil_mushroom.json"
+hash = "71100e6ef48032ce002c4694828e9899be6ad82769d64740f0e23ef45a53501c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/endersdelight/crop/chorusflame_bush.json"
+hash = "4a2e8f8e774bbcb3cd8145f74f99d04473b069d868e96584d8bffd961143991b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/endersdelight/crop/ethereal_saffron_bush.json"
+hash = "c3af2bd0cfdd106af4d0df4253bf3d5064a612d18c868b92af6a54556a8f9532"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/endersdelight/crop/voidpepper_bush.json"
+hash = "9059e693c1a2bb371e14329f8deb03d7526288e74bf402794cb80bc499d9f7c9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/asparagus_crop.json"
+hash = "56939babbab2c1c3bf67470bc3c64abdc157087b3325acb21860a86ced6798c4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/chili_pepper_crop.json"
+hash = "fd6ce17dc0b0ec0bdd1066d3dc94df4bf4e0061a9cb638d5f3748da2c2840711"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/cinnamon_sapling.json"
+hash = "bee05e25a0bef7ab7bc1c890ab8f5f282ab9bdcffb9d19f14f5e29f0d954f775"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/cranberry_plant.json"
+hash = "d8ef953fa3f1f48eedf16ea595b5caa7a3dd47cb8d359392dec48b96e42ec4bd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/peanut_crop.json"
+hash = "135684fc3ef380541b950cbdc572988414af77672088ffd49be2fed989f26fa6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/sweet_potato_crop.json"
+hash = "1bc8029a70e1b9c7b1b7257520ae2822ee8d36e9fe825b1b8570c7044afb9585"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/wild_asparagus.json"
+hash = "eb5491440a827ddec4523ffe13872f9066da5f58108ad4e5a03c53bdf2eced8b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/wild_chili_pepper.json"
+hash = "f8b1dcc16a28e43cbbb23e2e2ef675a5a3d7520574cc056bef2153d31d9efa18"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/wild_peanuts.json"
+hash = "3f475913e88a65a26a7276f7a46814fc709a68576b4eba1307232892265f6281"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/expandeddelight/crop/wild_sweet_potato.json"
+hash = "bcfbe85cea0d5c4e6552de1d46f69dc0a8dce527658df354d3d7542c807a27d0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/barley_crop.json"
+hash = "9aa1da672985179969eb976df469a659c388c6ced8ef1dc6c53125c202f78364"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/corn_crop.json"
+hash = "f05c467607bc76f44716dfec4a7cb777036bbef53bb93aecbb66bebc430f4b08"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/lettuce_crop.json"
+hash = "c7b3998bf009a8d6e29fd90119ece3dae829028b2e6ee9588e8cc3b6176d2cae"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/oat_crop.json"
+hash = "d4ef9d984148628a330721455c89e062a4e3e799074eacd025c1af73b174d6c6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/onion_crop.json"
+hash = "f3fab9c6c40d35b7dd39796c1361d8446afde52833ec97c0a880f25d71624eed"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/strawberry_crop.json"
+hash = "9d87bae538893e08103204244ebb767fa4460802bbca2ce1c059582bfe590b8e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/tomato_crop.json"
+hash = "2d7b419a137371335d9f4b810fadd7b2a4e01dd583046771e304c78e617aa485"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_barley.json"
+hash = "7759f630aadc1f53695fdad015d0531960da0a10645b8ac75f8dc92bcb36a4eb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_beetroots.json"
+hash = "f7713629fcd608aec53ff62b2e208234b8342afa569166814ae680dd71b5a3b7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_carrots.json"
+hash = "d63c8413f3f153e4b2b35ecf019ccbfca58c22ebfe98213b3b2f4ac9e77fbc8a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_corn.json"
+hash = "7473131ff6acbecce6d4b8b1ba99b03bd95dfd647600625fa9963e41dfa7e4b3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_emmer.json"
+hash = "9588d77ef7fcc680627519ba0bf10401dd1e546cdb9a9dcf6967cb180dc93016"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_lettuce.json"
+hash = "044613df11f2bb90f7d299db55fa15e49c84c9fe08e8f596b07c1b8cf98b8740"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_nettle.json"
+hash = "1af876ad85946c3d4f191868934b36a82afb5bbb39e045a7bac55ef4cb7f54d8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_oat.json"
+hash = "3c0285ac7e4c61a37064224113340a04008d5d8e328e5b66b3eb23eea49814c1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_onions.json"
+hash = "946b90daa7009dfacb7084b6178396c6e2b9c08bdf68549c86415289b00d0728"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_potatoes.json"
+hash = "d2b1186e21d40cd0821cff552a63e2901c580b8e2a8886195f22e0184a95e749"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_ribwort.json"
+hash = "e086cf4c9325c1d74f75236a1c6e6447a3369404c4a2e730770ff51584d01ddc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_strawberries.json"
+hash = "ee2691e20bd25fb4da33cc082a1cdb023df2a3dc87f4e62a36beaf7df141034c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/crop/wild_tomatoes.json"
+hash = "620b4b93be48ed51c370861a286a74a1c765eb4d4431963f52b6744232d6aa80"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/soil/fertilized_farmland.json"
+hash = "88629afbe87c5d0a97a6b6659060fbb3e45a8780c602100d2351b35ac89c735e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/soil/fertilized_soil.json"
+hash = "6b7062a5b4460305b7b622a407a5e96430fbaa3df01c9a2c5db94739cd5f5c0d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/friendsandfoes/crop/buttercup.json"
+hash = "a6916780856f50a902babe56d464a724ef0e7e17f3a95068a330609b985689ad"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/coffee_plant.json"
+hash = "c4740b47d5a505521d9e93c4fd04ef308d6837b7a452cbd3f9dd7534d688f6ea"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/hibiscus.json"
+hash = "5d0d7338eb93274be8cce14315fad68ed63af2dd9d3f5728cfe125cd852a7ad3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/lavender.json"
+hash = "9374e2d8199c132d75182412f41a8eeff2472f997639a207c399adbc0e9dcefc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/rooibos_plant.json"
+hash = "c10a67a65b84c54160271e69da4a9e1fcf59553b0337c0ce14bc7431e3a2f6c8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/tea_plant.json"
+hash = "b8e8515ae1c29de9e38c5f64fa39967ebb8c82bb83a7defa37bd5f162526fc7b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/wild_coffee_plant.json"
+hash = "0620055ee8517ac42d12c9f3076ec0d02e9e874f695c45e9b8a9e49b24413b46"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/wild_rooibos_plant.json"
+hash = "13f5c049b5ef82f2fa9aba0bbe30ccd06d4513ad5cee08277d06877505a3a534"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/wild_yerba_mate_plant.json"
+hash = "294cbdc30955a9bbba4ae8477c9742e1267f4c3f0ddf855a2b1470864730ac42"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/herbalbrews/crop/yerba_mate_plant.json"
+hash = "ab90d3e4c20f94a54d0459ab105a24dae5947a44a3b2e7f47e1a54d9945522f8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/aegiflora.json"
+hash = "cbdfafee6f00800106517c8cb978d7a32c8a9f6ae0d2be81fc67455ea690942c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/astrylis.json"
+hash = "acc58d4765e4a977cfe37dda7e43a6121d57ceab6d0ea2eb62f44edce5ea63e0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/begonia.json"
+hash = "57184124be239fc8482e6038b821b20202b74fcf559f0fa9a7c8c3eb4f1927a7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/celestial_bloom.json"
+hash = "9c8dd34609ebf6170d4a65effc65d821e3b260f27f28f094556740ed9fc8a6f2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/chillberry_bush.json"
+hash = "764cd5dfc4f13734d02c040b33d05ca04b4403cd9a04fe60e200d681a3cf2dd2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/cottonwood_sapling.json"
+hash = "b77ff27cd0bbc505ae1d94d06a49fcb5e790b75656c15f08ffb04caeb639837a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/dahlia.json"
+hash = "5ecb056cd4c70052ad5fe7bb59079c33b819d1831dae9766114465836a540541"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/dreamshroom.json"
+hash = "9195baf120f81399ac0e778871a68c550757f667d24fa3a11473dbbc96938801"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/galeberries_vine.json"
+hash = "eeecd9810d7a48b2ab579f9f1585616fd11bcc3b28dc6454a4150585f6157ce7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/ghost_fern.json"
+hash = "8686fd0d4ffc6ee9581e2dac245a2e8c551642b2ed75a056750b1154ed5ef776"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/grimshade.json"
+hash = "8e349a89a75131729617562c620a829c3bc0c2f696d50a85528d4bc823729ccd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/lavender.json"
+hash = "304679973b7f3ef100c20596678747fa8bb8babd62ed9027925b760d20d5276b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/lotus_flower.json"
+hash = "806e9b27b11878f5a77f85b8b6565773d389ad7f99518a3fdc54254947f31cef"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/lourdes.json"
+hash = "fa79fe6f8ec32047b61739f9e72ff5fb5920c1fabf75fdc0dabb4f149378df24"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/mandrake_crop.json"
+hash = "de59c512b8810dc877abc5e61eef06be55bf76e75ff25b0c9498ce895113f0ae"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/morphora.json"
+hash = "5272352399d7590b12e9577163e2e78450a4477b2bff4e62b17042e3f18adf79"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/nautilite.json"
+hash = "7fc181e2fb3fc652e27d6838db605a727dd3446b0d616ac1ea236c1da4f3902c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/nightshade_bush.json"
+hash = "5d62d7b81c4ef56234a1966f26bd83a50b08262d1869b7c073d4009b941951d0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/pale_mushroom.json"
+hash = "623c4fd8b5983211a3616e30d6caebe46c1c032e322dadf2cf68aa0e194ea801"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/rabbage_crop.json"
+hash = "9070b84fe3884bc02d531fad2c4d44f6b939f5cc06935ffd8fa9badc9f2aadf0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/saltsprout.json"
+hash = "707f8047f53656e662b1d9dcf1b170c124a1a7aeeba40061c1a5b1a2102fdf67"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/siren_kelp.json"
+hash = "63ec85a8e8b235b4d7272c449408f149aac9ddc30e228bc9950613ea722838f5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/spirit_bloom.json"
+hash = "fb07dee4ecf7dde975312544a60cb0282929d212b8f54f31ea0a4fd9d153239d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/sunfire_tomato_crop.json"
+hash = "ebc0225fe8818c288b4fda0eaa5fce274f59381de9cec9f7f9f4b6445a0008b8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/wild_mandrake.json"
+hash = "7fe9bae793d106142af8a0c19124d93f54d2fd742fde89c3422a923ab7f57e67"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/wild_sunfire_tomato.json"
+hash = "0cb1e6d184ea80f3ca21a7b1d8760c8bd59dcd6be383f52826094f8349d70cf1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/willow_sapling.json"
+hash = "996997a4033b9fc2f75634bf079b7a53ce4de33cc4789766fbe5a39910c2dd2a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/windsong.json"
+hash = "1fe6a1cf4c2d91276febd2f1c17951593d06beea61f0fa9bafbffbd18255b1f6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/witchweed.json"
+hash = "5236fffc627171d0e1af432c9fe04290c866854c773f6f09cb454b2d444e910a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/withered_aegiflora.json"
+hash = "724d822dc2fa540ff46d5d23812df73e302c38ab36718189b7a7fc683aac1ac1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/crop/withered_celestial_bloom.json"
+hash = "e3613aa66f47fa8973a7aed4e3fe715a3d4b019bbb613d02d123e3ff7dfe680d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/soil/infused_dirt.json"
+hash = "416c3f2cad7dc19438e2082da97769d780091fde15430be4b0acaf24f21198ae"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/soil/infused_farmland.json"
+hash = "cf536acd49c6cc8807e0f1069a14465ec4f4522e9e14b42eaeb30753fd24eed2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/belladonna_plant.json"
+hash = "fb0910d00d7c829bcb12af47576978a154060959d7fd04aa3f1b05bf23bf6048"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/flowering_lily_pad.json"
+hash = "5ce4ae11ae1a3a059ec16b6e51a16a9e694c62bb78bb74206e12f76704658999"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/mandrake_plant.json"
+hash = "63b9fa94d63084ea167d410f4c8b927469435957681d6738c733e1b87e0942cb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/mugwort_bush.json"
+hash = "61bb374cd123b28df8f8697d7f447dd788a0a302febb09d45b4496a4cba49eb3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/sage_crop.json"
+hash = "e3795269f2f37852b4c44095fd139ffdd92b20102ddbef8e851d3794ca0f9759"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/willow_vines.json"
+hash = "7bdd81095958b8bed92d58428825e61030e2c4a350f5e36b07537b0a43eb6c83"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/yellow_dock_bush.json"
+hash = "148bb341ca5a87f767f2d12520fb4676e24ad53fe759600f9811d17e7aae7b77"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/alpine_poppy.json"
+hash = "9d576e5927cba656a6a90cca1b0260a9d11b44471f10165c976bb32163003c25"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/delphinium.json"
+hash = "c8fad5f5a314f582435c58daac8982125fd35f4454e4d2d8a842371d7fbc5010"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/enzian.json"
+hash = "5e66848ff34a0c24d2ad5bf53e2b9794c3c18c9a4f6e2310485cbed4dc65e096"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/eriophorum.json"
+hash = "58b6291a6d7c3a690cc12f57a79937882606e9199da3b957df604f22cd794b07"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/fire_lily.json"
+hash = "2bbafc110ca4faf9e1176cd56b13798e768cfaf1b029c1b39a8664572107fafa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/saxifrage.json"
+hash = "ec7e32ac6d0a98eac7b4f55e3d60cac2aa115f59c4d05e258cd8145a7121c357"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/small_fir.json"
+hash = "a2e45a73ce80216845704598f2dea73bc7ced1f0931b159789e64faf3b694555"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/meadow/crop/tall_eriophorum.json"
+hash = "92657e899c87495e3c3f4f3027eec28f62f75b431d9a5f0cf85c4e08210c15b0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/crop/bullet_pepper.json"
+hash = "6fafb3bbfd0bd7c261b43ff9c854c867c92b0435fb9279973e6b7c0eed4afe04"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/crop/crimson_fungus_colony.json"
+hash = "6b95dea76bdda4f73387b2c72255c918972d52306583846969e6d4474b2d5caa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/crop/powdery_cannon.json"
+hash = "ca59fbf1d77bdff369b243d595cce63bb83b3b9e6be525da420a32366c776251"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/crop/warped_fungus_colony.json"
+hash = "b71bcad964a488b094b9907298bf38e923293488d3598b3a4097de909e7c4154"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/soil/letios_compost.json"
+hash = "a3f3eb909f7bb19aa5010f47c595352f1743750ff6500eb7cdda82edfdbd8360"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/soil/resurgent_soil.json"
+hash = "328109fa396c0810467a8d2e005ef0185f2b8d3969b7e71ed2625370f89350a5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/soil/resurgent_soil_farmland.json"
+hash = "712b6a0eb4ad94583e17341b18081382186dcd09931dbf44f025dcdc642c2d41"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/crop/crimson_kelp.json"
+hash = "b92f181bf25e1523637ba150916afff25b601cc341e6234b28ecad79d16af052"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/crop/warped_kelp.json"
+hash = "7de113e1bde7048a52c679e1e7c3bf4a67ed3e715ffeffb76a1d092bdc15d667"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/blazefish_bucket.json"
+hash = "46d09ccc635abafeae02d82b7b6846f6b63fb2b2edca8a5e4b45a80f38c8e67b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/bonefish_bucket.json"
+hash = "8cb21b728739424cb46c27ef958eacdad40743ac748e382f74bafdf85ba4ba85"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/eyeball_fish_bucket.json"
+hash = "022ed6322ba3c3f5484808a891f30b618b128bb5f089e9fcdcb70be94251f162"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/fortress_grouper_bucket.json"
+hash = "9ab94bfc72eba9a802745911d9f2fc64bb9be53f1940d3508a8ef71c9c81ae3e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/glowdine_bucket.json"
+hash = "a115296083f9ba1cedd28ba44537893ac2f87337943c0fe46dc5be8f0ddffeed"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/lava_pufferfish_bucket.json"
+hash = "b98dc82b9747d98e800f2199733530f3bd5c19717189c85d7ee4480fc81f89e7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/magmacubefish_bucket.json"
+hash = "8727829349e6bd7cb6d30995c81495e7bbc63366d8eb6ddd596e82efde9503c0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/obsidianfish_bucket.json"
+hash = "75682cdcb11acb30095c1ca8b386548716407fb4fdac6e18478c3f4a36eb3e9a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/searing_cod_bucket.json"
+hash = "101859c2489c05732d721d3d6c86166385c5a46a88427a0b14b31952555f089f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/soulsucker_bucket.json"
+hash = "d8fdaa829346f0311c1cbdd8c00c37a324b54c1fe521cb4709d73d0c2c3e55c6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/wither_bonefish_bucket.json"
+hash = "434d72fc304de26fa081d04624c5c06c355179b8f5dd72df94e13c50cbd9393e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/crimson_sporeshroom.json"
+hash = "5c2cf9676cea3f8642ee4b01713f7308a1bb3751a4c584a3bfcabe069016ed27"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/crimson_sprouts.json"
+hash = "e66c4075db1eeb07ab2f1ae1e72b7ed78fbb454126b3ba7be4c4ea7ff6cc9189"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/damp_siltmarram.json"
+hash = "70cecb9a35e9d2f67ae46686bdbd25b7bddd903510a8721974526653d0384349"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/dry_siltmarram.json"
+hash = "ab75d32ad005b73336d0a30981cf657cbb911a59c52110999ebfd69c91c18c1f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/moist_siltmarram.json"
+hash = "4838dda4a8b3508b8833dc34c3b5e205355ca48f547ed3b579ba331ed12c86eb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/soul_swirls.json"
+hash = "13ca4d6289551958ccea5b7253787b5560214147726f21aad557cd3a7ebfc989"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/warped_sporeshroom.json"
+hash = "4f2f268774a4eb35a4e661006cd57245c40f24c748cca7486f7f382247d4faf4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/warped_wart.json"
+hash = "46829cfd5e785a8b6447a888e4a57d34358892c02b63e4d6eb414ce2d47d7bc4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/reactive/crop/flower_vine.json"
+hash = "5058da9634d03d7478334d9cd0a51db2b4b97716d69a9fcdb0a0f2ef39a96801"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/reactive/crop/mind_lichen.json"
+hash = "73696d3423cbcec6d59f0e1a5dff6202d52534b207f6ffc1d9c44d981800a0e4"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/readme.md"
-hash = "9d07c02185222f792e776ba3e07451085e72933d3289ff346c58b01011a0896f"
+hash = "3ec0e9ed8ae1d058ffeaf5e074c8307c9266df8ccf918a4f0f06cdeca48ea6d4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/blue_bioshroom.json"
+hash = "56ad229c80aaf8f0d584196d536ba7224e7609ca8070972cc2cd52ce67b17b17"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/enchanted_birch_leaf_litter.json"
+hash = "2dd907d40459f38fc79fe6aacf35a62fc68593c321843501a68e9335899b7b63"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/grass_sprouts.json"
+hash = "31c85bdcf51f008970c57f6ac1379ac14ac29b2fec635820089747077e6546e2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/hanging_earlight.json"
+hash = "2c841b3e93302668df1adf897043d5ee8e8c800b838a9dca74f519d341d1153a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/lavender_wisteria_shrub.json"
+hash = "b2166bfef4521cc458b91a7b5374b7cc8fd5a9cd2c3c3a607f2db231a1bacc6a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/lavender_wisteria_vines.json"
+hash = "936ce7ec3700b90ca7f5c226137a960cbec8ccc87459c9a529a09c4cca7d1273"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/maple_leaf_litter.json"
+hash = "1067b86ef7b1626d9727cfba03290576e72af9e631f10fd27f1572e950fa04cb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/orange_maple_leaf_litter.json"
+hash = "9aac22d3ddf800e8deb6b3276814b68fc834b8c656472db9c062ad53917a2565"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/red_maple_leaf_litter.json"
+hash = "b7ce755005fc3d51b228fdd54beb2f2d1c9d84deb1b1a8f71286ec46d3dfdbae"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/redstone_bud.json"
+hash = "84f4da5793cf763b2e210663dc2e32309152af010945908fecef951b38b6a98c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/redstone_bulb.json"
+hash = "4c29aa9c0b8d8c262b914aaa1b97e6a90f8abf8c4b41742e0865a4be8ded404c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/saguaro_cactus_flower.json"
+hash = "59c048df8d1288897861eba1660432f1b3b8eafd5e75737eeafb3115c3f0aaab"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/salmon_poppy.json"
+hash = "c3e4f691c5baa0c42a52f7c36b15058c49f9402f19adf971f18e10a000484e82"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/salmon_wisteria_shrub.json"
+hash = "1460f710d4019cd122b4ef188b538537ce353f0b93bb693ff962d3380a893ea4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/salmon_wisteria_vines.json"
+hash = "a5f27315484cc8a81d1fe53ba62ef108a9953da0e0fb4be2d9ce054bf7918615"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/silver_birch_leaf_litter.json"
+hash = "5096fd92f2cdae0b5aca2f4b993d3211f53f8e5a1c7fdb7f55333c807be81e65"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/sky_wisteria_shrub.json"
+hash = "60c8ba669b482888915e3c2989eb9bf2dac0a8fe15a874a5aba8911742d4e68d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/sky_wisteria_vines.json"
+hash = "446624e6e00b6e1f883841fee0793ff11d967b141b57528d366fc84e889738bd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/tall_hyacinth_stock.json"
+hash = "beb332a6a4f5b2ddcf40f36866a715180374670bd7201568ead6dececf9398cd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/chamomile_crop.json"
+hash = "8d4507d04ebd2f163450f6eb201dcd2ba0e113a9b43da69913a00d03bdf0dc86"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/coffee_plant.json"
+hash = "cb9f04e92f1964a0f15b4b65245d594c9741bb52ac1a537e84156e789d1db5c7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/matcha_crop.json"
+hash = "995924ade290c282c06bf8b07bb660e6b1f65beac6b65afd4250f7e959b95c10"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/mint_crop.json"
+hash = "e30aeb60a37a2e52f41ccc738305a05d78253ad821b074671a9362c2adec40aa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/tea_bush.json"
+hash = "8fb24a70a7ed85d1f08a0486425cc25f3ea307683d610aeea71a8d77f32b033b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/wild_chamomile.json"
+hash = "3accf04a410873ff88295e7a821564ff76d51ef1bf435cdc0d942b7ea90075a9"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/wild_matcha.json"
+hash = "4401bd6d76e3446ec37916550f6a221f637a3decad86fd9b21f1bb26eea3778c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/roasters_delight/crop/wild_mint.json"
+hash = "058b550ee270332ce4aef19f6d2699fbf9281525ea6d3fded839abdf329c02c7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/rusticdelight/crop/dark_bell_peppers.json"
+hash = "444443f1ff70ab7d42a2581e7f8140ade86d199939b15f8f66ec66de7c844f50"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/rusticdelight/crop/pale_bell_peppers.json"
+hash = "7a8e2f4d9ef110d9797b52998a1ee9d04e96c3f38caccc1d771128a5e98ecd9b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/soil/blue_archwood_log.json"
@@ -187,6 +1339,294 @@ hash = "be3b3167cb21bb9e61a7d854fe6fb60d398d4349411129e237ac7201436283be"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/soil/yellow_archwood_log.json"
 hash = "d5d0f7ce81d6651bbc7262645a6c1361fb6d1068298c52e6df0e6ad1274fea50"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/tombstone/crop/thornveil.json"
+hash = "b54fab51bfdf34d6f6eaef714cea9467bb4b33be90da0d7e64c76483504776e2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightdelight/crop/fiddlehead_clump.json"
+hash = "5dcb003ebc36d0d29a03906c01d4255e111360b298370bd268166ab81ab185b1"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightdelight/crop/ironwood_sapling.json"
+hash = "c58fdecbca92124e20bd58360162cdd912a901e50810d2cb0143e3d1154598d7"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightdelight/crop/mushgloom_colony.json"
+hash = "a300f87b74ecc74829f7cd989ad11560e2c546a4d78fc51d903af38ae50c9153"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightdelight/soil/twilight_rich_soil.json"
+hash = "388599960ae6ad7f87062519c3a5820a328181277c7b19bc221b2e990d3c6e07"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightdelight/soil/twilight_rich_soil_farmland.json"
+hash = "5dcb00dd1e239806de2274bafbe708d000a4cf52f1ae5dcd0c9fd210ecf6f9d8"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/blackberry_bush.json"
+hash = "76d7cba486b1fda8af88d21f7182805744cc285649e5c57fe080faae08dd7470"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/blightberry_bush.json"
+hash = "9d46c4e2144d27b558fcc0a9df7d1b3f09332cb79cd98000af4148fa6e35c40d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/blueberry_bush.json"
+hash = "60cb55581c5f85c7890d15c5b7e3ebd8393b942894467659dc70fda14bfd0632"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/copper_oreberry.json"
+hash = "eaf12fe8f1071ef2502d243d1ae17b7559a32a01401db78f66f643f62513fa96"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/duskberry_bush.json"
+hash = "b7ecdd98a84889c4fb50ca4cb3de7c8ca5313ee2aaa182ac3df1e64e15d63f96"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/essence_oreberry.json"
+hash = "9572d7ab0c27b500f2d3774132e911553f780b7533670958909de9498f71203a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/gold_oreberry.json"
+hash = "63a92fdf523f7c03c2415b2d0396597c99503231bf9cd4b6dee3838f1202a296"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/iron_oreberry.json"
+hash = "f9b9ba68ec034d8afaa1bc3a12e0f5188c4d88ce9f57298479570f74e87ca551"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/maloberry_bush.json"
+hash = "b6ae09a3a6e7be86875a022796dfced55f215d6a349e82ba69ea1a54541ea1ca"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/raspberry_bush.json"
+hash = "39227e30881b9142d70fe96e235c022de2d3d1381229521eceab29f40f329209"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/skyberry_bush.json"
+hash = "606c0cf95eec520b936c4011ec1786173e3567af983b090a24bfe346b83ec909"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/stingberry_bush.json"
+hash = "50b739d052c38ee4c37a5a12b7f3f7d0566cb6e246e16d7bf378ac4e0f98fd6a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/amorous_bristle.json"
+hash = "505b1a4b96b671c7d2243763b666d32d3eb9e27d2b0d943fe26516ebea594682"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/ashen_deepturf.json"
+hash = "24989266173c3e523f897e56806908f0272c268c972560aafb09363aa5bd799c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/blisterberry_bush.json"
+hash = "141101758aef3ad8c2fcd892c64d4379a73a480849389b3dc8479932cfd7e278"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/blood_mushroom.json"
+hash = "9c329e159a7767cd75e1a581c52270558ecf071da818481fdff7e41664f0f0ea"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/butterbunch.json"
+hash = "f22ca27284eda2791604673b54f079647b7282c80a1755fc80f26b993eb8dd38"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/deepturf.json"
+hash = "be10520d8acf751234a467ac5533d01a506bed1e1b75819b90f2b1e6bac319d4"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/ditchbulb_plant.json"
+hash = "1a69272cc8cde8d47b182c6013207142058e6a03fc0c64dd3017508ae8631882"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/droopvine.json"
+hash = "1d05a54732cc8a73f245364b2aeaa5bde6b2b2f955bf1a95cc24406578eb6936"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/frozen_deepturf.json"
+hash = "994724351f4cdfe856684dec506f8ea36a6c39980531a837aa33d50a72064113"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/glitterkelp.json"
+hash = "8c9e544e8c5dd4dd1376a0832fe8e60f08f065842a56d46f083b1518e41ee931"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/gloomgourd_stem.json"
+hash = "4ce5a01f83bcd387a19891c937acf516ffaae3fc04a87a9adcf1455467a5e5c3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/indigo_mushroom.json"
+hash = "0cc7aeb3ba007f38f8b21dd691baf85270b68da3e0152bba03af67d99647583e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/ink_mushroom.json"
+hash = "dfec8b4cfe3c49632f76351c29551a9cc499a0254000f6668c05987334ed5133"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/miserabell.json"
+hash = "994feaacdede68e71339d2007b051878629098201b431f8a366f27cd0f5b98e6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/mushroom_veil.json"
+hash = "fca67c2a0f9e8c26e0f55166dc76f2c53bf6915e38b4646dd778f0b043be39ff"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/puff_mushroom.json"
+hash = "af1737c6ac4259b815f78d1a235359fd5a5a74793eb1a9e123bb6c159e4c67e6"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/shimmerweed.json"
+hash = "037bea58a3801e946d9fb4505c45fb595c53c2ced74007f282e420c385b46d28"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/tall_deepturf.json"
+hash = "e64fc20bc41027f4060d92383e1dd9afab601a7634bafd9791aa6f569efc6a01"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/tall_shimmerweed.json"
+hash = "ef256c6cd82da54eb719f92dc3d06a26498ab9d6e37fbedb6ec4aa4c0effad7b"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/underbean_bush.json"
+hash = "ed0d52240564af9a88a98603c531cd1a32d5d88a98be24e175160187f16c6548"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergarden/crop/veil_mushroom.json"
+hash = "2339075031bd4319ca56064e2b70c4ff96a1f36ae259868aefb0d7aaba3e35aa"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergardendelight/crop/blood_mushroom_colony.json"
+hash = "6e21c7955e1e413cbade52773f53547fa66717d0b9c958ebed1b46c94a9777cc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergardendelight/crop/indigo_mushroom_colony.json"
+hash = "4e0787bdcbf83e6c0ccf3a6582af11ff101d95eb58e47cac702ada79447a145f"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergardendelight/crop/ink_mushroom_colony.json"
+hash = "f9e23570f971a822ede2535548594b4f711ebbb17043dc07f54c6ed1ca6751a0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergardendelight/crop/puff_mushroom_colony.json"
+hash = "2dea441304d03ba5fdba07b78f359ce859aca9b22a2c83ad5aa52e75ef2d67b2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/undergardendelight/crop/veil_mushroom_colony.json"
+hash = "a80905bc9813b58f5fa3a645a3242df228c95d47a876569bd9f3678eb39976b5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/chorus_cane.json"
+hash = "1321393a83cb365d0f426e7a00e157aef7fd33e03b989615cc9dfc4906330bdd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/chorus_cane_flower.json"
+hash = "2cc6d0b367fcf629552464f1e06b195557ca0d644254527bd7b617b148f10293"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/chorus_fungus.json"
+hash = "ac1464c0ca7382ac0856312cd8fa31f86c720bf794eae326deb61b3b120aaa1e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/chorus_roots.json"
+hash = "d4ef55d41c1cc78d4b976c34db4885656807821752f39b0f0001a824b17024c2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/crystal_flower.json"
+hash = "6be96b41a8dbc1017625a13976c27e10a62853a8c1b260712d9a5e28198423dc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/endstone_sprouts.json"
+hash = "6107a40c62b1ce5f7f6c948ca75449166e75d961845230b3b37de17a2285f54a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/flowering_gloopy_pile.json"
+hash = "63323ce6a993b29470215e2bb24f6279cf621e5854240e813715a93b63638228"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/flowering_purpur_grass.json"
+hash = "33613d67710bef6c98c229b9dde6e71710e5b9d01d7e89c20770041f84c7f536"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/gloopilon_bulb.json"
+hash = "f13fae014ee53bd51f40e07fd856020fd402c5f480d1d267709ee17af51ad3fe"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/gloopy_bush.json"
+hash = "8c1a257dec359956a281807905214e3b9e426a0490f93a89e215159d990bd949"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/gloopy_tendrils.json"
+hash = "be41881e3aefba942b71134a1ccf12384c58ef0497ba1c45f17a50acb75704c3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/purpur_grass.json"
+hash = "2f4779726a73b0f0df3b0fcc3cc4f923a74211bfa15f2ecc1927268f60835320"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/shiny_spirea.json"
+hash = "3aecb1a70292ab419d981810d40efefeca7761a5fab8547dc73198a9dd5921d5"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/small_warped_algae.json"
+hash = "211ba23b66f7a768b9053646e08353734c246975dde8337bb83bec00e7287f5e"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/small_warped_squash.json"
+hash = "5281e78a63dede0bf02bf0c8419f212402644c5255cd2342aac904a1f891418a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_algae.json"
+hash = "ecc5e726da5258804b5303d75cf845686b200f45393a385c1ff2551f535e19bb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_bush.json"
+hash = "6073847e9c2944330793fe2b288bbba751e56c17b5f02d3080771a27154568a2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_endstone_sprouts.json"
+hash = "e28c0133fa93aafed4c6879b6fca974074f29620404473e53e52d5b0437b2763"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_sprouts.json"
+hash = "8efc9a980ed14856756a524a8474be1ee052cb300fa605f04a09491056c120bc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/veggiesdelight/crop/mature_dandelion.json"
+hash = "f864baa98a5b6b7fc83cd4d23259a38de17b91fe689601d8a1e37059b3857ab2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/jungle_grape_bush_red.json"
+hash = "565c0189dc7df3df955f9365989c98ec288e4d6f6f8102e160804669828bc8fb"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/jungle_grape_bush_white.json"
+hash = "ddbad0871be22fc9b42c7b1e646e97d914d49f0c29cc31c968a8e966d7783a8c"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/red_grape_bush.json"
+hash = "3c0b4c35fc7ce531b3e72ef183a35c05a5002d33a53739f644fb506670e3f696"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/savanna_grape_bush_red.json"
+hash = "941569c36ee3efb0de6c5964eaf0a62ae011419caaf24375f2d0dd1b48ab307a"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/savanna_grape_bush_white.json"
+hash = "1f042910a03f648d5604db1297d6bc2c404308367fbbfc966c52373970bc3399"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/taiga_grape_bush_red.json"
+hash = "14fb284dabbec452eba3ac7d8ba194ad2f39d473350d431c31106e12bbe08511"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/taiga_grape_bush_white.json"
+hash = "365194ea6c7c29e68cf9397e497e023365e4e86d1116a37e6fe65f9e0dc932bd"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/vinery/crop/white_grape_bush.json"
+hash = "8f252a81a3f188fb7720e67f053210407441082ed6ddb2d96e78a9defacf6981"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/neoforge/loot_modifiers/global_loot_modifiers.json"

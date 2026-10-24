@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:chorus_fungus"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:chorus_fungus",
+  "input": {
+    "item": "unusualend:chorus_fungus"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "herbalbrews:wild_coffee_plant"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "herbalbrews:wild_coffee_plant",
+  "input": {
+    "item": "herbalbrews:wild_coffee_plant"
+  }
+}

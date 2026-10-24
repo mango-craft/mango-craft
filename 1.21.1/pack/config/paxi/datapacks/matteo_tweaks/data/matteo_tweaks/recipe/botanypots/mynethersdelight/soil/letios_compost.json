@@ -1,0 +1,14 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "mynethersdelight:letios_compost"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_soil",
+  "block": "mynethersdelight:letios_compost",
+  "growth_modifier": 0.2,
+  "yield_modifier": 0.06
+}

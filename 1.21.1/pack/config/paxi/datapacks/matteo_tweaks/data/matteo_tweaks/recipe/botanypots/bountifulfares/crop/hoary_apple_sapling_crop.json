@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:hoary_apple_sapling_crop"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:hoary_apple_sapling_crop",
+  "input": {
+    "item": "bountifulfares:hoary_seeds"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "bountifulfares:hoary_apple_sapling",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "meadow:tall_eriophorum"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "meadow:tall_eriophorum",
+  "input": {
+    "item": "meadow:tall_eriophorum"
+  }
+}

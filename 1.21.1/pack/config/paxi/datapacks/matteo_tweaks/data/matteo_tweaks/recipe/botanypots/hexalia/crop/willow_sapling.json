@@ -1,0 +1,36 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:willow_sapling"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:willow_sapling",
+  "input": {
+    "item": "hexalia:willow_sapling"
+  },
+  "grow_time": 2400,
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "hexalia:willow_log",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "hexalia:willow_sapling",
+            "count": 1
+          },
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

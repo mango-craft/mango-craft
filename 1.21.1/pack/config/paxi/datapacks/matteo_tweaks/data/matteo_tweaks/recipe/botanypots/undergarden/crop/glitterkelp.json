@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "undergarden:glitterkelp"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "undergarden:glitterkelp",
+  "input": {
+    "item": "undergarden:glitterkelp"
+  },
+  "soil": {
+    "tag": "botanypots:soil/water"
+  }
+}

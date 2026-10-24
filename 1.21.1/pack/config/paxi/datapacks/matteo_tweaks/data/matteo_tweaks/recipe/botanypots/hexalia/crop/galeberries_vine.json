@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:galeberries_vine"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:galeberries_vine",
+  "input": {
+    "item": "hexalia:galeberries"
+  },
+  "render_options": {
+    "rotation": "X_180"
+  }
+}

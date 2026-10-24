@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:scorchkin_stem"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:scorchkin_stem",
+  "input": {
+    "item": "bountifulfares:scorchkin_seeds"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "bountifulfares:scorchkin"
+    }
+  },
+  "render_options": {
+    "rotation": "X_180"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "bountifulfares:scorchkin",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "undergarden:gloomgourd_stem"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "undergarden:gloomgourd_stem",
+  "input": {
+    "item": "undergarden:gloomgourd_seeds"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "undergarden:gloomgourd"
+    }
+  },
+  "drops": [
+    {
+      "type": "botanypots:loot_table",
+      "table_id": "undergarden:blocks/gloomgourd"
+    }
+  ]
+}

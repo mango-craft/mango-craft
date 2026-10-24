@@ -1,0 +1,55 @@
+21 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/blade/dagger.json
+19 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 2 }   e.g. data/tm_arsenal/miapi/modules/blade/katana.json
+8 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "rod", "crystal", "glass" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/handheld/handle.json
+7 { "allowedMaterials": [ "wood", "fabric", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 3 }   e.g. data/tm_armory/miapi/modules/armor/default/back_chest.json
+6 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "netherite" ], "cost": 2 }   e.g. data/tm_archery/miapi/modules/bow/arm/long.json
+5 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 3 }   e.g. data/tm_arsenal/miapi/modules/blade/greatsword.json
+4 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "rod", "crystal" ], "cost": 2 }   e.g. data/tm_arsenal/miapi/modules/tool/axe_back.json
+4 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "rod", "crystal" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/tool/hoe_front.json
+4 { "allowedMaterials": [ "metal", "crystal", "flint", "bone" ], "cost": 3 }   e.g. data/tm_armory/miapi/modules/armor/chain/back_chest.json
+4 { "allowedMaterials": [ "metal", "crystal", "flint", "bone" ], "cost": 2 }   e.g. data/tm_armory/miapi/modules/armor/chain/boot_left.json
+4 { "allowedMaterials": [ "wood", "fabric", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 1 }   e.g. data/tm_armory/miapi/modules/armor/default/arm_left.json
+4 { "allowedMaterials": [ "wood", "fabric", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 2 }   e.g. data/tm_armory/miapi/modules/armor/default/boot_left.json
+4 { "allowedMaterials": [ "fabric", "metal", "flint", "crystal", "glass" ], "cost": 2 }   e.g. data/tm_armory/miapi/modules/armor/scuba/boot_left.json
+4 { "allowedMaterials": [ "fabric", "feather" ], "cost": 2 }   e.g. data/tm_armory/miapi/modules/armor/wing/arm_left.json
+4 { "allowedMaterials": [ "fabric", "feather" ], "cost": 4 }   e.g. data/tm_armory/miapi/modules/armor/wing/boot_left.json
+3 { "allowedMaterials": [ "banner" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/shield/shield_banner.json
+3 { "allowedMaterials": [ "fabric", "metal", "flint", "crystal", "glass" ], "cost": 3 }   e.g. data/tm_armory/miapi/modules/armor/scuba/back_chest.json
+3 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "glass", "rod" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/bow/handle/arrow_holder.json
+2 { "allowedMaterials": [ "gem_melee" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/gem/large/gemstone.json
+2 { "allowedMaterials": [ "miapi:custom/ender_pearl" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/gem/medium/ender_pearl.json
+2 { "allowedMaterials": [ "fabric", "wood", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 2 }   e.g. data/tm_arsenal/miapi/modules/shield/reinforce.json
+2 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "rod", "crystal" ], "cost": 4 }   e.g. data/tm_arsenal/miapi/modules/tool/excavator.json
+2 { "allowedMaterials": [ "metal", "crystal", "flint", "bone" ], "cost": 1 }   e.g. data/tm_armory/miapi/modules/armor/chain/arm_left.json
+2 { "allowedMaterials": [ "wood", "fabric", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 5 }   e.g. data/tm_armory/miapi/modules/armor/default/helmet.json
+2 { "allowedMaterials": [ "wood", "fabric", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 4 }   e.g. data/tm_armory/miapi/modules/armor/heavy/back_chest.json
+2 { "allowedMaterials": [ "fabric", "metal", "flint", "crystal", "glass" ], "cost": 1 }   e.g. data/tm_armory/miapi/modules/armor/scuba/arm_left.json
+2 { "allowedMaterials": [ "rope" ], "cost": 3 }   e.g. data/tm_archery/miapi/modules/bow/string/normal.json
+2 { "allowedMaterials": [ "sinew" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/bow/string/sinew.json
+1 { "allowedMaterials": [ "miapi:custom/heavy_core", "mace_replacement" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/blade/mace.json
+1 { "allowedMaterials": [ "miapi:custom/conduit" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/gem/medium/conduit.json
+1 { "allowedMaterials": [ "miapi:custom/end_crystal" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/gem/medium/end_crystal.json
+1 { "allowedMaterials": [ "miapi:custom/ender_eye" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/gem/medium/ender_eye.json
+1 { "allowedMaterials": [ "gem_melee" ], "cost": 2 }   e.g. data/tm_arsenal/miapi/modules/gem/medium/gemstone.json
+1 { "allowedMaterials": [ "miapi:custom/nether_star" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/gem/medium/nether_star.json
+1 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "glass", "wool", "fabric" ], "cost": 1 }   e.g. data/tm_arsenal/miapi/modules/handheld/gauntlets.json
+1 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "rod", "crystal", "glass" ], "cost": 2 }   e.g. data/tm_arsenal/miapi/modules/handle/polearm.json
+1 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "rod", "crystal" ], "cost": 3 }   e.g. data/tm_arsenal/miapi/modules/tool/axe_throwing.json
+1 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 5 }   e.g. data/tm_armory/miapi/modules/armor/chain_crafted/helmet.json
+1 { "allowedMaterials": [ "wood", "fabric", "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 6 }   e.g. data/tm_armory/miapi/modules/armor/heavy/helmet.json
+1 { "allowedMaterials": [ "fabric", "metal", "flint", "crystal", "glass" ], "cost": 5 }   e.g. data/tm_armory/miapi/modules/armor/scuba/helmet.json
+1 { "allowedMaterials": [ "miapi:custom/elytra" ], "cost": 1 }   e.g. data/tm_armory/miapi/modules/armor/wing/elytra_backplate.json
+1 { "allowedMaterials": [ "gem_armor" ], "cost": 2 }   e.g. data/tm_armory/miapi/modules/medium_gemstone.json
+1 { "allowedMaterials": [ "miapi:custom/chorus_fruit" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/arrow/head/chorus_fruit.json
+1 { "allowedMaterials": [ "miapi:custom/tnt", "miapi:custom/gunpowder" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/arrow/head/explosive.json
+1 { "allowedMaterials": [ "miapi:custom/ice" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/arrow/head/ice.json
+1 { "allowedMaterials": [ "miapi:custom/lightning_rod" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/arrow/head/lighting_rod.json
+1 { "allowedMaterials": [ "miapi:custom/paper", "miapi:custom/book", "miapi:custom/nametag" ], "cost": 1.0 }   e.g. data/tm_archery/miapi/modules/arrow/head/message.json
+1 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "glass", "wool" ], "cost": 0.1111 }   e.g. data/tm_archery/miapi/modules/arrow/head/normal.json
+1 { "allowedMaterials": [ "miapi:custom/splash_potion", "miapi:custom/lingering_potion" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/arrow/head/potion.json
+1 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "stone", "crystal", "rod", "glass" ], "cost": 0.1111 }   e.g. data/tm_archery/miapi/modules/arrow/shaft/normal.json
+1 { "allowedMaterials": [ "metal", "flint", "bone", "stone", "crystal", "glass" ], "cost": 0.1111 }   e.g. data/tm_archery/miapi/modules/arrow/tail/fins.json
+1 { "allowedMaterials": [ "fletching" ], "cost": 0.1111 }   e.g. data/tm_archery/miapi/modules/arrow/tail/fletching.json
+1 { "allowedMaterials": [ "netherite" ], "cost": 0.5 }   e.g. data/tm_archery/miapi/modules/bow/string/netherite.json
+1 { "allowedMaterials": [ "wood", "metal", "flint", "bone", "netherite" ], "cost": 3 }   e.g. data/tm_archery/miapi/modules/crossbow/arms/large.json
+1 { "allowedMaterials": [ "netherite" ], "cost": 1 }   e.g. data/tm_archery/miapi/modules/crossbow/string/netherite.json

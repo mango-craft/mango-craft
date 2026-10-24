@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:wild_passion_fruit_vine"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:wild_passion_fruit_vine",
+  "input": {
+    "item": "bountifulfares:wild_passion_fruit_vine"
+  }
+}

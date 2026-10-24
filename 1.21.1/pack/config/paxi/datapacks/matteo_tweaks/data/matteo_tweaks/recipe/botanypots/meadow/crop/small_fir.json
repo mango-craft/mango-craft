@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "meadow:small_fir"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "meadow:small_fir",
+  "input": {
+    "item": "meadow:small_fir"
+  }
+}

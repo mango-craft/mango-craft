@@ -1,0 +1,24 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "twilightforest:iron_oreberry"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "twilightforest:iron_oreberry",
+  "input": {
+    "item": "twilightforest:iron_oreberry"
+  },
+  "soil": {
+    "tag": "botanypots:soil/moss"
+  },
+  "drops": [
+    {
+      "type": "botanypots:loot_table",
+      "table_id": "twilightforest:blocks/iron_oreberry_bush_berries"
+    }
+  ]
+}

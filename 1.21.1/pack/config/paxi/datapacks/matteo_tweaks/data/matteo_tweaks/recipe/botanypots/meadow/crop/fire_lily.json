@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "meadow:fire_lily"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "meadow:fire_lily",
+  "input": {
+    "item": "meadow:fire_lily"
+  }
+}

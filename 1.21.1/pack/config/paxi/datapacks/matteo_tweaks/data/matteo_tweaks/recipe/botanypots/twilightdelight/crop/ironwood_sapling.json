@@ -1,0 +1,36 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "twilightdelight:ironwood_sapling"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "twilightdelight:ironwood_sapling",
+  "input": {
+    "item": "twilightdelight:ironwood_sapling"
+  },
+  "grow_time": 2400,
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "twilightdelight:ironwood_log",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "twilightdelight:ironwood_sapling",
+            "count": 1
+          },
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

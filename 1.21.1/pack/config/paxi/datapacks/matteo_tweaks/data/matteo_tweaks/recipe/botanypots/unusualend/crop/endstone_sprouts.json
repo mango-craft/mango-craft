@@ -1,0 +1,31 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:endstone_sprouts"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:endstone_sprouts",
+  "input": {
+    "item": "unusualend:endstone_sprouts"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "unusualend:endstone_sprouts",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

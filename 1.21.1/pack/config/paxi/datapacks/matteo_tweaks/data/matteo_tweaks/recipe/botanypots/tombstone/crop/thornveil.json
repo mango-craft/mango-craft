@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "tombstone:thornveil"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "tombstone:thornveil",
+  "input": {
+    "item": "tombstone:thornveil"
+  }
+}

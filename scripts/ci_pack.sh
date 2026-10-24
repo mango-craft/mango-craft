@@ -12,4 +12,10 @@ status=0
 python3 scripts/check_pack.py "$PACK" || status=1
 python3 scripts/inventory.py "$PACK" "$INV" || status=1
 python3 scripts/check_ids.py "$PACK" "$INV" --report "$INV/controllo.md" > /dev/null || status=1
+# Vasi di Botany Pots: i file generati devono corrispondere alle regole, e la base dati deve passare i controlli
+VER="$(dirname "$PACK")"
+if [ -f "$VER/data/vasi/coltura_custom.csv" ]; then
+  python3 scripts/botanypots_genera.py "$VER" --verifica || status=1
+  python3 scripts/botanypots_db.py "$VER" refresh > /dev/null || status=1
+fi
 exit $status

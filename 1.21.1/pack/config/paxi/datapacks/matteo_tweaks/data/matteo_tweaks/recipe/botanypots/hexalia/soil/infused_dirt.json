@@ -1,0 +1,14 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:infused_dirt"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_soil",
+  "block": "hexalia:infused_dirt",
+  "growth_modifier": 0.2,
+  "yield_modifier": 0.06
+}

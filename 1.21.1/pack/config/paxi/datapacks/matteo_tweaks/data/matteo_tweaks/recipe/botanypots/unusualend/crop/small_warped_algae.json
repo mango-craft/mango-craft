@@ -1,0 +1,31 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:small_warped_algae"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:small_warped_algae",
+  "input": {
+    "item": "unusualend:small_warped_algae"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "unusualend:small_warped_algae",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

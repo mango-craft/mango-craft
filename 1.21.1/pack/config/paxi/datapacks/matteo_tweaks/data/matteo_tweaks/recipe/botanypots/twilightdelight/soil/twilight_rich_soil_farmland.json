@@ -1,0 +1,14 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "twilightdelight:twilight_rich_soil_farmland"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_soil",
+  "block": "twilightdelight:twilight_rich_soil_farmland",
+  "growth_modifier": 0.4,
+  "yield_modifier": 0.15
+}

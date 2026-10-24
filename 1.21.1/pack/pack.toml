@@ -1,12 +1,12 @@
 name = "Mango Craft"
 author = "mango-craft"
-version = "0.6.0"
+version = "0.6.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "9a6cb1f057a822da2dbcc5e36215382ecf861567f253cd9adeb068558189ca49"
+hash = "c176d71406db8dfae5d7b8702e16feb9f24b14f7111f8cb417c955cfc866b738"
 
 [versions]
 minecraft = "1.21.1"

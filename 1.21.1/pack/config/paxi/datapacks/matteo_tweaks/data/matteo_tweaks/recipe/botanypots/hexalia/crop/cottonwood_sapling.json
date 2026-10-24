@@ -1,0 +1,36 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:cottonwood_sapling"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:cottonwood_sapling",
+  "input": {
+    "item": "hexalia:cottonwood_sapling"
+  },
+  "grow_time": 2400,
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "hexalia:cottonwood_log",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "hexalia:cottonwood_sapling",
+            "count": 1
+          },
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:tea_shrub"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "bountifulfares:tea_shrub",
+  "input": {
+    "item": "bountifulfares:tea_berries"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "bountifulfares:tea_leaves",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "bountifulfares:tea_berries",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

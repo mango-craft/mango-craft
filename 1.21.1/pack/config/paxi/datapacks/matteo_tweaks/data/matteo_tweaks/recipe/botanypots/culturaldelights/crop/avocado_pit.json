@@ -1,0 +1,42 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "culturaldelights:avocado_pit"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "culturaldelights:avocado_pit",
+  "input": {
+    "item": "culturaldelights:avocado_pit"
+  },
+  "grow_time": 2400,
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "culturaldelights:avocado_log",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "culturaldelights:avocado",
+            "count": 1
+          }
+        },
+        {
+          "result": {
+            "id": "culturaldelights:avocado_pit",
+            "count": 1
+          },
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

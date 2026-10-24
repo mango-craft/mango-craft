@@ -1,0 +1,33 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "bountifulfares:vine_trellis"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "input": {
+    "item": "bountifulfares:passion_fruit"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "bountifulfares:vine_trellis"
+    }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "bountifulfares:passion_fruit",
+            "count": 2
+          }
+        }
+      ]
+    }
+  ]
+}

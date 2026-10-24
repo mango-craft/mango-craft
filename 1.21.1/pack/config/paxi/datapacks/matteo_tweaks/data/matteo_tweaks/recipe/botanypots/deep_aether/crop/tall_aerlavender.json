@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "deep_aether:tall_aerlavender"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "deep_aether:tall_aerlavender",
+  "input": {
+    "item": "deep_aether:tall_aerlavender"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "mynethersdelight:warped_fungus_colony"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "mynethersdelight:warped_fungus_colony",
+  "input": {
+    "item": "mynethersdelight:warped_fungus_colony"
+  },
+  "soil": {
+    "type": "bookshelf:either",
+    "ingredients": [
+      {
+        "type": "bookshelf:block_tag",
+        "tag": "minecraft:nylium"
+      },
+      {
+        "tag": "botanypots:soil/nether"
+      }
+    ]
+  }
+}

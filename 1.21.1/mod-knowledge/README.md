@@ -10,7 +10,7 @@ Tutto quello che sappiamo di **una mod**, con le fonti e la data dell'ultimo agg
 |---|---|---|
 | [aether](aether.md) | nel pack | owo-lib e Accessories, prove da fare |
 | [artifacts](artifacts.md) | nel pack | Config degli slot, artefatti nelle casse modded |
-| [botany-pots](botany-pots.md) | nel pack | Formato delle ricette, casi particolari, fonti, comandi |
+| [botany-pots](botany-pots/botany-pots.md) | nel pack | Formato delle ricette, casi particolari, fonti, comandi. Cartella: [analisi](botany-pots/analisi.md) di terreni e colture (come funziona il vaso, modello della base dati, decisioni) e `query/` (SQL per `scripts/botanypots_db.py`) |
 | [carry-on](carry-on.md) · [fallingtree](fallingtree.md) · [inventory-essentials](inventory-essentials.md) · [travelers-backpack](travelers-backpack.md) · [subtle-effects](subtle-effects.md) · [sound-physics-remastered](sound-physics-remastered.md) | nel pack | Config di comodità e client |
 | [cataclysm](cataclysm.md) | nel pack | Strutture, Berserker, Curios |
 | [complementary-reimagined](complementary-reimagined.md) · [makeup-ultra-fast-shaders](makeup-ultra-fast-shaders.md) | nel pack (shader, spenti) | Licenze, blocchi riconosciuti, profili |

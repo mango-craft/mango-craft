@@ -1,0 +1,18 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "hexalia:saltsprout"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "hexalia:saltsprout",
+  "input": {
+    "item": "hexalia:saltsprout"
+  },
+  "soil": {
+    "tag": "botanypots:soil/sand"
+  }
+}

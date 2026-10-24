@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "unusualend:warped_bush"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "unusualend:warped_bush",
+  "input": {
+    "item": "unusualend:warped_bush"
+  },
+  "soil": {
+    "tag": "botanypots:soil/end"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block_state": {
+      "block": "unusualend:grown_warped_bush"
+    }
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "unusualend:warped_berries",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}
