@@ -1,11 +1,11 @@
 Aggiungi mod Modrinth — 2026-10-24
-== iron-furnaces 4.3.2 (WZ25JeYB)
-Project "Iron Furnaces" successfully added! (ironfurnaces-neoforge-1.21.1-4.3.2.jar)
-== furnacemk2 0.1.11 (dDvEGlWn)
+== kubejs 2101.7.2-build.377 (THIGFPwf)
 Finding dependencies...
-Warning: Modrinth versions for VapourWare inconsistent between latest version number and newest release date (1.21.1-0.1.28 vs 0.2.37)
+Warning: Modrinth versions for Rhino inconsistent between latest version number and newest release date (2101.2.8-build.91+Rhino-1.21 vs 2101.2.7-build.85+Rhino-1.21)
 Dependencies found:
-VapourWare
+Rhino
+Better Advanced Tooltips
 Would you like to add them? [Y/n]: Y (non-interactive mode)
-Dependency "VapourWare" successfully added! (vapourware-1.21.1-0.2.37.jar)
-Project "FurnaceMk2" successfully added! (furnacemk2-1.21.1-0.1.11.jar)
+Dependency "Rhino" successfully added! (rhino-2101.2.7-build.85.jar)
+Dependency "Better Advanced Tooltips" successfully added! (better-advanced-tooltips-2101.1.0-build.5.jar)
+Project "KubeJS" successfully added! (kubejs-neoforge-2101.7.2-build.377.jar)

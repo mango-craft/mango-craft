@@ -1,0 +1,131 @@
+{
+ "format": 6,
+ "status": "ok",
+ "name": "KubeJS",
+ "file": "kubejs-neoforge-2101.7.2-build.377.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "fcdbee8790f8f39c106ab4bf606808c9c5bf0f13a41e216207a6fe4d15bf4a5722ce57078781e3a1823e7fdd2928e8e042d104d8ae255a36db8f12a9f46d8089",
+ "mods": [
+  {
+   "modid": "kubejs",
+   "name": "KubeJS",
+   "version": "2101.7.2-build.377",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.199,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "rhino",
+     "type": "required",
+     "range": "[2101.2.7-build.81,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "jei",
+     "type": "optional",
+     "range": "[19.25.0.322,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "roughlyenoughitems",
+     "type": "optional",
+     "range": "[16.0.799,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "emi",
+     "type": "optional",
+     "range": "[1.1.22,)",
+     "side": "CLIENT"
+    },
+    {
+     "modid": "betteradvancedtooltips",
+     "type": "optional",
+     "range": "[2101.1.0-build.1,)",
+     "side": "CLIENT"
+    }
+   ]
+  },
+  {
+   "modid": "betteradvancedtooltips",
+   "name": "Better Advanced Tooltips",
+   "version": "2101.1.0-build.1",
+   "jar": "better-advanced-tooltips-2101.1.0-build.1.jar",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.199,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "animated-gif-lib-for-java-animated-gif-lib-1.7.jar",
+  "better-advanced-tooltips-2101.1.0-build.1.jar",
+  "tiny-java-server-1.0.0-build.33.jar"
+ ],
+ "namespaces": [
+  "betteradvancedtooltips",
+  "dankstorage",
+  "extendedcrafting",
+  "kubejs",
+  "minecraft"
+ ],
+ "items": {
+  "kubejs:generated_bucket": ""
+ },
+ "data": {
+  "kubejs": [
+   "dankstorage:recipe_mappings",
+   "dankstorage:recipe_schema/upgrade",
+   "extendedcrafting:recipe_mappings",
+   "extendedcrafting:recipe_schema/shaped_table",
+   "extendedcrafting:recipe_schema/shapeless_table",
+   "kubejs:recipe_schema/shaped",
+   "kubejs:recipe_schema/shapeless",
+   "minecraft:recipe_schema/blasting",
+   "minecraft:recipe_schema/campfire_cooking",
+   "minecraft:recipe_schema/cooking",
+   "minecraft:recipe_schema/crafting_decorated_pot",
+   "minecraft:recipe_schema/crafting_shaped",
+   "minecraft:recipe_schema/crafting_shapeless",
+   "minecraft:recipe_schema/crafting_special_armordye",
+   "minecraft:recipe_schema/crafting_special_bannerduplicate",
+   "minecraft:recipe_schema/crafting_special_bookcloning",
+   "minecraft:recipe_schema/crafting_special_firework_rocket",
+   "minecraft:recipe_schema/crafting_special_firework_star",
+   "minecraft:recipe_schema/crafting_special_firework_star_fade",
+   "minecraft:recipe_schema/crafting_special_mapcloning",
+   "minecraft:recipe_schema/crafting_special_mapextending",
+   "minecraft:recipe_schema/crafting_special_repairitem",
+   "minecraft:recipe_schema/crafting_special_shielddecoration",
+   "minecraft:recipe_schema/crafting_special_shulkerboxcoloring",
+   "minecraft:recipe_schema/crafting_special_suspiciousstew",
+   "minecraft:recipe_schema/crafting_special_tippedarrow",
+   "minecraft:recipe_schema/shaped",
+   "minecraft:recipe_schema/shapeless",
+   "minecraft:recipe_schema/smelting",
+   "minecraft:recipe_schema/smithing_transform",
+   "minecraft:recipe_schema/smithing_trim",
+   "minecraft:recipe_schema/smoking",
+   "minecraft:recipe_schema/special",
+   "minecraft:recipe_schema/stonecutting"
+  ]
+ },
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "potions_deduced": [],
+ "problems": []
+}
