@@ -1,6 +1,6 @@
 name = "Mango Craft"
 author = "mango-craft"
-version = "0.7.0"
+version = "0.7.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
