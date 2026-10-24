@@ -33,6 +33,20 @@ Aggiornata il 25/10/2026 · stato: **ricerca iniziale**, nessuna decisione (rich
 | **Create: CC Total Logistics** (LGPL-3.0) | 0.3.6, 06/2025 | ponte con la logistica di Create | Create [6.0.4, 6.1) | 🔴 Doppione: Create 6 ha già le periferiche della logistica; ferma da più di un anno |
 | Classic Peripherals, CC: Terminals | release | periferiche varie; terminali con interfaccia | ✅ | non approfondite |
 
+### Advanced Peripherals: cosa aggiunge (funzioni Lua lette nel sorgente 0.8.2a)
+
+Rispetto a CC: Tweaked e alle periferiche di Create e Mekanism, collega i computer al **giocatore** e al **mondo**:
+- **Player Detector**: giocatori in un raggio, in un cubo o tra due coordinate, posizione e dati del giocatore (`getPlayer`, `isPlayerInRange`…); eventi quando un giocatore lo tocca, entra o esce dal mondo, cambia dimensione o muore (`player_click`, `player_join`, `player_leave`, `player_changed_dimension`, `player_death`).
+- **Chat Box**: messaggi in chat, anche formattati, e notifiche a comparsa (`sendMessage`, `sendToast`); evento `chat` quando il giocatore scrive, quindi comandi in chat per i computer.
+- **Inventory Manager** (con la Memory Card legata al giocatore): sposta oggetti tra l'inventario del giocatore e un contenitore (`importItem`, `exportItem`), legge la mano, l'armatura e gli slot di Curios.
+- **Environment Detector**: ora, meteo, fase della luna, luce, bioma, dimensione, slime chunk, se si può dormire, entità vicine (`scanEntities`); con Mekanism anche le radiazioni.
+- **Geo Scanner**: blocchi in una sfera (`scanBlocks`) e minerali del chunk (`chunkAnalyze`).
+- **Energy Detector** (misura e limita il flusso di energia), Fluid e Gas Detector, **Block Reader** (stato e dati interni di un blocco), **NBT Storage** (salva dati), **Distance Detector** (telemetro laser), **Smart Rail** (rileva e comanda i carrelli), Redstone Integrator.
+- **Tartarughe**: potenziamenti Chat Box, Player Detector, Environment Detector, Geo Scanner, Block Reader, Compass, **Chunky** (tiene caricati i chunk attorno) e **Saddle** (porta in sella giocatori o animali); **automi**: «Weak» (usa oggetti sui blocchi, raccoglie oggetti a terra), «Husbandry» (usa oggetti sugli animali, li cattura e li rilascia), «End» (si teletrasporta tra punti salvati).
+- **Occhiali smart** (slot di Curios): disegnano sullo schermo testo, forme, oggetti e blocchi, anche in 3D.
+- **Create**: bacino (serbatoi in entrata e in uscita), Blaze Burner, serbatoi, filtri e valori a scorrimento.
+- Ogni periferica si spegne nella config (`enableGeoScanner`, `enablePlayerDetector`, `enableEndAutomataCore`…).
+
 Scartati perché servono mod che non abbiamo: gli add-on per Create: Simulated / Aeronautics / Sable, Create Big Cannons, Create: Deep Seas, Power Grid, BallistiX, Modern Industrialization, Vivecraft.
 
 ## Da tenere a mente
