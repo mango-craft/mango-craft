@@ -274,23 +274,23 @@ hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/readme.md"
-hash = "3ccf1c5232710fafe0490f5d3012f81a4e21876acf3dc328c8a66b0888ce6bfc"
+hash = "b3c2e05f5ad99b0dd63a9f365be1ee94e6b610b3111018faa0f96adbcfb0e913"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_oggetti_prove_fornaci_iron_furnaces_furnacemk2_jumbo.mcfunction"
-hash = "372b6eb51088a4362dde93829d63d70151910ff02943c2ed24addc5a3a1d55cf"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_pozioni_prova_amuleto_vietato_flying_e_permesso_visione_notturna.mcfunction"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/amuleti.mcfunction"
 hash = "67a827b297dd43205975f8e72afa76291d4409f26a198e794141ba7dc85a46b3"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_tutto_per_le_prove_di_uscita_fornaci_e_pozioni.mcfunction"
-hash = "df92b4a15318429f535d72cffc791536c03c66c566a4456b27670ee1a255d066"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/fornaci.mcfunction"
+hash = "372b6eb51088a4362dde93829d63d70151910ff02943c2ed24addc5a3a1d55cf"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_una_pozione_per_famiglia_in_lista_nera_verifica_nomi.mcfunction"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/lista_nera.mcfunction"
 hash = "f5023b638e0d00b3f4088c5fd5c524abf044aaa849a9e11178ec7154127162e3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/tutto.mcfunction"
+hash = "6c6632d50499abe25a942e2a147296f92333868ffeefa7fcc5629d91cd77b99f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
