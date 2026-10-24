@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "d4216bc533233d2563df00a2114e988bcc57c6d530cc7114fc436a82be57918f"
+hash = "7c03d597f1b78832dc4a04dff8c874109abfc1efaa21f1993ad1734a543b0cf1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/readme.md"
@@ -271,6 +271,26 @@ hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/farmersdelight/market_presets/seeds.json"
 hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/readme.md"
+hash = "3ccf1c5232710fafe0490f5d3012f81a4e21876acf3dc328c8a66b0888ce6bfc"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_oggetti_prove_fornaci_iron_furnaces_furnacemk2_jumbo.mcfunction"
+hash = "372b6eb51088a4362dde93829d63d70151910ff02943c2ed24addc5a3a1d55cf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_pozioni_prova_amuleto_vietato_flying_e_permesso_visione_notturna.mcfunction"
+hash = "67a827b297dd43205975f8e72afa76291d4409f26a198e794141ba7dc85a46b3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_tutto_per_le_prove_di_uscita_fornaci_e_pozioni.mcfunction"
+hash = "df92b4a15318429f535d72cffc791536c03c66c566a4456b27670ee1a255d066"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/dai_una_pozione_per_famiglia_in_lista_nera_verifica_nomi.mcfunction"
+hash = "f5023b638e0d00b3f4088c5fd5c524abf044aaa849a9e11178ec7154127162e3"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"

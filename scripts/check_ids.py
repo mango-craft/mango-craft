@@ -312,13 +312,34 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
             if not idx.has(k, i):
                 msg = f"`{rel}`: `{i}` ({k}) non esiste"
                 (warnings if soft else errors).append(msg)
+    # 3. Funzioni del datapack (.mcfunction, es. le funzioni di prova in matteo_tweaks:test/…): oggetti dei `give`,
+    #    pozioni dentro `potion_contents` e funzioni chiamate. Una funzione non ha condizioni di caricamento: un nome
+    #    sbagliato la fa fallire tutta.
+    funzioni = {}
+    for dp in sorted((pack / "config" / "paxi" / "datapacks").glob("*/data")):
+        for f in sorted(dp.glob("*/function/**/*.mcfunction")):
+            parts = f.relative_to(dp).parts
+            funzioni[f"{parts[0]}:{'/'.join(parts[2:])[:-len('.mcfunction')]}"] = f
+    for fid, f in funzioni.items():
+        rel = f.relative_to(pack).as_posix()
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            if line.lstrip().startswith("#"):
+                continue
+            refs = [("item", m) for m in re.findall(r"^\s*give\s+\S+\s+([a-z0-9_.-]+:[a-z0-9_./-]+)", line)]
+            refs += [("potion", m) for m in re.findall(r"potion:\"([a-z0-9_.-]+:[a-z0-9_./-]+)\"", line)]
+            for m in re.findall(r"^\s*function\s+([a-z0-9_.-]+:[a-z0-9_./-]+)", line):
+                if m not in funzioni:
+                    errors.append(f"`{rel}` riga {n}: la funzione `{m}` non esiste nel datapack")
+            for kind, i in refs:
+                if not idx.has(kind, i):
+                    errors.append(f"`{rel}` riga {n}: `{i}` ({kind}) non esiste")
     warnings += [f"Mod non inventariata, nomi non verificabili: {u}" for u in idx.unverified]
     errors, warnings = list(dict.fromkeys(errors)), list(dict.fromkeys(warnings))  # niente doppioni
 
     lines = ["# Controllo dei nomi", "",
              "File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non modificarlo a mano.", "",
              f"- Mod nell'inventario: {len(idx.mods)} (mod id), namespace: {len(idx.namespaces)}",
-             f"- File del datapack controllati: {len(files)} ({len(inactive)} inattivi)",
+             f"- File del datapack controllati: {len(files)} ({len(inactive)} inattivi), funzioni: {len(funzioni)}",
              f"- **Errori: {len(errors)}** · avvisi: {len(warnings)}", ""]
     for title, items in (("Errori", errors), ("Avvisi", warnings), ("File inattivi (mod non nel pack)", inactive)):
         lines.append(f"## {title}")
