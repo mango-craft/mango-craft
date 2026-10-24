@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Mowzie's Mobs",
  "file": "mowziesmobs-1.21.1-1.8.2.jar",
@@ -765,5 +765,7 @@
   "minecraft:smelting": 2
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

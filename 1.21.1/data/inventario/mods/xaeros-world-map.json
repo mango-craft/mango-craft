@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Xaero's World Map",
  "file": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
@@ -93,5 +93,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

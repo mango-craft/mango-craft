@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Ars Elemental",
  "file": "ars_elemental-1.21.1-0.7.10.4.jar",
@@ -1714,5 +1714,7 @@
    "id": "botany_pots:ars_elemental/flashing_archwood"
   }
  ],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Enhanced Celestials 2: Core",
  "file": "Enhanced-Celestials-2-Core-NeoForge-1.21.1-2.0.3.3.jar",
@@ -89,5 +89,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

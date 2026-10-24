@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "NetherPortalFix",
  "file": "netherportalfix-neoforge-1.21.1-21.1.1.jar",
@@ -44,5 +44,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

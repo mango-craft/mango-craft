@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Macaw's Windows",
  "file": "mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar",
@@ -2117,5 +2117,7 @@
   "minecraft:crafting_shapeless": 4
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

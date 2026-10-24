@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Create: Enchantment Industry",
  "file": "create-enchantment-industry-2.4.2.jar",
@@ -430,5 +430,7 @@
   "minecraft:smithing_transform": 3
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

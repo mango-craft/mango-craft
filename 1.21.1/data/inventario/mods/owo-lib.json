@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "oωo (owo-lib)",
  "file": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
@@ -65,5 +65,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

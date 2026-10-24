@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Unfocused",
  "file": "unfocused-neoforge-0.3.10-1.21.1-sgd.jar",
@@ -43,5 +43,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

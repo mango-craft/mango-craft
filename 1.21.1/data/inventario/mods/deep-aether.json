@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Deep Aether",
  "file": "deep_aether-1.21.1-1.1.5.1.jar",
@@ -4788,5 +4788,7 @@
   "minecraft:stonecutting": 104
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

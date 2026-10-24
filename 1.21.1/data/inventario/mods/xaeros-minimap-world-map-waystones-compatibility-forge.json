@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Xaero's Minimap & World Map - Waystones Compatibility",
  "file": "xaeros_waystones_compatibility-NeoForge-1.21.1-2.1.0.jar",
@@ -48,5 +48,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

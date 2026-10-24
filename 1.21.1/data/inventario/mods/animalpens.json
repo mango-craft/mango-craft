@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Animal Pens",
  "file": "animal_pen-neoforge-1.21-2.5.0.jar",
@@ -349,5 +349,7 @@
   "minecraft:crafting_shapeless": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

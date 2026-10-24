@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Truly Modular: Arsenal",
  "file": "Truly-Modular-arsenal-arsenal-forge-2.4-1.21.jar",
@@ -263,5 +263,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

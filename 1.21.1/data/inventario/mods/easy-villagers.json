@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Easy Villagers",
  "file": "easy-villagers-neoforge-1.21.1-1.1.47.jar",
@@ -124,5 +124,7 @@
   "minecraft:crafting_shaped": 7
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

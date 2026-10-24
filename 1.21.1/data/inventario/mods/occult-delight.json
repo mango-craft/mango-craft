@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Occult Delight",
  "file": "occultdelight-1.0.0.jar",
@@ -69,5 +69,7 @@
   "minecraft:crafting_shaped": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

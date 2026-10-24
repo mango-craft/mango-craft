@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Create: Integrated Farming",
  "file": "create-integrated-farming-1.4.3.jar",
@@ -288,5 +288,7 @@
   "minecraft:crafting_shapeless": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

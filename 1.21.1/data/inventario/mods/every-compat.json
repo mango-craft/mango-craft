@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Every Compat (Wood Good)",
  "file": "everycomp-1.21-2.11.54-neoforge.jar",
@@ -107,5 +107,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

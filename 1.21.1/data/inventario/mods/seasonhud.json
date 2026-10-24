@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "SeasonHud",
  "file": "seasonhud-neoforge-1.21.1-2.0.10.jar",
@@ -103,5 +103,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Aether's Delight",
  "file": "aethersdelight-0.1.4.2-1.21.1.jar",
@@ -851,5 +851,7 @@
   "minecraft:smoking": 8
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

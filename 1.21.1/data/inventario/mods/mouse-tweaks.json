@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Mouse Tweaks",
  "file": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
@@ -23,5 +23,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

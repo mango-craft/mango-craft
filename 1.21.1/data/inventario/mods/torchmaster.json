@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Torchmaster",
  "file": "torchmaster-neoforge-1.21.1-21.1.13.jar",
@@ -79,5 +79,7 @@
   "minecraft:crafting_shaped": 4
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

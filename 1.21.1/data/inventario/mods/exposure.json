@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Exposure",
  "file": "exposure-neoforge-1.21.1-1.9.19.jar",
@@ -320,5 +320,7 @@
   "minecraft:crafting_shapeless": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

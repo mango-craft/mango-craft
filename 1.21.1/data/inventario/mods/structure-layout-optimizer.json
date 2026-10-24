@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Structure Layout Optimizer",
  "file": "structure_layout_optimizer-neoforge-1.0.12.jar",
@@ -44,5 +44,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

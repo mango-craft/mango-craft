@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "version": "21.1.259",
  "mods": [
@@ -3859,5 +3859,7 @@
   "minecraft:crafting_shapeless": 17
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

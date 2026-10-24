@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Undergarden Delight",
  "file": "undergardendelight-2.0.2-neoforge-1.21.1.jar",
@@ -916,5 +916,7 @@
   "minecraft:smoking": 6
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "YUNG's Better Jungle Temples",
  "file": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
@@ -243,5 +243,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

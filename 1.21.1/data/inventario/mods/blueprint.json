@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Blueprint",
  "file": "blueprint-1.21.1-8.2.0.jar",
@@ -252,5 +252,7 @@
   "minecraft:crafting_shapeless": 2
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

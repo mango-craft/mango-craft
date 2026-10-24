@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Sophisticated Backpacks",
  "file": "sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
@@ -405,5 +405,7 @@
   "sophisticatedcore:upgrade_next_tier": 22
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

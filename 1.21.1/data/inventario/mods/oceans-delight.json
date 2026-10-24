@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Ocean's Delight",
  "file": "oceansdelight-neoforge-1.0.4-1.21.1.jar",
@@ -176,5 +176,7 @@
   "minecraft:smoking": 5
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

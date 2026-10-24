@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "YUNG's Better Witch Huts",
  "file": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
@@ -110,5 +110,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

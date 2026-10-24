@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Truly Modular: Armory",
  "file": "Truly-Modular-armory-armory-forge-2.2-1.21.jar",
@@ -199,5 +199,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

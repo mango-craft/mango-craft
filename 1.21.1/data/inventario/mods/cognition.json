@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Cognition",
  "file": "Cognition-v2.4.13-1.21.1.jar",
@@ -514,5 +514,7 @@
   "minecraft:smithing_transform": 13
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

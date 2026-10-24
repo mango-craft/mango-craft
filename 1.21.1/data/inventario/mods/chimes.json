@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Chimes",
  "file": "Chimes-v2.1.1-1.21.1-NeoForge.jar",
@@ -106,5 +106,7 @@
   "minecraft:crafting_shaped": 5
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

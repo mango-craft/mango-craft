@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Aspect Alchemy",
  "file": "aspectalchemy-neoforge-2.0.0.jar",
@@ -92,5 +92,7 @@
   "minecraft:crafting_shapeless": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

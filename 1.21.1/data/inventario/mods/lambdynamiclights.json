@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "LambDynamicLights",
  "file": "lambdynamiclights-4.8.11+1.21.1.jar",
@@ -177,5 +177,7 @@
  "tags": {},
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

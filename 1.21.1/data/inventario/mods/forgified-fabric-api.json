@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Forgified Fabric API",
  "file": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
@@ -4652,5 +4652,7 @@
  },
  "recipe_types": {},
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Mekanism",
  "file": "Mekanism-1.21.1-10.7.19.85.jar",
@@ -5401,5 +5401,7 @@
   "minecraft:smelting": 18
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

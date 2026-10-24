@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "The Undergarden",
  "file": "The_Undergarden-1.21.1-0.9.6.jar",
@@ -3584,5 +3584,7 @@
   "undergarden:item_infusing": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

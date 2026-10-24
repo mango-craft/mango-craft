@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Roaster's Delight",
  "file": "roasters_delight-1.0.0.1.jar",
@@ -827,5 +827,7 @@
   "roasters_delight:shapeless_drink": 3
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

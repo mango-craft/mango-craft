@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Brewin' And Chewin'",
  "file": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
@@ -673,5 +673,7 @@
   "minecraft:crafting_shapeless": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

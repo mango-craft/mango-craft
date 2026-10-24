@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Truly Modular: Modular Item API (Miapi)",
  "file": "Truly-Modular-miapi-neoforge-2.3.9-1.21.jar",
@@ -988,5 +988,7 @@
   "minecraft:crafting_shaped": 1
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

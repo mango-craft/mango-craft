@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Born in Chaos",
  "file": "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar",
@@ -2205,5 +2205,7 @@
   "minecraft:stonecutting": 16
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

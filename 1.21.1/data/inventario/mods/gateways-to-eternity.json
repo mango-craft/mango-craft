@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Gateways to Eternity",
  "file": "GatewaysToEternity-1.21.1-5.1.0.jar",
@@ -85,5 +85,7 @@
   "gateways:gate_recipe": 7
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

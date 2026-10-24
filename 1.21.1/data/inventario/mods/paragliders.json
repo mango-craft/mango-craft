@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Paragliders",
  "file": "Paraglider-neoforge-21.1.5.jar",
@@ -272,5 +272,7 @@
   "paraglider:statue_bargain": 6
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

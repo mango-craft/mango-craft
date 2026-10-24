@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Pipez",
  "file": "pipez-neoforge-1.21.1-1.2.31.jar",
@@ -153,5 +153,7 @@
   "pipez:copy_components": 5
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }

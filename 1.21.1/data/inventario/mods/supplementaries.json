@@ -1,5 +1,5 @@
 {
- "format": 2,
+ "format": 3,
  "status": "ok",
  "name": "Supplementaries",
  "file": "supplementaries-1.21.1-4.0.2-neoforge.jar",
@@ -5608,5 +5608,7 @@
   "supplementaries:weathered_map": 2
  },
  "botanypots": [],
+ "market": [],
+ "market_presets": [],
  "problems": []
 }
