@@ -125,7 +125,7 @@ Cinque livelli, dal grezzo al distillato:
 - Paxi carica il pacchetto in tutti i mondi, sopra gli altri (vince sui file con lo stesso percorso).
 - `global_loot_modifiers.json` di NeoForge: un modificatore non elencato è spento; un nome elencato senza file dà errore.
 - Le lune di Enhanced Celestials si ricaricano solo riaprendo il mondo; il resto con `/reload`. I modificatori di struttura (es. Berserker) richiedono il riavvio del mondo.
-- **Funzioni di prova**: le prove di uscita che chiedono oggetti si preparano come funzioni in `data/matteo_tweaks/function/test/releases/v<versione della release>/`, con nomi brevi e schematici, una parola per prova (`fornaci`, `amuleti`), più `tutto` che le chiama tutte (richiesta di Matteo, 25/10/2026). Non hanno condizioni di caricamento (eccezione): i nomi li controlla `scripts/check_ids.py`. Readme in `function/test/`.
+- **Funzioni di prova**: le prove di uscita che chiedono oggetti si preparano come funzioni in `data/matteo_tweaks/function/test/releases/v<versione della release>/`, con nomi corti che dicono cosa c'è dentro (`fornaci_iron_mk2_jumbo`, `amuleto_flying_vs_visione`), più `tutte_le_prove` che le chiama tutte (stile scelto da Matteo, 25/10/2026). Non hanno condizioni di caricamento (eccezione): i nomi li controlla `scripts/check_ids.py`. Readme in `function/test/`.
 - Le parti da scrivere sono progettate nel file della versione che le porta (`<versione>/lavoro/versioni/`); i formati dei file stanno nelle schede (`botany-pots`, `farming-for-blockheads`, `cataclysm` per le mod; `esperienza` per i temi…).
 
 ## 8. Ambiente di lavoro di Claude

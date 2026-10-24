@@ -274,23 +274,23 @@ hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/readme.md"
-hash = "b3c2e05f5ad99b0dd63a9f365be1ee94e6b610b3111018faa0f96adbcfb0e913"
+hash = "9a598d18df9c983b51f9ce371abb6738212c935122c8a398c03eeb8d289bd80d"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/amuleti.mcfunction"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/amuleto_flying_vs_visione.mcfunction"
 hash = "67a827b297dd43205975f8e72afa76291d4409f26a198e794141ba7dc85a46b3"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/fornaci.mcfunction"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/fornaci_iron_mk2_jumbo.mcfunction"
 hash = "372b6eb51088a4362dde93829d63d70151910ff02943c2ed24addc5a3a1d55cf"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/lista_nera.mcfunction"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/lista_nera_5_pozioni.mcfunction"
 hash = "f5023b638e0d00b3f4088c5fd5c524abf044aaa849a9e11178ec7154127162e3"
 
 [[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/tutto.mcfunction"
-hash = "6c6632d50499abe25a942e2a147296f92333868ffeefa7fcc5629d91cd77b99f"
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/tutte_le_prove.mcfunction"
+hash = "4a734dd7e1f34ec23b4b344b007db57536c5e0352ad024977b4c251d7dbe6d79"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"

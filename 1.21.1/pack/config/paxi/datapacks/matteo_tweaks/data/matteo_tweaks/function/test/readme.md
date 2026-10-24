@@ -9,7 +9,7 @@ In gioco (mondo con i trucchi attivi): `/function matteo_tweaks:test/releases/v0
 ## Regole
 
 - **Percorso**: `test/releases/v<versione>/`, una cartella per release, con le prove di tutte le versioni che escono in quella release (la 0.7.2 contiene anche le fornaci della 0.7.1).
-- **Nome del file**: breve e schematico, una parola per prova (`fornaci`, `amuleti`, `lista_nera`); `tutto` chiama tutte le altre della cartella. Cosa dà ogni funzione lo dice la riga di commento in testa e la chat quando la lanci.
+- **Nome del file**: corto, ma dice cosa c'è dentro (quali mod, quali pozioni): `fornaci_iron_mk2_jumbo`, `amuleto_flying_vs_visione`, `lista_nera_5_pozioni`; `tutte_le_prove` chiama tutte le altre della cartella. I dettagli li dicono la riga di commento in testa e la chat quando la lanci.
 - Una riga di commento in testa rimanda alla sezione 5 del file della versione (`lavoro/versioni/vX.Y.Z.md`), dove stanno le prove.
 - **Senza condizione di caricamento**, eccezione voluta alla regola del datapack: le funzioni non ne hanno. Se un nome non esiste (mod tolta o aggiornata), quella funzione non si carica e lascia un errore nel log; il resto del datapack non cambia. Per questo `scripts/check_ids.py` controlla oggetti, pozioni e funzioni chiamate in ogni `.mcfunction`.
 - Le funzioni delle release vecchie restano come storia; si tolgono solo se danno errori dopo un aggiornamento.
