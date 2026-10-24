@@ -27,6 +27,25 @@ Aggiornata il 24/10/2026 · stato: **Iron Furnaces e FurnaceMk2 approvate** (24/
 
 **Iron Furnaces e FurnaceMk2.** Sono due idee diverse: Iron Furnaces è una **scala** (9 livelli, accessori), FurnaceMk2 **un gradino** fatto bene (velocità, combustibile ed esperienza, con tre nuclei). **Decisione di Matteo del 24/10: entrambe nel pack**, usate in punti diversi delle sue automazioni (Iron Smelters quindi non serve: in `0602`; Jumbo Furnace resta da decidere).
 
+## Energia in Iron Furnaces (verificato il 24/10)
+
+Dal codice della 1.20.1 (`Qelifern/IronFurnaces`, ramo `1.20.1` @`6e0e292`; quello della 1.21.1 non è pubblico, ma ricette e nomi della config nel jar 4.3.2 coincidono). Tre parti usano energia (FE):
+- **Accessorio generatore**: la fornace smette di cuocere e produce energia bruciando combustibile; con l'accessorio altoforno brucia invece gli oggetti delle ricette `ironfurnaces:generator_blasting` (nel jar: rame e redstone 10.000 FE, ferro 20.000, oro, lapislazzuli, quarzo, ametista e prismarino 40.000, smeraldo 125.000, diamante 500.000, netherite 750.000, stella del Nether 1.000.000); con l'affumicatoio brucia cibo (durata = nutrimento × 800). Energia al tick per livello (valori di serie della 1.20.1): rame e ferro 40, argento 100, oro 160, diamante 240, smeraldo 320, cristallo 360, ossidiana 500, netherite 1.000, arcobaleno 2.000.
+- **Accessorio fabbrica**: la fornace cuoce più oggetti insieme (2, 4 o 6 slot secondo il livello) **a energia** (tempo di cottura × 20 FE per oggetto).
+- **Riscaldatore** (blocco `heater` + oggetto `item_heater` collegato): l'oggetto nello slot del combustibile fa andare la fornace con l'energia del blocco (2.000 FE per carica) invece che a combustibile.
+- Ogni fornace ha una riserva di energia (config `energy.tier_0/1/2`: 80.000, 200.000, 1.000.000 FE).
+
+Quindi togliere il generatore non toglie l'energia dalla mod: fabbrica e riscaldatore restano e prendono energia da fuori (Mekanism).
+
+## Jumbo Furnace in dettaglio (sorgente, ramo `1.21.1` @`915c310`)
+
+- Si costruisce con **27 blocchi** dell'etichetta `c:player_workstations/furnaces` in un cubo 3×3×3 (nel pack: fornace vanilla e fornace di holystone di Aether's Delight); diventa un blocco solo.
+- **9 slot di ingresso, 9 di combustibile, 9 di uscita** e uno per i potenziamenti; con tramogge e tubi.
+- Cuoce **1 + il numero di potenziamenti** ricette insieme, ognuna con il suo tempo normale; il potenziamento di serie è un'altra Jumbo Furnace (etichetta `jumbofurnace:multiprocessing_upgrade`), fino a 64: **65 ricette alla volta**.
+- Usa le ricette della fornace normale più ricette sue a più ingredienti (`jumbofurnace:jumbo_smelting`, scrivibili nel datapack); raccoglie l'esperienza.
+- Config: solo `shearable` (smontarla con le cesoie). Solo CurseForge, MIT.
+- Fa lo stesso lavoro della ventola di Create, delle fabbriche di Mekanism e della fabbrica di Iron Furnaces: la differenza è che non chiede né energia né Create.
+
 ## Come si legherebbe al resto
 
 Con Iron Furnaces la scala delle fornaci si scrive **nel datapack**, come i vasi e il mercato: le ricette dei livelli e dei potenziamenti si riscrivono allo stesso percorso usando una **scala dei materiali** comune agli strumenti a tappe (`strumenti.md`), e i livelli alti possono chiedere i materiali delle dimensioni già scelti per il mercato (frammenti di netherite, gravitite incantata, regalium, steeleaf…). Le velocità si fissano nella config, portata completa nel pack. Le due cose (fornaci e strumenti) condividono la stessa tabella dei materiali: conviene farle una dopo l'altra.
