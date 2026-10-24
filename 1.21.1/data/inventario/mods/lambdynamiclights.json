@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "LambDynamicLights",
  "file": "lambdynamiclights-4.8.11+1.21.1.jar",
@@ -179,5 +179,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

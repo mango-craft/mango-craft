@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Unusual End",
  "file": "unusualend-2.3.1b.jar",
@@ -2916,5 +2916,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

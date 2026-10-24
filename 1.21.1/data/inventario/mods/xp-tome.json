@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "XP Tome",
  "file": "xptome-1.21.1-2.4.jar",
@@ -62,5 +62,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Exposure",
  "file": "exposure-neoforge-1.21.1-1.9.19.jar",
@@ -322,5 +322,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

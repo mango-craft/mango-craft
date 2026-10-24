@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "The Undergarden",
  "file": "The_Undergarden-1.21.1-0.9.6.jar",
@@ -714,6 +714,12 @@
   "undergarden:brittleness": "Potion of Brittleness",
   "undergarden:featherweight": "Potion of Featherweight",
   "undergarden:glowing": "Potion of Glowing",
+  "undergarden:long_brittleness": "Potion of Brittleness",
+  "undergarden:long_featherweight": "Potion of Featherweight",
+  "undergarden:long_glowing": "Potion of Glowing",
+  "undergarden:long_virulent_resistance": "Potion of Virulent Resistance",
+  "undergarden:strong_brittleness": "Potion of Brittleness",
+  "undergarden:strong_featherweight": "Potion of Featherweight",
   "undergarden:virulent_resistance": "Potion of Virulent Resistance"
  },
  "data": {
@@ -3601,5 +3607,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Apothic Attributes (modulo)",
  "file": "ApothicAttributes-1.21.1-2.11.0.jar",
@@ -63,6 +63,39 @@
   "apothic_attributes:knowledge": "Ancient Knowledge",
   "apothic_attributes:sundering": "Sundering",
   "apothic_attributes:vitality": "Bursting Vitality"
+ },
+ "potions": {
+  "apothic_attributes:absorption": "Potion of Absorption",
+  "apothic_attributes:extra_long_flying": "Potion of Flying",
+  "apothic_attributes:fatigue": "Potion of Mining Fatigue",
+  "apothic_attributes:flying": "Potion of Flying",
+  "apothic_attributes:grievous": "Potion of Healing Reduction",
+  "apothic_attributes:haste": "Potion of Haste",
+  "apothic_attributes:knowledge": "Potion of Ancient Knowledge",
+  "apothic_attributes:levitation": "Potion of Levitation",
+  "apothic_attributes:long_absorption": "Potion of Absorption",
+  "apothic_attributes:long_fatigue": "Potion of Mining Fatigue",
+  "apothic_attributes:long_flying": "Potion of Flying",
+  "apothic_attributes:long_grievous": "Potion of Healing Reduction",
+  "apothic_attributes:long_haste": "Potion of Haste",
+  "apothic_attributes:long_knowledge": "Potion of Ancient Knowledge",
+  "apothic_attributes:long_resistance": "Potion of Resistance",
+  "apothic_attributes:long_sundering": "Potion of Sundering",
+  "apothic_attributes:long_vitality": "Potion of Healing Boost",
+  "apothic_attributes:long_wither": "Potion of Wither",
+  "apothic_attributes:resistance": "Potion of Resistance",
+  "apothic_attributes:strong_absorption": "Potion of Absorption",
+  "apothic_attributes:strong_fatigue": "Potion of Mining Fatigue",
+  "apothic_attributes:strong_grievous": "Potion of Healing Reduction",
+  "apothic_attributes:strong_haste": "Potion of Haste",
+  "apothic_attributes:strong_knowledge": "Potion of Ancient Knowledge",
+  "apothic_attributes:strong_resistance": "Potion of Resistance",
+  "apothic_attributes:strong_sundering": "Potion of Sundering",
+  "apothic_attributes:strong_vitality": "Potion of Healing Boost",
+  "apothic_attributes:strong_wither": "Potion of Wither",
+  "apothic_attributes:sundering": "Potion of Sundering",
+  "apothic_attributes:vitality": "Potion of Healing Boost",
+  "apothic_attributes:wither": "Potion of Wither"
  },
  "data": {
   "brewing_mixes": [
@@ -155,5 +188,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

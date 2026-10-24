@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Storage Drawers",
  "file": "StorageDrawers-neoforge-1.21.1-13.11.4.jar",
@@ -981,5 +981,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

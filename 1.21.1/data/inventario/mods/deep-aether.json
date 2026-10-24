@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Deep Aether",
  "file": "deep_aether-1.21.1-1.1.5.1.jar",
@@ -4797,5 +4797,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

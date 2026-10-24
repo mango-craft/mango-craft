@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Not Enough Glyphs",
  "file": "not_enough_glyphs-1.21.1-4.6.1.jar",
@@ -345,5 +345,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "[Let's Do] HerbalBrews",
  "file": "letsdo-herbalbrews-neoforge-1.1.4.jar",
@@ -373,5 +373,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

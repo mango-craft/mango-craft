@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Cultural Delights",
  "file": "culturaldelights-1.21.1-0.19.1.jar",
@@ -1261,5 +1261,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

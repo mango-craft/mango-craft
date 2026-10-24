@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "MNS - Moog's Nether Structures",
  "file": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
@@ -995,5 +995,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

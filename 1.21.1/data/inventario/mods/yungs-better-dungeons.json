@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "YUNG's Better Dungeons",
  "file": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
@@ -567,5 +567,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

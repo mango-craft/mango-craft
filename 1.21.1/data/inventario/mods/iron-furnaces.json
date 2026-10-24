@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Iron Furnaces",
  "file": "ironfurnaces-neoforge-1.21.1-4.3.2.jar",
@@ -288,5 +288,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

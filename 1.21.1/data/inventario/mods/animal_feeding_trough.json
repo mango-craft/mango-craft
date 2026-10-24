@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Animal Feeding Trough",
  "file": "animal_feeding_trough-1.1.2+1.21-neoforge.jar",
@@ -63,5 +63,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

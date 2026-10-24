@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Reliquified Artifacts",
  "file": "reliquified_artifacts-1.21.1-1.0.9.jar",
@@ -253,5 +253,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

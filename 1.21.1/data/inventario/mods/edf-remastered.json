@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Ender Dragon Fight Remastered",
  "file": "edf-remastered-5.0.2.jar",
@@ -90,5 +90,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

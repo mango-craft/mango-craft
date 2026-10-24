@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Starcatcher's Delight",
  "file": "starcatcher_delight-3.2-NEOFORGE-1.21.1.jar",
@@ -370,5 +370,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

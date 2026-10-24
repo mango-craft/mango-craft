@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Ars Delight (Flavors & Delight)",
  "file": "arsdelight-2.2.5.jar",
@@ -750,5 +750,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

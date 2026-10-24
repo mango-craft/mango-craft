@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "SmartBrainLib",
  "file": "SmartBrainLib-neoforge-1.21.1-1.16.11.jar",
@@ -38,5 +38,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

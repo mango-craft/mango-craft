@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "ModernFix",
  "file": "modernfix-neoforge-5.27.26+mc1.21.1.jar",
@@ -46,5 +46,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

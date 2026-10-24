@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Diagonal Walls",
  "file": "DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar",
@@ -213,5 +213,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

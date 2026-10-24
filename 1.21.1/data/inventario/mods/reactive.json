@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Reactive Alchemy",
  "file": "reactive-1.21.1-10.2.1.jar",
@@ -206,7 +206,6 @@
   "reactive:warp_staff": ""
  },
  "potions": {
-  "reactive:ambrosia": "Ambrosia",
   "reactive:no_gravity": "Potion of Weightlessness",
   "reactive:no_gravity_long": "Potion of Weightlessness"
  },
@@ -881,5 +880,8 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
- "problems": []
+ "potions_deduced": [],
+ "problems": [
+  "pozione «Ambrosia» (reactive, ambrosia): nome del registro non trovato nelle classi"
+ ]
 }

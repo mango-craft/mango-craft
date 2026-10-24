@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Macaw's Bridges",
  "file": "mcw-bridges-3.1.2-mc1.21.1neoforge.jar",
@@ -1163,5 +1163,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

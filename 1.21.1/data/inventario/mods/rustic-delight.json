@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Rustic Delight",
  "file": "rusticdelight-neoforge-1.21-1.7.1.jar",
@@ -274,7 +274,9 @@
   "rusticdelight:wild_pale_bell_peppers": ""
  },
  "potions": {
-  "rusticdelight:haste": "Potion of Haste"
+  "rusticdelight:haste": "Potion of Haste",
+  "rusticdelight:long_haste": "Potion of Haste",
+  "rusticdelight:strong_haste": "Potion of Haste"
  },
  "data": {
   "data_maps/item": [
@@ -1506,5 +1508,6 @@
  ],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

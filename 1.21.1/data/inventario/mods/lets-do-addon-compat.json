@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Let's Do Addon Compat",
  "file": "letsdocompat-neoforge-2.3.1.jar",
@@ -220,5 +220,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

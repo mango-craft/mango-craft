@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Goblin Traders",
  "file": "goblintraders-neoforge-1.21.1-1.11.2.jar",
@@ -87,5 +87,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

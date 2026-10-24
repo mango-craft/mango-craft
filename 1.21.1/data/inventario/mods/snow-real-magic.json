@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Snow! Real Magic!",
  "file": "SnowRealMagic-1.21.1-NeoForge-12.2.3.jar",
@@ -404,5 +404,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

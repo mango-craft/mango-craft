@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Friends & Foes",
  "file": "friendsandfoes-neoforge-5.0.2+mc1.21.1.jar",
@@ -166,7 +166,11 @@
  },
  "potions": {
   "friendsandfoes:gliding": "Potion of Gliding",
-  "friendsandfoes:reaching": "Potion of Reaching"
+  "friendsandfoes:long_gliding": "Potion of Gliding",
+  "friendsandfoes:long_reaching": "Potion of Reaching",
+  "friendsandfoes:reaching": "Potion of Reaching",
+  "friendsandfoes:strong_gliding": "Potion of Gliding",
+  "friendsandfoes:strong_reaching": "Potion of Reaching"
  },
  "data": {
   "curios": [
@@ -911,5 +915,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

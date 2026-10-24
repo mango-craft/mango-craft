@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Animal Pens",
  "file": "animal_pen-neoforge-1.21-2.5.0.jar",
@@ -351,5 +351,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

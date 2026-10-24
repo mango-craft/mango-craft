@@ -1,5 +1,5 @@
 {
- "format": 4,
+ "format": 5,
  "status": "ok",
  "name": "Undergarden Delight",
  "file": "undergardendelight-2.0.2-neoforge-1.21.1.jar",
@@ -918,5 +918,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }
