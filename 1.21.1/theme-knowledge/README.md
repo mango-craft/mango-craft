@@ -18,5 +18,6 @@ Conoscenza **trasversale**: argomenti che attraversano più mod o la piattaforma
 | [strumenti](strumenti.md) | Strumenti con materiali avanzati: set delle mod, livelli di scavo, materiali di Truly Modular; valutazione iniziale di una progressione a tappe |
 | [fornaci](fornaci.md) | Fornaci a livelli fuori da Create e Mekanism: cosa c'è già nel pack, mod candidate (Iron Furnaces, Iron Smelters, Jumbo Furnace) e scartate; valutazione iniziale |
 | [piante](piante.md) | Come il pack tratta le piante delle mod: vasi di Botany Pots e mercato di Farming for Blockheads su una base dati sola, anagrafica della rarità condivisa, regole nei CSV e file generati |
+| [archeologia](archeologia.md) | Dove si scava (Minecraft, Better Archeology, Jaden's e le altre), strumenti, cosa si trova, artefatti negli scavi, casse di Better Archeology senza reliquie; quadro iniziale |
 | [pozioni](pozioni.md) | Effetti e pozioni delle mod (censimento del 24/10), sistemi per ottenerli, doppioni, amuleti di Apotheosis, automazione con Create; analisi iniziale |
 | [shader](shader.md) | Shader facoltativi: le mod del pack con uno shader attivo, pacchetti, licenze |
