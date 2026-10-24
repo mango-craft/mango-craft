@@ -24,5 +24,6 @@ Ogni versione del pack ha un file (`vX.Y.Z.md`) che racconta obiettivo, valutazi
 | [v0.5.1](versioni/v0.5.1.md) · [v0.5.2](versioni/v0.5.2.md) · [v0.5.3](versioni/v0.5.3.md) | lune, shader, pacchetti di shader | chiusi |
 | [v0.6.0](versioni/v0.6.0.md) | tappa 5: config e correzioni | chiuso (rilasciata il 22/10) |
 | [v0.6.1](versioni/v0.6.1.md) · [v0.6.2](versioni/v0.6.2.md) · [v0.6.3](versioni/v0.6.3.md) | tappa 5: vasi, mercato, esperienza | la 0.6.1 e la 0.6.2 sono rilasciate (24/10), la 0.6.3 in lavorazione |
+| [v0.7.0](versioni/v0.7.0.md) · [v0.7.1](versioni/v0.7.1.md) | tappa 6: accessori (Relics), fornaci | 📋 pianificate (24/10) |
 
 Dove sono finiti i documenti di prima: ricerche 0705, 0706, 0707, 0710 → `v0.1.1`; 0611, 0703, 0711 → `v0.2.3`; 0708 → `v0.5.1`; 0709 → `v0.5.2`; 0712 → `v0.5.3`; 0713 → `v0.6.0`; le righe del log 0610 → sezione "Decisioni" della loro versione; le parti grezze e in inglese (0701, 0702, 0704, 0621, 0901, allegati e appendici) → `ai-agents/stage/`; il progetto del datapack 0620 e la pre-progettazione 0630 → `v0.6.0`, `v0.6.1`, `v0.6.2` e le schede di `../mod-knowledge/` e `../theme-knowledge/` (formati dei file: `botany-pots`, `farming-for-blockheads`, `esperienza`, `cataclysm`).

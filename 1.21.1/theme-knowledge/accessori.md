@@ -55,7 +55,7 @@ Idea di Matteo (`../lavoro/0503-temi-aperti.md`): gli accessori non crescono. Gr
 
 **Da provare in gioco** (con `/give`, comandi nel grezzo, sezione 5): un guanto del potere con il componente a +6; sciarpa fortunata con Fortuna II; `curios:attribute_modifiers` con +2 armatura e con uno slot anello in più; una ricetta di prova con risultato a componenti (anche alla forgia); un artefatto nel tavolo del rifacimento di Apotheosis (atteso: non entra).
 
-**Valutazione** (aggiornata la notte del 23/10): 🟢 prima le prove con `/give`, poi un pilota nel datapack con 3–5 artefatti di "livello II" per infusione. 🟡 In alternativa Relics + Reliquified Artifacts, insieme e solo dopo una prova in un'istanza a parte, prima del mondo vero; 🔴 More Relics. Strade, decisioni e versione proposta: `../lavoro/0503-temi-aperti.md`, sezione 6.
+**Valutazione** (aggiornata la notte del 23/10): 🟢 prima le prove con `/give`, poi un pilota nel datapack con 3–5 artefatti di "livello II" per infusione. 🟡 In alternativa Relics + Reliquified Artifacts, insieme e solo dopo una prova in un'istanza a parte, prima del mondo vero; 🔴 More Relics. Strade, decisioni e versione proposta: `../lavoro/0503-temi-aperti.md`, sezione 6. **Decisione di Matteo del 24/10: Relics + Reliquified Artifacts, nella 0.7.0** (`../lavoro/versioni/v0.7.0.md`).
 
 ## Rimandi
 

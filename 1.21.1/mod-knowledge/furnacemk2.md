@@ -1,6 +1,6 @@
 # FurnaceMk2 (candidata)
 
-Aggiornata il 24/10/2026 · **non ancora nel pack**: **approvata da Matteo il 24/10**, insieme a Iron Furnaces (`../lavoro/0601-mod-candidate.md`), tema `../theme-knowledge/fornaci.md` · fonti: API di Modrinth (24/10); jar 0.1.11 letto dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/furnacemk2.md`); sorgente su GitHub (`ColinGBos/FurnaceMk2`, ramo `1.21.1-neoforge`, commit `bacfaa0` del 15/09/2026; `ColinGBos/VapourWare`, stesso ramo, commit `cb73d84`).
+Aggiornata il 24/10/2026 · **non ancora nel pack**: **approvata da Matteo il 24/10**, insieme a Iron Furnaces; entra nella 0.7.1 (`../lavoro/versioni/v0.7.1.md`) (`../lavoro/0601-mod-candidate.md`), tema `../theme-knowledge/fornaci.md` · fonti: API di Modrinth (24/10); jar 0.1.11 letto dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/furnacemk2.md`); sorgente su GitHub (`ColinGBos/FurnaceMk2`, ramo `1.21.1-neoforge`, commit `bacfaa0` del 15/09/2026; `ColinGBos/VapourWare`, stesso ramo, commit `cb73d84`).
 
 ## La mod
 

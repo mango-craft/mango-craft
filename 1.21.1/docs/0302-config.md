@@ -90,4 +90,4 @@ Decisioni prese che non sono ancora file del pack. Quelle che diventano file ent
 - **Akashic Tome**: lista dei nomi di libri ammessi, se qualche libro non viene riconosciuto.
 - **Subtle Effects** e **Sound Physics Remastered**: si toccano solo se in gioco danno problemi (increspature doppie con Particle Rain, CPU): chiavi nelle schede.
 - **Jaden's Nether Expansion**, **Moog's Nether Structures**, **Cognition**: nessun file, config di serie (motivi nelle schede e in `v0.6.0.md`).
-- **Sparse Structures**: regolazioni struttura per struttura dopo il mondo di prova (tappa 6).
+- **Sparse Structures**: regolazioni struttura per struttura dopo il mondo di prova (`../lavoro/0501-piano.md`).
