@@ -34,87 +34,87 @@ hash = "25def3e6f337c0415c7546740d8c2077e43831ddeee6d2d9f838dfffb5d53db0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/cataclysm/soil/the_baby_leviathan_bucket.json"
-hash = "ee44f3ceb51946585b227d6f5b7dd5f231a18db0e9af736ae2d04949f53b6072"
+hash = "259b46b881147cbc8f04a1af4f1b7c1a635f5b482637ba1e2bac48f7f3748a27"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmersdelight/soil/organic_compost.json"
-hash = "8e1ae5f2e46916d8f0aa6f7844da763f84a2387e8023e94cfc23144bdfed0c44"
+hash = "69d7b2c49c0cf14ef36e83b503fcd810a90ff7519f09c654ea100585b32d9594"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmersdelight/soil/rich_soil.json"
-hash = "46a5ed8a4920bfc3f1e5281e56e81ecfbcd45fd3cf1ce071994c01f7fa35a744"
+hash = "cb026b3b6606a94e7d3ccc5e5f793eb2d57632f41ff631ce5848a54c30e9ed2f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmersdelight/soil/rich_soil_farmland.json"
-hash = "5b30ab2c57b74b94ebdf8e37444ad278ea94900b51b43791a4ae40b075171bcd"
+hash = "23f1f22eac5814121a6a73bb6154d47054aac13df5453e5c518a68979297a51c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_healthy.json"
-hash = "702fe744fe2afe475fb21640b22534cc213da9c1e6d08c4cf93c6c82a95436d3"
+hash = "fde8259a3d8c17522daed8de311a9c08c765fbdcd7a946126a8ed59e3d8ee628"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_healthy_stable.json"
-hash = "d23e46655b229a91d092c28a5d72d07f2a7cb208fc537cb45ae0495ecaafca1a"
+hash = "9fce3892bcd23bf6a71999f633cdce23e3bbef443590288a743bbca3e8505918"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_rich.json"
-hash = "0c42017a8f4f2c061bf53eeb0691ab45435f65115dcdd44365156a5cb9c074f4"
+hash = "80973c744af1257e386d550acf5e45e5ae93a437029ffcf0c1a6f22480ae4823"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_rich_stable.json"
-hash = "d3ef795d7c60306fa5216f509a936070084a8599180512ab17d14304c71bdc91"
+hash = "cd21697a1e96b08c044878fafa3c2948d13724e903c98021e5348b3ef6f384d4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/farmingforblockheads/soil/fertilized_farmland_stable.json"
-hash = "99c5d67fc4c7fb79e1ea49c4e80ffd96b3cda31a3b8c7f9dbd632835e47d054c"
+hash = "ebc55615babb756e0b6f983b39ba291593fb7a19a2451465918f00b808cb8c23"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/axolotl_bucket.json"
-hash = "cb44dec02e22fd6319bb61837d2dd6ab3718221ad38ce927f2007bad25c3f02d"
+hash = "830b4d797031f843340e1ee10ddc6495746155392e40fe7de3b651087d5e234e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/cod_bucket.json"
-hash = "961add22b792814447a51dc6765ff54c63443aa9efdbd27ac01bff83d86259d8"
+hash = "28ab58b3eda85b94da80829f7140feddd591f2ca857dda3c4605c1815d183511"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/farmland.json"
-hash = "166a890ad3c93f79ccd065c99b510163678a3dedaa699b0b536b3ab2818eca9c"
+hash = "3e6955984ebddd123b9e996db3e3915bcb3782b268d60e45aa3576521b1ff792"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/pufferfish_bucket.json"
-hash = "db746f0c56f3e20ca4ab5263e95934c0a42be880a43b4e0c6a43d04e1e2d5ed0"
+hash = "7d071864c6eb0c1bcaf967aee267fd701facd1a39a864ef5e3c5fd736ac267d2"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/salmon_bucket.json"
-hash = "cb93eaba91dc0068aa5e50c450e00cecf72a703214971af7c335b65f72199389"
+hash = "aea062735aad57b506d7b56b50b6de06afe6961da31bc577ab52a46a38d27716"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/sculk_catalyst.json"
-hash = "05f3ba100608909ff49f703338e57e18dc4aabe22eeda8fd46dc297d8e2c11ba"
+hash = "0ce85ad8fef01cae6d50f1761388ed9d0e9cc7a9b5a1578af0bcc80c5fbd41cf"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/soul_soil.json"
-hash = "0d50283525d74ce4b2a9ec3a3cc4e3869c1a050a1c8ebdeb49cde601f548e3c4"
+hash = "3f87c937e807a15d24a35a279c2125ae0adf03faaff4d5a9230570bf277fdf2e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/tadpole_bucket.json"
-hash = "96eeae7047baf94cc564c1b089bafcd19c80329990fd281b71e4e706dfe9438d"
+hash = "55e185721458094ddecd8a62e316d5440522b6484c0f3671fb1c1198d45187bb"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/minecraft/soil/tropical_fish_bucket.json"
-hash = "752ed73a8f0ff3cc8fa926f4f8923d22b5660397248a03d1ca14a38faeaca4ab"
+hash = "95db6aeb8b0e5b4fccefbde91414de422d5497b0c4c8945e5b4616ab6762d2dc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/twilightforest/soil/uberous_soil.json"
-hash = "aa6048a0e102f6505c88bffda1694c236381ed69780f7b89275e559caa405101"
+hash = "235256221604ba4e5823947dcf0f08873e5765184e12c480fb99f3c81e776a0c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/undergarden/soil/deepsoil_farmland.json"
-hash = "b25c48f755e4e9602f2e01aa0cc74b5ced032b531847415efe929abe87b5f54f"
+hash = "04cc09ffa4818946494cfd89b9d7b64d27e8859d7f670928888dcfb2235f8628"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/undergarden/soil/gwibling_bucket.json"
-hash = "b95138a908a855b5d907d89f864c58d2956a2abac0beedfff3f2c218bd8bfba0"
+hash = "af30571004fa6f5178b5e0df83ed1e99d9efd7eb52ef741431b287371c48783f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/tags/item/soil/dirt.json"
@@ -286,43 +286,43 @@ hash = "d4cbde7d8ba9405b627030e54699e2ed9f9345d024961472a7064abef768d5f4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/aether_dirt.json"
-hash = "8cf0a8bb4582fb24719c8efc4a864b8eab3304d4ea97b217f5238be95820fa68"
+hash = "92a0fcf327a21fa8fc1a5516930b3a4b1c3532c09c6bcdb0f1b34a019063f70b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/aether_farmland.json"
-hash = "39b295d17990a1b1ce4e14fa0f6475a235750c06fc92d89a9bc27b7cf4efe3cb"
+hash = "e1a2365cfa7e74eb7f159a724a2d4bee15be92e0d8b37a8b04b2d40804059919"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/aether_grass_block.json"
-hash = "b147541410fcd836b37de4ed19c1cce8d4245b5594198a4f6d3afe530396a8c7"
+hash = "dcc2d400c6a1050f7b7aaa6a94132ff639445bea867a2089d715303e077eb557"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/enchanted_aether_grass_block.json"
-hash = "c2cde284057b4f6e460573687f830fe26506cdffcc685d1738b61a870eecfc5b"
+hash = "83002ead645dbf56fbe5cf56796a97f0953d411717c79ebcbe2fb403abed49e6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_axolotl_bucket.json"
-hash = "dad751c0536398b7e1ac0a827b2a4854332ecd06d4a892db303479244b7b992c"
+hash = "62083020238641afa1ac58698fcce941872a38009080f837b48799937d8beee7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_cod_bucket.json"
-hash = "95c7233a3ee7bd6eeb7c87207e83e2050bedc743c45ca0fe0465248f12195cdc"
+hash = "fdaf6f022cb6db2de2bb8f80fe5f58b9535f90f90d2c053c1ebc869d94b34b20"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_pufferfish_bucket.json"
-hash = "9d3c0ba5acda6dd1cfba52e2cf252a6ae361a9d330e542b006ada39e67ce3418"
+hash = "a45c890f310edfb4f3e6eeb030ea62dce52a62752c178c391d980752ae47340c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_salmon_bucket.json"
-hash = "d021d7f4cda669fec9dc2f2f352f2e301e65b43dc836393c91d857b502abd3d1"
+hash = "4556640293adc80b5dbec78f3ca4915d8c27ba5edc4109e3465ab8383d4dee7e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_tadpole_bucket.json"
-hash = "9818e42963c1e4866ba2997d9a64960329d2ae0209b734e6c1c731504e7fca68"
+hash = "9923d2a4e440aa3f3cc6bc64f7dbe6a18306a0adec7871bcd64a29d4c64f8838"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_tropical_fish_bucket.json"
-hash = "df9a7cac5122af63d29f0e557f64d23a36802fe958fd12de775853a7f70d3cf8"
+hash = "7e587d7f9af711fae760d1ecae41bcb4672f6ffa62eb96fe9bdb486dd721044d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/soil/skyroot_water_bucket.json"
@@ -678,27 +678,27 @@ hash = "d873543ee2d998ac74ea3018da7140b5788aa08aa4f79f93ce1a3c875a718303"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aerglow_fish_bucket.json"
-hash = "d26ca89ae71de3ecea7a7ebff5be7f262233672645b00d9f6e681b6c14c254e6"
+hash = "e564080d7c38bf7fe7a236ea60adbef1bfb6f38be500bbf18aa85a994951de95"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aether_coarse_dirt.json"
-hash = "582364c5fe53b674c42a2b5993578dc62da882193d1946cd12f8e1319594a034"
+hash = "db8f5479647168b52568d8732c27034185cdfacd0ebda1134ffce1fc45692f25"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aether_moss_block.json"
-hash = "0400e7780768b757196add995d4173b3eae102dcb0b3e55d582c280e28148ce9"
+hash = "7e717a8b066e8df0452fd3771145595e8a2f8e41ef891a994ffa9e70c981293b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/aether_mud.json"
-hash = "ec504eaabe44bb0ab8164514bf1eb05583711fdc811a5b571cf4c0ec2de5989a"
+hash = "ed05e1ec1167d13e580667c4d2a22ad5b3ed0ade0929f829c3e31477f28eab5e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/golden_heights_grass_block.json"
-hash = "a6eedf4c1ce595fe0c4b785a5a63106a1fab69555a8a4ec7cc45d54c6c11c1c1"
+hash = "e9e5d34b5e17942a5e04327a79213c30967df8775f0fac45f7c09f2e9facde35"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deep_aether/soil/skyroot_aerglow_fish_bucket.json"
-hash = "c5149070d432e07a8728e31aa7ecfd005b99b8d8874928e8b271ca034272bf09"
+hash = "17c5cf04dbe673bf49f3cd48102f156905c02e690e0c9dde3f2c525536d3b370"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/deeperdarker/crop/gloomy_cactus.json"
@@ -842,11 +842,11 @@ hash = "620b4b93be48ed51c370861a286a74a1c765eb4d4431963f52b6744232d6aa80"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/soil/fertilized_farmland.json"
-hash = "dc252b07c14e03d31337dd8a2e20ffdd16cec7cbf288fe5db420024b4c22228f"
+hash = "88629afbe87c5d0a97a6b6659060fbb3e45a8780c602100d2351b35ac89c735e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/farm_and_charm/soil/fertilized_soil.json"
-hash = "a30d39cb4d1867ef112ba9001a5b48684d90922fc5502e5c01bc20210a25ac21"
+hash = "6b7062a5b4460305b7b622a407a5e96430fbaa3df01c9a2c5db94739cd5f5c0d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/friendsandfoes/crop/buttercup.json"
@@ -1014,11 +1014,11 @@ hash = "e3613aa66f47fa8973a7aed4e3fe715a3d4b019bbb613d02d123e3ff7dfe680d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/soil/infused_dirt.json"
-hash = "c840c83b6d61adc47026731055a9ccf26e3d946f5cbad3747a59b85e008bedc3"
+hash = "416c3f2cad7dc19438e2082da97769d780091fde15430be4b0acaf24f21198ae"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexalia/soil/infused_farmland.json"
-hash = "ba9fd727a6e6b7ec9fa290d1f7037fe356fca29c63edda4980ec6339c151d835"
+hash = "cf536acd49c6cc8807e0f1069a14465ec4f4522e9e14b42eaeb30753fd24eed2"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/hexerei/crop/belladonna_plant.json"
@@ -1098,15 +1098,15 @@ hash = "b71bcad964a488b094b9907298bf38e923293488d3598b3a4097de909e7c4154"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/soil/letios_compost.json"
-hash = "ce0e2e5afb492b058fa75eed7955e3784a6195b17b6d5206f3833c7a2bc7cfe4"
+hash = "a3f3eb909f7bb19aa5010f47c595352f1743750ff6500eb7cdda82edfdbd8360"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/soil/resurgent_soil.json"
-hash = "7c101ba62e9567de03e881a39651df60c49e249fd2f380fb66a8864a65373e40"
+hash = "328109fa396c0810467a8d2e005ef0185f2b8d3969b7e71ed2625370f89350a5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/mynethersdelight/soil/resurgent_soil_farmland.json"
-hash = "f22017e56e22a512b35c2dd45cacef02cf3201f59ac0e142a065692713fddfd8"
+hash = "712b6a0eb4ad94583e17341b18081382186dcd09931dbf44f025dcdc642c2d41"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/crop/crimson_kelp.json"
@@ -1118,47 +1118,47 @@ hash = "7de113e1bde7048a52c679e1e7c3bf4a67ed3e715ffeffb76a1d092bdc15d667"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/blazefish_bucket.json"
-hash = "f63ebd102d5f595d03a94b54c5f4d9c7cdeb1b384148cfb25ff985a23a3fb116"
+hash = "46d09ccc635abafeae02d82b7b6846f6b63fb2b2edca8a5e4b45a80f38c8e67b"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/bonefish_bucket.json"
-hash = "e30d93ee59ad11429deccb0d8e634e4c025d97382cf9023368f0673f54c855e1"
+hash = "8cb21b728739424cb46c27ef958eacdad40743ac748e382f74bafdf85ba4ba85"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/eyeball_fish_bucket.json"
-hash = "92a215a61c87c8027556247430fda99800a42c7cf8ed1b809aced3c4894b4147"
+hash = "022ed6322ba3c3f5484808a891f30b618b128bb5f089e9fcdcb70be94251f162"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/fortress_grouper_bucket.json"
-hash = "dcf9eea0fe8d1f3194ed6ff5ef1b0134063dbff5d86b0b5cb65bf8c13d41bf2a"
+hash = "9ab94bfc72eba9a802745911d9f2fc64bb9be53f1940d3508a8ef71c9c81ae3e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/glowdine_bucket.json"
-hash = "c51a774ed28d8e30cecc8783f855fdb6f1e6af1e6bcac986e759b97bf3cf4126"
+hash = "a115296083f9ba1cedd28ba44537893ac2f87337943c0fe46dc5be8f0ddffeed"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/lava_pufferfish_bucket.json"
-hash = "2b069a56bf189fb2a4990344c8de51215f44269d936d79c264498c5e2ef2a16f"
+hash = "b98dc82b9747d98e800f2199733530f3bd5c19717189c85d7ee4480fc81f89e7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/magmacubefish_bucket.json"
-hash = "f62f93eeef28d30f8ed8c0c02dd90f68fa374a624179b3e6ed86910471386e37"
+hash = "8727829349e6bd7cb6d30995c81495e7bbc63366d8eb6ddd596e82efde9503c0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/obsidianfish_bucket.json"
-hash = "fca3ca9815bfeba7989c824eb63678e6ee907ad55342777d87a5cb68b6345a5d"
+hash = "75682cdcb11acb30095c1ca8b386548716407fb4fdac6e18478c3f4a36eb3e9a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/searing_cod_bucket.json"
-hash = "ee5dd968b9b201cecf4602e5bc2bcd7daf47d662784c18d6bed246910bff4fdf"
+hash = "101859c2489c05732d721d3d6c86166385c5a46a88427a0b14b31952555f089f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/soulsucker_bucket.json"
-hash = "948527c4564f0210f0bbe15c6dbc6d6efdb5e75138bfc418b59744c6d61f0f4c"
+hash = "d8fdaa829346f0311c1cbdd8c00c37a324b54c1fe521cb4709d73d0c2c3e55c6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherdepthsupgrade/soil/wither_bonefish_bucket.json"
-hash = "e94081913e7fae1016d501f99a0d4642976574a278b4a9a85408bf19369b8e61"
+hash = "434d72fc304de26fa081d04624c5c06c355179b8f5dd72df94e13c50cbd9393e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/netherexp/crop/crimson_sporeshroom.json"
@@ -1202,7 +1202,7 @@ hash = "73696d3423cbcec6d59f0e1a5dff6202d52534b207f6ffc1d9c44d981800a0e4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/readme.md"
-hash = "0c1f90380d40f90d0aef9289c354d4f1ff0bb3b6aa393a2791eb5b5468317eda"
+hash = "3ec0e9ed8ae1d058ffeaf5e074c8307c9266df8ccf918a4f0f06cdeca48ea6d4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/blue_bioshroom.json"
@@ -1358,11 +1358,11 @@ hash = "a300f87b74ecc74829f7cd989ad11560e2c546a4d78fc51d903af38ae50c9153"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightdelight/soil/twilight_rich_soil.json"
-hash = "11059d3d75c34c207056eff2f84ff843a68a69576e8d2cee91b13f0dc466fb57"
+hash = "388599960ae6ad7f87062519c3a5820a328181277c7b19bc221b2e990d3c6e07"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightdelight/soil/twilight_rich_soil_farmland.json"
-hash = "32e3bd191b7757f50f68c7bfbdb5a82fa86a31d43f038d19918230158151ab0f"
+hash = "5dcb00dd1e239806de2274bafbe708d000a4cf52f1ae5dcd0c9fd210ecf6f9d8"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/twilightforest/crop/blackberry_bush.json"

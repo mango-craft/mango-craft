@@ -9,6 +9,6 @@
   ],
   "type": "botanypots:block_derived_soil",
   "block": "farm_and_charm:fertilized_farmland",
-  "growth_modifier": 0.1,
-  "yield_modifier": 0.06
+  "growth_modifier": 0.2,
+  "yield_modifier": 0.15
 }

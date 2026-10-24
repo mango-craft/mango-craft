@@ -20,6 +20,6 @@
       "render_fluid": true
     }
   },
-  "growth_modifier": 0.2,
-  "yield_modifier": 0.02
+  "growth_modifier": 0.4,
+  "yield_modifier": 0.06
 }

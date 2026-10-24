@@ -1,6 +1,6 @@
 # Botany Pots: analisi di terreni e colture
 
-Aggiornata il 22/10/2026 · fonti: sorgente di Botany Pots 21.1.44 (commit `335c997`, lo stesso del rilascio su Modrinth) e di Bookshelf 21.1.81 (`5dead24`), inventario dei 255 jar del pack, datapack `matteo_tweaks` · scheda: `botany-pots.md` · base dati: `scripts/botanypots_db.py` (modello qui sotto) · query: `query/`.
+Aggiornata il 24/10/2026 · fonti: sorgente di Botany Pots 21.1.44 (commit `335c997`, lo stesso del rilascio su Modrinth) e di Bookshelf 21.1.81 (`5dead24`), inventario dei 255 jar del pack, datapack `matteo_tweaks` · scheda: `botany-pots.md` · base dati: `scripts/botanypots_db.py` (modello qui sotto) · query: `query/`.
 
 Documento vivo: raccoglie i fatti verificati sul funzionamento dei vasi, il modello della base dati e le decisioni sulla progressione dei terreni (0.6.1, in corso).
 
@@ -58,6 +58,22 @@ Il database si rifà da solo a ogni `query` se inventario, datapack o CSV sono p
 
 ## 4. Decisioni e domande aperte
 
+- 24/10: **scala ritoccata** (Matteo: terreni più importanti, ma sempre meno dei livelli dei vasi). Crescita 0, 0, 20, 20, 40, 40, 60, 60, 70, 80; resa 0, 15, 6, 15, 6, 15, 6, 15, 25, 35. Con 5 sui gradini di velocità la produzione con la tramoggia si invertiva di poco in ultra e mega (es. mega: rare 56,6 contro uncommon 56,7 al minuto); con 6 sale sempre. Matrice del grano (1200 tick), produzione al minuto con la tramoggia e guadagno su common nello stesso vaso:
+
+  | Classe | Normale | Elite | Ultra | Mega |
+  |---|---|---|---|---|
+  | common | 1,0 | 9,0 | 28,1 | 55,0 |
+  | uncommon | 1,1 (+15%) | 9,4 (+5%) | 29,1 (+4%) | 56,7 (+3%) |
+  | rare | 1,3 (+27%) | 9,8 (+9%) | 29,3 (+5%) | 56,7 (+3%) |
+  | super-rare | 1,4 (+38%) | 10,1 (+12%) | 30,0 (+7%) | 57,8 (+5%) |
+  | ultra-rare | 1,5 (+48%) | 10,4 (+16%) | 30,1 (+7%) | 57,8 (+5%) |
+  | ultimate-rare | 1,6 (+61%) | 10,7 (+19%) | 30,7 (+10%) | 58,9 (+7%) |
+  | secret-rare | 1,7 (+70%) | 11,0 (+23%) | 31,0 (+11%) | 59,0 (+7%) |
+  | epic | 1,8 (+84%) | 11,4 (+26%) | 31,7 (+13%) | 60,0 (+9%) |
+  | legendary | 2,1 (+113%) | 12,0 (+34%) | 32,9 (+17%) | 61,8 (+12%) |
+  | mythic | 2,4 (+143%) | 12,8 (+42%) | 34,1 (+22%) | 63,6 (+15%) |
+
+  A mano conta solo la crescita (mythic: +80% nel vaso normale, +27% elite, +12% ultra, +8% mega). I livelli dominano: elite con terra semplice 9,0 contro 2,4 di un vaso normale con il mythic. Il tooltip del vaso elite (prova 10 del 24/10, scala vecchia) ha confermato la somma dei bonus: crescita 18 s = 1200 ÷ 3,3 tick.
 - 22/10 (sera): **scala di rarità** in `rarita_pots_settings.csv`: 10 classi «natura» (common … mythic) e 10 «craft-diff-0…9», stessi valori per ora (i craft si potranno bilanciare a parte). Crescita 0, 0, 10, 10, 20, 20, 30, 30, 30, 30; resa 0, 6, 2, 6, 2, 6, 2, 6, 10, 14. Simulazione sul codice (tick arrotondati per difetto, bonus sommati a quelli del vaso): la scala sale a ogni gradino nel vaso con tramoggia e nei tre livelli di Botany Pots Tiers (elite +2/+2, ultra +6/+3, mega +10/+4: nel codice sono punti sommati, non moltiplicatori); nel vaso semplice raccolto a mano la resa non conta (`BotanyPotBlock.useItemOn` fa un solo raccolto), quindi i gradini di sola resa valgono quanto quello sotto. Con resa +5 e vasi alti la scala si invertiva; con +10 anche nel vaso con tramoggia: da qui il +2 sui gradini di velocità.
 - 22/10 (sera): classi dei 130 terreni in vaso in `terreno_rarita.csv` (ogni terreno ha la sua riga, anche common); 12 file delle mod sostituiti allo stesso percorso (terra ricca FD e aratura, compost organico, 5 arature FFB, terra arata, catalizzatore, uberosa, aratura dell'Undergarden): **da provare in gioco** col tooltip del seme.
 - 22/10 (sera): anche i terreni «non di terra» hanno una scala, dove c'è varietà: secchi d'acqua (acqua common, pesci vanilla e girino uncommon, pesce palla e gwibling rare, axolotl super-rare, leviatano neonato di Cataclysm epic) e terra delle anime uncommon rispetto alla sabbia delle anime. Lava, sabbia, sculk, End, funghi e tronchi restano common: un solo terreno o tutti equivalenti.

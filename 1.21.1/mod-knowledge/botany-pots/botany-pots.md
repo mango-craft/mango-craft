@@ -1,6 +1,6 @@
 # Botany Pots (+ Botany Trees, BotanyPotsAdditions, Botany Pots Tiers)
 
-Aggiornata il 22/10/2026 · nel pack dalla 0.1.1: Botany Pots 21.1.44, Botany Trees 21.1.7, Botany Pots Tiers 7.0.11, BotanyPotsAdditions 1.1.0, Bookshelf 21.1.81 (versioni in `../../docs/0403-distinta-mod.md`) · fonti: sorgenti 1.21.1 di Botany Pots e Botany Trees, file delle mod del pack, inventario. Ricerca e conteggi: `../../lavoro/versioni/v0.2.3.md`; grezzo `../../../ai-agents/stage/2026-10-17_1.21.1-v0.2.3_vasi/`; lavoro in corso `../../lavoro/versioni/v0.6.1.md`; sorgente di Botany Pots letto il 22/10 (`Darkhax-Minecraft/botanypots`, ramo `1.21.1`, commit `335c997`). Analisi dei terreni e delle colture, base dati e query: `analisi.md` e `query/` in questa cartella.
+Aggiornata il 24/10/2026 · nel pack dalla 0.1.1: Botany Pots 21.1.44, Botany Trees 21.1.7, Botany Pots Tiers 7.0.11, BotanyPotsAdditions 1.1.0, Bookshelf 21.1.81 (versioni in `../../docs/0403-distinta-mod.md`) · fonti: sorgenti 1.21.1 di Botany Pots e Botany Trees, file delle mod del pack, inventario. Ricerca e conteggi: `../../lavoro/versioni/v0.2.3.md`; grezzo `../../../ai-agents/stage/2026-10-17_1.21.1-v0.2.3_vasi/`; lavoro in corso `../../lavoro/versioni/v0.6.1.md`; sorgente di Botany Pots letto il 22/10 (`Darkhax-Minecraft/botanypots`, ramo `1.21.1`, commit `335c997`). Analisi dei terreni e delle colture, base dati e query: `analisi.md` e `query/` in questa cartella.
 
 ## Cose da non rompere
 

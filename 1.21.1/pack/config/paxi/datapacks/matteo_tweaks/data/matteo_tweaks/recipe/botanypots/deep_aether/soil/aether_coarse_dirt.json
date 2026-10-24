@@ -9,6 +9,6 @@
   ],
   "type": "botanypots:block_derived_soil",
   "block": "deep_aether:aether_coarse_dirt",
-  "growth_modifier": 0.1,
-  "yield_modifier": 0.02
+  "growth_modifier": 0.2,
+  "yield_modifier": 0.06
 }

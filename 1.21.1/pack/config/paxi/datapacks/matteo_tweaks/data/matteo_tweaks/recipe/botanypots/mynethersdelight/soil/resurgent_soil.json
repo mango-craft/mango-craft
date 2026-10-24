@@ -9,6 +9,6 @@
   ],
   "type": "botanypots:block_derived_soil",
   "block": "mynethersdelight:resurgent_soil",
-  "growth_modifier": 0.2,
-  "yield_modifier": 0.02
+  "growth_modifier": 0.4,
+  "yield_modifier": 0.06
 }
