@@ -1,4 +1,11 @@
-Aggiungi mod CurseForge — 2026-10-24
-== https://www.curseforge.com/minecraft/mc-mods/jumbo-furnace/files/7477280
-Looking up CurseForge slug...
-Project "Jumbo Furnace" successfully added! (jumbofurnace-5.0.0.9.jar)
+Aggiungi mod Modrinth — 2026-10-24
+== iron-furnaces 4.3.2 (WZ25JeYB)
+Project "Iron Furnaces" successfully added! (ironfurnaces-neoforge-1.21.1-4.3.2.jar)
+== furnacemk2 0.1.11 (dDvEGlWn)
+Finding dependencies...
+Warning: Modrinth versions for VapourWare inconsistent between latest version number and newest release date (1.21.1-0.1.28 vs 0.2.37)
+Dependencies found:
+VapourWare
+Would you like to add them? [Y/n]: Y (non-interactive mode)
+Dependency "VapourWare" successfully added! (vapourware-1.21.1-0.2.37.jar)
+Project "FurnaceMk2" successfully added! (furnacemk2-1.21.1-0.1.11.jar)

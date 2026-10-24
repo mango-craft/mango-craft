@@ -4140,6 +4140,11 @@ hash = "ef02ac9f94868b5c1093b044f1d33ad944cc252e674b20c77ddbb4155566dd1f"
 metafile = true
 
 [[files]]
+file = "mods/furnacemk2.pw.toml"
+hash = "4acc8d0d569bd0b389cc842b265a8ebb7866cd709c3664e6ded2c26696382060"
+metafile = true
+
+[[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 hash = "108739f2fdaa6a885a3217ae692b2521ab10b8e71fa1222c67274ea0562649a5"
 metafile = true
@@ -4207,6 +4212,11 @@ metafile = true
 [[files]]
 file = "mods/iris.pw.toml"
 hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
+metafile = true
+
+[[files]]
+file = "mods/iron-furnaces.pw.toml"
+hash = "cd73757a8c093f490d5c7673ad17f4404622a485234b79dc43efa0e67788d66e"
 metafile = true
 
 [[files]]
@@ -4787,6 +4797,11 @@ metafile = true
 [[files]]
 file = "mods/unusual_end.pw.toml"
 hash = "dd62bf59b749f3eb912d11ac62a6aecf167af0dfb674b3d7516d24f4cade6e49"
+metafile = true
+
+[[files]]
+file = "mods/vapourware.pw.toml"
+hash = "06ba241258273efaa0b5d32165448ad03fed188c1881dd1a925cf7d9409fbbda"
 metafile = true
 
 [[files]]

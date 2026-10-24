@@ -1,0 +1,103 @@
+{
+ "format": 3,
+ "status": "ok",
+ "name": "FurnaceMk2",
+ "file": "furnacemk2-1.21.1-0.1.11.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "b06f26e5dcdc01623a296ec38323b3040495b8ef8693587ffbd88c0530f2c9e2d8af2e5f33623ae0f83404f7e25d31fb817cd69cb89ef902a7f5425dc6975305",
+ "mods": [
+  {
+   "modid": "furnacemk2",
+   "name": "Furnace Mk2",
+   "version": "${file.jarVersion}",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[47,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "vapourware",
+     "type": "required",
+     "range": "[0.1.19,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "furnacemk2",
+   "name": "Furnace Mk2",
+   "version": "0.1.11",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "vapourware",
+     "type": "required",
+     "range": "[0.2.36,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "furnacemk2",
+  "minecraft"
+ ],
+ "blocks": {
+  "furnacemk2:furnacemk2": "Furnace Mk2"
+ },
+ "items": {
+  "furnacemk2:crystal_gem_item": "Attuned Crystal",
+  "furnacemk2:experience_core": "Experience Clarifier",
+  "furnacemk2:furnacemk2": "",
+  "furnacemk2:insulation_core": "Insulation Amplifier",
+  "furnacemk2:thermal_core": "Thermal Magnifier"
+ },
+ "data": {
+  "loot_table": [
+   "furnacemk2:blocks/furnacemk2"
+  ],
+  "recipe": [
+   "furnacemk2:attuned_crystal",
+   "furnacemk2:experience_core",
+   "furnacemk2:furnace_mk2",
+   "furnacemk2:insulation_core",
+   "furnacemk2:thermal_core"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "furnacemk2:furnacemk2"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 5
+ },
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "problems": []
+}

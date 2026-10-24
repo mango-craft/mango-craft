@@ -1,0 +1,292 @@
+{
+ "format": 3,
+ "status": "ok",
+ "name": "Iron Furnaces",
+ "file": "ironfurnaces-neoforge-1.21.1-4.3.2.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "88edbca1bd136dddba6da253973800771d5ca3c5632429c4d502326d640da2868f47a41f752492b4bbaf15357652a31c944af23f398b5d480a2e5318860fe7ea",
+ "mods": [
+  {
+   "modid": "ironfurnaces",
+   "name": "Iron Furnaces",
+   "version": "4.3.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "ironfurnaces",
+  "minecraft"
+ ],
+ "blocks": {
+  "ironfurnaces:allthemodium_furnace": "Allthemodium Furnace",
+  "ironfurnaces:copper_furnace": "Copper Furnace",
+  "ironfurnaces:crystal_furnace": "Crystal Furnace",
+  "ironfurnaces:diamond_furnace": "Diamond Furnace",
+  "ironfurnaces:emerald_furnace": "Emerald Furnace",
+  "ironfurnaces:gold_furnace": "Golden Furnace",
+  "ironfurnaces:heater": "Wireless Heat Transmitter",
+  "ironfurnaces:iron_furnace": "Iron Furnace",
+  "ironfurnaces:million_furnace": "Rainbow Furnace",
+  "ironfurnaces:netherite_furnace": "Netherite Furnace",
+  "ironfurnaces:obsidian_furnace": "Obsidian Furnace",
+  "ironfurnaces:silver_furnace": "Silver Furnace",
+  "ironfurnaces:unobtainium_furnace": "Unobtainium Furnace",
+  "ironfurnaces:vibranium_furnace": "Vibranium Furnace"
+ },
+ "items": {
+  "ironfurnaces:allthemodium_furnace": "",
+  "ironfurnaces:augment_blasting": "Augment: Blasting",
+  "ironfurnaces:augment_factory": "Augment: Factory",
+  "ironfurnaces:augment_fuel": "Augment: Fuel Efficiency",
+  "ironfurnaces:augment_generator": "Augment: Generator",
+  "ironfurnaces:augment_smoking": "Augment: Smoking",
+  "ironfurnaces:augment_speed": "Augment: Speed",
+  "ironfurnaces:copper_furnace": "",
+  "ironfurnaces:crystal_furnace": "",
+  "ironfurnaces:diamond_furnace": "",
+  "ironfurnaces:emerald_furnace": "",
+  "ironfurnaces:gold_furnace": "",
+  "ironfurnaces:gui": "Augment: Inventory Config",
+  "ironfurnaces:heater": "",
+  "ironfurnaces:iron_furnace": "",
+  "ironfurnaces:item_copy": "Furnace Settings Linker",
+  "ironfurnaces:item_heater": "Wireless Heat Receiver",
+  "ironfurnaces:item_spooky": "Furnace Spooka-lator",
+  "ironfurnaces:item_xmas": "Furnace Wrapping Papers",
+  "ironfurnaces:million_furnace": "",
+  "ironfurnaces:netherite_furnace": "",
+  "ironfurnaces:obsidian_furnace": "",
+  "ironfurnaces:rainbow_coal": "Rainbow Coal",
+  "ironfurnaces:rainbow_core": "Rainbow Core",
+  "ironfurnaces:rainbow_plating": "Rainbow Plating",
+  "ironfurnaces:silver_furnace": "",
+  "ironfurnaces:unobtainium_furnace": "",
+  "ironfurnaces:upgrade_allthemodium": "Netherite to Allthemodium Furnace Upgrade",
+  "ironfurnaces:upgrade_copper": "Stone to Copper Furnace Upgrade",
+  "ironfurnaces:upgrade_crystal": "Diamond to Crystal Furnace Upgrade",
+  "ironfurnaces:upgrade_diamond": "Gold to Diamond Furnace Upgrade",
+  "ironfurnaces:upgrade_emerald": "Diamond to Emerald Furnace Upgrade",
+  "ironfurnaces:upgrade_gold": "Iron to Gold Furnace Upgrade",
+  "ironfurnaces:upgrade_gold2": "Silver to Gold Furnace Upgrade",
+  "ironfurnaces:upgrade_iron": "Stone to Iron Furnace Upgrade",
+  "ironfurnaces:upgrade_iron2": "Copper to Iron Furnace Upgrade",
+  "ironfurnaces:upgrade_netherite": "Obsidian to Netherite Furnace Upgrade",
+  "ironfurnaces:upgrade_obsidian": "Emerald to Obsidian Furnace Upgrade",
+  "ironfurnaces:upgrade_obsidian2": "Crystal to Obsidian Furnace Upgrade",
+  "ironfurnaces:upgrade_silver": "Copper to Silver Furnace Upgrade",
+  "ironfurnaces:upgrade_silver2": "Iron to Silver Furnace Upgrade",
+  "ironfurnaces:upgrade_unobtainium": "Vibranium to Unobtainium Furnace Upgrade",
+  "ironfurnaces:upgrade_vibranium": "Allthemodium to Vibranium Furnace Upgrade",
+  "ironfurnaces:vibranium_furnace": ""
+ },
+ "data": {
+  "advancements": [
+   "ironfurnaces:coal"
+  ],
+  "loot_table": [
+   "ironfurnaces:blocks/allthemodium_furnace",
+   "ironfurnaces:blocks/copper_furnace",
+   "ironfurnaces:blocks/crystal_furnace",
+   "ironfurnaces:blocks/diamond_furnace",
+   "ironfurnaces:blocks/emerald_furnace",
+   "ironfurnaces:blocks/gold_furnace",
+   "ironfurnaces:blocks/heater",
+   "ironfurnaces:blocks/iron_furnace",
+   "ironfurnaces:blocks/million_furnace",
+   "ironfurnaces:blocks/netherite_furnace",
+   "ironfurnaces:blocks/obsidian_furnace",
+   "ironfurnaces:blocks/silver_furnace",
+   "ironfurnaces:blocks/unobtainium_furnace",
+   "ironfurnaces:blocks/vibranium_furnace"
+  ],
+  "recipe": [
+   "ironfurnaces:augments/augment_blasting",
+   "ironfurnaces:augments/augment_factory",
+   "ironfurnaces:augments/augment_fuel",
+   "ironfurnaces:augments/augment_generator",
+   "ironfurnaces:augments/augment_smoking",
+   "ironfurnaces:augments/augment_speed",
+   "ironfurnaces:furnaces/allthemodium_furnace",
+   "ironfurnaces:furnaces/copper_furnace",
+   "ironfurnaces:furnaces/crystal_furnace",
+   "ironfurnaces:furnaces/diamond_furnace",
+   "ironfurnaces:furnaces/emerald_furnace",
+   "ironfurnaces:furnaces/gold_furnace",
+   "ironfurnaces:furnaces/gold_furnace2",
+   "ironfurnaces:furnaces/iron_furnace",
+   "ironfurnaces:furnaces/iron_furnace2",
+   "ironfurnaces:furnaces/million_furnace",
+   "ironfurnaces:furnaces/netherite_furnace",
+   "ironfurnaces:furnaces/obsidian_furnace",
+   "ironfurnaces:furnaces/obsidian_furnace2",
+   "ironfurnaces:furnaces/silver_furnace",
+   "ironfurnaces:furnaces/silver_furnace2",
+   "ironfurnaces:furnaces/unobtainium_furnace",
+   "ironfurnaces:furnaces/vibranium_furnace",
+   "ironfurnaces:generator_blasting/amethyst",
+   "ironfurnaces:generator_blasting/copper_ingot",
+   "ironfurnaces:generator_blasting/diamond",
+   "ironfurnaces:generator_blasting/emerald",
+   "ironfurnaces:generator_blasting/gold_ingot",
+   "ironfurnaces:generator_blasting/iron_ingot",
+   "ironfurnaces:generator_blasting/lapis_lazuli",
+   "ironfurnaces:generator_blasting/nether_star",
+   "ironfurnaces:generator_blasting/netherite_ingot",
+   "ironfurnaces:generator_blasting/prismarine",
+   "ironfurnaces:generator_blasting/quartz",
+   "ironfurnaces:generator_blasting/redstone",
+   "ironfurnaces:heater",
+   "ironfurnaces:item_copy",
+   "ironfurnaces:item_heater",
+   "ironfurnaces:item_spooky",
+   "ironfurnaces:item_xmas",
+   "ironfurnaces:rainbow_core",
+   "ironfurnaces:rainbow_plating",
+   "ironfurnaces:upgrades/upgrade_allthemodium",
+   "ironfurnaces:upgrades/upgrade_copper",
+   "ironfurnaces:upgrades/upgrade_crystal",
+   "ironfurnaces:upgrades/upgrade_diamond",
+   "ironfurnaces:upgrades/upgrade_emerald",
+   "ironfurnaces:upgrades/upgrade_gold",
+   "ironfurnaces:upgrades/upgrade_gold2",
+   "ironfurnaces:upgrades/upgrade_iron",
+   "ironfurnaces:upgrades/upgrade_iron2",
+   "ironfurnaces:upgrades/upgrade_netherite",
+   "ironfurnaces:upgrades/upgrade_obsidian",
+   "ironfurnaces:upgrades/upgrade_obsidian2",
+   "ironfurnaces:upgrades/upgrade_silver",
+   "ironfurnaces:upgrades/upgrade_silver2",
+   "ironfurnaces:upgrades/upgrade_unobtainium",
+   "ironfurnaces:upgrades/upgrade_vibranium"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/item": [
+   "c:furnaces",
+   "c:furnaces/allthemodium",
+   "c:furnaces/copper",
+   "c:furnaces/crystal",
+   "c:furnaces/diamond",
+   "c:furnaces/emerald",
+   "c:furnaces/gold",
+   "c:furnaces/iron",
+   "c:furnaces/netherite",
+   "c:furnaces/obsidian",
+   "c:furnaces/rainbow",
+   "c:furnaces/silver",
+   "c:furnaces/unobtainium",
+   "c:furnaces/vibranium",
+   "ironfurnaces:netherite_upgrade_crafting"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "ironfurnaces:copper_furnace",
+    "ironfurnaces:iron_furnace",
+    "ironfurnaces:silver_furnace",
+    "ironfurnaces:gold_furnace",
+    "ironfurnaces:diamond_furnace",
+    "ironfurnaces:emerald_furnace",
+    "ironfurnaces:crystal_furnace",
+    "ironfurnaces:obsidian_furnace",
+    "ironfurnaces:netherite_furnace",
+    "ironfurnaces:allthemodium_furnace",
+    "ironfurnaces:vibranium_furnace",
+    "ironfurnaces:unobtainium_furnace",
+    "ironfurnaces:million_furnace",
+    "ironfurnaces:heater"
+   ]
+  },
+  "tags/item": {
+   "c:furnaces": [
+    "minecraft:furnace",
+    "ironfurnaces:allthemodium_furnace",
+    "ironfurnaces:copper_furnace",
+    "ironfurnaces:crystal_furnace",
+    "ironfurnaces:diamond_furnace",
+    "ironfurnaces:emerald_furnace",
+    "ironfurnaces:gold_furnace",
+    "ironfurnaces:iron_furnace",
+    "ironfurnaces:netherite_furnace",
+    "ironfurnaces:obsidian_furnace",
+    "ironfurnaces:million_furnace",
+    "ironfurnaces:silver_furnace",
+    "ironfurnaces:unobtainium_furnace",
+    "ironfurnaces:vibranium_furnace"
+   ],
+   "c:furnaces/allthemodium": [
+    "ironfurnaces:allthemodium_furnace"
+   ],
+   "c:furnaces/copper": [
+    "ironfurnaces:copper_furnace"
+   ],
+   "c:furnaces/crystal": [
+    "ironfurnaces:crystal_furnace"
+   ],
+   "c:furnaces/diamond": [
+    "ironfurnaces:diamond_furnace"
+   ],
+   "c:furnaces/emerald": [
+    "ironfurnaces:emerald_furnace"
+   ],
+   "c:furnaces/gold": [
+    "ironfurnaces:gold_furnace"
+   ],
+   "c:furnaces/iron": [
+    "ironfurnaces:iron_furnace"
+   ],
+   "c:furnaces/netherite": [
+    "ironfurnaces:netherite_furnace"
+   ],
+   "c:furnaces/obsidian": [
+    "ironfurnaces:obsidian_furnace"
+   ],
+   "c:furnaces/rainbow": [
+    "ironfurnaces:million_furnace"
+   ],
+   "c:furnaces/silver": [
+    "ironfurnaces:silver_furnace"
+   ],
+   "c:furnaces/unobtainium": [
+    "ironfurnaces:unobtainium_furnace"
+   ],
+   "c:furnaces/vibranium": [
+    "ironfurnaces:vibranium_furnace"
+   ],
+   "ironfurnaces:netherite_upgrade_crafting": [
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_ingot"
+   ]
+  }
+ },
+ "recipe_types": {
+  "ironfurnaces:generator_blasting": 12,
+  "minecraft:crafting_shaped": 43,
+  "minecraft:crafting_shapeless": 3
+ },
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "problems": []
+}

@@ -1,0 +1,77 @@
+{
+ "format": 3,
+ "status": "ok",
+ "name": "VapourWare",
+ "file": "vapourware-1.21.1-0.2.37.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "9f9ef4cafb5c357714c7f3864051cff5092100ff16c95e6bbe296a35ef87cc6bf75da802b49c654fb8cbaadbddb78968b442f2bfe9b1137b6837ee45a7842515",
+ "mods": [
+  {
+   "modid": "vapourware",
+   "name": "VapourWare",
+   "version": "${file.jarVersion}",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "forge",
+     "type": "required",
+     "range": "[46,)",
+     "side": "BOTH"
+    }
+   ]
+  },
+  {
+   "modid": "vapourware",
+   "name": "VapourWare",
+   "version": "0.2.37",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1, 1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "c",
+  "vapourware"
+ ],
+ "items": {
+  "vapourware:wrench": "Handyman's Wrench"
+ },
+ "data": {
+  "recipe": [
+   "vapourware:wrench"
+  ],
+  "tags/item": [
+   "c:tools/wrench"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/item": {
+   "c:tools/wrench": [
+    "vapourware:wrench"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 1
+ },
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "problems": []
+}
