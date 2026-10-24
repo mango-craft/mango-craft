@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Apothic Attributes (modulo)",
  "file": "ApothicAttributes-1.21.1-2.11.0.jar",
@@ -41,6 +41,20 @@
   "minecraft",
   "neoforge"
  ],
+ "effect_descriptions": {
+  "apothic_attributes:bleeding": "Inflicts damage every two seconds.",
+  "apothic_attributes:detonation": "On expiry, inflicts damage based on remaining fire ticks.",
+  "apothic_attributes:sundering": "Increases damage received.",
+  "minecraft:fire_resistance": "Makes you immune to fire damage.",
+  "minecraft:instant_damage": "Instantly causes a bit of magic damage.",
+  "minecraft:instant_health": "Instantly restores a bit of your health.",
+  "minecraft:invisibility": "Makes you invisible, excluding equipment.",
+  "minecraft:jump_boost": "Increases jump height.",
+  "minecraft:night_vision": "Allows you to see in the dark.",
+  "minecraft:poison": "Periodically inflicts non-lethal damage.",
+  "minecraft:regeneration": "Causes you to regenerate health over time.",
+  "minecraft:water_breathing": "Causes you to be unable to drown."
+ },
  "effects": {
   "apothic_attributes:bleeding": "Bleeding",
   "apothic_attributes:detonation": "Flaming Detonation",

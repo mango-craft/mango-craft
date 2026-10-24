@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Hexalia",
  "file": "hexalia-neoforge-1.3.6.jar",
@@ -172,6 +172,19 @@
   "hexalia:wither_candle_skull": "Wither Candle Skull",
   "hexalia:withered_aegiflora": "Withered Aegiflora",
   "hexalia:withered_celestial_bloom": "Withered Celestial Bloom"
+ },
+ "effect_descriptions": {
+  "hexalia:arachnid_grace": "Allows vertical wall climbing and grants poison immunity. Cobwebs do not slow the user, but water weakens them.",
+  "hexalia:bleeding": "Deals damage over time, similar to Poison.",
+  "hexalia:bloodlust": "Increases strength and restores a portion of damage dealt to foes, but the Regeneration effect is disabled.",
+  "hexalia:brambleguard": "Grants increased magical and physical resistance per level. Removes and prevents Bleeding while active.",
+  "hexalia:daybloom": "Grants regeneration and increased speed during daylight, but darkness harms the user.",
+  "hexalia:hollow_silence": "Silences the user's presence, allowing safe movement near sound-sensitive entities, but periodically clouds vision.",
+  "hexalia:overfed": "Prevents saturation from decreasing, but reduces movement speed while active.",
+  "hexalia:siphon": "Increases mining speed and attracts nearby items, but breaking blocks increases exhaustion.",
+  "hexalia:slimewalker": "Negates fall damage and causes the user to bounce when landing. While grounded, movement is slowed.",
+  "hexalia:spikeskin": "Increases armor and reflects a portion of incoming damage, but reduces movement speed.",
+  "hexalia:stunned": "Immobilizes the target, preventing movement for a short duration."
  },
  "effects": {
   "hexalia:arachnid_grace": "Arachnid Grace",

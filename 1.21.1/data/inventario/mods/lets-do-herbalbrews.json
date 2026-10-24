@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "[Let's Do] HerbalBrews",
  "file": "letsdo-herbalbrews-neoforge-1.1.4.jar",
@@ -81,6 +81,15 @@
   "herbalbrews:wild_yerba_mate_plant": "Wild Yerba Mate",
   "herbalbrews:yerba_mate_plant": "Yerba Mate Leaf",
   "herbalbrews:yerba_mate_tea_block": "Yerba Mate Tea"
+ },
+ "effect_descriptions": {
+  "herbalbrews:balanced": "Grants absorption for nearby players.",
+  "herbalbrews:bonding": "Boosts absorption and regeneration for nearby players.",
+  "herbalbrews:deeprush": "Speeds up mining based on depth for nearby players.",
+  "herbalbrews:feral": "Increases attack damage and armor for nearby players.",
+  "herbalbrews:fortune": "Improves luck for better loot for nearby players.",
+  "herbalbrews:lifeleech": "Transfers health from enemies to the player.",
+  "herbalbrews:tough": "Provides resistance and regeneration at low health for nearby players."
  },
  "effects": {
   "herbalbrews:balanced": "Balanced",

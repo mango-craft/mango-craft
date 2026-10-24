@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Mowzie's Mobs",
  "file": "mowziesmobs-1.21.1-1.8.2.jar",
@@ -77,6 +77,15 @@
   "mowziesmobs:raked_sand": "Raked Sand",
   "mowziesmobs:red_raked_sand": "Red Raked Sand",
   "mowziesmobs:thatch_block": "Thatch"
+ },
+ "effect_descriptions": {
+  "mowziesmobs:eclipsed": "Prevents all other status effects while active.",
+  "mowziesmobs:fragility": "Increases damage taken.",
+  "mowziesmobs:frozen": "Prevents all actions for a short duration. Fire damage will remove the effect early.",
+  "mowziesmobs:geomancy": "Allows you to command the power of the earth.",
+  "mowziesmobs:poison_resist": "Prevents the Poison status effect.",
+  "mowziesmobs:sunblock": "A small boost to regeneration and damage resistance.",
+  "mowziesmobs:suns_blessing": "Allows you to command the power of the sun."
  },
  "effects": {
   "mowziesmobs:eclipsed": "Eclipse",
@@ -185,6 +194,10 @@
   "mowziesmobs:wrought_axe_in_hand": "",
   "mowziesmobs:wrought_helmet": "Wrought Helm",
   "mowziesmobs:wroughtnaut_spawn_egg": "Ferrous Wroughtnaut Spawn Egg"
+ },
+ "potions": {
+  "mowziesmobs:long_poison_resist": "Potion of Poison Resistance",
+  "mowziesmobs:poison_resist": "Potion of Poison Resistance"
  },
  "data": {
   "jukebox_song": [

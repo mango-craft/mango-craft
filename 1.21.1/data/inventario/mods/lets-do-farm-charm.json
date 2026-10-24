@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "[Let's Do] Farm & Charm",
  "file": "letsdo-farm_and_charm-neoforge-1.1.28.jar",
@@ -164,6 +164,18 @@
   "farm_and_charm:wild_strawberries": "Wild Strawberries",
   "farm_and_charm:wild_tomatoes": "Wild Tomatoes",
   "farm_and_charm:window_sill": "Window Sill"
+ },
+ "effect_descriptions": {
+  "farm_and_charm:cluck": "Increases the rate of egg laying and feather shedding when Chicken Feed is fed to chickens. It can also be eaten by players... wonder what happens then...",
+  "farm_and_charm:dog_food": "Increases the attack damage, attack speed, and knockback resistance of Wolves.",
+  "farm_and_charm:farmers_blessing": "Removes all negative status effects for the duration of the effect.",
+  "farm_and_charm:feast": "Combines Sustenance and Satiation.",
+  "farm_and_charm:grandmas_blessing": "Same as Farmer's Blessing. Additionally it increases your Luck by 2.",
+  "farm_and_charm:horse_fodder": "Increases the jump strength and speed of Horses.",
+  "farm_and_charm:rested": "Increases gained Experience Points.",
+  "farm_and_charm:satiation": "While your hunger bar is full, you slowly regain health.",
+  "farm_and_charm:sustenance": "Regularly restores a hunger point. If your hunger bar is already full, it restores health instead.",
+  "farm_and_charm:sweets": "Boosts your attributes, such as movement speed, attack speed, and attack damage, making you more effective in navigating and fighting. Stackable up to 10 times."
  },
  "effects": {
   "farm_and_charm:cluck": "Cluck",

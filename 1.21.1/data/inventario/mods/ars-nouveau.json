@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Ars Nouveau",
  "file": "ars_nouveau-1.21.1-5.13.3.jar",
@@ -316,6 +316,27 @@
   "ars_nouveau:whirlisprig_flower": "Whirlisprig Blossom",
   "ars_nouveau:wixie_cauldron": "Wixie Cauldron",
   "ars_nouveau:yellow_sbed": "Yellow Magebloom Bed"
+ },
+ "effect_descriptions": {
+  "ars_nouveau:blasting": "Causes the target to explode when the duration ends.",
+  "ars_nouveau:bounce": "Causes the entity to bounce off of surfaces.",
+  "ars_nouveau:flight": "Allows the player to fly.",
+  "ars_nouveau:freezing": "Freezes the target over time.",
+  "ars_nouveau:glide": "Allows the player to glide as if wearing an Elytra.",
+  "ars_nouveau:gravity": "Causes the entity to rapidly fall.",
+  "ars_nouveau:hex": "Increases the damage taken potion and non-player damage.",
+  "ars_nouveau:immolate": "Enhances fire spells.",
+  "ars_nouveau:looting": "Increases the amount of loot dropped by mobs",
+  "ars_nouveau:magic_find": "Causes nearby magical entities to glow.",
+  "ars_nouveau:mana_regen": "Improves mana regeneration",
+  "ars_nouveau:recovery": "Increases healing received from all sources.",
+  "ars_nouveau:scrying": "Reveals certain blocks around you.",
+  "ars_nouveau:shielding": "Reduces the amount of damage taken.",
+  "ars_nouveau:shocked": "Increases the damage taken from lightning damage.",
+  "ars_nouveau:snared": "Prevents the entity from moving.",
+  "ars_nouveau:soaked": "Wets the target, protecting from fire and triggering effects as if under the rain.",
+  "ars_nouveau:spell_damage": "Increases the damage dealt by spells.",
+  "ars_nouveau:summoning_sickness": "Prevents summoning for a short duration."
  },
  "effects": {
   "ars_nouveau:blasting": "Blasting",
@@ -836,6 +857,26 @@
   "ars_nouveau:wololo": "",
   "ars_nouveau:worn_notebook": "Tattered Tome",
   "ars_nouveau:yellow_sbed": ""
+ },
+ "potions": {
+  "ars_nouveau:blasting_potion": "Potion of Blasting",
+  "ars_nouveau:blasting_potion_long": "Potion of Blasting",
+  "ars_nouveau:blasting_potion_strong": "Potion of Blasting",
+  "ars_nouveau:freezing_potion": "Potion of Freezing",
+  "ars_nouveau:freezing_potion_long": "Potion of Freezing",
+  "ars_nouveau:freezing_potion_strong": "Potion of Freezing",
+  "ars_nouveau:mana_regen_potion": "Potion of Mana Regeneration",
+  "ars_nouveau:mana_regen_potion_long": "Potion of Mana Regeneration",
+  "ars_nouveau:mana_regen_potion_strong": "Potion of Mana Regeneration",
+  "ars_nouveau:recovery_potion": "Potion of Recovery",
+  "ars_nouveau:recovery_potion_long": "Potion of Recovery",
+  "ars_nouveau:recovery_potion_strong": "Potion of Recovery",
+  "ars_nouveau:shielding_potion": "Potion of Shielding",
+  "ars_nouveau:shielding_potion_long": "Potion of Shielding",
+  "ars_nouveau:shielding_potion_strong": "Potion of Shielding",
+  "ars_nouveau:spell_damage_potion": "Potion of Spell Damage",
+  "ars_nouveau:spell_damage_potion_long": "Potion of Spell Damage",
+  "ars_nouveau:spell_damage_potion_strong": "Potion of Spell Damage"
  },
  "data": {
   "banner_pattern": [

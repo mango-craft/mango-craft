@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Reactive Alchemy",
  "file": "reactive-1.21.1-10.2.1.jar",
@@ -204,6 +204,11 @@
   "reactive:warp_bottle": "",
   "reactive:warp_sponge": "",
   "reactive:warp_staff": ""
+ },
+ "potions": {
+  "reactive:ambrosia": "Ambrosia",
+  "reactive:no_gravity": "Potion of Weightlessness",
+  "reactive:no_gravity_long": "Potion of Weightlessness"
  },
  "data": {
   "data_maps/item": [

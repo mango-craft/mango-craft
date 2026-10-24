@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Illager Invasion",
  "file": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
@@ -111,6 +111,9 @@
   "illagerinvasion:surrendered_spawn_egg": "Surrendered Spawn Egg",
   "illagerinvasion:tooting_horn_of_sight": "",
   "illagerinvasion:unusual_dust": "Unusual Dust"
+ },
+ "potions": {
+  "illagerinvasion:berserking": "Potion of Berserking"
  },
  "data": {
   "loot_table": [

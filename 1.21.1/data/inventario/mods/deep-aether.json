@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Deep Aether",
  "file": "deep_aether-1.21.1-1.1.5.1.jar",
@@ -486,6 +486,10 @@
   "deep_aether:yagroot_wall_sign": "",
   "deep_aether:yagroot_wood": "Yagroot Wood",
   "deep_aether:zephyr_totem": "Zephyr Totem"
+ },
+ "effect_descriptions": {
+  "deep_aether:moa_bonus_jumps": "Temporarily increases the number of jumps a Moa has.",
+  "deep_aether:valkyrie_valor": "Increases resistance against undead mobs."
  },
  "effects": {
   "deep_aether:moa_bonus_jumps": "Moa Bonus Jumps",
@@ -1058,6 +1062,9 @@
   "deep_aether:yagroot_wall": "",
   "deep_aether:yagroot_wood": "",
   "deep_aether:zephyr_totem": ""
+ },
+ "potions": {
+  "deep_aether:remedy_potion": "Potion of Remedy"
  },
  "data": {
   "data_maps/item": [

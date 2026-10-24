@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Corail Tombstone",
  "file": "tombstone-neoforge-1.21.1-9.5.6.jar",
@@ -259,6 +259,18 @@
   "tombstone:white_marble_slab": "",
   "tombstone:white_marble_stairs": "",
   "tombstone:white_marble_wall": ""
+ },
+ "potions": {
+  "tombstone:bait": "Potion of Bait",
+  "tombstone:darkness": "Potion of Darkness",
+  "tombstone:discretion": "Potion of Discretion",
+  "tombstone:earthly_garden": "Potion of Earthly Garden",
+  "tombstone:frostbite": "Potion of Frostbite",
+  "tombstone:giant_strength": "Potion of Giant Strength",
+  "tombstone:little_world": "Potion of Little World",
+  "tombstone:restoration": "Potion of Restoration",
+  "tombstone:spectral": "Spectral Potion",
+  "tombstone:weaver_walk": "Potion of Weaver's Walk"
  },
  "data": {
   "damage_type": [

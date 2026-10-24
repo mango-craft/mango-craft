@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Occultism",
  "file": "occultism-1.21.1-neoforge-1.224.5.jar",
@@ -681,6 +681,10 @@
   "occultism:vitality_compass": "Vitality Compass",
   "occultism:witherite_dust": "Witherite Dust",
   "occultism:wormhole_frame": ""
+ },
+ "potions": {
+  "occultism:long_third_eye_potion": "Potion of Third Eye",
+  "occultism:third_eye_potion": "Potion of Third Eye"
  },
  "data": {
   "curios": [

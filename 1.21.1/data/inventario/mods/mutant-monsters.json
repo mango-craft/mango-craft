@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Mutant Monsters",
  "file": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
@@ -95,6 +95,9 @@
   "mutantmonsters:spider_pig_spawn_egg": "Spider Pig Spawn Egg",
   "mutantmonsters:splash_chemical_x": "",
   "mutantmonsters:template_spawn_egg": ""
+ },
+ "potions": {
+  "mutantmonsters:chemical_x": "Potion of Chemical X"
  },
  "data": {
   "damage_type": [

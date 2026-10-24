@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Twilight's Flavor & Delight",
  "file": "twilightdelight-3.2.6.jar",
@@ -177,6 +177,15 @@
   "twilightdelight:yellow_glacier_candle_cake": "Yellow Glacier Candle Cake",
   "twilightdelight:yellow_phytochemical_candle_cake": "Yellow Phytochemical Candle Cake",
   "twilightdelight:yellow_torchberry_candle_cake": "Yellow Torchberry Candle Cake"
+ },
+ "effect_descriptions": {
+  "twilightdelight:aurora_glowing": "Make yourself glow with rainbow color. All entities appear rainbow glowing to you",
+  "twilightdelight:fire_range": "Ignite enemies around you, and make you cannot be ignited.",
+  "twilightdelight:frozen_range": "Freeze enemies around you, and make you immune to Frosty. Can also freeze items.",
+  "twilightdelight:lich_charge": "Restores durability of lich scepters in hotbar and offhand.",
+  "twilightdelight:poison_range": "Poison enemies around you, and make you immune to Poison.",
+  "twilightdelight:temporal_sadness": "Reduce movement speed and attack damage.",
+  "twilightdelight:twilight_aura": "Randomly transform nearby ordinary mobs into twilight creatures."
  },
  "effects": {
   "twilightdelight:aurora_glowing": "Aurora Glowing",

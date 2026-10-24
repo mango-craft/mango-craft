@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Deeper and Darker",
  "file": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
@@ -574,6 +574,11 @@
   "deeperdarker:white_sculk_transmitter_linked": "",
   "deeperdarker:yellow_sculk_transmitter": "Yellow Sculk Transmitter",
   "deeperdarker:yellow_sculk_transmitter_linked": ""
+ },
+ "potions": {
+  "deeperdarker:glowing": "Potion of Glowing",
+  "deeperdarker:long_sculk_affinity": "Potion of Sculk Affinity",
+  "deeperdarker:sculk_affinity": "Potion of Sculk Affinity"
  },
  "data": {
   "damage_type": [

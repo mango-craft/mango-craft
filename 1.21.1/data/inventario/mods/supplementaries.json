@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 4,
  "status": "ok",
  "name": "Supplementaries",
  "file": "supplementaries-1.21.1-4.0.2-neoforge.jar",
@@ -396,6 +396,10 @@
   "supplementaries:wild_flax": "Wild Flax",
   "supplementaries:wind_vane": "Wind Vane",
   "vslab_compat:checker_vertical_slab": ""
+ },
+ "effect_descriptions": {
+  "supplementaries:flammable": "Increases on fire duration and spreads fire as you walk.",
+  "supplementaries:overencumbered": "Prevents sprinting. Further levels reduce jump height and hinder walking speed respectively."
  },
  "effects": {
   "supplementaries:flammable": "Flammable",
