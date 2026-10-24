@@ -1,0 +1,17 @@
+{
+  "values": [],
+  "remove": [
+    {
+      "id": "#artifacts:slot/head",
+      "required": false
+    },
+    {
+      "id": "#artifacts:slot/face",
+      "required": false
+    },
+    {
+      "id": "#artifacts:slot/all",
+      "required": false
+    }
+  ]
+}

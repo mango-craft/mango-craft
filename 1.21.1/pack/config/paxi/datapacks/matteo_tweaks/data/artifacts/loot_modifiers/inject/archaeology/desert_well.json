@@ -5,12 +5,12 @@
       "modid": "artifacts"
     }
   ],
-  "type": "artifacts:roll_loot_table",
+  "type": "neoforge:add_table",
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "aether:chests/ruined_portal"
+      "loot_table_id": "minecraft:archaeology/desert_well"
     }
   ],
-  "lootTable": "artifacts:inject/chests/ruined_portal"
+  "table": "minecraft:empty"
 }

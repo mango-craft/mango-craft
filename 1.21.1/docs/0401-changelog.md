@@ -10,6 +10,17 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.7.0 — in lavorazione · accessori: Relics (in prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: non serve per provare; le casse già aperte non cambiano. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Mod nuove**: **Relics** 0.12.9 e **Reliquified Artifacts** 1.0.9 (entrambe beta), con la libreria **ShatterLib | OctoLib** 0.6.2. Gli artefatti di Artifacts diventano **reliquie**: salgono di livello usandole, con abilità rifatte; Relics porta 20 reliquie sue.
+- **Datapack, bottino**: le reliquie nelle casse le mette Relics, nel **10%** delle casse `chests/` di tutte le mod (20% di serie, abbassato da noi), scelte per nome della cassa, bioma e dimensione. I nostri 15 file per 152 casse diventano **10 file per le 25 casse** che Relics non vede (Twilight Forest, YUNG's Better Dungeons, nave dell'End, cassaforte del Galeone, cittadella di Friends & Foes). Gli **scavi archeologici** danno ancora artefatti in 1 caso su 16 (5 tabelle vanilla riscritte; da ora anche in 5 punti di scavo di Better Archeology).
+- **Datapack, slot**: gli artefatti si indossano solo negli slot di Curios (Reliquified Artifacts ignora la config di Artifacts: le etichette di Accessories si correggono nel datapack).
+- **Strumenti**: il controllo dei nomi verifica anche le tabelle tirate da `neoforge:add_table` e le voci che rimandano a un'altra tabella.
+- **Stato**: 🧪 in prova sul ramo `dev`.
+- **Problemi noti**: da vedere nella prova.
+
 ## 0.6.3 — 24/10/2026 · esperienza (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
