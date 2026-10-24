@@ -22,4 +22,8 @@ fi
 if [ -f "$VER/data/mercato/mercato_base.csv" ]; then
   python3 scripts/mercato_genera.py "$VER" --verifica || status=1
 fi
+# Lista nera degli amuleti di pozione di Apotheosis: stessa verifica
+if [ -f "$VER/data/pozioni/pozione_custom.csv" ]; then
+  python3 scripts/pozioni_genera.py "$VER" --verifica || status=1
+fi
 exit $status

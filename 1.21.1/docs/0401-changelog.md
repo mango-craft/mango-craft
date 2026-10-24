@@ -10,12 +10,16 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
-## 0.7.1 — in lavorazione · fornaci (in prova)
+## 0.7.2 — in lavorazione · fornaci e pozioni (in prova)
+
+Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due insieme (24/10/2026).
 
 - **NeoForge**: 21.1.259 (invariato).
 - **Mondo nuovo**: non serve. Versione di prova: il mondo vero parte dalla 1.0.0.
-- **Mod nuove**: **Iron Furnaces** 4.3.2 (fornaci dal rame alla netherite e arcobaleno, potenziamenti sul posto, accessori compresi generatore, fabbrica e riscaldatore), **FurnaceMk2** 0.1.11 con la libreria **VapourWare** 0.2.37 (una fornace migliorata con tre nuclei e l'esperienza raccolta in un cristallo), **Jumbo Furnace** 5.0.0.9 da CurseForge (cubo di 27 fornaci che cuoce molte cose insieme). Ricette e valori originali.
-- **Invariato**: datapack e config.
+- **Mod nuove (0.7.1)**: **Iron Furnaces** 4.3.2 (fornaci dal rame alla netherite e arcobaleno, potenziamenti sul posto, accessori compresi generatore, fabbrica e riscaldatore), **FurnaceMk2** 0.1.11 con la libreria **VapourWare** 0.2.37 (una fornace migliorata con tre nuclei e l'esperienza raccolta in un cristallo), **Jumbo Furnace** 5.0.0.9 da CurseForge (cubo di 27 fornaci che cuoce molte cose insieme). Ricette e valori originali.
+- **Datapack, amuleti di pozione (0.7.2)**: una lista nera per gli amuleti di Apotheosis, cioè le pozioni che non possono diventare un effetto continuo (permanente con l'amuleto infrangibile). Quali pozioni: da decidere.
+- **Strumenti (0.7.2)**: l'inventario ricava i nomi veri delle pozioni delle mod; effetti e pozioni entrano nella base dati (350 effetti e 129 pozioni delle mod); la lista nera la scrive `scripts/pozioni_genera.py` da una regola in CSV, e il controllo di ogni workflow verifica che file e regola coincidano.
+- **Invariato**: config.
 - **Stato**: 🧪 in prova sul ramo `dev`.
 - **Problemi noti**: da vedere nella prova.
 

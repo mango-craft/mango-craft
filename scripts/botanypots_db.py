@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Base dati dei vasi di Botany Pots: terreni, colture, tag e le nostre scelte di rarità, in SQLite.
+"""Base dati dei vasi di Botany Pots (terreni, colture, tag e le nostre scelte di rarità), del mercato di Farming for
+Blockheads e delle pozioni, in SQLite.
 
 Uso:  python3 scripts/botanypots_db.py <cartella versione> refresh
       python3 scripts/botanypots_db.py <cartella versione> query "SELECT ..."
@@ -14,7 +15,7 @@ tutti i vincoli e i controlli passano. Modello, fatti verificati e query: 1.21.1
 Fonti (si leggono direttamente, niente copie intermedie):
 - <versione>/data/inventario/: ricette e tag di ogni jar (generato dai workflow), più minecraft.json e neoforge.json;
 - <versione>/pack/config/paxi/datapacks/matteo_tweaks/data/: le nostre ricette e i nostri tag;
-- <versione>/data/vasi/*.csv: le regole nostre, scritte a mano.
+- <versione>/data/vasi/*.csv, mercato/*.csv, pozioni/*.csv e rarita.csv: le regole nostre, scritte a mano.
 Il file <versione>/data/vasi/vasi.sqlite non va nel repository: si rigenera.
 
 Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
@@ -27,6 +28,9 @@ Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
   scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA, TERRENO_TAG_CUSTOM, TERRENO_CUSTOM, COLTURA_CUSTOM, COLTURA_TAG_CUSTOM,
                 COLTURA_RACCOLTO_CUSTOM   (le regole nostre, lette anche da scripts/botanypots_genera.py)
                 POTS_COMPATIBILITA   (terreno × coltura, dai file vincenti, con il tag che fa da ponte)
+  mercato       MERCATO_* (0.6.2, scripts/mercato_genera.py)
+  pozioni       EFFETTO, POZIONE (censimento dall'inventario), POZIONE_CUSTOM (regole), viste POZIONE_REGOLA e
+                POZIONE_LISTA_NERA (0.7.2, scripts/pozioni_genera.py)
 
 Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
 - il vaso cerca il file di terreno con l'oggetto nello slot del terreno e il file di coltura con l'oggetto nello
@@ -412,11 +416,61 @@ CREATE VIEW MERCATO_PIANO_PRESET AS
   FROM MERCATO_PRESET_CUSTOM c
   LEFT JOIN MERCATO_PREZZO z ON z.origine = c.origine AND z.classe = c.classe
   LEFT JOIN MERCATO_PRESET p ON p.preset_id = c.preset_id AND p.strato = 'originale';
+
+-- ================================================================ pozioni ed effetti (0.7.2)
+-- Il censimento dall'inventario: gli effetti (registro mob_effect) e le pozioni (registro potion) di ogni file.
+-- Quale effetto dà una pozione, con che durata e livello, sta nel codice delle mod: qui c'è solo il nome.
+-- Tema 1.21.1/theme-knowledge/pozioni.md.
+CREATE TABLE EFFETTO (
+  effetto_id  TEXT PRIMARY KEY,          -- es. apothic_attributes:flying
+  slug        TEXT NOT NULL REFERENCES MOD,
+  nome        TEXT,                      -- nome inglese (il gioco base non ce l'ha nell'inventario)
+  descrizione TEXT                       -- descrizione inglese, se la mod la dà
+);
+CREATE TABLE POZIONE (
+  pozione_id TEXT PRIMARY KEY,           -- es. apothic_attributes:long_flying
+  slug       TEXT NOT NULL REFERENCES MOD,
+  nome       TEXT,                       -- nome inglese (il gioco base non ce l'ha nell'inventario)
+  famiglia   TEXT NOT NULL,              -- il nome senza «long», «strong», «extra»: le varianti della stessa pozione
+  dedotta    INTEGER NOT NULL CHECK (dedotta IN (0, 1))  -- 1 = nome del registro dedotto dalla traduzione (da confermare in gioco)
+);
+-- Le scelte nostre (CSV <versione>/data/pozioni/pozione_custom.csv): `varianti` = 'tutte' vale per tutta la famiglia
+-- della pozione indicata, 'questa' solo per lei (e vince sulla famiglia). amuleto = 0: lista nera degli amuleti di Apotheosis.
+CREATE TABLE POZIONE_CUSTOM (
+  pozione_id TEXT PRIMARY KEY REFERENCES POZIONE,
+  varianti   TEXT NOT NULL CHECK (varianti IN ('tutte', 'questa')),
+  amuleto    INTEGER NOT NULL CHECK (amuleto IN (0, 1)),
+  motivo     TEXT NOT NULL
+);
+-- Per ogni pozione la regola che vale (pozione > famiglia; senza regola l'amuleto si può fare).
+CREATE VIEW POZIONE_REGOLA AS
+  SELECT p.pozione_id, p.slug, p.nome, p.famiglia, p.dedotta,
+         COALESCE(q.amuleto, f.amuleto, 1) AS amuleto,
+         COALESCE(q.motivo, f.motivo) AS motivo,
+         COALESCE(q.pozione_id, f.pozione_id) AS regola
+  FROM POZIONE p
+  LEFT JOIN POZIONE_CUSTOM q ON q.pozione_id = p.pozione_id AND q.varianti = 'questa'
+  LEFT JOIN (SELECT c.pozione_id, c.amuleto, c.motivo, x.famiglia
+             FROM POZIONE_CUSTOM c JOIN POZIONE x ON x.pozione_id = c.pozione_id
+             WHERE c.varianti = 'tutte') f ON f.famiglia = p.famiglia;
+-- Ciò che scripts/pozioni_genera.py scrive nell'etichetta apotheosis:potion_charm_blacklist.
+CREATE VIEW POZIONE_LISTA_NERA AS
+  SELECT pozione_id, slug, nome, famiglia, dedotta, motivo FROM POZIONE_REGOLA WHERE amuleto = 0;
 """
 
 
 class ErroreDati(Exception):
     pass
+
+
+VARIANTI_POZIONE = {"long", "strong", "extra"}
+
+
+def famiglia_pozione(pid: str) -> str:
+    """La pozione senza le parole delle varianti: minecraft:long_swiftness, ars_nouveau:mana_regen_potion_long,
+    netherdepthsupgrade:glowdine_long_glowing, bountifulfares:bountifulfares.long_acidic → la stessa senza long/strong."""
+    ns, path = pid.split(":", 1)
+    return ns + ":" + ".".join("_".join(w for w in s.split("_") if w not in VARIANTI_POZIONE) for s in path.split("."))
 
 
 def _carica_json(p: Path):
@@ -432,6 +486,7 @@ class BotanyPotsDB:
         self.datapack = self.ver / DP
         self.vasi = self.ver / "data" / "vasi"
         self.mercato = self.ver / "data" / "mercato"
+        self.pozioni = self.ver / "data" / "pozioni"
         self.rarita_csv = self.ver / "data" / "rarita.csv"
         self.config_ffb = self.ver / "pack" / "config" / "farmingforblockheads-common.toml"
         self.db_path = self.vasi / "vasi.sqlite"
@@ -444,7 +499,7 @@ class BotanyPotsDB:
             return False
         t = self.db_path.stat().st_mtime
         fonti = [*self.inventario.rglob("*.json"), *self.datapack.rglob("*.json"), *self.vasi.glob("*.csv"),
-                 *self.mercato.glob("*.csv"), *([self.rarita_csv] if self.rarita_csv.exists() else []),
+                 *self.mercato.glob("*.csv"), *self.pozioni.glob("*.csv"), *([self.rarita_csv] if self.rarita_csv.exists() else []),
                  *([self.config_ffb] if self.config_ffb.exists() else []), Path(__file__)]
         return all(f.stat().st_mtime <= t for f in fonti)
 
@@ -516,6 +571,10 @@ class BotanyPotsDB:
         ctl("le origini delle regole del mercato esistono in MERCATO_BASE", "SELECT count(*) FROM (SELECT origine FROM MERCATO_MOD_CUSTOM UNION SELECT origine FROM MERCATO_VOCE_CUSTOM WHERE origine IS NOT NULL UNION SELECT origine FROM MERCATO_PRESET_CUSTOM WHERE origine IS NOT NULL) o WHERE NOT EXISTS (SELECT 1 FROM MERCATO_BASE b WHERE b.origine=o.origine)")
         n = c.execute("SELECT count(*) FROM MERCATO_CANDIDATO WHERE escluso IS NULL AND (origine IS NULL OR classe IS NULL)").fetchone()[0]
         out.append(("avviso: candidati del mercato senza regola (non blocca)", True, f"trovati: {n}"))
+        # pozioni
+        ctl("una sola regola 'tutte' per famiglia di pozioni", "SELECT count(*) FROM (SELECT x.famiglia FROM POZIONE_CUSTOM c JOIN POZIONE x ON x.pozione_id=c.pozione_id WHERE c.varianti='tutte' GROUP BY x.famiglia HAVING count(*)>1)")
+        n = c.execute("SELECT count(*) FROM POZIONE_LISTA_NERA WHERE dedotta").fetchone()[0]
+        out.append(("avviso: pozioni in lista nera con il nome dedotto, da confermare in gioco (non blocca)", True, f"trovate: {n}"))
         if self._coppie_attese is not None:
             n = c.execute("SELECT count(*) FROM (SELECT DISTINCT terreno_id, coltura_id FROM POTS_COMPATIBILITA)").fetchone()[0]
             out.append(("coppie terreno-coltura = conteggio diretto sui file", n == self._coppie_attese, f"vista {n}, diretto {self._coppie_attese}"))
@@ -552,6 +611,7 @@ class BotanyPotsDB:
         tag_voci = {"oggetti": defaultdict(list), "blocchi": defaultdict(list)}  # (fonte, voce, facoltativa)
         ricette, voci, preset, categorie = [], [], [], {}
         mod_righe, modid_righe = [], []
+        effetti, descrizioni, pozioni, dedotte = {}, {}, {}, set()  # id -> (slug, nome)
         ns_conta = defaultdict(Counter)  # namespace -> {slug: oggetti+blocchi}
         files = [self.inventario / "minecraft.json", self.inventario / "neoforge.json", *sorted((self.inventario / "mods").glob("*.json"))]
         for f in files:
@@ -586,6 +646,13 @@ class BotanyPotsDB:
                         tag_voci[amb][nome].append((fonte, v.rstrip("?"), v.endswith("?")))
             for r in d.get("botanypots") or []:
                 ricette.append({**r, "_fonte": fonte, "_strato": "originale"})
+            for k, v in (d.get("effects") or {}).items():
+                effetti.setdefault(k, (fonte, v or None))
+            for k, v in (d.get("effect_descriptions") or {}).items():
+                descrizioni.setdefault(k, v)
+            for k, v in (d.get("potions") or {}).items():
+                pozioni.setdefault(k, (fonte, v or None))
+            dedotte |= set(d.get("potions_deduced") or [])
         if not items:
             raise ErroreDati(f"inventario vuoto o assente: {self.inventario}")
         # datapack: tag e ricette
@@ -638,7 +705,8 @@ class BotanyPotsDB:
         ns_righe = [(ns, c.most_common(1)[0][0], c.most_common(1)[0][1]) for ns, c in sorted(ns_conta.items())]
         return {"items": items, "blocks": blocks, "mods": mods, "tag_voci": tag_voci, "ricette": ricette,
                 "mod": mod_righe, "mod_id": modid_righe, "mod_namespace": ns_righe,
-                "voci": voci, "preset": preset, "categorie": categorie, "config_preset": config_preset}
+                "voci": voci, "preset": preset, "categorie": categorie, "config_preset": config_preset,
+                "effetti": effetti, "descrizioni": descrizioni, "pozioni": pozioni, "dedotte": dedotte}
 
     # -- condizioni di caricamento
     @staticmethod
@@ -912,6 +980,16 @@ class BotanyPotsDB:
         self._carica_csv(c, "MERCATO_TIPO_CUSTOM", self.mercato / "mercato_tipo_custom.csv", ("tipo", "categoria_id", "vendi", "motivo"))
         self._carica_csv(c, "MERCATO_VOCE_CUSTOM", self.mercato / "mercato_voce_custom.csv", ("oggetto_id", "categoria_id", "origine", "classe", "escluso", "motivo"))
         self._carica_csv(c, "MERCATO_PRESET_CUSTOM", self.mercato / "mercato_preset_custom.csv", ("preset_id", "origine", "classe", "acceso", "motivo"))
+
+        # pozioni ed effetti: la mod è quella che porta il namespace (una traduzione può stare nel jar di un'altra mod)
+        ns_slug = {ns: slug for ns, slug, _n in dati["mod_namespace"]}
+        def mod_di(rid: str, fonte: str) -> str:
+            return ns_slug.get(rid.split(":")[0], fonte)
+        c.executemany("INSERT INTO EFFETTO VALUES (?,?,?,?)", [(e, mod_di(e, s), n, dati["descrizioni"].get(e))
+                                                               for e, (s, n) in sorted(dati["effetti"].items())])
+        c.executemany("INSERT INTO POZIONE VALUES (?,?,?,?,?)", [(p, mod_di(p, s), n, famiglia_pozione(p), int(p in dati["dedotte"]))
+                                                                 for p, (s, n) in sorted(dati["pozioni"].items())])
+        self._carica_csv(c, "POZIONE_CUSTOM", self.pozioni / "pozione_custom.csv", ("pozione_id", "varianti", "amuleto", "motivo"))
 
         # conteggio diretto delle coppie, indipendente dalla vista: per ogni coltura vincente, gli oggetti dei suoi tag
         membri = defaultdict(set)

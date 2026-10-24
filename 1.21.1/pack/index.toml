@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "967876c7885a1abef11bfb04841c0300f223b880d5ce3eaf82affe441f2e1d2b"
+hash = "d4216bc533233d2563df00a2114e988bcc57c6d530cc7114fc436a82be57918f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/readme.md"
@@ -51,6 +51,10 @@ hash = "a358567a1bdb7e5b484faf1e1e978253ea2cf91574c6460ea543efc66628549b"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/tags/item/shoes.json"
 hash = "6d24f675f6ca4dc1c6e4f385c33f34bfceba300b33053970529ad701a2edaf55"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/apotheosis/readme.md"
+hash = "330601ef5b1e73b3dbcb56e13b24f63c17d7743b53670e0009dddb077e049f56"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/ars_elemental/market_presets/saplings.json"

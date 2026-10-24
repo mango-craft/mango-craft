@@ -36,7 +36,7 @@ USER_AGENT = "mango-craft-inventory (github.com/mango-craft/mango-craft)"
 MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/{mc}-summary/"
 NEOFORGE_JAR = ("https://maven.neoforged.net/releases/net/neoforged/neoforge/"
                 "{v}/neoforge-{v}-universal.jar")
-FORMAT = 5  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti; 5: nomi veri delle pozioni)
+FORMAT = 6  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti; 5: nomi veri delle pozioni; 6: descrizioni degli effetti di Corail Tombstone)
 
 # Chiavi dei file di lingua -> campo dell'inventario
 LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
@@ -51,7 +51,8 @@ VANILLA_FIELDS = {"item": "items", "block": "blocks", "entity_type": "entities",
 # Attributes usa `minecraft.resistance` per `resistance`), altrimenti il nome del registro (Ars Nouveau:
 # `blasting_potion_long`; Bountiful Fares: `bountifulfares.acidic`, con il punto). Il nome vero si cerca tra le costanti di
 # testo delle classi del jar che usano `Potion` (vedi potion_ids). Il namespace è quello del file di lingua. Le descrizioni
-# degli effetti (`effect.<ns>.<nome>.desc[ription]`) servono a classificarli.
+# degli effetti (`effect.<ns>.<nome>.desc[ription]`, o `description.effect.<ns>.<nome>` in Corail Tombstone) servono a
+# classificarli.
 POTION_KEY = ("item", "minecraft", "potion", "effect")
 POTION_CLASS = b"net/minecraft/world/item/alchemy/Potion"
 POTION_VARIANTS = ("", "long_", "strong_", "extra_long_")
@@ -259,6 +260,8 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                         potion_names.setdefault((ns, ".".join(kp[4:])), val)
                     elif len(kp) == 4 and kp[0] == "effect" and kp[3] in ("desc", "description"):
                         inv.names["effect_descriptions"][f"{kp[1]}:{kp[2]}"] = val[:300]
+                    elif len(kp) == 4 and kp[:2] == ["description", "effect"]:  # Corail Tombstone
+                        inv.names["effect_descriptions"].setdefault(f"{kp[2]}:{kp[3]}", val[:300])
             elif len(parts) == 4 and parts[2] == "blockstates" and n.endswith(".json"):
                 blockstates.add(f"{ns}:{parts[3][:-5]}")
             elif len(parts) == 5 and parts[2] == "models" and parts[3] == "item" and n.endswith(".json"):
