@@ -57,6 +57,10 @@ file = "config/paxi/datapacks/matteo_tweaks/data/apotheosis/readme.md"
 hash = "330601ef5b1e73b3dbcb56e13b24f63c17d7743b53670e0009dddb077e049f56"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/apotheosis/tags/potion/potion_charm_blacklist.json"
+hash = "da065bc408347c3b3c5fe2ed3591f822d73958e7ba3e93e0e1f7287378e98f79"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/ars_elemental/market_presets/saplings.json"
 hash = "e59256f18e5dc7e4226445a06441b76603da44a71585305de0272d8f2538b113"
 

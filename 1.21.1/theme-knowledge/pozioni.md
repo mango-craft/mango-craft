@@ -1,6 +1,6 @@
 # Tema: pozioni ed effetti
 
-Aggiornata il 24/10/2026 · stato: **censimento nella base dati** e lista nera degli amuleti in lavorazione (`../lavoro/versioni/v0.7.2.md`); il resto senza decisioni · mod coinvolte: tutte quelle con effetti o pozioni (sotto) · fonti: inventario del pack (formato 6) e base dati (`scripts/botanypots_db.py`, tabelle `EFFETTO` e `POZIONE`); scansione dei 253 jar dell'istanza di prova (traduzioni inglesi e costanti delle classi, script in `../../ai-agents/stage/2026-10-24_pozioni/`); sorgente di Create (`PotionMixingRecipes`, ramo `mc1.21.1/dev`, commit `7ff2760`); sorgente di Apotheosis (ramo `1.21`: `PotionCharmItem`, `PotionCharmRecipe`, `CharmInfusionRecipe`) e di Ars Nouveau (`LibPotions`, `ModPotions`, ramo `main`); jar di Apotheosis 8.9.0, Apothic Attributes 2.11.0, Bountiful Fares 3.0.12 e Born in Chaos 1.7.6; config dell'istanza di prova. Schede vicine: `cucina.md` (bevande), `accessori.md`, `esperienza.md`.
+Aggiornata il 24/10/2026 · stato: **censimento nella base dati** e lista nera degli amuleti decisi (0.7.2, `../lavoro/versioni/v0.7.2.md`, da provare in gioco); il resto senza decisioni · mod coinvolte: tutte quelle con effetti o pozioni (sotto) · fonti: inventario del pack (formato 6) e base dati (`scripts/botanypots_db.py`, tabelle `EFFETTO` e `POZIONE`); scansione dei 253 jar dell'istanza di prova (traduzioni inglesi e costanti delle classi, script in `../../ai-agents/stage/2026-10-24_pozioni/`); sorgente di Create (`PotionMixingRecipes`, ramo `mc1.21.1/dev`, commit `7ff2760`); sorgente di Apotheosis (ramo `1.21`: `PotionCharmItem`, `PotionCharmRecipe`, `CharmInfusionRecipe`) e di Ars Nouveau (`LibPotions`, `ModPotions`, ramo `main`); jar di Apotheosis 8.9.0, Apothic Attributes 2.11.0, Bountiful Fares 3.0.12 e Born in Chaos 1.7.6; config dell'istanza di prova. Schede vicine: `cucina.md` (bevande), `accessori.md`, `esperienza.md`.
 
 **Cosa non si vede dai file**: durate, livelli e ricette dell'alambicco aggiunte dalle mod stanno nel codice. I numeri qui sotto contano ciò che esiste; come si ottiene ogni pozione si legge in gioco (EMI) o nel sorgente della mod.
 
@@ -67,7 +67,7 @@ Effetti dei cibi e dei vini spesso equivalgono a pozioni forti e non costano un 
 
 ## Strade possibili (da decidere)
 
-1. **Lista nera degli amuleti** nel datapack: in lavorazione nella 0.7.2 (proposta e decisione in `../lavoro/versioni/v0.7.2.md`).
+1. **Lista nera degli amuleti** nel datapack: fatta nella 0.7.2 (scelta di Matteo del 24/10: Flying, Weightlessness, Acidity, Stupor, Serenity, con le varianti; `../lavoro/versioni/v0.7.2.md`).
 2. **Censimento nella base dati**: fatto nella 0.7.2 (tabelle `EFFETTO`, `POZIONE` con la famiglia, `POZIONE_CUSTOM` con la regola). Da aggiungere quando servirà: le fonti degli effetti (cibi, calderoni, accessori) e una classificazione nostra (beneficio, danno, utilità; potenza).
 3. 🟡 **Automazione** delle pozioni che Create non converte (Born in Chaos): ricette del Mescolatore scritte da noi, se servono.
 4. 🟡 **Doppioni**: nasconderli in EMI (da verificare come) o lasciarli.
