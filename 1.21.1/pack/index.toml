@@ -3613,6 +3613,10 @@ file = "config/sparsestructures.json5"
 hash = "e10e7c99ed29ba650c4c7592981251f3e34a2c0a6b78ad6d8c2ec649ab3be037"
 
 [[files]]
+file = "kubejs/server_scripts/mango_dump.js"
+hash = "3d0cde9a5946f3ede77a37b685079d79853d407473ed6a1bdf42b2faf3b2b135"
+
+[[files]]
 file = "mods/aether.pw.toml"
 hash = "cc3f6e6e8f1838d16e47cce9241e32176279673efb1438ff4451ccffa9579b14"
 metafile = true

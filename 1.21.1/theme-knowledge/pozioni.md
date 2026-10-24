@@ -68,7 +68,7 @@ Effetti dei cibi e dei vini spesso equivalgono a pozioni forti e non costano un 
 ## Strade possibili (da decidere)
 
 1. **Lista nera degli amuleti** nel datapack: fatta nella 0.7.2 (scelta di Matteo del 24/10: Flying, Weightlessness, Acidity, Stupor, Serenity, con le varianti; `../lavoro/versioni/v0.7.2.md`).
-2. **Censimento nella base dati**: fatto nella 0.7.2 (tabelle `EFFETTO`, `POZIONE` con la famiglia, `POZIONE_CUSTOM` con la regola). Da aggiungere quando servirà: le fonti degli effetti (cibi, calderoni, accessori) e una classificazione nostra (beneficio, danno, utilità; potenza).
+2. **Censimento nella base dati**: fatto nella 0.7.2 (tabelle `EFFETTO`, `POZIONE` con la famiglia, `POZIONE_CUSTOM` con la regola). Con il **dump del gioco** (KubeJS, `/mango_dump`, scheda `../mod-knowledge/kubejs.md`) entrano anche effetti, durata e livello di ogni pozione (`POZIONE_EFFETTO`), categoria del gioco degli effetti, ricette dell'alambicco (`ALAMBICCO`), cibi ed effetti dei cibi (`OGGETTO_CIBO`, `OGGETTO_EFFETTO`) e quali pozioni fanno davvero un amuleto (`POZIONE_AMULETO`). Restano fuori: effetti dati dal codice (accessori, preghiere, cibi che non usano il componente `food`), ricette dei calderoni delle mod (sono nei file: da aggiungere all'inventario quando servirà) e una classificazione nostra (potenza, progressione).
 3. 🟡 **Automazione** delle pozioni che Create non converte (Born in Chaos): ricette del Mescolatore scritte da noi, se servono.
 4. 🟡 **Doppioni**: nasconderli in EMI (da verificare come) o lasciarli.
 5. 🟡 **Una progressione delle pozioni** (alambicco → calderoni delle mod → amuleti), legata alla rarità come i terreni e il mercato.

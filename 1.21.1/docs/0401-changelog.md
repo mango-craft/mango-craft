@@ -17,9 +17,10 @@ Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due i
 - **NeoForge**: 21.1.259 (invariato).
 - **Mondo nuovo**: non serve. Versione di prova: il mondo vero parte dalla 1.0.0.
 - **Mod nuove (0.7.1)**: **Iron Furnaces** 4.3.2 (fornaci dal rame alla netherite e arcobaleno, potenziamenti sul posto, accessori compresi generatore, fabbrica e riscaldatore), **FurnaceMk2** 0.1.11 con la libreria **VapourWare** 0.2.37 (una fornace migliorata con tre nuclei e l'esperienza raccolta in un cristallo), **Jumbo Furnace** 5.0.0.9 da CurseForge (cubo di 27 fornaci che cuoce molte cose insieme). Ricette e valori originali.
+- **Mod nuove (0.7.2)**: **KubeJS** 2101.7.2 con le librerie **Rhino** e **Better Advanced Tooltips**, solo per il comando `/mango_dump`: scrive i dati del gioco (effetti, pozioni, alambicco, cibi) per la base dati del repository; non cambia niente in gioco. Better Advanced Tooltips mostra etichette e componenti degli oggetti nei tooltip con F3+H.
 - **Datapack, amuleti di pozione (0.7.2)**: una lista nera per gli amuleti di Apotheosis, cioè le pozioni che non possono diventare un effetto continuo (permanente con l'amuleto infrangibile): **Flying** (Apothic Attributes, volo creativo), **Weightlessness** (Reactive), **Acidity** e **Stupor** (Bountiful Fares), **Serenity** (Unusual End), con le varianti lunghe e forti (11 pozioni). Tutte le altre, comprese quelle del gioco base, fanno ancora l'amuleto.
-- **Strumenti (0.7.2)**: l'inventario ricava i nomi veri delle pozioni delle mod; effetti e pozioni entrano nella base dati (350 effetti e 129 pozioni delle mod); la lista nera la scrive `scripts/pozioni_genera.py` da una regola in CSV, e il controllo di ogni workflow verifica che file e regola coincidano.
-- **Invariato**: config.
+- **Strumenti (0.7.2)**: l'inventario ricava i nomi veri delle pozioni delle mod; effetti e pozioni entrano nella base dati (350 effetti e 129 pozioni delle mod), insieme ai dati del gioco quando c'è un dump (`scripts/dump_importa.py`): effetti di ogni pozione, categoria degli effetti, ricette dell'alambicco, effetti dei cibi, e quali pozioni fanno davvero un amuleto. La lista nera la scrive `scripts/pozioni_genera.py` da una regola in CSV, e il controllo di ogni workflow verifica che file e regola coincidano.
+- **Invariato**: config (salvo lo script di KubeJS, nuovo).
 - **Stato**: 🧪 in prova sul ramo `dev`.
 - **Problemi noti**: da vedere nella prova.
 
