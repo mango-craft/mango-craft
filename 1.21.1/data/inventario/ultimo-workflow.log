@@ -1,12 +1,4 @@
-Aggiungi mod Modrinth — 2026-10-24
-== relics-mod 0.12.9 (CWPAvFMI)
-Finding dependencies...
-Dependencies found:
-ShatterLib | OctoLib
-Would you like to add them? [Y/n]: Y (non-interactive mode)
-Dependency "ShatterLib | OctoLib" successfully added! (OctoLib-NEOFORGE-0.6.2+1.21.jar)
-Project "Relics" successfully added! (relics-1.21.1-0.12.9.jar)
-== reliquified-artifacts 1.0.9 (rAl46NpA)
-Finding dependencies...
-All dependencies are already added!
-Project "Reliquified Artifacts" successfully added! (reliquified_artifacts-1.21.1-1.0.9.jar)
+Aggiungi mod CurseForge — 2026-10-24
+== https://www.curseforge.com/minecraft/mc-mods/jumbo-furnace/files/7477280
+Looking up CurseForge slug...
+Project "Jumbo Furnace" successfully added! (jumbofurnace-5.0.0.9.jar)

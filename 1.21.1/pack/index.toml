@@ -4230,6 +4230,11 @@ hash = "9884852226748f70fe3a0b6c95ce8cc0f7cf05c5e0adf344ee3b68aecdcf15a8"
 metafile = true
 
 [[files]]
+file = "mods/jumbo-furnace.pw.toml"
+hash = "83ef2f7df09049070ac193b60278e13981d5c3532e78b5deee16ba138d0563df"
+metafile = true
+
+[[files]]
 file = "mods/just-enough-professions-jep.pw.toml"
 hash = "bffd4067f92d5d8ed7a8a3acfdae213e9523ba5a518196cbd0a98d05e95fe6b6"
 metafile = true
