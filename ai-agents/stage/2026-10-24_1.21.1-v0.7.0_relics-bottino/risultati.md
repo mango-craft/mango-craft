@@ -1,0 +1,107 @@
+## Categorie per reliquia
+
+- rar:AnglersHatItem: AQUATIC
+- rar:AntidoteVesselItem: SWAMP, TROPIC
+- rar:AquaDashersItem: AQUATIC
+- rar:BunnyHoppersItem: PLAINS, FOREST
+- rar:CharmOfShrinkingItem: THE_END, END_LIKE
+- rar:CharmOfSinkingItem: AQUATIC
+- rar:ChorusTotemItem: THE_END, END_LIKE
+- rar:CloudInBottleItem: MOUNTAIN
+- rar:CowboyHatItem: SAVANNA, VILLAGE
+- rar:CrossNecklaceItem: DESERT, VILLAGE
+- rar:CrystalHeartItem: CAVE, MINESHAFT
+- rar:DiggingClawsItem: MINESHAFT, CAVE
+- rar:DrinkingHatItem: VILLAGE
+- rar:EverlastingBeefItem: VILLAGE
+- rar:FeralClawsItem: NETHER_LIKE, THE_NETHER
+- rar:FireGauntletItem: THE_NETHER, NETHER_LIKE
+- rar:FlamePendantItem: THE_NETHER, NETHER_LIKE
+- rar:FlippersItem: AQUATIC
+- rar:GoldenHookItem: AQUATIC
+- rar:HeliumFlamingoItem: AQUATIC
+- rar:KittySlippersItem: VILLAGE, PLAINS
+- rar:LuckyScarfItem: MINESHAFT, CAVE
+- rar:NightVisionGogglesItem: CAVE, MINESHAFT
+- rar:ObsidianSkullItem: THE_NETHER, NETHER_LIKE
+- rar:OnionRingItem: VILLAGE
+- rar:PanicNecklaceItem: CAVE, MINESHAFT
+- rar:PickaxeHeaterItem: THE_NETHER, MINESHAFT, NETHER_LIKE, CAVE
+- rar:PocketPistonItem: VILLAGE
+- rar:PowerGloveItem: MINESHAFT, CAVE
+- rar:RootedBootsItem: OVERWORLD
+- rar:RunningShoesItem: PLAINS, VILLAGE
+- rar:ScarfOfInvisibilityItem: SCULK, CAVE
+- rar:ShockPendantItem: MOUNTAIN
+- rar:SnorkelItem: AQUATIC
+- rar:SnowshoesItem: FROST, TAIGA
+- rar:SteadfastSpikesItem: MOUNTAIN, CAVE
+- rar:StriderShoesItem: THE_NETHER, NETHER_LIKE
+- rar:SuperstitiousHatItem: MINESHAFT, CAVE
+- rar:ThornPendantItem: TROPIC, SWAMP
+- rar:UmbrellaItem: VILLAGE
+- rar:UniversalAttractorItem: MINESHAFT, CAVE
+- rar:VampiricGloveItem: SWAMP
+- rar:VillagerHatItem: VILLAGE
+- rar:WarpDriveItem: THE_END, END_LIKE
+- rar:WhoopeeCushionItem: VILLAGE
+- rar:WitheredBraceletItem: THE_NETHER, NETHER_LIKE
+- relics:ChefHatItem: VILLAGE
+- relics:ChorusStaffItem: END_LIKE, THE_END
+- relics:ClotOfTimeItem: THE_END, END_LIKE
+- relics:CutGlassBootItem: AQUATIC
+- relics:ExperienceDisperserItem: WILDCARD
+- relics:GhostlyMantleItem: THE_NETHER, NETHER_LIKE
+- relics:GlitchyMantleItem: END_LIKE, THE_END
+- relics:HuntingBeltItem: VILLAGE
+- relics:JellyfishNecklaceItem: AQUATIC
+- relics:KineticBeltItem: THE_END, END_LIKE
+- relics:LeafyMantleItem: FOREST, TROPIC
+- relics:MidnightMantleItem: THE_END, END_LIKE
+- relics:PiglinMaskItem: BASTION
+- relics:ReflectiveNecklaceItem: NETHER_LIKE, THE_NETHER
+- relics:RiderFluteItem: VILLAGE, CAVE
+- relics:RingOfTheSevenDeadlySinsItem: THE_NETHER, NETHER_LIKE
+- relics:RollerSkateItem: OVERWORLD
+- relics:ShieldOfRetaliationItem: NETHER_LIKE, THE_NETHER
+- relics:SphereOfSelfSacrifice: THE_NETHER, NETHER_LIKE
+- relics:SpringyBootItem: MOUNTAIN
+
+## Nostre casse: 152; nel bottino di Relics: 127; fuori: 25
+
+- twilightforest:hill_2 (file abandoned_mineshaft)
+- twilightforest:troll_vault (file bastion_treasure)
+- twilightforest:troll_vault_with_lamp (file bastion_treasure)
+- mes:mega_ship_treasure (file end_city_treasure)
+- mes:mega_ship_crate (file end_city_treasure)
+- twilightforest:aurora_cache (file igloo_chest)
+- twilightforest:hedge_maze (file jungle_temple)
+- betterdungeons:small_nether_dungeon/chests/common (file nether_bridge)
+- supplementaries:loot/galleon/safe (file pillager_outpost)
+- betterdungeons:skeleton_dungeon/chests/common (file simple_dungeon)
+- betterdungeons:skeleton_dungeon/chests/middle (file simple_dungeon)
+- betterdungeons:zombie_dungeon/chests/common (file simple_dungeon)
+- betterdungeons:zombie_dungeon/chests/special (file simple_dungeon)
+- betterdungeons:zombie_dungeon/chests/tombstone (file simple_dungeon)
+- betterdungeons:spider_dungeon/chests/egg_room (file simple_dungeon)
+- twilightforest:hill_1 (file simple_dungeon)
+- twilightforest:labyrinth_room (file simple_dungeon)
+- twilightforest:stronghold_cache (file simple_dungeon)
+- twilightforest:stronghold_room (file stronghold_corridor)
+- twilightforest:hill_3 (file stronghold_corridor)
+- twilightforest:darktower_key (file stronghold_corridor)
+- twilightforest:labyrinth_vault (file woodland_mansion)
+- twilightforest:labyrinth_vault_jackpot (file woodland_mansion)
+- twilightforest:aurora_room (file woodland_mansion)
+- friendsandfoes:barrels/citadel (file woodland_mansion)
+
+## Categorie per nome tra le casse dentro
+
+- solo bioma e dimensione: 105
+- END_LIKE: 8
+- MINESHAFT: 7
+- NETHER_LIKE: 3
+- BASTION: 2
+- VILLAGE: 2
+
+## Inventario: 16923 tabelle, 563 con `chests/` (anche sottotabelle)
