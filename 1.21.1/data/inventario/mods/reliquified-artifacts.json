@@ -1,0 +1,257 @@
+{
+ "format": 3,
+ "status": "ok",
+ "name": "Reliquified Artifacts",
+ "file": "reliquified_artifacts-1.21.1-1.0.9.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "8797ce1a64d483f74fccc380fbaa64821d04505e930b199c1300bbb6c1acfaa40ee2268b926802f3592915320ff500dd509a00308bfd7b69dd0f8c9e8f3172fb",
+ "mods": [
+  {
+   "modid": "reliquified_artifacts",
+   "name": "reliquified_artifacts",
+   "version": "1.0.9",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.140-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "curios",
+     "type": "required",
+     "range": "[9.3.1+1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "octolib",
+     "type": "required",
+     "range": "[0.6,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "artifacts",
+     "type": "required",
+     "range": "[13.2.5]",
+     "side": "BOTH"
+    },
+    {
+     "modid": "relics",
+     "type": "required",
+     "range": "[0.12.3,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "artifacts",
+  "curios",
+  "relics",
+  "reliquified_artifacts"
+ ],
+ "items": {
+  "reliquified_artifacts:mimi_dust": "Mimi-Dust"
+ },
+ "data": {
+  "curios": [
+   "reliquified_artifacts:entities/modifier"
+  ],
+  "loot_table": [
+   "artifacts:entities/mimic",
+   "artifacts:entity_equipment/blaze",
+   "artifacts:entity_equipment/drowned",
+   "artifacts:entity_equipment/enderman",
+   "artifacts:entity_equipment/husk",
+   "artifacts:entity_equipment/piglin",
+   "artifacts:entity_equipment/piglin_brute",
+   "artifacts:entity_equipment/skeleton",
+   "artifacts:entity_equipment/stray",
+   "artifacts:entity_equipment/wither_skeleton",
+   "artifacts:entity_equipment/zombie",
+   "artifacts:entity_equipment/zombified_piglin"
+  ],
+  "recipe": [
+   "reliquified_artifacts:mimi_dust"
+  ],
+  "tags/item": [
+   "artifacts:slot/all",
+   "artifacts:slot/belt",
+   "artifacts:slot/charm",
+   "artifacts:slot/hands",
+   "artifacts:slot/head",
+   "curios:all",
+   "curios:belt",
+   "curios:bracelet",
+   "curios:charm",
+   "reliquified_artifacts:anglers_hat_valuables",
+   "reliquified_artifacts:mimic_loot",
+   "reliquified_artifacts:mimificable"
+  ]
+ },
+ "data_counts": {},
+ "tags": {
+  "tags/item": {
+   "artifacts:slot/all": [],
+   "artifacts:slot/belt": [
+    "artifacts:helium_flamingo"
+   ],
+   "artifacts:slot/charm": [
+    "artifacts:obsidian_skull",
+    "artifacts:cloud_in_a_bottle",
+    "artifacts:warp_drive",
+    "artifacts:crystal_heart",
+    "artifacts:universal_attractor",
+    "artifacts:chorus_totem",
+    "artifacts:antidote_vessel"
+   ],
+   "artifacts:slot/hands": [
+    "artifacts:digging_claws",
+    "artifacts:feral_claws",
+    "artifacts:fire_gauntlet",
+    "artifacts:power_glove",
+    "artifacts:golden_hook",
+    "artifacts:pickaxe_heater",
+    "artifacts:pocket_piston",
+    "artifacts:vampiric_glove"
+   ],
+   "artifacts:slot/head": [
+    "artifacts:whoopee_cushion"
+   ],
+   "curios:all": [],
+   "curios:belt": [],
+   "curios:bracelet": [
+    "artifacts:withered_bracelet",
+    "artifacts:onion_ring"
+   ],
+   "curios:charm": [
+    "#artifacts:slot/charm"
+   ],
+   "reliquified_artifacts:anglers_hat_valuables": [
+    "#c:raw_materials?",
+    "minecraft:amethyst_shard",
+    "minecraft:echo_shard",
+    "minecraft:prismarine_crystals",
+    "minecraft:nautilus_shell",
+    "minecraft:heart_of_the_sea"
+   ],
+   "reliquified_artifacts:mimic_loot": [
+    "artifacts:umbrella",
+    "artifacts:plastic_drinking_hat",
+    "artifacts:whoopee_cushion",
+    "artifacts:novelty_drinking_hat",
+    "artifacts:snorkel",
+    "artifacts:night_vision_goggles",
+    "artifacts:villager_hat",
+    "artifacts:superstitious_hat",
+    "artifacts:cowboy_hat",
+    "artifacts:anglers_hat",
+    "artifacts:lucky_scarf",
+    "artifacts:scarf_of_invisibility",
+    "artifacts:cross_necklace",
+    "artifacts:panic_necklace",
+    "artifacts:shock_pendant",
+    "artifacts:flame_pendant",
+    "artifacts:thorn_pendant",
+    "artifacts:charm_of_sinking",
+    "artifacts:charm_of_shrinking",
+    "artifacts:cloud_in_a_bottle",
+    "artifacts:obsidian_skull",
+    "artifacts:antidote_vessel",
+    "artifacts:universal_attractor",
+    "artifacts:crystal_heart",
+    "artifacts:helium_flamingo",
+    "artifacts:chorus_totem",
+    "artifacts:warp_drive",
+    "artifacts:digging_claws",
+    "artifacts:feral_claws",
+    "artifacts:power_glove",
+    "artifacts:fire_gauntlet",
+    "artifacts:pocket_piston",
+    "artifacts:vampiric_glove",
+    "artifacts:golden_hook",
+    "artifacts:onion_ring",
+    "artifacts:pickaxe_heater",
+    "artifacts:withered_bracelet",
+    "artifacts:bunny_hoppers",
+    "artifacts:kitty_slippers",
+    "artifacts:running_shoes",
+    "artifacts:snowshoes",
+    "artifacts:steadfast_spikes",
+    "artifacts:flippers",
+    "artifacts:rooted_boots",
+    "artifacts:everlasting_beef",
+    "artifacts:eternal_steak",
+    "artifacts:aqua_dashers",
+    "artifacts:strider_shoes"
+   ],
+   "reliquified_artifacts:mimificable": [
+    "artifacts:umbrella",
+    "artifacts:plastic_drinking_hat",
+    "artifacts:whoopee_cushion",
+    "artifacts:novelty_drinking_hat",
+    "artifacts:snorkel",
+    "artifacts:night_vision_goggles",
+    "artifacts:villager_hat",
+    "artifacts:superstitious_hat",
+    "artifacts:cowboy_hat",
+    "artifacts:anglers_hat",
+    "artifacts:lucky_scarf",
+    "artifacts:scarf_of_invisibility",
+    "artifacts:cross_necklace",
+    "artifacts:panic_necklace",
+    "artifacts:shock_pendant",
+    "artifacts:flame_pendant",
+    "artifacts:thorn_pendant",
+    "artifacts:charm_of_sinking",
+    "artifacts:charm_of_shrinking",
+    "artifacts:cloud_in_a_bottle",
+    "artifacts:obsidian_skull",
+    "artifacts:antidote_vessel",
+    "artifacts:universal_attractor",
+    "artifacts:crystal_heart",
+    "artifacts:helium_flamingo",
+    "artifacts:chorus_totem",
+    "artifacts:warp_drive",
+    "artifacts:digging_claws",
+    "artifacts:feral_claws",
+    "artifacts:power_glove",
+    "artifacts:fire_gauntlet",
+    "artifacts:pocket_piston",
+    "artifacts:vampiric_glove",
+    "artifacts:golden_hook",
+    "artifacts:onion_ring",
+    "artifacts:pickaxe_heater",
+    "artifacts:withered_bracelet",
+    "artifacts:bunny_hoppers",
+    "artifacts:kitty_slippers",
+    "artifacts:running_shoes",
+    "artifacts:snowshoes",
+    "artifacts:steadfast_spikes",
+    "artifacts:flippers",
+    "artifacts:rooted_boots",
+    "artifacts:everlasting_beef",
+    "artifacts:eternal_steak",
+    "artifacts:aqua_dashers",
+    "artifacts:strider_shoes"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 1
+ },
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "problems": []
+}

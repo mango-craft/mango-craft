@@ -1,0 +1,52 @@
+{
+ "format": 3,
+ "status": "ok",
+ "name": "ShatterLib | OctoLib",
+ "file": "OctoLib-NEOFORGE-0.6.2+1.21.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "c33faa056c9d5403f06b7aa883290c86c33dcea3502f99720df98eccbd819cd3050fb2ffecf048f2dbee1b69a14e9dc6c23245f35ba3a78e46b056859666a60a",
+ "mods": [
+  {
+   "modid": "octolib",
+   "name": "OctoLib",
+   "version": "0.6.2",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "architectury",
+     "type": "required",
+     "range": "[13.0.2,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [
+  "snakeyaml-2.2.jar"
+ ],
+ "namespaces": [
+  "octolib"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "problems": []
+}
