@@ -1,8 +1,8 @@
 {
   "payment": {
     "ingredient": {
-      "item": "undergarden:utherium_crystal"
+      "item": "undergarden:regalium_crystal"
     },
-    "count": 4
+    "count": 6
   }
 }

@@ -1,9 +1,9 @@
 origine,ordine_min,ordine_max,pagamento_id,quantita,blocco_id,motivo
 overworld,0,1,minecraft:emerald,9,minecraft:emerald_block,piante comuni dell'Overworld: smeraldi (un blocco di base)
 overworld,2,9,minecraft:diamond,3,minecraft:diamond_block,piante rare dell'Overworld: diamanti
-nether,0,9,minecraft:blaze_rod,3,,solo dalle fortezze del Nether
-end,0,9,minecraft:shulker_shell,2,,solo dalle città dell'End: base 2 (con 1 le classi rare e uncommon costerebbero uguale)
-otherside,0,9,minecraft:echo_shard,2,,Deeper and Darker: l'Otherside; il frammento d'eco si trova solo nelle città antiche
-aether,0,9,aether:zanite_gemstone,3,,"minerale dell'Aether, primo gradino di equipaggiamento"
-undergarden,0,9,undergarden:utherium_crystal,2,,"minerale profondo dell'Undergarden, più raro del cloggrum"
-twilight,0,9,twilightforest:ironwood_ingot,3,,liveroot del bosco più ferro; steeleaf e fiery sono dietro labirinti e boss
+nether,0,9,minecraft:netherite_scrap,2,,"detriti antichi (più rari dei diamanti) e casse delle fortezze; Occultism e Mekanism li raddoppiano ma serve il minerale. Prima: verga di blaze, che si fa con gli spawner"
+end,0,9,minecraft:shulker_shell,4,,"solo dalle città dell'End; base alzata a 4 perché dopo si coltiva (duplicazione vanilla, shulker posseduti di Occultism)"
+otherside,0,9,deeperdarker:soul_crystal,2,,"solo dagli Stalker (uno per uccisione) e dalle fontane dei templi antichi. Prima: frammento d'eco, che Apothic Enchanting moltiplica per 4"
+aether,0,9,aether:enchanted_gravitite,2,,"minerale profondo dell'Aether e premio dei dungeon d'oro. Prima: gemma di zanite, comune e raddoppiata da Create"
+undergarden,0,9,undergarden:regalium_crystal,3,undergarden:regalium_block,minerale raro dell'Undergarden e catacombe. Prima: cristallo di utherium
+twilight,0,9,twilightforest:steeleaf_ingot,3,twilightforest:steeleaf_block,"solo dal bottino di colline cave, labirinto, fortezza e torre oscura (0,1% dalle foglie di ironwood di Twilight Delight). Prima: lingotto di ironwood, che si fonde da liveroot, ferro e oro"

@@ -310,35 +310,35 @@ hash = "a89bf09aaf9eb668e0e68953086a46b9527bba513a21c47f52b572fc460c6ab7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/aether_rare.json"
-hash = "1e75cba6ff7c27243bc355dd96250365aa8585b2174b05a3904e49647ea3687e"
+hash = "ce7cf9517609854d73dd5f39bc29bec59d8dda93aca53ed8a03cca90a1968585"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/aether_super-rare.json"
-hash = "057f20b7f35003df1f948d866d2fc162d23877a835d35faab17137bb5a33b51c"
+hash = "8afa79ff78c3e0905e92c109759c25948f1b46830c32eeb948111173ff3906d1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/end_common.json"
-hash = "051c15c278a0db9d380c5468cc52bbb3c6d848ad69f59833cbb31bf3dd23e6f5"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/end_rare.json"
 hash = "cf8ec313a26e325d43797d684e9fd90b5b8578244ef5910aa02e0c6f4b449703"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/end_rare.json"
+hash = "1f10a870b4a1d9c932e9fb0f24202ee8ff11c75d94dc05c9563e721aae636351"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_common.json"
-hash = "5bb6a57cf2fd1cb25dc1ece9815667073b80298d85ef4501de75aaa5bd1cb900"
+hash = "9bc2bfe549a5862c871d2712caede6abff4162ee633ec609b6e843b0a4a154a5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_rare.json"
-hash = "dd32a2f56078db2e485eb8c2c64d6231f6fe763d69c441d525da9b17a4286816"
+hash = "0032c58884c49e7440df8b257caf82a452034e2173725b7b1483f6b6387b87b1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/nether_super-rare.json"
-hash = "4c034ee8d69168bdbb90436e7cc825c8b10015b2b96c8888f6101320f9967966"
+hash = "c6aacb2aad9d63d099aa08f59f186a0849136eab66318057cbde8d8b467eeef3"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/otherside_rare.json"
-hash = "8947d0d63e9454df69f8f7cbb412bcc1312371265435c3c8e7804f6510a46afa"
+hash = "493c823cf9652532da56b8c549197ffb83239d7a660167d29f7e0568f2ef56fe"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/overworld_common.json"
@@ -370,11 +370,11 @@ hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/twilight_rare.json"
-hash = "ce4dbad0ed47e2cef6f382a9425b0190ef011a58b5397afd0437c9c336898019"
+hash = "b3f6543f85c406f166977cbbad053c39d0df5f1f035cf37258e5a2cb024a8c44"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/market_presets/undergarden_rare.json"
-hash = "ebc62484ddf0e519b801a0765c918ad23361c885257456e80588eb73bc125d18"
+hash = "e454ef08dffcd05830ff9f455fd22e71117443a8d37e88731151afd2ed4b690e"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/aether/crop/berry_bush.json"
@@ -2662,7 +2662,7 @@ hash = "c14fa0157833d100065c87901e85db24fc0895b31a339d153ad00bbda395fe94"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/readme.md"
-hash = "b4feb43a6007feb9a434a59eacea482c0a8b2de3a017054ca4634bdcc7eb3dcf"
+hash = "6f6952f713c531a6468646bbad9654b82aad920ee89b945e4100211df8424ae7"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/market/regions_unexplored/alpha_dandelion.json"

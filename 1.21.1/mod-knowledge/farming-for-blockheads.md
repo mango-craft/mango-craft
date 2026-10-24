@@ -11,6 +11,7 @@ Aggiornata il 24/10/2026 · nel pack dalla 0.3.0, versione 21.1.14 (`../docs/040
 - Una voce può portare un **pagamento proprio** (`payment`, facoltativo) che vince sul preset; il preset deve comunque esistere ed essere acceso. Campi facoltativi: `icon`, `sortIndex`.
 - I **preset** si leggono da `data/<qualsiasi namespace>/market_presets/<nome>.json` (id `<namespace>:<nome>`) e dalla cartella `config/market_presets/`; il nostro datapack può quindi aggiungere listini suoi (`matteo_tweaks:…`) e **riscrivere quelli delle mod allo stesso percorso**. Il pagamento (`payment.tooltip`) può avere un testo.
 - Le **categorie** (`market_categories/`) sono 4 e stanno nel jar; una categoria sconosciuta in una voce non passa.
+- **Monete che si rigenerano nel pack** (verificato nei jar il 24/10, per scegliere i prezzi): verghe di blaze (spawner), gusci di shulker (duplicazione vanilla, shulker posseduti di Occultism), frammenti d'eco (infusione di Apothic Enchanting 1→4, cristallizzazione di Occultism dalla polvere d'eco), zanite (frantumazione di Create), ironwood (si fonde da liveroot, ferro e oro), netherite (raddoppiata da Occultism e Mekanism, ma serve il minerale). Le monete scelte per le dimensioni sono in `1.21.1/data/mercato/mercato_base.csv`, con il motivo.
 
 ## Formato del mercato (1.21.1)
 

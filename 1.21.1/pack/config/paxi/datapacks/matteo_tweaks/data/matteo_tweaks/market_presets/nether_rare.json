@@ -1,8 +1,8 @@
 {
   "payment": {
     "ingredient": {
-      "item": "minecraft:blaze_rod"
+      "item": "minecraft:netherite_scrap"
     },
-    "count": 6
+    "count": 4
   }
 }

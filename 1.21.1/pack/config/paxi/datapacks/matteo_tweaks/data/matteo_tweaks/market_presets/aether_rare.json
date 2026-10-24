@@ -1,8 +1,8 @@
 {
   "payment": {
     "ingredient": {
-      "item": "aether:zanite_gemstone"
+      "item": "aether:enchanted_gravitite"
     },
-    "count": 6
+    "count": 4
   }
 }
