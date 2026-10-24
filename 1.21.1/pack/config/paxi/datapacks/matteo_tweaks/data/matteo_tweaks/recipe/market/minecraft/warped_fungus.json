@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "minecraft:warped_fungus"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:nether_common",
+  "result": {
+    "item": "minecraft:warped_fungus"
+  }
+}

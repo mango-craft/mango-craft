@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "mynethersdelight:powder_cannon"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:nether_common",
+  "result": {
+    "item": "mynethersdelight:powder_cannon"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "undergardendelight:indigo_mushroom_colony"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:undergarden_common",
+  "result": {
+    "item": "undergardendelight:indigo_mushroom_colony"
+  }
+}

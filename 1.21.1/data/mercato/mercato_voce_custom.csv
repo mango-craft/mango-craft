@@ -1,1 +1,26 @@
 oggetto_id,categoria_id,origine,classe,escluso,motivo
+aether:golden_oak_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+deep_aether:enchanted_blossom,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+minecraft:chorus_flower,,end,,,pianta vanilla dell'End: moneta dell'End
+minecraft:crimson_fungus,,nether,,,pianta vanilla del Nether: moneta del Nether
+minecraft:moss_block,,,,sì,"non è una pianta: Botany Pots lo tratta come coltura, il mercato no"
+minecraft:nether_wart,,nether,,,pianta vanilla del Nether: moneta del Nether
+minecraft:pitcher_plant,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+minecraft:pitcher_pod,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+minecraft:sculk,,,,sì,"non è una pianta: Botany Pots lo tratta come coltura, il mercato no"
+minecraft:sculk_catalyst,,,,sì,"non è una pianta: Botany Pots lo tratta come coltura, il mercato no"
+minecraft:sculk_sensor,,,,sì,"non è una pianta: Botany Pots lo tratta come coltura, il mercato no"
+minecraft:sculk_shrieker,,,,sì,"non è una pianta: Botany Pots lo tratta come coltura, il mercato no"
+minecraft:sculk_vein,,,,sì,"non è una pianta: Botany Pots lo tratta come coltura, il mercato no"
+minecraft:torchflower,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+minecraft:torchflower_seeds,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+minecraft:warped_fungus,,nether,,,pianta vanilla del Nether: moneta del Nether
+occultism:otherworld_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+occultism:otherworld_sapling_natural,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+regions_unexplored:hanging_earlight_fruit,,nether,,,cresce nel Nether di Regions Unexplored
+twilightforest:hollow_oak_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+twilightforest:mining_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+twilightforest:rainbow_oak_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+twilightforest:sorting_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+twilightforest:time_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"
+twilightforest:transformation_sapling,,,,sì,"pianta rara o magica: niente scorciatoie (decisione del 19/10, confermata il 24/10)"

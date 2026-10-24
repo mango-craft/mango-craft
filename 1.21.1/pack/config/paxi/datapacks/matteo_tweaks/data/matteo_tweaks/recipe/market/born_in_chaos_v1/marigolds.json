@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "born_in_chaos_v1:marigolds"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:overworld_uncommon",
+  "result": {
+    "item": "born_in_chaos_v1:marigolds"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "regions_unexplored:pink_magnolia_sapling"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:saplings",
+  "preset": "matteo_tweaks:overworld_super-rare",
+  "result": {
+    "item": "regions_unexplored:pink_magnolia_sapling"
+  }
+}

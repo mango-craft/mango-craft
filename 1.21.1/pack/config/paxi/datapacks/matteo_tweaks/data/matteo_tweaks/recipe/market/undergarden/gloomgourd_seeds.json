@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "undergarden:gloomgourd_seeds"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:undergarden_common",
+  "result": {
+    "item": "undergarden:gloomgourd_seeds"
+  }
+}

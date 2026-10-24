@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "undergarden:ink_mushroom"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:undergarden_common",
+  "result": {
+    "item": "undergarden:ink_mushroom"
+  }
+}

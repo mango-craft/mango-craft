@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "bountifulfares:wild_potatoes"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:overworld_uncommon",
+  "result": {
+    "item": "bountifulfares:wild_potatoes"
+  }
+}

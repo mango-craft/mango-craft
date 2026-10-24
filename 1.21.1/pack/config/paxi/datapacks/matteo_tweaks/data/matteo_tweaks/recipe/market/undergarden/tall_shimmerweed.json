@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "undergarden:tall_shimmerweed"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:undergarden_common",
+  "result": {
+    "item": "undergarden:tall_shimmerweed"
+  }
+}

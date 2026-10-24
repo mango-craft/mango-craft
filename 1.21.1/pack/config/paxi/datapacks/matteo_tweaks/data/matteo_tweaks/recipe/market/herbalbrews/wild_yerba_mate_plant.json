@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "herbalbrews:wild_yerba_mate_plant"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:flowers",
+  "preset": "matteo_tweaks:overworld_rare",
+  "result": {
+    "item": "herbalbrews:wild_yerba_mate_plant"
+  }
+}

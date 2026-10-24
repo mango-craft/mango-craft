@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "deep_aether:blue_aercloud_mushrooms"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:aether_common",
+  "result": {
+    "item": "deep_aether:blue_aercloud_mushrooms"
+  }
+}

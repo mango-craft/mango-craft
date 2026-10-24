@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "regions_unexplored:meadow_sage"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:seeds",
+  "preset": "matteo_tweaks:overworld_super-rare",
+  "result": {
+    "item": "regions_unexplored:meadow_sage"
+  }
+}

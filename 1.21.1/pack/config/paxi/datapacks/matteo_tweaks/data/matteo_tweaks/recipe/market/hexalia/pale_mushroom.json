@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "hexalia:pale_mushroom"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:overworld_ultra-rare",
+  "result": {
+    "item": "hexalia:pale_mushroom"
+  }
+}

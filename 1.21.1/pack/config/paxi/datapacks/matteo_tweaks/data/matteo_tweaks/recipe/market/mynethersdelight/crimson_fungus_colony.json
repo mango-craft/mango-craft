@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "mynethersdelight:crimson_fungus_colony"
+    }
+  ],
+  "type": "farmingforblockheads:market",
+  "category": "farmingforblockheads:other",
+  "preset": "matteo_tweaks:nether_common",
+  "result": {
+    "item": "mynethersdelight:crimson_fungus_colony"
+  }
+}
