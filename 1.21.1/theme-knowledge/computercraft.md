@@ -53,7 +53,7 @@ Scartati perché servono mod che non abbiamo: gli add-on per Create: Simulated /
 
 ## Da tenere a mente
 
-- **Create bloccato**: CC:C Bridge vuole Create da 6.0.10 a sotto 7.0; il giro di aggiornamenti (0.8.0) deve guardarlo.
+- **Create bloccato**: CC:C Bridge vuole Create da 6.0.10 a sotto 7.0; il giro di aggiornamenti delle mod deve guardarlo.
 - **Alpha**: Advanced Peripherals e UnlimitedPeripheralWorks esistono solo come alpha per la 1.21.1; CC: Tweaked è segnata alpha su tutte le versioni.
 - **Internet dai computer**: con l'API `http` (accesa di serie, chiave `http.enabled` della config di CC: Tweaked) i computer scaricano programmi (`wget`, `pastebin`); in single player è comodo, e si può spegnere.
 - **Più mod che rispondono per lo stesso blocco**: CC: Tweaked usa i metodi generici (dove stanno anche quelli di Advanced Peripherals per Create) solo se nessuna mod dà una periferica sua per quel blocco.
