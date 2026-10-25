@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.7.0, rilasciata)._
+_Ultimo aggiornamento: 25/10/2026 (versioni fino alla 0.7.0, rilasciata; prove della 0.7.2 in corso)._
 
 ---
 
@@ -18,6 +18,7 @@ _Ultimo aggiornamento: 24/10/2026 (versioni fino alla 0.7.0, rilasciata)._
 
 | Codice | Visto in | Dove | Problema | Effetto | Piano |
 |---|---|---|---|---|---|
+| B45 | 0.7.2 (prova del 25/10) | Script `mango_dump.js` (KubeJS) | Lo script non si caricava: `TypeError: redeclaration of var Items`. Dichiarava al primo livello `const Items`, nome che KubeJS usa già per la classe `Items` del gioco (scheda `../mod-knowledge/kubejs.md`). Senza script, niente comando `/mango_dump` | medio: niente dump | **Corretto il 25/10**: nessun nome al primo livello, classi caricate dentro il comando con il prefisso `$`. Da riprovare: riavvio, `/mango_dump`, `logs/kubejs/server.log` con «Loaded 1/1» |
 | B22 | 0.4.0 | Every Compat (config di serie) | Crea 10.733 blocchi, il 40,7% di tutti i blocchi del pack (il più pesante è il modulo di Rechiseled, 2.183 blocchi). L'avvio passa da 51 a 78 secondi, le ricette da 22.123 a 28.026, JEI impiega di più a registrare gli oggetti | medio: tempo di avvio e memoria | **Decisione del 19/10: si tengono tutte le varianti e tutti i legni**, quindi il costo resta. `RUN_ONCE` non si usa (decisione del 19/10, sera; avrebbe tolto solo circa 2,5 secondi a ricaricamento; `../lavoro/versioni/v0.6.0.md`, parte A; scheda `../mod-knowledge/every-compat.md`) |
 
 ## 🔍 Da verificare in gioco

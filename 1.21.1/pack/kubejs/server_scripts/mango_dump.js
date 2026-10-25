@@ -11,54 +11,49 @@
 // I file li importa scripts/dump_importa.py nel repository (1.21.1/data/dump/); la base dati li legge da lì.
 // Non cambia niente nel mondo: legge soltanto. Ogni sezione è protetta: se una fallisce, le altre si scrivono e
 // l'errore finisce in meta.json.
-
-const DIR = 'logs/mango-craft-dump/'
-
-const BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
-const DataComponents = Java.loadClass('net.minecraft.core.component.DataComponents')
-const ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
-const Items = Java.loadClass('net.minecraft.world.item.Items')
-const PotionContents = Java.loadClass('net.minecraft.world.item.alchemy.PotionContents')
-const Potion = Java.loadClass('net.minecraft.world.item.alchemy.Potion')
-const Optional = Java.loadClass('java.util.Optional')
-
-function idOf(registry, value) {
-  const key = registry.getKey(value)
-  return key == null ? null : String(key)
-}
-
-function effectInstance(inst) {
-  return {
-    effetto: idOf(BuiltInRegistries.MOB_EFFECT, inst.getEffect().value()),
-    durata: Number(inst.getDuration()),
-    livello: Number(inst.getAmplifier())
-  }
-}
-
-function potionOf(stack) {
-  const pc = stack.get(DataComponents.POTION_CONTENTS)
-  if (pc == null || !pc.potion().isPresent()) return null
-  return idOf(BuiltInRegistries.POTION, pc.potion().get().value())
-}
-
-function stackInfo(stack) {
-  const out = { oggetto: idOf(BuiltInRegistries.ITEM, stack.getItem()), quanti: Number(stack.getCount()) }
-  const p = potionOf(stack)
-  if (p != null) out.pozione = p
-  return out
-}
-
-function section(meta, name, fn) {
-  try {
-    const data = fn()
-    JsonIO.write(DIR + name + '.json', data)
-    meta.file[name] = Array.isArray(data) ? data.length : data.miscele.length
-  } catch (e) {
-    meta.errori.push(name + ': ' + e)
-  }
-}
+//
+// Nessun nome al primo livello dello script: KubeJS ci tiene i suoi (Items, Item, Text…) e un `const` con lo stesso
+// nome blocca il caricamento ("redeclaration of var Items", prova del 25/10/2026). Tutto sta dentro il comando.
 
 ServerEvents.basicCommand('mango_dump', event => {
+  const DIR = 'logs/mango-craft-dump/'
+  const $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+  const $DataComponents = Java.loadClass('net.minecraft.core.component.DataComponents')
+  const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+  const $Items = Java.loadClass('net.minecraft.world.item.Items')
+  const $PotionContents = Java.loadClass('net.minecraft.world.item.alchemy.PotionContents')
+  const $Potion = Java.loadClass('net.minecraft.world.item.alchemy.Potion')
+  const $Optional = Java.loadClass('java.util.Optional')
+
+  const idOf = (registry, value) => {
+    const key = registry.getKey(value)
+    return key == null ? null : String(key)
+  }
+  const effectInstance = inst => {
+    return {
+      effetto: idOf($BuiltInRegistries.MOB_EFFECT, inst.getEffect().value()),
+      durata: Number(inst.getDuration()),
+      livello: Number(inst.getAmplifier())
+    }
+  }
+  const potionOf = stack => {
+    const pc = stack.get($DataComponents.POTION_CONTENTS)
+    if (pc == null || !pc.potion().isPresent()) return null
+    return idOf($BuiltInRegistries.POTION, pc.potion().get().value())
+  }
+  const stackInfo = stack => {
+    const out = { oggetto: idOf($BuiltInRegistries.ITEM, stack.getItem()), quanti: Number(stack.getCount()) }
+    const p = potionOf(stack)
+    if (p != null) out.pozione = p
+    return out
+  }
+  // un array Java (Ingredient.getItems()) non ha forEach: si scorre per indice
+  const stacksOf = arr => {
+    const out = []
+    for (let i = 0; i < arr.length; i++) out.push(stackInfo(arr[i]))
+    return out
+  }
+
   const level = event.getLevel()
   const meta = {
     formato: 1,
@@ -69,16 +64,26 @@ ServerEvents.basicCommand('mango_dump', event => {
     file: {},
     errori: []
   }
+  const section = (name, fn) => {
+    try {
+      const data = fn()
+      JsonIO.write(DIR + name + '.json', data)
+      meta.file[name] = Array.isArray(data) ? data.length : data.miscele.length
+    } catch (e) {
+      meta.errori.push(name + ': ' + e)
+    }
+  }
+
   try {
     Platform.getMods().forEach((id, info) => { meta.mod[String(id)] = String(info.getVersion()) })
   } catch (e) {
     meta.errori.push('mod: ' + e)
   }
 
-  section(meta, 'effetti', () => {
+  section('effetti', () => {
     const out = []
-    BuiltInRegistries.MOB_EFFECT.keySet().forEach(rl => {
-      const eff = BuiltInRegistries.MOB_EFFECT.get(rl)
+    $BuiltInRegistries.MOB_EFFECT.keySet().forEach(rl => {
+      const eff = $BuiltInRegistries.MOB_EFFECT.get(rl)
       out.push({
         id: String(rl),
         categoria: String(eff.getCategory()).toLowerCase(),
@@ -90,14 +95,14 @@ ServerEvents.basicCommand('mango_dump', event => {
     return out
   })
 
-  section(meta, 'pozioni', () => {
+  section('pozioni', () => {
     const out = []
-    BuiltInRegistries.POTION.keySet().forEach(rl => {
-      const potion = BuiltInRegistries.POTION.get(rl)
-      const holder = BuiltInRegistries.POTION.wrapAsHolder(potion)
+    $BuiltInRegistries.POTION.keySet().forEach(rl => {
+      const potion = $BuiltInRegistries.POTION.get(rl)
+      const holder = $BuiltInRegistries.POTION.wrapAsHolder(potion)
       const row = { id: String(rl), effetti: [] }
       try {
-        row.traduzione = String(Potion.getName(Optional.of(holder), ''))
+        row.traduzione = String($Potion.getName($Optional.of(holder), ''))
       } catch (e) {
         row.traduzione = null
       }
@@ -107,28 +112,27 @@ ServerEvents.basicCommand('mango_dump', event => {
     return out
   })
 
-  section(meta, 'alambicco', () => {
+  section('alambicco', () => {
     const brewing = level.potionBrewing()
     const ingredienti = []
-    BuiltInRegistries.ITEM.keySet().forEach(rl => {
-      const s = new ItemStack(BuiltInRegistries.ITEM.get(rl))
+    $BuiltInRegistries.ITEM.keySet().forEach(rl => {
+      const s = $BuiltInRegistries.ITEM.get(rl).getDefaultInstance()
       try {
         if (brewing.isIngredient(s)) ingredienti.push(s)
       } catch (e) { /* una ricetta personalizzata può non accettare oggetti strani */ }
     })
-    const contenitori = [Items.POTION, Items.SPLASH_POTION, Items.LINGERING_POTION]
+    const contenitori = [$Items.POTION, $Items.SPLASH_POTION, $Items.LINGERING_POTION]
     const miscele = []
-    BuiltInRegistries.POTION.keySet().forEach(rl => {
-      const holder = BuiltInRegistries.POTION.wrapAsHolder(BuiltInRegistries.POTION.get(rl))
+    $BuiltInRegistries.POTION.keySet().forEach(rl => {
+      const holder = $BuiltInRegistries.POTION.wrapAsHolder($BuiltInRegistries.POTION.get(rl))
       contenitori.forEach(c => {
-        const input = new ItemStack(c)
-        input.set(DataComponents.POTION_CONTENTS, new PotionContents(holder))
+        const input = $PotionContents.createItemStack(c, holder)
         ingredienti.forEach(ing => {
           try {
             if (!brewing.hasMix(input, ing)) return
             const res = brewing.mix(ing, input.copy())
-            if (res.isEmpty() || ItemStack.isSameItemSameComponents(res, input)) return
-            miscele.push({ ingresso: stackInfo(input), ingrediente: idOf(BuiltInRegistries.ITEM, ing.getItem()), risultato: stackInfo(res) })
+            if (res.isEmpty() || $ItemStack.isSameItemSameComponents(res, input)) return
+            miscele.push({ ingresso: stackInfo(input), ingrediente: idOf($BuiltInRegistries.ITEM, ing.getItem()), risultato: stackInfo(res) })
           } catch (e) { /* idem */ }
         })
       })
@@ -137,27 +141,28 @@ ServerEvents.basicCommand('mango_dump', event => {
     brewing.getRecipes().forEach(r => {
       const row = { classe: String(r.getClass().getName()) }
       try {
-        row.ingresso = []
-        r.getInput().getItems().forEach(s => row.ingresso.push(stackInfo(s)))
-        row.ingrediente = []
-        r.getIngredient().getItems().forEach(s => row.ingrediente.push(stackInfo(s)))
+        row.ingresso = stacksOf(r.getInput().getItems())
+        row.ingrediente = stacksOf(r.getIngredient().getItems())
         row.risultato = stackInfo(r.getOutput())
       } catch (e) {
+        delete row.ingresso
+        delete row.ingrediente
+        delete row.risultato
         row.nota = 'ricetta con logica propria: ingressi non elencabili'
       }
       ricette.push(row)
     })
-    return { ingredienti: ingredienti.map(s => idOf(BuiltInRegistries.ITEM, s.getItem())), miscele: miscele, ricette: ricette }
+    return { ingredienti: ingredienti.map(s => idOf($BuiltInRegistries.ITEM, s.getItem())), miscele: miscele, ricette: ricette }
   })
 
-  section(meta, 'oggetti', () => {
+  section('oggetti', () => {
     const out = []
     const pozioni = ['minecraft:potion', 'minecraft:splash_potion', 'minecraft:lingering_potion', 'minecraft:tipped_arrow']
-    BuiltInRegistries.ITEM.keySet().forEach(rl => {
+    $BuiltInRegistries.ITEM.keySet().forEach(rl => {
       const id = String(rl)
-      const s = new ItemStack(BuiltInRegistries.ITEM.get(rl))
+      const s = $BuiltInRegistries.ITEM.get(rl).getDefaultInstance()
       const row = { id: id }
-      const food = s.get(DataComponents.FOOD)
+      const food = s.get($DataComponents.FOOD)
       if (food != null) {
         row.cibo = {
           nutrizione: Number(food.nutrition()),
@@ -172,9 +177,9 @@ ServerEvents.basicCommand('mango_dump', event => {
           row.cibo.effetti.push(r)
         })
       }
-      const pc = s.get(DataComponents.POTION_CONTENTS)
+      const pc = s.get($DataComponents.POTION_CONTENTS)
       if (pc != null && pozioni.indexOf(id) < 0) {
-        row.pozione = { id: pc.potion().isPresent() ? idOf(BuiltInRegistries.POTION, pc.potion().get().value()) : null, effetti: [] }
+        row.pozione = { id: pc.potion().isPresent() ? idOf($BuiltInRegistries.POTION, pc.potion().get().value()) : null, effetti: [] }
         pc.getAllEffects().forEach(inst => row.pozione.effetti.push(effectInstance(inst)))
       }
       if (row.cibo || row.pozione) out.push(row)
