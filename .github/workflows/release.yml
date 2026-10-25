@@ -99,10 +99,11 @@ jobs:
           PACK: ${{ steps.info.outputs.pack }}
         run: |
           python3 scripts/release_notes.py "$PACK" "$MC/docs/0401-changelog.md" "$VER" > notes.md
-          # Le versioni 0.x sono tappe di prova: escono come pre-release. Il mondo vero parte dalla 1.0.0
+          # Le versioni 0.x escono come pre-release. Il mondo vero parte da una 0.x che supera la soglia
+          # (AGENTS.md, sezione 5); la 1.0.0 arriva dopo averci giocato a lungo
           EXTRA=()
           if [[ "$VER" == 0.* ]]; then
             EXTRA=(--prerelease)
-            printf '\n> ⚠️ Versione di prova (pre-release): non usarla per il mondo vero.\n' >> notes.md
+            printf '\n> ⚠️ Versione 0.x (pre-release): per il mondo vero usare solo la versione indicata nel piano (soglia del mondo vero).\n' >> notes.md
           fi
           gh release create "$TAG" dist/* --verify-tag "${EXTRA[@]}" --title "Mango Craft $MC · v$VER" --notes-file notes.md

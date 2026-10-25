@@ -6,7 +6,7 @@ Qui ci sono solo documenti **vivi**; le versioni rilasciate sono chiuse (fotogra
 
 | Codice | Documento | Contenuto | Tipo |
 |---|---|---|---|
-| **0501** | [piano](0501-piano.md) | Tappe verso la 1.0.0 e stato di avanzamento | vivo |
+| **0501** | [piano](0501-piano.md) | Tappe verso il mondo vero e la 1.0.0, stato di avanzamento | vivo |
 | **0502** | [prove-in-gioco](0502-prove-in-gioco.md) | Controlli da fare in gioco, rischi, mondo di prova | vivo |
 | **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e decisioni aperte che valgono per più versioni | vivo |
 | **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle (indice, con le schede) | vivo |

@@ -1,6 +1,6 @@
 # Piano — Minecraft 1.21.1
 
-Le tappe del pack verso il mondo vero (oggi, per le regole, la **1.0.0**: `AGENTS.md`, sezione 5) e lo stato di avanzamento. Documento vivo: si aggiorna a ogni tappa. Il flusso di lavoro (ramo `dev`, merge in `main`, tag, pre-release 0.x, prova di ogni tappa) è in `AGENTS.md`. Valutazioni, decisioni, lavoro e prove di ogni versione: `versioni/`. Cosa è uscito davvero: `../docs/0401-changelog.md`; cosa c'è nel pack: `../docs/0301-mod.md`.
+Le tappe del pack verso il mondo vero e lo stato di avanzamento. Il mondo vero parte da una versione 0.x che supera la soglia; la **1.0.0** arriva dopo averci giocato a lungo (`AGENTS.md`, sezione 5; regola del 25/10/2026). Documento vivo: si aggiorna a ogni tappa. Il flusso di lavoro (ramo `dev`, merge in `main`, tag, pre-release 0.x, prova di ogni tappa) è in `AGENTS.md`. Valutazioni, decisioni, lavoro e prove di ogni versione: `versioni/`. Cosa è uscito davvero: `../docs/0401-changelog.md`; cosa c'è nel pack: `../docs/0301-mod.md`.
 
 ## Tappe (piano deciso il 18/10/2026)
 
@@ -48,6 +48,7 @@ Prima proposta il 21/10 (richiesta di Matteo: il piano delle prossime versioni);
 | **Aggiornamenti e licenze** | Workflow che elenca le versioni nuove senza installarle, giro di aggiornamenti, controllo delle licenze, ritorno all'ultimo NeoForge se è uscita owo-lib 0.12.15.6 (B17); dopo, si rifanno inventario, dump del gioco e basi dati | quali mod aggiornare |
 | **Mondo di prova** | Le prove della sezione «Mondo di prova» di `0502` (Chunky e mappa di Xaero, densità delle strutture, Nether, vasi, esperienza, Every Compat), difficoltà, slot degli accessori se stretti, B33 con 12 GB | tasti in conflitto e lingua, prima |
 | **Correzioni** | Quello che il mondo di prova trova, una versione per volta | cosa correggere subito e cosa dopo |
-| **Mondo vero** | Si crea quando la soglia è raggiunta (`0503`, sezione 4, n. 5). Oggi le regole lo legano alla **1.0.0** (`AGENTS.md`, sezione 5); Matteo pensa che arriverà **prima**, perché la 1.0 è lontana e il pack va giocato a lungo (25/10): da confermare | l'OK finale |
+| **Mondo vero** | Si crea con la versione 0.x che supera la soglia (`0503`, sezione 4, n. 5): **prima della 1.0.0**, che arriva dopo averci giocato a lungo (regola di Matteo del 25/10) | l'OK finale |
+| **1.0.0** | Quando il pack è stato giocato a lungo nel mondo vero ed è stabile | quando |
 
 Senza versione propria: i tasti in conflitto (B, C) vanno solo in un elenco nei documenti; la lingua del gioco è ancora da chiarire (`0503`, sezione 2).

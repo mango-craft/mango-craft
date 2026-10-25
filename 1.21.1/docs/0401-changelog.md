@@ -3,7 +3,7 @@
 _Documento vivo: una voce nuova per ogni versione, in cima._
 
 Una voce per ogni versione, dalla più recente. Ogni voce dice:
-- **Stato**: 🧪 in prova sul ramo `dev` · ✅ provata e rilasciata (tag `1.21.1-vX.Y.Z`; le 0.x sono pre-release di prova, il mondo vero parte dalla 1.0.0);
+- **Stato**: 🧪 in prova sul ramo `dev` · ✅ provata e rilasciata (tag `1.21.1-vX.Y.Z`; le 0.x sono pre-release; il mondo vero parte dalla 0.x che supera la soglia del mondo vero, la 1.0.0 arriva dopo);
 - **NeoForge** da impostare a mano in Prism e se serve un **mondo nuovo**;
 - cosa cambia: mod, datapack, config;
 - **Problemi noti**: i codici del [bug report](0402-bug-report.md) comparsi o risolti in quella versione.
@@ -15,7 +15,7 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due insieme (24/10/2026).
 
 - **NeoForge**: 21.1.259 (invariato).
-- **Mondo nuovo**: non serve. Versione di prova: il mondo vero parte dalla 1.0.0.
+- **Mondo nuovo**: non serve. Versione di prova: non è la versione del mondo vero.
 - **Mod nuove (0.7.1)**: **Iron Furnaces** 4.3.2 (fornaci dal rame alla netherite e arcobaleno, potenziamenti sul posto, accessori compresi generatore, fabbrica e riscaldatore), **FurnaceMk2** 0.1.11 con la libreria **VapourWare** 0.2.37 (una fornace migliorata con tre nuclei e l'esperienza raccolta in un cristallo), **Jumbo Furnace** 5.0.0.9 da CurseForge (cubo di 27 fornaci che cuoce molte cose insieme). Ricette e valori originali.
 - **Mod nuove (0.7.2)**: **KubeJS** 2101.7.2 con le librerie **Rhino** e **Better Advanced Tooltips**, solo per il comando `/mango_dump`: scrive i dati del gioco (effetti, pozioni, alambicco, cibi) per la base dati del repository; non cambia niente in gioco. Better Advanced Tooltips mostra etichette e componenti degli oggetti nei tooltip con F3+H.
 - **Datapack, amuleti di pozione (0.7.2)**: una lista nera per gli amuleti di Apotheosis, cioè le pozioni che non possono diventare un effetto continuo (permanente con l'amuleto infrangibile): **Flying** (Apothic Attributes, volo creativo), **Weightlessness** (Reactive), **Acidity** e **Stupor** (Bountiful Fares), **Serenity** (Unusual End), con le varianti lunghe e forti (11 pozioni). Tutte le altre, comprese quelle del gioco base, fanno ancora l'amuleto.

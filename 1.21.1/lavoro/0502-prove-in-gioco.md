@@ -59,9 +59,9 @@ Le prove e i controlli da fare nell'istanza di prova. Documento vivo: i controll
 - **Occult Delight**: una sola release finora
 - **Psi**: issue aperte su particelle (#853) e su un trucco dell'Exosuit (#869)
 
-## Mondo di prova (prima della 1.0.0)
+## Mondo di prova (prima del mondo vero)
 
-Obbligatorio prima del mondo vero (deciso il 17/10/2026, `versioni/v0.2.3.md`). Sono le prove di uscita della **1.0.0**, con la soglia più alta decisa il 19/10/2026 (`0503-temi-aperti.md`, sezione 4, n. 5):
+Obbligatorio prima del mondo vero (deciso il 17/10/2026, `versioni/v0.2.3.md`). Sono le prove di uscita della **versione del mondo vero**, con la soglia più alta decisa il 19/10/2026 (`0503-temi-aperti.md`, sezione 4, n. 5):
 - [ ] **Pre-generazione** con Chunky e controllo sulla mappa di Xaero, Overworld e Nether
 - [ ] **Densità delle strutture**: regolarla con Sparse Structures struttura per struttura invece di togliere mod (`../docs/0302-config.md`)
 - [ ] **Jaden's Nether Expansion**: Nether più alto e biomi; paracadute nella sua config (`../docs/0302-config.md`)
