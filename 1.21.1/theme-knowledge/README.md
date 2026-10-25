@@ -20,5 +20,5 @@ Conoscenza **trasversale**: argomenti che attraversano più mod o la piattaforma
 | [piante](piante.md) | Come il pack tratta le piante delle mod: vasi di Botany Pots e mercato di Farming for Blockheads su una base dati sola, anagrafica della rarità condivisa, regole nei CSV e file generati |
 | [archeologia](archeologia.md) | Dove si scava (Minecraft, Better Archeology, Jaden's e le altre), strumenti, cosa si trova, artefatti negli scavi, casse di Better Archeology senza reliquie; quadro iniziale |
 | [pozioni](pozioni.md) | Effetti e pozioni delle mod (censimento del 24/10), sistemi per ottenerli, doppioni, amuleti di Apotheosis, automazione con Create; analisi iniziale |
-| [computercraft](computercraft.md) | Computer programmabili (CC: Tweaked) e add-on: cosa si collega già (Create, Mekanism, inventari), cosa porta nel mondo, add-on valutati; ricerca iniziale |
+| [computercraft](computercraft.md) | Computer programmabili (CC: Tweaked) e add-on: cosa si collega già (Create, Mekanism, inventari), cosa porta nel mondo, Advanced Peripherals (deciso), approfondimento sugli altri add-on |
 | [shader](shader.md) | Shader facoltativi: le mod del pack con uno shader attivo, pacchetti, licenze |
