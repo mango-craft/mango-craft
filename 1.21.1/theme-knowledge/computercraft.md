@@ -1,6 +1,6 @@
 # Tema: computer (CC: Tweaked e add-on)
 
-Aggiornata il 25/10/2026 · stato: **ricerca approfondita fatta**; decisione di Matteo del 25/10: **Advanced Peripherals sì** (versione da scegliere); gli altri add-on da decidere · mod coinvolte: CC: Tweaked e i suoi add-on (candidati), Create, Mekanism e le mod con inventari, liquidi o energia (già nel pack) · fonti: API di Modrinth; esame dei jar (`../../ai-agents/stage/2026-10-24_1.21.1-v0.7.2_esame-mod/`); sorgenti di CC: Tweaked 1.120.2, Create 6.0.10, Mekanism 10.7.19.85, Advanced Peripherals 0.8.2a, UnlimitedPeripheralWorks 1.9.2, Turtlematic 1.4.10, CC:C Bridge 1.7.3, Tom's Peripherals 1.3.1, Classic Peripherals 0.6.5, CC: Terminals 0.1.1; issue su GitHub. Riferimenti e materiale grezzo in `../../ai-agents/stage/2026-10-25_1.21.1-v0.7.2_computercraft/` (`fonti.md` e i tre `approfondimento-*.md`).
+Aggiornata il 25/10/2026 · stato: **ricerca approfondita fatta**; decisioni di Matteo del 25/10: **solo CC: Tweaked e Advanced Peripherals**, **case del Computer Scientist tenute** (versione da fissare); gli altri add-on scartati per ora (`../lavoro/0602-mod-scartate.md`) · mod coinvolte: CC: Tweaked e i suoi add-on (candidati), Create, Mekanism e le mod con inventari, liquidi o energia (già nel pack) · fonti: API di Modrinth; esame dei jar (`../../ai-agents/stage/2026-10-24_1.21.1-v0.7.2_esame-mod/`); sorgenti di CC: Tweaked 1.120.2, Create 6.0.10, Mekanism 10.7.19.85, Advanced Peripherals 0.8.2a, UnlimitedPeripheralWorks 1.9.2, Turtlematic 1.4.10, CC:C Bridge 1.7.3, Tom's Peripherals 1.3.1, Classic Peripherals 0.6.5, CC: Terminals 0.1.1; issue su GitHub. Riferimenti e materiale grezzo in `../../ai-agents/stage/2026-10-25_1.21.1-v0.7.2_computercraft/` (`fonti.md` e i tre `approfondimento-*.md`).
 
 ## Cos'è
 
@@ -19,7 +19,7 @@ Aggiornata il 25/10/2026 · stato: **ricerca approfondita fatta**; decisione di 
 - **Advanced Peripherals**: le **case del Computer Scientist** nei villaggi (5 strutture, una per tipo di villaggio) e il suo mestiere. ⚠️ Cambia la generazione: va deciso **prima del mondo vero** (si spengono con `enableVillagerStructures` in `config/Advancedperipherals/world.toml`, file COMMON che il pack può portare).
 - Gli altri add-on esaminati non hanno strutture né generazione (CC:C Bridge aggiunge solo un quadro tra quelli che si piazzano).
 
-## Advanced Peripherals 0.8.2a (deciso)
+## Advanced Peripherals 0.8.2a (scelta)
 
 Funzioni Lua lette nel sorgente. Rispetto a CC: Tweaked e alle periferiche di Create e Mekanism, collega i computer al **giocatore** e al **mondo**:
 - **Player Detector**: giocatori in un raggio, in un cubo o tra due coordinate, posizione e dati del giocatore (`getPlayer`, `isPlayerInRange`…); eventi quando un giocatore lo tocca, entra o esce dal mondo, cambia dimensione o muore (`player_click`, `player_join`, `player_leave`, `player_changed_dimension`, `player_death`).

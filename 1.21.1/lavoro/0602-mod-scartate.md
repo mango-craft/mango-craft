@@ -174,3 +174,19 @@ Ricerca del 24/10, tema `../theme-knowledge/fornaci.md`.
 | Compressed Furnace | Sorgente non pubblico; il frantumatore raddoppia i minerali; tecnologica |
 | Iron Furnace: Reburn | Per ora: fork molto giovane (2.000 download) con librerie proprie; da rivedere se cresce |
 | Brick Furnace | Fornaci di mattoni uguali alle vanilla: non è una progressione |
+
+## Computer (25/10/2026)
+
+Ricerca e approfondimento del 25/10, tema `../theme-knowledge/computercraft.md`. Matteo ha scelto solo CC: Tweaked e Advanced Peripherals (25/10).
+
+| Mod | Motivo |
+|---|---|
+| CC:C Bridge | Source Block e RedRouter sono doppioni di Create e di CC: Tweaked; il Target Block (leggere i display di Create) è segnalato rotto (issue #131, aperta). Da rivedere se lo correggono |
+| UnlimitedPeripheralWorks | Alpha, tre librerie nuove; prende in carico tutti i blocchi e nasconde l'integrazione Create di Advanced Peripherals (rimedio: etichetta `peripheralworks:ignore`). Da rivedere se servono le sue integrazioni con Occultism, Ars Nouveau, Easy Villagers |
+| Turtlematic | Automi in gran parte doppioni di Advanced Peripherals; l'automa Protective cattura o spegne i boss delle mod; correzioni non ancora pubblicate. Da rivedere a una versione nuova |
+| Tom's Peripherals | Solo grafica sui monitor; autore quasi fermo, esempi che non disegnano su NeoForge 1.21.1. Da rivedere se servono cruscotti grafici |
+| High Level Peripherals | Fork di Tom's Peripherals senza sorgente, tre versioni in un giorno |
+| Create: CC Better Recipes | Scelta di bilanciamento: se servono, ricette nostre nel datapack (strumenti a tappe) |
+| Create: CC Total Logistics | Doppione delle periferiche di Create 6; lo sconsiglia l'autore |
+| Classic Peripherals | Pensata per i server (NFC, RFID, crittografia, radio); riduce la portata degli Ender Modem |
+| CC: Terminals | Poco in più di computer e Keyboard di Advanced Peripherals |
