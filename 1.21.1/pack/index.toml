@@ -3634,7 +3634,7 @@ hash = "e10e7c99ed29ba650c4c7592981251f3e34a2c0a6b78ad6d8c2ec649ab3be037"
 
 [[files]]
 file = "kubejs/server_scripts/mango_dump.js"
-hash = "e2ceba8d02e5fd6e663732717f1d555f09a0ffe4e1a2a836c488b8755570bea9"
+hash = "e43a74dffa024573ff3d60de8e16663105df7228b17b0799513c68100e17be9f"
 
 [[files]]
 file = "mods/aether.pw.toml"
