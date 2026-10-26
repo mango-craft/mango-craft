@@ -12630,115 +12630,753 @@
  "ricette": [
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.BottleOfMagicalEnergyKBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:spiritual_dust",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:bottle_of_magical_energy",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:spiritual_dust",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:bottle_of_magical_energy",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:spiritual_dust",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:bottle_of_magical_energy",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:spiritual_dust",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:bottle_of_magical_energy",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:spiritual_dust",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:bottle_of_magical_energy",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:spiritual_dust",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:bottle_of_magical_energy",
+      "quanti": 1
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.ChaosComponentCraftBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:seedof_chaos",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:seedof_chaos",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:seedof_chaos",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:seedof_chaos",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:seedof_chaos",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:water"
+     },
+     "ingrediente": "born_in_chaos_v1:seedof_chaos",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.ElixirofIceBarrierCraftBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     },
+     "ingrediente": "born_in_chaos_v1:permafrost_shard",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:elixirof_ice_barrier",
+      "quanti": 1
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.ElixirofInsectProtectionCraftBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     },
+     "ingrediente": "born_in_chaos_v1:bloody_gadfly_eye",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:elixirof_insect_protection",
+      "quanti": 1
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.ElixirofVampirismKBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     },
+     "ingrediente": "born_in_chaos_v1:lifestealer_bone",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:elixir_of_vampirism",
+      "quanti": 1
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.ElixirofWitherResistanceCraftBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     },
+     "ingrediente": "born_in_chaos_v1:nightmare_claw",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:elixirof_wither_resistance",
+      "quanti": 1
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.IntoxicationPotionKBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:intoxicating_decoction",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:intoxication_potion"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:intoxicating_decoction",
+     "risultato": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:intoxication_potion"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:intoxicating_decoction",
+     "risultato": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:intoxication_potion"
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.PotionofLivingCocoonCraftBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:spider_mandible",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:potion_of_living_cocoon"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:spider_mandible",
+     "risultato": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:potion_of_living_cocoon"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:spider_mandible",
+     "risultato": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:potion_of_living_cocoon"
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.PotionofMagicalDepletionKBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:nightmare_claw",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:potion_of_magical_depletion"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:nightmare_claw",
+     "risultato": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:potion_of_magical_depletion"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:nightmare_claw",
+     "risultato": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:potion_of_magical_depletion"
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.PotionofRampagekBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "born_in_chaos_v1:chaos_component",
+      "quanti": 1
+     },
+     "ingrediente": "born_in_chaos_v1:fangofthe_hound_leader",
+     "risultato": {
+      "oggetto": "born_in_chaos_v1:potion_of_rampage",
+      "quanti": 1
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.SeaTerrorEyeKBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:sea_terror_eye",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:long_water_breathing"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:sea_terror_eye",
+     "risultato": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:long_water_breathing"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:sea_terror_eye",
+     "risultato": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:long_water_breathing"
+     }
+    }
+   ]
   },
   {
    "classe": "net.mcreator.borninchaosv.recipe.brewing.StimulatingDecoctionPBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:stimulating_decoction",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:stimulating_potion"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:stimulating_decoction",
+     "risultato": {
+      "oggetto": "minecraft:splash_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:stimulating_potion"
+     }
+    },
+    {
+     "ingresso": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "minecraft:awkward"
+     },
+     "ingrediente": "born_in_chaos_v1:stimulating_decoction",
+     "risultato": {
+      "oggetto": "minecraft:lingering_potion",
+      "quanti": 1,
+      "pozione": "born_in_chaos_v1:stimulating_potion"
+     }
+    }
+   ]
   },
   {
    "classe": "net.neoforged.neoforge.common.brewing.BrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "ingresso": [
+    {
+     "oggetto": "minecraft:potion",
+     "quanti": 1,
+     "pozione": "minecraft:water"
+    }
+   ],
+   "ingrediente": [
+    {
+     "oggetto": "minecraft:carrot",
+     "quanti": 1
+    }
+   ],
+   "risultato": {
+    "oggetto": "paraglider:energizing_elixir_2",
+    "quanti": 1
+   }
   },
   {
    "classe": "net.neoforged.neoforge.common.brewing.BrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "ingresso": [
+    {
+     "oggetto": "paraglider:enduring_elixir_2",
+     "quanti": 1
+    }
+   ],
+   "ingrediente": [
+    {
+     "oggetto": "minecraft:glowstone_dust",
+     "quanti": 1
+    }
+   ],
+   "risultato": {
+    "oggetto": "paraglider:enduring_elixir_3",
+    "quanti": 1
+   }
   },
   {
    "classe": "net.neoforged.neoforge.common.brewing.BrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "ingresso": [
+    {
+     "oggetto": "paraglider:energizing_elixir_2",
+     "quanti": 1
+    }
+   ],
+   "ingrediente": [
+    {
+     "oggetto": "minecraft:glowstone_dust",
+     "quanti": 1
+    }
+   ],
+   "risultato": {
+    "oggetto": "paraglider:energizing_elixir_3",
+    "quanti": 1
+   }
   },
   {
    "classe": "net.neoforged.neoforge.common.brewing.BrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "ingresso": [
+    {
+     "oggetto": "paraglider:energizing_elixir_2",
+     "quanti": 1
+    }
+   ],
+   "ingrediente": [
+    {
+     "oggetto": "minecraft:golden_carrot",
+     "quanti": 1
+    }
+   ],
+   "risultato": {
+    "oggetto": "paraglider:enduring_elixir_2",
+    "quanti": 1
+   }
   },
   {
    "classe": "net.neoforged.neoforge.common.brewing.BrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "ingresso": [
+    {
+     "oggetto": "paraglider:energizing_elixir_3",
+     "quanti": 1
+    }
+   ],
+   "ingrediente": [
+    {
+     "oggetto": "minecraft:golden_carrot",
+     "quanti": 1
+    }
+   ],
+   "risultato": {
+    "oggetto": "paraglider:enduring_elixir_3",
+    "quanti": 1
+   }
   },
   {
    "classe": "net.neoforged.neoforge.common.brewing.BrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "ingresso": [
+    {
+     "oggetto": "unusualend:chorus_juice",
+     "quanti": 1
+    }
+   ],
+   "ingrediente": [
+    {
+     "oggetto": "unusualend:chorus_petal",
+     "quanti": 1
+    }
+   ],
+   "risultato": {
+    "oggetto": "unusualend:chorus_tea",
+    "quanti": 1
+   }
   },
   {
    "classe": "net.neoforged.neoforge.common.brewing.BrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "ingresso": [
+    {
+     "oggetto": "minecraft:glass_bottle",
+     "quanti": 1
+    }
+   ],
+   "ingrediente": [
+    {
+     "oggetto": "unusualend:warped_spores",
+     "quanti": 1
+    }
+   ],
+   "risultato": {
+    "oggetto": "unusualend:warped_potion",
+    "quanti": 1
+   }
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "minecraft:blue_ice",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:frostbite"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "minecraft:brown_mushroom",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:little_world"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "minecraft:cobweb",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:weaver_walk"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "minecraft:echo_shard",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:darkness"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "minecraft:ochre_froglight",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:bait"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "minecraft:phantom_membrane",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:discretion"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "minecraft:red_mushroom",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:giant_strength"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "minecraft:strong_healing"
+     },
+     "ingrediente": "tombstone:grave_dust",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:restoration"
+     }
+    }
+   ]
   },
   {
    "classe": "ovh.corail.tombstone.registry.ModPotions$ConfigurableBrewingRecipe",
-   "nota": "ricetta con logica propria: ingressi non elencabili"
+   "provate": [
+    {
+     "ingresso": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:spectral"
+     },
+     "ingrediente": "tombstone:thornveil",
+     "risultato": {
+      "oggetto": "minecraft:potion",
+      "quanti": 1,
+      "pozione": "tombstone:earthly_garden"
+     }
+    }
+   ]
   }
  ]
 }
