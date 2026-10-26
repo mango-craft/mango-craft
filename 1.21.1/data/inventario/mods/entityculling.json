@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "Entity Culling",
  "file": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
@@ -26,7 +26,8 @@
      "range": "[20.2,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "transition",
@@ -66,7 +67,8 @@
      "range": "[20.2,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "trender",
@@ -106,7 +108,8 @@
      "range": "[20.2,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "entityculling",

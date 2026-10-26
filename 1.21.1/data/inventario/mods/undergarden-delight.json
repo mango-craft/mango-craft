@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "Undergarden Delight",
  "file": "undergardendelight-2.0.2-neoforge-1.21.1.jar",
@@ -20,7 +20,8 @@
      "range": "[1.20.1]",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "undergardendelight",

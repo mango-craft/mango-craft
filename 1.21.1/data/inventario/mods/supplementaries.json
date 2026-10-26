@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "Supplementaries",
  "file": "supplementaries-1.21.1-4.0.2-neoforge.jar",
@@ -63,7 +63,8 @@
    "name": "MixinSquared",
    "version": "0.3.7",
    "jar": "mixinsquared-forge-0.3.7.jar",
-   "deps": []
+   "deps": [],
+   "legacy": true
   },
   {
    "modid": "sablecompanion",

@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "Fragmentum",
  "file": "fragmentum-5.4.0+1.21.1-neoforge.jar",
@@ -40,7 +40,8 @@
    "name": "YetAnotherConfigLib",
    "version": "3.6.6+1.21.1-neoforge",
    "jar": "yet-another-config-lib-3.6.6+1.21.1-neoforge.jar",
-   "deps": []
+   "deps": [],
+   "legacy": true
   }
  ],
  "nested": [

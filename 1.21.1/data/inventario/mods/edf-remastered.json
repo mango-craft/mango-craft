@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "Ender Dragon Fight Remastered",
  "file": "edf-remastered-5.0.2.jar",
@@ -13,7 +13,8 @@
    "name": "Ender Dragon Fight Remastered",
    "version": "5.0.2",
    "jar": "",
-   "deps": []
+   "deps": [],
+   "legacy": true
   },
   {
    "modid": "mr_edf_remastered",

@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "VapourWare",
  "file": "vapourware-1.21.1-0.2.37.jar",
@@ -20,7 +20,8 @@
      "range": "[46,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "vapourware",

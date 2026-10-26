@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "FurnaceMk2",
  "file": "furnacemk2-1.21.1-0.1.11.jar",
@@ -26,7 +26,8 @@
      "range": "[0.1.19,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "furnacemk2",

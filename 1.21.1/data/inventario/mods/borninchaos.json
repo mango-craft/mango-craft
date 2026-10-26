@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "Born in Chaos",
  "file": "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar",
@@ -32,7 +32,8 @@
      "range": "[0,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "born_in_chaos_v1",

@@ -1,5 +1,5 @@
 {
- "format": 6,
+ "format": 7,
  "status": "ok",
  "name": "MNS - Moog's Nether Structures",
  "file": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
@@ -34,7 +34,8 @@
      "range": "[3.3.0,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   }
  ],
  "nested": [],
