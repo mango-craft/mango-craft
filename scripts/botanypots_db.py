@@ -95,7 +95,8 @@ CREATE TABLE MOD_ID (
   modid    TEXT NOT NULL,               -- id dichiarato nel jar (neoforge.mods.toml); un jar può portarne più d'uno
   slug     TEXT NOT NULL REFERENCES MOD,
   nome     TEXT,
-  versione TEXT,
+  versione TEXT,                        -- quella di neoforge.mods.toml (il vecchio mods.toml solo se manca)
+  annidata INTEGER NOT NULL,            -- 1: dichiarato da un jar incorporato in quello della mod (jar-in-jar)
   PRIMARY KEY (modid, slug)
 );
 CREATE TABLE MOD_NAMESPACE (
@@ -481,10 +482,10 @@ CREATE TABLE ALAMBICCO (                 -- dal gioco: le ricette dell'alambicco
   risultato_id      TEXT NOT NULL REFERENCES OGGETTO,
   risultato_pozione TEXT REFERENCES POZIONE
 );
-CREATE TABLE ALAMBICCO_CLASSE (          -- dal gioco: le ricette NeoForge per classe (le «opache» non elencano gli ingressi)
+CREATE TABLE ALAMBICCO_CLASSE (          -- dal gioco: le ricette NeoForge per classe
   classe     TEXT PRIMARY KEY,
   ricette    INTEGER NOT NULL,
-  elencabili INTEGER NOT NULL
+  elencabili INTEGER NOT NULL            -- quelle con le combinazioni note: elencate (BrewingRecipe) o trovate provando
 );
 -- Le scelte nostre (CSV <versione>/data/pozioni/pozione_custom.csv): `varianti` = 'tutte' vale per tutta la famiglia
 -- della pozione indicata, 'questa' solo per lei (e vince sulla famiglia). amuleto = 0: lista nera degli amuleti di Apotheosis.
@@ -525,10 +526,11 @@ CREATE VIEW POZIONE_AMULETO AS
   LEFT JOIN EFFETTO e ON e.effetto_id = pe.effetto_id
   GROUP BY p.pozione_id;
 -- Le mod dell'inventario che nel dump mancano o hanno un'altra versione: se ce ne sono, il dump è vecchio.
--- (Le versioni scritte come ${file.jarVersion} nell'inventario non si confrontano.)
+-- Solo le mod dei jar del pack: delle librerie incorporate in più jar NeoForge carica una copia sola, e il confronto
+-- non direbbe niente. (Le versioni scritte come ${file.jarVersion} nell'inventario non si confrontano.)
 CREATE VIEW DUMP_MOD_DIVERSA AS
   SELECT m.modid, m.versione AS inventario, d.versione AS gioco
-  FROM (SELECT modid, max(versione) AS versione FROM MOD_ID GROUP BY modid) m
+  FROM (SELECT modid, max(versione) AS versione FROM MOD_ID WHERE annidata = 0 GROUP BY modid) m
   LEFT JOIN DUMP_MOD d ON d.modid = m.modid
   WHERE EXISTS (SELECT 1 FROM DUMP_MOD)
     AND (d.versione IS NULL OR (d.versione <> m.versione AND m.versione NOT LIKE '%$%'));
@@ -727,10 +729,12 @@ class BotanyPotsDB:
             nome = d.get("name") or (dichiarate[0]["name"] if dichiarate else fonte)
             mod_righe.append((fonte, nome, d.get("file"), d.get("source") or "gioco", d.get("side")))
             visti = set()
-            for m in dichiarate:
-                if m["modid"] not in visti:  # l'inventario può ripetere un id
+            # l'inventario può ripetere un id (più copie incorporate, o il vecchio mods.toml accanto al nuovo):
+            # vince la voce di neoforge.mods.toml del jar della mod, l'unico file che NeoForge 1.21.1 legge
+            for m in sorted(dichiarate, key=lambda m: (bool(m.get("jar")), bool(m.get("legacy")))):
+                if m["modid"] not in visti:
                     visti.add(m["modid"])
-                    modid_righe.append((m["modid"], fonte, m.get("name"), m.get("version")))
+                    modid_righe.append((m["modid"], fonte, m.get("name"), m.get("version"), 1 if m.get("jar") else 0))
             for i in {*d.get("items", {}), *d.get("blocks", {})}:
                 ns_conta[i.split(":")[0]][fonte] += 1
             for amb, cat in (("oggetti", "tags/item"), ("blocchi", "tags/block")):
@@ -864,7 +868,7 @@ class BotanyPotsDB:
         terreni_r = [r for r in ricette if r["type"] in TIPI_TERRENO]
         colture_r = [r for r in ricette if r["type"] in TIPI_COLTURA]
         c.executemany("INSERT INTO MOD VALUES (?,?,?,?,?)", dati["mod"])
-        c.executemany("INSERT INTO MOD_ID VALUES (?,?,?,?)", dati["mod_id"])
+        c.executemany("INSERT INTO MOD_ID VALUES (?,?,?,?,?)", dati["mod_id"])
         c.executemany("INSERT INTO MOD_NAMESPACE VALUES (?,?,?)", dati["mod_namespace"])
         c.executemany("INSERT INTO BLOCCO VALUES (?,?,?)", [(b, b.split(":")[0], n or None) for b, n in sorted(blocks.items())])
         c.executemany("INSERT INTO OGGETTO VALUES (?,?,?,?)",
@@ -1101,7 +1105,7 @@ class BotanyPotsDB:
         # la mod è quella che porta il namespace (una traduzione può stare nel jar di un'altra mod); per ciò che c'è
         # solo nel dump, la mod con quell'id
         ns_slug = {ns: slug for ns, slug, _n in dati["mod_namespace"]}
-        modid_slug = {m: s for m, s, _n, _v in dati["mod_id"]}
+        modid_slug = {m: s for m, s, _n, _v, _a in dati["mod_id"]}
         def mod_di(rid: str, fonte: str | None) -> str | None:
             ns = rid.split(":")[0]
             return ns_slug.get(ns) or fonte or modid_slug.get(ns)
@@ -1188,6 +1192,10 @@ class BotanyPotsDB:
                 for ing in r["ingresso"]:
                     for ingr in r["ingrediente"]:
                         aggiungi("ricetta", ing, ingr["oggetto"], r["risultato"])
+            elif r.get("provate"):  # classe propria della mod: combinazioni trovate provando ogni oggetto
+                classi[r["classe"]][1] += 1
+                for m in r["provate"]:
+                    aggiungi("ricetta", m["ingresso"], m["ingrediente"], m["risultato"])
         c.executemany("INSERT INTO ALAMBICCO VALUES (?,?,?,?,?,?,?)", righe)
         c.executemany("INSERT INTO ALAMBICCO_CLASSE VALUES (?,?,?)", [(k, *v) for k, v in sorted(classi.items())])
         self._saltati_dump = saltati

@@ -77,7 +77,9 @@ class Index:
         for m in d.get("mods", []):
             if m.get("modid"):
                 self.modids.add(m["modid"])
-                self.mods.append((label, m))
+                # Le voci del vecchio mods.toml (NeoForge 1.21.1 non lo legge) non contano per versioni e dipendenze
+                if not m.get("legacy"):
+                    self.mods.append((label, m))
         self.namespaces.update(d.get("namespaces", []))
         for field in ("items", "blocks", "fluids", "entities", "effects", "biomes", "potions"):
             self.names[field].update(d.get(field, {}))

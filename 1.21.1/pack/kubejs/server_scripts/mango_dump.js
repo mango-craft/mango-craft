@@ -6,7 +6,7 @@
 //   effetti.json   ogni effetto: categoria del gioco (beneficial, harmful, neutral), istantaneo, colore
 //   pozioni.json   ogni pozione: nome di traduzione ed effetti con durata (tick) e livello (0 = I)
 //   alambicco.json le ricette dell'alambicco provate davvero (ingrediente × pozione → risultato), più le ricette
-//                  NeoForge che il gioco elenca (anche quelle con un ingresso che non è una pozione)
+//                  NeoForge che il gioco elenca: elencate, o provate su ogni oggetto se la classe è della mod
 //   oggetti.json   gli oggetti con effetti di serie: cibi e bevande (FoodProperties) e oggetti con pozione dentro
 // I file li importa scripts/dump_importa.py nel repository (1.21.1/data/dump/); la base dati li legge da lì.
 // Non cambia niente nel mondo: legge soltanto. Ogni sezione è protetta: se una fallisce, le altre si scrivono e
@@ -117,42 +117,67 @@ ServerEvents.basicCommand('mango_dump', event => {
 
   section('alambicco', () => {
     var brewing = level.potionBrewing()
-    var ingredienti = []
+    var tutti = []        // ogni oggetto, nella sua forma di serie
+    var ingredienti = []  // quelli che l'alambicco accetta in alto
     $BuiltInRegistries.ITEM.keySet().forEach(rl => {
       var s = $BuiltInRegistries.ITEM.get(rl).getDefaultInstance()
+      tutti.push(s)
       try {
         if (brewing.isIngredient(s)) ingredienti.push(s)
       } catch (e) { /* una ricetta personalizzata può non accettare oggetti strani */ }
     })
     var contenitori = [$Items.POTION, $Items.SPLASH_POTION, $Items.LINGERING_POTION]
-    var miscele = []
+    var bottiglie = []    // ogni pozione in ogni bottiglia
     $BuiltInRegistries.POTION.keySet().forEach(rl => {
       var holder = $BuiltInRegistries.POTION.wrapAsHolder($BuiltInRegistries.POTION.get(rl))
-      contenitori.forEach(c => {
-        var input = $PotionContents.createItemStack(c, holder)
-        ingredienti.forEach(ing => {
-          try {
-            if (!brewing.hasMix(input, ing)) return
-            var res = brewing.mix(ing, input.copy())
-            if (res.isEmpty() || $ItemStack.isSameItemSameComponents(res, input)) return
-            miscele.push({ ingresso: stackInfo(input), ingrediente: idOf($BuiltInRegistries.ITEM, ing.getItem()), risultato: stackInfo(res) })
-          } catch (e) { /* idem */ }
-        })
+      contenitori.forEach(c => bottiglie.push($PotionContents.createItemStack(c, holder)))
+    })
+    var miscele = []
+    bottiglie.forEach(input => {
+      ingredienti.forEach(ing => {
+        try {
+          if (!brewing.hasMix(input, ing)) return
+          var res = brewing.mix(ing, input.copy())
+          if (res.isEmpty() || $ItemStack.isSameItemSameComponents(res, input)) return
+          miscele.push({ ingresso: stackInfo(input), ingrediente: idOf($BuiltInRegistries.ITEM, ing.getItem()), risultato: stackInfo(res) })
+        } catch (e) { /* idem */ }
       })
     })
+    // Le ricette NeoForge. Quelle semplici (BrewingRecipe) elencano ingressi e ingrediente; per le altre (classi proprie
+    // delle mod) si prova ogni oggetto e ogni bottiglia come ingresso e ogni ingrediente: «provate».
+    // Gli ingredienti di un Ingredient si leggono con getStackArray(): KubeJS nasconde getItems().
+    var candidati = tutti.concat(bottiglie)
     var ricette = []
     brewing.getRecipes().forEach(r => {
       var row = { classe: String(r).split('@')[0] }
       try {
-        row.ingresso = stacksOf(r.getInput().getItems())
-        row.ingrediente = stacksOf(r.getIngredient().getItems())
+        row.ingresso = stacksOf(r.getInput().getStackArray())
+        row.ingrediente = stacksOf(r.getIngredient().getStackArray())
         row.risultato = stackInfo(r.getOutput())
+        ricette.push(row)
+        return
       } catch (e) {
         delete row.ingresso
         delete row.ingrediente
         delete row.risultato
-        row.nota = 'ricetta con logica propria: ingressi non elencabili'
       }
+      var provate = []
+      try {
+        var ingressi = candidati.filter(s => { try { return !!r.isInput(s) } catch (e) { return false } })
+        var adatti = ingredienti.filter(s => { try { return !!r.isIngredient(s) } catch (e) { return false } })
+        ingressi.forEach(i => {
+          adatti.forEach(g => {
+            try {
+              var out = r.getOutput(i.copy(), g.copy())
+              if (!out.isEmpty()) provate.push({ ingresso: stackInfo(i), ingrediente: idOf($BuiltInRegistries.ITEM, g.getItem()), risultato: stackInfo(out) })
+            } catch (e) { /* idem */ }
+          })
+        })
+      } catch (e) {
+        row.errore = String(e)
+      }
+      row.provate = provate
+      if (provate.length == 0) row.nota = 'ricetta con logica propria: nessuna combinazione trovata provando'
       ricette.push(row)
     })
     return { ingredienti: ingredienti.map(s => idOf($BuiltInRegistries.ITEM, s.getItem())), miscele: miscele, ricette: ricette }

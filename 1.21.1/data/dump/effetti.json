@@ -1,0 +1,2634 @@
+[
+ {
+  "id": "aether:inebriation",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 5319035,
+  "traduzione": "effect.aether.inebriation"
+ },
+ {
+  "id": "aether:remedy",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5031241,
+  "traduzione": "effect.aether.remedy"
+ },
+ {
+  "id": "apothic_attributes:bleeding",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9109504,
+  "traduzione": "effect.apothic_attributes.bleeding"
+ },
+ {
+  "id": "apothic_attributes:detonation",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16766976,
+  "traduzione": "effect.apothic_attributes.detonation"
+ },
+ {
+  "id": "apothic_attributes:flying",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16733525,
+  "traduzione": "effect.apothic_attributes.flying"
+ },
+ {
+  "id": "apothic_attributes:grievous",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 11141120,
+  "traduzione": "effect.apothic_attributes.grievous"
+ },
+ {
+  "id": "apothic_attributes:knowledge",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16051778,
+  "traduzione": "effect.apothic_attributes.knowledge"
+ },
+ {
+  "id": "apothic_attributes:sundering",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 10000536,
+  "traduzione": "effect.apothic_attributes.sundering"
+ },
+ {
+  "id": "apothic_attributes:vitality",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16733525,
+  "traduzione": "effect.apothic_attributes.vitality"
+ },
+ {
+  "id": "aquamirae:armor_shatter",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -6750055,
+  "traduzione": "effect.aquamirae.armor_shatter"
+ },
+ {
+  "id": "aquamirae:crystallization",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -6750055,
+  "traduzione": "effect.aquamirae.crystallization"
+ },
+ {
+  "id": "aquamirae:devouring_curse",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -6750055,
+  "traduzione": "effect.aquamirae.devouring_curse"
+ },
+ {
+  "id": "aquamirae:fury_of_the_depths",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16762624,
+  "traduzione": "effect.aquamirae.fury_of_the_depths"
+ },
+ {
+  "id": "aquamirae:health_shatter",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -6750055,
+  "traduzione": "effect.aquamirae.health_shatter"
+ },
+ {
+  "id": "aquamirae:poison_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6750055,
+  "traduzione": "effect.aquamirae.poison_immunity"
+ },
+ {
+  "id": "aquamirae:resilience_of_the_depths",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16762624,
+  "traduzione": "effect.aquamirae.resilience_of_the_depths"
+ },
+ {
+  "id": "ars_elemental:enderference",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 8080895,
+  "traduzione": "effect.ars_elemental.enderference"
+ },
+ {
+  "id": "ars_elemental:enthralled",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.ars_elemental.enthralled"
+ },
+ {
+  "id": "ars_elemental:frozen",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.ars_elemental.frozen"
+ },
+ {
+  "id": "ars_elemental:hellfire",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 14981690,
+  "traduzione": "effect.ars_elemental.hellfire"
+ },
+ {
+  "id": "ars_elemental:hymn_of_order",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.ars_elemental.hymn_of_order"
+ },
+ {
+  "id": "ars_elemental:life_link",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 1,
+  "traduzione": "effect.ars_elemental.life_link"
+ },
+ {
+  "id": "ars_elemental:mana_shield",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 47359,
+  "traduzione": "effect.ars_elemental.mana_shield"
+ },
+ {
+  "id": "ars_elemental:mist",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 16776960,
+  "traduzione": "effect.ars_elemental.mist"
+ },
+ {
+  "id": "ars_elemental:repel",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 16776960,
+  "traduzione": "effect.ars_elemental.repel"
+ },
+ {
+  "id": "ars_elemental:rust",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9520880,
+  "traduzione": "effect.ars_elemental.rust"
+ },
+ {
+  "id": "ars_elemental:slip_feet",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 15978425,
+  "traduzione": "effect.ars_elemental.slip_feet"
+ },
+ {
+  "id": "ars_elemental:static_charged",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16776960,
+  "traduzione": "effect.ars_elemental.static_charged"
+ },
+ {
+  "id": "ars_elemental:venom",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 8889187,
+  "traduzione": "effect.ars_elemental.venom"
+ },
+ {
+  "id": "ars_elemental:watery_grave",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 47359,
+  "traduzione": "effect.ars_elemental.watery_grave"
+ },
+ {
+  "id": "ars_nouveau:blasting",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16384000,
+  "traduzione": "effect.ars_nouveau.blasting"
+ },
+ {
+  "id": "ars_nouveau:bounce",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.ars_nouveau.bounce"
+ },
+ {
+  "id": "ars_nouveau:flight",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.ars_nouveau.flight"
+ },
+ {
+  "id": "ars_nouveau:freezing",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 250,
+  "traduzione": "effect.ars_nouveau.freezing"
+ },
+ {
+  "id": "ars_nouveau:glide",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8080895,
+  "traduzione": "effect.ars_nouveau.glide"
+ },
+ {
+  "id": "ars_nouveau:gravity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.ars_nouveau.gravity"
+ },
+ {
+  "id": "ars_nouveau:hex",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 8080895,
+  "traduzione": "effect.ars_nouveau.hex"
+ },
+ {
+  "id": "ars_nouveau:immolate",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16384000,
+  "traduzione": "effect.ars_nouveau.immolate"
+ },
+ {
+  "id": "ars_nouveau:looting",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 7158556,
+  "traduzione": "effect.ars_nouveau.looting"
+ },
+ {
+  "id": "ars_nouveau:magic_find",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 2017480,
+  "traduzione": "effect.ars_nouveau.magic_find"
+ },
+ {
+  "id": "ars_nouveau:mana_regen",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8080895,
+  "traduzione": "effect.ars_nouveau.mana_regen"
+ },
+ {
+  "id": "ars_nouveau:recovery",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 51240,
+  "traduzione": "effect.ars_nouveau.recovery"
+ },
+ {
+  "id": "ars_nouveau:scrying",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.ars_nouveau.scrying"
+ },
+ {
+  "id": "ars_nouveau:shielding",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 9830550,
+  "traduzione": "effect.ars_nouveau.shielding"
+ },
+ {
+  "id": "ars_nouveau:shocked",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.ars_nouveau.shocked"
+ },
+ {
+  "id": "ars_nouveau:snared",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.ars_nouveau.snared"
+ },
+ {
+  "id": "ars_nouveau:soaked",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 255,
+  "traduzione": "effect.ars_nouveau.soaked"
+ },
+ {
+  "id": "ars_nouveau:spell_damage",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 2017480,
+  "traduzione": "effect.ars_nouveau.spell_damage"
+ },
+ {
+  "id": "ars_nouveau:summoning_sickness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.ars_nouveau.summoning_sickness"
+ },
+ {
+  "id": "arsdelight:blast_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -2665179,
+  "traduzione": "effect.arsdelight.blast_resistance"
+ },
+ {
+  "id": "arsdelight:flourishing",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -7993799,
+  "traduzione": "effect.arsdelight.flourishing"
+ },
+ {
+  "id": "arsdelight:freezing_spell",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6451468,
+  "traduzione": "effect.arsdelight.freezing_spell"
+ },
+ {
+  "id": "arsdelight:lightning_curse",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16776960,
+  "traduzione": "effect.arsdelight.lightning_curse"
+ },
+ {
+  "id": "arsdelight:synchronized_shield",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -17140,
+  "traduzione": "effect.arsdelight.synchronized_shield"
+ },
+ {
+  "id": "arsdelight:wilden",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -7120213,
+  "traduzione": "effect.arsdelight.wilden"
+ },
+ {
+  "id": "artifacts:magnetism",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 9715130,
+  "traduzione": "effect.artifacts.magnetism"
+ },
+ {
+  "id": "born_in_chaos_v1:bad_feeling",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -8382954,
+  "traduzione": "effect.born_in_chaos_v1.bad_feeling"
+ },
+ {
+  "id": "born_in_chaos_v1:barbedattack",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -9272941,
+  "traduzione": "effect.born_in_chaos_v1.barbedattack"
+ },
+ {
+  "id": "born_in_chaos_v1:block_break",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11123149,
+  "traduzione": "effect.born_in_chaos_v1.block_break"
+ },
+ {
+  "id": "born_in_chaos_v1:bone_barrier",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6119795,
+  "traduzione": "effect.born_in_chaos_v1.bone_barrier"
+ },
+ {
+  "id": "born_in_chaos_v1:bone_chilling",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -3611673,
+  "traduzione": "effect.born_in_chaos_v1.bone_chilling"
+ },
+ {
+  "id": "born_in_chaos_v1:bone_fracture",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -9542813,
+  "traduzione": "effect.born_in_chaos_v1.bone_fracture"
+ },
+ {
+  "id": "born_in_chaos_v1:cursed_mark",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11656923,
+  "traduzione": "effect.born_in_chaos_v1.cursed_mark"
+ },
+ {
+  "id": "born_in_chaos_v1:curseofthe_boat",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -12350519,
+  "traduzione": "effect.born_in_chaos_v1.curseofthe_boat"
+ },
+ {
+  "id": "born_in_chaos_v1:dark_splash",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -15856369,
+  "traduzione": "effect.born_in_chaos_v1.dark_splash"
+ },
+ {
+  "id": "born_in_chaos_v1:dark_ward",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -15333873,
+  "traduzione": "effect.born_in_chaos_v1.dark_ward"
+ },
+ {
+  "id": "born_in_chaos_v1:detonation",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11448498,
+  "traduzione": "effect.born_in_chaos_v1.detonation"
+ },
+ {
+  "id": "born_in_chaos_v1:dogtruce",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -15395559,
+  "traduzione": "effect.born_in_chaos_v1.dogtruce"
+ },
+ {
+  "id": "born_in_chaos_v1:experience_container",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -6695368,
+  "traduzione": "effect.born_in_chaos_v1.experience_container"
+ },
+ {
+  "id": "born_in_chaos_v1:fish_breath",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -11576741,
+  "traduzione": "effect.born_in_chaos_v1.fish_breath"
+ },
+ {
+  "id": "born_in_chaos_v1:furious_rampage",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -3670016,
+  "traduzione": "effect.born_in_chaos_v1.furious_rampage"
+ },
+ {
+  "id": "born_in_chaos_v1:gaze_of_terror",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16119285,
+  "traduzione": "effect.born_in_chaos_v1.gaze_of_terror"
+ },
+ {
+  "id": "born_in_chaos_v1:ice_barrier",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -10769710,
+  "traduzione": "effect.born_in_chaos_v1.ice_barrier"
+ },
+ {
+  "id": "born_in_chaos_v1:infernal_flame",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -9393633,
+  "traduzione": "effect.born_in_chaos_v1.infernal_flame"
+ },
+ {
+  "id": "born_in_chaos_v1:infestationof_flies",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -11119283,
+  "traduzione": "effect.born_in_chaos_v1.infestationof_flies"
+ },
+ {
+  "id": "born_in_chaos_v1:insect_protection",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -4839388,
+  "traduzione": "effect.born_in_chaos_v1.insect_protection"
+ },
+ {
+  "id": "born_in_chaos_v1:intoxication",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -8375942,
+  "traduzione": "effect.born_in_chaos_v1.intoxication"
+ },
+ {
+  "id": "born_in_chaos_v1:jawattack",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11446963,
+  "traduzione": "effect.born_in_chaos_v1.jawattack"
+ },
+ {
+  "id": "born_in_chaos_v1:lifesteal",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -7726815,
+  "traduzione": "effect.born_in_chaos_v1.lifesteal"
+ },
+ {
+  "id": "born_in_chaos_v1:light_rampage",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -8454144,
+  "traduzione": "effect.born_in_chaos_v1.light_rampage"
+ },
+ {
+  "id": "born_in_chaos_v1:living_bomb",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -8533996,
+  "traduzione": "effect.born_in_chaos_v1.living_bomb"
+ },
+ {
+  "id": "born_in_chaos_v1:living_cocoon",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11706311,
+  "traduzione": "effect.born_in_chaos_v1.living_cocoon"
+ },
+ {
+  "id": "born_in_chaos_v1:living_cocoon_player_side",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -11771077,
+  "traduzione": "effect.born_in_chaos_v1.living_cocoon_player_side"
+ },
+ {
+  "id": "born_in_chaos_v1:lost_items",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -1605,
+  "traduzione": "effect.born_in_chaos_v1.lost_items"
+ },
+ {
+  "id": "born_in_chaos_v1:magic_depletion",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11918299,
+  "traduzione": "effect.born_in_chaos_v1.magic_depletion"
+ },
+ {
+  "id": "born_in_chaos_v1:medium_rampage",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6553600,
+  "traduzione": "effect.born_in_chaos_v1.medium_rampage"
+ },
+ {
+  "id": "born_in_chaos_v1:minion_summon",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -8248798,
+  "traduzione": "effect.born_in_chaos_v1.minion_summon"
+ },
+ {
+  "id": "born_in_chaos_v1:myiasis",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -10344912,
+  "traduzione": "effect.born_in_chaos_v1.myiasis"
+ },
+ {
+  "id": "born_in_chaos_v1:obsession",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -4974033,
+  "traduzione": "effect.born_in_chaos_v1.obsession"
+ },
+ {
+  "id": "born_in_chaos_v1:overly_heavy_weapon",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -6071958,
+  "traduzione": "effect.born_in_chaos_v1.overly_heavy_weapon"
+ },
+ {
+  "id": "born_in_chaos_v1:predators_desire",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6110003,
+  "traduzione": "effect.born_in_chaos_v1.predators_desire"
+ },
+ {
+  "id": "born_in_chaos_v1:rabbit_agility",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6110003,
+  "traduzione": "effect.born_in_chaos_v1.rabbit_agility"
+ },
+ {
+  "id": "born_in_chaos_v1:rampant_rampage",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -3470832,
+  "traduzione": "effect.born_in_chaos_v1.rampant_rampage"
+ },
+ {
+  "id": "born_in_chaos_v1:rotten_smell",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11376835,
+  "traduzione": "effect.born_in_chaos_v1.rotten_smell"
+ },
+ {
+  "id": "born_in_chaos_v1:sacrifice",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -13882063,
+  "traduzione": "effect.born_in_chaos_v1.sacrifice"
+ },
+ {
+  "id": "born_in_chaos_v1:snow_storm",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -4198145,
+  "traduzione": "effect.born_in_chaos_v1.snow_storm"
+ },
+ {
+  "id": "born_in_chaos_v1:soul_stratification",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -10251232,
+  "traduzione": "effect.born_in_chaos_v1.soul_stratification"
+ },
+ {
+  "id": "born_in_chaos_v1:stimulatingsurge",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -4352983,
+  "traduzione": "effect.born_in_chaos_v1.stimulatingsurge"
+ },
+ {
+  "id": "born_in_chaos_v1:stimulation",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -3169230,
+  "traduzione": "effect.born_in_chaos_v1.stimulation"
+ },
+ {
+  "id": "born_in_chaos_v1:stone_persistence",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6110003,
+  "traduzione": "effect.born_in_chaos_v1.stone_persistence"
+ },
+ {
+  "id": "born_in_chaos_v1:stranglehold",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -13884120,
+  "traduzione": "effect.born_in_chaos_v1.stranglehold"
+ },
+ {
+  "id": "born_in_chaos_v1:strong_rampage",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -4587520,
+  "traduzione": "effect.born_in_chaos_v1.strong_rampage"
+ },
+ {
+  "id": "born_in_chaos_v1:stun",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -1319354,
+  "traduzione": "effect.born_in_chaos_v1.stun"
+ },
+ {
+  "id": "born_in_chaos_v1:stunning_strike",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -6316675,
+  "traduzione": "effect.born_in_chaos_v1.stunning_strike"
+ },
+ {
+  "id": "born_in_chaos_v1:sweet_madness",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -3407668,
+  "traduzione": "effect.born_in_chaos_v1.sweet_madness"
+ },
+ {
+  "id": "born_in_chaos_v1:terrifying_presence",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.born_in_chaos_v1.terrifying_presence"
+ },
+ {
+  "id": "born_in_chaos_v1:undead_summonun",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -13283794,
+  "traduzione": "effect.born_in_chaos_v1.undead_summonun"
+ },
+ {
+  "id": "born_in_chaos_v1:unity_with_darkness",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16185079,
+  "traduzione": "effect.born_in_chaos_v1.unity_with_darkness"
+ },
+ {
+  "id": "born_in_chaos_v1:vampiric_touch",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -5430209,
+  "traduzione": "effect.born_in_chaos_v1.vampiric_touch"
+ },
+ {
+  "id": "born_in_chaos_v1:wither_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -14803164,
+  "traduzione": "effect.born_in_chaos_v1.wither_resistance"
+ },
+ {
+  "id": "bountifulfares:acidic",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 13762304,
+  "traduzione": "effect.bountifulfares.acidic"
+ },
+ {
+  "id": "bountifulfares:ebullience",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 15326946,
+  "traduzione": "effect.bountifulfares.ebullience"
+ },
+ {
+  "id": "bountifulfares:enrichment",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16766095,
+  "traduzione": "effect.bountifulfares.enrichment"
+ },
+ {
+  "id": "bountifulfares:restoration",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16730905,
+  "traduzione": "effect.bountifulfares.restoration"
+ },
+ {
+  "id": "bountifulfares:stupor",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 6233816,
+  "traduzione": "effect.bountifulfares.stupor"
+ },
+ {
+  "id": "brewinandchewin:intoxication",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 14531138,
+  "traduzione": "effect.brewinandchewin.intoxication"
+ },
+ {
+  "id": "brewinandchewin:raging",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 6948353,
+  "traduzione": "effect.brewinandchewin.raging"
+ },
+ {
+  "id": "brewinandchewin:sweet_heart",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16711769,
+  "traduzione": "effect.brewinandchewin.sweet_heart"
+ },
+ {
+  "id": "brewinandchewin:tipsy",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 13208334,
+  "traduzione": "effect.brewinandchewin.tipsy"
+ },
+ {
+  "id": "cataclysm:abyssal_burn",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 6619391,
+  "traduzione": "effect.cataclysm.abyssal_burn"
+ },
+ {
+  "id": "cataclysm:abyssal_curse",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9060095,
+  "traduzione": "effect.cataclysm.abyssal_curse"
+ },
+ {
+  "id": "cataclysm:abyssal_fear",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 7609087,
+  "traduzione": "effect.cataclysm.abyssal_fear"
+ },
+ {
+  "id": "cataclysm:blazing_brand",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 14423100,
+  "traduzione": "effect.cataclysm.blazing_brand"
+ },
+ {
+  "id": "cataclysm:blessing_of_amethyst",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16698342,
+  "traduzione": "effect.cataclysm.blessing_of_amethyst"
+ },
+ {
+  "id": "cataclysm:bone_fracture",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 11381677,
+  "traduzione": "effect.cataclysm.bone_fracture"
+ },
+ {
+  "id": "cataclysm:curse_of_desert",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16773835,
+  "traduzione": "effect.cataclysm.curse_of_desert"
+ },
+ {
+  "id": "cataclysm:ghost_form",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 3789490,
+  "traduzione": "effect.cataclysm.ghost_form"
+ },
+ {
+  "id": "cataclysm:ghost_sickness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9722673,
+  "traduzione": "effect.cataclysm.ghost_sickness"
+ },
+ {
+  "id": "cataclysm:monstrous",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8803127,
+  "traduzione": "effect.cataclysm.monstrous"
+ },
+ {
+  "id": "cataclysm:stun",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16747520,
+  "traduzione": "effect.cataclysm.stun"
+ },
+ {
+  "id": "cataclysm:wetness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 5928654,
+  "traduzione": "effect.cataclysm.wetness"
+ },
+ {
+  "id": "create_confectionery:rest",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -2119568,
+  "traduzione": "effect.create_confectionery.rest"
+ },
+ {
+  "id": "create_confectionery:stimulation",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -10278906,
+  "traduzione": "effect.create_confectionery.stimulation"
+ },
+ {
+  "id": "createaddition:shocking",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 15453236,
+  "traduzione": "effect.createaddition.shocking"
+ },
+ {
+  "id": "culturaldelights:cheesy",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16305476,
+  "traduzione": "effect.culturaldelights.cheesy"
+ },
+ {
+  "id": "culturaldelights:intoxication",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16776434,
+  "traduzione": "effect.culturaldelights.intoxication"
+ },
+ {
+  "id": "deep_aether:moa_bonus_jumps",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5031241,
+  "traduzione": "effect.deep_aether.moa_bonus_jumps"
+ },
+ {
+  "id": "deep_aether:valkyrie_valor",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 25525551,
+  "traduzione": "effect.deep_aether.valkyrie_valor"
+ },
+ {
+  "id": "deeperdarker:sculk_affinity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65488,
+  "traduzione": "effect.deeperdarker.sculk_affinity"
+ },
+ {
+  "id": "deeperdarker:sculk_omen",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 381163,
+  "traduzione": "effect.deeperdarker.sculk_omen"
+ },
+ {
+  "id": "endersdelight:phasing",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 3124687,
+  "traduzione": "effect.endersdelight.phasing"
+ },
+ {
+  "id": "farm_and_charm:cluck",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16777215,
+  "traduzione": "effect.farm_and_charm.cluck"
+ },
+ {
+  "id": "farm_and_charm:dog_food",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16777215,
+  "traduzione": "effect.farm_and_charm.dog_food"
+ },
+ {
+  "id": "farm_and_charm:farmers_blessing",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -14513374,
+  "traduzione": "effect.farm_and_charm.farmers_blessing"
+ },
+ {
+  "id": "farm_and_charm:feast",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -7667712,
+  "traduzione": "effect.farm_and_charm.feast"
+ },
+ {
+  "id": "farm_and_charm:grandmas_blessing",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -2461482,
+  "traduzione": "effect.farm_and_charm.grandmas_blessing"
+ },
+ {
+  "id": "farm_and_charm:horse_fodder",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -7650029,
+  "traduzione": "effect.farm_and_charm.horse_fodder"
+ },
+ {
+  "id": "farm_and_charm:rested",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6751336,
+  "traduzione": "effect.farm_and_charm.rested"
+ },
+ {
+  "id": "farm_and_charm:satiation",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -10496,
+  "traduzione": "effect.farm_and_charm.satiation"
+ },
+ {
+  "id": "farm_and_charm:sustenance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.farm_and_charm.sustenance"
+ },
+ {
+  "id": "farmersdelight:comfort",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 14545909,
+  "traduzione": "effect.farmersdelight.comfort"
+ },
+ {
+  "id": "farmersdelight:nourishment",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 15971072,
+  "traduzione": "effect.farmersdelight.nourishment"
+ },
+ {
+  "id": "friendsandfoes:glide",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 7624580,
+  "traduzione": "effect.friendsandfoes.glide"
+ },
+ {
+  "id": "friendsandfoes:penguins_glide",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 7624580,
+  "traduzione": "effect.friendsandfoes.penguins_glide"
+ },
+ {
+  "id": "friendsandfoes:reach",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16685131,
+  "traduzione": "effect.friendsandfoes.reach"
+ },
+ {
+  "id": "herbalbrews:balanced",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.herbalbrews.balanced"
+ },
+ {
+  "id": "herbalbrews:bonding",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.herbalbrews.bonding"
+ },
+ {
+  "id": "herbalbrews:deeprush",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.herbalbrews.deeprush"
+ },
+ {
+  "id": "herbalbrews:feral",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.herbalbrews.feral"
+ },
+ {
+  "id": "herbalbrews:fortune",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.herbalbrews.fortune"
+ },
+ {
+  "id": "herbalbrews:lifeleech",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.herbalbrews.lifeleech"
+ },
+ {
+  "id": "herbalbrews:tough",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.herbalbrews.tough"
+ },
+ {
+  "id": "hexalia:arachnid_grace",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 3878474,
+  "traduzione": "effect.hexalia.arachnid_grace"
+ },
+ {
+  "id": "hexalia:bleeding",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9109504,
+  "traduzione": "effect.hexalia.bleeding"
+ },
+ {
+  "id": "hexalia:bloodlust",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 9044739,
+  "traduzione": "effect.hexalia.bloodlust"
+ },
+ {
+  "id": "hexalia:brambleguard",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 4281399,
+  "traduzione": "effect.hexalia.brambleguard"
+ },
+ {
+  "id": "hexalia:daybloom",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 16767326,
+  "traduzione": "effect.hexalia.daybloom"
+ },
+ {
+  "id": "hexalia:hollow_silence",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 1315352,
+  "traduzione": "effect.hexalia.hollow_silence"
+ },
+ {
+  "id": "hexalia:overfed",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 11545387,
+  "traduzione": "effect.hexalia.overfed"
+ },
+ {
+  "id": "hexalia:siphon",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 7237362,
+  "traduzione": "effect.hexalia.siphon"
+ },
+ {
+  "id": "hexalia:slimewalker",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 7072325,
+  "traduzione": "effect.hexalia.slimewalker"
+ },
+ {
+  "id": "hexalia:spikeskin",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 4090671,
+  "traduzione": "effect.hexalia.spikeskin"
+ },
+ {
+  "id": "hexalia:stunned",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16777181,
+  "traduzione": "effect.hexalia.stunned"
+ },
+ {
+  "id": "miapi:cryo",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 1160409,
+  "traduzione": "effect.miapi.cryo"
+ },
+ {
+  "id": "miapi:stun",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16776960,
+  "traduzione": "effect.miapi.stun"
+ },
+ {
+  "id": "miapi:stun_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16777215,
+  "traduzione": "effect.miapi.stun_resistance"
+ },
+ {
+  "id": "miapi:teleport_block",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16711935,
+  "traduzione": "effect.miapi.teleport_block"
+ },
+ {
+  "id": "minecraft:absorption",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 2445989,
+  "traduzione": "effect.minecraft.absorption"
+ },
+ {
+  "id": "minecraft:bad_omen",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 745784,
+  "traduzione": "effect.minecraft.bad_omen"
+ },
+ {
+  "id": "minecraft:blindness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 2039587,
+  "traduzione": "effect.minecraft.blindness"
+ },
+ {
+  "id": "minecraft:conduit_power",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 1950417,
+  "traduzione": "effect.minecraft.conduit_power"
+ },
+ {
+  "id": "minecraft:darkness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 2696993,
+  "traduzione": "effect.minecraft.darkness"
+ },
+ {
+  "id": "minecraft:dolphins_grace",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8954814,
+  "traduzione": "effect.minecraft.dolphins_grace"
+ },
+ {
+  "id": "minecraft:fire_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16750848,
+  "traduzione": "effect.minecraft.fire_resistance"
+ },
+ {
+  "id": "minecraft:glowing",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 9740385,
+  "traduzione": "effect.minecraft.glowing"
+ },
+ {
+  "id": "minecraft:haste",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 14270531,
+  "traduzione": "effect.minecraft.haste"
+ },
+ {
+  "id": "minecraft:health_boost",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16284963,
+  "traduzione": "effect.minecraft.health_boost"
+ },
+ {
+  "id": "minecraft:hero_of_the_village",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 4521796,
+  "traduzione": "effect.minecraft.hero_of_the_village"
+ },
+ {
+  "id": "minecraft:hunger",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 5797459,
+  "traduzione": "effect.minecraft.hunger"
+ },
+ {
+  "id": "minecraft:infested",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9214860,
+  "traduzione": "effect.minecraft.infested"
+ },
+ {
+  "id": "minecraft:instant_damage",
+  "categoria": "harmful",
+  "istantaneo": true,
+  "colore": 11101546,
+  "traduzione": "effect.minecraft.instant_damage"
+ },
+ {
+  "id": "minecraft:instant_health",
+  "categoria": "beneficial",
+  "istantaneo": true,
+  "colore": 16262179,
+  "traduzione": "effect.minecraft.instant_health"
+ },
+ {
+  "id": "minecraft:invisibility",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16185078,
+  "traduzione": "effect.minecraft.invisibility"
+ },
+ {
+  "id": "minecraft:jump_boost",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16646020,
+  "traduzione": "effect.minecraft.jump_boost"
+ },
+ {
+  "id": "minecraft:levitation",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 13565951,
+  "traduzione": "effect.minecraft.levitation"
+ },
+ {
+  "id": "minecraft:luck",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5882118,
+  "traduzione": "effect.minecraft.luck"
+ },
+ {
+  "id": "minecraft:mining_fatigue",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 4866583,
+  "traduzione": "effect.minecraft.mining_fatigue"
+ },
+ {
+  "id": "minecraft:nausea",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 5578058,
+  "traduzione": "effect.minecraft.nausea"
+ },
+ {
+  "id": "minecraft:night_vision",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 12779366,
+  "traduzione": "effect.minecraft.night_vision"
+ },
+ {
+  "id": "minecraft:oozing",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 10092451,
+  "traduzione": "effect.minecraft.oozing"
+ },
+ {
+  "id": "minecraft:poison",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 8889187,
+  "traduzione": "effect.minecraft.poison"
+ },
+ {
+  "id": "minecraft:raid_omen",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 14565464,
+  "traduzione": "effect.minecraft.raid_omen"
+ },
+ {
+  "id": "minecraft:regeneration",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 13458603,
+  "traduzione": "effect.minecraft.regeneration"
+ },
+ {
+  "id": "minecraft:resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 9520880,
+  "traduzione": "effect.minecraft.resistance"
+ },
+ {
+  "id": "minecraft:saturation",
+  "categoria": "beneficial",
+  "istantaneo": true,
+  "colore": 16262179,
+  "traduzione": "effect.minecraft.saturation"
+ },
+ {
+  "id": "minecraft:slow_falling",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 15978425,
+  "traduzione": "effect.minecraft.slow_falling"
+ },
+ {
+  "id": "minecraft:slowness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9154528,
+  "traduzione": "effect.minecraft.slowness"
+ },
+ {
+  "id": "minecraft:speed",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 3402751,
+  "traduzione": "effect.minecraft.speed"
+ },
+ {
+  "id": "minecraft:strength",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16762624,
+  "traduzione": "effect.minecraft.strength"
+ },
+ {
+  "id": "minecraft:trial_omen",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 1484454,
+  "traduzione": "effect.minecraft.trial_omen"
+ },
+ {
+  "id": "minecraft:unluck",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 12624973,
+  "traduzione": "effect.minecraft.unluck"
+ },
+ {
+  "id": "minecraft:water_breathing",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 10017472,
+  "traduzione": "effect.minecraft.water_breathing"
+ },
+ {
+  "id": "minecraft:weakness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 4738376,
+  "traduzione": "effect.minecraft.weakness"
+ },
+ {
+  "id": "minecraft:weaving",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 7891290,
+  "traduzione": "effect.minecraft.weaving"
+ },
+ {
+  "id": "minecraft:wind_charged",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 12438015,
+  "traduzione": "effect.minecraft.wind_charged"
+ },
+ {
+  "id": "minecraft:wither",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 7561558,
+  "traduzione": "effect.minecraft.wither"
+ },
+ {
+  "id": "mowziesmobs:eclipsed",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 15790320,
+  "traduzione": "effect.mowziesmobs.eclipsed"
+ },
+ {
+  "id": "mowziesmobs:fragility",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 10874950,
+  "traduzione": "effect.mowziesmobs.fragility"
+ },
+ {
+  "id": "mowziesmobs:frozen",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 14215167,
+  "traduzione": "effect.mowziesmobs.frozen"
+ },
+ {
+  "id": "mowziesmobs:geomancy",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 13500280,
+  "traduzione": "effect.mowziesmobs.geomancy"
+ },
+ {
+  "id": "mowziesmobs:moons_curse",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 6051049,
+  "traduzione": "effect.mowziesmobs.moons_curse"
+ },
+ {
+  "id": "mowziesmobs:poison_resist",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 6750003,
+  "traduzione": "effect.mowziesmobs.poison_resist"
+ },
+ {
+  "id": "mowziesmobs:sunblock",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16768834,
+  "traduzione": "effect.mowziesmobs.sunblock"
+ },
+ {
+  "id": "mowziesmobs:suns_blessing",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16768834,
+  "traduzione": "effect.mowziesmobs.suns_blessing"
+ },
+ {
+  "id": "mutantmonsters:chemical_x",
+  "categoria": "harmful",
+  "istantaneo": true,
+  "colore": 0,
+  "traduzione": "effect.mutantmonsters.chemical_x"
+ },
+ {
+  "id": "mynethersdelight:b_pungent",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9127187,
+  "traduzione": "effect.mynethersdelight.b_pungent"
+ },
+ {
+  "id": "mynethersdelight:g_pungent",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16766720,
+  "traduzione": "effect.mynethersdelight.g_pungent"
+ },
+ {
+  "id": "netherdepthsupgrade:lava_vision",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16046361,
+  "traduzione": "effect.netherdepthsupgrade.lava_vision"
+ },
+ {
+  "id": "netherexp:absorption_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 2445989,
+  "traduzione": "effect.netherexp.absorption_immunity"
+ },
+ {
+  "id": "netherexp:betrayed",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 11730944,
+  "traduzione": "effect.netherexp.betrayed"
+ },
+ {
+  "id": "netherexp:darkness_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 2696993,
+  "traduzione": "effect.netherexp.darkness_immunity"
+ },
+ {
+  "id": "netherexp:fire_resistance_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16750848,
+  "traduzione": "effect.netherexp.fire_resistance_immunity"
+ },
+ {
+  "id": "netherexp:haste_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 14270531,
+  "traduzione": "effect.netherexp.haste_immunity"
+ },
+ {
+  "id": "netherexp:hunger_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5797459,
+  "traduzione": "effect.netherexp.hunger_immunity"
+ },
+ {
+  "id": "netherexp:infested_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 9214860,
+  "traduzione": "effect.netherexp.infested_immunity"
+ },
+ {
+  "id": "netherexp:invisibility_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16185078,
+  "traduzione": "effect.netherexp.invisibility_immunity"
+ },
+ {
+  "id": "netherexp:jump_boost_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16646020,
+  "traduzione": "effect.netherexp.jump_boost_immunity"
+ },
+ {
+  "id": "netherexp:levitation_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 13565951,
+  "traduzione": "effect.netherexp.levitation_immunity"
+ },
+ {
+  "id": "netherexp:luck_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 5882118,
+  "traduzione": "effect.netherexp.luck_immunity"
+ },
+ {
+  "id": "netherexp:mining_fatigue_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 4866583,
+  "traduzione": "effect.netherexp.mining_fatigue_immunity"
+ },
+ {
+  "id": "netherexp:oozing_deterrent",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 10092451,
+  "traduzione": "effect.netherexp.oozing_deterrent"
+ },
+ {
+  "id": "netherexp:poison_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8889187,
+  "traduzione": "effect.netherexp.poison_immunity"
+ },
+ {
+  "id": "netherexp:regeneration_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 13458603,
+  "traduzione": "effect.netherexp.regeneration_immunity"
+ },
+ {
+  "id": "netherexp:resistance_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9520880,
+  "traduzione": "effect.netherexp.resistance_immunity"
+ },
+ {
+  "id": "netherexp:slow_falling_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 15978425,
+  "traduzione": "effect.netherexp.slow_falling_immunity"
+ },
+ {
+  "id": "netherexp:slowness_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 9154528,
+  "traduzione": "effect.netherexp.slowness_immunity"
+ },
+ {
+  "id": "netherexp:soul_speed",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 1787717,
+  "traduzione": "effect.netherexp.soul_speed"
+ },
+ {
+  "id": "netherexp:speed_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 3402751,
+  "traduzione": "effect.netherexp.speed_immunity"
+ },
+ {
+  "id": "netherexp:strength_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16762624,
+  "traduzione": "effect.netherexp.strength_immunity"
+ },
+ {
+  "id": "netherexp:unluck_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 12624973,
+  "traduzione": "effect.netherexp.unluck_immunity"
+ },
+ {
+  "id": "netherexp:water_breathing_immunity",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 10017472,
+  "traduzione": "effect.netherexp.water_breathing_immunity"
+ },
+ {
+  "id": "netherexp:weakness_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 4738376,
+  "traduzione": "effect.netherexp.weakness_immunity"
+ },
+ {
+  "id": "netherexp:weaving_deterrent",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 7891290,
+  "traduzione": "effect.netherexp.weaving_deterrent"
+ },
+ {
+  "id": "netherexp:wind_charged_deterrent",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 12438015,
+  "traduzione": "effect.netherexp.wind_charged_deterrent"
+ },
+ {
+  "id": "netherexp:wither_immunity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 7561558,
+  "traduzione": "effect.netherexp.wither_immunity"
+ },
+ {
+  "id": "not_enough_glyphs:grow",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.not_enough_glyphs.grow"
+ },
+ {
+  "id": "not_enough_glyphs:shrink",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.not_enough_glyphs.shrink"
+ },
+ {
+  "id": "not_enough_glyphs:stuffed",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.not_enough_glyphs.stuffed"
+ },
+ {
+  "id": "occultism:bat_lifesteal",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 9830913,
+  "traduzione": "effect.occultism.bat_lifesteal"
+ },
+ {
+  "id": "occultism:beaver_harvest",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 6305299,
+  "traduzione": "effect.occultism.beaver_harvest"
+ },
+ {
+  "id": "occultism:double_jump",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16776960,
+  "traduzione": "effect.occultism.double_jump"
+ },
+ {
+  "id": "occultism:dragon_greed",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16766720,
+  "traduzione": "effect.occultism.dragon_greed"
+ },
+ {
+  "id": "occultism:mummy_dodge",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 14997671,
+  "traduzione": "effect.occultism.mummy_dodge"
+ },
+ {
+  "id": "occultism:pumpkin_head",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16552194,
+  "traduzione": "effect.occultism.pumpkin_head"
+ },
+ {
+  "id": "occultism:step_blocked",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 3402751,
+  "traduzione": "effect.occultism.step_blocked"
+ },
+ {
+  "id": "occultism:step_height",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 3402751,
+  "traduzione": "effect.occultism.step_height"
+ },
+ {
+  "id": "occultism:third_eye",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16776960,
+  "traduzione": "effect.occultism.third_eye"
+ },
+ {
+  "id": "paraglider:stamina_efficiency",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -16720045,
+  "traduzione": "effect.paraglider.stamina_efficiency"
+ },
+ {
+  "id": "reactive:far_reach",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8018869,
+  "traduzione": "effect.reactive.far_reach"
+ },
+ {
+  "id": "reactive:fire_shield",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16753937,
+  "traduzione": "effect.reactive.fire_shield"
+ },
+ {
+  "id": "reactive:high_step",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 1617288,
+  "traduzione": "effect.reactive.high_step"
+ },
+ {
+  "id": "reactive:immobility",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 1146982,
+  "traduzione": "effect.reactive.immobility"
+ },
+ {
+  "id": "reactive:no_gravity",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 12631927,
+  "traduzione": "effect.reactive.no_gravity"
+ },
+ {
+  "id": "relics:anti_heal",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 6829738,
+  "traduzione": "effect.relics.anti_heal"
+ },
+ {
+  "id": "relics:bleeding",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 6829738,
+  "traduzione": "effect.relics.bleeding"
+ },
+ {
+  "id": "relics:confusion",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 6829738,
+  "traduzione": "effect.relics.confusion"
+ },
+ {
+  "id": "relics:flight",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 10149351,
+  "traduzione": "effect.relics.flight"
+ },
+ {
+  "id": "relics:glitch",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 6829738,
+  "traduzione": "effect.relics.glitch"
+ },
+ {
+  "id": "relics:immortality",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 6829738,
+  "traduzione": "effect.relics.immortality"
+ },
+ {
+  "id": "relics:paralysis",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 6829738,
+  "traduzione": "effect.relics.paralysis"
+ },
+ {
+  "id": "relics:stun",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 14333990,
+  "traduzione": "effect.relics.stun"
+ },
+ {
+  "id": "relics:tremor",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 14333990,
+  "traduzione": "effect.relics.tremor"
+ },
+ {
+  "id": "relics:vanishing",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 6829738,
+  "traduzione": "effect.relics.vanishing"
+ },
+ {
+  "id": "roasters_delight:caffeinated",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8014382,
+  "traduzione": "effect.roasters_delight.caffeinated"
+ },
+ {
+  "id": "roasters_delight:caffeine_crash",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9211020,
+  "traduzione": "effect.roasters_delight.caffeine_crash"
+ },
+ {
+  "id": "sauce:contingency",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 0,
+  "traduzione": "effect.sauce.contingency"
+ },
+ {
+  "id": "sauce:mana_cost_down",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8080895,
+  "traduzione": "effect.sauce.mana_cost_down"
+ },
+ {
+  "id": "sauce:rage",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 16762624,
+  "traduzione": "effect.sauce.rage"
+ },
+ {
+  "id": "sauce:spell_crit_up",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8080895,
+  "traduzione": "effect.sauce.spell_crit_up"
+ },
+ {
+  "id": "scriptor:mute",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 13369548,
+  "traduzione": "effect.scriptor.mute"
+ },
+ {
+  "id": "scriptor:phasing",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 2949270,
+  "traduzione": "effect.scriptor.phasing"
+ },
+ {
+  "id": "scriptor:silver_tongue",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5658198,
+  "traduzione": "effect.scriptor.silver_tongue"
+ },
+ {
+  "id": "scriptor:wild_phasing",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 5243007,
+  "traduzione": "effect.scriptor.wild_phasing"
+ },
+ {
+  "id": "supplementaries:flammable",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 14500864,
+  "traduzione": "effect.supplementaries.flammable"
+ },
+ {
+  "id": "supplementaries:overencumbered",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 7095583,
+  "traduzione": "effect.supplementaries.overencumbered"
+ },
+ {
+  "id": "tombstone:aquatic_life",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -16599809,
+  "traduzione": "effect.tombstone.aquatic_life"
+ },
+ {
+  "id": "tombstone:bait",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -2246291,
+  "traduzione": "effect.tombstone.bait"
+ },
+ {
+  "id": "tombstone:bone_shield",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -13223894,
+  "traduzione": "effect.tombstone.bone_shield"
+ },
+ {
+  "id": "tombstone:decrepitude",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -8835971,
+  "traduzione": "effect.tombstone.decrepitude"
+ },
+ {
+  "id": "tombstone:discretion",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -13228190,
+  "traduzione": "effect.tombstone.discretion"
+ },
+ {
+  "id": "tombstone:diversion",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -4022785,
+  "traduzione": "effect.tombstone.diversion"
+ },
+ {
+  "id": "tombstone:earthly_garden",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -14693540,
+  "traduzione": "effect.tombstone.earthly_garden"
+ },
+ {
+  "id": "tombstone:feather_fall",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -1182470,
+  "traduzione": "effect.tombstone.feather_fall"
+ },
+ {
+  "id": "tombstone:frost_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -2757129,
+  "traduzione": "effect.tombstone.frost_resistance"
+ },
+ {
+  "id": "tombstone:frostbite",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -6231318,
+  "traduzione": "effect.tombstone.frostbite"
+ },
+ {
+  "id": "tombstone:ghostly_shape",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -14445414,
+  "traduzione": "effect.tombstone.ghostly_shape"
+ },
+ {
+  "id": "tombstone:giant_strength",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -2551515,
+  "traduzione": "effect.tombstone.giant_strength"
+ },
+ {
+  "id": "tombstone:incurable",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -3397849,
+  "traduzione": "effect.tombstone.incurable"
+ },
+ {
+  "id": "tombstone:lightning_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -13224294,
+  "traduzione": "effect.tombstone.lightning_resistance"
+ },
+ {
+  "id": "tombstone:little_world",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -7805717,
+  "traduzione": "effect.tombstone.little_world"
+ },
+ {
+  "id": "tombstone:mercy",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -863450,
+  "traduzione": "effect.tombstone.mercy"
+ },
+ {
+  "id": "tombstone:prayer",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16250345,
+  "traduzione": "effect.tombstone.prayer"
+ },
+ {
+  "id": "tombstone:preservation",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -6710785,
+  "traduzione": "effect.tombstone.preservation"
+ },
+ {
+  "id": "tombstone:projectile_reflection",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -1516153,
+  "traduzione": "effect.tombstone.projectile_reflection"
+ },
+ {
+  "id": "tombstone:purification",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -103,
+  "traduzione": "effect.tombstone.purification"
+ },
+ {
+  "id": "tombstone:reach",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.tombstone.reach"
+ },
+ {
+  "id": "tombstone:remanence",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -1632,
+  "traduzione": "effect.tombstone.remanence"
+ },
+ {
+  "id": "tombstone:restoration",
+  "categoria": "beneficial",
+  "istantaneo": true,
+  "colore": -147611,
+  "traduzione": "effect.tombstone.restoration"
+ },
+ {
+  "id": "tombstone:silent_bond",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -10713089,
+  "traduzione": "effect.tombstone.silent_bond"
+ },
+ {
+  "id": "tombstone:true_sight",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -396072,
+  "traduzione": "effect.tombstone.true_sight"
+ },
+ {
+  "id": "tombstone:unstable_intangibility",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -3682061,
+  "traduzione": "effect.tombstone.unstable_intangibility"
+ },
+ {
+  "id": "tombstone:weaver_walk",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -11766954,
+  "traduzione": "effect.tombstone.weaver_walk"
+ },
+ {
+  "id": "twilightdelight:aurora_glowing",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 9740385,
+  "traduzione": "effect.twilightdelight.aurora_glowing"
+ },
+ {
+  "id": "twilightdelight:fire_range",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -39424,
+  "traduzione": "effect.twilightdelight.fire_range"
+ },
+ {
+  "id": "twilightdelight:frozen_range",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -16724788,
+  "traduzione": "effect.twilightdelight.frozen_range"
+ },
+ {
+  "id": "twilightdelight:lich_charge",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 6962664,
+  "traduzione": "effect.twilightdelight.lich_charge"
+ },
+ {
+  "id": "twilightdelight:poison_range",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -16751104,
+  "traduzione": "effect.twilightdelight.poison_range"
+ },
+ {
+  "id": "twilightdelight:temporal_sadness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -1,
+  "traduzione": "effect.twilightdelight.temporal_sadness"
+ },
+ {
+  "id": "twilightdelight:twilight_aura",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 10040012,
+  "traduzione": "effect.twilightdelight.twilight_aura"
+ },
+ {
+  "id": "twilightforest:frosted",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 5688317,
+  "traduzione": "effect.twilightforest.frosted"
+ },
+ {
+  "id": "undergarden:brittleness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9843250,
+  "traduzione": "effect.undergarden.brittleness"
+ },
+ {
+  "id": "undergarden:chilly",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 9154528,
+  "traduzione": "effect.undergarden.chilly"
+ },
+ {
+  "id": "undergarden:featherweight",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 13158655,
+  "traduzione": "effect.undergarden.featherweight"
+ },
+ {
+  "id": "undergarden:gooey",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 7827026,
+  "traduzione": "effect.undergarden.gooey"
+ },
+ {
+  "id": "undergarden:purity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 8236977,
+  "traduzione": "effect.undergarden.purity"
+ },
+ {
+  "id": "undergarden:virulence",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": 3550530,
+  "traduzione": "effect.undergarden.virulence"
+ },
+ {
+  "id": "undergarden:virulent_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 3550530,
+  "traduzione": "effect.undergarden.virulent_resistance"
+ },
+ {
+  "id": "undergardendelight:blist_resistance",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -26317,
+  "traduzione": "effect.undergardendelight.blist_resistance"
+ },
+ {
+  "id": "undergardendelight:depthrock_reach",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -11767223,
+  "traduzione": "effect.undergardendelight.depthrock_reach"
+ },
+ {
+  "id": "undergardendelight:rogdorium_reach",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -6039850,
+  "traduzione": "effect.undergardendelight.rogdorium_reach"
+ },
+ {
+  "id": "unusualend:breach_linked",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -16764109,
+  "traduzione": "effect.unusualend.breach_linked"
+ },
+ {
+  "id": "unusualend:crystallization",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -39169,
+  "traduzione": "effect.unusualend.crystallization"
+ },
+ {
+  "id": "unusualend:disruption",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -13487566,
+  "traduzione": "effect.unusualend.disruption"
+ },
+ {
+  "id": "unusualend:ender_infection",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -15704495,
+  "traduzione": "effect.unusualend.ender_infection"
+ },
+ {
+  "id": "unusualend:heaviness",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16751002,
+  "traduzione": "effect.unusualend.heaviness"
+ },
+ {
+  "id": "unusualend:serenity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -16026,
+  "traduzione": "effect.unusualend.serenity"
+ },
+ {
+  "id": "unusualend:spectral_stride",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -4121136,
+  "traduzione": "effect.unusualend.spectral_stride"
+ },
+ {
+  "id": "unusualend:swift_strikes",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -4468228,
+  "traduzione": "effect.unusualend.swift_strikes"
+ },
+ {
+  "id": "unusualend:warped_tenacity",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": -14376058,
+  "traduzione": "effect.unusualend.warped_tenacity"
+ },
+ {
+  "id": "vinery:armor_effect",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5688317,
+  "traduzione": "effect.vinery.armor_effect"
+ },
+ {
+  "id": "vinery:climbing_effect",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 13382400,
+  "traduzione": "effect.vinery.climbing_effect"
+ },
+ {
+  "id": "vinery:creeper_effect",
+  "categoria": "harmful",
+  "istantaneo": true,
+  "colore": 16711680,
+  "traduzione": "effect.vinery.creeper_effect"
+ },
+ {
+  "id": "vinery:double_jump",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.vinery.double_jump"
+ },
+ {
+  "id": "vinery:experience_effect",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 65280,
+  "traduzione": "effect.vinery.experience_effect"
+ },
+ {
+  "id": "vinery:frosty_armor",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": 5688317,
+  "traduzione": "effect.vinery.frosty_armor"
+ },
+ {
+  "id": "vinery:health_effect",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5688317,
+  "traduzione": "effect.vinery.health_effect"
+ },
+ {
+  "id": "vinery:jellie",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 10017154,
+  "traduzione": "effect.vinery.jellie"
+ },
+ {
+  "id": "vinery:lava_walker",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 13382400,
+  "traduzione": "effect.vinery.lava_walker"
+ },
+ {
+  "id": "vinery:luck_effect",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5688317,
+  "traduzione": "effect.vinery.luck_effect"
+ },
+ {
+  "id": "vinery:magnet",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 12058736,
+  "traduzione": "effect.vinery.magnet"
+ },
+ {
+  "id": "vinery:party_effect",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 16711680,
+  "traduzione": "effect.vinery.party_effect"
+ },
+ {
+  "id": "vinery:resistance_effect",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 5688317,
+  "traduzione": "effect.vinery.resistance_effect"
+ },
+ {
+  "id": "vinery:teleport",
+  "categoria": "beneficial",
+  "istantaneo": true,
+  "colore": 16738740,
+  "traduzione": "effect.vinery.teleport"
+ },
+ {
+  "id": "vinery:water_walker",
+  "categoria": "beneficial",
+  "istantaneo": false,
+  "colore": 13382400,
+  "traduzione": "effect.vinery.water_walker"
+ },
+ {
+  "id": "xaerominimap:no_cave_maps",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_cave_maps"
+ },
+ {
+  "id": "xaerominimap:no_cave_maps_harmful",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_cave_maps_harmful"
+ },
+ {
+  "id": "xaerominimap:no_entity_radar",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_entity_radar"
+ },
+ {
+  "id": "xaerominimap:no_entity_radar_harmful",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_entity_radar_harmful"
+ },
+ {
+  "id": "xaerominimap:no_minimap",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_minimap"
+ },
+ {
+  "id": "xaerominimap:no_minimap_harmful",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_minimap_harmful"
+ },
+ {
+  "id": "xaerominimap:no_waypoints",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_waypoints"
+ },
+ {
+  "id": "xaerominimap:no_waypoints_harmful",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaerominimap.no_waypoints_harmful"
+ },
+ {
+  "id": "xaeroworldmap:no_cave_maps",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaeroworldmap.no_cave_maps"
+ },
+ {
+  "id": "xaeroworldmap:no_cave_maps_harmful",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaeroworldmap.no_cave_maps_harmful"
+ },
+ {
+  "id": "xaeroworldmap:no_world_map",
+  "categoria": "neutral",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaeroworldmap.no_world_map"
+ },
+ {
+  "id": "xaeroworldmap:no_world_map_harmful",
+  "categoria": "harmful",
+  "istantaneo": false,
+  "colore": -16777216,
+  "traduzione": "effect.xaeroworldmap.no_world_map_harmful"
+ }
+]

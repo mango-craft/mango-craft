@@ -36,7 +36,7 @@ USER_AGENT = "mango-craft-inventory (github.com/mango-craft/mango-craft)"
 MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/{mc}-summary/"
 NEOFORGE_JAR = ("https://maven.neoforged.net/releases/net/neoforged/neoforge/"
                 "{v}/neoforge-{v}-universal.jar")
-FORMAT = 6  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti; 5: nomi veri delle pozioni; 6: descrizioni degli effetti di Corail Tombstone)
+FORMAT = 7  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti; 5: nomi veri delle pozioni; 6: descrizioni degli effetti di Corail Tombstone; 7: voci del vecchio mods.toml segnate "legacy")
 
 # Chiavi dei file di lingua -> campo dell'inventario
 LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
@@ -182,7 +182,7 @@ class Inv:
         }
 
 
-def parse_mods_toml(text: str, manifest_version: str | None, where: str) -> tuple[list, list]:
+def parse_mods_toml(text: str, manifest_version: str | None, where: str, legacy: bool = False) -> tuple[list, list]:
     try:
         d = tomllib.loads(text)
     except tomllib.TOMLDecodeError as e:
@@ -195,6 +195,10 @@ def parse_mods_toml(text: str, manifest_version: str | None, where: str) -> tupl
             version = manifest_version
         entry = {"modid": m.get("modId"), "name": m.get("displayName"), "version": version,
                  "jar": where, "deps": []}
+        if legacy:
+            # META-INF/mods.toml: il formato di Forge e di NeoForge fino alla 1.20.4. NeoForge 1.21.1 legge solo
+            # neoforge.mods.toml: queste voci (spesso con versione e dipendenze vecchie) non le carica (26/10/2026)
+            entry["legacy"] = True
         for dep in deps.get(m.get("modId"), []) or []:
             kind = dep.get("type")
             if kind is None:
@@ -236,7 +240,8 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                 analyze_jar(z.read(n), inv, n.rsplit("/", 1)[1], depth + 1)
             continue
         if n in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
-            mods, probs = parse_mods_toml(z.read(n).decode("utf-8", "replace"), manifest_version, where)
+            mods, probs = parse_mods_toml(z.read(n).decode("utf-8", "replace"), manifest_version, where,
+                                          legacy=n == "META-INF/mods.toml")
             inv.mods.extend(mods)
             inv.problems.extend(probs)
             continue
