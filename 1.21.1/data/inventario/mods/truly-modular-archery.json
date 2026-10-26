@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Truly Modular: Archery",
  "file": "Truly-Modular-archery-archery-forge-2.2-1.21.jar",
@@ -144,5 +144,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

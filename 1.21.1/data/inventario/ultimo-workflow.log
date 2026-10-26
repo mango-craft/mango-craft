@@ -1,12 +1,11 @@
 Aggiungi mod Modrinth — 2026-10-24
-== relics-mod 0.12.9 (CWPAvFMI)
+== kubejs 2101.7.2-build.377 (THIGFPwf)
 Finding dependencies...
+Warning: Modrinth versions for Rhino inconsistent between latest version number and newest release date (2101.2.8-build.91+Rhino-1.21 vs 2101.2.7-build.85+Rhino-1.21)
 Dependencies found:
-ShatterLib | OctoLib
+Rhino
+Better Advanced Tooltips
 Would you like to add them? [Y/n]: Y (non-interactive mode)
-Dependency "ShatterLib | OctoLib" successfully added! (OctoLib-NEOFORGE-0.6.2+1.21.jar)
-Project "Relics" successfully added! (relics-1.21.1-0.12.9.jar)
-== reliquified-artifacts 1.0.9 (rAl46NpA)
-Finding dependencies...
-All dependencies are already added!
-Project "Reliquified Artifacts" successfully added! (reliquified_artifacts-1.21.1-1.0.9.jar)
+Dependency "Rhino" successfully added! (rhino-2101.2.7-build.85.jar)
+Dependency "Better Advanced Tooltips" successfully added! (better-advanced-tooltips-2101.1.0-build.5.jar)
+Project "KubeJS" successfully added! (kubejs-neoforge-2101.7.2-build.377.jar)

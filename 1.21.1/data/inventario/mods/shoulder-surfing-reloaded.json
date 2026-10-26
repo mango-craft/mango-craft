@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Shoulder Surfing Reloaded",
  "file": "ShoulderSurfing-NeoForge-1.21.1-5.2.0.jar",
@@ -70,6 +70,7 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": [
   "assets/shouldersurfing/lang/en_us.json: JSON non valido"
  ]

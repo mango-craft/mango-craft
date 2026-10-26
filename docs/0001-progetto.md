@@ -22,7 +22,7 @@ Modpack personale da giocare **in single player**, non da pubblicare.
 - **Launcher**: Prism Launcher, con le istanze collegate al repository tramite packwiz (`0101-installazione.md`).
 - **Memoria dell'istanza**: quanta darne è in `0101-installazione.md`.
 - **Niente datapack esterni**: tutte le integrazioni stanno nel datapack del pack, scritto da noi (regole in `AGENTS.md`).
-- **Mondo vero dalla 1.0.0**: le versioni 0.x sono tappe di prova (`AGENTS.md`, Versioni).
+- **Mondo vero prima della 1.0.0**: il mondo vero parte da una versione 0.x che supera la soglia del mondo vero; la 1.0.0 arriva dopo averci giocato a lungo (`AGENTS.md`, Versioni; regola del 25/10/2026).
 
 ## Versioni di Minecraft
 

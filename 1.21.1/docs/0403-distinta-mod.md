@@ -347,6 +347,13 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Relics | [`relics-mod`](https://modrinth.com/mod/relics-mod) MR | 0.12.9 | 2026-10-18 | beta | ⚠️ | Tutte le build 1.21.1 sono beta (scelta con `relics-mod@CWPAvFMI`). Richiede ShatterLib/OctoLib e Curios. Pack 0.7.0 |
 | Reliquified Artifacts | [`reliquified-artifacts`](https://modrinth.com/mod/reliquified-artifacts) MR | 1.0.9 | 2026-10-12 | beta | ⚠️ | Beta; vuole esattamente Artifacts 13.2.5. Richiede Relics e Artifacts. ARR. Pack 0.7.0 |
 | ShatterLib \| OctoLib (dipendenza) | [`shatterbyte-lib`](https://modrinth.com/mod/shatterbyte-lib) MR | 0.6.2 | 2026-05-04 | release | ✅ | Richiesta da relics-mod. ARR. Pack 0.7.0 |
+| Iron Furnaces | [`iron-furnaces`](https://modrinth.com/mod/iron-furnaces) MR | 4.3.2 | 2025-09-26 | release | ✅ | Nessuna dipendenza. Apache-2.0. Pack 0.7.1 |
+| FurnaceMk2 | [`furnacemk2`](https://modrinth.com/mod/furnacemk2) MR | 0.1.11 | 2025-07-29 | release | ✅ | La pagina la dice ancora beta; richiede VapourWare. MIT. Pack 0.7.1 |
+| VapourWare (dipendenza) | [`vapourware`](https://modrinth.com/mod/vapourware) MR | 0.2.37 | 2025-07-29 | release | ✅ | Richiesta da furnacemk2. MIT. Pack 0.7.1 |
+| Jumbo Furnace | `jumbo-furnace` CF (progetto 390880) | 5.0.0.9 (file 7477280) | — | — | ✅ | Solo CurseForge (data e tipo non letti: CurseForge non è raggiungibile da qui; stesso file di Craftoria). MIT. Pack 0.7.1 |
+| KubeJS | [`kubejs`](https://modrinth.com/mod/kubejs) MR | 2101.7.2-build.377 | 2026-09-09 | release | ✅ | Richiede Rhino e Better Advanced Tooltips; contiene anche una copia di Better Advanced Tooltips (build.1). LGPL-3.0. Pack 0.7.2 |
+| Rhino (dipendenza) | [`rhino`](https://modrinth.com/mod/rhino) MR | 2101.2.7-build.85 | 2026-06-08 | release | ✅ | Richiesta da kubejs. MPL-2.0. Pack 0.7.2 |
+| Better Advanced Tooltips (dipendenza) | [`better-advanced-tooltips`](https://modrinth.com/mod/better-advanced-tooltips) MR | 2101.1.0-build.5 | 2026-08-04 | release | ✅ | Richiesta da kubejs (stesso autore). MIT. Pack 0.7.2 |
 
 ## Librerie principali (arrivano come dipendenze)
 

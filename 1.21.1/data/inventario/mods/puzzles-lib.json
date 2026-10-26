@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Puzzles Lib",
  "file": "puzzleslib-v21.1.64-mc1.21.1+neoforge.jar",
@@ -38,5 +38,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

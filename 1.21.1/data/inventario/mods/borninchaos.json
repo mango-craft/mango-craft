@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Born in Chaos",
  "file": "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar",
@@ -32,7 +32,8 @@
      "range": "[0,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "born_in_chaos_v1",
@@ -688,6 +689,12 @@
   "born_in_chaos_v1:zombie_fisherman_spawn_egg": "Zombie Fisherman Spawn Egg",
   "born_in_chaos_v1:zombie_lumberjack_spawn_egg": "Zombie Lumberjack Spawn Egg",
   "borninchaos:tooltip": "§8Press Shift to show tooltip"
+ },
+ "potions": {
+  "born_in_chaos_v1:intoxication_potion": "Potion of Intoxication",
+  "born_in_chaos_v1:potion_of_living_cocoon": "Potion of Living Cocoon",
+  "born_in_chaos_v1:potion_of_magical_depletion": "Potion of Magical Depletion",
+  "born_in_chaos_v1:stimulating_potion": "Potion of Stimulations"
  },
  "data": {
   "damage_type": [
@@ -2207,5 +2214,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

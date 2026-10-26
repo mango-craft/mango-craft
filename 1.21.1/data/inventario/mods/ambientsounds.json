@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "AmbientSounds",
  "file": "AmbientSounds_NEOFORGE_v6.3.10_mc1.21.1.jar",
@@ -46,5 +46,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

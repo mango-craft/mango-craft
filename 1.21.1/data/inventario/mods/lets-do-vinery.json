@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "[Let's Do] Vinery",
  "file": "letsdo-vinery-neoforge-1.5.5.jar",
@@ -231,6 +231,23 @@
   "vinery:window_block": "Window Block",
   "vinery:wine_bottle": "",
   "vinery:wine_box": "Wine Box"
+ },
+ "effect_descriptions": {
+  "vinery:armor_effect": "Increases Armor and Armor Toughness.",
+  "vinery:climbing_effect": "Allows climbing Walls.",
+  "vinery:creeper_effect": "Causes the player to explode after a few seconds. Kaboom!",
+  "vinery:double_jump": "Allows double jumping.",
+  "vinery:experience_effect": "Increases Experience gained.",
+  "vinery:frosty_armor": "Increases Armor and Attack Damage but decreases Movement Speed.",
+  "vinery:health_effect": "Increases Maximum Health for the Duration of this Effect.",
+  "vinery:jellie": "Provides the same but greater benefits than Golden Apples.",
+  "vinery:lava_walker": "Allows walking on Lava.",
+  "vinery:luck_effect": "Increases luck.",
+  "vinery:magnet": "Attracts Items within a small radius to the Player.",
+  "vinery:party_effect": "Triggers Fireworks that deal Damage when hitting Entities.",
+  "vinery:resistance_effect": "Increases Armor Toughness and Resistance.",
+  "vinery:teleport": "Teleports the Player forward.",
+  "vinery:water_walker": "Allows Walking on Water."
  },
  "effects": {
   "vinery:armor_effect": "Armor",
@@ -1339,5 +1356,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Ars Delight (Flavors & Delight)",
  "file": "arsdelight-2.2.5.jar",
@@ -105,6 +105,14 @@
   "arsdelight:source_berry_crate": "Source Berry Crate",
   "arsdelight:source_berry_jelly": "Source Berry Jelly",
   "arsdelight:wilden_salad": "Wilden Salad"
+ },
+ "effect_descriptions": {
+  "arsdelight:blast_resistance": "Reduce incoming explosion damage",
+  "arsdelight:flourishing": "When player heals, recover mana as well",
+  "arsdelight:freezing_spell": "Spell damage also inflict freezing effect",
+  "arsdelight:lightning_curse": "Inflict lighting lure to your spell attack targets",
+  "arsdelight:synchronized_shield": "When player heals, gain absorption as well",
+  "arsdelight:wilden": "Gain max mana, mana restoration, and spell damage"
  },
  "effects": {
   "arsdelight:blast_resistance": "Blast Resistance",
@@ -742,5 +750,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

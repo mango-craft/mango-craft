@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Create Slice & Dice",
  "file": "sliceanddice-4.3.4-neoforge.jar",
@@ -253,5 +253,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

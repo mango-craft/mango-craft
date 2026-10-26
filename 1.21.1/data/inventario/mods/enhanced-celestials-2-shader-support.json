@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Enhanced Celestials 2: Shader Support",
  "file": "Enhanced-Celestials-2-Shaders-NeoForge-1.21.1-2.0.0.3.jar",
@@ -68,5 +68,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

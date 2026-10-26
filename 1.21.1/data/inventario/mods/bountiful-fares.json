@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Bountiful Fares",
  "file": "bountifulfares-neoforge-1.21.1-3.0.12.jar",
@@ -366,6 +366,13 @@
   "nomansland:walnut_trellis": "Walnut Trellis",
   "nomansland:willow_pickets": "Willow Pickets",
   "nomansland:willow_trellis": "Willow Trellis"
+ },
+ "effect_descriptions": {
+  "bountifulfares:acidic": "Increases the amplifier of all other effects applied. Reverts after Acidic is removed.",
+  "bountifulfares:ebullience": "Negates exhaustion from actions like mining or walking.",
+  "bountifulfares:enrichment": "Minor buffs to most stats.",
+  "bountifulfares:restoration": "Regenerates health up to the health the player or mob had when this was applied.",
+  "bountifulfares:stupor": "Removes all effects and stops effects from applying for its duration."
  },
  "effects": {
   "bountifulfares:acidic": "Acidic",
@@ -853,6 +860,13 @@
   "nomansland:walnut_trellis": "",
   "nomansland:willow_pickets": "",
   "nomansland:willow_trellis": ""
+ },
+ "potions": {
+  "bountifulfares:bountifulfares.acidic": "Potion of Acidity",
+  "bountifulfares:bountifulfares.long_acidic": "Potion of Acidity",
+  "bountifulfares:bountifulfares.long_stupor": "Potion of Stupor",
+  "bountifulfares:bountifulfares.strong_acidic": "Potion of Acidity",
+  "bountifulfares:bountifulfares.stupor": "Potion of Stupor"
  },
  "data": {
   "bountifulfares": [
@@ -3169,5 +3183,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

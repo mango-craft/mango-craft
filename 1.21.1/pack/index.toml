@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "967876c7885a1abef11bfb04841c0300f223b880d5ce3eaf82affe441f2e1d2b"
+hash = "7c03d597f1b78832dc4a04dff8c874109abfc1efaa21f1993ad1734a543b0cf1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/readme.md"
@@ -51,6 +51,14 @@ hash = "a358567a1bdb7e5b484faf1e1e978253ea2cf91574c6460ea543efc66628549b"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/tags/item/shoes.json"
 hash = "6d24f675f6ca4dc1c6e4f385c33f34bfceba300b33053970529ad701a2edaf55"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/apotheosis/readme.md"
+hash = "330601ef5b1e73b3dbcb56e13b24f63c17d7743b53670e0009dddb077e049f56"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/apotheosis/tags/potion/potion_charm_blacklist.json"
+hash = "da065bc408347c3b3c5fe2ed3591f822d73958e7ba3e93e0e1f7287378e98f79"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/ars_elemental/market_presets/saplings.json"
@@ -263,6 +271,26 @@ hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/farmersdelight/market_presets/seeds.json"
 hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/readme.md"
+hash = "9a598d18df9c983b51f9ce371abb6738212c935122c8a398c03eeb8d289bd80d"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/amuleto_flying_vs_visione.mcfunction"
+hash = "67a827b297dd43205975f8e72afa76291d4409f26a198e794141ba7dc85a46b3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/fornaci_iron_mk2_jumbo.mcfunction"
+hash = "372b6eb51088a4362dde93829d63d70151910ff02943c2ed24addc5a3a1d55cf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/lista_nera_5_pozioni.mcfunction"
+hash = "f5023b638e0d00b3f4088c5fd5c524abf044aaa849a9e11178ec7154127162e3"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/tutte_le_prove.mcfunction"
+hash = "4a734dd7e1f34ec23b4b344b007db57536c5e0352ad024977b4c251d7dbe6d79"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
@@ -3605,6 +3633,10 @@ file = "config/sparsestructures.json5"
 hash = "e10e7c99ed29ba650c4c7592981251f3e34a2c0a6b78ad6d8c2ec649ab3be037"
 
 [[files]]
+file = "kubejs/server_scripts/mango_dump.js"
+hash = "cdc14c793551758540e4d8e7765f3e79edddb5a971e0b9ae335cbe90db467fe6"
+
+[[files]]
 file = "mods/aether.pw.toml"
 hash = "cc3f6e6e8f1838d16e47cce9241e32176279673efb1438ff4451ccffa9579b14"
 metafile = true
@@ -3742,6 +3774,11 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "603cdc47142b5aa5729cbbf265a473574c9e2b55561de4318e9842d3d4b3b995"
+metafile = true
+
+[[files]]
+file = "mods/better-advanced-tooltips.pw.toml"
+hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
 
 [[files]]
@@ -4140,6 +4177,11 @@ hash = "ef02ac9f94868b5c1093b044f1d33ad944cc252e674b20c77ddbb4155566dd1f"
 metafile = true
 
 [[files]]
+file = "mods/furnacemk2.pw.toml"
+hash = "4acc8d0d569bd0b389cc842b265a8ebb7866cd709c3664e6ded2c26696382060"
+metafile = true
+
+[[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 hash = "108739f2fdaa6a885a3217ae692b2521ab10b8e71fa1222c67274ea0562649a5"
 metafile = true
@@ -4210,6 +4252,11 @@ hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
 metafile = true
 
 [[files]]
+file = "mods/iron-furnaces.pw.toml"
+hash = "cd73757a8c093f490d5c7673ad17f4404622a485234b79dc43efa0e67788d66e"
+metafile = true
+
+[[files]]
 file = "mods/jade.pw.toml"
 hash = "ec5edbfa0d746a80dfc864b53a6ce5ba6ce3c233a6f0d0aeedba5cd57099ffd3"
 metafile = true
@@ -4230,6 +4277,11 @@ hash = "9884852226748f70fe3a0b6c95ce8cc0f7cf05c5e0adf344ee3b68aecdcf15a8"
 metafile = true
 
 [[files]]
+file = "mods/jumbo-furnace.pw.toml"
+hash = "83ef2f7df09049070ac193b60278e13981d5c3532e78b5deee16ba138d0563df"
+metafile = true
+
+[[files]]
 file = "mods/just-enough-professions-jep.pw.toml"
 hash = "bffd4067f92d5d8ed7a8a3acfdae213e9523ba5a518196cbd0a98d05e95fe6b6"
 metafile = true
@@ -4247,6 +4299,11 @@ metafile = true
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
 metafile = true
 
 [[files]]
@@ -4555,6 +4612,11 @@ hash = "c0b066684294c33972d562e0cb08ea17b2d31bcf86cd1d6c63b8e968f0eac7a2"
 metafile = true
 
 [[files]]
+file = "mods/rhino.pw.toml"
+hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
+metafile = true
+
+[[files]]
 file = "mods/rightclickharvest.pw.toml"
 hash = "9c0d37bfbfdda77af1946da1d80aa48e7dfea9611c43d5c81c70676b1d854af6"
 metafile = true
@@ -4782,6 +4844,11 @@ metafile = true
 [[files]]
 file = "mods/unusual_end.pw.toml"
 hash = "dd62bf59b749f3eb912d11ac62a6aecf167af0dfb674b3d7516d24f4cade6e49"
+metafile = true
+
+[[files]]
+file = "mods/vapourware.pw.toml"
+hash = "06ba241258273efaa0b5d32165448ad03fed188c1881dd1a925cf7d9409fbbda"
 metafile = true
 
 [[files]]

@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Smarter Farmers (farmers replant)",
  "file": "smarterfarmers-1.21-2.2.4-neoforge.jar",
@@ -128,5 +128,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

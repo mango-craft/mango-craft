@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Cultural Delights",
  "file": "culturaldelights-1.21.1-0.19.1.jar",
@@ -142,6 +142,10 @@
   "culturaldelights:wild_corn": "Wild Corn",
   "culturaldelights:wild_cucumbers": "Wild Cucumbers",
   "culturaldelights:wild_eggplants": "Wild Eggplants"
+ },
+ "effect_descriptions": {
+  "culturaldelights:cheesy": "Prevents other effects from applying, aside from intoxication.",
+  "culturaldelights:intoxication": "Causes vision sways and unsteady movement. Higher levels also cause nausea, stumbling, and eventually poison. Drink responsibly!"
  },
  "effects": {
   "culturaldelights:cheesy": "Cheesy",
@@ -1257,5 +1261,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

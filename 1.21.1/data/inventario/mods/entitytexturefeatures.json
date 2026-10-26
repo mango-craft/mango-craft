@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Entity Texture Features (ETF)",
  "file": "entity_texture_features-7.2.5-1.21-neoforge.jar",
@@ -35,5 +35,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Create Crafts & Additions",
  "file": "createaddition-1.6.0.jar",
@@ -107,6 +107,9 @@
   "createaddition:seed_oil": "Seed Oil",
   "createaddition:small_light_connector": "Small Connector With Light",
   "createaddition:tesla_coil": "Tesla Coil"
+ },
+ "effect_descriptions": {
+  "createaddition:shocking": "Causes severely reduced movement speed"
  },
  "effects": {
   "createaddition:shocking": "Shocked"
@@ -724,5 +727,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Starcatcher",
  "file": "starcatcher-3.3.6-NEOFORGE-1.21.1.jar",
@@ -2768,5 +2768,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

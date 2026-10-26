@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "TerraBlender",
  "file": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
@@ -51,5 +51,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

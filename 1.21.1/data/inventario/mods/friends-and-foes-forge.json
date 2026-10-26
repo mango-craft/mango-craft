@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Friends & Foes",
  "file": "friendsandfoes-neoforge-5.0.2+mc1.21.1.jar",
@@ -85,6 +85,11 @@
   "friendsandfoes:weathered_lightning_rod": "Weathered Lightning Rod",
   "minecraft:beehive": "Oak Beehive"
  },
+ "effect_descriptions": {
+  "friendsandfoes:glide": "Makes all blocks as slippery as ice.",
+  "friendsandfoes:penguins_glide": "Increases the speed of boats.",
+  "friendsandfoes:reach": "Increases the range of block interaction."
+ },
  "effects": {
   "friendsandfoes:glide": "Glide",
   "friendsandfoes:penguins_glide": "Penguin's Glide",
@@ -158,6 +163,14 @@
   "friendsandfoes:wildfire_crown_fragment": "Wildfire Crown Fragment",
   "friendsandfoes:wildfire_spawn_egg": "Wildfire Spawn Egg",
   "minecraft:beehive": "Oak Beehive"
+ },
+ "potions": {
+  "friendsandfoes:gliding": "Potion of Gliding",
+  "friendsandfoes:long_gliding": "Potion of Gliding",
+  "friendsandfoes:long_reaching": "Potion of Reaching",
+  "friendsandfoes:reaching": "Potion of Reaching",
+  "friendsandfoes:strong_gliding": "Potion of Gliding",
+  "friendsandfoes:strong_reaching": "Potion of Reaching"
  },
  "data": {
   "curios": [
@@ -902,5 +915,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

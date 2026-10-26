@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Dungeons and Taverns",
  "file": "dungeons-and-taverns-v4.4.4.jar",
@@ -5767,5 +5767,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

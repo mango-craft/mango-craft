@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "The Undergarden",
  "file": "The_Undergarden-1.21.1-0.9.6.jar",
@@ -296,6 +296,15 @@
   "undergarden:wigglewood_wall_hanging_sign": "",
   "undergarden:wigglewood_wall_sign": "",
   "undergarden:wigglewood_wood": "Wigglewood.. Wood"
+ },
+ "effect_descriptions": {
+  "undergarden:brittleness": "The higher the victim's armor value is, the more damage they will take. Amount of damage received scales with potion level.",
+  "undergarden:chilly": "Slows the victim down and causes them to visually shake.",
+  "undergarden:featherweight": "When damaged, victim will receive increased knockback. Amount of knockback scales with potion level.",
+  "undergarden:gooey": "Scintling Goo will constantly be placed under victim's feet.",
+  "undergarden:purity": "Reduces the amount of Utheric Infection an entity has per second. Amount removed scales with potion level.",
+  "undergarden:virulence": "Similar to poison, but does more damage at a slower rate. Damage is suppressed by Virulent Resistance.",
+  "undergarden:virulent_resistance": "Grants immunity to Virulence."
  },
  "effects": {
   "undergarden:brittleness": "Brittleness",
@@ -700,6 +709,18 @@
   "undergarden:wigglewood_stairs": "",
   "undergarden:wigglewood_trapdoor": "",
   "undergarden:wigglewood_wood": ""
+ },
+ "potions": {
+  "undergarden:brittleness": "Potion of Brittleness",
+  "undergarden:featherweight": "Potion of Featherweight",
+  "undergarden:glowing": "Potion of Glowing",
+  "undergarden:long_brittleness": "Potion of Brittleness",
+  "undergarden:long_featherweight": "Potion of Featherweight",
+  "undergarden:long_glowing": "Potion of Glowing",
+  "undergarden:long_virulent_resistance": "Potion of Virulent Resistance",
+  "undergarden:strong_brittleness": "Potion of Brittleness",
+  "undergarden:strong_featherweight": "Potion of Featherweight",
+  "undergarden:virulent_resistance": "Potion of Virulent Resistance"
  },
  "data": {
   "damage_type": [
@@ -3586,5 +3607,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

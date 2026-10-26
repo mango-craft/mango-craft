@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "NexusLib",
  "file": "nexuslib-neoforge-1.21.1-1.2.0.jar",
@@ -73,5 +73,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

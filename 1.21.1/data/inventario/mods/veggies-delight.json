@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Veggies Delight",
  "file": "VeggiesDelight-1.21.1-1.9.3.jar",
@@ -1332,5 +1332,6 @@
  ],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Unusual End",
  "file": "unusualend-2.3.1b.jar",
@@ -258,6 +258,17 @@
   "unusualend:warped_stone_tiles_stairs": "Warped Stone Tile Stairs",
   "unusualend:warping_waystone": "Warping Waystone",
   "unusualend:weak_end_stone_bricks": "Weak End Stone Bricks"
+ },
+ "effect_descriptions": {
+  "unusualend:breach_linked": "Teleports the player back to where he received this effect for the first time when the effect runs out.",
+  "unusualend:crystallization": "Cancel all damages. Returns all canceled damage when the effect runs out.",
+  "unusualend:disruption": "Negates your Block Reach distance, making you unable to break, interact with or place blocks.",
+  "unusualend:ender_infection": "Teleports randomly for a short period. Produce an Endermite when the effect runs out.",
+  "unusualend:heaviness": "Decreases jump height and walking speed; higher levels make the user slower and heavier.",
+  "unusualend:serenity": "Automatically protects from various dangers, at the cost of dividing the potion duration per half the remaining time for each use (Cancel fall damages, remove some negative effects, feed when starving, etc).",
+  "unusualend:spectral_stride": "Increases walking speed and decreases gravity; higher levels make the user faster and lighter.",
+  "unusualend:swift_strikes": "Increases attack speed.",
+  "unusualend:warped_tenacity": "Provides various buffs, making you more resistant; Higher levels increases the strenght of buffs, at the cost of debuffs (nausea, mining fatigue, etc)."
  },
  "effects": {
   "unusualend:breach_linked": "Breach Linked",
@@ -629,6 +640,21 @@
   "unusualend:warping_waystone": "",
   "unusualend:weak_end_stone_bricks": "",
   "unusualend:withering_orb": "Withering Orb"
+ },
+ "potions": {
+  "unusualend:advanced_haste": "Potion of Haste",
+  "unusualend:building_potion": "Potion of Disruption",
+  "unusualend:end_infection": "Potion of Ender Infection",
+  "unusualend:haste": "Potion of Haste",
+  "unusualend:health_boost": "Potion of Health Boost",
+  "unusualend:heaviness_potion": "Potion of Heaviness",
+  "unusualend:levitation": "Potion of Levitation",
+  "unusualend:regeneration": "Potion of Regeneration ",
+  "unusualend:regeneration_ii": "Potion of Regeneration II",
+  "unusualend:resistance": "Potion of Resistance",
+  "unusualend:serenity_potion": "Potion of Serenity",
+  "unusualend:strength": "Potion of Strength",
+  "unusualend:swift_strikes_potion": "Potion of Swift Strikes"
  },
  "data": {
   "blueprint": [
@@ -2890,5 +2916,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

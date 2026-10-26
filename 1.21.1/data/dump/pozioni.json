@@ -1,0 +1,1940 @@
+[
+ {
+  "id": "apothic_attributes:absorption",
+  "effetti": [
+   {
+    "effetto": "minecraft:absorption",
+    "durata": 1200,
+    "livello": 1
+   }
+  ],
+  "traduzione": "minecraft.absorption"
+ },
+ {
+  "id": "apothic_attributes:extra_long_flying",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:flying",
+    "durata": 36000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.flying"
+ },
+ {
+  "id": "apothic_attributes:fatigue",
+  "effetti": [
+   {
+    "effetto": "minecraft:mining_fatigue",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.mining_fatigue"
+ },
+ {
+  "id": "apothic_attributes:flying",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:flying",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.flying"
+ },
+ {
+  "id": "apothic_attributes:grievous",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:grievous",
+    "durata": 4800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.grievous"
+ },
+ {
+  "id": "apothic_attributes:haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.haste"
+ },
+ {
+  "id": "apothic_attributes:knowledge",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:knowledge",
+    "durata": 2400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.knowledge"
+ },
+ {
+  "id": "apothic_attributes:levitation",
+  "effetti": [
+   {
+    "effetto": "minecraft:levitation",
+    "durata": 2400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.levitation"
+ },
+ {
+  "id": "apothic_attributes:long_absorption",
+  "effetti": [
+   {
+    "effetto": "minecraft:absorption",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "minecraft.absorption"
+ },
+ {
+  "id": "apothic_attributes:long_fatigue",
+  "effetti": [
+   {
+    "effetto": "minecraft:mining_fatigue",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.mining_fatigue"
+ },
+ {
+  "id": "apothic_attributes:long_flying",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:flying",
+    "durata": 18000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.flying"
+ },
+ {
+  "id": "apothic_attributes:long_grievous",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:grievous",
+    "durata": 14400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.grievous"
+ },
+ {
+  "id": "apothic_attributes:long_haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.haste"
+ },
+ {
+  "id": "apothic_attributes:long_knowledge",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:knowledge",
+    "durata": 4800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.knowledge"
+ },
+ {
+  "id": "apothic_attributes:long_resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.resistance"
+ },
+ {
+  "id": "apothic_attributes:long_sundering",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:sundering",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.sundering"
+ },
+ {
+  "id": "apothic_attributes:long_vitality",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:vitality",
+    "durata": 14400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.vitality"
+ },
+ {
+  "id": "apothic_attributes:long_wither",
+  "effetti": [
+   {
+    "effetto": "minecraft:wither",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.wither"
+ },
+ {
+  "id": "apothic_attributes:resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.resistance"
+ },
+ {
+  "id": "apothic_attributes:strong_absorption",
+  "effetti": [
+   {
+    "effetto": "minecraft:absorption",
+    "durata": 600,
+    "livello": 3
+   }
+  ],
+  "traduzione": "minecraft.absorption"
+ },
+ {
+  "id": "apothic_attributes:strong_fatigue",
+  "effetti": [
+   {
+    "effetto": "minecraft:mining_fatigue",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "minecraft.mining_fatigue"
+ },
+ {
+  "id": "apothic_attributes:strong_grievous",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:grievous",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "apothic_attributes.grievous"
+ },
+ {
+  "id": "apothic_attributes:strong_haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "minecraft.haste"
+ },
+ {
+  "id": "apothic_attributes:strong_knowledge",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:knowledge",
+    "durata": 1200,
+    "livello": 3
+   }
+  ],
+  "traduzione": "apothic_attributes.knowledge"
+ },
+ {
+  "id": "apothic_attributes:strong_resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "minecraft.resistance"
+ },
+ {
+  "id": "apothic_attributes:strong_sundering",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:sundering",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "apothic_attributes.sundering"
+ },
+ {
+  "id": "apothic_attributes:strong_vitality",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:vitality",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "apothic_attributes.vitality"
+ },
+ {
+  "id": "apothic_attributes:strong_wither",
+  "effetti": [
+   {
+    "effetto": "minecraft:wither",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "minecraft.wither"
+ },
+ {
+  "id": "apothic_attributes:sundering",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:sundering",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.sundering"
+ },
+ {
+  "id": "apothic_attributes:vitality",
+  "effetti": [
+   {
+    "effetto": "apothic_attributes:vitality",
+    "durata": 4800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "apothic_attributes.vitality"
+ },
+ {
+  "id": "apothic_attributes:wither",
+  "effetti": [
+   {
+    "effetto": "minecraft:wither",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "minecraft.wither"
+ },
+ {
+  "id": "ars_elemental:enderference_potion",
+  "effetti": [
+   {
+    "effetto": "ars_elemental:enderference",
+    "durata": 400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "enderference_potion"
+ },
+ {
+  "id": "ars_elemental:enderference_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_elemental:enderference",
+    "durata": 1200,
+    "livello": 0
+   }
+  ],
+  "traduzione": "enderference_potion_long"
+ },
+ {
+  "id": "ars_elemental:shock_potion",
+  "effetti": [
+   {
+    "effetto": "ars_elemental:static_charged",
+    "durata": 600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "shock_potion"
+ },
+ {
+  "id": "ars_elemental:shock_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_elemental:static_charged",
+    "durata": 400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "shock_potion_long"
+ },
+ {
+  "id": "ars_nouveau:blasting_potion",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:blasting",
+    "durata": 200,
+    "livello": 0
+   }
+  ],
+  "traduzione": "blasting_potion"
+ },
+ {
+  "id": "ars_nouveau:blasting_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:blasting",
+    "durata": 400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "blasting_potion_long"
+ },
+ {
+  "id": "ars_nouveau:blasting_potion_strong",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:blasting",
+    "durata": 140,
+    "livello": 1
+   }
+  ],
+  "traduzione": "blasting_potion_strong"
+ },
+ {
+  "id": "ars_nouveau:freezing_potion",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:freezing",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "freezing_potion"
+ },
+ {
+  "id": "ars_nouveau:freezing_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:freezing",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "freezing_potion_long"
+ },
+ {
+  "id": "ars_nouveau:freezing_potion_strong",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:freezing",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "freezing_potion_strong"
+ },
+ {
+  "id": "ars_nouveau:mana_regen_potion",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:mana_regen",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "mana_regen_potion"
+ },
+ {
+  "id": "ars_nouveau:mana_regen_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:mana_regen",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "mana_regen_potion_long"
+ },
+ {
+  "id": "ars_nouveau:mana_regen_potion_strong",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:mana_regen",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "mana_regen_potion_strong"
+ },
+ {
+  "id": "ars_nouveau:recovery_potion",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:recovery",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "recovery_potion"
+ },
+ {
+  "id": "ars_nouveau:recovery_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:recovery",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "recovery_potion_long"
+ },
+ {
+  "id": "ars_nouveau:recovery_potion_strong",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:recovery",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "recovery_potion_strong"
+ },
+ {
+  "id": "ars_nouveau:shielding_potion",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:shielding",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "shielding_potion"
+ },
+ {
+  "id": "ars_nouveau:shielding_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:shielding",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "shielding_potion_long"
+ },
+ {
+  "id": "ars_nouveau:shielding_potion_strong",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:shielding",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "shielding_potion_strong"
+ },
+ {
+  "id": "ars_nouveau:spell_damage_potion",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:spell_damage",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "spell_damage_potion"
+ },
+ {
+  "id": "ars_nouveau:spell_damage_potion_long",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:spell_damage",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "spell_damage_potion_long"
+ },
+ {
+  "id": "ars_nouveau:spell_damage_potion_strong",
+  "effetti": [
+   {
+    "effetto": "ars_nouveau:spell_damage",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "spell_damage_potion_strong"
+ },
+ {
+  "id": "born_in_chaos_v1:intoxication_potion",
+  "effetti": [
+   {
+    "effetto": "born_in_chaos_v1:intoxication",
+    "durata": 800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "intoxication_potion"
+ },
+ {
+  "id": "born_in_chaos_v1:potion_of_living_cocoon",
+  "effetti": [
+   {
+    "effetto": "born_in_chaos_v1:living_cocoon_player_side",
+    "durata": 800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "potion_of_living_cocoon"
+ },
+ {
+  "id": "born_in_chaos_v1:potion_of_magical_depletion",
+  "effetti": [
+   {
+    "effetto": "born_in_chaos_v1:magic_depletion",
+    "durata": 4200,
+    "livello": 1
+   }
+  ],
+  "traduzione": "potion_of_magical_depletion"
+ },
+ {
+  "id": "born_in_chaos_v1:stimulating_potion",
+  "effetti": [
+   {
+    "effetto": "born_in_chaos_v1:stimulation",
+    "durata": 2400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "stimulating_potion"
+ },
+ {
+  "id": "bountifulfares:bountifulfares.acidic",
+  "effetti": [
+   {
+    "effetto": "bountifulfares:acidic",
+    "durata": 2000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "bountifulfares.acidic"
+ },
+ {
+  "id": "bountifulfares:bountifulfares.long_acidic",
+  "effetti": [
+   {
+    "effetto": "bountifulfares:acidic",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "bountifulfares.long_acidic"
+ },
+ {
+  "id": "bountifulfares:bountifulfares.long_stupor",
+  "effetti": [
+   {
+    "effetto": "bountifulfares:stupor",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "bountifulfares.long_stupor"
+ },
+ {
+  "id": "bountifulfares:bountifulfares.strong_acidic",
+  "effetti": [
+   {
+    "effetto": "bountifulfares:acidic",
+    "durata": 1000,
+    "livello": 1
+   }
+  ],
+  "traduzione": "bountifulfares.strong_acidic"
+ },
+ {
+  "id": "bountifulfares:bountifulfares.stupor",
+  "effetti": [
+   {
+    "effetto": "bountifulfares:stupor",
+    "durata": 2000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "bountifulfares.stupor"
+ },
+ {
+  "id": "deep_aether:remedy_potion",
+  "effetti": [
+   {
+    "effetto": "aether:remedy",
+    "durata": 200,
+    "livello": 0
+   }
+  ],
+  "traduzione": "remedy_potion"
+ },
+ {
+  "id": "deeperdarker:glowing",
+  "effetti": [
+   {
+    "effetto": "minecraft:glowing",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "glowing"
+ },
+ {
+  "id": "deeperdarker:long_sculk_affinity",
+  "effetti": [
+   {
+    "effetto": "deeperdarker:sculk_affinity",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "long_sculk_affinity"
+ },
+ {
+  "id": "deeperdarker:sculk_affinity",
+  "effetti": [
+   {
+    "effetto": "deeperdarker:sculk_affinity",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "sculk_affinity"
+ },
+ {
+  "id": "friendsandfoes:gliding",
+  "effetti": [
+   {
+    "effetto": "friendsandfoes:glide",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "gliding"
+ },
+ {
+  "id": "friendsandfoes:long_gliding",
+  "effetti": [
+   {
+    "effetto": "friendsandfoes:glide",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "gliding"
+ },
+ {
+  "id": "friendsandfoes:long_reaching",
+  "effetti": [
+   {
+    "effetto": "friendsandfoes:reach",
+    "durata": 7200,
+    "livello": 0
+   }
+  ],
+  "traduzione": "reaching"
+ },
+ {
+  "id": "friendsandfoes:reaching",
+  "effetti": [
+   {
+    "effetto": "friendsandfoes:reach",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "reaching"
+ },
+ {
+  "id": "friendsandfoes:strong_gliding",
+  "effetti": [
+   {
+    "effetto": "friendsandfoes:glide",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "gliding"
+ },
+ {
+  "id": "friendsandfoes:strong_reaching",
+  "effetti": [
+   {
+    "effetto": "friendsandfoes:reach",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "reaching"
+ },
+ {
+  "id": "illagerinvasion:berserking",
+  "effetti": [
+   {
+    "effetto": "minecraft:strength",
+    "durata": 600,
+    "livello": 1
+   },
+   {
+    "effetto": "minecraft:speed",
+    "durata": 600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "berserking"
+ },
+ {
+  "id": "illagerinvasion:long_berserking",
+  "effetti": [
+   {
+    "effetto": "minecraft:strength",
+    "durata": 1200,
+    "livello": 0
+   },
+   {
+    "effetto": "minecraft:speed",
+    "durata": 1200,
+    "livello": 0
+   }
+  ],
+  "traduzione": "berserking"
+ },
+ {
+  "id": "illagerinvasion:strong_berserking",
+  "effetti": [
+   {
+    "effetto": "minecraft:strength",
+    "durata": 300,
+    "livello": 2
+   },
+   {
+    "effetto": "minecraft:speed",
+    "durata": 300,
+    "livello": 2
+   }
+  ],
+  "traduzione": "berserking"
+ },
+ {
+  "id": "minecraft:awkward",
+  "effetti": [],
+  "traduzione": "awkward"
+ },
+ {
+  "id": "minecraft:fire_resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:fire_resistance",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "fire_resistance"
+ },
+ {
+  "id": "minecraft:harming",
+  "effetti": [
+   {
+    "effetto": "minecraft:instant_damage",
+    "durata": 1,
+    "livello": 0
+   }
+  ],
+  "traduzione": "harming"
+ },
+ {
+  "id": "minecraft:healing",
+  "effetti": [
+   {
+    "effetto": "minecraft:instant_health",
+    "durata": 1,
+    "livello": 0
+   }
+  ],
+  "traduzione": "healing"
+ },
+ {
+  "id": "minecraft:infested",
+  "effetti": [
+   {
+    "effetto": "minecraft:infested",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "infested"
+ },
+ {
+  "id": "minecraft:invisibility",
+  "effetti": [
+   {
+    "effetto": "minecraft:invisibility",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "invisibility"
+ },
+ {
+  "id": "minecraft:leaping",
+  "effetti": [
+   {
+    "effetto": "minecraft:jump_boost",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "leaping"
+ },
+ {
+  "id": "minecraft:long_fire_resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:fire_resistance",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "fire_resistance"
+ },
+ {
+  "id": "minecraft:long_invisibility",
+  "effetti": [
+   {
+    "effetto": "minecraft:invisibility",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "invisibility"
+ },
+ {
+  "id": "minecraft:long_leaping",
+  "effetti": [
+   {
+    "effetto": "minecraft:jump_boost",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "leaping"
+ },
+ {
+  "id": "minecraft:long_night_vision",
+  "effetti": [
+   {
+    "effetto": "minecraft:night_vision",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "night_vision"
+ },
+ {
+  "id": "minecraft:long_poison",
+  "effetti": [
+   {
+    "effetto": "minecraft:poison",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "poison"
+ },
+ {
+  "id": "minecraft:long_regeneration",
+  "effetti": [
+   {
+    "effetto": "minecraft:regeneration",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "regeneration"
+ },
+ {
+  "id": "minecraft:long_slow_falling",
+  "effetti": [
+   {
+    "effetto": "minecraft:slow_falling",
+    "durata": 4800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "slow_falling"
+ },
+ {
+  "id": "minecraft:long_slowness",
+  "effetti": [
+   {
+    "effetto": "minecraft:slowness",
+    "durata": 4800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "slowness"
+ },
+ {
+  "id": "minecraft:long_strength",
+  "effetti": [
+   {
+    "effetto": "minecraft:strength",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "strength"
+ },
+ {
+  "id": "minecraft:long_swiftness",
+  "effetti": [
+   {
+    "effetto": "minecraft:speed",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "swiftness"
+ },
+ {
+  "id": "minecraft:long_turtle_master",
+  "effetti": [
+   {
+    "effetto": "minecraft:slowness",
+    "durata": 800,
+    "livello": 3
+   },
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 800,
+    "livello": 2
+   }
+  ],
+  "traduzione": "turtle_master"
+ },
+ {
+  "id": "minecraft:long_water_breathing",
+  "effetti": [
+   {
+    "effetto": "minecraft:water_breathing",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "water_breathing"
+ },
+ {
+  "id": "minecraft:long_weakness",
+  "effetti": [
+   {
+    "effetto": "minecraft:weakness",
+    "durata": 4800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "weakness"
+ },
+ {
+  "id": "minecraft:luck",
+  "effetti": [
+   {
+    "effetto": "minecraft:luck",
+    "durata": 6000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "luck"
+ },
+ {
+  "id": "minecraft:mundane",
+  "effetti": [],
+  "traduzione": "mundane"
+ },
+ {
+  "id": "minecraft:night_vision",
+  "effetti": [
+   {
+    "effetto": "minecraft:night_vision",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "night_vision"
+ },
+ {
+  "id": "minecraft:oozing",
+  "effetti": [
+   {
+    "effetto": "minecraft:oozing",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "oozing"
+ },
+ {
+  "id": "minecraft:poison",
+  "effetti": [
+   {
+    "effetto": "minecraft:poison",
+    "durata": 900,
+    "livello": 0
+   }
+  ],
+  "traduzione": "poison"
+ },
+ {
+  "id": "minecraft:regeneration",
+  "effetti": [
+   {
+    "effetto": "minecraft:regeneration",
+    "durata": 900,
+    "livello": 0
+   }
+  ],
+  "traduzione": "regeneration"
+ },
+ {
+  "id": "minecraft:slow_falling",
+  "effetti": [
+   {
+    "effetto": "minecraft:slow_falling",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "slow_falling"
+ },
+ {
+  "id": "minecraft:slowness",
+  "effetti": [
+   {
+    "effetto": "minecraft:slowness",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "slowness"
+ },
+ {
+  "id": "minecraft:strength",
+  "effetti": [
+   {
+    "effetto": "minecraft:strength",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "strength"
+ },
+ {
+  "id": "minecraft:strong_harming",
+  "effetti": [
+   {
+    "effetto": "minecraft:instant_damage",
+    "durata": 1,
+    "livello": 1
+   }
+  ],
+  "traduzione": "harming"
+ },
+ {
+  "id": "minecraft:strong_healing",
+  "effetti": [
+   {
+    "effetto": "minecraft:instant_health",
+    "durata": 1,
+    "livello": 1
+   }
+  ],
+  "traduzione": "healing"
+ },
+ {
+  "id": "minecraft:strong_leaping",
+  "effetti": [
+   {
+    "effetto": "minecraft:jump_boost",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "leaping"
+ },
+ {
+  "id": "minecraft:strong_poison",
+  "effetti": [
+   {
+    "effetto": "minecraft:poison",
+    "durata": 432,
+    "livello": 1
+   }
+  ],
+  "traduzione": "poison"
+ },
+ {
+  "id": "minecraft:strong_regeneration",
+  "effetti": [
+   {
+    "effetto": "minecraft:regeneration",
+    "durata": 450,
+    "livello": 1
+   }
+  ],
+  "traduzione": "regeneration"
+ },
+ {
+  "id": "minecraft:strong_slowness",
+  "effetti": [
+   {
+    "effetto": "minecraft:slowness",
+    "durata": 400,
+    "livello": 3
+   }
+  ],
+  "traduzione": "slowness"
+ },
+ {
+  "id": "minecraft:strong_strength",
+  "effetti": [
+   {
+    "effetto": "minecraft:strength",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "strength"
+ },
+ {
+  "id": "minecraft:strong_swiftness",
+  "effetti": [
+   {
+    "effetto": "minecraft:speed",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "swiftness"
+ },
+ {
+  "id": "minecraft:strong_turtle_master",
+  "effetti": [
+   {
+    "effetto": "minecraft:slowness",
+    "durata": 400,
+    "livello": 5
+   },
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 400,
+    "livello": 3
+   }
+  ],
+  "traduzione": "turtle_master"
+ },
+ {
+  "id": "minecraft:swiftness",
+  "effetti": [
+   {
+    "effetto": "minecraft:speed",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "swiftness"
+ },
+ {
+  "id": "minecraft:thick",
+  "effetti": [],
+  "traduzione": "thick"
+ },
+ {
+  "id": "minecraft:turtle_master",
+  "effetti": [
+   {
+    "effetto": "minecraft:slowness",
+    "durata": 400,
+    "livello": 3
+   },
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 400,
+    "livello": 2
+   }
+  ],
+  "traduzione": "turtle_master"
+ },
+ {
+  "id": "minecraft:water",
+  "effetti": [],
+  "traduzione": "water"
+ },
+ {
+  "id": "minecraft:water_breathing",
+  "effetti": [
+   {
+    "effetto": "minecraft:water_breathing",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "water_breathing"
+ },
+ {
+  "id": "minecraft:weakness",
+  "effetti": [
+   {
+    "effetto": "minecraft:weakness",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "weakness"
+ },
+ {
+  "id": "minecraft:weaving",
+  "effetti": [
+   {
+    "effetto": "minecraft:weaving",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "weaving"
+ },
+ {
+  "id": "minecraft:wind_charged",
+  "effetti": [
+   {
+    "effetto": "minecraft:wind_charged",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "wind_charged"
+ },
+ {
+  "id": "mowziesmobs:long_poison_resist",
+  "effetti": [
+   {
+    "effetto": "mowziesmobs:poison_resist",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "long_poison_resist"
+ },
+ {
+  "id": "mowziesmobs:poison_resist",
+  "effetti": [
+   {
+    "effetto": "mowziesmobs:poison_resist",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "poison_resist"
+ },
+ {
+  "id": "mutantmonsters:chemical_x",
+  "effetti": [
+   {
+    "effetto": "mutantmonsters:chemical_x",
+    "durata": 1,
+    "livello": 0
+   }
+  ],
+  "traduzione": "chemical_x"
+ },
+ {
+  "id": "netherdepthsupgrade:glowdine_glowing",
+  "effetti": [
+   {
+    "effetto": "minecraft:glowing",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "glowdine_glowing"
+ },
+ {
+  "id": "netherdepthsupgrade:glowdine_long_glowing",
+  "effetti": [
+   {
+    "effetto": "minecraft:glowing",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "glowdine_long_glowing"
+ },
+ {
+  "id": "netherdepthsupgrade:lava_puffer_long_wither",
+  "effetti": [
+   {
+    "effetto": "minecraft:wither",
+    "durata": 900,
+    "livello": 0
+   }
+  ],
+  "traduzione": "lava_puffer_long_wither"
+ },
+ {
+  "id": "netherdepthsupgrade:lava_puffer_wither",
+  "effetti": [
+   {
+    "effetto": "minecraft:wither",
+    "durata": 450,
+    "livello": 0
+   }
+  ],
+  "traduzione": "lava_puffer_wither"
+ },
+ {
+  "id": "netherdepthsupgrade:lava_vision",
+  "effetti": [
+   {
+    "effetto": "netherdepthsupgrade:lava_vision",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "lava_vision"
+ },
+ {
+  "id": "netherdepthsupgrade:long_lava_vision",
+  "effetti": [
+   {
+    "effetto": "netherdepthsupgrade:lava_vision",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "lava_vision"
+ },
+ {
+  "id": "netherdepthsupgrade:obsidianfish_long_resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 1800,
+    "livello": 0
+   },
+   {
+    "effetto": "minecraft:fire_resistance",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "obsidianfish_long_resistance"
+ },
+ {
+  "id": "netherdepthsupgrade:obsidianfish_resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 900,
+    "livello": 0
+   },
+   {
+    "effetto": "minecraft:fire_resistance",
+    "durata": 900,
+    "livello": 0
+   }
+  ],
+  "traduzione": "obsidianfish_resistance"
+ },
+ {
+  "id": "netherdepthsupgrade:obsidianfish_strong_resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 900,
+    "livello": 2
+   },
+   {
+    "effetto": "minecraft:fire_resistance",
+    "durata": 900,
+    "livello": 0
+   }
+  ],
+  "traduzione": "obsidianfish_strong_resistance"
+ },
+ {
+  "id": "occultism:long_third_eye_potion",
+  "effetti": [
+   {
+    "effetto": "occultism:third_eye",
+    "durata": 6000,
+    "livello": 1
+   }
+  ],
+  "traduzione": "long_third_eye_potion"
+ },
+ {
+  "id": "occultism:third_eye_potion",
+  "effetti": [
+   {
+    "effetto": "occultism:third_eye",
+    "durata": 1200,
+    "livello": 1
+   }
+  ],
+  "traduzione": "third_eye_potion"
+ },
+ {
+  "id": "reactive:no_gravity",
+  "effetti": [
+   {
+    "effetto": "reactive:no_gravity",
+    "durata": 3000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "no_gravity"
+ },
+ {
+  "id": "reactive:no_gravity_long",
+  "effetti": [
+   {
+    "effetto": "reactive:no_gravity",
+    "durata": 8000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "no_gravity_long"
+ },
+ {
+  "id": "rusticdelight:haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "haste"
+ },
+ {
+  "id": "rusticdelight:long_haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "haste"
+ },
+ {
+  "id": "rusticdelight:strong_haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 1800,
+    "livello": 1
+   }
+  ],
+  "traduzione": "haste"
+ },
+ {
+  "id": "tombstone:bait",
+  "effetti": [
+   {
+    "effetto": "tombstone:bait",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "bait"
+ },
+ {
+  "id": "tombstone:darkness",
+  "effetti": [
+   {
+    "effetto": "minecraft:darkness",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "darkness"
+ },
+ {
+  "id": "tombstone:discretion",
+  "effetti": [
+   {
+    "effetto": "tombstone:discretion",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "discretion"
+ },
+ {
+  "id": "tombstone:earthly_garden",
+  "effetti": [
+   {
+    "effetto": "tombstone:earthly_garden",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "earthly_garden"
+ },
+ {
+  "id": "tombstone:frostbite",
+  "effetti": [
+   {
+    "effetto": "tombstone:frostbite",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "frostbite"
+ },
+ {
+  "id": "tombstone:giant_strength",
+  "effetti": [
+   {
+    "effetto": "tombstone:giant_strength",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "giant_strength"
+ },
+ {
+  "id": "tombstone:little_world",
+  "effetti": [
+   {
+    "effetto": "tombstone:little_world",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "little_world"
+ },
+ {
+  "id": "tombstone:restoration",
+  "effetti": [
+   {
+    "effetto": "tombstone:restoration",
+    "durata": 1,
+    "livello": 4
+   }
+  ],
+  "traduzione": "restoration"
+ },
+ {
+  "id": "tombstone:spectral",
+  "effetti": [],
+  "traduzione": "spectral"
+ },
+ {
+  "id": "tombstone:weaver_walk",
+  "effetti": [
+   {
+    "effetto": "tombstone:weaver_walk",
+    "durata": 9600,
+    "livello": 4
+   }
+  ],
+  "traduzione": "weaver_walk"
+ },
+ {
+  "id": "undergarden:brittleness",
+  "effetti": [
+   {
+    "effetto": "undergarden:brittleness",
+    "durata": 900,
+    "livello": 0
+   }
+  ],
+  "traduzione": "brittleness"
+ },
+ {
+  "id": "undergarden:featherweight",
+  "effetti": [
+   {
+    "effetto": "undergarden:featherweight",
+    "durata": 900,
+    "livello": 0
+   }
+  ],
+  "traduzione": "featherweight"
+ },
+ {
+  "id": "undergarden:glowing",
+  "effetti": [
+   {
+    "effetto": "minecraft:glowing",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "glowing"
+ },
+ {
+  "id": "undergarden:long_brittleness",
+  "effetti": [
+   {
+    "effetto": "undergarden:brittleness",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "brittleness"
+ },
+ {
+  "id": "undergarden:long_featherweight",
+  "effetti": [
+   {
+    "effetto": "undergarden:featherweight",
+    "durata": 1800,
+    "livello": 0
+   }
+  ],
+  "traduzione": "featherweight"
+ },
+ {
+  "id": "undergarden:long_glowing",
+  "effetti": [
+   {
+    "effetto": "minecraft:glowing",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "glowing"
+ },
+ {
+  "id": "undergarden:long_virulent_resistance",
+  "effetti": [
+   {
+    "effetto": "undergarden:virulent_resistance",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "virulent_resistance"
+ },
+ {
+  "id": "undergarden:strong_brittleness",
+  "effetti": [
+   {
+    "effetto": "undergarden:brittleness",
+    "durata": 450,
+    "livello": 1
+   }
+  ],
+  "traduzione": "brittleness"
+ },
+ {
+  "id": "undergarden:strong_featherweight",
+  "effetti": [
+   {
+    "effetto": "undergarden:featherweight",
+    "durata": 450,
+    "livello": 1
+   }
+  ],
+  "traduzione": "featherweight"
+ },
+ {
+  "id": "undergarden:virulent_resistance",
+  "effetti": [
+   {
+    "effetto": "undergarden:virulent_resistance",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "virulent_resistance"
+ },
+ {
+  "id": "unusualend:advanced_haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "advanced_haste"
+ },
+ {
+  "id": "unusualend:building_potion",
+  "effetti": [
+   {
+    "effetto": "unusualend:disruption",
+    "durata": 9600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "building_potion"
+ },
+ {
+  "id": "unusualend:end_infection",
+  "effetti": [
+   {
+    "effetto": "unusualend:ender_infection",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "end_infection"
+ },
+ {
+  "id": "unusualend:haste",
+  "effetti": [
+   {
+    "effetto": "minecraft:haste",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "haste"
+ },
+ {
+  "id": "unusualend:health_boost",
+  "effetti": [
+   {
+    "effetto": "minecraft:health_boost",
+    "durata": 6000,
+    "livello": 1
+   },
+   {
+    "effetto": "minecraft:weakness",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "health_boost"
+ },
+ {
+  "id": "unusualend:heaviness_potion",
+  "effetti": [
+   {
+    "effetto": "unusualend:heaviness",
+    "durata": 3600,
+    "livello": 1
+   }
+  ],
+  "traduzione": "heaviness_potion"
+ },
+ {
+  "id": "unusualend:levitation",
+  "effetti": [
+   {
+    "effetto": "minecraft:levitation",
+    "durata": 400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "levitation"
+ },
+ {
+  "id": "unusualend:regeneration",
+  "effetti": [
+   {
+    "effetto": "minecraft:regeneration",
+    "durata": 6000,
+    "livello": 0
+   }
+  ],
+  "traduzione": "regeneration"
+ },
+ {
+  "id": "unusualend:regeneration_ii",
+  "effetti": [
+   {
+    "effetto": "minecraft:regeneration",
+    "durata": 1200,
+    "livello": 1
+   }
+  ],
+  "traduzione": "regeneration_ii"
+ },
+ {
+  "id": "unusualend:resistance",
+  "effetti": [
+   {
+    "effetto": "minecraft:resistance",
+    "durata": 2400,
+    "livello": 0
+   },
+   {
+    "effetto": "unusualend:heaviness",
+    "durata": 1200,
+    "livello": 0
+   }
+  ],
+  "traduzione": "resistance"
+ },
+ {
+  "id": "unusualend:serenity_potion",
+  "effetti": [
+   {
+    "effetto": "unusualend:serenity",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "serenity_potion"
+ },
+ {
+  "id": "unusualend:strength",
+  "effetti": [
+   {
+    "effetto": "minecraft:strength",
+    "durata": 3600,
+    "livello": 1
+   },
+   {
+    "effetto": "minecraft:blindness",
+    "durata": 1200,
+    "livello": 0
+   },
+   {
+    "effetto": "minecraft:nausea",
+    "durata": 2400,
+    "livello": 0
+   }
+  ],
+  "traduzione": "strength"
+ },
+ {
+  "id": "unusualend:swift_strikes_potion",
+  "effetti": [
+   {
+    "effetto": "unusualend:swift_strikes",
+    "durata": 3600,
+    "livello": 0
+   }
+  ],
+  "traduzione": "swift_strikes_potion"
+ }
+]

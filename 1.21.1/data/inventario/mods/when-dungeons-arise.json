@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "When Dungeons Arise",
  "file": "DungeonsArise-1.21.1-2.1.68-release.jar",
@@ -1790,5 +1790,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

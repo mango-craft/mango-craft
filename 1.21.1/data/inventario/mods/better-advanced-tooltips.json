@@ -1,0 +1,39 @@
+{
+ "format": 7,
+ "status": "ok",
+ "name": "Better Advanced Tooltips",
+ "file": "better-advanced-tooltips-2101.1.0-build.5.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "05b5cdad948d1735eab7a67a16aaf32814678c392014ec2ada61b8341c0ed1c1ac181cab1de9da3f2c4632592f4a1a5db254bd0543e6778897c8ccd260894142",
+ "mods": [
+  {
+   "modid": "betteradvancedtooltips",
+   "name": "Better Advanced Tooltips",
+   "version": "2101.1.0-build.5",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.199,)",
+     "side": "CLIENT"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "betteradvancedtooltips"
+ ],
+ "data": {},
+ "data_counts": {},
+ "tags": {},
+ "recipe_types": {},
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "potions_deduced": [],
+ "problems": []
+}

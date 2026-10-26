@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Create Confectionery",
  "file": "create-confectionery1.21.1_v1.1.3b.jar",
@@ -26,7 +26,8 @@
      "range": "[1.20.4]",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "create_confectionery",
@@ -519,5 +520,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

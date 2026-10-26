@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Creeper Overhaul",
  "file": "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
@@ -206,5 +206,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

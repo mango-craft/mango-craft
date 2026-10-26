@@ -6,7 +6,7 @@ Qui ci sono solo documenti **vivi**; le versioni rilasciate sono chiuse (fotogra
 
 | Codice | Documento | Contenuto | Tipo |
 |---|---|---|---|
-| **0501** | [piano](0501-piano.md) | Tappe verso la 1.0.0 e stato di avanzamento | vivo |
+| **0501** | [piano](0501-piano.md) | Tappe verso il mondo vero e la 1.0.0, stato di avanzamento | vivo |
 | **0502** | [prove-in-gioco](0502-prove-in-gioco.md) | Controlli da fare in gioco, rischi, mondo di prova | vivo |
 | **0503** | [temi-aperti](0503-temi-aperti.md) | Argomenti non ancora affrontati (achievement, difficoltà, tasti, aggiornamenti…) e decisioni aperte che valgono per più versioni | vivo |
 | **0601** | [mod-candidate](0601-mod-candidate.md) | Mod da tenere d'occhio e quando rivalutarle (indice, con le schede) | vivo |
@@ -25,6 +25,9 @@ Ogni versione del pack ha un file (`vX.Y.Z.md`) che racconta obiettivo, valutazi
 | [v0.6.0](versioni/v0.6.0.md) | tappa 5: config e correzioni | chiuso (rilasciata il 22/10) |
 | [v0.6.1](versioni/v0.6.1.md) · [v0.6.2](versioni/v0.6.2.md) · [v0.6.3](versioni/v0.6.3.md) | tappa 5: vasi, mercato, esperienza | chiusi (rilasciate il 24/10) |
 | [v0.7.0](versioni/v0.7.0.md) | tappa 6: accessori (Relics) | chiuso (rilasciata il 24/10) |
-| [v0.7.1](versioni/v0.7.1.md) | tappa 6.1: fornaci | 📋 pianificata (24/10) |
+| [v0.7.1](versioni/v0.7.1.md) | tappa 6.1: fornaci | chiuso (rilasciata il 26/10 nella 0.7.2) |
+| [v0.7.2](versioni/v0.7.2.md) | tappa 6.2: pozioni (lista nera degli amuleti, censimento) | chiuso (rilasciata il 26/10) |
+| [v0.7.3](versioni/v0.7.3.md) | tappa 6.3: computer (CC: Tweaked, Advanced Peripherals) | 📋 pianificata (25/10) |
+| [v0.7.4](versioni/v0.7.4.md) | archeologia e reperti (proposta) | 📋 pianificata (24/10) |
 
 Dove sono finiti i documenti di prima: ricerche 0705, 0706, 0707, 0710 → `v0.1.1`; 0611, 0703, 0711 → `v0.2.3`; 0708 → `v0.5.1`; 0709 → `v0.5.2`; 0712 → `v0.5.3`; 0713 → `v0.6.0`; le righe del log 0610 → sezione "Decisioni" della loro versione; le parti grezze e in inglese (0701, 0702, 0704, 0621, 0901, allegati e appendici) → `ai-agents/stage/`; il progetto del datapack 0620 e la pre-progettazione 0630 → `v0.6.0`, `v0.6.1`, `v0.6.2` e le schede di `../mod-knowledge/` e `../theme-knowledge/` (formati dei file: `botany-pots`, `farming-for-blockheads`, `esperienza`, `cataclysm`).

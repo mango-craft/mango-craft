@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "EMI Loot",
  "file": "emi_loot-0.7.9+1.21+neoforge.jar",
@@ -75,5 +75,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

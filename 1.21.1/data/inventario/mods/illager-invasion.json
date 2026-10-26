@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Illager Invasion",
  "file": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
@@ -111,6 +111,11 @@
   "illagerinvasion:surrendered_spawn_egg": "Surrendered Spawn Egg",
   "illagerinvasion:tooting_horn_of_sight": "",
   "illagerinvasion:unusual_dust": "Unusual Dust"
+ },
+ "potions": {
+  "illagerinvasion:berserking": "Potion of Berserking",
+  "illagerinvasion:long_berserking": "Potion of Berserking",
+  "illagerinvasion:strong_berserking": "Potion of Berserking"
  },
  "data": {
   "loot_table": [
@@ -408,5 +413,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

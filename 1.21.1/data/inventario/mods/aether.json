@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "The Aether",
  "file": "aether-1.21.1-1.5.10-neoforge.jar",
@@ -250,6 +250,10 @@
   "aether:white_flower": "White Flower",
   "aether:zanite_block": "Block of Zanite",
   "aether:zanite_ore": "Zanite Ore"
+ },
+ "effect_descriptions": {
+  "aether:inebriation": "Inflicts damage over time and causes random movement.",
+  "aether:remedy": "Cures and grants immunity to inebriation."
  },
  "effects": {
   "aether:inebriation": "Inebriation",
@@ -3873,5 +3877,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

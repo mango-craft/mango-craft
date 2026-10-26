@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "apothic_attributes:extra_long_flying",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:flying",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:long_flying",
+      "required": false
+    },
+    {
+      "id": "bountifulfares:bountifulfares.acidic",
+      "required": false
+    },
+    {
+      "id": "bountifulfares:bountifulfares.long_acidic",
+      "required": false
+    },
+    {
+      "id": "bountifulfares:bountifulfares.long_stupor",
+      "required": false
+    },
+    {
+      "id": "bountifulfares:bountifulfares.strong_acidic",
+      "required": false
+    },
+    {
+      "id": "bountifulfares:bountifulfares.stupor",
+      "required": false
+    },
+    {
+      "id": "reactive:no_gravity",
+      "required": false
+    },
+    {
+      "id": "reactive:no_gravity_long",
+      "required": false
+    },
+    {
+      "id": "unusualend:serenity_potion",
+      "required": false
+    }
+  ]
+}

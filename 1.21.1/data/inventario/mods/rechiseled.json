@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Rechiseled",
  "file": "rechiseled-1.2.6-neoforge-mc1.21.jar",
@@ -28149,5 +28149,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

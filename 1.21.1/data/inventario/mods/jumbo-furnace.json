@@ -1,0 +1,85 @@
+{
+ "format": 7,
+ "status": "ok",
+ "name": "Jumbo Furnace",
+ "file": "jumbofurnace-5.0.0.9.jar",
+ "side": "both",
+ "source": "curseforge",
+ "hash_format": "sha1",
+ "hash": "8c3b0f5ff02b2e4d96eedfe224d19c686d0fc190",
+ "mods": [
+  {
+   "modid": "jumbofurnace",
+   "name": "Jumbo Furnace",
+   "version": "5.0.0.9",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.0.23-beta,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21, 1.22)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "jumbofurnace",
+  "minecraft"
+ ],
+ "blocks": {
+  "jumbofurnace:jumbo_furnace": "Jumbo Furnace"
+ },
+ "items": {
+  "jumbofurnace:jumbo_furnace": "Jumbo Furnace",
+  "jumbofurnace:jumbo_furnace_jei": "Jumbo Furnace"
+ },
+ "data": {
+  "loot_table": [
+   "jumbofurnace:blocks/jumbo_furnace"
+  ],
+  "recipe": [
+   "jumbofurnace:jumbo_furnace"
+  ],
+  "tags/block": [
+   "jumbofurnace:jumbofurnaceable",
+   "minecraft:mineable/pickaxe"
+  ],
+  "tags/item": [
+   "jumbofurnace:multiprocessing_upgrade"
+  ]
+ },
+ "data_counts": {
+  "advancement": 4
+ },
+ "tags": {
+  "tags/block": {
+   "jumbofurnace:jumbofurnaceable": [
+    "#c:player_workstations/furnaces"
+   ],
+   "minecraft:mineable/pickaxe": [
+    "jumbofurnace:jumbo_furnace"
+   ]
+  },
+  "tags/item": {
+   "jumbofurnace:multiprocessing_upgrade": [
+    "jumbofurnace:jumbo_furnace"
+   ]
+  }
+ },
+ "recipe_types": {
+  "jumbofurnace:jumbo_smelting": 1
+ },
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "potions_deduced": [],
+ "problems": []
+}

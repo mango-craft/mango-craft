@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Ars Elemental",
  "file": "ars_elemental-1.21.1-0.7.10.4.jar",
@@ -123,6 +123,26 @@
   "sauce:source_jar_core": "Source Jar Core",
   "sauce:source_jar_frame": "Source Jar Frame",
   "sauce:source_jar_valve": "Source Jar Valve"
+ },
+ "effect_descriptions": {
+  "ars_elemental:enderference": "Makes the target unable to teleport or be teleported.",
+  "ars_elemental:enthralled": "Enthralled mobs won't attack the caster but defend them.",
+  "ars_elemental:frozen": "The target is frozen and can't heal, next fire damage taken is increased but dispels the effect.",
+  "ars_elemental:hellfire": "The magic flames burns even nether creatures making them vulnerable to fire. It slighly decrease damage taken from earth, but let magic damage pierce through some of the armor.",
+  "ars_elemental:hymn_of_order": "Unobtainable potion, for Admin use. Sets the punished player's mana to 1 and disables spellcasting, greatly reducing their chances to create chaos in the server.",
+  "ars_elemental:life_link": "Caster will split incoming damage with the target and the target will split incoming healing with the caster. Using Cut will dispel the effect on both sides.",
+  "ars_elemental:mana_shield": "Use mana to mitigate damage taken and add a chance to not suffer from negative effects.",
+  "ars_elemental:mist": "Similar to blindness, mist reduces the field of vision of mobs and players",
+  "ars_elemental:repel": "The target is repelled from one or more places by a magic force.",
+  "ars_elemental:rust": "Makes the entity armor rust temporarily, dropping its armor points.",
+  "ars_elemental:slip_feet": "Makes the entity slide as if on ice while on normal blocks, increased slipperiness on ice blocks.",
+  "ars_elemental:static_charged": "Calls a lightning to hit the afflicted when the duration ends.",
+  "ars_elemental:venom": "The target is poisoned with a deadly venom and takes more damage from poison spores.",
+  "ars_elemental:watery_grave": "Makes the target sink and run out of air quicker.",
+  "sauce:contingency": "When a specific event triggers, it will cast the spell on the entity.",
+  "sauce:mana_cost_down": "Decreases mana cost of spells.",
+  "sauce:rage": "Causes the target to attack nearby entities, even allies, and deal more melee damage.",
+  "sauce:spell_crit_up": "Increases critical strike chance of spells."
  },
  "effects": {
   "ars_elemental:enderference": "Enderference",
@@ -361,6 +381,14 @@
   "sauce:source_jar_frame": "",
   "sauce:source_jar_valve": "",
   "sauce:star_hat": ""
+ },
+ "potions": {
+  "ars_elemental:enderference_potion": "Potion of Enderference",
+  "ars_elemental:enderference_potion_long": "Potion of Enderference",
+  "ars_elemental:enderference_potion_strong": "Potion of Enderference",
+  "ars_elemental:shock_potion": "Potion of Static Charge",
+  "ars_elemental:shock_potion_long": "Potion of Static Charge",
+  "ars_elemental:shock_potion_strong": "Potion of Static Charge"
  },
  "data": {
   "banner_pattern": [
@@ -1716,5 +1744,13 @@
  ],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [
+  "ars_elemental:enderference_potion",
+  "ars_elemental:enderference_potion_long",
+  "ars_elemental:enderference_potion_strong",
+  "ars_elemental:shock_potion",
+  "ars_elemental:shock_potion_long",
+  "ars_elemental:shock_potion_strong"
+ ],
  "problems": []
 }

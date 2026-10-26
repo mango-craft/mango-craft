@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "CreativeCore",
  "file": "CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar",
@@ -40,5 +40,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

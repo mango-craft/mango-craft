@@ -1,0 +1,59 @@
+# Tema: computer (CC: Tweaked e add-on)
+
+Aggiornata il 25/10/2026 · stato: **ricerca approfondita fatta**; decisioni di Matteo del 25/10: **solo CC: Tweaked e Advanced Peripherals**, **case del Computer Scientist tenute**, nella **0.7.3** (`../lavoro/versioni/v0.7.3.md`); gli altri add-on scartati per ora (`../lavoro/0602-mod-scartate.md`) · mod coinvolte: CC: Tweaked e i suoi add-on (candidati), Create, Mekanism e le mod con inventari, liquidi o energia (già nel pack) · fonti: API di Modrinth; esame dei jar (`../../ai-agents/stage/2026-10-24_1.21.1-v0.7.2_esame-mod/`); sorgenti di CC: Tweaked 1.120.2, Create 6.0.10, Mekanism 10.7.19.85, Advanced Peripherals 0.8.2a, UnlimitedPeripheralWorks 1.9.2, Turtlematic 1.4.10, CC:C Bridge 1.7.3, Tom's Peripherals 1.3.1, Classic Peripherals 0.6.5, CC: Terminals 0.1.1; issue su GitHub. Riferimenti e materiale grezzo in `../../ai-agents/stage/2026-10-25_1.21.1-v0.7.2_computercraft/` (`fonti.md` e i tre `approfondimento-*.md`).
+
+## Cos'è
+
+**CC: Tweaked** aggiunge computer programmabili in Lua: computer, monitor, tartarughe (robot che scavano, costruiscono, coltivano), computer tascabili, modem con e senza fili, stampanti, altoparlanti, **Redstone Relay** (redstone su tutti i lati, anche a fasci). Un computer legge e comanda i blocchi accanto o in rete (le «periferiche»).
+
+## Cosa si collega già, senza add-on
+
+- **Qualsiasi inventario, serbatoio o batteria** (metodi generici di CC: Tweaked): casse, Storage Drawers, Tom's Storage, Sophisticated, fornaci di Iron Furnaces e FurnaceMk2, vasche e serbatoi di Create, macchine di Mekanism… Si contano gli oggetti, si spostano tra inventari, si legge l'energia.
+- **Create 6.0.10**, integrazione sua (19 periferiche): Display Link (scrive su Flap Display, Nixie Tube, cartelli), misuratori di velocità e di stress, Speed Controller, Sequenced Gearshift, Creative Motor, Nixie Tube, treni (stazioni, segnali, Track Observer) e **tutta la logistica nuova** (dalla 6.0.7): Stock Ticker, Packager, Repackager, Frogport, Postbox, Redstone Requester, Table Cloth Shop.
+- **Mekanism 10.7.19**, integrazione sua: le macchine e i multiblocchi diventano periferiche.
+- **Shader**: CC: Tweaked ha un'integrazione con Iris (il testo dei monitor passa da Iris; niente monitor nell'ombra).
+
+## Cosa porta nel mondo
+
+- **CC: Tweaked**: i «dischi del tesoro» (programmi Lua) in 10 casse vanilla (dungeon, miniera abbandonata, roccaforte, piramide del deserto, tempio della giungla, igloo, villa, cartografo del villaggio). È bottino, non generazione: non tocca le nostre casse né la toppa delle reliquie.
+- **Advanced Peripherals**: le **case del Computer Scientist** nei villaggi (5 strutture, una per tipo di villaggio) e il suo mestiere. ⚠️ Cambia la generazione: va deciso **prima del mondo vero** (si spengono con `enableVillagerStructures` in `config/Advancedperipherals/world.toml`, file COMMON che il pack può portare).
+- Gli altri add-on esaminati non hanno strutture né generazione (CC:C Bridge aggiunge solo un quadro tra quelli che si piazzano).
+
+## Advanced Peripherals 0.8.2a (scelta)
+
+Funzioni Lua lette nel sorgente. Rispetto a CC: Tweaked e alle periferiche di Create e Mekanism, collega i computer al **giocatore** e al **mondo**:
+- **Player Detector**: giocatori in un raggio, in un cubo o tra due coordinate, posizione e dati del giocatore (`getPlayer`, `isPlayerInRange`…); eventi quando un giocatore lo tocca, entra o esce dal mondo, cambia dimensione o muore (`player_click`, `player_join`, `player_leave`, `player_changed_dimension`, `player_death`).
+- **Chat Box**: messaggi in chat, anche formattati, e notifiche a comparsa (`sendMessage`, `sendToast`); evento `chat` quando il giocatore scrive, quindi comandi in chat per i computer.
+- **Inventory Manager** (con la Memory Card legata al giocatore): sposta oggetti tra l'inventario del giocatore e un contenitore (`importItem`, `exportItem`), legge la mano, l'armatura e gli slot di Curios.
+- **Environment Detector**: ora, meteo, fase della luna, luce, bioma, dimensione, slime chunk, se si può dormire, entità vicine (`scanEntities`); con Mekanism anche le radiazioni.
+- **Geo Scanner**: blocchi in una sfera (`scanBlocks`) e minerali del chunk (`chunkAnalyze`); fino a 8 blocchi senza costo e fino a 16 con un costo, una scansione ogni 2 secondi (`SphereOperation.SCAN_BLOCKS`).
+- **Energy Detector** (misura e limita il flusso di energia), Fluid e Gas Detector, **Block Reader** (stato e dati interni di un blocco), **NBT Storage** (salva dati), **Distance Detector** (telemetro laser), **Smart Rail** (rileva e comanda i carrelli). Il **Redstone Integrator** delle versioni vecchie **non c'è** nella 0.8.2a (registrazione e config commentate): al suo posto c'è il Redstone Relay di CC: Tweaked.
+- **Keyboard** (oggetto): legata a un computer con accovacciati + clic destro, manda i tasti al computer da lontano (nel sorgente non c'è un limite di distanza).
+- **Tartarughe**: potenziamenti Chat Box, Player Detector, Environment Detector, Geo Scanner, Block Reader, Compass, **Chunky** (tiene caricati i chunk attorno) e **Saddle** (porta in sella giocatori o animali); **automi**: «Weak» (usa oggetti sui blocchi, raccoglie oggetti a terra), «Husbandry» (usa oggetti sugli animali, li cattura e li rilascia), «End» (si teletrasporta tra punti salvati).
+- **Occhiali smart** (slot di Curios): disegnano sullo schermo testo, forme, oggetti e blocchi, anche in 3D.
+- **Create**: bacino (serbatoi in entrata e in uscita), Blaze Burner, serbatoi, filtri e valori a scorrimento. Sono «metodi generici» di CC: Tweaked: una mod che risponde per tutti i blocchi (UnlimitedPeripheralWorks, sotto) li nasconde.
+- Ogni periferica si spegne nella config (`enableGeoScanner`, `enablePlayerDetector`, `enableEndAutomataCore`…). Requisiti: NeoForge ≥ 21.1.238, CC ≥ 1.119.0; con Mekanism ≥ 10.7.15, Patchouli ≥ 1.21-88 (abbiamo 1.21.1-93). Esiste solo in alpha per la 1.21.1.
+
+## Gli altri add-on (approfondimento del 25/10)
+
+| Add-on | Cosa dà davvero in più | Problemi | Giudizio |
+|---|---|---|---|
+| **CC: Tweaked** 1.120.2 (CCPL) | la base | tutte le versioni NeoForge su Modrinth sono segnate alpha, anche per i Minecraft più nuovi | 🟢 |
+| **CC:C Bridge** 1.7.3 (Apache-2.0) | **Target Block**: un Display Link di Create ci scrive (stress, velocità, scorte, treni…) e il computer **legge** il testo (`getLine`, `dump`); il Display Link di Create da solo sa solo scrivere. **Scroller Pane** (manopola numerica 0–200 che il giocatore gira e il computer legge e blocca). **Animatronic** (pupazzo decorativo con pose e facce) | **Source Block** e **RedRouter** sono doppioni (Display Link di Create, Redstone Relay di CC). **Issue #131 aperta**: dal 27/08 due giocatori segnalano che il Target Block non legge più i Display Link (NeoForge 21.1.248); il collaboratore conferma che va rifatto. Vuole Create [6.0.10, 7.0) e usa parti interne di Create. Niente italiano | 🟡 solo se il Target Block funziona in una prova; altrimenti aspettare |
+| **UnlimitedPeripheralWorks** 1.9.2 (MIT, alpha) | integrazioni con mod **nostre**: Occultism (magazzino, Golden Sacrificial Bowl: rituale in corso e condizioni), Ars Nouveau (sorgente come energia, Mob Jar, tomi che lanciano incantesimi dal tascabile), Easy Villagers (mercanti automatici), inventari dei **contraption di Create** (treni compresi), Nature's Compass, EMI (ricette); Peripheral Proxy (periferiche senza fili), hub per più potenziamenti, registro delle ricette, ologrammi, statue | **Risponde per tutti i blocchi** (verificato nel codice): dove trova un inventario, un serbatoio o un filtro di Create, **sostituisce** le periferiche generiche e **nasconde l'integrazione Create di Advanced Peripherals** (rimedio: etichetta `peripheralworks:ignore` nel datapack). Alpha, tre librerie nuove (Peripheralium, Broccolium, Tweakium), interruttori della config scambiati, probabile duplicazione togliendo un potenziamento dall'hub; scanner più forte di quello di Advanced Peripherals (24 blocchi senza costo) | 🟡 solo per le integrazioni con Occultism e Ars; con l'etichetta `ignore` |
+| **Turtlematic** 1.4.10 (MIT) | automi «forgiati» (fondono, incantano, distillano, tagliano la pietra, commerciano), automa «Protective», pistone, arco, secchio di lava sulle tartarughe | in gran parte **doppione degli automi di Advanced Peripherals** (stessa origine del codice, stessi nomi in EMI); l'automa Protective **cattura o spegne i boss delle mod** (Twilight Forest, Cataclysm, Mowzie's: le etichette di esclusione hanno solo drago, wither e warden); toglie tutti gli incantesimi, maledizioni comprese; `throwPotion` inutilizzabile e altre correzioni non ancora uscite; una sola versione | 🔴 per ora (🟡 a una versione nuova, con i boss esclusi nel datapack) |
+| **Tom's Peripherals** 1.3.1 (MIT) | **GPU** e monitor a pixel (colori pieni, immagini PNG, 3D, pareti fino a 16×16 blocchi contro gli 8×6 di CC); **watchdog** che riavvia un computer bloccato | autore quasi fermo (18 issue aperte; #44: alcuni esempi ufficiali non disegnano su NeoForge 1.21.1); Redstone Port doppione del Redstone Relay, tastiera in parte doppione di Advanced Peripherals; ogni blocco di monitor costa un monitor avanzato di CC; i pixel non si salvano (dopo il riavvio il programma deve ridisegnare); con gli shader non provata | 🟡 solo per cruscotti grafici |
+| **Create: CC Better Recipes** 1.2.0 (MIT) | 20 ricette di CC con materiali di Create (pressa, banco meccanico, circuiti integrati): i computer, e quindi i blocchi di Advanced Peripherals, passano dalla progressione di Create | fatta con MCreator, senza sorgente; ingredienti esatti non verificati da qui; la 1.2.1 è rotta | 🟡 scelta di bilanciamento; in alternativa ricette nostre nel datapack |
+| **Create: CC Total Logistics** 0.3.6 | solo la lettura delle Clipboard | lo dice l'autore: «da Create 6.0.8 consiglio le periferiche di Create»; ferma da 06/2025 | 🔴 |
+| **Classic Peripherals** 0.6.5 (MIT) | NFC e RFID (porte con badge, animali marcati), crittografia, torri radio | pensata per i server; **riduce di serie la portata degli Ender Modem** (config `enderModemNerf`); 7 mixin su CC; due librerie nuove (BouncyCastle, Kaleido) | 🔴 |
+| **CC: Terminals** 0.1.1 (MIT) | terminali con interfaccia per usare un computer da un altro punto | poco più di quanto fanno già i computer e la Keyboard di Advanced Peripherals | 🔴 |
+| High Level Peripherals | fork di Tom's Peripherals | senza sorgente, tre versioni in un giorno, limiti e memoria esagerati | 🔴 |
+
+Scartati perché servono mod che non abbiamo: gli add-on per Create: Simulated / Aeronautics / Sable, Create Big Cannons, Create: Deep Seas, Power Grid, BallistiX, Modern Industrialization, Vivecraft.
+
+## Da tenere a mente
+
+- **Create bloccato**: CC:C Bridge vuole Create da 6.0.10 a sotto 7.0; il giro di aggiornamenti delle mod deve guardarlo.
+- **Alpha**: Advanced Peripherals e UnlimitedPeripheralWorks esistono solo come alpha per la 1.21.1; CC: Tweaked è segnata alpha su tutte le versioni.
+- **Internet dai computer**: con l'API `http` (accesa di serie, chiave `http.enabled` della config di CC: Tweaked) i computer scaricano programmi (`wget`, `pastebin`); in single player è comodo, e si può spegnere.
+- **Più mod che rispondono per lo stesso blocco**: CC: Tweaked usa i metodi generici (dove stanno anche quelli di Advanced Peripherals per Create) solo se nessuna mod dà una periferica sua per quel blocco.

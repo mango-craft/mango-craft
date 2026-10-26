@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Nether Depths Upgrade",
  "file": "netherdepthsupgrade-3.3-1.21.1-NeoForge.jar",
@@ -122,6 +122,17 @@
   "netherdepthsupgrade:wither_bonefish": "Wither Bonefish",
   "netherdepthsupgrade:wither_bonefish_bucket": "Bucket of Wither Bonefish",
   "netherdepthsupgrade:wither_bonefish_spawn_egg": "Wither Bonefish Spawn Egg"
+ },
+ "potions": {
+  "netherdepthsupgrade:glowdine_glowing": "Potion of Glowing",
+  "netherdepthsupgrade:glowdine_long_glowing": "Potion of Glowing",
+  "netherdepthsupgrade:lava_puffer_long_wither": "Potion of Wither",
+  "netherdepthsupgrade:lava_puffer_wither": "Potion of Wither",
+  "netherdepthsupgrade:lava_vision": "Potion of Lava Vision",
+  "netherdepthsupgrade:long_lava_vision": "Potion of Lava Vision",
+  "netherdepthsupgrade:obsidianfish_long_resistance": "Potion of the Steadfast Treader",
+  "netherdepthsupgrade:obsidianfish_resistance": "Potion of the Steadfast Treader",
+  "netherdepthsupgrade:obsidianfish_strong_resistance": "Potion of the Steadfast Treader"
  },
  "data": {
   "advancements": [
@@ -522,5 +533,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

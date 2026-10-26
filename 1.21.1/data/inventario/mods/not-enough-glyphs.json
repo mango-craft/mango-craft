@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Not Enough Glyphs",
  "file": "not_enough_glyphs-1.21.1-4.6.1.jar",
@@ -80,6 +80,15 @@
   "sauce:source_jar_core": "Source Jar Core",
   "sauce:source_jar_frame": "Source Jar Frame",
   "sauce:source_jar_valve": "Source Jar Valve"
+ },
+ "effect_descriptions": {
+  "not_enough_glyphs:grow": "Increases the entity's size.",
+  "not_enough_glyphs:shrink": "Shrinks down the entity.",
+  "not_enough_glyphs:stuffed": "Too much food! Increases the entity's size and makes them more vulnerable to crush. Might explode if crushed when under 1/4 health",
+  "sauce:contingency": "When a specific event triggers, it will cast the spell on the entity.",
+  "sauce:mana_cost_down": "Decreases mana cost of spells.",
+  "sauce:rage": "Causes the target to attack nearby entities, even allies, and deal more melee damage.",
+  "sauce:spell_crit_up": "Increases critical strike chance of spells."
  },
  "effects": {
   "not_enough_glyphs:grow": "Growing",
@@ -336,5 +345,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

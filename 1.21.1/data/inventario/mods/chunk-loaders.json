@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Chunk Loaders",
  "file": "chunkloaders-1.2.9-neoforge-mc1.21.jar",
@@ -96,5 +96,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

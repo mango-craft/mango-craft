@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Lithostitched",
  "file": "lithostitched-1.8.1-neoforge-21.1.jar",
@@ -216,5 +216,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

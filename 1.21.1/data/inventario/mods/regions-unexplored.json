@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Regions Unexplored",
  "file": "regions-unexplored-0.6.2-neoforge-21.1.jar",
@@ -8178,5 +8178,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

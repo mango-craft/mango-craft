@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Truly Modular: Modular Item API (Miapi)",
  "file": "Truly-Modular-miapi-neoforge-2.3.9-1.21.jar",
@@ -32,7 +32,8 @@
      "range": "[${architectury_version},)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "nucleus_codec",
@@ -84,7 +85,8 @@
      "range": "[${architectury_version},)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "nucleus_config",
@@ -136,7 +138,8 @@
      "range": "[${architectury_version},)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "nucleus",
@@ -188,7 +191,8 @@
      "range": "[${architectury_version},)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "nucleus_facet",
@@ -240,7 +244,8 @@
      "range": "[${architectury_version},)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   },
   {
    "modid": "nucleus_pose",
@@ -990,5 +995,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

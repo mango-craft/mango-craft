@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "My Nether's Delight",
  "file": "MyNethersDelight-1.21.1-1.10.4.1.jar",
@@ -115,6 +115,10 @@
   "mynethersdelight:warped_fungus_colony": "Warped Fungus Colony",
   "mynethersdelight:waxed_hoglin_trophy": "Waxed Hoglin Trophy",
   "mynethersdelight:zoglin_trophy": "Zoglin Trophy"
+ },
+ "effect_descriptions": {
+  "mynethersdelight:b_pungent": "Induces combustion upon heat exposure; flames are automatically doused when at a safe distance.",
+  "mynethersdelight:g_pungent": "Provides natural regeneration while exposed to heat."
  },
  "effects": {
   "mynethersdelight:b_pungent": "Caustic Pungency",
@@ -1186,5 +1190,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

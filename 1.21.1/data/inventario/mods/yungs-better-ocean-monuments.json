@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "YUNG's Better Ocean Monuments",
  "file": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
@@ -163,5 +163,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "ShatterLib | OctoLib",
  "file": "OctoLib-NEOFORGE-0.6.2+1.21.jar",
@@ -48,5 +48,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

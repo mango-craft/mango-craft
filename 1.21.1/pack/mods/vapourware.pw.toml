@@ -1,0 +1,13 @@
+name = "VapourWare"
+filename = "vapourware-1.21.1-0.2.37.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6a57mSpP/versions/DxUxE3Ka/vapourware-1.21.1-0.2.37.jar"
+hash-format = "sha512"
+hash = "9f9ef4cafb5c357714c7f3864051cff5092100ff16c95e6bbe296a35ef87cc6bf75da802b49c654fb8cbaadbddb78968b442f2bfe9b1137b6837ee45a7842515"
+
+[update]
+[update.modrinth]
+mod-id = "6a57mSpP"
+version = "DxUxE3Ka"

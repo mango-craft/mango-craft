@@ -36,7 +36,7 @@ USER_AGENT = "mango-craft-inventory (github.com/mango-craft/mango-craft)"
 MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/{mc}-summary/"
 NEOFORGE_JAR = ("https://maven.neoforged.net/releases/net/neoforged/neoforge/"
                 "{v}/neoforge-{v}-universal.jar")
-FORMAT = 3  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB)
+FORMAT = 7  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti; 5: nomi veri delle pozioni; 6: descrizioni degli effetti di Corail Tombstone; 7: voci del vecchio mods.toml segnate "legacy")
 
 # Chiavi dei file di lingua -> campo dell'inventario
 LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
@@ -44,7 +44,53 @@ LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
               "biome": "biomes"}
 # Registri di Minecraft che finiscono nei campi principali invece che in "data"
 VANILLA_FIELDS = {"item": "items", "block": "blocks", "entity_type": "entities",
-                  "fluid": "fluids", "mob_effect": "effects", "worldgen/biome": "biomes"}
+                  "fluid": "fluids", "mob_effect": "effects", "worldgen/biome": "biomes",
+                  "potion": "potions"}
+# Pozioni delle mod (0.7.2, amuleti di Apotheosis). La traduzione è `item.minecraft.potion.effect.<nome>`: <nome> è il nome
+# dato alla pozione nel codice, se c'è (le varianti lunghe e forti lo condividono: `flying` per `long_flying`; Apothic
+# Attributes usa `minecraft.resistance` per `resistance`), altrimenti il nome del registro (Ars Nouveau:
+# `blasting_potion_long`; Bountiful Fares: `bountifulfares.acidic`, con il punto). Il nome vero si cerca tra le costanti di
+# testo delle classi del jar che usano `Potion` (vedi potion_ids). Il namespace è quello del file di lingua. Le descrizioni
+# degli effetti (`effect.<ns>.<nome>.desc[ription]`, o `description.effect.<ns>.<nome>` in Corail Tombstone) servono a
+# classificarli.
+POTION_KEY = ("item", "minecraft", "potion", "effect")
+POTION_CLASS = b"net/minecraft/world/item/alchemy/Potion"
+POTION_VARIANTS = ("", "long_", "strong_", "extra_long_")
+
+
+def _utf8_const(s: str) -> bytes:
+    """Costante di testo come sta nel file .class (tag 1, lunghezza su due byte, testo)."""
+    b = s.encode("utf-8")
+    return b"\x01" + len(b).to_bytes(2, "big") + b
+
+
+def potion_ids(name: str, consts: bytes) -> tuple[list[str], bool]:
+    """Nomi del registro per il nome di traduzione `name`, cercati nelle costanti `consts` (le classi che usano `Potion`).
+    Restituisce (nomi, dedotto): dedotto = il nome non è scritto per intero nelle classi.
+    1. <nome> o le sue varianti (long_, strong_, extra_long_) scritti per intero;
+    2. con il punto, la parte dopo il punto (`minecraft.resistance` -> resistance, long_resistance…) o una costante con cui
+       finisce (`minecraft.mining_fatigue` -> fatigue, long_fatigue…, se c'è anche la variante lunga);
+    3. senza punto, il nome stesso, se un suo pezzo è una costante (Ars Nouveau: `mana_regen_potion_long` da `mana_regen`
+       + "_potion" + "_long"): la pozione non ha un nome proprio e la traduzione usa quello del registro."""
+    def written(base: str) -> list[str]:
+        return [v + base for v in POTION_VARIANTS if _utf8_const(v + base) in consts]
+    if found := written(name):
+        return found, False
+    if "." in name:
+        tail = name.rsplit(".", 1)[1]
+        if found := written(tail):
+            return found, False
+        parts = tail.split("_")
+        for i in range(1, len(parts)):
+            base = "_".join(parts[i:])
+            if _utf8_const(base) in consts and _utf8_const("long_" + base) in consts:
+                return written(base), False
+        return [], False
+    parts = name.split("_")
+    pieces = {"_".join(parts[i:j]) for i in range(len(parts)) for j in range(i + 1, len(parts) + 1)} - {"potion"}
+    if any(len(s) >= 4 and _utf8_const(s) in consts for s in pieces):
+        return [name], True
+    return [], False
 # Categorie di dati di cui si tiene solo il numero (sono tante e non servono per nome)
 COUNT_ONLY = {"advancement"}
 # Registri di Minecraft che non servono ai controlli (risorse grafiche e sonore)
@@ -115,6 +161,7 @@ class Inv:
         self.market: list[dict] = []          # voci del mercato di Farming for Blockheads (ricette farmingforblockheads:market)
         self.market_presets: list[dict] = []  # listini del mercato (data/<ns>/market_presets/*.json)
         self.nested: list[str] = []
+        self.potions_deduced: list[str] = []  # pozioni il cui nome è dedotto dalla traduzione (da confermare in gioco)
         self.problems: list[str] = []
 
     def to_json(self) -> dict:
@@ -130,11 +177,12 @@ class Inv:
             "botanypots": sorted(self.botanypots, key=lambda r: r["id"]),
             "market": sorted(self.market, key=lambda r: r["id"]),
             "market_presets": sorted(self.market_presets, key=lambda r: r["id"]),
+            "potions_deduced": sorted(self.potions_deduced),
             "problems": self.problems,
         }
 
 
-def parse_mods_toml(text: str, manifest_version: str | None, where: str) -> tuple[list, list]:
+def parse_mods_toml(text: str, manifest_version: str | None, where: str, legacy: bool = False) -> tuple[list, list]:
     try:
         d = tomllib.loads(text)
     except tomllib.TOMLDecodeError as e:
@@ -147,6 +195,10 @@ def parse_mods_toml(text: str, manifest_version: str | None, where: str) -> tupl
             version = manifest_version
         entry = {"modid": m.get("modId"), "name": m.get("displayName"), "version": version,
                  "jar": where, "deps": []}
+        if legacy:
+            # META-INF/mods.toml: il formato di Forge e di NeoForge fino alla 1.20.4. NeoForge 1.21.1 legge solo
+            # neoforge.mods.toml: queste voci (spesso con versione e dipendenze vecchie) non le carica (26/10/2026)
+            entry["legacy"] = True
         for dep in deps.get(m.get("modId"), []) or []:
             kind = dep.get("type")
             if kind is None:
@@ -169,6 +221,7 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
         m = re.search(r"^Implementation-Version:\s*(\S+)", z.read("META-INF/MANIFEST.MF").decode("utf-8", "replace"), re.M)
         manifest_version = m.group(1) if m else None
     item_models, blockstates = set(), set()
+    potion_names: dict[tuple[str, str], str] = {}  # (namespace del file di lingua, nome di traduzione) -> nome tradotto
     # Jar incorporati: quelli elencati in META-INF/jarjar/metadata.json (possono stare
     # ovunque, es. META-INF/jars/ con Architectury) più ogni .jar dentro META-INF/
     nested = {n for n in names if n.startswith("META-INF/") and n.endswith(".jar")}
@@ -187,7 +240,8 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                 analyze_jar(z.read(n), inv, n.rsplit("/", 1)[1], depth + 1)
             continue
         if n in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
-            mods, probs = parse_mods_toml(z.read(n).decode("utf-8", "replace"), manifest_version, where)
+            mods, probs = parse_mods_toml(z.read(n).decode("utf-8", "replace"), manifest_version, where,
+                                          legacy=n == "META-INF/mods.toml")
             inv.mods.extend(mods)
             inv.problems.extend(probs)
             continue
@@ -203,8 +257,16 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                     continue
                 for key, val in lang.items():
                     kp = key.split(".")
-                    if len(kp) == 3 and kp[0] in LANG_KINDS and isinstance(val, str):
+                    if not isinstance(val, str):
+                        continue
+                    if len(kp) == 3 and kp[0] in LANG_KINDS:
                         inv.names[LANG_KINDS[kp[0]]][f"{kp[1]}:{kp[2]}"] = val
+                    elif len(kp) in (5, 6) and tuple(kp[:4]) == POTION_KEY and ns != "minecraft":
+                        potion_names.setdefault((ns, ".".join(kp[4:])), val)
+                    elif len(kp) == 4 and kp[0] == "effect" and kp[3] in ("desc", "description"):
+                        inv.names["effect_descriptions"][f"{kp[1]}:{kp[2]}"] = val[:300]
+                    elif len(kp) == 4 and kp[:2] == ["description", "effect"]:  # Corail Tombstone
+                        inv.names["effect_descriptions"].setdefault(f"{kp[2]}:{kp[3]}", val[:300])
             elif len(parts) == 4 and parts[2] == "blockstates" and n.endswith(".json"):
                 blockstates.add(f"{ns}:{parts[3][:-5]}")
             elif len(parts) == 5 and parts[2] == "models" and parts[3] == "item" and n.endswith(".json"):
@@ -251,6 +313,16 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                     inv.market.append({"id": rid, "item": res.get("item") or res.get("id"),
                                        "count": int(res.get("count", 1)), "category": d.get("category"),
                                        "preset": d.get("preset"), "item_exists": conds})
+    if potion_names:
+        consts = b"".join(c for c in (z.read(n) for n in names if n.endswith(".class")) if POTION_CLASS in c)
+        for (ns, name), val in sorted(potion_names.items()):
+            found, deduced = potion_ids(name, consts)
+            for p in found:
+                inv.names["potions"][f"{ns}:{p}"] = val
+                if deduced:
+                    inv.potions_deduced.append(f"{ns}:{p}")
+            if not found:
+                inv.problems.append(f"pozione «{val}» ({ns}, {name}): nome del registro non trovato nelle classi")
     for rid in item_models:
         inv.names["items"].setdefault(rid, "")
     for rid in blockstates:

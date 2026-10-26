@@ -1,0 +1,37 @@
+# Deep research (25/10/2026): CC:C Bridge, Create: CC Better Recipes, Create: CC Total Logistics
+
+Raw report of a research agent (sources read, nothing run). Pack: CC: Tweaked 1.120.2, Create 6.0.10, NeoForge 21.1.259, Advanced Peripherals 0.8.2a. Spot-checked by the main session: Create Display Link peripheral methods (write-only), CC:C Bridge `TargetBlockPeripheral` (`resize`, `getLine`, `dump`, `getSize`), Total Logistics author statement, issue #131 comments.
+
+## Correction
+Advanced Peripherals 0.8.2a (1.21.1) has **no Redstone Integrator**: config block commented out (`PeripheralsConfig.java` L208-212), not registered in `APBlocks.java` (15 blocks: chat_box, distance_detector, environment_detector, geo_scanner, player_detector, energy_detector, fluid_detector, gas_detector, block_reader, nbt_storage, inventory_manager, colony_integrator, me_bridge, rs_bridge, smart_rail). Replacement: CC: Tweaked's own **Redstone Relay** (`computercraft:redstone_relay`, peripheral `redstone_relay`, since CC:T 1.114.0).
+
+## 1. CC:C Bridge 1.7.3 (Apache-2.0)
+Source: tag v1.7.3-1.21.1 (`common/CCCRegistries.java` L48-72): 5 blocks + items, a creative tab, 2 sounds (`cage_lock`, `cage_unlock`), 1 Create display source, 1 Create display target.
+- `cccbridge:source_block` (peripheral `create_source`): Create display source `cccbridge:source_block_display_source` ("Given data from computer"); the computer writes a small text screen (`write`, `clear`, `setCursorPos`, `getLine`…, no colours); a Display Link carries it to Flap Display, Nixie Tube, sign, lectern every 20 ticks. Event `monitor_resize`. **Redundant**: Create 6.0.10's own Display Link peripheral (`Create_DisplayLink`: `setCursorPos`, `write`, `writeBytes`, `clearLine`, `clear`, `update`, `isColor`) and its `computer` display source.
+- `cccbridge:target_block` (peripheral `create_target`) — **genuinely extra**: Create display target `cccbridge:target_block_display_target`, like a Flap Display (32×8 default). A Display Link sends text from any Create display source (stress, speed, fill level, item/fluid counts and lists, throughput, train/station status, boiler, stopwatch, scoreboard…) and the computer reads it: `getLine(y)`, `dump()`, `getSize()`, `resize(w,h)`. Create has no native way to read display-source text into a computer. Source and Target convert 1:1.
+- `cccbridge:redrouter_block` (peripheral `redrouter`): CC redstone API over a cable (`setOutput`, `getOutput`, `getInput`, analog variants), event `redstone`; decorative face. **Redundant** with CC:T Redstone Relay.
+- `cccbridge:scroller_block` "Scroller Pane" (peripheral `scroller`) — extra: player-facing number dial with Create's scroll-value UI, 0..15 default, `setLimit` 1..200, optional negative range (`toggleMinusSpectrum`); `getValue`, `setValue`, `isLocked`, `setLock`, `getLimit`, `hasMinusSpectrum`; event `scroller_changed(value)`; peripheral only from the back face (`ScrollerBlockEntity.java` L38).
+- `cccbridge:animatronic_block` (peripheral `animatronic`) — decorative puppet: `setFace` (normal/happy/question/sad), `setTransition` (rusty/none/linear), `setHead/Body/LeftArm/RightArmRot(x,y,z)`, `push()`, getters. Train-conductor behaviour commented out on 1.21.1. Normal block-entity renderer, not Flywheel.
+- Other: painting variant `cccbridge:funny_redrouters` (2×1) in `#minecraft:placeable`; 2 advancements ("EMOTIONAL DAMAGE", "Five Nights in Minecraft"); ROM autorun adds tips to the MOTD; no world generation, loot, villagers, mixins. Languages en/de/pl/pt_br/ru (no Italian).
+- Recipes: Source ×2 = 4 `create:cut_asurine`, 3 glass panes, 1 `create:rose_quartz_lamp`, 1 redstone; RedRouter = 4 andesite alloy, 4 redstone torches, 1 `computercraft:monitor_normal`; Scroller = cogwheel, 2 cut asurine, precision mechanism, redstone; Animatronic = monitor, 2 `create:brass_hand`, leather chestplate, redstone.
+- Config: client only via Kaleido (bundled): `flickering = true`; file probably `config/cccbridge/client.toml` (not verified).
+- Constraints: NeoForge [21.1.219,), Create [6.0.10,7.0.0), CC:T [1.119.0,). Uses Create internals (`ScrollValueBehaviour`, `DisplayBoardTarget`, `SmartBlockEntity`): a Create 6.1 could break it. Optional **McQoy** (EUPL-1.2): auto config screens for Kaleido; needs YACL (not in pack): not needed.
+- Maintenance: 1.7.1 (2025-07-10), 1.7.2 (2025-07-11), 1.7.3 (2026-06-11); single maintainer; 9 open issues. **#131** (opened 2026-08-27, NeoForge 21.1.248): "the Target Block can, for whatever reason, no longer read the data sent to it by Display Links from Create correctly" (also train station info); collaborator SammyForReal: the Target Block "really needs" an overhaul; another user confirms on 2026-10-07. Open, no fix. Possible cause in code (not verified): blocks saved before 1.7.3 read back as 0×0 (`TargetBlockEntity.java` L52-53); `resize()` as workaround.
+- Code-level bug (not tested): list of attached computers shared by every CC:C Bridge peripheral (`TweakedPeripheral.java` L18, field on an interface) → events to wrong computers or twice.
+- Verdict: 🟡 (🟢 for control panels if the Target Block works).
+
+## 2. Create: CC Better Recipes 1.2.0 (MIT, MCreator, no public source)
+- Recipes not verified (jar and images on Modrinth CDN blocked from here).
+- Adds `ccbr:basic_integrated_circuit`, `ccbr:integrated_circuit`, `ccbr:lapis_sheet`; tags `#ccbr:basic_integrated_circuits`, `#ccbr:advanced_integrated_circuits`, `#ccbr:integrated_circuits`, `#c:plates/lapis`; 3 own recipes (crafting, mechanical crafting, pressing). Inspired by Create 0.3.1 (lapis sheet by pressing; integrated circuit in the mechanical crafter).
+- Overrides 20 recipes in `computercraft:recipe/`: cable, computer normal/advanced/advanced_upgrade/command, turtle normal/advanced/advanced_upgrade, pocket normal/advanced/advanced_upgrade, wired modem, wireless normal/advanced (with `create:transmitter`), disk drive, monitor normal/advanced, printer, redstone relay, speaker.
+- Effect: CC sits on the Create progression (press; mechanical crafter); AP blocks that use CC parts get dearer too.
+- Constraints: NeoForge [21.1.92,), Create and CC:T any. 1.2.1 (2026-08-18, alpha) marked broken (issue #13); bug #10: lapis sheet not in `#c:plates`. Tracker github.com/the-can-of-soup/soup_modrinth_issues.
+- Verdict: 🟡 balance choice; alternative: our own recipes in `matteo_tweaks` with Create items.
+
+## 3. Create: CC Total Logistics 0.3.6 (LGPL-3.0-or-later)
+- Source (GitLab) and wiki not reachable. From Modrinth changelogs: Stock Ticker (`itemDetails`, `inventorySize`, `countConnectedStockLinks`, `stockLinkDetails`), Redstone Requester (`request`, `requestCraft`), Frogport/Postbox addresses and package details, Clipboard `readPage()`.
+- Native in Create 6.0.10 (added in 6.0.7): `Create_StockTicker` (`stock`, `getStockItemDetail`, `requestFiltered`, `list`, `getItemDetail`), `Create_RedstoneRequester` (`request`, `setRequest`, `setCraftingRequest`…), Frogport/Postbox (addresses, configuration, package events), Packager/Repackager, Table Cloth, Station, Signal, Display Link, gauges.
+- The author: "As of Create 6.0.8, I recommend using the built in Create peripherals instead of using this mod." (Modrinth body, verified.)
+- Extras only: Clipboard reading, stock-link capacity statistics. Risk: two peripherals for the same block (Create registers its own).
+- Create [6.0.4,6.1.0); Kotlin for Forge; last release 2025-06-14.
+- Verdict: 🔴.

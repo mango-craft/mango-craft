@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Ender's Delight",
  "file": "endersdelight-1.3.1.jar",
@@ -53,6 +53,9 @@
   "endersdelight:stuffed_shulker": "Stuffed Shulker",
   "endersdelight:stuffed_shulker_block": "Stuffed Shulker",
   "endersdelight:voidpepper_bush": "Void Pepper"
+ },
+ "effect_descriptions": {
+  "endersdelight:phasing": "Imitates Endermen. Water does damage and teleports to someplace nearby after taking any damage."
  },
  "effects": {
   "endersdelight:phasing": "Ender Phasing"
@@ -280,5 +283,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

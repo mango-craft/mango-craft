@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Aures - Farmers Structures",
  "file": "FarmersStructures-1.0.2-1.21.1_neoforge.jar",
@@ -454,5 +454,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

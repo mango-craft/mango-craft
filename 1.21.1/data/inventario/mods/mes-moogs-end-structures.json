@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Moog's End Structures (MES)",
  "file": "MoogsEndStructures-universal-1.21-2.1.1.jar",
@@ -34,7 +34,8 @@
      "range": "[1.1.0,)",
      "side": "BOTH"
     }
-   ]
+   ],
+   "legacy": true
   }
  ],
  "nested": [],
@@ -307,5 +308,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

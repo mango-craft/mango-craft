@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Botany Pots Tiers",
  "file": "botanypotstiers-neoforge-1.21.1-7.0.11.jar",
@@ -4430,5 +4430,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

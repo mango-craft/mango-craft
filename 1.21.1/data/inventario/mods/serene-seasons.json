@@ -1,5 +1,5 @@
 {
- "format": 3,
+ "format": 7,
  "status": "ok",
  "name": "Serene Seasons",
  "file": "SereneSeasons-neoforge-1.21.1-10.1.0.9.jar",
@@ -317,5 +317,6 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "potions_deduced": [],
  "problems": []
 }

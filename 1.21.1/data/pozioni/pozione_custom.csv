@@ -1,0 +1,6 @@
+pozione_id,varianti,amuleto,motivo
+apothic_attributes:flying,tutte,0,"volo creativo (attributo creative_flight): permanente salta elitre, Paragliders e viaggi (Matteo, 24/10/2026)"
+reactive:no_gravity,tutte,0,"toglie la gravità: un altro modo di volare (Matteo, 24/10/2026)"
+bountifulfares:bountifulfares.acidic,tutte,0,"alza di un livello tutti gli altri effetti: con altri amuleti li potenzia tutti (Matteo, 24/10/2026)"
+unusualend:serenity_potion,tutte,0,"protezione automatica da cadute, fame ed effetti negativi, rinnovata dall'amuleto per sempre (Matteo, 24/10/2026)"
+bountifulfares:bountifulfares.stupor,tutte,0,"toglie e blocca tutti gli effetti: immunità permanente anche ai debuff dei boss (Matteo, 24/10/2026)"

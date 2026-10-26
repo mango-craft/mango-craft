@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Base dati dei vasi di Botany Pots: terreni, colture, tag e le nostre scelte di rarità, in SQLite.
+"""Base dati dei vasi di Botany Pots (terreni, colture, tag e le nostre scelte di rarità), del mercato di Farming for
+Blockheads e delle pozioni, in SQLite.
 
 Uso:  python3 scripts/botanypots_db.py <cartella versione> refresh
       python3 scripts/botanypots_db.py <cartella versione> query "SELECT ..."
@@ -14,7 +15,7 @@ tutti i vincoli e i controlli passano. Modello, fatti verificati e query: 1.21.1
 Fonti (si leggono direttamente, niente copie intermedie):
 - <versione>/data/inventario/: ricette e tag di ogni jar (generato dai workflow), più minecraft.json e neoforge.json;
 - <versione>/pack/config/paxi/datapacks/matteo_tweaks/data/: le nostre ricette e i nostri tag;
-- <versione>/data/vasi/*.csv: le regole nostre, scritte a mano.
+- <versione>/data/vasi/*.csv, mercato/*.csv, pozioni/*.csv e rarita.csv: le regole nostre, scritte a mano.
 Il file <versione>/data/vasi/vasi.sqlite non va nel repository: si rigenera.
 
 Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
@@ -27,6 +28,9 @@ Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
   scelte        RARITA_POTS_SETTINGS, TERRENO_RARITA, TERRENO_TAG_CUSTOM, TERRENO_CUSTOM, COLTURA_CUSTOM, COLTURA_TAG_CUSTOM,
                 COLTURA_RACCOLTO_CUSTOM   (le regole nostre, lette anche da scripts/botanypots_genera.py)
                 POTS_COMPATIBILITA   (terreno × coltura, dai file vincenti, con il tag che fa da ponte)
+  mercato       MERCATO_* (0.6.2, scripts/mercato_genera.py)
+  pozioni       EFFETTO, POZIONE (censimento dall'inventario), POZIONE_CUSTOM (regole), viste POZIONE_REGOLA e
+                POZIONE_LISTA_NERA (0.7.2, scripts/pozioni_genera.py)
 
 Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
 - il vaso cerca il file di terreno con l'oggetto nello slot del terreno e il file di coltura con l'oggetto nello
@@ -91,7 +95,8 @@ CREATE TABLE MOD_ID (
   modid    TEXT NOT NULL,               -- id dichiarato nel jar (neoforge.mods.toml); un jar può portarne più d'uno
   slug     TEXT NOT NULL REFERENCES MOD,
   nome     TEXT,
-  versione TEXT,
+  versione TEXT,                        -- quella di neoforge.mods.toml (il vecchio mods.toml solo se manca)
+  annidata INTEGER NOT NULL,            -- 1: dichiarato da un jar incorporato in quello della mod (jar-in-jar)
   PRIMARY KEY (modid, slug)
 );
 CREATE TABLE MOD_NAMESPACE (
@@ -412,11 +417,138 @@ CREATE VIEW MERCATO_PIANO_PRESET AS
   FROM MERCATO_PRESET_CUSTOM c
   LEFT JOIN MERCATO_PREZZO z ON z.origine = c.origine AND z.classe = c.classe
   LEFT JOIN MERCATO_PRESET p ON p.preset_id = c.preset_id AND p.strato = 'originale';
+
+-- ================================================================ pozioni ed effetti (0.7.2)
+-- Due fonti: l'inventario (nomi, traduzioni, descrizioni: dai file dei jar, lo rifà il workflow) e il dump del gioco
+-- (<versione>/data/dump/, scritto da /mango_dump di KubeJS e importato con scripts/dump_importa.py: categoria degli
+-- effetti, effetti delle pozioni, alambicco, cibi). Senza dump le colonne del gioco restano vuote (NULL).
+-- Tema 1.21.1/theme-knowledge/pozioni.md.
+CREATE TABLE DUMP_MOD (                  -- le mod caricate nel gioco quando è stato fatto il dump
+  modid    TEXT PRIMARY KEY,
+  versione TEXT NOT NULL
+);
+CREATE TABLE EFFETTO (
+  effetto_id  TEXT PRIMARY KEY,          -- es. apothic_attributes:flying
+  slug        TEXT NOT NULL REFERENCES MOD,
+  nome        TEXT,                      -- nome inglese (il gioco base non ce l'ha nell'inventario)
+  descrizione TEXT,                      -- descrizione inglese, se la mod la dà
+  categoria   TEXT CHECK (categoria IN ('beneficial', 'harmful', 'neutral')),  -- dal gioco (MobEffectCategory)
+  istantaneo  INTEGER CHECK (istantaneo IN (0, 1)),                            -- dal gioco (cura, danno istantanei…)
+  colore      INTEGER,                   -- dal gioco (colore delle particelle, RGB)
+  inventario  INTEGER NOT NULL CHECK (inventario IN (0, 1)),  -- 1 = trovato nei file dei jar
+  gioco       INTEGER CHECK (gioco IN (0, 1))                 -- 1 = nel dump; NULL = nessun dump
+);
+CREATE TABLE POZIONE (
+  pozione_id TEXT PRIMARY KEY,           -- es. apothic_attributes:long_flying
+  slug       TEXT NOT NULL REFERENCES MOD,
+  nome       TEXT,                       -- nome inglese (il gioco base non ce l'ha nell'inventario)
+  famiglia   TEXT NOT NULL,              -- il nome senza «long», «strong», «extra»: le varianti della stessa pozione
+  dedotta    INTEGER NOT NULL CHECK (dedotta IN (0, 1)),  -- 1 = nome del registro dedotto dalla traduzione nell'inventario
+  traduzione TEXT,                       -- dal gioco: il nome usato per la traduzione (Potion.getName)
+  inventario INTEGER NOT NULL CHECK (inventario IN (0, 1)),
+  gioco      INTEGER CHECK (gioco IN (0, 1))
+);
+CREATE TABLE POZIONE_EFFETTO (           -- dal gioco: gli effetti di ogni pozione
+  pozione_id TEXT NOT NULL REFERENCES POZIONE,
+  ordine     INTEGER NOT NULL,
+  effetto_id TEXT NOT NULL REFERENCES EFFETTO,
+  durata     INTEGER NOT NULL,           -- tick (20 = 1 secondo; 1 per gli istantanei)
+  livello    INTEGER NOT NULL,           -- 0 = I, 1 = II…
+  PRIMARY KEY (pozione_id, ordine)
+);
+CREATE TABLE OGGETTO_CIBO (              -- dal gioco: gli oggetti che si mangiano o si bevono (componente food)
+  oggetto_id  TEXT PRIMARY KEY REFERENCES OGGETTO,
+  nutrizione  INTEGER NOT NULL,
+  saturazione REAL NOT NULL,
+  sempre      INTEGER NOT NULL CHECK (sempre IN (0, 1)),  -- si mangia anche senza fame
+  secondi     REAL NOT NULL
+);
+CREATE TABLE OGGETTO_EFFETTO (           -- dal gioco: effetti dei cibi e degli oggetti con una pozione dentro
+  oggetto_id  TEXT NOT NULL REFERENCES OGGETTO,
+  origine     TEXT NOT NULL CHECK (origine IN ('cibo', 'pozione')),
+  ordine      INTEGER NOT NULL,
+  effetto_id  TEXT NOT NULL REFERENCES EFFETTO,
+  durata      INTEGER NOT NULL,
+  livello     INTEGER NOT NULL,
+  probabilita REAL NOT NULL,             -- 1 = sempre
+  PRIMARY KEY (oggetto_id, origine, ordine)
+);
+CREATE TABLE ALAMBICCO (                 -- dal gioco: le ricette dell'alambicco
+  riga              INTEGER PRIMARY KEY,
+  fonte             TEXT NOT NULL CHECK (fonte IN ('miscela', 'ricetta')),  -- provata davvero / elencata da NeoForge
+  ingresso_id       TEXT NOT NULL REFERENCES OGGETTO,  -- nello slot della bottiglia
+  ingresso_pozione  TEXT REFERENCES POZIONE,
+  ingrediente_id    TEXT NOT NULL REFERENCES OGGETTO,  -- nello slot in alto
+  risultato_id      TEXT NOT NULL REFERENCES OGGETTO,
+  risultato_pozione TEXT REFERENCES POZIONE
+);
+CREATE TABLE ALAMBICCO_CLASSE (          -- dal gioco: le ricette NeoForge per classe
+  classe     TEXT PRIMARY KEY,
+  ricette    INTEGER NOT NULL,
+  elencabili INTEGER NOT NULL            -- quelle con le combinazioni note: elencate (BrewingRecipe) o trovate provando
+);
+-- Le scelte nostre (CSV <versione>/data/pozioni/pozione_custom.csv): `varianti` = 'tutte' vale per tutta la famiglia
+-- della pozione indicata, 'questa' solo per lei (e vince sulla famiglia). amuleto = 0: lista nera degli amuleti di Apotheosis.
+CREATE TABLE POZIONE_CUSTOM (
+  pozione_id TEXT PRIMARY KEY REFERENCES POZIONE,
+  varianti   TEXT NOT NULL CHECK (varianti IN ('tutte', 'questa')),
+  amuleto    INTEGER NOT NULL CHECK (amuleto IN (0, 1)),
+  motivo     TEXT NOT NULL
+);
+-- Per ogni pozione la regola che vale (pozione > famiglia; senza regola l'amuleto si può fare).
+CREATE VIEW POZIONE_REGOLA AS
+  SELECT p.pozione_id, p.slug, p.nome, p.famiglia, p.dedotta,
+         COALESCE(q.amuleto, f.amuleto, 1) AS amuleto,
+         COALESCE(q.motivo, f.motivo) AS motivo,
+         COALESCE(q.pozione_id, f.pozione_id) AS regola
+  FROM POZIONE p
+  LEFT JOIN POZIONE_CUSTOM q ON q.pozione_id = p.pozione_id AND q.varianti = 'questa'
+  LEFT JOIN (SELECT c.pozione_id, c.amuleto, c.motivo, x.famiglia
+             FROM POZIONE_CUSTOM c JOIN POZIONE x ON x.pozione_id = c.pozione_id
+             WHERE c.varianti = 'tutte') f ON f.famiglia = p.famiglia;
+-- Ciò che scripts/pozioni_genera.py scrive nell'etichetta apotheosis:potion_charm_blacklist.
+CREATE VIEW POZIONE_LISTA_NERA AS
+  SELECT r.pozione_id, r.slug, r.nome, r.famiglia, r.dedotta, p.gioco, r.motivo
+  FROM POZIONE_REGOLA r JOIN POZIONE p ON p.pozione_id = r.pozione_id WHERE r.amuleto = 0;
+-- Per ogni pozione: gli effetti, e se fa un amuleto di Apotheosis (PotionCharmItem.isValidPotion: un solo effetto,
+-- non istantaneo, fuori dalla lista nera). NULL = la pozione non è nel dump (o non c'è dump): non si sa.
+CREATE VIEW POZIONE_AMULETO AS
+  SELECT p.pozione_id, p.slug, p.nome, r.amuleto AS regola,
+         count(pe.effetto_id) AS effetti,
+         group_concat(pe.effetto_id || ' ' || (pe.livello + 1) || ' ' || (pe.durata / 20) || 's', ', ') AS dettaglio,
+         CASE WHEN p.gioco IS NOT 1 THEN NULL
+              WHEN count(pe.effetto_id) = 1 AND max(e.istantaneo) = 0 THEN 1 ELSE 0 END AS valida,
+         CASE WHEN p.gioco IS NOT 1 THEN NULL
+              WHEN count(pe.effetto_id) = 1 AND max(e.istantaneo) = 0 AND r.amuleto = 1 THEN 1 ELSE 0 END AS amuleto_possibile
+  FROM POZIONE p
+  JOIN POZIONE_REGOLA r ON r.pozione_id = p.pozione_id
+  LEFT JOIN POZIONE_EFFETTO pe ON pe.pozione_id = p.pozione_id
+  LEFT JOIN EFFETTO e ON e.effetto_id = pe.effetto_id
+  GROUP BY p.pozione_id;
+-- Le mod dell'inventario che nel dump mancano o hanno un'altra versione: se ce ne sono, il dump è vecchio.
+-- Solo le mod dei jar del pack: delle librerie incorporate in più jar NeoForge carica una copia sola, e il confronto
+-- non direbbe niente. (Le versioni scritte come ${file.jarVersion} nell'inventario non si confrontano.)
+CREATE VIEW DUMP_MOD_DIVERSA AS
+  SELECT m.modid, m.versione AS inventario, d.versione AS gioco
+  FROM (SELECT modid, max(versione) AS versione FROM MOD_ID WHERE annidata = 0 GROUP BY modid) m
+  LEFT JOIN DUMP_MOD d ON d.modid = m.modid
+  WHERE EXISTS (SELECT 1 FROM DUMP_MOD)
+    AND (d.versione IS NULL OR (d.versione <> m.versione AND m.versione NOT LIKE '%$%'));
 """
 
 
 class ErroreDati(Exception):
     pass
+
+
+VARIANTI_POZIONE = {"long", "strong", "extra"}
+
+
+def famiglia_pozione(pid: str) -> str:
+    """La pozione senza le parole delle varianti: minecraft:long_swiftness, ars_nouveau:mana_regen_potion_long,
+    netherdepthsupgrade:glowdine_long_glowing, bountifulfares:bountifulfares.long_acidic → la stessa senza long/strong."""
+    ns, path = pid.split(":", 1)
+    return ns + ":" + ".".join("_".join(w for w in s.split("_") if w not in VARIANTI_POZIONE) for s in path.split("."))
 
 
 def _carica_json(p: Path):
@@ -432,6 +564,8 @@ class BotanyPotsDB:
         self.datapack = self.ver / DP
         self.vasi = self.ver / "data" / "vasi"
         self.mercato = self.ver / "data" / "mercato"
+        self.pozioni = self.ver / "data" / "pozioni"
+        self.dump = self.ver / "data" / "dump"
         self.rarita_csv = self.ver / "data" / "rarita.csv"
         self.config_ffb = self.ver / "pack" / "config" / "farmingforblockheads-common.toml"
         self.db_path = self.vasi / "vasi.sqlite"
@@ -444,7 +578,8 @@ class BotanyPotsDB:
             return False
         t = self.db_path.stat().st_mtime
         fonti = [*self.inventario.rglob("*.json"), *self.datapack.rglob("*.json"), *self.vasi.glob("*.csv"),
-                 *self.mercato.glob("*.csv"), *([self.rarita_csv] if self.rarita_csv.exists() else []),
+                 *self.mercato.glob("*.csv"), *self.pozioni.glob("*.csv"),
+                 *self.dump.glob("*.json"), *([self.rarita_csv] if self.rarita_csv.exists() else []),
                  *([self.config_ffb] if self.config_ffb.exists() else []), Path(__file__)]
         return all(f.stat().st_mtime <= t for f in fonti)
 
@@ -516,6 +651,25 @@ class BotanyPotsDB:
         ctl("le origini delle regole del mercato esistono in MERCATO_BASE", "SELECT count(*) FROM (SELECT origine FROM MERCATO_MOD_CUSTOM UNION SELECT origine FROM MERCATO_VOCE_CUSTOM WHERE origine IS NOT NULL UNION SELECT origine FROM MERCATO_PRESET_CUSTOM WHERE origine IS NOT NULL) o WHERE NOT EXISTS (SELECT 1 FROM MERCATO_BASE b WHERE b.origine=o.origine)")
         n = c.execute("SELECT count(*) FROM MERCATO_CANDIDATO WHERE escluso IS NULL AND (origine IS NULL OR classe IS NULL)").fetchone()[0]
         out.append(("avviso: candidati del mercato senza regola (non blocca)", True, f"trovati: {n}"))
+        # pozioni
+        ctl("una sola regola 'tutte' per famiglia di pozioni", "SELECT count(*) FROM (SELECT x.famiglia FROM POZIONE_CUSTOM c JOIN POZIONE x ON x.pozione_id=c.pozione_id WHERE c.varianti='tutte' GROUP BY x.famiglia HAVING count(*)>1)")
+        dump = c.execute("SELECT count(*) FROM DUMP_MOD").fetchone()[0] > 0
+        n = c.execute("SELECT count(*) FROM POZIONE_LISTA_NERA WHERE dedotta AND gioco IS NOT 1").fetchone()[0]
+        out.append(("avviso: pozioni in lista nera con il nome dedotto e non confermato dal gioco (non blocca)", True, f"trovate: {n}"))
+        if not dump:
+            out.append(("avviso: nessun dump del gioco in data/dump/ (non blocca)", True, "lanciare /mango_dump e scripts/dump_importa.py"))
+        else:
+            vecchio = c.execute("SELECT count(*) FROM DUMP_MOD_DIVERSA").fetchone()[0]
+            out.append(("avviso: mod con versione diversa tra inventario e dump: dump vecchio (non blocca)", True, f"trovate: {vecchio}"))
+            if not vecchio:
+                ctl("le pozioni in lista nera esistono nel gioco", "SELECT count(*) FROM POZIONE_LISTA_NERA WHERE gioco = 0")
+            for nome, sql in (("pozioni dell'inventario che il gioco non ha", "SELECT count(*) FROM POZIONE WHERE inventario AND gioco = 0"),
+                              ("pozioni del gioco che l'inventario non ha", "SELECT count(*) FROM POZIONE WHERE NOT inventario"),
+                              ("pozioni in lista nera che l'amuleto rifiuta comunque", "SELECT count(*) FROM POZIONE_AMULETO WHERE regola = 0 AND valida = 0")):
+                n = c.execute(sql).fetchone()[0]
+                out.append((f"avviso: {nome} (non blocca)", True, f"trovate: {n}"))
+            if self._saltati_dump:
+                out.append(("avviso: righe del dump saltate (non blocca)", True, ", ".join(f"{k} {v}" for k, v in sorted(self._saltati_dump.items()))))
         if self._coppie_attese is not None:
             n = c.execute("SELECT count(*) FROM (SELECT DISTINCT terreno_id, coltura_id FROM POTS_COMPATIBILITA)").fetchone()[0]
             out.append(("coppie terreno-coltura = conteggio diretto sui file", n == self._coppie_attese, f"vista {n}, diretto {self._coppie_attese}"))
@@ -552,6 +706,7 @@ class BotanyPotsDB:
         tag_voci = {"oggetti": defaultdict(list), "blocchi": defaultdict(list)}  # (fonte, voce, facoltativa)
         ricette, voci, preset, categorie = [], [], [], {}
         mod_righe, modid_righe = [], []
+        effetti, descrizioni, pozioni, dedotte = {}, {}, {}, set()  # id -> (slug, nome)
         ns_conta = defaultdict(Counter)  # namespace -> {slug: oggetti+blocchi}
         files = [self.inventario / "minecraft.json", self.inventario / "neoforge.json", *sorted((self.inventario / "mods").glob("*.json"))]
         for f in files:
@@ -574,10 +729,12 @@ class BotanyPotsDB:
             nome = d.get("name") or (dichiarate[0]["name"] if dichiarate else fonte)
             mod_righe.append((fonte, nome, d.get("file"), d.get("source") or "gioco", d.get("side")))
             visti = set()
-            for m in dichiarate:
-                if m["modid"] not in visti:  # l'inventario può ripetere un id
+            # l'inventario può ripetere un id (più copie incorporate, o il vecchio mods.toml accanto al nuovo):
+            # vince la voce di neoforge.mods.toml del jar della mod, l'unico file che NeoForge 1.21.1 legge
+            for m in sorted(dichiarate, key=lambda m: (bool(m.get("jar")), bool(m.get("legacy")))):
+                if m["modid"] not in visti:
                     visti.add(m["modid"])
-                    modid_righe.append((m["modid"], fonte, m.get("name"), m.get("version")))
+                    modid_righe.append((m["modid"], fonte, m.get("name"), m.get("version"), 1 if m.get("jar") else 0))
             for i in {*d.get("items", {}), *d.get("blocks", {})}:
                 ns_conta[i.split(":")[0]][fonte] += 1
             for amb, cat in (("oggetti", "tags/item"), ("blocchi", "tags/block")):
@@ -586,6 +743,13 @@ class BotanyPotsDB:
                         tag_voci[amb][nome].append((fonte, v.rstrip("?"), v.endswith("?")))
             for r in d.get("botanypots") or []:
                 ricette.append({**r, "_fonte": fonte, "_strato": "originale"})
+            for k, v in (d.get("effects") or {}).items():
+                effetti.setdefault(k, (fonte, v or None))
+            for k, v in (d.get("effect_descriptions") or {}).items():
+                descrizioni.setdefault(k, v)
+            for k, v in (d.get("potions") or {}).items():
+                pozioni.setdefault(k, (fonte, v or None))
+            dedotte |= set(d.get("potions_deduced") or [])
         if not items:
             raise ErroreDati(f"inventario vuoto o assente: {self.inventario}")
         # datapack: tag e ricette
@@ -636,9 +800,16 @@ class BotanyPotsDB:
             for pid in cfg.get("disabledDefaultPresets") or []:
                 config_preset[pid] = 0
         ns_righe = [(ns, c.most_common(1)[0][0], c.most_common(1)[0][1]) for ns, c in sorted(ns_conta.items())]
+        # dump del gioco (facoltativo)
+        dump = {}
+        if (self.dump / "meta.json").exists():
+            for s in ("meta", "effetti", "pozioni", "alambicco", "oggetti"):
+                f = self.dump / f"{s}.json"
+                dump[s] = _carica_json(f) if f.exists() else None
         return {"items": items, "blocks": blocks, "mods": mods, "tag_voci": tag_voci, "ricette": ricette,
                 "mod": mod_righe, "mod_id": modid_righe, "mod_namespace": ns_righe,
-                "voci": voci, "preset": preset, "categorie": categorie, "config_preset": config_preset}
+                "voci": voci, "preset": preset, "categorie": categorie, "config_preset": config_preset,
+                "effetti": effetti, "descrizioni": descrizioni, "pozioni": pozioni, "dedotte": dedotte, "dump": dump}
 
     # -- condizioni di caricamento
     @staticmethod
@@ -697,7 +868,7 @@ class BotanyPotsDB:
         terreni_r = [r for r in ricette if r["type"] in TIPI_TERRENO]
         colture_r = [r for r in ricette if r["type"] in TIPI_COLTURA]
         c.executemany("INSERT INTO MOD VALUES (?,?,?,?,?)", dati["mod"])
-        c.executemany("INSERT INTO MOD_ID VALUES (?,?,?,?)", dati["mod_id"])
+        c.executemany("INSERT INTO MOD_ID VALUES (?,?,?,?,?)", dati["mod_id"])
         c.executemany("INSERT INTO MOD_NAMESPACE VALUES (?,?,?)", dati["mod_namespace"])
         c.executemany("INSERT INTO BLOCCO VALUES (?,?,?)", [(b, b.split(":")[0], n or None) for b, n in sorted(blocks.items())])
         c.executemany("INSERT INTO OGGETTO VALUES (?,?,?,?)",
@@ -913,6 +1084,9 @@ class BotanyPotsDB:
         self._carica_csv(c, "MERCATO_VOCE_CUSTOM", self.mercato / "mercato_voce_custom.csv", ("oggetto_id", "categoria_id", "origine", "classe", "escluso", "motivo"))
         self._carica_csv(c, "MERCATO_PRESET_CUSTOM", self.mercato / "mercato_preset_custom.csv", ("preset_id", "origine", "classe", "acceso", "motivo"))
 
+        self._carica_pozioni(c, dati, items)
+        self._carica_csv(c, "POZIONE_CUSTOM", self.pozioni / "pozione_custom.csv", ("pozione_id", "varianti", "amuleto", "motivo"))
+
         # conteggio diretto delle coppie, indipendente dalla vista: per ogni coltura vincente, gli oggetti dei suoi tag
         membri = defaultdict(set)
         for (t, tag, _t0) in esploso:
@@ -923,6 +1097,108 @@ class BotanyPotsDB:
                 for tag in self._tag_di_soil(r.get("soil"), r["id"]):
                     coppie |= {(t, r["_coltura"]) for t in membri[tag]}
         self._coppie_attese = len(coppie)
+
+    _saltati_dump = None
+
+    def _carica_pozioni(self, c: sqlite3.Connection, dati: dict, items: dict) -> None:
+        """Effetti e pozioni da inventario e dump; dal dump anche effetti delle pozioni, cibi e alambicco."""
+        # la mod è quella che porta il namespace (una traduzione può stare nel jar di un'altra mod); per ciò che c'è
+        # solo nel dump, la mod con quell'id
+        ns_slug = {ns: slug for ns, slug, _n in dati["mod_namespace"]}
+        modid_slug = {m: s for m, s, _n, _v, _a in dati["mod_id"]}
+        def mod_di(rid: str, fonte: str | None) -> str | None:
+            ns = rid.split(":")[0]
+            return ns_slug.get(ns) or fonte or modid_slug.get(ns)
+        dump = dati["dump"]
+        saltati = Counter()
+        g_eff = {r["id"]: r for r in (dump.get("effetti") or [])} if dump else {}
+        g_poz = {r["id"]: r for r in (dump.get("pozioni") or [])} if dump else {}
+        gioco = (lambda rid, g: int(rid in g)) if dump else (lambda rid, g: None)
+        righe = []
+        for e in sorted(set(dati["effetti"]) | set(g_eff)):
+            s, n = dati["effetti"].get(e, (None, None))
+            slug, g = mod_di(e, s), g_eff.get(e) or {}
+            if slug is None:
+                saltati["effetti senza mod"] += 1
+                continue
+            righe.append((e, slug, n, dati["descrizioni"].get(e), g.get("categoria"),
+                          None if "istantaneo" not in g else int(g["istantaneo"]), g.get("colore"),
+                          int(e in dati["effetti"]), gioco(e, g_eff)))
+        c.executemany("INSERT INTO EFFETTO VALUES (?,?,?,?,?,?,?,?,?)", righe)
+        righe = []
+        for p in sorted(set(dati["pozioni"]) | set(g_poz)):
+            s, n = dati["pozioni"].get(p, (None, None))
+            slug = mod_di(p, s)
+            if slug is None:
+                saltati["pozioni senza mod"] += 1
+                continue
+            righe.append((p, slug, n, famiglia_pozione(p), int(p in dati["dedotte"]), (g_poz.get(p) or {}).get("traduzione"),
+                          int(p in dati["pozioni"]), gioco(p, g_poz)))
+        c.executemany("INSERT INTO POZIONE VALUES (?,?,?,?,?,?,?,?)", righe)
+        self._saltati_dump = saltati
+        if not dump:
+            return
+        meta = dump.get("meta") or {}
+        c.executemany("INSERT INTO DUMP_MOD VALUES (?,?)", sorted((meta.get("mod") or {}).items()))
+        effetti = {r[0] for r in c.execute("SELECT effetto_id FROM EFFETTO")}
+        pozioni = {r[0] for r in c.execute("SELECT pozione_id FROM POZIONE")}
+
+        def ok_eff(lista):
+            if any(x["effetto"] not in effetti for x in lista):
+                saltati["effetti sconosciuti"] += 1
+                return False
+            return True
+
+        c.executemany("INSERT INTO POZIONE_EFFETTO VALUES (?,?,?,?,?)", [
+            (p, i, x["effetto"], x["durata"], x["livello"])
+            for p, r in sorted(g_poz.items()) if p in pozioni and ok_eff(r["effetti"])
+            for i, x in enumerate(r["effetti"])])
+        cibi, ogg_eff = [], []
+        for r in dump.get("oggetti") or []:
+            if r["id"] not in items:
+                saltati["oggetti non nell'inventario"] += 1
+                continue
+            if r.get("cibo"):
+                f = r["cibo"]
+                cibi.append((r["id"], f["nutrizione"], f["saturazione"], int(f["sempre"]), f["secondi"]))
+                if ok_eff(f["effetti"]):
+                    ogg_eff += [(r["id"], "cibo", i, x["effetto"], x["durata"], x["livello"], x.get("probabilita", 1))
+                                for i, x in enumerate(f["effetti"])]
+            if r.get("pozione") and ok_eff(r["pozione"]["effetti"]):
+                ogg_eff += [(r["id"], "pozione", i, x["effetto"], x["durata"], x["livello"], 1)
+                            for i, x in enumerate(r["pozione"]["effetti"])]
+        c.executemany("INSERT INTO OGGETTO_CIBO VALUES (?,?,?,?,?)", cibi)
+        c.executemany("INSERT INTO OGGETTO_EFFETTO VALUES (?,?,?,?,?,?,?)", ogg_eff)
+        alb = dump.get("alambicco") or {}
+        viste, righe = set(), []
+
+        def aggiungi(fonte, ing, ingr, ris):
+            k = (ing["oggetto"], ing.get("pozione"), ingr, ris["oggetto"], ris.get("pozione"))
+            if k in viste:
+                return
+            if any(x not in items for x in (k[0], k[2], k[3])) or any(x and x not in pozioni for x in (k[1], k[4])):
+                saltati["ricette dell'alambicco con nomi sconosciuti"] += 1
+                return
+            viste.add(k)
+            righe.append((len(righe) + 1, fonte, *k))
+
+        for m in alb.get("miscele") or []:
+            aggiungi("miscela", m["ingresso"], m["ingrediente"], m["risultato"])
+        classi = defaultdict(lambda: [0, 0])
+        for r in alb.get("ricette") or []:
+            classi[r["classe"]][0] += 1
+            if "risultato" in r and r.get("ingresso") and r.get("ingrediente"):
+                classi[r["classe"]][1] += 1
+                for ing in r["ingresso"]:
+                    for ingr in r["ingrediente"]:
+                        aggiungi("ricetta", ing, ingr["oggetto"], r["risultato"])
+            elif r.get("provate"):  # classe propria della mod: combinazioni trovate provando ogni oggetto
+                classi[r["classe"]][1] += 1
+                for m in r["provate"]:
+                    aggiungi("ricetta", m["ingresso"], m["ingrediente"], m["risultato"])
+        c.executemany("INSERT INTO ALAMBICCO VALUES (?,?,?,?,?,?,?)", righe)
+        c.executemany("INSERT INTO ALAMBICCO_CLASSE VALUES (?,?,?)", [(k, *v) for k, v in sorted(classi.items())])
+        self._saltati_dump = saltati
 
     def _carica_csv(self, c: sqlite3.Connection, tabella: str, nome, colonne: tuple) -> None:
         p = nome if isinstance(nome, Path) else self.vasi / nome
