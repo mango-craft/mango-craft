@@ -25,8 +25,8 @@ Ogni versione del pack ha un file (`vX.Y.Z.md`) che racconta obiettivo, valutazi
 | [v0.6.0](versioni/v0.6.0.md) | tappa 5: config e correzioni | chiuso (rilasciata il 22/10) |
 | [v0.6.1](versioni/v0.6.1.md) · [v0.6.2](versioni/v0.6.2.md) · [v0.6.3](versioni/v0.6.3.md) | tappa 5: vasi, mercato, esperienza | chiusi (rilasciate il 24/10) |
 | [v0.7.0](versioni/v0.7.0.md) | tappa 6: accessori (Relics) | chiuso (rilasciata il 24/10) |
-| [v0.7.1](versioni/v0.7.1.md) | tappa 6.1: fornaci | 🧪 da provare insieme alla 0.7.2 |
-| [v0.7.2](versioni/v0.7.2.md) | tappa 6.2: pozioni (lista nera degli amuleti, censimento) | 🧪 da provare insieme alla 0.7.1 |
+| [v0.7.1](versioni/v0.7.1.md) | tappa 6.1: fornaci | chiuso (rilasciata il 26/10 nella 0.7.2) |
+| [v0.7.2](versioni/v0.7.2.md) | tappa 6.2: pozioni (lista nera degli amuleti, censimento) | chiuso (rilasciata il 26/10) |
 | [v0.7.3](versioni/v0.7.3.md) | tappa 6.3: computer (CC: Tweaked, Advanced Peripherals) | 📋 pianificata (25/10) |
 | [v0.7.4](versioni/v0.7.4.md) | archeologia e reperti (proposta) | 📋 pianificata (24/10) |
 

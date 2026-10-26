@@ -10,7 +10,7 @@ Tutti i problemi trovati nelle versioni del pack, anche minori: dai log dell'ist
 **Stato**: 🔧 da correggere da noi · 🔍 da verificare in gioco · 👁️ della mod, non correggibile da noi (si tiene d'occhio) · ✅ risolto o aggirato
 **Effetto**: alto = blocca o fa crashare · medio = una funzione non va · basso = estetico o solo nel log
 
-_Ultimo aggiornamento: 26/10/2026 (versioni fino alla 0.7.0, rilasciata; 0.7.1 e 0.7.2 provate, log del 25 e 26/10 confrontati con quello della 0.7.0)._
+_Ultimo aggiornamento: 26/10/2026 (versioni fino alla 0.7.2, rilasciata; log del 25 e 26/10 confrontati con quello della 0.7.0)._
 
 ---
 

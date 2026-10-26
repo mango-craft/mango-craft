@@ -10,7 +10,7 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
-## 0.7.2 — in lavorazione · fornaci e pozioni (in prova)
+## 0.7.2 — 26/10/2026 · fornaci e pozioni (pre-release di prova)
 
 Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due insieme (24/10/2026).
 
@@ -22,7 +22,7 @@ Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due i
 - **Datapack, funzioni di prova (0.7.2)**: `/function matteo_tweaks:test/releases/v0.7.2/…` dà in un colpo gli oggetti delle prove di uscita e scrive in chat cosa controllare.
 - **Strumenti (0.7.2)**: l'inventario ricava i nomi veri delle pozioni delle mod; effetti e pozioni entrano nella base dati (350 effetti e 129 pozioni delle mod), insieme ai dati del gioco quando c'è un dump (`scripts/dump_importa.py`): effetti di ogni pozione, categoria degli effetti, ricette dell'alambicco, effetti dei cibi, e quali pozioni fanno davvero un amuleto. Primo dump il 26/10: 376 effetti, 173 pozioni (139 possono fare l'amuleto), 963 miscele dell'alambicco, 1.584 oggetti con effetti. La lista nera la scrive `scripts/pozioni_genera.py` da una regola in CSV, e il controllo di ogni workflow verifica che file e regola coincidano.
 - **Invariato**: config (salvo lo script di KubeJS, nuovo).
-- **Stato**: 🧪 in prova sul ramo `dev`.
+- **Stato**: ✅ provata il 25 e 26/10/2026 (avvio e mondo; fornaci, lista nera degli amuleti e funzioni di prova verificate da Matteo; due dump del gioco con «errori: 0»; log confrontati con quello della 0.7.0, nessun errore nuovo grave) e rilasciata come pre-release `1.21.1-v0.7.2`.
 - **Problemi noti**: B45 (lo script del dump non si caricava) comparso e risolto nella prova; nuovo B46 (Copycats+ ed EMI dopo un `/reload`, minore); B14 con qualche messaggio innocuo in più dovuto a KubeJS. Nessun errore delle fornaci, della lista nera o delle funzioni di prova.
 
 ## 0.7.0 — 24/10/2026 · accessori: Relics (pre-release di prova)
