@@ -534,6 +534,102 @@ CREATE VIEW DUMP_MOD_DIVERSA AS
   LEFT JOIN DUMP_MOD d ON d.modid = m.modid
   WHERE EXISTS (SELECT 1 FROM DUMP_MOD)
     AND (d.versione IS NULL OR (d.versione <> m.versione AND m.versione NOT LIKE '%$%'));
+
+-- ---- Dal gioco, formato 2 del dump (26/10/2026): per controllare con il gioco il lavoro di tutte le versioni ----
+CREATE TABLE GIOCO_ID (                  -- i nomi registrati nel gioco (anche quelli creati all'avvio: Every Compat)
+  registro TEXT NOT NULL,                -- item, block, fluid, entity_type, mob_effect, potion
+  id       TEXT NOT NULL,
+  PRIMARY KEY (registro, id)
+);
+CREATE TABLE GIOCO_RICETTA (             -- le ricette caricate davvero
+  ricetta_id TEXT PRIMARY KEY,
+  tipo       TEXT NOT NULL
+);
+CREATE TABLE GIOCO_TAG (                 -- le etichette finali, dopo tutti i datapack
+  registro TEXT NOT NULL,
+  tag      TEXT NOT NULL,
+  voci     INTEGER NOT NULL,             -- quante voci ha l'etichetta nel gioco
+  valori   INTEGER NOT NULL,             -- 1: le voci sono in GIOCO_TAG_VOCE (solo per i namespace scelti dallo script)
+  PRIMARY KEY (registro, tag)
+);
+CREATE TABLE GIOCO_TAG_VOCE (
+  registro TEXT NOT NULL,
+  tag      TEXT NOT NULL,
+  id       TEXT NOT NULL,
+  PRIMARY KEY (registro, tag, id),
+  FOREIGN KEY (registro, tag) REFERENCES GIOCO_TAG
+);
+CREATE TABLE GIOCO_TABELLA (             -- le tabelle del bottino caricate (solo i nomi)
+  tabella_id TEXT PRIMARY KEY
+);
+CREATE TABLE GIOCO_STRUTTURA_SET (       -- gli insiemi di strutture come il gioco li vede (dopo Sparse Structures)
+  set_id      TEXT PRIMARY KEY,
+  tipo        TEXT,
+  spaziatura  INTEGER,
+  separazione INTEGER,
+  sale        INTEGER,
+  frequenza   REAL
+);
+CREATE TABLE GIOCO_STRUTTURA_SET_VOCE (
+  set_id    TEXT NOT NULL REFERENCES GIOCO_STRUTTURA_SET,
+  struttura TEXT NOT NULL,
+  peso      INTEGER NOT NULL,
+  PRIMARY KEY (set_id, struttura)
+);
+-- I nostri file del datapack, per confrontarli con il gioco: ricette, tag, tabelle e modificatori del bottino.
+CREATE TABLE NOSTRA_RICETTA (
+  ricetta_id TEXT PRIMARY KEY,
+  tipo       TEXT NOT NULL,
+  percorso   TEXT NOT NULL,
+  caricabile INTEGER NOT NULL            -- 1 se le condizioni di caricamento sono vere con l'inventario
+);
+CREATE TABLE NOSTRO_TAG_VOCE (
+  registro    TEXT NOT NULL,             -- item, block, fluid, potion…
+  tag         TEXT NOT NULL,
+  id          TEXT NOT NULL,             -- un nome (non #altro_tag)
+  facoltativo INTEGER NOT NULL,          -- required: false
+  PRIMARY KEY (registro, tag, id)
+);
+CREATE TABLE NOSTRA_TABELLA (            -- le tabelle del bottino nostre
+  tabella_id TEXT PRIMARY KEY,
+  percorso   TEXT NOT NULL,
+  caricabile INTEGER NOT NULL
+);
+CREATE TABLE NOSTRO_MODIFICATORE (       -- i modificatori del bottino: ognuno con le tabelle che tocca e quella che aggiunge
+  modificatore_id TEXT NOT NULL,
+  elencato        INTEGER NOT NULL,      -- 1 se sta nel nostro global_loot_modifiers.json (i file con il nome di una mod
+                                         --   sostituiscono i suoi e sono elencati dalla mod)
+  caricabile      INTEGER NOT NULL,
+  tabella_id      TEXT,                  -- la tabella a cui si applica (NULL: nessuna condizione di tabella)
+  aggiunge        TEXT,                  -- la tabella aggiunta (neoforge:add_table)
+  PRIMARY KEY (modificatore_id, tabella_id)
+);
+-- Le nostre ricette caricabili che il gioco non ha, e quelle non caricabili che invece ha (condizione sbagliata)
+CREATE VIEW NOSTRA_RICETTA_DIVERSA AS
+  SELECT n.ricetta_id, n.tipo, n.percorso, n.caricabile, g.ricetta_id IS NOT NULL AS nel_gioco
+  FROM NOSTRA_RICETTA n LEFT JOIN GIOCO_RICETTA g ON g.ricetta_id = n.ricetta_id
+  WHERE EXISTS (SELECT 1 FROM GIOCO_RICETTA) AND n.caricabile <> (g.ricetta_id IS NOT NULL);
+-- Le voci dei nostri tag che nel gioco mancano: le obbligatorie sempre, le facoltative solo se il nome esiste nel gioco
+CREATE VIEW NOSTRO_TAG_MANCANTE AS
+  SELECT n.registro, n.tag, n.id, n.facoltativo,
+         (SELECT valori FROM GIOCO_TAG g WHERE g.registro = n.registro AND g.tag = n.tag) AS tag_nel_gioco
+  FROM NOSTRO_TAG_VOCE n
+  WHERE EXISTS (SELECT 1 FROM GIOCO_TAG g WHERE g.registro = n.registro)   -- solo i registri che il dump riporta
+    AND NOT EXISTS (SELECT 1 FROM GIOCO_TAG_VOCE v WHERE v.registro = n.registro AND v.tag = n.tag AND v.id = n.id)
+    AND (NOT n.facoltativo OR EXISTS (SELECT 1 FROM GIOCO_ID i WHERE i.registro = n.registro AND i.id = n.id));
+-- Le tabelle del bottino nominate dai nostri modificatori (toccate o aggiunte) e le nostre che il gioco non ha
+CREATE VIEW NOSTRA_TABELLA_MANCANTE AS
+  SELECT DISTINCT t.tabella_id, t.fonte FROM (
+    SELECT tabella_id, 'modificatore ' || modificatore_id AS fonte FROM NOSTRO_MODIFICATORE WHERE caricabile AND tabella_id IS NOT NULL
+    UNION ALL SELECT aggiunge, 'aggiunta da ' || modificatore_id FROM NOSTRO_MODIFICATORE WHERE caricabile AND aggiunge IS NOT NULL
+    UNION ALL SELECT tabella_id, 'nostra: ' || percorso FROM NOSTRA_TABELLA WHERE caricabile) t
+  WHERE EXISTS (SELECT 1 FROM GIOCO_TABELLA)
+    AND NOT EXISTS (SELECT 1 FROM GIOCO_TABELLA g WHERE g.tabella_id = t.tabella_id);
+-- I nomi registrati nel gioco che l'inventario non conosce (creati all'avvio) e viceversa
+CREATE VIEW GIOCO_ID_DIVERSO AS
+  SELECT 'item' AS registro, g.id, 'solo nel gioco' AS dove FROM GIOCO_ID g WHERE g.registro = 'item' AND NOT EXISTS (SELECT 1 FROM OGGETTO o WHERE o.oggetto_id = g.id)
+  UNION ALL
+  SELECT 'item', o.oggetto_id, 'solo nell''inventario' FROM OGGETTO o WHERE EXISTS (SELECT 1 FROM GIOCO_ID) AND NOT EXISTS (SELECT 1 FROM GIOCO_ID g WHERE g.registro = 'item' AND g.id = o.oggetto_id);
 """
 
 
@@ -651,6 +747,8 @@ class BotanyPotsDB:
         ctl("le origini delle regole del mercato esistono in MERCATO_BASE", "SELECT count(*) FROM (SELECT origine FROM MERCATO_MOD_CUSTOM UNION SELECT origine FROM MERCATO_VOCE_CUSTOM WHERE origine IS NOT NULL UNION SELECT origine FROM MERCATO_PRESET_CUSTOM WHERE origine IS NOT NULL) o WHERE NOT EXISTS (SELECT 1 FROM MERCATO_BASE b WHERE b.origine=o.origine)")
         n = c.execute("SELECT count(*) FROM MERCATO_CANDIDATO WHERE escluso IS NULL AND (origine IS NULL OR classe IS NULL)").fetchone()[0]
         out.append(("avviso: candidati del mercato senza regola (non blocca)", True, f"trovati: {n}"))
+        # datapack
+        ctl("i modificatori del bottino con il nostro nome sono elencati in global_loot_modifiers.json", "SELECT count(*) FROM NOSTRO_MODIFICATORE WHERE NOT elencato AND modificatore_id LIKE 'matteo_tweaks:%'")
         # pozioni
         ctl("una sola regola 'tutte' per famiglia di pozioni", "SELECT count(*) FROM (SELECT x.famiglia FROM POZIONE_CUSTOM c JOIN POZIONE x ON x.pozione_id=c.pozione_id WHERE c.varianti='tutte' GROUP BY x.famiglia HAVING count(*)>1)")
         dump = c.execute("SELECT count(*) FROM DUMP_MOD").fetchone()[0] > 0
@@ -670,6 +768,19 @@ class BotanyPotsDB:
                 out.append((f"avviso: {nome} (non blocca)", True, f"trovate: {n}"))
             if self._saltati_dump:
                 out.append(("avviso: righe del dump saltate (non blocca)", True, ", ".join(f"{k} {v}" for k, v in sorted(self._saltati_dump.items()))))
+            # formato 2: il lavoro di tutte le versioni confrontato con il gioco (bloccano solo se il dump è aggiornato)
+            if c.execute("SELECT count(*) FROM GIOCO_RICETTA").fetchone()[0]:
+                blocca = not vecchio
+                for nome, sql in (("le nostre ricette caricabili sono nel gioco (e le altre no)", "SELECT count(*) FROM NOSTRA_RICETTA_DIVERSA"),
+                                  ("le voci dei nostri tag sono nelle etichette finali del gioco", "SELECT count(*) FROM NOSTRO_TAG_MANCANTE"),
+                                  ("le tabelle del bottino nostre e quelle dei nostri modificatori esistono nel gioco", "SELECT count(*) FROM NOSTRA_TABELLA_MANCANTE")):
+                    n = c.execute(sql).fetchone()[0]
+                    out.append((nome if blocca else f"avviso: {nome} (dump vecchio, non blocca)", n == 0 or not blocca, f"trovati: {n}"))
+                n = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove = 'solo nel gioco'").fetchone()[0]
+                m = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove <> 'solo nel gioco'").fetchone()[0]
+                out.append(("avviso: oggetti creati all'avvio, non nell'inventario / dell'inventario non nel gioco (non blocca)", True, f"{n} / {m}"))
+            else:
+                out.append(("avviso: dump senza le sezioni del formato 2: ricette, tag, tabelle non confrontate (non blocca)", True, "rilanciare /mango_dump"))
         if self._coppie_attese is not None:
             n = c.execute("SELECT count(*) FROM (SELECT DISTINCT terreno_id, coltura_id FROM POTS_COMPATIBILITA)").fetchone()[0]
             out.append(("coppie terreno-coltura = conteggio diretto sui file", n == self._coppie_attese, f"vista {n}, diretto {self._coppie_attese}"))
@@ -765,10 +876,12 @@ class BotanyPotsDB:
             for v in d.get("values", []):
                 vid, fac = (v, False) if isinstance(v, str) else (v["id"], not v.get("required", True))
                 tag_voci[amb][nome].append((NOSTRO, vid, fac))
+        nostri = {"ricette": [], "tag": [], "tabelle": [], "modificatori": []}
         for f in self.datapack.glob("*/recipe/**/*.json"):
             d = _carica_json(f)
             rel = f.relative_to(self.datapack).parts
             rid = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
+            nostri["ricette"].append((rid, str(d.get("type", "")), "/".join(rel), int(self._caricabile({**d, "id": rid}, items, blocks, mods))))
             if str(d.get("type", "")) in TIPI_TERRENO + TIPI_COLTURA:
                 d["id"] = rid
                 ricette.append({**d, "_fonte": NOSTRO, "_strato": "nostro"})
@@ -779,6 +892,45 @@ class BotanyPotsDB:
                              "item_exists": [c.get("item") for c in d.get("neoforge:conditions") or []
                                              if c.get("type") == "neoforge:item_exists"],
                              "payment": pay, "_fonte": NOSTRO, "_strato": "nostro"})
+        for f in self.datapack.glob("*/tags/*/**/*.json"):
+            rel = f.relative_to(self.datapack).parts
+            d = _carica_json(f)
+            nome = f"{rel[0]}:{'/'.join(rel[3:])[:-5]}"
+            for v in d.get("values", []):
+                vid, fac = (v, False) if isinstance(v, str) else (v["id"], not v.get("required", True))
+                if not vid.startswith("#"):
+                    nostri["tag"].append((rel[2], nome, vid, int(fac)))
+        for f in self.datapack.glob("*/loot_table/**/*.json"):
+            rel = f.relative_to(self.datapack).parts
+            d = _carica_json(f)
+            tid = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
+            nostri["tabelle"].append((tid, "/".join(rel), int(self._caricabile({**d, "id": tid}, items, blocks, mods))))
+        elencati = set()
+        glm = self.datapack / "neoforge" / "loot_modifiers" / "global_loot_modifiers.json"
+        if glm.exists():
+            elencati = set(_carica_json(glm).get("entries") or [])
+        for f in self.datapack.glob("*/loot_modifiers/**/*.json"):
+            if f == glm:
+                continue
+            rel = f.relative_to(self.datapack).parts
+            d = _carica_json(f)
+            mid = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
+            tabelle = []
+
+            def cerca(x):
+                if isinstance(x, dict):
+                    if x.get("condition") == "neoforge:loot_table_id":
+                        tabelle.append(x["loot_table_id"])
+                    for v in x.values():
+                        cerca(v)
+                elif isinstance(x, list):
+                    for v in x:
+                        cerca(v)
+            cerca(d.get("conditions"))
+            agg = d.get("table") if d.get("type") == "neoforge:add_table" else None
+            ok = int(self._caricabile({**d, "id": mid}, items, blocks, mods))
+            for t in tabelle or [None]:
+                nostri["modificatori"].append((mid, int(mid in elencati), ok, t, agg))
         for f in self.datapack.glob("*/market_presets/*.json"):
             d = _carica_json(f)
             rel = f.relative_to(self.datapack).parts
@@ -803,13 +955,14 @@ class BotanyPotsDB:
         # dump del gioco (facoltativo)
         dump = {}
         if (self.dump / "meta.json").exists():
-            for s in ("meta", "effetti", "pozioni", "alambicco", "oggetti"):
+            for s in ("meta", "effetti", "pozioni", "alambicco", "oggetti", "registri", "ricette", "tag", "tabelle", "strutture"):
                 f = self.dump / f"{s}.json"
                 dump[s] = _carica_json(f) if f.exists() else None
         return {"items": items, "blocks": blocks, "mods": mods, "tag_voci": tag_voci, "ricette": ricette,
                 "mod": mod_righe, "mod_id": modid_righe, "mod_namespace": ns_righe,
                 "voci": voci, "preset": preset, "categorie": categorie, "config_preset": config_preset,
-                "effetti": effetti, "descrizioni": descrizioni, "pozioni": pozioni, "dedotte": dedotte, "dump": dump}
+                "effetti": effetti, "descrizioni": descrizioni, "pozioni": pozioni, "dedotte": dedotte, "dump": dump,
+                "nostri": nostri}
 
     # -- condizioni di caricamento
     @staticmethod
@@ -1085,6 +1238,7 @@ class BotanyPotsDB:
         self._carica_csv(c, "MERCATO_PRESET_CUSTOM", self.mercato / "mercato_preset_custom.csv", ("preset_id", "origine", "classe", "acceso", "motivo"))
 
         self._carica_pozioni(c, dati, items)
+        self._carica_gioco(c, dati)
         self._carica_csv(c, "POZIONE_CUSTOM", self.pozioni / "pozione_custom.csv", ("pozione_id", "varianti", "amuleto", "motivo"))
 
         # conteggio diretto delle coppie, indipendente dalla vista: per ogni coltura vincente, gli oggetti dei suoi tag
@@ -1099,6 +1253,33 @@ class BotanyPotsDB:
         self._coppie_attese = len(coppie)
 
     _saltati_dump = None
+
+    def _carica_gioco(self, c: sqlite3.Connection, dati: dict) -> None:
+        """I nostri file del datapack e, se c'è, il dump del gioco nel formato 2: registri, ricette, etichette,
+        tabelle del bottino, insiemi di strutture."""
+        n = dati["nostri"]
+        c.executemany("INSERT INTO NOSTRA_RICETTA VALUES (?,?,?,?)", n["ricette"])
+        c.executemany("INSERT OR IGNORE INTO NOSTRO_TAG_VOCE VALUES (?,?,?,?)", n["tag"])
+        c.executemany("INSERT INTO NOSTRA_TABELLA VALUES (?,?,?)", n["tabelle"])
+        c.executemany("INSERT OR IGNORE INTO NOSTRO_MODIFICATORE VALUES (?,?,?,?,?)", n["modificatori"])
+        dump = dati["dump"]
+        for reg, ids in (dump.get("registri") or {}).items():
+            c.executemany("INSERT OR IGNORE INTO GIOCO_ID VALUES (?,?)", [(reg, i) for i in ids])
+        for tipo, ids in (dump.get("ricette") or {}).items():
+            c.executemany("INSERT OR IGNORE INTO GIOCO_RICETTA VALUES (?,?)", [(i, tipo) for i in ids])
+        for reg, tags in (dump.get("tag") or {}).items():
+            for tag, v in tags.items():
+                if isinstance(v, list):
+                    c.execute("INSERT INTO GIOCO_TAG VALUES (?,?,?,1)", (reg, tag, len(v)))
+                    c.executemany("INSERT OR IGNORE INTO GIOCO_TAG_VOCE VALUES (?,?,?)", [(reg, tag, i) for i in v])
+                else:
+                    c.execute("INSERT INTO GIOCO_TAG VALUES (?,?,?,0)", (reg, tag, v or 0))
+        c.executemany("INSERT OR IGNORE INTO GIOCO_TABELLA VALUES (?)", [(t,) for t in dump.get("tabelle") or []])
+        for sid, r in (dump.get("strutture") or {}).items():
+            c.execute("INSERT INTO GIOCO_STRUTTURA_SET VALUES (?,?,?,?,?,?)",
+                      (sid, r.get("tipo"), r.get("spaziatura"), r.get("separazione"), r.get("sale"), r.get("frequenza")))
+            c.executemany("INSERT OR IGNORE INTO GIOCO_STRUTTURA_SET_VOCE VALUES (?,?,?)",
+                          [(sid, e["struttura"], e["peso"]) for e in r.get("strutture") or []])
 
     def _carica_pozioni(self, c: sqlite3.Connection, dati: dict, items: dict) -> None:
         """Effetti e pozioni da inventario e dump; dal dump anche effetti delle pozioni, cibi e alambicco."""
