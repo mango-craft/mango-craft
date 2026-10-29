@@ -1,6 +1,6 @@
 # Enhanced Celestials 2 (Core, Default Lunar Events, Shader Support)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.5.1 (Core + Default Lunar Events) e 0.5.2 (Shader Support); ruolo e licenza in `../docs/0301-mod.md`, versioni in `../docs/0403-distinta-mod.md` · fonti: i .jar letti con il workflow Esamina mod (il sorgente di EC2 non è pubblico), sorgente di Enhanced Celestials 1, testi dell'editor dell'autore, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/stage/2026-10-18_1.21.1-v0.5.1_enhanced-celestials-2/`. Ricerca: `../lavoro/versioni/v0.5.1.md`.
+Aggiornata il 19/10/2026 · nel pack dalla 0.5.1 (Core + Default Lunar Events) e 0.5.2 (Shader Support); ruolo e licenza in `../docs/0301-mod.md`, versioni in `../docs/0403-distinta-mod.md` · fonti: i .jar letti con il workflow Esamina mod (il sorgente di EC2 non è pubblico), sorgente di Enhanced Celestials 1, testi dell'editor dell'autore, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/archivio/2026-10-18_1.21.1-v0.5.1_enhanced-celestials-2/`. Ricerca: `../lavoro/versioni/v0.5.1.md`.
 
 ## Le mod
 

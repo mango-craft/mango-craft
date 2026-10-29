@@ -1,6 +1,6 @@
 # Tema: shader
 
-Aggiornata il 19/10/2026 · mod coinvolte: Iris, Sodium, Complementary Reimagined, MakeUp - Ultra Fast, Colorwheel, Enhanced Celestials 2: Shader Support, Create/Flywheel e le mod che hanno shader propri · fonti: API di Modrinth, sorgenti delle mod (ramo 1.21.1), log dell'istanza di prova. Ricerche: `../lavoro/versioni/v0.5.2.md` (supporto agli shader) e `v0.5.3.md` (pacchetti); grezzo `../../ai-agents/stage/2026-10-19_1.21.1-v0.5.3_shader-pack/`.
+Aggiornata il 19/10/2026 · mod coinvolte: Iris, Sodium, Complementary Reimagined, MakeUp - Ultra Fast, Colorwheel, Enhanced Celestials 2: Shader Support, Create/Flywheel e le mod che hanno shader propri · fonti: API di Modrinth, sorgenti delle mod (ramo 1.21.1), log dell'istanza di prova. Ricerche: `../lavoro/versioni/v0.5.2.md` (supporto agli shader) e `v0.5.3.md` (pacchetti); grezzo `../../ai-agents/archivio/2026-10-19_1.21.1-v0.5.3_shader-pack/`.
 
 Gli shader sono **facoltativi**: il pack porta Iris e due pacchetti spenti di serie; senza attivarne uno non cambia niente. Fatti su Iris e sulla versione obbligata con Sodium: `../mod-knowledge/iris.md`, `../mod-knowledge/sodium.md`. Pacchetti: `../mod-knowledge/complementary-reimagined.md`, `../mod-knowledge/makeup-ultra-fast-shaders.md`. Colori delle lune negli shader: `../mod-knowledge/enhanced-celestials-2.md`.
 

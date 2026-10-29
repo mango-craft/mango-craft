@@ -24,7 +24,7 @@ Nel pack ci sono **due librerie di accessori che non si parlano** (Curios e Acce
 
 ## Potenziamento ed evoluzione (ricerca del 23/10)
 
-Idea di Matteo (`../lavoro/0503-temi-aperti.md`): gli accessori non crescono. Grezzo della ricerca: `../../ai-agents/stage/2026-10-23_accessori-evoluzione/` (jar e config dell'istanza, sorgenti delle versioni del pack, API di Modrinth).
+Idea di Matteo (`../lavoro/0503-temi-aperti.md`): gli accessori non crescono. Grezzo della ricerca: `../../ai-agents/archivio/2026-10-23_accessori-evoluzione/` (jar e config dell'istanza, sorgenti delle versioni del pack, API di Modrinth).
 
 **Cosa c'è già nel pack**
 - **Catene "versione migliore = altro oggetto"**: Ars Nouveau anello del potenziale → sconto minore → sconto maggiore (Apparato); Ars Elemental focus minore → focus (conserva i dati); Twilight Forest 4 amuleti della vita di grado 1 → 1 di grado 2, conservazione fino al 3; Aether anelli e pendenti di ferro/oro → di ghiaccio, guanti per materiale e guanti di diamante → netherite alla forgia; Deep Aether alla forgia guanti di skyjade → stormforged, guanti e anello di gravitite → stratus; Unusual End sfera del golem → sfere di fiamma, shulker, avvizzimento. Zaini: dal base alla netherite conservando il contenuto.

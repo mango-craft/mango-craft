@@ -1,6 +1,6 @@
 # Tema: fornaci a livelli
 
-Aggiornata il 24/10/2026 · stato: **Iron Furnaces, FurnaceMk2 e Jumbo Furnace nel pack dalla 0.7.1** (decisioni del 24/10: tutto Iron Furnaces, ricette e valori originali; `../lavoro/versioni/v0.7.1.md`) (idea di Matteo del 23/10: una progressione delle fornaci che non passi da Create o Mekanism, `../lavoro/0503-temi-aperti.md`) · fonti: ricerca su Modrinth (24/10); jar delle candidate letti dal workflow Esamina mod (`../../ai-agents/stage/2026-10-24_1.21.1-v0.6.3_esame-mod/`); sorgente di Jumbo Furnace (ramo `1.21.1`, commit `915c310`); sorgente di FurnaceMk2 e VapourWare (scheda `../mod-knowledge/furnacemk2.md`); inventario del pack. Schede vicine: `strumenti.md` (la stessa scala dei materiali), `piante.md` (rarità e monete del mercato).
+Aggiornata il 24/10/2026 · stato: **Iron Furnaces, FurnaceMk2 e Jumbo Furnace nel pack dalla 0.7.1** (decisioni del 24/10: tutto Iron Furnaces, ricette e valori originali; `../lavoro/versioni/v0.7.1.md`) (idea di Matteo del 23/10: una progressione delle fornaci che non passi da Create o Mekanism, `../lavoro/0503-temi-aperti.md`) · fonti: ricerca su Modrinth (24/10); jar delle candidate letti dal workflow Esamina mod (`../../ai-agents/archivio/2026-10-24_1.21.1-v0.6.3_esame-mod/`); sorgente di Jumbo Furnace (ramo `1.21.1`, commit `915c310`); sorgente di FurnaceMk2 e VapourWare (scheda `../mod-knowledge/furnacemk2.md`); inventario del pack. Schede vicine: `strumenti.md` (la stessa scala dei materiali), `piante.md` (rarità e monete del mercato).
 
 ## Cosa c'è già nel pack
 

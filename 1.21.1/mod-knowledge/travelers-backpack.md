@@ -1,6 +1,6 @@
 # Traveler's Backpack
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.1.1 (ruolo e licenza: `../docs/0301-mod.md`; versione: `../docs/0403-distinta-mod.md`) · fonti: sorgente della mod (ricerca del 19/10, materiale grezzo in `../../ai-agents/stage/2026-10-19_1.21.1-v0.6.0_config-mod/`).
+Aggiornata il 19/10/2026 · nel pack dalla 0.1.1 (ruolo e licenza: `../docs/0301-mod.md`; versione: `../docs/0403-distinta-mod.md`) · fonti: sorgente della mod (ricerca del 19/10, materiale grezzo in `../../ai-agents/archivio/2026-10-19_1.21.1-v0.6.0_config-mod/`).
 
 - Versione 10.1.39. Config `config/travelersbackpack-server.toml` (lato server: globale, un mondo può sovrascriverla in `saves/<mondo>/serverconfig/`): `[server.backpackSettings] allowShulkerBoxes`, `false` di serie. Con `true` è ammesso qualsiasi oggetto che non entra nei contenitori normali; gli zaini di Traveler's e l'etichetta `travelersbackpack:blacklisted_items` restano esclusi. Se lascia entrare anche gli zaini Sophisticated dipende dal codice di Sophisticated, non verificato.
 - Il tasto per aprire lo zaino è **B** (`key.travelersbackpack.inventory`), un tasto di Minecraft salvato in `options.txt`, non una config della mod: Sophisticated Backpacks usa lo stesso tasto, da cambiare a mano (tema aperto in `../lavoro/0503-temi-aperti.md`).

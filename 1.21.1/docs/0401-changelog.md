@@ -177,7 +177,7 @@ Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due i
 
 ## Prima del repository (pacchetti `.mrpack`, 16–17/10/2026)
 
-Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`](../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md).
+Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`../../ai-agents/archivio/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`](../../ai-agents/archivio/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md).
 
 - **0.2.3** (17/10): Just Enough Breeding e Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks. Mai provata in gioco: rifatta come 0.2.3 del repository.
 - **0.2.2** (17/10): XP Tome.

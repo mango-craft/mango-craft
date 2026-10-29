@@ -1,6 +1,6 @@
 # Complementary Shaders - Reimagined (pacchetto di shader)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.5.3, spento di serie (`../docs/0301-mod.md`; versione r5.9.3 in `../docs/0403-distinta-mod.md`) · fonti: API di Modrinth, sorgente su GitHub (ComplementaryDevelopment/ComplementaryReimagined, r5.9.2), `License.txt`, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/stage/2026-10-19_1.21.1-v0.5.3_shader-pack/`.
+Aggiornata il 19/10/2026 · nel pack dalla 0.5.3, spento di serie (`../docs/0301-mod.md`; versione r5.9.3 in `../docs/0403-distinta-mod.md`) · fonti: API di Modrinth, sorgente su GitHub (ComplementaryDevelopment/ComplementaryReimagined, r5.9.2), `License.txt`, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/archivio/2026-10-19_1.21.1-v0.5.3_shader-pack/`.
 
 ## Cose da non rompere
 

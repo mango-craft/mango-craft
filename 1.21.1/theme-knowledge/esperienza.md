@@ -1,6 +1,6 @@
 # Tema: esperienza liquida e deposito
 
-Aggiornata il 29/10/2026 · mod coinvolte: Create: Enchantment Industry, Cognition (ex Experience Obelisk), Sophisticated Backpacks/Core, XP Tome, Supplementaries · fonti: sorgenti di Create: Enchantment Industry 2.4.2, Cognition 2.4.13, Sophisticated Core, NeoForge (`Tags.java`), Create (ramo `mc1.21.1/dev`, commit `7ff2760`, letto il 21/10: `BasinBlockEntity` e ricette generate del Mescolatore), inventario del pack; NeoForge 1.21.1 (`DataMapLoader`, `DataMapFile`, letti il 24/10); jar di Moonlight 3.7.2 e Supplementaries 4.0.2 (24/10). Ricerca: `../lavoro/versioni/v0.2.3.md` (analisi del 17/10); materiale grezzo `../../ai-agents/stage/2026-10-17_1.21.1-v0.2.3_esperienza/`.
+Aggiornata il 29/10/2026 · mod coinvolte: Create: Enchantment Industry, Cognition (ex Experience Obelisk), Sophisticated Backpacks/Core, XP Tome, Supplementaries · fonti: sorgenti di Create: Enchantment Industry 2.4.2, Cognition 2.4.13, Sophisticated Core, NeoForge (`Tags.java`), Create (ramo `mc1.21.1/dev`, commit `7ff2760`, letto il 21/10: `BasinBlockEntity` e ricette generate del Mescolatore), inventario del pack; NeoForge 1.21.1 (`DataMapLoader`, `DataMapFile`, letti il 24/10); jar di Moonlight 3.7.2 e Supplementaries 4.0.2 (24/10). Ricerca: `../lavoro/versioni/v0.2.3.md` (analisi del 17/10); materiale grezzo `../../ai-agents/archivio/2026-10-17_1.21.1-v0.2.3_esperienza/`.
 
 ## Cose da non rompere
 

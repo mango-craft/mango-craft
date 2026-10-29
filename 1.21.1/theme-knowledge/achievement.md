@@ -1,6 +1,6 @@
 # Tema: achievement e progressione
 
-Aggiornata il 19/10/2026 · nessuna mod nel pack per questo tema; candidate: Reliable Advancements, Lucid Advancements, Questlog, Achievements Optimizer (`../lavoro/0601-mod-candidate.md`) · fonti: API di Modrinth, sorgenti su GitHub delle mod, inventario del pack. Ricerca: `../lavoro/versioni/v0.6.0.md`, sezione 2; grezzo `../../ai-agents/stage/2026-10-19_1.21.1-v0.6.0_achievement/`. Decisioni aperte: `../lavoro/0503-temi-aperti.md`.
+Aggiornata il 19/10/2026 · nessuna mod nel pack per questo tema; candidate: Reliable Advancements, Lucid Advancements, Questlog, Achievements Optimizer (`../lavoro/0601-mod-candidate.md`) · fonti: API di Modrinth, sorgenti su GitHub delle mod, inventario del pack. Ricerca: `../lavoro/versioni/v0.6.0.md`, sezione 2; grezzo `../../ai-agents/archivio/2026-10-19_1.21.1-v0.6.0_achievement/`. Decisioni aperte: `../lavoro/0503-temi-aperti.md`.
 
 ## Quanti progressi ha già il pack
 

@@ -2,7 +2,7 @@
 
 Cosa fanno i file di configurazione del pack e quali impostazioni delle mod sono state decise. Documento vivo.
 
-I file stanno in `pack/config/` e li installa packwiz-installer a ogni avvio dell'istanza (`../../docs/0101-installazione.md`). Prima del repository si copiavano a mano (storico in `../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`).
+I file stanno in `pack/config/` e li installa packwiz-installer a ogni avvio dell'istanza (`../../docs/0101-installazione.md`). Prima del repository si copiavano a mano (storico in `../../ai-agents/archivio/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`).
 
 ## I file nel pack
 
