@@ -27,7 +27,7 @@ Ogni versione del pack ha un file (`vX.Y.Z.md`) che racconta obiettivo, valutazi
 | [v0.7.0](versioni/v0.7.0.md) | tappa 6: accessori (Relics) | chiuso (rilasciata il 24/10) |
 | [v0.7.1](versioni/v0.7.1.md) | tappa 6.1: fornaci | chiuso (rilasciata il 26/10 nella 0.7.2) |
 | [v0.7.2](versioni/v0.7.2.md) | tappa 6.2: pozioni (lista nera degli amuleti, censimento) | chiuso (rilasciata il 26/10) |
-| [v0.7.3](versioni/v0.7.3.md) | tappa 6.3: computer (CC: Tweaked, Advanced Peripherals) | 📋 pianificata (25/10) |
+| [v0.7.3](versioni/v0.7.3.md) | tappa 6.3: computer (CC: Tweaked, Advanced Peripherals) | 🔧 aperta il 29/10 |
 | [v0.7.4](versioni/v0.7.4.md) | archeologia e reperti (proposta) | 📋 pianificata (24/10) |
 
 Dove sono finiti i documenti di prima: ricerche 0705, 0706, 0707, 0710 → `v0.1.1`; 0611, 0703, 0711 → `v0.2.3`; 0708 → `v0.5.1`; 0709 → `v0.5.2`; 0712 → `v0.5.3`; 0713 → `v0.6.0`; le righe del log 0610 → sezione "Decisioni" della loro versione; le parti grezze e in inglese (0701, 0702, 0704, 0621, 0901, allegati e appendici) → `ai-agents/stage/`; il progetto del datapack 0620 e la pre-progettazione 0630 → `v0.6.0`, `v0.6.1`, `v0.6.2` e le schede di `../mod-knowledge/` e `../theme-knowledge/` (formati dei file: `botany-pots`, `farming-for-blockheads`, `esperienza`, `cataclysm`).

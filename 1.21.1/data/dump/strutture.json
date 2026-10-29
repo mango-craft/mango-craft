@@ -1,0 +1,4048 @@
+{
+ "aether:bronze_dungeon": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aether:bronze_dungeon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 8,
+  "separazione": 7
+ },
+ "aether:large_aercloud": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aether:large_aercloud",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 8,
+  "separazione": 4
+ },
+ "aether:silver_and_gold_dungeons": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aether:gold_dungeon",
+    "peso": 1
+   },
+   {
+    "struttura": "aether:silver_dungeon",
+    "peso": 3
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 33
+ },
+ "apotheosis:towers": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "apotheosis:tower_leaf",
+    "peso": 1
+   },
+   {
+    "struttura": "apotheosis:tower_main",
+    "peso": 1
+   },
+   {
+    "struttura": "apotheosis:tower_sand",
+    "peso": 1
+   },
+   {
+    "struttura": "apotheosis:tower_spruce",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 36,
+  "separazione": 25
+ },
+ "aquamirae:pirate_outpost": {
+  "tipo": "dev.obscuria.aquamirae.common.region.structure.ConfigurableStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aquamirae:pirate_outpost",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 18,
+  "separazione": 10
+ },
+ "aquamirae:pirate_shelter": {
+  "tipo": "dev.obscuria.aquamirae.common.region.structure.ConfigurableStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aquamirae:pirate_shelter",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 30,
+  "separazione": 20
+ },
+ "aquamirae:pirate_ship": {
+  "tipo": "dev.obscuria.aquamirae.common.region.structure.ConfigurableStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aquamirae:pirate_ship",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 35,
+  "separazione": 10
+ },
+ "aquamirae:shipwreck": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aquamirae:shipwreck",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 8,
+  "separazione": 1
+ },
+ "aquamirae:surface": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "aquamirae:surface/arch",
+    "peso": 66
+   },
+   {
+    "struttura": "aquamirae:surface/spiral",
+    "peso": 33
+   }
+  ],
+  "spaziatura": 5,
+  "separazione": 0
+ },
+ "ars_elemental:starbuncle_shrine": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "ars_elemental:starbuncle_shrine",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 70
+ },
+ "ars_nouveau:wilden_den_set": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "ars_nouveau:guardian_wilden_den",
+    "peso": 25
+   },
+   {
+    "struttura": "ars_nouveau:hunter_wilden_den",
+    "peso": 1
+   },
+   {
+    "struttura": "ars_nouveau:stalker_wilden_den",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 14
+ },
+ "betterarcheology:archeology_sites": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterarcheology:archeologist_camp_grassy",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:archeologist_camp_redsand",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:archeologist_camp_sand",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:buried_ruins_sand",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:catacombs",
+    "peso": 2
+   },
+   {
+    "struttura": "betterarcheology:desert_obelisk",
+    "peso": 6
+   },
+   {
+    "struttura": "betterarcheology:light_temple",
+    "peso": 2
+   },
+   {
+    "struttura": "betterarcheology:mesa_ruins",
+    "peso": 4
+   },
+   {
+    "struttura": "betterarcheology:mott",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:ruins_sand",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:stonehenge_grassy",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:temple_jungle",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:tumulus_grassy",
+    "peso": 4
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 22
+ },
+ "betterarcheology:fossil_sites": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterarcheology:fossil_chicken",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:fossil_chicken_birch",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:fossil_creeper",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:fossil_jungle_0",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:fossil_jungle_1",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:fossil_sheep_0",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:fossil_wolf",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:villager_grave",
+    "peso": 5
+   }
+  ],
+  "spaziatura": 33,
+  "separazione": 16
+ },
+ "betterarcheology:underwater_ruins": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterarcheology:underwater_0",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:underwater_1",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:underwater_2",
+    "peso": 5
+   },
+   {
+    "struttura": "betterarcheology:underwater_3",
+    "peso": 5
+   }
+  ],
+  "spaziatura": 22,
+  "separazione": 16
+ },
+ "betterdeserttemples:desert_temples": {
+  "tipo": "com.yungnickyoung.minecraft.betterdeserttemples.world.placement.BetterDesertTemplePlacement",
+  "strutture": [
+   {
+    "struttura": "betterdeserttemples:desert_temple",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 28
+ },
+ "betterdungeons:skeleton_dungeons": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterdungeons:skeleton_dungeon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 64,
+  "separazione": 32
+ },
+ "betterdungeons:small_dungeons": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterdungeons:small_dungeon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 14,
+  "separazione": 8
+ },
+ "betterdungeons:small_nether_dungeons": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterdungeons:small_nether_dungeon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 22,
+  "separazione": 14
+ },
+ "betterdungeons:spider_dungeons": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterdungeons:spider_dungeon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 61,
+  "separazione": 30
+ },
+ "betterdungeons:zombie_dungeons": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterdungeons:zombie_dungeon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 67,
+  "separazione": 33
+ },
+ "betterfortresses:fortress": {
+  "tipo": "com.yungnickyoung.minecraft.yungsapi.world.structure.placement.EnhancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "betterfortresses:fortress",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 28
+ },
+ "betterjungletemples:jungle_temples": {
+  "tipo": "com.yungnickyoung.minecraft.betterjungletemples.world.placement.BetterJungleTemplePlacement",
+  "strutture": [
+   {
+    "struttura": "betterjungletemples:jungle_temple",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 33,
+  "separazione": 11
+ },
+ "bettermineshafts:mineshafts": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "bettermineshafts:mineshaft_acacia",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_desert",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_dripstone",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_ice",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_jungle",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_lush",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_mesa",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_mushroom",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_oak",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_overgrown",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_red_desert",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_spruce",
+    "peso": 1
+   },
+   {
+    "struttura": "bettermineshafts:mineshaft_spruce_snowy",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 1,
+  "separazione": 0
+ },
+ "betteroceanmonuments:ocean_monument": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betteroceanmonuments:ocean_monument",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 28
+ },
+ "betterstrongholds:stronghold": {
+  "tipo": "com.yungnickyoung.minecraft.betterstrongholds.world.placement.BetterStrongholdsPlacement",
+  "strutture": [
+   {
+    "struttura": "betterstrongholds:stronghold",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 118,
+  "separazione": 70
+ },
+ "betterwitchhuts:witch_circle": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterwitchhuts:witch_circle",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 14
+ },
+ "betterwitchhuts:witch_hut": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "betterwitchhuts:witch_hut",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 11
+ },
+ "born_in_chaos_v1:clown_caravan_plains": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:clown_caravan_plains",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 168,
+  "separazione": 11
+ },
+ "born_in_chaos_v1:clown_caravan_savanna": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:clown_caravan_savanna",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 125,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:clown_caravan_taiga": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:clown_caravan_taiga",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 11
+ },
+ "born_in_chaos_v1:dark_tower_forest": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:dark_tower_forest",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 105,
+  "separazione": 19
+ },
+ "born_in_chaos_v1:dark_tower_plain": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:dark_tower_plain",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 118,
+  "separazione": 19
+ },
+ "born_in_chaos_v1:dark_tower_taiga": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:dark_tower_taiga",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 105,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:farm": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:farm",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 91,
+  "separazione": 8
+ },
+ "born_in_chaos_v1:firewell": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:firewell",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 91,
+  "separazione": 12
+ },
+ "born_in_chaos_v1:grave_2003wise": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_2003wise",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 133,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:grave_2_dling": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_2_dling",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 134,
+  "separazione": 12
+ },
+ "born_in_chaos_v1:grave_d_4rk_devil_x": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_d_4rk_devil_x",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 84,
+  "separazione": 8
+ },
+ "born_in_chaos_v1:grave_darktitan": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_darktitan",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 147,
+  "separazione": 21
+ },
+ "born_in_chaos_v1:grave_derivas": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_derivas",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 125,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:grave_euthymia": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_euthymia",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:grave_feral": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_feral",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 133,
+  "separazione": 12
+ },
+ "born_in_chaos_v1:grave_fubuki_banzai": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_fubuki_banzai",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 117,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:grave_memesus": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_memesus",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 141,
+  "separazione": 15
+ },
+ "born_in_chaos_v1:grave_mike_and_rory": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_mike_and_rory",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 118,
+  "separazione": 8
+ },
+ "born_in_chaos_v1:grave_nino_4416": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_nino_4416",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 134,
+  "separazione": 12
+ },
+ "born_in_chaos_v1:grave_orion": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_orion",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 16
+ },
+ "born_in_chaos_v1:grave_petasi": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_petasi",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 125,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:grave_plug": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_plug",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 14
+ },
+ "born_in_chaos_v1:grave_rotborne": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_rotborne",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 135,
+  "separazione": 9
+ },
+ "born_in_chaos_v1:grave_somfunambulist": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_somfunambulist",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 16
+ },
+ "born_in_chaos_v1:grave_tem_187": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_tem_187",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 161,
+  "separazione": 8
+ },
+ "born_in_chaos_v1:grave_the_gentleman_frog": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:grave_the_gentleman_frog",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 91,
+  "separazione": 8
+ },
+ "born_in_chaos_v1:gravecarrionexe": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:gravecarrionexe",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 12
+ },
+ "born_in_chaos_v1:infernal_pumpkin": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:infernal_pumpkin",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 8
+ },
+ "born_in_chaos_v1:mound_of_hounds": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:mound_of_hounds",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 4
+ },
+ "born_in_chaos_v1:observation_tower_forest": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:observation_tower_forest",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 91,
+  "separazione": 16
+ },
+ "born_in_chaos_v1:observation_tower_plains": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "born_in_chaos_v1:observation_tower_plains",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 280,
+  "separazione": 16
+ },
+ "cataclysm:abandoned_structures": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:abandoned_spire",
+    "peso": 1
+   },
+   {
+    "struttura": "cataclysm:abandoned_temple",
+    "peso": 1
+   },
+   {
+    "struttura": "cataclysm:abandoned_village",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 28
+ },
+ "cataclysm:acropolis": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:acropolis",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 70
+ },
+ "cataclysm:amethyst_nest": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "cataclysm:amethyst_nest",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "cataclysm:ancient_factory": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:ancient_factory",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 156,
+  "separazione": 98
+ },
+ "cataclysm:burning_arena": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:burning_arena",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 70
+ },
+ "cataclysm:cursed_pyramid": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:cursed_pyramid",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 70
+ },
+ "cataclysm:desert_structures": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:desert_occupied_village",
+    "peso": 1
+   },
+   {
+    "struttura": "cataclysm:desert_site",
+    "peso": 1
+   },
+   {
+    "struttura": "cataclysm:desert_temple",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 28
+ },
+ "cataclysm:frosted_prison": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:frosted_prison",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 70
+ },
+ "cataclysm:ruined_citadel": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "cataclysm:ruined_citadel",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 35
+ },
+ "cataclysm:soul_black_smith": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:soul_black_smith",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 84,
+  "separazione": 70
+ },
+ "cataclysm:sunken_city": {
+  "tipo": "com.github.L_Ender.cataclysm.world.structures.placements.CataclysmRandomSpread",
+  "strutture": [
+   {
+    "struttura": "cataclysm:sunken_city",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 98
+ },
+ "deep_aether:altar_camp": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "deep_aether:altar_camp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 11,
+  "separazione": 4
+ },
+ "deep_aether:brass_dungeon": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "deep_aether:brass_dungeon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 16
+ },
+ "deep_aether:campfire": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "deep_aether:campfire",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 11,
+  "separazione": 4
+ },
+ "deep_aether:combiner_corridor": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "deep_aether:combiner_corridor",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 11,
+  "separazione": 4
+ },
+ "deeperdarker:ancient_temples": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "deeperdarker:ancient_temple",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 39,
+  "separazione": 11
+ },
+ "dungeons_arise:major_structures": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "dungeons_arise:aviary",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:bandit_towers",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:bandit_village",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:ceryneian_hind",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:coliseum",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:foundry",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:greenwood_pub",
+    "peso": 2
+   },
+   {
+    "struttura": "dungeons_arise:heavenly_challenger",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:heavenly_conqueror",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:heavenly_rider",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:illager_campsite",
+    "peso": 3
+   },
+   {
+    "struttura": "dungeons_arise:illager_corsair",
+    "peso": 2
+   },
+   {
+    "struttura": "dungeons_arise:illager_fort",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:illager_galley",
+    "peso": 2
+   },
+   {
+    "struttura": "dungeons_arise:illager_windmill",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:infested_temple",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:keep_kayra",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:kisegi_sanctuary",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:mechanical_nest",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:merchant_campsite",
+    "peso": 3
+   },
+   {
+    "struttura": "dungeons_arise:mining_complex",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:monastery",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:mushroom_house",
+    "peso": 2
+   },
+   {
+    "struttura": "dungeons_arise:mushroom_mines",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:mushroom_village",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:plague_asylum",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:scorched_mines",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:shiraz_palace",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:small_blimp",
+    "peso": 3
+   },
+   {
+    "struttura": "dungeons_arise:thornborn_towers",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:typhon",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:undead_pirate_ship",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 62
+ },
+ "dungeons_arise:minor_structures": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "dungeons_arise:abandoned_temple",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:bathhouse",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:fishing_hut",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:jungle_tree_house",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:lighthouse",
+    "peso": 1
+   },
+   {
+    "struttura": "dungeons_arise:wishing_well",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 62,
+  "separazione": 56
+ },
+ "endersdelight:end_house": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "endersdelight:end_house",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 35,
+  "separazione": 21
+ },
+ "farmers_structures:aethers_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:aether",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 62,
+  "separazione": 35
+ },
+ "farmers_structures:afterdark_farms_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:afterdark_farms",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 89,
+  "separazione": 40
+ },
+ "farmers_structures:aquacultures_beach_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:aquacultures_beach",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 91,
+  "separazione": 43
+ },
+ "farmers_structures:aquacultures_cod_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:aquacultures_cod",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 109,
+  "separazione": 53
+ },
+ "farmers_structures:aquacultures_common_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:aquacultures_common",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 67,
+  "separazione": 36
+ },
+ "farmers_structures:cacaos_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:cacaos",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 91,
+  "separazione": 43
+ },
+ "farmers_structures:cooks_moss_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:cooks_moss",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 22,
+  "separazione": 19
+ },
+ "farmers_structures:cooks_nether_1_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:cooks_nether_1",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 29
+ },
+ "farmers_structures:cooks_nether_2_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:cooks_nether_2",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 51,
+  "separazione": 39
+ },
+ "farmers_structures:cooks_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:cooks",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 44
+ },
+ "farmers_structures:deeper_farms_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:deeper_farms",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 89,
+  "separazione": 40
+ },
+ "farmers_structures:fishs_stew_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:fishs_stew",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 25
+ },
+ "farmers_structures:flesh_farms_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:flesh_farms",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 89,
+  "separazione": 40
+ },
+ "farmers_structures:honey_cake_farms_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:honey_cake_farms",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 89,
+  "separazione": 40
+ },
+ "farmers_structures:ratatouilles_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:ratatouilles",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 61,
+  "separazione": 40
+ },
+ "farmers_structures:shepherd_farms_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:shepherd_farms",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 197,
+  "separazione": 169
+ },
+ "farmers_structures:squids_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:squids",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 53,
+  "separazione": 30
+ },
+ "farmers_structures:sushus_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:sushis",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 75,
+  "separazione": 33
+ },
+ "farmers_structures:undergardens_sea_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:undergardens_sea",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 217,
+  "separazione": 168
+ },
+ "farmers_structures:undergardens_with_all": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "farmers_structures:undergardens",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 133,
+  "separazione": 112
+ },
+ "friendsandfoes:citadel": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "friendsandfoes:citadel",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 22,
+  "separazione": 11
+ },
+ "friendsandfoes:iceologer_cabin": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "friendsandfoes:iceologer_cabin",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 14
+ },
+ "friendsandfoes:illusioner_shack": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "friendsandfoes:illusioner_shack",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 14
+ },
+ "friendsandfoes:illusioner_training_grounds": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "friendsandfoes:illusioner_training_grounds",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 14
+ },
+ "hexerei:baba_yaga_hut": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "hexerei:baba_yaga_hut",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 133
+ },
+ "hexerei:dark_coven": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "hexerei:dark_coven",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 40,
+  "separazione": 15
+ },
+ "hexerei:nature_coven": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "hexerei:nature_coven",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 40,
+  "separazione": 15
+ },
+ "hexerei:owl_post_office": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "hexerei:owl_post_office",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 16
+ },
+ "hexerei:witch_hut": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "hexerei:witch_hut",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 11
+ },
+ "illagerinvasion:firecaller_hut": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "illagerinvasion:firecaller_hut",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 58,
+  "separazione": 39
+ },
+ "illagerinvasion:illager_fort": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "illagerinvasion:illager_fort",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 58,
+  "separazione": 39
+ },
+ "illagerinvasion:illusioner_tower": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "illagerinvasion:illusioner_tower",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 58,
+  "separazione": 39
+ },
+ "illagerinvasion:labyrinth": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "illagerinvasion:labyrinth",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 67,
+  "separazione": 36
+ },
+ "illagerinvasion:sorcerer_hut": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "illagerinvasion:sorcerer_hut",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 25,
+  "separazione": 19
+ },
+ "meadow:chalet": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "meadow:chalet",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 68,
+  "separazione": 30
+ },
+ "meadow:chapel": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "meadow:chapel",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 103,
+  "separazione": 37
+ },
+ "meadow:logging_camp": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "meadow:logging_camp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 39
+ },
+ "meadow:monument": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "meadow:monument",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 14
+ },
+ "meadow:observation_post": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "meadow:observation_post",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 46,
+  "separazione": 23
+ },
+ "mes:astral_hideaway": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:astral_hideaway",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 92,
+  "separazione": 41
+ },
+ "mes:astral_meteorite": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:astral_meteorite",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 61,
+  "separazione": 26
+ },
+ "mes:ender_spire": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:ender_spire",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 106,
+  "separazione": 87
+ },
+ "mes:enderbloom_grove": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:enderbloom_grove",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 83,
+  "separazione": 26
+ },
+ "mes:enderkeep_courtyard": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:enderkeep_courtyard",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 101,
+  "separazione": 58
+ },
+ "mes:enderpin_spikes": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:enderpin_spikes",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 71,
+  "separazione": 18
+ },
+ "mes:enderskog": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:enderskog",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 119,
+  "separazione": 50
+ },
+ "mes:enderwatch_tower": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:enderwatch_tower",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 96,
+  "separazione": 26
+ },
+ "mes:endscraps": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:endscraps",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 84,
+  "separazione": 15
+ },
+ "mes:manuscript_shrine": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:manuscript_shrine",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 94,
+  "separazione": 61
+ },
+ "mes:mega_ship": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 177,
+  "separazione": 35
+ },
+ "mes:mega_ship_basic": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship_basic",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 185,
+  "separazione": 139
+ },
+ "mes:mega_ship_crashed": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship_crashed",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 173,
+  "separazione": 106
+ },
+ "mes:mega_ship_crashed_2": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship_crashed_2",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 165,
+  "separazione": 111
+ },
+ "mes:mega_ship_crashed_deepslate": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship_crashed_deepslate",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 182,
+  "separazione": 119
+ },
+ "mes:mega_ship_deepslate": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship_deepslate",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 203,
+  "separazione": 150
+ },
+ "mes:mega_ship_deepslate_2": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship_deepslate_2",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 188,
+  "separazione": 106
+ },
+ "mes:mega_ship_deepslate_3": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mega_ship_deepslate_3",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 193,
+  "separazione": 119
+ },
+ "mes:monolith": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:monolith",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 83,
+  "separazione": 48
+ },
+ "mes:mystical_archway": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mystical_archway",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 101,
+  "separazione": 73
+ },
+ "mes:mythic_garden": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:mythic_garden",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 87,
+  "separazione": 61
+ },
+ "mes:phantom_citadel": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:phantom_citadel",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 71,
+  "separazione": 31
+ },
+ "mes:placid_prairie": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:placid_prairie",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 73,
+  "separazione": 50
+ },
+ "mes:ruined_pillar": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:ruined_pillar",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 26,
+  "separazione": 15
+ },
+ "mes:starlight_voyager": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mes:starlight_voyager",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 73,
+  "separazione": 38
+ },
+ "minecraft:ancient_cities": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:ancient_city",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 33,
+  "separazione": 11
+ },
+ "minecraft:buried_treasures": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:buried_treasure",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 1,
+  "separazione": 0
+ },
+ "minecraft:desert_pyramids": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:desert_pyramid",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "minecraft:end_cities": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:end_city",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 15
+ },
+ "minecraft:igloos": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:igloo",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "minecraft:jungle_temples": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:jungle_pyramid",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "minecraft:mineshafts": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:mineshaft",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:mineshaft_mesa",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 1,
+  "separazione": 0
+ },
+ "minecraft:nether_complexes": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:bastion_remnant",
+    "peso": 3
+   },
+   {
+    "struttura": "minecraft:fortress",
+    "peso": 2
+   }
+  ],
+  "spaziatura": 37,
+  "separazione": 5
+ },
+ "minecraft:nether_fossils": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:nether_fossil",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 2,
+  "separazione": 1
+ },
+ "minecraft:ocean_monuments": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:monument",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 7
+ },
+ "minecraft:ocean_ruins": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:ocean_ruin_cold",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:ocean_ruin_warm",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 11
+ },
+ "minecraft:pillager_outposts": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:pillager_outpost",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "minecraft:ruined_portals": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:ruined_portal",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:ruined_portal_desert",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:ruined_portal_jungle",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:ruined_portal_mountain",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:ruined_portal_nether",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:ruined_portal_ocean",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:ruined_portal_swamp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 21
+ },
+ "minecraft:shipwrecks": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:shipwreck",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:shipwreck_beached",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 33,
+  "separazione": 5
+ },
+ "minecraft:strongholds": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:stronghold",
+    "peso": 1
+   }
+  ]
+ },
+ "minecraft:swamp_huts": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:swamp_hut",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "minecraft:trail_ruins": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:trail_ruins",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 47,
+  "separazione": 11
+ },
+ "minecraft:trial_chambers": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:trial_chambers",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 47,
+  "separazione": 16
+ },
+ "minecraft:villages": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:village_desert",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:village_plains",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:village_savanna",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:village_snowy",
+    "peso": 1
+   },
+   {
+    "struttura": "minecraft:village_taiga",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 34,
+  "separazione": 8
+ },
+ "minecraft:woodland_mansions": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:mansion",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:illager_manor",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 160,
+  "separazione": 40
+ },
+ "mns:bridge_1": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:bridge_1",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 206,
+  "separazione": 162
+ },
+ "mns:bridge_2": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:bridge_2",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 206,
+  "separazione": 162
+ },
+ "mns:bridge_3": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:bridge_3",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 206,
+  "separazione": 162
+ },
+ "mns:bridge_4": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:bridge_4",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 206,
+  "separazione": 162
+ },
+ "mns:bridge_5": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:bridge_5",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 206,
+  "separazione": 162
+ },
+ "mns:bridge_6": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:bridge_6",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 206,
+  "separazione": 162
+ },
+ "mns:circle_blackstone": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:circle_blackstone",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 35
+ },
+ "mns:circle_nether_brick": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:circle_nether_brick",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 53,
+  "separazione": 25
+ },
+ "mns:copper_tower": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:copper_tower",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 165,
+  "separazione": 84
+ },
+ "mns:crimson_forge": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:crimson_forge",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 54,
+  "separazione": 43
+ },
+ "mns:crimson_lava_well": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:crimson_lava_well",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 54,
+  "separazione": 43
+ },
+ "mns:giant_skull": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:giant_skull",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 124,
+  "separazione": 106
+ },
+ "mns:grave_yard": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:grave_yard",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 83,
+  "separazione": 50
+ },
+ "mns:large_blackstone_pillars": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:large_blackstone_pillars",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 61,
+  "separazione": 41
+ },
+ "mns:large_blackstone_walls": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:large_blackstone_walls",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 66,
+  "separazione": 25
+ },
+ "mns:large_house_1": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:large_house_1",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 96,
+  "separazione": 87
+ },
+ "mns:large_nether_brick": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:large_nether_brick",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 73,
+  "separazione": 36
+ },
+ "mns:lava_pool": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:lava_pool",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 94,
+  "separazione": 59
+ },
+ "mns:leafy_rubble": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:leafy_rubble",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 35
+ },
+ "mns:medium_blackstone": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:medium_blackstone",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 53,
+  "separazione": 41
+ },
+ "mns:medium_crimson_fungus": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:medium_crimson_fungus",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:medium_crimson_fungus_2",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 54,
+  "separazione": 43
+ },
+ "mns:medium_crimson_well": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:medium_crimson_well",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 26
+ },
+ "mns:medium_house": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:medium_house",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 99,
+  "separazione": 78
+ },
+ "mns:medium_house_2": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:medium_house_2",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 101,
+  "separazione": 83
+ },
+ "mns:medium_warped_fungus": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:medium_warped_fungus",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:medium_warped_fungus_2",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 64,
+  "separazione": 30
+ },
+ "mns:medium_warped_well": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:medium_warped_well",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 54,
+  "separazione": 31
+ },
+ "mns:mega_arenas": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:dragon_arena",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:large_arena",
+    "peso": 3
+   },
+   {
+    "struttura": "mns:small_arena",
+    "peso": 5
+   }
+  ],
+  "spaziatura": 347,
+  "separazione": 231
+ },
+ "mns:mega_fortress": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:mega_fortress",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 267,
+  "separazione": 175
+ },
+ "mns:nether_tower": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:nether_tower",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 266,
+  "separazione": 129
+ },
+ "mns:nether_wart_farm": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:nether_wart_farm",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 195,
+  "separazione": 58
+ },
+ "mns:ruined_portal": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:ruined_portal",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 69,
+  "separazione": 64
+ },
+ "mns:sandy_skull": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:sandy_skull",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 92,
+  "separazione": 83
+ },
+ "mns:shrine": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:shrine",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:smoking_shrine",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 54,
+  "separazione": 38
+ },
+ "mns:small_nether_brick": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:small_nether_brick",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 54,
+  "separazione": 46
+ },
+ "mns:soul_fire": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:soul_fire",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 58,
+  "separazione": 36
+ },
+ "mns:sword": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:sword",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 102,
+  "separazione": 96
+ },
+ "mns:train": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:train",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 150,
+  "separazione": 116
+ },
+ "mns:very_small_blackstone": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:very_small_blackstone",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:very_small_blackstone_2",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:very_small_blackstone_3",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:very_small_blackstone_4",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 53,
+  "separazione": 26
+ },
+ "mns:very_small_nether_brick": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:very_small_nether_brick",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:very_small_nether_brick_2",
+    "peso": 1
+   },
+   {
+    "struttura": "mns:very_small_nether_brick_3",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 50,
+  "separazione": 26
+ },
+ "mns:warped_dome": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:warped_dome",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 96,
+  "separazione": 87
+ },
+ "mns:warped_house": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:warped_house",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 96,
+  "separazione": 87
+ },
+ "mns:warped_pool": {
+  "tipo": "com.finndog.moogs_structures.world.structures.placements.AdvancedRandomSpread",
+  "strutture": [
+   {
+    "struttura": "mns:warped_pool",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 76,
+  "separazione": 48
+ },
+ "mowziesmobs:frostmaw_spawns": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "mowziesmobs:frostmaw_spawn",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 35,
+  "separazione": 11
+ },
+ "mowziesmobs:monasteries": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "mowziesmobs:monastery",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 35,
+  "separazione": 11
+ },
+ "mowziesmobs:umvuthana_groves": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "mowziesmobs:umvuthana_grove",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 35,
+  "separazione": 11
+ },
+ "mowziesmobs:wrought_chambers": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "mowziesmobs:wrought_chamber",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 21,
+  "separazione": 7
+ },
+ "netherdepthsupgrade:nether_fotress_piece": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "netherdepthsupgrade:nether_fortress_piece",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 35,
+  "separazione": 14
+ },
+ "netherexp:chapel": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "netherexp:chapel",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 14
+ },
+ "netherexp:devils_ruins": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "netherexp:devils_misfortune",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 11
+ },
+ "netherexp:mega_fossils": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "netherexp:mega_fossil",
+    "peso": 6
+   },
+   {
+    "struttura": "netherexp:mega_fossil_campsite",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 4,
+  "separazione": 1
+ },
+ "netherexp:sanctum": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "netherexp:sanctum",
+    "peso": 1
+   }
+  ]
+ },
+ "nova_structures:badlands_miner_outpost": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:badlands_miner_outpost",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 84,
+  "separazione": 16
+ },
+ "nova_structures:badlands_miner_outpost_mineshafts": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "minecraft:mineshaft_mesa",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 84,
+  "separazione": 16
+ },
+ "nova_structures:bunker": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:bunker",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 14
+ },
+ "nova_structures:conduit_ruin": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:conduit_ruin",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 196,
+  "separazione": 125
+ },
+ "nova_structures:creeping_crypt": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:creeping_crypt",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 14
+ },
+ "nova_structures:deepslate_camp": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:deepslate_camp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 21,
+  "separazione": 9
+ },
+ "nova_structures:desert_ruins": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:desert_ruins",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 16
+ },
+ "nova_structures:end_castle": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.ConcentricRingsStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:end_castle",
+    "peso": 1
+   }
+  ]
+ },
+ "nova_structures:end_lighthouses": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:end_lighthouse",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 30
+ },
+ "nova_structures:end_ship": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:end_ship",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 14
+ },
+ "nova_structures:firewatch_towers": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:firewatch_tower_birch",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_cherry",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_dark_oak",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_forest",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_jungle",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_mangrove",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_savanna",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_swamp",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:firewatch_tower_taiga",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 21
+ },
+ "nova_structures:illager_camp": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:illager_camp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 44
+ },
+ "nova_structures:illager_hideout": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:illager_hideout",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 280,
+  "separazione": 16
+ },
+ "nova_structures:jungle_ruins": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:jungle_ruins",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 16
+ },
+ "nova_structures:mangrove_witch_hut": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:mangrove_witch_hut",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "nova_structures:nether_camps": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:piglin_camp",
+    "peso": 3
+   },
+   {
+    "struttura": "nova_structures:skeleton_camp_crimson",
+    "peso": 2
+   },
+   {
+    "struttura": "nova_structures:skeleton_camp_soul",
+    "peso": 2
+   },
+   {
+    "struttura": "nova_structures:skeleton_camp_warped",
+    "peso": 2
+   },
+   {
+    "struttura": "nova_structures:skeleton_camp_waste",
+    "peso": 2
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 14
+ },
+ "nova_structures:nether_skeleton_towers": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:nether_skeleton_tower_crimson",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:nether_skeleton_tower_soul",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:nether_skeleton_tower_warped",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:nether_skeleton_tower_waste",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 28
+ },
+ "nova_structures:nether_structures": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:hamlet",
+    "peso": 40
+   },
+   {
+    "struttura": "nova_structures:nether_keep",
+    "peso": 10
+   },
+   {
+    "struttura": "nova_structures:nether_port",
+    "peso": 20
+   },
+   {
+    "struttura": "nova_structures:piglin_donjon",
+    "peso": 5
+   },
+   {
+    "struttura": "nova_structures:piglin_outstation",
+    "peso": 20
+   }
+  ],
+  "spaziatura": 118,
+  "separazione": 56
+ },
+ "nova_structures:remnants": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:remnant_bee_keeper",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_big_remnant",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_big_remnant_2",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_big_remnant_3",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_birch_graveyard",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_bridge_remnant",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_bunny_base",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_classic_village",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_desert_remnant",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_forest_smith",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_frog_ranch",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_graveyard",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_medium_remnant",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_medium_remnant_2",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_miner_hut",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_mud_brick_constructor",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_ominous_shop",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_ruin_farmer",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_ruin_smith",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_sawmill",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_school_remnant",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_taiga_castle",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_woodland_hud",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:remnant_zombie_horse_ranch",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 168,
+  "separazione": 42
+ },
+ "nova_structures:ruin_town": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:ruin_town",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 100,
+  "separazione": 42
+ },
+ "nova_structures:shrine_tower": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:shrine_tower",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 840,
+  "separazione": 436
+ },
+ "nova_structures:shrines": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:shrine_combat_tier_1",
+    "peso": 20
+   },
+   {
+    "struttura": "nova_structures:shrine_combat_tier_2",
+    "peso": 20
+   },
+   {
+    "struttura": "nova_structures:shrine_combat_tier_3",
+    "peso": 50
+   },
+   {
+    "struttura": "nova_structures:shrine_combat_tier_4",
+    "peso": 40
+   },
+   {
+    "struttura": "nova_structures:shrine_combat_tier_5",
+    "peso": 30
+   }
+  ],
+  "spaziatura": 70,
+  "separazione": 36
+ },
+ "nova_structures:stray_fort": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:lone_citadel",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:stray_fort",
+    "peso": 9
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 22
+ },
+ "nova_structures:swamp_structure": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:toxic_lair",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:witch_villa",
+    "peso": 3
+   }
+  ],
+  "spaziatura": 112,
+  "separazione": 28
+ },
+ "nova_structures:taverns": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:tavern_acacia",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_birch",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_cherry",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_dark_oak",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_desert",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_jungle",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_mangrove",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_oak",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_snowy",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_spruce",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:tavern_swamp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 21
+ },
+ "nova_structures:trident_trial_monument": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:trident_trial_monument",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 280,
+  "separazione": 266
+ },
+ "nova_structures:undead_crypt": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:undead_crypt",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 140,
+  "separazione": 28
+ },
+ "nova_structures:underground_house": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:underground_house",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 28,
+  "separazione": 14
+ },
+ "nova_structures:villages_birch": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:village_birch",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 47,
+  "separazione": 11
+ },
+ "nova_structures:villages_jungle": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:village_jungle",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 47,
+  "separazione": 11
+ },
+ "nova_structures:villages_swamp": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:village_swamp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 47,
+  "separazione": 11
+ },
+ "nova_structures:wells": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:well_birch",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:well_dark_oak",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:well_jungle",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:well_oak",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:well_savana",
+    "peso": 1
+   },
+   {
+    "struttura": "nova_structures:well_spruce",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 21
+ },
+ "nova_structures:wild_ruin": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "nova_structures:wild_ruin",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 37,
+  "separazione": 25
+ },
+ "paraglider:nether_horned_statue": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "paraglider:nether_horned_statue",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "paraglider:tarrey_town_goddess_statue": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "paraglider:tarrey_town_goddess_statue",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 179,
+  "separazione": 22
+ },
+ "paraglider:underground_horned_statue": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "paraglider:underground_horned_statue",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 22,
+  "separazione": 5
+ },
+ "scriptor:artifact_chamber": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "scriptor:artifact_chamber",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "supplementaries:galleons": {
+  "tipo": "net.mehvahdjukaar.supplementaries.common.worldgen.RandomSpreadStructurePlacementWithExclusion",
+  "strutture": [
+   {
+    "struttura": "supplementaries:galleon",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 43,
+  "separazione": 26
+ },
+ "supplementaries:road_signs": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "supplementaries:road_sign",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 26,
+  "separazione": 14
+ },
+ "tombstone:abandoned_grave": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "tombstone:abandoned_grave_land",
+    "peso": 1
+   },
+   {
+    "struttura": "tombstone:abandoned_grave_ocean",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 11
+ },
+ "towns_and_towers:other": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "towns_and_towers:mimic_desert",
+    "peso": 1
+   },
+   {
+    "struttura": "towns_and_towers:wreckage_ocean",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 44,
+  "separazione": 22
+ },
+ "towns_and_towers:towers": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_classic",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_iberian",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_mediterranean",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_nilotic",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_oriental",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_rustic",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_swedish",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/pillager_outpost_tudor",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_badlands",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_beach",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_birch_forest",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_desert",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_flower_forest",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_forest",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_grove",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_jungle",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_meadow",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_mushroom_fields",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_ocean",
+    "peso": 2
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_old_growth_taiga",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_savanna",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_savanna_plateau",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_snowy_beach",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_snowy_plains",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_snowy_slopes",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_snowy_taiga",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_sparse_jungle",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_sunflower_plains",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_swamp",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_taiga",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:pillager_outpost_wooded_badlands",
+    "peso": 5
+   }
+  ],
+  "spaziatura": 67,
+  "separazione": 16
+ },
+ "towns_and_towers:towns": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "towns_and_towers:exclusives/village_classic",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_iberian",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_mediterranean",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_nilotic",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_piglin",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_rustic",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_swedish",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_tudor",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:exclusives/village_wandering_trader_camp",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_badlands",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_beach",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_birch_forest",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_flower_forest",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_forest",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_grove",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_jungle",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_meadow",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_mushroom_fields",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_ocean",
+    "peso": 2
+   },
+   {
+    "struttura": "towns_and_towers:village_old_growth_taiga",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_savanna_plateau",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_snowy_slopes",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_snowy_taiga",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_sparse_jungle",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_sunflower_plains",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_swamp",
+    "peso": 5
+   },
+   {
+    "struttura": "towns_and_towers:village_wooded_badlands",
+    "peso": 5
+   }
+  ],
+  "spaziatura": 71,
+  "separazione": 16
+ },
+ "twilightforest:aurora_palace": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:aurora_palace",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:camp": {
+  "tipo": "twilightforest.world.components.structures.placements.AvoidLandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:camp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 25,
+  "separazione": 19
+ },
+ "twilightforest:dark_tower": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:dark_tower",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:fallen_trunk": {
+  "tipo": "twilightforest.world.components.structures.placements.AvoidLandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:fallen_trunk",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 9,
+  "separazione": 7
+ },
+ "twilightforest:final_castle": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:final_castle",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:giant_house": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:giant_house",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:hedge_maze": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:hedge_maze",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:hollow_tree": {
+  "tipo": "twilightforest.world.components.structures.placements.AvoidLandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:hollow_tree",
+    "peso": 1
+   },
+   {
+    "struttura": "twilightforest:swamp_hollow_tree",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 9,
+  "separazione": 7
+ },
+ "twilightforest:hydra_lair": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:hydra_lair",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:knight_stronghold": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:knight_stronghold",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:labyrinth": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:labyrinth",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:large_hollow_hill": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:large_hollow_hill",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:lich_tower": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:lich_tower",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:medium_hollow_hill": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:medium_hollow_hill",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:naga_courtyard": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:naga_courtyard",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:quest_grove": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:quest_grove",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:small_hollow_hill": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:small_hollow_hill",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:troll_cave": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:troll_cave",
+    "peso": 1
+   }
+  ]
+ },
+ "twilightforest:yeti_cave": {
+  "tipo": "twilightforest.world.components.structures.placements.LandmarkGridPlacement",
+  "strutture": [
+   {
+    "struttura": "twilightforest:yeti_cave",
+    "peso": 1
+   }
+  ]
+ },
+ "undergarden:catacombs": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "undergarden:catacombs",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 33,
+  "separazione": 16
+ },
+ "undergarden:denizen_camp": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "undergarden:denizen_camp",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 16,
+  "separazione": 8
+ },
+ "undergarden:depleted_mine": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "undergarden:depleted_mine",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 1,
+  "separazione": 0
+ },
+ "undergarden:forgotten_vestige": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "undergarden:forgotten_vestige",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 4,
+  "separazione": 1
+ },
+ "unusualend:ancient_end_tower": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:ancient_end_tower",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 47,
+  "separazione": 46
+ },
+ "unusualend:chorus_cane": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:chorus_cane",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 9,
+  "separazione": 7
+ },
+ "unusualend:end_house": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:end_house",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 42,
+  "separazione": 40
+ },
+ "unusualend:firefly_nest": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:firefly_nest",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 21,
+  "separazione": 7
+ },
+ "unusualend:flying_end_ship": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:flying_end_ship",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 49
+ },
+ "unusualend:gloopy_nest": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:gloopy_nest",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 5,
+  "separazione": 4
+ },
+ "unusualend:small_gloopy_ruins": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:small_gloopy_ruins",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 4,
+  "separazione": 2
+ },
+ "unusualend:wanderer_island": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:wanderer_island",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 56,
+  "separazione": 49
+ },
+ "unusualend:warped_flying_end_ship": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:warped_flying_end_ship",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 15,
+  "separazione": 14
+ },
+ "unusualend:warped_station": {
+  "tipo": "net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement",
+  "strutture": [
+   {
+    "struttura": "unusualend:warped_station",
+    "peso": 1
+   }
+  ],
+  "spaziatura": 9,
+  "separazione": 5
+ }
+}

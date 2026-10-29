@@ -427,6 +427,10 @@ CREATE TABLE DUMP_MOD (                  -- le mod caricate nel gioco quando è 
   modid    TEXT PRIMARY KEY,
   versione TEXT NOT NULL
 );
+CREATE TABLE DUMP_INFO (                 -- data del dump, formato, impronta del datapack a cui si riferisce (dall'importatore)
+  chiave TEXT PRIMARY KEY,
+  valore TEXT
+);
 CREATE TABLE EFFETTO (
   effetto_id  TEXT PRIMARY KEY,          -- es. apothic_attributes:flying
   slug        TEXT NOT NULL REFERENCES MOD,
@@ -770,12 +774,16 @@ class BotanyPotsDB:
                 out.append(("avviso: righe del dump saltate (non blocca)", True, ", ".join(f"{k} {v}" for k, v in sorted(self._saltati_dump.items()))))
             # formato 2: il lavoro di tutte le versioni confrontato con il gioco (bloccano solo se il dump è aggiornato)
             if c.execute("SELECT count(*) FROM GIOCO_RICETTA").fetchone()[0]:
-                blocca = not vecchio
+                info = dict(c.execute("SELECT chiave, valore FROM DUMP_INFO").fetchall())
+                dp_cambiato = info.get("datapack_sha256") != info.get("datapack_attuale")
+                if dp_cambiato:
+                    out.append(("avviso: il datapack è cambiato dopo il dump: i confronti con il gioco non bloccano (non blocca)", True, "rilanciare /mango_dump"))
+                blocca = not vecchio and not dp_cambiato
                 for nome, sql in (("le nostre ricette caricabili sono nel gioco (e le altre no)", "SELECT count(*) FROM NOSTRA_RICETTA_DIVERSA"),
                                   ("le voci dei nostri tag sono nelle etichette finali del gioco", "SELECT count(*) FROM NOSTRO_TAG_MANCANTE"),
                                   ("le tabelle del bottino nostre e quelle dei nostri modificatori esistono nel gioco", "SELECT count(*) FROM NOSTRA_TABELLA_MANCANTE")):
                     n = c.execute(sql).fetchone()[0]
-                    out.append((nome if blocca else f"avviso: {nome} (dump vecchio, non blocca)", n == 0 or not blocca, f"trovati: {n}"))
+                    out.append((nome if blocca else f"avviso: {nome} (dump non aggiornato, non blocca)", n == 0 or not blocca, f"trovati: {n}"))
                 n = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove = 'solo nel gioco'").fetchone()[0]
                 m = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove <> 'solo nel gioco'").fetchone()[0]
                 out.append(("avviso: oggetti creati all'avvio, non nell'inventario / dell'inventario non nel gioco (non blocca)", True, f"{n} / {m}"))
@@ -1254,6 +1262,15 @@ class BotanyPotsDB:
 
     _saltati_dump = None
 
+    def _impronta_datapack(self) -> str:
+        """La stessa impronta che scripts/dump_importa.py salva in meta.json (`datapack_sha256`)."""
+        import hashlib
+        h = hashlib.sha256()
+        for f in sorted(self.datapack.rglob("*")):
+            if f.is_file():
+                h.update(f.relative_to(self.datapack).as_posix().encode()); h.update(b"\0"); h.update(f.read_bytes()); h.update(b"\0")
+        return h.hexdigest()
+
     def _carica_gioco(self, c: sqlite3.Connection, dati: dict) -> None:
         """I nostri file del datapack e, se c'è, il dump del gioco nel formato 2: registri, ricette, etichette,
         tabelle del bottino, insiemi di strutture."""
@@ -1321,6 +1338,8 @@ class BotanyPotsDB:
             return
         meta = dump.get("meta") or {}
         c.executemany("INSERT INTO DUMP_MOD VALUES (?,?)", sorted((meta.get("mod") or {}).items()))
+        c.executemany("INSERT INTO DUMP_INFO VALUES (?,?)", [(k, str(meta.get(k))) for k in ("data", "formato", "datapack_sha256") if meta.get(k) is not None])
+        c.execute("INSERT INTO DUMP_INFO VALUES ('datapack_attuale', ?)", (self._impronta_datapack(),))
         effetti = {r[0] for r in c.execute("SELECT effetto_id FROM EFFETTO")}
         pozioni = {r[0] for r in c.execute("SELECT pozione_id FROM POZIONE")}
 

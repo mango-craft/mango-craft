@@ -1,6 +1,6 @@
 {
- "formato": 1,
- "data": "2026-10-26T22:13:01.133Z",
+ "formato": 2,
+ "data": "2026-10-29T17:56:34.239Z",
  "minecraft": "1.21.1",
  "kubejs": "2101.7.2-build.377",
  "mod": {
@@ -364,7 +364,13 @@
   "effetti": 376,
   "pozioni": 173,
   "alambicco": 963,
-  "oggetti": 1584
+  "oggetti": 1584,
+  "registri": 31316,
+  "ricette": 31612,
+  "tag": 4720,
+  "tabelle": 16780,
+  "strutture": 288
  },
- "errori": []
+ "errori": [],
+ "datapack_sha256": "341a28f267df5c0b377274fd9935feeac1f5d308e5fed16d91d90aa7d7aa4c50"
 }

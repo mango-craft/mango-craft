@@ -10,6 +10,13 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.7.3 — in lavorazione · computer (in preparazione)
+
+- **Datapack, vasi (correzione B47)**: le 3 colture dei graticci di Bountiful Fares (sambuco, lapisberry, frutto della passione) ora si caricano (aspetto del graticcio `bountifulfares:trellis`); tolta la coltura degli endstone sprouts warped, che Unusual End non registra. Trovato con il dump del gioco: dalla 0.6.1 il gioco le saltava in silenzio.
+- **Strumenti**: dump del gioco nel **formato 2** (nomi registrati, ricette caricate, etichette finali, tabelle del bottino, insiemi di strutture); la base dati confronta i nostri file con il gioco (ricette, tag, tabelle), il controllo dei nomi avvisa per i nomi che il gioco non registra; l'importatore segna a quale datapack si riferisce il dump.
+- **Mod nuove**: da aggiungere (CC: Tweaked, Advanced Peripherals: `../lavoro/versioni/v0.7.3.md`).
+- **Stato**: 🔧 in lavorazione sul ramo `dev`.
+
 ## 0.7.2 — 26/10/2026 · fornaci e pozioni (pre-release di prova)
 
 Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due insieme (24/10/2026).
