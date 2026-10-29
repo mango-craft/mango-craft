@@ -1,3 +1,6 @@
+# Contesto locale di Claude Code (percorsi del PC): mai nel repository
+CLAUDE.local.md
+
 # File generati
 dist/
 *.mrpack
@@ -16,5 +19,5 @@ options.txt
 .DS_Store
 Thumbs.db
 
-# Base dati dei vasi: si rigenera con scripts/vasi_db.py
+# Base dati: si rigenera con scripts/botanypots_db.py
 1.21.1/data/vasi/vasi.sqlite

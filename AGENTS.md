@@ -128,14 +128,25 @@ Cinque livelli, dal grezzo al distillato:
 - **Funzioni di prova**: le prove di uscita che chiedono oggetti si preparano come funzioni in `data/matteo_tweaks/function/test/releases/v<versione della release>/`, con nomi corti che dicono cosa c'è dentro (`fornaci_iron_mk2_jumbo`, `amuleto_flying_vs_visione`), più `tutte_le_prove` che le chiama tutte (stile scelto da Matteo, 25/10/2026). Non hanno condizioni di caricamento (eccezione): i nomi li controlla `scripts/check_ids.py`. Readme in `function/test/`.
 - Le parti da scrivere sono progettate nel file della versione che le porta (`<versione>/lavoro/versioni/`); i formati dei file stanno nelle schede (`botany-pots`, `farming-for-blockheads`, `cataclysm` per le mod; `esperienza` per i temi…).
 
-## 8. Ambiente di lavoro di Claude
+## 8. Ambiente di lavoro degli agenti
 
-- Lo spazio di lavoro raggiunge **solo GitHub** dalla riga di comando. L'API di Modrinth si legge con lo strumento web. **CurseForge non è raggiungibile**: i suoi dati si ricavano dalle pagine o dai workflow.
-- Compilare ed eseguire codice scaricato (packwiz compreso) **non è permesso** qui: i file di packwiz si scrivono con script propri, e packwiz vero gira nelle GitHub Actions.
-- Quello che da qui non si raggiunge (Modrinth, CDN, Maven) lo fanno i workflow, che salvano i risultati nel repository: l'**inventario** in `<versione>/data/inventario/` dice cosa contiene ogni .jar (oggetti, blocchi, tag, tabelle del bottino, strutture, ricette di Botany Pots, dipendenze). Usarlo prima di scrivere nomi nel datapack. L'inventario legge anche modelli e traduzioni: un nome può esserci senza che il gioco lo registri. Il **dump del gioco** (`<versione>/data/dump/`, da `/mango_dump`) dice cosa esiste davvero: dove i due non coincidono vince il gioco (regola del 29/10/2026, `1.21.1/docs/0303-note-tecniche.md`).
-- I log del gioco dell'istanza di prova si leggono dal PC di Matteo (solo la cartella `logs` dell'istanza dev, accesso concesso da lui) quando la sessione è collegata: se la cartella non si apre dalla shell, si copiano i file nella sessione. Nella stessa cartella c'è il **dump del gioco** (`logs/mango-craft-dump/`, scritto da `/mango_dump`): si copia nella sessione e si importa con `scripts/dump_importa.py`.
-- Da qui si possono mandare commit sui rami (`dev`, e `main` tramite merge) e avviare i workflow (`gh workflow run`), ma **non mandare tag** né scrivere tramite l'API di GitHub (pull request mai provate): per una release si usa il workflow **Release** con il tag come parametro. I log dei workflow non sono leggibili da qui: si controlla l'esito (`gh run view`) e il risultato (i file nel repository).
-- Il PC di Matteo può essere collegato alla sessione: **non toccare la cartella di Prism senza il suo via**.
-- Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file.
+Regole che valgono ovunque, poi le differenze tra i due modi di lavorare (29/10/2026: lo sviluppo passa in locale con Claude Code; la bacheca `context.md` del progetto claude.ai è stata dismessa).
+
+**Ovunque**
+- Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file. Il contesto locale (il percorso dell'istanza di Prism, come lanciare Python, cosa c'è sul PC) sta in un file **non versionato**, `CLAUDE.local.md` nella radice (in `.gitignore`), che l'agente locale legge e Matteo gestisce.
+- **Non toccare la cartella di Prism** (istanza, mondi, mod, config) **senza il via di Matteo**: dalla cartella dell'istanza si legge soltanto, e solo `logs/` (log del gioco, `logs/kubejs/` e il dump in `logs/mango-craft-dump/`).
+- I .jar **non entrano mai** nel repository (`.gitignore`); le mod si aggiungono con i workflow (sezione 6), così l'inventario si rifà da solo.
+- L'**inventario** (`<versione>/data/inventario/`) dice cosa contiene ogni .jar (oggetti, blocchi, tag, tabelle del bottino, strutture, ricette di Botany Pots, dipendenze): usarlo prima di scrivere nomi nel datapack. Legge anche modelli e traduzioni: un nome può esserci senza che il gioco lo registri. Il **dump del gioco** (`<versione>/data/dump/`, da `/mango_dump`) dice cosa esiste davvero: dove i due non coincidono vince il gioco (regola del 29/10/2026, `1.21.1/docs/0303-note-tecniche.md`).
+- Prima di ogni push su `dev`: `bash scripts/controllo_locale.sh 1.21.1/pack` (gli stessi controlli del workflow, senza scaricare i jar); dopo il push il workflow **Controllo pack** deve essere verde.
 - I risultati grezzi di una ricerca vanno in `ai-agents/stage/<data>_<versione>_<nome>/` (il workflow Esamina mod lo fa da solo); il distillato in un file di versione e in una scheda.
-- Il progetto Claude "Minecraft modpack" contiene solo `context.md`, un riassunto generato da `scripts/contesto_progetto.py` (istruzioni in `CLAUDE.md`): non è una fonte, si rigenera.
+- Una release si fa con il workflow **Release** (`gh workflow run release.yml --ref main -f tag=<tag>`) o con `git tag` da locale: mai spostare o cancellare un tag.
+
+**In locale (Claude Code, WSL)**
+- Rete libera: API di Modrinth (`curl`), CurseForge, Maven; packwiz si può eseguire, ma per aggiungere mod restano preferibili i workflow (sezione 6, inventario compreso); in locale si usa per `packwiz refresh` e prove.
+- I log dell'istanza di prova si leggono dal percorso in `CLAUDE.local.md`: confronto con `python3 scripts/log_confronta.py <log nuovo> <log vecchio>`; il dump si importa con `python3 scripts/dump_importa.py <istanza>/logs/mango-craft-dump 1.21.1`.
+- Gli script sono Python ≥ 3.11 con la sola libreria standard (`tomllib`, `sqlite3`); `ci_pack.sh` è bash.
+
+**Da claude.ai (sessione nel cloud)**
+- Dalla riga di comando si raggiunge **solo GitHub**; l'API di Modrinth si legge con lo strumento web; CurseForge non è raggiungibile. Compilare ed eseguire codice scaricato (packwiz compreso) **non è permesso**: i file di packwiz si scrivono con script propri.
+- Il PC di Matteo può essere collegato alla sessione: i log e il dump si leggono dalla cartella `logs` dell'istanza dev (accesso concesso da lui) e si copiano nella sessione.
+- Si possono mandare commit sui rami e avviare i workflow, ma **non mandare tag** né scrivere tramite l'API di GitHub: per una release, il workflow Release. I log dei workflow non sono leggibili: si controlla l'esito (`gh run view`) e i file nel repository (`data/inventario/controllo.md`, `ultimo-workflow.log`).
