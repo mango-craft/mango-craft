@@ -578,7 +578,7 @@ hash = "88257732a414dcb2633c5fbc125f9594d1f07cdacc9419c4eed912c8b7db446f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/elderberry_trellis.json"
-hash = "20bb8d5f67712216b1be95c82392b21100a7ea4d1f9af65bf31ad51e29da8aed"
+hash = "447bb7242f9e4aada0baab7e4bdd06867f3cab7b9da1da40ef1992becbd77d7d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/hoary_apple_sapling_crop.json"
@@ -590,7 +590,7 @@ hash = "4f683eeaa6b1a4fefc6f6b7038663efbc1c2634f6afa41b4e6dd12318fdf2673"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/lapisberry_trellis.json"
-hash = "576fcb06d4eaa0e80208734ded166a90b184e0acaef5a438b436fc16d34bb4e2"
+hash = "2f0316ffb09c2f96ced64042be370503ead5af76755892491e294773e4d94407"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/leeks.json"
@@ -602,7 +602,7 @@ hash = "cbd1b86df2acec800260dac6fd17b5f4ae621eba07b1b401dbe2a6e286d98d13"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/passion_fruit_trellis.json"
-hash = "0790b241d193cfc75dc684a452dc73278c5e114ab9c443e7585aa25c25fa5221"
+hash = "07495fdc48534083cc0cecd73faab3c663a28c6c6ae2b07bc66349306257a3a5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/prismarine_blossom.json"
@@ -1751,10 +1751,6 @@ hash = "ecc5e726da5258804b5303d75cf845686b200f45393a385c1ff2551f535e19bb"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_bush.json"
 hash = "6073847e9c2944330793fe2b288bbba751e56c17b5f02d3080771a27154568a2"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_endstone_sprouts.json"
-hash = "e28c0133fa93aafed4c6879b6fca974074f29620404473e53e52d5b0437b2763"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_sprouts.json"
