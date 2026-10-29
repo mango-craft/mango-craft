@@ -26,8 +26,9 @@ if [[ ! -f ai-agents/contesto-locale.md ]]; then
 fi
 
 # Token di GitHub per gh (lanciare i workflow, leggerne l'esito): fine-grained, solo
-# questo repository, permessi Actions e Contents in scrittura. Uno già nel terminale
-# non passa alla sessione: potrebbe valere per tutti i tuoi repository.
+# questo repository, solo il permesso Actions in lettura e scrittura (il push usa la
+# deploy key). Uno già nel terminale non passa alla sessione: potrebbe valere per
+# tutti i tuoi repository.
 unset GH_TOKEN GITHUB_TOKEN
 if (( ask_gh )); then
   if ! command -v gh >/dev/null 2>&1; then
