@@ -1,5 +1,12 @@
-# Contesto locale di Claude Code (percorsi del PC): mai nel repository
+# Contesto locale degli agenti (percorsi del PC) e permessi personali di Claude Code:
+# mai nel repository, che è pubblico (ai-agents/README.md). Il modello è contesto-locale.esempio.md
+ai-agents/contesto-locale.md
 CLAUDE.local.md
+.claude/settings.local.json
+
+# Stage: file di lavoro degli agenti per Matteo, restano sul PC (ai-agents/README.md)
+ai-agents/stage/*
+!ai-agents/stage/README.md
 
 # File generati
 dist/

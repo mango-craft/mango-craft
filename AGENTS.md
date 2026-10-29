@@ -1,3 +1,9 @@
+<!-- Regole per gli agenti, caricate a ogni sessione di Claude Code tramite CLAUDE.md (i commenti
+     HTML come questo vengono scartati). Qui solo regole, struttura e trappole; i dettagli stanno
+     nei documenti citati. Tenerla sotto le 200 righe e aggiornarla quando una correzione va
+     ripetuta due volte. I permessi veri di Claude Code (cosa può eseguire, leggere, scrivere)
+     sono in .claude/settings.json. -->
+
 # Guida per gli agenti — Mango Craft
 
 Istruzioni per qualsiasi agente AI che lavora su questo repository (standard aperto `AGENTS.md`). Qui ci sono le **regole stabili** e la **struttura del repository**. Come sono organizzati i documenti: sezione 4. All'inizio di un lavoro leggi almeno il piano (`1.21.1/lavoro/0501-piano.md`), le note tecniche (`1.21.1/docs/0303-note-tecniche.md`), il bug report (`1.21.1/docs/0402-bug-report.md`) e il file della versione in corso (`1.21.1/lavoro/versioni/`, quella con stato 🔧 o 📋 nel README).
@@ -23,7 +29,13 @@ README.md · LICENSE · AGENTS.md (questa guida) · CLAUDE.md (la importa)
 docs/                       documentazione comune a tutte le versioni (gruppi 00–02)
 scripts/                    inventario, controlli, risoluzione delle mod, note di release
 .github/workflows/          controllo a ogni modifica, aggiunta mod, release
-ai-agents/stage/            risultati grezzi delle ricerche, una cartella per ricerca (non è documentazione)
+.claude/settings.json       permessi e sandbox di Claude Code (sezione 8)
+revisioni/                  il lavoro sul repository che non è una versione del pack (piano e diario)
+ai-agents/                  materiale degli agenti (non è documentazione; ai-agents/README.md)
+├── bin/claude-session      apre la sessione di Claude Code con le credenziali solo in memoria
+├── contesto-locale.md      percorsi e strumenti del PC (fuori da git; modello: contesto-locale.esempio.md)
+├── stage/                  file di lavoro per Matteo, risultati grezzi delle ricerche (fuori da git)
+└── archivio/               lo stage versionato fino al 29/10/2026, fermo
 1.21.1/                     una cartella per versione di Minecraft
 ├── pack/                   SOLO ciò che finisce nel gioco: pack.toml, index.toml, mods/*.pw.toml, config/…
 │   └── config/paxi/datapacks/matteo_tweaks/   il datapack del pack, con i suoi readme
@@ -38,23 +50,27 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 
 ## 4. Documentazione
 
-Cinque livelli, dal grezzo al distillato:
+I livelli, dal grezzo al distillato:
 
 | Livello | Dove | Cos'è | Vivo o fermo |
 |---|---|---|---|
-| **Stage** | `ai-agents/stage/` | Risultati grezzi delle ricerche (report, tabelle, estratti, script), nella lingua in cui sono nati | fermo: si aggiunge, non si modifica |
+| **Stage** | `ai-agents/stage/`, **fuori da git** | Risultati grezzi delle ricerche (report, tabelle, estratti, esami delle mod), confronti e bozze per Matteo, nella lingua in cui sono nati | locale: lo svuota Matteo |
+| **Archivio** | `ai-agents/archivio/` | Lo stage com'era fino al 29/10/2026, quando era versionato: i documenti ci rimandano | fermo: niente si aggiunge né si modifica |
+| **Revisioni** | `revisioni/AAAA.MM-NN/` | Il lavoro sul repository che non è una versione del pack (struttura, documenti, script, workflow, agenti): piano e diario | la revisione aperta è viva; le chiuse sono storico |
 | **Versioni** | `<versione>/lavoro/versioni/vX.Y.Z.md` | Un file per versione del pack: obiettivo, valutazioni, decisioni, lavoro, prove, esito. È la tracciabilità: il perché delle scelte | la versione in corso è viva; le rilasciate sono chiuse |
 | **Schede delle mod** | `<versione>/mod-knowledge/` | Una scheda per mod (nome dello slug): fatti verificati, chiavi di config, compatibilità, storia nel pack. In testa "Aggiornata il …", lo stato e le fonti | vive: si aggiornano quando si riverifica un fatto |
 | **Schede dei temi** | `<versione>/theme-knowledge/` | Una scheda per argomento che attraversa più mod o la piattaforma (esperienza, Nether, shader…): stessa forma, rimanda alle schede delle mod | vive, come sopra |
 | **Documentazione** | `docs/`, `<versione>/docs/` | Com'è il pack oggi: mod, config, note tecniche, changelog, bug report, distinta | viva |
 
-**Stage.** Una cartella per ricerca, `<data>_<versione MC>-v<versione del pack>_<nome>` (senza il segmento della versione se la ricerca non riguarda una versione). Non è una fonte per lo stato attuale e non ha un indice (regole in [`ai-agents/README.md`](ai-agents/README.md)). Il workflow Esamina mod scrive qui.
+**Stage e archivio.** Lo stage è sul PC, non su GitHub: un file o una cartella per lavoro, `AAAA-MM-GG-argomento`. **Nessun file versionato vi rimanda**: ciò che deve restare va nel suo posto (file della versione, scheda, revisione), con le sue fonti, e deve reggersi da solo. Gli agenti non cancellano niente dallo stage senza chiederlo; i file che servono solo all'agente durante una sessione vanno nella cartella temporanea della sessione. L'archivio non è una fonte per lo stato attuale e non ha un indice. Regole di entrambi in [`ai-agents/README.md`](ai-agents/README.md).
 
-**File delle versioni.** Nome `vX.Y.Z.md`, senza codice numerico. Sezioni: 1 Obiettivo, 2 Valutazioni (il distillato delle ricerche, con il rimando allo stage), 3 Decisioni (una riga ciascuna, con la data, più le domande ancora aperte), 4 Lavoro, 5 Prove, 6 Rischi, 7 Esito. Si apre alla pianificazione della versione e si chiude al rilascio (Esito = Stato, tag, problemi noti). Le decisioni valide per più versioni stanno nei temi aperti (`0503`). Le righe di decisione non si correggono a posteriori: una decisione cambiata è una riga nuova.
+**Revisioni.** Una cartella `AAAA.MM-NN/` con `piano.md` (obiettivo, decisioni datate, lavoro, prove, aperto, esito) e `diario.md` (in ordine di tempo, con agente e modello in ogni voce). Il piano non cambia mai in silenzio: ogni modifica ha una voce nel diario. Ciò che cambia il gioco va sempre in una versione, anche se nasce da una revisione. Regole ed elenco in [`revisioni/README.md`](revisioni/README.md).
+
+**File delle versioni.** Nome `vX.Y.Z.md`, senza codice numerico. Sezioni: 1 Obiettivo, 2 Valutazioni (il distillato delle ricerche, con le fonti; il grezzo resta nello stage, che non si cita), 3 Decisioni (una riga ciascuna, con la data, più le domande ancora aperte), 4 Lavoro, 5 Prove, 6 Rischi, 7 Esito. Si apre alla pianificazione della versione e si chiude al rilascio (Esito = Stato, tag, problemi noti). Le decisioni valide per più versioni stanno nei temi aperti (`0503`). Le righe di decisione non si correggono a posteriori: una decisione cambiata è una riga nuova.
 
 **Schede.** Si crea o si aggiorna una scheda quando si verifica un fatto (nel sorgente, nell'inventario o in gioco). Un fatto che riguarda **una mod** va nella scheda della mod; uno che riguarda **due o più mod insieme** o tutto il pack va nella scheda del tema; l'una rimanda all'altra. I nomi delle schede sono unici nelle due cartelle. Le mod senza conoscenza verificata hanno solo la riga in `0301`. Una scheda può riguardare anche una mod candidata o scartata (lo stato è in testa). Una mod con molto materiale ha una **cartella** con il nome dello slug che contiene la scheda (`<slug>/<slug>.md`) e il resto (analisi, query SQL); gli script restano in `scripts/`. Gli indici sono i `README.md` delle due cartelle.
 
-**Codici.** I documenti di `docs/` e dei livelli vivi di `lavoro/` hanno un codice di quattro cifre prima del nome: `GGnn-nome.md`. `GG` è il **gruppo** (tema), `nn` il progressivo. Un codice non cambia e non si riusa mai (i codici 0610, 0611, 0620, 0630, 0701–0713 e 09xx appartengono a documenti dissolti nel riordino del 19/10/2026: non si riusano); un documento nuovo prende il primo numero libero del suo gruppo. Lo stesso codice indica lo stesso tipo di documento in ogni versione di Minecraft (0402 è sempre il bug report). I file delle versioni, le schede e le cartelle di stage non hanno codice.
+**Codici.** I documenti di `docs/` e dei livelli vivi di `lavoro/` hanno un codice di quattro cifre prima del nome: `GGnn-nome.md`. `GG` è il **gruppo** (tema), `nn` il progressivo. Un codice non cambia e non si riusa mai (i codici 0610, 0611, 0620, 0630, 0701–0713 e 09xx appartengono a documenti dissolti nel riordino del 19/10/2026: non si riusano); un documento nuovo prende il primo numero libero del suo gruppo. Lo stesso codice indica lo stesso tipo di documento in ogni versione di Minecraft (0402 è sempre il bug report). I file delle versioni, le revisioni, le schede, lo stage e l'archivio non hanno codice.
 
 | Gruppo | Tema | Cartella | Tipo |
 |---|---|---|---|
@@ -69,7 +85,7 @@ Cinque livelli, dal grezzo al distillato:
 
 **Indici.** Ogni cartella di documenti ha un `README.md` con l'indice dei suoi documenti. Quando si aggiunge, rinomina o toglie un documento (o una scheda, o un file di versione) si aggiorna il README della sua cartella.
 
-**Un fatto, un posto.** Ogni informazione che cambia sta in **un solo posto vivo**; gli altri ci rimandano. Le righe dei file delle versioni e lo stage sono fotografie: possono ripetere informazioni, ma non vanno corretti a posteriori.
+**Un fatto, un posto.** Ogni informazione che cambia sta in **un solo posto vivo**; gli altri ci rimandano. Le righe dei file delle versioni e delle revisioni e l'archivio sono fotografie: possono ripetere informazioni, ma non vanno corretti a posteriori (un percorso spostato sì: è successo nei riordini del 19/10 e del 29/10/2026).
 
 | Informazione | Dove |
 |---|---|
@@ -86,11 +102,13 @@ Cinque livelli, dal grezzo al distillato:
 | Argomenti non ancora affrontati e decisioni aperte che valgono per più versioni | `0503-temi-aperti` |
 | Mod candidate / scartate (indici, con il rimando alla valutazione) | `0601` / `0602` |
 | Obiettivo, valutazioni, decisioni, lavoro e prove di una versione | `lavoro/versioni/vX.Y.Z.md` |
-| Risultati grezzi di una ricerca | `ai-agents/stage/` |
+| Il filo di un lavoro sul repository (struttura, documenti, script, workflow, agenti) | `revisioni/AAAA.MM-NN/` |
+| Risultati grezzi di una ricerca | lo stage, sul PC (`ai-agents/stage/`, fuori da git); fino al 29/10/2026 `ai-agents/archivio/` |
+| Percorsi e strumenti del PC (istanza di Prism, Python…) | `ai-agents/contesto-locale.md`, fuori da git |
 | Come funziona una parte del datapack già fatta | il readme dentro il datapack |
 | Regole del repository e dei documenti | questo file |
 
-**Lingua e forma.** Italiano; lo stage può restare in inglese. Link relativi tra i documenti. Dentro `pack/` i nomi seguono le regole del gioco (sezione 7), non i codici.
+**Lingua e forma.** Italiano; stage e archivio possono restare in inglese. Link relativi tra i documenti. Dentro `pack/` i nomi seguono le regole del gioco (sezione 7), non i codici.
 
 ## 5. Versioni, tag e istanze
 
@@ -111,7 +129,7 @@ Cinque livelli, dal grezzo al distillato:
 1. Approvazione esplicita di Matteo.
 2. **Mod da Modrinth**: workflow **Aggiungi mod Modrinth** sul ramo `dev` (`gh workflow run modrinth-add.yml --ref dev -f mods="slug1 slug2@versione …"`). Sceglie l'ultima **release** per 1.21.1 + NeoForge (per i pacchetti di shader: + Iris; o la versione indicata), la aggiunge con `packwiz modrinth add` (versione, hash e dipendenze obbligatorie presi da Modrinth) e nel commit elenca versioni, tipo e data scelti e i metafile nuovi (le dipendenze sono **librerie nuove** da segnalare).
 3. **Mod solo CurseForge**: workflow **Aggiungi mod CurseForge** (link al file esatto `…/files/<id>`, oppure al progetto per l'ultimo file compatibile), che usa `packwiz curseforge add` rifiutando le dipendenze (di solito sono già nel pack da Modrinth; una libreria solo CurseForge va aggiunta nella stessa chiamata, prima della mod). I .jar non entrano mai nel repository. Quelle con distribuzione bloccata vanno scaricate a mano: l'installer mostra pagina e percorso.
-4. **Controllo automatico** (in ogni workflow che tocca il pack): indice, metafile, **inventario** dei .jar (`<versione>/data/inventario/`) e **controllo dei nomi** (`controllo.md`: dipendenze mancanti, versioni richieste di NeoForge e delle altre mod, mod incompatibili tra loro, nomi del datapack inesistenti). L'output di packwiz va in `data/inventario/ultimo-workflow.log`. Se qualcosa fallisce, leggere questi due file nel ramo: i log dei workflow non sono leggibili da qui.
+4. **Controllo automatico** (in ogni workflow che tocca il pack): indice, metafile, **inventario** dei .jar (`<versione>/data/inventario/`) e **controllo dei nomi** (`controllo.md`: dipendenze mancanti, versioni richieste di NeoForge e delle altre mod, mod incompatibili tra loro, nomi del datapack inesistenti). L'output di packwiz va in `data/inventario/ultimo-workflow.log`. Se qualcosa fallisce, leggere questi due file nel ramo (in locale anche `gh run view <id> --log-failed`; da claude.ai i log dei workflow non sono leggibili).
 5. A mano, solo se i workflow non si possono usare: versione dall'API di Modrinth (`/v2/project/<slug>/version?game_versions=["1.21.1"]&loaders=["neoforge"]`), hash verificati con la ricerca inversa `/v2/version_file/<sha512>?algorithm=sha512` (stessa versione, stesso sha1; gli hash lunghi vanno letti a pezzi), metafile scritto a mano (formato in `docs/0201-sviluppo.md`), indice con `python3 scripts/packwiz_index.py 1.21.1/pack`, controllo con `python3 scripts/check_pack.py 1.21.1/pack`.
 6. Licenza, data, se genera mondo o strutture (⚠️ = va aggiunta **prima del mondo vero**).
 7. Documenti: scheda in `mod-knowledge/` (e in `theme-knowledge/` se tocca un tema) se c'è conoscenza verificata da registrare; riga della mod in `0301-mod` (ruolo, licenza, "Dalla X.Y.Z"), riga in `0403-distinta-mod` (versione, data, esito), voce della versione in corso in `0401-changelog`, avanzamento in `0501-piano` e decisione nel file della versione; se la mod porta problemi noti, `0402-bug-report`; se era tra le candidate, toglierla da `0601` (e aggiornare la sua scheda).
@@ -133,20 +151,42 @@ Cinque livelli, dal grezzo al distillato:
 Regole che valgono ovunque, poi le differenze tra i due modi di lavorare (29/10/2026: lo sviluppo passa in locale con Claude Code; la bacheca `context.md` del progetto claude.ai è stata dismessa).
 
 **Ovunque**
-- Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file. Il contesto locale (il percorso dell'istanza di Prism, come lanciare Python, cosa c'è sul PC) sta in un file **non versionato**, `CLAUDE.local.md` nella radice (in `.gitignore`), che l'agente locale legge e Matteo gestisce.
-- **Non toccare la cartella di Prism** (istanza, mondi, mod, config) **senza il via di Matteo**: dalla cartella dell'istanza si legge soltanto, e solo `logs/` (log del gioco, `logs/kubejs/` e il dump in `logs/mango-craft-dump/`).
+- Repository **pubblico**: niente dati personali (percorsi locali, email, nomi utente del PC) nei file. Il **contesto locale** (il percorso dell'istanza di Prism e dei suoi log, come lanciare Python, cosa c'è sul PC) sta in `ai-agents/contesto-locale.md`, **fuori da git**: chi lavora in locale lo legge all'inizio (Claude Code lo carica da solo). Se manca, si copia il modello `ai-agents/contesto-locale.esempio.md` e si chiedono i valori a Matteo prima di cercare l'istanza. Lo gestisce Matteo.
+- **Non toccare la cartella di Prism** (istanza, mondi, mod, config) **senza il via di Matteo**: dalla cartella dell'istanza si legge soltanto, e solo `logs/` (log del gioco, `logs/kubejs/` e il dump in `logs/mango-craft-dump/`). `accounts.json` di Prism (credenziali) non si legge mai.
 - I .jar **non entrano mai** nel repository (`.gitignore`); le mod si aggiungono con i workflow (sezione 6), così l'inventario si rifà da solo.
 - L'**inventario** (`<versione>/data/inventario/`) dice cosa contiene ogni .jar (oggetti, blocchi, tag, tabelle del bottino, strutture, ricette di Botany Pots, dipendenze): usarlo prima di scrivere nomi nel datapack. Legge anche modelli e traduzioni: un nome può esserci senza che il gioco lo registri. Il **dump del gioco** (`<versione>/data/dump/`, da `/mango_dump`) dice cosa esiste davvero: dove i due non coincidono vince il gioco (regola del 29/10/2026, `1.21.1/docs/0303-note-tecniche.md`).
 - Prima di ogni push su `dev`: `bash scripts/controllo_locale.sh 1.21.1/pack` (gli stessi controlli del workflow, senza scaricare i jar); dopo il push il workflow **Controllo pack** deve essere verde.
-- I risultati grezzi di una ricerca vanno in `ai-agents/stage/<data>_<versione>_<nome>/` (il workflow Esamina mod lo fa da solo); il distillato in un file di versione e in una scheda.
+- I risultati grezzi di una ricerca vanno nello **stage**, sul PC (`ai-agents/stage/AAAA-MM-GG-argomento`); il distillato, con le sue fonti, in un file di versione, in una scheda o in una revisione (sezione 4).
 - Una release si fa con il workflow **Release** (`gh workflow run release.yml --ref main -f tag=<tag>`) o con `git tag` da locale: mai spostare o cancellare un tag.
 
 **In locale (Claude Code, WSL)**
-- Rete libera: API di Modrinth (`curl`), CurseForge, Maven; packwiz si può eseguire, ma per aggiungere mod restano preferibili i workflow (sezione 6, inventario compreso); in locale si usa per `packwiz refresh` e prove.
-- I log dell'istanza di prova si leggono dal percorso in `CLAUDE.local.md`: confronto con `python3 scripts/log_confronta.py <log nuovo> <log vecchio>`; il dump si importa con `python3 scripts/dump_importa.py <istanza>/logs/mango-craft-dump 1.21.1`.
+- **Sessione**: Matteo la apre con `ai-agents/bin/claude-session`, che tiene le credenziali solo in memoria: la deploy key di GitHub per il push e, con `--gh`, un token per `gh`. Se ne manca una (es. il token per lanciare un workflow), dirlo a Matteo: rilancia con l'opzione giusta (`ai-agents/bin/claude-session --gh --continue`). Un token non si stampa, non si scrive su file e non entra in un commit.
+- **Permessi e sandbox**: `.claude/settings.json`, versionato; non si modifica senza chiederlo a Matteo. Push, tag, merge, avvio di workflow e release chiedono sempre conferma. I comandi girano nella sandbox: scrivono solo nel repository e nella cartella temporanea, e in rete raggiungono solo i domini consentiti; `gh`, `git push`, `fetch` e `pull` girano fuori. Le regole che nominano percorsi del PC (la cartella di Prism) stanno in `.claude/settings.local.json`, fuori da git. Dettagli in `ai-agents/README.md`.
+- Rete: API di Modrinth (`curl`), CurseForge, Maven. L'esame di una mod fuori dal pack si fa con `python3 scripts/esamina.py` e il risultato va nello stage. packwiz non serve: l'indice lo scrive `packwiz_index.py`, le mod si aggiungono con i workflow (sezione 6, inventario compreso).
+- I log dell'istanza di prova si leggono dal percorso nel contesto locale: confronto con `python3 scripts/log_confronta.py <log nuovo> <log vecchio>`; il dump si importa con `python3 scripts/dump_importa.py <istanza>/logs/mango-craft-dump 1.21.1`.
 - Gli script sono Python ≥ 3.11 con la sola libreria standard (`tomllib`, `sqlite3`); `ci_pack.sh` è bash.
 
 **Da claude.ai (sessione nel cloud)**
 - Dalla riga di comando si raggiunge **solo GitHub**; l'API di Modrinth si legge con lo strumento web; CurseForge non è raggiungibile. Compilare ed eseguire codice scaricato (packwiz compreso) **non è permesso**: i file di packwiz si scrivono con script propri.
 - Il PC di Matteo può essere collegato alla sessione: i log e il dump si leggono dalla cartella `logs` dell'istanza dev (accesso concesso da lui) e si copiano nella sessione.
 - Si possono mandare commit sui rami e avviare i workflow, ma **non mandare tag** né scrivere tramite l'API di GitHub: per una release, il workflow Release. I log dei workflow non sono leggibili: si controlla l'esito (`gh run view`) e i file nel repository (`data/inventario/controllo.md`, `ultimo-workflow.log`).
+- Lo stage non c'è: il grezzo di una ricerca resta nella sessione e il distillato va nel file della versione o nella scheda. Il workflow **Esamina mod** salva il risultato come artefatto (`gh run download <id> -n esame-mod`).
+
+## 9. Autonomia dell'agente e lavoro finito
+
+Cosa un agente fa da solo e cosa no (29/10/2026, sul modello dell'altro repository di Matteo: `revisioni/2026.10-01/`). Le scelte su mod e contenuti restano di Matteo (sezione 1).
+
+| Cosa | Come |
+|---|---|
+| Leggere il repository, le fonti in rete, i log e il dump dell'istanza; controlli e analisi; file nello stage | da solo |
+| Documenti, schede, script e workflow; commit su `dev` | da solo. Se cambia una regola, la struttura o più parti insieme, prima un piano breve (nella revisione o nel file della versione), poi si procede; ci si ferma a chiedere solo se contraddice una decisione presa |
+| Datapack, generatori e le loro regole (CSV) | progettati nel file della versione (sezione 7); si scrivono quando Matteo ha deciso la versione |
+| Mod, config del pack, NeoForge, scelte di gioco | solo con l'approvazione esplicita di Matteo (sezione 6) |
+| Push, tag, merge in `main`, avvio dei workflow, modifiche a `.claude/settings.json` | con la conferma di Matteo (Claude Code la chiede da sé per i primi quattro) |
+| Cartella di Prism | solo lettura di `logs/`; il resto con il via di Matteo |
+
+**Una modifica è finita quando:**
+- `bash scripts/controllo_locale.sh 1.21.1/pack` è verde (se tocca pack, datapack, dati o script) e `shellcheck` è pulito sugli script bash toccati;
+- i documenti che citano ciò che è cambiato sono aggiornati (`grep -rn`), indici compresi (sezione 4);
+- la decisione ha la sua riga datata nel file della versione o nella revisione;
+- c'è un commit su `dev` per unità di lavoro, con un messaggio che dice cosa e perché; dopo il push, **Controllo pack** è verde.

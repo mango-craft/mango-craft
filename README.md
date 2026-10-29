@@ -41,7 +41,9 @@ scripts/                  inventario, controlli, aggiunta mod, note di release
 ├── theme-knowledge/      una scheda per tema trasversale (esperienza, Nether, shader…)
 ├── lavoro/               piano, prove, temi aperti e, in versioni/, un file per versione (valutazioni, decisioni, lavoro)
 └── data/                 inventario delle mod e dati dei conteggi
-ai-agents/stage/          risultati grezzi delle ricerche (non documentazione)
+revisioni/                lavoro sul repository che non è una versione del pack (piano e diario)
+ai-agents/                sessione degli agenti AI e loro materiale (non documentazione)
+└── archivio/             risultati grezzi delle ricerche fino al 29/10/2026
 ```
 
 Ogni cartella di documenti ha un `README.md` con l'indice. I documenti di `docs/` e del lavoro vivo hanno un codice di quattro cifre; i file delle versioni e le schede no (regole in `AGENTS.md`).
