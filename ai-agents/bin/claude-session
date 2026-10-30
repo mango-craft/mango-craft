@@ -67,4 +67,9 @@ fi
 echo "Sessione: token GitHub $(have GH_TOKEN), chiavi SSH: ${loaded:-nessuna}," \
   "contesto locale $([[ -f ai-agents/contesto-locale.md ]] && echo sì || echo no)"
 
+# Sessione in primo piano, mai nel demone dei lavori in background: il demone ha
+# l'ambiente del terminale che l'ha avviato, senza il token e la chiave di qui
+# (ai-agents/README.md, "Trappola del background")
+export CLAUDE_CODE_DISABLE_AGENT_VIEW=1
+
 claude "${claude_args[@]}"
