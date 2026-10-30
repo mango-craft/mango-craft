@@ -3633,6 +3633,11 @@ file = "kubejs/server_scripts/mango_dump.js"
 hash = "e86797dc09f11bfc8d24d174bbc115c17d848c97a1a1566dfe2cfba7149a9f2f"
 
 [[files]]
+file = "mods/advancedperipherals.pw.toml"
+hash = "73576662287c48ef64866be14445a6e8b52829a1da6e65800d0917f813206220"
+metafile = true
+
+[[files]]
 file = "mods/aether.pw.toml"
 hash = "cc3f6e6e8f1838d16e47cce9241e32176279673efb1438ff4451ccffa9579b14"
 metafile = true
@@ -3840,6 +3845,11 @@ metafile = true
 [[files]]
 file = "mods/carry-on.pw.toml"
 hash = "838dbcb90c93bab58691e82c95045bd97c3e096e3a2680a00cf063e56ce35ce3"
+metafile = true
+
+[[files]]
+file = "mods/cc-tweaked.pw.toml"
+hash = "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256"
 metafile = true
 
 [[files]]
