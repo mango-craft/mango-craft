@@ -1,8 +1,8 @@
 # Mod candidate — Minecraft 1.21.1
 
-Le mod che non sono nel pack ma restano in considerazione, con il momento in cui rivalutarle. Documento vivo: quando una candidata viene approvata passa in `../docs/0301-mod.md`, quando viene scartata in `0602-mod-scartate.md`.
+Le mod che non sono nel pack ma restano in considerazione, con il momento in cui rivalutarle. Documento vivo: le mod approvate **restano qui**, con «approvata il …, nella vX.Y.Z», **finché non entrano nel pack**; allora la riga si toglie e la mod passa in `../docs/0301-mod.md` (regola del 30/10/2026). Quando una candidata viene scartata passa in `0602-mod-scartate.md`.
 
-È un indice: le valutazioni complete stanno nel file della versione in cui sono state fatte (`versioni/`, sezione Valutazioni) e, per le mod e i temi con una scheda, in `../mod-knowledge/` e `../theme-knowledge/`. Fuori da questa lista: l'aggiornamento di owo-lib (bug B17 e `../docs/0303-note-tecniche.md`) e la prossima Botany Trees (scheda `botany-pots`).
+È un indice: le valutazioni complete stanno nel file della versione in cui sono state fatte (`versioni/`, sezione Valutazioni) e, per le mod e i temi con una scheda, in `../mod-knowledge/` e `../theme-knowledge/`. Fuori da questa lista: l'aggiornamento di owo-lib (bug B17: versione piccola a sé dopo la 0.7.3, decisione del 30/10) e la prossima Botany Trees (scheda `botany-pots`).
 
 | Mod | Stato | Quando rivalutare |
 |---|---|---|
@@ -17,7 +17,7 @@ Le mod che non sono nel pack ma restano in considerazione, con il momento in cui
 | **Magical Psi: Revival, PsiTweaks** | Addon di Psi | Dopo aver provato Psi |
 | **Colorwheel** | 🟡 Facoltativa per gli shader: con uno shader attivo ridà a Create l'accelerazione di Flywheel. Compilata su una Iris più vecchia, non provata con la 1.8.14 (scheda `../mod-knowledge/colorwheel.md`). Complementary Reimagined (nel pack dalla 0.5.3) la supporta ufficialmente, MakeUp no | Se si usano gli shader con molti macchinari di Create |
 | **Ars Skyweave Shader Fix** | 🟡 Solo CurseForge, poco diffusa: con gli shader i blocchi Skyweave di Ars Nouveau diventano neri, questa li corregge | Se si usano gli shader |
-| **CC: Tweaked + Advanced Peripherals** | ✅ **Approvate da Matteo il 25/10**: solo queste due, con le case del Computer Scientist nei villaggi (tema `../theme-knowledge/computercraft.md`); gli altri add-on in `0602` | Nella **0.7.3** (approvata il 25/10, `versioni/v0.7.3.md`) |
+| **CC: Tweaked + Advanced Peripherals** | ✅ **Approvata il 25/10, nella 0.7.3** (`versioni/v0.7.3.md`): solo queste due, con le case del Computer Scientist nei villaggi (tema `../theme-knowledge/computercraft.md`); gli altri add-on in `0602` | Entrano con la 0.7.3: allora la riga si toglie |
 | **Reliable Advancements** | 🟢 Schermata dei progressi a tutta finestra, con editor in gioco; MIT, 6.3.1 del 15/10/2026 (tema `../theme-knowledge/achievement.md`) | Quando si affronta il tema achievement (`0503-temi-aperti.md`): una sola mod per la schermata |
 | **Lucid Advancements** | 🟢 Elenco dei progressi con ricerca e percentuali, in italiano; GPL-3.0, recente e poco diffusa (tema `../theme-knowledge/achievement.md`) | Come sopra, in alternativa a Reliable Advancements |
 | **Questlog** | 🟡 Libro di missioni con pagine di testo; Apache-2.0, richiede Cloth Config (già nel pack) (tema `../theme-knowledge/achievement.md`) | Se serve una guida del pack |

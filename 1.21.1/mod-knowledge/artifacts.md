@@ -1,8 +1,10 @@
 # Artifacts
 
-Aggiornata il 24/10/2026 · nel pack dalla 0.1.1, versione 13.2.5 (`../docs/0403-distinta-mod.md`; ruolo e licenza in `../docs/0301-mod.md`) · fonti: sorgente (ochotonida/artifacts @7cf7dc42), file generato dall'istanza di prova, inventario del pack, controllo dei nomi, file delle mod letti con il workflow Esamina mod. Materiale grezzo: `../../ai-agents/archivio/2026-10-19_1.21.1-v0.6.0_config-mod/`, `_riconteggio/` e `2026-10-19_1.21.1-v0.5.3_esame-mod/`.
+Aggiornata il 30/10/2026 · nel pack dalla 0.1.1, versione 13.2.5 (`../docs/0403-distinta-mod.md`; ruolo e licenza in `../docs/0301-mod.md`) · fonti: sorgente (ochotonida/artifacts @7cf7dc42), file generato dall'istanza di prova, inventario del pack, controllo dei nomi, file delle mod letti con il workflow Esamina mod. Materiale grezzo: `../../ai-agents/archivio/2026-10-19_1.21.1-v0.6.0_config-mod/`, `_riconteggio/` e `2026-10-19_1.21.1-v0.5.3_esame-mod/`.
 
 ## Config
+
+**Dalla 0.7.0 questo file non viene più letto**: Reliquified Artifacts ignora la config di Artifacts (sezione su Reliquified Artifacts, sotto); resta nel pack, innocuo, per il caso in cui Reliquified Artifacts venga tolta (`../docs/0302-config.md`). Gli slot di Accessories li toglie il datapack.
 
 `config/artifacts/general.toml` (un solo file, letto con night-config dalla mod: le chiavi mancanti prendono il valore di serie, ma nel pack si porta **completo**). Chiavi, dal file generato dall'istanza di prova:
 
@@ -20,11 +22,13 @@ Dove si trovano gli accessori nel pack (Curios, Accessories, menu dell'Aether): 
 
 Decisione del 16/10: `enableAccessoriesCompat = false`, `enableCuriosCompat = true`, **prima di creare il mondo vero**, così Artifacts e Ars Nouveau condividono un'unica interfaccia Curios, non si possono indossare due copie dello stesso artefatto e Artifacts non passa mai per Accessories. Funziona con overlay di dati nel `pack.mcmeta` della mod (`overlay_disable_accessories` svuota le etichette degli slot di Accessories). File portato nel pack dalla 0.6.0 (provata il 21/10, `../lavoro/versioni/v0.6.0.md`).
 
-Slot contesi con Ars Nouveau (testa, collana, cintura, 1 slot ciascuno): se diventano stretti si aumentano con un file di slot Curios nel datapack, formato da verificare (tema aperto, `../lavoro/0503-temi-aperti.md`).
+Slot contesi con Ars Nouveau (testa, collana, cintura, 1 slot ciascuno): se diventano stretti si aumentano con un file di slot Curios nel datapack (formato verificato il 23/10: tema `../theme-knowledge/accessori.md`; decisione aperta in `../lavoro/0503-temi-aperti.md`, sezione 4).
 
 ## Artefatti nelle casse delle strutture modded (nostro datapack)
 
-Artifacts mette i suoi oggetti solo nelle casse vanilla (si aggancia ai nomi come `minecraft:chests/abandoned_mineshaft`), e NeoForge applica i modificatori di bottino solo alla tabella "radice" scritta nella cassa. Il nostro datapack ha **15 file** in `data/matteo_tweaks/loot_modifiers/artifacts/`, uno per livello di rarità: ognuno applica una tabella di Artifacts (già bilanciata e soggetta alla sua config) a un elenco di casse modded, **148** in tutto dalla 0.6.0 (readme nella cartella, con i livelli). Regola: **una sola cassa per struttura, quella del tesoro finale**, non tutte le stanze.
+**Dalla 0.7.0 questa sezione è storia**: le reliquie nelle casse `chests/` le mette Relics (al 10%), e il nostro datapack tiene solo 10 modificatori `neoforge:add_table` per le 25 casse che Relics non vede (sezione su Reliquified Artifacts, sotto; `../lavoro/versioni/v0.7.0.md`). Qui sotto com'era dalla 0.6.0 alla 0.6.3, e l'elenco delle casse escluse, che resta utile.
+
+Artifacts mette i suoi oggetti solo nelle casse vanilla (si aggancia ai nomi come `minecraft:chests/abandoned_mineshaft`), e NeoForge applica i modificatori di bottino solo alla tabella "radice" scritta nella cassa. Il nostro datapack aveva **15 file** in `data/matteo_tweaks/loot_modifiers/artifacts/`, uno per livello di rarità: ognuno applica una tabella di Artifacts (già bilanciata e soggetta alla sua config) a un elenco di casse modded, **148** in tutto dalla 0.6.0 (readme nella cartella, con i livelli). Regola: **una sola cassa per struttura, quella del tesoro finale**, non tutte le stanze.
 
 ### Cosa è stato fatto nella 0.6.0 (B01, B03)
 

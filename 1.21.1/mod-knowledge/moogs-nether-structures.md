@@ -1,6 +1,6 @@
 # Moog's Nether Structures (+ Moog's Structure Lib)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.5.0: Moog's Nether Structures 3.1.1, Moog's Structure Lib 3.4.2 (`../docs/0403-distinta-mod.md`) · fonti: sorgenti (tag `3.1.1-1.21` e `3.4.2-neoforge`), log dell'istanza di prova.
+Aggiornata il 30/10/2026 · slug dei metafile: `mns-moogs-nether-structures` (e `moogs-structure-lib`) · nel pack dalla 0.5.0: Moog's Nether Structures 3.1.1, Moog's Structure Lib 3.4.2 (`../docs/0403-distinta-mod.md`) · fonti: sorgenti (tag `3.1.1-1.21` e `3.4.2-neoforge`), log dell'istanza di prova.
 
 ## Cose da non rompere
 

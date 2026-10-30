@@ -10,12 +10,12 @@ Il pack è gestito con [packwiz](https://packwiz.infra.link/): il repository con
 | Versioni | [changelog](1.21.1/docs/0401-changelog.md) e [release](https://github.com/mango-craft/mango-craft/releases) |
 | Minecraft | 1.21.1 |
 | NeoForge | **21.1.259**, da impostare a mano in Prism (non usare versioni più nuove: il changelog di ogni versione indica quella giusta) |
-| Memoria consigliata | 8 GB |
+| Memoria consigliata | 12 GB (perché: [guida](docs/0101-installazione.md#creare-unistanza)) |
 
 ## Installazione in Prism (in breve)
 
 1. Scarica `packwiz-installer-bootstrap.jar` dalle [release ufficiali](https://github.com/packwiz/packwiz-installer-bootstrap/releases).
-2. In Prism crea un'istanza **Minecraft 1.21.1** con **NeoForge 21.1.259**, e nelle sue impostazioni (*Java*) dai 8 GB di memoria massima.
+2. In Prism crea un'istanza **Minecraft 1.21.1** con **NeoForge 21.1.259**, e nelle sue impostazioni (*Java*) dai 12 GB di memoria massima.
 3. Metti il `.jar` nella cartella `minecraft` dell'istanza (tasto destro sull'istanza → *Cartella*).
 4. Nelle impostazioni dell'istanza, *Comandi personalizzati* → *Comando prima dell'avvio* (Pre-launch command):
    ```
@@ -40,7 +40,7 @@ scripts/                  inventario, controlli, aggiunta mod, note di release
 ├── mod-knowledge/        una scheda per mod: fatti verificati, con data e fonti
 ├── theme-knowledge/      una scheda per tema trasversale (esperienza, Nether, shader…)
 ├── lavoro/               piano, prove, temi aperti e, in versioni/, un file per versione (valutazioni, decisioni, lavoro)
-└── data/                 inventario delle mod e dati dei conteggi
+└── data/                 dati: inventario delle mod, dump del gioco, regole in CSV per i file generati
 revisioni/                lavoro sul repository che non è una versione del pack (piano e diario)
 ai-agents/                sessione degli agenti AI e loro materiale (non documentazione)
 └── archivio/             risultati grezzi delle ricerche fino al 29/10/2026
@@ -50,7 +50,7 @@ Ogni cartella di documenti ha un `README.md` con l'indice. I documenti di `docs/
 
 ## Versioni
 
-Il lavoro in corso sta sul ramo `dev`; `main` riceve solo versioni provate. Le **0.x** sono tappe (*pre-release*); il mondo vero parte da una 0.x che supera la soglia del mondo vero, la **1.0.0** arriva dopo averci giocato a lungo.
+Il lavoro in corso sta sul ramo `dev`; `main` riceve solo versioni provate. Le **0.x** sono tappe (*pre-release*): il mondo vero partirà da una di queste, la **1.0.0** dopo (regola in `AGENTS.md`, sezione 5).
 
 Ogni versione è un tag `1.21.1-vX.Y.Z` con la sua [release](https://github.com/mango-craft/mango-craft/releases), che contiene un `.mrpack` con le sole mod di Modrinth e lo zip della documentazione. Le mod solo CurseForge non sono incluse nei file pubblici: sono elencate nelle note di ogni release.
 

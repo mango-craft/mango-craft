@@ -4,8 +4,10 @@ _Documento vivo: versione, data ed esito della verifica di ogni file del pack (n
 
 _Controllo formale del 16/10/2026 · fonte: API di Modrinth (filtro `loaders=neoforge`, `game_versions=1.21.1`), CurseForge per le mod che stanno solo lì_
 
-**Risultato: 148 voci controllate (142 mod + 1 resource pack + 5 dipendenze/moduli) — ✅ 119 · ⚠️ 29 · ❌ 0.**
+**Risultato del 16/10: 148 voci controllate (142 mod + 1 resource pack + 5 dipendenze/moduli) — ✅ 119 · ⚠️ 29 · ❌ 0.**
 Nessuna mod è senza versione NeoForge 1.21.1. Tutti i progetti sono quelli degli autori originali (salvo gli addon di terzi segnalati).
+
+**Oggi** (30/10/2026): 266 metafile (263 in `mods/`, 1 resource pack, 2 pacchetti di shader). Le mod entrate dopo il 16/10 stanno in «Aggiunte dopo la verifica», le librerie senza riga in fondo. Il 30/10 versioni, date e tipi delle righe da Modrinth sono stati riconfrontati con i metafile e con l'API: corretti Iris e Fresh Animations (su Modrinth sono `release`), Not Enough Glyphs e Ars Unification (data), gli slug di Ars QOL e Scriptor Magicae.
 
 Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo beta/alpha oppure ferma a prima di metà 2025 · ❌ nessuna build.
 "MR" = Modrinth, "CF" = CurseForge. La colonna Progetto riporta lo slug esatto, utile per non prendere progetti omonimi in Prism.
@@ -20,12 +22,12 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 
 ## Avvisi ⚠️ in breve
 
-- **Solo beta/alpha, ma è l'abitudine dell'autore o la mod è dichiaratamente in beta**: Serene Seasons, Pipez, Sound Physics Remastered, The Undergarden, Expanded Delight, Aether's Delight, Fresh Animations. Si usano lo stesso.
+- **Solo beta/alpha, ma è l'abitudine dell'autore o la mod è dichiaratamente in beta**: Serene Seasons, Pipez, Sound Physics Remastered, The Undergarden, Expanded Delight, Aether's Delight. Si usano lo stesso.
 - **Ramo 1.21.1 concluso** (ultima build tra il 2024 e metà 2025, nessuna più recente da nessuna parte): tutta la serie YUNG's, Dungeons and Taverns, Sparse Structures, Hexerei, Ender Storage, Illager Invasion, Mouse Tweaks, Controlling, Pick Up Notifier, Travelers Titles, Animal Feeding Trough. Sono build stabili e definitive, rischio basso.
 
 ## Da sapere quando si cercano le mod
 
-- **Solo su CurseForge** (le scarica packwiz-installer; quelle bloccate vanno scaricate a mano): The Twilight Forest, Roaster's Delight, Spice of Life: Carrot Edition, BotanyPotsAdditions, Ars Elemental, AllTheLeaks (dalla 0.2.3), Goblin Traders e la sua libreria Framework (dalla 0.4.0)
+- **Solo su CurseForge** (le scarica packwiz-installer; quelle bloccate vanno scaricate a mano): The Twilight Forest, Roaster's Delight, Spice of Life: Carrot Edition, BotanyPotsAdditions, Ars Elemental, AllTheLeaks (dalla 0.2.3), Goblin Traders e la sua libreria Framework (dalla 0.4.0), Jumbo Furnace (dalla 0.7.1)
 - **Slug da non sbagliare**: Friends & Foes → `friends-and-foes-forge` · Create Slice & Dice → `slice-and-dice` · Deeper and Darker → `deeperdarker` · Unusual End → `unusual_end` · Moog's End Structures → `mes-moogs-end-structures` · Born in Chaos → `borninchaos`. Evitare i progetti omonimi non ufficiali (ImmediatelyFast "Reforged", Entity Culling di altri autori, Compass to Map per JourneyMap)
 - **NeoForge**: almeno 21.1.229 (richiesto da BotanyPotsAdditions; il controllo dei nomi verifica da solo le richieste di ogni mod). Versione usata: changelog; perché è ferma: `0303-note-tecniche.md`
 
@@ -243,7 +245,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Not Enough Animations | [`not-enough-animations`](https://modrinth.com/mod/not-enough-animations) MR | 1.12.6-1.21.1 - NeoForge | 2026-09-19 | release | ✅ |  |
 | Entity Model Features (EMF) | [`entity-model-features`](https://modrinth.com/mod/entity-model-features) MR | 3.3.12-neoforge-1.21 | 2026-10-15 | release | ✅ |  |
 | Entity Texture Features (ETF) | [`entitytexturefeatures`](https://modrinth.com/mod/entitytexturefeatures) MR | 7.2.5-neoforge-1.21 | 2026-10-04 | release | ✅ |  |
-| Fresh Animations (resource pack) | [`fresh-animations`](https://modrinth.com/resourcepack/fresh-animations) MR | 1.10.4 | 2026-02-24 | beta | ⚠️ | Tutte le versioni segnate beta; richiede in pratica EMF + ETF |
+| Fresh Animations (resource pack) | [`fresh-animations`](https://modrinth.com/resourcepack/fresh-animations) MR | 1.10.4 | 2026-02-24 | release | ✅ | Su Modrinth è di tipo release (30/10); richiede in pratica EMF + ETF |
 
 ### Performance
 
@@ -275,9 +277,9 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Ars Creo | [`ars-creo`](https://modrinth.com/mod/ars-creo) MR | 5.4.0 | 2026-05-24 | release | ✅ | Dello sviluppatore di Ars; richiede Create 6.0.9+. Aggiunta il 16/10/2026 |
 | Ars Mekanica | [`ars-mekanica`](https://modrinth.com/mod/ars-mekanica) MR | 1.3.0 | 2026-07-27 | release | ✅ | Richiede Mekanism. Aggiunta il 16/10/2026 |
 | Ars Elemental | [`ars-elemental`](https://www.curseforge.com/minecraft/mc-mods/ars-elemental) CF | 0.7.10.4 | 2026-10-04 | release | ✅ | **solo CurseForge**. Aggiunta il 16/10/2026 |
-| Ars QOL | — | 1.2.1 | 2026-10-05 | release | ✅ | Progetto piccolo e nuovo (cercarlo per nome in Prism). Aggiunta il 16/10/2026 |
-| Ars Unification | [`ars-unification`](https://modrinth.com/mod/ars-unification) MR | 1.2.19 | — | release | ✅ | Aggiunta il 16/10/2026 |
-| Not Enough Glyphs | [`not-enough-glyphs`](https://modrinth.com/mod/not-enough-glyphs) MR | 4.6.x | — | release | ✅ | Aggiunta il 16/10/2026 |
+| Ars QOL | [`ars-qol`](https://modrinth.com/mod/ars-qol) MR | 1.2.1 | 2026-10-05 | release | ✅ | Progetto piccolo e nuovo. MIT. Aggiunta il 16/10/2026 |
+| Ars Unification | [`ars-unification`](https://modrinth.com/mod/ars-unification) MR | 1.2.19 | 2026-07-08 | release | ✅ | Aggiunta il 16/10/2026 |
+| Not Enough Glyphs | [`not-enough-glyphs`](https://modrinth.com/mod/not-enough-glyphs) MR | 4.6.1 | 2026-06-23 | release | ✅ | Aggiunta il 16/10/2026 |
 | Ars Controle | [`ars-controle`](https://modrinth.com/mod/ars-controle) MR | 1.6.16 | 2026-09-10 | release | ✅ | Aggiunta il 16/10/2026 |
 | Occultism | [`occultism`](https://modrinth.com/mod/occultism) MR | 1.224.5 | 2026-10-11 | release | ✅ | Richiede Modonomicon, Curios, GeckoLib, SmartBrainLib. Aggiunta il 16/10/2026 |
 | Ars Ocultas | [`ars-ocultas`](https://modrinth.com/mod/ars-ocultas) MR | 1.21.1-2.6.1 | 2026-08-06 | release | ✅ | Ars 5.3–6.0 e Occultism ≥ 1.220.4. Aggiunta il 16/10/2026 |
@@ -285,7 +287,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | ~~Create: Occult Engineering~~ | ~~`occult-engineering`~~ | ~~1.21.1-0.13.1~~ | ~~2026-08-03~~ | ~~beta~~ | — | Tolta il 16/10/2026 |
 | Reactive Alchemy | [`reactive`](https://modrinth.com/mod/reactive) MR | 1.21.1-10.2.1 | 2026-09-27 | release | ✅ | Richiede Patchouli. Aggiunta il 16/10/2026 |
 | Psi | [`psi`](https://modrinth.com/mod/psi) MR | 1.21.1-110 | 2026-09-01 | release | ✅ | Richiede Patchouli. Aggiunta il 16/10/2026 |
-| Scriptor Magicae | [`JyJgaOrk`](https://modrinth.com/mod/JyJgaOrk) MR | 2.0.14-1.21.1-neoforge | 2026-09-17 | release | ✅ | Richiede Unfocused e Kotlin for Forge. Aggiunta il 16/10/2026 |
+| Scriptor Magicae | [`scriptor-magicae`](https://modrinth.com/mod/scriptor-magicae) MR | 2.0.14-1.21.1-neoforge | 2026-09-17 | release | ✅ | Richiede Unfocused. Aggiunta il 16/10/2026 |
 | Regions Unexplored | [`regions-unexplored`](https://modrinth.com/mod/regions-unexplored) MR | 0.6.2-neoforge-21.1 | 2026-07-12 | release | ✅ | Aggiunta il 17/10/2026 |
 | Chunky | [`chunky`](https://modrinth.com/mod/chunky) MR | 1.4.23 | 2025-04-04 | release | ✅ | Aggiunta il 17/10/2026 |
 | Clumps | [`clumps`](https://modrinth.com/mod/clumps) MR | 19.0.0.1 | 2024-08-13 | release | ✅ | Aggiunta il 17/10/2026 |
@@ -340,7 +342,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Fragmentum (dipendenza) | [`fragmentum`](https://modrinth.com/mod/fragmentum) MR | 5.4.0 | 2026-10-16 | release | ✅ | Richiesta da aquamirae. Licenza Obscuria (LicenseRef-Obscuria-Ecosystem). Pack 0.5.0 |
 | Enhanced Celestials 2: Core | [`enhanced-celestials-2-core`](https://modrinth.com/mod/enhanced-celestials-2-core) MR | 2.0.3.3-neoforge | 2026-09-07 | release | ✅ | Richiede CorgiLib ≥ 5.0.0.9 e Data Anchor ≥ 2.0.0.16; incompatibile con Enhanced Celestials. Pack 0.5.1 |
 | Enhanced Celestials 2: Default Lunar Events | [`enhanced-celestials-2-default-lunar-events`](https://modrinth.com/mod/enhanced-celestials-2-default-lunar-events) MR | 2.0.1.3-neoforge | 2026-09-03 | release | ✅ | Richiede il Core. Pack 0.5.1 |
-| Iris Shaders | [`iris`](https://modrinth.com/mod/iris) MR | 1.8.14-beta.1+1.21.1-neoforge | 2026-06-13 | beta | ⚠️ | Beta voluta: l'unica che funziona con Sodium 0.8 (la release 1.8.12 va in crash; `0303`). Dichiara Minecraft `[1.21,1.21.1)`, accettato da NeoForge sulla 1.21.1. Contiene 4 moduli di Fabric API già nel pack con versioni uguali o più nuove. Solo lato client. Pack 0.5.2 |
+| Iris Shaders | [`iris`](https://modrinth.com/mod/iris) MR | 1.8.14-beta.1+1.21.1-neoforge | 2026-06-13 | release | ✅ | «beta» nel nome, ma su Modrinth è di tipo release (30/10): l'unica che funziona con Sodium 0.8 (la 1.8.12 va in crash; `0303`). Dichiara Minecraft `[1.21,1.21.1)`, accettato da NeoForge sulla 1.21.1. Contiene 4 moduli di Fabric API già nel pack con versioni uguali o più nuove. Solo lato client. Pack 0.5.2 |
 | Enhanced Celestials 2: Shader Support | [`enhanced-celestials-2-shader-support`](https://modrinth.com/mod/enhanced-celestials-2-shader-support) MR | 2.0.0.3-neoforge | 2026-09-03 | release | ✅ | Richiede Core ≥ 2.0.3.1, CorgiLib, Sodium e Iris. Solo lato client. Pack 0.5.2 |
 | Complementary Reimagined (pacchetto di shader) | [`complementary-reimagined`](https://modrinth.com/shader/complementary-reimagined) MR | r5.9.3 | 2026-09-15 | release | ✅ | Per Iris; cartella `shaderpacks`. Pack 0.5.3 |
 | MakeUp - Ultra Fast (pacchetto di shader) | [`makeup-ultra-fast-shaders`](https://modrinth.com/shader/makeup-ultra-fast-shaders) MR | 9.5g | 2026-10-04 | release | ✅ | Per Iris; cartella `shaderpacks`. Pack 0.5.3 |
@@ -355,8 +357,47 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | Rhino (dipendenza) | [`rhino`](https://modrinth.com/mod/rhino) MR | 2101.2.7-build.85 | 2026-06-08 | release | ✅ | Richiesta da kubejs. MPL-2.0. Pack 0.7.2 |
 | Better Advanced Tooltips (dipendenza) | [`better-advanced-tooltips`](https://modrinth.com/mod/better-advanced-tooltips) MR | 2101.1.0-build.5 | 2026-08-04 | release | ✅ | Richiesta da kubejs (stesso autore). MIT. Pack 0.7.2 |
 
-## Librerie principali (arrivano come dipendenze)
+## Librerie (arrivano come dipendenze)
 
-Versioni ricontrollate sui metafile del pack il 18/10/2026 (prima alcune erano quelle della verifica, non quelle installate). Moog's Structure Lib è passata dalla 3.0.3 alla 3.4.2 nella 0.5.0, perché Moog's Nether Structures chiede almeno la 3.3.0 (bug B28).
+Le librerie che non hanno una riga nelle tabelle sopra (quelle con «(dipendenza)» nel nome ce l'hanno). Versione, tipo e licenza letti dai metafile del pack e dall'API di Modrinth il 30/10/2026; «Per» sono le mod del pack che la chiedono come obbligatoria su Modrinth. Tutte da Modrinth. Moog's Structure Lib è passata dalla 3.0.3 alla 3.4.2 nella 0.5.0, perché Moog's Nether Structures chiede almeno la 3.3.0 (bug B28); Data Anchor dalla 2.0.0.14 alla 2.0.0.17 nella 0.5.1.
 
-Tutte con build NeoForge 1.21.1: YUNG's API 5.1.9 · Placebo 9.9.4 · Moog's Structure Lib 3.4.2 · Create: Dragons Plus 1.11.9 · Sophisticated Core 1.5.13 · Fzzy Config 0.7.7 · Bookshelf 21.1.81 · Prickle 21.1.11 · CorgiLib 5.0.0.9 · Data Anchor 2.0.0.17 (dalla 0.5.1; prima 2.0.0.14) · Puzzles Lib 21.1.64 · Resourceful Config 3.0.11 · CreativeCore 2.13.50. Non verificate una per una ma standard: Architectury, Balm, GeckoLib, Curios, Accessories, Citadel, Lionfish API, Blueprint, TerraBlender, NexusLib, Cristel Lib, Resourceful Lib.
+| Libreria | Progetto | Versione | Tipo | Licenza | Per |
+|---|---|---|---|---|---|
+| Architectury API | `architectury-api` | 13.0.11 | release | LGPL-3.0 | 16 mod: Let's Do, Hexalia, Better Archeology, Animal Pens e altre |
+| Balm | `balm` | 21.0.66 | release | ARR | Farming for Blockheads, Waystones, Crafting Tweaks, Inventory Essentials, NetherPortalFix |
+| Blueprint | `blueprint` | 8.2.0 | release | Abnormals License | Unusual End |
+| Bookshelf | `bookshelf-lib` | 21.1.81 | release | LGPL-2.1 | Botany Pots e addon, Enchantment Descriptions |
+| Caelus API | `caelus` | 7.0.1 | release | LGPL-3.0 | Truly Modular |
+| Cloth Config API | `cloth-config` | 15.0.140 | release | LGPL-3.0 | Cristel Lib (facoltativa per altre, es. Sound Physics Remastered) |
+| CodeChicken Lib | `codechicken-lib` | 4.6.1.529 | release | LGPL-2.1 | Ender Storage |
+| CorgiLib | `corgilib` | 5.0.0.9 | release | LGPL-3.0 | Enhanced Celestials 2 |
+| CreativeCore | `creativecore` | 2.13.51 | release | LGPL-3.0 | AmbientSounds |
+| Cristel Lib | `cristel-lib` | 3.1.7 | release | CC-BY-NC-ND-4.0 | Towns and Towers |
+| Curios API | `curios` | 9.5.1 | release | LGPL-3.0 | Ars Nouveau e addon, Cataclysm, Occultism, Relics |
+| Data Anchor | `data-anchor` | 2.0.0.17 | release | MPL-2.0 | Enhanced Celestials 2 |
+| Fzzy Config | `fzzy-config` | 0.7.7 | release | TDL-M | EMI Loot, Subtle Effects |
+| GeckoLib | `geckolib` | 4.9.3 | release | MIT | Mowzie's Mobs, Born in Chaos, Occultism, Aquamirae e altre |
+| GlitchCore | `glitchcore` | 2.1.0.2 | beta | ARR | Serene Seasons |
+| JamLib | `jamlib` | 1.3.6 | release | MIT | RightClickHarvest |
+| Kiwi | `kiwi` | 15.8.7 | release | MIT | Snow! Real Magic! |
+| Kotlin for Forge | `kotlin-for-forge` | 5.12.0 | release | LGPL-2.1 | Fzzy Config, Create Slice & Dice |
+| Lionfish API | `lionfish-api` | 3.1 | release | LGPL-3.0 | Cataclysm |
+| Modonomicon | `modonomicon` | 1.120.7 | release | MIT e CC-BY-4.0 | Occultism |
+| Moog's Structure Lib | `moogs-structure-lib` | 3.4.2 | release | LGPL-3.0 | Moog's End Structures, Moog's Nether Structures |
+| NexusLib | `nexuslib` | 1.2.0 | release | licenza propria | Bountiful Fares |
+| owo-lib | `owo-lib` | 0.12.15.5-beta.1 | beta | MIT | The Aether. È per lei che NeoForge è fermo (B17): la 0.12.15.6 è uscita il 16/10 e si aggiorna in una versione a sé dopo la 0.7.3 |
+| Patchouli | `patchouli` | 93 | release | CC-BY-NC-SA-3.0 | Apotheosis, Psi, Aspect Alchemy |
+| Placebo | `placebo` | 9.9.4 | release | MIT | Apotheosis e moduli, Gateways to Eternity |
+| Prickle | `prickle` | 21.1.11 | release | LGPL-2.1 | Botany Pots e addon, Enchantment Descriptions |
+| Puzzles Lib | `puzzles-lib` | 21.1.64 | release | MPL-2.0 | Diagonal Fences, Walls e Windows, Open Together, Mutant Monsters e altre |
+| Resourceful Config | `resourceful-config` | 3.0.11 | release | MIT | Better Archeology, Creeper Overhaul, Structure Layout Optimizer |
+| Resourceful Lib | `resourceful-lib` | 3.0.12 | release | MIT | Creeper Overhaul, Friends & Foes, Handcrafted |
+| Searchables | `searchables` | 1.0.2 | release | MIT | Controlling |
+| SmartBrainLib | `smartbrainlib` | 1.16.11 | release | MPL-2.0 | Occultism |
+| SuperMartijn642's Config Lib | `supermartijn642s-config-lib` | 1.1.8 | release | ARR | Chunk Loaders, Rechiseled |
+| SuperMartijn642's Core Lib | `supermartijn642s-core-lib` | 1.1.24 | release | ARR | Chunk Loaders, Rechiseled |
+| TerraBlender | `terrablender` | 4.1.0.8 | beta | LGPL-3.0 | Deep Aether |
+| Unfocused | `unfocused` | 0.3.10 | release | CC0 | Scriptor Magicae |
+| YUNG's API | `yungs-api` | 5.1.9 | release | LGPL-3.0 | La serie YUNG's, Paxi, Travelers Titles |
+
+**Dentro altre mod** (non sono metafile, quindi non si aggiornano a sé; inventario): Accessories, Cumulus e Nitrogen nell'Aether; Greenhouse Config in Brewin' And Chewin'.

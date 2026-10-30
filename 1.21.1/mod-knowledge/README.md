@@ -2,14 +2,14 @@
 
 Tutto quello che sappiamo di **una mod**, con le fonti e la data dell'ultimo aggiornamento in testa: fatti verificati, chiavi di config, compatibilità, legame con il nostro datapack, storia nel pack. Regole in `AGENTS.md`, sezione 4.
 
-- Una scheda per mod, con il nome dello slug di Modrinth (`every-compat.md`). Ciò che riguarda **più mod insieme** (esperienza, Nether, shader…) sta nelle schede dei temi, in [`../theme-knowledge/`](../theme-knowledge/README.md); la scheda della mod rimanda al tema e il tema alle mod.
+- Una scheda per mod. Il nome è lo slug del metafile (`every-compat.md`) oppure un nome breve e leggibile, con lo slug del metafile scritto nella testata (`cataclysm.md`: `l_enders-cataclysm`; regola del 30/10/2026). Le schede non si rinominano. Ciò che riguarda **più mod insieme** (esperienza, Nether, shader…) sta nelle schede dei temi, in [`../theme-knowledge/`](../theme-knowledge/README.md); la scheda della mod rimanda al tema e il tema alle mod.
 - Le schede esistono solo per le mod su cui c'è conoscenza verificata; le altre hanno la loro riga in `../docs/0301-mod.md`. Ne esistono anche per mod **non** nel pack (candidate o scartate): lo stato è scritto in testa.
 - Per lo stato attuale del pack: `../docs/`. Per il lavoro di una versione: `../lavoro/versioni/`.
 
 | Scheda | Stato | Di cosa parla |
 |---|---|---|
 | [aether](aether.md) | nel pack | owo-lib e Accessories, prove da fare |
-| [artifacts](artifacts.md) | nel pack | Config degli slot, artefatti nelle casse modded |
+| [artifacts](artifacts.md) | nel pack | Config (ignorata dalla 0.7.0), casse e scavi, Reliquified Artifacts e Relics, abilità come componenti |
 | [botany-pots](botany-pots/botany-pots.md) | nel pack | Formato delle ricette, casi particolari, fonti, comandi. Cartella: [analisi](botany-pots/analisi.md) di terreni e colture (come funziona il vaso, modello della base dati, decisioni) e `query/` (SQL per `scripts/botanypots_db.py`) |
 | [carry-on](carry-on.md) · [fallingtree](fallingtree.md) · [inventory-essentials](inventory-essentials.md) · [travelers-backpack](travelers-backpack.md) · [subtle-effects](subtle-effects.md) · [sound-physics-remastered](sound-physics-remastered.md) | nel pack | Config di comodità e client |
 | [cataclysm](cataclysm.md) | nel pack | Strutture, Berserker, Curios |

@@ -59,7 +59,7 @@ EC2 aggiunge due effetti che EC1 non aveva, e li lasciamo attivi:
 - i mostri compaiono più vicini al giocatore (`blood_moon_mob_spawn_distances`: 64 blocchi; super luna 32);
 - **assedio di zombi** ai villaggi (`blood_moon_village_siege_probability`: 50%; super luna 100%).
 
-Per spegnerli basta un file con lo stesso nome in `event_modifier/` (per l'assedio: `"probability": 0.0`).
+Per spegnerli basta un file con lo stesso nome in `event_modifier/` (per l'assedio: `"probability": 0.0`). Se tenerli è una decisione aperta: `1.21.1/lavoro/0503-temi-aperti.md`, sezione 4.
 
 ## Quando ha effetto e come provare
 

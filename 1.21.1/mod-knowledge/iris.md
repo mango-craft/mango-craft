@@ -1,11 +1,11 @@
 # Iris (shader)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.5.2 (ruolo e licenza: `../docs/0301-mod.md`; versione: `../docs/0403-distinta-mod.md`) · fonti: API di Modrinth, sorgenti di Iris (ramo 1.21.1), Sodium, Flywheel, Colorwheel, ImmediatelyFast, Fusion, Lodestone, Exposure, Shoulder Surfing, packwiz; log dell'istanza di prova. Ricerca: `../lavoro/versioni/v0.5.2.md`.
+Aggiornata il 30/10/2026 · nel pack dalla 0.5.2 (ruolo e licenza: `../docs/0301-mod.md`; versione: `../docs/0403-distinta-mod.md`) · fonti: API di Modrinth, sorgenti di Iris (ramo 1.21.1), Sodium, Flywheel, Colorwheel, ImmediatelyFast, Fusion, Lodestone, Exposure, Shoulder Surfing, packwiz; log dell'istanza di prova. Ricerca: `../lavoro/versioni/v0.5.2.md`.
 
 ## Cose da non rompere
 
-- Con Sodium 0.8 funziona **solo Iris 1.8.14-beta.1** (`iris@KduFYu4t`, 13/6/2026, LGPL-3.0): il changelog di Sodium 0.8.12 dice "Iris works as of 1.8.13". L'ultima *release*, la 1.8.12 (17/6/2025), è fatta per Sodium 0.6 e con Sodium 0.8 va in crash (issue Iris #3126 e #3220).
-- Il workflow Modrinth da solo sceglie l'ultima release: Iris si aggiunge o aggiorna **solo indicando la versione** (`iris@<id>`). Il controllo dei nomi non fermerebbe l'errore: la 1.8.12 chiede `sodium [0.6,)`, che la 0.8 soddisfa.
+- Con Sodium 0.8 funziona **solo Iris 1.8.14-beta.1** (`iris@KduFYu4t`, 13/6/2026, LGPL-3.0): il changelog di Sodium 0.8.12 dice "Iris works as of 1.8.13". La 1.8.12 (17/6/2025, l'ultima senza «beta» nel nome) è fatta per Sodium 0.6 e con Sodium 0.8 va in crash (issue Iris #3126 e #3220).
+- Su Modrinth la 1.8.14-beta.1 è di **tipo release** ed è l'ultima per 1.21.1 NeoForge (API, 30/10/2026): oggi il workflow da solo sceglierebbe proprio lei. Conviene lo stesso indicare la versione (`iris@<id>`): una release nuova potrebbe non andare con la nostra Sodium, e il controllo dei nomi non fermerebbe l'errore (la 1.8.12, per esempio, chiede `sodium [0.6,)`, che la 0.8 soddisfa).
 - Prima di aggiornare Sodium, verificare che Iris lo supporti. Non si può tornare a Sodium 0.6: Supplementaries rifiuta Sodium più vecchio della 0.8.12-beta.1.
 - Il ramo 1.21.1 di Iris è fermo al 13/6/2026.
 
