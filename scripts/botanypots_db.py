@@ -704,7 +704,8 @@ CREATE TABLE BOTTINO_POOL (
   tiri_bonus  REAL,                      -- per punto di fortuna
   probabilita REAL,                      -- la random_chance della pool, se c'è
   condizioni  TEXT,                      -- tutte le condizioni della pool, JSON compatto
-  peso_totale INTEGER NOT NULL,          -- somma dei pesi delle voci dirette (le alternative contano 0)
+  peso_totale INTEGER NOT NULL,          -- somma dei pesi delle voci dirette; una voce composta conta come le figlie
+                                         --   che il gioco ne ricava: alternatives la prima, group e sequence tutte
   PRIMARY KEY (tabella_id, fonte, pool),
   FOREIGN KEY (tabella_id, fonte) REFERENCES BOTTINO_TABELLA
 );
@@ -872,6 +873,18 @@ def _intervallo(v) -> tuple:
         if isinstance(v.get("n"), (int, float)):
             return 0, v["n"]
     return None, None
+
+
+def peso_effettivo(e: dict) -> int:
+    """Il peso con cui una voce compete nella pool: il gioco sostituisce una voce composta con le sue figlie
+    (alternatives: la prima che vale, qui la prima; group e sequence: tutte)."""
+    if e.get("kind") == "alternatives":
+        figlie = e.get("children") or []
+        return peso_effettivo(figlie[0]) if figlie else 0
+    if e.get("kind") in ("group", "sequence"):
+        return sum(peso_effettivo(f) for f in e.get("children") or [])
+    w = e.get("weight")
+    return int(w) if isinstance(w, (int, float)) else 0
 
 
 def _probabilita(conds) -> float | None:
@@ -1620,7 +1633,7 @@ class BotanyPotsDB:
                 tmin, tmax = _intervallo(p.get("rolls"))
                 bonus = p.get("bonus_rolls")
                 dirette = p.get("entries") or []
-                peso = sum(int(e["weight"]) for e in dirette if isinstance(e.get("weight"), (int, float)))
+                peso = sum(peso_effettivo(e) for e in dirette)
                 pool.append((tid, fonte, i, tmin, tmax, bonus if isinstance(bonus, (int, float)) else None,
                              _probabilita(p.get("conditions")),
                              json.dumps(p["conditions"], ensure_ascii=False) if p.get("conditions") else None, peso))

@@ -13,6 +13,8 @@ Aggiornata il 30/10/2026 · stato: **quadro iniziale**, con la **base dati del b
 | Moog's End Structures | — | 1: sabbia dell'End (nelle strutture) | |
 | YUNG's Better Jungle Temples | — | 1: smeraldi | |
 | Towns and Towers | — | 2: rovine nella foresta (comuni, rare) | |
+| Dungeons and Taverns | — | 7 proprie (`nova_structures:archaelogy/…` e due `minecraft:archaelogy/…`, scritto così: non toccano le vanilla); usa anche `minecraft:archaeology/desert_pyramid` | trovate dalla base dati il 30/10 |
+| When Dungeons Arise | — | 1: santuario Kisegi | trovata dalla base dati il 30/10 |
 | YUNG's Extras | — | 1 propria (`yungsextras:desert/extra_archeology`) | |
 | Supplementaries | mattoni di ghiaia sospetti | — | |
 
@@ -21,7 +23,8 @@ Aggiornata il 30/10/2026 · stato: **quadro iniziale**, con la **base dati del b
 - **Pennelli** di Better Archeology: di ferro, di diamante, di netherite (alla forgia).
 - **Tavolo dell'archeologia** (Better Archeology): reperti non identificati → identificati; 3 incantamenti suoi (Penetrating Strike, Soaring Winds, Tunneling).
 - **Alakarkinos** (Ars Nouveau): granchio che trasforma sabbia e ghiaia in bottino delle tabelle vanilla (6 ricette, pesi 100/25), con un giocatore finto, una volta al minuto circa; tira la tabella come principale, quindi con i modificatori.
-- **Corail Tombstone**: aggiunge una sua pool (`tombstone:archeology_treasure`) alle tabelle degli scavi quando si caricano (codice, `LootTableLoadEvent`); quali tabelle esattamente non è verificato.
+- **Corail Tombstone**: aggiunge una sua pool (`tombstone:archeology_treasure`) agli scavi quando le tabelle si caricano (codice, `LootTableLoadEvent`). Dalle costanti del codice (30/10, 9.5.6) con buona probabilità la mette su **tutte** le tabelle di tipo `archaeology`; pool ed elenchi li scrive, a quanto pare, tra i file di config dell'istanza (`config/tombstone/`). Non verificato: si prova con `/loot` (due oggetti insieme = la pool c'è).
+- **Una spazzolata dà un solo oggetto** (verificato il 30/10 nel jar ufficiale 1.21.1: la classe del blocco sospetto scrive «Expected max 1 loot from loot table {}, but got {}» se la tabella ne dà di più, e ne tiene uno). Quindi negli scavi un modificatore che **aggiunge** non funziona: si riscrive la tabella (come le 5 vanilla) oppure si sostituisce, come faceva Artifacts con `replace`.
 
 ## Cosa si trova
 
@@ -34,7 +37,7 @@ Aggiornata il 30/10/2026 · stato: **quadro iniziale**, con la **base dati del b
 
 Nelle casse `chests/` la reliquia la mette Relics (10%), nelle 25 casse fuori da quella regola il nostro datapack; in più mimic e mostri con artefatti addosso. Dettagli: scheda `../mod-knowledge/artifacts.md`.
 
-**Buco noto**: le casse delle strutture di Better Archeology usano tabelle `betterarcheology:archeology/chest_…` (21, più 2 `loot_catacombs_*`): né Relics né il nostro datapack le vedono, quindi lì non escono reliquie. Decisione del 24/10: si aggiungono i tesori alla toppa nella versione dell'archeologia.
+**Buco noto**: le casse delle strutture di Better Archeology usano tabelle `betterarcheology:archeology/chest_…` (21, più 2 `loot_catacombs_*`): né Relics né il nostro datapack le vedono, quindi lì non escono reliquie. Decisione del 24/10: si aggiungono i tesori alla toppa nella versione dell'archeologia. **Quali strutture** (30/10, file delle strutture nel jar 1.3.9): 9 hanno casse. Catacombe (5 tabelle, il tesoro è `chest_catacombs_golden`), tempio della giungla (4, `…_treasure`), tempio della luce (4, `…_treasure`), rovine sepolte nella sabbia, rovine della mesa, motta, tumulo, rovine sottomarine e sculk che consuma (una ciascuna). `chest_radiance_totem` e `chest_loot_prototype` non le usa nessuna struttura.
 
 ## Il bottino nella base dati (dalla 0.7.5)
 
@@ -58,10 +61,6 @@ Verificato il 30/10/2026 su inventario (formato 8), datapack e dump del gioco de
 - **scavi**: oltre a quelle del quadro qui sopra, ci sono 7 tabelle proprie di Dungeons and Taverns (`nova_structures:archaelogy/…`, scritto così), una di When Dungeons Arise (santuario Kisegi) e quella dell'End di Moog's End Structures, che ha il tipo `chest`;
 - **65 casse radice senza reliquie**: Better Archeology 21 (il buco noto), Twilight Forest 16 (volute: una sola cassa per struttura, regola della 0.6.0), Towns and Towers 13 (avamposti e villaggi), Moog's End Structures 6, Friends & Foes 3 barili, YUNG's Extras 2, e una ciascuna Dungeons and Taverns, Supplementaries (la cassa del galeone; la cassaforte è coperta), Unusual End e YUNG's Better Dungeons.
 
-## Da analizzare (versione dell'archeologia)
+## Da decidere (versione dell'archeologia)
 
-- Le tabelle di scavo di tutte le mod: cosa danno, quanto valgono, doppioni; eventuali miglioramenti (Matteo, 24/10).
-- I tesori delle casse di Better Archeology nella toppa delle reliquie.
-- Gli scavi senza artefatti (rovine dei sentieri comuni, Jaden's, Cataclysm…): lasciarli così o no.
-- Quali tabelle tocca Corail Tombstone.
-- **Metodo** (approvato il 24/10): tabelle del bottino nella base dati e file generati, come vasi e mercato: `../lavoro/versioni/v0.7.5.md`, sezione 2.
+Analisi fatta il 30/10: proposte e domande in `../lavoro/versioni/v0.7.5.md` (sezioni 2 e 3): i tesori di Better Archeology con i livelli, gli artefatti negli scavi delle strutture delle mod, le classi di rarità degli oggetti degli scavi. Da provare in gioco: la pool di Corail Tombstone. **Metodo** (approvato il 24/10): tabelle del bottino nella base dati e file generati, come vasi e mercato.
