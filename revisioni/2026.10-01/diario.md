@@ -30,3 +30,13 @@ Il piano è in [piano.md](piano.md). Le voci sono in ordine di tempo; la più re
 - **Trappola trovata:** dentro la sandbox `git status` mostra nella radice file come `.bashrc`, `.gitconfig`, `.mcp.json`: sono `/dev/null` montati dalla sandbox, non file veri. Annotata in `ai-agents/README.md`; i commit si fanno con i percorsi espliciti.
 - **Commit:** «Lo stage versionato diventa ai-agents/archivio (solo percorsi)» e «Lavoro in locale: sessione, permessi e sandbox, contesto locale, stage fuori da git, revisioni».
 - **Aperto:** le prove che può fare solo Matteo (piano, sezione 4); la domanda sulle sessioni su claude.ai; il push.
+
+## 30/10/2026 — Le prove di GitHub e dei workflow
+
+- **Agente:** claude-code (claude-opus-5-5)
+- **Richiesta di Matteo:** «dovresti avere accesso sia a GitHub che alle action, fai qualche test». Sessione aperta con `--gh`, `gh` installato.
+- **Riuscite:** `gh auth status` (token fine-grained), `gh workflow list`, `gh run list`, `gh run view --log`; `gh api …/actions/secrets` risponde 403, come deve; `git fetch`, `git ls-remote` e `git push --dry-run origin dev` (la deploy key può scrivere; niente mandato).
+- **Trappola di `gh`:** con `cd … &&` o in una pipe `gh` gira nella sandbox, senza token, e dice «not logged in». Annotata in `ai-agents/README.md`.
+- **Esamina mod** lanciato su `cc-tweaked@1ewzHZYg advancedperipherals@fxjzpAbL` (le mod della 0.7.3): è partita la versione su GitHub, ancora quella vecchia, perché i commit di questa revisione non erano mandati. Ha fatto un commit su `dev` (77517bd, i due esami in `ai-agents/stage/`) invece dell'artefatto. Esame identico a quello del 24/10 nell'archivio (stesse versioni): niente di nuovo per la 0.7.3.
+- **Sistemato:** i 3 commit locali riportati sopra 77517bd. Il `git rebase` si è fermato: il commit della sessione crea `.claude/settings.json`, che c'era già sul disco (identico) e che la sandbox non lascia scrivere. I due commit rimasti ricostruiti con `git merge-tree` e `git commit-tree` senza toccare il disco; contenuto verificato uguale al `dev` di prima più i due file. Poi la cartella tolta da git: resta nello stage locale come `2026-10-30-esame-mod/`.
+- **Aperto:** il push (con la conferma di Matteo); dopo, rilanciare Esamina mod per provare l'artefatto; `/context`.

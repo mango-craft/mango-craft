@@ -28,6 +28,10 @@ Lo script carica la deploy key `~/.ssh/github_mango_craft` (o quella in `MANGO_G
 
 **Trappola della sandbox**: dentro la sandbox `git status` mostra nella radice e in `.claude/` file che non esistono (`.bashrc`, `.gitconfig`, `.mcp.json`, `.claude/hooks`…): sono `/dev/null` montati dalla sandbox per proteggere quei percorsi. Non si aggiungono mai: `git add` con i percorsi del lavoro fatto, non `git add -A` nella radice.
 
+**Trappola di `gh`** (prova del 30/10/2026): `gh` gira fuori dalla sandbox, con il token, solo se il comando è `gh …` da solo. In una pipe (`gh … | tail`) o dopo `cd … &&` gira dentro, dove il token è nascosto, e risponde «not logged in». L'output si filtra dopo, non nello stesso comando.
+
+**I workflow girano con la versione su GitHub**, non con quella locale: un workflow cambiato in un commit non ancora mandato parte nella versione vecchia. Il 30/10 Esamina mod, lanciato prima del push, ha fatto ancora il commit nello stage invece dell'artefatto. Prima si fa il push, poi si lancia.
+
 ## Contesto locale
 
 `contesto-locale.md` dice com'è fatto il PC: dove sta l'istanza di Prism e i suoi log, come si lancia Python, quali strumenti ci sono. Sta **fuori da git** perché il repository è pubblico; il modello versionato è `contesto-locale.esempio.md`. Claude Code lo carica da solo (import in [`CLAUDE.md`](../CLAUDE.md)); gli altri agenti lo leggono perché lo dice `AGENTS.md`. Lo gestisce Matteo: un agente lo aggiorna solo con un fatto nuovo detto da lui o verificato sul PC. Mai segreti.

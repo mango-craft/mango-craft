@@ -43,10 +43,10 @@ Cosa si prende dall'altro repository e cosa no:
 - [x] `shellcheck` pulito su `ai-agents/bin/claude-session` e `scripts/*.sh`.
 - [x] Tutti i link relativi dei file Markdown versionati puntano a file esistenti (controllo con uno script, fuori dall'archivio).
 - [x] La sandbox si accende: nella sessione del 29/10 `~/.ssh` e `accounts.json` risultano bloccati in lettura, la scrittura è limitata al repository.
-- [ ] (Matteo) Avvio con `ai-agents/bin/claude-session`: la chiave si carica e `git push` su `dev` funziona (fuori dalla sandbox, con conferma).
-- [ ] (Matteo) `gh` installato (`sudo dnf install gh`), avvio con `--gh`: `gh run list` risponde.
+- [x] (Matteo) Avvio con `ai-agents/bin/claude-session`: la chiave si carica e `git push` su `dev` funziona (fuori dalla sandbox, con conferma). Il 30/10: `git fetch`, `git ls-remote` e `git push --dry-run` riusciti (la chiave può scrivere); il primo push vero è quello di questa revisione.
+- [x] (Matteo) `gh` installato (`sudo dnf install gh`), avvio con `--gh`: `gh run list` risponde. Il 30/10: elenco dei workflow e delle esecuzioni, log leggibili, lancio di un workflow riuscito; i segreti del repository rispondono 403 (il token non ha altri permessi). Solo con `gh` da solo nel comando (diario, 30/10).
 - [ ] `/context` mostra `ai-agents/contesto-locale.md` tra i file di memoria.
-- [ ] Al primo uso, **Esamina mod** produce l'artefatto e `gh run download` lo porta nello stage.
+- [ ] Al primo uso, **Esamina mod** produce l'artefatto e `gh run download` lo porta nello stage. Il 30/10 è partita la versione vecchia, perché i commit non erano ancora su GitHub (diario): da rifare dopo il push.
 
 ## 5. Aperto
 
