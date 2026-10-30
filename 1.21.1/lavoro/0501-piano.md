@@ -4,11 +4,10 @@ Le tappe del pack verso il mondo vero e lo stato di avanzamento. Documento vivo:
 
 ## Tappe
 
-**Fatte**: le tappe 0–6.2, dalla 0.2.3 alla 0.7.2 (18–26/10/2026), tutte provate e rilasciate come pre-release; la 0.7.1 è uscita dentro la 0.7.2, senza un tag suo.
+**Fatte**: le tappe 0–6.3, dalla 0.2.3 alla 0.7.3 (18–30/10/2026), tutte provate e rilasciate come pre-release; la 0.7.1 è uscita dentro la 0.7.2, senza un tag suo.
 
 | Tappa | Versione | Contenuto | Stato |
 |---|---|---|---|
-| 6.3 | [0.7.3](versioni/v0.7.3.md) | **Computer**: CC: Tweaked e Advanced Peripherals, con le case del Computer Scientist nei villaggi; config di serie (decisa da Matteo il 25/10, versione piccola a sé) | 🔧 aperta il 29/10 con la correzione B47 (4 colture dei vasi mai caricate, trovate dal dump) e il dump nel formato 2; mod aggiunte il 30/10, prove di uscita da fare |
 | 6.4 | numero da decidere | **Piattaforma**: owo-lib 0.12.15.6 (dipendenza dell'Aether; uscita il 16/10, corregge il problema di rete dei NeoForge recenti, B17) e poi l'ultimo NeoForge 21.1.x, con le prove di Iris e Sodium (decisa da Matteo il 30/10: versione piccola a sé, subito dopo la 0.7.3) | da fare |
 | 7 e oltre | — | Il resto, nella proposta qui sotto: archeologia, eventuali 0.7.x (strumenti a tappe, terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
 

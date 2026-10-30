@@ -10,16 +10,17 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
-## 0.7.3 — in lavorazione · computer
+## 0.7.3 — 30/10/2026 · computer (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).
-- **Mondo nuovo**: non serve; le case del Computer Scientist compaiono solo nei chunk nuovi.
+- **Mondo nuovo**: non serve; le case del Computer Scientist compaiono solo nei chunk nuovi. Versione di prova: non è la versione del mondo vero.
 
 - **Datapack, vasi (correzione B47)**: le 3 colture dei graticci di Bountiful Fares (sambuco, lapisberry, frutto della passione) ora si caricano (aspetto del graticcio `bountifulfares:trellis`); tolta la coltura degli endstone sprouts warped, che Unusual End non registra. Trovato con il dump del gioco: dalla 0.6.1 il gioco le saltava in silenzio.
 - **Strumenti**: dump del gioco nel **formato 2** (nomi registrati, ricette caricate, etichette finali, tabelle del bottino, insiemi di strutture); la base dati confronta i nostri file con il gioco (ricette, tag, tabelle), il controllo dei nomi avvisa per i nomi che il gioco non registra; l'importatore segna a quale datapack si riferisce il dump.
 - **Mod nuove**: **CC: Tweaked** 1.120.2 (computer programmabili in Lua: computer, monitor, tartarughe, modem; leggono inventari, serbatoi e batterie di tutte le mod e le macchine di Create e Mekanism) e **Advanced Peripherals** 0.8.2a (periferiche che collegano i computer al giocatore e al mondo: Player Detector, Chat Box, Inventory Manager, Geo Scanner, occhiali smart, automi; legge bacino e serbatoi di Create). Entrambe alpha; nessuna libreria nuova; config di serie. ⚠️ Advanced Peripherals aggiunge ai villaggi le **case del Computer Scientist**, con il suo mestiere.
 - **Datapack, funzioni di prova**: `/function matteo_tweaks:test/releases/v0.7.3/…` dà gli oggetti delle prove dei computer e, con un clic in chat, copia le righe di Lua da incollare nel computer.
-- **Stato**: 🔧 in lavorazione sul ramo `dev`.
+- **Stato**: ✅ provata il 30/10/2026 (avvio e mondo; computer, Player Detector, Chat Box con modem e cavi, bacino di Create verificati da Matteo con le funzioni di prova; dump del gioco con tutti i controlli passati; log confrontato con quello del 29/10, nessun errore nuovo grave) e rilasciata come pre-release `1.21.1-v0.7.3`.
+- **Problemi noti**: B47 risolto (le 3 colture dei graticci si caricano). Nessun problema nuovo: qualche messaggio innocuo in più in B14 (3 ricette del manuale di Advanced Peripherals per mod che non abbiamo); B46 ancora presente.
 
 ## 0.7.2 — 26/10/2026 · fornaci e pozioni (pre-release di prova)
 
