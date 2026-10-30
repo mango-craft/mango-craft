@@ -42,4 +42,4 @@ Nelle casse `chests/` la reliquia la mette Relics (10%), nelle 25 casse fuori da
 - I tesori delle casse di Better Archeology nella toppa delle reliquie.
 - Gli scavi senza artefatti (rovine dei sentieri comuni, Jaden's, Cataclysm…): lasciarli così o no.
 - Quali tabelle tocca Corail Tombstone.
-- **Metodo** (approvato il 24/10): tabelle del bottino nella base dati e file generati, come vasi e mercato: `../lavoro/versioni/v0.7.4.md`, sezione 2.
+- **Metodo** (approvato il 24/10): tabelle del bottino nella base dati e file generati, come vasi e mercato: `../lavoro/versioni/v0.7.5.md`, sezione 2.

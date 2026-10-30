@@ -10,6 +10,13 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.7.4 — in lavorazione · piattaforma
+
+- **NeoForge**: **21.1.265** (prima 21.1.259): da cambiare a mano in Prism prima dell'avvio.
+- **Mondo nuovo**: non serve.
+- **Librerie aggiornate**: **owo-lib** 0.12.15.6 (dipendenza dell'Aether: corregge B17, il «Connection lost» con i NeoForge recenti), **Forgified Fabric API** 2.3.6 (vuole NeoForge 21.1.262 o più recente), **Puzzles Lib** 21.1.66.
+- **Stato**: 🔧 in lavorazione sul ramo `dev`.
+
 ## 0.7.3 — 30/10/2026 · computer (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).

@@ -1,19 +1,19 @@
 {
  "format": 7,
  "status": "ok",
- "version": "21.1.259",
+ "version": "21.1.265",
  "mods": [
   {
    "modid": "neoforge",
    "name": "NeoForge",
-   "version": "21.1.259",
+   "version": "21.1.265",
    "jar": "",
    "deps": []
   }
  ],
  "nested": [
   "mixinextras-neoforge-0.5.5.jar",
-  "net.neoforged.neoforge-coremods-21.1.259.jar"
+  "net.neoforged.neoforge-coremods-21.1.265.jar"
  ],
  "namespaces": [
   "c",
