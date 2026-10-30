@@ -1,6 +1,6 @@
 # Twilight Forest (+ Twilight's Flavor & Delight)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.1.1 (ruolo: `../docs/0301-mod.md`) · fonti: sorgente (ramo 1.21.1, `twilight/restrictions/*.json`), inventario, log dell'istanza di prova.
+Aggiornata il 30/10/2026 · slug dei metafile: `the-twilight-forest` (CurseForge) e `twilight-delight` · nel pack dalla 0.1.1 (ruolo: `../docs/0301-mod.md`) · fonti: sorgente (ramo 1.21.1, `twilight/restrictions/*.json`), inventario, log dell'istanza di prova.
 
 ## Cose da non rompere
 
@@ -10,5 +10,5 @@ Aggiornata il 19/10/2026 · nel pack dalla 0.1.1 (ruolo: `../docs/0301-mod.md`) 
 
 - 45 progressi veri su 545 file (il resto sono sblocchi di ricette); 10 danno esperienza come ricompensa (`../theme-knowledge/achievement.md`).
 - Every Compat crea le varianti dei suoi legni; 48 traduzioni mancanti per i tronchi cavi (B24).
-- Vasi: 12 cespugli di bacche da scrivere con raccolti espliciti (si raccolgono col click destro), fagioli magici esclusi; Twilight's Flavor & Delight: 3 piante e 2 terreni (terra ricca e arata) (`botany-pots/botany-pots.md`, `../lavoro/versioni/v0.6.1.md`). Nel mercato ha già 12 voci.
+- Vasi: dalla 0.6.1 i cespugli di bacche sono nel nostro datapack, con raccolti espliciti (si raccolgono col click destro), e così le piante e i terreni di Twilight's Flavor & Delight (terra ricca e arata); fagioli magici esclusi (`botany-pots/botany-pots.md`, `../lavoro/versioni/v0.6.1.md`). Mercato: le voci di Farming for Blockheads per Twilight Forest sono spente (listino della mod spento); dalla 0.6.2 le piante le vende il nostro datapack (`farming-for-blockheads.md`).
 - Ha shader propri: con uno shader attivo alcuni effetti possono vedersi male (`../theme-knowledge/shader.md`).

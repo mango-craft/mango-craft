@@ -1,6 +1,6 @@
 # Farming for Blockheads
 
-Aggiornata il 24/10/2026 · nel pack dalla 0.3.0, versione 21.1.14 (`../docs/0403-distinta-mod.md`) · fonti: file della mod (inventario), sorgente 21.1.14 (ramo `1.21.1`, commit `a764fa2`: `MarketPresetRegistry`, `MarketRecipe`, `MarketMenu`, `MarketPresetLoader`). Lavoro in corso: `../lavoro/versioni/v0.6.2.md`; tema `../theme-knowledge/piante.md`.
+Aggiornata il 30/10/2026 · nel pack dalla 0.3.0, versione 21.1.14 (`../docs/0403-distinta-mod.md`) · fonti: file della mod (inventario), sorgente 21.1.14 (ramo `1.21.1`, commit `a764fa2`: `MarketPresetRegistry`, `MarketRecipe`, `MarketMenu`, `MarketPresetLoader`). Lavoro della 0.6.2 (rilasciata il 24/10): `../lavoro/versioni/v0.6.2.md`; tema `../theme-knowledge/piante.md`.
 
 ## Fatti verificati
 

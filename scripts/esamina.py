@@ -9,14 +9,13 @@ Uso: python3 scripts/esamina.py <cartella pack> <cartella risultati> <filtro> [-
 - --stringhe: espressione regolare sui testi scritti nel codice compilato (.class): nomi di
   file di config, chiavi, comandi. Si leggono solo le costanti del file, senza eseguirlo.
 
-Per ogni mod scrive `<cartella risultati>/<slug>.md` (il workflow usa una cartella di
-`ai-agents/stage/`, materiale grezzo datato): versione scelta, mod id e dipendenze
-dichiarate nel .jar (con le versioni richieste), cartelle di dati con il numero di file e,
+Per ogni mod scrive `<cartella risultati>/<slug>.md` (una cartella dello stage,
+`ai-agents/stage/<data>-esame-mod/`, materiale grezzo fuori da git): versione scelta,
+mod id e dipendenze dichiarate nel .jar (con le versioni richieste), cartelle di dati con il numero di file e,
 per i file filtrati, i valori. Non copia i file: elenca i valori che servono per l'analisi
 (il contenuto delle mod resta dei rispettivi autori).
 
-Non esegue codice delle mod: apre i .jar come archivi zip. Serve la rete verso Modrinth:
-gira nelle GitHub Actions (workflow "Esamina mod").
+Non esegue codice delle mod: apre i .jar come archivi zip. Serve la rete verso Modrinth.
 """
 import hashlib
 import io
@@ -29,7 +28,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from inventory import get, parse_mods_toml  # noqa: E402
+from inventory import get, manifest_version, nested_jars, parse_mods_toml  # noqa: E402
 from modrinth_resolve import api, resolve  # noqa: E402
 
 MAX_LINES = 4000      # righe di valori per mod, al massimo
@@ -81,22 +80,22 @@ def flatten(node, prefix=""):
 def walk(data: bytes, where: str, depth: int, out: dict) -> None:
     z = zipfile.ZipFile(io.BytesIO(data))
     names = z.namelist()
-    manifest_version = None
-    if "META-INF/MANIFEST.MF" in names:
-        m = re.search(r"Implementation-Version:\s*(\S+)", z.read("META-INF/MANIFEST.MF").decode("utf-8", "replace"))
-        manifest_version = m.group(1) if m else None
+    version = manifest_version(z, names)
+    # come l'inventario: tutti e due i file (mods.toml è il formato vecchio, che NeoForge 1.21.1 non legge: «legacy»)
     for toml_name in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
         if toml_name in names:
-            mods, problems = parse_mods_toml(z.read(toml_name).decode("utf-8", "replace"), manifest_version, where)
+            mods, problems = parse_mods_toml(z.read(toml_name).decode("utf-8", "replace"), version, where,
+                                             legacy=toml_name == "META-INF/mods.toml")
             out["mods"] += mods
             out["problems"] += problems
-            break
+    nested = nested_jars(z, names, out["problems"], where)
     for n in names:
-        if n.endswith(".jar") and n.startswith("META-INF/") and depth < 2:
-            try:
-                walk(z.read(n), n.rsplit("/", 1)[-1], depth + 1, out)
-            except zipfile.BadZipFile:
-                out["problems"].append(f"{n}: non è uno zip valido")
+        if n in nested:
+            if depth < 3:
+                try:
+                    walk(z.read(n), n.rsplit("/", 1)[-1], depth + 1, out)
+                except zipfile.BadZipFile:
+                    out["problems"].append(f"{n}: non è uno zip valido")
             continue
         if n.endswith(".class") and out["strings_re"]:
             for s in class_strings(z.read(n)):
@@ -130,7 +129,7 @@ def examine(entry: str, mc: str, loader: str, regex, strings_re, out_dir: Path) 
     walk(data, f["filename"], 0, out)
 
     lines = [f"# {project['title']} ({project['slug']})", "",
-             "File generato da `scripts/esamina.py` (workflow \"Esamina mod\"): la mod **non** è nel pack. "
+             "File generato da `scripts/esamina.py`: la mod **non** è nel pack. "
              "Non modificarlo a mano.", "",
              f"- Versione: **{v['version_number']}** ({v.get('version_type')}, {v['date_published'][:10]}), "
              f"file `{f['filename']}`, id versione `{v['id']}`",
@@ -145,7 +144,8 @@ def examine(entry: str, mc: str, loader: str, regex, strings_re, out_dir: Path) 
             continue
         seen.add(key)
         where = f" (dentro `{m['jar']}`)" if m["jar"] != f["filename"] else ""
-        lines.append(f"- `{m['modid']}` {m['version']}{where}")
+        legacy = " — dal vecchio `mods.toml`, che NeoForge 1.21.1 non legge" if m.get("legacy") else ""
+        lines.append(f"- `{m['modid']}` {m['version']}{where}{legacy}")
         for d in m["deps"]:
             lines.append(f"  - {d['type']}: `{d['modid']}` {d.get('range') or ''}".rstrip())
     lines += ["", "## Cartelle di dati (file .json)", ""]

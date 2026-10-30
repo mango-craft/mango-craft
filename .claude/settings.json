@@ -1,0 +1,64 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/*)",
+      "Bash(bash scripts/*)",
+      "Bash(shellcheck *)",
+      "Bash(git *)",
+      "Bash(gh run list *)",
+      "Bash(gh run view *)",
+      "Bash(gh run watch *)",
+      "Bash(gh run download *)",
+      "Bash(gh workflow list *)",
+      "Bash(gh workflow view *)",
+      "WebSearch",
+      "WebFetch(domain:modrinth.com)",
+      "WebFetch(domain:api.modrinth.com)",
+      "WebFetch(domain:cdn.modrinth.com)",
+      "WebFetch(domain:www.curseforge.com)",
+      "WebFetch(domain:api.curseforge.com)",
+      "WebFetch(domain:edge.forgecdn.net)",
+      "WebFetch(domain:mediafilez.forgecdn.net)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:maven.neoforged.net)",
+      "WebFetch(domain:code.claude.com)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git tag *)",
+      "Bash(git merge *)",
+      "Bash(gh workflow run *)",
+      "Bash(gh release *)",
+      "Bash(git clean *)",
+      "Bash(git reset --hard)",
+      "Bash(git reset --hard *)",
+      "Bash(git checkout -- *)",
+      "Bash(git restore *)",
+      "Bash(git branch -D *)",
+      "Bash(git stash drop)",
+      "Bash(git stash drop *)",
+      "Bash(git stash clear)"
+    ],
+    "deny": [
+      "Read(~/.ssh/**)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "excludedCommands": [
+      "git push *",
+      "git fetch *",
+      "git pull *",
+      "git ls-remote *",
+      "gh *"
+    ],
+    "credentials": {
+      "envVars": [
+        { "name": "GH_TOKEN", "mode": "deny" },
+        { "name": "GITHUB_TOKEN", "mode": "deny" }
+      ]
+    }
+  }
+}

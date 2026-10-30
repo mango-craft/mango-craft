@@ -1,10 +1,11 @@
 {
- "formato": 1,
- "data": "2026-10-26T22:13:01.133Z",
+ "formato": 2,
+ "data": "2026-10-30T12:07:31.626Z",
  "minecraft": "1.21.1",
  "kubejs": "2101.7.2-build.377",
  "mod": {
   "accessories": "1.1.0-beta.48+1.21.1",
+  "advancedperipherals": "1.21.1-0.8.2a",
   "aeroblender": "1.0.0",
   "aether": "1.5.10",
   "aethersdelight": "0.1.4.2-1.21.1",
@@ -72,6 +73,7 @@
   "cognition": "2.4.13",
   "comforts": "9.0.5+1.21.1",
   "compasstomapxaeros": "0.1.2",
+  "computercraft": "1.120.2",
   "conditional_mixin": "0.6.4",
   "constructionstick": "1.5.0",
   "controlling": "19.0.5",
@@ -364,7 +366,13 @@
   "effetti": 376,
   "pozioni": 173,
   "alambicco": 963,
-  "oggetti": 1584
+  "oggetti": 1584,
+  "registri": 31372,
+  "ricette": 31719,
+  "tag": 4740,
+  "tabelle": 16813,
+  "strutture": 288
  },
- "errori": []
+ "errori": [],
+ "datapack_sha256": "d4e676e92446c1643c903d4c01187a8dd02c1c99370cca88b814173b6d6fcb25"
 }

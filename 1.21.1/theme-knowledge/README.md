@@ -14,11 +14,11 @@ Conoscenza **trasversale**: argomenti che attraversano più mod o la piattaforma
 | [nether](nether.md) | Com'è fatto il Nether del pack (Jaden's, Moog's, Nether Depths, Regions Unexplored, YUNG's) e cosa provare |
 | [cucina](cucina.md) | Farmer's Delight e addon: ricette per etichetta, ingredienti intercambiabili, automazione |
 | [achievement](achievement.md) | Progressi già presenti, mod per la schermata, progressione propria del pack |
-| [accessori](accessori.md) | I tre menu dove indossare oggetti (Curios, Accessories standard, menu dell'Aether): chi usa cosa, come ridurli; potenziamento ed evoluzione (valutazione iniziale) |
+| [accessori](accessori.md) | I tre menu dove indossare oggetti (Curios, Accessories standard, menu dell'Aether): chi usa cosa, come ridurli; artefatti solo in Curios; potenziamento ed evoluzione: ricerca del 23/10 e scelta di Relics + Reliquified Artifacts (nel pack dalla 0.7.0) |
 | [strumenti](strumenti.md) | Strumenti con materiali avanzati: set delle mod, livelli di scavo, materiali di Truly Modular; valutazione iniziale di una progressione a tappe |
-| [fornaci](fornaci.md) | Fornaci a livelli fuori da Create e Mekanism: cosa c'è già nel pack, mod candidate (Iron Furnaces, Iron Smelters, Jumbo Furnace) e scartate; valutazione iniziale |
+| [fornaci](fornaci.md) | Fornaci a livelli fuori da Create e Mekanism: Iron Furnaces, FurnaceMk2 e Jumbo Furnace (nel pack dalla 0.7.1), energia, Jumbo Furnace in dettaglio, ricerca del 24/10 sulle altre mod, come si legherebbe a una scala dei materiali |
 | [piante](piante.md) | Come il pack tratta le piante delle mod: vasi di Botany Pots e mercato di Farming for Blockheads su una base dati sola, anagrafica della rarità condivisa, regole nei CSV e file generati |
 | [archeologia](archeologia.md) | Dove si scava (Minecraft, Better Archeology, Jaden's e le altre), strumenti, cosa si trova, artefatti negli scavi, casse di Better Archeology senza reliquie; quadro iniziale |
-| [pozioni](pozioni.md) | Effetti e pozioni delle mod (censimento del 24/10), sistemi per ottenerli, doppioni, amuleti di Apotheosis, automazione con Create; analisi iniziale |
-| [computercraft](computercraft.md) | Computer programmabili (CC: Tweaked) e add-on: cosa si collega già (Create, Mekanism, inventari), cosa porta nel mondo, Advanced Peripherals (deciso), approfondimento sugli altri add-on |
+| [pozioni](pozioni.md) | Effetti e pozioni delle mod (censimento nella base dati, con il dump del gioco), sistemi per ottenerli, doppioni, amuleti di Apotheosis (lista nera dalla 0.7.2), automazione con Create; strade ancora aperte |
+| [computercraft](computercraft.md) | Computer programmabili (CC: Tweaked) e add-on: cosa si collega già (Create, Mekanism, inventari), cosa porta nel mondo, Advanced Peripherals (nel pack dalla 0.7.3), approfondimento sugli altri add-on |
 | [shader](shader.md) | Shader facoltativi: le mod del pack con uno shader attivo, pacchetti, licenze |

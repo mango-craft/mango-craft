@@ -3,12 +3,24 @@
 _Documento vivo: una voce nuova per ogni versione, in cima._
 
 Una voce per ogni versione, dalla più recente. Ogni voce dice:
-- **Stato**: 🧪 in prova sul ramo `dev` · ✅ provata e rilasciata (tag `1.21.1-vX.Y.Z`; le 0.x sono pre-release; il mondo vero parte dalla 0.x che supera la soglia del mondo vero, la 1.0.0 arriva dopo);
+- **Stato**: 🔧 in lavorazione (e in prova) sul ramo `dev` · ✅ provata e rilasciata (tag `1.21.1-vX.Y.Z`; le 0.x sono pre-release, e da una di queste partirà il mondo vero);
 - **NeoForge** da impostare a mano in Prism e se serve un **mondo nuovo**;
 - cosa cambia: mod, datapack, config;
 - **Problemi noti**: i codici del [bug report](0402-bug-report.md) comparsi o risolti in quella versione.
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
+
+## 0.7.3 — 30/10/2026 · computer (pre-release di prova)
+
+- **NeoForge**: 21.1.259 (invariato).
+- **Mondo nuovo**: non serve; le case del Computer Scientist compaiono solo nei chunk nuovi. Versione di prova: non è la versione del mondo vero.
+
+- **Datapack, vasi (correzione B47)**: le 3 colture dei graticci di Bountiful Fares (sambuco, lapisberry, frutto della passione) ora si caricano (aspetto del graticcio `bountifulfares:trellis`); tolta la coltura degli endstone sprouts warped, che Unusual End non registra. Trovato con il dump del gioco: dalla 0.6.1 il gioco le saltava in silenzio.
+- **Strumenti**: dump del gioco nel **formato 2** (nomi registrati, ricette caricate, etichette finali, tabelle del bottino, insiemi di strutture); la base dati confronta i nostri file con il gioco (ricette, tag, tabelle), il controllo dei nomi avvisa per i nomi che il gioco non registra; l'importatore segna a quale datapack si riferisce il dump.
+- **Mod nuove**: **CC: Tweaked** 1.120.2 (computer programmabili in Lua: computer, monitor, tartarughe, modem; leggono inventari, serbatoi e batterie di tutte le mod e le macchine di Create e Mekanism) e **Advanced Peripherals** 0.8.2a (periferiche che collegano i computer al giocatore e al mondo: Player Detector, Chat Box, Inventory Manager, Geo Scanner, occhiali smart, automi; legge bacino e serbatoi di Create). Entrambe alpha; nessuna libreria nuova; config di serie. ⚠️ Advanced Peripherals aggiunge ai villaggi le **case del Computer Scientist**, con il suo mestiere.
+- **Datapack, funzioni di prova**: `/function matteo_tweaks:test/releases/v0.7.3/…` dà gli oggetti delle prove dei computer e, con un clic in chat, copia le righe di Lua da incollare nel computer.
+- **Stato**: ✅ provata il 30/10/2026 (avvio e mondo; computer, Player Detector, Chat Box con modem e cavi, bacino di Create verificati da Matteo con le funzioni di prova; dump del gioco con tutti i controlli passati; log confrontato con quello del 29/10, nessun errore nuovo grave) e rilasciata come pre-release `1.21.1-v0.7.3`.
+- **Problemi noti**: B47 risolto (le 3 colture dei graticci si caricano). Nessun problema nuovo: qualche messaggio innocuo in più in B14 (3 ricette del manuale di Advanced Peripherals per mod che non abbiamo); B46 ancora presente.
 
 ## 0.7.2 — 26/10/2026 · fornaci e pozioni (pre-release di prova)
 
@@ -158,7 +170,7 @@ Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due i
 
 ## 0.1.1 — 18/10/2026 · base del repository
 
-- **NeoForge**: 21.1.259. Non usare la 21.1.261 o successive: owo-lib 0.12.15.5 (incluso nell'Aether) fa cadere la connessione all'ingresso nel mondo. Si aggiornerà quando esce owo-lib 0.12.15.6.
+- **NeoForge**: 21.1.259. Non usare la 21.1.262 o successive (qui c'era «21.1.261», che non è mai uscita: corretto il 30/10/2026): owo-lib 0.12.15.5 (dipendenza dell'Aether; corretto il 30/10/2026: non è incluso nel suo jar) fa cadere la connessione all'ingresso nel mondo. Si aggiornerà quando esce owo-lib 0.12.15.6.
 - **Mondo nuovo**: non serve (è la stessa versione già provata).
 - **Contenuto**: identico al pacchetto `modpack-matteo-0.1.1.mrpack` provato in gioco: 193 file di mod e librerie da Modrinth, il resource pack Fresh Animations (da attivare a mano nel gioco), le configurazioni (`almostunified/tags.json`, `sparsestructures.json5`) e il datapack `matteo_tweaks` caricato da Paxi.
 - **Mod solo CurseForge** (5): The Twilight Forest 4.8.3345, Ars Elemental 0.7.10.4, Roaster's Delight 1.0.0.1, Spice of Life: Carrot Edition 1.16.6, BotanyPotsAdditions 1.1.0. Le scarica l'installer; quelle con distribuzione bloccata vanno scaricate a mano una volta (l'installer mostra pagina e percorso).
@@ -170,7 +182,7 @@ Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due i
 
 ## Prima del repository (pacchetti `.mrpack`, 16–17/10/2026)
 
-Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`](../../ai-agents/stage/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md).
+Versioni costruite a mano come file `.mrpack`, prima di passare a GitHub. Dettagli in [`../../ai-agents/archivio/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md`](../../ai-agents/archivio/2026-10-16_pre-repo_pacchetti-mrpack/pacchetti-mrpack.md).
 
 - **0.2.3** (17/10): Just Enough Breeding e Professions, NetherPortalFix, SeasonHud, Smarter Farmers, Open Together, AllTheLeaks. Mai provata in gioco: rifatta come 0.2.3 del repository.
 - **0.2.2** (17/10): XP Tome.

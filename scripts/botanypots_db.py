@@ -41,16 +41,18 @@ Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
 - tra più file con lo stesso id vince il pacchetto più in alto: il nostro datapack (Paxi lo mette sopra a tutti).
 """
 import csv
-import glob
+import hashlib
 import json
 import os
+import re
 import sqlite3
 import sys
 import tempfile
+import tomllib
 from collections import Counter, defaultdict
 from pathlib import Path
 
-DP = "pack/config/paxi/datapacks/matteo_tweaks/data"
+from comune import DATAPACK_DATA as DP, impronta_datapack
 NOSTRO = "matteo_tweaks"
 TAG_DIRT = ("oggetti", "botanypots:soil/dirt")
 TIPI_TERRENO = ("botanypots:soil", "botanypots:block_derived_soil")
@@ -106,16 +108,21 @@ CREATE TABLE MOD_NAMESPACE (
 );
 -- Le dimensioni conformi (24/10/2026): ogni id di blocco e di oggetto del pack, dall'inventario. Tutte le colonne
 -- che nominano un oggetto o un blocco puntano qui, così «il nome esiste» è un vincolo e non un controllo.
+-- L'inventario prende i nomi anche da modelli e traduzioni, che possono non avere niente di registrato (trim delle
+-- armature, stati di un arco, resti di una mod: B47). `gioco` dice se il gioco li registra (dal dump, formato 2):
+-- 1 sì, 0 no, NULL senza dump. Regola (29/10/2026): l'inventario dà contenuti e candidati, il gioco dice cosa esiste.
 CREATE TABLE BLOCCO (
   blocco_id TEXT PRIMARY KEY,
   namespace TEXT NOT NULL REFERENCES MOD_NAMESPACE,
-  nome      TEXT                        -- nome inglese dalla lingua, se c'è
+  nome      TEXT,                       -- nome inglese dalla lingua, se c'è
+  gioco     INTEGER                     -- 1 registrato nel gioco, 0 no, NULL senza dump
 );
 CREATE TABLE OGGETTO (
   oggetto_id TEXT PRIMARY KEY,
   namespace  TEXT NOT NULL REFERENCES MOD_NAMESPACE,
   nome       TEXT,
-  blocco_id  TEXT REFERENCES BLOCCO    -- il blocco con lo stesso nome, se esiste (regola del pack: l'oggetto di un blocco si chiama come lui)
+  blocco_id  TEXT REFERENCES BLOCCO,   -- il blocco con lo stesso nome, se esiste (regola del pack: l'oggetto di un blocco si chiama come lui)
+  gioco      INTEGER                    -- 1 registrato nel gioco (come oggetto), 0 no, NULL senza dump
 );
 CREATE TABLE TAG (
   tag_id   INTEGER PRIMARY KEY,
@@ -221,6 +228,12 @@ CREATE TABLE COLTURA_CUSTOM (
   rotazione      TEXT,
   da_provare     TEXT,
   nota           TEXT
+);
+CREATE TABLE COLTURA_CUSTOM_BLOCCO (   -- i blocchi di richiesti e display_blocco di COLTURA_CUSTOM, uno per riga
+  coltura_id TEXT NOT NULL REFERENCES COLTURA_CUSTOM,
+  colonna    TEXT NOT NULL,             -- richiesti | display_blocco
+  blocco_id  TEXT NOT NULL,
+  PRIMARY KEY (coltura_id, colonna, blocco_id)
 );
 CREATE TABLE COLTURA_TAG_CUSTOM (
   coltura_id TEXT NOT NULL REFERENCES COLTURA_CUSTOM,
@@ -392,7 +405,7 @@ CREATE VIEW MERCATO_CANDIDATO AS
          COALESCE(vc.categoria_id, tc.categoria_id, p.categoria_proposta) AS categoria_id,
          COALESCE(vc.origine, mc.origine) AS origine,
          COALESCE(vc.classe, mc.classe) AS classe,
-         COALESCE(vc.escluso, CASE WHEN tc.vendi = 0 THEN 'tipo ' || p.tipo END) AS escluso,
+         COALESCE(vc.escluso, CASE WHEN o.gioco = 0 THEN 'non registrato nel gioco' WHEN tc.vendi = 0 THEN 'tipo ' || p.tipo END) AS escluso,
          COALESCE(vc.motivo, mc.motivo) AS motivo,
          z.pagamento_id, z.quantita
   FROM PIANTABILE p
@@ -426,6 +439,14 @@ CREATE VIEW MERCATO_PIANO_PRESET AS
 CREATE TABLE DUMP_MOD (                  -- le mod caricate nel gioco quando è stato fatto il dump
   modid    TEXT PRIMARY KEY,
   versione TEXT NOT NULL
+);
+CREATE TABLE BASE_INFO (                 -- la firma delle fonti da cui è nata la base dati (vedi aggiornato())
+  chiave TEXT PRIMARY KEY,
+  valore TEXT NOT NULL
+);
+CREATE TABLE DUMP_INFO (                 -- data del dump, formato, impronta del datapack a cui si riferisce (dall'importatore)
+  chiave TEXT PRIMARY KEY,
+  valore TEXT
 );
 CREATE TABLE EFFETTO (
   effetto_id  TEXT PRIMARY KEY,          -- es. apothic_attributes:flying
@@ -534,6 +555,126 @@ CREATE VIEW DUMP_MOD_DIVERSA AS
   LEFT JOIN DUMP_MOD d ON d.modid = m.modid
   WHERE EXISTS (SELECT 1 FROM DUMP_MOD)
     AND (d.versione IS NULL OR (d.versione <> m.versione AND m.versione NOT LIKE '%$%'));
+
+-- ---- Dal gioco, formato 2 del dump (26/10/2026): per controllare con il gioco il lavoro di tutte le versioni ----
+CREATE TABLE GIOCO_ID (                  -- i nomi registrati nel gioco (anche quelli creati all'avvio: Every Compat)
+  registro TEXT NOT NULL,                -- item, block, fluid, entity_type, mob_effect, potion
+  id       TEXT NOT NULL,
+  PRIMARY KEY (registro, id)
+);
+CREATE TABLE GIOCO_RICETTA (             -- le ricette caricate davvero
+  ricetta_id TEXT PRIMARY KEY,
+  tipo       TEXT NOT NULL
+);
+CREATE TABLE GIOCO_TAG (                 -- le etichette finali, dopo tutti i datapack
+  registro TEXT NOT NULL,
+  tag      TEXT NOT NULL,
+  voci     INTEGER NOT NULL,             -- quante voci ha l'etichetta nel gioco
+  valori   INTEGER NOT NULL,             -- 1: le voci sono in GIOCO_TAG_VOCE (solo per i namespace scelti dallo script)
+  PRIMARY KEY (registro, tag)
+);
+CREATE TABLE GIOCO_TAG_VOCE (
+  registro TEXT NOT NULL,
+  tag      TEXT NOT NULL,
+  id       TEXT NOT NULL,
+  PRIMARY KEY (registro, tag, id),
+  FOREIGN KEY (registro, tag) REFERENCES GIOCO_TAG
+);
+CREATE TABLE GIOCO_TABELLA (             -- le tabelle del bottino caricate (solo i nomi)
+  tabella_id TEXT PRIMARY KEY
+);
+CREATE TABLE GIOCO_STRUTTURA_SET (       -- gli insiemi di strutture come il gioco li vede (dopo Sparse Structures)
+  set_id      TEXT PRIMARY KEY,
+  tipo        TEXT,
+  spaziatura  INTEGER,
+  separazione INTEGER,
+  sale        INTEGER,
+  frequenza   REAL
+);
+CREATE TABLE GIOCO_STRUTTURA_SET_VOCE (
+  set_id    TEXT NOT NULL REFERENCES GIOCO_STRUTTURA_SET,
+  struttura TEXT NOT NULL,
+  peso      INTEGER NOT NULL,
+  PRIMARY KEY (set_id, struttura)
+);
+-- I nostri file del datapack, per confrontarli con il gioco: ricette, tag, tabelle e modificatori del bottino.
+CREATE TABLE NOSTRA_RICETTA (
+  ricetta_id TEXT PRIMARY KEY,
+  tipo       TEXT NOT NULL,
+  percorso   TEXT NOT NULL,
+  caricabile INTEGER NOT NULL            -- 1 se le condizioni di caricamento sono vere con l'inventario
+);
+CREATE TABLE NOSTRO_TAG_VOCE (
+  registro    TEXT NOT NULL,             -- item, block, fluid, potion…
+  tag         TEXT NOT NULL,
+  id          TEXT NOT NULL,             -- un nome (non #altro_tag)
+  facoltativo INTEGER NOT NULL,          -- required: false
+  PRIMARY KEY (registro, tag, id)
+);
+CREATE TABLE NOSTRA_TABELLA (            -- le tabelle del bottino nostre
+  tabella_id TEXT PRIMARY KEY,
+  percorso   TEXT NOT NULL,
+  caricabile INTEGER NOT NULL
+);
+CREATE TABLE NOSTRO_MODIFICATORE (       -- i modificatori del bottino: ognuno con le tabelle che tocca e quella che aggiunge
+  modificatore_id TEXT NOT NULL,
+  elencato        INTEGER NOT NULL,      -- 1 se sta nel nostro global_loot_modifiers.json (i file con il nome di una mod
+                                         --   sostituiscono i suoi e sono elencati dalla mod)
+  caricabile      INTEGER NOT NULL,
+  tabella_id      TEXT,                  -- la tabella a cui si applica (NULL: nessuna condizione di tabella)
+  aggiunge        TEXT,                  -- la tabella aggiunta (neoforge:add_table)
+  PRIMARY KEY (modificatore_id, tabella_id)
+);
+-- Le nostre ricette caricabili che il gioco non ha, e quelle non caricabili che invece ha (condizione sbagliata)
+CREATE VIEW NOSTRA_RICETTA_DIVERSA AS
+  SELECT n.ricetta_id, n.tipo, n.percorso, n.caricabile, g.ricetta_id IS NOT NULL AS nel_gioco
+  FROM NOSTRA_RICETTA n LEFT JOIN GIOCO_RICETTA g ON g.ricetta_id = n.ricetta_id
+  WHERE EXISTS (SELECT 1 FROM GIOCO_RICETTA) AND n.caricabile <> (g.ricetta_id IS NOT NULL);
+-- Le voci dei nostri tag che nel gioco mancano: le obbligatorie sempre, le facoltative solo se il nome esiste nel gioco
+CREATE VIEW NOSTRO_TAG_MANCANTE AS
+  SELECT n.registro, n.tag, n.id, n.facoltativo,
+         (SELECT valori FROM GIOCO_TAG g WHERE g.registro = n.registro AND g.tag = n.tag) AS tag_nel_gioco
+  FROM NOSTRO_TAG_VOCE n
+  WHERE EXISTS (SELECT 1 FROM GIOCO_TAG g WHERE g.registro = n.registro)   -- solo i registri che il dump riporta
+    AND NOT EXISTS (SELECT 1 FROM GIOCO_TAG_VOCE v WHERE v.registro = n.registro AND v.tag = n.tag AND v.id = n.id)
+    AND (NOT n.facoltativo OR EXISTS (SELECT 1 FROM GIOCO_ID i WHERE i.registro = n.registro AND i.id = n.id));
+-- Le tabelle del bottino nominate dai nostri modificatori (toccate o aggiunte) e le nostre che il gioco non ha
+CREATE VIEW NOSTRA_TABELLA_MANCANTE AS
+  SELECT DISTINCT t.tabella_id, t.fonte FROM (
+    SELECT tabella_id, 'modificatore ' || modificatore_id AS fonte FROM NOSTRO_MODIFICATORE WHERE caricabile AND tabella_id IS NOT NULL
+    UNION ALL SELECT aggiunge, 'aggiunta da ' || modificatore_id FROM NOSTRO_MODIFICATORE WHERE caricabile AND aggiunge IS NOT NULL
+    UNION ALL SELECT tabella_id, 'nostra: ' || percorso FROM NOSTRA_TABELLA WHERE caricabile) t
+  WHERE EXISTS (SELECT 1 FROM GIOCO_TABELLA)
+    AND NOT EXISTS (SELECT 1 FROM GIOCO_TABELLA g WHERE g.tabella_id = t.tabella_id);
+-- I nomi che le nostre regole (CSV) usano e che il gioco non registra: la regola va corretta (B47)
+CREATE VIEW REGOLA_NOME_FANTASMA AS
+  SELECT 'coltura_custom' AS regola, c.coltura_id AS riga, 'seme' AS colonna, c.seme AS id FROM COLTURA_CUSTOM c JOIN OGGETTO o ON o.oggetto_id = c.seme WHERE o.gioco = 0
+  UNION ALL SELECT 'coltura_custom', x.coltura_id, x.colonna, x.blocco_id FROM COLTURA_CUSTOM_BLOCCO x JOIN BLOCCO b ON b.blocco_id = x.blocco_id WHERE b.gioco = 0
+  UNION ALL SELECT 'coltura_custom', c.coltura_id, 'coltura_id', c.coltura_id FROM COLTURA_CUSTOM c JOIN BLOCCO b ON b.blocco_id = c.coltura_id WHERE b.gioco = 0
+  UNION ALL SELECT 'coltura_raccolto_custom', r.coltura_id, 'id', r.id FROM COLTURA_RACCOLTO_CUSTOM r JOIN OGGETTO o ON o.oggetto_id = r.id WHERE r.tipo = 'oggetto' AND o.gioco = 0
+  UNION ALL SELECT 'terreno_custom', t.terreno_id, 'terreno_id', t.terreno_id FROM TERRENO_CUSTOM t JOIN OGGETTO o ON o.oggetto_id = t.terreno_id WHERE o.gioco = 0
+  UNION ALL SELECT 'terreno_custom', t.terreno_id, 'display_blocco', t.display_blocco FROM TERRENO_CUSTOM t JOIN BLOCCO b ON b.blocco_id = t.display_blocco WHERE b.gioco = 0
+  UNION ALL SELECT 'mercato_voce_custom', v.oggetto_id, 'oggetto_id', v.oggetto_id FROM MERCATO_VOCE_CUSTOM v JOIN OGGETTO o ON o.oggetto_id = v.oggetto_id WHERE o.gioco = 0
+  UNION ALL SELECT 'pozione_custom', c.pozione_id, 'pozione_id', c.pozione_id FROM POZIONE_CUSTOM c JOIN POZIONE p ON p.pozione_id = c.pozione_id WHERE p.gioco = 0;
+-- Le ricette dei vasi e del mercato lette dai file (inventario + datapack, con le condizioni valutate) confrontate con
+-- quelle che il gioco ha caricato: se la lettura dell'inventario e la valutazione delle condizioni sono giuste, coincidono.
+CREATE VIEW GIOCO_RICETTA_DIVERSA AS
+  SELECT ricetta_id, 'vasi' AS ambito, 'solo nei file' AS dove FROM (SELECT ricetta_id FROM POTS_COLTURA UNION SELECT ricetta_id FROM POTS_TERRENO) f
+  WHERE EXISTS (SELECT 1 FROM GIOCO_RICETTA) AND NOT EXISTS (SELECT 1 FROM GIOCO_RICETTA g WHERE g.ricetta_id = f.ricetta_id)
+  UNION ALL
+  SELECT g.ricetta_id, 'vasi', 'solo nel gioco' FROM GIOCO_RICETTA g WHERE g.tipo IN ('botanypots:crop', 'botanypots:soil')
+    AND NOT EXISTS (SELECT 1 FROM POTS_COLTURA p WHERE p.ricetta_id = g.ricetta_id) AND NOT EXISTS (SELECT 1 FROM POTS_TERRENO p WHERE p.ricetta_id = g.ricetta_id)
+  UNION ALL
+  SELECT ricetta_id, 'mercato', 'solo nei file' FROM MERCATO_VOCE v
+  WHERE EXISTS (SELECT 1 FROM GIOCO_RICETTA) AND NOT EXISTS (SELECT 1 FROM GIOCO_RICETTA g WHERE g.ricetta_id = v.ricetta_id)
+  UNION ALL
+  SELECT g.ricetta_id, 'mercato', 'solo nel gioco' FROM GIOCO_RICETTA g WHERE g.tipo = 'farmingforblockheads:market'
+    AND NOT EXISTS (SELECT 1 FROM MERCATO_VOCE v WHERE v.ricetta_id = g.ricetta_id);
+-- I nomi registrati nel gioco che l'inventario non conosce (creati all'avvio) e viceversa
+CREATE VIEW GIOCO_ID_DIVERSO AS
+  SELECT 'item' AS registro, g.id, 'solo nel gioco' AS dove FROM GIOCO_ID g WHERE g.registro = 'item' AND NOT EXISTS (SELECT 1 FROM OGGETTO o WHERE o.oggetto_id = g.id)
+  UNION ALL
+  SELECT 'item', o.oggetto_id, 'solo nell''inventario' FROM OGGETTO o WHERE EXISTS (SELECT 1 FROM GIOCO_ID) AND NOT EXISTS (SELECT 1 FROM GIOCO_ID g WHERE g.registro = 'item' AND g.id = o.oggetto_id);
 """
 
 
@@ -572,16 +713,33 @@ class BotanyPotsDB:
         self.query_dir = self.ver / "mod-knowledge" / "botany-pots" / "query"
 
     # ---------------------------------------------------------------- uso
-    def aggiornato(self) -> bool:
-        """Vero se il database esiste ed è più recente di inventario, datapack e CSV delle regole."""
-        if not self.db_path.exists():
-            return False
-        t = self.db_path.stat().st_mtime
+    def _firma_fonti(self) -> str:
+        """Percorso, dimensione e data di ogni file da cui nasce la base dati (inventario, datapack, CSV delle regole,
+        dump, config, script): cambia anche quando un file sparisce, non solo quando uno è più recente."""
         fonti = [*self.inventario.rglob("*.json"), *self.datapack.rglob("*.json"), *self.vasi.glob("*.csv"),
                  *self.mercato.glob("*.csv"), *self.pozioni.glob("*.csv"),
                  *self.dump.glob("*.json"), *([self.rarita_csv] if self.rarita_csv.exists() else []),
-                 *([self.config_ffb] if self.config_ffb.exists() else []), Path(__file__)]
-        return all(f.stat().st_mtime <= t for f in fonti)
+                 *([self.config_ffb] if self.config_ffb.exists() else []),
+                 Path(__file__), Path(__file__).with_name("comune.py")]
+        h = hashlib.sha256()
+        for f in sorted(fonti):
+            s = f.stat()
+            h.update(f"{f}\0{s.st_size}\0{s.st_mtime_ns}\n".encode())
+        return h.hexdigest()
+
+    def aggiornato(self) -> bool:
+        """Vero se il database esiste ed è nato dalle fonti di adesso."""
+        if not self.db_path.exists():
+            return False
+        try:
+            c = sqlite3.connect(f"file:{self.db_path}?mode=ro", uri=True)
+            try:
+                r = c.execute("SELECT valore FROM BASE_INFO WHERE chiave = 'fonti'").fetchone()
+            finally:
+                c.close()
+        except sqlite3.Error:   # base dati di prima della firma
+            return False
+        return r is not None and r[0] == self._firma_fonti()
 
     def connetti(self) -> sqlite3.Connection:
         if not self.aggiornato():
@@ -651,6 +809,8 @@ class BotanyPotsDB:
         ctl("le origini delle regole del mercato esistono in MERCATO_BASE", "SELECT count(*) FROM (SELECT origine FROM MERCATO_MOD_CUSTOM UNION SELECT origine FROM MERCATO_VOCE_CUSTOM WHERE origine IS NOT NULL UNION SELECT origine FROM MERCATO_PRESET_CUSTOM WHERE origine IS NOT NULL) o WHERE NOT EXISTS (SELECT 1 FROM MERCATO_BASE b WHERE b.origine=o.origine)")
         n = c.execute("SELECT count(*) FROM MERCATO_CANDIDATO WHERE escluso IS NULL AND (origine IS NULL OR classe IS NULL)").fetchone()[0]
         out.append(("avviso: candidati del mercato senza regola (non blocca)", True, f"trovati: {n}"))
+        # datapack
+        ctl("i modificatori del bottino con il nostro nome sono elencati in global_loot_modifiers.json", "SELECT count(*) FROM NOSTRO_MODIFICATORE WHERE NOT elencato AND modificatore_id LIKE 'matteo_tweaks:%'")
         # pozioni
         ctl("una sola regola 'tutte' per famiglia di pozioni", "SELECT count(*) FROM (SELECT x.famiglia FROM POZIONE_CUSTOM c JOIN POZIONE x ON x.pozione_id=c.pozione_id WHERE c.varianti='tutte' GROUP BY x.famiglia HAVING count(*)>1)")
         dump = c.execute("SELECT count(*) FROM DUMP_MOD").fetchone()[0] > 0
@@ -670,6 +830,26 @@ class BotanyPotsDB:
                 out.append((f"avviso: {nome} (non blocca)", True, f"trovate: {n}"))
             if self._saltati_dump:
                 out.append(("avviso: righe del dump saltate (non blocca)", True, ", ".join(f"{k} {v}" for k, v in sorted(self._saltati_dump.items()))))
+            # formato 2: il lavoro di tutte le versioni confrontato con il gioco (bloccano solo se il dump è aggiornato)
+            if c.execute("SELECT count(*) FROM GIOCO_RICETTA").fetchone()[0]:
+                info = dict(c.execute("SELECT chiave, valore FROM DUMP_INFO").fetchall())
+                dp_cambiato = info.get("datapack_sha256") != info.get("datapack_attuale")
+                if dp_cambiato:
+                    out.append(("avviso: il datapack è cambiato dopo il dump: i confronti con il gioco non bloccano (non blocca)", True, "rilanciare /mango_dump"))
+                blocca = not vecchio and not dp_cambiato
+                for nome, sql in (("le nostre ricette caricabili sono nel gioco (e le altre no)", "SELECT count(*) FROM NOSTRA_RICETTA_DIVERSA"),
+                                  ("le ricette dei vasi e del mercato lette dai file coincidono con quelle caricate dal gioco", "SELECT count(*) FROM GIOCO_RICETTA_DIVERSA"),
+                                  ("le voci dei nostri tag sono nelle etichette finali del gioco", "SELECT count(*) FROM NOSTRO_TAG_MANCANTE"),
+                                  ("le tabelle del bottino nostre e quelle dei nostri modificatori esistono nel gioco", "SELECT count(*) FROM NOSTRA_TABELLA_MANCANTE")):
+                    n = c.execute(sql).fetchone()[0]
+                    out.append((nome if blocca else f"avviso: {nome} (dump non aggiornato, non blocca)", n == 0 or not blocca, f"trovati: {n}"))
+                n = c.execute("SELECT count(*) FROM REGOLA_NOME_FANTASMA").fetchone()[0]
+                out.append(("le regole (CSV) usano solo nomi che il gioco registra" if not vecchio else "avviso: le regole (CSV) usano solo nomi che il gioco registra (dump vecchio, non blocca)", n == 0 or vecchio, f"trovati: {n}"))
+                n = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove = 'solo nel gioco'").fetchone()[0]
+                m = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove <> 'solo nel gioco'").fetchone()[0]
+                out.append(("info: oggetti creati all'avvio, non nell'inventario / dell'inventario non nel gioco", True, f"{n} / {m}"))
+            else:
+                out.append(("avviso: dump senza le sezioni del formato 2: ricette, tag, tabelle non confrontate (non blocca)", True, "rilanciare /mango_dump"))
         if self._coppie_attese is not None:
             n = c.execute("SELECT count(*) FROM (SELECT DISTINCT terreno_id, coltura_id FROM POTS_COMPATIBILITA)").fetchone()[0]
             out.append(("coppie terreno-coltura = conteggio diretto sui file", n == self._coppie_attese, f"vista {n}, diretto {self._coppie_attese}"))
@@ -681,6 +861,7 @@ class BotanyPotsDB:
     _coppie_attese = None
 
     def refresh(self) -> list[tuple[str, bool, str]]:
+        firma = self._firma_fonti()   # prima di leggere: se una fonte cambia durante il refresh, la base risulta vecchia
         dati = self._leggi_fonti()
         fd, tmp = tempfile.mkstemp(suffix=".sqlite", dir=self.vasi)
         os.close(fd)
@@ -689,6 +870,7 @@ class BotanyPotsDB:
             c.execute("PRAGMA foreign_keys = ON")
             c.executescript(SCHEMA)
             self._carica(c, dati)
+            c.execute("INSERT INTO BASE_INFO VALUES ('fonti', ?)", (firma,))
             c.commit()
             esiti = self.controlli(c)
             c.close()
@@ -752,6 +934,17 @@ class BotanyPotsDB:
             dedotte |= set(d.get("potions_deduced") or [])
         if not items:
             raise ErroreDati(f"inventario vuoto o assente: {self.inventario}")
+        # dump del gioco (facoltativo)
+        dump = {}
+        if (self.dump / "meta.json").exists():
+            for s in ("meta", "effetti", "pozioni", "alambicco", "oggetti", "registri", "ricette", "tag", "tabelle", "strutture"):
+                f = self.dump / f"{s}.json"
+                dump[s] = _carica_json(f) if f.exists() else None
+        # Le condizioni di caricamento si valutano con ciò che il gioco registra, se c'è il dump (regola del 29/10/2026):
+        # l'inventario ha anche nomi senza niente di registrato (B47). Senza dump, con l'inventario.
+        reg = dump.get("registri") or {}
+        items_ok = set(items) & set(reg["item"]) if reg.get("item") else set(items)
+        blocks_ok = set(blocks) & set(reg["block"]) if reg.get("block") else set(blocks)
         # datapack: tag e ricette
         for f in self.datapack.glob("*/tags/*/**/*.json"):
             rel = f.relative_to(self.datapack).parts
@@ -765,10 +958,12 @@ class BotanyPotsDB:
             for v in d.get("values", []):
                 vid, fac = (v, False) if isinstance(v, str) else (v["id"], not v.get("required", True))
                 tag_voci[amb][nome].append((NOSTRO, vid, fac))
+        nostri = {"ricette": [], "tag": [], "tabelle": [], "modificatori": []}
         for f in self.datapack.glob("*/recipe/**/*.json"):
             d = _carica_json(f)
             rel = f.relative_to(self.datapack).parts
             rid = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
+            nostri["ricette"].append((rid, str(d.get("type", "")), "/".join(rel), int(self._caricabile({**d, "id": rid}, items_ok, blocks_ok, mods))))
             if str(d.get("type", "")) in TIPI_TERRENO + TIPI_COLTURA:
                 d["id"] = rid
                 ricette.append({**d, "_fonte": NOSTRO, "_strato": "nostro"})
@@ -779,6 +974,48 @@ class BotanyPotsDB:
                              "item_exists": [c.get("item") for c in d.get("neoforge:conditions") or []
                                              if c.get("type") == "neoforge:item_exists"],
                              "payment": pay, "_fonte": NOSTRO, "_strato": "nostro"})
+        for f in self.datapack.glob("*/tags/*/**/*.json"):
+            rel = f.relative_to(self.datapack).parts
+            d = _carica_json(f)
+            # data/<ns>/tags/<registro>/<nome>.json; i registri di worldgen hanno due parti (worldgen/structure)
+            n_reg = 2 if rel[2] == "worldgen" else 1
+            registro = "/".join(rel[2:2 + n_reg])
+            nome = f"{rel[0]}:{'/'.join(rel[2 + n_reg:])[:-5]}"
+            for v in d.get("values", []):
+                vid, fac = (v, False) if isinstance(v, str) else (v["id"], not v.get("required", True))
+                if not vid.startswith("#"):
+                    nostri["tag"].append((registro, nome, vid, int(fac)))
+        for f in self.datapack.glob("*/loot_table/**/*.json"):
+            rel = f.relative_to(self.datapack).parts
+            d = _carica_json(f)
+            tid = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
+            nostri["tabelle"].append((tid, "/".join(rel), int(self._caricabile({**d, "id": tid}, items_ok, blocks_ok, mods))))
+        elencati = set()
+        glm = self.datapack / "neoforge" / "loot_modifiers" / "global_loot_modifiers.json"
+        if glm.exists():
+            elencati = set(_carica_json(glm).get("entries") or [])
+        for f in self.datapack.glob("*/loot_modifiers/**/*.json"):
+            if f == glm:
+                continue
+            rel = f.relative_to(self.datapack).parts
+            d = _carica_json(f)
+            mid = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
+            tabelle = []
+
+            def cerca(x):
+                if isinstance(x, dict):
+                    if x.get("condition") == "neoforge:loot_table_id":
+                        tabelle.append(x["loot_table_id"])
+                    for v in x.values():
+                        cerca(v)
+                elif isinstance(x, list):
+                    for v in x:
+                        cerca(v)
+            cerca(d.get("conditions"))
+            agg = d.get("table") if d.get("type") == "neoforge:add_table" else None
+            ok = int(self._caricabile({**d, "id": mid}, items_ok, blocks_ok, mods))
+            for t in tabelle or [None]:
+                nostri["modificatori"].append((mid, int(mid in elencati), ok, t, agg))
         for f in self.datapack.glob("*/market_presets/*.json"):
             d = _carica_json(f)
             rel = f.relative_to(self.datapack).parts
@@ -790,7 +1027,6 @@ class BotanyPotsDB:
         # config di FFB nel pack: le due liste che accendono o spengono i preset
         config_preset = {}
         if self.config_ffb.exists():
-            import tomllib
             cfg = tomllib.loads(self.config_ffb.read_text(encoding="utf-8"))
             for k, v in cfg.items():
                 if isinstance(v, dict):
@@ -800,16 +1036,11 @@ class BotanyPotsDB:
             for pid in cfg.get("disabledDefaultPresets") or []:
                 config_preset[pid] = 0
         ns_righe = [(ns, c.most_common(1)[0][0], c.most_common(1)[0][1]) for ns, c in sorted(ns_conta.items())]
-        # dump del gioco (facoltativo)
-        dump = {}
-        if (self.dump / "meta.json").exists():
-            for s in ("meta", "effetti", "pozioni", "alambicco", "oggetti"):
-                f = self.dump / f"{s}.json"
-                dump[s] = _carica_json(f) if f.exists() else None
-        return {"items": items, "blocks": blocks, "mods": mods, "tag_voci": tag_voci, "ricette": ricette,
+        return {"items": items, "blocks": blocks, "items_ok": items_ok, "blocks_ok": blocks_ok, "mods": mods, "tag_voci": tag_voci, "ricette": ricette,
                 "mod": mod_righe, "mod_id": modid_righe, "mod_namespace": ns_righe,
                 "voci": voci, "preset": preset, "categorie": categorie, "config_preset": config_preset,
-                "effetti": effetti, "descrizioni": descrizioni, "pozioni": pozioni, "dedotte": dedotte, "dump": dump}
+                "effetti": effetti, "descrizioni": descrizioni, "pozioni": pozioni, "dedotte": dedotte, "dump": dump,
+                "nostri": nostri}
 
     # -- condizioni di caricamento
     @staticmethod
@@ -864,15 +1095,18 @@ class BotanyPotsDB:
 
     def _carica(self, c: sqlite3.Connection, dati: dict) -> None:
         items, blocks, mods, tag_voci = dati["items"], dati["blocks"], dati["mods"], dati["tag_voci"]
-        ricette = [r for r in dati["ricette"] if self._caricabile(r, items, blocks, mods)]
+        ricette = [r for r in dati["ricette"] if self._caricabile(r, dati["items_ok"], dati["blocks_ok"], mods)]
         terreni_r = [r for r in ricette if r["type"] in TIPI_TERRENO]
         colture_r = [r for r in ricette if r["type"] in TIPI_COLTURA]
         c.executemany("INSERT INTO MOD VALUES (?,?,?,?,?)", dati["mod"])
         c.executemany("INSERT INTO MOD_ID VALUES (?,?,?,?,?)", dati["mod_id"])
         c.executemany("INSERT INTO MOD_NAMESPACE VALUES (?,?,?)", dati["mod_namespace"])
-        c.executemany("INSERT INTO BLOCCO VALUES (?,?,?)", [(b, b.split(":")[0], n or None) for b, n in sorted(blocks.items())])
-        c.executemany("INSERT INTO OGGETTO VALUES (?,?,?,?)",
-                      [(i, i.split(":")[0], n or None, i if i in blocks else None) for i, n in sorted(items.items())])
+        reg = dati["dump"].get("registri") or {}
+        g_item, g_block = set(reg.get("item") or []), set(reg.get("block") or [])
+        flag = lambda i, g: (1 if i in g else 0) if reg else None  # noqa: E731
+        c.executemany("INSERT INTO BLOCCO VALUES (?,?,?,?)", [(b, b.split(":")[0], n or None, flag(b, g_block)) for b, n in sorted(blocks.items())])
+        c.executemany("INSERT INTO OGGETTO VALUES (?,?,?,?,?)",
+                      [(i, i.split(":")[0], n or None, i if i in blocks else None, flag(i, g_item)) for i, n in sorted(items.items())])
 
         # file vincenti (stessa regola della vista): il datapack vince; tra jar, il primo per nome di fonte
         def vincenti(rs):
@@ -1010,6 +1244,11 @@ class BotanyPotsDB:
         self._carica_csv(c, "TERRENO_TAG_CUSTOM", "terreno_tag_custom.csv", ("terreno_id", "ambito", "tag"))
         self._carica_csv(c, "TERRENO_CUSTOM", "terreno_custom.csv", ("terreno_id", "display_blocco", "fluido", "nota"))
         self._carica_csv(c, "COLTURA_CUSTOM", "coltura_custom.csv", ("coltura_id", "mod", "seme", "tempo", "richiesti", "display_blocco", "display_offset", "rotazione", "da_provare", "nota"))
+        c.executemany("INSERT OR IGNORE INTO COLTURA_CUSTOM_BLOCCO VALUES (?,?,?)", [
+            (cid, col, b) for cid, col, v in c.execute(
+                "SELECT coltura_id, 'richiesti', richiesti FROM COLTURA_CUSTOM WHERE richiesti IS NOT NULL "
+                "UNION ALL SELECT coltura_id, 'display_blocco', display_blocco FROM COLTURA_CUSTOM WHERE display_blocco IS NOT NULL").fetchall()
+            for b in v.split("|") if b])
         self._carica_csv(c, "COLTURA_TAG_CUSTOM", "coltura_tag_custom.csv", ("coltura_id", "ordine", "ambito", "tag"))
         self._carica_csv(c, "COLTURA_RACCOLTO_CUSTOM", "coltura_raccolto_custom.csv", ("coltura_id", "gruppo", "tipo", "id", "count", "chance"))
 
@@ -1085,6 +1324,7 @@ class BotanyPotsDB:
         self._carica_csv(c, "MERCATO_PRESET_CUSTOM", self.mercato / "mercato_preset_custom.csv", ("preset_id", "origine", "classe", "acceso", "motivo"))
 
         self._carica_pozioni(c, dati, items)
+        self._carica_gioco(c, dati)
         self._carica_csv(c, "POZIONE_CUSTOM", self.pozioni / "pozione_custom.csv", ("pozione_id", "varianti", "amuleto", "motivo"))
 
         # conteggio diretto delle coppie, indipendente dalla vista: per ogni coltura vincente, gli oggetti dei suoi tag
@@ -1099,6 +1339,33 @@ class BotanyPotsDB:
         self._coppie_attese = len(coppie)
 
     _saltati_dump = None
+
+    def _carica_gioco(self, c: sqlite3.Connection, dati: dict) -> None:
+        """I nostri file del datapack e, se c'è, il dump del gioco nel formato 2: registri, ricette, etichette,
+        tabelle del bottino, insiemi di strutture."""
+        n = dati["nostri"]
+        c.executemany("INSERT INTO NOSTRA_RICETTA VALUES (?,?,?,?)", n["ricette"])
+        c.executemany("INSERT OR IGNORE INTO NOSTRO_TAG_VOCE VALUES (?,?,?,?)", n["tag"])
+        c.executemany("INSERT INTO NOSTRA_TABELLA VALUES (?,?,?)", n["tabelle"])
+        c.executemany("INSERT OR IGNORE INTO NOSTRO_MODIFICATORE VALUES (?,?,?,?,?)", n["modificatori"])
+        dump = dati["dump"]
+        for reg, ids in (dump.get("registri") or {}).items():
+            c.executemany("INSERT OR IGNORE INTO GIOCO_ID VALUES (?,?)", [(reg, i) for i in ids])
+        for tipo, ids in (dump.get("ricette") or {}).items():
+            c.executemany("INSERT OR IGNORE INTO GIOCO_RICETTA VALUES (?,?)", [(i, tipo) for i in ids])
+        for reg, tags in (dump.get("tag") or {}).items():
+            for tag, v in tags.items():
+                if isinstance(v, list):
+                    c.execute("INSERT INTO GIOCO_TAG VALUES (?,?,?,1)", (reg, tag, len(v)))
+                    c.executemany("INSERT OR IGNORE INTO GIOCO_TAG_VOCE VALUES (?,?,?)", [(reg, tag, i) for i in v])
+                else:
+                    c.execute("INSERT INTO GIOCO_TAG VALUES (?,?,?,0)", (reg, tag, v or 0))
+        c.executemany("INSERT OR IGNORE INTO GIOCO_TABELLA VALUES (?)", [(t,) for t in dump.get("tabelle") or []])
+        for sid, r in (dump.get("strutture") or {}).items():
+            c.execute("INSERT INTO GIOCO_STRUTTURA_SET VALUES (?,?,?,?,?,?)",
+                      (sid, r.get("tipo"), r.get("spaziatura"), r.get("separazione"), r.get("sale"), r.get("frequenza")))
+            c.executemany("INSERT OR IGNORE INTO GIOCO_STRUTTURA_SET_VOCE VALUES (?,?,?)",
+                          [(sid, e["struttura"], e["peso"]) for e in r.get("strutture") or []])
 
     def _carica_pozioni(self, c: sqlite3.Connection, dati: dict, items: dict) -> None:
         """Effetti e pozioni da inventario e dump; dal dump anche effetti delle pozioni, cibi e alambicco."""
@@ -1140,6 +1407,8 @@ class BotanyPotsDB:
             return
         meta = dump.get("meta") or {}
         c.executemany("INSERT INTO DUMP_MOD VALUES (?,?)", sorted((meta.get("mod") or {}).items()))
+        c.executemany("INSERT INTO DUMP_INFO VALUES (?,?)", [(k, str(meta.get(k))) for k in ("data", "formato", "datapack_sha256") if meta.get(k) is not None])
+        c.execute("INSERT INTO DUMP_INFO VALUES ('datapack_attuale', ?)", (impronta_datapack(self.datapack),))
         effetti = {r[0] for r in c.execute("SELECT effetto_id FROM EFFETTO")}
         pozioni = {r[0] for r in c.execute("SELECT pozione_id FROM POZIONE")}
 
@@ -1214,6 +1483,15 @@ class BotanyPotsDB:
                       [tuple(r[k] if r[k] != "" else None for k in colonne) for r in righe])
 
 
+def icona(nome: str, ok: bool, det: str) -> str:
+    """❌ controllo fallito; ⚠️ avviso che ha trovato qualcosa (non blocca, ma va guardato); ✅ il resto."""
+    if not ok:
+        return "❌"
+    if nome.startswith("avviso") and not re.fullmatch(r"trovat[ie]: 0", det):
+        return "⚠️"
+    return "✅"
+
+
 def main(argv: list[str]) -> int:
     if len(argv) < 2:
         print(__doc__)
@@ -1221,7 +1499,7 @@ def main(argv: list[str]) -> int:
     db, cmd = BotanyPotsDB(argv[0]), argv[1]
     if cmd == "refresh":
         for nome, ok, det in db.refresh():
-            print(("✅" if ok else "❌"), nome, det)
+            print(icona(nome, ok, det), nome, det)
         print("scritto", db.db_path)
     elif cmd in ("query", "analisi"):
         righe = db.query(argv[2]) if cmd == "query" else db.analisi(argv[2])
@@ -1235,7 +1513,7 @@ def main(argv: list[str]) -> int:
             print(f"{tipo:8s} {nome:24s} {n:6d}")
     elif cmd == "controlli":
         for nome, ok, det in db.controlli():
-            print(("✅" if ok else "❌"), nome, det)
+            print(icona(nome, ok, det), nome, det)
     else:
         print("comando sconosciuto:", cmd)
         return 2

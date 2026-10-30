@@ -1,0 +1,351 @@
+{
+ "format": 7,
+ "status": "ok",
+ "name": "Advanced Peripherals",
+ "file": "AdvancedPeripherals-1.21.1-0.8.2a.jar",
+ "side": "both",
+ "source": "modrinth",
+ "hash_format": "sha512",
+ "hash": "c25a6ca7ad7f09c3f6bb91cf319e0a2a6701b1b1e9fd2c61e4b9f770d6cc64907f6b7919540432dbdebb6599b8d745e709fb4d9200cf28b02f246c879bce5e8e",
+ "mods": [
+  {
+   "modid": "advancedperipherals",
+   "name": "Advanced Peripherals",
+   "version": "1.21.1-0.8.2a",
+   "jar": "",
+   "deps": [
+    {
+     "modid": "neoforge",
+     "type": "required",
+     "range": "[21.1.238,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecraft",
+     "type": "required",
+     "range": "[1.21.1,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "computercraft",
+     "type": "required",
+     "range": "[1.119.0,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "ae2",
+     "type": "optional",
+     "range": "[19.2.13,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "minecolonies",
+     "type": "optional",
+     "range": "[1.1.1300-1.21.1-snapshot,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "patchouli",
+     "type": "optional",
+     "range": "[1.21-88,)",
+     "side": "BOTH"
+    },
+    {
+     "modid": "mekanism",
+     "type": "optional",
+     "range": "[1.21.1-10.7.15.81,)",
+     "side": "BOTH"
+    }
+   ]
+  }
+ ],
+ "nested": [],
+ "namespaces": [
+  "advancedperipherals",
+  "computercraft",
+  "curios",
+  "minecraft",
+  "neoforge"
+ ],
+ "blocks": {
+  "advancedperipherals:block_reader": "Block Reader",
+  "advancedperipherals:chat_box": "Chat Box",
+  "advancedperipherals:colony_integrator": "Colony Integrator",
+  "advancedperipherals:distance_detector": "Distance Detector",
+  "advancedperipherals:energy_detector": "Energy Detector",
+  "advancedperipherals:environment_detector": "Environment Detector",
+  "advancedperipherals:fluid_detector": "Fluid Detector",
+  "advancedperipherals:gas_detector": "Gas Detector",
+  "advancedperipherals:geo_scanner": "Geo Scanner",
+  "advancedperipherals:inventory_manager": "Inventory Manager",
+  "advancedperipherals:me_bridge": "ME Bridge",
+  "advancedperipherals:nbt_storage": "NBT Storage",
+  "advancedperipherals:peripheral_casing": "Peripheral Casing",
+  "advancedperipherals:player_detector": "Player Detector",
+  "advancedperipherals:rs_bridge": "RS Bridge",
+  "advancedperipherals:smart_rail": "Smart Rail"
+ },
+ "items": {
+  "advancedperipherals:ae_disk_cell_16m": "AE Disk Cell 16M",
+  "advancedperipherals:ae_disk_cell_1m": "AE Disk Cell 1M",
+  "advancedperipherals:ae_disk_cell_256m": "AE Disk Cell 256M",
+  "advancedperipherals:ae_disk_cell_4m": "AE Disk Cell 4M",
+  "advancedperipherals:ae_disk_cell_64m": "AE Disk Cell 64M",
+  "advancedperipherals:ar_controller": "",
+  "advancedperipherals:block_reader": "",
+  "advancedperipherals:book": "",
+  "advancedperipherals:cable_p2p_tunnel": "Cable P2P Tunnel",
+  "advancedperipherals:chat_box": "",
+  "advancedperipherals:chunk_controller": "Chunk Controller",
+  "advancedperipherals:colony_integrator": "",
+  "advancedperipherals:computer_tool": "Computer Tool",
+  "advancedperipherals:distance_detector": "",
+  "advancedperipherals:end_automata_core": "End Automata Core",
+  "advancedperipherals:energy_detector": "",
+  "advancedperipherals:environment_detector": "",
+  "advancedperipherals:fluid_detector": "",
+  "advancedperipherals:gas_detector": "",
+  "advancedperipherals:geo_scanner": "",
+  "advancedperipherals:glasses_interface": "",
+  "advancedperipherals:hotkey_module": "Hotkey Module",
+  "advancedperipherals:husbandry_automata_core": "Husbandry Automata Core",
+  "advancedperipherals:inventory_manager": "",
+  "advancedperipherals:keyboard": "Keyboard",
+  "advancedperipherals:me_bridge": "",
+  "advancedperipherals:memory_card": "Memory Card",
+  "advancedperipherals:memory_card_bounded": "",
+  "advancedperipherals:nbt_storage": "",
+  "advancedperipherals:nightvision_module": "Night Vision Module",
+  "advancedperipherals:overlay_module": "Overlay Module",
+  "advancedperipherals:overpowered_end_automata_core": "Overpowered End Automata Core",
+  "advancedperipherals:overpowered_husbandry_automata_core": "Overpowered Husbandry Automata Core",
+  "advancedperipherals:overpowered_weak_automata_core": "Overpowered Weak Automata Core",
+  "advancedperipherals:peripheral_casing": "",
+  "advancedperipherals:player_detector": "",
+  "advancedperipherals:redstone_integrator": "",
+  "advancedperipherals:rs_bridge": "",
+  "advancedperipherals:smart_chestplate": "Smart Chestplate",
+  "advancedperipherals:smart_glasses": "Smart Glasses",
+  "advancedperipherals:smart_glasses_interface": "Smart Glasses Interface",
+  "advancedperipherals:smart_glasses_netherite": "Netherite reinforced Smart Glasses",
+  "advancedperipherals:smart_rail": "",
+  "advancedperipherals:turtle_chat_box_upgrade_left": "",
+  "advancedperipherals:turtle_chat_box_upgrade_right": "",
+  "advancedperipherals:turtle_environment_upgrade_left": "",
+  "advancedperipherals:turtle_environment_upgrade_right": "",
+  "advancedperipherals:turtle_geoscanner_upgrade_left": "",
+  "advancedperipherals:turtle_geoscanner_upgrade_right": "",
+  "advancedperipherals:turtle_player_upgrade_left": "",
+  "advancedperipherals:turtle_player_upgrade_right": "",
+  "advancedperipherals:weak_automata_core": "Weak Automata Core"
+ },
+ "data": {
+  "advancements": [
+   "advancedperipherals:base_toolkit",
+   "advancedperipherals:end_automata_core",
+   "advancedperipherals:husbandry_automata_core",
+   "advancedperipherals:nbt_toolkit",
+   "advancedperipherals:overpowered_automata_core",
+   "advancedperipherals:root",
+   "advancedperipherals:sense_toolkit",
+   "advancedperipherals:weak_automata_core"
+  ],
+  "computercraft": [
+   "advancedperipherals:pocket_upgrade/chatty_pocket",
+   "advancedperipherals:pocket_upgrade/colony_pocket",
+   "advancedperipherals:pocket_upgrade/distance_pocket",
+   "advancedperipherals:pocket_upgrade/environment_pocket",
+   "advancedperipherals:pocket_upgrade/geoscanner_pocket",
+   "advancedperipherals:pocket_upgrade/inventory_manager_pocket",
+   "advancedperipherals:pocket_upgrade/player_pocket",
+   "advancedperipherals:turtle_upgrade/block_reader_turtle",
+   "advancedperipherals:turtle_upgrade/chatty_turtle",
+   "advancedperipherals:turtle_upgrade/chunky_turtle",
+   "advancedperipherals:turtle_upgrade/compass_turtle",
+   "advancedperipherals:turtle_upgrade/end_automata",
+   "advancedperipherals:turtle_upgrade/environment_turtle",
+   "advancedperipherals:turtle_upgrade/geoscanner_turtle",
+   "advancedperipherals:turtle_upgrade/husbandry_automata",
+   "advancedperipherals:turtle_upgrade/overpowered_end_automata",
+   "advancedperipherals:turtle_upgrade/overpowered_husbandry_automata",
+   "advancedperipherals:turtle_upgrade/overpowered_weak_automata",
+   "advancedperipherals:turtle_upgrade/player_turtle",
+   "advancedperipherals:turtle_upgrade/saddle_turtle",
+   "advancedperipherals:turtle_upgrade/weak_automata"
+  ],
+  "loot_table": [
+   "advancedperipherals:blocks/block_reader",
+   "advancedperipherals:blocks/chat_box",
+   "advancedperipherals:blocks/colony_integrator",
+   "advancedperipherals:blocks/distance_detector",
+   "advancedperipherals:blocks/energy_detector",
+   "advancedperipherals:blocks/environment_detector",
+   "advancedperipherals:blocks/fluid_detector",
+   "advancedperipherals:blocks/gas_detector",
+   "advancedperipherals:blocks/geo_scanner",
+   "advancedperipherals:blocks/inventory_manager",
+   "advancedperipherals:blocks/me_bridge",
+   "advancedperipherals:blocks/nbt_storage",
+   "advancedperipherals:blocks/peripheral_casing",
+   "advancedperipherals:blocks/player_detector",
+   "advancedperipherals:blocks/rs_bridge",
+   "advancedperipherals:blocks/smart_rail"
+  ],
+  "loot_tables": [
+   "advancedperipherals:chest/scientist_common"
+  ],
+  "lua": [
+   "computercraft:rom/apis/advancedperipherals.lua",
+   "computercraft:rom/apis/advancedperipherals_patch/disk.lua",
+   "computercraft:rom/apis/smartglasses/smartglasses.lua",
+   "computercraft:rom/autorun/00_advancedperipherals_loadapis.lua",
+   "computercraft:rom/help/glasses_modules.txt",
+   "computercraft:rom/programs/flat.lua",
+   "computercraft:rom/programs/smartglasses/glasses_modules.lua"
+  ],
+  "patchouli_books": [
+   "advancedperipherals:manual/book"
+  ],
+  "recipe": [
+   "advancedperipherals:ae_disk_cell_16m",
+   "advancedperipherals:ae_disk_cell_1m",
+   "advancedperipherals:ae_disk_cell_256m",
+   "advancedperipherals:ae_disk_cell_4m",
+   "advancedperipherals:ae_disk_cell_64m",
+   "advancedperipherals:armor/smart_glasses_netherite",
+   "advancedperipherals:block_reader",
+   "advancedperipherals:chat_box",
+   "advancedperipherals:chunk_controller",
+   "advancedperipherals:colony_integrator",
+   "advancedperipherals:computer_tool",
+   "advancedperipherals:distance_detector",
+   "advancedperipherals:energy_detector",
+   "advancedperipherals:environment_detector",
+   "advancedperipherals:fluid_detector",
+   "advancedperipherals:gas_detector",
+   "advancedperipherals:geo_scanner",
+   "advancedperipherals:hotkey_module",
+   "advancedperipherals:inventory_manager",
+   "advancedperipherals:keyboard",
+   "advancedperipherals:me_bridge",
+   "advancedperipherals:memory_card",
+   "advancedperipherals:nbt_storage",
+   "advancedperipherals:nightvision_module",
+   "advancedperipherals:overlay_module",
+   "advancedperipherals:overpowered_end_automata_core",
+   "advancedperipherals:overpowered_husbandry_automata_core",
+   "advancedperipherals:overpowered_weak_automata_core",
+   "advancedperipherals:peripheral_casing",
+   "advancedperipherals:player_detector",
+   "advancedperipherals:rs_bridge",
+   "advancedperipherals:smart_glasses",
+   "advancedperipherals:smart_glasses_interface",
+   "advancedperipherals:smart_rail",
+   "advancedperipherals:weak_automata_core"
+  ],
+  "recipes": [
+   "advancedperipherals:guide_book"
+  ],
+  "structures": [
+   "advancedperipherals:villages/scientist_desert",
+   "advancedperipherals:villages/scientist_plains",
+   "advancedperipherals:villages/scientist_savanna",
+   "advancedperipherals:villages/scientist_snowy",
+   "advancedperipherals:villages/scientist_taiga"
+  ],
+  "tags/block": [
+   "minecraft:mineable/pickaxe",
+   "minecraft:needs_iron_tool",
+   "minecraft:needs_stone_tool",
+   "minecraft:rails",
+   "neoforge:needs_wood_tool"
+  ],
+  "tags/item": [
+   "advancedperipherals:p2p_attunements/cable_p2p_tunnel",
+   "advancedperipherals:smart_glasses",
+   "curios:head"
+  ],
+  "tags/point_of_interest_type": [
+   "minecraft:acquirable_job_site"
+  ]
+ },
+ "data_counts": {
+  "advancement": 35
+ },
+ "tags": {
+  "tags/block": {
+   "minecraft:mineable/pickaxe": [
+    "advancedperipherals:peripheral_casing",
+    "advancedperipherals:chat_box",
+    "advancedperipherals:distance_detector",
+    "advancedperipherals:environment_detector",
+    "advancedperipherals:geo_scanner",
+    "advancedperipherals:player_detector",
+    "advancedperipherals:energy_detector",
+    "advancedperipherals:fluid_detector",
+    "advancedperipherals:gas_detector",
+    "advancedperipherals:block_reader",
+    "advancedperipherals:nbt_storage",
+    "advancedperipherals:inventory_manager",
+    "advancedperipherals:colony_integrator",
+    "advancedperipherals:me_bridge",
+    "advancedperipherals:rs_bridge",
+    "advancedperipherals:smart_rail"
+   ],
+   "minecraft:needs_iron_tool": [
+    "advancedperipherals:chat_box",
+    "advancedperipherals:distance_detector",
+    "advancedperipherals:environment_detector",
+    "advancedperipherals:geo_scanner",
+    "advancedperipherals:player_detector",
+    "advancedperipherals:energy_detector",
+    "advancedperipherals:fluid_detector",
+    "advancedperipherals:gas_detector",
+    "advancedperipherals:block_reader",
+    "advancedperipherals:nbt_storage",
+    "advancedperipherals:inventory_manager",
+    "advancedperipherals:colony_integrator",
+    "advancedperipherals:me_bridge",
+    "advancedperipherals:rs_bridge"
+   ],
+   "minecraft:needs_stone_tool": [
+    "advancedperipherals:smart_rail"
+   ],
+   "minecraft:rails": [
+    "advancedperipherals:smart_rail"
+   ],
+   "neoforge:needs_wood_tool": [
+    "advancedperipherals:peripheral_casing"
+   ]
+  },
+  "tags/item": {
+   "advancedperipherals:p2p_attunements/cable_p2p_tunnel": [
+    "computercraft:cable?",
+    "computercraft:wired_modem?",
+    "computercraft:wired_modem_full?"
+   ],
+   "advancedperipherals:smart_glasses": [
+    "advancedperipherals:smart_glasses",
+    "advancedperipherals:smart_glasses_netherite"
+   ],
+   "curios:head": [
+    "#advancedperipherals:smart_glasses"
+   ]
+  },
+  "tags/point_of_interest_type": {
+   "minecraft:acquirable_job_site": [
+    "advancedperipherals:computer_scientist"
+   ]
+  }
+ },
+ "recipe_types": {
+  "minecraft:crafting_shaped": 31,
+  "minecraft:crafting_shapeless": 3,
+  "minecraft:smithing_transform": 1
+ },
+ "botanypots": [],
+ "market": [],
+ "market_presets": [],
+ "potions_deduced": [],
+ "problems": []
+}

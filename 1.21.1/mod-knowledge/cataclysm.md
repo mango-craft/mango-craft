@@ -1,6 +1,6 @@
 # L_Ender's Cataclysm (+ Cataclysm Delight)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.1.1 (ruolo: `../docs/0301-mod.md`) · fonti: file della mod (inventario), sorgente, log dell'istanza di prova.
+Aggiornata il 30/10/2026 · slug dei metafile: `l_enders-cataclysm` (e `l_enders-cataclysm-delight`) · nel pack dalla 0.1.1 (ruolo: `../docs/0301-mod.md`) · fonti: file della mod (inventario), sorgente, log dell'istanza di prova.
 
 ## Fatti verificati
 

@@ -7,7 +7,8 @@ Si lancia dove stanno i jar (es. sul PC di Matteo, in sola lettura: non scrive n
 terreno scritti da `botanypots_genera.py` (e a mano) controlla nei jar:
 - il blocco esiste (file `blockstates/`, oppure voce di lingua);
 - il seme e i raccolti scritti a mano esistono (modello dell'oggetto, oppure voce di lingua);
-- il terreno ha un oggetto, e le voci dell'etichetta `botanypots:soil/dirt` esistono;
+- il terreno ha un oggetto (anche i terreni delle mod che lo script sostituisce allo stesso percorso), e le voci
+  dell'etichetta `botanypots:soil/dirt` esistono;
 - gli alberi di `alberi/` (copiati da Botany Trees): la loro tabella del bottino esiste nel datapack e i suoi oggetti nei jar;
 - per le colture senza raccolto scritto (Botany Pots lo ricava dalla tabella del bottino del blocco): la tabella
   esiste e, con il vaso **senza attrezzo** (impostazione predefinita di Botany Pots), dà almeno un oggetto.
@@ -19,7 +20,6 @@ valutare le conta come soddisfatte e le elenca come «incerte» con `--lungo`.
 Esce con 1 se trova un nome mancante o una coltura che non darebbe niente.
 """
 import argparse
-import glob
 import json
 import sys
 import zipfile
@@ -243,7 +243,9 @@ def main() -> int:
     bp = a.pack / DP / "matteo_tweaks" / "recipe" / "botanypots"
     colture = [(f, json.loads(f.read_text(encoding="utf-8"))) for f in sorted([*bp.glob("**/crop/*.json"), *bp.glob("alberi/**/*.json")])]
     tabelle = a.pack / DP / "matteo_tweaks" / "loot_table"
-    terreni = [(f, json.loads(f.read_text(encoding="utf-8"))) for f in sorted(bp.glob("**/soil/*.json"))]
+    # i nostri terreni e quelli delle mod che lo script sostituisce allo stesso percorso (data/<ns>/recipe/…/soil/)
+    sostituiti = [f for f in (a.pack / DP).glob("*/recipe/**/soil/*.json") if f.relative_to(a.pack / DP).parts[0] != "matteo_tweaks"]
+    terreni = [(f, json.loads(f.read_text(encoding="utf-8"))) for f in sorted([*bp.glob("**/soil/*.json"), *sostituiti])]
     jar = Jar(a.mods)
     print(f"jar letti: {jar.n} · namespace: {len(jar.ns)}")
 
@@ -297,7 +299,7 @@ def main() -> int:
         elif any(n.startswith("incerta") for n in note):
             incerte.append(f"{nome}: {sorted(n for n in note if n.startswith('incerta'))}")
     for f, d in terreni:
-        nome = f.relative_to(bp).as_posix()
+        nome = f.relative_to(bp if f.is_relative_to(bp) else a.pack / DP).as_posix()
         if "block" not in d:  # terreno che non è un blocco (secchio): ha `input` e `display`
             ogg = d["input"]["item"]
             if not jar.oggetto(ogg):

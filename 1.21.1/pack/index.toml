@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "7c03d597f1b78832dc4a04dff8c874109abfc1efaa21f1993ad1734a543b0cf1"
+hash = "7cfc09e7e3642bebbca2c8fada7ae0650e5abe6756ff54123536f9f925c7a490"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/readme.md"
@@ -102,7 +102,7 @@ hash = "f19576ccf11c367dc388a131cfe485bf986f16d4a2ed68e7b3ec4b1e197ffc32"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/readme.md"
-hash = "25def3e6f337c0415c7546740d8c2077e43831ddeee6d2d9f838dfffb5d53db0"
+hash = "dbc4246b5eb59115dd2d3b78668169bb3d95e19d57760146b1a1129b95892049"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/botanypots/recipe/cataclysm/soil/the_baby_leviathan_bucket.json"
@@ -258,7 +258,7 @@ hash = "cf96f193d997e47193a3b55b5b75a4e4dd54db4a22795af9fb15dc8da8f1b497"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/readme.md"
-hash = "5cfbd52b40adefb6df0246084029404e4b1e53bca03bb51de8e684e57acd872a"
+hash = "b7d6f67d972708a459127a43a513d5053a973751a7e4064f6f2dc5ba6750518a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/expandeddelight/market_presets/saplings.json"
@@ -291,6 +291,22 @@ hash = "f5023b638e0d00b3f4088c5fd5c524abf044aaa849a9e11178ec7154127162e3"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.2/tutte_le_prove.mcfunction"
 hash = "4a734dd7e1f34ec23b4b344b007db57536c5e0352ad024977b4c251d7dbe6d79"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/bacino_create.mcfunction"
+hash = "d8b0fb2bd40bb6966949fa30620b2d1d6d6bfbd82c4480d9f67dfa0c8bf4b4b0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/computer_avanzato.mcfunction"
+hash = "c9d92307c392abb0b96dd48e31b1c38c0e6d55a32fbb320b649538b22168b463"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/player_detector_chat_box_modem.mcfunction"
+hash = "6d58f9921680d5faa2a602fb69e810779fdbf0374778e131e2f7570c0d181bbf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/tutte_le_prove.mcfunction"
+hash = "a3f46ed864714a35b080d02dacd8eba1717427664b960d519879f38ed34a8dfc"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
@@ -558,7 +574,7 @@ hash = "ea0001b6ddc8cbbd83b7c3d311ff254a9947b0be0beac6f13bb76210cc668265"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/alberi/readme.md"
-hash = "733528b32689e3f6dfd6f4105e2db6274dad11dc43da4cb3d5fac0bb04fe700f"
+hash = "5d42f4ad13ab1f4760500d1c7b61061b71b2131a85b71e208ee841c2a529a5ef"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/ars_elemental/crop/sparkflower.json"
@@ -578,7 +594,7 @@ hash = "88257732a414dcb2633c5fbc125f9594d1f07cdacc9419c4eed912c8b7db446f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/elderberry_trellis.json"
-hash = "20bb8d5f67712216b1be95c82392b21100a7ea4d1f9af65bf31ad51e29da8aed"
+hash = "447bb7242f9e4aada0baab7e4bdd06867f3cab7b9da1da40ef1992becbd77d7d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/hoary_apple_sapling_crop.json"
@@ -590,7 +606,7 @@ hash = "4f683eeaa6b1a4fefc6f6b7038663efbc1c2634f6afa41b4e6dd12318fdf2673"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/lapisberry_trellis.json"
-hash = "576fcb06d4eaa0e80208734ded166a90b184e0acaef5a438b436fc16d34bb4e2"
+hash = "2f0316ffb09c2f96ced64042be370503ead5af76755892491e294773e4d94407"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/leeks.json"
@@ -602,7 +618,7 @@ hash = "cbd1b86df2acec800260dac6fd17b5f4ae621eba07b1b401dbe2a6e286d98d13"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/passion_fruit_trellis.json"
-hash = "0790b241d193cfc75dc684a452dc73278c5e114ab9c443e7585aa25c25fa5221"
+hash = "07495fdc48534083cc0cecd73faab3c663a28c6c6ae2b07bc66349306257a3a5"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/bountifulfares/crop/prismarine_blossom.json"
@@ -1370,7 +1386,7 @@ hash = "73696d3423cbcec6d59f0e1a5dff6202d52534b207f6ffc1d9c44d981800a0e4"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/readme.md"
-hash = "3ec0e9ed8ae1d058ffeaf5e074c8307c9266df8ccf918a4f0f06cdeca48ea6d4"
+hash = "46be38137ca1de13a5e14eb2ee09e4dccef4b5d0a0f38f303fdb96f7d7afefa8"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/regions_unexplored/crop/blue_bioshroom.json"
@@ -1751,10 +1767,6 @@ hash = "ecc5e726da5258804b5303d75cf845686b200f45393a385c1ff2551f535e19bb"
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_bush.json"
 hash = "6073847e9c2944330793fe2b288bbba751e56c17b5f02d3080771a27154568a2"
-
-[[files]]
-file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_endstone_sprouts.json"
-hash = "e28c0133fa93aafed4c6879b6fca974074f29620404473e53e52d5b0437b2763"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/recipe/botanypots/unusualend/crop/warped_sprouts.json"
@@ -3626,7 +3638,7 @@ hash = "7adf5eae4af9a4bf351c80326cf2076fc6e55c9c197b282123e84e983b9e8d51"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/pack.mcmeta"
-hash = "7de063ac01b6797d0f7d9b3bd493970dfefa6f41547be18df27bf8ebf374cc3a"
+hash = "428c81162a71e0f1edc318f524b58bc85ac8f4c37abbe1e6c240d260fa52b430"
 
 [[files]]
 file = "config/sparsestructures.json5"
@@ -3634,7 +3646,12 @@ hash = "e10e7c99ed29ba650c4c7592981251f3e34a2c0a6b78ad6d8c2ec649ab3be037"
 
 [[files]]
 file = "kubejs/server_scripts/mango_dump.js"
-hash = "cdc14c793551758540e4d8e7765f3e79edddb5a971e0b9ae335cbe90db467fe6"
+hash = "e86797dc09f11bfc8d24d174bbc115c17d848c97a1a1566dfe2cfba7149a9f2f"
+
+[[files]]
+file = "mods/advancedperipherals.pw.toml"
+hash = "73576662287c48ef64866be14445a6e8b52829a1da6e65800d0917f813206220"
+metafile = true
 
 [[files]]
 file = "mods/aether.pw.toml"
@@ -3844,6 +3861,11 @@ metafile = true
 [[files]]
 file = "mods/carry-on.pw.toml"
 hash = "838dbcb90c93bab58691e82c95045bd97c3e096e3a2680a00cf063e56ce35ce3"
+metafile = true
+
+[[files]]
+file = "mods/cc-tweaked.pw.toml"
+hash = "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256"
 metafile = true
 
 [[files]]

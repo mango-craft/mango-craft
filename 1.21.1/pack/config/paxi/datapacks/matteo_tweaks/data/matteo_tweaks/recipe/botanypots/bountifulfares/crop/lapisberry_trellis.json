@@ -3,7 +3,7 @@
     {
       "type": "bookshelf:block_exists",
       "values": [
-        "bountifulfares:vine_trellis"
+        "bountifulfares:trellis"
       ]
     }
   ],
@@ -14,7 +14,7 @@
   "display": {
     "type": "botanypots:simple",
     "block_state": {
-      "block": "bountifulfares:vine_trellis"
+      "block": "bountifulfares:trellis"
     }
   },
   "drops": [

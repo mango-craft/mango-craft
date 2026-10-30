@@ -8,14 +8,16 @@ Ogni voce può essere:
                                 del pack (se non c'è: l'ultima beta, poi l'ultima alpha);
                                 per i pacchetti di shader il "loader" è Iris, per i resource
                                 pack è "minecraft" (packwiz li mette nella cartella giusta);
-- `slug@versione`             → quella versione esatta (numero di versione o id);
+- `slug@versione`             → quella versione esatta: id, oppure numero di versione
+                                cercato tra quelle per Minecraft e loader del pack (lo
+                                stesso numero può esistere per più loader);
 - un link `https://modrinth.com/<tipo>/<slug>/version/<versione>` → come sopra;
 - un id di versione di 8 caratteri.
 
 Stampa una riga per voce, separata da tabulazioni:
 id versione · slug · numero di versione · tipo (release/beta/alpha) · data · id progetto
 Esce con errore se una voce non esiste o non è per Minecraft/loader del pack.
-Serve la rete verso api.modrinth.com: gira nelle GitHub Actions.
+Serve la rete verso api.modrinth.com (nelle GitHub Actions o in locale).
 """
 import json
 import re
@@ -46,6 +48,13 @@ def check(v: dict, mc: str, loader: str, entry: str) -> dict:
     return v
 
 
+def version_by_id(vid: str) -> dict | None:
+    try:
+        return api(f"/version/{vid}")
+    except urllib.error.HTTPError:
+        return None
+
+
 def loader_for(project: dict, pack_loader: str) -> str:
     return TYPE_LOADER.get(project.get("project_type"), pack_loader)
 
@@ -56,28 +65,30 @@ def resolve(entry: str, mc: str, loader: str) -> dict:
         entry_slug, wanted = m.group(1), urllib.parse.unquote(m.group(2))
     elif "@" in entry:
         entry_slug, wanted = entry.split("@", 1)
-    elif re.fullmatch(r"[A-Za-z0-9]{8}", entry) and not re.fullmatch(r"[a-z0-9-]+", entry):
-        v = api(f"/version/{entry}")
+    elif re.fullmatch(r"[A-Za-z0-9]{8}", entry) and (v := version_by_id(entry)):
+        # un id di versione (se tutto minuscolo potrebbe essere anche uno slug: si prova prima come id)
         return check(v, mc, loader_for(api(f"/project/{v['project_id']}"), loader), entry)
     else:
         entry_slug, wanted = entry, None
     if not re.fullmatch(r"[A-Za-z0-9_.-]+", entry_slug):
         raise SystemExit(f"{entry}: slug non valido")
     try:
-        loader = loader_for(api(f"/project/{entry_slug}"), loader)
+        project = api(f"/project/{entry_slug}")
     except urllib.error.HTTPError as e:
         raise SystemExit(f"{entry}: progetto non trovato ({e.code})")
-    if wanted:
-        try:
-            v = api(f"/project/{entry_slug}/version/{urllib.parse.quote(wanted, safe='')}")
-        except urllib.error.HTTPError as e:
-            raise SystemExit(f"{entry}: versione non trovata ({e.code})")
-        return check(v, mc, loader, entry)
+    loader = loader_for(project, loader)
+    if wanted and re.fullmatch(r"[A-Za-z0-9]{8}", wanted):
+        v = version_by_id(wanted)
+        if v and v["project_id"] == project["id"]:
+            return check(v, mc, loader, entry)
     q = urllib.parse.urlencode({"game_versions": json.dumps([mc]), "loaders": json.dumps([loader])})
-    try:
-        versions = api(f"/project/{entry_slug}/version?{q}")
-    except urllib.error.HTTPError as e:
-        raise SystemExit(f"{entry}: progetto non trovato ({e.code})")
+    versions = api(f"/project/{project['id']}/version?{q}")
+    if wanted:
+        # numero di versione: solo tra quelle per Minecraft e loader del pack
+        for v in versions:
+            if v["version_number"] == wanted:
+                return v
+        raise SystemExit(f"{entry}: nessuna versione {wanted} per {mc} + {loader}")
     if not versions:
         raise SystemExit(f"{entry}: nessuna versione per {mc} + {loader}")
     versions.sort(key=lambda v: v["date_published"], reverse=True)

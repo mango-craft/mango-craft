@@ -8,6 +8,14 @@
 //   alambicco.json le ricette dell'alambicco provate davvero (ingrediente × pozione → risultato), più le ricette
 //                  NeoForge che il gioco elenca: elencate, o provate su ogni oggetto se la classe è della mod
 //   oggetti.json   gli oggetti con effetti di serie: cibi e bevande (FoodProperties) e oggetti con pozione dentro
+// Dal formato 2 (26/10/2026, per controllare con il gioco anche il lavoro delle versioni passate):
+//   registri.json  tutti i nomi registrati di oggetti, blocchi, liquidi, entità, effetti e pozioni (compresi quelli
+//                  creati all'avvio, che nei jar non ci sono: Every Compat)
+//   ricette.json   le ricette caricate davvero, per tipo (id delle ricette): dice quali delle nostre il gioco ha accettato
+//   tag.json       le etichette finali, dopo tutti i datapack: per oggetti e blocchi i valori solo per i namespace in
+//                  TAG_NAMESPACE (le altre con il solo conteggio), per liquidi, pozioni, effetti ed entità tutte
+//   tabelle.json   i nomi delle tabelle del bottino caricate (solo i nomi, non il contenuto)
+//   strutture.json gli insiemi di strutture con spaziatura e separazione, come il gioco le vede dopo le mod
 // I file li importa scripts/dump_importa.py nel repository (1.21.1/data/dump/); la base dati li legge da lì.
 // Non cambia niente nel mondo: legge soltanto. Ogni sezione è protetta: se una fallisce, le altre si scrivono e
 // l'errore finisce in meta.json.
@@ -59,7 +67,7 @@ ServerEvents.basicCommand('mango_dump', event => {
 
   var level = event.getLevel()
   var meta = {
-    formato: 1,
+    formato: 2,
     data: new Date().toISOString(),
     minecraft: String(Platform.getMinecraftVersionString()),
     kubejs: String(Platform.getModVersion()),
@@ -67,11 +75,11 @@ ServerEvents.basicCommand('mango_dump', event => {
     file: {},
     errori: []
   }
-  var section = (name, fn) => {
+  var section = (name, fn, contare) => {
     try {
       var data = fn()
       JsonIO.write(DIR + name + '.json', data)
-      meta.file[name] = Array.isArray(data) ? data.length : data.miscele.length
+      meta.file[name] = contare ? contare(data) : (Array.isArray(data) ? data.length : data.miscele.length)
     } catch (e) {
       meta.errori.push(name + ': ' + e)
     }
@@ -214,6 +222,99 @@ ServerEvents.basicCommand('mango_dump', event => {
     })
     return out
   })
+
+  // --- formato 2: registri, ricette, etichette, tabelle del bottino, strutture ---
+  var $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
+  var keysOf = registry => {
+    var out = []
+    registry.keySet().forEach(rl => out.push(String(rl)))
+    return out
+  }
+  var tagsOf = (registry, conValori) => {
+    // etichette finali di un registro: {nome: [valori]} oppure {nome: numero} se i valori non interessano
+    var out = {}
+    registry.getTagNames().forEach(tagKey => {
+      var nome = String(tagKey.location())
+      var set = registry.getTag(tagKey)
+      if (!set.isPresent()) { out[nome] = null; return }
+      var named = set.get()
+      if (!conValori(nome)) { out[nome] = Number(named.size()); return }
+      var valori = []
+      named.forEach(holder => {
+        var k = holder.unwrapKey()
+        valori.push(k.isPresent() ? String(k.get().location()) : '?')
+      })
+      out[nome] = valori
+    })
+    return out
+  }
+  var TAG_NAMESPACE = ['minecraft', 'c', 'neoforge', 'botanypots', 'apotheosis', 'accessories', 'curios', 'artifacts',
+    'relics', 'farmersdelight', 'bountifulfares', 'starcatcher', 'create', 'cognition', 'create_enchantment_industry',
+    'matteo_tweaks', 'cataclysm', 'twilightforest', 'aether', 'undergarden', 'farmingforblockheads']
+  var conValori = nome => TAG_NAMESPACE.indexOf(nome.split(':')[0]) >= 0
+
+  section('registri', () => {
+    var out = {
+      item: keysOf($BuiltInRegistries.ITEM),
+      block: keysOf($BuiltInRegistries.BLOCK),
+      fluid: keysOf($BuiltInRegistries.FLUID),
+      entity_type: keysOf($BuiltInRegistries.ENTITY_TYPE),
+      mob_effect: keysOf($BuiltInRegistries.MOB_EFFECT),
+      potion: keysOf($BuiltInRegistries.POTION)
+    }
+    return out
+  }, d => d.item.length)
+
+  section('ricette', () => {
+    var out = {}
+    level.getRecipeManager().getRecipes().forEach(holder => {
+      var tipo = String($BuiltInRegistries.RECIPE_TYPE.getKey(holder.value().getType()))
+      if (!out[tipo]) out[tipo] = []
+      out[tipo].push(String(holder.id()))
+    })
+    return out
+  }, d => { var n = 0; for (var t in d) n += d[t].length; return n })
+
+  section('tag', () => {
+    var out = {
+      item: tagsOf($BuiltInRegistries.ITEM, conValori),
+      block: tagsOf($BuiltInRegistries.BLOCK, conValori),
+      fluid: tagsOf($BuiltInRegistries.FLUID, () => true),
+      potion: tagsOf($BuiltInRegistries.POTION, () => true),
+      mob_effect: tagsOf($BuiltInRegistries.MOB_EFFECT, () => true),
+      entity_type: tagsOf($BuiltInRegistries.ENTITY_TYPE, () => true)
+    }
+    return out
+  }, d => { var n = 0; for (var r in d) for (var t in d[r]) n++; return n })
+
+  section('tabelle', () => {
+    var out = []
+    try {
+      level.registryAccess().registryOrThrow($Registries.LOOT_TABLE).keySet().forEach(rl => out.push(String(rl)))
+    } catch (e) {
+      level.getServer().reloadableRegistries().getKeys($Registries.LOOT_TABLE).forEach(rl => out.push(String(rl)))
+    }
+    return out
+  })
+
+  section('strutture', () => {
+    var reg = level.registryAccess().registryOrThrow($Registries.STRUCTURE_SET)
+    var out = {}
+    reg.keySet().forEach(rl => {
+      var set = reg.get(rl)
+      var pl = set.placement()
+      var row = { tipo: String(pl).split('@')[0], strutture: [] }
+      try { row.sale = Number(pl.salt()) } catch (e) { /* non tutti i piazzamenti */ }
+      try { row.frequenza = Number(pl.frequency()) } catch (e) { /* idem */ }
+      try { row.spaziatura = Number(pl.spacing()); row.separazione = Number(pl.separation()) } catch (e) { /* solo random_spread */ }
+      set.structures().forEach(e => {
+        var k = e.structure().unwrapKey()
+        row.strutture.push({ struttura: k.isPresent() ? String(k.get().location()) : '?', peso: Number(e.weight()) })
+      })
+      out[String(rl)] = row
+    })
+    return out
+  }, d => Object.keys(d).length)
 
   JsonIO.write(DIR + 'meta.json', meta)
   event.respond(Text.of('Mango Craft: dump scritto in ' + DIR + ' (' + JSON.stringify(meta.file) + ', errori: ' + meta.errori.length + ')'))

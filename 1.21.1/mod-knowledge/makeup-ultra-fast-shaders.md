@@ -1,6 +1,6 @@
 # MakeUp - Ultra Fast (pacchetto di shader)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.5.3, spento di serie (`../docs/0301-mod.md`; versione 9.5g in `../docs/0403-distinta-mod.md`) · fonti: API di Modrinth, sorgente su GitHub (javiergcim/MakeUpUltraFast, commit del 16/10/2026, LGPL-3.0), inventario del pack, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/stage/2026-10-19_1.21.1-v0.5.3_shader-pack/`.
+Aggiornata il 19/10/2026 · nel pack dalla 0.5.3, spento di serie (`../docs/0301-mod.md`; versione 9.5g in `../docs/0403-distinta-mod.md`) · fonti: API di Modrinth, sorgente su GitHub (javiergcim/MakeUpUltraFast, commit del 16/10/2026, LGPL-3.0), inventario del pack, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/archivio/2026-10-19_1.21.1-v0.5.3_shader-pack/`.
 
 ## Fatti verificati
 

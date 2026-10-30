@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+# Avvia Claude Code su mango-craft con le credenziali solo in memoria: le chiede ora
+# e spariscono quando chiudi la sessione. Niente file, niente history, niente chat.
+#
+#   ai-agents/bin/claude-session              la deploy key di GitHub (per il push)
+#   ai-agents/bin/claude-session --gh         in più: un token di GitHub per gh (workflow)
+#   ai-agents/bin/claude-session --continue   le altre opzioni passano a claude
+#
+# Ciò che manca si salta da solo (una chiave assente); per saltare il token basta Invio.
+set -euo pipefail
+cd "$(dirname "$0")/../.."
+
+ask_gh=0
+claude_args=()
+for arg in "$@"; do
+  case "$arg" in
+    --gh) ask_gh=1 ;;
+    *) claude_args+=("$arg") ;;
+  esac
+done
+
+# Il contesto locale (percorsi del PC, istanza di Prism) non è in git: senza,
+# l'agente non trova i log del gioco (ai-agents/README.md, "Contesto locale")
+if [[ ! -f ai-agents/contesto-locale.md ]]; then
+  echo "Manca ai-agents/contesto-locale.md: copia ai-agents/contesto-locale.esempio.md e compilalo" >&2
+fi
+
+# Token di GitHub per gh (lanciare i workflow, leggerne l'esito): fine-grained, solo
+# questo repository, solo il permesso Actions in lettura e scrittura (il push usa la
+# deploy key). Uno già nel terminale non passa alla sessione: potrebbe valere per
+# tutti i tuoi repository.
+unset GH_TOKEN GITHUB_TOKEN
+if (( ask_gh )); then
+  if ! command -v gh >/dev/null 2>&1; then
+    echo "gh non è installato (sudo dnf install gh): il token non servirebbe, lo salto" >&2
+  else
+    read -rsp "Token di GitHub per mango-craft (Invio per saltare): " value
+    echo
+    if [[ -n "$value" ]]; then
+      export GH_TOKEN="$value"
+    fi
+    unset value
+  fi
+fi
+
+# La deploy key del repository in un agent SSH dedicato: git la usa senza che il
+# file venga letto, e l'agent muore con la sessione (al più tardi dopo 12 ore).
+# Un agent già aperto nel terminale non passa: dentro ci potrebbe essere la tua
+# chiave personale, che su GitHub apre tutti i tuoi repository.
+unset SSH_AUTH_SOCK SSH_AGENT_PID
+key="${MANGO_GITHUB_KEY:-$HOME/.ssh/github_mango_craft}"
+if [[ -r "$key" ]]; then
+  eval "$(ssh-agent -s)" >/dev/null
+  trap 'ssh-agent -k >/dev/null 2>&1' EXIT
+  ssh-add -t 12h "$key" || echo "Chiave SSH non caricata: il push non funzionerà" >&2
+else
+  echo "Chiave SSH assente, la salto: $key" >&2
+fi
+
+# Riepilogo di cosa ha la sessione, senza i valori
+have() { [[ -n "${!1:-}" ]] && echo sì || echo no; }
+# (senza agent, o con l'agent vuoto, ssh-add -l esce con errore)
+loaded=""
+if listing=$(ssh-add -l 2>/dev/null); then
+  loaded=$(cut -d ' ' -f 3 <<< "$listing" | paste -sd ' ' -)
+fi
+echo "Sessione: token GitHub $(have GH_TOKEN), chiavi SSH: ${loaded:-nessuna}," \
+  "contesto locale $([[ -f ai-agents/contesto-locale.md ]] && echo sì || echo no)"
+
+# Sessione in primo piano, mai nel demone dei lavori in background: il demone ha
+# l'ambiente del terminale che l'ha avviato, senza il token e la chiave di qui
+# (ai-agents/README.md, "Trappola del background")
+export CLAUDE_CODE_DISABLE_AGENT_VIEW=1
+
+claude "${claude_args[@]}"

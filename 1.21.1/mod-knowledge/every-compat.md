@@ -1,6 +1,6 @@
 # Every Compat (Wood Good) + Moonlight
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.4.0 (ruolo e licenza: `../docs/0301-mod.md`; versione: `../docs/0403-distinta-mod.md`) · fonti: sorgente di Every Compat (WoodGood @bdb551e8, versione 2.11.54) e di Moonlight (@1a3802e8, 3.7.2), inventario del pack, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/stage/2026-10-19_1.21.1-v0.6.0_config-mod/`.
+Aggiornata il 19/10/2026 · nel pack dalla 0.4.0 (ruolo e licenza: `../docs/0301-mod.md`; versione: `../docs/0403-distinta-mod.md`) · fonti: sorgente di Every Compat (WoodGood @bdb551e8, versione 2.11.54) e di Moonlight (@1a3802e8, 3.7.2), inventario del pack, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/archivio/2026-10-19_1.21.1-v0.6.0_config-mod/`.
 
 ## Cosa fa nel pack
 

@@ -238,10 +238,40 @@ def datapack_files(pack: Path) -> list:
     return out
 
 
+GAME_REGISTRY = {"item": "item", "block": "block", "fluid": "fluid", "potion": "potion", "effect": "mob_effect", "entity": "entity_type"}
+
+
+def load_game(inv: Path) -> tuple[dict[str, set[str]], str]:
+    """I nomi registrati nel gioco, dal dump (`data/dump/registri.json`, accanto all'inventario): l'inventario prende
+    oggetti e blocchi anche da modelli e traduzioni, che possono non avere un oggetto registrato (trim delle armature,
+    stati di un arco, resti di una mod). Vuoto se non c'è un dump."""
+    dump = inv.parent / "dump"
+    try:
+        reg = json.loads((dump / "registri.json").read_text(encoding="utf-8"))
+        data = json.loads((dump / "meta.json").read_text(encoding="utf-8")).get("data", "?")[:10]
+    except (OSError, ValueError):
+        return {}, ""
+    return {k: set(v) for k, v in reg.items() if isinstance(v, list)}, data
+
+
 def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
     pack, inv = Path(pack_dir), Path(inv_dir)
     idx = load_index(inv)
+    game, game_date = load_game(inv)
     errors, warnings, inactive = [], [], []
+
+    def not_in_game(kind: str, i: str) -> bool:
+        """Vero se il nome passa l'inventario ma il gioco (dump) non lo registra."""
+        reg = GAME_REGISTRY.get(kind)
+        if reg is None or reg not in game:
+            return False
+        if kind == "item":  # un nome di oggetto nel datapack può essere anche un blocco (l'inventario li accetta entrambi)
+            return i not in game["item"] and i not in game.get("block", set())
+        return i not in game[reg]
+
+    def avviso_gioco(rel: str, kind: str, i: str, dove: str = "") -> None:
+        warnings.append(f"`{rel}`{dove}: `{i}` ({kind}) è nell'inventario ma il gioco non lo registra (dump del {game_date}): "
+                        f"forse un modello o una traduzione senza oggetto; il file che lo usa non si carica")
     errors += [f"File scaricato diverso dal metafile: {e}" for e in idx.hash_errors]
 
     # 1. Dipendenze obbligatorie e versione di NeoForge richiesta
@@ -294,6 +324,8 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
             for kind, i in cond_ids:
                 if i and not idx.has(kind, i):
                     errors.append(f"`{rel}`: condizione mai vera, `{i}` non esiste ({kind}): il file non si caricherà mai")
+                elif i and not_in_game(kind, i):
+                    avviso_gioco(rel, kind, i, " (condizione)")
         if cat.startswith("tags/"):
             refs = tag_refs(cat, d)
         elif cat == "loot_modifiers" and rid == "neoforge:global_loot_modifiers":
@@ -314,6 +346,8 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
             if not idx.has(k, i):
                 msg = f"`{rel}`: `{i}` ({k}) non esiste"
                 (warnings if soft else errors).append(msg)
+            elif not_in_game(k, i):
+                avviso_gioco(rel, k, i)
     # 3. Funzioni del datapack (.mcfunction, es. le funzioni di prova in matteo_tweaks:test/…): oggetti dei `give`,
     #    pozioni dentro `potion_contents` e funzioni chiamate. Una funzione non ha condizioni di caricamento: un nome
     #    sbagliato la fa fallire tutta.
@@ -335,12 +369,14 @@ def main(pack_dir: str, inv_dir: str, report: str | None) -> int:
             for kind, i in refs:
                 if not idx.has(kind, i):
                     errors.append(f"`{rel}` riga {n}: `{i}` ({kind}) non esiste")
+                elif not_in_game(kind, i):
+                    avviso_gioco(rel, kind, i, f" riga {n}")
     warnings += [f"Mod non inventariata, nomi non verificabili: {u}" for u in idx.unverified]
     errors, warnings = list(dict.fromkeys(errors)), list(dict.fromkeys(warnings))  # niente doppioni
 
     lines = ["# Controllo dei nomi", "",
              "File generato da `scripts/check_ids.py` sull'inventario di questa cartella. Non modificarlo a mano.", "",
-             f"- Mod nell'inventario: {len(idx.mods)} (mod id), namespace: {len(idx.namespaces)}",
+             f"- Mod nell'inventario: {len(idx.mods)} (mod id), namespace: {len(idx.namespaces)}" + (f"; nomi registrati nel gioco dal dump del {game_date}" if game else "; nessun dump del gioco"),
              f"- File del datapack controllati: {len(files)} ({len(inactive)} inattivi), funzioni: {len(funzioni)}",
              f"- **Errori: {len(errors)}** · avvisi: {len(warnings)}", ""]
     for title, items in (("Errori", errors), ("Avvisi", warnings), ("File inattivi (mod non nel pack)", inactive)):

@@ -1,6 +1,6 @@
 # KubeJS
 
-Aggiornata il 26/10/2026 · stato: **nel pack dalla 0.7.2** (solo per il dump dei dati del gioco) · versione 2101.7.2-build.377, con Rhino 2101.2.7-build.85 e Better Advanced Tooltips 2101.1.0-build.5 · licenza LGPL-3.0 (Rhino MPL-2.0, Better Advanced Tooltips MIT) · fonti: sorgente di KubeJS (ramo `2101`, commit `1b4e9b8` del 18/09/2026), patch di NeoForge (ramo `1.21.1`: `PotionBrewing`, `BrewingStandBlockEntity`) e `BrewingRecipe`, API di Modrinth, inventario del pack. Temi: `../theme-knowledge/pozioni.md`.
+Aggiornata il 29/10/2026 · stato: **nel pack dalla 0.7.2** (solo per il dump dei dati del gioco) · versione 2101.7.2-build.377, con Rhino 2101.2.7-build.85 e Better Advanced Tooltips 2101.1.0-build.5 · licenza LGPL-3.0 (Rhino MPL-2.0, Better Advanced Tooltips MIT) · fonti: sorgente di KubeJS (ramo `2101`, commit `1b4e9b8` del 18/09/2026), patch di NeoForge (ramo `1.21.1`: `PotionBrewing`, `BrewingStandBlockEntity`) e `BrewingRecipe`, API di Modrinth, inventario del pack. Temi: `../theme-knowledge/pozioni.md`.
 
 ## Perché è nel pack
 
@@ -21,6 +21,7 @@ Non per cambiare il gioco: lo script del pack **legge soltanto**. Serve a chiede
 - **Niente `getClass()`** sugli oggetti Java («Cannot find function getClass», prova del 26/10/2026): il nome della classe si ricava dal testo dell'oggetto (`String(oggetto)`, la parte prima di `@`).
 - **Mod caricate**: `Platform.getMods()` dà id e versione di ogni mod (letti da NeoForge).
 - **Alambicco** (patch di NeoForge 1.21.1): `level.potionBrewing()`; `isIngredient(oggetto)`, `hasMix(bottiglia, ingrediente)`, `mix(ingrediente, bottiglia)` (l'ordine è questo) comprendono anche le ricette NeoForge; `getRecipes()` elenca solo quelle NeoForge (`BrewingRecipe` ha `getInput()`, `getIngredient()`, `getOutput()`; le classi proprie delle mod no). Le miscele del gioco base sono in liste private: il dump le trova **provando** ogni ingrediente su ogni pozione.
+- **Registri ed etichette** (formato 2 del dump, 26/10/2026): `registry.keySet()`, `registry.getTagNames()` (flusso di `TagKey`) e `registry.getTag(tagKey)` (`Optional` di `HolderSet.Named`, con `size()` e i `Holder`, `unwrapKey()`), usati anche dal server web di KubeJS (`KubeJSWeb`); `level.getRecipeManager().getRecipes()` dà i `RecipeHolder` (`id()`, `value().getType()`); i registri dinamici (`Registries.LOOT_TABLE`, `Registries.STRUCTURE_SET`) da `level.registryAccess().registryOrThrow(...)`. Verificato nel sorgente e nel gioco (primo dump del formato 2 il 29/10/2026, 0 errori: 31.316 nomi, 31.612 ricette, 4.720 etichette, 16.780 tabelle del bottino, 288 insiemi di strutture; file da 13 MB in tutto).
 - Il jar di KubeJS contiene una copia di Better Advanced Tooltips (build.1); il pack porta la build.5 come mod a sé, e NeoForge tiene la più recente.
 
 ## Da sapere

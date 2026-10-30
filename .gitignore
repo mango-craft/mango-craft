@@ -1,3 +1,13 @@
+# Contesto locale degli agenti (percorsi del PC) e permessi personali di Claude Code:
+# mai nel repository, che è pubblico (ai-agents/README.md). Il modello è contesto-locale.esempio.md
+ai-agents/contesto-locale.md
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Stage: file di lavoro degli agenti per Matteo, restano sul PC (ai-agents/README.md)
+ai-agents/stage/*
+!ai-agents/stage/README.md
+
 # File generati
 dist/
 *.mrpack
@@ -16,5 +26,6 @@ options.txt
 .DS_Store
 Thumbs.db
 
-# Base dati dei vasi: si rigenera con scripts/vasi_db.py
-1.21.1/data/vasi/vasi.sqlite
+# Base dati: si rigenera con scripts/botanypots_db.py (anche i file lasciati da un refresh interrotto)
+*/data/vasi/*.sqlite
+*/data/vasi/*.sqlite-journal

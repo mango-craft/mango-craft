@@ -1,8 +1,8 @@
 # Botany Pots: analisi di terreni e colture
 
-Aggiornata il 24/10/2026 · fonti: sorgente di Botany Pots 21.1.44 (commit `335c997`, lo stesso del rilascio su Modrinth) e di Bookshelf 21.1.81 (`5dead24`), inventario dei 255 jar del pack, datapack `matteo_tweaks` · scheda: `botany-pots.md` · base dati: `scripts/botanypots_db.py` (modello qui sotto) · query: `query/`.
+Aggiornata il 30/10/2026 · fonti: sorgente di Botany Pots 21.1.44 (commit `335c997`, lo stesso del rilascio su Modrinth) e di Bookshelf 21.1.81 (`5dead24`), inventario dei 255 jar del pack, datapack `matteo_tweaks` · scheda: `botany-pots.md` · base dati: `scripts/botanypots_db.py` (modello qui sotto) · query: `query/`.
 
-Documento vivo: raccoglie i fatti verificati sul funzionamento dei vasi, il modello della base dati e le decisioni sulla progressione dei terreni (0.6.1, in corso).
+Documento vivo: raccoglie i fatti verificati sul funzionamento dei vasi, il modello della base dati e le decisioni sulla progressione dei terreni (0.6.1, rilasciata il 24/10).
 
 ## 1. Come funziona il vaso (dal codice)
 

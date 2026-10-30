@@ -3,7 +3,7 @@
 
 Uso: python3 scripts/packwiz_index.py 1.21.1/pack
 
-Serve quando packwiz non è disponibile (es. nello spazio di lavoro di Claude).
+Serve dove packwiz non è installato (es. in locale).
 Nelle GitHub Actions gira comunque `packwiz refresh`, che è la fonte di verità:
 se il risultato differisce, la build lo corregge con un commit automatico.
 """

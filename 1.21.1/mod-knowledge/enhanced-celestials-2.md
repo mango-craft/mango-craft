@@ -1,6 +1,6 @@
 # Enhanced Celestials 2 (Core, Default Lunar Events, Shader Support)
 
-Aggiornata il 19/10/2026 · nel pack dalla 0.5.1 (Core + Default Lunar Events) e 0.5.2 (Shader Support); ruolo e licenza in `../docs/0301-mod.md`, versioni in `../docs/0403-distinta-mod.md` · fonti: i .jar letti con il workflow Esamina mod (il sorgente di EC2 non è pubblico), sorgente di Enhanced Celestials 1, testi dell'editor dell'autore, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/stage/2026-10-18_1.21.1-v0.5.1_enhanced-celestials-2/`. Ricerca: `../lavoro/versioni/v0.5.1.md`.
+Aggiornata il 30/10/2026 · slug dei metafile: `enhanced-celestials-2-core`, `enhanced-celestials-2-default-lunar-events`, `enhanced-celestials-2-shader-support` · nel pack dalla 0.5.1 (Core + Default Lunar Events) e 0.5.2 (Shader Support); ruolo e licenza in `../docs/0301-mod.md`, versioni in `../docs/0403-distinta-mod.md` · fonti: i .jar letti con il workflow Esamina mod (il sorgente di EC2 non è pubblico), sorgente di Enhanced Celestials 1, testi dell'editor dell'autore, log dell'istanza di prova. Materiale grezzo: `../../ai-agents/archivio/2026-10-18_1.21.1-v0.5.1_enhanced-celestials-2/`. Ricerca: `../lavoro/versioni/v0.5.1.md`.
 
 ## Le mod
 
@@ -27,7 +27,7 @@ Stesse lune e stessi valori di EC1 (sangue: mostri ×2,25, comparsa in superfici
 
 ## Il nostro datapack
 
-Tre file in `config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/` con lo stesso percorso di quelli della mod (quindi li sostituiscono): luna di sangue peso **5** invece di 10, mostri **×2** invece di ×2,25, super luna **×4** invece di ×4,5. Scritti da noi con il formato della mod (EC2 è "tutti i diritti riservati": non si copiano i suoi file). Gli effetti nuovi (mostri più vicini, assedio) restano attivi: decisione aperta in `../lavoro/0503-temi-aperti.md`. Documentazione completa nel readme della cartella.
+Tre file in `config/paxi/datapacks/matteo_tweaks/data/enhancedcelestials2defaultlunarevents/enhancedcelestials2core/lunar/` con lo stesso percorso di quelli della mod (quindi li sostituiscono): luna di sangue peso **5** invece di 10, mostri **×2** invece di ×2,25, super luna **×4** invece di ×4,5. Scritti da noi con il formato della mod (EC2 è "tutti i diritti riservati": non si copiano i suoi file). Gli effetti nuovi (mostri più vicini, assedio) restano attivi: decisione aperta in `../lavoro/0503-temi-aperti.md`, sezione 4. Documentazione completa nel readme della cartella.
 
 ## Comandi
 
