@@ -4,14 +4,13 @@ Le tappe del pack verso il mondo vero e lo stato di avanzamento. Documento vivo:
 
 ## Tappe
 
-**Fatte**: le tappe 0–6.3, dalla 0.2.3 alla 0.7.3 (18–30/10/2026), tutte provate e rilasciate come pre-release; la 0.7.1 è uscita dentro la 0.7.2, senza un tag suo.
+**Fatte**: le tappe 0–6.4, dalla 0.2.3 alla 0.7.4 (18–30/10/2026), tutte provate e rilasciate come pre-release; la 0.7.1 è uscita dentro la 0.7.2, senza un tag suo.
 
 | Tappa | Versione | Contenuto | Stato |
 |---|---|---|---|
-| 6.4 | [0.7.4](versioni/v0.7.4.md) | **Piattaforma**: NeoForge 21.1.265 con owo-lib 0.12.15.6 (correzione di B17), Forgified Fabric API 2.3.6 e Puzzles Lib 21.1.66, tutto in un passo; prove di Iris e Sodium (decisa da Matteo il 30/10: versione piccola a sé, subito dopo la 0.7.3) | 🔧 aperta il 30/10 |
 | 7 e oltre | — | Il resto, nella proposta qui sotto: archeologia, eventuali 0.7.x (strumenti a tappe, terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
 
-NeoForge passa da 21.1.259 a 21.1.265 nella 0.7.4, in prova su `dev` (`../docs/0303-note-tecniche.md`). Se una mod nuova ne chiede uno più recente, il controllo dei nomi lo segnala.
+NeoForge è a 21.1.265 dalla 0.7.4 (`../docs/0303-note-tecniche.md`). Se una mod nuova ne chiede uno più recente, il controllo dei nomi lo segnala.
 
 ## Proposta per dopo la 0.7.3 (25/10/2026, in sospeso)
 

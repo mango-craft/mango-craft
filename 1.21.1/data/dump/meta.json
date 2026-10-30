@@ -1,6 +1,6 @@
 {
  "formato": 2,
- "data": "2026-10-30T12:07:31.626Z",
+ "data": "2026-10-30T14:17:22.196Z",
  "minecraft": "1.21.1",
  "kubejs": "2101.7.2-build.377",
  "mod": {
@@ -124,7 +124,7 @@
   "explorerscompass": "1.21.1-3.4.0-neoforge",
   "exposure": "1.9.19",
   "extensibleenums": "21.1.1",
-  "fabric_api": "0.116.15+2.3.5+1.21.1",
+  "fabric_api": "0.116.15+2.3.6+1.21.1",
   "fabric_api_base": "0.4.42+d1308ded19",
   "fabric_api_lookup_api_v1": "1.6.72+6244b11119",
   "fabric_biome_api_v1": "13.0.31+1e62d33c19",
@@ -150,7 +150,7 @@
   "fabric_loot_api_v3": "1.0.3+333dfad919",
   "fabric_message_api_v1": "6.0.14+6a754fce19",
   "fabric_model_loading_api_v1": "2.1.0+6e8f52c719",
-  "fabric_networking_api_v1": "4.3.1+7e3d421f19",
+  "fabric_networking_api_v1": "4.3.1+204211bf19",
   "fabric_object_builder_api_v1": "15.2.1+cc242efd19",
   "fabric_particles_v1": "4.0.2+824f924c19",
   "fabric_recipe_api_v1": "5.0.16+59440bcc19",
@@ -178,7 +178,7 @@
   "farmingforblockheads": "21.1.14",
   "ferritecore": "7.0.3",
   "flywheel": "1.0.6",
-  "forgified_fabric_api": "0.116.15+2.3.5+1.21.1",
+  "forgified_fabric_api": "0.116.15+2.3.6+1.21.1",
   "foundation": "1.0.6",
   "fragmentum": "5.4.0",
   "framework": "0.13.11",
@@ -249,7 +249,7 @@
   "mutantmonsters": "21.1.1",
   "mynethersdelight": "1.10.4.1",
   "naturescompass": "1.21.1-3.4.0-neoforge",
-  "neoforge": "21.1.259",
+  "neoforge": "21.1.265",
   "netherdepthsupgrade": "3.3",
   "netherexp": "2.4.1",
   "netherportalfix": "21.1.1",
@@ -270,7 +270,7 @@
   "octolib": "0.6.2",
   "omnitools": "1.21.1-1.2.1",
   "opentogether": "21.1.2",
-  "owo": "0.12.15.5-beta.1+1.21",
+  "owo": "0.12.15.6-beta.1+1.21",
   "paraglider": "21.1.5",
   "particlerain": "4.0.1",
   "patchouli": "1.21.1-93-NEOFORGE",
@@ -283,7 +283,7 @@
   "prickle": "21.1.11",
   "pride": "1.2.4+1.21.1",
   "psi": "1.21.1-110",
-  "puzzleslib": "21.1.64",
+  "puzzleslib": "21.1.66",
   "reactive": "1.21.1-10.2.1",
   "rechiseled": "1.2.6",
   "regions_unexplored": "0.6.2",
@@ -374,5 +374,5 @@
   "strutture": 288
  },
  "errori": [],
- "datapack_sha256": "d4e676e92446c1643c903d4c01187a8dd02c1c99370cca88b814173b6d6fcb25"
+ "datapack_sha256": "6740e309f4f9e66ba53f18cbc9d63e463b1595f2c78e757446925e1f44772f4b"
 }

@@ -1,6 +1,6 @@
 # NeoForge (piattaforma)
 
-Aggiornata il 30/10/2026 · nel pack: NeoForge **21.1.265** dalla 0.7.4, in prova (prima 21.1.259; la versione usata è nel changelog di ogni versione, `../docs/0401-changelog.md`) · fonti: sorgenti di NeoForge e FancyModLoader (ramo `1.21.1`), registro delle modifiche di NeoForge 21.1.265 e date dei file su maven.neoforged.net, owo-lib, esame dei jar del pack (30/10, mixin sulle classi cambiate), API di Modrinth (30/10), issue su GitHub, log dell'istanza di prova.
+Aggiornata il 30/10/2026 · nel pack: NeoForge **21.1.265** dalla 0.7.4, provata il 30/10 (prima 21.1.259; la versione usata è nel changelog di ogni versione, `../docs/0401-changelog.md`) · fonti: sorgenti di NeoForge e FancyModLoader (ramo `1.21.1`), registro delle modifiche di NeoForge 21.1.265 e date dei file su maven.neoforged.net, owo-lib, esame dei jar del pack (30/10, mixin sulle classi cambiate), API di Modrinth (30/10), issue su GitHub, log dell'istanza di prova.
 
 ## Cose da non rompere
 
