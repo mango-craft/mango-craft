@@ -25,3 +25,12 @@ Il piano è in [piano.md](piano.md). Le voci sono in ordine di tempo; la più re
 - **Altri script:** `modrinth_resolve.py` (provato: `jei@19.70.0.467` trova la versione NeoForge, `2vmfujjt` è un id); `log_confronta.py` (latest contro 27/10: 342 firme nuove invece di 373); `release_notes.py`; `inventory.py` (verificato prima che tutti i 16 registri di etichette vanilla si scarichino); `vasi_verifica_jar.py` (21 terreni sostituiti in più); generatore dei vasi che cancella solo i file di vaso fuori dalla nostra cartella; `esamina.py` legge i jar con le funzioni dell'inventario (esame delle due mod della 0.7.3 identico).
 - **Tolti:** `scripts/import_mrpack.py`, `1.21.1/data/modrinth-progetti.json`, `1.21.1/data/vasi/copertura.json` (nella storia: `90b7e8d`).
 - **Prove:** `shellcheck` pulito, tutti gli script compilano, controllo locale verde in 2,7 s.
+
+## 30/10/2026 — Contesto più leggero, versione 0.7.3
+
+- **Agente:** claude-code (claude-opus-5-5)
+- **`AGENTS.md`** riscritto con la stessa numerazione delle sezioni (gli altri documenti le citano): tabella dei livelli con il rimando ai README, schede con la regola nuova del nome, codici in una tabella più corta, sezione 5 a punti (istanze in `0101`, procedura di rilascio in `0201`), sezione 6 senza i passi che fa il workflow, sezione 7 con le eccezioni alla condizione di caricamento e la regola dei readme, sezione 8 senza ciò che sta in `ai-agents/README.md` e `0201`. Da 25.500 a 19.500 caratteri. La lettura della revisione aperta passa da `CLAUDE.md` ad `AGENTS.md`, che vale per tutti gli agenti.
+- **`CLAUDE.md`**: restano l'import e la memoria automatica (il resto ripeteva `AGENTS.md`).
+- **`0501`**: le 15 righe delle tappe fatte diventano una frase (le ripetono changelog e indice delle versioni); tappa 6.4 per owo-lib e NeoForge, numero da decidere; la 0.7.4 ha il contenuto deciso il 24/10 e il numero che dipende dalla 6.4. Da 11.100 a 4.800 caratteri.
+- **`0303`**: una regola e un rimando per voce; vasi, mercato e lista nera in una voce sola («file generati»), le eccezioni alla condizione di caricamento in una. Rimessi dopo una rilettura tre dettagli che avevo tolto e sono regole (bacinella senza filtro, condizioni valutate sui nomi del gioco, «config estesa» di Relics spenta). Da 8.100 a 6.400 caratteri.
+- **`pack.toml`** a 0.7.3 (regola nuova: la versione si alza all'apertura); l'indice non cambia.

@@ -35,9 +35,9 @@ Il 30/10/2026 Matteo chiede di rianalizzare struttura, documentazione e codice e
    - Tolti `import_mrpack.py`, `data/modrinth-progetti.json`, `data/vasi/copertura.json` (restano nella storia di git).
    - `.gitattributes`, `.gitignore`.
 3. [ ] **Documenti del pack** (`1.21.1/`, `README.md`, `docs/0001`, `docs/0101`): i rilievi 27–50 del rapporto: script e file citati che non esistono più, Regions Unexplored, B47, librerie in `0301` e `0403`, conti dei vasi, README del datapack, `0302`, tema accessori, `0503` ripulito, `0601`, legenda del changelog, owo-lib «dipendenza» e non «incorporata», memoria a 12 GB nel `README.md`, fatti di Sparse Structures.
-4. [ ] **Contesto più leggero**: tappe fatte di `0501` in una riga; `AGENTS.md` sezioni 4, 5, 7, 8 senza ripetere i README; `CLAUDE.md` con le sole cose per Claude; `0303` con una regola e un rimando per voce; decisioni aperte solo in `0503`.
+4. ✅ **Contesto più leggero**: tappe fatte di `0501` in una riga; `AGENTS.md` sezioni 4, 5, 7, 8 senza ripetere i README (limite nel commento in testa: 20.000 caratteri invece di 200 righe); `CLAUDE.md` con le sole cose per Claude; `0303` con una regola e un rimando per voce; decisioni aperte solo in `0503`. Caricati a ogni sessione: da 48.700 a 33.300 caratteri.
 5. ✅ **Permessi** in `.claude/settings.json`: chiedono conferma `git clean`, `git reset --hard`, `git checkout --`, `git restore`, `git branch -D`, `git stash drop` e `clear`.
-6. [ ] **Versione**: `pack.toml` a 0.7.3; la versione di owo-lib e NeoForge in `0501` (numero da Matteo).
+6. ✅ **Versione**: `pack.toml` a 0.7.3; owo-lib e NeoForge come tappa 6.4 in `0501`, con il numero da decidere.
 
 ## 4. Prove
 
