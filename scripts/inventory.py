@@ -9,6 +9,8 @@ Per ogni metafile (*.pw.toml) che punta a un .jar:
   (da neoforge.mods.toml), oggetti e blocchi con il nome inglese, entità, liquidi,
   effetti, biomi, tutti i dati (ricette, tabelle del bottino, strutture, tag con il
   contenuto…), i tipi di ricetta usati, le ricette di Botany Pots, le voci e i listini (preset) del mercato di Farming for Blockheads;
+- il contenuto delle tabelle del bottino (tranne quelle dei blocchi: solo il nome) e dei modificatori, in forma
+  compatta (`loot_tables`, `loot_modifiers`, `global_loot_modifiers`: le liste attive di NeoForge);
 - guarda anche dentro i .jar incorporati (META-INF/jarjar).
 I file già inventariati con lo stesso hash non vengono riscaricati; quelli di mod
 tolte dal pack vengono cancellati.
@@ -32,11 +34,13 @@ from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+from comune import GLOBAL_LOOT_MODIFIERS, LOOT_NAME_ONLY, loot_modifier, loot_table
+
 USER_AGENT = "mango-craft-inventory (github.com/mango-craft/mango-craft)"
 MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/{mc}-summary/"
 NEOFORGE_JAR = ("https://maven.neoforged.net/releases/net/neoforged/neoforge/"
                 "{v}/neoforge-{v}-universal.jar")
-FORMAT = 7  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti; 5: nomi veri delle pozioni; 6: descrizioni degli effetti di Corail Tombstone; 7: voci del vecchio mods.toml segnate "legacy")
+FORMAT = 8  # cambiare se cambia il formato dei file: forza un nuovo inventario (3: voci e preset del mercato di FFB; 4: pozioni e descrizioni degli effetti; 5: nomi veri delle pozioni; 6: descrizioni degli effetti di Corail Tombstone; 7: voci del vecchio mods.toml segnate "legacy"; 8: contenuto delle tabelle del bottino e dei modificatori)
 
 # Chiavi dei file di lingua -> campo dell'inventario
 LANG_KINDS = {"item": "items", "block": "blocks", "entity": "entities",
@@ -95,8 +99,6 @@ def potion_ids(name: str, consts: bytes) -> tuple[list[str], bool]:
 COUNT_ONLY = {"advancement"}
 # Registri di Minecraft che non servono ai controlli (risorse grafiche e sonore)
 VANILLA_SKIP = {"model", "texture", "block_definition", "atlas", "font", "sound_event"}
-
-
 def get(url: str, timeout: int = 180) -> bytes:
     last = None
     for _ in range(3):
@@ -160,6 +162,9 @@ class Inv:
         self.botanypots: list[dict] = []
         self.market: list[dict] = []          # voci del mercato di Farming for Blockheads (ricette farmingforblockheads:market)
         self.market_presets: list[dict] = []  # listini del mercato (data/<ns>/market_presets/*.json)
+        self.loot_tables: dict[str, dict] = {}     # tabelle del bottino in forma compatta (loot_table), tranne i blocchi
+        self.loot_modifiers: dict[str, dict] = {}  # modificatori del bottino (loot_modifiers)
+        self.global_loot_modifiers: list[dict] = []  # data/neoforge/loot_modifiers/global_loot_modifiers.json, uno per jar
         self.nested: list[str] = []
         self.potions_deduced: list[str] = []  # pozioni il cui nome è dedotto dalla traduzione (da confermare in gioco)
         self.problems: list[str] = []
@@ -177,6 +182,9 @@ class Inv:
             "botanypots": sorted(self.botanypots, key=lambda r: r["id"]),
             "market": sorted(self.market, key=lambda r: r["id"]),
             "market_presets": sorted(self.market_presets, key=lambda r: r["id"]),
+            "loot_tables": dict(sorted(self.loot_tables.items())),
+            "loot_modifiers": dict(sorted(self.loot_modifiers.items())),
+            "global_loot_modifiers": self.global_loot_modifiers,
             "potions_deduced": sorted(self.potions_deduced),
             "problems": self.problems,
         }
@@ -293,14 +301,26 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                 inv.counts[cat] += 1
                 continue
             inv.data[cat].add(rid)
-            if not n.endswith(".json") or not (cat.startswith("tags/") or cat in ("recipe", "market_presets")):
+            loot = (cat == "loot_table" and not path.startswith(LOOT_NAME_ONLY)) or cat == "loot_modifiers"
+            if not n.endswith(".json") or not (cat.startswith("tags/") or cat in ("recipe", "market_presets") or loot):
                 continue
             try:
                 d = json.loads(z.read(n).decode("utf-8-sig"))
             except Exception:
                 inv.problems.append(f"{n}: JSON non valido")
                 continue
-            if cat.startswith("tags/"):
+            if loot:
+                if not isinstance(d, dict):
+                    inv.problems.append(f"{n}: non è un oggetto JSON")
+                elif cat == "loot_table":
+                    inv.loot_tables[rid] = loot_table(d)
+                elif rid == GLOBAL_LOOT_MODIFIERS:
+                    inv.global_loot_modifiers.append({**({"nested": where} if where else {}),
+                                                      "replace": bool(d.get("replace", False)),
+                                                      "entries": [str(x) for x in d.get("entries") or []]})
+                else:
+                    inv.loot_modifiers[rid] = loot_modifier(d)
+            elif cat.startswith("tags/"):
                 prev = inv.tags[cat].get(rid, [])
                 inv.tags[cat][rid] = prev + [v for v in tag_values(d) if v not in prev]
             elif cat == "market_presets" and isinstance(d, dict):
@@ -412,6 +432,10 @@ def inventory_minecraft(mc: str, out: Path) -> None:
             inv.counts[reg] = len(ids)
         elif not reg.startswith("experiment/") and reg not in VANILLA_SKIP:
             inv.data[reg].update(ids)
+    tables = json.loads(get(base + "data/loot_table/data.min.json"))
+    for n, d in tables.items():
+        if not n.startswith(LOOT_NAME_ONLY) and isinstance(d, dict):
+            inv.loot_tables[f"minecraft:{n}"] = loot_table(d)
     write_json(out, {"format": FORMAT, "status": "ok", "version": mc, **inv.to_json()})
 
 

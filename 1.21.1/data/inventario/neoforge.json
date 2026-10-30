@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "version": "21.1.265",
  "mods": [
@@ -3861,6 +3861,14 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": []
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

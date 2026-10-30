@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Deeper and Darker",
  "file": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
@@ -2638,6 +2638,1423 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "deeperdarker:chests/ancient_temple_apex": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sculk",
+       "weight": 41,
+       "count": {
+        "min": 5.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:sculk_bone",
+       "weight": 40,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:echo_shard",
+       "weight": 40,
+       "count": {
+        "min": 5.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:grime_brick",
+       "weight": 37,
+       "count": {
+        "min": 7.0,
+        "max": 13.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:grime_ball",
+       "weight": 34,
+       "count": {
+        "min": 8.0,
+        "max": 18.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tnt",
+       "weight": 30,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 30,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 27,
+       "count": {
+        "min": 4.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:quartz",
+       "weight": 22,
+       "count": {
+        "min": 5.0,
+        "max": 13.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 18,
+       "count": {
+        "min": 3.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:disc_fragment_5",
+       "weight": 17,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 17,
+       "count": {
+        "min": 7.0,
+        "max": 19.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 17,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 15,
+       "count": {
+        "min": 3.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:crystallized_amber",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_sensor",
+       "weight": 12,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_catalyst",
+       "weight": 12,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:resonarium_upgrade_smithing_template",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_leggings",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:warden_carapace",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:chests/ancient_temple_basement": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sculk",
+       "weight": 32,
+       "count": {
+        "min": 6.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:soul_soil",
+       "weight": 31,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:soul_dust",
+       "weight": 31,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:echo_shard",
+       "weight": 30,
+       "count": {
+        "min": 4.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:grime_brick",
+       "weight": 28,
+       "count": {
+        "min": 5.0,
+        "max": 13.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 26
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:sculk_bone",
+       "weight": 25,
+       "count": {
+        "min": 2.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 20,
+       "count": {
+        "min": 9.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:crystallized_amber",
+       "weight": 18,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 16,
+       "count": {
+        "min": 7.0,
+        "max": 14.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 13,
+       "count": {
+        "min": 7.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 10,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 8,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_otherside",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:warden_carapace",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 10,
+       "functions": [
+        "set_potion=minecraft:strong_strength"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 7,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_shovel",
+       "weight": 7,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_hoe",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_leggings",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_axe",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:chests/ancient_temple_fountain": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 33,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 31,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobblestone",
+       "weight": 28,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk",
+       "weight": 25,
+       "count": {
+        "min": 3.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 16,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 16,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 14,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_copper",
+       "weight": 13,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:soul_dust",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 9,
+       "count": {
+        "min": 5.0,
+        "max": 17.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:quartz",
+       "weight": 9,
+       "count": {
+        "min": 1.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 8,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_sensor",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_catalyst",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:soul_crystal",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:chests/ancient_temple_secret": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 97,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:echo_shard",
+       "weight": 29,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 17
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:warden_upgrade_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:sculk_transmitter",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:chests/ancient_temple_storage": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:sculk_stone",
+       "weight": 16,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobblestone",
+       "weight": 16,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:echo_log",
+       "weight": 13,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 11,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 10,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron",
+       "weight": 8,
+       "count": {
+        "min": 1.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_copper",
+       "weight": 8,
+       "count": {
+        "min": 1.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 7,
+       "count": {
+        "min": 1.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:chests/crystallized_amber": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:quartz",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:sculk_bone",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:soul_dust",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_axe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:brittle_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:temple_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:ward_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:wayfinder_gloomsherd",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/anger_pot": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:brittle_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:dark_heart_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:listener_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:snapper_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:temple_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:transmission_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:ward_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:wayfinder_gloomsherd",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/angler_fish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:angler_fish",
+       "weight": 1,
+       "functions": [
+        "furnace_smelt"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/fear_pot": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:brittle_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:dark_heart_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:listener_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:snapper_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:temple_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:transmission_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:ward_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:wayfinder_gloomsherd",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/sculk_centipede": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/sculk_leech": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:soul_dust",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/sculk_snapper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:soul_dust",
+       "weight": 1,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/shattered": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:sculk_bone",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/shriek_worm": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "deeperdarker:entities/sludge": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:resonarium",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/sorrow_pot": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:brittle_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:dark_heart_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:listener_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:snapper_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:temple_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:transmission_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:ward_gloomsherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deeperdarker:wayfinder_gloomsherd",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deeperdarker:entities/stalker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deeperdarker:soul_crystal",
+       "weight": 1,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "deeperdarker:resonarium_upgrade_from_ancient_city": {
+   "type": "deeperdarker:add",
+   "targets": [
+    "minecraft:chests/ancient_city"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+     "random_chance": 0.44721
+    }
+   ],
+   "params": {
+    "item": "deeperdarker:resonarium_upgrade_smithing_template",
+    "max": 1,
+    "min": 1
+   },
+   "refs": [
+    "deeperdarker:resonarium_upgrade_smithing_template"
+   ]
+  },
+  "deeperdarker:resonarium_upgrade_from_common_trial_chambers": {
+   "type": "deeperdarker:add",
+   "targets": [
+    "minecraft:chests/trial_chambers/reward_common"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/trial_chambers/reward_common"
+    },
+    {
+     "random_chance": 0.28285
+    }
+   ],
+   "params": {
+    "item": "deeperdarker:resonarium_upgrade_smithing_template",
+    "max": 1,
+    "min": 1
+   },
+   "refs": [
+    "deeperdarker:resonarium_upgrade_smithing_template"
+   ]
+  },
+  "deeperdarker:resonarium_upgrade_from_stronghold_corridor": {
+   "type": "deeperdarker:add",
+   "targets": [
+    "minecraft:chests/stronghold_corridor"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/stronghold_corridor"
+    },
+    {
+     "random_chance": 0.31623
+    }
+   ],
+   "params": {
+    "item": "deeperdarker:resonarium_upgrade_smithing_template",
+    "max": 1,
+    "min": 1
+   },
+   "refs": [
+    "deeperdarker:resonarium_upgrade_smithing_template"
+   ]
+  },
+  "deeperdarker:warden_carapace_from_ancient_city": {
+   "type": "deeperdarker:add",
+   "targets": [
+    "minecraft:chests/ancient_city"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+     "random_chance": 0.2
+    }
+   ],
+   "params": {
+    "item": "deeperdarker:warden_carapace",
+    "max": 1,
+    "min": 1
+   },
+   "refs": [
+    "deeperdarker:warden_carapace"
+   ]
+  },
+  "deeperdarker:warden_carapace_from_warden": {
+   "type": "deeperdarker:add",
+   "targets": [
+    "minecraft:entities/warden"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:entities/warden"
+    }
+   ],
+   "params": {
+    "item": "deeperdarker:warden_carapace",
+    "max": 3,
+    "min": 1
+   },
+   "refs": [
+    "deeperdarker:warden_carapace"
+   ]
+  },
+  "deeperdarker:warden_heart_from_warden": {
+   "type": "deeperdarker:add",
+   "targets": [
+    "minecraft:entities/warden"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:entities/warden"
+    }
+   ],
+   "params": {
+    "item": "deeperdarker:heart_of_the_deep",
+    "max": 1,
+    "min": 1
+   },
+   "refs": [
+    "deeperdarker:heart_of_the_deep"
+   ]
+  },
+  "deeperdarker:warden_upgrade_from_ancient_city": {
+   "type": "deeperdarker:add",
+   "targets": [
+    "minecraft:chests/ancient_city"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+     "random_chance": 0.44721
+    }
+   ],
+   "params": {
+    "item": "deeperdarker:warden_upgrade_smithing_template",
+    "max": 1,
+    "min": 1
+   },
+   "refs": [
+    "deeperdarker:warden_upgrade_smithing_template"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "deeperdarker:warden_carapace_from_ancient_city",
+    "deeperdarker:warden_carapace_from_warden",
+    "deeperdarker:warden_heart_from_warden",
+    "deeperdarker:resonarium_upgrade_from_ancient_city",
+    "deeperdarker:resonarium_upgrade_from_common_trial_chambers",
+    "deeperdarker:resonarium_upgrade_from_stronghold_corridor",
+    "deeperdarker:warden_upgrade_from_ancient_city"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

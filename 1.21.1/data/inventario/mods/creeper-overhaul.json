@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Creeper Overhaul",
  "file": "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
@@ -206,6 +206,873 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "creeperoverhaul:entities/badlands_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 6.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/bamboo_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bamboo",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/beach_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sand",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_shard",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:seagrass",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.005
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/birch_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:birch_log",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/cave_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.01
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/dark_oak_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:dark_oak_log",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/desert_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cactus",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/dripstone_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pointed_dripstone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/hills_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/jungle_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/mushroom_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/ocean_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/savannah_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:acacia_log",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/snowy_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:white_wool",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/spruce_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spruce_log",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "creeperoverhaul:entities/swamp_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "tag",
+       "id": "minecraft:creeper_drop_music_discs",
+       "expand": true,
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

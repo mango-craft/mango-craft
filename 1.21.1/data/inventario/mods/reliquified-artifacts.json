@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Reliquified Artifacts",
  "file": "reliquified_artifacts-1.21.1-1.0.9.jar",
@@ -253,6 +253,63 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "artifacts:entities/mimic": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": []
+    }
+   ]
+  },
+  "artifacts:entity_equipment/blaze": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/drowned": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/enderman": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/husk": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/piglin": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/piglin_brute": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/skeleton": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/stray": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/wither_skeleton": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/zombie": {
+   "type": null,
+   "pools": []
+  },
+  "artifacts:entity_equipment/zombified_piglin": {
+   "type": null,
+   "pools": []
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

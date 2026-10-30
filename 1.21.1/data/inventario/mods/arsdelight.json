@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Ars Delight (Flavors & Delight)",
  "file": "arsdelight-2.2.5.jar",
@@ -750,6 +750,62 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "arsdelight:scavenge_chimera_horn": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "arsdelight:chimera_horn"
+   },
+   "refs": [
+    "arsdelight:chimera_horn"
+   ]
+  },
+  "arsdelight:scavenge_chimera_meat": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 4,
+    "item": "arsdelight:chimera_meat"
+   },
+   "refs": [
+    "arsdelight:chimera_meat"
+   ]
+  },
+  "arsdelight:scavenge_wilden_hunter_meat": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "arsdelight:wilden_meat"
+   },
+   "refs": [
+    "arsdelight:wilden_meat"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "arsdelight:scavenge_chimera_meat",
+    "arsdelight:scavenge_wilden_hunter_meat",
+    "arsdelight:scavenge_chimera_horn"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

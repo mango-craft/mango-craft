@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Moog's End Structures (MES)",
  "file": "MoogsEndStructures-universal-1.21-2.1.1.jar",
@@ -308,6 +308,1168 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "mes:archaeology/end_sand": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:end_stone",
+       "weight": 35
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:popped_chorus_fruit",
+       "weight": 30
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 30
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purpur_block",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skull_pottery_sherd",
+       "weight": 12
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mourner_pottery_sherd",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:danger_pottery_sherd",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:howl_pottery_sherd",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 6
+      }
+     ]
+    }
+   ]
+  },
+  "mes:end_common": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 20,
+       "count": {
+        "min": 3,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:popped_chorus_fruit",
+       "weight": 12,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 20,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 15,
+       "count": {
+        "min": 3,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_crystal",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 6,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "mes:end_rare": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4,
+      "max": 7
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 12,
+       "count": {
+        "min": 3,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 12,
+       "count": {
+        "min": 6,
+        "max": 16
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_crystal",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crying_obsidian",
+       "weight": 8,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 8,
+       "count": {
+        "min": 4,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 10,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:netherite_scrap",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_block",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_block",
+       "weight": 6
+      },
+      {
+       "kind": "empty",
+       "weight": 50
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spire_armor_trim_smithing_template",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spire_armor_trim_smithing_template",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dragon_breath",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 68
+      }
+     ]
+    }
+   ]
+  },
+  "mes:end_uncommon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 15,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 15,
+       "count": {
+        "min": 4,
+        "max": 12
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 15,
+       "count": {
+        "min": 3,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_crystal",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crying_obsidian",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 10,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 0,
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spire_armor_trim_smithing_template",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dragon_breath",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 87
+      }
+     ]
+    }
+   ]
+  },
+  "mes:mega_ship_barrel": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2,
+      "max": 6
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 20,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_stone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purpur_block",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 0,
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 100
+      },
+      {
+       "kind": "empty",
+       "weight": 200
+      }
+     ]
+    }
+   ]
+  },
+  "mes:mega_ship_barrel_empty": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_stone",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "mes:mega_ship_barrel_empty_rare": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 30,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purpur_block",
+       "weight": 15,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_rod",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "mes:mega_ship_crate": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 20,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_crystal",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 30,
+       "count": {
+        "min": 5,
+        "max": 12
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 10,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crying_obsidian",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 0,
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_stone",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 16
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 100
+      }
+     ]
+    }
+   ]
+  },
+  "mes:mega_ship_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4,
+      "max": 8
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_leggings",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_box",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dragon_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 10,
+       "count": {
+        "min": 8,
+        "max": 16
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_crystal",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:netherite_ingot",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_block",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nether_star",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 31
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spire_armor_trim_smithing_template",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:silence_armor_trim_smithing_template",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ward_armor_trim_smithing_template",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_stone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 16
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purpur_block",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 16
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 150
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

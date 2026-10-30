@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Relics",
  "file": "relics-1.21.1-0.12.9.jar",
@@ -342,6 +342,32 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "relics:greed_loot": {
+   "type": "relics:greed_loot",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  },
+  "relics:relic_loot": {
+   "type": "relics:relic_loot",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "relics:relic_loot",
+    "relics:greed_loot"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

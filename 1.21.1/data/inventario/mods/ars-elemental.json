@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Ars Elemental",
  "file": "ars_elemental-1.21.1-0.7.10.4.jar",
@@ -1744,6 +1744,9 @@
  ],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [
   "ars_elemental:enderference_potion",
   "ars_elemental:enderference_potion_long",

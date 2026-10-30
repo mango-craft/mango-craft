@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "YUNG's Better Ocean Monuments",
  "file": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
@@ -163,6 +163,54 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "betteroceanmonuments:chests/upper_side_chamber": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 8.0,
+      "max": 10.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_shard",
+       "weight": 1,
+       "count": {
+        "min": 10.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_crystals",
+       "weight": 1,
+       "count": {
+        "min": 10.0,
+        "max": 16.0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

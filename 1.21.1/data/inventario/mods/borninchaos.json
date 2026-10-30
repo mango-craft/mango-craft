@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Born in Chaos",
  "file": "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar",
@@ -2214,6 +2214,5160 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "born_in_chaos_v1:entities/baby_spider": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/barrel_zombie": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:barrel",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:kelp",
+       "weight": 60,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:seagrass",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sea_pickle",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:turtle_egg",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_coral",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:horn_coral",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tube_coral",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ink_sac",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_ink_sac",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 30,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_copper",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 35,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_shard",
+       "weight": 40,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_crystals",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:turtle_scute",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wooden_shovel",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clay_ball",
+       "weight": 40,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar_cane",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 30,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tropical_fish",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pufferfish",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:rotten_fish",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:spiny_shell",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:river_mint",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/bloody_gadfly": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:corpse_maggot",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:bloody_gadfly_eye",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/bone_imp": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fire_dust",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/bone_imp_2": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fire_dust",
+       "weight": 45,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/bonescaller": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:staff_of_magic_arrows",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:orbofthe_summoner",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:spiritual_dust",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/bonescaller_not_despawn": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:staff_of_magic_arrows",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:orbofthe_summoner",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/corpse_fish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:rotten_fish",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 45,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/corpse_fly": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:corpse_maggot",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/dark_vortex": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_rod",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/decrepit_skeleton": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/diamond_termite": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:diamond_termite_shard",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/dire_hound_leader": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 100,
+       "count": {
+        "min": 4,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:gnawed_bones",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fangofthe_hound_leader",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 3
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/door_knight": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 3
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mesh_door",
+       "weight": 11,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:trident_hayfork",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 60,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/door_knight_not_despawn": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mesh_door",
+       "weight": 11,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:trident_hayfork",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 60,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/dread_hound": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:gnawed_bones",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/dread_hound_not_despawn": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:gnawed_bones",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/fallen_chaos_knight": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 100,
+       "count": {
+        "min": 4,
+        "max": 7
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_upgrade",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/firelight": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fire_dust",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/glutton_fish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:sea_terror_stomach",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:sea_terror_eye",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:rotten_fish",
+       "weight": 100,
+       "count": {
+        "min": 8,
+        "max": 12
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/infernal_spirit": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:infernal_evil_pumpkin",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_infernal_ember",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/krampus": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:krampus_horn",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:krampuss_bag",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:permafrost_shard",
+       "weight": 100,
+       "count": {
+        "min": 7,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:birch_branches",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 100,
+       "count": {
+        "min": 5,
+        "max": 10
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 100,
+       "count": {
+        "min": 7,
+        "max": 10
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/krampus_henchman": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:permafrost_shard",
+       "weight": 14,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/lifestealer_true_form": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:lifestealer_skull",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "bonus_rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 100,
+       "count": {
+        "min": 7,
+        "max": 10
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:lifestealer_bone",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 5
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/lord_pumpkinhead_head": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:soulbane",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pumpkinhandgun",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:magical_holiday_candy",
+       "weight": 100,
+       "count": {
+        "min": 25,
+        "max": 50
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:lord_pumpkinheads_lamp",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:lord_pumpkinheads_hat_helmet",
+       "weight": 19,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pumpkin_bullet",
+       "weight": 100,
+       "count": {
+        "min": 20,
+        "max": 30
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:bagof_candy",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_infernal_ember",
+       "weight": 1,
+       "count": {
+        "min": 15,
+        "max": 30
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/maggot": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:corpse_maggot",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/missionary_raider": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_power",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_resistance",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_stealth",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_endurance",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_fury",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:missionary_hat_helmet",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:orbofthe_summoner",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 100,
+       "count": {
+        "min": 7,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/missioner": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_power",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_resistance",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_stealth",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_endurance",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:charmof_fury",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:orbofthe_summoner",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:missionary_hat_helmet",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 100,
+       "count": {
+        "min": 7,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/mother_spider": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:spider_mandible",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 100,
+       "count": {
+        "min": 8,
+        "max": 11
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/mr_pumpkin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_infernal_ember",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/nightmare_stalker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:nightmare_claw",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 40,
+       "count": {
+        "min": 4,
+        "max": 7
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:nightmare_stalker_skull",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 100,
+       "count": {
+        "min": 4,
+        "max": 6
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/phantom_creeper_copy": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:phantom_powder",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/pumpkin_bruiser": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:rotten_infernal_pumpkin",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_infernal_ember",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:holiday_candy",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mint_candy",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mint_ice_cream",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:caramel_pepper",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:gummy_vampire_teeth",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:chocolate_heart",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:coffee_candy",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/pumpkin_dunce": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:holiday_candy",
+       "weight": 35,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mint_candy",
+       "weight": 35,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mint_ice_cream",
+       "weight": 35,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:caramel_pepper",
+       "weight": 35,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:gummy_vampire_teeth",
+       "weight": 35,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:chocolate_heart",
+       "weight": 35,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:coffee_candy",
+       "weight": 35,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_infernal_ember",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/pumpkin_spirit": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:hay_block",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:carved_pumpkin",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/pumpkinhead": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:soul_cutlass",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:holiday_candy",
+       "weight": 100,
+       "count": {
+        "min": 16,
+        "max": 32
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:serpumpkinhead_m",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fel_lamp",
+       "weight": 45,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pumpkinstaffa",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:bagof_candy",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_infernal_ember",
+       "weight": 100,
+       "count": {
+        "min": 6,
+        "max": 20
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/restless_spirit": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chain",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/seared_spirit": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:charcoal",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:flaming_evil_pumpkin",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 80,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fire_dust",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/seared_spirit_not_despawn": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:charcoal",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:flaming_evil_pumpkin",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 80,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fire_dust",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/senor_pumpkin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:holiday_candy",
+       "weight": 25,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:caramel_pepper",
+       "weight": 25,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:gummy_vampire_teeth",
+       "weight": 25,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:chocolate_heart",
+       "weight": 25,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:coffee_candy",
+       "weight": 25,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_infernal_ember",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mint_candy",
+       "weight": 25,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/skeleton_demoman": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:damned_demomans_hat_helmet",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/skeleton_thrasher": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 100,
+       "count": {
+        "min": 4,
+        "max": 7
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:skullbreaker_hammer",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 30,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/skeleton_thrasher_not_despawn": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 100,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:skullbreaker_hammer",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 30,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/spirit_guide": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:marigolds",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:spiritual_guide_sombrero_helmet",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/spiritof_chaos": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:ethereal_spirit",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/supreme_bonescaller_stage_2": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:staff_of_magic_arrows",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:death_totem",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:orbofthe_summoner",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:spiritual_dust",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/swarmer": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:corpse_maggot",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 80,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/thornshell_crab": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:spiny_shell",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:rotten_fish",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/zombie_bruiser": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_log",
+       "weight": 60,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/zombie_clown": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:intoxicating_decoction",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:intoxicating_dagger",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 9,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:stimulating_decoction",
+       "weight": 60,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/zombie_clown_not_despawn": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:intoxicating_decoction",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:intoxicating_dagger",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 9,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:stimulating_decoction",
+       "weight": 60,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/zombie_fisherman": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:rotten_fish",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fishing_rod",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pufferfish",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:river_mint",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "born_in_chaos_v1:entities/zombie_lumberjack": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 100,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:oak_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spruce_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:birch_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:jungle_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:acacia_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dark_oak_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mangrove_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cherry_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 100,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:wood_splitter_axe",
+       "weight": 7,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/basic_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 6
+     },
+     "bonus_rolls": {
+      "min": 0,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 7,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoked_flesh",
+       "weight": 50,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 30,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 36,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 40,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_horse_armor",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 40,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 9,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 60,
+       "count": {
+        "min": 3,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 30,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 16,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 40,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_upgrade",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/chest_level_1": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4,
+      "max": 8
+     },
+     "bonus_rolls": {
+      "min": 1,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoked_flesh",
+       "weight": 50,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 7,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 35,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 45,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 35,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 23,
+       "count": {
+        "min": 3,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 7,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 40,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 25,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 40,
+       "count": {
+        "min": 7,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 70,
+       "count": {
+        "min": 4,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 60,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 70,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_upgrade",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/chest_level_2": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5,
+      "max": 9
+     },
+     "bonus_rolls": {
+      "min": 1,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 30,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 11,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 10,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:nightmare_claw",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 50,
+       "count": {
+        "min": 4,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 50,
+       "count": {
+        "min": 3,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 60,
+       "count": {
+        "min": 3,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_axe",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 13,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 45,
+       "count": {
+        "min": 4,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 35,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 17,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:anluka_doors",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 14,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_upgrade",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/chest_level_3": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5,
+      "max": 9
+     },
+     "bonus_rolls": {
+      "min": 1,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 50,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:nightmare_claw",
+       "weight": 7,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 40,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:death_totem",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:nightmare_scythe",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:great_reaper_axe",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_ritual_dagger",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:skullbreaker_hammer",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 70,
+       "count": {
+        "min": 7,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 60,
+       "count": {
+        "min": 6,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 35,
+       "count": {
+        "min": 6,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 24,
+       "count": {
+        "min": 2,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_11",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:anluka_doors",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_upgrade",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_rod",
+       "weight": 17,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/farm_drop": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 9
+     },
+     "bonus_rolls": {
+      "min": 0,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 60,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 12,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 35,
+       "count": {
+        "min": 6,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 35,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 35,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 25,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 50,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 9,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:egg",
+       "weight": 30,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 25,
+       "count": {
+        "min": 5,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_hide",
+       "weight": 36,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot",
+       "weight": 35,
+       "count": {
+        "min": 5,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:honeycomb",
+       "weight": 20,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sunflower",
+       "weight": 23,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 24,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_hoe",
+       "weight": 7,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 30,
+       "count": {
+        "min": 3,
+        "max": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/firewell_d": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5,
+      "max": 10
+     },
+     "bonus_rolls": {
+      "min": 0,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 7,
+       "count": {
+        "min": 0,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pileof_dark_metal",
+       "weight": 4,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:fire_dust",
+       "weight": 100,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:shattered_skull",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:seedof_chaos",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magma_block",
+       "weight": 60,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 35,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 27,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 12,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 70,
+       "count": {
+        "min": 4,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_powder",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magma_cream",
+       "weight": 35,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_rod",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 80,
+       "count": {
+        "min": 5,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_charge",
+       "weight": 30,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal_block",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoldering_scorched_log",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:anluka_doors",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_upgrade",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/shater": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 6
+     },
+     "bonus_rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:smoked_flesh",
+       "weight": 60,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:holiday_candy",
+       "weight": 35,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:pieceofdarkmetal",
+       "weight": 7,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_skin",
+       "weight": 17,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:intoxicating_decoction",
+       "weight": 45,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:serpumpkinhead_m",
+       "weight": 2,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:cultivated_pumpkin",
+       "weight": 50,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_hide",
+       "weight": 30,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 35,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_berries",
+       "weight": 45,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_slice",
+       "weight": 25,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 36,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar",
+       "weight": 20,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 3,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 5,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cake",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monster_flesh",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:dark_upgrade",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:intoxicating_dagger",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mint_candy",
+       "weight": 35,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:mint_ice_cream",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:transmuting_elixir",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:caramel_pepper",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:gummy_vampire_teeth",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:chocolate_heart",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:coffee_candy",
+       "weight": 25,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:killer_rabbit_ears_helmet",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:rotten_easter_egg",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:spiritual_easter_egg",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "born_in_chaos_v1:monstrous_easter_egg",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

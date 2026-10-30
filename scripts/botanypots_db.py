@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Base dati dei vasi di Botany Pots (terreni, colture, tag e le nostre scelte di rarità), del mercato di Farming for
-Blockheads e delle pozioni, in SQLite.
+Blockheads, delle pozioni e del bottino, in SQLite.
 
 Uso:  python3 scripts/botanypots_db.py <cartella versione> refresh
       python3 scripts/botanypots_db.py <cartella versione> query "SELECT ..."
@@ -31,6 +31,9 @@ Tabelle (chiavi e vincoli nello SCHEMA qui sotto):
   mercato       MERCATO_* (0.6.2, scripts/mercato_genera.py)
   pozioni       EFFETTO, POZIONE (censimento dall'inventario), POZIONE_CUSTOM (regole), viste POZIONE_REGOLA e
                 POZIONE_LISTA_NERA (0.7.2, scripts/pozioni_genera.py)
+  bottino       BOTTINO_TABELLA, _POOL, _VOCE, _MODIFICATORE, _BERSAGLIO, _MODIFICATORE_NOME, _LISTA e le viste dei file
+                vincenti, dei modificatori attivi, delle sottotabelle e delle fonti di reliquie (0.7.5; tema
+                1.21.1/theme-knowledge/archeologia.md)
 
 Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
 - il vaso cerca il file di terreno con l'oggetto nello slot del terreno e il file di coltura con l'oggetto nello
@@ -52,7 +55,7 @@ import tomllib
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from comune import DATAPACK_DATA as DP, impronta_datapack
+from comune import DATAPACK_DATA as DP, impronta_datapack, loot_modifier, loot_table
 NOSTRO = "matteo_tweaks"
 TAG_DIRT = ("oggetti", "botanypots:soil/dirt")
 TIPI_TERRENO = ("botanypots:soil", "botanypots:block_derived_soil")
@@ -675,7 +678,209 @@ CREATE VIEW GIOCO_ID_DIVERSO AS
   SELECT 'item' AS registro, g.id, 'solo nel gioco' AS dove FROM GIOCO_ID g WHERE g.registro = 'item' AND NOT EXISTS (SELECT 1 FROM OGGETTO o WHERE o.oggetto_id = g.id)
   UNION ALL
   SELECT 'item', o.oggetto_id, 'solo nell''inventario' FROM OGGETTO o WHERE EXISTS (SELECT 1 FROM GIOCO_ID) AND NOT EXISTS (SELECT 1 FROM GIOCO_ID g WHERE g.registro = 'item' AND g.id = o.oggetto_id);
+
+-- ================================================================ bottino (0.7.5)
+-- Le tabelle e i modificatori del bottino di ogni jar (inventario, formato 8), di Minecraft e del nostro datapack, nella
+-- forma compatta di scripts/comune.py. Le tabelle dei blocchi (`blocks/`) hanno solo il nome e qui non ci sono.
+-- Tra più file con lo stesso id vince il nostro datapack, poi i jar delle mod (tra loro l'ordine non è noto: avviso),
+-- poi NeoForge e Minecraft. Un modificatore lavora solo se è elencato in una lista globale e solo sulla tabella «radice»
+-- che il gioco apre (NeoForge). Tema 1.21.1/theme-knowledge/archeologia.md.
+CREATE TABLE BOTTINO_TABELLA (
+  tabella_id TEXT NOT NULL,              -- le tabelle scritte dentro una voce: <tabella>#<pool>.<voce>
+  fonte      TEXT NOT NULL,              -- slug del metafile, minecraft, neoforge o matteo_tweaks
+  tipo       TEXT,                       -- minecraft:chest, minecraft:archaeology… (NULL: non scritto)
+  categoria  TEXT NOT NULL CHECK (categoria IN ('casse', 'scavi', 'mostri', 'pesca', 'iniezioni', 'altro')),
+  caricabile INTEGER NOT NULL,           -- 1 se le condizioni di caricamento sono vere (nomi del gioco se c'è il dump)
+  relics     INTEGER NOT NULL,           -- 1 se Relics la vede: nome <ns>:chests/… (regola di LootEntries)
+  dentro     TEXT,                       -- per le tabelle scritte dentro una voce: la tabella che la contiene
+  PRIMARY KEY (tabella_id, fonte)
+);
+CREATE TABLE BOTTINO_POOL (
+  tabella_id  TEXT NOT NULL,
+  fonte       TEXT NOT NULL,
+  pool        INTEGER NOT NULL,          -- da 0, nell'ordine del file
+  tiri_min    REAL,                      -- costante: min = max; uniforme: i due estremi; binomiale: 0 e n
+  tiri_max    REAL,
+  tiri_bonus  REAL,                      -- per punto di fortuna
+  probabilita REAL,                      -- la random_chance della pool, se c'è
+  condizioni  TEXT,                      -- tutte le condizioni della pool, JSON compatto
+  peso_totale INTEGER NOT NULL,          -- somma dei pesi delle voci dirette (le alternative contano 0)
+  PRIMARY KEY (tabella_id, fonte, pool),
+  FOREIGN KEY (tabella_id, fonte) REFERENCES BOTTINO_TABELLA
+);
+CREATE TABLE BOTTINO_VOCE (
+  tabella_id   TEXT NOT NULL,
+  fonte        TEXT NOT NULL,
+  pool         INTEGER NOT NULL,
+  voce         INTEGER NOT NULL,         -- da 0, nell'ordine del file, figlie comprese
+  dentro       INTEGER,                  -- la voce composta (alternatives, group, sequence) che la contiene
+  tipo         TEXT NOT NULL,            -- item, tag, loot_table, empty, alternatives… o il tipo di una mod
+  id           TEXT,                     -- oggetto, etichetta o tabella
+  peso         INTEGER,
+  qualita      INTEGER,
+  quantita_min REAL,                     -- da set_count; NULL se la voce non la cambia (1 oggetto)
+  quantita_max REAL,
+  probabilita  REAL,                     -- la random_chance della voce, se c'è
+  condizioni   TEXT,
+  funzioni     TEXT,                     -- le altre funzioni (incantesimi, componenti…), JSON
+  PRIMARY KEY (tabella_id, fonte, pool, voce),
+  FOREIGN KEY (tabella_id, fonte, pool) REFERENCES BOTTINO_POOL
+);
+CREATE TABLE BOTTINO_MODIFICATORE (
+  modificatore_id TEXT NOT NULL,
+  fonte           TEXT NOT NULL,
+  tipo            TEXT,
+  caricabile      INTEGER NOT NULL,
+  condizioni      TEXT,                  -- JSON compatto (anche le tabelle bersaglio)
+  parametri       TEXT,                  -- i campi semplici, JSON (ogni mod ha il suo formato)
+  PRIMARY KEY (modificatore_id, fonte)
+);
+CREATE TABLE BOTTINO_BERSAGLIO (         -- le tabelle a cui un modificatore si applica (neoforge:loot_table_id)
+  modificatore_id TEXT NOT NULL,
+  fonte           TEXT NOT NULL,
+  tabella_id      TEXT NOT NULL,
+  escluso         INTEGER NOT NULL,      -- 1: sotto un `inverted`, cioè «tutte tranne questa»
+  PRIMARY KEY (modificatore_id, fonte, tabella_id),
+  FOREIGN KEY (modificatore_id, fonte) REFERENCES BOTTINO_MODIFICATORE
+);
+CREATE TABLE BOTTINO_MODIFICATORE_NOME ( -- i nomi citati negli altri campi: la tabella tirata, gli oggetti aggiunti
+  modificatore_id TEXT NOT NULL,
+  fonte           TEXT NOT NULL,
+  nome            TEXT NOT NULL,
+  genere          TEXT NOT NULL CHECK (genere IN ('tabella', 'oggetto', 'etichetta', 'altro')),
+  PRIMARY KEY (modificatore_id, fonte, nome),
+  FOREIGN KEY (modificatore_id, fonte) REFERENCES BOTTINO_MODIFICATORE
+);
+CREATE TABLE BOTTINO_LISTA (             -- le liste globali (neoforge:global_loot_modifiers) di ogni file
+  fonte           TEXT NOT NULL,
+  modificatore_id TEXT NOT NULL,
+  sostituisce     INTEGER NOT NULL,      -- replace: true (la lista toglie quelle dei pacchetti sotto)
+  PRIMARY KEY (fonte, modificatore_id)
+);
+CREATE VIEW BOTTINO_TABELLA_VINCENTE AS
+  SELECT t.*, (SELECT count(*) FROM BOTTINO_TABELLA q WHERE q.tabella_id = t.tabella_id
+               AND q.fonte NOT IN ('matteo_tweaks', 'minecraft', 'neoforge')) > 1 AS avviso
+  FROM BOTTINO_TABELLA t
+  WHERE t.fonte = (SELECT q.fonte FROM BOTTINO_TABELLA q WHERE q.tabella_id = t.tabella_id
+                   ORDER BY q.fonte = 'matteo_tweaks' DESC, q.fonte IN ('minecraft', 'neoforge'), q.fonte = 'minecraft', q.fonte LIMIT 1);
+CREATE VIEW BOTTINO_MODIFICATORE_VINCENTE AS
+  SELECT m.* FROM BOTTINO_MODIFICATORE m
+  WHERE m.fonte = (SELECT q.fonte FROM BOTTINO_MODIFICATORE q WHERE q.modificatore_id = m.modificatore_id
+                   ORDER BY q.fonte = 'matteo_tweaks' DESC, q.fonte IN ('minecraft', 'neoforge'), q.fonte LIMIT 1);
+-- I modificatori che lavorano: il file vincente, caricabile ed elencato in almeno una lista
+CREATE VIEW BOTTINO_MODIFICATORE_ATTIVO AS
+  SELECT m.* FROM BOTTINO_MODIFICATORE_VINCENTE m
+  WHERE m.caricabile AND EXISTS (SELECT 1 FROM BOTTINO_LISTA l WHERE l.modificatore_id = m.modificatore_id);
+-- Le tabelle che un'altra tabella nomina come voce: di solito non si aprono da sole, e i modificatori non le vedono
+CREATE VIEW BOTTINO_SOTTOTABELLA AS
+  SELECT DISTINCT v.id AS tabella_id, v.tabella_id AS madre
+  FROM BOTTINO_VOCE v JOIN BOTTINO_TABELLA_VINCENTE t ON t.tabella_id = v.tabella_id AND t.fonte = v.fonte
+  WHERE v.tipo = 'loot_table' AND v.id IS NOT NULL;
+-- Le voci che sono oggetti, con il nome e se il gioco lo registra
+CREATE VIEW BOTTINO_VOCE_OGGETTO AS
+  SELECT v.*, o.nome, o.gioco, o.oggetto_id IS NOT NULL AS esiste
+  FROM BOTTINO_VOCE v JOIN BOTTINO_TABELLA_VINCENTE t ON t.tabella_id = v.tabella_id AND t.fonte = v.fonte
+  LEFT JOIN OGGETTO o ON o.oggetto_id = v.id
+  WHERE v.tipo = 'item';
+-- Le fonti di reliquie di ogni tabella vincente: Relics (nome chests/), un modificatore attivo che tira una tabella di
+-- Artifacts, una voce che nomina una tabella di Artifacts (`artifacts:items/…`) o un suo oggetto. Il tipo
+-- artifacts:roll_loot_table non conta: Reliquified Artifacts ne scarta le reliquie (scheda artifacts)
+CREATE VIEW BOTTINO_RELIQUIA AS
+  SELECT t.tabella_id, 'relics' AS fonte_reliquia, NULL AS da FROM BOTTINO_TABELLA_VINCENTE t WHERE t.relics
+  UNION ALL
+  SELECT b.tabella_id, 'modificatore', m.modificatore_id
+  FROM BOTTINO_MODIFICATORE_ATTIVO m
+  JOIN BOTTINO_BERSAGLIO b ON b.modificatore_id = m.modificatore_id AND b.fonte = m.fonte AND NOT b.escluso
+  JOIN BOTTINO_MODIFICATORE_NOME n ON n.modificatore_id = m.modificatore_id AND n.fonte = m.fonte
+  WHERE n.genere = 'tabella' AND n.nome LIKE 'artifacts:%' AND m.tipo IS NOT 'artifacts:roll_loot_table'
+  UNION ALL
+  SELECT DISTINCT v.tabella_id, 'voce', v.id
+  FROM BOTTINO_VOCE v JOIN BOTTINO_TABELLA_VINCENTE t ON t.tabella_id = v.tabella_id AND t.fonte = v.fonte
+  WHERE v.id LIKE 'artifacts:%' AND v.tipo IN ('loot_table', 'item');
+-- Le tabelle lette dai file (caricabili, tranne quelle dei blocchi) confrontate con quelle che il gioco ha caricato:
+-- se la lettura dell'inventario e delle condizioni è giusta, coincidono (minecraft:empty il gioco la crea da sé)
+CREATE VIEW BOTTINO_TABELLA_DIVERSA AS
+  SELECT b.tabella_id, 'solo nei file' AS dove FROM BOTTINO_TABELLA_VINCENTE b
+  WHERE b.dentro IS NULL AND b.caricabile AND EXISTS (SELECT 1 FROM GIOCO_TABELLA)
+    AND NOT EXISTS (SELECT 1 FROM GIOCO_TABELLA g WHERE g.tabella_id = b.tabella_id)
+  UNION ALL
+  SELECT g.tabella_id, 'solo nel gioco' FROM GIOCO_TABELLA g
+  WHERE g.tabella_id NOT LIKE '%:blocks/%' AND g.tabella_id <> 'minecraft:empty'
+    AND NOT EXISTS (SELECT 1 FROM BOTTINO_TABELLA_VINCENTE b WHERE b.tabella_id = g.tabella_id AND b.caricabile);
 """
+
+
+# Bottino (0.7.5): Relics vede solo le tabelle con questo nome (regola di LootEntries, scheda artifacts)
+RELICS_CASSE = re.compile(r"\w+:chests/.*")
+# tabelle con il tipo `chest` che non sono casse: vasi decorati, distributori, spawner (anche i proiettili di quelli di
+# Dungeons and Taverns), alberi, gioco
+NON_CASSE = ("pots", "dispensers", "spawners", "spawner_projectile", "tree_drops", "gameplay")
+
+
+def categoria_bottino(tid: str, tipo) -> str:
+    """casse, scavi, mostri, pesca, iniezioni (tabelle tirate da un modificatore, `inject/`) o altro: dal tipo e dal nome."""
+    parti = tid.split(":", 1)[-1].split("/")
+    t = str(tipo or "").removeprefix("minecraft:")
+    if parti[0] == "inject":
+        return "iniezioni"
+    if t == "archaeology":
+        return "scavi"
+    # scavi scritti con un altro tipo (la sabbia dell'End di Moog's End Structures è `chest`); le casse e le loro
+    # sottotabelle di Better Archeology stanno anche loro in archeology/, ma col nome dicono chest o loot
+    if {"archaeology", "archeology"} & set(parti[:-1]) and not re.search(r"chest|loot", parti[-1]):
+        return "scavi"
+    if t == "fishing" or "fishing" in parti:
+        return "pesca"
+    if t == "entity" or parti[0] in ("entities", "entity"):
+        return "mostri"
+    if parti[0] in NON_CASSE:
+        return "altro"
+    if t == "chest" or "chests" in parti or re.match(r"chests?(_|$)", parti[-1]):
+        return "casse"
+    return "altro"
+
+
+def caricabile_corta(load: list, items: set, blocks: set, mods: set) -> bool:
+    """Le condizioni di caricamento nella forma corta di comune.load_conditions; quelle di una mod si danno per vere."""
+    def una(x) -> bool:
+        if isinstance(x, dict):
+            if "not" in x:
+                return not una(x["not"])
+            if "and" in x:
+                return all(una(y) for y in x["and"])
+            if "or" in x:
+                return any(una(y) for y in x["or"])
+            return True
+        tipo, _, val = str(x).partition(":")
+        if tipo == "mod_loaded":
+            return val in mods
+        if tipo == "item_exists":
+            return val in items
+        if tipo == "block_exists":
+            return val in blocks
+        return True
+    return all(una(x) for x in load)
+
+
+def _intervallo(v) -> tuple:
+    """(min, max) di un numero della forma compatta; (None, None) se non si sa."""
+    if isinstance(v, (int, float)):
+        return v, v
+    if isinstance(v, dict):
+        if isinstance(v.get("min"), (int, float)) and isinstance(v.get("max"), (int, float)):
+            return v["min"], v["max"]
+        if isinstance(v.get("n"), (int, float)):
+            return 0, v["n"]
+    return None, None
+
+
+def _probabilita(conds) -> float | None:
+    for x in conds or []:
+        if isinstance(x, dict):
+            for k in ("random_chance", "random_chance_enchanted"):
+                if isinstance(x.get(k), (int, float)):
+                    return x[k]
+    return None
 
 
 class ErroreDati(Exception):
@@ -811,6 +1016,23 @@ class BotanyPotsDB:
         out.append(("avviso: candidati del mercato senza regola (non blocca)", True, f"trovati: {n}"))
         # datapack
         ctl("i modificatori del bottino con il nostro nome sono elencati in global_loot_modifiers.json", "SELECT count(*) FROM NOSTRO_MODIFICATORE WHERE NOT elencato AND modificatore_id LIKE 'matteo_tweaks:%'")
+        # bottino (0.7.5)
+        ctl("nessuna cassa con due possibilità di reliquia (Relics e la nostra toppa)", """
+            SELECT count(*) FROM (SELECT tabella_id FROM BOTTINO_RELIQUIA r WHERE fonte_reliquia = 'modificatore'
+              AND EXISTS (SELECT 1 FROM BOTTINO_RELIQUIA q WHERE q.tabella_id = r.tabella_id AND q.fonte_reliquia = 'relics')
+              GROUP BY tabella_id)""")
+        ctl("nessuna lista globale con replace: true (toglierebbe i modificatori degli altri)", "SELECT count(*) FROM BOTTINO_LISTA WHERE sostituisce")
+        n = c.execute("""SELECT count(*) FROM (SELECT DISTINCT t.tabella_id FROM BOTTINO_TABELLA t
+            JOIN BOTTINO_TABELLA a ON a.tabella_id = t.tabella_id AND a.fonte NOT IN ('matteo_tweaks', 'minecraft', 'neoforge')
+            LEFT JOIN MOD_NAMESPACE ns ON ns.namespace = substr(t.tabella_id, 1, instr(t.tabella_id, ':') - 1)
+            WHERE t.fonte = 'matteo_tweaks' AND a.fonte IS NOT ns.slug)""").fetchone()[0]
+        out.append(("avviso: tabelle che riscriviamo noi portate anche da una mod non loro (non blocca)", True, f"trovate: {n}"))
+        n = c.execute("SELECT count(*) FROM BOTTINO_TABELLA_VINCENTE WHERE avviso").fetchone()[0]
+        out.append(("info: tabelle del bottino portate da più mod (l'ordine tra mod non è noto)", True, f"{n}"))
+        n = c.execute("""SELECT count(*) FROM BOTTINO_TABELLA_VINCENTE t WHERE t.categoria = 'casse' AND t.caricabile AND t.dentro IS NULL
+            AND NOT EXISTS (SELECT 1 FROM BOTTINO_SOTTOTABELLA s WHERE s.tabella_id = t.tabella_id)
+            AND NOT EXISTS (SELECT 1 FROM BOTTINO_RELIQUIA r WHERE r.tabella_id = t.tabella_id)""").fetchone()[0]
+        out.append(("info: casse senza nessuna fonte di reliquie (sottotabelle escluse)", True, f"{n}"))
         # pozioni
         ctl("una sola regola 'tutte' per famiglia di pozioni", "SELECT count(*) FROM (SELECT x.famiglia FROM POZIONE_CUSTOM c JOIN POZIONE x ON x.pozione_id=c.pozione_id WHERE c.varianti='tutte' GROUP BY x.famiglia HAVING count(*)>1)")
         dump = c.execute("SELECT count(*) FROM DUMP_MOD").fetchone()[0] > 0
@@ -840,7 +1062,8 @@ class BotanyPotsDB:
                 for nome, sql in (("le nostre ricette caricabili sono nel gioco (e le altre no)", "SELECT count(*) FROM NOSTRA_RICETTA_DIVERSA"),
                                   ("le ricette dei vasi e del mercato lette dai file coincidono con quelle caricate dal gioco", "SELECT count(*) FROM GIOCO_RICETTA_DIVERSA"),
                                   ("le voci dei nostri tag sono nelle etichette finali del gioco", "SELECT count(*) FROM NOSTRO_TAG_MANCANTE"),
-                                  ("le tabelle del bottino nostre e quelle dei nostri modificatori esistono nel gioco", "SELECT count(*) FROM NOSTRA_TABELLA_MANCANTE")):
+                                  ("le tabelle del bottino nostre e quelle dei nostri modificatori esistono nel gioco", "SELECT count(*) FROM NOSTRA_TABELLA_MANCANTE"),
+                                  ("le tabelle del bottino lette dai file coincidono con quelle caricate dal gioco", "SELECT count(*) FROM BOTTINO_TABELLA_DIVERSA")):
                     n = c.execute(sql).fetchone()[0]
                     out.append((nome if blocca else f"avviso: {nome} (dump non aggiornato, non blocca)", n == 0 or not blocca, f"trovati: {n}"))
                 n = c.execute("SELECT count(*) FROM REGOLA_NOME_FANTASMA").fetchone()[0]
@@ -890,6 +1113,7 @@ class BotanyPotsDB:
         mod_righe, modid_righe = [], []
         effetti, descrizioni, pozioni, dedotte = {}, {}, {}, set()  # id -> (slug, nome)
         ns_conta = defaultdict(Counter)  # namespace -> {slug: oggetti+blocchi}
+        bottino = {"tabelle": [], "modificatori": [], "liste": [], "nomi_tabelle": set()}  # (id, fonte, forma compatta, caricabile)
         files = [self.inventario / "minecraft.json", self.inventario / "neoforge.json", *sorted((self.inventario / "mods").glob("*.json"))]
         for f in files:
             if not f.exists():
@@ -932,6 +1156,13 @@ class BotanyPotsDB:
             for k, v in (d.get("potions") or {}).items():
                 pozioni.setdefault(k, (fonte, v or None))
             dedotte |= set(d.get("potions_deduced") or [])
+            bottino["nomi_tabelle"] |= set((d.get("data") or {}).get("loot_table") or [])
+            for tid, t in (d.get("loot_tables") or {}).items():
+                bottino["tabelle"].append((tid, fonte, t, None))
+            for mid, m in (d.get("loot_modifiers") or {}).items():
+                bottino["modificatori"].append((mid, fonte, m, None))
+            for g in d.get("global_loot_modifiers") or []:
+                bottino["liste"].append((fonte, g))
         if not items:
             raise ErroreDati(f"inventario vuoto o assente: {self.inventario}")
         # dump del gioco (facoltativo)
@@ -989,11 +1220,16 @@ class BotanyPotsDB:
             rel = f.relative_to(self.datapack).parts
             d = _carica_json(f)
             tid = f"{rel[0]}:{'/'.join(rel[2:])[:-5]}"
-            nostri["tabelle"].append((tid, "/".join(rel), int(self._caricabile({**d, "id": tid}, items_ok, blocks_ok, mods))))
+            ok = int(self._caricabile({**d, "id": tid}, items_ok, blocks_ok, mods))
+            nostri["tabelle"].append((tid, "/".join(rel), ok))
+            bottino["tabelle"].append((tid, NOSTRO, loot_table(d), ok))
+            bottino["nomi_tabelle"].add(tid)
         elencati = set()
         glm = self.datapack / "neoforge" / "loot_modifiers" / "global_loot_modifiers.json"
         if glm.exists():
-            elencati = set(_carica_json(glm).get("entries") or [])
+            g = _carica_json(glm)
+            elencati = set(g.get("entries") or [])
+            bottino["liste"].append((NOSTRO, {"replace": bool(g.get("replace", False)), "entries": sorted(elencati)}))
         for f in self.datapack.glob("*/loot_modifiers/**/*.json"):
             if f == glm:
                 continue
@@ -1016,6 +1252,7 @@ class BotanyPotsDB:
             ok = int(self._caricabile({**d, "id": mid}, items_ok, blocks_ok, mods))
             for t in tabelle or [None]:
                 nostri["modificatori"].append((mid, int(mid in elencati), ok, t, agg))
+            bottino["modificatori"].append((mid, NOSTRO, loot_modifier(d), ok))
         for f in self.datapack.glob("*/market_presets/*.json"):
             d = _carica_json(f)
             rel = f.relative_to(self.datapack).parts
@@ -1040,7 +1277,7 @@ class BotanyPotsDB:
                 "mod": mod_righe, "mod_id": modid_righe, "mod_namespace": ns_righe,
                 "voci": voci, "preset": preset, "categorie": categorie, "config_preset": config_preset,
                 "effetti": effetti, "descrizioni": descrizioni, "pozioni": pozioni, "dedotte": dedotte, "dump": dump,
-                "nostri": nostri}
+                "nostri": nostri, "bottino": bottino}
 
     # -- condizioni di caricamento
     @staticmethod
@@ -1325,6 +1562,7 @@ class BotanyPotsDB:
 
         self._carica_pozioni(c, dati, items)
         self._carica_gioco(c, dati)
+        self._carica_bottino(c, dati)
         self._carica_csv(c, "POZIONE_CUSTOM", self.pozioni / "pozione_custom.csv", ("pozione_id", "varianti", "amuleto", "motivo"))
 
         # conteggio diretto delle coppie, indipendente dalla vista: per ogni coltura vincente, gli oggetti dei suoi tag
@@ -1366,6 +1604,77 @@ class BotanyPotsDB:
                       (sid, r.get("tipo"), r.get("spaziatura"), r.get("separazione"), r.get("sale"), r.get("frequenza")))
             c.executemany("INSERT OR IGNORE INTO GIOCO_STRUTTURA_SET_VOCE VALUES (?,?,?)",
                           [(sid, e["struttura"], e["peso"]) for e in r.get("strutture") or []])
+
+    def _carica_bottino(self, c: sqlite3.Connection, dati: dict) -> None:
+        """Tabelle e modificatori del bottino (0.7.5): una riga per file, voci e pool esplose."""
+        b, items_ok, blocks_ok, mods = dati["bottino"], dati["items_ok"], dati["blocks_ok"], dati["mods"]
+        etichette = {n for amb in dati["tag_voci"].values() for n in amb}
+        tabelle, pool, voci = [], [], []
+
+        def tabella(tid, fonte, t, ok, dentro=None):
+            if ok is None:
+                ok = caricabile_corta(t.get("load") or [], items_ok, blocks_ok, mods)
+            tabelle.append((tid, fonte, t.get("type"), categoria_bottino(dentro or tid, t.get("type")), int(ok),
+                            int(dentro is None and bool(RELICS_CASSE.fullmatch(tid))), dentro))
+            for i, p in enumerate(t.get("pools") or []):
+                tmin, tmax = _intervallo(p.get("rolls"))
+                bonus = p.get("bonus_rolls")
+                dirette = p.get("entries") or []
+                peso = sum(int(e["weight"]) for e in dirette if isinstance(e.get("weight"), (int, float)))
+                pool.append((tid, fonte, i, tmin, tmax, bonus if isinstance(bonus, (int, float)) else None,
+                             _probabilita(p.get("conditions")),
+                             json.dumps(p["conditions"], ensure_ascii=False) if p.get("conditions") else None, peso))
+                n = 0
+
+                def voce(e, padre):
+                    nonlocal n
+                    k = n
+                    n += 1
+                    vid = e.get("id")
+                    if "inline" in e:
+                        vid = f"{tid}#{i}.{k}"
+                        tabella(vid, fonte, e["inline"], ok, dentro=tid)
+                    qmin, qmax = _intervallo(e.get("count")) if "count" in e else (None, None)
+                    peso_v = e.get("weight")
+                    voci.append((tid, fonte, i, k, padre, e.get("kind") or "?", vid,
+                                 int(peso_v) if isinstance(peso_v, (int, float)) else None, e.get("quality"), qmin, qmax,
+                                 _probabilita(e.get("conditions")),
+                                 json.dumps(e["conditions"], ensure_ascii=False) if e.get("conditions") else None,
+                                 json.dumps(e["functions"], ensure_ascii=False) if e.get("functions") else None))
+                    for figlia in e.get("children") or []:
+                        voce(figlia, k)
+                for e in dirette:
+                    voce(e, None)
+
+        for tid, fonte, t, ok in b["tabelle"]:
+            tabella(tid, fonte, t, ok)
+        c.executemany("INSERT INTO BOTTINO_TABELLA VALUES (?,?,?,?,?,?,?)", tabelle)
+        c.executemany("INSERT INTO BOTTINO_POOL VALUES (?,?,?,?,?,?,?,?,?)", pool)
+        c.executemany("INSERT INTO BOTTINO_VOCE VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)", voci)
+        nomi_tab = b["nomi_tabelle"] | {t[0] for t in tabelle}
+        for mid, fonte, m, ok in b["modificatori"]:
+            if ok is None:
+                ok = caricabile_corta(m.get("load") or [], items_ok, blocks_ok, mods)
+            c.execute("INSERT INTO BOTTINO_MODIFICATORE VALUES (?,?,?,?,?,?)",
+                      (mid, fonte, m.get("type"), int(ok), json.dumps(m.get("conditions") or [], ensure_ascii=False),
+                       json.dumps(m.get("params") or {}, ensure_ascii=False)))
+            c.executemany("INSERT OR IGNORE INTO BOTTINO_BERSAGLIO VALUES (?,?,?,?)",
+                          [(mid, fonte, t.lstrip("!"), int(t.startswith("!"))) for t in m.get("targets") or []])
+            nomi = []
+            for x in m.get("refs") or []:
+                if x.startswith("#"):
+                    genere = "etichetta" if x[1:] in etichette else "altro"
+                elif x in nomi_tab:
+                    genere = "tabella"
+                elif x in dati["items"]:
+                    genere = "oggetto"
+                else:
+                    genere = "altro"
+                nomi.append((mid, fonte, x, genere))
+            c.executemany("INSERT OR IGNORE INTO BOTTINO_MODIFICATORE_NOME VALUES (?,?,?,?)", nomi)
+        for fonte, g in b["liste"]:
+            c.executemany("INSERT OR IGNORE INTO BOTTINO_LISTA VALUES (?,?,?)",
+                          [(fonte, e, int(g.get("replace", False))) for e in g.get("entries") or []])
 
     def _carica_pozioni(self, c: sqlite3.Connection, dati: dict, items: dict) -> None:
         """Effetti e pozioni da inventario e dump; dal dump anche effetti delle pozioni, cibi e alambicco."""

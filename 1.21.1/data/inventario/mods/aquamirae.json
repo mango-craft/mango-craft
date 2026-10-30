@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Aquamirae",
  "file": "aquamirae-neoforge-1.21.1-7.2.13.jar",
@@ -537,6 +537,1075 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "aquamirae:chests/camp_barrel": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:sharp_bones",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:pirate_pouch",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:chests/frozen_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 8,
+      "max": 12
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crossbow",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:treasure_pouch",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:dagger_of_greed",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:totem_of_undying",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:painting_anglerfish",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:painting_oxyhelium",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:sea_stew",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:painting_tortured_soul",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:painting_aurora",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:rune_of_the_storm",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:chests/maze_camp_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aquamirae:chests/camp_barrel",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:chests/ship_1": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar_cane",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:spinefish",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:fin",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:esca",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:chests/ship_2": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:music_disc_horizon",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:dagger_of_greed",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:sea_stew",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 30
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3,
+      "max": 9
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/abyssal_scyphoid": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:jellyfish_jelly",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "damage_source_properties"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:ship_graveyard_echo",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/anglerfish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:esca",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:fin",
+       "weight": 75,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 25
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:angler_fang",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "damage_source_properties"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:ship_graveyard_echo",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/captain_cornelia": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:frozen_key",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:salvager_helmet",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 6,
+      "max": 10
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:treasure_pouch",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:music_disc_forsaken_drownage",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 9
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/eel": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4,
+      "max": 6
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:fin",
+       "weight": 1,
+       "count": {
+        "min": 8,
+        "max": 16
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:sharp_bones",
+       "weight": 1,
+       "count": {
+        "min": 12,
+        "max": 24
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:spinefish",
+       "weight": 1,
+       "count": {
+        "min": 8,
+        "max": 16
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:dead_sea_scroll",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:treasure_pouch",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/golden_moth": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/maw": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:fin",
+       "weight": 70,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "aquamirae:keepsake_armor",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:sharp_bones",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 5
+      },
+      {
+       "kind": "empty",
+       "weight": 5
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:treasure_pouch",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "damage_source_properties"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:ship_graveyard_echo",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/maze_captain": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:shell_horn",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_mutton",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:pirate_pouch",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/maze_mother": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:abyssal_amethyst",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:sharp_bones",
+       "weight": 1,
+       "count": {
+        "min": 6,
+        "max": 24
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_crystals",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 24
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/maze_pillager": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_mutton",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:pirate_pouch",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/maze_vindicator": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "bonus_rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:treasure_pouch",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/scuttler": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "damage_source_properties",
+      {
+       "random_chance": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:ship_graveyard_echo",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:entities/spinefish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:spinefish",
+       "weight": 1,
+       "functions": [
+        "furnace_smelt"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "damage_source_properties",
+      {
+       "random_chance": 0.5
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aquamirae:ship_graveyard_echo",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:stashes/pirate_pouch": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "aquamirae:keepsake_armor",
+       "weight": 70
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:fin",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:terrible_upgrade_smithing_template",
+       "weight": 10
+      }
+     ]
+    }
+   ]
+  },
+  "aquamirae:stashes/treasure_pouch": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aquamirae:entities/golden_moth",
+       "weight": 30
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:abyssal_amethyst",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:void_squid",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:cracked_record",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:esca_skewer",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:sea_casserole",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aquamirae:terrible_upgrade_smithing_template",
+       "weight": 10
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

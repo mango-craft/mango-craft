@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Hexerei",
  "file": "hexerei-0.5.0.3.jar",
@@ -2531,6 +2531,1694 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "hexerei:chests/courier_package": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "hexerei:packing_peanut",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "hexerei:waxing_kit",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:mushroom_witch_hat",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:broom_brush",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:candle",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:herb_jar",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:courier_letter",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_sage_bundle",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:infused_fabric",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:gold_rings",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:small_satchel",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:honey_bottle",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cake",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 5
+      }
+     ]
+    }
+   ]
+  },
+  "hexerei:chests/dark_coven_basic": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "hexerei:broom_brush",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:blood_sigil",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_sage_bundle",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:blood_bottle",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:wax_blend",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:infused_fabric",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:animal_fat",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:tallow_bottle",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:infused_fabric_carpet_ornate",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:infused_fabric_carpet",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:sage",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "hexerei:chests/dark_coven_coffer": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 40,
+       "count": {
+        "min": 9.0,
+        "max": 18.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 15,
+       "count": {
+        "min": 4.0,
+        "max": 24.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_block",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "hexerei:chests/nature_coven_coffer": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 40,
+       "count": {
+        "min": 9.0,
+        "max": 18.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 15,
+       "count": {
+        "min": 4.0,
+        "max": 24.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_block",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "hexerei:chests/nature_coven_crow": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "hexerei:crow_ankh_amulet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:crow_flute",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:crow_blank_amulet",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:seed_mixture",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:sage_seed",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:white_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_gray_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gray_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:black_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magenta_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pink_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purple_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_blue_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lime_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:yellow_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:orange_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blue_dye",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cyan_dye",
+       "weight": 20
+      }
+     ]
+    }
+   ]
+  },
+  "hexerei:chests/nature_coven_herbs": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "hexerei:herb_enhanced_broom_brush",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:broom_brush",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_sage_bundle",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:yellow_dock_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:yellow_dock_leaves",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:mugwort_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:mugwort_leaves",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:mandrake_root",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:mandrake_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:sage",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:belladonna_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:belladonna_berries",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_yellow_dock_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_yellow_dock_leaves",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_mugwort_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_mugwort_leaves",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_mandrake_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_sage",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:dried_belladonna_flowers",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "hexerei:sage_seed",
+       "weight": 40,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dandelion",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poppy",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cornflower",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cornflower",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_berries",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dead_bush",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "hexerei:entities/crow_pickpocket_villager": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 50
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 25,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cake",
+       "weight": 2,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_hide",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_helmet",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_chestplate",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_leggings",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chicken",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_chicken",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beef",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_beef",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:porkchop",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_porkchop",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_stew",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:compass",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shears",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:white_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:orange_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magenta_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_blue_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:yellow_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lime_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pink_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gray_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_gray_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cyan_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purple_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blue_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:green_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:black_wool",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_cod",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_salmon",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 25,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spruce_boat",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 20,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clay_ball",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brick",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:terracotta",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 15,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_helmet",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_chestplate",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_leggings",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_boots",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:charcoal",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone_pickaxe",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone_hoe",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 25,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 25,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_shovel",
+       "weight": 25,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 50,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 25,
+       "functions": [
+        "enchant_randomly"
+       ],
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 5,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 30,
+       "conditions": [
+        "entity_properties"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "hexerei:animal_fat_drops": {
+   "type": "hexerei:animal_fat_drops",
+   "targets": [
+    "minecraft:entities/cow",
+    "minecraft:entities/pig",
+    "minecraft:entities/sheep",
+    "minecraft:entities/sheep/white",
+    "minecraft:entities/sheep/light_gray",
+    "minecraft:entities/sheep/gray",
+    "minecraft:entities/sheep/black",
+    "minecraft:entities/sheep/brown",
+    "minecraft:entities/sheep/red",
+    "minecraft:entities/sheep/orange",
+    "minecraft:entities/sheep/yellow",
+    "minecraft:entities/sheep/lime",
+    "minecraft:entities/sheep/green",
+    "minecraft:entities/sheep/cyan",
+    "minecraft:entities/sheep/light_blue",
+    "minecraft:entities/sheep/blue",
+    "minecraft:entities/sheep/purple",
+    "minecraft:entities/sheep/magenta",
+    "minecraft:entities/sheep/pink"
+   ],
+   "conditions": [
+    {
+     "any_of": [
+      {
+       "loot_table_id": "minecraft:entities/cow"
+      },
+      {
+       "loot_table_id": "minecraft:entities/pig"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/white"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/light_gray"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/gray"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/black"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/brown"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/red"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/orange"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/yellow"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/lime"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/green"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/cyan"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/light_blue"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/blue"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/purple"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/magenta"
+      },
+      {
+       "loot_table_id": "minecraft:entities/sheep/pink"
+      }
+     ]
+    }
+   ],
+   "params": {
+    "addition": "hexerei:animal_fat",
+    "chance": 0.45,
+    "base_count": 1
+   },
+   "refs": [
+    "hexerei:animal_fat"
+   ]
+  },
+  "hexerei:sage_seed_drops": {
+   "type": "hexerei:sage_seed_drops",
+   "targets": [],
+   "conditions": [
+    {
+     "random_chance": 0.1
+    },
+    {
+     "any_of": [
+      "block_state_property",
+      "block_state_property"
+     ]
+    },
+    {
+     "not": {
+      "any_of": [
+       "match_tool",
+       "match_tool"
+      ]
+     }
+    }
+   ],
+   "params": {
+    "addition": "hexerei:sage_seed",
+    "count": 1
+   },
+   "refs": [
+    "hexerei:sage_seed"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "hexerei:animal_fat_drops",
+    "hexerei:sage_seed_drops"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

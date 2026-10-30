@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Bountiful Fares",
  "file": "bountifulfares-neoforge-1.21.1-3.0.12.jar",
@@ -3183,6 +3183,221 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "bountifulfares:chests/woodland_mansion_apple_sapling_room": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 5
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "bountifulfares:apple_sapling",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "bountifulfares:add_spongekin_seeds_from_guardian": {
+   "type": "bountifulfares:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "killed_by_player",
+    {
+     "random_chance": 0.2
+    }
+   ],
+   "params": {
+    "item": "bountifulfares:spongekin_seeds"
+   },
+   "refs": [
+    "bountifulfares:spongekin_seeds"
+   ]
+  },
+  "bountifulfares:remove_wheat_seeds_from_fern": {
+   "type": "bountifulfares:replace_item",
+   "targets": [],
+   "conditions": [
+    "block_state_property"
+   ],
+   "params": {
+    "removed_item": "minecraft:wheat_seeds",
+    "added_item": "bountifulfares:grass_seeds"
+   },
+   "refs": [
+    "minecraft:wheat_seeds",
+    "bountifulfares:grass_seeds"
+   ]
+  },
+  "bountifulfares:remove_wheat_seeds_from_short_grass": {
+   "type": "bountifulfares:replace_item",
+   "targets": [],
+   "conditions": [
+    "block_state_property"
+   ],
+   "params": {
+    "removed_item": "minecraft:wheat_seeds",
+    "added_item": "bountifulfares:grass_seeds"
+   },
+   "refs": [
+    "minecraft:wheat_seeds",
+    "bountifulfares:grass_seeds"
+   ]
+  },
+  "bountifulfares:remove_wheat_seeds_from_tall_fern": {
+   "type": "bountifulfares:replace_item",
+   "targets": [],
+   "conditions": [
+    "block_state_property"
+   ],
+   "params": {
+    "removed_item": "minecraft:wheat_seeds",
+    "added_item": "bountifulfares:grass_seeds"
+   },
+   "refs": [
+    "minecraft:wheat_seeds",
+    "bountifulfares:grass_seeds"
+   ]
+  },
+  "bountifulfares:remove_wheat_seeds_from_tall_grass": {
+   "type": "bountifulfares:replace_item",
+   "targets": [],
+   "conditions": [
+    "block_state_property"
+   ],
+   "params": {
+    "removed_item": "minecraft:wheat_seeds",
+    "added_item": "bountifulfares:grass_seeds"
+   },
+   "refs": [
+    "minecraft:wheat_seeds",
+    "bountifulfares:grass_seeds"
+   ]
+  },
+  "bountifulfares:replace_pitcher_seeds_with_hoary_seeds": {
+   "type": "bountifulfares:replace_item",
+   "targets": [
+    "minecraft:gameplay/sniffer_digging"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:gameplay/sniffer_digging"
+    },
+    {
+     "random_chance": 0.5
+    }
+   ],
+   "params": {
+    "removed_item": "minecraft:pitcher_pod",
+    "added_item": "bountifulfares:hoary_seeds",
+    "count": 1
+   },
+   "refs": [
+    "minecraft:pitcher_pod",
+    "bountifulfares:hoary_seeds"
+   ]
+  },
+  "bountifulfares:replace_torchflower_seeds_with_lapisberry_seeds": {
+   "type": "bountifulfares:replace_item",
+   "targets": [
+    "minecraft:gameplay/sniffer_digging"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:gameplay/sniffer_digging"
+    },
+    {
+     "random_chance": 0.5
+    }
+   ],
+   "params": {
+    "removed_item": "minecraft:torchflower_seeds",
+    "added_item": "bountifulfares:lapisberry_seeds",
+    "count": 1
+   },
+   "refs": [
+    "minecraft:torchflower_seeds",
+    "bountifulfares:lapisberry_seeds"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "bountifulfares:add_spongekin_seeds_from_guardian",
+    "bountifulfares:remove_wheat_seeds_from_short_grass",
+    "bountifulfares:remove_wheat_seeds_from_tall_grass",
+    "bountifulfares:remove_wheat_seeds_from_fern",
+    "bountifulfares:remove_wheat_seeds_from_tall_grass",
+    "bountifulfares:replace_pitcher_seeds_with_hoary_seeds",
+    "bountifulfares:replace_torchflower_seeds_with_lapisberry_seeds"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

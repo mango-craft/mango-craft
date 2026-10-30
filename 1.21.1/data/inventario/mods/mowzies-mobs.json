@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Mowzie's Mobs",
  "file": "mowziesmobs-1.21.1-1.8.2.jar",
@@ -781,6 +781,846 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "mowziesmobs:chests/monastery_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:sand_rake",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone",
+       "weight": 32,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diorite",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_mutton",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 12,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 12,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_foot",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:sculptor_staff",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_beads",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_robe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_belt",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_sandals",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:chests/umvuthana_grove_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:short_grass",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tall_grass",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_porkchop",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 8,
+       "count": {
+        "min": 1.0,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:acacia_sapling",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_fury",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_bliss",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_misery",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_fear",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_rage",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_faith",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/bluff": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:bluff_rod",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/elokosa": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.333
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_new",
+       "weight": 1,
+       "conditions": [
+        {
+         "not": "mowziesmobs:night_form"
+        }
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_full",
+       "weight": 1,
+       "conditions": [
+        "mowziesmobs:night_form",
+        "mowziesmobs:moon_phase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_gibbous",
+       "weight": 1,
+       "conditions": [
+        "mowziesmobs:night_form",
+        "mowziesmobs:moon_phase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_half",
+       "weight": 1,
+       "conditions": [
+        "mowziesmobs:night_form",
+        "mowziesmobs:moon_phase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_crescent",
+       "weight": 1,
+       "conditions": [
+        "mowziesmobs:night_form",
+        "mowziesmobs:moon_phase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_crescent",
+       "weight": 1,
+       "conditions": [
+        "mowziesmobs:night_form",
+        "mowziesmobs:moon_phase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_half",
+       "weight": 1,
+       "conditions": [
+        "mowziesmobs:night_form",
+        "mowziesmobs:moon_phase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:elokosa_paw_gibbous",
+       "weight": 1,
+       "conditions": [
+        "mowziesmobs:night_form",
+        "mowziesmobs:moon_phase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/ferrous_wroughtnaut": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:wrought_helmet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:wrought_axe",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/foliaath": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:foliaath_seed",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/frostmaw": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player",
+      "mowziesmobs:has_crystal"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:ice_crystal",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player",
+      {
+       "not": "mowziesmobs:has_crystal"
+      },
+      "weather_check"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:music_disc_petiole",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/grottol": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "functions": [
+        "mowziesmobs:grottol_death_type"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/lantern": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:glowing_jelly",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/naga": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:naga_fang",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/sculptor": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:sculptor_staff",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_beads",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_robe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_belt",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mowziesmobs:geomancer_sandals",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/sculptor_test": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:earthrend_gauntlet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/umvuthana_bliss": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.333
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_bliss",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/umvuthana_faith": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.333
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_faith",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/umvuthana_fear": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.333
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_fear",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/umvuthana_fury": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.333
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_fury",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/umvuthana_misery": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.333
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_misery",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/umvuthana_rage": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.333
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:umvuthana_mask_rage",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mowziesmobs:entities/umvuthi": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mowziesmobs:sol_visage",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 4
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

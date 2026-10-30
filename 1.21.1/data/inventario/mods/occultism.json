@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Occultism",
  "file": "occultism-1.21.1-neoforge-1.224.5.jar",
@@ -4487,6 +4487,2173 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "occultism:battlefield/minecraft/ender_dragon": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:dragon_breath",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dragon_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:battlefield/minecraft/wither": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nether_star",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/afrit_wild": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "occultism:afrit_essence",
+       "weight": 1,
+       "count": {
+        "min": 0.7,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/marid_unbound": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "occultism:marid_essence",
+       "weight": 1,
+       "count": {
+        "min": 0.9,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/mercy_goat": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "occultism:cruelty_essence",
+       "weight": 1,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_bee": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "occultism:cursed_honey",
+       "weight": 1,
+       "count": {
+        "min": 0.5,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_blaze": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_rod",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_powder",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 30
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crimson_fungus",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_fungus",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crimson_roots",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_roots",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:weeping_vines",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:twisting_vines",
+       "weight": 5
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:netherrack",
+       "weight": 45
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_quartz_ore",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crimson_nylium",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_nylium",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart_block",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_wart_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:soul_sand",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:soul_soil",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:basalt",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blackstone",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gravel",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_block",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gilded_blackstone",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 50
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magma_block",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shroomlight",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crying_obsidian",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ancient_debris",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_breeze": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ominous_trial_key",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:breeze_rod",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bolt_armor_trim_smithing_template",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:guster_banner_pattern",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_precipice",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_elder_guardian": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_shard",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 3,
+       "functions": [
+        "enchanted_count_increase",
+        "furnace_smelt"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_crystals",
+       "weight": 2,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wet_sponge",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:gameplay/fishing/fish",
+       "weight": 1,
+       "functions": [
+        "furnace_smelt"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tide_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coast_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:heart_of_the_sea",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance_enchanted": 0.4
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_enderman": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:eye_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_endermite": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:end_stone",
+       "weight": 99,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:end_stone_bricks",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:fermented_spider_eye",
+       "weight": 2,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 2,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_eye",
+       "weight": 1,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_evoker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:totem_of_undying",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:vex_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sentry_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ominous_bottle",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_ghast": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ghast_tear",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_guardian": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.8
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sea_pickle",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:kelp",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tube_coral_block",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brain_coral_block",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bubble_coral_block",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_coral_block",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:horn_coral_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tube_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brain_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bubble_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:horn_coral",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tube_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brain_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bubble_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:horn_coral_fan",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_shard",
+       "weight": 2,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_crystals",
+       "weight": 1,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_hoglin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:netherite_upgrade_smithing_template",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:snout_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:netherite_scrap",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_brick",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:piglin_banner_pattern",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_pigstep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_phantom": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:phantom_membrane",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wind_charge",
+       "weight": 1,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_shulker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spire_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_flower",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 4
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_skeleton": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:skeleton_skull",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_strong_breeze": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:heavy_core",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flow_pottery_sherd",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flow_armor_trim_smithing_template",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flow_banner_pattern",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_creator",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_warden": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:echo_shard",
+       "weight": 1,
+       "count": {
+        "min": 6.0,
+        "max": 9.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:silence_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ward_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:disc_fragment_5",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_otherside",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_vein",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_catalyst",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_shrieker",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_sensor",
+       "weight": 12
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_weak_breeze": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:trial_key",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ominous_bottle",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:guster_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:scrape_pottery_sherd",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 7
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_creator_music_box",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_weak_shulker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/possessed_witch": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:honey_bottle",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ominous_bottle",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:water"
+       ]
+      }
+     ]
+    }
+   ],
+   "functions": [
+    "enchanted_count_increase"
+   ]
+  },
+  "occultism:entities/possessed_zombie_piglin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "occultism:demonic_meat",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.8
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "occultism:tallow",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.33
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:porkchop",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/wild_horde_creeper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_13",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_cat",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_blocks",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_chirp",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_far",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_mall",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_mellohi",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_stal",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_strad",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_ward",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_11",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_wait",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/wild_horde_drowned": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sniffer_egg",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:turtle_egg",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:trident",
+       "weight": 3
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:angler_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shelter_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:snort_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blade_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:explorer_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mourner_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:plenty_pottery_sherd",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_shard",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_crystals",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/wild_horde_husk": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dune_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:archer_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:miner_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prize_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skull_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arms_up_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brewer_pottery_sherd",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/wild_horde_silverfish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_relic",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:host_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raiser_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shaper_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wayfinder_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:burn_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:danger_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:friend_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:heart_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:heartbreak_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:howl_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sheaf_pottery_sherd",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/wild_hunt_skeleton": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "occultism:entities/wild_hunt_wither_skeleton": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1,
+       "count": {
+        "min": -1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wither_skeleton_skull",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wither_rose",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rib_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "occultism:datura_seed_from_grass": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    {
+     "random_chance": 0.02
+    },
+    "block_state_property",
+    {
+     "not": "match_tool"
+    }
+   ],
+   "params": {
+    "count": 1,
+    "item": "occultism:datura_seeds"
+   },
+   "refs": [
+    "occultism:datura_seeds"
+   ]
+  },
+  "occultism:datura_seed_from_tall_grass": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    {
+     "random_chance": 0.02
+    },
+    "block_state_property",
+    {
+     "not": "match_tool"
+    }
+   ],
+   "params": {
+    "count": 1,
+    "item": "occultism:datura_seeds"
+   },
+   "refs": [
+    "occultism:datura_seeds"
+   ]
+  },
+  "occultism:head_from_creeper": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance": 0.25
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "count": 1,
+    "item": "minecraft:creeper_head"
+   },
+   "refs": [
+    "minecraft:creeper_head"
+   ]
+  },
+  "occultism:head_from_dragon": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance": 0.9
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "count": 1,
+    "item": "minecraft:dragon_head"
+   },
+   "refs": [
+    "minecraft:dragon_head"
+   ]
+  },
+  "occultism:head_from_piglin": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance": 0.25
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "count": 1,
+    "item": "minecraft:piglin_head"
+   },
+   "refs": [
+    "minecraft:piglin_head"
+   ]
+  },
+  "occultism:head_from_skeleton": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance": 0.25
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "count": 1,
+    "item": "minecraft:skeleton_skull"
+   },
+   "refs": [
+    "minecraft:skeleton_skull"
+   ]
+  },
+  "occultism:head_from_wither_skeleton": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance": 0.15
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "count": 1,
+    "item": "minecraft:wither_skeleton_skull"
+   },
+   "refs": [
+    "minecraft:wither_skeleton_skull"
+   ]
+  },
+  "occultism:head_from_zombie": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance": 0.25
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "count": 1,
+    "item": "minecraft:zombie_head"
+   },
+   "refs": [
+    "minecraft:zombie_head"
+   ]
+  },
+  "occultism:tallow_from_cows": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 4,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_donkeys": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 3,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_goats": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 2,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_hoglins": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 4,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_horses": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 3,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_llamas": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 3,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_mules": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 3,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_pandas": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 3,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_pigs": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 2,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  },
+  "occultism:tallow_from_sheep": {
+   "type": "occultism:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "count": 2,
+    "item": "occultism:tallow"
+   },
+   "refs": [
+    "occultism:tallow"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "occultism:datura_seed_from_grass",
+    "occultism:datura_seed_from_tall_grass",
+    "occultism:tallow_from_cows",
+    "occultism:tallow_from_donkeys",
+    "occultism:tallow_from_goats",
+    "occultism:tallow_from_hoglins",
+    "occultism:tallow_from_horses",
+    "occultism:tallow_from_llamas",
+    "occultism:tallow_from_mules",
+    "occultism:tallow_from_pandas",
+    "occultism:tallow_from_pigs",
+    "occultism:tallow_from_sheep",
+    "occultism:head_from_zombie",
+    "occultism:head_from_creeper",
+    "occultism:head_from_piglin",
+    "occultism:head_from_skeleton",
+    "occultism:head_from_wither_skeleton",
+    "occultism:head_from_dragon"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

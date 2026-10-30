@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "L_Ender's Cataclysm",
  "file": "L_Ender's Cataclysm 1.21.1-3.33.jar",
@@ -3066,6 +3066,2286 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "cataclysm:archaeology/cursed_pyramid": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:archer_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:miner_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prize_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skull_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tnt",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:necklace_of_the_desert",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:archaeology/cursed_pyramid_necklace": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:necklace_of_the_desert",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:chests/abandoned": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:sturdy_boots",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 12,
+       "count": {
+        "min": 4.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_ingot",
+       "weight": 7,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 7,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_shovel",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:chests/abandoned_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:sturdy_boots",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 12,
+       "count": {
+        "min": 4.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_ingot",
+       "weight": 7,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 7,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_sword",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_axe",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_shovel",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:ring_of_grudged",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:berserker_soul_amulet",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:chests/acropolis_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 10,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 6,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 3,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 20,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 15,
+       "count": {
+        "min": 2.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 7,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:turtle_scute",
+       "weight": 12,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_leggings",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_shovel",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:trident",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_shovel",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:chests/amethyst_nest_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 30
+      },
+      {
+       "kind": "empty",
+       "weight": 5
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:amethyst_crab_meat",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:amethyst_crab_shell",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 10,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_berries",
+       "weight": 15,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 16.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:chests/desert_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:ancient_metal_ingot",
+       "weight": 15,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 20,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 3
+      },
+      {
+       "kind": "empty",
+       "weight": 15
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dune_armor_trim_smithing_template",
+       "weight": 1,
+       "count": 2.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:unbreakable_skull",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:vitality_ankh",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:chests/frosted_prison_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 10,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_ingot",
+       "weight": 10,
+       "count": {
+        "min": 5.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 15,
+       "count": {
+        "min": 2.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_leggings",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_shovel",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_sword",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_axe",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_shovel",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/amethyst_crab": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:amethyst_crab_meat",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 10.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:amethyst_crab_shell",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/ancient_remnant": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:sandstorm_in_a_bottle",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:remnant_skull",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:ancient_metal_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_ancient_remnant",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/aptrgangr": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:strange_key",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_nugget",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/cindaria": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/clawdian": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:chitin_claw",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 8.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/coral_golem": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:crystallized_coral_fragments",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/coralssus": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:coral_chunk",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/deepling": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 1.0
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/deepling_angler": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/deepling_brute": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/deepling_priest": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:athame",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/deepling_warlock": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:athame",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/draugr": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_nugget",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_ingot",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/drowned_host": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.11
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/elite_draugr": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_nugget",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_ingot",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/ender_golem": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:void_core",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/ender_guardian": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:gauntlet_of_guard",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_ender_guardian",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/endermaptera": {
+   "type": null,
+   "pools": []
+  },
+  "cataclysm:entities/endermaptera_has_jaws": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:void_jaw",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/hippocamtus": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/ignis": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 3,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:ignitium_ingot",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_ignis",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/ignited_berserker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:dying_ember",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/ignited_revenant": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:burning_ashes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/kobolediator": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:kobolediator_skull",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:koboleton_bone",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:ancient_metal_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/koboleton": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:koboleton_bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:ancient_metal_nugget",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:ancient_metal_ingot",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/lionfish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lionfish",
+       "weight": 1,
+       "count": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/maledictus": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_maledictus",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:cursium_ingot",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/modern_remnant": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:remnant_skull",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/netherite_ministrosity": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:netherite_effigy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/netherite_monstrosity": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:infernal_forge",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:monstrous_horn",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lava_power_cell",
+       "weight": 1,
+       "count": {
+        "min": 16.0,
+        "max": 24.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_netherite_monstrosity",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/royal_draugr": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_nugget",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:black_steel_ingot",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/scylla": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 1,
+       "count": {
+        "min": 8.0,
+        "max": 16.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:essence_of_the_storm",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_scylla",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/symbiocto": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ink_sac",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/the_baby_leviathan": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:abyssal_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/the_harbinger": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:witherite_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_the_harbinger",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/the_leviathan": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:tidal_claws",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:abyssal_egg",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:music_disc_the_leviathan",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/the_prowler": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 9.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 7.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/the_watcher": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/urchinkin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:lacrima",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "cataclysm:entities/wadjet": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "cataclysm:ancient_metal_ingot",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

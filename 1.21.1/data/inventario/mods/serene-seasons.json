@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Serene Seasons",
  "file": "SereneSeasons-neoforge-1.21.1-10.1.0.9.jar",
@@ -317,6 +317,28 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "sereneseasons:block/season_sensor": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      "survives_explosion"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sereneseasons:season_sensor",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

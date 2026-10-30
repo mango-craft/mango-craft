@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "The Twilight Forest",
  "file": "twilightforest-1.21.1-4.8.3345-universal.jar",
@@ -7470,6 +7470,7824 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "twilightforest:aurora_cache": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ice",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:packed_ice",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_wafer",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:aurora_block",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_fur",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_fur",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ice_bow",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ender_bow",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ice_sword",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 25,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:aurora_room": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_wafer",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ice_bomb",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ice",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:packed_ice",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_fur",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:knightmetal_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:knightmetal_sword",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:ice_bow",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ender_bow",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ice_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:glass_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:camp_armor_rack": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_boots",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:camp_drying_rack": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:chicken_jerky",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:mutton_jerky",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:pork_jerky",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:venison_jerky",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:beef_jerky",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:tanned_leather",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:rabbit_jerky",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "inline": {
+        "type": null,
+        "pools": [
+         {
+          "rolls": 1.0,
+          "entries": [
+           {
+            "kind": "item",
+            "id": "minecraft:leather_helmet",
+            "weight": 1
+           },
+           {
+            "kind": "item",
+            "id": "minecraft:leather_chestplate",
+            "weight": 1
+           },
+           {
+            "kind": "item",
+            "id": "minecraft:leather_leggings",
+            "weight": 1
+           },
+           {
+            "kind": "item",
+            "id": "minecraft:leather_boots",
+            "weight": 1
+           }
+          ]
+         }
+        ]
+       },
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:gelatinous_slime_drop",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:camp_pot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:chicken_jerky",
+       "weight": 8,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:mutton_jerky",
+       "weight": 8,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:pork_jerky",
+       "weight": 8,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:venison_jerky",
+       "weight": 8,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:beef_jerky",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:tanned_leather",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:rabbit_jerky",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:gelatinous_slime_drop",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:camp_tent": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:tannin",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:venison_jerky",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:mutton_jerky",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:pork_jerky",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:birch_drying_rack",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shears",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/basement": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 75,
+       "functions": [
+        "set_potion=minecraft:water"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_slice",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:water_bucket",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 75,
+       "count": {
+        "min": 2.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:shika_senbei",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_beef",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_porkchop",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:baked_potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_chicken",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_cod",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cake",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_boat",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:hollow_oak_sapling",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_home",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_radiance",
+       "weight": 15
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/casket_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 8.0,
+      "max": 16.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/hut_junk": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 9.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bowl",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:water"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coarse_dirt",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sand",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:chests/suspicious_stew",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bell",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/just_bones": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "inline": {
+        "type": null,
+        "pools": [
+         {
+          "rolls": 1.0,
+          "entries": [
+           {
+            "kind": "item",
+            "id": "minecraft:bone",
+            "weight": 1,
+            "count": {
+             "min": 49.0,
+             "max": 50.0
+            }
+           }
+          ]
+         },
+         {
+          "rolls": 1.0,
+          "entries": [
+           {
+            "kind": "item",
+            "id": "minecraft:bone",
+            "weight": 1,
+            "count": 39.0
+           }
+          ]
+         }
+        ]
+       },
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 50,
+       "count": 15.0
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 50,
+       "count": 16.0
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 50,
+       "count": {
+        "min": 12.0,
+        "max": 13.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 50,
+       "count": 13.0
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/suspicious_stew": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 1,
+       "functions": [
+        "set_stew_effect"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_enchanting": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 15.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 16.0,
+        "max": 32.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_foyer": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:charcoal",
+       "weight": 6,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:raven_feather",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:torchberries",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 6,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 3,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:chests/suspicious_stew",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_grave_lower": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:chests/just_bones",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 1,
+       "functions": [
+        "set_damage"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 1,
+       "functions": [
+        "set_damage"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_grave_upper": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:chests/just_bones",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:skeleton_skull",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 1,
+       "functions": [
+        "set_damage"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_jars": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chain",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fermented_spider_eye",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:raven_feather",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:liveroot",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ink_sac",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:zombie_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skeleton_skull",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 8
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_library": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 24.0,
+        "max": 56.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ink_sac",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:canopy_bookshelf",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bookshelf",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:writable_book",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ladder",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 10.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:brittle_potion_flask",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 2,
+       "count": {
+        "min": 4.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:crown_splinter",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:writable_book",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_potion": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ghast_tear",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fermented_spider_eye",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_powder",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magma_cream",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 8.0,
+        "max": 20.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 1,
+       "count": {
+        "min": 6.0,
+        "max": 13.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:healing"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:strength"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:fire_resistance"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_rod",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 75,
+       "functions": [
+        "set_potion=minecraft:strong_healing"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 75,
+       "functions": [
+        "set_potion=minecraft:swiftness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 75,
+       "functions": [
+        "set_potion=minecraft:regeneration"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:crown_splinter",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brewing_stand",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:greater_potion_flask",
+       "weight": 25
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:brittle_potion_flask",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:chests/tower_room": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 75,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clay_ball",
+       "weight": 75,
+       "count": {
+        "min": 6.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 75,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 75,
+       "count": {
+        "min": 9.0,
+        "max": 24.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:candle",
+       "weight": 75,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:chests/suspicious_stew",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 75,
+       "count": {
+        "min": 3.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 75,
+       "count": {
+        "min": 6.0,
+        "max": 20.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 75,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:transformation_powder",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:magic_map",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:exanimate_essence",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:brittle_potion_flask",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 13.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:healing"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:regeneration"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:strength"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:liveroot",
+       "weight": 75,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:crown_splinter",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_helmet",
+       "weight": 75,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 75,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_axe",
+       "weight": 75,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:moonworm_queen",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:peacock_feather_fan",
+       "weight": 25
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:darktower_boss": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:carminite",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:fiery_tears",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:ur_ghast_trophy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:darktower_cache": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:charcoal",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:experiment_115",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_wool",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:redstone_lamp",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:darktower_key": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:experiment_115",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_pickaxe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_sword",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:tower_key",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/adherent": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/alpha_yeti": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:alpha_yeti_fur",
+       "weight": 1,
+       "count": 6.0,
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:ice_bomb",
+       "weight": 1,
+       "count": 6.0,
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:alpha_yeti_trophy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/armored_giant": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:giant_sword",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/black": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:black_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/blue": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blue_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/brown": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brown_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/cyan": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cyan_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/gray": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gray_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/green": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:green_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/light_blue": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:light_blue_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/light_gray": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:light_gray_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/lime": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:lime_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/magenta": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:magenta_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/orange": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:orange_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/pink": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pink_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/purple": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:purple_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/red": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:red_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/white": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:white_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/bighorn_sheep/yellow": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:yellow_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/sheep",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/blockchain_goblin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:armor_shard",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/boar": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:porkchop",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase",
+        "set_name"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/carminite_broodling": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/spider",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/carminite_ghastguard": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/ghast",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/carminite_ghastling": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "twilightforest:is_minion"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/ghast",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/carminite_golem": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:towerwood",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/death_tome": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "functions": [
+      "enchanted_count_increase"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:writable_book",
+       "weight": 2,
+       "quality": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 19
+      },
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:entities/death_tome_books",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:magic_map_focus",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/death_tome_books": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 32,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 8,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/death_tome_hurt": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:empty",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/deer": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:raw_venison",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/dwarf_rabbit": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/rabbit",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/fire_beetle": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/giant_miner": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:giant_pickaxe",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/harbinger_cube": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/hedge_spider": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/spider",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/helmet_crab": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:armor_shard",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.5
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/hostile_wolf": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/wolf",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/hydra": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:hydra_chop",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 35.0
+       },
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:fiery_blood",
+       "weight": 1,
+       "count": {
+        "min": 7.0,
+        "max": 10.0
+       },
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:hydra_trophy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/ice_crystal": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:snowball",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/king_spider": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/spider",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/knight_phantom": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "n": {
+       "type": "twilightforest:looting_rolls"
+      },
+      "p": 0.17
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:knightmetal_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:knightmetal_pickaxe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:knightmetal_axe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "n": {
+       "type": "twilightforest:looting_rolls"
+      },
+      "p": 0.17
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:phantom_helmet",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:phantom_chestplate",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "n": {
+       "type": "twilightforest:looting_rolls"
+      },
+      "p": 0.17
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:phantom_helmet",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:phantom_chestplate",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/knight_phantom_defeated": {
+   "type": "minecraft:empty",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:knight_phantom_trophy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/kobold": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1,
+       "count": {
+        "min": -1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/lich": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "type": "twilightforest:multiplayer_rolls"
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:twilight_scepter",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:lifedrain_scepter",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:zombie_scepter",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:fortification_scepter",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "type": "twilightforest:multiplayer_rolls"
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_helmet",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_chestplate",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_leggings",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_boots",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 9.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:lich_trophy",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:exanimate_essence",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/lich_minion": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/lower_goblin_knight": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:armor_shard",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/loyal_zombie": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/maze_slime": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_slime_ball",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        {
+         "not": "damage_source_properties"
+        }
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_slime_ball",
+       "weight": 1,
+       "count": 1.0,
+       "conditions": [
+        "damage_source_properties"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.015
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/minoshroom": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "type": "twilightforest:multiplayer_rolls"
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:meef_stroganoff",
+       "weight": 1,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:minoshroom_trophy",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:diamond_minotaur_axe",
+       "weight": 1,
+       "functions": [
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/minotaur": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:raw_meef",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "enchanted_count_increase",
+        "furnace_smelt"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_map_focus",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/mist_wolf": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/wolf",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/mosquito_swarm": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/naga": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:naga_scale",
+       "weight": 1,
+       "count": {
+        "min": 6.0,
+        "max": 11.0
+       },
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:naga_trophy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/penguin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/pinch_beetle": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/plateau_boss": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/quest_ram": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/questing_ram_reward_blocks": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:coal_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:copper_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald_block",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/questing_ram_rewards": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:crumble_horn",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bundle",
+       "weight": 1,
+       "functions": [
+        "set_contents"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/raven": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:raven_feather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/redcap": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/redcap_sapper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:entities/redcap",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/rising_zombie": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/zombie",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/roving_cube": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/skeleton_druid": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:torchberries",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/slime_beetle": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/snow_guardian": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:snowball",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/snow_queen": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "type": "twilightforest:multiplayer_rolls"
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:triple_bow",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:seeker_bow",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:packed_ice",
+       "weight": 1,
+       "count": 7.0,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:snowball",
+       "weight": 1,
+       "count": 16.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:snow_queen_trophy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/squirrel": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "twilightforest:entities/stable_ice_core": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:snowball",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/swarm_spider": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:entities/spider",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/tiny_bird": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/towerwood_borer": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:borer_essence",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/troll": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:magic_beans",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/unstable_ice_core": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:snowball",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/upper_goblin_knight": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:armor_shard",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/ur_ghast": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:carminite",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:fiery_tears",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       },
+       "functions": [
+        "enchanted_count_increase",
+        "twilightforest:multiplayer_addition"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:ur_ghast_trophy",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/winter_wolf": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_fur",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/wraith": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:entities/yeti": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:arctic_fur",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:fallen_trunk_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_slice",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:shika_senbei",
+       "weight": 75,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:water_bucket",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 75
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:twilight_oak_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:canopy_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:mangrove_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:darkwood_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:hollow_oak_sapling",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_superstitious",
+       "weight": 25
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:fancy_well": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 15.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 1,
+       "count": {
+        "min": 6.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 20.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:water_bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:raw_ironwood",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 75,
+       "count": {
+        "min": 5.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_steps",
+       "weight": 50
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 25,
+       "count": {
+        "min": 4.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 25,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_2",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:transformation_powder",
+       "weight": 25,
+       "count": {
+        "min": 5.0,
+        "max": 17.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:foundation_basement": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 75,
+       "functions": [
+        "set_potion=minecraft:water"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:water_bucket",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 75
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:awkward"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:mundane"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:thick"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_thread",
+       "weight": 50
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_boat",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:hollow_oak_sapling",
+       "weight": 25
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:graveyard": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 32.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:torchberries",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 16.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:moon_dial",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:transformation_powder",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:uncrafting_table",
+       "weight": 1,
+       "conditions": [
+        "twilightforest:uncrafting_table_enabled"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:hedge_cloth": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:white_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_gray_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gray_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:black_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:orange_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:yellow_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:green_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lime_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blue_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cyan_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_blue_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purple_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magenta_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pink_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_carpet",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 8.0,
+        "max": 17.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:emperors_cloth",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:hedge_maze": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_planks",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:melon_slice",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shears",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_motion",
+       "weight": 15
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:hill_1": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 75
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ore_magnet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:liveroot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ore_meter",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:transformation_powder",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_findings",
+       "weight": 25
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:hill_2": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ladder",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 75
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:baked_potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ore_magnet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:magic_map",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:transformation_powder",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:uncrafting_table",
+       "weight": 75,
+       "conditions": [
+        "twilightforest:uncrafting_table_enabled"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:peacock_feather_fan",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:pocket_watch",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_wayfarer",
+       "weight": 25
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:hill_3": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:torchberries",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ore_magnet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:transformation_powder",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_pickaxe",
+       "weight": 75,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:magic_map",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:moonworm_queen",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_block",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:music_disc_maker",
+       "weight": 20
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:items/lifedrain_scepter_kill_bonus": {
+   "type": "minecraft:empty",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:labyrinth_dead_end": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_wafer",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:red_thread",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 18.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_rod",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:labyrinth_room": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_wafer",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_pickaxe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_sword",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:red_thread",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 15.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_map_focus",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_map",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tnt",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:strong_healing"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:labyrinth_vault": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_wafer",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:strong_regeneration"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:strong_healing"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:strong_swiftness"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_shovel",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_axe",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_chestplate",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_boots",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_leggings",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_helmet",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald_block",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_chest",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_pickaxe",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_sword",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_sword",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:labyrinth_vault_jackpot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:labyrinth_vault",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:mazebreaker_pickaxe",
+       "weight": 1,
+       "functions": [
+        "set_enchantments"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:quest_grove_dropper": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:white_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:orange_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magenta_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_blue_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:yellow_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lime_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pink_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gray_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_gray_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cyan_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purple_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blue_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:green_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:black_wool",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:stronghold_cache": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_wafer",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blue_wool",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:armor_shard",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:knightmetal_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 75,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 75,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_sword",
+       "weight": 75,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_sword",
+       "weight": 75,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 25,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 25,
+       "functions": [
+        "set_enchantments"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:stronghold_room": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_wafer",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_ingot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_pickaxe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_sword",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:ironwood_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:steeleaf_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:maze_map_focus",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:tree_cache": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:useless",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_slice",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:water_bucket",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 75
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:twilight_oak_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:canopy_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:mangrove_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:darkwood_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:firefly",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_keeping_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:charm_of_life_1",
+       "weight": 75
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:hollow_oak_sapling",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:time_sapling",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:transformation_sapling",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:mining_sapling",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:sorting_sapling",
+       "weight": 25
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:troll_garden": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 12.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:uberous_soil",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:magic_beans",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:troll_vault": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:torchberries",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:trollsteinn",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:troll_vault_with_lamp": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "twilightforest:troll_vault",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "twilightforest:lamp_of_cinders",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:useless": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:poppy",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dandelion",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cactus",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar_cane",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sand",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flower_pot",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "twilightforest:well": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 75,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 75,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 75,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 75,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 25
+      }
+     ]
+    },
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ink_sac",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:water_bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bowl",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "twilightforest:raw_ironwood",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shears",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "twilightforest:fiery_pick_smelting": {
+   "type": "twilightforest:fiery_pick_smelting",
+   "targets": [],
+   "conditions": [
+    "match_tool"
+   ],
+   "params": {},
+   "refs": []
+  },
+  "twilightforest:giant_pick_grouping": {
+   "type": "twilightforest:giant_block_grouping",
+   "targets": [],
+   "conditions": [
+    "twilightforest:giant_pick_used"
+   ],
+   "params": {},
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "twilightforest:fiery_pick_smelting",
+    "twilightforest:giant_pick_grouping"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

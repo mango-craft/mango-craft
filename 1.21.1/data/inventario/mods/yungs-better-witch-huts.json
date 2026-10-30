@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "YUNG's Better Witch Huts",
  "file": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
@@ -112,6 +112,156 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "betterwitchhuts:chests/hut_0": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sugar",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 10,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_foot",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pufferfish",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:phantom_membrane",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 10,
+       "count": {
+        "min": 4.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 10,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 10,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 10,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 10,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 10,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 10,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 10,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 10,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

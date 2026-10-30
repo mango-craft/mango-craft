@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Better Archeology",
  "file": "betterarcheology-neoforge-1.21.1-1.3.9.jar",
@@ -1052,6 +1052,3834 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "betterarcheology:archeology/chest_buried_ruins_sand": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fermented_spider_eye",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:heartbreak_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clay_ball",
+       "weight": 3,
+       "count": {
+        "min": 5,
+        "max": 15
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 2,
+       "functions": [
+        "set_stew_effect"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_foot",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.5
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_shovel",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spyglass",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clock",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:compass",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lead",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_catacombs_combat": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "betterarcheology:archeology/loot_catacombs_generic",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tnt",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:phantom_membrane",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crossbow",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "betterarcheology:archeology/loot_catacombs_equipment",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_catacombs_generic": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4,
+      "max": 6
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "betterarcheology:archeology/loot_catacombs_generic",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:totem_of_undying",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skull_banner_pattern",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "betterarcheology:archeology/loot_catacombs_equipment",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_catacombs_golden": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:clock",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 4,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spectral_arrow",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flower_banner_pattern",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_relic",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 10
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:writable_book",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 4,
+       "count": {
+        "min": 4,
+        "max": 6
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "betterarcheology:archeology/loot_catacombs_generic",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_catacombs_library": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "betterarcheology:archeology/loot_catacombs_generic",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sentry_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ink_sac",
+       "weight": 3,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_ink_sac",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_catacombs_potion": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 3,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 4,
+       "count": {
+        "min": 3,
+        "max": 7
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fermented_spider_eye",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 1,
+       "functions": [
+        "set_stew_effect"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:poison"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:swiftness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:healing"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:regeneration"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:slow_falling"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_jungle_temple_equip": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:poison"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:weakness"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "functions": [
+      "enchant_with_levels"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crossbow",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:swiftness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:healing"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tnt",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lead",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_jungle_temple_food": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 50,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 50
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 1,
+       "functions": [
+        "set_stew_effect"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_mutton",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:baked_potato",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_salmon",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_jungle_temple_generic": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_otherside",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_13",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_cat",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 20,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "bonus_rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:goat_horn",
+       "weight": 4,
+       "functions": [
+        "set_instrument"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clock",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spyglass",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:bomb",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 7,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brush",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:iron_brush",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:diamond_brush",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_jungle_temple_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 3,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 2,
+       "count": {
+        "min": 4,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:totem_of_undying",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:archer_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brewer_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prize_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:plenty_pottery_sherd",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wild_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_axe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_shovel",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_light_temple_book": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 3,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 4,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ink_sac",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:quartz",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_light_temple_generic": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 2,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_foot",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wild_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_light_temple_pillager": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:goat_horn",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       },
+       "functions": [
+        "set_instrument"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_mutton",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:lantern",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:crossbow",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_light_temple_treasure": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 4,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 5,
+       "count": {
+        "min": 4,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 3,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:quartz",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 6,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flower_banner_pattern",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wild_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:host_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_strad",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_far",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_mall",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_loot_prototype": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_otherside",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_13",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_cat",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 10,
+       "functions": [
+        "enchant_randomly"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "bonus_rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:goat_horn",
+       "weight": 4,
+       "functions": [
+        "set_instrument"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clock",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spyglass",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:bomb",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       },
+       "functions": [
+        "set_potion=minecraft:slowness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       },
+       "functions": [
+        "set_potion=minecraft:poison"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       },
+       "functions": [
+        "set_potion=minecraft:harming"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       },
+       "functions": [
+        "set_potion=minecraft:weakness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spectral_arrow",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 20,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 15,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 7,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_hide",
+       "weight": 7,
+       "count": {
+        "min": 5,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_foot",
+       "weight": 3
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "betterarcheology:archeology/sword_loot",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:torrent_totem",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brush",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:iron_brush",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:diamond_brush",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_mesa_ruins": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.5
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:soul_totem",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:totem_of_undying",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dune_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:bomb",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       },
+       "functions": [
+        "set_potion=minecraft:harming"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       },
+       "functions": [
+        "set_potion=minecraft:weakness"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_cod",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_rabbit",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_salmon",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 1,
+       "functions": [
+        "set_stew_effect"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_hide",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 2,
+       "count": {
+        "min": 5,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 2,
+       "count": {
+        "min": 5,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 3,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_mott": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wayfinder_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:host_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raiser_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shaper_armor_trim_smithing_template",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 1,
+       "functions": [
+        "set_stew_effect"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mutton",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stone_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone_pickaxe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone_axe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 8,
+        "max": 15
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": []
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_radiance_totem": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:compass",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_11",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint_and_steel",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_sculk_sword": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:skull_banner_pattern",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skull_pottery_sherd",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skeleton_skull",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:echo_shard",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 3,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ghast_tear",
+       "weight": 1,
+       "count": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:lingering_potion",
+       "weight": 2,
+       "functions": [
+        "set_potion=minecraft:weakness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:soul_totem",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_tumulus": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wayfinder_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raiser_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shaper_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:host_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:totem_of_undying",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/chest_underwater": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.5
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:coast_armor_trim_smithing_template",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:torrent_totem",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:writable_book",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fishing_rod",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 1,
+       "functions": [
+        "set_stew_effect"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dried_kelp",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:poisonous_potato",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_crystals",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:prismarine_shard",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:heart_of_the_sea",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:turtle_scute",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/desert_sand": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:archaeology/desert_well",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:artifact_shards",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/fossiliferous_dirt_chicken": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:chicken_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:chicken_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/fossiliferous_dirt_creeper": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:creeper_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:creeper_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/fossiliferous_dirt_guardian": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:guardian_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:guardian_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/fossiliferous_dirt_jungle": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:ocelot_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:ocelot_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/fossiliferous_dirt_sheep": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:sheep_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:sheep_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/fossiliferous_dirt_villager": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:villager_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:villager_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/fossiliferous_dirt_wolf": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:wolf_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:wolf_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/loot_catacombs_equipment": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_11",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_13",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_cat",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_mall",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       },
+       "functions": [
+        "set_potion=minecraft:poison"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       },
+       "functions": [
+        "set_potion=minecraft:slowness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 5
+       },
+       "functions": [
+        "set_potion=minecraft:weakness"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 2,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 3,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:harming"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:splash_potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:healing"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/loot_catacombs_generic": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 15,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 10,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 20,
+       "count": {
+        "min": 4,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 16,
+       "count": {
+        "min": 3,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 8,
+       "count": {
+        "min": 2,
+        "max": 0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:writable_book",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:charcoal",
+       "weight": 5,
+       "count": {
+        "min": 5,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 6,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 5,
+       "functions": [
+        "set_stew_effect"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/mesa_red_sand": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:archaeology/trail_ruins_rare",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:artifact_shards",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/plains_gravel": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:archaeology/desert_pyramid",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:artifact_shards",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/sussand_underwater": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:archaeology/ocean_ruin_warm",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:artifact_shards",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/sword_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 5,
+       "functions": [
+        "set_enchantments",
+        "set_name",
+        "set_lore"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 5,
+       "functions": [
+        "set_name",
+        "set_lore",
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 5,
+       "functions": [
+        "set_name",
+        "set_lore",
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 10,
+       "functions": [
+        "set_name",
+        "set_lore",
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 10,
+       "functions": [
+        "set_enchantments",
+        "set_name",
+        "set_lore"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 10,
+       "functions": [
+        "set_name",
+        "set_lore",
+        "set_enchantments",
+        "set_enchantments"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 15,
+       "functions": [
+        "set_enchantments",
+        "set_name",
+        "set_lore"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:archeology/taiga_dirt": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "minecraft:archaeology/trail_ruins_rare",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "minecraft:archaeology/trail_ruins_common",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:artifact_shards",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:diggable_block": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "betterarcheology:villager_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:villager_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:ocelot_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:ocelot_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:sheep_fossil_head",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "betterarcheology:sheep_fossil_body",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 4
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:explorer_maps/catacombs_explorer_map": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1,
+       "functions": [
+        "exploration_map",
+        "set_name"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterarcheology:explorer_maps/light_explorer_map": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1,
+       "functions": [
+        "exploration_map",
+        "set_name"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

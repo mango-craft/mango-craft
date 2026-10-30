@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Corail Tombstone",
  "file": "tombstone-neoforge-1.21.1-9.5.6.jar",
@@ -1218,6 +1218,720 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "tombstone:ancient_tablet": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "tombstone:tablet_of_recall",
+       "weight": 1,
+       "functions": [
+        "set_components",
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:tablet_of_home",
+       "weight": 1,
+       "functions": [
+        "set_components",
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:tablet_of_assistance",
+       "weight": 1,
+       "functions": [
+        "set_components",
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:tablet_of_cupidity",
+       "weight": 1,
+       "functions": [
+        "set_components",
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:tablet_of_guard",
+       "weight": 1,
+       "functions": [
+        "set_components",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:arrow_giant_strength": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "count": {
+        "min": 5,
+        "max": 5
+       },
+       "functions": [
+        "set_components",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:arrow_little_world": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tipped_arrow",
+       "weight": 1,
+       "count": {
+        "min": 5,
+        "max": 5
+       },
+       "functions": [
+        "set_components",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:blessing_1": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:blessing_3": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:blessing_5": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:curse_of_bones_1": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:curse_of_bones_3": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:curse_of_bones_5": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:essence_of_undeath": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "tombstone:essence_of_undeath",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:frostbite_1": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:frostbite_3": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:frostbite_5": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:gemstone_of_familiar": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "tombstone:gemstone_of_familiar",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:gemstone_of_merchant": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "tombstone:gemstone_of_merchant",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:grave_dust": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "tombstone:grave_dust",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:grave_marble": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "tombstone:dark_marble",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:white_marble",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:blue_marble",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:green_marble",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "tombstone:carmin_marble",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:magic_siphon_3": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:magic_siphon_5": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:plague_bringer_1": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:plague_bringer_3": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:plague_bringer_5": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:receptacle_of_soul": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "tombstone:receptacle_of_soul",
+       "weight": 1,
+       "functions": [
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:reward_knowledge_1": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 1,
+       "functions": [
+        "tombstone:reward_knowledge"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:reward_knowledge_10": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 1,
+       "functions": [
+        "tombstone:reward_knowledge"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:reward_knowledge_2": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 1,
+       "functions": [
+        "tombstone:reward_knowledge"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:reward_knowledge_20": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 1,
+       "functions": [
+        "tombstone:reward_knowledge"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:reward_knowledge_3": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 1,
+       "functions": [
+        "tombstone:reward_knowledge"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:reward_knowledge_5": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 1,
+       "functions": [
+        "tombstone:reward_knowledge"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:soulbound": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:spectral_bite_1": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:spectral_bite_10": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:spectral_bite_3": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "tombstone:spectral_bite_5": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_book",
+       "weight": 1,
+       "functions": [
+        "tombstone:precise_enchant",
+        "tombstone:as_gift"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

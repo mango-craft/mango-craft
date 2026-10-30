@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "[Let's Do] HerbalBrews",
  "file": "letsdo-herbalbrews-neoforge-1.1.4.jar",
@@ -373,6 +373,71 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "herbalbrews:advancements/coffee_beans": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "herbalbrews:coffee_beans",
+       "weight": 1,
+       "count": 12
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "herbalbrews:advancements/completionist": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "herbalbrews:herbalbrews_banner",
+       "weight": 1,
+       "count": 2
+      }
+     ]
+    }
+   ]
+  },
+  "herbalbrews:advancements/lilitus_coffee": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "count": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

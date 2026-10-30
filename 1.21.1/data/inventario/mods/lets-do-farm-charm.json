@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "[Let's Do] Farm & Charm",
  "file": "letsdo-farm_and_charm-neoforge-1.1.28.jar",
@@ -1820,6 +1820,26 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "farm_and_charm:advancements/completionist": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farm_and_charm:scarecrow",
+       "weight": 1,
+       "count": 2
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

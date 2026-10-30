@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Apotheosis",
  "file": "Apotheosis-1.21.1-8.9.0.jar",
@@ -1015,6 +1015,831 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "apotheosis:chests/chest_valuable": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 5.0
+     },
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.05
+     },
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 5
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 7.0
+     },
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.05
+     },
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 4
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 4
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 15
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 40
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 40,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "apotheosis:random_gem",
+       "weight": 20,
+       "quality": 15
+      },
+      {
+       "kind": "apotheosis:random_affix_item",
+       "weight": 20,
+       "quality": 15
+      }
+     ]
+    }
+   ]
+  },
+  "apotheosis:chests/spawner_brutal": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5.0,
+      "max": 8.0
+     },
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.05
+     },
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 2,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "apotheosis:chests/spawner_swarm": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5.0,
+      "max": 6.0
+     },
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.05
+     },
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 2,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "apotheosis:chests/tome_tower": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5.0,
+      "max": 9.0
+     },
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.05
+     },
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 5
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 400,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "apotheosis:random_gem",
+       "weight": 80,
+       "quality": 5
+      },
+      {
+       "kind": "apotheosis:random_affix_item",
+       "weight": 80,
+       "quality": 5
+      }
+     ]
+    }
+   ]
+  },
+  "apotheosis:entity/boss_drops": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "apotheosis:random_gem",
+       "weight": 30,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 25,
+       "quality": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 45
+      }
+     ]
+    }
+   ]
+  },
+  "apotheosis:entity/rare_boss_drops": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "apotheosis:random_gem",
+       "weight": 45,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 1
+      },
+      {
+       "kind": "tag",
+       "id": "apotheosis:boss_music_discs",
+       "expand": true,
+       "weight": 5
+      },
+      {
+       "kind": "empty",
+       "weight": 20
+      }
+     ]
+    }
+   ]
+  },
+  "apotheosis:entity/treasure_goblin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.25
+     },
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 10,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 5
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 7.0
+     },
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.05
+     },
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 4
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 30,
+       "quality": 4
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "quality": 15
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 50
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 40
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 40,
+       "quality": 3
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 40,
+       "quality": 5,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "apotheosis:random_gem",
+       "weight": 80,
+       "quality": 3
+      },
+      {
+       "kind": "apotheosis:random_gem",
+       "weight": 80,
+       "quality": 3
+      },
+      {
+       "kind": "apotheosis:random_affix_item",
+       "weight": 60,
+       "quality": 2
+      },
+      {
+       "kind": "apotheosis:random_affix_item",
+       "weight": 40,
+       "quality": 3
+      },
+      {
+       "kind": "apotheosis:random_affix_item",
+       "weight": 10,
+       "quality": 5
+      },
+      {
+       "kind": "apotheosis:random_affix_item",
+       "weight": 100,
+       "quality": 2
+      }
+     ]
+    }
+   ]
+  },
+  "apothic_spawners:gameplay/unstable_spawner": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 48.0,
+      "max": 64.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "apotheosis:spawner_chain",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "apotheosis:affix_conversion": {
+   "type": "apotheosis:affix_conversion",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  },
+  "apotheosis:affix_hook": {
+   "type": "apotheosis:code_hook",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  },
+  "apotheosis:affix_loot_injection": {
+   "type": "apotheosis:affix_loot",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  },
+  "apotheosis:gem_entity_drops": {
+   "type": "apotheosis:gems",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "killed_by_player"
+   ],
+   "params": {},
+   "refs": []
+  },
+  "apotheosis:gem_entity_drops_from_real_players": {
+   "type": "apotheosis:gems",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "apotheosis:killed_by_real_player"
+   ],
+   "params": {},
+   "refs": []
+  },
+  "apotheosis:gem_loot_injection": {
+   "type": "apotheosis:gems",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "apotheosis:affix_conversion",
+    "apotheosis:affix_loot_injection",
+    "apotheosis:gem_loot_injection",
+    "apotheosis:gem_entity_drops",
+    "apotheosis:gem_entity_drops_from_real_players",
+    "apotheosis:affix_hook"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

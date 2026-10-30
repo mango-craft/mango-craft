@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Create: Integrated Farming",
  "file": "create-integrated-farming-1.4.3.jar",
@@ -290,6 +290,133 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "create_integrated_farming:gameplay/roost/autumnity_turkey": {
+   "type": "minecraft:block",
+   "load": [
+    "mod_loaded:autumnity"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "autumnity:turkey_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "create_integrated_farming:gameplay/roost/chicken": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "create_integrated_farming:gameplay/roost/duck": {
+   "type": "minecraft:block",
+   "load": [
+    "mod_loaded:untitledduckmod"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "untitledduckmod:duck_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "create_integrated_farming:gameplay/roost/environmental_duck": {
+   "type": "minecraft:block",
+   "load": [
+    "mod_loaded:environmental"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "environmental:duck_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "create_integrated_farming:gameplay/roost/goose": {
+   "type": "minecraft:block",
+   "load": [
+    "mod_loaded:untitledduckmod"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "untitledduckmod:goose_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "create_integrated_farming:gameplay/roost/vanillabackport_chicken_cold": {
+   "type": "minecraft:block",
+   "load": [
+    "mod_loaded:vanillabackport"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blue_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "create_integrated_farming:gameplay/roost/vanillabackport_chicken_warm": {
+   "type": "minecraft:block",
+   "load": [
+    "mod_loaded:vanillabackport"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brown_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

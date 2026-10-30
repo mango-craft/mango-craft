@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Traveler's Backpack",
  "file": "travelersbackpack-neoforge-1.21.1-10.1.39.jar",
@@ -788,6 +788,412 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "travelersbackpack:abandoned_mineshaft_inject_gold_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:gold_tier_upgrade",
+    "weight": 0.04
+   },
+   "refs": [
+    "travelersbackpack:gold_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:abandoned_mineshaft_inject_iron_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_tier_upgrade",
+    "weight": 0.05
+   },
+   "refs": [
+    "travelersbackpack:iron_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:abandoned_mineshaft_inject_standard": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:standard",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:standard"
+   ]
+  },
+  "travelersbackpack:bastion_treasure_inject_gold_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/bastion_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:gold_tier_upgrade",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:gold_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:bastion_treasure_inject_iron_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/bastion_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_tier_upgrade",
+    "weight": 0.07
+   },
+   "refs": [
+    "travelersbackpack:iron_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:bat": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:bat",
+    "weight": 0.05
+   },
+   "refs": [
+    "travelersbackpack:bat"
+   ]
+  },
+  "travelersbackpack:desert_pyramid_inject_gold_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/desert_pyramid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:gold_tier_upgrade",
+    "weight": 0.04
+   },
+   "refs": [
+    "travelersbackpack:gold_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:desert_pyramid_inject_iron_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/desert_pyramid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_tier_upgrade",
+    "weight": 0.05
+   },
+   "refs": [
+    "travelersbackpack:iron_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:desert_pyramid_inject_standard": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/desert_pyramid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:standard",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:standard"
+   ]
+  },
+  "travelersbackpack:end_city_treasure_inject_diamond_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/end_city_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:diamond_tier_upgrade",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:diamond_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:end_city_treasure_inject_gold_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/end_city_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:gold_tier_upgrade",
+    "weight": 0.07
+   },
+   "refs": [
+    "travelersbackpack:gold_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:hay": {
+   "type": "travelersbackpack:hay_backpack_modifier",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "cropFromGrassChance": 0.15,
+    "multiplierChance": 0.4,
+    "multiplierAmount": 2
+   },
+   "refs": [
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:beetroot"
+   ]
+  },
+  "travelersbackpack:iron_golem": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/village/village_armorer"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_armorer"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_golem",
+    "weight": 0.1
+   },
+   "refs": [
+    "travelersbackpack:iron_golem"
+   ]
+  },
+  "travelersbackpack:nether_bridge_inject_gold_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/nether_bridge"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:gold_tier_upgrade",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:gold_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:nether_bridge_inject_iron_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/nether_bridge"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_tier_upgrade",
+    "weight": 0.07
+   },
+   "refs": [
+    "travelersbackpack:iron_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:shipwreck_treasure_inject_gold_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/shipwreck_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_treasure"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:gold_tier_upgrade",
+    "weight": 0.05
+   },
+   "refs": [
+    "travelersbackpack:gold_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:shipwreck_treasure_inject_iron_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/shipwreck_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_treasure"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_tier_upgrade",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:iron_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:simple_dungeon_inject_iron_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_tier_upgrade",
+    "weight": 0.05
+   },
+   "refs": [
+    "travelersbackpack:iron_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:simple_dungeon_inject_standard": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:standard",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:standard"
+   ]
+  },
+  "travelersbackpack:woodland_mansion_inject_gold_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/woodland_mansion"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:gold_tier_upgrade",
+    "weight": 0.05
+   },
+   "refs": [
+    "travelersbackpack:gold_tier_upgrade"
+   ]
+  },
+  "travelersbackpack:woodland_mansion_inject_iron_tier_upgrade": {
+   "type": "travelersbackpack:add_item",
+   "targets": [
+    "minecraft:chests/woodland_mansion"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+   ],
+   "params": {
+    "item": "travelersbackpack:iron_tier_upgrade",
+    "weight": 0.06
+   },
+   "refs": [
+    "travelersbackpack:iron_tier_upgrade"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "travelersbackpack:hay",
+    "travelersbackpack:bat",
+    "travelersbackpack:iron_golem",
+    "travelersbackpack:abandoned_mineshaft_inject_standard",
+    "travelersbackpack:abandoned_mineshaft_inject_iron_tier_upgrade",
+    "travelersbackpack:abandoned_mineshaft_inject_gold_tier_upgrade",
+    "travelersbackpack:simple_dungeon_inject_standard",
+    "travelersbackpack:simple_dungeon_inject_iron_tier_upgrade",
+    "travelersbackpack:desert_pyramid_inject_standard",
+    "travelersbackpack:desert_pyramid_inject_iron_tier_upgrade",
+    "travelersbackpack:desert_pyramid_inject_gold_tier_upgrade",
+    "travelersbackpack:shipwreck_treasure_inject_iron_tier_upgrade",
+    "travelersbackpack:shipwreck_treasure_inject_gold_tier_upgrade",
+    "travelersbackpack:woodland_mansion_inject_iron_tier_upgrade",
+    "travelersbackpack:woodland_mansion_inject_gold_tier_upgrade",
+    "travelersbackpack:nether_bridge_inject_iron_tier_upgrade",
+    "travelersbackpack:nether_bridge_inject_gold_tier_upgrade",
+    "travelersbackpack:bastion_treasure_inject_iron_tier_upgrade",
+    "travelersbackpack:bastion_treasure_inject_gold_tier_upgrade",
+    "travelersbackpack:end_city_treasure_inject_gold_tier_upgrade",
+    "travelersbackpack:end_city_treasure_inject_diamond_tier_upgrade"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

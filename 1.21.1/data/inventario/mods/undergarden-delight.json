@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Undergarden Delight",
  "file": "undergardendelight-2.0.2-neoforge-1.21.1.jar",
@@ -919,6 +919,219 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "undergardendelight:gameplay/blood_globule": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergarden:blood_globule",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/blue_mogmoss": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergarden:blue_mogmoss",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/brute_tusk": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergarden:brute_tusk",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/cooked_gwibsteak": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergardendelight:cooked_gwibsteak",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/dweller_hamleg": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergardendelight:greater_dweller_hamleg",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/greater_dweller_hamleg": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergardendelight:greater_dweller_hamleg",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/leather": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/mogmoss": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergarden:mogmoss",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/raw_gwibsteak": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergardendelight:raw_gwibsteak",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/smoked_dweller_hamleg": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergardendelight:smoked_greater_dweller_hamleg",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "undergardendelight:gameplay/smoked_greater_dweller_hamleg": {
+   "type": "minecraft:generic",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "undergardendelight:smoked_greater_dweller_hamleg",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }
