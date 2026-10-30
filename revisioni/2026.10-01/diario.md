@@ -49,3 +49,11 @@ Il piano è in [piano.md](piano.md). Le voci sono in ordine di tempo; la più re
 - **Esamina mod** rilanciato sulle stesse due mod, ora nella versione nuova: verde in 8 secondi, artefatto `esame-mod` scaricato con `gh run download`, identico all'esame già nello stage; nessun commit sul ramo. Prova del piano chiusa.
 - Avviso di GitHub in tutte le esecuzioni: `actions/checkout@v4`, `setup-go@v5` e `upload-artifact@v4` usano Node 20, deprecato (girano su Node 24 forzato). Non blocca.
 - **Aperto:** `/context` (lo vede solo Matteo); la domanda sulle sessioni su claude.ai.
+
+## 30/10/2026 — Via claude.ai, revisione chiusa
+
+- **Agente:** claude-code (claude-opus-5-5)
+- Matteo: `/context` mostra `ai-agents/contesto-locale.md` tra i file di memoria (ultima prova del piano). Poi: «non uso più la versione claude.ai del progetto, elimino oggi quel progetto, quindi ripulisci i file dove serve». Risponde al punto aperto: decisione e lavoro n. 9 aggiunti al piano prima di procedere.
+- **Verificato prima di togliere il workflow:** `python3 scripts/esamina.py` sulle due mod della 0.7.3, nella sandbox, dà lo stesso esame dell'artefatto (cambiano solo i download).
+- **Fatto:** `AGENTS.md` sezione 8 in una lista sola senza «Da claude.ai», sezione 6 con il log del workflow invece del rimando; `.github/workflows/esamina.yml` tolto; `docs/0201-sviluppo.md` (riga dello script, riga del workflow tolta, release con `gh workflow run`); `ai-agents/README.md`; commenti di `esamina.py` (anche l'intestazione dei file che scrive), `packwiz_index.py`, `modrinth-add.yml` e `curseforge-add.yml`. Non toccate le fotografie: file delle versioni, changelog, schede che citano il workflow come fonte, archivio.
+- **Revisione chiusa**: esito nel piano; restano aperti, non bloccanti, il peso del contesto e il merge in `main` con la 0.7.3.

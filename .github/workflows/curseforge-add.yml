@@ -44,8 +44,8 @@ jobs:
           URLS: ${{ inputs.urls }}
         run: |
           test -f "$PACK/pack.toml" || { echo "Pack non trovato: $PACK"; exit 1; }
-          # L'output di packwiz va in un file del repository (i log dei workflow non sono
-          # leggibili da tutti gli strumenti)
+          # L'output di packwiz va in un file del repository: resta nel ramo accanto
+          # a controllo.md, anche dopo che il log del workflow è scaduto
           LOG="$PWD/$(dirname "$PACK")/data/inventario/ultimo-workflow.log"
           mkdir -p "$(dirname "$LOG")"
           echo "Aggiungi mod CurseForge — $(date -u +%F)" > "$LOG"

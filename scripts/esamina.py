@@ -9,15 +9,13 @@ Uso: python3 scripts/esamina.py <cartella pack> <cartella risultati> <filtro> [-
 - --stringhe: espressione regolare sui testi scritti nel codice compilato (.class): nomi di
   file di config, chiavi, comandi. Si leggono solo le costanti del file, senza eseguirlo.
 
-Per ogni mod scrive `<cartella risultati>/<slug>.md` (in locale una cartella dello stage,
-`ai-agents/stage/<data>-esame-mod/`, materiale grezzo fuori da git; il workflow ne fa un
-artefatto): versione scelta, mod id e dipendenze
-dichiarate nel .jar (con le versioni richieste), cartelle di dati con il numero di file e,
+Per ogni mod scrive `<cartella risultati>/<slug>.md` (una cartella dello stage,
+`ai-agents/stage/<data>-esame-mod/`, materiale grezzo fuori da git): versione scelta,
+mod id e dipendenze dichiarate nel .jar (con le versioni richieste), cartelle di dati con il numero di file e,
 per i file filtrati, i valori. Non copia i file: elenca i valori che servono per l'analisi
 (il contenuto delle mod resta dei rispettivi autori).
 
-Non esegue codice delle mod: apre i .jar come archivi zip. Serve la rete verso Modrinth:
-gira in locale o nelle GitHub Actions (workflow "Esamina mod").
+Non esegue codice delle mod: apre i .jar come archivi zip. Serve la rete verso Modrinth.
 """
 import hashlib
 import io
@@ -131,7 +129,7 @@ def examine(entry: str, mc: str, loader: str, regex, strings_re, out_dir: Path) 
     walk(data, f["filename"], 0, out)
 
     lines = [f"# {project['title']} ({project['slug']})", "",
-             "File generato da `scripts/esamina.py` (workflow \"Esamina mod\"): la mod **non** è nel pack. "
+             "File generato da `scripts/esamina.py`: la mod **non** è nel pack. "
              "Non modificarlo a mano.", "",
              f"- Versione: **{v['version_number']}** ({v.get('version_type')}, {v['date_published'][:10]}), "
              f"file `{f['filename']}`, id versione `{v['id']}`",

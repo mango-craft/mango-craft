@@ -52,8 +52,8 @@ jobs:
         env:
           PACK: ${{ inputs.pack }}
         run: |
-          # L'output di packwiz va in un file del repository: i log dei workflow
-          # non sono leggibili da tutti gli strumenti (es. dallo spazio di lavoro di Claude)
+          # L'output di packwiz va in un file del repository: resta nel ramo accanto
+          # a controllo.md, anche dopo che il log del workflow è scaduto
           LOG="$PWD/$(dirname "$PACK")/data/inventario/ultimo-workflow.log"
           mkdir -p "$(dirname "$LOG")"
           echo "Aggiungi mod Modrinth — $(date -u +%F)" > "$LOG"

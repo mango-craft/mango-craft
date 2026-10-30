@@ -1,6 +1,6 @@
 # Revisione 2026.10-01 — Lavoro in locale con Claude Code
 
-**Stato**: 🔧 aperta il 29/10/2026. Modifiche fatte lo stesso giorno; restano le prove che può fare solo Matteo (sotto, «Prove») e i punti aperti. Il diario è in [diario.md](diario.md).
+**Stato**: ✅ chiusa il 30/10/2026 (aperta il 29/10). Esito nella sezione 6; i punti aperti non bloccanti restano nella sezione 5. Il diario è in [diario.md](diario.md).
 
 ## 1. Obiettivo
 
@@ -25,6 +25,7 @@ Cosa si prende dall'altro repository e cosa no:
 - **29/10/2026** — Matteo: il contesto locale non è `CLAUDE.local.md` ma un file con nome generico in `ai-agents/` (`contesto-locale.md`, fuori da git), importato da `CLAUDE.md`, così lo trovano tutti gli agenti.
 - **29/10/2026** — Matteo: «procedi con tutte le modifiche»: i sei punti della proposta (sessione; permessi e sandbox; stage fuori da git con l'archivio; revisioni; niente log giornalieri; autonomia e lavoro finito in `AGENTS.md`).
 - **29/10/2026** — Matteo: Prism sta su Windows, in `Z:`, raggiungibile da WSL in `/mnt/z/` (percorso nel contesto locale).
+- **30/10/2026** — Matteo: non usa più il progetto claude.ai e lo elimina oggi; «ripulisci i file dove serve». Risponde al punto aperto sulle sessioni su claude.ai: si toglie la parte «Da claude.ai» di `AGENTS.md` e il workflow Esamina mod, perché in locale `esamina.py` dà lo stesso risultato (provato il 30/10).
 
 ## 3. Lavoro
 
@@ -36,6 +37,7 @@ Cosa si prende dall'altro repository e cosa no:
 6. ✅ Workflow **Esamina mod**: artefatto invece del commit; `scripts/ci_commit.sh` non salva più lo stage; `esamina.py` gira anche in locale.
 7. ✅ `revisioni/` con il suo README e questa revisione.
 8. ✅ Documenti: `AGENTS.md` (sezioni 3, 4, 8, nuova 9, commento in testa), `CLAUDE.md`, `ai-agents/README.md`, `docs/0201-sviluppo.md`, `README.md`, `docs/README.md`, `1.21.1/lavoro/README.md`.
+9. ✅ Pulizia di claude.ai (decisione del 30/10): `AGENTS.md` sezione 8 in una sola lista, senza «Da claude.ai», e sezione 6 senza il rimando; tolto `.github/workflows/esamina.yml`; aggiornati `docs/0201-sviluppo.md` (script, workflow, release), `ai-agents/README.md`, i commenti di `esamina.py`, `packwiz_index.py` e dei workflow di aggiunta. Restano com'erano le fotografie: file delle versioni, changelog, schede che citano il workflow come fonte, archivio.
 
 ## 4. Prove
 
@@ -45,15 +47,15 @@ Cosa si prende dall'altro repository e cosa no:
 - [x] La sandbox si accende: nella sessione del 29/10 `~/.ssh` e `accounts.json` risultano bloccati in lettura, la scrittura è limitata al repository.
 - [x] (Matteo) Avvio con `ai-agents/bin/claude-session`: la chiave si carica e `git push` su `dev` funziona (fuori dalla sandbox, con conferma). Il 30/10: `git fetch`, `git ls-remote` e `git push --dry-run` riusciti (la chiave può scrivere); il primo push vero è quello di questa revisione.
 - [x] (Matteo) `gh` installato (`sudo dnf install gh`), avvio con `--gh`: `gh run list` risponde. Il 30/10: elenco dei workflow e delle esecuzioni, log leggibili, lancio di un workflow riuscito; i segreti del repository rispondono 403 (il token non ha altri permessi). Solo con `gh` da solo nel comando (diario, 30/10).
-- [ ] `/context` mostra `ai-agents/contesto-locale.md` tra i file di memoria.
+- [x] `/context` mostra `ai-agents/contesto-locale.md` tra i file di memoria (Matteo, 30/10: cinque file, 22,4 mila token in tutto).
 - [x] Al primo uso, **Esamina mod** produce l'artefatto e `gh run download` lo porta nello stage. Il 30/10 la prima volta è partita la versione vecchia, perché i commit non erano ancora su GitHub; dopo il push l'artefatto c'è, si scarica, e nessun commit sul ramo (diario).
 
 ## 5. Aperto
 
-- **Sessioni su claude.ai**: Matteo le usa ancora? Se no, la parte «Da claude.ai» di `AGENTS.md` (sezione 8) si riduce e il workflow Esamina mod si può togliere, perché in locale `esamina.py` basta.
-- **Contesto caricato a ogni sessione**: circa 41 KB (`AGENTS.md` 21, `0501` 11, `0303` 8). Se cresce, la tabella delle tappe fatte di `0501` è il primo candidato a sparire (ripete changelog e indice delle versioni).
+- ~~**Sessioni su claude.ai**~~: risolto il 30/10, Matteo non le usa più (sezione 2, lavoro n. 9).
+- **Contesto caricato a ogni sessione**: circa 41 KB (`AGENTS.md` 21, `0501` 11, `0303` 8); il 30/10 `/context` dà 22,4 mila token (`AGENTS.md` 11,5, `0501` 5,4, `0303` 3,7, `CLAUDE.md` 0,9, contesto locale 0,9). Se cresce, la tabella delle tappe fatte di `0501` è il primo candidato a sparire (ripete changelog e indice delle versioni).
 - **Merge in `main`**: aspetta la 0.7.3, perché su `dev` c'è una tappa in corso.
 
 ## 6. Esito
 
-—
+Chiusa il 30/10/2026. Lo sviluppo si fa in locale: sessione con le credenziali solo in memoria, permessi e sandbox versionati, contesto locale fuori da git, stage fuori da git con l'archivio fermo, revisioni, autonomia dell'agente in `AGENTS.md` (sezione 9). Provati push, `gh`, workflow e caricamento del contesto. Il progetto claude.ai è stato eliminato da Matteo: le sue regole e il workflow Esamina mod sono stati tolti. Le regole stanno in `AGENTS.md` (sezioni 4, 8, 9), le procedure in `docs/0201-sviluppo.md` e `ai-agents/README.md`. Va su `main` con la 0.7.3.

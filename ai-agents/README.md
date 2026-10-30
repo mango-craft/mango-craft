@@ -30,7 +30,7 @@ Lo script carica la deploy key `~/.ssh/github_mango_craft` (o quella in `MANGO_G
 
 **Trappola di `gh`** (prova del 30/10/2026): `gh` gira fuori dalla sandbox, con il token, solo se il comando è `gh …` da solo. In una pipe (`gh … | tail`) o dopo `cd … &&` gira dentro, dove il token è nascosto, e risponde «not logged in». L'output si filtra dopo, non nello stesso comando.
 
-**I workflow girano con la versione su GitHub**, non con quella locale: un workflow cambiato in un commit non ancora mandato parte nella versione vecchia. Il 30/10 Esamina mod, lanciato prima del push, ha fatto ancora il commit nello stage invece dell'artefatto. Prima si fa il push, poi si lancia.
+**I workflow girano con la versione su GitHub**, non con quella locale: un workflow cambiato in un commit non ancora mandato parte nella versione vecchia (successo il 30/10/2026: un commit nello stage che la versione nuova non faceva più). Prima si fa il push, poi si lancia.
 
 ## Contesto locale
 
@@ -48,7 +48,7 @@ Il posto per ciò che un agente produce **per Matteo** ma che non fa parte del p
 
 I file che servono solo all'agente durante una sessione (output intermedi, script di prova) non vanno qui ma nella cartella temporanea della sessione: `stage/` è per ciò che Matteo deve leggere.
 
-Il workflow **Esamina mod** non scrive più nel repository: salva il risultato come artefatto, che si scarica nello stage con `gh run download <id> -n esame-mod -D ai-agents/stage/<data>-esame-mod`.
+Gli esami delle mod fuori dal pack si fanno in locale con `scripts/esamina.py` (comando in [`docs/0201-sviluppo.md`](../docs/0201-sviluppo.md)), con il risultato qui; il workflow Esamina mod non c'è più dal 30/10/2026.
 
 ## archivio/
 
