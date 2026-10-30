@@ -10,6 +10,12 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.7.5 — in lavorazione · archeologia e reperti
+
+- **NeoForge**: 21.1.265 (invariato).
+- **Mondo nuovo**: non serve.
+- **Stato**: 🔧 in lavorazione sul ramo `dev`.
+
 ## 0.7.4 — 30/10/2026 · piattaforma (pre-release di prova)
 
 - **NeoForge**: **21.1.265** (prima 21.1.259): da cambiare a mano in Prism prima dell'avvio.

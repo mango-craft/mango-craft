@@ -8,7 +8,8 @@ Le tappe del pack verso il mondo vero e lo stato di avanzamento. Documento vivo:
 
 | Tappa | Versione | Contenuto | Stato |
 |---|---|---|---|
-| 7 e oltre | — | Il resto, nella proposta qui sotto: archeologia, eventuali 0.7.x (strumenti a tappe, terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
+| 6.5 | [0.7.5](versioni/v0.7.5.md) | **Archeologia e reperti**: tabelle del bottino nella base dati (inventario esteso, ramo «bottino»), analisi delle tabelle di scavo di tutte le mod, poi i tesori delle casse di Better Archeology nella toppa delle reliquie e i miglioramenti decisi, con file generati (tema `../theme-knowledge/archeologia.md`). Contenuto e approccio decisi da Matteo il 24/10 | 🔧 aperta il 30/10 |
+| 7 e oltre | — | Il resto, nella proposta qui sotto: eventuali 0.7.x (strumenti a tappe, terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
 
 NeoForge è a 21.1.265 dalla 0.7.4 (`../docs/0303-note-tecniche.md`). Se una mod nuova ne chiede uno più recente, il controllo dei nomi lo segnala.
 
@@ -22,7 +23,6 @@ Matteo approva una versione alla volta: quando ne approva una, la sua riga passa
 
 | Versione | Contenuto | Cosa decide Matteo | Prove di uscita |
 |---|---|---|---|
-| **[0.7.5](versioni/v0.7.5.md)** | 🟢 **Archeologia e reperti**: tesori delle casse di Better Archeology nella toppa delle reliquie; analisi delle tabelle di scavo di tutte le mod e miglioramenti; tabelle del bottino nella base dati, file generati (tema `../theme-knowledge/archeologia.md`). Contenuto e approccio decisi da Matteo il 24/10; numero 0.7.5 dal 30/10 (dopo la tappa 6.4) | quali casse; quali miglioramenti, dopo l'analisi | le casse aggiunte danno reliquie (`/loot`); gli scavi danno come prima o come deciso |
 | **0.7.x** | 🟡 **Strumenti a tappe**, da esplorare (Matteo, 25/10): tabella dei materiali di Truly Modular e materiali scritti a mano per i gradini (`0503`, sezione 5); la stessa scala può servire alle ricette di fornaci e computer | se farla, e i gradini | i materiali nostri compaiono in Truly Modular |
 | **0.7.x** | 🟡 Solo se Matteo lo decide: mod che cambiano il terreno (Tectonic, con StructBlend) o Malum se esce la 1.9 (`0601`) | sì o no, **prima** del mondo di prova | mondo nuovo: biomi e strutture sensati, nessun errore |
 | **0.8** | **Progressione** (anche in più versioni 0.8.x): una mod per la schermata dei progressi (🟢 Reliable Advancements o Lucid Advancements, provate una alla volta), gli effetti nuovi della luna di sangue, 🟡 scheda «Mango Craft» (20–40 traguardi nel datapack) e guida del pack (`0503`, sezione 3) | quale mod; gli effetti della luna; se fare la scheda e quanti traguardi | la schermata mostra i progressi; i traguardi si sbloccano; luna di sangue come deciso |
