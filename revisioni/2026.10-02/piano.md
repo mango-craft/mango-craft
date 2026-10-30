@@ -1,6 +1,6 @@
 # Revisione 2026.10-02 — Pulizia dopo l'analisi del 30/10
 
-**Stato**: 🔧 aperta il 30/10/2026. Il diario è in [diario.md](diario.md).
+**Stato**: ✅ chiusa il 30/10/2026 (aperta lo stesso giorno). Esito nella sezione 6. Il diario è in [diario.md](diario.md).
 
 ## 1. Obiettivo
 
@@ -41,15 +41,16 @@ Il 30/10/2026 Matteo chiede di rianalizzare struttura, documentazione e codice e
 
 ## 4. Prove
 
-- [ ] `bash scripts/controllo_locale.sh 1.21.1/pack` verde, `shellcheck` pulito.
-- [ ] Dopo il push, Controllo pack verde **senza commit**; poi una prova che fallisca davvero se un file generato non è aggiornato.
+- [x] `bash scripts/controllo_locale.sh 1.21.1/pack` verde, `shellcheck` pulito.
+- [x] Dopo il push, Controllo pack verde **senza commit**, in 33 secondi (prima circa 80) compresa la prima compilazione di packwiz; i controlli 3 secondi (prima 50). Su un ramo di prova, poi cancellato, un readme cambiato senza rifare l'indice fa fallire il passo «File generati aggiornati nel commit» con il messaggio giusto.
 - [x] Il `refresh` della base dati da 23,4 a 2 secondi, con gli stessi controlli (il controllo locale intero da circa 25 a 2,7 secondi).
 - [x] Generatori con `--verifica` invariati: vasi 340 file, mercato 469, lista nera; il generatore dei vasi, rilanciato in una copia, scrive gli stessi file.
 
 ## 5. Aperto
 
-- Numero della versione di owo-lib e NeoForge, e cosa succede all'archeologia (oggi 0.7.4).
+- Numero della tappa 6.4 (owo-lib e NeoForge) e di conseguenza dell'archeologia: lo decide Matteo, è segnato in `0501`.
+- La regola dei 20.000 caratteri di `AGENTS.md` va guardata quando si aggiunge una regola.
 
 ## 6. Esito
 
-—
+Chiusa il 30/10/2026. I 63 rilievi dell'analisi sono applicati, tranne ciò che cambia il gioco (owo-lib e NeoForge: tappa 6.4) e il dump più leggero (rimandato per decisione). I workflow non fanno più commit da soli, tranne l'aggiunta mod; il controllo locale scrive i file generati e il Controllo pack li verifica con packwiz in cache. Il contesto caricato a ogni sessione è sceso di un terzo. Regole in `AGENTS.md` (sezioni 4–9), procedure in `docs/0201-sviluppo.md`. Va su `main` con la 0.7.3.

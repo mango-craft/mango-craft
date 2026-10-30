@@ -42,3 +42,10 @@ Il piano è in [piano.md](piano.md). Le voci sono in ordine di tempo; la più re
 - **B15 unito a B35**: nei log dell'istanza dev dal 18/10 l'unico messaggio di questo tipo è `Block-attached entity at invalid position`, quasi sempre a y tra −45 e −58 come la «quota −50» di B15. Il log della 0.3.0, dove B15 contava 42 righe, non c'è più: è una deduzione, non un confronto diretto.
 - **Lasciato com'è**: «non verificato» nel README del datapack per quando hanno effetto listini e mappa delle unità (nessuna fonte trovata); i numeri datati di `piante.md` e `analisi.md`.
 - **Controlli**: controllo locale verde (indice rifatto per i readme e `pack.mcmeta`), link relativi tutti validi, nessun rimando a script o file tolti, schede citate tutte esistenti.
+
+## 30/10/2026 — Le prove, revisione chiusa
+
+- **Agente:** claude-code (claude-opus-5-5)
+- **Push** dei tre commit su `dev` (7e37822..813e4b1). Controllo pack verde in 33 s senza commit: 23 s per compilare packwiz la prima volta (poi dalla cache), 3 s per i controlli.
+- **Prova del fallimento**: ramo `prova-controllo` con un readme del datapack cambiato senza rifare l'indice, Controllo pack lanciato a mano: fallisce al passo «File generati aggiornati nel commit» con il messaggio che dice di lanciare il controllo locale. Ramo cancellato su GitHub e in locale (la sandbox protegge `.git/config`: l'avviso alla cancellazione è innocuo, il ramo non aveva voci lì).
+- **Chiusa**: resta a Matteo il numero della tappa 6.4.

@@ -25,4 +25,4 @@ Una cartella `AAAA.MM-NN/`: anno e mese, più un numero che ricomincia da 01 ogn
 | Revisione | Argomento | Stato |
 |---|---|---|
 | [2026.10-01](2026.10-01/piano.md) | lavoro in locale con Claude Code: sessione, permessi e sandbox, contesto locale, stage fuori da git, revisioni, autonomia dell'agente | ✅ chiusa il 30/10/2026 |
-| [2026.10-02](2026.10-02/piano.md) | pulizia dopo l'analisi del 30/10: workflow che controllano e basta, script, documenti, contesto più leggero, permessi | 🔧 aperta il 30/10/2026 |
+| [2026.10-02](2026.10-02/piano.md) | pulizia dopo l'analisi del 30/10: workflow che controllano e basta, script, documenti, contesto più leggero, permessi | ✅ chiusa il 30/10/2026 |
