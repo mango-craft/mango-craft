@@ -21,6 +21,14 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "twilightforest:darktower_key"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_catacombs_golden"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_sculk_sword"
         }
       ]
     }

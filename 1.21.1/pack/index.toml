@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "7cfc09e7e3642bebbca2c8fada7ae0650e5abe6756ff54123536f9f925c7a490"
+hash = "ec2f95fa650d8b9b5f9fa4956ee227530e369f7a7bf06798c38205ee9e0f42ea"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/readme.md"
@@ -321,6 +321,14 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/rel
 hash = "60a28ee7d8c8ecdbce9db72258d3607e7d741efde10983eb58014f9bd6d13cbe"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.5/tesori_better_archeology.mcfunction"
+hash = "fff9ddd34fd307f6afc904569eac1fb5a608fb329dfc78710bc17d46629a21d2"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.5/tutte_le_prove.mcfunction"
+hash = "881191874763cc7b911a067446d3964eb172a01977656cd5606f23bf8aeed33d"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
 hash = "6c4be7153edf61d2c01ab43b31ef8852e15a158c06d8df9cc0c8c6134d4f398c"
 
@@ -338,7 +346,7 @@ hash = "3122b2ef0ecd91c11e66f0a1a7161b7698a805d243e28770a0089d46282ebe4f"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/jungle_temple.json"
-hash = "de0df05bb983c43ab2af7043f3bf0725fbdbe8aa6653b266a1d69433f9782b5f"
+hash = "feb84a7331e4a4f2f9447373eabde59ca0b1181bd8906a56aa246ec8efb4c954"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/nether_bridge.json"
@@ -346,23 +354,23 @@ hash = "e5a0038fea2572623491e39b4763fcba50b8047617bd578b309bf6e738825829"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/pillager_outpost.json"
-hash = "cb052a14c96cdc7d890453ffbba947f1b21106bb35e0f38f0eceee86a5b0d772"
+hash = "332319a836e8392b1f7147dea197982bf9113eaef59fd6f820bd9a2d8ab04f1d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/readme.md"
-hash = "fc0131bb92260914aa036354e3671c88a1a417126e8f09de1a71f85f951d2b2c"
+hash = "eb3806d995591fd0454d9d7bac665b03c98d4d454e4039df4e4db81267c635ce"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json"
-hash = "acc221e791b6e45b042cacc74aa0a5ccd1b6b91c6d12deefa2e970d8675cd778"
+hash = "fc5159c571d53466ae2bae5ac49c3b5faecf7c812913bdd1505124e67836c30c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/stronghold_corridor.json"
-hash = "b71f0ea4de2a8aaaee68f7d9d7f0027d795ffc2d7a37507eb1d8a86344ecd0a0"
+hash = "663e3f9901fbdbea37444d74db6d28d96801c7331323b38c8c969d1d32d9c18a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/woodland_mansion.json"
-hash = "fe5a799e3cdd6364216ee4468f0fce72280c3d6775592adbf0498c7747fc0e3c"
+hash = "03ed226852f5888dca157689a48f2fe16e63dbb356e3fed4cfd0a4293063a496"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/readme.md"

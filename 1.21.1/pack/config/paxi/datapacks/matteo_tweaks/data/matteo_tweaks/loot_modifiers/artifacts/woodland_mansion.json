@@ -25,6 +25,10 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "friendsandfoes:barrels/citadel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_light_temple_treasure"
         }
       ]
     }

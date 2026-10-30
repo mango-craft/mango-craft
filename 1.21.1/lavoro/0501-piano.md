@@ -8,7 +8,7 @@ Le tappe del pack verso il mondo vero e lo stato di avanzamento. Documento vivo:
 
 | Tappa | Versione | Contenuto | Stato |
 |---|---|---|---|
-| 6.5 | [0.7.5](versioni/v0.7.5.md) | **Archeologia e reperti**: tabelle del bottino nella base dati (inventario esteso, ramo «bottino»), analisi delle tabelle di scavo di tutte le mod, poi i tesori delle casse di Better Archeology nella toppa delle reliquie e i miglioramenti decisi, con file generati (tema `../theme-knowledge/archeologia.md`). Contenuto e approccio decisi da Matteo il 24/10 | 🔧 aperta il 30/10 |
+| 6.5 | [0.7.5](versioni/v0.7.5.md) | **Archeologia e reperti**: tabelle del bottino nella base dati (inventario esteso, ramo «bottino») e analisi degli scavi di tutte le mod, poi solo i tesori delle 9 strutture di Better Archeology nella toppa delle reliquie, a mano (versione piccola, decisione di Matteo del 30/10; tema `../theme-knowledge/archeologia.md`) | 🔧 aperta il 30/10; fatto il lavoro, restano le prove di uscita |
 | 7 e oltre | — | Il resto, nella proposta qui sotto: eventuali 0.7.x (strumenti a tappe, terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
 
 NeoForge è a 21.1.265 dalla 0.7.4 (`../docs/0303-note-tecniche.md`). Se una mod nuova ne chiede uno più recente, il controllo dei nomi lo segnala.

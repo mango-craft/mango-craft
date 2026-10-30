@@ -13,7 +13,10 @@ La voce di una versione diventa anche la nota della sua release su GitHub.
 ## 0.7.5 — in lavorazione · archeologia e reperti
 
 - **NeoForge**: 21.1.265 (invariato).
-- **Mondo nuovo**: non serve.
+- **Mondo nuovo**: non serve; le casse già aperte restano come sono.
+- **Datapack, bottino**: le casse del **tesoro** delle 9 strutture di Better Archeology (templi della luce e della giungla, catacombe, sculk che consuma, motta, rovine sepolte, rovine della mesa, tumulo, rovine sottomarine) possono dare un artefatto, dal 15 al 40% secondo la struttura. Prima non ne davano mai: né Relics né Artifacts le vedevano. Le altre casse di Better Archeology restano senza.
+- **Strumenti**: le tabelle del bottino di tutte le mod entrano nella base dati (inventario nel formato 8): a ogni push si controlla che nessuna cassa abbia due possibilità di reliquia e che le tabelle lette dai file siano quelle che carica il gioco.
+- **Datapack, funzioni di prova**: `/function matteo_tweaks:test/releases/v0.7.5/…` mette davanti due file di casse dei tesori di Better Archeology.
 - **Stato**: 🔧 in lavorazione sul ramo `dev`.
 
 ## 0.7.4 — 30/10/2026 · piattaforma (pre-release di prova)
