@@ -309,6 +309,18 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/rel
 hash = "a3f46ed864714a35b080d02dacd8eba1717427664b960d519879f38ed34a8dfc"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.4/aether_portale.mcfunction"
+hash = "b172f1581bb96e6918e046049808a7bc8c283d0b3611f9ecad7e5c0fdc09ad76"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.4/saccheggio_spada.mcfunction"
+hash = "622ba40a4ca7df2e63d1483709af2338736b734ce8df4ef75e1a41cda1f65081"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.4/tutte_le_prove.mcfunction"
+hash = "60a28ee7d8c8ecdbce9db72258d3607e7d741efde10983eb58014f9bd6d13cbe"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
 hash = "6c4be7153edf61d2c01ab43b31ef8852e15a158c06d8df9cc0c8c6134d4f398c"
 
@@ -4180,7 +4192,7 @@ metafile = true
 
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
-hash = "c490f7b680875f034af39a1556911d6edb1dcdd76a114ee6a4eca0f158cd92b2"
+hash = "981e52e1c4a97465921342f556cced335c6c75cdb050e9fc528d52cf4ff88b79"
 metafile = true
 
 [[files]]
@@ -4540,7 +4552,7 @@ metafile = true
 
 [[files]]
 file = "mods/owo-lib.pw.toml"
-hash = "46831c04077a06df823bcd0f254833a90a9a9ccc78f5069f4b4c27fa301ac0cf"
+hash = "6514f98b34602b789fc2dbcafe7a67468d1c94d74965a0142a79b7ab23628a9a"
 metafile = true
 
 [[files]]
@@ -4595,7 +4607,7 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "0a04f1d0b86262c6dfdbd14e0493d7f4786f24054a95a07ff7b41a7870bb258d"
+hash = "d465abcc806c0d4fdeefb6a5e774cca4fff0ffd27d7c75954ab4688f4c9eaf05"
 metafile = true
 
 [[files]]

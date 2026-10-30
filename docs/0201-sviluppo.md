@@ -85,7 +85,7 @@ Al rilascio:
 1. Nella voce del changelog: titolo `## X.Y.Z — data`, versione di NeoForge, se serve un mondo nuovo, cosa cambia, **Stato**: 🧪 in prova su `dev`.
 2. Controllo locale, commit e push su `dev`. Aspetta che il **Controllo pack** sia verde.
 3. **Prova di uscita** nell'istanza che segue `dev` (dopo circa 5 minuti, per la cache di GitHub): avvio, mondo nuovo, log. Poi bug report, changelog e piano come dice `AGENTS.md` (Prova di una tappa).
-4. Se la prova passa, unisci `dev` in `main` con un merge vero, che conserva il grafico dei rami: `git checkout main && git merge --no-ff dev -m "Versione X.Y.Z" && git push`, poi torna su `dev`.
+4. Se la prova passa, unisci `dev` in `main` con un merge vero, che conserva il grafico dei rami: `git checkout main && git merge --no-ff dev -m "Versione X.Y.Z" && git push`, poi torna su `dev`. Da Claude Code, nella sandbox, si fa senza cambiare ramo (`ai-agents/README.md`, «Trappola del merge in `main`»).
 5. Crea il tag su `main`, in uno dei due modi:
    - **dal computer**: `git tag -a 1.21.1-vX.Y.Z -m "Mango Craft 1.21.1-vX.Y.Z" && git push origin 1.21.1-vX.Y.Z` (tag annotato, come quelli del workflow);
    - **con il workflow Release**: `gh workflow run release.yml --ref main -f tag=1.21.1-vX.Y.Z` (o scheda *Actions* → **Release** → *Run workflow*, scrivendo il tag). Il workflow crea il tag sull'ultimo commit di `main` e rifiuta un tag già esistente.

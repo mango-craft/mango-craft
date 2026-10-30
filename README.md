@@ -9,13 +9,13 @@ Il pack è gestito con [packwiz](https://packwiz.infra.link/): il repository con
 |---|---|
 | Versioni | [changelog](1.21.1/docs/0401-changelog.md) e [release](https://github.com/mango-craft/mango-craft/releases) |
 | Minecraft | 1.21.1 |
-| NeoForge | **21.1.259**, da impostare a mano in Prism (non usare versioni più nuove: il changelog di ogni versione indica quella giusta) |
+| NeoForge | **21.1.265** dalla 0.7.4 (fino alla 0.7.3: 21.1.259), da impostare a mano in Prism: il changelog di ogni versione indica quella giusta |
 | Memoria consigliata | 12 GB (perché: [guida](docs/0101-installazione.md#creare-unistanza)) |
 
 ## Installazione in Prism (in breve)
 
 1. Scarica `packwiz-installer-bootstrap.jar` dalle [release ufficiali](https://github.com/packwiz/packwiz-installer-bootstrap/releases).
-2. In Prism crea un'istanza **Minecraft 1.21.1** con **NeoForge 21.1.259**, e nelle sue impostazioni (*Java*) dai 12 GB di memoria massima.
+2. In Prism crea un'istanza **Minecraft 1.21.1** con **NeoForge 21.1.265** (per una versione fino alla 0.7.3: 21.1.259), e nelle sue impostazioni (*Java*) dai 12 GB di memoria massima.
 3. Metti il `.jar` nella cartella `minecraft` dell'istanza (tasto destro sull'istanza → *Cartella*).
 4. Nelle impostazioni dell'istanza, *Comandi personalizzati* → *Comando prima dell'avvio* (Pre-launch command):
    ```

@@ -10,6 +10,15 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.7.4 — 30/10/2026 · piattaforma (pre-release di prova)
+
+- **NeoForge**: **21.1.265** (prima 21.1.259): da cambiare a mano in Prism prima dell'avvio.
+- **Mondo nuovo**: non serve. Versione di prova: non è la versione del mondo vero.
+- **Librerie aggiornate**: **owo-lib** 0.12.15.6 (dipendenza dell'Aether: corregge B17, il «Connection lost» con i NeoForge recenti), **Forgified Fabric API** 2.3.6 (vuole NeoForge 21.1.262 o più recente), **Puzzles Lib** 21.1.66.
+- **Datapack, funzioni di prova**: `/function matteo_tweaks:test/releases/v0.7.4/…` (portale dell'Aether, spada con Saccheggio III).
+- **Stato**: ✅ provata il 30/10/2026 (avvio con NeoForge 21.1.265, mondo e Aether senza disconnessioni, Saccheggio, shader con Iris; dump con tutti i controlli passati; log confrontato con quello della 0.7.3, nessun errore nuovo grave) e rilasciata come pre-release `1.21.1-v0.7.4`.
+- **Problemi noti**: **B17 risolto** (con i NeoForge recenti non si viene più disconnessi entrando nel mondo). Nuovo B48, minore: Aure's Farmer's Structures genera tre strutture pensate per Aquaculture, che non abbiamo, e il gioco ne salta tartarughe e oggetti. Qualche messaggio innocuo in più in B14.
+
 ## 0.7.3 — 30/10/2026 · computer (pre-release di prova)
 
 - **NeoForge**: 21.1.259 (invariato).

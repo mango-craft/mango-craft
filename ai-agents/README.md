@@ -32,6 +32,17 @@ Lo script carica la deploy key `~/.ssh/github_mango_craft` (o quella in `MANGO_G
 
 **Trappola del background** (30/10/2026): le sessioni in background di Claude Code (vista degli agenti, `--bg`, `/background`) girano in un demone che ha l'ambiente del terminale da cui è partito, anche quello di un altro progetto. Lì il token di `--gh` non arriva: `gh auth status` risponde «not logged in» anche fuori dalla sandbox. Per questo `claude-session` imposta `CLAUDE_CODE_DISABLE_AGENT_VIEW=1` (documentato da Claude Code: spegne vista degli agenti, `--bg`, `/background` e il demone a richiesta), solo per le sue sessioni. Una sessione rimasta nel demone si ferma con `claude agents` e `claude stop <id>` (la conversazione resta) e si riapre con `ai-agents/bin/claude-session --gh --resume <id della sessione>`; `claude daemon stop` no, perché ferma anche le sessioni degli altri progetti.
 
+**Trappola del merge in `main`** (30/10/2026): nella sandbox `git checkout` non riesce a riscrivere né a togliere `.claude/settings.json` («Device or resource busy»), quindi un cambio di ramo che lo tocca si ferma a metà e il merge rifiuta di partire. Il merge di `dev` in `main` si fa **senza cambiare ramo**, con lo stesso risultato di `git merge --no-ff dev`:
+
+```bash
+old=$(git rev-parse main)
+t=$(git merge-tree --write-tree main dev)        # si ferma se ci sono conflitti
+c=$(git commit-tree "$t" -p "$old" -p dev -m "Merge dev: versione X.Y.Z (…)")
+git update-ref refs/heads/main "$c" "$old"
+```
+
+Poi `git push origin main` e il tag sul commit di `main`. Se un cambio di ramo si è già fermato a metà: `git add .claude/settings.json` (solo nell'indice: il file è identico a quello di `dev`) e `git checkout dev`.
+
 **I workflow girano con la versione su GitHub**, non con quella locale: un workflow cambiato in un commit non ancora mandato parte nella versione vecchia (successo il 30/10/2026: un commit nello stage che la versione nuova non faceva più). Prima si fa il push, poi si lancia.
 
 ## Contesto locale

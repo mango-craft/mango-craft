@@ -263,7 +263,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 
 | Mod | Progetto | Versione NeoForge 1.21.1 | Data | Tipo | Esito | Note |
 |---|---|---|---|---|---|---|
-| Forgified Fabric API | [`forgified-fabric-api`](https://modrinth.com/mod/forgified-fabric-api) MR | 0.116.15+2.3.5+1.21.1 | 2026-08-24 | release | ✅ |  |
+| Forgified Fabric API | [`forgified-fabric-api`](https://modrinth.com/mod/forgified-fabric-api) MR | 0.116.15+2.3.6+1.21.1 | 2026-10-15 | release | ✅ | Dalla 0.7.4 la 2.3.6 (`C4eskNuR`): corregge un aggancio rotto dai NeoForge 21.1.262 e successivi e ne richiede almeno la 262 |
 | AlmostUnified | [`almostunified`](https://modrinth.com/mod/almostunified) MR | 1.21.1-1.4.2+neoforge | 2026-05-22 | release | ✅ |  |
 
 ### Aggiunte dopo la verifica
@@ -387,11 +387,11 @@ Le librerie che non hanno una riga nelle tabelle sopra (quelle con «(dipendenza
 | Modonomicon | `modonomicon` | 1.120.7 | release | MIT e CC-BY-4.0 | Occultism |
 | Moog's Structure Lib | `moogs-structure-lib` | 3.4.2 | release | LGPL-3.0 | Moog's End Structures, Moog's Nether Structures |
 | NexusLib | `nexuslib` | 1.2.0 | release | licenza propria | Bountiful Fares |
-| owo-lib | `owo-lib` | 0.12.15.5-beta.1 | beta | MIT | The Aether. È per lei che NeoForge è fermo (B17): la 0.12.15.6 è uscita il 16/10 e si aggiorna in una versione a sé dopo la 0.7.3 |
+| owo-lib | `owo-lib` | 0.12.15.6-beta.1 | beta | MIT | The Aether. Dalla 0.7.4 la 0.12.15.6 (`wbdHEItB`), che corregge B17 e permette NeoForge 21.1.265 |
 | Patchouli | `patchouli` | 93 | release | CC-BY-NC-SA-3.0 | Apotheosis, Psi, Aspect Alchemy |
 | Placebo | `placebo` | 9.9.4 | release | MIT | Apotheosis e moduli, Gateways to Eternity |
 | Prickle | `prickle` | 21.1.11 | release | LGPL-2.1 | Botany Pots e addon, Enchantment Descriptions |
-| Puzzles Lib | `puzzles-lib` | 21.1.64 | release | MPL-2.0 | Diagonal Fences, Walls e Windows, Open Together, Mutant Monsters e altre |
+| Puzzles Lib | `puzzles-lib` | 21.1.66 | release | MPL-2.0 | Diagonal Fences, Walls e Windows, Open Together, Mutant Monsters e altre |
 | Resourceful Config | `resourceful-config` | 3.0.11 | release | MIT | Better Archeology, Creeper Overhaul, Structure Layout Optimizer |
 | Resourceful Lib | `resourceful-lib` | 3.0.12 | release | MIT | Creeper Overhaul, Friends & Foes, Handcrafted |
 | Searchables | `searchables` | 1.0.2 | release | MIT | Controlling |
