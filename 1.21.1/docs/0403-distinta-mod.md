@@ -7,7 +7,7 @@ _Controllo formale del 16/10/2026 · fonte: API di Modrinth (filtro `loaders=neo
 **Risultato del 16/10: 148 voci controllate (142 mod + 1 resource pack + 5 dipendenze/moduli) — ✅ 119 · ⚠️ 29 · ❌ 0.**
 Nessuna mod è senza versione NeoForge 1.21.1. Tutti i progetti sono quelli degli autori originali (salvo gli addon di terzi segnalati).
 
-**Oggi** (30/10/2026): 266 metafile (263 in `mods/`, 1 resource pack, 2 pacchetti di shader). Le mod entrate dopo il 16/10 stanno in «Aggiunte dopo la verifica», le librerie senza riga in fondo. Il 30/10 versioni, date e tipi delle righe da Modrinth sono stati riconfrontati con i metafile e con l'API: corretti Iris e Fresh Animations (su Modrinth sono `release`), Not Enough Glyphs e Ars Unification (data), gli slug di Ars QOL e Scriptor Magicae.
+**Oggi** (30/10/2026): 268 metafile (265 in `mods/`, 1 resource pack, 2 pacchetti di shader). Le mod entrate dopo il 16/10 stanno in «Aggiunte dopo la verifica», le librerie senza riga in fondo. Il 30/10 versioni, date e tipi delle righe da Modrinth sono stati riconfrontati con i metafile e con l'API: corretti Iris e Fresh Animations (su Modrinth sono `release`), Not Enough Glyphs e Ars Unification (data), gli slug di Ars QOL e Scriptor Magicae.
 
 Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo beta/alpha oppure ferma a prima di metà 2025 · ❌ nessuna build.
 "MR" = Modrinth, "CF" = CurseForge. La colonna Progetto riporta lo slug esatto, utile per non prendere progetti omonimi in Prism.
@@ -22,7 +22,7 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 
 ## Avvisi ⚠️ in breve
 
-- **Solo beta/alpha, ma è l'abitudine dell'autore o la mod è dichiaratamente in beta**: Serene Seasons, Pipez, Sound Physics Remastered, The Undergarden, Expanded Delight, Aether's Delight. Si usano lo stesso.
+- **Solo beta/alpha, ma è l'abitudine dell'autore o la mod è dichiaratamente in beta**: Serene Seasons, Pipez, Sound Physics Remastered, The Undergarden, Expanded Delight, Aether's Delight, CC: Tweaked (tutte le build NeoForge), Advanced Peripherals (dalla 0.8). Si usano lo stesso.
 - **Ramo 1.21.1 concluso** (ultima build tra il 2024 e metà 2025, nessuna più recente da nessuna parte): tutta la serie YUNG's, Dungeons and Taverns, Sparse Structures, Hexerei, Ender Storage, Illager Invasion, Mouse Tweaks, Controlling, Pick Up Notifier, Travelers Titles, Animal Feeding Trough. Sono build stabili e definitive, rischio basso.
 
 ## Da sapere quando si cercano le mod
@@ -356,6 +356,8 @@ Legenda esito: ✅ build release ufficiale · ⚠️ build ufficiale ma solo bet
 | KubeJS | [`kubejs`](https://modrinth.com/mod/kubejs) MR | 2101.7.2-build.377 | 2026-09-09 | release | ✅ | Richiede Rhino e Better Advanced Tooltips; contiene anche una copia di Better Advanced Tooltips (build.1). LGPL-3.0. Pack 0.7.2 |
 | Rhino (dipendenza) | [`rhino`](https://modrinth.com/mod/rhino) MR | 2101.2.7-build.85 | 2026-06-08 | release | ✅ | Richiesta da kubejs. MPL-2.0. Pack 0.7.2 |
 | Better Advanced Tooltips (dipendenza) | [`better-advanced-tooltips`](https://modrinth.com/mod/better-advanced-tooltips) MR | 2101.1.0-build.5 | 2026-08-04 | release | ✅ | Richiesta da kubejs (stesso autore). MIT. Pack 0.7.2 |
+| CC: Tweaked | [`cc-tweaked`](https://modrinth.com/mod/cc-tweaked) MR | 1.120.2 | 2026-08-08 | alpha | ⚠️ | Tutte le build NeoForge sono alpha (scelta con `cc-tweaked@1ewzHZYg`). Nessuna dipendenza. CCPL. Pack 0.7.3 |
+| Advanced Peripherals | [`advancedperipherals`](https://modrinth.com/mod/advancedperipherals) MR | 1.21.1-0.8.2a | 2026-10-04 | alpha | ⚠️ | Dalla 0.8 solo alpha (scelta con `advancedperipherals@fxjzpAbL`; senza versione il workflow prenderebbe la 0.7.62b beta). Richiede CC: Tweaked ≥ 1.119.0 e NeoForge ≥ 21.1.238. Genera strutture (case del Computer Scientist). Apache-2.0. Pack 0.7.3 |
 
 ## Librerie (arrivano come dipendenze)
 

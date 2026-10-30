@@ -293,6 +293,22 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/rel
 hash = "4a734dd7e1f34ec23b4b344b007db57536c5e0352ad024977b4c251d7dbe6d79"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/bacino_create.mcfunction"
+hash = "d8b0fb2bd40bb6966949fa30620b2d1d6d6bfbd82c4480d9f67dfa0c8bf4b4b0"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/computer_avanzato.mcfunction"
+hash = "c9d92307c392abb0b96dd48e31b1c38c0e6d55a32fbb320b649538b22168b463"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/player_detector_chat_box_modem.mcfunction"
+hash = "6d58f9921680d5faa2a602fb69e810779fdbf0374778e131e2f7570c0d181bbf"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.3/tutte_le_prove.mcfunction"
+hash = "a3f46ed864714a35b080d02dacd8eba1717427664b960d519879f38ed34a8dfc"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
 hash = "6c4be7153edf61d2c01ab43b31ef8852e15a158c06d8df9cc0c8c6134d4f398c"
 
