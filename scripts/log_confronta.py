@@ -32,9 +32,17 @@ def firme(path: Path) -> dict[str, int]:
             _thread, livello, logger, msg = m.groups()
             if livello not in LIVELLI:
                 continue
-            chiave = f"{livello} [{logger}] " + re.sub(r"\d+(\.\d+)?", "#", msg)[:200]
+            chiave = f"{livello} [{logger}] " + normalizza(msg)[:200]
             out[chiave] = out.get(chiave, 0) + 1
     return out
+
+
+def normalizza(msg: str) -> str:
+    """Toglie dal messaggio ciò che cambia a ogni avvio: UUID, indirizzi e hash esadecimali, numeri."""
+    msg = re.sub(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b", "<uuid>", msg, flags=re.I)
+    msg = re.sub(r"@[0-9a-f]+\b", "@<hex>", msg, flags=re.I)
+    msg = re.sub(r"\b0x[0-9a-f]+\b|\b(?=[0-9a-f]*\d)[0-9a-f]{12,}\b", "<hex>", msg, flags=re.I)
+    return re.sub(r"\d+(\.\d+)?", "#", msg)
 
 
 def main(argv: list[str]) -> int:

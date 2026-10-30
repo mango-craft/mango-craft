@@ -12,14 +12,25 @@ on:
 permissions:
   contents: write
 
-env:
-  PACKWIZ_COMMIT: 170b22d785959dda5876b54b7f16e1b807a57fb6
-
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      # Tutta la storia: serve per controllare che il commit sia in main
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Si rilascia solo ciò che è in main (AGENTS.md, sezione 5): a mano si lancia su main,
+      # e un tag mandato da locale deve stare su un commit di main
+      - name: Solo da main
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = workflow_dispatch ] && [ "$GITHUB_REF" != refs/heads/main ]; then
+            echo "::error::Il workflow Release si lancia su main (lanciato su $GITHUB_REF)"; exit 1
+          fi
+          if ! git merge-base --is-ancestor HEAD origin/main; then
+            echo "::error::Il commit $(git rev-parse --short HEAD) non è in main"; exit 1
+          fi
 
       - name: Crea il tag (avvio manuale)
         if: github.event_name == 'workflow_dispatch'
@@ -32,9 +43,8 @@ jobs:
           if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null; then
             echo "Il tag $TAG esiste già: i tag di release non si spostano"; exit 1
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git tag -a "$TAG" -m "Mango Craft $TAG"
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            tag -a "$TAG" -m "Mango Craft $TAG"
           git push origin "refs/tags/$TAG"
 
       - name: Leggi il tag
@@ -57,18 +67,18 @@ jobs:
             echo "pack=$PACK"
           } >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-go@v5
-        with:
-          go-version: stable
-          cache: false
+      - uses: ./.github/actions/packwiz
 
-      - name: Installa packwiz
-        run: |
-          go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
-          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
-
+      # L'indice nel commit lo scrive packwiz_index.py: packwiz deve dare lo stesso risultato
       - name: Controlli
-        run: python3 scripts/check_pack.py "${{ steps.info.outputs.pack }}"
+        env:
+          PACK: ${{ steps.info.outputs.pack }}
+        run: |
+          python3 scripts/check_pack.py "$PACK"
+          (cd "$PACK" && packwiz refresh)
+          if ! git diff --exit-code --stat -- "$PACK"; then
+            echo "::error::L'indice del commit è diverso da quello di packwiz"; exit 1
+          fi
 
       - name: Esporta il .mrpack (solo mod Modrinth)
         env:

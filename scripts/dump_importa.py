@@ -12,24 +12,18 @@ e il successivo si leggono nel diff. La base dati (scripts/botanypots_db.py) li 
 
 Il dump non lo rifà nessun workflow: si rilancia in gioco dopo ogni giro di aggiornamenti delle mod. La base dati
 confronta le versioni delle mod nel dump con quelle dell'inventario e avvisa se il dump è vecchio.
+
+Se il dump ha problemi (errori in meta.json, sezioni mancanti o rimaste da un dump precedente) non scrive niente:
+un file vecchio passerebbe per nuovo. L'impronta del datapack (vedi comune.py) è quella del datapack locale al
+momento dell'importazione: va importato con il datapack uguale a quello dell'istanza (dev mandato su GitHub).
 """
-import hashlib
 import json
 import sys
 from pathlib import Path
 
+from comune import DATAPACK_DATA, impronta_datapack
+
 ROOT = Path(__file__).resolve().parent.parent
-DP = "pack/config/paxi/datapacks/matteo_tweaks/data"
-
-
-def impronta_datapack(ver: Path) -> str:
-    """sha256 di tutti i file del nostro datapack (percorso e contenuto): il dump vale per questo datapack. La base dati
-    la confronta con il datapack attuale: se è cambiato, il confronto ricette/tag/tabelle con il gioco non blocca più."""
-    h = hashlib.sha256()
-    for f in sorted((ver / DP).rglob("*")):
-        if f.is_file():
-            h.update(f.relative_to(ver / DP).as_posix().encode()); h.update(b"\0"); h.update(f.read_bytes()); h.update(b"\0")
-    return h.hexdigest()
 SEZIONI = ("effetti", "pozioni", "alambicco", "oggetti", "registri", "ricette", "tag", "tabelle", "strutture")
 FORMATO = 2
 
@@ -65,12 +59,20 @@ def main(argv: list[str]) -> int:
         print(f"formato del dump {meta.get('formato')} diverso da {FORMATO}: aggiornare questo script")
         return 1
     problemi = list(meta.get("errori") or [])
+    scritte = meta.get("file") or {}   # le sezioni scritte da questo dump (una sezione in errore non c'è)
     for s in SEZIONI:
         if not (src / f"{s}.json").exists():
             problemi.append(f"{s}: file mancante")
+        elif s not in scritte:
+            problemi.append(f"{s}: il file c'è ma questo dump non l'ha scritto (rimasto da un dump precedente)")
+    if problemi:
+        print(f"Dump del {meta.get('data')} NON importato: niente è stato scritto. Problemi:")
+        for p in problemi:
+            print(" -", p)
+        return 1
     dst.mkdir(parents=True, exist_ok=True)
     meta["mod"] = dict(sorted((meta.get("mod") or {}).items()))
-    meta["datapack_sha256"] = impronta_datapack(ver)   # aggiunto dall'importatore, non dal gioco
+    meta["datapack_sha256"] = impronta_datapack(ver / DATAPACK_DATA)   # aggiunto dall'importatore, non dal gioco
     (dst / "meta.json").write_text(json.dumps(meta, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     for s in SEZIONI:
         f = src / f"{s}.json"
@@ -78,11 +80,6 @@ def main(argv: list[str]) -> int:
             d = ordina(s, json.loads(f.read_text(encoding="utf-8")))
             (dst / f"{s}.json").write_text(json.dumps(d, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print(f"Dump del {meta.get('data')} importato in {dst}: {meta.get('file')}; mod: {len(meta['mod'])}")
-    if problemi:
-        print("Problemi del dump (da guardare prima di contarci):")
-        for p in problemi:
-            print(" -", p)
-        return 1
     return 0
 
 

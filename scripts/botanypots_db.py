@@ -41,16 +41,18 @@ Regole lette nel sorgente di Botany Pots 21.1.44 e Bookshelf 21.1.81:
 - tra più file con lo stesso id vince il pacchetto più in alto: il nostro datapack (Paxi lo mette sopra a tutti).
 """
 import csv
-import glob
+import hashlib
 import json
 import os
+import re
 import sqlite3
 import sys
 import tempfile
+import tomllib
 from collections import Counter, defaultdict
 from pathlib import Path
 
-DP = "pack/config/paxi/datapacks/matteo_tweaks/data"
+from comune import DATAPACK_DATA as DP, impronta_datapack
 NOSTRO = "matteo_tweaks"
 TAG_DIRT = ("oggetti", "botanypots:soil/dirt")
 TIPI_TERRENO = ("botanypots:soil", "botanypots:block_derived_soil")
@@ -226,6 +228,12 @@ CREATE TABLE COLTURA_CUSTOM (
   rotazione      TEXT,
   da_provare     TEXT,
   nota           TEXT
+);
+CREATE TABLE COLTURA_CUSTOM_BLOCCO (   -- i blocchi di richiesti e display_blocco di COLTURA_CUSTOM, uno per riga
+  coltura_id TEXT NOT NULL REFERENCES COLTURA_CUSTOM,
+  colonna    TEXT NOT NULL,             -- richiesti | display_blocco
+  blocco_id  TEXT NOT NULL,
+  PRIMARY KEY (coltura_id, colonna, blocco_id)
 );
 CREATE TABLE COLTURA_TAG_CUSTOM (
   coltura_id TEXT NOT NULL REFERENCES COLTURA_CUSTOM,
@@ -432,6 +440,10 @@ CREATE TABLE DUMP_MOD (                  -- le mod caricate nel gioco quando è 
   modid    TEXT PRIMARY KEY,
   versione TEXT NOT NULL
 );
+CREATE TABLE BASE_INFO (                 -- la firma delle fonti da cui è nata la base dati (vedi aggiornato())
+  chiave TEXT PRIMARY KEY,
+  valore TEXT NOT NULL
+);
 CREATE TABLE DUMP_INFO (                 -- data del dump, formato, impronta del datapack a cui si riferisce (dall'importatore)
   chiave TEXT PRIMARY KEY,
   valore TEXT
@@ -637,8 +649,7 @@ CREATE VIEW NOSTRA_TABELLA_MANCANTE AS
 -- I nomi che le nostre regole (CSV) usano e che il gioco non registra: la regola va corretta (B47)
 CREATE VIEW REGOLA_NOME_FANTASMA AS
   SELECT 'coltura_custom' AS regola, c.coltura_id AS riga, 'seme' AS colonna, c.seme AS id FROM COLTURA_CUSTOM c JOIN OGGETTO o ON o.oggetto_id = c.seme WHERE o.gioco = 0
-  UNION ALL SELECT 'coltura_custom', c.coltura_id, 'display_blocco', c.display_blocco FROM COLTURA_CUSTOM c JOIN BLOCCO b ON b.blocco_id = c.display_blocco WHERE b.gioco = 0
-  UNION ALL SELECT 'coltura_custom', c.coltura_id, 'richiesti', c.richiesti FROM COLTURA_CUSTOM c JOIN BLOCCO b ON b.blocco_id = c.richiesti WHERE b.gioco = 0
+  UNION ALL SELECT 'coltura_custom', x.coltura_id, x.colonna, x.blocco_id FROM COLTURA_CUSTOM_BLOCCO x JOIN BLOCCO b ON b.blocco_id = x.blocco_id WHERE b.gioco = 0
   UNION ALL SELECT 'coltura_custom', c.coltura_id, 'coltura_id', c.coltura_id FROM COLTURA_CUSTOM c JOIN BLOCCO b ON b.blocco_id = c.coltura_id WHERE b.gioco = 0
   UNION ALL SELECT 'coltura_raccolto_custom', r.coltura_id, 'id', r.id FROM COLTURA_RACCOLTO_CUSTOM r JOIN OGGETTO o ON o.oggetto_id = r.id WHERE r.tipo = 'oggetto' AND o.gioco = 0
   UNION ALL SELECT 'terreno_custom', t.terreno_id, 'terreno_id', t.terreno_id FROM TERRENO_CUSTOM t JOIN OGGETTO o ON o.oggetto_id = t.terreno_id WHERE o.gioco = 0
@@ -702,16 +713,33 @@ class BotanyPotsDB:
         self.query_dir = self.ver / "mod-knowledge" / "botany-pots" / "query"
 
     # ---------------------------------------------------------------- uso
-    def aggiornato(self) -> bool:
-        """Vero se il database esiste ed è più recente di inventario, datapack e CSV delle regole."""
-        if not self.db_path.exists():
-            return False
-        t = self.db_path.stat().st_mtime
+    def _firma_fonti(self) -> str:
+        """Percorso, dimensione e data di ogni file da cui nasce la base dati (inventario, datapack, CSV delle regole,
+        dump, config, script): cambia anche quando un file sparisce, non solo quando uno è più recente."""
         fonti = [*self.inventario.rglob("*.json"), *self.datapack.rglob("*.json"), *self.vasi.glob("*.csv"),
                  *self.mercato.glob("*.csv"), *self.pozioni.glob("*.csv"),
                  *self.dump.glob("*.json"), *([self.rarita_csv] if self.rarita_csv.exists() else []),
-                 *([self.config_ffb] if self.config_ffb.exists() else []), Path(__file__)]
-        return all(f.stat().st_mtime <= t for f in fonti)
+                 *([self.config_ffb] if self.config_ffb.exists() else []),
+                 Path(__file__), Path(__file__).with_name("comune.py")]
+        h = hashlib.sha256()
+        for f in sorted(fonti):
+            s = f.stat()
+            h.update(f"{f}\0{s.st_size}\0{s.st_mtime_ns}\n".encode())
+        return h.hexdigest()
+
+    def aggiornato(self) -> bool:
+        """Vero se il database esiste ed è nato dalle fonti di adesso."""
+        if not self.db_path.exists():
+            return False
+        try:
+            c = sqlite3.connect(f"file:{self.db_path}?mode=ro", uri=True)
+            try:
+                r = c.execute("SELECT valore FROM BASE_INFO WHERE chiave = 'fonti'").fetchone()
+            finally:
+                c.close()
+        except sqlite3.Error:   # base dati di prima della firma
+            return False
+        return r is not None and r[0] == self._firma_fonti()
 
     def connetti(self) -> sqlite3.Connection:
         if not self.aggiornato():
@@ -819,7 +847,7 @@ class BotanyPotsDB:
                 out.append(("le regole (CSV) usano solo nomi che il gioco registra" if not vecchio else "avviso: le regole (CSV) usano solo nomi che il gioco registra (dump vecchio, non blocca)", n == 0 or vecchio, f"trovati: {n}"))
                 n = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove = 'solo nel gioco'").fetchone()[0]
                 m = c.execute("SELECT count(*) FROM GIOCO_ID_DIVERSO WHERE dove <> 'solo nel gioco'").fetchone()[0]
-                out.append(("avviso: oggetti creati all'avvio, non nell'inventario / dell'inventario non nel gioco (non blocca)", True, f"{n} / {m}"))
+                out.append(("info: oggetti creati all'avvio, non nell'inventario / dell'inventario non nel gioco", True, f"{n} / {m}"))
             else:
                 out.append(("avviso: dump senza le sezioni del formato 2: ricette, tag, tabelle non confrontate (non blocca)", True, "rilanciare /mango_dump"))
         if self._coppie_attese is not None:
@@ -833,6 +861,7 @@ class BotanyPotsDB:
     _coppie_attese = None
 
     def refresh(self) -> list[tuple[str, bool, str]]:
+        firma = self._firma_fonti()   # prima di leggere: se una fonte cambia durante il refresh, la base risulta vecchia
         dati = self._leggi_fonti()
         fd, tmp = tempfile.mkstemp(suffix=".sqlite", dir=self.vasi)
         os.close(fd)
@@ -841,6 +870,7 @@ class BotanyPotsDB:
             c.execute("PRAGMA foreign_keys = ON")
             c.executescript(SCHEMA)
             self._carica(c, dati)
+            c.execute("INSERT INTO BASE_INFO VALUES ('fonti', ?)", (firma,))
             c.commit()
             esiti = self.controlli(c)
             c.close()
@@ -913,8 +943,8 @@ class BotanyPotsDB:
         # Le condizioni di caricamento si valutano con ciò che il gioco registra, se c'è il dump (regola del 29/10/2026):
         # l'inventario ha anche nomi senza niente di registrato (B47). Senza dump, con l'inventario.
         reg = dump.get("registri") or {}
-        items_ok = {i for i in items if i in set(reg["item"])} if reg.get("item") else set(items)
-        blocks_ok = {b for b in blocks if b in set(reg["block"])} if reg.get("block") else set(blocks)
+        items_ok = set(items) & set(reg["item"]) if reg.get("item") else set(items)
+        blocks_ok = set(blocks) & set(reg["block"]) if reg.get("block") else set(blocks)
         # datapack: tag e ricette
         for f in self.datapack.glob("*/tags/*/**/*.json"):
             rel = f.relative_to(self.datapack).parts
@@ -947,11 +977,14 @@ class BotanyPotsDB:
         for f in self.datapack.glob("*/tags/*/**/*.json"):
             rel = f.relative_to(self.datapack).parts
             d = _carica_json(f)
-            nome = f"{rel[0]}:{'/'.join(rel[3:])[:-5]}"
+            # data/<ns>/tags/<registro>/<nome>.json; i registri di worldgen hanno due parti (worldgen/structure)
+            n_reg = 2 if rel[2] == "worldgen" else 1
+            registro = "/".join(rel[2:2 + n_reg])
+            nome = f"{rel[0]}:{'/'.join(rel[2 + n_reg:])[:-5]}"
             for v in d.get("values", []):
                 vid, fac = (v, False) if isinstance(v, str) else (v["id"], not v.get("required", True))
                 if not vid.startswith("#"):
-                    nostri["tag"].append((rel[2], nome, vid, int(fac)))
+                    nostri["tag"].append((registro, nome, vid, int(fac)))
         for f in self.datapack.glob("*/loot_table/**/*.json"):
             rel = f.relative_to(self.datapack).parts
             d = _carica_json(f)
@@ -994,7 +1027,6 @@ class BotanyPotsDB:
         # config di FFB nel pack: le due liste che accendono o spengono i preset
         config_preset = {}
         if self.config_ffb.exists():
-            import tomllib
             cfg = tomllib.loads(self.config_ffb.read_text(encoding="utf-8"))
             for k, v in cfg.items():
                 if isinstance(v, dict):
@@ -1212,6 +1244,11 @@ class BotanyPotsDB:
         self._carica_csv(c, "TERRENO_TAG_CUSTOM", "terreno_tag_custom.csv", ("terreno_id", "ambito", "tag"))
         self._carica_csv(c, "TERRENO_CUSTOM", "terreno_custom.csv", ("terreno_id", "display_blocco", "fluido", "nota"))
         self._carica_csv(c, "COLTURA_CUSTOM", "coltura_custom.csv", ("coltura_id", "mod", "seme", "tempo", "richiesti", "display_blocco", "display_offset", "rotazione", "da_provare", "nota"))
+        c.executemany("INSERT OR IGNORE INTO COLTURA_CUSTOM_BLOCCO VALUES (?,?,?)", [
+            (cid, col, b) for cid, col, v in c.execute(
+                "SELECT coltura_id, 'richiesti', richiesti FROM COLTURA_CUSTOM WHERE richiesti IS NOT NULL "
+                "UNION ALL SELECT coltura_id, 'display_blocco', display_blocco FROM COLTURA_CUSTOM WHERE display_blocco IS NOT NULL").fetchall()
+            for b in v.split("|") if b])
         self._carica_csv(c, "COLTURA_TAG_CUSTOM", "coltura_tag_custom.csv", ("coltura_id", "ordine", "ambito", "tag"))
         self._carica_csv(c, "COLTURA_RACCOLTO_CUSTOM", "coltura_raccolto_custom.csv", ("coltura_id", "gruppo", "tipo", "id", "count", "chance"))
 
@@ -1303,15 +1340,6 @@ class BotanyPotsDB:
 
     _saltati_dump = None
 
-    def _impronta_datapack(self) -> str:
-        """La stessa impronta che scripts/dump_importa.py salva in meta.json (`datapack_sha256`)."""
-        import hashlib
-        h = hashlib.sha256()
-        for f in sorted(self.datapack.rglob("*")):
-            if f.is_file():
-                h.update(f.relative_to(self.datapack).as_posix().encode()); h.update(b"\0"); h.update(f.read_bytes()); h.update(b"\0")
-        return h.hexdigest()
-
     def _carica_gioco(self, c: sqlite3.Connection, dati: dict) -> None:
         """I nostri file del datapack e, se c'è, il dump del gioco nel formato 2: registri, ricette, etichette,
         tabelle del bottino, insiemi di strutture."""
@@ -1380,7 +1408,7 @@ class BotanyPotsDB:
         meta = dump.get("meta") or {}
         c.executemany("INSERT INTO DUMP_MOD VALUES (?,?)", sorted((meta.get("mod") or {}).items()))
         c.executemany("INSERT INTO DUMP_INFO VALUES (?,?)", [(k, str(meta.get(k))) for k in ("data", "formato", "datapack_sha256") if meta.get(k) is not None])
-        c.execute("INSERT INTO DUMP_INFO VALUES ('datapack_attuale', ?)", (self._impronta_datapack(),))
+        c.execute("INSERT INTO DUMP_INFO VALUES ('datapack_attuale', ?)", (impronta_datapack(self.datapack),))
         effetti = {r[0] for r in c.execute("SELECT effetto_id FROM EFFETTO")}
         pozioni = {r[0] for r in c.execute("SELECT pozione_id FROM POZIONE")}
 
@@ -1455,6 +1483,15 @@ class BotanyPotsDB:
                       [tuple(r[k] if r[k] != "" else None for k in colonne) for r in righe])
 
 
+def icona(nome: str, ok: bool, det: str) -> str:
+    """❌ controllo fallito; ⚠️ avviso che ha trovato qualcosa (non blocca, ma va guardato); ✅ il resto."""
+    if not ok:
+        return "❌"
+    if nome.startswith("avviso") and not re.fullmatch(r"trovat[ie]: 0", det):
+        return "⚠️"
+    return "✅"
+
+
 def main(argv: list[str]) -> int:
     if len(argv) < 2:
         print(__doc__)
@@ -1462,7 +1499,7 @@ def main(argv: list[str]) -> int:
     db, cmd = BotanyPotsDB(argv[0]), argv[1]
     if cmd == "refresh":
         for nome, ok, det in db.refresh():
-            print(("✅" if ok else "❌"), nome, det)
+            print(icona(nome, ok, det), nome, det)
         print("scritto", db.db_path)
     elif cmd in ("query", "analisi"):
         righe = db.query(argv[2]) if cmd == "query" else db.analisi(argv[2])
@@ -1476,7 +1513,7 @@ def main(argv: list[str]) -> int:
             print(f"{tipo:8s} {nome:24s} {n:6d}")
     elif cmd == "controlli":
         for nome, ok, det in db.controlli():
-            print(("✅" if ok else "❌"), nome, det)
+            print(icona(nome, ok, det), nome, det)
     else:
         print("comando sconosciuto:", cmd)
         return 2

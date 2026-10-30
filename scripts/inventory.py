@@ -209,6 +209,27 @@ def parse_mods_toml(text: str, manifest_version: str | None, where: str, legacy:
     return mods, []
 
 
+def manifest_version(z: zipfile.ZipFile, names) -> str | None:
+    """Implementation-Version del manifest: sostituisce ${file.jarVersion} nei mods.toml."""
+    if "META-INF/MANIFEST.MF" not in names:
+        return None
+    m = re.search(r"^Implementation-Version:\s*(\S+)", z.read("META-INF/MANIFEST.MF").decode("utf-8", "replace"), re.M)
+    return m.group(1) if m else None
+
+
+def nested_jars(z: zipfile.ZipFile, names, problems: list, where: str) -> set[str]:
+    """Jar incorporati: quelli elencati in META-INF/jarjar/metadata.json (possono stare ovunque,
+    es. META-INF/jars/ con Architectury) più ogni .jar dentro META-INF/."""
+    nested = {n for n in names if n.startswith("META-INF/") and n.endswith(".jar")}
+    if "META-INF/jarjar/metadata.json" in names:
+        try:
+            meta = json.loads(z.read("META-INF/jarjar/metadata.json").decode("utf-8-sig"))
+            nested |= {j["path"] for j in meta.get("jars", []) if j.get("path") in names}
+        except Exception:
+            problems.append(f"{where or 'jar'}: META-INF/jarjar/metadata.json non leggibile")
+    return nested
+
+
 def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
     try:
         z = zipfile.ZipFile(io.BytesIO(data))
@@ -216,21 +237,10 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
         inv.problems.append(f"{where or 'jar'}: non è uno zip valido")
         return
     names = z.namelist()
-    manifest_version = None
-    if "META-INF/MANIFEST.MF" in names:
-        m = re.search(r"^Implementation-Version:\s*(\S+)", z.read("META-INF/MANIFEST.MF").decode("utf-8", "replace"), re.M)
-        manifest_version = m.group(1) if m else None
+    version = manifest_version(z, names)
     item_models, blockstates = set(), set()
     potion_names: dict[tuple[str, str], str] = {}  # (namespace del file di lingua, nome di traduzione) -> nome tradotto
-    # Jar incorporati: quelli elencati in META-INF/jarjar/metadata.json (possono stare
-    # ovunque, es. META-INF/jars/ con Architectury) più ogni .jar dentro META-INF/
-    nested = {n for n in names if n.startswith("META-INF/") and n.endswith(".jar")}
-    if "META-INF/jarjar/metadata.json" in names:
-        try:
-            meta = json.loads(z.read("META-INF/jarjar/metadata.json").decode("utf-8-sig"))
-            nested |= {j["path"] for j in meta.get("jars", []) if j.get("path") in names}
-        except Exception:
-            inv.problems.append(f"{where or 'jar'}: META-INF/jarjar/metadata.json non leggibile")
+    nested = nested_jars(z, names, inv.problems, where)
     for n in names:
         if n.endswith("/"):
             continue
@@ -240,7 +250,7 @@ def analyze_jar(data: bytes, inv: Inv, where: str = "", depth: int = 0) -> None:
                 analyze_jar(z.read(n), inv, n.rsplit("/", 1)[1], depth + 1)
             continue
         if n in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
-            mods, probs = parse_mods_toml(z.read(n).decode("utf-8", "replace"), manifest_version, where,
+            mods, probs = parse_mods_toml(z.read(n).decode("utf-8", "replace"), version, where,
                                           legacy=n == "META-INF/mods.toml")
             inv.mods.extend(mods)
             inv.problems.extend(probs)
@@ -393,10 +403,9 @@ def inventory_minecraft(mc: str, out: Path) -> None:
                 inv.names[VANILLA_FIELDS[reg]][i] = ""
         elif reg.startswith("tag/"):
             cat = "tags/" + reg[4:]
-            try:
-                contents = json.loads(get(base + f"data/{reg}/data.min.json"))
-            except Exception:
-                contents = {}
+            # un errore qui ferma l'inventario di Minecraft (resta il file di prima): un tag salvato
+            # vuoto e segnato "ok" non verrebbe più riscaricato
+            contents = json.loads(get(base + f"data/{reg}/data.min.json"))
             for n in names:
                 inv.tags[cat][f"minecraft:{n}"] = tag_values(contents.get(n, {}))
         elif reg in COUNT_ONLY:

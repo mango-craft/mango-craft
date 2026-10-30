@@ -1,0 +1,27 @@
+# Revisione 2026.10-02 — diario
+
+Il piano è in [piano.md](piano.md). Le voci sono in ordine di tempo; la più recente è in fondo.
+
+---
+
+## 30/10/2026 — L'analisi
+
+- **Agente:** claude-code (claude-opus-5-5)
+- **Richiesta di Matteo:** «rianalizzare la struttura del repo, della documentazione e del codice: trova problemi, incoerenze ed eventuali sprechi».
+- **Come:** tre analisi in parallelo, in sola lettura (documentazione; codice; dati, pack e peso), più controlli meccanici (link relativi, indici, codici, nomi delle schede, codici dei bug, percorsi citati). I punti principali riverificati a mano.
+- **Risultato:** 63 rilievi senza doppioni; il rapporto è nello stage. I più importanti: owo-lib 0.12.15.6 già uscita (B17); memoria a 8 GB nel `README.md` contro 12 nella guida; Release che può taggare un ramo diverso da `main`; workflow di aggiunta che possono scrivere su `main` (successo il 18/10); `git *` permesso anche per i comandi che cancellano; `ci_commit.sh` lanciabile in locale; `refresh` della base dati 22 s di cui 21 persi; avvisi della base dati buttati; impronta del datapack che conta anche i readme.
+- **Controllati e a posto:** link, indici, codici, schede citate, codici dei bug; `check_pack`, `check_ids`, generatori, base dati; metafile e inventario; workflow senza iniezione dagli input.
+- **Correzione mia:** sul dump e su packwiz avevo raccomandato di togliere; rifatti i conti su richiesta di Matteo, ho corretto: il dump non pesa abbastanza da cambiarlo ora (e avrei tolto un'etichetta che i vasi usano), packwiz serve come verifica indipendente dell'indice e va solo messo in cache.
+- **Matteo:** «applica tutto», con le raccomandazioni nuove. Piano scritto prima di cominciare.
+
+## 30/10/2026 — Workflow, script, permessi
+
+- **Agente:** claude-code (claude-opus-5-5). In parallelo un secondo agente corregge i documenti del pack (punto 3), in file diversi.
+- **Workflow:** azione comune `.github/actions/packwiz/` (packwiz al commit fissato, Go 1.24.6 come dichiara il suo `go.mod`, cache). Controllo pack con permesso di sola lettura: rifà i file generati e fallisce se il commit non li aveva; non fa più commit. Aggiunta mod solo su `dev`, dall'ultimo commit del ramo, packwiz senza lo stdin del ciclo. Release solo da `main` (anche per un tag mandato da locale) e con l'indice confrontato con quello di packwiz prima di esportare.
+- **Controlli:** `ci_pack.sh` è l'unica coda; `controllo_locale.sh` la lancia con `--locale` (indice da `packwiz_index.py`) e ora rifà anche l'inventario. La base dati segna ⚠️ gli avvisi che hanno trovato qualcosa e il controllo mostra solo quelli e i ❌: oggi 4 (2 pozioni dell'inventario che il gioco non ha; datapack cambiato dopo il dump, con le 3 ricette dei graticci di B47).
+- **Base dati:** il ciclo quadratico era la riga che ricostruiva l'insieme dei nomi del gioco per ogni oggetto: 23,4 → 2 s. Firma delle fonti al posto delle date (si accorge anche dei file cancellati). Campi con più blocchi esplosi in `COLTURA_CUSTOM_BLOCCO` per il controllo dei nomi fantasma. Registro delle etichette di worldgen corretto (`worldgen/structure`): il Berserker resta comunque non confrontato, perché il dump non esporta quelle etichette (decisione: il dump non si cambia ora).
+- **Impronta del datapack** in `scripts/comune.py`, solo `.json` e `.mcfunction`: l'impronta del dump del 29/10 era calcolata con la formula vecchia, quindi l'avviso «datapack cambiato» resta fino al prossimo dump (c'era già, per B47).
+- **`dump_importa.py`**: se il dump ha errori o sezioni che quel dump non ha scritto (`meta.file`), non scrive niente.
+- **Altri script:** `modrinth_resolve.py` (provato: `jei@19.70.0.467` trova la versione NeoForge, `2vmfujjt` è un id); `log_confronta.py` (latest contro 27/10: 342 firme nuove invece di 373); `release_notes.py`; `inventory.py` (verificato prima che tutti i 16 registri di etichette vanilla si scarichino); `vasi_verifica_jar.py` (21 terreni sostituiti in più); generatore dei vasi che cancella solo i file di vaso fuori dalla nostra cartella; `esamina.py` legge i jar con le funzioni dell'inventario (esame delle due mod della 0.7.3 identico).
+- **Tolti:** `scripts/import_mrpack.py`, `1.21.1/data/modrinth-progetti.json`, `1.21.1/data/vasi/copertura.json` (nella storia: `90b7e8d`).
+- **Prove:** `shellcheck` pulito, tutti gli script compilano, controllo locale verde in 2,7 s.

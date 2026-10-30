@@ -7,6 +7,7 @@ Uso: python3 scripts/release_notes.py <cartella pack> <changelog> <versione>
 Le mod CurseForge non entrano nel .mrpack pubblico: qui vengono elencate con
 il link al file esatto, così si possono scaricare a mano se si usa il .mrpack.
 """
+import re
 import sys
 import tomllib
 from pathlib import Path
@@ -19,7 +20,8 @@ def changelog_section(changelog: Path, version: str) -> str:
         if line.startswith("## "):
             if inside:
                 break
-            inside = line[3:].strip().startswith(version)
+            # la versione esatta: «0.7.1» non deve prendere «0.7.10»
+            inside = re.match(rf"{re.escape(version)}(?![\d.])", line[3:].strip()) is not None
             if inside:
                 continue
         if inside:

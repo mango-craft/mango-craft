@@ -18,24 +18,24 @@ concurrency:
   group: pack-${{ github.ref }}
   cancel-in-progress: false
 
-env:
-  PACKWIZ_COMMIT: 170b22d785959dda5876b54b7f16e1b807a57fb6
-
 jobs:
   add:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-go@v5
-        with:
-          go-version: stable
-          cache: false
-
-      - name: Installa packwiz
+      # Le mod si aggiungono solo su dev: main riceve dev con un merge (AGENTS.md, sezione 5)
+      - name: Solo sul ramo dev
         run: |
-          go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
-          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+          if [ "$GITHUB_REF" != refs/heads/dev ]; then
+            echo "::error::Le mod si aggiungono solo su dev (lanciato su $GITHUB_REF)"; exit 1
+          fi
+
+      # L'ultimo commit del ramo, non quello di quando il workflow è stato lanciato
+      # (un workflow in coda partirebbe da un commit vecchio)
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - uses: ./.github/actions/packwiz
 
       - name: Aggiungi le mod
         id: add

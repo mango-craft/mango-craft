@@ -30,7 +30,16 @@
       "Bash(git tag *)",
       "Bash(git merge *)",
       "Bash(gh workflow run *)",
-      "Bash(gh release *)"
+      "Bash(gh release *)",
+      "Bash(git clean *)",
+      "Bash(git reset --hard)",
+      "Bash(git reset --hard *)",
+      "Bash(git checkout -- *)",
+      "Bash(git restore *)",
+      "Bash(git branch -D *)",
+      "Bash(git stash drop)",
+      "Bash(git stash drop *)",
+      "Bash(git stash clear)"
     ],
     "deny": [
       "Read(~/.ssh/**)"

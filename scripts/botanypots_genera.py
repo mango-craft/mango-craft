@@ -33,7 +33,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DP = "pack/config/paxi/datapacks/matteo_tweaks/data"
+from comune import DATAPACK_DATA as DP
 MIEI = ("crop", "soil", "alberi")  # cartelle scritte a mano, non si toccano
 
 
@@ -72,6 +72,19 @@ def cond(blocchi: list[str]) -> dict:
 def scrivi_json(path: Path, obj: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+
+
+def sostituiti_presenti(data: Path) -> set[Path]:
+    """I file di vaso (tipo botanypots:…) nelle cartelle recipe/ degli altri namespace: sono i terreni delle mod
+    sostituiti allo stesso percorso, e li scrive solo questo script. Le altre ricette di quei namespace restano."""
+    out = set()
+    for r in data.glob("*/recipe"):
+        if r.parent.name == "matteo_tweaks":
+            continue
+        for q in r.rglob("*.json"):
+            if str(json.loads(q.read_text(encoding="utf-8")).get("type", "")).startswith("botanypots:"):
+                out.add(q.relative_to(data))
+    return out
 
 
 def numero(s: str):
@@ -270,8 +283,7 @@ def main() -> int:
                 presenti |= {q.relative_to(data) for q in d.rglob("*.json")}
         if tagdir.exists():
             presenti |= {q.relative_to(data) for q in tagdir.glob("*.json")}
-        for ns in {p.parts[0] for p in sostituzioni}:
-            presenti |= {q.relative_to(data) for q in (data / ns / "recipe").rglob("*.json")} if (data / ns / "recipe").exists() else set()
+        presenti |= sostituiti_presenti(data)
         diversi = sorted(str(q) for q in presenti - set(attesi)) + sorted(str(q) for q in set(attesi) - presenti)
         diversi += sorted(str(q) for q in set(attesi) & presenti
                           if json.loads((data / q).read_text(encoding="utf-8")) != attesi[q])
@@ -286,9 +298,12 @@ def main() -> int:
             for d in bp.iterdir():
                 if d.is_dir() and d.name not in MIEI:
                     shutil.rmtree(d)
-        for ns in {p.parts[0] for p in sostituzioni}:
-            if (data / ns / "recipe").exists():
-                shutil.rmtree(data / ns / "recipe")
+        for q in sostituiti_presenti(data):
+            (data / q).unlink()
+        for r in data.glob("*/recipe"):   # le cartelle rimaste vuote
+            for d in sorted((x for x in r.rglob("*") if x.is_dir()), reverse=True):
+                if not any(d.iterdir()):
+                    d.rmdir()
         if tagdir.exists():
             shutil.rmtree(tagdir)
         for p, ric in file_colture.items():

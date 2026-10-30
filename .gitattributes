@@ -1,5 +1,7 @@
 # I file del pack sono verificati con hash: niente conversioni di fine riga
-1.21.1/pack/** -text
+*/pack/** -text
 *.md text eol=lf
 *.py text eol=lf
 *.yml text eol=lf
+*.sh text eol=lf
+ai-agents/bin/* text eol=lf

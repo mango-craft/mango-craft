@@ -1,0 +1,34 @@
+name: packwiz
+description: >-
+  Mette packwiz nel PATH, a un commit fissato. Si compila una volta sola (con il Go che
+  packwiz dichiara nel suo go.mod) e poi si prende dalla cache di GitHub.
+inputs:
+  commit:
+    description: Commit di packwiz da usare (cambiarlo qui aggiorna packwiz in tutti i workflow)
+    default: 170b22d785959dda5876b54b7f16e1b807a57fb6
+  go:
+    description: Versione di Go per compilarlo (toolchain del go.mod di packwiz a quel commit)
+    default: 1.24.6
+runs:
+  using: composite
+  steps:
+    - id: cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.local/packwiz
+        key: packwiz-${{ inputs.commit }}-go${{ inputs.go }}
+
+    - if: steps.cache.outputs.cache-hit != 'true'
+      uses: actions/setup-go@v5
+      with:
+        go-version: ${{ inputs.go }}
+        cache: false
+
+    - if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      env:
+        COMMIT: ${{ inputs.commit }}
+      run: GOBIN="$HOME/.local/packwiz" go install "github.com/packwiz/packwiz@${COMMIT}"
+
+    - shell: bash
+      run: echo "$HOME/.local/packwiz" >> "$GITHUB_PATH"

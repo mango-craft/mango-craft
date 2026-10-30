@@ -1,5 +1,9 @@
 name: Controllo pack
 
+# Controlla e basta, senza commit: rifà indice (con packwiz), inventario e controllo dei nomi
+# e fallisce se sono diversi da quelli del commit. Li scrive prima del push il controllo
+# locale (bash scripts/controllo_locale.sh <pack>), con packwiz_index.py: packwiz qui
+# fa da verifica indipendente.
 on:
   push:
     branches: [main, dev]
@@ -7,15 +11,12 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
-# Un solo workflow alla volta per ramo: tutti possono fare commit
+# Conta solo l'ultimo commit di un ramo
 concurrency:
-  group: pack-${{ github.ref }}
-  cancel-in-progress: false
-
-env:
-  PACKWIZ_COMMIT: 170b22d785959dda5876b54b7f16e1b807a57fb6
+  group: controllo-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   check:
@@ -23,15 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-go@v5
-        with:
-          go-version: stable
-          cache: false
-
-      - name: Installa packwiz
-        run: |
-          go install "github.com/packwiz/packwiz@${PACKWIZ_COMMIT}"
-          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+      - uses: ./.github/actions/packwiz
 
       - name: Indice, controlli, inventario e controllo dei nomi
         id: checks
@@ -42,13 +35,21 @@ jobs:
           done
           echo "status=$status" >> "$GITHUB_OUTPUT"
 
-      - name: Salva indice, inventario e rapporto
-        if: github.event_name != 'pull_request'
+      - name: File generati aggiornati nel commit
         run: |
-          bash scripts/ci_commit.sh "chore: indice e inventario aggiornati [skip ci]"
+          # shellcheck disable=SC2035
+          cambiati=$(git status --porcelain -- */pack */data/inventario)
+          if [ -n "$cambiati" ]; then
+            echo "$cambiati"
+            git --no-pager diff --stat
+            echo "::error::Indice, inventario o controllo.md non sono aggiornati nel commit: lanciare bash scripts/controllo_locale.sh <pack> e fare un commit con i file cambiati"
+            exit 1
+          fi
+          echo "Indice, inventario e controllo.md del commit sono aggiornati."
 
       - name: Esito
-        if: steps.checks.outputs.status != '0'
+        if: always() && steps.checks.outputs.status != '0'
         run: |
-          echo "Controlli falliti: vedi <versione>/data/inventario/controllo.md nel ramo"
+          for r in */data/inventario/controllo.md; do sed -n '/^## Errori/,/^## Avvisi/p' "$r"; done
+          echo "::error::Controlli falliti: il dettaglio è qui sopra e nel log del passo dei controlli"
           exit 1

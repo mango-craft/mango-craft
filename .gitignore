@@ -26,5 +26,6 @@ options.txt
 .DS_Store
 Thumbs.db
 
-# Base dati: si rigenera con scripts/botanypots_db.py
-1.21.1/data/vasi/vasi.sqlite
+# Base dati: si rigenera con scripts/botanypots_db.py (anche i file lasciati da un refresh interrotto)
+*/data/vasi/*.sqlite
+*/data/vasi/*.sqlite-journal
