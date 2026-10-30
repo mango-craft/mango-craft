@@ -4,7 +4,7 @@ Le cose da **non rompere** in questa versione, in breve, ognuna con la scheda ch
 
 ## Cose da non rompere
 
-- **NeoForge fermo a 21.1.259**: dalla 21.1.261 owo-lib 0.12.15.5 (dipendenza dell'Aether, metafile a sé) non riconosce più i suoi pacchetti di rete → «Connection lost» entrando nel mondo (B17). owo-lib 0.12.15.6, uscita il 16/10/2026, dice di correggerlo: si aggiorna e si prova l'ultimo NeoForge nella tappa 6.4 (`../lavoro/0501-piano.md`). Schede `neoforge`, `aether`.
+- **NeoForge fermo a 21.1.259**: dalla 21.1.262 owo-lib 0.12.15.5 (dipendenza dell'Aether, metafile a sé) non riconosce più i suoi pacchetti di rete → «Connection lost» entrando nel mondo (B17). owo-lib 0.12.15.6, uscita il 16/10/2026, dice di correggerlo: si aggiorna e si prova l'ultimo NeoForge nella tappa 6.4 (`../lavoro/0501-piano.md`). **Forgified Fabric API 2.3.6** vuole NeoForge ≥ 21.1.262: si aggiorna **insieme** a NeoForge, non prima. Schede `neoforge`, `aether`.
 - **Esperienza liquida**: il liquido di Create: Enchantment Industry vale 1 mB per punto, gli altri 20. **Mai** mescolarli per etichetta (`c:experience`) o per config (`AllowedFluids` di Cognition). Il Mescolatore li scambia (50 ↔ 1000 mB) nei due versi: in una bacinella senza filtro vanno avanti e indietro; per un verso solo, filtro con il secchio del liquido da ottenere. Tema `esperienza`.
 - **Regions Unexplored 0.6** usa Lithostitched (non TerraBlender) e ha rinominato alcuni blocchi: le piante con i nomi vecchi in Botany Pots non si caricano, quindi le scriviamo noi con i nomi nuovi. Schede `regions-unexplored`, `botany-pots`.
 - **Frantumatore di Occultism**: non si modifica (scelta di Matteo, `0302-config.md`). Scheda `occultism`.

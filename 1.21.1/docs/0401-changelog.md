@@ -170,7 +170,7 @@ Contiene anche la **0.7.1** (fornaci), che non esce a sé: Matteo prova le due i
 
 ## 0.1.1 — 18/10/2026 · base del repository
 
-- **NeoForge**: 21.1.259. Non usare la 21.1.261 o successive: owo-lib 0.12.15.5 (dipendenza dell'Aether; corretto il 30/10/2026: non è incluso nel suo jar) fa cadere la connessione all'ingresso nel mondo. Si aggiornerà quando esce owo-lib 0.12.15.6.
+- **NeoForge**: 21.1.259. Non usare la 21.1.262 o successive (qui c'era «21.1.261», che non è mai uscita: corretto il 30/10/2026): owo-lib 0.12.15.5 (dipendenza dell'Aether; corretto il 30/10/2026: non è incluso nel suo jar) fa cadere la connessione all'ingresso nel mondo. Si aggiornerà quando esce owo-lib 0.12.15.6.
 - **Mondo nuovo**: non serve (è la stessa versione già provata).
 - **Contenuto**: identico al pacchetto `modpack-matteo-0.1.1.mrpack` provato in gioco: 193 file di mod e librerie da Modrinth, il resource pack Fresh Animations (da attivare a mano nel gioco), le configurazioni (`almostunified/tags.json`, `sparsestructures.json5`) e il datapack `matteo_tweaks` caricato da Paxi.
 - **Mod solo CurseForge** (5): The Twilight Forest 4.8.3345, Ars Elemental 0.7.10.4, Roaster's Delight 1.0.0.1, Spice of Life: Carrot Edition 1.16.6, BotanyPotsAdditions 1.1.0. Le scarica l'installer; quelle con distribuzione bloccata vanno scaricate a mano una volta (l'installer mostra pagina e percorso).
