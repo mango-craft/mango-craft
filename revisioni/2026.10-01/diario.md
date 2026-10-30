@@ -40,3 +40,12 @@ Il piano è in [piano.md](piano.md). Le voci sono in ordine di tempo; la più re
 - **Esamina mod** lanciato su `cc-tweaked@1ewzHZYg advancedperipherals@fxjzpAbL` (le mod della 0.7.3): è partita la versione su GitHub, ancora quella vecchia, perché i commit di questa revisione non erano mandati. Ha fatto un commit su `dev` (77517bd, i due esami in `ai-agents/stage/`) invece dell'artefatto. Esame identico a quello del 24/10 nell'archivio (stesse versioni): niente di nuovo per la 0.7.3.
 - **Sistemato:** i 3 commit locali riportati sopra 77517bd. Il `git rebase` si è fermato: il commit della sessione crea `.claude/settings.json`, che c'era già sul disco (identico) e che la sandbox non lascia scrivere. I due commit rimasti ricostruiti con `git merge-tree` e `git commit-tree` senza toccare il disco; contenuto verificato uguale al `dev` di prima più i due file. Poi la cartella tolta da git: resta nello stage locale come `2026-10-30-esame-mod/`.
 - **Aperto:** il push (con la conferma di Matteo); dopo, rilanciare Esamina mod per provare l'artefatto; `/context`.
+
+## 30/10/2026 — Il push e l'artefatto
+
+- **Agente:** claude-code (claude-opus-5-5)
+- Matteo: «procedi e controlla». Push dei 4 commit su `dev` (77517bd..d302cdf) con la deploy key: riuscito.
+- **Controllo pack** partito dal push: verde, nessun commit automatico.
+- **Esamina mod** rilanciato sulle stesse due mod, ora nella versione nuova: verde in 8 secondi, artefatto `esame-mod` scaricato con `gh run download`, identico all'esame già nello stage; nessun commit sul ramo. Prova del piano chiusa.
+- Avviso di GitHub in tutte le esecuzioni: `actions/checkout@v4`, `setup-go@v5` e `upload-artifact@v4` usano Node 20, deprecato (girano su Node 24 forzato). Non blocca.
+- **Aperto:** `/context` (lo vede solo Matteo); la domanda sulle sessioni su claude.ai.
