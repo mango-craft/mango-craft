@@ -309,6 +309,18 @@ file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/rel
 hash = "a3f46ed864714a35b080d02dacd8eba1717427664b960d519879f38ed34a8dfc"
 
 [[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.4/aether_portale.mcfunction"
+hash = "b172f1581bb96e6918e046049808a7bc8c283d0b3611f9ecad7e5c0fdc09ad76"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.4/saccheggio_spada.mcfunction"
+hash = "622ba40a4ca7df2e63d1483709af2338736b734ce8df4ef75e1a41cda1f65081"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.4/tutte_le_prove.mcfunction"
+hash = "60a28ee7d8c8ecdbce9db72258d3607e7d741efde10983eb58014f9bd6d13cbe"
+
+[[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
 hash = "6c4be7153edf61d2c01ab43b31ef8852e15a158c06d8df9cc0c8c6134d4f398c"
 
