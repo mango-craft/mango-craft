@@ -42,7 +42,7 @@ Questo è `stronghold_corridor.json`. I commenti `//` servono solo a spiegare: n
 }
 ```
 
-I file con una cassa sola non hanno `any_of`. Ogni file deve comparire nell'elenco [`data/neoforge/loot_modifiers/global_loot_modifiers.json`](../../../neoforge/loot_modifiers/readme.md), altrimenti resta spento.
+I file con una cassa sola non hanno `any_of`. Il nome del file è quello della tabella di Artifacts che tira, tranne `woodland_mansion.json` (sotto). Ogni file deve comparire nell'elenco [`data/neoforge/loot_modifiers/global_loot_modifiers.json`](../../../neoforge/loot_modifiers/readme.md), altrimenti resta spento.
 
 ## I 10 file
 
@@ -51,7 +51,7 @@ I file con una cassa sola non hanno `any_of`. Ogni file deve comparire nell'elen
 | File | Probabilità | Casse |
 |---|---|---|
 | `bastion_treasure.json` | 65% | Twilight Forest: caveau dei troll (con e senza lampada) |
-| `woodland_mansion.json` | 40% | Twilight Forest: caveau del labirinto (anche jackpot), stanza dell'aurora · Friends & Foes: barili della cittadella · Better Archeology: tesoro del tempio della luce |
+| `woodland_mansion.json` | 40%, un artefatto qualsiasi (dalla 0.7.5) | Twilight Forest: caveau del labirinto (anche jackpot), stanza dell'aurora · Friends & Foes: barili della cittadella · Better Archeology: tesoro del tempio della luce |
 | `jungle_temple.json` | 35% | Twilight Forest: labirinto di siepi · Better Archeology: tesoro del tempio della giungla |
 | `stronghold_corridor.json` | 30% | Twilight Forest: stanza della roccaforte dei cavalieri, colline cave grandi, stanza della chiave della torre oscura · Better Archeology: cassa d'oro delle catacombe, cassa della spada dello sculk che consuma |
 | `abandoned_mineshaft.json` | 30% | Twilight Forest: colline cave medie |
@@ -62,3 +62,9 @@ I file con una cassa sola non hanno `any_of`. Ogni file deve comparire nell'elen
 | `nether_bridge.json` | 15% | YUNG's Better Dungeons: piccolo dungeon del Nether |
 
 In queste casse non c'è anche la reliquia di Relics: Relics non le vede. Le reliquie proprie di Relics (le sue 20) qui non escono.
+
+## Il livello della villa: una tabella nostra (dalla 0.7.5)
+
+La tabella di Artifacts per la villa nel bosco (`artifacts:inject/chests/woodland_mansion`) sceglie il **chorus totem** 2 volte su 3, e un artefatto qualsiasi la terza: in tutto il chorus totem era circa il 67% degli artefatti di queste casse (visto nella prova della 0.7.5, 31/10/2026). Va bene per la villa vanilla, non per 5 tesori diversi tra loro.
+
+Dalla 0.7.5 `woodland_mansion.json` tira la nostra [`matteo_tweaks:artifacts/qualsiasi_40`](../../loot_table/readme.md): la stessa probabilità (40%, con la stessa condizione di Artifacts, `artifacts:artifact_rarity_adjusted_chance` con `default_probability` 0.4) e l'artefatto preso dall'elenco completo di Artifacts (`artifacts:artifact`, 46 voci: 42 artefatti con lo stesso peso, circa 2,3% ciascuno, e 4 più rari, Umbrella, Whoopee Cushion, Helium Flamingo ed Everlasting Beef, tra 0,6% e 1,4%). Il nome del file resta quello di prima perché è nell'elenco di NeoForge. Gli altri livelli restano le tabelle di Artifacts: hanno anche loro i loro preferiti (il chorus totem nel 43% di `end_city_treasure`, solo 4 artefatti in `jungle_temple`), ma sono legati al tipo di struttura.

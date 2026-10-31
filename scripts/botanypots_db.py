@@ -784,8 +784,9 @@ CREATE VIEW BOTTINO_VOCE_OGGETTO AS
   LEFT JOIN OGGETTO o ON o.oggetto_id = v.id
   WHERE v.tipo = 'item';
 -- Le fonti di reliquie di ogni tabella vincente: Relics (nome chests/), un modificatore attivo che tira una tabella di
--- Artifacts, una voce che nomina una tabella di Artifacts (`artifacts:items/…`) o un suo oggetto. Il tipo
--- artifacts:roll_loot_table non conta: Reliquified Artifacts ne scarta le reliquie (scheda artifacts)
+-- Artifacts o una tabella che ne nomina una (la nostra `matteo_tweaks:artifacts/qualsiasi_40`, dalla 0.7.5), una voce
+-- che nomina una tabella di Artifacts (`artifacts:items/…`) o un suo oggetto. Il tipo artifacts:roll_loot_table non
+-- conta: Reliquified Artifacts ne scarta le reliquie (scheda artifacts)
 CREATE VIEW BOTTINO_RELIQUIA AS
   SELECT t.tabella_id, 'relics' AS fonte_reliquia, NULL AS da FROM BOTTINO_TABELLA_VINCENTE t WHERE t.relics
   UNION ALL
@@ -793,7 +794,11 @@ CREATE VIEW BOTTINO_RELIQUIA AS
   FROM BOTTINO_MODIFICATORE_ATTIVO m
   JOIN BOTTINO_BERSAGLIO b ON b.modificatore_id = m.modificatore_id AND b.fonte = m.fonte AND NOT b.escluso
   JOIN BOTTINO_MODIFICATORE_NOME n ON n.modificatore_id = m.modificatore_id AND n.fonte = m.fonte
-  WHERE n.genere = 'tabella' AND n.nome LIKE 'artifacts:%' AND m.tipo IS NOT 'artifacts:roll_loot_table'
+  WHERE n.genere = 'tabella' AND m.tipo IS NOT 'artifacts:roll_loot_table'
+    AND (n.nome LIKE 'artifacts:%' OR EXISTS (
+      SELECT 1 FROM BOTTINO_VOCE v2
+      JOIN BOTTINO_TABELLA_VINCENTE t2 ON t2.tabella_id = v2.tabella_id AND t2.fonte = v2.fonte
+      WHERE v2.tabella_id = n.nome AND v2.id LIKE 'artifacts:%' AND v2.tipo IN ('loot_table', 'item')))
   UNION ALL
   SELECT DISTINCT v.tabella_id, 'voce', v.id
   FROM BOTTINO_VOCE v JOIN BOTTINO_TABELLA_VINCENTE t ON t.tabella_id = v.tabella_id AND t.fonte = v.fonte

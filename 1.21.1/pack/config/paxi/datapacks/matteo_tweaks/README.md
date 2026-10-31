@@ -37,6 +37,7 @@ matteo_tweaks/
     │   ├── loot_modifiers/
     │   │   └── artifacts/       10 modificatori di bottino per le 34 casse che Relics non vede
     │   ├── loot_table/
+    │   │   ├── artifacts/       qualsiasi_40: un artefatto qualsiasi al 40% (livello «villa» della toppa)
     │   │   └── tree_drops/      i raccolti degli 8 alberi di Bountiful Fares (copiati da Botany Trees)
     │   ├── market_presets/      i nostri listini del mercato, per origine e classe di rarità (generati)
     │   └── recipe/

@@ -1,6 +1,6 @@
 {
  "formato": 2,
- "data": "2026-10-30T14:17:22.196Z",
+ "data": "2026-10-31T12:06:19.064Z",
  "minecraft": "1.21.1",
  "kubejs": "2101.7.2-build.377",
  "mod": {
@@ -368,11 +368,11 @@
   "alambicco": 963,
   "oggetti": 1584,
   "registri": 31372,
-  "ricette": 31719,
-  "tag": 4740,
+  "ricette": 31690,
+  "tag": 4742,
   "tabelle": 16813,
   "strutture": 288
  },
  "errori": [],
- "datapack_sha256": "6740e309f4f9e66ba53f18cbc9d63e463b1595f2c78e757446925e1f44772f4b"
+ "datapack_sha256": "a473ade19d6a994d2ba65659a6e3f600e8e78ea91ecf33c0e955a7e40d9d33cb"
 }

@@ -26,7 +26,7 @@ hash = "b67fd70bbe22e943594c31a51e677c43c44d92ddcc78f8a6b57e147cfb27b27c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/README.md"
-hash = "ec2f95fa650d8b9b5f9fa4956ee227530e369f7a7bf06798c38205ee9e0f42ea"
+hash = "e50a34146460cfe559077336d07c27d3b78da8c21332b2a1efb97b7a1d76475c"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/accessories/readme.md"
@@ -322,11 +322,11 @@ hash = "60a28ee7d8c8ecdbce9db72258d3607e7d741efde10983eb58014f9bd6d13cbe"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.5/tesori_better_archeology.mcfunction"
-hash = "fff9ddd34fd307f6afc904569eac1fb5a608fb329dfc78710bc17d46629a21d2"
+hash = "2810b7e0194b4df462aa6129b7ce228a1f0184533273594937f12216ccafbfa6"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/function/test/releases/v0.7.5/tutte_le_prove.mcfunction"
-hash = "881191874763cc7b911a067446d3964eb172a01977656cd5606f23bf8aeed33d"
+hash = "81da5da4a04b6e02d488127a4063346dcd83caf6bc62d79c40a30af14bddfeaa"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/abandoned_mineshaft.json"
@@ -358,7 +358,7 @@ hash = "332319a836e8392b1f7147dea197982bf9113eaef59fd6f820bd9a2d8ab04f1d"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/readme.md"
-hash = "eb3806d995591fd0454d9d7bac665b03c98d4d454e4039df4e4db81267c635ce"
+hash = "0957ee4bcc58c18f700fa03b568faf0f089146654261b5a96bd4994b9ce4a860"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/simple_dungeon.json"
@@ -370,11 +370,15 @@ hash = "663e3f9901fbdbea37444d74db6d28d96801c7331323b38c8c969d1d32d9c18a"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_modifiers/artifacts/woodland_mansion.json"
-hash = "03ed226852f5888dca157689a48f2fe16e63dbb356e3fed4cfd0a4293063a496"
+hash = "d2bd71c9e326ea40411dbf84945377af0034c5935952d700d45fccf20aab0750"
+
+[[files]]
+file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/artifacts/qualsiasi_40.json"
+hash = "219c7a10bafa3853140e4a5231662cecf4cfa3f046f90772750ee35515fe91b0"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/readme.md"
-hash = "3c6e39730311d505ae11b804540cf20c1802e9bc9012e2f14915b9a01d3013cb"
+hash = "7f54e99240ef66e1644b1dc4ca1f819098961e1bbfdaef22f3b4fc293b1efed1"
 
 [[files]]
 file = "config/paxi/datapacks/matteo_tweaks/data/matteo_tweaks/loot_table/tree_drops/bountifulfares/apple.json"
