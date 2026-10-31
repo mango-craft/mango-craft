@@ -4,11 +4,10 @@ Le tappe del pack verso il mondo vero e lo stato di avanzamento. Documento vivo:
 
 ## Tappe
 
-**Fatte**: le tappe 0–6.4, dalla 0.2.3 alla 0.7.4 (18–30/10/2026), tutte provate e rilasciate come pre-release; la 0.7.1 è uscita dentro la 0.7.2, senza un tag suo.
+**Fatte**: le tappe 0–6.5, dalla 0.2.3 alla 0.7.5 (18–31/10/2026), tutte provate e rilasciate come pre-release; la 0.7.1 è uscita dentro la 0.7.2, senza un tag suo.
 
 | Tappa | Versione | Contenuto | Stato |
 |---|---|---|---|
-| 6.5 | [0.7.5](versioni/v0.7.5.md) | **Archeologia e reperti**: tabelle del bottino nella base dati (inventario esteso, ramo «bottino») e analisi degli scavi di tutte le mod, poi solo i tesori delle 9 strutture di Better Archeology nella toppa delle reliquie, a mano (versione piccola, decisione di Matteo del 30/10; tema `../theme-knowledge/archeologia.md`) | 🔧 aperta il 30/10; prima prova il 31/10: da rifare la prima fila con la tabella nuova degli artefatti, e il dump |
 | 7 e oltre | — | Il resto, nella proposta qui sotto: eventuali 0.7.x (strumenti a tappe, terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
 
 NeoForge è a 21.1.265 dalla 0.7.4 (`../docs/0303-note-tecniche.md`). Se una mod nuova ne chiede uno più recente, il controllo dei nomi lo segnala.
