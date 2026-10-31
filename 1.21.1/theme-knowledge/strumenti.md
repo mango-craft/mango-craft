@@ -53,6 +53,13 @@ Domanda di Matteo: Truly Modular perde il senso di avanzamento di Tetra (martell
 - **Weapon Leveling** (`weapon-leveling`, 3.2.0-beta.1 del 12/09/2026, ARR): armi e armature salgono di livello combattendo, scelte per etichette (le modulari probabilmente ci rientrano, 🔶). **Bonded** (MIT, 03/02/2025): bonus a soglie di esperienza, solo attrezzi. Altre ARR o con sistemi interi (rarità, RPG).
 - Nessuna mod generica di stazioni o martelli a livelli per 1.21.1 NeoForge; i sistemi completi (port non ufficiale di Tinkers' Construct, Silent Gear e simili) hanno oggetti propri, non quelli di Truly Modular.
 
+**Agganci per una mod nostra** (✅ sorgente di Truly Modular 2.3.9 e di Next Level `7777bb4`, inventario; 31/10):
+- **Condizioni nuove**: il registro delle condizioni è una mappa aperta (`ConditionManager.CONDITION_REGISTRY`), e il contesto passa il **giocatore** e la **posizione del banco** (`fullContext`). Una mod può quindi aggiungere una condizione che guarda l'inventario e i blocchi intorno al banco. Il messaggio di rifiuto si mostra al banco (`failReasons`, come fa `item_in_inventory`). Il sistema spento delle statistiche non serve riaccenderlo.
+- **Altri registri ed eventi**: proprietà dei moduli, opzioni del banco (Next Level ci aggiunge la sua scheda `module_upgrades`), risolutori di valori nelle formule, file di dati con sincronizzazione al client, componenti degli oggetti; eventi per la perdita di durata (`MODULAR_ITEM_DAMAGE`), i colpi, la forgiatura e il bottino (`MiapiEvents`).
+- **Livello dei materiali**: ogni materiale ha il suo `mining_level`, anche quelli **generati** dalle altre mod (preso dal tier dello strumento), oltre a durezza, densità, flessibilità e durata. Una mod può ricavarne il gradino senza un file per materiale.
+- **Martello già pronto**: Arsenal ha una testa da martello (`modules/tool/hammer`, inventario), che potrebbe fare da «martello» col livello del suo materiale.
+- **Next Level**: 14 classi Java, circa 1.300 righe; struttura Architectury (common, fabric, neoforge). Dipende da Architectury (nel pack) e da Nucleus ed EvalEx, che stanno già dentro il jar di Modular Item API. L'esperienza sta nel componente `miapi:module_upgrade_xp`, i livelli degli upgrade nei dati del modulo. Formula di serie `(2^x)*10+100`.
+
 **Da provare in gioco**: un modulo o un materiale con `craftAble` = `advancement` (e la stessa con `selectAble`); `item_in_inventory`; la gemma end crystal di Arsenal senza l'incastro di ossidiana; un blueprint dato con `/give`; un'arma modulare uscita da una cassa (parti e materiali casuali, anche di altre dimensioni?); cambiare la lama di una spada incantata e con affissi; Sweeping Edge finto della falce.
 
 ## Rimandi
