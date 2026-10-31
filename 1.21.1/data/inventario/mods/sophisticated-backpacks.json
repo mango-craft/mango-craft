@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Sophisticated Backpacks",
  "file": "sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
@@ -407,6 +407,472 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "sophisticatedbackpacks:inject/chests/abandoned_mineshaft": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:backpack",
+       "weight": 7
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:copper_backpack",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:iron_backpack",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:gold_backpack",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:magnet_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 84
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/bastion_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:iron_backpack",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:gold_backpack",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:feeding_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 90
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/desert_pyramid": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:copper_backpack",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:iron_backpack",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:gold_backpack",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:magnet_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 89
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/end_city_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:diamond_backpack",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:gold_backpack",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:advanced_magnet_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 90
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/nether_bridge": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:iron_backpack",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:gold_backpack",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:feeding_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 90
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/shipwreck_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:iron_backpack",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:gold_backpack",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:advanced_magnet_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 92
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/simple_dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:backpack",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:copper_backpack",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:pickup_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 90
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/spawn_bonus_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:backpack",
+       "weight": 100
+      },
+      {
+       "kind": "empty",
+       "weight": 0
+      }
+     ]
+    }
+   ]
+  },
+  "sophisticatedbackpacks:inject/chests/woodland_mansion": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:iron_backpack",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:gold_backpack",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "sophisticatedbackpacks:advanced_magnet_upgrade",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 92
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "sophisticatedbackpacks:chests/abandoned_mineshaft": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/abandoned_mineshaft",
+    "loot_table_to_inject_into": "minecraft:chests/abandoned_mineshaft"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/abandoned_mineshaft",
+    "minecraft:chests/abandoned_mineshaft"
+   ]
+  },
+  "sophisticatedbackpacks:chests/bastion_treasure": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/bastion_treasure"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/bastion_treasure",
+    "loot_table_to_inject_into": "minecraft:chests/bastion_treasure"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/bastion_treasure",
+    "minecraft:chests/bastion_treasure"
+   ]
+  },
+  "sophisticatedbackpacks:chests/desert_pyramid": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/desert_pyramid"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/desert_pyramid",
+    "loot_table_to_inject_into": "minecraft:chests/desert_pyramid"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/desert_pyramid",
+    "minecraft:chests/desert_pyramid"
+   ]
+  },
+  "sophisticatedbackpacks:chests/end_city_treasure": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/end_city_treasure"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/end_city_treasure",
+    "loot_table_to_inject_into": "minecraft:chests/end_city_treasure"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/end_city_treasure",
+    "minecraft:chests/end_city_treasure"
+   ]
+  },
+  "sophisticatedbackpacks:chests/nether_bridge": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/nether_bridge"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/nether_bridge",
+    "loot_table_to_inject_into": "minecraft:chests/nether_bridge"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/nether_bridge",
+    "minecraft:chests/nether_bridge"
+   ]
+  },
+  "sophisticatedbackpacks:chests/shipwreck_treasure": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/shipwreck_treasure"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_treasure"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/shipwreck_treasure",
+    "loot_table_to_inject_into": "minecraft:chests/shipwreck_treasure"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/shipwreck_treasure",
+    "minecraft:chests/shipwreck_treasure"
+   ]
+  },
+  "sophisticatedbackpacks:chests/simple_dungeon": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/simple_dungeon",
+    "loot_table_to_inject_into": "minecraft:chests/simple_dungeon"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/simple_dungeon",
+    "minecraft:chests/simple_dungeon"
+   ]
+  },
+  "sophisticatedbackpacks:chests/spawn_bonus_chest": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/spawn_bonus_chest"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/spawn_bonus_chest"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/spawn_bonus_chest",
+    "loot_table_to_inject_into": "minecraft:chests/spawn_bonus_chest"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/spawn_bonus_chest",
+    "minecraft:chests/spawn_bonus_chest"
+   ]
+  },
+  "sophisticatedbackpacks:chests/woodland_mansion": {
+   "type": "sophisticatedbackpacks:inject_loot",
+   "targets": [
+    "minecraft:chests/woodland_mansion"
+   ],
+   "conditions": [
+    "sophisticatedbackpacks:loot_enabled",
+    {
+     "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+   ],
+   "params": {
+    "loot_table": "sophisticatedbackpacks:inject/chests/woodland_mansion",
+    "loot_table_to_inject_into": "minecraft:chests/woodland_mansion"
+   },
+   "refs": [
+    "sophisticatedbackpacks:inject/chests/woodland_mansion",
+    "minecraft:chests/woodland_mansion"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "sophisticatedbackpacks:chests/end_city_treasure",
+    "sophisticatedbackpacks:chests/abandoned_mineshaft",
+    "sophisticatedbackpacks:chests/shipwreck_treasure",
+    "sophisticatedbackpacks:chests/simple_dungeon",
+    "sophisticatedbackpacks:chests/bastion_treasure",
+    "sophisticatedbackpacks:chests/spawn_bonus_chest",
+    "sophisticatedbackpacks:chests/desert_pyramid",
+    "sophisticatedbackpacks:chests/woodland_mansion",
+    "sophisticatedbackpacks:chests/nether_bridge"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

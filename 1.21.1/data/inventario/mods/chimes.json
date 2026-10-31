@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Chimes",
  "file": "Chimes-v2.1.1-1.21.1-NeoForge.jar",
@@ -108,6 +108,9 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

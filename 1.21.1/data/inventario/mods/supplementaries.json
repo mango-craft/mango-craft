@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Supplementaries",
  "file": "supplementaries-1.21.1-4.0.2-neoforge.jar",
@@ -5615,6 +5615,1623 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "supplementaries:entities/plunderer": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0.0025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spyglass",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/dungeon_blue_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.01
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb_blue",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/dungeon_flax": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.19
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:flax_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/dungeon_quiver": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:quiver",
+       "weight": 1,
+       "functions": [
+        "supplementaries:random_arrows"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/end_city_stasis": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/fishing_treasure_antique_ink": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:antique_ink",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/fortress_blue_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "bonus_rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "conditions": [
+      {
+       "random_chance": 0.035
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb_blue",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/fortress_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.145
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/mansion_quiver": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.09
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:quiver",
+       "weight": 1,
+       "functions": [
+        "supplementaries:random_arrows"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/mineshaft_blue_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "bonus_rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "conditions": [
+      {
+       "random_chance": 0.025
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb_blue",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/mineshaft_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.12
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/mineshaft_flax": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.14
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:flax_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/mineshaft_rope": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.35
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:rope",
+       "weight": 1,
+       "count": {
+        "min": 5,
+        "max": 17
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/pillager_flax": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:flax_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/pillager_quiver": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:quiver",
+       "weight": 1,
+       "functions": [
+        "supplementaries:random_arrows"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/shipwreck_storage_flax": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:flax_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/shipwreck_treasure_globe": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "bonus_rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "conditions": [
+      {
+       "random_chance": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:globe",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/stronghold_blue_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "bonus_rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "conditions": [
+      {
+       "random_chance": 0.03
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb_blue",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/stronghold_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.25
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/temple_blue_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "bonus_rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "conditions": [
+      {
+       "random_chance": 0.07
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb_blue",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/temple_bomb": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/temple_spikes": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.38
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bamboo_spikes",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:bamboo_spikes_tipped",
+       "weight": 3,
+       "functions": [
+        "set_potion=minecraft:poison",
+        "supplementaries:set_charges"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:inject/test": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1,
+       "functions": [
+        "exploration_map"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/galleon/cannon": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 7,
+       "count": {
+        "min": 5.0,
+        "max": 45.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 2,
+       "count": {
+        "min": 10.0,
+        "max": 40.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:cannonball",
+       "weight": 4,
+       "count": {
+        "min": 7.0,
+        "max": 16.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb",
+       "weight": 2,
+       "count": {
+        "min": 8.0,
+        "max": 30.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/galleon/chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:globe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:goat_horn",
+       "weight": 2,
+       "functions": [
+        "set_instrument"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fishing_rod",
+       "weight": 2,
+       "functions": [
+        "enchant_randomly",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_charge",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:cannonball",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_carrot",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:candy",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 4
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3,
+      "max": 6
+     },
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:rope",
+       "weight": 10,
+       "count": {
+        "min": 2,
+        "max": 5
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 6,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 8,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 6,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:flax_seeds",
+       "weight": 2,
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 4,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/galleon/key": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:key",
+       "weight": 1,
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/galleon/safe": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb_blue",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_axe",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "supplementaries:loot/galleon/safe_armor",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tnt",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 3,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 17.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nautilus_shell",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spectral_arrow",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:lumisene_bottle",
+       "weight": 1,
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "supplementaries:loot/galleon/safe_tools",
+       "weight": 4
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "empty",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:blast_armor_trim_smithing_template",
+       "weight": 5,
+       "count": 2.0
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/galleon/safe_armor": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/galleon/safe_tools": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:compass",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clock",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spyglass",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:hourglass",
+       "weight": 1,
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/urn_loot/common": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:ash",
+       "weight": 30,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 15,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:torch",
+       "weight": 10,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:flax_seeds",
+       "weight": 7,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/urn_loot/epic": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage",
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage",
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 10,
+       "count": {
+        "min": 10.0,
+        "max": 64.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 10,
+       "count": {
+        "min": 5.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb_blue",
+       "weight": 10,
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 10,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/urn_loot/rare": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage",
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage",
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 15,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron",
+       "weight": 10,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_copper",
+       "weight": 10,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 10,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 12,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 10,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:bomb",
+       "weight": 7,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skeleton_skull",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:zombie_head",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bundle",
+       "weight": 5
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/urn_loot/uncommon": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "supplementaries:ash",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 10,
+       "count": {
+        "min": 8.0,
+        "max": 32.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 10,
+       "count": {
+        "min": 8.0,
+        "max": 32.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:flax_seeds",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "supplementaries:antique_ink",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "conditions": [
+        "moonlight:load_conditions"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:skeleton_skull",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:zombie_head",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 15,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "supplementaries:loot/urn_loot/urn_loot": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "supplementaries:loot/urn_loot/common",
+       "weight": 60,
+       "quality": -5
+      },
+      {
+       "kind": "loot_table",
+       "id": "supplementaries:loot/urn_loot/uncommon",
+       "weight": 32,
+       "quality": -2
+      },
+      {
+       "kind": "loot_table",
+       "id": "supplementaries:loot/urn_loot/rare",
+       "weight": 7,
+       "quality": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "supplementaries:loot/urn_loot/epic",
+       "weight": 1,
+       "quality": 5
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "supplementaries:ash_from_burning_mobs": {
+   "type": "moonlight:add_item",
+   "targets": [],
+   "conditions": [
+    "damage_source_properties",
+    {
+     "random_chance": 0.15
+    },
+    {
+     "not": "entity_properties"
+    },
+    "entity_properties"
+   ],
+   "load": [
+    "supplementaries:flag"
+   ],
+   "params": {},
+   "refs": [
+    "supplementaries:ash"
+   ]
+  },
+  "supplementaries:fishing_antique_ink": {
+   "type": "moonlight:add_item",
+   "targets": [
+    "minecraft:gameplay/fishing/junk"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:gameplay/fishing/junk"
+    },
+    {
+     "random_chance": 0.2
+    }
+   ],
+   "load": [
+    "supplementaries:flag"
+   ],
+   "params": {},
+   "refs": [
+    "supplementaries:antique_ink"
+   ]
+  },
+  "supplementaries:fishing_antique_ink_treasure": {
+   "type": "moonlight:add_item",
+   "targets": [
+    "minecraft:gameplay/fishing/treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:gameplay/fishing/treasure"
+    },
+    {
+     "random_chance": 0.02
+    }
+   ],
+   "load": [
+    "supplementaries:flag"
+   ],
+   "params": {},
+   "refs": [
+    "supplementaries:antique_ink"
+   ]
+  },
+  "supplementaries:replace_rope": {
+   "type": "supplementaries:replace_rope",
+   "targets": [],
+   "conditions": [],
+   "load": [
+    "supplementaries:flag"
+   ],
+   "params": {},
+   "refs": []
+  },
+  "supplementaries:straw_from_flax": {
+   "type": "moonlight:add_item",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "load": [
+    "mod_loaded:farmersdelight",
+    "supplementaries:flag"
+   ],
+   "params": {},
+   "refs": [
+    "farmersdelight:straw"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "supplementaries:ash_from_burning_mobs",
+    "supplementaries:straw_from_flax",
+    "supplementaries:fishing_antique_ink",
+    "supplementaries:fishing_antique_ink_treasure",
+    "supplementaries:replace_rope"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

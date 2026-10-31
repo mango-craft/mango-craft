@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Explorer's Compass",
  "file": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
@@ -94,6 +94,9 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Crafting Tweaks",
  "file": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
@@ -46,6 +46,9 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

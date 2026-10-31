@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "[Let's Do] Vinery",
  "file": "letsdo-vinery-neoforge-1.5.5.jar",
@@ -1356,6 +1356,26 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "vinery:advancements/completionist": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "vinery:vinery_standard",
+       "weight": 1,
+       "count": 2
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

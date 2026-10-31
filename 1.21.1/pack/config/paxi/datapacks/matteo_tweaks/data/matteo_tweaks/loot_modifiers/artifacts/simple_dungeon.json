@@ -45,6 +45,22 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "twilightforest:stronghold_cache"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_buried_ruins_sand"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_mesa_ruins"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_tumulus"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_underwater"
         }
       ]
     }

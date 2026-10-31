@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Ars Unification",
  "file": "ars_unification-1.2.19.jar",
@@ -124,6 +124,9 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

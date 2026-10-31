@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Expanded Delight",
  "file": "expandeddelight-0.1.4.jar",
@@ -919,6 +919,263 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "expandeddelight:chests/village_desert_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "expandeddelight:peanut",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "expandeddelight:asparagus_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "expandeddelight:chests/village_plains_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "expandeddelight:asparagus",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "expandeddelight:chili_pepper_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "expandeddelight:chests/village_savanna_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "expandeddelight:sweet_potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "expandeddelight:asparagus",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "expandeddelight:chests/village_snowy_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "expandeddelight:sweet_potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "expandeddelight:chili_pepper_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "expandeddelight:chests/village_taiga_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "expandeddelight:chili_pepper",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "expandeddelight:asparagus_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "expandeddelight:add_loot_village_desert_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_desert_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_desert_house"
+    }
+   ],
+   "params": {
+    "lootTable": "expandeddelight:chests/village_desert_house"
+   },
+   "refs": [
+    "expandeddelight:chests/village_desert_house"
+   ]
+  },
+  "expandeddelight:add_loot_village_plains_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_plains_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_plains_house"
+    }
+   ],
+   "params": {
+    "lootTable": "expandeddelight:chests/village_plains_house"
+   },
+   "refs": [
+    "expandeddelight:chests/village_plains_house"
+   ]
+  },
+  "expandeddelight:add_loot_village_savanna_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_savanna_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_savanna_house"
+    }
+   ],
+   "params": {
+    "lootTable": "expandeddelight:chests/village_savanna_house"
+   },
+   "refs": [
+    "expandeddelight:chests/village_savanna_house"
+   ]
+  },
+  "expandeddelight:add_loot_village_snowy_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_snowy_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_snowy_house"
+    }
+   ],
+   "params": {
+    "lootTable": "expandeddelight:chests/village_snowy_house"
+   },
+   "refs": [
+    "expandeddelight:chests/village_snowy_house"
+   ]
+  },
+  "expandeddelight:add_loot_village_taiga_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_taiga_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_taiga_house"
+    }
+   ],
+   "params": {
+    "lootTable": "expandeddelight:chests/village_taiga_house"
+   },
+   "refs": [
+    "expandeddelight:chests/village_taiga_house"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "expandeddelight:add_loot_sniffer_digging",
+    "expandeddelight:add_loot_village_plains_house",
+    "expandeddelight:add_loot_village_desert_house",
+    "expandeddelight:add_loot_village_taiga_house",
+    "expandeddelight:add_loot_village_savanna_house",
+    "expandeddelight:add_loot_village_snowy_house"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

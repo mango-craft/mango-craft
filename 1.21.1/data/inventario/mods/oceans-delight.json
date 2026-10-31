@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Ocean's Delight",
  "file": "oceansdelight-neoforge-1.0.4-1.21.1.jar",
@@ -178,6 +178,75 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "farmersdelight:cut_elder_guardian": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "oceansdelight:elder_guardian_slab"
+   },
+   "refs": [
+    "oceansdelight:elder_guardian_slab"
+   ]
+  },
+  "farmersdelight:cut_tentacles_glow_squid": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "oceansdelight:tentacles"
+   },
+   "refs": [
+    "oceansdelight:tentacles"
+   ]
+  },
+  "farmersdelight:cut_tentacles_squid": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "oceansdelight:tentacles"
+   },
+   "refs": [
+    "oceansdelight:tentacles"
+   ]
+  },
+  "farmersdelight:guardian_drop": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties"
+   ],
+   "params": {
+    "item": "oceansdelight:guardian"
+   },
+   "refs": [
+    "oceansdelight:guardian"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "farmersdelight:cut_elder_guardian",
+    "farmersdelight:cut_tentacles_squid",
+    "farmersdelight:cut_tentacles_glow_squid",
+    "farmersdelight:guardian_drop"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

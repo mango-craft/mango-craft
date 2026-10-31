@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Brewin' And Chewin'",
  "file": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
@@ -681,6 +681,86 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "brewinandchewin:slicing_flaxen_cheese_wheel": {
+   "type": "brewinandchewin:slicing",
+   "targets": [],
+   "conditions": [
+    {
+     "any_of": [
+      "block_state_property",
+      "match_tool"
+     ]
+    },
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "brewinandchewin:flaxen_cheese_wedge"
+   },
+   "refs": [
+    "brewinandchewin:flaxen_cheese_wedge"
+   ]
+  },
+  "brewinandchewin:slicing_pizza": {
+   "type": "brewinandchewin:slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "brewinandchewin:pizza_slice"
+   },
+   "refs": [
+    "brewinandchewin:pizza_slice"
+   ]
+  },
+  "brewinandchewin:slicing_quiche": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "brewinandchewin:quiche_slice"
+   },
+   "refs": [
+    "brewinandchewin:quiche_slice"
+   ]
+  },
+  "brewinandchewin:slicing_scarlet_cheese_wheel": {
+   "type": "brewinandchewin:slicing",
+   "targets": [],
+   "conditions": [
+    {
+     "any_of": [
+      "block_state_property",
+      "match_tool"
+     ]
+    },
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "brewinandchewin:scarlet_cheese_wedge"
+   },
+   "refs": [
+    "brewinandchewin:scarlet_cheese_wedge"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "brewinandchewin:slicing_pizza",
+    "brewinandchewin:slicing_flaxen_cheese_wheel",
+    "brewinandchewin:slicing_scarlet_cheese_wheel",
+    "brewinandchewin:slicing_quiche"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

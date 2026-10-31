@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "My Nether's Delight",
  "file": "MyNethersDelight-1.21.1-1.10.4.1.jar",
@@ -1190,6 +1190,639 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "mynethersdelight:chests/mnd_bastion_hoglin_stable": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mynethersdelight:hoglin_loin",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:cooked_loin",
+       "weight": 6,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 7
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mynethersdelight:strider_egg",
+       "weight": 8,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:strider_rock",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:golden_egg",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 15
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mynethersdelight:resurgent_soil",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:letios_compost",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 15
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carved_pumpkin",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 15
+      }
+     ]
+    }
+   ]
+  },
+  "mynethersdelight:chests/mnd_bastion_treasure": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mynethersdelight:golden_trophy",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:skoglin_trophy",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:hoglin_trophy",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:zoglin_trophy",
+       "weight": 9
+      },
+      {
+       "kind": "empty",
+       "weight": 16
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 8,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 15
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mynethersdelight:golden_egg",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:enchanted_golden_egg",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 15
+      }
+     ]
+    }
+   ]
+  },
+  "mynethersdelight:gameplay/mnd_piglin_bartering": {
+   "type": "minecraft:barter",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "mynethersdelight:strider_egg",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:ghasta",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:strider_rock",
+       "weight": 10,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:bullet_pepper",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:hoglin_loin",
+       "weight": 25,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "mynethersdelight:gameplay/mnd_piglin_bartering_without_food": {
+   "type": "minecraft:barter",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "mynethersdelight:hoglin_hide",
+       "weight": 2
+      },
+      {
+       "kind": "empty",
+       "weight": 120
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "mynethersdelight:add_loot_bastion_hoglin_stable": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/bastion_hoglin_stable"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+    }
+   ],
+   "params": {
+    "lootTable": "mynethersdelight:chests/mnd_bastion_hoglin_stable"
+   },
+   "refs": [
+    "mynethersdelight:chests/mnd_bastion_hoglin_stable"
+   ]
+  },
+  "mynethersdelight:add_loot_bastion_treasure": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/bastion_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+   ],
+   "params": {
+    "lootTable": "mynethersdelight:chests/mnd_bastion_treasure"
+   },
+   "refs": [
+    "mynethersdelight:chests/mnd_bastion_treasure"
+   ]
+  },
+  "mynethersdelight:add_loot_piglin_bartering": {
+   "type": "mynethersdelight:piglin_food",
+   "targets": [
+    "minecraft:gameplay/piglin_bartering"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:gameplay/piglin_bartering"
+    }
+   ],
+   "params": {
+    "lootTable": "mynethersdelight:gameplay/mnd_piglin_bartering",
+    "lootTableWithoutFood": "mynethersdelight:gameplay/mnd_piglin_bartering_without_food"
+   },
+   "refs": [
+    "mynethersdelight:gameplay/mnd_piglin_bartering",
+    "mynethersdelight:gameplay/mnd_piglin_bartering_without_food"
+   ]
+  },
+  "mynethersdelight:remplace_hoglin_cooked_pork_loin": {
+   "type": "mynethersdelight:remplace_item",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "entity": "minecraft:hoglin",
+    "item": "mynethersdelight:cooked_loin",
+    "replaces": "minecraft:cooked_porkchop"
+   },
+   "refs": [
+    "minecraft:hoglin",
+    "mynethersdelight:cooked_loin",
+    "minecraft:cooked_porkchop"
+   ]
+  },
+  "mynethersdelight:remplace_hoglin_pork_loin": {
+   "type": "mynethersdelight:remplace_item",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "entity": "minecraft:hoglin",
+    "item": "mynethersdelight:hoglin_loin",
+    "replaces": "minecraft:porkchop"
+   },
+   "refs": [
+    "minecraft:hoglin",
+    "mynethersdelight:hoglin_loin",
+    "minecraft:porkchop"
+   ]
+  },
+  "mynethersdelight:scavenging_extra_ghasta0": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.25
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:ghasta"
+   },
+   "refs": [
+    "mynethersdelight:ghasta"
+   ]
+  },
+  "mynethersdelight:scavenging_extra_ghasta1": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "mynethersdelight:ghasta",
+    "count": 6.0
+   },
+   "refs": [
+    "mynethersdelight:ghasta"
+   ]
+  },
+  "mynethersdelight:scavenging_extra_strider_egg0": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.2
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:strider_rock"
+   },
+   "refs": [
+    "mynethersdelight:strider_rock"
+   ]
+  },
+  "mynethersdelight:scavenging_extra_strider_egg1": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.25
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:strider_rock"
+   },
+   "refs": [
+    "mynethersdelight:strider_rock"
+   ]
+  },
+  "mynethersdelight:scavenging_extra_strider_egg2": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.3
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:strider_rock"
+   },
+   "refs": [
+    "mynethersdelight:strider_rock"
+   ]
+  },
+  "mynethersdelight:scavenging_extra_strider_slice0": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.25
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:strider_slice",
+    "count": 2.0
+   },
+   "refs": [
+    "mynethersdelight:strider_slice"
+   ]
+  },
+  "mynethersdelight:scavenging_extra_strider_slice1": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.25
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:strider_slice",
+    "count": 3.0
+   },
+   "refs": [
+    "mynethersdelight:strider_slice"
+   ]
+  },
+  "mynethersdelight:scavenging_ghasta": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.5
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:ghasta"
+   },
+   "refs": [
+    "mynethersdelight:ghasta"
+   ]
+  },
+  "mynethersdelight:scavenging_hoglin_hide": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.35
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:hoglin_hide"
+   },
+   "refs": [
+    "mynethersdelight:hoglin_hide"
+   ]
+  },
+  "mynethersdelight:scavenging_onion_from_ghast": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.025
+    }
+   ],
+   "params": {
+    "item": "farmersdelight:onion"
+   },
+   "refs": [
+    "farmersdelight:onion"
+   ]
+  },
+  "mynethersdelight:scavenging_strider_egg": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.5
+    }
+   ],
+   "params": {
+    "item": "mynethersdelight:strider_rock"
+   },
+   "refs": [
+    "mynethersdelight:strider_rock"
+   ]
+  },
+  "mynethersdelight:scavenging_strider_slice": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties"
+   ],
+   "params": {
+    "item": "mynethersdelight:strider_slice",
+    "count": 2.0
+   },
+   "refs": [
+    "mynethersdelight:strider_slice"
+   ]
+  },
+  "mynethersdelight:slicing_bread_loaf": {
+   "type": "mynethersdelight:especial_drop",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "drop": "mynethersdelight:slices_of_bread"
+   },
+   "refs": [
+    "mynethersdelight:slices_of_bread"
+   ]
+  },
+  "mynethersdelight:slicing_magma_cake": {
+   "type": "mynethersdelight:especial_drop",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "drop": "mynethersdelight:magma_cake_slice"
+   },
+   "refs": [
+    "mynethersdelight:magma_cake_slice"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "mynethersdelight:scavenging_hoglin_hide",
+    "mynethersdelight:remplace_hoglin_pork_loin",
+    "mynethersdelight:remplace_hoglin_cooked_pork_loin",
+    "mynethersdelight:scavenging_strider_slice",
+    "mynethersdelight:scavenging_extra_strider_slice0",
+    "mynethersdelight:scavenging_extra_strider_slice1",
+    "mynethersdelight:scavenging_strider_egg",
+    "mynethersdelight:scavenging_extra_strider_egg0",
+    "mynethersdelight:scavenging_extra_strider_egg1",
+    "mynethersdelight:scavenging_extra_strider_egg2",
+    "mynethersdelight:scavenging_ghasta",
+    "mynethersdelight:scavenging_extra_ghasta0",
+    "mynethersdelight:scavenging_extra_ghasta1",
+    "mynethersdelight:scavenging_onion_from_ghast",
+    "mynethersdelight:add_loot_piglin_bartering",
+    "mynethersdelight:add_loot_bastion_hoglin_stable",
+    "mynethersdelight:add_loot_bastion_treasure",
+    "mynethersdelight:slicing_magma_cake",
+    "mynethersdelight:slicing_bread_loaf"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

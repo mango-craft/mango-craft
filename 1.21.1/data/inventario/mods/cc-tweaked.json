@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "CC: Tweaked",
  "file": "cc-tweaked-1.21.1-forge-1.120.2.jar",
@@ -591,6 +591,14 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "computercraft:treasure_disk": {
+   "type": null,
+   "pools": []
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

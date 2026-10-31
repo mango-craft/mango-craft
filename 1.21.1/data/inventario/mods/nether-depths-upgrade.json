@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Nether Depths Upgrade",
  "file": "netherdepthsupgrade-3.3-1.21.1-NeoForge.jar",
@@ -533,6 +533,862 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "netherdepthsupgrade:entities/blazefish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:blazefish",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_rod",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/bonefish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:bonefish",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/eyeball_fish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:eyeball_fish",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:eyeball",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/fortressgrouper": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:fortress_grouper",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nether_brick",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.7
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:fortress_grouper_plate",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/glowdine": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:glowdine",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 1,
+       "count": {
+        "min": -2.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/lava_pufferfish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:lava_pufferfish",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/magmacubefish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:magmacubefish",
+       "weight": 1,
+       "count": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:magma_cream",
+       "weight": 1,
+       "count": {
+        "min": -2,
+        "max": 1
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/obsidianfish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:obsidianfish",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/searing_cod": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:searing_cod",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/soulsucker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:soulsucker",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.5
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:soul_sand",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:entities/wither_bonefish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:wither_bonefish",
+       "weight": 1,
+       "count": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      "killed_by_player",
+      {
+       "random_chance_enchanted": 0
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wither_skeleton_skull",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/failed_fishing": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "netherdepthsupgrade:gameplay/failed_fishing/junk",
+       "weight": 10,
+       "quality": -2
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/failed_fishing/junk": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 17
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 17
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 17
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/lava_fishing": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "netherdepthsupgrade:gameplay/lava_fishing/junk",
+       "weight": 10,
+       "quality": -2
+      },
+      {
+       "kind": "loot_table",
+       "id": "netherdepthsupgrade:gameplay/lava_fishing/treasure",
+       "weight": 5,
+       "quality": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "netherdepthsupgrade:gameplay/lava_fishing/fish",
+       "weight": 85,
+       "quality": -1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/lava_fishing/fish": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_cod",
+       "weight": 60
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_salmon",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cooked_chicken",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 13
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/lava_fishing/junk": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gravel",
+       "weight": 17
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:infested_stone",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bowl",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:slime_ball",
+       "weight": 1,
+       "count": 10.0
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 10
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/lava_fishing/treasure": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:redstone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ore",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ore",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/nether_fishing": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "netherdepthsupgrade:gameplay/nether_fishing/junk",
+       "weight": 10,
+       "quality": -2
+      },
+      {
+       "kind": "loot_table",
+       "id": "netherdepthsupgrade:gameplay/nether_fishing/treasure",
+       "weight": 5,
+       "quality": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "netherdepthsupgrade:gameplay/nether_fishing/fish",
+       "weight": 85,
+       "quality": -1
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/nether_fishing/fish": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:searing_cod",
+       "weight": 60
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:glowdine",
+       "weight": 25
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:wither_bonefish",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:lava_pufferfish",
+       "weight": 13
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:bonefish",
+       "weight": 15
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:obsidianfish",
+       "weight": 13
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:magmacubefish",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:soulsucker",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:eyeball_fish",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:fortress_grouper",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:blazefish",
+       "weight": 15
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/nether_fishing/junk": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:netherrack",
+       "weight": 17
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_powder",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 10,
+       "functions": [
+        "set_potion=minecraft:water"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:lava_fishing_rod",
+       "weight": 2,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bowl",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blackstone",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:warped_kelp",
+       "weight": 1,
+       "count": 10.0
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:warped_seagrass",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:basalt",
+       "weight": 10,
+       "conditions": [
+        {
+         "any_of": [
+          "location_check"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "netherdepthsupgrade:gameplay/nether_fishing/treasure": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:lava_fishing_rod",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wither_skeleton_skull",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:fortress_grouper_plate",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "netherdepthsupgrade:eyeball",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

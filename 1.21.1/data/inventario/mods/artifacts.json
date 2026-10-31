@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Artifacts",
  "file": "artifacts-neoforge-13.2.5.jar",
@@ -644,6 +644,5071 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "artifacts:artifact": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/anglers_hat",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/antidote_vessel",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/aqua_dashers",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/bunny_hoppers",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_shrinking",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_sinking",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/chorus_totem",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cloud_in_a_bottle",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cowboy_hat",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cross_necklace",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/crystal_heart",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/digging_claws",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/feral_claws",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/fire_gauntlet",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flame_pendant",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flippers",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/golden_hook",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/kitty_slippers",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/lucky_scarf",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/obsidian_skull",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/onion_ring",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/panic_necklace",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pickaxe_heater",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pocket_piston",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/power_glove",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/rooted_boots",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/running_shoes",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/scarf_of_invisibility",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/shock_pendant",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snorkel",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snowshoes",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/steadfast_spikes",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/strider_shoes",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/superstitious_hat",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/thorn_pendant",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/universal_attractor",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/vampiric_glove",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/warp_drive",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/withered_bracelet",
+       "weight": 8,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/drinking_hat",
+       "weight": 8,
+       "conditions": [
+        {
+         "any_of": [
+          "artifacts:config_value",
+          "artifacts:config_value"
+         ]
+        }
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/umbrella",
+       "weight": 5,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/whoopee_cushion",
+       "weight": 5,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/helium_flamingo",
+       "weight": 4,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/everlasting_beef",
+       "weight": 2,
+       "conditions": [
+        "artifacts:config_value"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.7
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cod",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:salmon",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar_cane",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sugar",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/tnt",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/cobwebs",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/ores",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/ingots",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/gems",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/crops",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/food",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/cobblestone",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/rails",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:chests/campsite_barrel/minecarts",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/cobblestone": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobblestone",
+       "weight": 1,
+       "count": {
+        "min": 16.0,
+        "max": 64.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobbled_deepslate",
+       "weight": 1,
+       "count": {
+        "min": 16.0,
+        "max": 64.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/cobwebs": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 6.0,
+        "max": 16.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/crops": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_slice",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/food": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_pie",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cake",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cookie",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_stew",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/gems": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:amethyst_shard",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/ingots": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_block",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_block",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:copper_block",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/minecarts": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 5.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:minecart",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chest_minecart",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:furnace_minecart",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:hopper_minecart",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rail",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/ores": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 2.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 20.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 20.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_copper",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 20.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold_block",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron_block",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_copper_block",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/rails": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 4.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:rail",
+       "weight": 4,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:activator_rail",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:detector_rail",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:powered_rail",
+       "weight": 2,
+       "count": {
+        "min": 4.0,
+        "max": 16.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_barrel/tnt": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tnt",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sand",
+       "weight": 2,
+       "count": {
+        "min": 8.0,
+        "max": 40.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_sand",
+       "weight": 1,
+       "count": {
+        "min": 8.0,
+        "max": 40.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:chests/campsite_chest": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_axe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_shovel",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_pickaxe",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_axe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_shovel",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_shovel",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_boots",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spider_eye",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:raw_copper",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_iron",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 6,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 8,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:artifact",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entities/mimic": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:artifact",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/bogged": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/antidote_vessel",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/rooted_boots",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/drowned": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snorkel",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flippers",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/ghast": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:is_april_fools"
+     ],
+     "functions": [
+      "set_enchantments",
+      "set_components"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/anglers_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cowboy_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snorkel",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/husk": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/vampiric_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/thorn_pendant",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/piglin": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/golden_hook",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/universal_attractor",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/obsidian_skull",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/piglin_brute": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/onion_ring",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/strider_shoes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/skeleton": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/drinking_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flame_pendant",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/stray": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snowshoes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/steadfast_spikes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/wither_skeleton": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/fire_gauntlet",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/antidote_vessel",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/zombie": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cowboy_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/bunny_hoppers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/scarf_of_invisibility",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:entity_equipment/zombified_piglin": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/golden_hook",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/universal_attractor",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/obsidian_skull",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/archaeology/desert_pyramid": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cowboy_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/obsidian_skull",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snorkel",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/power_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/kitty_slippers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/shock_pendant",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/archaeology/desert_well": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_sinking",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/universal_attractor",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/superstitious_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/umbrella",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/warp_drive",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/drinking_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/archaeology/ocean_ruin_cold": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/lucky_scarf",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/fire_gauntlet",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/anglers_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/digging_claws",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/antidote_vessel",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/withered_bracelet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/archaeology/ocean_ruin_warm": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/aqua_dashers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/onion_ring",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/running_shoes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/bunny_hoppers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/vampiric_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/strider_shoes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/archaeology/trail_ruins_rare": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/rooted_boots",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pickaxe_heater",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/aqua_dashers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snowshoes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/steadfast_spikes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cloud_in_a_bottle",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/feral_claws",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pocket_piston",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/whoopee_cushion",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flame_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/thorn_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_shrinking",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/abandoned_mineshaft": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/onion_ring",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/panic_necklace",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/obsidian_skull",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/superstitious_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/digging_claws",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cloud_in_a_bottle",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/vampiric_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/aqua_dashers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pickaxe_heater",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/drinking_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/ancient_city": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/rooted_boots",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pickaxe_heater",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/onion_ring",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/aqua_dashers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_sinking",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/shock_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/helium_flamingo",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/warp_drive",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/ancient_city_ice_box": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snowshoes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/bastion_hoglin_stable": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:artifact",
+       "weight": 5
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/bunny_hoppers",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flame_pendant",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cowboy_hat",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pickaxe_heater",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/withered_bracelet",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/everlasting_beef",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/bastion_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:artifact",
+       "weight": 6
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/golden_hook",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cross_necklace",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/fire_gauntlet",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/steadfast_spikes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/panic_necklace",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/crystal_heart",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/antidote_vessel",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/buried_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snorkel",
+       "weight": 5
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flippers",
+       "weight": 5
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/umbrella",
+       "weight": 5
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/golden_hook",
+       "weight": 5
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/feral_claws",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/digging_claws",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/kitty_slippers",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/bunny_hoppers",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/lucky_scarf",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/aqua_dashers",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/anglers_hat",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/drinking_hat",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/desert_pyramid": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flame_pendant",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/thorn_pendant",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/whoopee_cushion",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_sinking",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/shock_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/umbrella",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/scarf_of_invisibility",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/universal_attractor",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/vampiric_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/onion_ring",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/end_city_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/chorus_totem",
+       "weight": 6
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/helium_flamingo",
+       "weight": 4
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/warp_drive",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/crystal_heart",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cloud_in_a_bottle",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/igloo_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snowshoes",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/lucky_scarf",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/jungle_temple": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/kitty_slippers",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/rooted_boots",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/bunny_hoppers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/anglers_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/nether_bridge": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cross_necklace",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pocket_piston",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/running_shoes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cowboy_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_shrinking",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/strider_shoes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/withered_bracelet",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/drinking_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/pillager_outpost": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/panic_necklace",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pocket_piston",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/steadfast_spikes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/power_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cross_necklace",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/scarf_of_invisibility",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/crystal_heart",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cloud_in_a_bottle",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/superstitious_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/rooted_boots",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/ruined_portal": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/thorn_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/fire_gauntlet",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/power_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/universal_attractor",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/obsidian_skull",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/lucky_scarf",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cowboy_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_shrinking",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/strider_shoes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/shipwreck_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/golden_hook",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snorkel",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flippers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/scarf_of_invisibility",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/steadfast_spikes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/universal_attractor",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/feral_claws",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/night_vision_goggles",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/obsidian_skull",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/running_shoes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_sinking",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/simple_dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_shrinking",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/warp_drive",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/withered_bracelet",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/strider_shoes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/spawn_bonus_chest": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/whoopee_cushion",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/stronghold_corridor": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/power_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/antidote_vessel",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/superstitious_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/lucky_scarf",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/aqua_dashers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/helium_flamingo",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/rooted_boots",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pickaxe_heater",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/underwater_ruin_big": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snorkel",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/flippers",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/superstitious_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/lucky_scarf",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/fire_gauntlet",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cross_necklace",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/power_glove",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cloud_in_a_bottle",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/anglers_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_armorer": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/steadfast_spikes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/superstitious_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/running_shoes",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/vampiric_glove",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_butcher": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/everlasting_beef",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_desert_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_plains_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_savanna_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_snowy_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snowshoes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_taiga_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/villager_hat",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/snowshoes",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_tannery": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/umbrella",
+       "weight": 3
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/whoopee_cushion",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/kitty_slippers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/bunny_hoppers",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/scarf_of_invisibility",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/anglers_hat",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_temple": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/cross_necklace",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/antidote_vessel",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_sinking",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/warp_drive",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_toolsmith": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/digging_claws",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/pocket_piston",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/village/village_weaponsmith": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/feral_claws",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/charm_of_shrinking",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/chests/woodland_mansion": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:artifact_rarity_adjusted_chance"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/chorus_totem",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "artifacts:artifact",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/entities/cow": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance",
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/everlasting_beef",
+       "weight": 1,
+       "functions": [
+        "furnace_smelt"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:inject/entities/mooshroom": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "artifacts:config_value_chance",
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "artifacts:items/everlasting_beef",
+       "weight": 1,
+       "functions": [
+        "furnace_smelt"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/anglers_hat": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:anglers_hat",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/antidote_vessel": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:antidote_vessel",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/aqua_dashers": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:aqua_dashers",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/bunny_hoppers": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:bunny_hoppers",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/charm_of_shrinking": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:charm_of_shrinking",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/charm_of_sinking": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:charm_of_sinking",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/chorus_totem": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:chorus_totem",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/cloud_in_a_bottle": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:cloud_in_a_bottle",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/cowboy_hat": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:cowboy_hat",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/cross_necklace": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:cross_necklace",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/crystal_heart": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:crystal_heart",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/digging_claws": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:digging_claws",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/drinking_hat": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:plastic_drinking_hat",
+         "weight": 3,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 3
+        }
+       ]
+      },
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:novelty_drinking_hat",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/everlasting_beef": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:everlasting_beef",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/feral_claws": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:feral_claws",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/fire_gauntlet": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:fire_gauntlet",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/flame_pendant": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:flame_pendant",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/flippers": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:flippers",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/golden_hook": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:golden_hook",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/helium_flamingo": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:helium_flamingo",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/kitty_slippers": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:kitty_slippers",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/lucky_scarf": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:lucky_scarf",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/night_vision_goggles": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:night_vision_goggles",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/obsidian_skull": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:obsidian_skull",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/onion_ring": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:onion_ring",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/panic_necklace": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:panic_necklace",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/pickaxe_heater": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:pickaxe_heater",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/pocket_piston": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:pocket_piston",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/power_glove": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:power_glove",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/rooted_boots": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:rooted_boots",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/running_shoes": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:running_shoes",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/scarf_of_invisibility": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:scarf_of_invisibility",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/shock_pendant": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:shock_pendant",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/snorkel": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:snorkel",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/snowshoes": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:snowshoes",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/steadfast_spikes": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:steadfast_spikes",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/strider_shoes": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:strider_shoes",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/superstitious_hat": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:superstitious_hat",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/thorn_pendant": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:thorn_pendant",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/umbrella": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:umbrella",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/universal_attractor": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:universal_attractor",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/vampiric_glove": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:vampiric_glove",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/villager_hat": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:villager_hat",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/warp_drive": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:warp_drive",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/whoopee_cushion": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:whoopee_cushion",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "artifacts:items/withered_bracelet": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "artifacts:withered_bracelet",
+         "weight": 1,
+         "conditions": [
+          "artifacts:config_value"
+         ]
+        },
+        {
+         "kind": "empty",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "artifacts:inject/archaeology/desert_pyramid": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:archaeology/desert_pyramid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:archaeology/desert_pyramid"
+    },
+    "artifacts:config_value_chance"
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/archaeology/desert_pyramid",
+    "replace": true
+   },
+   "refs": [
+    "artifacts:inject/archaeology/desert_pyramid"
+   ]
+  },
+  "artifacts:inject/archaeology/desert_well": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:archaeology/desert_well"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:archaeology/desert_well"
+    },
+    "artifacts:config_value_chance"
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/archaeology/desert_well",
+    "replace": true
+   },
+   "refs": [
+    "artifacts:inject/archaeology/desert_well"
+   ]
+  },
+  "artifacts:inject/archaeology/ocean_ruin_cold": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:archaeology/ocean_ruin_cold"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:archaeology/ocean_ruin_cold"
+    },
+    "artifacts:config_value_chance"
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/archaeology/ocean_ruin_cold",
+    "replace": true
+   },
+   "refs": [
+    "artifacts:inject/archaeology/ocean_ruin_cold"
+   ]
+  },
+  "artifacts:inject/archaeology/ocean_ruin_warm": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:archaeology/ocean_ruin_warm"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:archaeology/ocean_ruin_warm"
+    },
+    "artifacts:config_value_chance"
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/archaeology/ocean_ruin_warm",
+    "replace": true
+   },
+   "refs": [
+    "artifacts:inject/archaeology/ocean_ruin_warm"
+   ]
+  },
+  "artifacts:inject/archaeology/trail_ruins_rare": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:archaeology/trail_ruins_rare"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:archaeology/trail_ruins_rare"
+    },
+    "artifacts:config_value_chance"
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/archaeology/trail_ruins_rare",
+    "replace": true
+   },
+   "refs": [
+    "artifacts:inject/archaeology/trail_ruins_rare"
+   ]
+  },
+  "artifacts:inject/chests/abandoned_mineshaft": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/abandoned_mineshaft"
+   },
+   "refs": [
+    "artifacts:inject/chests/abandoned_mineshaft"
+   ]
+  },
+  "artifacts:inject/chests/ancient_city": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/ancient_city"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ancient_city"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/ancient_city"
+   },
+   "refs": [
+    "artifacts:inject/chests/ancient_city"
+   ]
+  },
+  "artifacts:inject/chests/ancient_city_ice_box": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/ancient_city_ice_box"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ancient_city_ice_box"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/ancient_city_ice_box"
+   },
+   "refs": [
+    "artifacts:inject/chests/ancient_city_ice_box"
+   ]
+  },
+  "artifacts:inject/chests/bastion_hoglin_stable": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/bastion_hoglin_stable"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/bastion_hoglin_stable"
+   },
+   "refs": [
+    "artifacts:inject/chests/bastion_hoglin_stable"
+   ]
+  },
+  "artifacts:inject/chests/bastion_treasure": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/bastion_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/bastion_treasure"
+   },
+   "refs": [
+    "artifacts:inject/chests/bastion_treasure"
+   ]
+  },
+  "artifacts:inject/chests/buried_treasure": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/buried_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/buried_treasure"
+   },
+   "refs": [
+    "artifacts:inject/chests/buried_treasure"
+   ]
+  },
+  "artifacts:inject/chests/desert_pyramid": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/desert_pyramid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/desert_pyramid"
+   },
+   "refs": [
+    "artifacts:inject/chests/desert_pyramid"
+   ]
+  },
+  "artifacts:inject/chests/end_city_treasure": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/end_city_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/end_city_treasure"
+   },
+   "refs": [
+    "artifacts:inject/chests/end_city_treasure"
+   ]
+  },
+  "artifacts:inject/chests/igloo_chest": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/igloo_chest"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/igloo_chest"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/igloo_chest"
+   },
+   "refs": [
+    "artifacts:inject/chests/igloo_chest"
+   ]
+  },
+  "artifacts:inject/chests/jungle_temple": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/jungle_temple"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/jungle_temple"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/jungle_temple"
+   },
+   "refs": [
+    "artifacts:inject/chests/jungle_temple"
+   ]
+  },
+  "artifacts:inject/chests/nether_bridge": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/nether_bridge"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/nether_bridge"
+   },
+   "refs": [
+    "artifacts:inject/chests/nether_bridge"
+   ]
+  },
+  "artifacts:inject/chests/pillager_outpost": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/pillager_outpost"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/pillager_outpost"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/pillager_outpost"
+   },
+   "refs": [
+    "artifacts:inject/chests/pillager_outpost"
+   ]
+  },
+  "artifacts:inject/chests/ruined_portal": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/ruined_portal"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ruined_portal"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/ruined_portal"
+   },
+   "refs": [
+    "artifacts:inject/chests/ruined_portal"
+   ]
+  },
+  "artifacts:inject/chests/shipwreck_treasure": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/shipwreck_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_treasure"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/shipwreck_treasure"
+   },
+   "refs": [
+    "artifacts:inject/chests/shipwreck_treasure"
+   ]
+  },
+  "artifacts:inject/chests/simple_dungeon": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/simple_dungeon"
+   },
+   "refs": [
+    "artifacts:inject/chests/simple_dungeon"
+   ]
+  },
+  "artifacts:inject/chests/spawn_bonus_chest": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/spawn_bonus_chest"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/spawn_bonus_chest"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/spawn_bonus_chest"
+   },
+   "refs": [
+    "artifacts:inject/chests/spawn_bonus_chest"
+   ]
+  },
+  "artifacts:inject/chests/stronghold_corridor": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/stronghold_corridor"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/stronghold_corridor"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/stronghold_corridor"
+   },
+   "refs": [
+    "artifacts:inject/chests/stronghold_corridor"
+   ]
+  },
+  "artifacts:inject/chests/underwater_ruin_big": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/underwater_ruin_big"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/underwater_ruin_big"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/underwater_ruin_big"
+   },
+   "refs": [
+    "artifacts:inject/chests/underwater_ruin_big"
+   ]
+  },
+  "artifacts:inject/chests/village/village_armorer": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_armorer"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_armorer"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_armorer"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_armorer"
+   ]
+  },
+  "artifacts:inject/chests/village/village_butcher": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_butcher"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_butcher"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_butcher"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_butcher"
+   ]
+  },
+  "artifacts:inject/chests/village/village_desert_house": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_desert_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_desert_house"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_desert_house"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_desert_house"
+   ]
+  },
+  "artifacts:inject/chests/village/village_plains_house": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_plains_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_plains_house"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_plains_house"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_plains_house"
+   ]
+  },
+  "artifacts:inject/chests/village/village_savanna_house": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_savanna_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_savanna_house"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_savanna_house"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_savanna_house"
+   ]
+  },
+  "artifacts:inject/chests/village/village_snowy_house": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_snowy_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_snowy_house"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_snowy_house"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_snowy_house"
+   ]
+  },
+  "artifacts:inject/chests/village/village_taiga_house": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_taiga_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_taiga_house"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_taiga_house"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_taiga_house"
+   ]
+  },
+  "artifacts:inject/chests/village/village_tannery": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_tannery"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_tannery"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_tannery"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_tannery"
+   ]
+  },
+  "artifacts:inject/chests/village/village_temple": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_temple"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_temple"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_temple"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_temple"
+   ]
+  },
+  "artifacts:inject/chests/village/village_toolsmith": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_toolsmith"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_toolsmith"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_toolsmith"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_toolsmith"
+   ]
+  },
+  "artifacts:inject/chests/village/village_weaponsmith": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_weaponsmith"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/village/village_weaponsmith"
+   },
+   "refs": [
+    "artifacts:inject/chests/village/village_weaponsmith"
+   ]
+  },
+  "artifacts:inject/chests/woodland_mansion": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:chests/woodland_mansion"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/chests/woodland_mansion"
+   },
+   "refs": [
+    "artifacts:inject/chests/woodland_mansion"
+   ]
+  },
+  "artifacts:inject/entities/cow": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:entities/cow"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:entities/cow"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/entities/cow"
+   },
+   "refs": [
+    "artifacts:inject/entities/cow"
+   ]
+  },
+  "artifacts:inject/entities/mooshroom": {
+   "type": "artifacts:roll_loot_table",
+   "targets": [
+    "minecraft:entities/mooshroom"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:entities/mooshroom"
+    }
+   ],
+   "params": {
+    "lootTable": "artifacts:inject/entities/mooshroom"
+   },
+   "refs": [
+    "artifacts:inject/entities/mooshroom"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "artifacts:inject/entities/cow",
+    "artifacts:inject/entities/mooshroom",
+    "artifacts:inject/chests/village/village_desert_house",
+    "artifacts:inject/chests/village/village_plains_house",
+    "artifacts:inject/chests/village/village_savanna_house",
+    "artifacts:inject/chests/village/village_snowy_house",
+    "artifacts:inject/chests/village/village_taiga_house",
+    "artifacts:inject/chests/spawn_bonus_chest",
+    "artifacts:inject/chests/village/village_armorer",
+    "artifacts:inject/chests/village/village_butcher",
+    "artifacts:inject/chests/village/village_tannery",
+    "artifacts:inject/chests/village/village_temple",
+    "artifacts:inject/chests/village/village_toolsmith",
+    "artifacts:inject/chests/village/village_weaponsmith",
+    "artifacts:inject/chests/abandoned_mineshaft",
+    "artifacts:inject/chests/bastion_hoglin_stable",
+    "artifacts:inject/chests/bastion_treasure",
+    "artifacts:inject/chests/buried_treasure",
+    "artifacts:inject/chests/desert_pyramid",
+    "artifacts:inject/chests/end_city_treasure",
+    "artifacts:inject/chests/jungle_temple",
+    "artifacts:inject/chests/nether_bridge",
+    "artifacts:inject/chests/pillager_outpost",
+    "artifacts:inject/chests/ruined_portal",
+    "artifacts:inject/chests/shipwreck_treasure",
+    "artifacts:inject/chests/simple_dungeon",
+    "artifacts:inject/chests/stronghold_corridor",
+    "artifacts:inject/chests/underwater_ruin_big",
+    "artifacts:inject/chests/woodland_mansion",
+    "artifacts:inject/chests/igloo_chest",
+    "artifacts:inject/chests/ancient_city_ice_box",
+    "artifacts:inject/chests/ancient_city",
+    "artifacts:inject/archaeology/desert_pyramid",
+    "artifacts:inject/archaeology/desert_well",
+    "artifacts:inject/archaeology/ocean_ruin_cold",
+    "artifacts:inject/archaeology/ocean_ruin_warm",
+    "artifacts:inject/archaeology/trail_ruins_rare"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

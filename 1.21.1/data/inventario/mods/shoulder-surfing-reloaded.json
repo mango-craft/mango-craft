@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Shoulder Surfing Reloaded",
  "file": "ShoulderSurfing-NeoForge-1.21.1-5.2.0.jar",
@@ -70,6 +70,9 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": [
   "assets/shouldersurfing/lang/en_us.json: JSON non valido"

@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Starcatcher",
  "file": "starcatcher-3.3.6-NEOFORGE-1.21.1.jar",
@@ -2768,6 +2768,50 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "starcatcher:fishing_hat_from_shipwrecks": {
+   "type": "starcatcher:add_item",
+   "targets": [
+    "minecraft:chests/shipwreck_map"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_map"
+    },
+    {
+     "random_chance": 0.5
+    }
+   ],
+   "params": {},
+   "refs": [
+    "starcatcher:fisherman_hat_white",
+    "starcatcher:fisherman_hat_lime",
+    "starcatcher:fisherman_hat_orange",
+    "starcatcher:fisherman_hat_red",
+    "starcatcher:fisherman_hat_gray",
+    "starcatcher:fisherman_hat_light_gray",
+    "starcatcher:fisherman_hat_black",
+    "starcatcher:fisherman_hat_brown",
+    "starcatcher:fisherman_hat_yellow",
+    "starcatcher:fisherman_hat_pink",
+    "starcatcher:fisherman_hat_magenta",
+    "starcatcher:fisherman_hat_purple",
+    "starcatcher:fisherman_hat_blue",
+    "starcatcher:fisherman_hat_light_blue",
+    "starcatcher:fisherman_hat_cyan",
+    "starcatcher:fisherman_hat_green"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "starcatcher:fishing_hat_from_shipwrecks"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

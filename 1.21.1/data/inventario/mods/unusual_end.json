@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Unusual End",
  "file": "unusualend-2.3.1b.jar",
@@ -2916,6 +2916,2451 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "minecraft:chests/ancient_end_city": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 6,
+      "max": 8
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:enderling_scrap",
+       "weight": 12,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:void_totem",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:disc_fragment_flying_ships",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 14,
+       "count": {
+        "min": 4,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_fungus",
+       "weight": 9,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_sludge",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 12,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:dragon_breath",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:phantom_membrane",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:raw_purpur_block",
+       "weight": 3,
+       "count": {
+        "min": 5,
+        "max": 20
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ancient_shard",
+       "weight": 8,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:phantom_arrow",
+       "weight": 6,
+       "count": {
+        "min": 8,
+        "max": 13
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ender_firefly_egg",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_petal",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:enderblob_moult",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_pie",
+       "weight": 5,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:wandering_pearl",
+       "weight": 9,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob_jelly",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:pearlescent_upgrade_smithing_template",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ancient_armor_trim_smithing_template",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:chests/end_house_library": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2,
+      "max": 3
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_petal",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_fungus",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_cane_flower",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:candle",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_roots",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_research_notes",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:citrine_candle",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:disc_fragment_flying_ships",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:citrine_chunk",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:end_house_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 4,
+       "functions": [
+        "exploration_map",
+        "set_name"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1,
+       "functions": [
+        "exploration_map",
+        "set_name"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 9,
+      "max": 11
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_fungus",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ender_stew",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_helmet",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_sludge",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:phantom_membrane",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_juice",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:enderling_scrap",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:disc_fragment_flying_ships",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:enderblob_moult",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:phantom_arrow",
+       "weight": 1,
+       "count": {
+        "min": 6,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ender_firefly_egg",
+       "weight": 5,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_pie",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_petal",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:wandering_pearl",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:grass_block",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gravel",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ancient_shard",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:pearlescent_upgrade_smithing_template",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ancient_armor_trim_smithing_template",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:entities/endermite": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:enderblob_moult",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "minecraft:warped_reef_fishing": {
+   "type": "minecraft:fishing",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:raw_bluk",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_spores",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_moss",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_fin",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_berries",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_scale",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_squash_wedge",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:small_warped_squash",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_roots",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_fungus",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_sludge",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:citrine_chunk",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:chests/end_city_additional_loots": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:prismalite_shard",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:wandering_pearl",
+       "weight": 6,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:void_totem",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ancient_shard",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:pearlescent_upgrade_smithing_template",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ancient_armor_trim_smithing_template",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:chests/flying_ship": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1,
+       "functions": [
+        "exploration_map",
+        "set_name"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 3,
+       "functions": [
+        "exploration_map",
+        "set_name"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4,
+      "max": 5
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:disc_fragment_flying_ships",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ender_stew",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:prismalite_shard",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_sludge",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_fungus",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_roots",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_petal",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 2,
+       "count": {
+        "min": 8,
+        "max": 12
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:popped_chorus_fruit",
+       "weight": 1,
+       "count": {
+        "min": 4,
+        "max": 10
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_nest_planks",
+       "weight": 2,
+       "count": {
+        "min": 4,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:phantom_membrane",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:enderling_scrap",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ender_firefly_egg",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:pearlescent_upgrade_smithing_template",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shulker_shell",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:chests/gloopy_altar": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 8,
+      "max": 9
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:shiny_crystal",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:shiny_gum",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob_jelly",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:enderblob_moult",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_tea",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purple_candle",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:cracked_endermite_eggs",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:prismalite_shard",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:blob_stew",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bowl",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:shiny_charge",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_juice",
+       "weight": 4,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ender_firefly_egg",
+       "weight": 3,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_pie",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:gloopilon_seeds",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:gloopilon_slice",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:ancient_armor_trim_smithing_template",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:pearlescent_upgrade_smithing_template",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:prismalite_gem",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:pearlescent_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:chests/wandering_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 6,
+      "max": 9
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 6,
+       "count": {
+        "min": 2,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_fungus",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_roots",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_fungus",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_roots",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 3,
+       "count": {
+        "min": 4,
+        "max": 8
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:void_totem",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:raw_purpur_block",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 9
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:ender_stew",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob_jelly",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_pie",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_juice",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_petal",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:disc_fragment_flying_ships",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:shiny_crystal",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:citrine_chunk",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_cane",
+       "weight": 3,
+       "count": {
+        "min": 4,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:blob_stew",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_hanging_sign",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oxeye_daisy",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_stew",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_flute",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:chests/wandering_house_barrel": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3,
+      "max": 4
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:oxeye_daisy",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_berries",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spruce_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:acacia_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cherry_sapling",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:chorus_roots",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:gloopilon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:chests/warped_ship": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 4,
+       "count": {
+        "min": 3,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 3,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_scale",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_moss",
+       "weight": 2,
+       "count": {
+        "min": 4,
+        "max": 7
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_spine",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:disc_fragment_flying_ships",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:gneiss",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 5
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_fin",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:citrine_chunk",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_berries",
+       "weight": 2,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:void_totem",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fishing_rod",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_anchor",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:raw_bluk",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:cooked_bluk",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bluk_skewer",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_stew",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bluk_bucket",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_bucket",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:glub_bucket",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 3,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_planks",
+       "weight": 2,
+       "count": {
+        "min": 3,
+        "max": 6
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_squash_wedge",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_infusion",
+       "weight": 4,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_potion",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_research_notes",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:warped_spores",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:warped_hanging_sign",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:experience_bottle",
+       "weight": 1,
+       "count": {
+        "min": 2,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 3
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 3,
+       "count": {
+        "min": 1,
+        "max": 1
+       },
+       "functions": [
+        "enchant_randomly"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/bolok": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_scale",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:warped_moss",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:bolok_fin",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/ender_blob": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 2
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:enderblob_moult",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/enderblob_queen": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:stabilised_void",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/enderbulb": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:enderbulb_lens",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:shiny_crystal",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/shulker_additional_drops": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:wandering_pearl",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_sludge",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/small_enderbulb": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:end_blob",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0,
+      "max": 1
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:enderbulb_lens",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pearlescent_froglight",
+       "weight": 1,
+       "conditions": [
+        "damage_source_properties"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/spunkler": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_sludge",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:lurker_spine",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "unusualend:entities/undead_enderling": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1,
+      "max": 2
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "unusualend:enderling_scrap",
+       "weight": 2,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ender_pearl",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 1
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 1,
+       "count": {
+        "min": 0,
+        "max": 1
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "unusualend:end_city": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "chests/end_city_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "chests/end_city_treasure"
+    }
+   ],
+   "params": {
+    "table": "unusualend:chests/end_city_additional_loots"
+   },
+   "refs": [
+    "unusualend:chests/end_city_additional_loots"
+   ]
+  },
+  "unusualend:shulker": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:entities/shulker"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:entities/shulker"
+    }
+   ],
+   "params": {
+    "table": "unusualend:entities/shulker_additional_drops"
+   },
+   "refs": [
+    "unusualend:entities/shulker_additional_drops"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "unusualend:shulker",
+    "unusualend:end_city"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

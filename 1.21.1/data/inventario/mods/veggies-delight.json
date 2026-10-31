@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Veggies Delight",
  "file": "VeggiesDelight-1.21.1-1.9.3.jar",
@@ -1332,6 +1332,2063 @@
  ],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "veggiesdelight:chests/vd_abandoned_mineshaft": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_pillager_outpost": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic_crate",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_shipwreck_supply": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower_seeds",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_simple_dungeon": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_village_desert_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_village_plains_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:sweet_potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_village_savanna_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_village_snowy_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:sweet_potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_village_taiga_house": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:sweet_potato",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_wagon_desert": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic_clove",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cactus",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_wagon_plains": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic_clove",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:sweet_potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:apple",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cocoa_beans",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_berries",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_wagon_savanna": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic_clove",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:bellpepper",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:sweet_potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:zucchini",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cocoa_beans",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:melon",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_wagon_snowy": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic_clove",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:sweet_potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cocoa_beans",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_berries",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rabbit_hide",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "veggiesdelight:chests/vd_wagon_taiga": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic_clove",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip_seeds",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat_seeds",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:broccoli",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:cauliflower",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:garlic",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:sweet_potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "veggiesdelight:turnip",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potato",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:beetroot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:carrot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glistering_melon_slice",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glow_berries",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 20,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_hoe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "veggiesdelight:add_loot_abandoned_mineshaft": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_abandoned_mineshaft"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_abandoned_mineshaft"
+   ]
+  },
+  "veggiesdelight:add_loot_pillager_outpost": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/pillager_outpost"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/pillager_outpost"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_pillager_outpost"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_pillager_outpost"
+   ]
+  },
+  "veggiesdelight:add_loot_shipwreck_supply": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/shipwreck_supply"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_supply"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_shipwreck_supply"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_shipwreck_supply"
+   ]
+  },
+  "veggiesdelight:add_loot_simple_dungeon": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_simple_dungeon"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_simple_dungeon"
+   ]
+  },
+  "veggiesdelight:add_loot_village_desert_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_desert_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_desert_house"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_village_desert_house"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_village_desert_house"
+   ]
+  },
+  "veggiesdelight:add_loot_village_plains_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_plains_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_plains_house"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_village_plains_house"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_village_plains_house"
+   ]
+  },
+  "veggiesdelight:add_loot_village_savanna_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_savanna_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_savanna_house"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_village_savanna_house"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_village_savanna_house"
+   ]
+  },
+  "veggiesdelight:add_loot_village_snowy_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_snowy_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_snowy_house"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_village_snowy_house"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_village_snowy_house"
+   ]
+  },
+  "veggiesdelight:add_loot_village_taiga_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_taiga_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_taiga_house"
+    }
+   ],
+   "params": {
+    "lootTable": "veggiesdelight:chests/vd_village_taiga_house"
+   },
+   "refs": [
+    "veggiesdelight:chests/vd_village_taiga_house"
+   ]
+  },
+  "veggiesdelight:slicing_beetroot_brownie_tray": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "veggiesdelight:beetroot_brownie"
+   },
+   "refs": [
+    "veggiesdelight:beetroot_brownie"
+   ]
+  },
+  "veggiesdelight:slicing_carrot_cake": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "veggiesdelight:carrot_cake_slice"
+   },
+   "refs": [
+    "veggiesdelight:carrot_cake_slice"
+   ]
+  },
+  "veggiesdelight:slicing_sweet_potato_pie": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "veggiesdelight:sweet_potato_pie_slice"
+   },
+   "refs": [
+    "veggiesdelight:sweet_potato_pie_slice"
+   ]
+  },
+  "veggiesdelight:slicing_vegan_pizza": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "veggiesdelight:vegan_pizza_slice"
+   },
+   "refs": [
+    "veggiesdelight:vegan_pizza_slice"
+   ]
+  },
+  "veggiesdelight:slicing_zucchini_quiche": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "veggiesdelight:zucchini_quiche_slice"
+   },
+   "refs": [
+    "veggiesdelight:zucchini_quiche_slice"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "veggiesdelight:add_loot_abandoned_mineshaft",
+    "veggiesdelight:add_loot_pillager_outpost",
+    "veggiesdelight:add_loot_shipwreck_supply",
+    "veggiesdelight:add_loot_simple_dungeon",
+    "veggiesdelight:add_loot_village_plains_house",
+    "veggiesdelight:add_loot_village_taiga_house",
+    "veggiesdelight:add_loot_village_snowy_house",
+    "veggiesdelight:add_loot_village_desert_house",
+    "veggiesdelight:add_loot_village_savanna_house",
+    "veggiesdelight:slicing_beetroot_brownie_tray",
+    "veggiesdelight:slicing_carrot_cake",
+    "veggiesdelight:slicing_vegan_pizza",
+    "veggiesdelight:slicing_sweet_potato_pie",
+    "veggiesdelight:slicing_zucchini_quiche"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

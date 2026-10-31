@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Ender's Delight",
  "file": "endersdelight-1.3.1.jar",
@@ -283,6 +283,76 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "endersdelight:scavenging_enderman_sight_from_enderman": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "endersdelight:enderman_sight"
+   },
+   "refs": [
+    "endersdelight:enderman_sight"
+   ]
+  },
+  "endersdelight:scavenging_mite_crust_from_endermite": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "endersdelight:mite_crust"
+   },
+   "refs": [
+    "endersdelight:mite_crust"
+   ]
+  },
+  "endersdelight:scavenging_shulker_mollusk_from_shulker": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "endersdelight:shulker_mollusk"
+   },
+   "refs": [
+    "endersdelight:shulker_mollusk"
+   ]
+  },
+  "endersdelight:slicing_chorus_pie": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "endersdelight:chorus_pie_slice"
+   },
+   "refs": [
+    "endersdelight:chorus_pie_slice"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "endersdelight:scavenging_enderman_sight_from_enderman",
+    "endersdelight:scavenging_mite_crust_from_endermite",
+    "endersdelight:scavenging_shulker_mollusk_from_shulker",
+    "endersdelight:slicing_chorus_pie"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

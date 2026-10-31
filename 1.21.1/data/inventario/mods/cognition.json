@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Cognition",
  "file": "Cognition-v2.4.13-1.21.1.jar",
@@ -516,6 +516,84 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "cognition:astute_assembly_desert_pyramid": {
+   "type": "cognition:add_single_item",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "id": "cognition:astute_assembly",
+    "appear_chance": 0.35,
+    "min_quantity": 1,
+    "max_quantity": 1,
+    "bias": 0,
+    "path": "desert_pyramid"
+   },
+   "refs": [
+    "cognition:astute_assembly"
+   ]
+  },
+  "cognition:cognitive_flux_ruined_portal": {
+   "type": "cognition:add_single_item",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "id": "cognition:cognitive_flux",
+    "appear_chance": 0.6,
+    "min_quantity": 4,
+    "max_quantity": 20,
+    "bias": -0.8,
+    "path": "ruined_portal"
+   },
+   "refs": [
+    "cognition:cognitive_flux"
+   ]
+  },
+  "cognition:forgotten_dust_mineshaft": {
+   "type": "cognition:add_single_item",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "id": "cognition:forgotten_dust",
+    "appear_chance": 0.5,
+    "min_quantity": 2,
+    "max_quantity": 16,
+    "bias": 0.2,
+    "path": "abandoned_mineshaft"
+   },
+   "refs": [
+    "cognition:forgotten_dust"
+   ]
+  },
+  "cognition:forgotten_dust_stronghold_library": {
+   "type": "cognition:add_single_item",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "id": "cognition:forgotten_dust",
+    "appear_chance": 1.0,
+    "min_quantity": 8,
+    "max_quantity": 27,
+    "bias": -0.4,
+    "path": "stronghold_library"
+   },
+   "refs": [
+    "cognition:forgotten_dust"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "cognition:cognitive_flux_ruined_portal",
+    "cognition:astute_assembly_desert_pyramid",
+    "cognition:forgotten_dust_mineshaft",
+    "cognition:forgotten_dust_stronghold_library"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

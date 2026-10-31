@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Paragliders",
  "file": "Paraglider-neoforge-21.1.5.jar",
@@ -274,6 +274,396 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "paraglider:elder_guardian": {
+   "type": "paraglider:spirit_orb",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "killed_by_player",
+    "paraglider:config_elder_guardian_drops_spirit_orb"
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/ancient_city": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/ancient_city"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/ancient_city"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/bastion_bridge": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/bastion_bridge"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/bastion_bridge"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/bastion_hoglin_stable": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/bastion_hoglin_stable"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/bastion_other": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/bastion_other"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/bastion_other"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/bastion_treasure": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/bastion_treasure"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/buried_treasure": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/buried_treasure"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/desert_pyramid": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/desert_pyramid"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/desert_pyramid"
+    },
+    {
+     "random_chance": 0.25
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/jungle_temple": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/jungle_temple"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/jungle_temple"
+    },
+    {
+     "random_chance": 0.66
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/nether_bridge": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/nether_bridge"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/nether_bridge"
+    },
+    {
+     "random_chance": 0.5
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/ominous_trial_reward": {
+   "type": "paraglider:configurable_spirit_orb",
+   "targets": [
+    "minecraft:chests/trial_chambers/reward_ominous"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/trial_chambers/reward_ominous"
+    }
+   ],
+   "params": {
+    "lootType": "ominous_trial"
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/spawner": {
+   "type": "paraglider:configurable_spirit_orb",
+   "targets": [],
+   "conditions": [
+    "block_state_property"
+   ],
+   "params": {
+    "lootType": "spawner"
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/stronghold_corridor": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/stronghold_corridor"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/stronghold_corridor"
+    },
+    {
+     "random_chance": 0.5
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/stronghold_crossing": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/stronghold_crossing"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/stronghold_crossing"
+    },
+    {
+     "random_chance": 0.5
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/stronghold_library": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/stronghold_library"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/stronghold_library"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/trial_reward": {
+   "type": "paraglider:configurable_spirit_orb",
+   "targets": [
+    "minecraft:chests/trial_chambers/reward"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/trial_chambers/reward"
+    }
+   ],
+   "params": {
+    "lootType": "trial"
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/underwater_ruin_big": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/underwater_ruin_big"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/underwater_ruin_big"
+    },
+    {
+     "random_chance": 0.25
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/underwater_ruin_small": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/underwater_ruin_small"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/underwater_ruin_small"
+    },
+    {
+     "random_chance": 0.25
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:spirit_orbs/woodland_mansion": {
+   "type": "paraglider:spirit_orb",
+   "targets": [
+    "minecraft:chests/woodland_mansion"
+   ],
+   "conditions": [
+    "paraglider:config_spirit_orb_loots",
+    {
+     "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  },
+  "paraglider:totw_reworked/chest": {
+   "type": "paraglider:paraglider",
+   "targets": [
+    "totw_reworked:tower_chest"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "totw_reworked:tower_chest"
+    }
+   ],
+   "params": {
+    "dekuLeaf": false
+   },
+   "refs": []
+  },
+  "paraglider:totw_reworked/ocean_chest": {
+   "type": "paraglider:paraglider",
+   "targets": [
+    "totw_reworked:ocean_tower_chest"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "totw_reworked:ocean_tower_chest"
+    }
+   ],
+   "params": {
+    "dekuLeaf": true
+   },
+   "refs": []
+  },
+  "paraglider:wither": {
+   "type": "paraglider:vessel",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "killed_by_player",
+    "paraglider:config_wither_drops_vessel"
+   ],
+   "params": {
+    "count": 1
+   },
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "paraglider:totw_reworked/chest",
+    "paraglider:totw_reworked/ocean_chest",
+    "paraglider:wither",
+    "paraglider:elder_guardian",
+    "paraglider:spirit_orbs/spawner",
+    "paraglider:spirit_orbs/trial_reward",
+    "paraglider:spirit_orbs/ominous_trial_reward",
+    "paraglider:spirit_orbs/underwater_ruin_big",
+    "paraglider:spirit_orbs/underwater_ruin_small",
+    "paraglider:spirit_orbs/jungle_temple",
+    "paraglider:spirit_orbs/desert_pyramid",
+    "paraglider:spirit_orbs/bastion_other",
+    "paraglider:spirit_orbs/bastion_bridge",
+    "paraglider:spirit_orbs/bastion_treasure",
+    "paraglider:spirit_orbs/bastion_hoglin_stable",
+    "paraglider:spirit_orbs/stronghold_corridor",
+    "paraglider:spirit_orbs/stronghold_crossing",
+    "paraglider:spirit_orbs/stronghold_library",
+    "paraglider:spirit_orbs/nether_bridge",
+    "paraglider:spirit_orbs/buried_treasure",
+    "paraglider:spirit_orbs/woodland_mansion",
+    "paraglider:spirit_orbs/ancient_city"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

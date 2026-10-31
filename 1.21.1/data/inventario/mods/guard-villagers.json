@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Guard Villagers",
  "file": "guardvillagers-2.4.12-1.21.1.jar",
@@ -67,6 +67,444 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "guardvillagers:entities/armor_sets/armor": {
+   "type": "guardvillagers:slot",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.012
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_helmet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.012
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_chestplate",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.012
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_leggings",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.012
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_boots",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.0004
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.0004
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.0004
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_leggings",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.0004
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.033
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_helmet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.033
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_chestplate",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.033
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_leggings",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.033
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_boots",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.013
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.013
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.013
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.013
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.037
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather_helmet",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.037
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather_chestplate",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.037
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather_leggings",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.037
+      }
+     ],
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "guardvillagers:entities/guard": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "guardvillagers:entities/guard_armor": {
+   "type": "guardvillagers:slot",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "guardvillagers:entities/armor_sets/armor",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crossbow",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "functions": [
+      "guardvillagers:slot"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 8
+       },
+       "conditions": [
+        {
+         "random_chance": 0.1
+        }
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

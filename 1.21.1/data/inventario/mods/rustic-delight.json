@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Rustic Delight",
  "file": "rusticdelight-neoforge-1.21-1.7.1.jar",
@@ -1508,6 +1508,258 @@
  ],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {
+  "rusticdelight:calamari_from_glow_squid": {
+   "type": "rusticdelight:squids_drop_calamari_modifier",
+   "targets": [
+    "minecraft:entities/glow_squid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:entities/glow_squid"
+    }
+   ],
+   "params": {
+    "item": "rusticdelight:calamari",
+    "maxAmount": 2,
+    "minAmount": 1
+   },
+   "refs": [
+    "rusticdelight:calamari"
+   ]
+  },
+  "rusticdelight:calamari_from_squid": {
+   "type": "rusticdelight:squids_drop_calamari_modifier",
+   "targets": [
+    "minecraft:entities/squid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:entities/squid"
+    }
+   ],
+   "params": {
+    "item": "rusticdelight:calamari",
+    "maxAmount": 2,
+    "minAmount": 1
+   },
+   "refs": [
+    "rusticdelight:calamari"
+   ]
+  },
+  "rusticdelight:coffee_beans_from_jungle_temple": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/jungle_temple"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/jungle_temple"
+    },
+    {
+     "random_chance": 0.5
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:coffee_beans",
+    "count": 2,
+    "removed_item": "minecraft:bamboo"
+   },
+   "refs": [
+    "rusticdelight:coffee_beans",
+    "minecraft:bamboo"
+   ]
+  },
+  "rusticdelight:cotton_seeds_from_abandoned_mineshaft": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:cotton_seeds",
+    "removed_item": "minecraft:melon_seeds"
+   },
+   "refs": [
+    "rusticdelight:cotton_seeds",
+    "minecraft:melon_seeds"
+   ]
+  },
+  "rusticdelight:cotton_seeds_from_shipwreck_supply": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/shipwreck_supply"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_supply"
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:cotton_seeds",
+    "removed_item": "minecraft:wheat"
+   },
+   "refs": [
+    "rusticdelight:cotton_seeds",
+    "minecraft:wheat"
+   ]
+  },
+  "rusticdelight:cotton_seeds_from_village_savanna": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/village/village_savanna_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_savanna_house"
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:cotton_seeds",
+    "removed_item": "minecraft:wheat_seeds"
+   },
+   "refs": [
+    "rusticdelight:cotton_seeds",
+    "minecraft:wheat_seeds"
+   ]
+  },
+  "rusticdelight:cotton_seeds_from_village_snowy": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/village/village_snowy_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_snowy_house"
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:cotton_seeds",
+    "removed_item": "minecraft:beetroot_seeds"
+   },
+   "refs": [
+    "rusticdelight:cotton_seeds",
+    "minecraft:beetroot_seeds"
+   ]
+  },
+  "rusticdelight:cotton_seeds_from_village_taiga": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/village/village_taiga_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_taiga_house"
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:cotton_seeds",
+    "removed_item": "minecraft:pumpkin_seeds"
+   },
+   "refs": [
+    "rusticdelight:cotton_seeds",
+    "minecraft:pumpkin_seeds"
+   ]
+  },
+  "rusticdelight:dark_bell_pepper_seeds_from_jungle_temple": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/jungle_temple"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/jungle_temple"
+    },
+    {
+     "random_chance": 0.25
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:dark_bell_pepper_seeds",
+    "removed_item": "minecraft:rotten_flesh"
+   },
+   "refs": [
+    "rusticdelight:dark_bell_pepper_seeds",
+    "minecraft:rotten_flesh"
+   ]
+  },
+  "rusticdelight:pale_bell_pepper_seeds_from_jungle_temple": {
+   "type": "farmersdelight:replace_item",
+   "targets": [
+    "minecraft:chests/jungle_temple"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/jungle_temple"
+    },
+    {
+     "random_chance": 0.25
+    }
+   ],
+   "load": [
+    "rusticdelight:config_boolean",
+    "rusticdelight:config_boolean"
+   ],
+   "params": {
+    "added_item": "rusticdelight:pale_bell_pepper_seeds",
+    "removed_item": "minecraft:bone"
+   },
+   "refs": [
+    "rusticdelight:pale_bell_pepper_seeds",
+    "minecraft:bone"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "rusticdelight:calamari_from_squid",
+    "rusticdelight:calamari_from_glow_squid",
+    "rusticdelight:cotton_seeds_from_village_savanna",
+    "rusticdelight:cotton_seeds_from_village_taiga",
+    "rusticdelight:cotton_seeds_from_village_snowy",
+    "rusticdelight:cotton_seeds_from_abandoned_mineshaft",
+    "rusticdelight:cotton_seeds_from_shipwreck_supply",
+    "rusticdelight:coffee_beans_from_jungle_temple",
+    "rusticdelight:pale_bell_pepper_seeds_from_jungle_temple",
+    "rusticdelight:dark_bell_pepper_seeds_from_jungle_temple"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

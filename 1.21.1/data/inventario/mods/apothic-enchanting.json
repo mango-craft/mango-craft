@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Apothic Enchanting (modulo)",
  "file": "ApothicEnchanting-1.21.1-1.6.4.jar",
@@ -471,6 +471,423 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "apothic_enchanting:boon_deepslate_drops": {
+   "type": "minecraft:advancement_location",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.02
+     },
+     "conditions": [
+      {
+       "not": "match_tool"
+      }
+     ],
+     "functions": [
+      "apply_bonus"
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 80,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100,
+       "quality": 1,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60,
+       "quality": 1,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60,
+       "quality": 2,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60,
+       "quality": 3
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.02
+     },
+     "conditions": [
+      "match_tool"
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 80
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60,
+       "quality": 3
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "all_of": [
+        "location_check",
+        {
+         "not": "match_tool"
+        }
+       ]
+      }
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 15,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 15,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 70
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "all_of": [
+        "location_check",
+        "match_tool"
+       ]
+      }
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 15
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 15
+      },
+      {
+       "kind": "empty",
+       "weight": 70
+      }
+     ]
+    }
+   ]
+  },
+  "apothic_enchanting:boon_netherrack_drops": {
+   "type": "minecraft:advancement_location",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.02
+     },
+     "conditions": [
+      {
+       "not": "match_tool"
+      }
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 150,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1,
+       "functions": [
+        "apply_bonus"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.02
+     },
+     "conditions": [
+      "match_tool"
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 150
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 60
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "location_check"
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 3,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 97
+      }
+     ]
+    }
+   ]
+  },
+  "apothic_enchanting:boon_stone_drops": {
+   "type": "minecraft:advancement_location",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.02
+     },
+     "conditions": [
+      {
+       "not": "match_tool"
+      }
+     ],
+     "functions": [
+      "apply_bonus"
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100,
+       "quality": 1,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 2,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 2,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 5,
+       "quality": 3
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "bonus_rolls": {
+      "min": 0.0,
+      "max": 0.02
+     },
+     "conditions": [
+      "match_tool"
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100,
+       "quality": 1
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 100
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 20,
+       "quality": 2
+      },
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 5,
+       "quality": 3
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "all_of": [
+        "location_check",
+        {
+         "not": "match_tool"
+        }
+       ]
+      }
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 15,
+       "functions": [
+        "apply_bonus"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 85
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "all_of": [
+        "location_check",
+        "match_tool"
+       ]
+      }
+     ],
+     "entries": [
+      {
+       "kind": "placebo:stack_entry",
+       "weight": 15
+      },
+      {
+       "kind": "empty",
+       "weight": 85
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "apothic_enchanting:warden_tendril": {
+   "type": "apothic_enchanting:warden_tendril",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "apothic_enchanting:warden_tendril"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

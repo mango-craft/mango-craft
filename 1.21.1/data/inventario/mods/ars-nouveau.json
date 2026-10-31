@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Ars Nouveau",
  "file": "ars_nouveau-1.21.1-5.13.3.jar",
@@ -3417,6 +3417,170 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "ars_nouveau:dispel_witch": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "ars_nouveau:wixie_shards",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "ars_nouveau:entities/wilden_guardian": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "ars_nouveau:wilden_spike",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "ars_nouveau:entities/wilden_hunter": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "ars_nouveau:wilden_horn",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "ars_nouveau:entities/wilden_stalker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "ars_nouveau:wilden_wing",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "ars_nouveau:dungeon_loot": {
+   "type": "ars_nouveau:dungeon_loot",
+   "targets": [
+    "minecraft:chests/simple_dungeon",
+    "minecraft:chests/jungle_temple",
+    "minecraft:chests/abandoned_mineshaft",
+    "minecraft:chests/bastion_treasure",
+    "minecraft:chests/desert_pyramid",
+    "minecraft:chests/end_city_treasure",
+    "minecraft:chests/ruined_portal",
+    "minecraft:chests/pillager_outpost",
+    "minecraft:chests/nether_bridge",
+    "minecraft:chests/stronghold_corridor",
+    "minecraft:chests/stronghold_crossing",
+    "minecraft:chests/stronghold_library",
+    "minecraft:chests/woodland_mansion",
+    "minecraft:chests/underwater_ruin_big",
+    "minecraft:chests/underwater_ruin_small"
+   ],
+   "conditions": [
+    {
+     "any_of": [
+      {
+       "loot_table_id": "minecraft:chests/simple_dungeon"
+      },
+      {
+       "loot_table_id": "minecraft:chests/jungle_temple"
+      },
+      {
+       "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+      },
+      {
+       "loot_table_id": "minecraft:chests/bastion_treasure"
+      },
+      {
+       "loot_table_id": "minecraft:chests/desert_pyramid"
+      },
+      {
+       "loot_table_id": "minecraft:chests/end_city_treasure"
+      },
+      {
+       "loot_table_id": "minecraft:chests/ruined_portal"
+      },
+      {
+       "loot_table_id": "minecraft:chests/pillager_outpost"
+      },
+      {
+       "loot_table_id": "minecraft:chests/nether_bridge"
+      },
+      {
+       "loot_table_id": "minecraft:chests/stronghold_corridor"
+      },
+      {
+       "loot_table_id": "minecraft:chests/stronghold_crossing"
+      },
+      {
+       "loot_table_id": "minecraft:chests/stronghold_library"
+      },
+      {
+       "loot_table_id": "minecraft:chests/woodland_mansion"
+      },
+      {
+       "loot_table_id": "minecraft:chests/underwater_ruin_big"
+      },
+      {
+       "loot_table_id": "minecraft:chests/underwater_ruin_small"
+      }
+     ]
+    }
+   ],
+   "params": {
+    "common_chance": 0.3,
+    "common_rolls": 3,
+    "rare_chance": 0.1,
+    "rare_rolls": 1,
+    "uncommon_chance": 0.2,
+    "uncommon_rolls": 2
+   },
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "ars_nouveau:dungeon_loot"
+   ]
+  }
+ ],
  "potions_deduced": [
   "ars_nouveau:blasting_potion",
   "ars_nouveau:blasting_potion_long",

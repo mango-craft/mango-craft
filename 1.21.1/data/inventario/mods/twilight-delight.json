@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Twilight's Flavor & Delight",
  "file": "twilightdelight-3.2.6.jar",
@@ -1131,6 +1131,244 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "twilightdelight:scrap_115": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "twilightforest:experiment_115",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "farmersdelight:cake_slice",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "twilightdelight:scavenging_cooked_naga_meat_from_naga": {
+   "type": "twilightdelight:naga_meat",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "twilightdelight:cooked_naga_meat",
+    "max": 10,
+    "min": 5
+   },
+   "refs": [
+    "twilightdelight:cooked_naga_meat"
+   ]
+  },
+  "twilightdelight:scavenging_cooked_tomahawk_smeak_from_minoshroom": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 1.0
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "item": "twilightdelight:cooked_tomahawk_smeak"
+   },
+   "refs": [
+    "twilightdelight:cooked_tomahawk_smeak"
+   ]
+  },
+  "twilightdelight:scavenging_cooked_tomahawk_smeak_from_minotaur": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.3
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "item": "twilightdelight:cooked_tomahawk_smeak"
+   },
+   "refs": [
+    "twilightdelight:cooked_tomahawk_smeak"
+   ]
+  },
+  "twilightdelight:scavenging_experiment_115_from_carminite_ghastguard": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.5
+    }
+   ],
+   "params": {
+    "item": "twilightforest:experiment_115"
+   },
+   "refs": [
+    "twilightforest:experiment_115"
+   ]
+  },
+  "twilightdelight:scavenging_experiment_115_from_carminite_ghastling": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.01
+    }
+   ],
+   "params": {
+    "item": "twilightforest:experiment_115"
+   },
+   "refs": [
+    "twilightforest:experiment_115"
+   ]
+  },
+  "twilightdelight:scavenging_experiment_115_from_ghast": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.3
+    }
+   ],
+   "params": {
+    "item": "twilightforest:experiment_115"
+   },
+   "refs": [
+    "twilightforest:experiment_115"
+   ]
+  },
+  "twilightdelight:scavenging_ham_from_boar": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.67
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "item": "farmersdelight:ham"
+   },
+   "refs": [
+    "farmersdelight:ham"
+   ]
+  },
+  "twilightdelight:scavenging_raw_naga_meat_from_naga": {
+   "type": "twilightdelight:naga_meat",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "twilightdelight:raw_naga_meat",
+    "max": 10,
+    "min": 5
+   },
+   "refs": [
+    "twilightdelight:raw_naga_meat"
+   ]
+  },
+  "twilightdelight:scavenging_raw_tomahawk_smeak_from_minoshroom": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 1.0
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "item": "twilightdelight:raw_tomahawk_smeak"
+   },
+   "refs": [
+    "twilightdelight:raw_tomahawk_smeak"
+   ]
+  },
+  "twilightdelight:scavenging_raw_tomahawk_smeak_from_minotaur": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.3
+    },
+    "entity_properties"
+   ],
+   "params": {
+    "item": "twilightdelight:raw_tomahawk_smeak"
+   },
+   "refs": [
+    "twilightdelight:raw_tomahawk_smeak"
+   ]
+  },
+  "twilightdelight:scavenging_witchcraft_bone_from_lich": {
+   "type": "twilightdelight:naga_meat",
+   "targets": [],
+   "conditions": [
+    "entity_properties"
+   ],
+   "params": {
+    "item": "twilightdelight:witchcraft_bone",
+    "max": 6,
+    "min": 2
+   },
+   "refs": [
+    "twilightdelight:witchcraft_bone"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "twilightdelight:scavenging_experiment_115_from_carminite_ghastguard",
+    "twilightdelight:scavenging_experiment_115_from_carminite_ghastling",
+    "twilightdelight:scavenging_experiment_115_from_ghast",
+    "twilightdelight:scavenging_ham_from_boar",
+    "twilightdelight:scavenging_raw_tomahawk_smeak_from_minotaur",
+    "twilightdelight:scavenging_cooked_tomahawk_smeak_from_minotaur",
+    "twilightdelight:scavenging_raw_tomahawk_smeak_from_minoshroom",
+    "twilightdelight:scavenging_cooked_tomahawk_smeak_from_minoshroom",
+    "twilightdelight:scavenging_raw_naga_meat_from_naga",
+    "twilightdelight:scavenging_cooked_naga_meat_from_naga",
+    "twilightdelight:scavenging_witchcraft_bone_from_lich"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

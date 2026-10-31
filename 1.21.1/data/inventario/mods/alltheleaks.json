@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "AllTheLeaks (Memory Leak Fix)",
  "file": "alltheleaks-1.1.13+1.21.1-neoforge.jar",
@@ -89,6 +89,9 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Friends & Foes",
  "file": "friendsandfoes-neoforge-5.0.2+mc1.21.1.jar",
@@ -915,6 +915,1085 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "friendsandfoes:barrels/citadel": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 9.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chain",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_pickaxe",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_pickaxe",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_helmet",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_helmet",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_chestplate",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_chestplate",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_leggings",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_leggings",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_boots",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_boots",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:barrels/iceologer_cabin": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:flower_pot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:charcoal",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:barrels/illusioner_shack_attic": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:painting",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flower_pot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:barrels/illusioner_shack_basement": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cobweb",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 3,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:chests/abandoned_mineshaft_music_disc": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "friendsandfoes:music_disc_around_the_corner",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance": 0.095
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:chests/citadel_explorer_map": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1,
+       "functions": [
+        "exploration_map",
+        "set_name"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.1666
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:chests/iceologer_cabin": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bundle",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blue_ice",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:spruce_log",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:chests/illusioner_shack": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bundle",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:water"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:night_vision"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:potion",
+       "weight": 1,
+       "functions": [
+        "set_potion=minecraft:invisibility"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/barnacle": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "friendsandfoes:barnacle_tooth",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/copper_golem": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/crab": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "friendsandfoes:crab_claw",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/glare": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glow_berries",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/iceologer": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "friendsandfoes:totem_of_freezing",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blue_ice",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/illusioner": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "friendsandfoes:totem_of_illusion",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/moobloom": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:beef",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/penguin": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "friendsandfoes:penguin_feather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/rascal": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "friendsandfoes:entities/tuff_golem": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tuff",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:entities/wildfire": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "friendsandfoes:wildfire_crown_fragment",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:gameplay/hero_of_the_village/beekeeper_gift": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:honeycomb",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:honey_bottle",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "friendsandfoes:rewards/rascal_good_reward": {
+   "type": "minecraft:empty",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 4,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ore",
+       "weight": 2,
+       "count": {
+        "min": 8.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ore",
+       "weight": 1,
+       "count": {
+        "min": 5.0,
+        "max": 10.0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "friendsandfoes:citadel_explorer_map": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/nether_bridge"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+   ],
+   "params": {
+    "table": "friendsandfoes:chests/citadel_explorer_map"
+   },
+   "refs": [
+    "friendsandfoes:chests/citadel_explorer_map"
+   ]
+  },
+  "friendsandfoes:inject_music_disc_to_abandoned_mineshafts": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "table": "friendsandfoes:chests/abandoned_mineshaft_music_disc"
+   },
+   "refs": [
+    "friendsandfoes:chests/abandoned_mineshaft_music_disc"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "friendsandfoes:inject_music_disc_to_abandoned_mineshafts",
+    "friendsandfoes:citadel_explorer_map"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

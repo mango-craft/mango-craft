@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Deep Aether",
  "file": "deep_aether-1.21.1-1.1.5.1.jar",
@@ -4797,6 +4797,1199 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "deep_aether:chests/dungeon/altar_camp": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_axe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_gummy_swet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_hoe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:cold_parachute",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_dart_shooter",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_loot",
+       "weight": 8
+      },
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_disc",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_trash",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_combinder_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_combinder_loot_sub_1",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_combinder_loot_sub_2",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_combinder_loot_sub_3",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_combinder_loot_sub_1": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:frozen_goldenleaf_berries",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:quail_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_combinder_loot_sub_2": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:frozen_goldenleaf_berries",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:icestone",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_combinder_loot_sub_3": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:frozen_goldenleaf_berries",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:blue_berry",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_disc": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:music_disc_aether_tune",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_cat",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 10.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:aerglow_blossom",
+       "weight": 4,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:cold_aercloud",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_pickaxe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_pickaxe",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_fodder": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "functions": [
+      "set_components"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:moa_fodder",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "functions": [
+      "set_components"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:moa_fodder",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "functions": [
+      "set_components"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:moa_fodder",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_gummies": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:blue_gummy_swet",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_gummy_swet",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_pickaxe",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_axe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_sword",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_gummy_swet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:sterling_aercloud",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:ice_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_shovel",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_hoe",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_fodder",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_dart",
+       "weight": 3,
+       "count": {
+        "min": 4.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_dart",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:poison_dart",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_pickaxe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:iron_ring",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:holystone_pickaxe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:cold_aercloud",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_aercloud",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:aerglow_blossom",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:goldenleaf_berries",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:frozen_goldenleaf_berries",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:antidote",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_ring",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:roseroot_planks",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_reward": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_fodder",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_stormforged",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_treasure",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_gummies",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_helmet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_chestplate",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_leggings",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_boots",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_gloves",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade_ring",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:wind_shield",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:cloud_staff",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:storm_bow",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:storm_sword",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:cloud_cape",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:cold_aercloud",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:blade_of_luck",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:music_disc_cyclone",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "deep_aether:chests/dungeon/brass/brass_dungeon_stormforged",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:nimbus_stone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:nimbus_pillar",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_dart",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:nimbus_stone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:nimbus_pillar",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_stormforged": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:stormforged_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:stormforged_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:stormforged_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:stormforged_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:stormforged_gloves",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_trash": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:aerglow_blossom",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:cold_aercloud",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_aercloud",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_aercloud",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:skyjade",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:roseroot_planks",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_pickaxe",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:chests/dungeon/brass/brass_dungeon_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:cloud_cape",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "deep_aether:aercloud_necklace",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 3,
+       "functions": [
+        "enchant_randomly"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:entities/aerglow_fish": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:raw_aerglow_fish",
+       "weight": 1,
+       "functions": [
+        "furnace_smelt"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bone_meal",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:entities/eots_controller": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:brass_dungeon_key",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:cold_aercloud",
+       "weight": 1,
+       "count": {
+        "min": 7.0,
+        "max": 9.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:entities/quail": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:raw_quail",
+       "weight": 1,
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "deep_aether:entities/venomite_bubble": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "deep_aether:bio_crystal",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "deep_aether:bronze_loot_reward_modifiers": {
+   "type": "deep_aether:aether_dungeon_loot",
+   "targets": [
+    "aether:chests/dungeon/bronze/bronze_dungeon_reward"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon_reward"
+    }
+   ],
+   "params": {
+    "chanceToSpawn": 0.0,
+    "totalWeight": 100
+   },
+   "refs": [
+    "deep_aether:music_disc_atta"
+   ]
+  },
+  "deep_aether:fish_aether": {
+   "type": "deep_aether:aether_fish_loot",
+   "targets": [
+    "minecraft:gameplay/fishing"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:gameplay/fishing"
+    }
+   ],
+   "params": {
+    "chanceToSpawn": 0.75,
+    "totalWeight": 135
+   },
+   "refs": [
+    "deep_aether:raw_aerglow_fish",
+    "deep_aether:aerglow_blossom",
+    "aether:skyroot_stick",
+    "deep_aether:music_disc_above_the_rain"
+   ]
+  },
+  "deep_aether:gold_loot_modifiers": {
+   "type": "deep_aether:aether_dungeon_loot",
+   "targets": [
+    "aether:chests/dungeon/gold/gold_dungeon_reward"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "aether:chests/dungeon/gold/gold_dungeon_reward"
+    }
+   ],
+   "params": {
+    "chanceToSpawn": 0.25,
+    "totalWeight": 100
+   },
+   "refs": [
+    "deep_aether:skyjade",
+    "deep_aether:stratus_ingot",
+    "deep_aether:sterling_aercloud",
+    "deep_aether:music_disc_himininn"
+   ]
+  },
+  "deep_aether:gold_loot_stratus_upgrade": {
+   "type": "deep_aether:aether_dungeon_loot",
+   "targets": [
+    "aether:chests/dungeon/gold/gold_dungeon_reward"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "aether:chests/dungeon/gold/gold_dungeon_reward"
+    }
+   ],
+   "params": {
+    "chanceToSpawn": 0.0,
+    "totalWeight": 100
+   },
+   "refs": [
+    "deep_aether:stratus_smithing_template"
+   ]
+  },
+  "deep_aether:halloween_loot_modifiers": {
+   "type": "deep_aether:halloween_loot",
+   "targets": [],
+   "conditions": [
+    "killed_by_player"
+   ],
+   "params": {
+    "chanceToSpawn": 0.5,
+    "totalWeight": 100
+   },
+   "refs": [
+    "aether:candy_cane"
+   ]
+  },
+  "deep_aether:silver_loot_modifiers": {
+   "type": "deep_aether:aether_dungeon_loot",
+   "targets": [
+    "aether:chests/dungeon/silver/silver_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon"
+    }
+   ],
+   "params": {
+    "chanceToSpawn": 0.0,
+    "totalWeight": 100
+   },
+   "refs": [
+    "deep_aether:skyjade"
+   ]
+  },
+  "deep_aether:silver_loot_reward_modifiers": {
+   "type": "deep_aether:aether_dungeon_loot",
+   "targets": [
+    "aether:chests/dungeon/silver/silver_dungeon_reward"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_reward"
+    }
+   ],
+   "params": {
+    "chanceToSpawn": 0.0,
+    "totalWeight": 100
+   },
+   "refs": [
+    "deep_aether:skyjade",
+    "deep_aether:stratus_ingot",
+    "deep_aether:sterling_aercloud",
+    "deep_aether:stratus_smithing_template",
+    "deep_aether:music_disc_faent"
+   ]
+  },
+  "deep_aether:stormforged_upgrade_treasure": {
+   "type": "nitrogen_internals:add_dungeon_loot",
+   "targets": [
+    "deep_aether:chests/dungeon/brass/brass_dungeon_reward"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "deep_aether:chests/dungeon/brass/brass_dungeon_reward"
+    }
+   ],
+   "load": [
+    "mod_loaded:aether_treasure_reforging"
+   ],
+   "params": {},
+   "refs": [
+    "deep_aether:stormforged_smithing_template",
+    "minecraft:uniform"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "deep_aether:silver_loot_modifiers",
+    "deep_aether:halloween_loot_modifiers",
+    "deep_aether:stormforged_upgrade_treasure",
+    "deep_aether:bronze_loot_reward_modifiers",
+    "deep_aether:silver_loot_reward_modifiers",
+    "deep_aether:gold_loot_modifiers",
+    "deep_aether:gold_loot_stratus_upgrade",
+    "deep_aether:fish_aether"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

@@ -13,7 +13,7 @@ I numeri esatti (quante colture, quante voci) cambiano con le regole: li dicono 
 | Parte | Cosa fa | Dove | Spiegazione |
 |---|---|---|---|
 | **Reliquie nelle casse** (dalla 0.7.0) | Relics mette le reliquie nel 10% delle casse `chests/` (invece del 20%) | `data/relics/loot_modifiers/` | [relics/readme.md](data/relics/readme.md) |
-| **Artefatti nelle casse che Relics non vede** | Aggiunge gli oggetti di Artifacts a 25 casse fuori da `chests/` (Twilight Forest, YUNG's Better Dungeons, nave dell'End, Galeone, cittadella) | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
+| **Artefatti nelle casse che Relics non vede** | Aggiunge gli oggetti di Artifacts a 34 casse fuori da `chests/` (Twilight Forest, YUNG's Better Dungeons, nave dell'End, Galeone, cittadella; dalla 0.7.5 i tesori di Better Archeology) | `data/matteo_tweaks/loot_modifiers/artifacts/` più l'elenco in `data/neoforge/loot_modifiers/` | [artifacts/readme.md](data/matteo_tweaks/loot_modifiers/artifacts/readme.md) e [neoforge/loot_modifiers/readme.md](data/neoforge/loot_modifiers/readme.md) |
 | **Artefatti negli scavi** (dalla 0.7.0) | Le 5 tabelle vanilla degli scavi con gli artefatti a 1/16; i 5 modificatori di Artifacts resi innocui | `data/minecraft/loot_table/archaeology/`, `data/artifacts/loot_modifiers/inject/archaeology/` | [artifacts/readme.md](data/artifacts/readme.md) e [archaeology/readme.md](data/minecraft/loot_table/archaeology/readme.md) |
 | **Artefatti solo negli slot di Curios** (dalla 0.7.0) | Toglie gli slot di Artifacts dalle etichette di Accessories (Reliquified Artifacts ignora la config di Artifacts) | `data/accessories/tags/item/` | [accessories/readme.md](data/accessories/readme.md) |
 | **Berserker nelle fortezze di YUNG's** (dalla 0.6.0) | I Berserker infuocati di Cataclysm compaiono anche nelle fortezze di YUNG's Better Nether Fortresses (B02) | `data/cataclysm/tags/worldgen/structure/` | [cataclysm/readme.md](data/cataclysm/readme.md) |
@@ -35,8 +35,9 @@ matteo_tweaks/
     ├── matteo_tweaks/           i nostri file nuovi
     │   ├── function/test/releases/   funzioni di prova, una cartella per release (v0.7.2/…)
     │   ├── loot_modifiers/
-    │   │   └── artifacts/       10 modificatori di bottino per le 25 casse che Relics non vede
+    │   │   └── artifacts/       10 modificatori di bottino per le 34 casse che Relics non vede
     │   ├── loot_table/
+    │   │   ├── artifacts/       qualsiasi_40: un artefatto qualsiasi al 40% (livello «villa» della toppa)
     │   │   └── tree_drops/      i raccolti degli 8 alberi di Bountiful Fares (copiati da Botany Trees)
     │   ├── market_presets/      i nostri listini del mercato, per origine e classe di rarità (generati)
     │   └── recipe/

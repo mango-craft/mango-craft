@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "The Aether",
  "file": "aether-1.21.1-1.5.10-neoforge.jar",
@@ -3877,6 +3877,3158 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "aether:advancements/enter_aether": {
+   "type": "minecraft:advancement_reward",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "aether:config_enabled"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_parachute",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "aether:config_enabled"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:book_of_lore",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/bronze/bronze_dungeon_loot",
+       "weight": 8
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/bronze/bronze_dungeon_disc",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/bronze/bronze_dungeon_trash",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon_disc": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:music_disc_aether_tune",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:music_disc_cat",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 10.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 4,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_pickaxe",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon_gummies": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:blue_gummy_swet",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_gummy_swet",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:zanite_pickaxe",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_axe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_sword",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_gummy_swet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:swet_cape",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:ice_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_shovel",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_hoe",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_dart",
+       "weight": 3,
+       "count": {
+        "min": 4.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_dart",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:poison_dart",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_pickaxe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_poison_bucket",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:iron_ring",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:holystone_pickaxe",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:icestone",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_ring",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_planks",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon_neptune": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:neptune_helmet",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:neptune_chestplate",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:neptune_leggings",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:neptune_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:neptune_gloves",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon_reward": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/bronze/bronze_dungeon_neptune",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/bronze/bronze_dungeon_treasure",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/bronze/bronze_dungeon_gummies",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:zanite_helmet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_chestplate",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_leggings",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_boots",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gloves",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_ring",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_pendant",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:shield_of_repulsion",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:cloud_staff",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:phoenix_bow",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:flaming_sword",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:agility_cape",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_lance",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:hammer_of_kingbdogz",
+       "weight": 1
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/bronze/bronze_dungeon_neptune",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "aether:sentry_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:sentry_stone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:carved_stone",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 15.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:lightning_knife",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_dart",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:sentry_stone",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon_trash": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_planks",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_pickaxe",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/bronze/bronze_dungeon_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_lance",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:hammer_of_kingbdogz",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:sentry_boots",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:music_disc_sliders_wrath",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/gold/gold_dungeon_reward": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/gold/gold_dungeon_treasure",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 5.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:iron_bubble",
+       "weight": 12
+      },
+      {
+       "kind": "item",
+       "id": "aether:vampire_blade",
+       "weight": 12
+      },
+      {
+       "kind": "item",
+       "id": "aether:pig_slayer",
+       "weight": 12
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/gold/gold_dungeon_treasure",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:life_shard",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_helmet",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_chestplate",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_leggings",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_boots",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_gloves",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_sword",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_axe",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_gravitite",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_helmet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_chestplate",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_leggings",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_boots",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:chainmail_gloves",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:ice_pendant",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "aether:ice_ring",
+       "weight": 6
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 20.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_gummy_swet",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "aether:healing_stone",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_berry",
+       "weight": 5
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:icestone",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:aerogel",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/gold/gold_dungeon_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:phoenix_helmet",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:phoenix_chestplate",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:phoenix_leggings",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:phoenix_boots",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:phoenix_gloves",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:life_shard",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_loot",
+       "weight": 8
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_disc",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_trash",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_cape_config": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_cape",
+       "weight": 1,
+       "count": 1.0,
+       "conditions": [
+        "aether:config_enabled"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_feather",
+       "weight": 1,
+       "count": 1.0,
+       "conditions": [
+        "aether:config_enabled"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_disc": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:music_disc_aether_tune",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:music_disc_ascending_dawn",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 10.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 4,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 16.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:holystone_sword",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:healing_stone",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_gravitite": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:gravitite_sword",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_axe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_helmet",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_chestplate",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_leggings",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_boots",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_gloves",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_pickaxe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:gravitite_ore",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_gummies": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:blue_gummy_swet",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_gummy_swet",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_loot": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_gummy_swet",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_sword",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_dart_shooter",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_dart_shooter",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:poison_dart_shooter",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:white_moa_egg",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_pickaxe",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_sword",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_moa_egg",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_remedy_bucket",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_dart",
+       "weight": 4,
+       "count": {
+        "min": 4.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_dart",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:poison_dart",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_pendant",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:iron_pendant",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_pendant",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_ring",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:aechor_petal",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_gummy_swet",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:healing_stone",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_berry",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_ring",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:pillar",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:pillar_top",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:angelic_stone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:light_angelic_stone",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_reward": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_valkyrie",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_treasure",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_gummies",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 6.0,
+      "max": 10.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:lightning_sword",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:holy_sword",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:invisibility_cloak",
+       "weight": 6
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_gravitite",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_dart_shooter",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "aether:poison_dart_shooter",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 6
+      },
+      {
+       "kind": "item",
+       "id": "aether:music_disc_aether_tune",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:music_disc_ascending_dawn",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_berry",
+       "weight": 8,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_berry",
+       "weight": 8,
+       "count": {
+        "min": 2.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:angelic_stone",
+       "weight": 2
+      },
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_valkyrie",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "aether:regeneration_stone",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_trash": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 5.0,
+      "max": 12.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 6,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:pillar",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:pillar_top",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "aether:angelic_stone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:light_angelic_stone",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:holystone_sword",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_valkyrie",
+       "weight": 8
+      },
+      {
+       "kind": "item",
+       "id": "aether:lightning_sword",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:holy_sword",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "aether:invisibility_cloak",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "aether:regeneration_stone",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/dungeon/silver/silver_dungeon_valkyrie": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:chests/dungeon/silver/silver_dungeon_cape_config",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_helmet",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_chestplate",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_leggings",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_boots",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_gloves",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_pickaxe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_axe",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_shovel",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "aether:valkyrie_hoe",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "aether:chests/ruined_portal": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 4.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 40,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 40,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bucket",
+       "weight": 40
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:water_bucket",
+       "weight": 40
+      },
+      {
+       "kind": "item",
+       "id": "aether:blue_berry",
+       "weight": 15,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 15,
+       "count": {
+        "min": 4.0,
+        "max": 24.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_hoe",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_shovel",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_pickaxe",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_boots",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_chestplate",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_helmet",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_leggings",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "aether:iron_gloves",
+       "weight": 15,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:heavy_weighted_pressure_plate",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_berry",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:compass",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "aether:book_of_lore",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_block",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/aechor_plant": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:aechor_petal",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/aerbunny": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/aerwhale": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "aether:entities/blue_swet": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:swet_ball",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:blue_aercloud",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/cockatrice": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/evil_whirlwind": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "aether:entities/fire_minion": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "aether:entities/flying_cow": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:beef",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/golden_swet": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/mimic": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chest",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_dart",
+       "weight": 1,
+       "count": 4.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:enchanted_dart",
+       "weight": 1,
+       "count": 4.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:poison_dart",
+       "weight": 1,
+       "count": 4.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:skyroot_pickaxe",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:iron_ring",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:zanite_gemstone",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:holystone_pickaxe",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:icestone",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_shard",
+       "weight": 1,
+       "count": 1.0
+      },
+      {
+       "kind": "item",
+       "id": "aether:ambrosium_torch",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/moa": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/phyg": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:porkchop",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sentry": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:carved_stone",
+       "weight": 4,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "aether:sentry_stone",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:mutton",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "furnace_smelt",
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/black": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:black_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/blue": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blue_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/brown": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brown_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/cyan": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:cyan_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/gray": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gray_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/green": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:green_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/light_blue": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:light_blue_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/light_gray": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:light_gray_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/lime": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:lime_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/magenta": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:magenta_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/orange": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:orange_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/pink": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pink_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/purple": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:purple_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/red": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:red_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/white": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:white_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sheepuff/yellow": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:yellow_wool",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "loot_table",
+       "id": "aether:entities/sheepuff",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/slider": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:bronze_dungeon_key",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:carved_stone",
+       "weight": 1,
+       "count": {
+        "min": 7.0,
+        "max": 9.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/sun_spirit": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:gold_dungeon_key",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:sun_altar",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/valkyrie": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:victory_medal",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/valkyrie_queen": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:silver_dungeon_key",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 1,
+       "count": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  "aether:entities/whirlwind": {
+   "type": "minecraft:entity",
+   "pools": []
+  },
+  "aether:entities/zephyr": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:cold_aercloud",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:selectors/evil_whirlwind_junk": {
+   "type": "minecraft:selector",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gravel",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clay",
+       "weight": 11
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 12
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 14
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_log",
+       "weight": 17
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sand",
+       "weight": 20
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:air",
+       "weight": 60,
+       "functions": [
+        "aether:whirlwind_spawn_entity"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "aether:selectors/whirlwind_junk": {
+   "type": "minecraft:selector",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 4
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 9
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pumpkin",
+       "weight": 2
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gravel",
+       "weight": 5
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clay",
+       "weight": 11
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 12
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 14
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:oak_log",
+       "weight": 17
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:sand",
+       "weight": 20
+      }
+     ]
+    }
+   ]
+  },
+  "aether:stripping/strip_golden_oak": {
+   "type": "minecraft:aether_stripping",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "aether:golden_amber",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "functions": [
+        "apply_bonus"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "aether:double_drops": {
+   "type": "aether:double_drops",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  },
+  "aether:enchanted_grass_berry_bush": {
+   "type": "aether:enchanted_grass",
+   "targets": [],
+   "conditions": [
+    "block_state_property"
+   ],
+   "params": {},
+   "refs": [
+    "aether:blue_berry"
+   ]
+  },
+  "aether:gloves_loot_chain": {
+   "type": "aether:gloves_loot",
+   "targets": [
+    "!aether:chests/dungeon/gold/gold_dungeon_reward"
+   ],
+   "conditions": [
+    {
+     "not": {
+      "loot_table_id": "aether:chests/dungeon/gold/gold_dungeon_reward"
+     }
+    }
+   ],
+   "params": {
+    "armor_material": "minecraft:chainmail"
+   },
+   "refs": [
+    "minecraft:chainmail",
+    "aether:chainmail_gloves"
+   ]
+  },
+  "aether:gloves_loot_diamond": {
+   "type": "aether:gloves_loot",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "armor_material": "minecraft:diamond"
+   },
+   "refs": [
+    "minecraft:diamond",
+    "aether:diamond_gloves"
+   ]
+  },
+  "aether:gloves_loot_gold": {
+   "type": "aether:gloves_loot",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "armor_material": "minecraft:gold"
+   },
+   "refs": [
+    "minecraft:gold",
+    "aether:golden_gloves"
+   ]
+  },
+  "aether:gloves_loot_iron": {
+   "type": "aether:gloves_loot",
+   "targets": [
+    "!aether:chests/ruined_portal"
+   ],
+   "conditions": [
+    {
+     "not": {
+      "loot_table_id": "aether:chests/ruined_portal"
+     }
+    }
+   ],
+   "params": {
+    "armor_material": "minecraft:iron"
+   },
+   "refs": [
+    "minecraft:iron",
+    "aether:iron_gloves"
+   ]
+  },
+  "aether:gloves_loot_leather": {
+   "type": "aether:gloves_loot",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "armor_material": "minecraft:leather"
+   },
+   "refs": [
+    "minecraft:leather",
+    "aether:leather_gloves"
+   ]
+  },
+  "aether:gloves_loot_netherite": {
+   "type": "aether:gloves_loot",
+   "targets": [],
+   "conditions": [],
+   "params": {
+    "armor_material": "minecraft:netherite"
+   },
+   "refs": [
+    "minecraft:netherite",
+    "aether:netherite_gloves"
+   ]
+  },
+  "aether:pig_drops": {
+   "type": "aether:pig_drops",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  },
+  "aether:remove_seeds": {
+   "type": "aether:remove_seeds",
+   "targets": [],
+   "conditions": [
+    {
+     "any_of": [
+      "block_state_property",
+      "block_state_property"
+     ]
+    },
+    {
+     "not": "match_tool"
+    }
+   ],
+   "params": {},
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "aether:remove_seeds",
+    "aether:pig_drops",
+    "aether:gloves_loot_gold",
+    "aether:gloves_loot_chain",
+    "aether:enchanted_grass_berry_bush",
+    "aether:gloves_loot_diamond",
+    "aether:gloves_loot_leather",
+    "aether:gloves_loot_iron",
+    "aether:double_drops",
+    "aether:gloves_loot_netherite"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

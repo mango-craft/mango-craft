@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Botany Pots",
  "file": "botanypots-neoforge-1.21.1-21.1.44.jar",
@@ -19232,6 +19232,903 @@
  ],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "botanypots:botanypots/biomeswevegone/crop/tall_beach_grass": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:biomeswevegone:tall_beach_grass"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "biomeswevegone:tall_beach_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool",
+          {
+           "random_chance": 0.125
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "biomeswevegone:beach_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/biomeswevegone/crop/tall_prairie_grass": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:biomeswevegone:tall_prairie_grass"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "biomeswevegone:tall_prairie_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool",
+          {
+           "random_chance": 0.125
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "biomeswevegone:prairie_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/farmersdelight/crop/wild_rice": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:farmersdelight:wild_rice"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "farmersdelight:wild_rice",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "farmersdelight:wild_rice",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "farmersdelight:rice",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/forbidden_arcanus/crop/fungyss": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:forbidden_arcanus:fungyss"
+   ],
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "forbidden_arcanus:fungyss",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "forbidden_arcanus:fungyss_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "forbidden_arcanus:fungyss_stem",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/brain_coral": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brain_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brain_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brain_coral_block",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/brown_mushroom": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:brown_mushroom_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stem",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/bubble_coral": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bubble_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bubble_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bubble_coral_block",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/chorus_flower": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_fruit",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chorus_flower",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance": 0.125
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/crimson_fungus": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:crimson_fungus",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:crimson_stem",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shroomlight",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/ferns": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "minecraft:large_fern",
+         "weight": 1,
+         "conditions": [
+          {
+           "random_chance": 0.15
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1,
+         "conditions": [
+          {
+           "random_chance": 0.3
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:fern",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/fire_coral": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:fire_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_coral_block",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/glow_lichen": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glow_lichen",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/grass": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "minecraft:tall_grass",
+         "weight": 1,
+         "conditions": [
+          {
+           "random_chance": 0.15
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1,
+         "conditions": [
+          {
+           "random_chance": 0.3
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:short_grass",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/horn_coral": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:horn_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:horn_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:horn_coral_block",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/red_mushroom": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:red_mushroom_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stem",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/sculk_bloom": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sculk",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_catalyst",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_shrieker",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_sensor",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/sculk_vein": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sculk_vein",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/seagrass": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:seagrass",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/tube_coral": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:tube_coral",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tube_coral_fan",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:tube_coral_block",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/crop/warped_fungus": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:warped_fungus",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:warped_stem",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:warped_wart_block",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.05
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shroomlight",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/minecraft/interaction/rooted_dirt": {
+   "type": "minecraft:block",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:hanging_roots",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/regions_unexplored/crop/bladed_tall_grass": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:regions_unexplored:bladed_tall_grass"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "regions_unexplored:bladed_tall_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool",
+          {
+           "random_chance": 0.125
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "regions_unexplored:bladed_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/regions_unexplored/crop/sandy_tall_grass": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:regions_unexplored:sandy_tall_grass"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "regions_unexplored:sandy_tall_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool",
+          {
+           "random_chance": 0.125
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "regions_unexplored:sandy_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/regions_unexplored/crop/steppe_tall_grass": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:regions_unexplored:steppe_tall_grass"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "regions_unexplored:steppe_tall_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool",
+          {
+           "random_chance": 0.125
+          }
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "regions_unexplored:steppe_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "botanypots:botanypots/regions_unexplored/crop/windswept_grass": {
+   "type": "minecraft:block",
+   "load": [
+    "block_exists:regions_unexplored:windswept_grass"
+   ],
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "alternatives",
+       "children": [
+        {
+         "kind": "item",
+         "id": "regions_unexplored:windswept_grass",
+         "weight": 1,
+         "conditions": [
+          "match_tool"
+         ]
+        },
+        {
+         "kind": "item",
+         "id": "minecraft:wheat_seeds",
+         "weight": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

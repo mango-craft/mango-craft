@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "YUNG's Better Nether Fortresses",
  "file": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
@@ -298,6 +298,907 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "betterfortresses:chests/beacon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 8.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_charge",
+       "weight": 5,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 20,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/extra": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 25,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 25,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 50,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:quartz",
+       "weight": 50,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/hall": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 5.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 25,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:glowstone_dust",
+       "weight": 50,
+       "count": {
+        "min": 3.0,
+        "max": 6.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/keep": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 2.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:flint",
+       "weight": 100,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:coal",
+       "weight": 100,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 100,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 100,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 7,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 4,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone_sword",
+       "weight": 20,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:stone_sword",
+       "weight": 20,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 5,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_sword",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_helmet",
+       "weight": 20,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_helmet",
+       "weight": 20,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_helmet",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_helmet",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_helmet",
+       "weight": 5,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_helmet",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_chestplate",
+       "weight": 20,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_chestplate",
+       "weight": 20,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_chestplate",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_chestplate",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_chestplate",
+       "weight": 5,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_chestplate",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_leggings",
+       "weight": 20,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_leggings",
+       "weight": 20,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_leggings",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_leggings",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_leggings",
+       "weight": 5,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_leggings",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 20,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:leather_boots",
+       "weight": 20,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_boots",
+       "weight": 10,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:chainmail_boots",
+       "weight": 10,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_boots",
+       "weight": 5,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_boots",
+       "weight": 5,
+       "functions": [
+        "enchant_with_levels",
+        "set_damage"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/obsidian": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:obsidian",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:crying_obsidian",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 0.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:flint_and_steel",
+       "weight": 10
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 5
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/puzzle": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:blaze_rod",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/quarters": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 25
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/storage": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 50,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:raw_gold",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:quartz",
+       "weight": 50,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:magma_cream",
+       "weight": 50
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:fire_charge",
+       "weight": 50
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 50
+      }
+     ]
+    }
+   ]
+  },
+  "betterfortresses:chests/worship": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 3.0,
+      "max": 6.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_nugget",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:nether_wart",
+       "weight": 50,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 50
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

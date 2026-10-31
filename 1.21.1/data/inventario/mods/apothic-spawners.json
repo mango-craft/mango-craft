@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Apothic Spawners (modulo)",
  "file": "ApothicSpawners-1.21.1-1.4.0.jar",
@@ -114,6 +114,28 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "apothic_spawners:gameplay/unstable_spawner": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 48.0,
+      "max": 64.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:chain",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

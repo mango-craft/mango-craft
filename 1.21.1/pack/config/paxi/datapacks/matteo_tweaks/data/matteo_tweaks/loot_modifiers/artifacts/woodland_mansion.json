@@ -25,9 +25,13 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "friendsandfoes:barrels/citadel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterarcheology:archeology/chest_light_temple_treasure"
         }
       ]
     }
   ],
-  "table": "artifacts:inject/chests/woodland_mansion"
+  "table": "matteo_tweaks:artifacts/qualsiasi_40"
 }

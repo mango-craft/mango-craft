@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Farming for Blockheads",
  "file": "farmingforblockheads-neoforge-1.21.1-21.1.14.jar",
@@ -9680,6 +9680,9 @@
    "payment_count": 1
   }
  ],
+ "loot_tables": {},
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

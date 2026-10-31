@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Truly Modular: Modular Item API (Miapi)",
  "file": "Truly-Modular-miapi-neoforge-2.3.9-1.21.jar",
@@ -995,6 +995,138 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "miapi:diamond_weapon_modular_test": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 50,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_sword",
+       "weight": 1,
+       "functions": [
+        "miapi:module_swap",
+        "miapi:material_swap"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "miapi:iron_weapon_modular_test": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 50,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_sword",
+       "weight": 1,
+       "functions": [
+        "miapi:module_swap",
+        "miapi:material_swap"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "miapi:netherite_bow_modular_test": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 50,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bow",
+       "weight": 1,
+       "functions": [
+        "miapi:module_swap",
+        "miapi:material_swap"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "miapi:netherite_weapon_modular_test": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 50,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:netherite_sword",
+       "weight": 1,
+       "functions": [
+        "miapi:module_swap",
+        "miapi:material_swap"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "miapi:stone_weapon_modular_test": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 50,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stone_sword",
+       "weight": 1,
+       "functions": [
+        "miapi:module_swap"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "miapi:wooden_weapon_modular_test": {
+   "type": null,
+   "pools": [
+    {
+     "rolls": 50,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wooden_sword",
+       "weight": 1,
+       "functions": [
+        "miapi:module_swap",
+        "miapi:material_swap"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "miapi:global_loot_modifier": {
+   "type": "miapi:global_loot_mod",
+   "targets": [],
+   "conditions": [],
+   "params": {},
+   "refs": []
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "miapi:global_loot_modifier"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

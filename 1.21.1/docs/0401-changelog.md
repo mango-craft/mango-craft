@@ -10,6 +10,17 @@ Una voce per ogni versione, dalla più recente. Ogni voce dice:
 
 La voce di una versione diventa anche la nota della sua release su GitHub.
 
+## 0.7.5 — 31/10/2026 · archeologia e reperti (pre-release di prova)
+
+- **NeoForge**: 21.1.265 (invariato).
+- **Mondo nuovo**: non serve; le casse già aperte restano come sono. Versione di prova: non è la versione del mondo vero.
+- **Datapack, bottino**: le casse del **tesoro** delle 9 strutture di Better Archeology (templi della luce e della giungla, catacombe, sculk che consuma, motta, rovine sepolte, rovine della mesa, tumulo, rovine sottomarine) possono dare un artefatto, dal 15 al 40% secondo la struttura. Prima non ne davano mai: né Relics né Artifacts le vedevano. Le altre casse di Better Archeology restano senza.
+- **Datapack, artefatti più vari**: le 5 casse del livello più ricco dopo il caveau dei troll (tesoro del tempio della luce, caveau del labirinto e stanza dell'aurora di Twilight Forest, barili della cittadella di Friends & Foes) danno ancora un artefatto nel 40% dei casi, ma preso da tutti gli artefatti: prima era il chorus totem 2 volte su 3 (la tabella di Artifacts per la villa).
+- **Strumenti**: le tabelle del bottino di tutte le mod entrano nella base dati (inventario nel formato 8): a ogni push si controlla che nessuna cassa abbia due possibilità di reliquia e che le tabelle lette dai file siano quelle che carica il gioco.
+- **Datapack, funzioni di prova**: `/function matteo_tweaks:test/releases/v0.7.5/…` mette davanti due file di casse dei tesori di Better Archeology.
+- **Stato**: ✅ provata il 31/10/2026 (tesori di Better Archeology con gli artefatti, di tipi diversi dopo la correzione del livello «villa»; dump con tutti i controlli passati; log confrontato con quello della 0.7.4, nessun errore nuovo grave) e rilasciata come pre-release `1.21.1-v0.7.5`.
+- **Problemi noti**: nuovo B49, minore: se nella stessa sessione di gioco si apre un secondo mondo (o si fa `/reload`), 57 finestre di Create nei legni delle altre mod restano senza ricetta fino al riavvio; c'era già da ottobre. Qualche messaggio innocuo in più elencato in B14 e B44.
+
 ## 0.7.4 — 30/10/2026 · piattaforma (pre-release di prova)
 
 - **NeoForge**: **21.1.265** (prima 21.1.259): da cambiare a mano in Prism prima dell'avvio.

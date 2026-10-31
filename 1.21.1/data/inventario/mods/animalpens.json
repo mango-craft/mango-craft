@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Animal Pens",
  "file": "animal_pen-neoforge-1.21-2.5.0.jar",
@@ -351,6 +351,357 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "animal_pen:animal_interactions/bowl/mushroom_stew": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:mushroom_stew",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/bowl/suspicious_stew": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:suspicious_stew",
+       "weight": 1,
+       "functions": [
+        "set_stew_effect",
+        "set_stew_effect",
+        "set_stew_effect",
+        "set_stew_effect",
+        "set_stew_effect",
+        "set_stew_effect",
+        "set_stew_effect",
+        "set_stew_effect",
+        "set_stew_effect"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/brush/armadillo_scute": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:armadillo_scute",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/bucket/egg": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/bucket/milk_bucket": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:milk_bucket",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/bucket/sniffer_egg": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sniffer_egg",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/bucket/turtle_egg": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:turtle_egg",
+       "weight": 1,
+       "count": {
+        "min": 1,
+        "max": 4
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/glass_bottle/honey_bottle": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:honey_bottle",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/magma_cube/froglight": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:pearlescent_froglight",
+       "weight": 1,
+       "quality": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:ochre_froglight",
+       "weight": 1,
+       "quality": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:verdant_froglight",
+       "weight": 1,
+       "quality": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/shear/honeycomb": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:honeycomb",
+       "weight": 1,
+       "count": 3
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:animal_interactions/shear/wool": {
+   "type": "minecraft:gift",
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:white_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:orange_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:magenta_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_blue_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:yellow_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:lime_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:pink_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gray_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:light_gray_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:cyan_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:purple_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blue_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:brown_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:green_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:red_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:black_wool",
+       "weight": 1,
+       "conditions": [
+        "entity_properties"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "animal_pen:grant_book_on_first_join": {
+   "type": "advancement_reward",
+   "load": [
+    "mod_loaded:patchouli"
+   ],
+   "pools": [
+    {
+     "rolls": 1,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "patchouli:guide_book",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

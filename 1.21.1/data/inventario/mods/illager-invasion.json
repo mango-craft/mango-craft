@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Illager Invasion",
  "file": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
@@ -413,6 +413,1864 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "illagerinvasion:chests/illager_fort_ground": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:crossbow",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_damage"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.25
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spruce_sapling",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 4.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.15
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_damage"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.15
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:chests/illager_fort_tower": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:sweet_berries",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:crossbow",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_damage"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:spruce_sapling",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.6
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 10.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_axe",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_damage",
+        "enchant_with_levels"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:shield",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_damage"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 3.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "count": 1.0,
+       "conditions": [
+        {
+         "random_chance": 0.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.6
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 2.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.6
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:chests/illusioner_tower_entrance": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:chests/illusioner_tower_stairs": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:wheat",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:stick",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:illusionary_dust",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1,
+       "count": 1.0,
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_damage"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.75
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:lapis_lazuli",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 6.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:chests/labyrinth": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:copper_ingot",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 7.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "count": 1.0,
+       "conditions": [
+        {
+         "random_chance": 0.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:bread",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 8.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       },
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:melon_seeds",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "enchant_with_levels"
+       ],
+       "conditions": [
+        {
+         "random_chance": 0.25
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 6.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:string",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 5.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:chests/labyrinth_map": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:compass",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:map",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:clock",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "illagerinvasion:lost_candle",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 20,
+       "count": {
+        "min": 0.0,
+        "max": 10.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:feather",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 5,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:chests/sorcerer_hut": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 4.0,
+        "max": 11.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:dark_oak_sapling",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:unusual_dust",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:name_tag",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance": 0.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:golden_apple",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance": 0.25
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:enchanted_golden_apple",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance": 0.05
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/alchemist": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:gunpowder",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:glass_bottle",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/archivist": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:paper",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/basher": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_nugget",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/firecaller": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:fire_charge",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/inject/illusioner": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      {
+       "random_chance_enchanted": 0.4
+      },
+      "killed_by_player"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:illusionary_dust",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/inject/pillager": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:platinum_chunk",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance_enchanted": 0.5
+        },
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/inject/ravager": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:platinum_chunk",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance_enchanted": 0.5
+        },
+        "killed_by_player"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/inquisitor": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 3.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:leather",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:platinum_chunk",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance_enchanted": 0.5
+        },
+        "killed_by_player"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/invoker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 3.0,
+        "max": 5.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:primal_essence",
+       "weight": 1,
+       "count": 1.0,
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/marauder": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "conditions": [
+      "entity_properties"
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:ominous_bottle",
+       "weight": 1,
+       "count": 1.0,
+       "functions": [
+        "set_ominous_bottle_amplifier"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/necromancer": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:skeleton_skull",
+       "weight": 1,
+       "conditions": [
+        "killed_by_player",
+        {
+         "random_chance_enchanted": 0.025
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:zombie_head",
+       "weight": 1,
+       "conditions": [
+        "killed_by_player",
+        {
+         "random_chance_enchanted": 0.025
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/provoker": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:arrow",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/sorcerer": {
+   "type": "minecraft:entity",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 1.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ],
+       "conditions": [
+        "killed_by_player"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:book",
+       "weight": 1,
+       "count": {
+        "min": 0.0,
+        "max": 2.0
+       },
+       "functions": [
+        "enchanted_count_increase"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "illagerinvasion:unusual_dust",
+       "weight": 1,
+       "conditions": [
+        {
+         "random_chance_enchanted": 0.4
+        },
+        "killed_by_player"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "illagerinvasion:entities/surrendered": {
+   "type": "minecraft:entity",
+   "pools": []
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }

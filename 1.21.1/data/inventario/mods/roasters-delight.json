@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Roaster's Delight",
  "file": "roasters_delight-1.0.0.1.jar",
@@ -829,6 +829,475 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "roasters_delight:chests/tea_pets/ancient_city": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:warden_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/bastion": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.12
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:piglin_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/buried_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:parrot_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/desert_temple": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:scarab_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:spider_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/end_city": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:shulker_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/nether_fortress": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:strider_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/ominous_trial_chambers": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:breeze_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/shipwreck": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:koi_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/stronghold": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:stone_lion_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:chests/tea_pets/trial_chambers": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.08
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "roasters_delight:breeze_tea_pet",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "roasters_delight:entities/civet": {
+   "type": "minecraft:entity",
+   "pools": []
+  }
+ },
+ "loot_modifiers": {
+  "roasters_delight:tea_pets/ancient_city": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/ancient_city"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ancient_city"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/ancient_city"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/ancient_city"
+   ]
+  },
+  "roasters_delight:tea_pets/bastion": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/bastion_treasure",
+    "minecraft:chests/bastion_other",
+    "minecraft:chests/bastion_bridge",
+    "minecraft:chests/bastion_hoglin_stable"
+   ],
+   "conditions": [
+    {
+     "any_of": [
+      {
+       "loot_table_id": "minecraft:chests/bastion_treasure"
+      },
+      {
+       "loot_table_id": "minecraft:chests/bastion_other"
+      },
+      {
+       "loot_table_id": "minecraft:chests/bastion_bridge"
+      },
+      {
+       "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+      }
+     ]
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/bastion"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/bastion"
+   ]
+  },
+  "roasters_delight:tea_pets/buried_treasure": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/buried_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/buried_treasure"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/buried_treasure"
+   ]
+  },
+  "roasters_delight:tea_pets/desert_temple": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/desert_pyramid"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/desert_pyramid"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/desert_temple"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/desert_temple"
+   ]
+  },
+  "roasters_delight:tea_pets/dungeon": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/dungeon"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/dungeon"
+   ]
+  },
+  "roasters_delight:tea_pets/end_city": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/end_city_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/end_city"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/end_city"
+   ]
+  },
+  "roasters_delight:tea_pets/nether_fortress": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/nether_bridge"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/nether_bridge"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/nether_fortress"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/nether_fortress"
+   ]
+  },
+  "roasters_delight:tea_pets/ominous_trial_chambers": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/trial_chambers/reward_ominous"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/trial_chambers/reward_ominous"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/ominous_trial_chambers"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/ominous_trial_chambers"
+   ]
+  },
+  "roasters_delight:tea_pets/shipwreck": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/shipwreck_treasure",
+    "minecraft:chests/shipwreck_supply"
+   ],
+   "conditions": [
+    {
+     "any_of": [
+      {
+       "loot_table_id": "minecraft:chests/shipwreck_treasure"
+      },
+      {
+       "loot_table_id": "minecraft:chests/shipwreck_supply"
+      }
+     ]
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/shipwreck"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/shipwreck"
+   ]
+  },
+  "roasters_delight:tea_pets/stronghold": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/stronghold_corridor",
+    "minecraft:chests/stronghold_crossing",
+    "minecraft:chests/stronghold_library"
+   ],
+   "conditions": [
+    {
+     "any_of": [
+      {
+       "loot_table_id": "minecraft:chests/stronghold_corridor"
+      },
+      {
+       "loot_table_id": "minecraft:chests/stronghold_crossing"
+      },
+      {
+       "loot_table_id": "minecraft:chests/stronghold_library"
+      }
+     ]
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/stronghold"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/stronghold"
+   ]
+  },
+  "roasters_delight:tea_pets/trial_chambers": {
+   "type": "neoforge:add_table",
+   "targets": [
+    "minecraft:chests/trial_chambers/reward"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/trial_chambers/reward"
+    }
+   ],
+   "params": {
+    "table": "roasters_delight:chests/tea_pets/trial_chambers"
+   },
+   "refs": [
+    "roasters_delight:chests/tea_pets/trial_chambers"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "roasters_delight:tea_pets/ancient_city",
+    "roasters_delight:tea_pets/stronghold",
+    "roasters_delight:tea_pets/shipwreck",
+    "roasters_delight:tea_pets/nether_fortress",
+    "roasters_delight:tea_pets/end_city",
+    "roasters_delight:tea_pets/buried_treasure",
+    "roasters_delight:tea_pets/bastion",
+    "roasters_delight:tea_pets/dungeon",
+    "roasters_delight:tea_pets/trial_chambers",
+    "roasters_delight:tea_pets/ominous_trial_chambers",
+    "roasters_delight:tea_pets/desert_temple"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Farmer's Delight",
  "file": "FarmersDelight-1.21.1-1.3.4.jar",
@@ -2187,6 +2187,1303 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "farmersdelight:chests/fd_abandoned_mineshaft": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:cooking_pot",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:skillet",
+       "weight": 1,
+       "functions": [
+        "set_damage"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 6
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rope",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_bastion_hoglin_stable": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:diamond_knife",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:golden_knife",
+       "weight": 2,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:ham",
+       "weight": 4,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:smoked_ham",
+       "weight": 2,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_bastion_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:diamond_knife",
+       "weight": 1,
+       "functions": [
+        "set_damage",
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:diamond_knife",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 6
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_end_city_treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:diamond_knife",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:iron_knife",
+       "weight": 1,
+       "functions": [
+        "enchant_with_levels"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 6
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_pillager_outpost": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 5,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion_crate",
+       "weight": 2,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_ruined_portal": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:golden_knife",
+       "weight": 1,
+       "functions": [
+        "enchant_randomly"
+       ]
+      },
+      {
+       "kind": "empty",
+       "weight": 3
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_shipwreck_supply": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 6,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rope",
+       "weight": 2,
+       "count": {
+        "min": 4.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_simple_dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 4.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 4.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    },
+    {
+     "rolls": 3.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:rope",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 12.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 2
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_village_butcher": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1.0,
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:flint_knife",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:iron_knife",
+       "weight": 1
+      },
+      {
+       "kind": "empty",
+       "weight": 1
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 2.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:ham",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:minced_beef",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:bacon",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:mutton_chops",
+       "weight": 3,
+       "count": {
+        "min": 2.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "empty",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_village_desert_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_village_plains_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_village_savanna_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:tomato_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_village_snowy_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:onion",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "farmersdelight:chests/fd_village_taiga_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "farmersdelight:cabbage_seeds",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "farmersdelight:rice",
+       "weight": 1,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "farmersdelight:add_loot_abandoned_mineshaft": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_abandoned_mineshaft"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_abandoned_mineshaft"
+   ]
+  },
+  "farmersdelight:add_loot_bastion_hoglin_stable": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/bastion_hoglin_stable"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_bastion_hoglin_stable"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_bastion_hoglin_stable"
+   ]
+  },
+  "farmersdelight:add_loot_bastion_treasure": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/bastion_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_bastion_treasure"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_bastion_treasure"
+   ]
+  },
+  "farmersdelight:add_loot_end_city_treasure": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/end_city_treasure"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_end_city_treasure"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_end_city_treasure"
+   ]
+  },
+  "farmersdelight:add_loot_pillager_outpost": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/pillager_outpost"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/pillager_outpost"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_pillager_outpost"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_pillager_outpost"
+   ]
+  },
+  "farmersdelight:add_loot_ruined_portal": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/ruined_portal"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/ruined_portal"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_ruined_portal"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_ruined_portal"
+   ]
+  },
+  "farmersdelight:add_loot_shipwreck_supply": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/shipwreck_supply"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_supply"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_shipwreck_supply"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_shipwreck_supply"
+   ]
+  },
+  "farmersdelight:add_loot_simple_dungeon": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_simple_dungeon"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_simple_dungeon"
+   ]
+  },
+  "farmersdelight:add_loot_village_butcher": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_butcher"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_butcher"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_village_butcher"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_village_butcher"
+   ]
+  },
+  "farmersdelight:add_loot_village_desert_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_desert_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_desert_house"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_village_desert_house"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_village_desert_house"
+   ]
+  },
+  "farmersdelight:add_loot_village_plains_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_plains_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_plains_house"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_village_plains_house"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_village_plains_house"
+   ]
+  },
+  "farmersdelight:add_loot_village_savanna_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_savanna_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_savanna_house"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_village_savanna_house"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_village_savanna_house"
+   ]
+  },
+  "farmersdelight:add_loot_village_snowy_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_snowy_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_snowy_house"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_village_snowy_house"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_village_snowy_house"
+   ]
+  },
+  "farmersdelight:add_loot_village_taiga_house": {
+   "type": "farmersdelight:add_loot_table",
+   "targets": [
+    "minecraft:chests/village/village_taiga_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_taiga_house"
+    }
+   ],
+   "params": {
+    "table": "farmersdelight:chests/fd_village_taiga_house"
+   },
+   "refs": [
+    "farmersdelight:chests/fd_village_taiga_house"
+   ]
+  },
+  "farmersdelight:add_onion_to_illagers": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    {
+     "any_of": [
+      "entity_properties",
+      "entity_properties",
+      "entity_properties"
+     ]
+    },
+    "killed_by_player",
+    {
+     "random_chance_enchanted": 0.02
+    }
+   ],
+   "params": {
+    "item": "farmersdelight:onion"
+   },
+   "refs": [
+    "farmersdelight:onion"
+   ]
+  },
+  "farmersdelight:add_onion_to_zombies": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    {
+     "any_of": [
+      "entity_properties",
+      "entity_properties",
+      "entity_properties"
+     ]
+    },
+    "killed_by_player",
+    {
+     "random_chance_enchanted": 0.02
+    }
+   ],
+   "params": {
+    "item": "farmersdelight:onion"
+   },
+   "refs": [
+    "farmersdelight:onion"
+   ]
+  },
+  "farmersdelight:scavenging_feather": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "minecraft:feather"
+   },
+   "refs": [
+    "minecraft:feather"
+   ]
+  },
+  "farmersdelight:scavenging_ham_from_hoglin": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "farmersdelight:ham"
+   },
+   "refs": [
+    "farmersdelight:ham"
+   ]
+  },
+  "farmersdelight:scavenging_ham_from_pig": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.5
+    }
+   ],
+   "params": {
+    "item": "farmersdelight:ham"
+   },
+   "refs": [
+    "farmersdelight:ham"
+   ]
+  },
+  "farmersdelight:scavenging_leather": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "any_of": [
+      "entity_properties",
+      "entity_properties",
+      "entity_properties",
+      "entity_properties",
+      "entity_properties",
+      "entity_properties",
+      "entity_properties"
+     ]
+    }
+   ],
+   "params": {
+    "item": "minecraft:leather"
+   },
+   "refs": [
+    "minecraft:leather"
+   ]
+  },
+  "farmersdelight:scavenging_pumpkin": {
+   "type": "farmersdelight:replace_item",
+   "targets": [],
+   "conditions": [
+    "block_state_property",
+    {
+     "all_of": [
+      "match_tool",
+      {
+       "not": "match_tool"
+      }
+     ]
+    }
+   ],
+   "params": {
+    "added_item": "farmersdelight:pumpkin_slice",
+    "count": 4,
+    "removed_item": "minecraft:pumpkin"
+   },
+   "refs": [
+    "farmersdelight:pumpkin_slice",
+    "minecraft:pumpkin"
+   ]
+  },
+  "farmersdelight:scavenging_rabbit_hide": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "minecraft:rabbit_hide"
+   },
+   "refs": [
+    "minecraft:rabbit_hide"
+   ]
+  },
+  "farmersdelight:scavenging_shulker_shell": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "minecraft:shulker_shell"
+   },
+   "refs": [
+    "minecraft:shulker_shell"
+   ]
+  },
+  "farmersdelight:scavenging_smoked_ham_from_hoglin": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    "entity_properties"
+   ],
+   "params": {
+    "item": "farmersdelight:smoked_ham"
+   },
+   "refs": [
+    "farmersdelight:smoked_ham"
+   ]
+  },
+  "farmersdelight:scavenging_smoked_ham_from_pig": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    "entity_properties",
+    "entity_properties",
+    {
+     "random_chance_enchanted": 0.5
+    }
+   ],
+   "params": {
+    "item": "farmersdelight:smoked_ham"
+   },
+   "refs": [
+    "farmersdelight:smoked_ham"
+   ]
+  },
+  "farmersdelight:scavenging_string": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "entity_properties",
+    {
+     "any_of": [
+      "entity_properties",
+      "entity_properties"
+     ]
+    }
+   ],
+   "params": {
+    "item": "minecraft:string"
+   },
+   "refs": [
+    "minecraft:string"
+   ]
+  },
+  "farmersdelight:slicing_apple_pie": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "farmersdelight:apple_pie_slice"
+   },
+   "refs": [
+    "farmersdelight:apple_pie_slice"
+   ]
+  },
+  "farmersdelight:slicing_cake": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "farmersdelight:cake_slice"
+   },
+   "refs": [
+    "farmersdelight:cake_slice"
+   ]
+  },
+  "farmersdelight:slicing_candle_cake": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    {
+     "any_of": [
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property",
+      "block_state_property"
+     ]
+    }
+   ],
+   "params": {
+    "count": 7,
+    "item": "farmersdelight:cake_slice"
+   },
+   "refs": [
+    "farmersdelight:cake_slice"
+   ]
+  },
+  "farmersdelight:slicing_chocolate_pie": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "farmersdelight:chocolate_pie_slice"
+   },
+   "refs": [
+    "farmersdelight:chocolate_pie_slice"
+   ]
+  },
+  "farmersdelight:slicing_pumpkin_pie": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "farmersdelight:pumpkin_pie_slice"
+   },
+   "refs": [
+    "farmersdelight:pumpkin_pie_slice"
+   ]
+  },
+  "farmersdelight:slicing_sweet_berry_cheesecake": {
+   "type": "farmersdelight:pastry_slicing",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "slice": "farmersdelight:sweet_berry_cheesecake_slice"
+   },
+   "refs": [
+    "farmersdelight:sweet_berry_cheesecake_slice"
+   ]
+  },
+  "farmersdelight:straw_from_grass": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    {
+     "random_chance": 0.2
+    },
+    "block_state_property"
+   ],
+   "params": {
+    "item": "farmersdelight:straw"
+   },
+   "refs": [
+    "farmersdelight:straw"
+   ]
+  },
+  "farmersdelight:straw_from_mature_rice": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "item": "farmersdelight:straw"
+   },
+   "refs": [
+    "farmersdelight:straw"
+   ]
+  },
+  "farmersdelight:straw_from_mature_wheat": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    "block_state_property"
+   ],
+   "params": {
+    "item": "farmersdelight:straw"
+   },
+   "refs": [
+    "farmersdelight:straw"
+   ]
+  },
+  "farmersdelight:straw_from_sandy_shrub": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    {
+     "random_chance": 0.3
+    },
+    "block_state_property"
+   ],
+   "params": {
+    "item": "farmersdelight:straw"
+   },
+   "refs": [
+    "farmersdelight:straw"
+   ]
+  },
+  "farmersdelight:straw_from_tall_grass": {
+   "type": "farmersdelight:add_item",
+   "targets": [],
+   "conditions": [
+    "match_tool",
+    {
+     "random_chance": 0.2
+    },
+    "block_state_property"
+   ],
+   "params": {
+    "item": "farmersdelight:straw"
+   },
+   "refs": [
+    "farmersdelight:straw"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "farmersdelight:add_loot_abandoned_mineshaft",
+    "farmersdelight:add_loot_bastion_hoglin_stable",
+    "farmersdelight:add_loot_bastion_treasure",
+    "farmersdelight:add_loot_end_city_treasure",
+    "farmersdelight:add_loot_pillager_outpost",
+    "farmersdelight:add_loot_ruined_portal",
+    "farmersdelight:add_loot_shipwreck_supply",
+    "farmersdelight:add_loot_simple_dungeon",
+    "farmersdelight:add_loot_village_butcher",
+    "farmersdelight:add_loot_village_desert_house",
+    "farmersdelight:add_loot_village_plains_house",
+    "farmersdelight:add_loot_village_savanna_house",
+    "farmersdelight:add_loot_village_snowy_house",
+    "farmersdelight:add_loot_village_taiga_house",
+    "farmersdelight:add_onion_to_illagers",
+    "farmersdelight:add_onion_to_zombies",
+    "farmersdelight:scavenging_feather",
+    "farmersdelight:scavenging_ham_from_hoglin",
+    "farmersdelight:scavenging_ham_from_pig",
+    "farmersdelight:scavenging_leather",
+    "farmersdelight:scavenging_rabbit_hide",
+    "farmersdelight:scavenging_shulker_shell",
+    "farmersdelight:scavenging_smoked_ham_from_hoglin",
+    "farmersdelight:scavenging_smoked_ham_from_pig",
+    "farmersdelight:scavenging_string",
+    "farmersdelight:scavenging_pumpkin",
+    "farmersdelight:slicing_apple_pie",
+    "farmersdelight:slicing_cake",
+    "farmersdelight:slicing_chocolate_pie",
+    "farmersdelight:slicing_pumpkin_pie",
+    "farmersdelight:slicing_sweet_berry_cheesecake",
+    "farmersdelight:slicing_candle_cake",
+    "farmersdelight:straw_from_grass",
+    "farmersdelight:straw_from_mature_rice",
+    "farmersdelight:straw_from_mature_wheat",
+    "farmersdelight:straw_from_sandy_shrub",
+    "farmersdelight:straw_from_tall_grass"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

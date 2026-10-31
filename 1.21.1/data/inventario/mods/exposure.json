@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "Exposure",
  "file": "exposure-neoforge-1.21.1-1.9.19.jar",
@@ -322,6 +322,397 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "exposure:chests/abandoned_mineshaft": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.2
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:photograph",
+       "weight": 3,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:photograph",
+       "weight": 3,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "exposure:chests/shipwreck_map": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:black_and_white_film",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:black_and_white_film",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 2,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:red_stained_glass_pane",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:green_stained_glass_pane",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:blue_stained_glass_pane",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "exposure:chests/simple_dungeon": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.1
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "exposure:chests/stronghold_crossing": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "exposure:chests/village_plains_house": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.15
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    },
+    {
+     "rolls": 1,
+     "conditions": [
+      {
+       "random_chance": 0.3
+      }
+     ],
+     "entries": [
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      },
+      {
+       "kind": "item",
+       "id": "exposure:aged_photograph",
+       "weight": 1,
+       "functions": [
+        "set_components"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {
+  "exposure:abandoned_mineshaft": {
+   "type": "exposure:add_table",
+   "targets": [
+    "minecraft:chests/abandoned_mineshaft"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+   ],
+   "params": {
+    "table": "exposure:chests/abandoned_mineshaft"
+   },
+   "refs": [
+    "exposure:chests/abandoned_mineshaft"
+   ]
+  },
+  "exposure:shipwreck_map": {
+   "type": "exposure:add_table",
+   "targets": [
+    "minecraft:chests/shipwreck_map"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/shipwreck_map"
+    }
+   ],
+   "params": {
+    "table": "exposure:chests/shipwreck_map"
+   },
+   "refs": [
+    "exposure:chests/shipwreck_map"
+   ]
+  },
+  "exposure:simple_dungeon": {
+   "type": "exposure:add_table",
+   "targets": [
+    "minecraft:chests/simple_dungeon"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+   ],
+   "params": {
+    "table": "exposure:chests/simple_dungeon"
+   },
+   "refs": [
+    "exposure:chests/simple_dungeon"
+   ]
+  },
+  "exposure:stronghold_crossing": {
+   "type": "exposure:add_table",
+   "targets": [
+    "minecraft:chests/stronghold_crossing"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/stronghold_crossing"
+    }
+   ],
+   "params": {
+    "table": "exposure:chests/stronghold_crossing"
+   },
+   "refs": [
+    "exposure:chests/stronghold_crossing"
+   ]
+  },
+  "exposure:village_plains_house": {
+   "type": "exposure:add_table",
+   "targets": [
+    "minecraft:chests/village/village_plains_house"
+   ],
+   "conditions": [
+    {
+     "loot_table_id": "minecraft:chests/village/village_plains_house"
+    }
+   ],
+   "params": {
+    "table": "exposure:chests/village_plains_house"
+   },
+   "refs": [
+    "exposure:chests/village_plains_house"
+   ]
+  }
+ },
+ "global_loot_modifiers": [
+  {
+   "replace": false,
+   "entries": [
+    "exposure:simple_dungeon",
+    "exposure:abandoned_mineshaft",
+    "exposure:stronghold_crossing",
+    "exposure:shipwreck_map",
+    "exposure:village_plains_house"
+   ]
+  }
+ ],
  "potions_deduced": [],
  "problems": []
 }

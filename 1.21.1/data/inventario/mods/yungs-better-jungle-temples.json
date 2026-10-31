@@ -1,5 +1,5 @@
 {
- "format": 7,
+ "format": 8,
  "status": "ok",
  "name": "YUNG's Better Jungle Temples",
  "file": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
@@ -245,6 +245,145 @@
  "botanypots": [],
  "market": [],
  "market_presets": [],
+ "loot_tables": {
+  "betterjungletemples:archaeology/emerald": {
+   "type": "minecraft:archaeology",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 1.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterjungletemples:chests/campsite": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:iron_ingot",
+       "weight": 10,
+       "count": {
+        "min": 1.0,
+        "max": 5.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bamboo",
+       "weight": 15,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:bone",
+       "weight": 20,
+       "count": {
+        "min": 4.0,
+        "max": 6.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:rotten_flesh",
+       "weight": 16,
+       "count": {
+        "min": 3.0,
+        "max": 7.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:saddle",
+       "weight": 3
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:iron_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:golden_horse_armor",
+       "weight": 1
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:diamond_horse_armor",
+       "weight": 1
+      }
+     ]
+    }
+   ]
+  },
+  "betterjungletemples:chests/treasure": {
+   "type": "minecraft:chest",
+   "pools": [
+    {
+     "rolls": {
+      "min": 1.0,
+      "max": 3.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:diamond",
+       "weight": 3,
+       "count": {
+        "min": 1.0,
+        "max": 3.0
+       }
+      },
+      {
+       "kind": "item",
+       "id": "minecraft:gold_ingot",
+       "weight": 15,
+       "count": {
+        "min": 4.0,
+        "max": 7.0
+       }
+      }
+     ]
+    },
+    {
+     "rolls": {
+      "min": 6.0,
+      "max": 8.0
+     },
+     "entries": [
+      {
+       "kind": "item",
+       "id": "minecraft:emerald",
+       "weight": 1,
+       "count": {
+        "min": 2.0,
+        "max": 5.0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "loot_modifiers": {},
+ "global_loot_modifiers": [],
  "potions_deduced": [],
  "problems": []
 }
