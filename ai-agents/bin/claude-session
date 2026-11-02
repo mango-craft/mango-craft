@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Avvia Claude Code su mango-craft con le credenziali solo in memoria: le chiede ora
-# e spariscono quando chiudi la sessione. Niente file, niente history, niente chat.
+# Avvia Claude Code sul repository che contiene questo script, con le credenziali solo
+# in memoria: le chiede ora e spariscono quando chiudi la sessione. Niente file, niente
+# history, niente chat. Lo script è uguale in mango-craft e mango-smithing (ossatura
+# comune, AGENTS.md): ciò che cambia lo prende dal nome della cartella del repository.
 #
 #   ai-agents/bin/claude-session              la deploy key di GitHub (per il push)
 #   ai-agents/bin/claude-session --gh         in più: un token di GitHub per gh (workflow)
@@ -9,6 +11,7 @@
 # Ciò che manca si salta da solo (una chiave assente); per saltare il token basta Invio.
 set -euo pipefail
 cd "$(dirname "$0")/../.."
+repo=$(basename "$PWD")
 
 ask_gh=0
 claude_args=()
@@ -34,7 +37,7 @@ if (( ask_gh )); then
   if ! command -v gh >/dev/null 2>&1; then
     echo "gh non è installato (sudo dnf install gh): il token non servirebbe, lo salto" >&2
   else
-    read -rsp "Token di GitHub per mango-craft (Invio per saltare): " value
+    read -rsp "Token di GitHub per $repo (Invio per saltare): " value
     echo
     if [[ -n "$value" ]]; then
       export GH_TOKEN="$value"
@@ -48,7 +51,8 @@ fi
 # Un agent già aperto nel terminale non passa: dentro ci potrebbe essere la tua
 # chiave personale, che su GitHub apre tutti i tuoi repository.
 unset SSH_AUTH_SOCK SSH_AGENT_PID
-key="${MANGO_GITHUB_KEY:-$HOME/.ssh/github_mango_craft}"
+# (~/.ssh/github_<repository con i trattini bassi>, es. github_mango_craft)
+key="${MANGO_GITHUB_KEY:-$HOME/.ssh/github_${repo//-/_}}"
 if [[ -r "$key" ]]; then
   eval "$(ssh-agent -s)" >/dev/null
   trap 'ssh-agent -k >/dev/null 2>&1' EXIT

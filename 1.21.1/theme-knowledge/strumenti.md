@@ -1,6 +1,6 @@
 # Tema: strumenti con materiali avanzati
 
-Aggiornata il 31/10/2026 · stato: **valutazione iniziale**, con la ricerca su Truly Modular (grezzo: `../../ai-agents/archivio/2026-10-23_truly-modular-materiali/`) e, dal 31/10, il confronto con Tetra (sezione «Avanzamento alla Tetra») (idea di Matteo, `../lavoro/0503-temi-aperti.md`) · mod coinvolte: The Twilight Forest, The Aether, Deep Aether, The Undergarden, Deeper and Darker, Occultism, L_Ender's Cataclysm, Unusual End, Mekanism, Truly Modular (Modular Item API, Armory, Arsenal, Archery) · fonti: inventario del pack (oggetti, tag dei livelli di scavo, dati `miapi` letti dai .jar); sorgente di Truly Modular al tag `2.3.9-1.21` (commit `2562eda9`, la versione del pack); config reale `miapi_server.jsonc` e log dell'istanza dev del 19 e 21/10. Tema vicino: `fornaci.md` (una scala delle fornaci potrebbe usare la stessa tabella dei materiali).
+Aggiornata il 02/11/2026 · stato: **valutazione iniziale**, con la ricerca su Truly Modular (grezzo: `../../ai-agents/archivio/2026-10-23_truly-modular-materiali/`) e, dal 31/10, il confronto con Tetra (sezione «Avanzamento alla Tetra») (idea di Matteo, `../lavoro/0503-temi-aperti.md`) · mod coinvolte: The Twilight Forest, The Aether, Deep Aether, The Undergarden, Deeper and Darker, Occultism, L_Ender's Cataclysm, Unusual End, Mekanism, Truly Modular (Modular Item API, Armory, Arsenal, Archery) · fonti: inventario del pack (oggetti, tag dei livelli di scavo, dati `miapi` letti dai .jar); sorgente di Truly Modular al tag `2.3.9-1.21` (commit `2562eda9`, la versione del pack); config reale `miapi_server.jsonc` e log dell'istanza dev del 19 e 21/10. Tema vicino: `fornaci.md` (una scala delle fornaci potrebbe usare la stessa tabella dei materiali).
 
 ## Fatti verificati (inventario, 23/10)
 
@@ -64,4 +64,5 @@ Domanda di Matteo: Truly Modular perde il senso di avanzamento di Tetra (martell
 
 ## Rimandi
 
-- Temi aperti: `../lavoro/0503-temi-aperti.md`, sezione 2 (riga) e sezione 5 (strade, decisioni, versione proposta). Metodo di analisi: `../mod-knowledge/botany-pots/analisi.md`.
+- Temi aperti: `../lavoro/0503-temi-aperti.md`, sezione 2 (riga) e sezione 5 (strade, decisioni, versione proposta).
+- La mod nostra degli strumenti, **Mango Smithing** (dal 02/11/2026): repository a fianco `mango-craft/mango-smithing`; qui restano i fatti su Truly Modular e sul pack. Metodo di analisi: `../mod-knowledge/botany-pots/analisi.md`.

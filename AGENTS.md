@@ -48,6 +48,8 @@ ai-agents/                  materiale degli agenti (non è documentazione; ai-ag
 
 Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova di Minecraft avrà la sua cartella accanto, con la stessa struttura.
 
+**Repository a fianco**: `mango-craft/mango-smithing`, la mod degli strumenti (**Mango Smithing**, addon di Truly Modular, dal 02/11/2026). Ha la stessa ossatura di questo (sezione 10); nel pack la sua versione entra come le altre mod, con una versione del pack.
+
 ## 4. Documentazione
 
 | Livello | Dove | Vivo o fermo | Regole |
@@ -93,6 +95,7 @@ Tutto ciò che sta fuori da `pack/` non viene mai installato. Una versione nuova
 | Mod candidate e approvate non ancora aggiunte / scartate | `0601` / `0602` |
 | Il perché delle scelte di una versione | `lavoro/versioni/vX.Y.Z.md` |
 | Il filo di un lavoro sul repository | `revisioni/AAAA.MM-NN/` |
+| Codice di Mango Smithing, le API che usa e le sue versioni | il repository `mango-smithing` |
 | Risultati grezzi di una ricerca | lo stage (fino al 29/10/2026 l'archivio) |
 | Percorsi e strumenti del PC | `ai-agents/contesto-locale.md`, fuori da git |
 | Come funziona una parte del datapack | il readme dentro il datapack |
@@ -166,3 +169,11 @@ Cosa un agente fa da solo e cosa no (29/10/2026). Le scelte su mod e contenuti r
 - i documenti che citano ciò che è cambiato sono aggiornati (`grep -rn`), indici compresi;
 - la decisione ha la sua riga datata nel file della versione o nella revisione;
 - c'è un commit su `dev` per unità di lavoro, con un messaggio che dice cosa e perché; dopo il push, **Controllo pack** è verde.
+
+## 10. Ossatura comune con mango-smithing
+
+Questo repository e `mango-smithing` hanno la stessa ossatura (decisione di Matteo del 02/11/2026). **Una modifica a una parte comune si fa in tutti e due**, oppure si scrive qui perché differisce.
+
+- **Uguali**: `ai-agents/bin/claude-session` (prende il nome della chiave dalla cartella del repository), `ai-agents/stage/README.md`, la licenza MIT.
+- **Stessa forma, contenuto proprio**: `AGENTS.md` (le sezioni «Come rispondere», «Ambiente di lavoro degli agenti» e «Autonomia»), `CLAUDE.md`, `ai-agents/README.md`, `ai-agents/contesto-locale.esempio.md`, `.claude/settings.json` (stessi permessi e sandbox, domini propri), `.gitignore` e `.gitattributes`, `revisioni/README.md`, la regola dei file delle versioni e dei codici dei documenti.
+- **Solo qui**: l'archivio, la cartella per versione di Minecraft, i workflow e gli script del pack.

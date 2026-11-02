@@ -26,3 +26,4 @@ Una cartella `AAAA.MM-NN/`: anno e mese, più un numero che ricomincia da 01 ogn
 |---|---|---|
 | [2026.10-01](2026.10-01/piano.md) | lavoro in locale con Claude Code: sessione, permessi e sandbox, contesto locale, stage fuori da git, revisioni, autonomia dell'agente | ✅ chiusa il 30/10/2026 |
 | [2026.10-02](2026.10-02/piano.md) | pulizia dopo l'analisi del 30/10: workflow che controllano e basta, script, documenti, contesto più leggero, permessi | ✅ chiusa il 30/10/2026 |
+| [2026.11-01](2026.11-01/piano.md) | repository a fianco per la mod degli strumenti, Mango Smithing, con l'ossatura comune ai due | 🔧 aperta il 02/11/2026 |
