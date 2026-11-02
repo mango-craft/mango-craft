@@ -9,7 +9,7 @@ Le mod che non sono nel pack ma restano in considerazione, con il momento in cui
 | ⭐ **Malum** | Prima scelta per il futuro (scheda `../mod-knowledge/malum.md`) | All'uscita della 1.9, in un mondo nuovo |
 | **Tectonic** | "Molto papabile" (scheda `../mod-knowledge/tectonic.md`) | Se si accetta il rischio sulle strutture: When Dungeons Arise ha strutture volanti che finirebbero dentro le montagne (serve spegnerle). Compatibile con Regions Unexplored per dichiarazione ufficiale e per uso in altri pack (Adventure T1ne); clima e dimensione dei biomi invariati, cambia il rilievo |
 | **StructBlend** | Nuovissima, solo CurseForge, licenza non dichiarata | Rimodella il terreno attorno alle strutture: utile soprattutto con Tectonic |
-| **Truly Modular: Next Level** | Mai rilasciata (1.0-SNAPSHOT, ultimo commit 7/2/2026, scritta per Miapi 2.2.1) | Se esce una release |
+| **Truly Modular: Next Level** | Mai rilasciata (1.0-SNAPSHOT; verificato il 31/10/2026: ultimo commit il 19/10/2026, scritta per Miapi 2.3.6). Dal 02/11 è una base possibile della mod nostra Mango Smithing, che la valuta (`0503`, sezione 5) | Se esce una release, insieme a Mango Smithing |
 | **Aquaculture 2** + Aquaculture Delight, Lava Fishing Addon, Aquacompat | Alternativa a Starcatcher, non insieme | Se la pesca di Starcatcher stanca |
 | **Environmental + Autumnity + Abnormals Delight** | Unici animali con piatti dedicati, ma invasivi (biomi propri dentro Regions Unexplored, spostano gli animali vanilla, release ferme da ottobre 2025) | Se si vogliono piatti a tema animali |
 | **Fluid Converter**, **Land's Utilities** | Convertitori di liquidi, pochi download, gestione dei rapporti sconosciuta | Se si vuole un convertitore d'esperienza al posto del Mescolatore |

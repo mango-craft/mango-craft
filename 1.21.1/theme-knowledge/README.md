@@ -15,7 +15,7 @@ Conoscenza **trasversale**: argomenti che attraversano più mod o la piattaforma
 | [cucina](cucina.md) | Farmer's Delight e addon: ricette per etichetta, ingredienti intercambiabili, automazione |
 | [achievement](achievement.md) | Progressi già presenti, mod per la schermata, progressione propria del pack |
 | [accessori](accessori.md) | I tre menu dove indossare oggetti (Curios, Accessories standard, menu dell'Aether): chi usa cosa, come ridurli; artefatti solo in Curios; potenziamento ed evoluzione: ricerca del 23/10 e scelta di Relics + Reliquified Artifacts (nel pack dalla 0.7.0) |
-| [strumenti](strumenti.md) | Strumenti con materiali avanzati: set delle mod, livelli di scavo, materiali di Truly Modular; valutazione iniziale di una progressione a tappe |
+| [strumenti](strumenti.md) | Strumenti con materiali avanzati: set delle mod, livelli di scavo, materiali di Truly Modular; l'avanzamento a tappe è demandato alla mod Mango Smithing (repository a fianco) |
 | [fornaci](fornaci.md) | Fornaci a livelli fuori da Create e Mekanism: Iron Furnaces, FurnaceMk2 e Jumbo Furnace (nel pack dalla 0.7.1), energia, Jumbo Furnace in dettaglio, ricerca del 24/10 sulle altre mod, come si legherebbe a una scala dei materiali |
 | [piante](piante.md) | Come il pack tratta le piante delle mod: vasi di Botany Pots e mercato di Farming for Blockheads su una base dati sola, anagrafica della rarità condivisa, regole nei CSV e file generati |
 | [archeologia](archeologia.md) | Dove si scava (Minecraft, Better Archeology, Jaden's e le altre), strumenti, cosa si trova, artefatti negli scavi, casse di Better Archeology senza reliquie; quadro iniziale |

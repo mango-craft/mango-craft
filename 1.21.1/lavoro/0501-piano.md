@@ -8,13 +8,13 @@ Le tappe del pack verso il mondo vero e lo stato di avanzamento. Documento vivo:
 
 | Tappa | Versione | Contenuto | Stato |
 |---|---|---|---|
-| 7 e oltre | — | Il resto, nella proposta qui sotto: eventuali 0.7.x (strumenti a tappe, terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
+| 7 e oltre | — | Il resto, nella proposta qui sotto: eventuale 0.7.x (terreno), progressione (0.8); poi le **fasi senza numero**: aggiornamenti e licenze, **mondo di prova**, correzioni, mondo vero | da fare |
 
 NeoForge è a 21.1.265 dalla 0.7.4 (`../docs/0303-note-tecniche.md`). Se una mod nuova ne chiede uno più recente, il controllo dei nomi lo segnala.
 
 ## Proposta per dopo la 0.7.3 (25/10/2026, in sospeso)
 
-Matteo approva una versione alla volta: quando ne approva una, la sua riga passa nella tabella qui sopra. Il 25/10 ha deciso: gli **strumenti a tappe** sono da esplorare (una 0.7.x senza numero fisso), la **progressione** è il tema della **0.8**, le fasi dopo **non hanno un numero**. Negli altri documenti il mondo di prova si chiama per nome.
+Matteo approva una versione alla volta: quando ne approva una, la sua riga passa nella tabella qui sopra. Il 25/10 ha deciso: gli **strumenti a tappe** sono da esplorare (una 0.7.x senza numero fisso), la **progressione** è il tema della **0.8**, le fasi dopo **non hanno un numero**. Il 02/11 gli strumenti a tappe sono passati a una mod nostra in sviluppo, **Mango Smithing** (repository a fianco, `0503`, sezione 5): non hanno più una 0.7.x in questa sequenza, entreranno nel pack con una versione quando la mod sarà pronta, senza bloccare le altre. Negli altri documenti il mondo di prova si chiama per nome.
 
 **Ordine**: prima il contenuto (0.7.x), poi la progressione (0.8), poi gli aggiornamenti, poi il mondo di prova, che deve girare con il pack **finale** (`0503`, sezione 4, n. 5). La progressione viene dopo i contenuti perché la scheda «Mango Craft» descrive le tappe fatte prima.
 
@@ -22,7 +22,6 @@ Matteo approva una versione alla volta: quando ne approva una, la sua riga passa
 
 | Versione | Contenuto | Cosa decide Matteo | Prove di uscita |
 |---|---|---|---|
-| **0.7.x** | 🟡 **Strumenti a tappe**, da esplorare (Matteo, 25/10): tabella dei materiali di Truly Modular e materiali scritti a mano per i gradini (`0503`, sezione 5); dal 02/11 con la mod nostra **Mango Smithing** (repository a fianco); la stessa scala può servire alle ricette di fornaci e computer | se farla, i gradini, quando entra la mod | i materiali nostri compaiono in Truly Modular |
 | **0.7.x** | 🟡 Solo se Matteo lo decide: mod che cambiano il terreno (Tectonic, con StructBlend) o Malum se esce la 1.9 (`0601`) | sì o no, **prima** del mondo di prova | mondo nuovo: biomi e strutture sensati, nessun errore |
 | **0.8** | **Progressione** (anche in più versioni 0.8.x): una mod per la schermata dei progressi (🟢 Reliable Advancements o Lucid Advancements, provate una alla volta), gli effetti nuovi della luna di sangue, 🟡 scheda «Mango Craft» (20–40 traguardi nel datapack) e guida del pack (`0503`, sezione 3) | quale mod; gli effetti della luna; se fare la scheda e quanti traguardi | la schermata mostra i progressi; i traguardi si sbloccano; luna di sangue come deciso |
 
